@@ -20,10 +20,132 @@ img {
     height: auto;
 }
 
+/* 1) 全局与盒模型 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
 body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
     font-family: "Cambria", "Times New Roman", "Helvetica", "Arial", "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: #111;
+    background: #fff;
 }
 
-code, pre {
-    font-family: "Consolas", "Courier New", "Microsoft YaHei Mono", monospace;
+/* 2) 标题与文本 */
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* 3) 列表 */
+ul[class], ol[class] { /* 仅重置带 class 的列表，避免文章内容列表被完全去掉样式 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul, ol {
+    padding-left: 1.25rem; /* 普通内容的列表保留缩进 */
+}
+
+/* 4) 链接 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* 5) 图片与媒体 */
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+}
+img {
+    height: auto;
+}
+
+/* 6) 表单元素 */
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    appearance: button;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+textarea {
+    resize: vertical;
+}
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+:focus {
+    outline: 2px solid transparent; /* 先移除默认外观 */
+    outline-offset: 2px;
+}
+:focus-visible {
+    outline-color: #3b82f6; /* 更可访问的可见焦点 */
+}
+
+/* 7) 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+th, td {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* 8) 代码与预格式文本 */
+pre, code, kbd, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    font-size: 0.95em;
+}
+
+/* 9) 细节元素 */
+hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin: 1rem 0;
+}
+abbr[title] {
+    text-decoration: underline dotted;
+}
+
+/* 10) 动画/过渡在“减少动态”时变为零 */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@page {
+    margin: 10mm;
 }
