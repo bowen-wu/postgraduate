@@ -158,12 +158,14 @@
     pattern = pattern.trim();
     if (!pattern) return day => '';
 
+    // 纯数字
     if (/^\d+$/.test(pattern)) {
       const width = pattern.length;
       const startNum = parseInt(pattern, 10);
       return day => String(startNum + (day - 1)).padStart(width, '0');
     }
 
+    // 范围匹配： p1-p3, Unit2-Unit4
     const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
     const m = pattern.match(rangeRegex);
     if (m) {
@@ -172,7 +174,7 @@
       if (prefix1 !== prefix2) return day => '';
 
       const prefix = prefix1;
-      const length = end1 - start1 + 1;  // 区间长度
+      const length = end1 - start1 + 1; // 区间长度
 
       return day => {
         const s1 = start1 + length * (day - 1);
@@ -181,8 +183,20 @@
       };
     }
 
+    // 单个 前缀+数字： Unit1, P05
+    const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
+    const m2 = pattern.match(singlePrefixNumRegex);
+    if (m2) {
+      const prefix = m2[1];
+      const startNum = parseInt(m2[2], 10);
+      const width = m2[2].length; // 保持数字位数
+      return day => `${prefix}${String(startNum + (day - 1)).padStart(width, '0')}`;
+    }
+
+    // 默认直接返回
     return day => pattern;
   }
+
 
   // 生成计划，studyContentMap初始生成
   // 返回 plan: {日期: {review: [studyDay], study: [studyDay]}}
@@ -359,13 +373,16 @@
     const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
     const mStart = startVal.match(rangeRegex);
 
+    // 纯数字
     if (/^\d+$/.test(startVal)) {
       const valNum = parseInt(startVal, 10);
       for (let day = startDay + 1; day <= Object.keys(studyContentMap).length; day++) {
         const diff = day - startDay;
         studyContentMap[day] = String(valNum + diff).padStart(startVal.length, '0');
       }
-    } else if (mStart) {
+    }
+    // 范围 p1-p3
+    else if (mStart) {
       const prefix1 = mStart[1];
       const start1 = parseInt(mStart[2], 10);
       const prefix2 = mStart[3];
@@ -380,7 +397,21 @@
         }
       }
     }
-    // 不支持格式不更新后续
+    // 单个前缀+数字 Unit1, P05
+    else {
+      const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
+      const m2 = startVal.match(singlePrefixNumRegex);
+      if (m2) {
+        const prefix = m2[1];
+        const startNum = parseInt(m2[2], 10);
+        const width = m2[2].length; // 保留数字宽度
+        for (let day = startDay + 1; day <= Object.keys(studyContentMap).length; day++) {
+          const diff = day - startDay;
+          studyContentMap[day] = `${prefix}${String(startNum + diff).padStart(width, '0')}`;
+        }
+      }
+    }
+    // 其它格式就不更新
   }
 
   // 重新渲染日历并保持焦点和光标
