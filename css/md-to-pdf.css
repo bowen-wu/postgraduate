@@ -45,9 +45,9 @@ h1, h2, h3, h4, h5, h6,
 p, figure, blockquote, dl, dd {
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
+h1 {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 /* 3) 列表 */
@@ -149,3 +149,92 @@ abbr[title] {
 @page {
     margin: 10mm;
 }
+
+/* ========== Print tuning: bigger type for PDF ========== */
+@media print {
+    :root {
+        /* 全局字号开关（正文基准）*/
+        --print-base: 12pt;         /* 12–13pt 是常见舒适阅读区间 */
+        --print-leading: 1.25;       /* 行高 */
+        --print-h1: 1.6em;          /* 标题比例（相对正文）*/
+        --print-h2: 1.4em;          /* 标题比例（相对正文）*/
+        --print-h3: 1.2em;          /* 标题比例（相对正文）*/
+        --print-code: 0.95em;       /* 代码相对正文 */
+        --print-table-pad: 0.6em;   /* 表格内边距 */
+    }
+
+    html, body {
+        font-size: var(--print-base);
+        line-height: var(--print-leading);
+        color: #111;
+        background: #fff !important;
+    }
+
+    /* 页面边距（A4 友好） */
+    @page {
+        size: A4;
+        margin: 12mm 14mm; /* 上下 12mm，左右 14mm，可按需调整 */
+    }
+
+    /* 标题放大且分组前后间距更宽松 */
+    h1 { font-size: var(--print-h1); margin: 0 0 0.6em; font-weight: 500; }
+    h2 { font-size: var(--print-h2); margin: 1.2em 0 0.5em; font-weight: 500; }
+    h3 { font-size: var(--print-h3); margin: 1.1em 0 0.45em; font-weight: 500; }
+    h4, h5, h6 { margin: 1em 0 0.4em; font-weight: 500; }
+
+    p, ul, ol, blockquote, pre, table, figure {
+        margin: 0.75em 0;
+    }
+
+    /* 表格：更大字号+更舒适填充 */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        page-break-inside: avoid;
+        font-size: 1em; /* 跟正文一致即可 */
+    }
+    th, td {
+        padding: var(--print-table-pad);
+        border: 1px solid #888;  /* 打印灰色对比更稳 */
+        vertical-align: top;
+    }
+    th {
+        font-weight: 700;
+        background: #f3f3f3 !important; /* 打印浅灰区分表头 */
+    }
+
+    /* 代码块：略小但仍比默认大，避免换行溢出 */
+    pre, code, kbd, samp {
+        font-size: var(--print-code);
+        line-height: 1.5;
+        white-space: pre-wrap;     /* 避免过长溢出 */
+        word-break: break-word;
+    }
+    pre {
+        border: 1px solid #ddd;
+        padding: 0.75em;
+        background: #fafafa !important;
+    }
+
+    /* 图片：打印用全宽、自动等比 */
+    img {
+        max-width: 60% !important;
+        width: 60% !important;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    /* 链接：打印可显示 URL（可选） */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+    }
+
+    /* 去掉不必要的装饰或颜色过浅导致的不可读 */
+    hr { border-top: 1px solid #bbb; }
+
+    /* 避免分页把标题与后一段拆开 */
+    h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
+    p, table, pre, blockquote { page-break-inside: avoid; }
+}
+
