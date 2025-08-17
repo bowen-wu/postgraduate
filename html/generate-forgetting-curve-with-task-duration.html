@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>艾宾浩斯学习计划（按周日历）</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; color: #222; }
+        label { display: block; margin: 6px 0; }
+        input[type="text"], input[type="date"], input[type="number"] { padding: 6px; margin-right: 6px; }
+        button { padding: 6px 10px; margin: 6px 6px 12px 0; cursor: pointer; }
+        table { width:100%; border-collapse: collapse; table-layout: fixed; margin-top: 12px; }
+        th, td { border:1px solid #ddd; padding:6px; min-height:120px; vertical-align: top; }
+        th { background:#f4f4f4; text-align:center; }
+
+        .task-row { display:flex; align-items:center; gap:12px; margin-bottom:8px; padding:6px; border:1px solid #eee; border-radius:6px; }
+        .task-name { width:200px; }
+        .task-duration { width:60px; }
+        .cell { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+        .date { font-weight:600; margin-bottom:4px; text-align: center; }
+        .reviews { font-size:13px; color:#1a73e8; flex-grow: 1; }
+        .studies { color:#d93025; font-size:13px; font-weight:600; }
+        .muted { color:#666; font-size:12px; margin-top:6px; }
+        .rest-input { width:100%; box-sizing:border-box; }
+        .rounds-container { margin-top:12px; padding:6px; border:1px solid #ddd; border-radius:6px; }
+        .round-input { width:220px; margin-right:4px; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+<h2>艾宾浩斯学习计划生成器（按周日历）</h2>
+
+<div class="controls">
+    <label>开始学习日期:
+        <input type="date" id="start-date" value="2025-08-10">
+    </label>
+
+    <div id="tasks-container">
+        <h4>学习任务</h4>
+    </div>
+    <button id="add-task-btn">添加学习任务</button>
+    <button id="clear-tasks-btn">清空任务</button>
+
+    <div class="rounds-container">
+        <h4>轮数说明（独立区域）</h4>
+        <div id="rounds-div"></div>
+        <button id="add-round-btn" type="button">添加轮数</button>
+    </div>
+
+    <label>复习周期（逗号分隔，表示同一个任务各次复习之间的间隔天数）:
+        <input type="text" id="review-days" value="0,2,4,7,16,16" style="width:320px;">
+    </label>
+
+    <label>休息日（YYYY-MM-DD，逗号分隔）:
+        <input type="text" id="rest-days" value="2025-08-20,2025-08-25,2025-08-26,2025-08-31,2025-09-01,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-11,2025-09-12,2025-09-13" class="rest-input">
+    </label>
+
+    <div>
+        <button id="generate-btn">生成周历</button>
+        <button id="export-btn">导出日历为图片</button>
+    </div>
+    <div class="muted">
+        说明：<br>
+        - 学习任务默认为第一轮；<br>
+        - 每次复习依次为第二轮、第三轮…；<br>
+        - 轮数说明与任务分离，可单独编辑；<br>
+        - 休息日当天不安排学习任务，但复习任务照常安排。
+    </div>
+</div>
+
+<div id="calendar"></div>
+
+<script>
+  function formatDate(d) { const y=d.getFullYear(); const m=String(d.getMonth()+1).padStart(2,'0'); const day=String(d.getDate()).padStart(2,'0'); return `${y}-${m}-${day}`; }
+  function parseDateInput(s) { return new Date(s); }
+  function addDays(d,n) { const r=new Date(d); r.setDate(r.getDate()+n); return r; }
+
+  const tasksContainer=document.getElementById('tasks-container');
+  const addTaskBtn=document.getElementById('add-task-btn');
+  const clearTasksBtn=document.getElementById('clear-tasks-btn');
+  const generateBtn=document.getElementById('generate-btn');
+  const exportBtn=document.getElementById('export-btn');
+  const calendarDiv=document.getElementById('calendar');
+  const startDateInput=document.getElementById('start-date');
+  const reviewDaysInput=document.getElementById('review-days');
+  const restDaysInput=document.getElementById('rest-days');
+  const roundsDiv=document.getElementById('rounds-div');
+  const addRoundBtn=document.getElementById('add-round-btn');
+
+  const defaultTasks=[
+    { name:'行列式', duration:3 },
+    { name:'矩阵', duration:4 },
+    { name:'向量', duration:3 },
+    { name:'线性方程组', duration:3 },
+    { name:'特征值与特征向量', duration:4 },
+    { name:'二次型', duration:3 },
+    { name:'函数、极限、连续', duration:3 },
+    { name:'一元函数微分学', duration:4 },
+    { name:'一元函数积分学', duration:3 },
+    { name:'多元函数微分学', duration:4 },
+    { name:'二重积分', duration:3 },
+    { name:'常微分方程', duration:4 }
+  ];
+
+  function createTaskRow(name='', duration=1){
+    const wrap=document.createElement('div'); wrap.className='task-row';
+    const nameInput=document.createElement('input'); nameInput.type='text'; nameInput.placeholder='任务名称'; nameInput.value=name; nameInput.className='task-name';
+    const durInput=document.createElement('input'); durInput.type='number'; durInput.min='1'; durInput.value=String(duration); durInput.className='task-duration'; durInput.placeholder='天数';
+    const removeBtn=document.createElement('button'); removeBtn.type='button'; removeBtn.textContent='删除';
+    removeBtn.addEventListener('click',()=>wrap.remove());
+    wrap.appendChild(nameInput); wrap.appendChild(durInput); wrap.appendChild(removeBtn);
+    tasksContainer.appendChild(wrap);
+  }
+
+  addTaskBtn.addEventListener('click',()=>createTaskRow());
+  clearTasksBtn.addEventListener('click',()=>{ tasksContainer.innerHTML=''; });
+
+  (function initDefaults(){ defaultTasks.forEach(t=>createTaskRow(t.name,t.duration)); })();
+
+  // 轮数说明管理
+  const defaultRoundTexts=[
+    '书，例题+公式',
+    '辅导讲义/18讲 公式+例题',
+    '660题',
+    '基础真题1',
+    '提高真题1',
+    '基础真题2',
+    '提高真题2'
+  ];
+
+  function addRoundInput(val='第n轮'){
+    const div=document.createElement('div'); div.style.display='flex'; div.style.alignItems='center'; div.style.gap='4px';
+    const input=document.createElement('input'); input.type='text'; input.className='round-input'; input.value=val;
+    const delBtn=document.createElement('button'); delBtn.type='button'; delBtn.textContent='-';
+    delBtn.addEventListener('click',()=>div.remove());
+    div.appendChild(input); div.appendChild(delBtn);
+    roundsDiv.appendChild(div);
+  }
+
+  defaultRoundTexts.forEach(text=>addRoundInput(text));
+  addRoundBtn.addEventListener('click',()=>addRoundInput());
+
+  generateBtn.addEventListener('click',()=>{
+    calendarDiv.innerHTML='';
+    const startVal=startDateInput.value; if(!startVal){ alert('请选择开始学习日期'); return; }
+    const startDate=parseDateInput(startVal);
+
+    const rows=tasksContainer.querySelectorAll('.task-row');
+    const tasks=[];
+    rows.forEach(r=>{
+      const name=r.querySelector('.task-name').value.trim();
+      const duration=parseInt(r.querySelector('.task-duration').value,10);
+      if(name && Number.isInteger(duration) && duration>0) tasks.push({name,duration});
+    });
+    if(tasks.length===0){ alert('请至少添加一个学习任务'); return; }
+
+    const reviewDays=reviewDaysInput.value.split(',').map(s=>parseInt(s.trim(),10)).filter(n=>!Number.isNaN(n)&&n>=0);
+    const restDays=restDaysInput.value.split(',').map(s=>s.trim()).filter(s=>/^\d{4}-\d{2}-\d{2}$/.test(s));
+    const roundLabels=[...roundsDiv.querySelectorAll('.round-input')].map(inp=>inp.value.trim()||'第n轮');
+
+    const calendarMap={};
+    let currentStudyStart=new Date(startDate);
+
+    tasks.forEach(task=>{
+      const {name,duration:dur}=task;
+      // 学习
+      let studyCount=0; let dayPtr=new Date(currentStudyStart);
+      const studyRoundText = roundLabels[0] || '第1轮';
+      while(studyCount<dur){
+        const ds=formatDate(dayPtr);
+        if(!restDays.includes(ds)){
+          if(!calendarMap[ds]) calendarMap[ds]={studies:[],reviews:[]};
+          calendarMap[ds].studies.push(`学习: ${name}（${studyRoundText}）`);
+          studyCount++;
+        }
+        dayPtr=addDays(dayPtr,1);
+      }
+      const studyEnd=addDays(dayPtr,-1);
+      let prevEnd=new Date(studyEnd);
+      // 复习
+      let round=2;
+      reviewDays.forEach(offset=>{
+        const reviewStart=addDays(prevEnd,1+offset);
+        for(let j=0;j<dur;j++){
+          const d=addDays(reviewStart,j);
+          const ds=formatDate(d);
+          if(!calendarMap[ds]) calendarMap[ds]={studies:[],reviews:[]};
+          const roundText=roundLabels[round-1]||`第${round}轮`;
+          calendarMap[ds].reviews.push(`复习: ${name}（${roundText}）`);
+        }
+        prevEnd=addDays(reviewStart,dur-1);
+        round++;
+      });
+      currentStudyStart=addDays(studyEnd,1);
+    });
+
+    const allDates=Object.keys(calendarMap).sort();
+    if(allDates.length===0){ calendarDiv.innerText='无任务可显示'; return; }
+
+    const firstDate=new Date(allDates[0]); const lastDate=new Date(allDates[allDates.length-1]);
+    const gridStart=addDays(firstDate,-firstDate.getDay()); const gridEnd=addDays(lastDate,6-lastDate.getDay());
+    const weekdays=['Su','Mo','Tu','We','Th','Fr','Sa'];
+    let html='<table><thead><tr>';
+    for(const w of weekdays) html+=`<th>${w}</th>`; html+='</tr></thead><tbody>';
+
+    let weekCells=new Array(7).fill('');
+    for(let d=new Date(gridStart);d<=gridEnd;d.setDate(d.getDate()+1)){
+      const ds=formatDate(d); const dayIndex=d.getDay();
+      const data=calendarMap[ds]||{reviews:[],studies:[]};
+      weekCells[dayIndex]=`
+      <div class="cell">
+        <div class="date">${ds}</div>
+        <div class="reviews">${data.reviews.map(r=>`<div>${r}</div>`).join('')}</div>
+        <div class="studies">${data.studies.map(s=>`<div>${s}</div>`).join('')}</div>
+      </div>`;
+      if(dayIndex===6){ html+='<tr>'+weekCells.map(c=>`<td>${c}</td>`).join('')+'</tr>'; weekCells=new Array(7).fill(''); }
+    }
+    if(weekCells.some(cell=>cell&&cell.length>0)) html+='<tr>'+weekCells.map(c=>`<td>${c}</td>`).join('')+'</tr>';
+    html+='</tbody></table>';
+    calendarDiv.innerHTML=html;
+  });
+
+  exportBtn.addEventListener('click',()=>{
+    if(!calendarDiv.innerHTML.trim()){ alert('请先生成日历'); return; }
+    html2canvas(calendarDiv).then(canvas=>{
+      const link=document.createElement('a');
+      link.download='学习计划.png';
+      link.href=canvas.toDataURL('image/png');
+      link.click();
+    });
+  });
+</script>
+</body>
+</html>
