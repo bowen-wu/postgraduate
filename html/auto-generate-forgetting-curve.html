@@ -59,11 +59,14 @@
     <!-- 休息日（YYYY-MM-DD 格式） -->
     <label class="rest-day">
         休息日 (输入日期,逗号分隔):
-        <!--  单词休息日：2025-08-24,2025-08-25,2025-08-28,2025-08-29,2025-09-01,2025-09-02,2025-09-09,2025-09-10,2025-09-12,2025-09-14,2025-09-15,2025-09-17,2025-09-18,2025-09-19,2025-09-24,2025-09-27,2025-09-28,2025-09-29,2025-09-30,2025-10-02,2025-10-03,2025-10-06,2025-10-07,2025-10-10,2025-10-12,2025-10-14,2025-10-15,2025-10-16,2025-10-19 -->
+        <!--  单词休息日：2025-08-23,2025-08-24,2025-08-25,2025-08-26,2025-08-27,2025-08-28,2025-08-31,2025-09-01,2025-09-02,2025-09-04,2025-09-05,2025-09-07,2025-09-09,2025-09-10,2025-09-11,2025-09-12,2025-09-14,2025-09-15,2025-09-16,2025-09-17,2025-09-19,2025-09-20,2025-09-24,2025-09-25,2025-09-26,2025-09-27,2025-09-28,2025-09-29,2025-10-02,2025-10-03,2025-10-05,2025-10-06,2025-10-07,2025-10-08,2025-10-11,2025-10-12,2025-10-14,2025-10-15,2025-10-16,2025-10-17,2025-10-19,2025-10-20,2025-10-22,2025-10-23,2025-10-24,2025-10-25,2025-10-27,2025-10-30,2025-10-31,2025-11-01,2025-11-02,2025-11-03,2025-11-04,2025-11-05,2025-11-08,2025-11-09,2025-11-10,2025-11-11,2025-11-13,2025-11-16,2025-11-17,2025-11-18,2025-11-19,2025-11-20,2025-11-21,2025-11-22,2025-11-25,2025-11-26,2025-11-27,2025-11-30 -->
+        <!--  单词休息日：2025-08-23,2025-08-24,2025-08-25,2025-08-26,2025-08-27,2025-08-28,2025-08-30,2025-08-31,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-08,2025-09-09,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-17,2025-09-18,2025-09-19,2025-09-20,2025-09-25,2025-09-26,2025-09-27,2025-09-28,2025-09-29,2025-09-30,2025-10-03,2025-10-04,2025-10-05,2025-10-06,2025-10-07,2025-10-08,2025-10-09,2025-10-12,2025-10-13,2025-10-14,2025-10-15,2025-10-17,2025-10-18,2025-10-20,2025-10-21,2025-10-22,2025-10-23,2025-10-25,2025-10-28,2025-10-29,2025-10-30,2025-10-31,2025-11-01,2025-11-02,2025-11-03,2025-11-06,2025-11-07,2025-11-08,2025-11-09,2025-11-11,2025-11-14,2025-11-15,2025-11-16,2025-11-17,2025-11-18,2025-11-19,2025-11-22,2025-11-23,2025-11-24,2025-11-25,2025-11-26,2025-11-27,2025-11-28,,2025-12-01,2025-12-02,2025-12-03,2025-12-04,2025-12-06 -->
         <!-- 写作休息日：2025-08-19,2025-08-21,2025-08-24,2025-08-26,2025-08-28,2025-08-29,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-17,2025-09-19,2025-09-21,2025-09-22,2025-09-23,2025-09-27,2025-09-29,2025-09-30,2025-10-01,2025-10-02,2025-10-04,2025-10-05,2025-10-08,2025-10-09,2025-10-10,2025-10-14,2025-10-16,2025-10-17,2025-10-18,2025-10-19,2025-10-20,2025-10-24,2025-10-25,2025-10-26,2025-10-28,2025-10-30,2025-11-02 -->
-        <input type="text" id="restDays"
-               value="2025-08-24,2025-08-25,2025-08-28,2025-08-29,2025-09-01,2025-09-02,2025-09-09,2025-09-10,2025-09-12,2025-09-14,2025-09-15,2025-09-17,2025-09-18,2025-09-19,2025-09-24,2025-09-27,2025-09-28,2025-09-29,2025-09-30,2025-10-02,2025-10-03,2025-10-06,2025-10-07,2025-10-10,2025-10-12,2025-10-14,2025-10-15,2025-10-16,2025-10-19"
-               placeholder="例如 2025-08-15,2025-08-18"/>
+        <textarea id="restDays"
+                  rows="6"
+                  placeholder="例如 2025-08-15,2025-08-18">
+            2025-08-19,2025-08-21,2025-08-24,2025-08-26,2025-08-28,2025-08-29,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-17,2025-09-19,2025-09-21,2025-09-22,2025-09-23,2025-09-27,2025-09-29,2025-09-30,2025-10-01,2025-10-02,2025-10-04,2025-10-05,2025-10-08,2025-10-09,2025-10-10,2025-10-14,2025-10-16,2025-10-17,2025-10-18,2025-10-19,2025-10-20,2025-10-24,2025-10-25,2025-10-26,2025-10-28,2025-10-30,2025-11-02
+        </textarea>
     </label>
 </div>
 
@@ -96,138 +99,140 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script>
-  const weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+    const weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
-  // 日期加天数
-  function addDays(date, days) {
-    const d = new Date(date);
-    d.setDate(d.getDate() + days);
-    return d;
-  }
-
-  // 格式化日期为 YYYY-MM-DD
-  function formatDateFull(d) {
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return `${y}-${m}-${day}`;
-  }
-
-  // 创建学习内容生成器
-  function createPatternGenerator(pattern) {
-    pattern = pattern.trim();
-    if (!pattern) return day => '';
-    if (/^\d+$/.test(pattern)) {
-      const width = pattern.length;
-      const startNum = parseInt(pattern, 10);
-      return day => String(startNum + (day - 1)).padStart(width, '0');
-    }
-    const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
-    const m = pattern.match(rangeRegex);
-    if (m) {
-      const prefix1 = m[1], start1 = parseInt(m[2], 10);
-      const prefix2 = m[3], end1 = parseInt(m[4], 10);
-      if (prefix1 !== prefix2) return day => '';
-      const length = end1 - start1 + 1;
-      return day => {
-        const s1 = start1 + length * (day - 1);
-        const s2 = end1 + length * (day - 1);
-        return `${prefix1}${s1}-${prefix1}${s2}`;
-      };
-    }
-    const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
-    const m2 = pattern.match(singlePrefixNumRegex);
-    if (m2) {
-      const prefix = m2[1];
-      const startNum = parseInt(m2[2], 10);
-      const width = m2[2].length;
-      return day => `${prefix}${String(startNum + (day - 1)).padStart(width, '0')}`;
-    }
-    return day => pattern;
-  }
-
-  // 生成学习和复习计划
-  function generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet) {
-    const reviewCycle = reviewDaysArr.map(x => parseInt(x)).filter(x => !isNaN(x)).sort((a, b) => a - b);
-    const maxReviewOffset = reviewCycle.length > 0 ? reviewCycle[reviewCycle.length - 1] : 0;
-    const plan = {};
-
-    let effectiveStudyDay = 0; // 已完成学习天数
-    let calendarDay = 1;       // 实际日历天数
-
-    while (effectiveStudyDay < totalDays) {
-      const dateStr = formatDateFull(addDays(startDateStr, calendarDay - 1));
-      const isRest = restDaySet.has(dateStr); // 判断是否休息日
-      if (!plan[dateStr]) plan[dateStr] = {review: [], study: []};
-
-      if (!isRest) {
-        effectiveStudyDay++;
-        const studyDay = effectiveStudyDay;
-        plan[dateStr].study.push(studyDay);
-
-        // 生成复习计划
-        reviewCycle.forEach(offset => {
-          if (offset === 0) return;
-          const reviewDateStr = formatDateFull(addDays(startDateStr, calendarDay + offset - 1));
-          if (!plan[reviewDateStr]) plan[reviewDateStr] = {review: [], study: []};
-          plan[reviewDateStr].review.push(studyDay);
-        });
-      }
-      calendarDay++;
+    // 日期加天数
+    function addDays(date, days) {
+        const d = new Date(date);
+        d.setDate(d.getDate() + days);
+        return d;
     }
 
-    // 补齐复习尾巴
-    const lastCalendarDay = calendarDay + maxReviewOffset;
-    for (let d = calendarDay; d <= lastCalendarDay; d++) {
-      const dateStr = formatDateFull(addDays(startDateStr, d - 1));
-      if (!plan[dateStr]) plan[dateStr] = {review: [], study: []};
+    // 格式化日期为 YYYY-MM-DD
+    function formatDateFull(d) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
     }
-    return plan;
-  }
 
-  // 学习内容 map
-  let studyContentMap = {};
+    // 创建学习内容生成器
+    function createPatternGenerator(pattern) {
+        pattern = pattern.trim();
+        if (!pattern) return day => '';
+        if (/^\d+$/.test(pattern)) {
+            const width = pattern.length;
+            const startNum = parseInt(pattern, 10);
+            return day => String(startNum + (day - 1)).padStart(width, '0');
+        }
+        const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
+        const m = pattern.match(rangeRegex);
+        if (m) {
+            const prefix1 = m[1], start1 = parseInt(m[2], 10);
+            const prefix2 = m[3], end1 = parseInt(m[4], 10);
+            if (prefix1 !== prefix2) return day => '';
+            const length = end1 - start1 + 1;
+            return day => {
+                const s1 = start1 + length * (day - 1);
+                const s2 = end1 + length * (day - 1);
+                return `${prefix1}${s1}-${prefix1}${s2}`;
+            };
+        }
+        const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
+        const m2 = pattern.match(singlePrefixNumRegex);
+        if (m2) {
+            const prefix = m2[1];
+            const startNum = parseInt(m2[2], 10);
+            const width = m2[2].length;
+            return day => `${prefix}${String(startNum + (day - 1)).padStart(width, '0')}`;
+        }
+        return day => pattern;
+    }
 
-  // 初始化学习内容 map
-  function initStudyContentMap(patternGenerator, totalDays) {
-    studyContentMap = {};
-    for (let i = 1; i <= totalDays; i++) { studyContentMap[i] = patternGenerator(i); }
-  }
+    // 生成学习和复习计划
+    function generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet) {
+        const reviewCycle = reviewDaysArr.map(x => parseInt(x)).filter(x => !isNaN(x)).sort((a, b) => a - b);
+        const maxReviewOffset = reviewCycle.length > 0 ? reviewCycle[reviewCycle.length - 1] : 0;
+        const plan = {};
 
-  // 渲染日历
-  function renderCalendar(startDateStr, plan, restDaySet, snapshotMode = false) {
-    const dates = Object.keys(plan).sort();
-    if (dates.length === 0) return '';
-    const firstDate = new Date(dates[0]);
-    const lastDate = new Date(dates[dates.length - 1]);
-    const startDay = firstDate.getDay();
-    const calendarStartDate = addDays(firstDate, -startDay);
-    const endDay = lastDate.getDay();
-    const calendarEndDate = addDays(lastDate, 6 - endDay);
-    const totalDays = Math.round((calendarEndDate - calendarStartDate) / (1000 * 60 * 60 * 24)) + 1;
-    let html = '';
-    html += `<div class="weekdays">`;
-    weekdays.forEach(w => html += `<div class="weekday">${w}</div>`);
-    html += `</div>`;
+        let effectiveStudyDay = 0; // 已完成学习天数
+        let calendarDay = 1;       // 实际日历天数
 
-    for (let i = 0; i < totalDays; i++) {
-      if (i % 7 === 0) {
-        if (i !== 0) html += `</div>`;
-        html += `<div class="week">`;
-      }
-      const dateObj = addDays(calendarStartDate, i);
-      const dateStr = formatDateFull(dateObj);
-      if (plan[dateStr]) {
-        const reviews = plan[dateStr].review.map(r => studyContentMap[r] ? `Review: ${studyContentMap[r]}` : '').filter(x => x !== '').join('\n');
-        const studies = plan[dateStr].study.length ? plan[dateStr].study.map(s => studyContentMap[s] || '') : [];
-        if (snapshotMode) {
-          html += `<div class="day">
+        while (effectiveStudyDay < totalDays) {
+            const dateStr = formatDateFull(addDays(startDateStr, calendarDay - 1));
+            const isRest = restDaySet.has(dateStr); // 判断是否休息日
+            if (!plan[dateStr]) plan[dateStr] = {review: [], study: []};
+
+            if (!isRest) {
+                effectiveStudyDay++;
+                const studyDay = effectiveStudyDay;
+                plan[dateStr].study.push(studyDay);
+
+                // 生成复习计划
+                reviewCycle.forEach(offset => {
+                    if (offset === 0) return;
+                    const reviewDateStr = formatDateFull(addDays(startDateStr, calendarDay + offset - 1));
+                    if (!plan[reviewDateStr]) plan[reviewDateStr] = {review: [], study: []};
+                    plan[reviewDateStr].review.push(studyDay);
+                });
+            }
+            calendarDay++;
+        }
+
+        // 补齐复习尾巴
+        const lastCalendarDay = calendarDay + maxReviewOffset;
+        for (let d = calendarDay; d <= lastCalendarDay; d++) {
+            const dateStr = formatDateFull(addDays(startDateStr, d - 1));
+            if (!plan[dateStr]) plan[dateStr] = {review: [], study: []};
+        }
+        return plan;
+    }
+
+    // 学习内容 map
+    let studyContentMap = {};
+
+    // 初始化学习内容 map
+    function initStudyContentMap(patternGenerator, totalDays) {
+        studyContentMap = {};
+        for (let i = 1; i <= totalDays; i++) {
+            studyContentMap[i] = patternGenerator(i);
+        }
+    }
+
+    // 渲染日历
+    function renderCalendar(startDateStr, plan, restDaySet, snapshotMode = false) {
+        const dates = Object.keys(plan).sort();
+        if (dates.length === 0) return '';
+        const firstDate = new Date(dates[0]);
+        const lastDate = new Date(dates[dates.length - 1]);
+        const startDay = firstDate.getDay();
+        const calendarStartDate = addDays(firstDate, -startDay);
+        const endDay = lastDate.getDay();
+        const calendarEndDate = addDays(lastDate, 6 - endDay);
+        const totalDays = Math.round((calendarEndDate - calendarStartDate) / (1000 * 60 * 60 * 24)) + 1;
+        let html = '';
+        html += `<div class="weekdays">`;
+        weekdays.forEach(w => html += `<div class="weekday">${w}</div>`);
+        html += `</div>`;
+
+        for (let i = 0; i < totalDays; i++) {
+            if (i % 7 === 0) {
+                if (i !== 0) html += `</div>`;
+                html += `<div class="week">`;
+            }
+            const dateObj = addDays(calendarStartDate, i);
+            const dateStr = formatDateFull(dateObj);
+            if (plan[dateStr]) {
+                const reviews = plan[dateStr].review.map(r => studyContentMap[r] ? `Review: ${studyContentMap[r]}` : '').filter(x => x !== '').join('\n');
+                const studies = plan[dateStr].study.length ? plan[dateStr].study.map(s => studyContentMap[s] || '') : [];
+                if (snapshotMode) {
+                    html += `<div class="day">
           <div class="date">${dateStr}</div>
           <div class="review">${reviews}</div>
           ${studies.length ? `<div class="study">Study: ${studies[0] || ''}</div>` : ''}
         </div>`;
-        } else {
-          html += `<div class="day">
+                } else {
+                    html += `<div class="day">
           <div class="date">${dateStr}</div>
           <div class="review">${reviews}</div>
           ${studies.length ? `<div class="study">
@@ -235,166 +240,171 @@
             <input type="text" data-study-day="${plan[dateStr].study[0]}" value="${studies[0] || ''}" placeholder="编辑学习内容" autocomplete="off" />
           </div>` : ''}
         </div>`;
+                }
+            } else {
+                html += `<div class="day"><div class="date">${dateStr}</div></div>`;
+            }
         }
-      } else {
-        html += `<div class="day"><div class="date">${dateStr}</div></div>`;
-      }
-    }
-    html += `</div>`;
-    return html;
-  }
-
-  // 生成并渲染
-  function generateAndRender() {
-    const startDateStr = document.getElementById('startDate').value;
-    const reviewCycleStr = document.getElementById('reviewCycle').value;
-    const totalDays = parseInt(document.getElementById('totalDays').value);
-    const pattern = document.getElementById('patternInput').value.trim();
-
-    // 休息日 YYYY-MM-DD 格式
-    const restDays = document.getElementById('restDays').value.trim().split(',').map(x => x.trim()).filter(x => x);
-    const restDaySet = new Set(restDays);
-
-    if (!startDateStr || !reviewCycleStr || !totalDays || totalDays <= 0) {
-      alert('请填写有效的开始日期、复习周期和学习天数');
-      return;
-    }
-    if (!pattern) {
-      alert('请填写学习内容 Pattern');
-      return;
+        html += `</div>`;
+        return html;
     }
 
-    const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
-    const patternGenerator = createPatternGenerator(pattern);
+    // 生成并渲染
+    function generateAndRender() {
+        const startDateStr = document.getElementById('startDate').value;
+        const reviewCycleStr = document.getElementById('reviewCycle').value;
+        const totalDays = parseInt(document.getElementById('totalDays').value);
+        const pattern = document.getElementById('patternInput').value.trim();
 
-    initStudyContentMap(patternGenerator, totalDays);
-    const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
-    document.getElementById('calendar').innerHTML = renderCalendar(startDateStr, plan, restDaySet, false);
-    bindInputEvents(restDaySet);
-  }
+        // 休息日 YYYY-MM-DD 格式
+        const restDays = document.getElementById('restDays').value.trim().split(',').map(x => x.trim()).filter(x => x);
+        const restDaySet = new Set(restDays);
 
-  // 绑定输入事件
-  function bindInputEvents(restDaySet) {
-    const autoIncCheckbox = document.getElementById('autoIncrement');
-    const inputs = document.querySelectorAll('#calendar input[type="text"]');
-    inputs.forEach(input => {
-      input.addEventListener('input', e => {
-        const studyDay = parseInt(input.dataset.studyDay);
-        const newVal = input.value.trim();
-        if (!studyDay) return;
-        studyContentMap[studyDay] = newVal || studyContentMap[studyDay];
-        if (autoIncCheckbox.checked) {
-          updateStudyAfter(studyDay, newVal, restDaySet);
-          rerenderCalendarKeepFocus(studyDay, input, restDaySet);
+        if (!startDateStr || !reviewCycleStr || !totalDays || totalDays <= 0) {
+            alert('请填写有效的开始日期、复习周期和学习天数');
+            return;
         }
-      });
-    });
-  }
+        if (!pattern) {
+            alert('请填写学习内容 Pattern');
+            return;
+        }
 
-  // 自动递增更新后续学习内容
-  function updateStudyAfter(startDay, startVal, restDaySet) {
-    const totalDays = Object.keys(studyContentMap).length;
-    const findNext = (day) => {
-      let next = day + 1;
-      return next <= totalDays ? next : null;
+        const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
+        const patternGenerator = createPatternGenerator(pattern);
+
+        initStudyContentMap(patternGenerator, totalDays);
+        const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
+        document.getElementById('calendar').innerHTML = renderCalendar(startDateStr, plan, restDaySet, false);
+        bindInputEvents(restDaySet);
+    }
+
+    // 绑定输入事件
+    function bindInputEvents(restDaySet) {
+        const autoIncCheckbox = document.getElementById('autoIncrement');
+        const inputs = document.querySelectorAll('#calendar input[type="text"]');
+        inputs.forEach(input => {
+            input.addEventListener('input', e => {
+                const studyDay = parseInt(input.dataset.studyDay);
+                const newVal = input.value.trim();
+                if (!studyDay) return;
+                studyContentMap[studyDay] = newVal || studyContentMap[studyDay];
+                if (autoIncCheckbox.checked) {
+                    updateStudyAfter(studyDay, newVal, restDaySet);
+                    rerenderCalendarKeepFocus(studyDay, input, restDaySet);
+                }
+            });
+        });
+    }
+
+    // 自动递增更新后续学习内容
+    function updateStudyAfter(startDay, startVal, restDaySet) {
+        const totalDays = Object.keys(studyContentMap).length;
+        const findNext = (day) => {
+            let next = day + 1;
+            return next <= totalDays ? next : null;
+        };
+
+        const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
+        const mStart = startVal.match(rangeRegex);
+        if (/^\d+$/.test(startVal)) {
+            const valNum = parseInt(startVal, 10);
+            let prevVal = valNum, day = startDay;
+            while (true) {
+                const nextDay = findNext(day);
+                if (!nextDay) break;
+                prevVal++;
+                studyContentMap[nextDay] = String(prevVal).padStart(startVal.length, '0');
+                day = nextDay;
+            }
+        } else if (mStart) {
+            const prefix1 = mStart[1], start1 = parseInt(mStart[2], 10), prefix2 = mStart[3],
+                end1 = parseInt(mStart[4], 10);
+            if (prefix1 === prefix2) {
+                const length = end1 - start1 + 1;
+                let day = startDay;
+                let s1 = start1;
+                let s2 = end1;
+                while (true) {
+                    const nextDay = findNext(day);
+                    if (!nextDay) break;
+                    s1 += length;
+                    s2 += length;
+                    studyContentMap[nextDay] = `${prefix1}${s1}-${prefix1}${s2}`;
+                    day = nextDay;
+                }
+            }
+        } else {
+            const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
+            const m2 = startVal.match(singlePrefixNumRegex);
+            if (m2) {
+                const prefix = m2[1];
+                let num = parseInt(m2[2], 10);
+                const width = m2[2].length;
+                let day = startDay;
+                while (true) {
+                    const nextDay = findNext(day);
+                    if (!nextDay) break;
+                    num++;
+                    studyContentMap[nextDay] = `${prefix}${String(num).padStart(width, '0')}`;
+                    day = nextDay;
+                }
+            }
+        }
+    }
+
+    // 保留焦点重新渲染
+    function rerenderCalendarKeepFocus(focusStudyDay, focusedInput, restDaySet) {
+        const startDateStr = document.getElementById('startDate').value;
+        const reviewCycleStr = document.getElementById('reviewCycle').value;
+        const totalDays = parseInt(document.getElementById('totalDays').value);
+        const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
+        const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
+        const calendarContainer = document.getElementById('calendar');
+        const html = renderCalendar(startDateStr, plan, restDaySet, false);
+        calendarContainer.innerHTML = html;
+        const inputs = document.querySelectorAll(`#calendar input[data-study-day="${focusStudyDay}"]`);
+        inputs.forEach(input => {
+            input.focus();
+            if (focusedInput.selectionStart != null && focusedInput.selectionEnd != null) {
+                input.setSelectionRange(focusedInput.selectionStart, focusedInput.selectionEnd);
+            }
+        });
+        bindInputEvents(restDaySet);
+    }
+
+    // 导出日历快照为图片
+    async function exportCalendarAsImage() {
+        const calendarContainer = document.getElementById('calendar');
+        const startDateStr = document.getElementById('startDate').value;
+        const reviewCycleStr = document.getElementById('reviewCycle').value;
+        const totalDays = parseInt(document.getElementById('totalDays').value);
+        const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
+        const restDays = document.getElementById('restDays').value.trim().split(',').map(x => x.trim()).filter(x => x);
+        const restDaySet = new Set(restDays);
+        const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
+        const snapshotHTML = renderCalendar(startDateStr, plan, restDaySet, true);
+        const oldHTML = calendarContainer.innerHTML;
+        const oldClass = calendarContainer.className;
+        calendarContainer.innerHTML = snapshotHTML;
+        calendarContainer.className = 'snapshot';
+        await new Promise(r => setTimeout(r, 100));
+        html2canvas(calendarContainer, {backgroundColor: '#fff', scale: 2, useCORS: true}).then(canvas => {
+            calendarContainer.innerHTML = oldHTML;
+            calendarContainer.className = oldClass;
+            bindInputEvents(restDaySet);
+            const link = document.createElement('a');
+            link.download = `学习复习计划_${startDateStr}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    }
+
+    // 事件绑定
+    document.getElementById('generate').addEventListener('click', generateAndRender);
+    document.getElementById('snapshotBtn').addEventListener('click', exportCalendarAsImage);
+    window.onload = () => {
+        generateAndRender();
     };
-
-    const rangeRegex = /^([a-zA-Z]*)(\d+)-([a-zA-Z]*)(\d+)$/;
-    const mStart = startVal.match(rangeRegex);
-    if (/^\d+$/.test(startVal)) {
-      const valNum = parseInt(startVal, 10);
-      let prevVal = valNum, day = startDay;
-      while (true) {
-        const nextDay = findNext(day);
-        if (!nextDay) break;
-        prevVal++;
-        studyContentMap[nextDay] = String(prevVal).padStart(startVal.length, '0');
-        day = nextDay;
-      }
-    } else if (mStart) {
-      const prefix1 = mStart[1], start1 = parseInt(mStart[2], 10), prefix2 = mStart[3], end1 = parseInt(mStart[4], 10);
-      if (prefix1 === prefix2) {
-        const length = end1 - start1 + 1;
-        let day = startDay;
-        let s1 = start1;
-        let s2 = end1;
-        while (true) {
-          const nextDay = findNext(day);
-          if (!nextDay) break;
-          s1 += length;
-          s2 += length;
-          studyContentMap[nextDay] = `${prefix1}${s1}-${prefix1}${s2}`;
-          day = nextDay;
-        }
-      }
-    } else {
-      const singlePrefixNumRegex = /^([a-zA-Z]*)(\d+)$/;
-      const m2 = startVal.match(singlePrefixNumRegex);
-      if (m2) {
-        const prefix = m2[1];
-        let num = parseInt(m2[2], 10);
-        const width = m2[2].length;
-        let day = startDay;
-        while (true) {
-          const nextDay = findNext(day);
-          if (!nextDay) break;
-          num++;
-          studyContentMap[nextDay] = `${prefix}${String(num).padStart(width, '0')}`;
-          day = nextDay;
-        }
-      }
-    }
-  }
-
-  // 保留焦点重新渲染
-  function rerenderCalendarKeepFocus(focusStudyDay, focusedInput, restDaySet) {
-    const startDateStr = document.getElementById('startDate').value;
-    const reviewCycleStr = document.getElementById('reviewCycle').value;
-    const totalDays = parseInt(document.getElementById('totalDays').value);
-    const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
-    const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
-    const calendarContainer = document.getElementById('calendar');
-    const html = renderCalendar(startDateStr, plan, restDaySet, false);
-    calendarContainer.innerHTML = html;
-    const inputs = document.querySelectorAll(`#calendar input[data-study-day="${focusStudyDay}"]`);
-    inputs.forEach(input => {
-      input.focus();
-      if (focusedInput.selectionStart != null && focusedInput.selectionEnd != null) { input.setSelectionRange(focusedInput.selectionStart, focusedInput.selectionEnd); }
-    });
-    bindInputEvents(restDaySet);
-  }
-
-  // 导出日历快照为图片
-  async function exportCalendarAsImage() {
-    const calendarContainer = document.getElementById('calendar');
-    const startDateStr = document.getElementById('startDate').value;
-    const reviewCycleStr = document.getElementById('reviewCycle').value;
-    const totalDays = parseInt(document.getElementById('totalDays').value);
-    const reviewDaysArr = reviewCycleStr.split(',').map(s => s.trim());
-    const restDays = document.getElementById('restDays').value.trim().split(',').map(x => x.trim()).filter(x => x);
-    const restDaySet = new Set(restDays);
-    const plan = generatePlan(startDateStr, reviewDaysArr, totalDays, restDaySet);
-    const snapshotHTML = renderCalendar(startDateStr, plan, restDaySet, true);
-    const oldHTML = calendarContainer.innerHTML;
-    const oldClass = calendarContainer.className;
-    calendarContainer.innerHTML = snapshotHTML;
-    calendarContainer.className = 'snapshot';
-    await new Promise(r => setTimeout(r, 100));
-    html2canvas(calendarContainer, {backgroundColor: '#fff', scale: 2, useCORS: true}).then(canvas => {
-      calendarContainer.innerHTML = oldHTML;
-      calendarContainer.className = oldClass;
-      bindInputEvents(restDaySet);
-      const link = document.createElement('a');
-      link.download = `学习复习计划_${startDateStr}.png`;
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    });
-  }
-
-  // 事件绑定
-  document.getElementById('generate').addEventListener('click', generateAndRender);
-  document.getElementById('snapshotBtn').addEventListener('click', exportCalendarAsImage);
-  window.onload = () => { generateAndRender(); };
 </script>
 </body>
 </html>
