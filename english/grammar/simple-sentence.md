@@ -96,5 +96,42 @@
     - Yes, new technology <u>has been eating</u> jobs forever, and always will.
 3. 将来完成进行时：谓语动词 == **will have been + doing**
 
+### 谓语动词情态
+
+- 情态 == 情绪 + 态度
+
+| 现在时       | 过去时    |
+|-----------|--------|
+| must      | -      |
+| can       | could  |
+| will      | would  |
+| ~~shall~~ | should |
+| may       | might  |
+
+#### 特点
+
+- 情态动词 + 动词原形
+- could/would/should/might 除了表示过去时之外，还可以表示一种更委婉和客气的语气
+- 情态动词永远用原形
+- 情态动词变否定，直接后面加 not
+- 情态动词变疑问，直接提到主语前
+
+#### 情态动词表示"情态"
+
+| 情态动词             | 含义                   |
+|------------------|----------------------|
+| must             | 必须                   |
+| can/could        | 能够/可以                |
+| will/would       | 愿意/将要（表示"将要"常用于将来时态） |
+| may/might        | 可以/可能                |
+| ~~shall~~/should | 应该                   |
+
+#### 情态动词表示"推测"
+
+| 情态动词                        | 含义                |
+|-----------------------------|-------------------|
+| must                        | 推测可能性最高，表示"肯定、一定" |
+| will/would/may/might/should | 表示"可能、也许"         |
+| can't/could't               | 推测可能性最低，表示"不可能"   |
 
 
