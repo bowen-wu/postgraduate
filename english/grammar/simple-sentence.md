@@ -30,6 +30,8 @@
 
 时态 == 时间(过去、现在、将来、过去将来) + 状态(一般、进行、完成、完成进行)
 
+![tense.jpeg](https://youke1.picui.cn/s1/2025/08/27/68af27bde36cc.jpeg)
+
 #### 一般状态
 
 表达事情发生在这个时间段内
@@ -62,7 +64,7 @@
 1. 过去完成时：谓语动词 == **had + done**. 翻译成：过去的之前就已经.../过去的之前就...
     - 表示"站在**过去**的时间点回头看之前发生的一件事的完成结果"，强调（角度）：**"过去的之前"**
     - 过去完成时表达的是一个**时间段**，从"过去的之前"到"过去"
-        - Throughout the evening, on man <u>had been</u> particularly talkative. 整个晚上，有一位男士特别健谈
+        - Throughout the evening, one man <u>had been</u> particularly talkative. 整个晚上，有一位男士特别健谈
 2. 现在完成时：谓语动词 == **have/has + done**. 翻译成：现在的之前就已经.../现在的之前就...
     - 表示"站在**现在**的时间点回头看之前发生的一件事的完成结果"，强调（角度）：**"现在的之前"**
     - 现在完成时表达的是一个**时间段**，从"现在的之前"到"现在"，即"从过去到现在"
@@ -90,7 +92,7 @@
 1. 过去完成进行时：谓语动词 == **had been + doing**. 翻译成：**在过去的之前就已经...**
     - 表达"过去的之前"发生的事情：过去完成时 vs 过去完成进行时
         - 过去完成时：**强调结果** => We <u>had</u> not <u>won</u> the match
-        - 过去完成进行时：**强调过程** => We <u>had been wroking</u> hard for several months.
+        - 过去完成进行时：**强调过程** => We <u>had been working</u> hard for several months.
 2. 现在完成进行时：谓语动词 == **have/has been + doing**. 翻译成：**在现在的之前就已经...**
     - 表达"现在的之前"发生的事情，且**强调过程**
     - Yes, new technology <u>has been eating</u> jobs forever, and always will.
