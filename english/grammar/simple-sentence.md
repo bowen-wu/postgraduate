@@ -26,6 +26,12 @@
    | look, sound, smell, taste, feel | 感官动词，看、听、闻、尝、感觉**起来**... | the soup taste good |
    | remain/keep+adj., seem+adj., prove | 保持某种状态 | you should keep calm |
 
+#### 主谓宾 vs 主谓宾补 vs 主谓双宾
+
+1. The teacher teaches English. -> 主谓宾
+2. The teacher teaches us English. -> 主谓双宾
+3. The teacher makes us knowledgeable. -> 主谓宾补
+
 ### 谓语动词时态
 
 时态 == 时间(过去、现在、将来、过去将来) + 状态(一般、进行、完成、完成进行)
@@ -160,6 +166,8 @@
 
 - 表示被动的动作发生在不同的时间里，就需要把被动语态与时态相结合，即把be变成对应的各种时态
 - 被动语态的句子中，表现时态变化的不是动作所对应的动词，而是把"be"变成对应的各种时态
+
+![被动语态 & 时态](https://uy.wzznft.com/i/2025/08/29/qspp7s.jpeg)
 
 #### 被动语态 & 情态
 
