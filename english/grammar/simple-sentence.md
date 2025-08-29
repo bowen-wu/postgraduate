@@ -160,7 +160,7 @@
 2. 确定"被动的时间"，把be变成对应的时态
 3. 根据主语，确定be动词的单复数
 4. 如果强调被动的动作发出者，即强调"被谁做"，可以在被动后加上"by + 动作的发出者或发出对象"
-   - The shortage <u>is compounded</u> *by* <u>federal immigration raids(联邦移民突击检查/突击搜捕)</u>... 
+    - The shortage <u>is compounded</u> *by* <u>federal immigration raids(联邦移民突击检查/突击搜捕)</u>...
 
 #### 被动语态 & 时态
 
@@ -172,3 +172,16 @@
 #### 被动语态 & 情态
 
 - 表示被动的动作想要与"情态"或"推测"相结合，则要把被动语态与情态动词相结合，即**"情态动词 + be done"**
+
+### 谓语动词否定
+
+1. 实义动词变否定前加助动词 do/does/did，再加 not，最后加动词原形: do/does/did + not + v.原形
+2. be动词、情态动词、完成时态中的 have/has/had 等变否定时，直接后面加 not
+3. 如果一个谓语动词中包含多个助动词或情态动词，否定加在第一个助动词或情态动词后
+    - I <u>will not be waiting</u> for you.
+
+### 谓语动词强调
+
+- 要想强调谓语动词部分，可直接在前面加上 do/does/did，然后把谓语动词变回原形
+- But science <u>does provide</u> us with the best available guide to the future...
+
