@@ -1,6 +1,6 @@
 # Simple Sentence
 
-## 简单句
+## Core
 
 ### 核心构成
 
@@ -85,7 +85,7 @@
     - 现在完成时 vs 一般过去时
         - 一般过去时只表示"过去"，而现在完成时表示"从过去到现在"这一时间段
         - He <u>has left</u>, so I cannot find him now.
-        - He <u>left</u> two hours age.
+        - He <u>left</u> two hours ago.
         - We <u>have learned</u> English for 15 years.
         - We <u>learned</u> English for 15 years.
 3. 将来完成时：谓语动词 == **will have + done**
@@ -167,7 +167,7 @@
 - 表示被动的动作发生在不同的时间里，就需要把被动语态与时态相结合，即把be变成对应的各种时态
 - 被动语态的句子中，表现时态变化的不是动作所对应的动词，而是把"be"变成对应的各种时态
 
-![被动语态 & 时态](https://uy.wzznft.com/i/2025/08/29/qspp7s.jpeg)
+![被动语态 & 时态](https://uy.wzznft.com/i/2025/09/02/n833l5.jpeg)
 
 #### 被动语态 & 情态
 
@@ -182,6 +182,22 @@
 
 ### 谓语动词强调
 
-- 要想强调谓语动词部分，可直接在前面加上 do/does/did，然后把谓语动词变回原形
+- 要想强调谓语动词部分，可直接在前面加上 do/does/did，然后把谓语动词变回原形。翻译：的确、确实
 - But science <u>does provide</u> us with the best available guide to the future...
 
+## Extend
+
+### 限定词
+
+名词前常常用限定词来修饰限定。限定词主要包括:
+
+- 冠词: <u>an</u> </u>emergency</u> meeting
+- 数词
+    - 基数词
+    - 序数词: <u>the third</u> generation
+    - 百分比: <u>41 percent</u> of Asian-American women
+    - 分数：分子用基数词，分母用序数词
+        - 1/3: <u>one third</u> of Hispanic women
+        - 2/3: two third**s**
+- 名词所有格: <u>America's</u> Federal Trade Commission
+- 名词: <u>flu</u> experts

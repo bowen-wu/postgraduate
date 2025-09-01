@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{article}
+
+% =========================
+% 字体设置
+% =========================
+\usepackage{xeCJK}               % 中文支持
+\usepackage{fontspec}            % 英文/数学字体支持
+
+\setmainfont{Times New Roman}    % 英文正文字体
+\setsansfont{Helvetica Neue}     % 英文无衬线字体
+\setmonofont{Menlo}              % 英文等宽字体（代码）
+
+\setCJKmainfont{PingFang SC}    % 中文正文字体
+
+% =========================
+% 数学公式和图形
+% =========================
+\usepackage{amsmath}             % 高级数学公式
+\usepackage{graphicx}            % 图片插入
+
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+    \title{Hello LaTeX}
+    \author{George Wu}
+    \date{\today}
+    \maketitle
+
+% =========================
+% 正文示例
+% =========================
+
+
+    \section{Introduction}
+    This is the Introduction
+
+
+    \section{Methods}
+
+    \subsection{Stage 1}
+    The first part of the methods
+
+    \subsection{Stage 2}
+    The second part of the methods.
+
+
+    \section{Results}
+    Here are my results.
+    你好，\LaTeX
+
+% =========================
+% 字体测试
+% =========================
+    \section*{字体测试 (Font Test)}
+    中文正文：这是苹方字体。
+    English text: This is Times New Roman.
+    \textsf{This is Helvetica Neue (sans-serif).}
+    \texttt{This is Menlo (monospace).}
+
+% =========================
+% 希腊字母
+% =========================
+    \section*{希腊字母}
+    α (alpha):\alpha
+    β (beta):\beta
+    δ (delta):\delta
+    π (pi): \pi
+
+% =========================
+% 二元运算符
+% =========================
+    \section*{二元运算符}
+    ± (plus-minus):\pm
+
+    × (times):\times
+
+    ÷ (division):\div
+
+    · (dot operator):\dot
+
+    ^ (logical AND):\wedge
+
+% =========================
+% 二元关系符
+% =========================
+    \section*{二元关系符}
+    < (less than):< \\
+    > (greater than): > \\
+    ≤ (less than or equal to): \le \\
+    ≥ (greater than or equal to):\ge \\
+    ≈ (approximately equal to):\approx \\
+
+% =========================
+% 求和、积分等“大”运算符
+% =========================
+    \section*{求和、积分等“大”运算符} \\[0.5]
+    ∞ (infinity):\infty \\[0.5]
+    √ (square root):\sqrt{} \\[4]
+    ³√ (cube root):\sqrt[3]{} \\[0.5]
+    ̅ (overline):\overline{A} \\[0.5]
+
+% =========================
+% 数学公式测试
+% =========================
+    \section*{公式测试 (Math Test)}
+    行内公式：$a^2 + b^2 = c^2$
+
+    次方根：\sqrt[3]{9}
+
+    行间公式：
+    \[
+        \int_0^{\pi} \sin(x)\, dx = 2
+    \]
+
+    矩阵示例：
+    \[
+        A = \begin{bmatrix}
+                1 & 2 & 3 \\
+                4 & 5 & 6 \\
+                7 & 8 & 9
+        \end{bmatrix}
+    \]
+
+% =========================
+% 图形测试
+% =========================
+    \section*{图形测试 (Graphics Test)}
+    插入示意图：
+
+    \includegraphics[width=1\linewidth]{tense.jpeg}
+
+\end{document}
