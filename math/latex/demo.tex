@@ -1,23 +1,22 @@
 \documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{float}          % 更灵活的浮动体控制
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % =========================
 % 字体设置
 % =========================
-\usepackage{xeCJK}               % 中文支持
-\usepackage{fontspec}            % 英文/数学字体支持
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
 
-\setmainfont{Times New Roman}    % 英文正文字体
-\setsansfont{Helvetica Neue}     % 英文无衬线字体
-\setmonofont{Menlo}              % 英文等宽字体（代码）
-
-\setCJKmainfont{PingFang SC}    % 中文正文字体
-
-% =========================
-% 数学公式和图形
-% =========================
-\usepackage{amsmath}             % 高级数学公式
-\usepackage{graphicx}            % 图片插入
-
+\usepackage{booktabs}            % 图片插入
 \graphicspath{{./assets/}}
 
 % =========================
@@ -25,33 +24,10 @@
 % =========================
 \begin{document}
 
-    \title{Hello LaTeX}
-    \author{George Wu}
+    \title{LateX Guide}
+    \author{Bowen}
     \date{\today}
     \maketitle
-
-% =========================
-% 正文示例
-% =========================
-
-
-    \section{Introduction}
-    This is the Introduction
-
-
-    \section{Methods}
-
-    \subsection{Stage 1}
-    The first part of the methods
-
-    \subsection{Stage 2}
-    The second part of the methods.
-
-
-    \section{Results}
-    Here are my results.
-    你好，\LaTeX
-
 % =========================
 % 字体测试
 % =========================
@@ -62,13 +38,138 @@
     \texttt{This is Menlo (monospace).}
 
 % =========================
+% LaTex 空格
+% =========================
+
+
+    \section{Space}
+
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{命令}   & \textbf{说明}       \\
+        \midrule
+        \verb|\,|     & 很小的空格（thin space） \\
+        \verb|\:|     & 小空格（medium space） \\
+        \verb|\;|     & 厚空格（thick space）  \\
+        \verb|\quad|  & 较宽的空格，相当于字母“M”的宽度 \\
+        \verb|\qquad| & 更宽的空格，相当于两个 \quad \\
+    \end{tabular}
+
+% =========================
+% LaTex 数学语法
+% =========================
+
+
+    \section{Math Grammar}
+
+    \subsection{基本数学符号}
+
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{功能} & \textbf{LaTeX}     & \textbf{显示}              \\
+        \midrule
+        上标          & x^2                & x2x^2                    \\
+        下标          & a_i                & aia_i                    \\
+        分数          & $\frac{a}{b}$      &                          \\
+        根号          & \sqrt{x}           & x\sqrt{x}                \\
+        n次根         & $\sqrt[n]{x}$      &                          \\
+        加减乘除        & + -  \times \div     & 加减乘除                     \\
+        左乘          & \cdot              & 左乘                       \\
+        等号与不等号      & = \neq \le \ge < > & =≠≤≥<>= \neq \le \ge < > \\
+        省略号         & \dots              & 横向                       \\
+        省略号         & \cdots             & 中点                       \\
+        省略号         & \vdots             & 竖向                       \\
+        省略号         & \ddots             & 斜向                       \\
+        \bottomrule
+    \end{tabular}
+
+    \subsection{基础}
+    行内公式
+
+    \( a^2 + b^2 = c^2 \) \qquad $ a^2 + b^2 = c^2 $
+
+    独立公式：
+
+    \[
+        \int_0^{\pi} \sin(x)\, dx = 2
+    \]
+
+    $$ a^2 + b^2 = c^2 $$
+
+    \subsection{上下标}
+
+    a_i, \; a^2, \; a_i^2, \; a_{ij}
+
+    \subsection{分数与根号}
+
+    \begin{itemize}
+        \item $\frac{a}{b}$, \; frac == fraction n. 分数;
+        \item \sqrt{x}, \; square root,
+        \item \sqrt[n]{x}
+    \end{itemize}
+
+    \subsection{求和与连乘}
+
+    \sum_{i=1}^n i, \quad \prod_{i=1}^n i, \;  prod == product
+
+    \subsection{积分与极限}
+
+    \int_0^1 x^2\, dx, \quad
+
+    解释： int → integral（积分符号 ∫）
+
+    \lim_{x \to \infty} f(x)
+
+    \subsection{行列式}
+
+    \[
+    \begin{vmatrix}
+        a & b \\ c & d
+    \end{vmatrix}
+    \]
+
+    \subsection{矩阵}
+
+    $$
+    \begin{bmatrix}
+        a & b \\ c & d
+    \end{bmatrix}
+    $$
+
+    \[
+        A = \begin{bmatrix}
+                1 & 2 & 3 \\
+                4 & 5 & 6 \\
+                7 & 8 & 9
+        \end{bmatrix}
+    \]
+
+    \subsection{特殊符号}
+    ∞: \infty, \\
+    ≤: \leq, \\
+    ≥: \geq, \\
+    ≠: \neq \\
+    ∈: \in, \\
+    ∉: \notin, \\
+    ⊆: \subseteq, \\
+    ∀: \forall, \\
+    ∃: \exists, \\
+    ≈:\approx,
+
+% =========================
 % 希腊字母
 % =========================
     \section*{希腊字母}
-    α (alpha):\alpha
-    β (beta):\beta
-    δ (delta):\delta
-    π (pi): \pi
+    α (alpha):\alpha, \;
+    β (beta):\beta, \;
+    γ: \gamma, \;
+    Δ: \Delta, \;
+    λ: \lambda, \;
+    π (pi): \pi, \;
+    σ: \sigma, \;
+    Ω: \Omega, \;
+    δ (delta):\delta, \;
+
 
 % =========================
 % 二元运算符
@@ -85,52 +186,58 @@
     ^ (logical AND):\wedge
 
 % =========================
-% 二元关系符
-% =========================
-    \section*{二元关系符}
-    < (less than):< \\
-    > (greater than): > \\
-    ≤ (less than or equal to): \le \\
-    ≥ (greater than or equal to):\ge \\
-    ≈ (approximately equal to):\approx \\
-
-% =========================
-% 求和、积分等“大”运算符
-% =========================
-    \section*{求和、积分等“大”运算符} \\[0.5]
-    ∞ (infinity):\infty \\[0.5]
-    √ (square root):\sqrt{} \\[4]
-    ³√ (cube root):\sqrt[3]{} \\[0.5]
-    ̅ (overline):\overline{A} \\[0.5]
-
-% =========================
-% 数学公式测试
-% =========================
-    \section*{公式测试 (Math Test)}
-    行内公式：$a^2 + b^2 = c^2$
-
-    次方根：\sqrt[3]{9}
-
-    行间公式：
-    \[
-        \int_0^{\pi} \sin(x)\, dx = 2
-    \]
-
-    矩阵示例：
-    \[
-        A = \begin{bmatrix}
-                1 & 2 & 3 \\
-                4 & 5 & 6 \\
-                7 & 8 & 9
-        \end{bmatrix}
-    \]
-
-% =========================
 % 图形测试
 % =========================
     \section*{图形测试 (Graphics Test)}
     插入示意图：
 
     \includegraphics[width=1\linewidth]{tense.jpeg}
+% =========================
+% 正文示例
+% =========================
+
+    \part{线性代数}
+
+    \chapter{行列式}
+
+    \section{基础}
+    \subsection{定义与性质}
+    \subsubsection{行列式的定义}
+    \subsubsection{行列式的基本性质}
+
+    \subsection{计算方法}
+    \subsubsection{按行/列展开}
+    \subsubsection{对角线法则（2×2, 3×3）}
+
+    \section{克拉默法则}
+    \subsection{线性方程组解法}
+    \subsubsection{唯一解情况}
+    \subsubsection{无解或无穷多解情况}
+
+    \chapter{矩阵}
+
+    \section{初等变换}
+    \subsection{初等行变换}
+    \subsubsection{交换两行}
+    \subsubsection{行倍加}
+    \subsubsection{行乘非零常数}
+
+    \subsection{初等列变换}
+    \subsubsection{交换两列}
+    \subsubsection{列倍加}
+    \subsubsection{列乘非零常数}
+
+    \section{伴随矩阵}
+    \subsection{伴随矩阵定义}
+    \subsubsection{余子式矩阵}
+    \subsubsection{转置操作}
+
+    \section{矩阵的秩}
+    \subsection{秩的定义}
+    \subsubsection{行秩与列秩}
+    \subsubsection{零矩阵的秩}
+    \subsection{秩的计算方法}
+    \subsubsection{初等变换法}
+    \subsubsection{阶梯形矩阵法}
 
 \end{document}
