@@ -209,20 +209,19 @@
 1. 做定语。修饰名词，位于名词前后: <u>imperial</u> palace
 2. 做表语（主系表）。补充说明主语（主语通常为名词），位于系动词后: This is <u>simple</u>.
 
-#### 副词修饰
+#### 副词修饰其他
 
 1. 副词修饰动词: We <u>sincerely</u> hope you can be the judge for our competition.
-2. 副词修饰句子: <u>Unfortunately</u>, I have recently been diagnosed with a serious ear infection which will require
-   surgery on the same day as my departure.
+2. 副词修饰句子: <u>Unfortunately</u>, I have recently been diagnosed with a serious ear infection which will require surgery on the same day as my departure.
 3. 副词修饰形容词: I'm <u>extremely</u> happy to learn you are coming to China
 4. 副词修饰其他副词: fairly quickly
 
 #### 形容词、副词三种比较级
 
-1. 原级比较: **as + 比较的内容（adj./adv.原型） + as + 比较的对象**。表示"*和...相比一样的...*"
-2. 比较级: **adj./adv. 的比较级（+ than 比较的对象）**。表示"*（和...相比）更...*"，通常用于两者之间的比较
+1. 原级比较: **as + 比较的内容（adj./adv.原型） + as + 比较的对象**。表示"*和...相比一样的...*": I am as tall as in the past.
+2. 比较级: **adj./adv. 的比较级（+ than 比较的对象）**。表示"*（和...相比）更...*"，通常用于两者之间的比较: mechines can perform much better at than human beings.
     - 比较级是在 adj./adv. 词尾加 -er 或前面加 more
-3. 最高级: **adj./adv. 的最高级（+介词短语表示比较的范围）**。表示"*（...范围内）最...*"，通常用于三者或以上的比较
+3. 最高级: **adj./adv. 的最高级（+介词短语表示比较的范围）**。表示"*（...范围内）最...*"，通常用于三者或以上的比较: it represents our greatest national security threat.
     - 最高级是在 adj./adv. 词尾加 -est 或前加 most，并且在前面再加上 the
 
 
