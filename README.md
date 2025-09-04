@@ -5,8 +5,5 @@
 
 ## LateX
 
-根目录执行：
-
-1. `xelatex -output-directory=math/latex ./math/latex/demo.tex`
-2. `xelatex -interaction=nonstopmode -output-directory=math/latex ./math/latex/demo.tex` (遇到错误也不停下来)
+根目录执行 `source compile_tex.sh` 可进行LaTex编译生成PDF文件
 

@@ -6,6 +6,7 @@
 \usepackage{hyperref}       % 目录超链接
 \usepackage{geometry}       % 页面布局
 \usepackage{float}          % 更灵活的浮动体控制
+\usepackage{bm}             % 粗体
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % =========================
@@ -56,6 +57,17 @@
     \end{tabular}
 
 % =========================
+% LaTex 粗体
+% =========================
+
+    \begin{itemize}
+        \item \textbf{这是粗体文字}
+        \item $\mathbf{A} + \mathbf{B} = \mathbf{C}$
+        \item $\bm{\alpha + \beta} = \gamma$
+        \item \textbf{这里有一个数学公式: } $\mathbf{A + B = C}$
+    \end{itemize}
+
+% =========================
 % LaTex 数学语法
 % =========================
 
@@ -80,6 +92,26 @@
         省略号         & \cdots             & 中点                       \\
         省略号         & \vdots             & 竖向                       \\
         省略号         & \ddots             & 斜向                       \\
+        \bottomrule
+    \end{tabular}
+
+    \subsection{逻辑推理符号}
+
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{LaTeX 命令} & \textbf{含义}      \\
+        \midrule
+        \to               & 映射/推出            \\
+        \rightarrow       & 推出               \\
+        \leftarrow        & 从…得出             \\
+        \Rightarrow       & 蕴含 / 正推          \\
+        \Leftarrow        & 蕴含 / 逆推          \\
+        \Leftrightarrow   & 等价 / 互推          \\
+        \implies          & 蕴含（amsmath 提供）   \\
+        \impliedby        & 被蕴含（amsmath 提供）  \\
+        \iff              & 当且仅当（amsmath 提供） \\
+        \vdash            & 可推出 / 证明         \\
+        \models           & 语义蕴含 / 满足关系      \\
         \bottomrule
     \end{tabular}
 

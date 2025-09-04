@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{线性代数}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+
+% =========================
+
+    \section{矩阵}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+        \item 设 $\mathbf{A}$ 是 $m \times n$ 矩阵，$\mathbf{B}$ 是 $n \times s$ 矩阵，若 $\mathbf{AB} = \mathbf{O}$，则
+        \begin{enumerate}
+            \item $\mathbf{B}$ 的列向量是其次方程组 $\mathbf{Ax} = 0$ 的解
+            \item $r(\mathbf{A}) + r(\mathbf{B}) \le n$
+        \end{enumerate}
+    \end{enumerate}
+
+
+\end{document}
