@@ -8,10 +8,10 @@
 
 #### 表示时间的介词
 
-- at: 时间点
-- on: 某一天 On July 29th
+- at: 时间点 at around 7:00
+- on: 某一天 on July 29th
 - in: 年月季节上午下午晚上 in March 2010
-- before/after before graduating
+- before/after: before graduating
 - from
 - since: since 1914
 - by: by 2025
@@ -80,3 +80,44 @@
 - as: as "the end of the world"
 - like:
 - despite == in spite of: 尽管 desipite the appeals court's decision 
+
+#### Words
+
+- relieved [rɪˈliːvd]
+    - adj. 感到宽慰的，放心的，不在忧虑的
+- formation
+    - n. 编队
+- patent [ˈpætnt]
+    - v. 取得专利；授予专利
+    - n. 专利证书；专利权；专利品
+- headhunter
+    - n. 猎头
+- inquality
+    - n. 不平等；不平均
+- silently
+    - adv. 静静地，默默地，不说话地
+- the link between A and B
+    - A 与 B 之间的联系
+- encyclapedia
+    - n. 百科全书
+- migration
+    - n. 移民；移居
+- expenditure [ɪkˈspendɪtʃər]
+    - n. 支出，开支，花费
+- perspective [pərˈspektɪv]
+    - n. (观察问题的)视角，观点
+    - from a ... perspective 从...角度
+- assemble
+    - v. 组装，装配；集合，聚集
+- popularise ['pɒpjʊləraɪz]
+    - v. 普及，推广；使通俗化
+- marketing trick
+    - 营销技巧
+- It take a while to do sth.
+    - 做某事需要花上一段时间
+- complex aspects of personality
+    - 性格的复杂方面
+- neuroticism [njʊr'rɒtəsɪzəm]
+    - n. 神经质，情绪不稳定性；神经过敏症
+- open-mindedness ['maɪndɪdnɪs]
+    - 思想开明
