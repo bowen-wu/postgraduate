@@ -81,7 +81,7 @@
 - like:
 - despite == in spite of: 尽管 desipite the appeals court's decision 
 
-#### Words
+### Words
 
 - relieved [rɪˈliːvd]
     - adj. 感到宽慰的，放心的，不在忧虑的

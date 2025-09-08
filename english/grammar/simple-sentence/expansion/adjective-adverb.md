@@ -30,7 +30,7 @@
     - <u>The most immediate</u> changes will be observed in skill level, strength and inches lost.
     - 最高级是在 adj./adv. 词尾加 -est 或前加 most，并且在前面再加上 the
 
-#### Word
+### Word
 
 - substitute
     - v. 替代，取代
