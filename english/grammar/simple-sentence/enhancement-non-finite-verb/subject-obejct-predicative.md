@@ -28,3 +28,38 @@
         - 句型: **It takes (sb.) some time to do sth.** (某人)花费多长时间做某事
 
 ### Words
+
+- amplify
+    - v. 扩大，增强
+- dominant
+    - adj. 首要的；统治的；有支配力的；占优势的
+- marketing strategy 营销策略
+- start a conversation 开始交谈
+- place emphasis on... 重视...，强调...
+- ruin
+    - v. 毁掉，毁坏
+- anticipate
+    - v. 预料，预期，预计
+- programming
+    - n. 编程，程序设计
+- plastic
+    - n. 塑料
+- It's easy for sb. to do sth. 对于某人来说，做某事是容易的
+- screen
+    - n. 屏幕
+- It takes a while th do sth. 做某事需要花上一段时间
+- complex aspects of personality 性格的复杂方面
+- live a life 过...生活
+- prize
+    - v. 高度重视，诊视；奖赏
+- milestone
+    - n. 里程碑；重大事件；重要阶段
+- objectivity
+    - n. 客观性，客观
+- external
+    - adj. 外部的，外界的
+- depart
+    - v. 离开；出发，启程
+- federation
+    - n. 联盟；联合；联邦
+- kill off all possibilities 扼杀一切可能性
