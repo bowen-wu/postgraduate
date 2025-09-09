@@ -27,6 +27,35 @@
     - <u>It</u> takes a while <u>to judge complex aspects of personality</u>...
         - 句型: **It takes (sb.) some time to do sth.** (某人)花费多长时间做某事
 
+### 非谓语动词 doing/to do 做宾语
+
+- 宾语成分位置: 动宾 & 介宾
+
+#### 动宾
+
+- 位于**及物动词**后。doing/to do 取决于及物动词
+    - enjoy + doing
+    - want + to do: They really want <u>to live their lives</u>...
+    - begin + doing/to do
+- to do 作宾语可以后置，用 it 形式主语来占位置。后置条件：真正的宾语 to do 词组较长 & 主谓宾补句型中
+    - Today many people find <u>it</u> difficult <u>to trust their own opinion and seek balance by gaining objectivity from external sources.</u>
+
+#### 介宾
+
+- 位于**介词**后。此处只能使用 *doing*，不能使用 to do
+- Thinking is essentially a process of <u>making connections in the brain</u>.
+
+### 非谓语动词 doing/to do 做表语
+
+- to do 作表语，位于系动词后，通常是 be 动词后
+- The idea is <u>to create a federation of private online identity system</u>.
+- 注：主系表结构中，主语和表语都可以使用非谓语动词 doing/to do。前后同时使用时，保持一致
+    - Seeing is believing.
+    - To see is to believe.
+    - ~~Seeing is to believe.~~
+    - ~~To see is believing.~~
+    - ...<u>to decide</u> is <u>to kill off all possibilities but one</u>...
+
 ### Words
 
 - amplify

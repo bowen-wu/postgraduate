@@ -4,7 +4,8 @@
 
 ### 介词短语
 
-- 介词短语 == prep. + n./代词(宾格)/动名词(doing)
+- 介词短语(介宾短语。后面接的成分做**宾语**) == prep. + **n./代词(宾格)/动名词(doing)**
+- **n./代词(宾格)/动名词(doing)**: 宾语
 
 #### 表示时间的介词
 
@@ -33,7 +34,8 @@
 - near:
 - by/next to:
 - beside: beside him on the couch
-- between/among: Yet the link <u>between</u> feeling good <u>and</u> *spending money on others* can be seen <u>among rich and poor people</u>.
+- between/among: Yet the link <u>between</u> feeling good <u>and</u> *spending money on others* can be seen <u>among
+  rich and poor people</u>.
 - among:
 - around
 - into: into my mind
@@ -62,7 +64,6 @@
 - beyond
 - within
 
-
 #### 其他用法的介词
 
 - of:
@@ -79,7 +80,7 @@
     - <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since 1980</u>
 - as: as "the end of the world"
 - like:
-- despite == in spite of: 尽管 desipite the appeals court's decision 
+- despite == in spite of: 尽管 desipite the appeals court's decision
 
 ### Words
 
