@@ -21,11 +21,11 @@
     - v. 使转变，转换；改变，改造
 - for the benefit of sb.
     - 为了某人的利益，为了帮助某人
-- widow
+- widow [ˈwɪdoʊ]
     - n. 寡妇
-- coalition
+- coalition [ˌkoʊəˈlɪʃn]
     - n. 联盟，联合体；结合，合并
-- monitor
+- monitor [ˈmɑːnɪtər]
     - v. 监督；监控
     - n. 监视器，监控器，显示屏
 - file
@@ -35,9 +35,9 @@
 - unique
     - adj. 独特的，稀罕的，唯一的，独一无二的
 - value contribution 价值贡献
-- bankruptcy
+- bankruptcy [ˈbæŋkrʌptsi]
     - n. 破产
-- dominant
+- dominant [ˈdɑːmɪnənt]
     - adj. 占支配地位的，占优势的
     - dominant power 主导力量
 - category
@@ -45,34 +45,32 @@
 - extra
     - n. 额外的事物
     - adj. 额外的
-- elegance
+- elegance [ˈɛlɪɡəns]
     - n. 高雅，典雅
-- derive from... 来源于...，出自...
-- abundance
+- derive([dɪˈraɪv] v.（使）起源于，来自; 获得) from... 来源于...，出自...
+- abundance [əˈbʌndəns]
     - n. 丰富，充裕；大量
-- visual recognition 视觉识别
-- intuitively
+- visual recognition([ˌrekəɡˈnɪʃn] n. 认识，识别; 承认; 赞赏) 视觉识别
+- intuitively [ɪnˈtjuɪtɪvlɪ]
     - adv. 直觉地，直观地
 - deliberation
     - n. 深思熟虑，考虑，细想，从容，审慎
-    - conscious deliberation 有意的、刻意的深思熟虑
+    - conscious([ˈkɑːnʃəs] adj. 意识到的; 神志清醒的; 慎重的; 关注的) deliberation 有意的、刻意的深思熟虑
 - environmentalist
     - n. 环保人士
 - cooperative
     - adj. 协作的，合作的
-- species
+- species [ˈspiːʃiːz]
     - n. 物种
 - for good 永久地，永远地；一劳永逸地
-- intimation
+- intimation [ˌɪntɪˈmeɪʃn]
     - n. 暗示；告知
-- constancy
+- constancy [ˈkɑnstənsi]
     - n. 坚贞，不屈不挠，坚定不移
-- faithfulness
+- faithfulness ['feɪθflnəs]
     - n. 忠诚
 - symbolise
     - v. 作为...的象征；用符号表示
-- femininity
+- femininity [ˌfɛməˈnɪnɪti]
     - n. 妇女性质；柔弱，温柔
-
-
 

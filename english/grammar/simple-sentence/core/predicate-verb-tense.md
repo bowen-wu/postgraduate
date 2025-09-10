@@ -52,6 +52,7 @@
         - also 也
         - nearly 几乎
         - long 长期地
+    - My dream has always been to work somewhere in an area between fashion and publishing.
     - 现在完成时 vs 一般过去时
         - 一般过去时只表示"过去"，而现在完成时表示"从过去到现在"这一时间段
         - He <u>has left</u>, so I cannot find him now.
@@ -73,3 +74,69 @@
     - 表达"现在的之前"发生的事情，且**强调过程**
     - Yes, new technology <u>has been eating</u> jobs forever, and always will.
 3. 将来完成进行时：谓语动词 == **will have been + doing**
+
+### Words
+
+- launch
+    - v. 发起，发动；发行
+- immigrant
+    - n. 移民
+- settler
+    - n. 定居者
+- sojourner [ˈsɔdʒə:nə]
+    - n. 旅居者，逗留者
+- template
+    - n. 模板
+- outweight
+    - v. 超过，重于，大于
+- depressed
+    - adj. 沮丧的，抑郁的
+- European Union 欧盟(EU)
+- make it 成功，做到，达到预定目标
+- link...to... 
+    - 使...和...挂钩，使...和...联系起来
+- take up too much time
+    - 占用太多时间
+- identity
+    - n. 身份；特征
+- native
+    - adj. 本地出生的，土生土长的
+- shortcut
+    - n. 捷径，近路；（计算机）快捷键
+    - take a shortcut 走捷径，抄近路
+- high joblessness 高失业率
+- rival [ˈraɪvl]
+    - n. 对手，竞争者
+- patent [ˈpætnt]
+    - n. 专利证书，专利权；专利品
+    - v. 取得专利；授予专利
+- isolate
+    - v. 分离；孤立，隔离
+- unemployment [ˌʌnɪmˈplɔɪmənt]
+    - n. 失业；失业率；失业人数
+- talkative
+    - adj. 健谈的，喜欢说话的
+- particularly
+    - adv. 特别，尤其
+- drought [draʊt]
+    - n. 干旱
+- policymaker
+    - n. 决策者
+- celebrity
+    - n. 名人；名声
+- high-profile [ˌhaɪˈproʊfaɪl]
+    - adj. 高调的
+- prediction
+    - n. 预言；预测
+- speculate
+    - v. 猜测；推测
+- momentum [moʊˈmentəm]
+    - n. 势头；动力
+    - lose momentum 失去发展势头
+- for a while （持续）一段时间
+- bewilderingly [bɪ'wɪldərɪŋlɪ]
+    - adv. 令人困惑地，令人费解地
+- attention
+    - n. 关注，兴趣；注意力
+- steadily [ˈstɛdəlɪ]
+    - adv. 稳步地；不变地，稳定地

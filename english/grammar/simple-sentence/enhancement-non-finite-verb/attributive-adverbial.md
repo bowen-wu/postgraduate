@@ -23,3 +23,52 @@
 
 ### Words
 
+- mandate
+    - n. 指令，正式命令；授权
+- be born of... 源于...；诞生于...
+- frustration
+    - n. 挫败，挫折；失意，沮丧
+- career
+    - n. 生涯；事业
+- troop
+    - n. 军队；部队
+- think well of... 高度评价...，赞赏...；对...有好感
+- split
+    - v. 分裂，分开
+    - split...into ever-tinier categories 把...细分为更小的种类
+- boost profix 提高利润
+- back
+    - v. 支持
+- radical
+    - adj. 激进的；彻底的
+- despair
+    - v. 绝望，丧失信心
+    - n. 绝望，令人绝望的人或事
+- singular
+    - adj. 突出的，非凡的
+    - singular lack of imagination 纯粹缺乏想象力
+- lack of... 缺乏...
+- imagination
+    - n. 想象力，想象
+- tactic
+    - n. 手段，战术，策略
+- particularly
+    - adv. 特别，尤其
+- talkative
+    - adj. 健谈的，喜欢说话的
+- frequently
+    - adv. 频繁地，经常地；时常，屡次
+- anecdote
+    - n. 趣闻，轶事
+- viewed in this light 从这个角度看
+- opportunity
+    - n. 机会
+- preserve
+    - v. 保护，维护
+- substantially
+    - adv. 实质上；大体上
+- curl
+    - v. （使）旋绕；缭绕
+- upwash
+    - n. 上升气流
+

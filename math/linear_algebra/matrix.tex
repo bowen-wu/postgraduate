@@ -6,6 +6,8 @@
 \usepackage{hyperref}       % 目录超链接
 \usepackage{geometry}       % 页面布局
 \usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % =========================
@@ -34,6 +36,118 @@
 % =========================
 
     \section{矩阵}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+        \item $m$行$n$列表格称为$m \times n$矩阵，当 $m = n$ 时，矩阵$A$称为$n$阶矩阵或\textbf{$n$阶方阵}
+        \item 如果一个矩阵的所有元素都是$0$，则称这个矩阵是\textbf{零矩阵}，可简记为$O$
+        \item 两个$m \times n$型矩阵$A = [a_{ij}]$，$B = [b_{ij}]$，如果对应的元素都相等，即$a_{ij} = b_{ij}(i = 1,2,\dots,m; j = 1,2,\dots,n)$，则称矩阵$A$与$B$相等，记作$A = B$
+        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$的元素所构成的行列式称为$n$阶方阵$A$的行列式，记作$|A|$或$\det A$
+        \item 把矩阵$A$的行换成同序数的列得到一个新矩阵，称为矩阵$A$的\textbf{转置矩阵}，记作$A^T$
+        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$，行列式$|A|$的每个元素$a_{ij}$的代数余子式$A_{ij}$所构成的如下矩阵
+        \[
+            A =
+            \begin{pmatrix}
+                a_{\color{red}{11}} & a_{\textcolor{green}{21}} & \dots & a_{\textcolor{bule}{n1}} \\
+                a_{\color{red}{12}} & a_{\textcolor{green}{22}} & \dots & a_{\textcolor{blue}{n2}} \\
+                \vdots              & \vdots                    &       & \vdots                   \\
+                a_{\color{red}{1n}} & a_{\textcolor{green}{2n}} & \dots & a_{\textcolor{blue}{nn}}
+            \end{pmatrix}
+        \]
+        称为矩阵$A$的\textbf{伴随矩阵}
+        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$，如果存在$n$阶方阵$B$使得$AB = BA = E$(单位矩阵)成立，则称$A$是\textbf{可逆矩阵}或\textbf{非奇异矩阵}，$B$是$A$的逆矩阵
+        \item 对$m \times n$矩阵，下列三种变换
+        \begin{enumerate}
+            \item 用非零常数$k$乘矩阵的某一行（列）
+            \item 互换矩阵某两行（列）的位置
+            \item 把某行（列）的$k$倍加至另一行（列）
+        \end{enumerate}
+        称为矩阵的\textbf{初等行（列）变换}，统称为矩阵的\textbf{初等变换}
+        \item 如果矩阵$A$经过有限次初等变换变成矩阵$B$，则称矩阵$A$与矩阵$B$\textbf{等价}，记作$A \overset{\sim}{=} B$
+        \item 单位矩阵经过一次初等变换等到的矩阵称为\textbf{初等矩阵}
+        \begin{enumerate}
+            \item $E_{i}(k)$ 单位矩阵第$i$行乘以常数$k$
+            \item $E_{ij}$ 单位矩阵互换$i,j$行
+            \item $E_{ij}(k)$ 单位矩阵第$j$行的$k$倍加至第$i$行
+        \end{enumerate}
+        \item 设 $A$ 是 $n$ 阶矩阵，满足 $AA^{T} = A^{T}A = E$，称 $A$ 是 \textbf{正交矩阵}：
+        \item 设$\alpha = (a_1, a_2, \dots, a_n)^{T}$，$\beta = (b_1, b_2, \dots, b_n)^{T}$。向量内积：$(\alpha, \beta) = \alpha^{T}\beta = \beta^{T}\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}$
+        \begin{align*}
+            &\Leftrightarrow\; a_{1}^2 + a_{2}^2 + \dots + a_{n}^2 = 1 \\
+            &\Leftrightarrow\; a_ \\
+            &\Leftrightarrow\; A^{T} = A^{-1} \\
+            &\Leftrightarrow\; A \text{ 的行（列）向量两两正交（单位向量）} \\
+            &\Leftrightarrow\; A \text{ 的每个行（列）向量长度均为1} \\
+            &\Leftrightarrow\; A \text{ 的行（列）向量平方和为 1} \\
+            &\Rightarrow\; |A|^{2} = 1 \;\;\Leftrightarrow\;\; |A| = 1 \text{ 或 } |A| = -1
+        \end{align*}
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item 若$A$是可逆矩阵，则矩阵$A$的逆矩阵\textbf{唯一}，记为$A^{-1}$
+        \item $n$ 阶矩阵$A$可逆
+        \begin{align*}
+            &\Leftrightarrow\; |A| = 0  \\
+            &\Leftrightarrow\; r(A) = n  \\
+            &\Leftrightarrow\; A \text{的列（行）向量组线性无关}  \\
+            &\Leftrightarrow\; A = P_{1}P_{2}\dots P_{s}, P_{i}(i = 1,2,\dots,s)\text{是初等矩阵}  \\
+            &\Leftrightarrow\; A \text{与单位矩阵等价}  \\
+            &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
+        \end{align*}
+        \item 若$A$是$n$阶矩阵，且满足$AB = E$，则必有$BA = E$
+        \item 用初等矩阵$P$左(右)乘矩阵$A$，其结果$PA$($AP$)就是对矩阵$A$作一次相应的初等行(列)变换
+        \item 初等矩阵均可逆，其逆矩阵是同类型的初等矩阵，即
+
+        \renewcommand{\arraystretch}{1.2}  % 行高放大 1.2 倍
+        \begin{tabularx}{\textwidth}{l c >{\raggedright\arraybackslash}X}
+            倍乘 & $E_i^{-1}(k) = E_i(1/k)$      & 第 $i$ 行（或列）乘以非零常数 $k$ 的逆矩阵是第 $i$ 行（或列）乘以 $1/k$                     \\
+            倍加 & $E_{ij}^{-1}(k) = E_{ij}(-k)$ & 第 $i$ 行（或列）加上 $k$ 倍第 $j$ 行（或列）的逆矩阵是第 $i$ 行（或列）加上 $-k$ 倍第 $j$ 行（或列） \\
+            互换 & $E_{ij}^{-1} = E_{ij}$        & 交换第 $i$ 行（或列）和第 $j$ 行（或列）的逆矩阵是其本身                                  \\
+        \end{tabularx}
+    \end{enumerate}
+
+    \subsection{运算}
+    \begin{enumerate}
+        \item 设$A = [a_{ij}]$，$B = [b_{ij}]$是两个$m \times n$矩阵，则$m \times n$矩阵$C = [c_{ij}] = [a_{ij} + b_{ij}]$称为矩阵$A$与$B$的和，记作$A + B = C$
+        \item 设$A = [a_{ij}]$是$m \times n$矩阵，$k$是一个常数，则$m \times n$矩阵$[ka_{ij}]$称为数$k$与矩阵$A$的\textbf{数乘}，记作$kA$
+        \item 设$A, B, C, O$都是$m \times n$矩阵，$k, l$是常数，则矩阵的加法和数乘运算满足：
+        \begin{enumerate}
+            \item $A + B = B + A$
+            \item $(A + B) + C = A + (B + C)$
+            \item $A + O = A$
+            \item $A + (-A) = O$
+            \item $1A = A$
+            \item $k(lA) = (kl)A$
+            \item $k(A + B) = kA + kB$
+            \item $(k + l)A = kA + lA$
+        \end{enumerate}
+        \item 设$A = [a_{ij}]$是$m \times n$矩阵，$B = [b_{ij}]$是$n \times s$矩阵，那么$m \times s$矩阵$C = [c_{ij}]$，其中
+        \[
+            c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \dots + a_{in}b_{nj} = \sum_{k=1}^{n} a_{ik}b_{kj}
+        \]
+        称为$A$与$B$的\textbf{乘积}，记作$C = AB$
+        \item 矩阵乘法有下列法则：
+        \begin{enumerate}
+            \item $A(BC) = (AB)C$
+            \item $A(B + C) = AB + AC$
+            \item $(A + B)C = AC + BC$
+            \item $(kA)(lB) = klAB$
+            \item $AE = EA = A$
+            \item $OA = AO = O$
+        \end{enumerate}
+        \item 设$A$是$n$阶矩阵，$k$是正整数，
+        \begin{enumerate}
+            \item $A$的$k$次方幂$A^k = A \cdot A \dots A$($k$个$A$)
+            \item $\mathbf{A^0 = E}$
+            \item $A^k \cdot A^l = A^{k+l}$
+            \item $(A^k)^l = A^{kl}$
+        \end{enumerate}
+        \item
+        \item
+    \end{enumerate}
 
     \subsection{条件转换思路}
 
