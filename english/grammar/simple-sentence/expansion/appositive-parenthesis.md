@@ -55,7 +55,7 @@
     - adv. 直觉地，直观地
 - deliberation
     - n. 深思熟虑，考虑，细想，从容，审慎
-    - conscious delieberation 有意的、刻意的深思熟虑
+    - conscious deliberation 有意的、刻意的深思熟虑
 - environmentalist
     - n. 环保人士
 - cooperative
