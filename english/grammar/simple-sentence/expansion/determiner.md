@@ -16,3 +16,10 @@
         - 2/3: two third**s**
 - 名词所有格: <u>America's</u> Federal Trade Commission(FTC, 联邦贸易委员会)
 - 名词: <u>flu</u> experts
+
+### Words
+
+- expert [ˈekspɜːrt]
+    - n. 行家 
+    - adj. 娴熟的; 行家的; 专业的
+

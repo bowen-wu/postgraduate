@@ -14,10 +14,10 @@
     - I bought you a present.
 4. 主谓宾补 == 主语 + 及物动词(vt.) + 宾语 + 宾语补足语（简称宾补）
     - 宾补用来补充说明宾语，在宾语和宾补的内容中间加上中文"**是**"可以构成完整的句意
-        - Each book opens up new avenues of knowledge.
-            - new avenues of knowledge 是一个 **名词短语**，整体充当宾语
         - Furthermore, these losses make us mature.
             - mature 宾补 => us **是** mature
+        - Each book opens up new avenues of knowledge.
+            - new avenues of knowledge 是一个 **名词短语**，整体充当宾语
 5. 主系表 == 主语 + 系动词 + 表语
    | link v. | 场景 | Example |
    | ---- | ---- | ---- |
@@ -31,3 +31,7 @@
 1. The teacher teaches English. -> 主谓宾
 2. The teacher teaches us English. -> 主谓双宾
 3. The teacher makes us knowledgeable. -> 主谓宾补
+
+### Words
+
+
