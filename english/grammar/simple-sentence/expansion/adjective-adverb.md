@@ -36,30 +36,31 @@
     - v. 替代，取代
     - substitute for.... 替代...，取代...
 - principal
-    - adj. 主要的，最重要的 n. 负责人，校长；资本，本金
+    - adj. 主要的，最重要的 
+    - n. 负责人，校长；资本，本金
 - temporarily
     - adv. 暂时地，临时地
 - nod in agreement 点头表示同意
 - collectively
     - adv. 共同地，集体地
-- maintenance
+- maintenance [ˈmeɪntənəns]
     - n. 维护，保养；维持，保持
 - backlog
     - n. 积压待办的事务
-- barrier
+- barrier [ˈbæriər]
     - n. 障碍，障碍物
 - exaggerate [ɪɡˈzædʒəreɪt]
     - v. 夸大
 - catch up 赶上
 - procedure
     - n. 程序，手续；步骤
-    - jury selection procedure 陪审团遴选程序
+    - jury([ˈdʒʊri] n. 陪审团) selection procedure 陪审团遴选程序
 - conflict
     - v./n. 冲突，矛盾；斗争；争执
     - conflict with... 与...有冲突
 - ideal
     - n. 理想
-- rigid
+- rigid [ˈrɪdʒɪd]
     - adj. 严格的；僵硬的，死板的
 - relevant
     - adj. 相关的

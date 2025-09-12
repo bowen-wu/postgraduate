@@ -99,7 +99,7 @@
     - adv. 静静地，默默地，不说话地
 - the link between A and B
     - A 与 B 之间的联系
-- encyclapedia
+- encyclopedia
     - n. 百科全书
 - migration
     - n. 移民；移居

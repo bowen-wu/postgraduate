@@ -5,7 +5,7 @@
 ### 非谓语动词
 
 - 不做谓语的动词
-- doing/done: **单独出现**，旁边没有其他动词 -> 非谓语动词
+- doing/done: <u>**单独出现**</u>，旁边没有其他动词 -> 非谓语动词
 - to do: 出现就是非谓语动
 - doing/to do: 可以作为名词使用，在句子中作主语、宾语、表语(done 不能)
 
@@ -17,8 +17,7 @@
     - ...<u>amplifying age and sex differences</u> became a dominant children's marketing strategy...
     - <u>Simple starting a conversation with them</u> will form a link.
     - And <u>placing too much emphasis on their opinions</u> can ruin a fantastic home purchase.
-3. to do 作成分时跟 doing 一样，如果是及物动词的话，要后接宾语，因此词组"to do sth./sb."会作为一个整体出现；经常还会再加入形容词、副词、介词短语等伴随
-   to do
+3. to do 作成分时跟 doing 一样，如果是及物动词的话，要后接宾语，因此词组"to do sth./sb."会作为一个整体出现；经常还会再加入形容词、副词、介词短语等伴随 to do
     - ...<u>to anticipate every imaginable driving situation</u> is a difficult programming problem.
 4. 一般 doing 作主语位于句首，to do 作主语常位于句尾，句首用形式主语 it
     - <u>It</u>'s easy <u>to beat plastic</u>.
@@ -38,7 +37,8 @@
     - want + to do: They really want <u>to live their lives</u>...
     - begin + doing/to do
 - to do 作宾语可以后置，用 it 形式宾语来占位置。后置条件：真正的宾语 to do 词组较长 & **主谓宾补**句型中
-    - Today many people find <u>it</u> **difficult(宾补)** <u>to trust their own opinion and seek balance by gaining objectivity from external sources.</u>
+    - Today many people find <u>it</u> **difficult(宾补)** <u>to trust their own opinion and seek balance by gaining
+      objectivity from external sources.</u>
 
 #### 介宾
 
@@ -59,14 +59,16 @@
 
 ### Words
 
-- amplify
+- amplify [ˈæmplɪfaɪ]
     - v. 扩大，增强
 - dominant
     - adj. 首要的；统治的；有支配力的；占优势的
 - marketing strategy 营销策略
 - start a conversation 开始交谈
-- place emphasis on... 重视...，强调...
-- ruin
+- emphasis [ˈemfəsɪs]
+    - n. 强调，重要性
+    - place emphasis on... 重视...，强调...
+- ruin [ˈruːɪn]
     - v. 毁掉，毁坏
 - anticipate
     - v. 预料，预期，预计
@@ -77,7 +79,7 @@
 - It's easy for sb. to do sth. 对于某人来说，做某事是容易的
 - screen
     - n. 屏幕
-- It takes a while th do sth. 做某事需要花上一段时间
+- It takes a while to do sth. 做某事需要花上一段时间
 - complex aspects of personality 性格的复杂方面
 - live a life 过...生活
 - prize
@@ -90,6 +92,6 @@
     - adj. 外部的，外界的
 - depart
     - v. 离开；出发，启程
-- federation
+- federation [ˌfedəˈreɪʃn]
     - n. 联盟；联合；联邦
 - kill off all possibilities 扼杀一切可能性

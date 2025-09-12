@@ -20,6 +20,15 @@
 ### Words
 
 - expert [ˈekspɜːrt]
-    - n. 行家 
+    - n. 行家
     - adj. 娴熟的; 行家的; 专业的
+- launch
+    - v. 发起，开始；发动，发射
+    - launch a round of talks 发起一系列（或轮）讨论
+- heightened
+    - adj. 提高的，提升的
+- dose
+    - n. 剂量；一剂
+- available
+    - adj. 可用的；可得到的
 

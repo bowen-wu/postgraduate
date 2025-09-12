@@ -4,7 +4,7 @@
 
 ### 非谓语动词作状语、定语
 
-- 非谓语动词在句子中既可以修饰名词作定语，也可以修饰句子做状语
+- 非谓语动词在句子中既可以**修饰名词**作定语，也可以修饰句子做状语
 - 三种非谓语动词在修饰时表达的意思不同
     1. done: 表示**被动**。可加 by 引出的介词短语，用于强调动作的发出者，即"被谁做"
     2. doing: 表示**主动**。如果是及物动词，要后接宾语；表示进一步的修饰，还可加入形容词、副词和介词短语
@@ -12,6 +12,10 @@
 - 注意非谓语动词词组的完整性
     1. 如果是及物动词，要后接宾语
     2. 可以加入解释说明、修饰限定的形容词、副词和介词短语
+- 使用非谓语动词步骤
+    1. 是否要用非谓语 == 是否已经有主谓
+    2. 判断修饰谁
+    3. 判断主动、被动、目的
 
 #### 非谓语动词修饰名词，作定语
 
@@ -23,6 +27,12 @@
 4. It's a reflecting simple of **people** <u>generally thinking well of themselves</u>. => 通常自我感觉良好的人们
 5. Splitting kids, or adults, into ever-tinier categories has proved a sure-fire **way** <u>to boost profits</u>. => 这个方法的目的是去提高利润
 6. ...such senior doctors back such radical moves, especially the **call** <u>to use some of the tough tactics</u>... => 这个呼吁的目的是去使用
+ 
+- 根据使用判断目的 <=> 根据目的去使用
+
+1. Here are many friends <u>gathering</u> together.
+2. Here are many friends <u>gathered</u> together.
+3. Here are many friends <u>to gather</u> together.
 
 #### 非谓语动词修饰句子，作状语
 
@@ -38,6 +48,19 @@
 7. *Can* **privacy** *be* preserved <u>**while** bringing safety and security to a world</u>...?( 非谓语动词修饰句子做状语时，为了更加明确地表达补充的是什么内容，可以在非谓语动词前加上从属连词，突出表达和句子间的逻辑关系)
 8. <u>**When** applied to aircraft</u>, **the principles** *are* not substantially different.
 9. The **air** <u>flowing over a bird's wings</u> curls upwards behind the wingtips, a **phenomenon** <u>known as upwash</u>.
+10. <u>Followed by her mother</u>, the gird <u>wearing a red dress</u> ran into the room <u>to have dinner</u>.
+
+#### 表示被动
+
+以下两种形式都可表示被动，要判断是需要**谓语动词**还是**非谓语动词**
+
+1. be done => 被动语态 => 谓语动词
+2. done => 过去分词 => 非谓语动词
+3. 某些单词过去式和过去分词一样，此时意思如果是**主动**那么就是谓语动词，如果是**被动**就是非谓语动词
+    - spend-spent-spent
+    - lend-lent-lent
+    - let-let-let
+    - read-read-read
 
 ### Words
 
