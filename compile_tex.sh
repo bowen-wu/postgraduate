@@ -12,7 +12,7 @@ else
         echo "Compiling $texfile ..."
 
         # 并行编译
-        xelatex -interaction=nonstopmode -output-directory="$texdir" "$texfile" &
+        xelatex -interaction=nonstopmode -output-directory="$texdir/pdf" "$texfile" &
     done
 
     # 等待所有后台任务完成
