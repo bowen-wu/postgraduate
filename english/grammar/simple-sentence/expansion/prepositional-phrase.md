@@ -13,12 +13,12 @@
 - on: 某一天 on July 29th
 - in: 年月季节上午下午晚上 in March 2010
 - before/after: before graduating
-- from
-- since: since 1914
-- by: by 2025
-- until: until the early 20th century
-- for
-- during: during a recession
+- from(自从...)
+- since(自从...): since 1914
+- by(截止到/直到...): by 2025
+- until(截止到/直到...): until the early 20th century
+- for(持续...)
+- during(在...期间): during a recession
 
 #### 表示地点或范围的介词
 
@@ -27,24 +27,23 @@
 - in: 在...里面，**立体**
     - 地点: in the United States
     - 范围: in a 2014 study
-- above/over:
-- under/below/beneath:
-- in front of:
-- behind:
-- near:
-- by/next to:
-- beside: beside him on the couch
+- above/over: 在...上面
+- under/below/beneath: 在...下面
+- in front of: 在...之前
+- behind: 在...之后
+- near: 在...附近
+- by/next to: 在...旁边
+- beside(在...旁边): beside him on the couch
 - between/among: Yet the link <u>between</u> feeling good <u>and</u> *spending money on others* can be seen <u>among
   rich and poor people</u>.
-- among:
-- around
-- into: into my mind
+- around: 在...周围
+- into(进入...里面): into my mind
     - in vs into
         - in: 静态，一直在里面
         - into: 动态，后进入里面
         - 同理: on vs onto
-- out of
-- onto
+- out of: 从...里面出去
+- onto: 到...上面
 - off: 脱离
     - take off 拿走脱离
         - 脱衣服: He took off his cost.
@@ -54,15 +53,15 @@
     - get off the bus
     - turn off the light
         - turn 旋转
-- across/through:
+- across/through: 穿过/经过...
     - across the Atlantic
     - through the forest
-- past
-- along
-- from
-- to/towards
-- beyond
-- within
+- past: 经过...
+- along: 沿着...
+- from: 来自...
+- to/towards: 朝着...去
+- beyond: 超出、超过
+- within: 在...范围内
 
 #### 其他用法的介词
 
@@ -74,13 +73,21 @@
 - about: about migration
 - with: with a high BMI
 - without: 伴随着没有...
-- for: for the whold country
+- for:
+    - 为了...(表示目的)
+    - 因为...(表示原因)
+    - 对于...(表示对象): for the whole country
 - by:
-    - by assembing a bicycle
-    - <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since 1980</u>
-- as: as "the end of the world"
+    - 通过...方式或方法: by assembling a bicycle
+    - 被...做(被动语态 + by + 动作发出者)
+    - 相差了...(表示变化的差额): <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since 1980</u>
+- as:
+    - 作为...: as "the end of the world"
+    - 像...一样，如同...
 - like:
-- despite == in spite of: 尽管 desipite the appeals court's decision
+    - 像...一样
+    - 例如，比如
+- despite == in spite of: 尽管 despite the appeals court's decision
 
 ### Words
 
@@ -93,7 +100,7 @@
     - n. 专利证书；专利权；专利品
 - headhunter
     - n. 猎头
-- inquality
+- inequality [ˌɪnɪˈkwɑːləti]
     - n. 不平等；不平均
 - silently
     - adv. 静静地，默默地，不说话地
@@ -116,8 +123,9 @@
     - 营销技巧
 - It take a while to do sth.
     - 做某事需要花上一段时间
-- complex aspects of personality
+- complex([kəmˈpleks]) aspects of personality([ˌpɜːrsəˈnæləti])
     - 性格的复杂方面
+    - personally [ˈpɜːrsənəli] adv. 在个人看来 
 - neuroticism [njʊr'rɒtəsɪzəm]
     - n. 神经质，情绪不稳定性；神经过敏症
 - open-mindedness ['maɪndɪdnɪs]

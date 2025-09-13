@@ -39,4 +39,13 @@
 
 ### 并列句的省略
 
+- 并列句**<u>独有</u>**的特点：相同的成分(主语、(部分)谓语动词)可以省略，余下的成分保持不变
+
+1. *I* <u>had no money</u> **and** needed the job.
+2. Indeed, *predictions* <u>have been around for two decades</u> **but** <u>have not yet come to fruition</u>.
+3. *He* <u>ticks "astronaut"</u> **but** <u>quickly adds "scientist" to the list</u> **and** <u>selects it as well</u>.
+4. Then *the kids were* <u>handed chocolate coins</u>, **and** <u>given a chance to share them with an anonymous child</u>.
+5. *Even American newspapers...have* **not only** <u>survived</u> **but** often <u>returned to profit</u>.
+6. *Newport also recommends "deep scheduling" to* <u>combat constant interruptions</u> **and** <u>get more done in less time</u>.
+
 ### Words
