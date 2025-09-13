@@ -72,6 +72,31 @@
 % =========================
 
 
+    \section{集合}
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            符号           & LaTeX 代码             & 含义       \\
+            \hline
+            $\cup$       & \verb|A \cup B|      & 并集       \\
+            $\cap$       & \verb|A \cap B|      & 交集       \\
+            $\setminus$  & \verb|A \setminus B| & 差集       \\
+            $\subset$    & \verb|A \subset B|   & 真子集      \\
+            $\subseteq$  & \verb|A \subseteq B| & 子集 / 包含于 \\
+            $\in$        & \verb|A \in B|       & 属于       \\
+            $\emptyset$  & \verb|\emptyset|     & 空集       \\
+            $\mathbb{N}$ & \verb|\mathbb{N}|    & 自然数集     \\
+            $\mathbb{Z}$ & \verb|\mathbb{Z}|    & 整数集      \\
+            $\mathbb{Q}$ & \verb|\mathbb{Q}|    & 有理数集     \\
+            $\mathbb{R}$ & \verb|\mathbb{R}|    & 实数集      \\
+            $\mathbb{C}$ & \verb|\mathbb{C}|    & 复数集      \\
+            \hline
+        \end{tabular}\label{tab:table}
+    \end{table}
+
+
     \section{Math Grammar}
 
     \subsection{基本数学符号}
@@ -82,6 +107,8 @@
         \midrule
         上标          & x^2                & x2x^2                    \\
         下标          & a_i                & aia_i                    \\
+        上划线         & \overline{A}       & \overline{A}             \\
+        否定命题        & \neg A             & \neg A                   \\
         分数          & $\frac{a}{b}$      &                          \\
         根号          & \sqrt{x}           & x\sqrt{x}                \\
         n次根         & $\sqrt[n]{x}$      &                          \\
@@ -99,19 +126,20 @@
 
     \begin{tabular}{ll}
         \toprule
-        \textbf{LaTeX 命令} & \textbf{含义}      \\
+        \textbf{LaTeX 命令}                & \textbf{含义}      \\
         \midrule
-        \to               & 映射/推出            \\
-        \rightarrow       & 推出               \\
-        \leftarrow        & 从…得出             \\
-        \Rightarrow       & 蕴含 / 正推          \\
-        \Leftarrow        & 蕴含 / 逆推          \\
-        \Leftrightarrow   & 等价 / 互推          \\
-        \implies          & 蕴含（amsmath 提供）   \\
-        \impliedby        & 被蕴含（amsmath 提供）  \\
-        \iff              & 当且仅当（amsmath 提供） \\
-        \vdash            & 可推出 / 证明         \\
-        \models           & 语义蕴含 / 满足关系      \\
+        \to                              & 映射/推出            \\
+        \rightarrow                      & 推出               \\
+        \leftarrow                       & 从…得出             \\
+        \Rightarrow                      & 蕴含 / 正推          \\
+        \Leftarrow                       & 蕴含 / 逆推          \\
+        \Leftrightarrow                  & 等价 / 互推          \\
+        \implies                         & 蕴含（amsmath 提供）   \\
+        \impliedby                       & 被蕴含（amsmath 提供）  \\
+        \iff                             & 当且仅当（amsmath 提供） \\
+        \vdash                           & 可推出 / 证明         \\
+        \models                          & 语义蕴含 / 满足关系      \\
+        \overset{\text{说明}}{\rightarrow} & 在符号上方再加文
         \bottomrule
     \end{tabular}
 
@@ -184,6 +212,7 @@
 % =========================
 % 希腊字母
 % =========================
+
     \section*{希腊字母}
     α (alpha):\alpha, \;
     β (beta):\beta, \;
@@ -199,6 +228,7 @@
 % =========================
 % 二元运算符
 % =========================
+
     \section*{二元运算符}
     ± (plus-minus):\pm
 
@@ -213,6 +243,7 @@
 % =========================
 % 图形测试
 % =========================
+
     \section*{图形测试 (Graphics Test)}
     插入示意图：
 

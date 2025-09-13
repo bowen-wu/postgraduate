@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       %表格环境
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{高等数学}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+
+% =========================
+
+    \section{导学}
+
+    \subsection{命题}
+
+    \begin{enumerate}
+        \item 全称命题: $\forall x, A(x) \text{成立} \overset{\text{否定}}{\Rightarrow} \exists \; x, \neg{A(x)}\text{成立}$
+        \begin{enumerate}
+            \item “对于所有 $x$，$A(x)$ 成立” 的否定是“存在至少一个$x$，使得$A(x)$不成立”
+            \item Case:
+            \begin{enumerate}
+                \item 命题：所有学生都及格
+                \item 否定：存在至少一个学生没及格
+                \item 练习：对所有整数 $n$, 如果 $n$ 是偶数，则 $n^2$ 也是偶数。
+            \end{enumerate}
+        \end{enumerate}
+        \item 特称命题: $\exists x, A(x) \text{成立} \overset{\text{否定}}{\Rightarrow} \forall \; x, \neg{A(x)}\text{成立}$
+        \begin{enumerate}
+            \item “存在$x$使 $A(x)$ 成立” 的否定是“对所有$x$，$A(x)$都不成立”
+            \item Case:
+            \begin{enumerate}
+                \item 命题：有学生没迟到
+                \item 否定：每个学生都迟到
+                \item 练习：存在一个整数 $n$，使得 $n^2 - n + 1$ 可以被 $3$ 整除。
+            \end{enumerate}
+        \end{enumerate}
+        \item 蕴式命题: $A \rightarrow B \text{(若A，则B)} \overset{\text{否定}}{\Rightarrow} A\text{成立且} \neg{B}\text{成立}$
+        \begin{enumerate}
+            \item “如果$A$，则$B$” 的否定是“发生了$A$，但$B$没发生”
+            \item Case:
+            \begin{enumerate}
+                \item 命题：如果下雨，我就带伞
+                \item 否定：下雨了，但我没带伞
+                \item 练习：如果一个三角形是等边三角形，则它的内角都是 60°
+            \end{enumerate}
+        \end{enumerate}
+        \item 多元命题(多个条件)
+        \begin{enumerate}
+            \item $\forall x, \forall y, A \text{成立} $
+            \item $\forall x, \exists y, A \text{成立} \overset{\text{否定}}{\Rightarrow} \exists x, \forall y, \neg{A}\text{成立}$
+            \begin{enumerate}
+                \item 对每个全称量词 $\forall$ 取反 \rightarrow \text{变成特称} \; $\exists$
+                \item 对每个特称量词 $\exists$ 取反 \rightarrow \text{变成全称} \; $\forall$
+                \item 否定公式在逻辑上包裹命题内容
+                \item Case:
+                \begin{enumerate}
+                    \item 命题：对每个学生，都存在一道题他能做对
+                    \[
+                        \forall x \; \exists y, P(x, y)
+                    \]
+                    \item 否定：存在至少一个学生，他没有做对任何一道题
+                    \[
+                        \exists x \; \forall y, \neg{P(x, y)}
+                    \]
+                    \item 练习: 对所有整数 $m$，存在一个整数 $n$，使得 $m + n$ 是偶数。
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+        \item $$
+        \[
+            \left.
+            \begin{array}{l}
+                P\text{真} \; \neg{p} \text{假} \\
+                P\text{假} \; \neg{p} \text{真} \\
+            \end{array}
+            \right\} \Rightarrow P \cap \neg{P} = O \; \text{恒假}
+        \]
+    \end{enumerate}
+
+\end{document}
