@@ -15,7 +15,7 @@
 2. 确定"被动的时间"，把be变成对应的时态
 3. 根据主语，确定be动词的单复数
 4. 如果强调被动的动作发出者，即强调"被谁做"，可以在被动后加上"by + 动作的发出者或发出对象"
-    - The shortage <u>is compounded</u> *by* <u>federal immigration raids(联邦移民突击检查/突击搜捕加剧了(劳动力)短缺)</u>...
+    - The shortage <u>is compounded</u> *by* <u>federal immigration raids</u>... 联邦移民突击检查/突击搜捕加剧了(劳动力)短缺
     - I <u>was knocked</u> off my bike *by* a taxi.
 
 #### 被动语态 & 时态
@@ -32,4 +32,25 @@
 
 ### Words
 
-// TODO
+- appeal
+    - v. 呼吁，恳求；吸引；上诉，申诉
+- raid
+    - n. 突击检查；突袭，袭击
+- compound
+    - v. 加剧；混合，掺和
+- swine
+    - n. 猪
+- epidemic
+    - n. 流行病
+- tactic
+    - n. 策略，方法；战术
+- obesity
+    - n. 肥胖
+- moderately
+    - adv. 湿度地；有节制地
+- severely
+    - adv. 严重地
+- be determined by...
+    - 取决于..., 由...决定
+- sustainability-oriented
+    - 旨在提高承受力的；以可持续性为导向的

@@ -16,6 +16,7 @@
     1. 是否要用非谓语 == 是否已经有主谓
     2. 判断修饰谁
     3. 判断主动、被动、目的
+- **问：如何区分非谓语动词作定语还是状语？怎么判断修饰的是名词还是句子？**
 
 #### 非谓语动词修饰名词，作定语
 
@@ -23,7 +24,7 @@
 
 1. This <u>proposed</u> **mandate(n. 指令)** was born of frustration. => 被提议的指令
 2. It is the first worldwide **epidemic** <u>designated by the World Health Organization in 41 years</u>. => 被命名的传染病
-3. G. I. JOe had a distinguished **career** <u>fighting German, Japanese, and Korean troops</u>. => 去作战的职业生涯
+3. G. I. Joe had a distinguished **career** <u>fighting German, Japanese, and Korean troops</u>. => 去作战的职业生涯
 4. It's a reflecting simple of **people** <u>generally thinking well of themselves</u>. => 通常自我感觉良好的人们
 5. Splitting kids, or adults, into ever-tinier categories has proved a sure-fire **way** <u>to boost profits</u>. => 这个方法的目的是去提高利润
 6. ...such senior doctors back such radical moves, especially the **call** <u>to use some of the tough tactics</u>... => 这个呼吁的目的是去使用
@@ -67,7 +68,7 @@
 - mandate
     - n. 指令，正式命令；授权
 - be born of... 源于...；诞生于...
-- frustration
+- frustration [frʌˈstreɪʃn]
     - n. 挫败，挫折；失意，沮丧
 - career
     - n. 生涯；事业
@@ -76,8 +77,8 @@
 - think well of... 高度评价...，赞赏...；对...有好感
 - split
     - v. 分裂，分开
-    - split...into ever-tinier categories 把...细分为更小的种类
-- boost profix 提高利润
+    - split...into ever-tinier([ˈtainiə]) categories 把...细分为更小的种类
+- boost profit 提高利润
 - back
     - v. 支持
 - radical
@@ -85,31 +86,31 @@
 - despair
     - v. 绝望，丧失信心
     - n. 绝望，令人绝望的人或事
-- singular
+- singular [ˈsɪŋɡjələr]
     - adj. 突出的，非凡的
-    - singular lack of imagination 纯粹缺乏想象力
+    - singular lack([læk] n./v. 缺乏，缺少) of imagination 纯粹缺乏想象力
 - lack of... 缺乏...
 - imagination
     - n. 想象力，想象
-- tactic
+- tactic [ˈtæktɪk]
     - n. 手段，战术，策略
 - particularly
     - adv. 特别，尤其
-- talkative
+- talkative [ˈtɔkətɪv]
     - adj. 健谈的，喜欢说话的
 - frequently
     - adv. 频繁地，经常地；时常，屡次
-- anecdote
+- anecdote [ˈænɪkdoʊt]
     - n. 趣闻，轶事
 - viewed in this light 从这个角度看
 - opportunity
     - n. 机会
 - preserve
     - v. 保护，维护
-- substantially
+- substantially [səbˈstænʃəli]
     - adv. 实质上；大体上
-- curl
+- curl [kɜːrl]
     - v. （使）旋绕；缭绕
-- upwash
+- upwash ['ʌpwɒʃ]
     - n. 上升气流
 
