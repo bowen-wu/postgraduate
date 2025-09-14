@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 英文单词对比工具</title>
+    <script src="https://cdn.jsdelivr.net/npm/diff@5.1.0/dist/diff.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        h2 { color: #333; }
+        textarea { width: 100%; height: 150px; margin: 10px 0; padding: 8px; font-size: 14px; }
+        input[type="text"], input[type="file"] { padding: 5px; font-size: 14px; margin: 5px 0; }
+        button { padding: 8px 16px; font-size: 14px; margin-top: 10px; cursor: pointer; }
+        .error-list { margin-top: 20px; }
+        .error-list li { margin-bottom: 5px; color: red; }
+        .success { color: green; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<h2>Markdown 英文单词对比工具</h2>
+<p>输入序号和英文内容，提交后会自动和所选 Markdown 文件中的内容对比，检测拼写错误、漏词或多写的单词。</p>
+
+<label for="seq">输入序号（例如 004）：</label>
+<input type="text" id="seq" placeholder="输入序号">
+
+<label for="inputText">输入英文内容：</label>
+<textarea id="inputText" placeholder="在这里输入你的英文内容"></textarea>
+
+<label for="files">选择 Markdown 文件：</label>
+<input type="file" id="files" multiple accept=".md">
+
+<button id="compareBtn">提交对比</button>
+
+<ul class="error-list" id="result"></ul>
+
+<script>
+  // 清理 Markdown -> 纯文本
+  function markdownToText(md) {
+    return md
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/&emsp;/g, '    ')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/\r\n/g, '\n')
+      .replace(/\n+/g, ' ')
+      .trim();
+  }
+
+  // Levenshtein 编辑距离
+  function levenshtein(a, b) {
+    const dp = Array(a.length + 1).fill(0).map(() => Array(b.length + 1).fill(0));
+    for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+    for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+    for (let i = 1; i <= a.length; i++) {
+      for (let j = 1; j <= b.length; j++) {
+        if (a[i-1] === b[j-1]) dp[i][j] = dp[i-1][j-1];
+        else dp[i][j] = Math.min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1;
+      }
+    }
+    return dp[a.length][b.length];
+  }
+
+  // 对比单词并检测拼写错误
+  function compareWordsWithSpellCheck(userText, standardText) {
+    const userWords = userText.split(/\s+/);
+    const standardWords = standardText.split(/\s+/);
+    const errors = [];
+    let i = 0, j = 0;
+    let errorCount = 0;
+
+    while (i < standardWords.length || j < userWords.length) {
+      const sWord = standardWords[i] || '';
+      const uWord = userWords[j] || '';
+
+      if (sWord === uWord) {
+        i++; j++;
+        continue;
+      }
+
+      if (sWord && uWord) {
+        const distance = levenshtein(sWord.toLowerCase(), uWord.toLowerCase());
+        if (distance <= 2) { // 拼写错误或轻微差异
+          errors.push(`${++errorCount}. 拼写错误：预期 "${sWord}", 实际 "${uWord}"`);
+          i++; j++;
+          continue;
+        }
+      }
+
+      if (sWord && (!uWord || !userWords.slice(j).includes(sWord))) {
+        errors.push(`${++errorCount}. 漏掉单词: "${sWord}"`);
+        i++;
+      } else if (uWord && !standardWords.slice(i).includes(uWord)) {
+        errors.push(`${++errorCount}. 多写单词: "${uWord}"`);
+        j++;
+      } else {
+        i++; j++;
+      }
+    }
+
+    return errors;
+  }
+
+  document.getElementById('compareBtn').addEventListener('click', () => {
+    const files = document.getElementById('files').files;
+    const seq = document.getElementById('seq').value.trim();
+    const userText = document.getElementById('inputText').value.trim();
+    const resultEl = document.getElementById('result');
+    resultEl.innerHTML = '';
+
+    if (!seq || !userText) {
+      alert('请先填写序号和输入内容');
+      return;
+    }
+
+    if (files.length === 0) {
+      alert('请在提交前选择至少一个 Markdown 文件');
+      return;
+    }
+
+    const readers = [];
+    for (let i = 0; i < files.length; i++) {
+      const reader = new FileReader();
+      reader.readAsText(files[i]);
+      readers.push(new Promise(resolve => {
+        reader.onload = e => resolve(e.target.result);
+      }));
+    }
+
+    Promise.all(readers).then(contents => {
+      const allText = contents.join('\n');
+      const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=\\n##|$)`, 'i');
+      const match = allText.match(regex);
+      if (!match) {
+        alert(`未找到序号 "${seq}" 对应的 Markdown 内容`);
+        return;
+      }
+
+      const standardText = markdownToText(match[1]);
+      const errors = compareWordsWithSpellCheck(userText, standardText);
+
+      if (errors.length === 0) {
+        resultEl.innerHTML = '<li class="success">未发现错误</li>';
+      } else {
+        errors.forEach(err => {
+          const li = document.createElement('li');
+          li.textContent = err;
+          resultEl.appendChild(li);
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

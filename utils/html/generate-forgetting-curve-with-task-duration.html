@@ -31,8 +31,16 @@
 <h2>艾宾浩斯学习计划生成器（按周日历）</h2>
 
 <div class="controls">
+    <label>选择任务类型:
+        <label><input type="radio" name="task-type" value="write" checked> 英语 Write</label>
+        <label><input type="radio" name="task-type" value="grammar"> 英语 Grammar</label>
+        <label><input type="radio" name="task-type" value="math"> 数学</label>
+    </label>
+
+    <button id="load-default-btn" type="button">加载默认设置</button>
+
     <label>开始学习日期:
-        <input type="date" id="start-date" value="2025-08-11">
+        <input type="date" id="start-date" value="">
     </label>
 
     <div id="tasks-container">
@@ -47,19 +55,12 @@
         <button id="add-round-btn" type="button">添加轮数</button>
     </div>
 
-    <label>复习周期（逗号分隔，表示同一个任务各次复习之间的间隔天数）:
-        <!-- 数学：加入总结后： 0,2,4,0,7,16,16      -->
-        <!-- 英语写作：0,1,3,6,15,0,1,3,6 -->
-        <input type="text" id="review-days" value="0,1,3,6,15,0,1,3,6" style="width:320px;">
+    <label>复习周期（逗号分隔）:
+        <input type="text" id="review-days" style="width:320px;">
     </label>
 
     <label>休息日（YYYY-MM-DD，逗号分隔）:
-        <!-- 数学休息日: 2025-08-29,2025-08-30,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-09,2025-09-10,2025-09-11,2025-09-13,2025-09-16,2025-09-19,2025-09-20,2025-09-28,2025-09-30,2025-10-08,2025-10-09,2025-10-11,2025-10-12,2025-10-14,2025-10-17     -->
-        <!-- 英语语法休息日: 2025-08-27,2025-08-29,2025-08-30,2025-09-02,2025-09-05,2025-09-06,2025-09-09,2025-09-12,2025-09-13,2025-09-19,2025-09-20,2025-09-24,2025-09-26,2025-09-30,2025-10-01,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-07,2025-10-11,2025-10-12,2025-10-13,2025-10-14,2025-10-15,2025-10-17,2025-10-18 -->
-        <!-- 英语写作休息日: 2025-08-19,2025-08-21,2025-08-24,2025-08-26,2025-08-28,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-17,2025-09-19,2025-09-21,2025-09-22,2025-09-23,2025-09-27,2025-09-29,2025-09-30,2025-10-01,2025-10-02,2025-10-04,2025-10-05,2025-10-08,2025-10-09,2025-10-10,2025-10-14,2025-10-16,2025-10-17,2025-10-18,2025-10-19,2025-10-20,2025-10-24,2025-10-25,2025-10-26,2025-10-28,2025-10-30,2025-11-02,2025-11-03,2025-11-04,2025-11-05 -->
-        <input type="text" id="rest-days"
-               value="2025-08-19,2025-08-21,2025-08-24,2025-08-26,2025-08-28,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-17,2025-09-19,2025-09-21,2025-09-22,2025-09-23,2025-09-27,2025-09-29,2025-09-30,2025-10-01,2025-10-02,2025-10-04,2025-10-05,2025-10-08,2025-10-09,2025-10-10,2025-10-14,2025-10-16,2025-10-17,2025-10-18,2025-10-19,2025-10-20,2025-10-24,2025-10-25,2025-10-26,2025-10-28,2025-10-30,2025-11-02,2025-11-03,2025-11-04,2025-11-05"
-               class="rest-input">
+        <input type="text" id="rest-days" class="rest-input">
     </label>
 
     <div>
@@ -78,21 +79,6 @@
 <div id="calendar"></div>
 
 <script>
-  function formatDate(d) {
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return `${y}-${m}-${day}`;
-  }
-
-  function parseDateInput(s) { return new Date(s); }
-
-  function addDays(d, n) {
-    const r = new Date(d);
-    r.setDate(r.getDate() + n);
-    return r;
-  }
-
   const tasksContainer = document.getElementById('tasks-container');
   const addTaskBtn = document.getElementById('add-task-btn');
   const clearTasksBtn = document.getElementById('clear-tasks-btn');
@@ -104,276 +90,193 @@
   const restDaysInput = document.getElementById('rest-days');
   const roundsDiv = document.getElementById('rounds-div');
   const addRoundBtn = document.getElementById('add-round-btn');
+  const loadDefaultBtn = document.getElementById('load-default-btn');
 
-  const defaultTasks = [
-    {name: '002', duration: 1},
-    {name: '003', duration: 1},
-    {name: '004', duration: 1},
-    {name: '005', duration: 1},
-    {name: '006', duration: 1},
-    {name: '007', duration: 1},
-    {name: '008', duration: 1},
-    {name: '009', duration: 1},
-    {name: '010', duration: 1},
-    {name: '001', duration: 1},
-    {name: '011', duration: 1},
-    {name: '012', duration: 1},
-    {name: '013', duration: 1},
-    {name: '014', duration: 1},
-    {name: '015', duration: 1},
-    {name: '016', duration: 1},
-    {name: '041', duration: 1},
-    {name: '017', duration: 1},
-    {name: '042', duration: 1},
-    {name: '043', duration: 1},
-    {name: '044', duration: 1},
-    {name: '018', duration: 1},
-    {name: '019', duration: 1},
-    {name: '045', duration: 1},
-    {name: '020', duration: 1},
-    {name: '046', duration: 1},
-    {name: '047', duration: 1},
-    {name: '048', duration: 1},
-    {name: '049', duration: 1},
-    {name: '050', duration: 1},
-    {name: '051', duration: 1},
-    {name: '052', duration: 1},
-    {name: '053', duration: 1},
-    {name: '054', duration: 1},
-    {name: '055', duration: 1},
-    {name: '056', duration: 1},
-    {name: '057', duration: 1},
-    {name: '058', duration: 1},
-    {name: '059', duration: 1},
-    {name: '060', duration: 1}
-  ];
+  // 默认数据
+  const defaultData = {
+    write: {
+      startDate: '2025-08-14',
+      reviewDays: '0,2,5,14,0,2,5,14,14,30',
+      tasks: [
+        {name:'002',duration:1},{name:'003',duration:1},{name:'004',duration:1},{name:'005',duration:1},
+        {name:'006',duration:1},{name:'007',duration:1},{name:'008',duration:1},{name:'009',duration:1},
+        {name:'010',duration:1},{name:'001',duration:1},{name:'011',duration:1},{name:'012',duration:1},
+        {name:'013',duration:1},{name:'014',duration:1},{name:'015',duration:1},{name:'016',duration:1},
+        {name:'041',duration:1},{name:'017',duration:1},{name:'042',duration:1},{name:'043',duration:1},
+        {name:'044',duration:1},{name:'045',duration:1},{name:'046',duration:1},{name:'047',duration:1},
+        {name:'048',duration:1},{name:'049',duration:1},{name:'050',duration:1},{name:'018',duration:1},
+        {name:'051',duration:1},{name:'019',duration:1},{name:'020',duration:1},{name:'052',duration:1},
+        {name:'053',duration:1},{name:'054',duration:1},{name:'055',duration:1},{name:'056',duration:1},
+        {name:'057',duration:1},{name:'058',duration:1},{name:'059',duration:1},{name:'060',duration:1}
+      ],
+      rounds: ['学','读','读', '读','读 & 背','背','背 & 默写new','默写3遍new','默写2遍new','默写2遍new','默写new'],
+      restDays: '2025-08-24,2025-08-26,2025-08-28,,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-16,2025-09-18,2025-09-19,2025-09-20,2025-09-21,2025-09-26,2025-09-27,2025-09-28,2025-09-29,2025-10-01,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-07,2025-10-10,2025-10-12,2025-10-14,2025-10-17,2025-10-18,2025-10-19,2025-08-24,2025-08-26,2025-08-28,,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-16,2025-09-18,2025-09-19,2025-09-20,2025-09-21,2025-09-26,2025-09-27,2025-09-28,2025-09-29,2025-10-01,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-07,2025-10-10,2025-10-12,2025-10-14,2025-10-17,2025-10-18,2025-10-20,2025-08-24,2025-08-26,2025-08-28,,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-16,2025-09-18,2025-09-19,2025-09-20,2025-09-21,2025-09-26,2025-09-27,2025-09-28,2025-09-29,2025-10-01,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-07,2025-10-10,2025-10-12,2025-10-14,2025-10-17,2025-10-18,2025-10-21'
+    },
+    grammar: {
+      startDate: '2025-08-12',
+      reviewDays: '0,1,3,6,15',
+      tasks: [
+        {name:'简单句的核心构成',duration:1},{name:'谓语动词时态',duration:1},{name:'谓语动词情态',duration:1}
+      ],
+      rounds: ['书&笔记','视频','笔记&Book训练','笔记','笔记&App训练','笔记'],
+      restDays: '2025-08-27,2025-08-29,2025-08-30'
+    },
+    math: {
+      startDate: '2025-08-11',
+      reviewDays: '0,2,5,0,9,14,30',
+      tasks: [
+          { name:'行列式', duration:4 },
+          { name:'矩阵', duration:5 },
+          { name:'向量', duration:5 },
+          { name:'线性方程组', duration:5 },
+          { name:'特征值与特征向量', duration:5 },
+          { name:'二次型', duration:5 },
+          { name:'函数、极限、连续', duration:5 },
+          { name:'一元函数微分学', duration:5 },
+          { name:'一元函数积分学', duration:5 },
+          { name:'多元函数微分学', duration:5 },
+          { name:'二重积分', duration:5 },
+          { name:'常微分方程', duration:5 }
+      ],
+      rounds: ['书','辅导讲义/18讲','660题','基础','总结','提高','660题第二遍','提高第二遍'],
+      restDays: '2025-08-29,2025-08-30,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-09,2025-09-10,2025-09-11,2025-09-13,2025-09-16,2025-09-19,2025-09-20,2025-09-28,2025-09-30,2025-10-08,2025-10-09,2025-10-11,2025-10-12,2025-10-14,2025-10-17 '
+    }
+  };
 
-  // const defaultTasks = [
-  //   {name: '简单句的核心构成', duration: 1},
-  //   {name: '谓语动词时态', duration: 1},
-  //   {name: '谓语动词情态', duration: 1},
-  //   {name: '谓语动词语态', duration: 1},
-  //   {name: '谓语动词否定和强调', duration: 1},
-  //   {name: '限定词', duration: 1},
-  //   {name: '形容词、副词', duration: 1},
-  //   {name: '介词短语', duration: 1},
-  //   {name: '同位语、插入语', duration: 1},
-  //   {name: '非谓语动词做主宾表', duration: 1},
-  //   {name: '非谓语动词做定状', duration: 2},
-  //   {name: '并列句', duration: 2},
-  //   {name: '宾语从句', duration: 2},
-  //   {name: '表语从句', duration: 2},
-  //   {name: '主语从句', duration: 2},
-  //   {name: '同位语从句', duration: 2},
-  //   {name: '定语从句', duration: 3},
-  //   {name: '状语从句', duration: 3},
-  //   {name: '虚拟', duration: 2},
-  //   {name: '倒装', duration: 2},
-  //   {name: '强调', duration: 2},
-  //   {name: '断开长难句-标点', duration: 2},
-  //   {name: '断开长难句-连接词', duration: 2},
-  //   {name: '分析主谓', duration: 2},
-  //   {name: '简化长难句', duration: 2},
-  //   {name: '分裂结构', duration: 2},
-  //   {name: '嵌套结构', duration: 2},
-  //   {name: '平行结构', duration: 2}
-  // ];
-
-  // const defaultTasks=[
-  //   { name:'行列式', duration:4 },
-  //   { name:'矩阵', duration:5 },
-  //   { name:'向量', duration:5 },
-  //   { name:'线性方程组', duration:5 },
-  //   { name:'特征值与特征向量', duration:5 },
-  //   { name:'二次型', duration:5 },
-  //   { name:'函数、极限、连续', duration:4 },
-  //   { name:'一元函数微分学', duration:4 },
-  //   { name:'一元函数积分学', duration:4 },
-  //   { name:'多元函数微分学', duration:4 },
-  //   { name:'二重积分', duration:4 },
-  //   { name:'常微分方程', duration:4 }
-  // ];
-
-  function createTaskRow(name = '', duration = 1) {
-    const wrap = document.createElement('div');
-    wrap.className = 'task-row';
-    const nameInput = document.createElement('input');
-    nameInput.type = 'text';
-    nameInput.placeholder = '任务名称';
-    nameInput.value = name;
-    nameInput.className = 'task-name';
-    const durInput = document.createElement('input');
-    durInput.type = 'number';
-    durInput.min = '1';
-    durInput.value = String(duration);
-    durInput.className = 'task-duration';
-    durInput.placeholder = '天数';
-    const removeBtn = document.createElement('button');
-    removeBtn.type = 'button';
-    removeBtn.textContent = '删除';
-    removeBtn.addEventListener('click', () => wrap.remove());
-    wrap.appendChild(nameInput);
-    wrap.appendChild(durInput);
-    wrap.appendChild(removeBtn);
+  // 创建任务行
+  function createTaskRow(name='', duration=1){
+    const wrap=document.createElement('div');
+    wrap.className='task-row';
+    const nameInput=document.createElement('input');
+    nameInput.type='text'; nameInput.value=name; nameInput.className='task-name'; nameInput.placeholder='任务名称';
+    const durInput=document.createElement('input');
+    durInput.type='number'; durInput.min='1'; durInput.value=duration; durInput.className='task-duration'; durInput.placeholder='天数';
+    const removeBtn=document.createElement('button'); removeBtn.type='button'; removeBtn.textContent='删除';
+    removeBtn.addEventListener('click',()=>wrap.remove());
+    wrap.appendChild(nameInput); wrap.appendChild(durInput); wrap.appendChild(removeBtn);
     tasksContainer.appendChild(wrap);
   }
 
-  addTaskBtn.addEventListener('click', () => createTaskRow());
-  clearTasksBtn.addEventListener('click', () => { tasksContainer.innerHTML = ''; });
-
-  (function initDefaults() { defaultTasks.forEach(t => createTaskRow(t.name, t.duration)); })();
-
-  // 轮数说明管理
-  // 英语 Write 轮数
-  const defaultRoundTexts = [
-    '学', '读', '读', '读', '读 & 背', '背', '背 & 默写', '默写', '默写', '默写'
-  ];
-
-  // 英语 Grammar 轮数
-  // const defaultRoundTexts = [
-  //   '书&笔记', '视频', '笔记&Book训练', '笔记', '笔记&App训练', '笔记'
-  // ];
-
-  // Math 轮数
-  // const defaultRoundTexts=[
-  //   '书',
-  //   '辅导讲义/18讲',
-  //   '660题',
-  //   '基础',
-  //   '总结',
-  //   '提高',
-  //   '660题第二遍',
-  //   '提高第二遍'
-  // ];
-
-  function addRoundInput(val = '第n轮') {
-    const div = document.createElement('div');
-    div.style.display = 'flex';
-    div.style.alignItems = 'center';
-    div.style.gap = '4px';
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.className = 'round-input';
-    input.value = val;
-    const delBtn = document.createElement('button');
-    delBtn.type = 'button';
-    delBtn.textContent = '-';
-    delBtn.addEventListener('click', () => div.remove());
-    div.appendChild(input);
-    div.appendChild(delBtn);
-    roundsDiv.appendChild(div);
+  // 添加轮数输入
+  function addRoundInput(val='第n轮'){
+    const div=document.createElement('div');
+    div.style.display='flex'; div.style.alignItems='center'; div.style.gap='4px';
+    const input=document.createElement('input'); input.type='text'; input.className='round-input'; input.value=val;
+    const delBtn=document.createElement('button'); delBtn.type='button'; delBtn.textContent='-';
+    delBtn.addEventListener('click',()=>div.remove());
+    div.appendChild(input); div.appendChild(delBtn); roundsDiv.appendChild(div);
   }
 
-  defaultRoundTexts.forEach(text => addRoundInput(text));
-  addRoundBtn.addEventListener('click', () => addRoundInput());
+  // 加载默认设置
+  loadDefaultBtn.addEventListener('click',()=>{
+    const type=document.querySelector('input[name="task-type"]:checked').value;
+    const data=defaultData[type];
+    tasksContainer.innerHTML=''; roundsDiv.innerHTML='';
+    data.tasks.forEach(t=>createTaskRow(t.name,t.duration));
+    data.rounds.forEach(r=>addRoundInput(r));
+    restDaysInput.value=data.restDays;
+    reviewDaysInput.value=data.reviewDays;
+    startDateInput.value=data.startDate;
+  });
 
-  generateBtn.addEventListener('click', () => {
-    calendarDiv.innerHTML = '';
-    const startVal = startDateInput.value;
-    if (!startVal) {
-      alert('请选择开始学习日期');
-      return;
-    }
-    const startDate = parseDateInput(startVal);
+  // 事件绑定
+  addTaskBtn.addEventListener('click',()=>createTaskRow());
+  clearTasksBtn.addEventListener('click',()=>tasksContainer.innerHTML='');
+  addRoundBtn.addEventListener('click',()=>addRoundInput());
 
-    const rows = tasksContainer.querySelectorAll('.task-row');
-    const tasks = [];
-    rows.forEach(r => {
-      const name = r.querySelector('.task-name').value.trim();
-      const duration = parseInt(r.querySelector('.task-duration').value, 10);
-      if (name && Number.isInteger(duration) && duration > 0) tasks.push({name, duration});
+  // 工具函数
+  function formatDate(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`;}
+  function parseDateInput(s){return new Date(s);}
+  function addDays(d,n){const r=new Date(d); r.setDate(r.getDate()+n); return r;}
+
+  // 生成日历
+  generateBtn.addEventListener('click',()=>{
+    calendarDiv.innerHTML='';
+    const startVal=startDateInput.value;
+    if(!startVal){alert('请选择开始学习日期'); return;}
+    const startDate=parseDateInput(startVal);
+
+    const rows=tasksContainer.querySelectorAll('.task-row');
+    const tasks=[];
+    rows.forEach(r=>{
+      const name=r.querySelector('.task-name').value.trim();
+      const duration=parseInt(r.querySelector('.task-duration').value,10);
+      if(name && Number.isInteger(duration) && duration>0) tasks.push({name,duration});
     });
-    if (tasks.length === 0) {
-      alert('请至少添加一个学习任务');
-      return;
-    }
+    if(tasks.length===0){alert('请至少添加一个学习任务'); return;}
 
-    const reviewDays = reviewDaysInput.value.split(',').map(s => parseInt(s.trim(), 10)).filter(n => !Number.isNaN(n) && n >= 0);
-    const restDays = restDaysInput.value.split(',').map(s => s.trim()).filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s));
-    const roundLabels = [...roundsDiv.querySelectorAll('.round-input')].map(inp => inp.value.trim() || '第n轮');
+    const reviewDays=reviewDaysInput.value.split(',').map(s=>parseInt(s.trim(),10)).filter(n=>!Number.isNaN(n)&&n>=0);
+    const restDays=restDaysInput.value.split(',').map(s=>s.trim()).filter(s=>/^\d{4}-\d{2}-\d{2}$/.test(s));
+    const roundLabels=[...roundsDiv.querySelectorAll('.round-input')].map(inp=>inp.value.trim()||'第n轮');
 
-    const calendarMap = {};
-    let currentStudyStart = new Date(startDate);
-
-    tasks.forEach(task => {
-      const {name, duration: dur} = task;
-      // 学习
-      let studyCount = 0;
-      let dayPtr = new Date(currentStudyStart);
-      const studyRoundText = roundLabels[0] || '第1轮';
-      while (studyCount < dur) {
-        const ds = formatDate(dayPtr);
-        if (!restDays.includes(ds)) {
-          if (!calendarMap[ds]) calendarMap[ds] = {studies: [], reviews: []};
+    const calendarMap={}; let currentStudyStart=new Date(startDate);
+    tasks.forEach(task=>{
+      const {name,duration:dur}=task;
+      let studyCount=0; let dayPtr=new Date(currentStudyStart);
+      const studyRoundText=roundLabels[0]||'第1轮';
+      while(studyCount<dur){
+        const ds=formatDate(dayPtr);
+        if(!restDays.includes(ds)){
+          if(!calendarMap[ds]) calendarMap[ds]={studies:[],reviews:[]};
           calendarMap[ds].studies.push(`学习: ${name}（${studyRoundText}）`);
           studyCount++;
         }
-        dayPtr = addDays(dayPtr, 1);
+        dayPtr=addDays(dayPtr,1);
       }
-      const studyEnd = addDays(dayPtr, -1);
-      let prevEnd = new Date(studyEnd);
-      // 复习
-      let round = 2;
-      reviewDays.forEach(offset => {
-        const reviewStart = addDays(prevEnd, 1 + offset);
-        for (let j = 0; j < dur; j++) {
-          const d = addDays(reviewStart, j);
-          const ds = formatDate(d);
-          if (!calendarMap[ds]) calendarMap[ds] = {studies: [], reviews: []};
-          const roundText = roundLabels[round - 1] || `第${round}轮`;
+      const studyEnd=addDays(dayPtr,-1);
+      let prevEnd=new Date(studyEnd);
+      let round=2;
+      reviewDays.forEach(offset=>{
+        const reviewStart=addDays(prevEnd,1+offset);
+        for(let j=0;j<dur;j++){
+          const d=addDays(reviewStart,j);
+          const ds=formatDate(d);
+          if(!calendarMap[ds]) calendarMap[ds]={studies:[],reviews:[]};
+          const roundText=roundLabels[round-1]||`第${round}轮`;
           calendarMap[ds].reviews.push(`复习: ${name}（${roundText}）`);
         }
-        prevEnd = addDays(reviewStart, dur - 1);
+        prevEnd=addDays(reviewStart,dur-1);
         round++;
       });
-      currentStudyStart = addDays(studyEnd, 1);
+      currentStudyStart=addDays(studyEnd,1);
     });
 
-    const allDates = Object.keys(calendarMap).sort();
-    if (allDates.length === 0) {
-      calendarDiv.innerText = '无任务可显示';
-      return;
-    }
+    const allDates=Object.keys(calendarMap).sort();
+    if(allDates.length===0){calendarDiv.innerText='无任务可显示'; return;}
+    const firstDate=new Date(allDates[0]);
+    const lastDate=new Date(allDates[allDates.length-1]);
+    const gridStart=addDays(firstDate,-firstDate.getDay());
+    const gridEnd=addDays(lastDate,6-lastDate.getDay());
+    const weekdays=['Su','Mo','Tu','We','Th','Fr','Sa'];
+    let html='<table><thead><tr>';
+    for(const w of weekdays) html+=`<th>${w}</th>`;
+    html+='</tr></thead><tbody>';
 
-    const firstDate = new Date(allDates[0]);
-    const lastDate = new Date(allDates[allDates.length - 1]);
-    const gridStart = addDays(firstDate, -firstDate.getDay());
-    const gridEnd = addDays(lastDate, 6 - lastDate.getDay());
-    const weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-    let html = '<table><thead><tr>';
-    for (const w of weekdays) html += `<th>${w}</th>`;
-    html += '</tr></thead><tbody>';
-
-    let weekCells = new Array(7).fill('');
-    for (let d = new Date(gridStart); d <= gridEnd; d.setDate(d.getDate() + 1)) {
-      const ds = formatDate(d);
-      const dayIndex = d.getDay();
-      const data = calendarMap[ds] || {reviews: [], studies: []};
-      weekCells[dayIndex] = `
-      <div class="cell">
-        <div class="date">${ds}</div>
-        <div class="reviews">${data.reviews.map(r => `<div>${r}</div>`).join('')}</div>
-        <div class="studies">${data.studies.map(s => `<div>${s}</div>`).join('')}</div>
-      </div>`;
-      if (dayIndex === 6) {
-        html += '<tr>' + weekCells.map(c => `<td>${c}</td>`).join('') + '</tr>';
-        weekCells = new Array(7).fill('');
-      }
+    let weekCells=new Array(7).fill('');
+    for(let d=new Date(gridStart);d<=gridEnd;d.setDate(d.getDate()+1)){
+      const ds=formatDate(d);
+      const dayIndex=d.getDay();
+      const data=calendarMap[ds]||{reviews:[],studies:[]};
+      weekCells[dayIndex]=`
+        <div class="cell">
+            <div class="date">${ds}</div>
+            <div class="reviews">${data.reviews.map(r=>`<div>${r}</div>`).join('')}</div>
+            <div class="studies">${data.studies.map(s=>`<div>${s}</div>`).join('')}</div>
+        </div>`;
+      if(dayIndex===6){ html+='<tr>'+weekCells.map(c=>`<td>${c}</td>`).join('')+'</tr>'; weekCells=new Array(7).fill(''); }
     }
-    if (weekCells.some(cell => cell && cell.length > 0)) html += '<tr>' + weekCells.map(c => `<td>${c}</td>`).join('') + '</tr>';
-    html += '</tbody></table>';
-    calendarDiv.innerHTML = html;
+    if(weekCells.some(cell=>cell && cell.length>0)) html+='<tr>'+weekCells.map(c=>`<td>${c}</td>`).join('')+'</tr>';
+    html+='</tbody></table>';
+    calendarDiv.innerHTML=html;
   });
 
-  exportBtn.addEventListener('click', () => {
-    if (!calendarDiv.innerHTML.trim()) {
-      alert('请先生成日历');
-      return;
-    }
-    html2canvas(calendarDiv).then(canvas => {
-      const link = document.createElement('a');
-      link.download = '学习计划.png';
-      link.href = canvas.toDataURL('image/png');
+  // 导出图片
+  exportBtn.addEventListener('click',()=>{
+    if(!calendarDiv.innerHTML.trim()){alert('请先生成日历'); return;}
+    html2canvas(calendarDiv).then(canvas=>{
+      const link=document.createElement('a');
+      link.download='学习计划.png';
+      link.href=canvas.toDataURL('image/png');
       link.click();
     });
   });
