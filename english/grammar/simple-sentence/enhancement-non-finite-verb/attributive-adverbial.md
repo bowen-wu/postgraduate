@@ -45,11 +45,11 @@
 3. <u>Viewed in this light</u>, **guilt** *is* an opportunity.
 4. ...nearly 40% of **emigrants** *had* more than a high-school education, <u>compared with around 3.3% of all Indians over the age of 25</u>.
 5. <u>To avoid this uneasiness</u>, **we** *turn* to our phones.
-6. In Scotland, for example, **wind turbines** *provide* enough electricity <u>to power 95 percent of homes</u>.( 非谓语动词修饰句子做状语时，通常可以翻译成独立的一句)
-7. *Can* **privacy** *be* preserved <u>**while** bringing safety and security to a world</u>...?( 非谓语动词修饰句子做状语时，为了更加明确地表达补充的是什么内容，可以在非谓语动词前加上从属连词，突出表达和句子间的逻辑关系)
+6. In Scotland, for example, **wind turbines** *provide* enough electricity <u>to power 95 percent of homes</u>.(非谓语动词修饰句子做状语时，通常可以翻译成独立的一句)
+7. *Can* **privacy** *be* preserved <u>**while** bringing safety and security to a world</u>...?(非谓语动词修饰句子做状语时，为了更加明确地表达补充的是什么内容，可以在非谓语动词前加上从属连词，突出表达和句子间的逻辑关系)
 8. <u>**When** applied to aircraft</u>, **the principles** *are* not substantially different.
 9. The **air** <u>flowing over a bird's wings</u> curls upwards behind the wingtips, a **phenomenon** <u>known as upwash</u>.
-10. <u>Followed by her mother</u>, the gird <u>wearing a red dress</u> ran into the room <u>to have dinner</u>.
+10. <u>Followed by her mother</u>, the girl <u>wearing a red dress</u> ran into the room <u>to have dinner</u>.
 
 #### 表示被动
 
@@ -81,9 +81,9 @@
 - boost profit 提高利润
 - back
     - v. 支持
-- radical
+- radical [ˈrædɪkl]
     - adj. 激进的；彻底的
-- despair
+- despair [dɪˈsper]
     - v. 绝望，丧失信心
     - n. 绝望，令人绝望的人或事
 - singular [ˈsɪŋɡjələr]
@@ -105,7 +105,7 @@
 - viewed in this light 从这个角度看
 - opportunity
     - n. 机会
-- preserve
+- preserve [prɪˈzɜːrv]
     - v. 保护，维护
 - substantially [səbˈstænʃəli]
     - adv. 实质上；大体上
