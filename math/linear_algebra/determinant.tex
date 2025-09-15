@@ -189,7 +189,7 @@
     \begin{enumerate}
         \item 若$A$是$n$阶矩阵，$A^T$是$A$的转置矩阵 \, \Rightarrow \, $|A^T| = |A|$
         \item 若$A$是$n$阶矩阵 \, \Rightarrow \, $|kA| = k^{n}|A|$
-        \item 若$A$，$B$都是$n$阶矩阵 \, \Rightarrow \, $|AB| = |A||B|$，$|A^2| = |A|^2$
+        \item 若$A$，$B$都是$n$阶矩阵 \, \Rightarrow \, $|AB| = |A||B|$ \;\text{,} $|A^2| = |A|^2$
         \item 若$A$是$n$阶矩阵 \, \Rightarrow \, $|A^*| = |A|^{n-1}$
         \item 若$A$是$n$阶\textbf{可逆}矩阵 \, \Rightarrow \, $|A^{-1}| = |A|^{-1}$
     \end{enumerate}
@@ -206,7 +206,7 @@
         \end{cases}
     \]
 
-    记系数矩阵为 $\mathbf{A} = (a_{ij})_{n\times n}$，则其行列式为 $|\mathbf{A}|$。若 $|\mathbf{A}| \neq 0$，则方程组有唯一解，并且第 $i$ 个未知数 $x_i$ 可由下式求得：
+    记系数矩阵为 $\mathbf{A} = (a_{ij})_{n\times n}$，则其行列式为 $|\mathbf{A}|$。\textbf{若 $|\mathbf{A}| \neq 0$，则方程组有唯一解}，并且第 $i$ 个未知数 $x_i$ 可由下式求得：
 
     \[
         x_i = \frac{|\mathbf{A}_i|}{|\mathbf{A}|}, \quad i=1,2,\dots,n
@@ -237,19 +237,6 @@
     \begin{enumerate}
         \item 系数行列式$|A| \neq 0$ $\Leftrightarrow$ 方程组\textbf{只有零解}
         \item 系数行列式$|A| = 0$ $\Leftrightarrow$ 方程组\textbf{有非零解}
-    \end{enumerate}
-
-
-    \section{矩阵}
-
-    \subsection{条件转换思路}
-
-    \begin{enumerate}
-        \item 设 $\mathbf{A}$ 是 $m \times n$ 矩阵，$\mathbf{B}$ 是 $n \times s$ 矩阵，若 $\mathbf{AB} = \mathbf{O}$，则
-        \begin{enumerate}
-            \item $\mathbf{B}$ 的列向量是其次方程组 $\mathbf{Ax} = 0$ 的解
-            \item $r(\mathbf{A}) + r(\mathbf{B}) \le n$
-        \end{enumerate}
     \end{enumerate}
 
 \end{document}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown 英文单词对比工具</title>
+    <title>Compare</title>
     <script src="https://cdn.jsdelivr.net/npm/diff@5.1.0/dist/diff.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
@@ -19,19 +19,18 @@
 </head>
 <body>
 
-<h2>Markdown 英文单词对比工具</h2>
-<p>输入序号和英文内容，提交后会自动和所选 Markdown 文件中的内容对比，检测拼写错误、漏词或多写的单词。</p>
+<h2 title="输入序号和英文内容，提交后会自动和所选 Markdown 文件中的内容对比，检测拼写错误、漏词或多写的单词。">Compare</h2>
 
-<label for="seq">输入序号（例如 004）：</label>
-<input type="text" id="seq" placeholder="输入序号">
+<label for="seq">No.：</label>
+<input type="text" id="seq">
 
-<label for="inputText">输入英文内容：</label>
-<textarea id="inputText" placeholder="在这里输入你的英文内容"></textarea>
+<label for="inputText">Content：</label>
+<textarea id="inputText"></textarea>
 
-<label for="files">选择 Markdown 文件：</label>
+<label for="files">Please markdown file：</label>
 <input type="file" id="files" multiple accept=".md">
 
-<button id="compareBtn">提交对比</button>
+<button id="compareBtn">Submit</button>
 
 <ul class="error-list" id="result"></ul>
 
@@ -56,8 +55,8 @@
     for (let j = 0; j <= b.length; j++) dp[0][j] = j;
     for (let i = 1; i <= a.length; i++) {
       for (let j = 1; j <= b.length; j++) {
-        if (a[i-1] === b[j-1]) dp[i][j] = dp[i-1][j-1];
-        else dp[i][j] = Math.min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1;
+        if (a[i - 1] === b[j - 1]) dp[i][j] = dp[i - 1][j - 1];
+        else dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1;
       }
     }
     return dp[a.length][b.length];
@@ -76,7 +75,8 @@
       const uWord = userWords[j] || '';
 
       if (sWord === uWord) {
-        i++; j++;
+        i++;
+        j++;
         continue;
       }
 
@@ -84,7 +84,8 @@
         const distance = levenshtein(sWord.toLowerCase(), uWord.toLowerCase());
         if (distance <= 2) { // 拼写错误或轻微差异
           errors.push(`${++errorCount}. 拼写错误：预期 "${sWord}", 实际 "${uWord}"`);
-          i++; j++;
+          i++;
+          j++;
           continue;
         }
       }
@@ -96,7 +97,8 @@
         errors.push(`${++errorCount}. 多写单词: "${uWord}"`);
         j++;
       } else {
-        i++; j++;
+        i++;
+        j++;
       }
     }
 

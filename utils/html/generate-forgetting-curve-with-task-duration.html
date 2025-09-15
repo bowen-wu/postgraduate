@@ -113,22 +113,46 @@
       restDays: '2025-08-19,2025-08-21,2025-08-24,2025-08-26,2025-08-28,2025-08-29,2025-08-30,2025-08-31,2025-09-02,2025-09-05,2025-09-06,2025-09-07,2025-09-10,2025-09-11,2025-09-12,2025-09-13,2025-09-14,2025-09-15,2025-09-17,2025-09-19,2025-09-21,2025-09-22,2025-09-23,2025-09-27,2025-09-29,2025-09-30,2025-10-01,2025-10-02,2025-10-04,2025-10-05,2025-10-08,2025-10-09,2025-10-10,2025-10-14,2025-10-16,2025-10-17,2025-10-18,2025-10-19,2025-10-20,2025-10-24,2025-10-25,2025-10-26,2025-10-28,2025-10-30,2025-11-02,2025-11-03,2025-11-04,2025-11-05'
     },
     grammar: {
-      startDate: '2025-08-12',
-      reviewDays: '0,1,3,6,15',
+      startDate: '2025-08-24',
+      reviewDays: '0,2,4,7,16',
       tasks: [
-        {name: '简单句的核心构成', duration: 1}, {name: '谓语动词时态', duration: 1}, {
-          name: '谓语动词情态',
-          duration: 1
-        }
+        { name:'简单句的核心构成', duration:1 },
+        { name:'谓语动词时态', duration:1 },
+        { name:'谓语动词情态', duration:1 },
+        { name:'谓语动词语态', duration:1 },
+        { name:'谓语动词否定和强调', duration:1 },
+        { name:'限定词', duration:1 },
+        { name:'形容词、副词', duration:1 },
+        { name:'介词短语', duration:1 },
+        { name:'同位语、插入语', duration:1 },
+        { name:'非谓语动词做主宾表', duration:1 },
+        { name:'非谓语动词做定状', duration:2 },
+        { name:'并列句', duration:2 },
+        { name:'宾语从句', duration:2 },
+        { name:'表语从句', duration:2 },
+        { name:'主语从句', duration:2 },
+        { name:'同位语从句', duration:2 },
+        { name:'定语从句', duration:3 },
+        { name:'状语从句', duration:3 },
+        { name:'虚拟', duration:2 },
+        { name:'倒装', duration:2 },
+        { name:'强调', duration:2 },
+        { name:'断开长难句-标点', duration:2 },
+        { name:'断开长难句-连接词', duration:2 },
+        { name:'分析主谓', duration:2 },
+        { name:'简化长难句', duration:2 },
+        { name:'分裂结构', duration:2 },
+        { name:'嵌套结构', duration:2 },
+        { name:'平行结构', duration:2 },
       ],
-      rounds: ['书&笔记', '视频', '笔记&Book训练', '笔记', '笔记&App训练', '笔记'],
-      restDays: '2025-08-27,2025-08-29,2025-08-30'
+      rounds: ['书&笔记', {label: '视频', duration: 1}, {label: '笔记&Book训练', duration: 1}, { label: '笔记', duration: 1 }, {label: '笔记&App训练', duration: 1}, {label: '笔记', duration: 1}],
+      restDays: '2025-08-27,2025-08-29,2025-08-30,2025-09-02,2025-09-05,2025-09-06,2025-09-09,2025-09-13,2025-09-20,2025-09-25,2025-09-30,2025-10-01,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-07,2025-10-10,2025-10-18,2025-10-25'
     },
     math: {
       startDate: '2025-08-11',
-      reviewDays: '0,1,3,0,1,15,29',
+      reviewDays: '0,2,4,0,0,3,0,3,7,2,15,0,16',
       tasks: [
-        {name: '行列式', duration: 5},
+        {name: '行列式', duration: 4},
         {name: '矩阵', duration: 5},
         {name: '向量', duration: 5},
         {name: '线性方程组', duration: 5},
@@ -141,7 +165,13 @@
         {name: '二重积分', duration: 5},
         {name: '常微分方程', duration: 5}
       ],
-      rounds: ['书', '辅导讲义/18讲', '660题', '基础', '总结', '笔记 & 提高', '660题第二遍', '提高第二遍'],
+      rounds: ['书', '辅导讲义/18讲', '660题', '基础', '总结', {label: '看笔记', duration: 2}, {
+        label: '看笔记',
+        duration: 2
+      }, '提高', {label: '看笔记', duration: 2}, {label: '看笔记', duration: 2}, '660题第二遍', {
+        label: '看笔记',
+        duration: 1
+      }, '提高第二遍', {label: '笔记', duration: 2}],
       restDays: '2025-08-29,2025-08-30,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-09,2025-09-10,2025-09-11,2025-09-13,2025-09-16,2025-09-19,2025-09-20,2025-09-28,2025-09-30,2025-10-08,2025-10-09,2025-10-11,2025-10-12,2025-10-14,2025-10-17'
     }
   };
@@ -171,21 +201,32 @@
     tasksContainer.appendChild(wrap);
   }
 
-  // 添加轮数输入
-  function addRoundInput(val = '第n轮') {
+  // 修改后的：添加轮数输入，支持 duration
+  function addRoundInput(val = {label: '第n轮', duration: null}) {
     const div = document.createElement('div');
     div.style.display = 'flex';
     div.style.alignItems = 'center';
     div.style.gap = '4px';
+
     const input = document.createElement('input');
     input.type = 'text';
     input.className = 'round-input';
-    input.value = val;
+    input.value = typeof val === 'string' ? val : val.label;
+
+    const durInput = document.createElement('input');
+    durInput.type = 'number';
+    durInput.className = 'round-duration';
+    durInput.min = '1';
+    durInput.placeholder = '天数(可选)';
+    durInput.value = val && val.duration ? val.duration : '';
+
     const delBtn = document.createElement('button');
     delBtn.type = 'button';
     delBtn.textContent = '-';
     delBtn.addEventListener('click', () => div.remove());
+
     div.appendChild(input);
+    div.appendChild(durInput);
     div.appendChild(delBtn);
     roundsDiv.appendChild(div);
   }
@@ -231,8 +272,9 @@
       alert('请选择开始学习日期');
       return;
     }
-    const startDate = parseDateInput(startVal);
+    const startDate = new Date(startVal);
 
+    // 任务收集（保留）
     const rows = tasksContainer.querySelectorAll('.task-row');
     const tasks = [];
     rows.forEach(r => {
@@ -247,15 +289,25 @@
 
     const reviewDays = reviewDaysInput.value.split(',').map(s => parseInt(s.trim(), 10)).filter(n => !Number.isNaN(n) && n >= 0);
     const restDays = restDaysInput.value.split(',').map(s => s.trim()).filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s));
-    const roundLabels = [...roundsDiv.querySelectorAll('.round-input')].map(inp => inp.value.trim() || '第n轮');
+
+    // 轮数收集：支持 label + duration
+    const roundLabels = [...roundsDiv.querySelectorAll('div')].map(div => {
+      const label = div.querySelector('.round-input').value.trim() || '第n轮';
+      const durVal = div.querySelector('.round-duration').value.trim();
+      const duration = durVal ? parseInt(durVal, 10) : null;
+      return {label, duration};
+    });
 
     const calendarMap = {};
     let currentStudyStart = new Date(startDate);
+
     tasks.forEach(task => {
       const {name, duration: dur} = task;
+
+      // 学习阶段
       let studyCount = 0;
       let dayPtr = new Date(currentStudyStart);
-      const studyRoundText = roundLabels[0] || '第1轮';
+      const studyRoundText = roundLabels[0]?.label || '第1轮';
       while (studyCount < dur) {
         const ds = formatDate(dayPtr);
         if (!restDays.includes(ds)) {
@@ -263,24 +315,32 @@
           calendarMap[ds].studies.push(`学习: ${name}（${studyRoundText}）`);
           studyCount++;
         }
-        dayPtr = addDays(dayPtr, 1);
+        dayPtr.setDate(dayPtr.getDate() + 1);
       }
-      const studyEnd = addDays(dayPtr, -1);
+      const studyEnd = new Date(dayPtr.getTime() - 24 * 3600 * 1000);
       let prevEnd = new Date(studyEnd);
+
+      // 复习阶段
       let round = 2;
       reviewDays.forEach(offset => {
-        const reviewStart = addDays(prevEnd, 1 + offset);
-        for (let j = 0; j < dur; j++) {
-          const d = addDays(reviewStart, j);
+        const reviewStart = new Date(prevEnd.getTime() + (1 + offset) * 24 * 3600 * 1000);
+
+        // ✅ 使用轮数的 duration 优先，否则用任务的 duration
+        const roundInfo = roundLabels[round - 1] || {label: `第${round}轮`, duration: null};
+        const roundDur = roundInfo.duration ? roundInfo.duration : dur;
+        const roundText = roundInfo.label;
+
+        for (let j = 0; j < roundDur; j++) {
+          const d = new Date(reviewStart.getTime() + j * 24 * 3600 * 1000);
           const ds = formatDate(d);
           if (!calendarMap[ds]) calendarMap[ds] = {studies: [], reviews: []};
-          const roundText = roundLabels[round - 1] || `第${round}轮`;
           calendarMap[ds].reviews.push(`复习: ${name}（${roundText}）`);
         }
-        prevEnd = addDays(reviewStart, dur - 1);
+        prevEnd = new Date(reviewStart.getTime() + (roundDur - 1) * 24 * 3600 * 1000);
         round++;
       });
-      currentStudyStart = addDays(studyEnd, 1);
+
+      currentStudyStart = new Date(studyEnd.getTime() + 24 * 3600 * 1000);
     });
 
     const allDates = Object.keys(calendarMap).sort();
