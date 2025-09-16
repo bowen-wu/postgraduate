@@ -12,9 +12,10 @@
         input[type="text"], input[type="file"] { padding: 5px; font-size: 14px; margin: 5px 0; }
         button { padding: 8px 16px; font-size: 14px; margin-top: 10px; cursor: pointer; }
         .error-list { margin-top: 20px; }
-        .error-list li { margin-bottom: 5px; color: red; }
+        .error-list li { margin-bottom: 10px; color: red; line-height: 1.4; }
         .success { color: green; }
         label { font-weight: bold; display: block; margin-top: 10px; }
+        .context { color: #555; font-size: 12px; margin-top: 2px; }
     </style>
 </head>
 <body>
@@ -83,7 +84,11 @@
       if (sWord && uWord) {
         const distance = levenshtein(sWord.toLowerCase(), uWord.toLowerCase());
         if (distance <= 2) { // 拼写错误或轻微差异
-          errors.push(`${++errorCount}. 拼写错误：预期 "${sWord}", 实际 "${uWord}"`);
+          const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
+          errors.push({
+            msg: `${++errorCount}. 拼写错误：预期 "${sWord}", 实际 "${uWord}" (位置: 第 ${j+1} 个单词)`,
+            context: `上下文: ... ${context} ...`
+          });
           i++;
           j++;
           continue;
@@ -91,10 +96,18 @@
       }
 
       if (sWord && (!uWord || !userWords.slice(j).includes(sWord))) {
-        errors.push(`${++errorCount}. 漏掉单词: "${sWord}"`);
+        const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
+        errors.push({
+          msg: `${++errorCount}. 漏掉单词: "${sWord}" (预期位置: 第 ${i+1} 个单词)`,
+          context: `上下文: ... ${context} ...`
+        });
         i++;
       } else if (uWord && !standardWords.slice(i).includes(uWord)) {
-        errors.push(`${++errorCount}. 多写单词: "${uWord}"`);
+        const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
+        errors.push({
+          msg: `${++errorCount}. 多写单词: "${uWord}" (位置: 第 ${j+1} 个单词)`,
+          context: `上下文: ... ${context} ...`
+        });
         j++;
       } else {
         i++;
@@ -148,7 +161,11 @@
       } else {
         errors.forEach(err => {
           const li = document.createElement('li');
-          li.textContent = err;
+          li.textContent = err.msg;
+          const ctx = document.createElement('div');
+          ctx.className = 'context';
+          ctx.textContent = err.context;
+          li.appendChild(ctx);
           resultEl.appendChild(li);
         });
       }
