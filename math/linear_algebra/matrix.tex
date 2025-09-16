@@ -57,6 +57,7 @@
             \end{bmatrix}
         \]
         称为矩阵$A$的\textbf{伴随矩阵}
+        \item 伴随矩阵是余子式矩阵的转置，即$A^* = [A_{ji}] = (A_{ij})^T$
         \item $n$阶方阵$A = [a_{ij}]_{n \times n}$，如果存在$n$阶方阵$B$使得$AB = BA = E$(单位矩阵)成立，则称$A$是\textbf{可逆矩阵}或\textbf{非奇异矩阵}，$B$是$A$的逆矩阵
         \item 对$m \times n$矩阵，下列三种变换
         \begin{enumerate}
@@ -244,6 +245,7 @@
         \item $(A - B)^T = A^T - B^T$
         \item $(kA)^T = kA^T$
         \item $(AB)^T = B^{T}A^T $
+        \item $(E + A)^T = E + A $
     \end{enumerate}
 
     \subsubsection{可逆}
@@ -486,6 +488,14 @@
             \item $\mathbf{B}$ 的列向量是其次方程组 $\mathbf{Ax} = 0$ 的解
             \item $r(\mathbf{A}) + r(\mathbf{B}) \le n$
         \end{enumerate}
+        \item 若 $a_{ij} + A_{ij} = 0$ 则:
+        \[
+            \begin{aligned}
+                A_{ij} &= -a_{ij} \\
+                A^* = (A_{ij})^T &= (-a_{ij})^T = -(a_{ij})^T = -A^T
+            \end{aligned}
+        \]
+        \item 若 $A^* = A^T$，则$A_{ij} = a_{ij}$
     \end{enumerate}
 
 \end{document}
