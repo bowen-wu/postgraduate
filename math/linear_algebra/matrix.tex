@@ -104,7 +104,7 @@
             &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
         \end{align*}
         \item 若$A$是$n$阶矩阵，且满足$AB = E$，则必有$BA = E$
-        \item 用初等矩阵$P$左(右)乘矩阵$A$，其结果$PA$($AP$)就是对矩阵$A$作一次相应的初等行(列)变换 \Rightarrow \textbf{左乘行变换，右乘列变换}
+        \item 用初等矩阵$P$左(右)乘矩阵$A$，其结果$PA$($AP$)就是对矩阵$A$作一次相应的初等行(列)变换 \; \Rightarrow \textbf{左乘行变换，右乘列变换}
         \item 初等矩阵均可逆，其逆矩阵是同类型的初等矩阵，即
 
         \renewcommand{\arraystretch}{1.2}  % 行高放大 1.2 倍
@@ -192,8 +192,8 @@
                 C & D
             \end{bmatrix}^{T}
             = \begin{bmatrix}
-                  A^T & B^T \\
-                  C^T & D^T
+                  A^T & C^T \\
+                  B^T & D^T
             \end{bmatrix}
         \]
         \item $(A + B)^2 = (A + B)(A + B) = A^2 + {\color{red}{AB}} + {\color{red}{BA}} + B^2 \;\mathbf{\neq}\; A^2 + 2AB + B^2$
@@ -201,7 +201,7 @@
         \begin{enumerate}
             \item $E - A^3 = (E - A)(E + A + A^2)$
             \item $E + A^3 = (E + A)(E - A + A^2)$
-            \item $AB - 2B - 4A = 0$ \Leftrightarrow $(A - 2E)(B - 4E) = 8E$
+            \item $AB - 2B - 4A = 0$ \Leftrightarrow \; $(A - 2E)(B - 4E) = 8E$
         \end{enumerate}
         \item 设$\alpha$和$\beta$都是列向量，则
         \begin{enumerate}
@@ -245,7 +245,7 @@
         \item $(A - B)^T = A^T - B^T$
         \item $(kA)^T = kA^T$
         \item $(AB)^T = B^{T}A^T $
-        \item $(E + A)^T = E + A $
+        \item $(E + A)^T = E + A^T $
     \end{enumerate}
 
     \subsubsection{可逆}

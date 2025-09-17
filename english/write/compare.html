@@ -2,176 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compare</title>
-    <script src="https://cdn.jsdelivr.net/npm/diff@5.1.0/dist/diff.min.js"></script>
+    <title>Article Compare</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
-        h2 { color: #333; }
-        textarea { width: 100%; height: 150px; margin: 10px 0; padding: 8px; font-size: 14px; }
-        input[type="text"], input[type="file"] { padding: 5px; font-size: 14px; margin: 5px 0; }
-        button { padding: 8px 16px; font-size: 14px; margin-top: 10px; cursor: pointer; }
-        .error-list { margin-top: 20px; }
-        .error-list li { margin-bottom: 10px; color: red; line-height: 1.4; }
-        .success { color: green; }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        textarea { width: 90%; height: 200px; margin-top: 10px; }
         label { font-weight: bold; display: block; margin-top: 10px; }
-        .context { color: #555; font-size: 12px; margin-top: 2px; }
+        .diff { margin-top: 10px; white-space: pre-wrap; font-family: monospace; }
+        .added { background: #d4fcbc; }
+        .removed { background: #fbb6c2; }
+        .error { color: red; font-weight: bold; }
+        table { border-collapse: collapse; margin-top: 10px; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 5px; text-align: left; vertical-align: top; }
+        .legend span { display: inline-block; margin-right: 10px; padding: 2px 5px; }
+        .green-bg { background: #d4fcbc; }
+        .red-bg { background: #fbb6c2; }
+        .red-text-green-bg { background: #d4fcbc; color: red; font-weight: bold; }
     </style>
 </head>
 <body>
-
-<h2 title="输入序号和英文内容，提交后会自动和所选 Markdown 文件中的内容对比，检测拼写错误、漏词或多写的单词。">Compare</h2>
+<h2>Compare Articles</h2>
 
 <label for="seq">No.：</label>
 <input type="text" id="seq">
 
-<label for="inputText">Content：</label>
-<textarea id="inputText"></textarea>
+<label for="textB">Your Article (with errors)：</label>
+<textarea id="textB" placeholder="Paste your article (Article B) here..."></textarea>
 
-<label for="files">Please markdown file：</label>
-<input type="file" id="files" multiple accept=".md">
+<label for="files">Select Markdown file (contains correct articles)：</label>
+<input type="file" id="files" accept=".md">
 
-<button id="compareBtn">Submit</button>
+<br><br>
+<button onclick="compare()">Compare</button>
 
-<ul class="error-list" id="result"></ul>
+<div class="legend">
+    <strong>图例：</strong>
+    <span class="green-bg">绿色背景</span> = 多写单词，
+    <span class="red-bg">红色背景</span> = 漏写单词，
+    <span class="red-text-green-bg">红字绿底</span> = 拼写错误
+</div>
+
+<div id="result" class="diff"></div>
+<div id="errorTable"></div>
+
+<script src="https://unpkg.com/diff@5.2.0/dist/diff.min.js"></script>
+<script src="https://unpkg.com/typo-js@1.2.2/typo.js"></script>
 
 <script>
-  // 清理 Markdown -> 纯文本
+  let dictionary;
+
+  // 初始化拼写字典
+  async function initDictionary() {
+    try {
+      const aff = await fetch("en_US.aff").then(r => r.text());
+      const dic = await fetch("en_US.dic").then(r => r.text());
+      dictionary = new Typo("en_US", aff, dic, { platform: "any" });
+      console.log("Dictionary loaded");
+    } catch (e) {
+      console.warn("Dictionary not loaded, spelling check disabled");
+    }
+  }
+
+  // 缩写表
+  const contractions = {
+    "I'm": "I am",
+    "you're": "you are",
+    "he's": "he is",
+    "she's": "she is",
+    "it's": "it is",
+    "we're": "we are",
+    "they're": "they are",
+    "I've": "I have",
+    "you've": "you have",
+    "we've": "we have",
+    "they've": "they have",
+    "I'll": "I will",
+    "you'll": "you will",
+    "he'll": "he will",
+    "she'll": "she will",
+    "it'll": "it will",
+    "we'll": "we will",
+    "they'll": "they will",
+    "don't": "do not",
+    "doesn't": "does not",
+    "didn't": "did not",
+    "can't": "cannot",
+    "couldn't": "could not",
+    "won't": "will not",
+    "wouldn't": "would not",
+    "isn't": "is not",
+    "aren't": "are not",
+    "wasn't": "was not",
+    "weren't": "were not",
+    "let's": "let us",
+    "that's": "that is",
+    "there's": "there is",
+    "here's": "here is",
+    "what's": "what is",
+    "who's": "who is"
+  };
+
+  function expandContractions(text) {
+    for (const [abbr, full] of Object.entries(contractions)) {
+      const re = new RegExp(`\\b${abbr}\\b`, "g");
+      text = text.replace(re, full);
+    }
+    return text;
+  }
+
+  function checkSpelling(word) {
+    if (!dictionary) return true;
+    const cleanWord = word.replace(/[^a-zA-Z']/g, "");
+    return cleanWord ? dictionary.check(cleanWord) : true;
+  }
+
   function markdownToText(md) {
     return md
       .replace(/<br\s*\/?>/gi, '\n')
       .replace(/<[^>]+>/g, '')
       .replace(/\*\*(.*?)\*\*/g, '$1')
-      .replace(/&emsp;/g, '    ')
+      .replace(/&emsp;/g, ' ')
       .replace(/&nbsp;/g, ' ')
       .replace(/\r\n/g, '\n')
-      .replace(/\n+/g, ' ')
       .trim();
   }
+  async function compare() {
+    const seq = document.getElementById("seq").value.trim();
+    const file = document.getElementById("files").files[0];
+    const textB = document.getElementById("textB").value;
+    const resultEl = document.getElementById("result");
+    const tableEl = document.getElementById("errorTable");
+    resultEl.innerHTML = '';
+    tableEl.innerHTML = '';
 
-  // Levenshtein 编辑距离
-  function levenshtein(a, b) {
-    const dp = Array(a.length + 1).fill(0).map(() => Array(b.length + 1).fill(0));
-    for (let i = 0; i <= a.length; i++) dp[i][0] = i;
-    for (let j = 0; j <= b.length; j++) dp[0][j] = j;
-    for (let i = 1; i <= a.length; i++) {
-      for (let j = 1; j <= b.length; j++) {
-        if (a[i - 1] === b[j - 1]) dp[i][j] = dp[i - 1][j - 1];
-        else dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1;
-      }
-    }
-    return dp[a.length][b.length];
-  }
+    if (!seq) { alert("请输入编号"); return; }
+    if (!file) { alert("请选择一个 Markdown 文件"); return; }
+    if (!textB) { alert("请输入需要对比的文章（Article B）"); return; }
 
-  // 对比单词并检测拼写错误
-  function compareWordsWithSpellCheck(userText, standardText) {
-    const userWords = userText.split(/\s+/);
-    const standardWords = standardText.split(/\s+/);
-    const errors = [];
-    let i = 0, j = 0;
-    let errorCount = 0;
+    const content = await file.text();
+    const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=\\n##|$)`, "i");
+    const match = content.match(regex);
+    if (!match) { alert(`未找到编号 ${seq} 对应的文章`); return; }
 
-    while (i < standardWords.length || j < userWords.length) {
-      const sWord = standardWords[i] || '';
-      const uWord = userWords[j] || '';
+    let textA = markdownToText(match[1]);
+    const textA_exp = expandContractions(textA);
+    const textB_exp = expandContractions(textB);
 
-      if (sWord === uWord) {
-        i++;
-        j++;
-        continue;
-      }
+    const diff = Diff.diffWords(textA_exp, textB_exp);
+    let resultHTML = '';
+    let errors = [];
 
-      if (sWord && uWord) {
-        const distance = levenshtein(sWord.toLowerCase(), uWord.toLowerCase());
-        if (distance <= 2) { // 拼写错误或轻微差异
-          const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
-          errors.push({
-            msg: `${++errorCount}. 拼写错误：预期 "${sWord}", 实际 "${uWord}" (位置: 第 ${j+1} 个单词)`,
-            context: `上下文: ... ${context} ...`
-          });
-          i++;
-          j++;
+    for (let i = 0; i < diff.length; i++) {
+      const part = diff[i];
+
+      // 仅当 removed + added 各自 1 个单词时才视为拼写替换
+      if (part.removed && i + 1 < diff.length && diff[i + 1].added) {
+        const removedWords = part.value.split(/\s+/).filter(Boolean);
+        const addedWords = diff[i + 1].value.split(/\s+/).filter(Boolean);
+
+        if (removedWords.length === 1 && addedWords.length === 1) {
+          const correct = removedWords[0];
+          const wrong = addedWords[0];
+          resultHTML += `<span style="color:green;">${correct}</span> `;
+          resultHTML += `<span class="red-text-green-bg">${wrong}</span> `;
+          errors.push({ word: wrong, correct: correct, type: "拼写错误" });
+          i++; // 跳过下一个 added
           continue;
         }
       }
 
-      if (sWord && (!uWord || !userWords.slice(j).includes(sWord))) {
-        const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
-        errors.push({
-          msg: `${++errorCount}. 漏掉单词: "${sWord}" (预期位置: 第 ${i+1} 个单词)`,
-          context: `上下文: ... ${context} ...`
+      if (part.added) {
+        const words = part.value.split(/\s+/).filter(Boolean);
+        words.forEach((w, idx) => {
+          const clean = w.replace(/[^a-zA-Z']/g, "");
+          if (clean && !checkSpelling(clean)) {
+            // 拼写错误
+            resultHTML += `<span class="red-text-green-bg">${w}</span> `;
+            errors.push({ word: w, correct: "", type: "拼写错误" });
+          } else {
+            // 多写单词
+            resultHTML += `<span class="added">${w}</span> `;
+            errors.push({ word: w, type: "多写" });
+          }
         });
-        i++;
-      } else if (uWord && !standardWords.slice(i).includes(uWord)) {
-        const context = userWords.slice(Math.max(0, j-2), j+3).join(" ");
-        errors.push({
-          msg: `${++errorCount}. 多写单词: "${uWord}" (位置: 第 ${j+1} 个单词)`,
-          context: `上下文: ... ${context} ...`
+      } else if (part.removed) {
+        const words = part.value.split(/\s+/).filter(Boolean);
+        words.forEach(w => {
+          resultHTML += `<span class="removed">${w}</span> `;
+          errors.push({ word: w, type: "漏写" });
         });
-        j++;
       } else {
-        i++;
-        j++;
+        resultHTML += part.value;
       }
     }
 
-    return errors;
+    resultEl.innerHTML = resultHTML;
   }
 
-  document.getElementById('compareBtn').addEventListener('click', () => {
-    const files = document.getElementById('files').files;
-    const seq = document.getElementById('seq').value.trim();
-    const userText = document.getElementById('inputText').value.trim();
-    const resultEl = document.getElementById('result');
-    resultEl.innerHTML = '';
-
-    if (!seq || !userText) {
-      alert('请先填写序号和输入内容');
-      return;
-    }
-
-    if (files.length === 0) {
-      alert('请在提交前选择至少一个 Markdown 文件');
-      return;
-    }
-
-    const readers = [];
-    for (let i = 0; i < files.length; i++) {
-      const reader = new FileReader();
-      reader.readAsText(files[i]);
-      readers.push(new Promise(resolve => {
-        reader.onload = e => resolve(e.target.result);
-      }));
-    }
-
-    Promise.all(readers).then(contents => {
-      const allText = contents.join('\n');
-      const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=\\n##|$)`, 'i');
-      const match = allText.match(regex);
-      if (!match) {
-        alert(`未找到序号 "${seq}" 对应的 Markdown 内容`);
-        return;
-      }
-
-      const standardText = markdownToText(match[1]);
-      const errors = compareWordsWithSpellCheck(userText, standardText);
-
-      if (errors.length === 0) {
-        resultEl.innerHTML = '<li class="success">未发现错误</li>';
-      } else {
-        errors.forEach(err => {
-          const li = document.createElement('li');
-          li.textContent = err.msg;
-          const ctx = document.createElement('div');
-          ctx.className = 'context';
-          ctx.textContent = err.context;
-          li.appendChild(ctx);
-          resultEl.appendChild(li);
-        });
-      }
-    });
-  });
+  initDictionary();
 </script>
-
 </body>
 </html>
