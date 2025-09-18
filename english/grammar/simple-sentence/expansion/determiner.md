@@ -25,7 +25,7 @@
 - launch
     - v. 发起，开始；发动，发射
     - launch a round of talks 发起一系列（或轮）讨论
-- heightened
+- heightened [ˈhaitənd]
     - adj. 提高的，提升的
 - dose
     - n. 剂量；一剂
