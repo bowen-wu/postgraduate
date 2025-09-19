@@ -37,7 +37,65 @@
 
     \section{向量}
 
+    \subsection{基本概念}
+
+    \begin{enumerate}
+        \item $n$个数$a_1, a_2, \dots, a_n$所组成的有序数组$\alpha = (a_1, a_2, \dots, a_n)^T$或$\alpha = (a_1, a_2, \dots, a_n)$称为$n$维向量，其中$a_1, a_2, \dots, a_n$称为向量$\alpha$的分量（或坐标），前一个表示式称为列向量，后者称为行向量
+        \item 对$n$维向量$\alpha_1, \alpha_2, \dots, \alpha_s$，如果存在不全为零的数$k$，使得
+        \[
+            k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{s}\alpha_s = 0
+        \]
+        则称向量组$\alpha_1, \alpha_2, \dots, \alpha_s$线性相关，否则，称向量组$\alpha_1, \alpha_2, \dots, \alpha_s$线性无关
+        \begin{enumerate}
+            \item 有零向量
+            \item 两向量成比例
+            \item $n+1$个$n$维向量
+        \end{enumerate}
+        \item TODO: 向量组$\alpha_1 = (a_{11}, a_{21}, \dots, a_{r1})^T, \alpha_2 = (a_{12}, a_{22}, \dots, a_{r2})^T, \dots, \alpha_m = (a_{1m}, a_{2m}, \dots, a_{rm})^T$及向量组$\alpha_1 = (a_{11}, a_{21}, \dots, a_{r1})^T, \alpha_2 = (a_{12}, a_{22}, \dots, a_{r2})^T, \dots, \alpha_m = (a_{1m}, a_{2m}, \dots, a_{rm})^T$
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item 向量组$\alpha_1, \alpha_2, \dots, \alpha_s$线性相关
+        \begin{enumerate}
+            \item \Leftrightarrow 其次线性方程组$[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_n]^T = 0$有非零解
+            \item \Leftrightarrow 向量组的秩$r(\alpha_1, \alpha_2, \dots, \alpha_s) < s$，$s$表示\textbf{未知数的个数}或\textbf{向量个数}
+            \item \Leftrightarrow 若向量组是{\color{red}{方阵}}($n$个$n$维向量)，则$|\alpha_1, \alpha_2, \dots, \alpha_n| = 0$
+        \end{enumerate}
+        \item $n+1$个$n$维向量一定线性相关
+        \item 任何{\color{red}{部分}}组$\alpha_1, \alpha_2, \dots, \alpha_r$相关 \Rightarrow \text{{\color{green}{整体}}组}$\alpha_1, \alpha_2, \dots, \alpha_r, \dots \alpha_s$相关
+        \item {\color{red}{整体}}组$\alpha_1, \alpha_2, \dots, \alpha_r, \dots \alpha_s$无关 \Rightarrow \text{{\color{green}{部分}}组}$\alpha_1, \alpha_2, \dots, \alpha_r$无关
+        \item $\alpha_1, \alpha_2, \dots, \alpha_n$ 线性无关 \Rightarrow \text{延伸组}$\widetilde{\mathbf{\alpha_1}}, \widetilde{\mathbf{\alpha_2}}, \dots, \widetilde{\mathbf{\alpha_n}}$线性无关
+        \item $\widetilde{\mathbf{\alpha_1}}, \widetilde{\mathbf{\alpha_2}}, \dots, \widetilde{\mathbf{\alpha_n}}$线性相关 \Rightarrow \text{缩短组}$\alpha_1, \alpha_2, \dots, \alpha_n$ 线性相关
 
 
+    \end{enumerate}
 
+    \subsection{运算}
+
+    \begin{enumerate}
+        \item 设$n$维向量$\alpha = (a_1, a_2, \dots, a_n)^T, \beta= (b_1, b_2, \dots, b_n)^T$，则
+        \begin{enumerate}
+            \item $\alpha + \beta = (a_1 + b_1, a_2 + b_2, \dots, a_n + b_n)^T$
+            \item $k\alpha = (ka_1, ka_2, \dots, ka_n)^T$
+            \item $0\alpha = 0$
+            \item $(\alpha, \beta) = \alpha^T\beta = \beta^T\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}$
+            \item $\alpha + \beta = \beta + \alpha$
+            \item $(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)$
+            \item $\alpha + 0 = \alpha $
+            \item $\alpha + (-\alpha) = 0$
+            \item $1\alpha = \alpha$
+            \item $k(l\alpha) = (kl)\alpha$
+            \item $k(\alpha + \beta) = k\alpha + k\beta$
+            \item $(k + l)\alpha = k\alpha + l\alpha$
+        \end{enumerate}
+        \item
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+        \item
+    \end{enumerate}
 \end{document}
