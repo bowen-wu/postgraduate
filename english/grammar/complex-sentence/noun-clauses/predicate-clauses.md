@@ -19,4 +19,19 @@
 - 表语从句位于系动词后，**常用于 be 动词后**。极少情况会出现在其他系动词后
 - For Williams, those activities become <u>**what** he calls "electronic heroin"</u>.
 - Yet the face remains <u>**that** the merger movement must be watched</u>.
-- 
+
+### Words
+
+- charge
+    - v. 制约；命令，吩咐
+- nationwide
+    - adj. 全国范围的，全国性的
+    - nationwide concern 全国性的担忧，全社会的关注
+- construction
+    - n. 建造，建立，构建
+- prone [proʊn]
+    - adj. 易于发生某事的；很可能...的
+- heroin
+    - n. 吗啡，海洛因
+- cliche [klɪˈʃeɪ]
+    - n. 陈词滥调，老生常谈 
