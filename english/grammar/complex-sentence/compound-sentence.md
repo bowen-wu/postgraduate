@@ -50,6 +50,10 @@
 5. *Even American newspapers...have* **not only** <u>survived</u> **but** often <u>returned to profit</u>.
 6. *Newport also recommends "deep scheduling" to* <u>combat constant interruptions</u> **and** <u>get more done in less time</u>.
 
+### 问题
+
+1. 如何识别并列的部分
+
 ### Words
 
 - capital
@@ -73,6 +77,7 @@
     - v. 预见，预知
 - present
     - adj. 在场的，出席的；现在的
+    - n. 礼物
 - air-conditioned
     - 装有空气调节设备的
 - exquisitely [ɛkˈskwɪzɪtlɪ]
