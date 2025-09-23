@@ -13,8 +13,7 @@
 - on: 某一天 on July 29th
 - in: 年月季节上午下午晚上 in March 2010
 - before/after: before graduating
-- from(自从...)
-- since(自从...): since 1914
+- from/since 自从...: since 1914
 - by(截止到/直到...): by 2025
 - until(截止到/直到...): until the early 20th century
 - for(持续...)
@@ -28,7 +27,7 @@
     - 地点: in the United States
     - 范围: in a 2014 study
 - above/over: 在...上面
-- under/below/beneath: 在...下面
+- under/below/beneath([bɪˈniːθ]): 在...下面
 - in front of: 在...之前
 - behind: 在...之后
 - near: 在...附近
@@ -53,7 +52,7 @@
     - get off the bus
     - turn off the light
         - turn 旋转
-- across/through: 穿过/经过...
+- across/through([θruː]): 穿过/经过...
     - across the Atlantic
     - through the forest
 - past: 经过...
@@ -71,16 +70,17 @@
         - A 是数词: two of the students
         - A 是量词: a piece of paper/a cut of tea
 - about: about migration
-- with: with a high BMI
+- with 伴随着有...: with a high BMI
 - without: 伴随着没有...
 - for:
     - 为了...(表示目的)
     - 因为...(表示原因)
     - 对于...(表示对象): for the whole country
 - by:
-    - 通过...方式或方法: by assembling a bicycle
+    - 通过...方式或方法: by assembling([ə'semblɪŋ]) a bicycle
     - 被...做(被动语态 + by + 动作发出者)
-    - 相差了...(表示变化的差额): <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since 1980</u>
+    - 相差了...(表示变化的差额): <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since
+      1980</u>
 - as:
     - 作为...: as "the end of the world"
     - 像...一样，如同...
@@ -123,9 +123,10 @@
     - 营销技巧
 - It take a while to do sth.
     - 做某事需要花上一段时间
+- personally [ˈpɜːrsənəli]
+    - adv. 在个人看来
 - complex([kəmˈpleks]) aspects of personality([ˌpɜːrsəˈnæləti])
     - 性格的复杂方面
-    - personally [ˈpɜːrsənəli] adv. 在个人看来 
 - neuroticism [njʊr'rɒtəsɪzəm]
     - n. 神经质，情绪不稳定性；神经过敏症
 - open-mindedness ['maɪndɪdnɪs]

@@ -183,16 +183,9 @@
       if (part.added) {
         const words = part.value.split(/\s+/).filter(Boolean);
         words.forEach((w) => {
-          const clean = w.replace(/[^a-zA-Z']/g, '');
-          if (clean && !checkSpelling(clean)) {
-            // 拼写错误
-            resultHTML += `<span class="red-text-green-bg">${w}</span> `;
-            errors.push({word: w, correct: '', type: '拼写错误'});
-          } else {
-            // 多写单词
-            resultHTML += `<span class="added">${w}</span> `;
-            errors.push({word: w, type: '多写'});
-          }
+          // 简化逻辑：直接标记为多写单词
+          resultHTML += `<span class="added">${w}</span> `;
+          errors.push({word: w, type: '多写'});
         });
       } else if (part.removed) {
         const words = part.value.split(/\s+/).filter(Boolean);

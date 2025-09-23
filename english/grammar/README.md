@@ -31,8 +31,8 @@
 ### 主从复合句
 
 1. 名词性从句
-    - 宾语从句
-    - 表语从句
+    - [宾语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/noun-clauses/object-clauses.md)
+    - [表语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/noun-clauses/predicate-clauses.md)
     - 主语从句
 2. 定语从句
 3. 状语从句
