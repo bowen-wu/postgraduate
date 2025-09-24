@@ -12,8 +12,7 @@
 #### 副词修饰其他
 
 1. 副词修饰动词: We <u>sincerely</u> hope you can be the judge for our competition.
-2. 副词修饰句子: <u>Unfortunately</u>, I have recently been diagnosed with a serious ear infection which will require
-   surgery on the same day as my departure.
+2. 副词修饰句子: <u>Unfortunately</u>, I have recently been diagnosed with a serious ear infection which will require surgery on the same day as my departure.
 3. 副词修饰形容词: I'm <u>extremely</u> happy to learn you are coming to China.
 4. 副词修饰其他副词: fairly(相当) quickly
 
@@ -28,7 +27,7 @@
 3. 最高级: **adj./adv. 的最高级（+介词短语表示比较的范围）**。表示"*（...范围内）最...*"，通常用于三者或以上的比较
     - it represents our greatest national security threat.
     - <u>The most immediate</u> changes will be observed in skill level, strength and inches lost.
-    - 最高级是在 adj./adv. 词尾加 -est 或前加 most，并且在前面再加上 the
+    - 最高级是在 adj./adv. 词尾加 -est 或前加 most，并且**在前面再加上 the**
 
 ### Word
 
@@ -52,7 +51,7 @@
 - exaggerate [ɪɡˈzædʒəreɪt]
     - v. 夸大
 - catch up 赶上
-- procedure
+- procedure [prəˈsiːdʒər]
     - n. 程序，手续；步骤
     - jury([ˈdʒʊri] n. 陪审团) selection procedure 陪审团遴选程序
 - conflict
