@@ -34,11 +34,10 @@
 
 - 位于**及物动词**后。doing/to do 取决于及物动词
     - enjoy + doing
-    - want + to do: They really want <u>to live their lives</u>...
+    - want + to do: They really want <u>to live their lifes</u>...
     - begin + doing/to do
 - to do 作宾语可以后置，用 it 形式宾语来占位置。后置条件：真正的宾语 to do 词组较长 & **主谓宾补**句型中
-    - Today many people find <u>it</u> **difficult(宾补)** <u>to trust their own opinion and seek balance by gaining
-      objectivity from external sources.</u>
+    - Today many people find <u>it</u> **difficult(宾补)** <u>to trust their own opinion and seek balance by gaining objectivity from external sources.</u>
 
 #### 介宾
 

@@ -31,10 +31,11 @@
 - 从句要有明确的主谓，即使省略 that，如果出现了两个谓语动词，即可分辨从句或并列句
 - 连接词
     - 取决于陈述句中缺的内容
-        - 缺"谁": who
-        - 缺"地点": where
-        - 缺"**是否**": whether/if
-        - 什么都不缺: that
+        - 缺"谁" who: I know **who** she is.
+        - 缺"内容/事物" what: I know **what** she wants.
+        - 缺"地点" where: I know **where** she is.
+        - 缺"**是否**" whether/if: I do not know **whether/if** she is here.
+        - 什么都不缺 that: I know **that** she is here.
 
 #### 宾语从句位置
 
