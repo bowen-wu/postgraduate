@@ -34,4 +34,29 @@
 
 ### Words
 
-// TODO
+- waiting list
+    - 候补名单；等候审批的申请人名单
+- all the time
+    - 一直
+- co-ordination
+    - 协作
+- federal
+    - adj. 联邦的
+- validation
+    - n. 认可，肯定
+- furthermore
+    - adv. 此外；而且
+- mature
+    - adj. 成熟的
+- outdated
+    - adj. 过时的，陈旧的
+- look puzzled
+    - 看起来很困惑、茫然
+- paradoxical
+    - adj. 自行矛盾的，看似荒谬的
+- at best
+    - 充其量，至多
+- trading block
+    - 贸易区块；贸易集团
+- out of date
+    - 过时

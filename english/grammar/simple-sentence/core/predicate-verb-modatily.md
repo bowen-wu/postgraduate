@@ -47,4 +47,33 @@
 
 ### Words
 
-// TODO
+- virtue
+    - n. 美德，优点
+- to some extent
+    - 在某种程度上，在一定程度上
+- shoulder
+    - v. 承担，肩负
+    - n. 肩膀
+    - shoulder the blame 承担责任，承担过失
+- housing sector
+    - 房地产行业
+- assemble
+    - v. 组装，装配；集合，聚集
+- average
+    - adj. 普通的，中等的；平均的
+- poetic
+    - adj. 富有诗意的；诗人的
+- philosophical
+    - adj. 哲学的；达观的
+- sensual
+    - adj. 世俗的；感官的
+- mathematical
+    - adj. 精确的；数学的
+- jealousy
+    - n. 嫉妒，猜忌
+- alert sb. to sth.
+    - 使某人意识到某事
+- inequality
+    - n. 不平等，不均等，不等量
+- maintain
+    - v. 维持
