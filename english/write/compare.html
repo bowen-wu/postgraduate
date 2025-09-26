@@ -6,7 +6,7 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         textarea { width: 90%; height: 200px; margin-top: 10px; }
-        label { font-weight: bold; display: block; margin-top: 10px; }
+        label { font-weight: bold; display: block; }
         .diff { margin-top: 10px; white-space: pre-wrap; font-family: monospace; line-height: 1.5; }
         .added { background: yellow; text-decoration: line-through; }
         .removed { background: #fbb6c2; font-weight: bold; }
@@ -14,103 +14,145 @@
         th, td { border: 1px solid #ccc; padding: 5px; text-align: left; vertical-align: top; }
         .legend span { display: inline-block; margin-right: 10px; padding: 2px 5px; }
         .red-text-green-bg { background: #d4fcbc; color: red; font-weight: bold; text-decoration: underline; }
+        .section { margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
+        .question { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+        .question-wrap { display: flex; align-items: center; gap: 20px; margin-bottom: 10px; }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
 <h2>Compare Articles</h2>
 
-<label for="seq">No.：</label>
-<input type="text" id="seq">
-
-<label for="textB">Your Article (with errors)：</label>
-<textarea id="textB" placeholder="Paste your article (Article B) here..." spellcheck="false"></textarea>
-
-<label for="files">Select Markdown file (contains correct articles)：</label>
-<input type="file" id="files" accept=".md">
-
-<br><br>
-<button onclick="compare()">Compare</button>
-
-<div class="legend">
-    <strong>图例：</strong>
-    <span class="added">黄色背景</span> = 多写单词，
-    <span class="removed">红色背景</span> = 漏写单词，
-    <span class="red-text-green-bg">(红字绿底)</span> = 拼写错误
+<div class="question-wrap">
+    <div class="question">
+        <label for="seq">No.：</label>
+        <input type="text" id="seq">
+    </div>
+    <div class="question">
+        <label for="files">Select Markdown file (contains correct articles)：</label>
+        <input type="file" id="files" accept=".md">
+    </div>
 </div>
 
+<!-- Mode 选择 -->
+<div id="modeSelection" class="question">
+    <label>Mode：</label>
+    <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
+    <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
+    <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
+</div>
+
+<!-- Dictation 音频上传（默认隐藏） -->
+<div id="audioSection" class="question hidden">
+    <label for="audioFile">Optional Audio File：</label>
+    <input type="file" id="audioFile" accept="audio/*">
+    <audio id="audioPlayer" controls class="hidden" loop></audio>
+</div>
+
+<div id="directions"></div>
+<div id="chinese"></div>
+
+<br><br>
+<label for="textB" id="textBLabel" class="hidden">Your Article (with errors)：</label>
+<textarea id="textB" placeholder="Paste your article (Article B) here..." spellcheck="false" class="hidden"></textarea>
+
+<div class="legend hidden" id="legend">
+    <strong>Legend:</strong>
+    <span class="added">Yellow background</span> = Extra word,
+    <span class="removed">Red background</span> = Missing word,
+    <span class="red-text-green-bg">(Red text, green background)</span> = Spelling mistake
+</div>
+
+<button onclick="compare()" id="compareBtn" class="hidden">Compare</button>
+
 <div id="result" class="diff"></div>
-<div id="errorTable"></div>
 
 <script src="https://unpkg.com/diff@5.2.0/dist/diff.min.js"></script>
 <script src="https://unpkg.com/typo-js@1.2.2/typo.js"></script>
 
 <script>
   let dictionary;
+  let fileContent = '';
+  let example = '';
 
-  // 初始化拼写字典
+  let currentMode = '';
+
+  // 监听 mode 改变
+  document.querySelectorAll('input[name="mode"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      currentMode = e.target.value;
+      extractSections(); // mode 改变时调用
+
+      // 显示文章编辑区和按钮
+      document.getElementById('textB').classList.remove('hidden');
+      document.getElementById('textBLabel').classList.remove('hidden');
+      document.getElementById('legend').classList.remove('hidden');
+      document.getElementById('compareBtn').classList.remove('hidden');
+
+      // Dictation 模式才显示音频上传
+      if (currentMode === 'Dictation') {
+        document.getElementById('audioSection').classList.remove('hidden');
+      } else {
+        // 重置文件选择器，确保用户选择同一个文件能触发事件
+        const audioFileInput = document.getElementById('audioFile');
+        audioFileInput.value = '';
+        document.getElementById('audioSection').classList.add('hidden');
+        document.getElementById('audioPlayer').classList.add('hidden');
+        document.getElementById('audioPlayer').src = '';
+      }
+    });
+  });
+
+  // 监听音频文件选择
+  document.getElementById('audioFile').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    const player = document.getElementById('audioPlayer');
+    if (file) {
+      const url = URL.createObjectURL(file);
+      player.src = url;
+      player.classList.remove('hidden');
+    } else {
+      player.src = '';
+      player.classList.add('hidden');
+    }
+  });
+
+  function updateModeStatus() {
+    const seqFilled = !!document.getElementById('seq').value.trim();
+    const fileSelected = !!fileContent;
+    const radios = document.querySelectorAll('input[name="mode"]');
+    radios.forEach(radio => radio.disabled = !(seqFilled && fileSelected));
+  }
+
+  // 监听 seq 输入
+  document.getElementById('seq').addEventListener('input', updateModeStatus);
+
+  // 监听文件选择
+  document.getElementById('files').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      fileContent = await file.text();
+      updateModeStatus(); // 文件选择后检查是否启用 Mode
+    }
+  });
+
   async function initDictionary() {
     try {
       const aff = await fetch('en_US.aff').then(r => r.text());
       const dic = await fetch('en_US.dic').then(r => r.text());
       dictionary = new Typo('en_US', aff, dic, {platform: 'any'});
-      console.log('Dictionary loaded');
     } catch (e) {
       console.warn('Dictionary not loaded, spelling check disabled');
     }
   }
 
-  // 缩写表
-  const contractions = {
-    'I\'m': 'I am',
-    'you\'re': 'you are',
-    'he\'s': 'he is',
-    'she\'s': 'she is',
-    'it\'s': 'it is',
-    'we\'re': 'we are',
-    'they\'re': 'they are',
-    'I\'ve': 'I have',
-    'you\'ve': 'you have',
-    'we\'ve': 'we have',
-    'they\'ve': 'they have',
-    'I\'ll': 'I will',
-    'you\'ll': 'you will',
-    'he\'ll': 'he will',
-    'she\'ll': 'she will',
-    'it\'ll': 'it will',
-    'we\'ll': 'we will',
-    'they\'ll': 'they will',
-    'don\'t': 'do not',
-    'doesn\'t': 'does not',
-    'didn\'t': 'did not',
-    'can\'t': 'cannot',
-    'couldn\'t': 'could not',
-    'won\'t': 'will not',
-    'wouldn\'t': 'would not',
-    'isn\'t': 'is not',
-    'aren\'t': 'are not',
-    'wasn\'t': 'was not',
-    'weren\'t': 'were not',
-    'let\'s': 'let us',
-    'that\'s': 'that is',
-    'there\'s': 'there is',
-    'here\'s': 'here is',
-    'what\'s': 'what is',
-    'who\'s': 'who is'
-  };
-
-  function expandContractions(text) {
-    for (const [abbr, full] of Object.entries(contractions)) {
-      const re = new RegExp(`\\b${abbr}\\b`, 'g');
-      text = text.replace(re, full);
+  // 监听文件选择，保存内容
+  document.getElementById('files').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      fileContent = await file.text();
     }
-    return text;
-  }
-
-  function checkSpelling(word) {
-    if (!dictionary) return true;
-    const cleanWord = word.replace(/[^a-zA-Z']/g, '');
-    return cleanWord ? dictionary.check(cleanWord) : true;
-  }
+  });
 
   function markdownToText(md) {
     return md
@@ -123,21 +165,72 @@
       .trim();
   }
 
-  async function compare() {
+  // 提取 Directions、Example 和 译文
+  function extractSections() {
     const seq = document.getElementById('seq').value.trim();
-    const file = document.getElementById('files').files[0];
+    const audioSectionEl = document.getElementById('audioSection');
+    const directionsEl = document.getElementById('directions');
+    const chineseEl = document.getElementById('chinese');
+
+    directionsEl.innerHTML = '';
+    chineseEl.innerHTML = '';
+
+    if (!seq) {
+      alert('请输入编号');
+      return;
+    }
+    if (!fileContent) {
+      alert('请先选择 Markdown 文件');
+      return;
+    }
+
+    const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=##\\s*\\d+|$)`, 'i');
+    const match = fileContent.match(regex);
+    if (!match) {
+      alert(`未找到编号 ${seq} 对应的文章`);
+      return;
+    }
+
+    const block = match[1];
+    const getSection = (title) => {
+      const re = new RegExp(`###\\s*${title}([\\s\\S]*?)(?=###|$)`, 'i');
+      const m = block.match(re);
+      return m ? m[1].trim() : '';
+    };
+
+    const directions = markdownToText(getSection('Directions'));
+    example = getSection('Example'); // 保留 HTML
+    const translation = getSection('译文'); // 保留 HTML
+
+    if (currentMode === 'Dictation') {
+      // Dictation 模式才显示音频上传
+      audioSectionEl.classList.remove('hidden');
+    } else {
+      // 重置文件选择器，确保用户选择同一个文件能触发事件
+      audioSectionEl.value = '';
+      audioSectionEl.classList.add('hidden');
+      document.getElementById('audioPlayer').classList.add('hidden');
+      document.getElementById('audioPlayer').src = '';
+
+      // 只有中译英模式才显示译文
+      if (currentMode === 'ChToEn') {
+        chineseEl.innerHTML = `<div class="section">${translation}</div>`;
+      } else {
+        directionsEl.innerHTML = `<div class="section"><h3>Directions</h3><pre>${directions}</pre></div>`;
+      }
+    }
+  }
+
+  // Compare：直接用 Example 作为 Article A
+  async function compare() {
     const textB = document.getElementById('textB').value;
     const resultEl = document.getElementById('result');
     const tableEl = document.getElementById('errorTable');
     resultEl.innerHTML = '';
     tableEl.innerHTML = '';
 
-    if (!seq) {
-      alert('请输入编号');
-      return;
-    }
-    if (!file) {
-      alert('请选择一个 Markdown 文件');
+    if (!example) {
+      alert('请先点击 “Extract Directions & Example & Translation” 提取 Example');
       return;
     }
     if (!textB) {
@@ -145,26 +238,16 @@
       return;
     }
 
-    const content = await file.text();
-    const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=\\n##|$)`, 'i');
-    const match = content.match(regex);
-    if (!match) {
-      alert(`未找到编号 ${seq} 对应的文章`);
-      return;
-    }
+    // 使用已经提取的 example
+    const textA = markdownToText(example);
 
-    let textA = markdownToText(match[1]);
-    const textA_exp = expandContractions(textA);
-    const textB_exp = expandContractions(textB);
-
-    const diff = Diff.diffWords(textA_exp, textB_exp);
+    const diff = Diff.diffWords(textA, textB);
     let resultHTML = '';
     let errors = [];
 
     for (let i = 0; i < diff.length; i++) {
       const part = diff[i];
 
-      // 仅当 removed + added 各自 1 个单词时才视为拼写替换
       if (part.removed && i + 1 < diff.length && diff[i + 1].added) {
         const removedWords = part.value.split(/\s+/).filter(Boolean);
         const addedWords = diff[i + 1].value.split(/\s+/).filter(Boolean);
@@ -175,7 +258,7 @@
           resultHTML += `<span style="color:green;">${correct}</span> `;
           resultHTML += `<span class="red-text-green-bg">(${wrong})</span> `;
           errors.push({word: wrong, correct: correct, type: '拼写错误'});
-          i++; // 跳过下一个 added
+          i++;
           continue;
         }
       }
@@ -183,7 +266,6 @@
       if (part.added) {
         const words = part.value.split(/\s+/).filter(Boolean);
         words.forEach((w) => {
-          // 简化逻辑：直接标记为多写单词
           resultHTML += `<span class="added">${w}</span> `;
           errors.push({word: w, type: '多写'});
         });
