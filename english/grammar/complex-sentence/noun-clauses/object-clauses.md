@@ -1,7 +1,7 @@
 # Complex Sentence
 
 - 复合句，又称"主从复合句"，就是指多件事之间根据重要性的不同，被分为"主句"和"从句"
-- 从句前一半有连接词引导
+- 从句前一般有连接词引导
 - ...<u>if you plan property</u>, **you'll know** <u>that you only need...350g of skin of beef and sixrashers of bacon...</u>
 
 ## Noun Clauses

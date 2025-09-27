@@ -67,7 +67,8 @@
 - 用法：**"XX时间的之前，强调一件事进行的*过程*"**，谓语动词公式: **have been doing**
 
 1. 过去完成进行时：谓语动词 == **had been + doing**. 翻译成：**在过去的之前就已经...**
-    - 表达"过去的之前"发生的事情：过去完成时 vs 过去完成进行时
+    - 表达"过去的之前"发生的事情
+    - 过去完成时 vs 过去完成进行时
         - 过去完成时：**强调结果** => We <u>had</u> not <u>won</u> the match
         - 过去完成进行时：**强调过程** => We <u>had been working</u> hard for several months.
 2. 现在完成进行时：谓语动词 == **have/has been + doing**. 翻译成：**在现在的之前就已经...**

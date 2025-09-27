@@ -1,0 +1,38 @@
+# Unit2
+
+- verdict == ruling == decision
+    - n. 裁决
+- the letter of the law
+    - 法律条文
+- throughout == always == everywhere
+- live through == survive
+- overrule == rule against
+- precede
+  - 领先
+  - A precede B A领先B
+- economy boom == economy prosperit
+    - 经济繁荣
+- economic recession == economy boom == economic slowdown 
+    - 经济衰退
+- economics == economic situation
+- decide to do sth. == be determined to do
+- decisiveness == involution == resolution 
+- involution 内卷
+    - evolution 进化
+    - revolution 革命
+- contested provisions 争议条款
+- testify == prove == verify == confirm
+- protest
+    - n. 抗议
+    - v. 反对
+- make ends meet == sruviving the day
+    - 维持生计
+- A differ frrom B
+    - Could he distinguish right from wrong?
+    - The two leaders had differed on the issus.
+- distinctive == special
+- differentiate == distinguish == separate
+- the relative strength 优势
+- traditional Chinese culture 中国传统文化
+- the fragments of civilization 文明的碎片
+

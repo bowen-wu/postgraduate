@@ -4,9 +4,15 @@
 
 ### Appositive Clauses
 
+- 同位语从句的作用: 解释说明一个**抽象**名词
+
 #### 写法
 
 - 同位语从句的写法与宾语从句相同
+    - 陈述句变宾语从句: **前加 that**
+    - 特殊疑问句变宾语从句: **调整语序为陈述语序，即将主语提到谓语动词前**
+    - 一般疑问句变宾语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
+    - **抽象**名词 + <u>连接词 + 陈述句</u>
 - 最常用的同位语从句是由**that**引导的从句，虽然**that**在同位语从句中不作成分，但是不能省略
 - ...the probability <u>**that** the company will subsequently have to restate earnings</u> increases by nearly 20%.
 - ...it is going to riskily close to the implication <u>**that** standards need to be lowered for poor children</u>.
@@ -22,7 +28,7 @@
     - belief 信念、看法
     - faith 信仰
     - claim 声明
-    - report 报告: We often hear media reports <u>**that** an unauthorized hacker has been able to access a computer database and to alter information stored there.
+    - report 报告: We often hear media reports <u>**that** an *unauthorized* hacker **has been able** *to access* a computer database and *to alter* information *stored* there.
     - worry 担心
     - advantage 优势
     - evidence 证据
@@ -32,6 +38,7 @@
     - probability 可能性
     - requirement 要求
 - <u>**What people don't realise</u> is <u>**that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain</u>...
+- With the blurring of roles, and the *fact* <u>**that** the home front lags well behind the workplace in making adjustments for working women, it's not surprising <u>**that** women are more stressed at home</u>.
 
 ### Words
 
