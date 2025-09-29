@@ -1,0 +1,37 @@
+# Unit3
+
+- result == consequence == outcome
+- as a result of
+    - 由于
+    - **A(结果)** as a result of B
+- result in
+    - 造成...结果, 导致
+    - A result in **B(结果)** == A cause B == A lead to B
+- result from
+    - 由...引起
+    - **A(结果)** result from B == stem from == originate from == spring from == derive from
+- A outweigh B
+    - A比B重要
+- 原告
+    - plaintiff == complaint
+- persecute
+    - v. （尤指宗教或政治信仰的）**迫害**，残害；骚扰，纠缠
+- prosecute
+- plead == beg
+    - plead with sb. 恳求某人
+    - plead for sth. 呼吁某事
+- Don't dwell on the past.
+- a loose budget vs a tight budget
+- A budget is telling your money where to go instead of wondering where it went.
+- levy == tax
+- fine
+    - n. 罚款
+- legally binding provisions
+    - 法律约束条款
+- replace A with B
+    - B 替代 A
+- misplaced anxiety
+    - 不该有的焦虑
+- gloom == doom
+    - 厄运
+- 
