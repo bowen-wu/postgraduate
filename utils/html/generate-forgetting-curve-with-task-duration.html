@@ -35,6 +35,7 @@
         <label><input type="radio" name="task-type" value="write" checked> 英语 Write</label>
         <label><input type="radio" name="task-type" value="grammar"> 英语 Grammar</label>
         <label><input type="radio" name="task-type" value="math"> 数学</label>
+        <label><input type="radio" name="task-type" value="coreWord" checked> Core Word </label>
     </label>
 
     <button id="load-default-btn" type="button">加载默认设置</button>
@@ -94,6 +95,35 @@
 
   // 默认数据
   const defaultData = {
+    coreWord: {
+      startDate: '2025-10-01',
+      reviewDays: '0,1,3,6,15',
+      tasks: [
+        {name: 'Unit4', duration: 2},
+        {name: 'Unit5', duration: 2},
+        {name: 'Unit6', duration: 2},
+        {name: 'Unit7', duration: 2},
+        {name: 'Unit8', duration: 2},
+        {name: 'Unit9', duration: 2},
+        {name: 'Unit10', duration: 2},
+        {name: 'Unit11', duration: 2},
+        {name: 'Unit12', duration: 2},
+        {name: 'Unit13', duration: 2},
+        {name: 'Unit14', duration: 2},
+        {name: 'Unit15', duration: 2},
+        {name: 'Unit16', duration: 2},
+        {name: 'Unit17', duration: 2},
+        {name: 'Unit18', duration: 2},
+        {name: 'Unit19', duration: 2},
+        {name: 'Unit20', duration: 2},
+        {name: 'Unit21', duration: 2},
+        {name: 'Unit1', duration: 2},
+        {name: 'Unit2', duration: 2},
+        {name: 'Unit3', duration: 2}
+      ],
+      rounds: ['精讲', {label: '笔记', duration: 1}, {label: '笔记', duration: 1}, '串讲', 'App', '笔记'],
+      restDays: ''
+    },
     write: {
       startDate: '2025-08-12',
       reviewDays: '0,1,3,6,15,15,1,3,6,15,29',

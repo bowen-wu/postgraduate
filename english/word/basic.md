@@ -6,6 +6,7 @@
 ## Suffix
 
 - -ist xx家 
+- -ics 学科
 
 ## Prefix
 

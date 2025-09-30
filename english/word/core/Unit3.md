@@ -10,6 +10,7 @@
 - result from
     - 由...引起
     - **A(结果)** result from B == stem from == originate from == spring from == derive from
+- offense vs defense
 - A outweigh B
     - A比B重要
 - 原告
@@ -34,4 +35,33 @@
     - 不该有的焦虑
 - gloom == doom
     - 厄运
-- 
+- substitute == alternative
+- nature reserves
+    - 自然保护区
+- massive financial reserves
+    - 庞大的财务储备
+- reserve == book
+    - 预定
+- interviwee
+    - 面试者；求职者
+- revise vs review
+    - revise 修改；修订
+- from my perspective == in my view == in my opinion
+- retrospect vs prospect vs introspect
+    - retrospect 回首过去
+        - in retrospect == look back
+    - prospect 前途, 前景
+    - introspect 反省, 内省
+- infrastructure upkeep
+    - 基础设施维护
+- abide **by** the law
+    - 遵守法律
+    - abide by == follow
+- stay + adj.
+    - stay positive
+    - stay focused
+    - stay strong
+- incredible == fantastic == marvellous == wonderful == good
+- faithful == loyal
+- data leakage
+    
