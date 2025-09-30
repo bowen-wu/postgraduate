@@ -36,7 +36,60 @@
 4. whom 指人，只能在**作宾语**时使用
 5. who/that 指人，可以做任何成分
 6. 关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略
-    - In the same study, a group was asked to remember both the information and *the folders* <u>it was stored in(介宾)</u>.
-    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <u>I am making(动宾) in the gym</u>.
+    - In the same study, a group was asked to remember both the information and *the folders* <u>it was stored in(
+      介宾)</u>.
+    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <u>I am making(
+      动宾) in the gym</u>.
     - I want to share these *old truths* <u>I've learned(动宾) along the way</u>.
+
+### 定语从句分类
+
+1. 限定性定语从句: 先行词**范围*不*明确**，需**修饰限定**(解释说明)。不需使用逗号隔开
+    - He will call <u>his friend</u> who is working in London.
+2. 非限定性定语从句: 先行词**范围明确**。需**使用逗号**隔开
+    - He will call <u>his mother</u>, who is working in London.
+    - 先行词**范围明确** = "绝对明确" || "相对明确"
+        - 绝对明确 => 专有名词、独一无二的: the Great Wall, mother, father
+            - Such a move could affect firms such as **McDonald's**, <u>which sponsors the youth coaching schema run by
+              the Football Association</u>.
+        - 相对明确 => 根据上下文可以判断出这个名词的范围是明确的
+            - **The new vaccine**, <u>which is different from the annual flu vaccine</u>, is available ahead of
+              expectations.
+
+| 特点  | 限定性定语从句 (Restrictive)                                          | 非限定性定语从句 (Non-restrictive)                            |
+|-----|----------------------------------------------------------------|-------------------------------------------------------|
+| 逗号  | **不用逗号**分隔                                                     | **用逗号**隔开                                             |
+| 先行词 | 范围不明确                                                          | 范围明确                                                  |
+| 作用  | **修饰限定**先行词，不可省略，影响表意                                          | **补充说明**先行词，可以省略，不影响表意                                |
+| 翻译  | 通常往前翻译<br>(译到先行词前，"...的名词")                                    | 通常无需往前翻译                                              |
+| 关系词 | 1. 关系词可以用 that<br> 2. 作宾语时可以省略<br> 3. 指人作宾语，用 whom/who/that 都可 | 1. 关系词**不能用 that**<br> 2. 不可以省略<br> 3. 指人作宾语，只能用 whom |
+
+- Even American newspapers, <u>which inhabit the most troubled corner of the global industry</u>, have not only survived
+  but often returned to profit.
+- A couple of Christmases ago, my youngest stepdaughter, <u>who was nine years old at the time</u>, got a Superman
+  T-shirt for Christmas.
+- Facebook...is a self-enhancer's paradise, <u>where people can share only the most flattering photos, the cream of
+  their wit, style, beauty, intellect and lifestyles</u>.
+
+### 限定性定语从句 vs 同位语从句
+
+- 相同点: 位于名词后
+- 区别
+    1. 定语从句**修饰限定**名词: 当名词范围不确定时，需要用定语从句来限定该名词的范围，相当于回答了 which(哪一个、哪一些)
+       的问题
+    2. 同位语从句**解释说明**名词: 当名词的含义不清楚时，需要用同位语从句来解释说明，相当于回答了 what(是什么) 的问题
+
+| 特点    | 同位语从句 (Appositive Clause)                                 | 限定性定语从句 (Restrictive Relative Clause)                         |
+|-------|-----------------------------------------------------------|---------------------------------------------------------------|
+| 从句作用  | **解释说明**n.                                                | **修饰限定**n.                                                    |
+| 修饰对象  | **抽象名词**（如 fact, idea, news, belief, promise, question 等） | **任意名词** => 从句前若为非抽象名词，则可判断是定语从句                              |
+| 引导词成分 | n. + that 从句 => that**不充当成分**则是同位语从句                      | n. + that 从句 => that **充当成分**则可判断出是定语从句                       |
+| 省略    | 连接词不能省略                                                   | 关系词在定语从句中作宾语时（及物动词后的宾语或介词后的宾语）可省略 => n. + 省略关系词的从句，则可判断出是定语从句 |
+
+- In effect, the U.S. can import food or it can import the works <u>**who** pick it</u>.
+- Second, paper checks have the advantage <u>**that** they provide receipts</u>, something <u>**that** many consumers
+  are unwilling to give up</u>.
+- Fear is not real. It is a product of thoughts <u>you create</u>.
+
+### 特殊的非限定性定语从句，补充说明整句话
 
