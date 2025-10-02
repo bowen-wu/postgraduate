@@ -87,9 +87,38 @@
 | 省略    | 连接词不能省略                                                   | 关系词在定语从句中作宾语时（及物动词后的宾语或介词后的宾语）可省略 => n. + 省略关系词的从句，则可判断出是定语从句 |
 
 - In effect, the U.S. can import food or it can import the works <u>**who** pick it</u>.
-- Second, paper checks have the advantage <u>**that** they provide receipts</u>, something <u>**that** many consumers
-  are unwilling to give up</u>.
+- Second, paper checks have the advantage <u>**that** they provide receipts</u>, something <u>**that** many consumers are unwilling to give up</u>.
 - Fear is not real. It is a product of thoughts <u>you create</u>.
+    - **n. + 主谓 == 定语从句**
 
 ### 特殊的非限定性定语从句，补充说明整句话
+
+- 关系词只能用 which 或 as，且做成分
+- 特殊的非限定性定语从句**位于主句后** => 可以使用 which 或 as
+    - ...so the centres need to be well air-conditioned, <u>**which/as** uses event more energy.
+    - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <u>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
+- 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as**
+    - <u>**As** Koziatek knows</u>, there is learning in just about everything.
+    - <u>**As** a News Feature article in Nature discusses</u>, a string of lucrative awards for researchers have joined
+      the Nobel Prizes in recent years.
+
+### 介词提前的定语从句
+
+- ...we would move quickly to the cashless society <u>**which** all payments are made electronically **in**</u>
+    - == ...we would move quickly to the cashless society <u>**in which** all payments are made electronically</u>
+- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**which** takeaways
+  cannot open **within**</u>.
+    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**within which**
+      takeaways cannot open</u>.
+
+- 定语从句中，与关系词搭配的介词可以提前，也可以不提前
+- 介词提前与否，表达的意思都一样，差别**在于关系词的选择**
+- 如果定语从句介词提前 => **关系词不能省略** + **不能用 that**
+    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <u>**among whom***
+      there is a small majority for free-market liberalism and economic rigour...</u>.
+    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across
+      the Park, <u>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted
+      in a sequence of images that turn out to be different parts of the some photograph</u>.
+
+## Words
 
