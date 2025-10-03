@@ -23,7 +23,7 @@
 - 表示被动的动作发生在不同的时间里，就需要把被动语态与时态相结合，即把be变成对应的各种时态
 - 被动语态的句子中，表现时态变化的不是动作所对应的动词，而是把"be"变成对应的各种时态
 
-![被动语态 & 时态](https://uy.wzznft.com/i/2025/09/07/xnahw3.jpeg)
+![被动语态 & 时态](../../../../assets/passive-tense.jpeg)
 
 #### 被动语态 & 情态
 
@@ -34,23 +34,23 @@
 
 - appeal
     - v. 呼吁，恳求；吸引；上诉，申诉
-- raid
+- raid [reɪd]
     - n. 突击检查；突袭，袭击
-- compound
+- compound [ˈkɑːmpaʊnd]
     - v. 加剧；混合，掺和
-- swine
+- swine [swaɪn]
     - n. 猪
 - epidemic
     - n. 流行病
-- tactic
+- tactic [ˈtæktɪk]
     - n. 策略，方法；战术
-- obesity
+- obesity [oʊˈbisəti]
     - n. 肥胖
-- moderately
+- moderately [ˈmɑːdərətli]
     - adv. 湿度地；有节制地
-- severely
+- severely [sɪ'vɪrli]
     - adv. 严重地
 - be determined by...
     - 取决于..., 由...决定
-- sustainability-oriented
+- sustainability([səˌsteɪnəˈbɪləti])-oriented([ˈɔːrientɪd])
     - 旨在提高承受力的；以可持续性为导向的

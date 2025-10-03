@@ -21,14 +21,14 @@
 
 - 同位语从句是用来解释**抽象**名词的，所以放在**抽象**名词后
 - 抽象名词:
-    - fact 事实: With the blurring of roles, and the fact <u>**that** the home front lags well behind the workplace in making adjustments for working women</u>, it's not surprising <u>**that** women are more stressed at home</u>.
+    - fact 事实: With the blurring of roles, and the fact <u>**that** *the home front lags well behind the workplace(家庭在某方面远远落后于职场)* **in making adjustments for working women(在为职业女性作出适应/调整上)**</u>, *it's not surprising(这并不令人惊讶)* <u>**that** women are more stressed at home</u>. 随着角色的日益模糊，再加上家庭在为职业女性作出调整方面远远落后于职场，女性在家里承受更多压力这一点就不足为奇了
     - idea 想法
     - sign 标志
     - point 观点
     - belief 信念、看法
     - faith 信仰
-    - claim 声明
-    - report 报告: We often hear media reports <u>**that** an *unauthorized* hacker **has been able** *to access* a computer database and *to alter* information *stored* there.
+    - claim [kleɪm] 声明
+    - report 报告: We often hear media reports <u>**that** an *unauthorized* hacker **has been able** *to access* a computer database and *to alter* information *stored* there</u>.
     - worry 担心
     - advantage 优势
     - evidence 证据
@@ -37,8 +37,7 @@
     - insight 洞悉、洞察力: The insight <u>**that** curiosity can drive you to do self-destructive things</u> is a profound one.
     - probability 可能性
     - requirement 要求
-- <u>**What people don't realise</u> is <u>**that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain</u>...
-- With the blurring of roles, and the *fact* <u>**that** the home front lags well behind the workplace in making adjustments for working women, it's not surprising <u>**that** women are more stressed at home</u>.
+- <u>**What** people don't realise</u> is <u>**that** in order to complete these tasks they need to use both the focus and unfocus circuits in their brain</u>...
 
 ### Words
 
@@ -57,10 +56,10 @@
     - 完成这些任务
 - lag behind
     - 落后；拖欠
-- circuit
+- circuit [ˈsɜːrkɪt]
     - n. 回路；电路
 - adjustment
     - n. 调整，调节
     - make adjustment 做出调整
-- blur
+- blur [blɜːr]
     - v. 使...模糊不清，变模糊

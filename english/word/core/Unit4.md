@@ -18,6 +18,11 @@
     - vt. 影响；感动
 - effect
     - n. 影响；效果
+    - 词组
+        - go/come into effect 生效
+        - take effect 生效
+        - in effect 实际上
+        - to the effect that... 大意是...
     - effect vs affect
         - But CCT Programs don't generally consider <u>affect/effect</u> on the environment.
     - effective adj. 有效的；生效的
@@ -143,6 +148,12 @@
 - vt. 处于领先地位；过（某种生活）；引导
 - n. 领先地位
 - A lead to B => A 导致 B
+- 词组
+    - lead to 导致；通向
+    - lead the way 带路；领路
+    - lead up to (把谈话）引向（某个话题）
+    - lead a...life 过着...的生活
+    - take the lead 带头，领先
 - leader n. 领导者；引导者
 - leadership n. 领导（地位）；领导班子；领导才能
 - leading adj. 最重要的; 主角的; 首位的，领先的
@@ -233,6 +244,9 @@
 
 - prep. 围绕；在那边
 - adv. 大约；周围
+- 词组
+    - around the corner 即将来临
+    - around the world 全世界
 - With the Spring Festival **around the corner(== coming sooner 即将到来)**
 - surround vt. 环绕；包围；与...紧密联系
 - surrounding adj. 周围的；附近的
@@ -285,7 +299,96 @@
     - == situation
     - The better you understand the cultural **context**, the more control you can have over your impact.
 - instance n. 实例
-    - for example == for instance
+    - for example == for instance 例如
 
+## call
 
+- n. 呼吁；电话；叫声
+- vt. 称呼；认为...是
+- call for sth. 呼吁某事
+- recall
+    - vt. 回忆起；召回（某人/产品）
+    - n. 召回；记忆力
+    - It's <u>in vain(徒劳)</u> to recall the pass, unless it works some influence upon the present.
+    - I can **recall** the day my grandfather died and the sadness I felt when we went to the hospital the day before.
 
+## concern
+
+- n. 担心；关心的事；(对人、组织等)重要的事情
+- vt. 涉及；担忧
+- Another <u>nationwide concern(举国关注的问题)</u> is whether public funds from other agencies are going into
+  construction in fire-prone districts.
+- concerned
+    - adj. 担心的；关注的；相关的
+    - be concerned with 与...相关
+    - be concerned about 对...担心
+- discern
+    - vt. 了解；分辨
+    - If you can make out, pick out, or distinguish something, you can **discern** it.
+    - This is a word for **recognizing** and **perceiving(理解)** things.
+- caregiver n. 看护者
+
+## history
+
+- n. 历史；历史学；(某人的)经历
+- historian n. 历史学家
+- historic adj. 有重大历史意义的；历史上
+- historical adj. (有关)历史的；历史学的
+- historic vs historical
+    - historic 表示具有重要(important)的历史意义
+    - historical 涉及历史、史学、过去的事实
+- historically
+- chronic
+    - adj. 慢性的；长期的
+    - <u>As well as(除了, == besides)</u> those **chronic** problems, the EU faces an acute crisis in its economic core,
+      the 16 countries that use the <u>single currency(统一货币)</u>.
+    - chronicle vt. 按时间顺序记载 n. 编年史
+        - == record
+        - To **chronicle** an event is to **record** it as it happens, and **a chronicle** is **a record** of those
+          events.
+        - If your grandmother took the time to **chronicle(v.)** the details of her 1920 journey to Japan, you can read
+          her **chronicle(n.)** today.
+
+## rise
+
+- n. 增加；增强
+- vi. 增加；变得更加成功；变得强烈
+- Generation Zs are looking for more certainty and stability, because of the **rise(兴起)** of the gig economy.
+- 词组
+    - rise above sth. 克服（障碍）；超越（限制）
+    - rise from 从...增长
+    - rise to 增长至
+    - give rise to 使发生（或存在)
+    - on the rise 在增长
+- arise vi. 产生，出现；由...引起
+    - == appear == occur
+- raise vt. 增加，提高；筹集；引起；抚养；饲养；举起
+    - raise my hand 举手
+    - raise a question 提出问题/引起问题
+    - raise a baby 抚养小孩
+    - raise money 筹集
+    - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
+- arouse vt. 引起(感情、态度)；唤醒
+    - == provoke
+- <u>arise / raise / arouse</u>
+    - A problem <u>_____</u>.
+    - He <u>_____</u> a question.
+    - Your <u>_____</u> my curiosity.
+
+## back
+
+- n. 背部；背面
+- vt. 支持 == support
+- adv. 以前，追溯至；回应（来信、电话、目光等）
+- adj. 背后的
+- One problem with the PreCheck program is the government's reluctance to **back/support** it.
+- 词组
+    - turn back (使)返回；无法改变计划
+    - back and forth 来回地
+    - get back to 重新开始
+    - scale back 削减（尤指经费或生意）
+    - back off 退缩，退却
+- background n. (出身、职业、事态发展等)背景
+    - == backdrop n. (实物或景象、事态或活动的)背景；(舞台的)背景幕布
+- backfire vi. 产生事与愿违的不良（或危险）后果；（车辆或其发动机）😔
+- feedback n. 反馈

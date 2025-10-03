@@ -16,19 +16,35 @@
     - **但连接词是 that 时，不作成分也不能省略**
 - The other issue is <u>**that** many children-especially older ones-may base their real estate knowledge on HGTV shows</u>...
 - ...eye contact is <u>**where** all the magic happens</u>.
-- Another nationwide concert is <u>**whether** public funds from other agencies are going into construction in fire-prone districts</u>.
+- Another nationwide concern is <u>**whether** public funds from other agencies are going into construction in fire-prone districts</u>.
+
+#### 连接词作用
+
+1. 纯连接词（不作成分）
+    - that
+    - whether/if
+2. 兼做成分的连接词（关系副词、关系代词）
+    - where：在从句里作地点状语
+        - Eye contact is where all the magic happens.
+    - when：作时间状语
+        - The problem is when we should start.
+    - why：作原因状语
+        - The reason is why he left early.
+    - who/what：在从句中作主语或宾语
+        - That is what I need.
+        - She is who helped me most.
 
 #### 位置
 
 - 表语从句位于系动词后，**常用于 be 动词后**。极少情况会出现在其他系动词后
-- For Williams, those activities become <u>**what** he calls "electronic heroin"</u>.
-- Yet the face remains <u>**that** the merger movement must be watched</u>.
+- For Williams, those activities become <u>**what** he calls "electronic heroin(电子海洛因)"</u>.
+- Yet the fact remains <u>**that** the merger movement must be watched</u>.
 
 ### Words
 
 - charge
     - v. 制约；命令，吩咐
-- nationwide
+- nationwide [ˌneɪʃnˈwaɪd]
     - adj. 全国范围的，全国性的
     - nationwide concern 全国性的担忧，全社会的关注
 - construction

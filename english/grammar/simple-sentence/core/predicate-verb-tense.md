@@ -6,7 +6,7 @@
 
 时态 == 时间(过去、现在、将来、过去将来) + 状态(一般、进行、完成、完成进行)
 
-![tense.jpeg](https://youke1.picui.cn/s1/2025/08/27/68af27bde36cc.jpeg)
+![tense.jpeg](../../../../assets/tense.jpeg)
 
 #### 一般状态
 

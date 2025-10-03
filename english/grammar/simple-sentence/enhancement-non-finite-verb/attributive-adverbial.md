@@ -75,6 +75,11 @@
     - let-let-let
     - read-read-read
 
+### 非谓语动词
+
+
+![非谓语动词](../../../../assets/non-finite-verb.jpeg)
+
 ### Words
 
 - mandate
