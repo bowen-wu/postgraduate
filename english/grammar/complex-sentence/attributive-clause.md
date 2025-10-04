@@ -36,10 +36,8 @@
 4. whom 指人，只能在**作宾语**时使用
 5. who/that 指人，可以做任何成分
 6. 关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略
-    - In the same study, a group was asked to remember both the information and *the folders* <u>it was stored in(
-      介宾)</u>.
-    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <u>I am making(
-      动宾) in the gym</u>.
+    - In the same study, a group was asked to remember both the information and *the folders* <u>it was stored in(介宾)</u>.
+    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <u>I am making(动宾) in the gym</u>.
     - I want to share these *old truths* <u>I've learned(动宾) along the way</u>.
 
 ### 定语从句分类
@@ -50,11 +48,9 @@
     - He will call <u>his mother</u>, who is working in London.
     - 先行词**范围明确** = "绝对明确" || "相对明确"
         - 绝对明确 => 专有名词、独一无二的: the Great Wall, mother, father
-            - Such a move could affect firms such as **McDonald's**, <u>which sponsors the youth coaching schema run by
-              the Football Association</u>.
+            - Such a move could affect firms such as **McDonald's**, <u>which sponsors the youth coaching schema run by the Football Association</u>.
         - 相对明确 => 根据上下文可以判断出这个名词的范围是明确的
-            - **The new vaccine**, <u>which is different from the annual flu vaccine</u>, is available ahead of
-              expectations.
+            - **The new vaccine**, <u>which is different from the annual flu vaccine</u>, is available ahead of expectations.
 
 | 特点  | 限定性定语从句 (Restrictive)                                          | 非限定性定语从句 (Non-restrictive)                            |
 |-----|----------------------------------------------------------------|-------------------------------------------------------|
@@ -64,12 +60,9 @@
 | 翻译  | 通常往前翻译<br>(译到先行词前，"...的名词")                                    | 通常无需往前翻译                                              |
 | 关系词 | 1. 关系词可以用 that<br> 2. 作宾语时可以省略<br> 3. 指人作宾语，用 whom/who/that 都可 | 1. 关系词**不能用 that**<br> 2. 不可以省略<br> 3. 指人作宾语，只能用 whom |
 
-- Even American newspapers, <u>which inhabit the most troubled corner of the global industry</u>, have not only survived
-  but often returned to profit.
-- A couple of Christmases ago, my youngest stepdaughter, <u>who was nine years old at the time</u>, got a Superman
-  T-shirt for Christmas.
-- Facebook...is a self-enhancer's paradise, <u>where people can share only the most flattering photos, the cream of
-  their wit, style, beauty, intellect and lifestyles</u>.
+- Even American newspapers, <u>which inhabit the most troubled corner of the global industry</u>, have not only survived but often returned to profit.
+- A couple of Christmases ago, my youngest stepdaughter, <u>who was nine years old at the time</u>, got a Superman T-shirt for Christmas.
+- Facebook...is a self-enhancer's paradise, <u>where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles</u>.
 
 ### 限定性定语从句 vs 同位语从句
 
@@ -99,26 +92,20 @@
     - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <u>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
 - 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as**
     - <u>**As** Koziatek knows</u>, there is learning in just about everything.
-    - <u>**As** a News Feature article in Nature discusses</u>, a string of lucrative awards for researchers have joined
-      the Nobel Prizes in recent years.
+    - <u>**As** a News Feature article in Nature discusses</u>, a string of lucrative awards for researchers have joined the Nobel Prizes in recent years.
 
 ### 介词提前的定语从句
 
 - ...we would move quickly to the cashless society <u>**which** all payments are made electronically **in**</u>
     - == ...we would move quickly to the cashless society <u>**in which** all payments are made electronically</u>
-- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**which** takeaways
-  cannot open **within**</u>.
-    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**within which**
-      takeaways cannot open</u>.
+- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**which** takeaways cannot open **within**</u>.
+    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**within which** takeaways cannot open</u>.
 
 - 定语从句中，与关系词搭配的介词可以提前，也可以不提前
 - 介词提前与否，表达的意思都一样，差别**在于关系词的选择**
 - 如果定语从句介词提前 => **关系词不能省略** + **不能用 that**
-    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <u>**among whom***
-      there is a small majority for free-market liberalism and economic rigour...</u>.
-    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across
-      the Park, <u>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted
-      in a sequence of images that turn out to be different parts of the some photograph</u>.
+    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <u>**among whom** there is a small majority for free-market liberalism and economic rigour...</u>.
+    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, <u>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the some photograph</u>.
 
 ## Words
 
