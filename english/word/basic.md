@@ -14,6 +14,9 @@
 - pro- == forward 前进
     - proclaim
     - prospect
+- uni- == single
+    - uniform
+    - unit
 
 ### 否定前缀
 

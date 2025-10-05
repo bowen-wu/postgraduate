@@ -111,7 +111,7 @@
         \renewcommand{\arraystretch}{1.2}  % 行高放大 1.2 倍
         \begin{tabularx}{\textwidth}{l c >{\raggedright\arraybackslash}X}
             倍乘 & $E_i^{-1}(k) = E_i(1/k)$      & 第 $i$ 行（或列）乘以非零常数 $k$ 的逆矩阵是第 $i$ 行（或列）乘以 $1/k$                     \\
-            互换 & $E_{ij}^{-1} = E_{ij}$        & 交换第 $i$ 行（或列）和第 $j$ 行（或列）的逆矩阵是其本身                                  \\
+            互换 & $E_{ij}^{-1} = E_{ij}$        & 交换第 $i$ 行（或列）和第 $j$ 行（或列）的\textbf{\color{red}{逆矩阵是其本身}}            \\
             倍加 & $E_{ij}^{-1}(k) = E_{ij}(-k)$ & 第 $i$ 行（或列）加上 $k$ 倍第 $j$ 行（或列）的逆矩阵是第 $i$ 行（或列）加上 $-k$ 倍第 $j$ 行（或列） \\
         \end{tabularx}
         \item 矩阵$A$与$B$\textbf{等价}的充分必要条件是存在可逆矩阵$P$与$Q$，使$PAQ = B$
@@ -431,6 +431,122 @@
                 \end{bmatrix}
             \]
         \end{enumerate}
+        \item 若$B$，$C$分别是$m$阶与$n$阶\textbf{可逆}矩阵，则
+        \begin{enumerate}
+            \item
+            \[
+                \begin{bmatrix}
+                    B & Z \\
+                    O & C
+                \end{bmatrix}^{-1}
+                = \begin{bmatrix}
+                      B^{-1} & \color[rgb]{0.2, 0.6, 0.3}{-B^{-1}ZC^{-1}} \\
+                      O      & C^{-1}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    B & O \\
+                    Z & C
+                \end{bmatrix}^{-1}
+                = \begin{bmatrix}
+                      B^{-1}                                     & O      \\
+                      \color[rgb]{0.2, 0.6, 0.3}{-C^{-1}ZB^{-1}} & C^{-1}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    Z & B \\
+                    C & O
+                \end{bmatrix}^{-1}
+                = \begin{bmatrix}
+                      O      & C^{-1}                                     \\
+                      B^{-1} & \color[rgb]{0.2, 0.6, 0.3}{-B^{-1}ZC^{-1}}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    O & B \\
+                    C & Z
+                \end{bmatrix}^{-1}
+                = \begin{bmatrix}
+                      \color[rgb]{0.2, 0.6, 0.3}{-C^{-1}ZB^{-1}} & C^{-1} \\
+                      B^{-1}                                     & O
+                \end{bmatrix}
+            \]
+        \end{enumerate}
+        \item 若$B$，$C$分别是$m$阶与$n$阶\textbf{可逆}矩阵，则
+        \begin{enumerate}
+            \item
+            \[
+                \begin{bmatrix}
+                    B & O \\
+                    O & C
+                \end{bmatrix}^{*}
+                = \begin{bmatrix}
+                      |C|B^{*} & O        \\
+                      O        & |B|C^{*}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    O & B \\
+                    C & O
+                \end{bmatrix}^{*}
+                = (-1)^{mn}\begin{bmatrix}
+                            O        & |B|C^{*} \\
+                            |C|B^{*} & O
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    B & Z \\
+                    O & C
+                \end{bmatrix}^{*}
+                = \begin{bmatrix}
+                      |C|B^{*} & \color[rgb]{0.2, 0.6, 0.3}{-B^{*}ZC^*} \\
+                      O        & |B|C^{*}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    B & O \\
+                    Z & C
+                \end{bmatrix}^{*}
+                = \begin{bmatrix}
+                      |C|B^{*}                               & O        \\
+                      \color[rgb]{0.2, 0.6, 0.3}{-C^{*}ZB^*} & |B|C^{*}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    Z & B \\
+                    C & O
+                \end{bmatrix}^{*}
+                = (-1)^{mn}\begin{bmatrix}
+                            O        & |B|C^{*}                               \\
+                            |C|B^{*} & \color[rgb]{0.2, 0.6, 0.3}{-B^{*}ZC^*}
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    O & B \\
+                    C & Z
+                \end{bmatrix}^{*}
+                = (-1)^{mn}\begin{bmatrix}
+                            \color[rgb]{0.2, 0.6, 0.3}{-C^{*}ZB^*} & |B|C^{*} \\
+                            |C|B^{*}                               & O
+                \end{bmatrix}
+            \]
+        \end{enumerate}
     \end{enumerate}
 
     \subsubsection{特殊矩阵$n$次方}
@@ -477,8 +593,18 @@
         \]
         \item 若$B = P^{-1}AP$，则$B^2 = P^{-1}A^{2}P$，即
         \begin{enumerate}
-            \item $B^n = P^{-1}A^{n}P$
+            \item $\mathbf{B^n = P^{-1}A^{\color{red}{n}}P}$
             \item $A^n = PB^{n}P^{-1}$
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsection{方法步骤}
+
+    \begin{enumerate}
+        \item 已知矩阵$A$，若下三角可逆矩阵$P$和上三角可逆矩阵$Q$，使得$PAQ$为对角矩阵，求$P, Q$
+        \begin{enumerate}
+            \item 标准型: 对角矩阵是特征值
+            \item \textbf{初等行变换}: 对$A$做初等\textbf{行变换}化为上三角矩阵$B([A | E] -> [B | P])$得到$P$，再对$B$做\textbf{列变换}或{\color{red}{$B^T$作\textbf{行变换}}}化为对角矩阵$\Lambda([B^T | E] -> [\Lambda | Q])$得到$Q$
         \end{enumerate}
     \end{enumerate}
 
@@ -498,5 +624,16 @@
             \end{aligned}
         \]
         \item 若 $A^* = A^T$，则$A_{ij} = a_{ij}$
+        \item 矩阵$A$经过若干次初等\textbf{行变换}得到矩阵$B$，则
+        \begin{enumerate}
+            \item $Ax = 0$与$Bx = 0$同解
+            \item $A \overset{\sim}{=} B, B = PA$
+            \item $r(A) = r(B)$
+        \end{enumerate}
+        \item 矩阵$A$经过若干次初等\textbf{列变换}得到矩阵$B$，则
+        \begin{enumerate}
+            \item $A \overset{\sim}{=} B, B = AQ$
+            \item $r(A) = r(B)$
+        \end{enumerate}
     \end{enumerate}
 \end{document}

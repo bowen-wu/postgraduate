@@ -37,7 +37,7 @@
     - n. 临时准备；即兴创作
 - reap [riːp]
     - v. 收获，取得（成果）
-    - reap the beat result 收获最好的成果
+    - reap the best result 收获最好的成果
 - technological change 技术变革
 - diverse [daɪˈvɜːrs]
     - adj. 多种多样的；不同的

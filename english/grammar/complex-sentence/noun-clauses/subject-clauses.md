@@ -29,12 +29,14 @@
     - == <u>It</u> may mean less and less at a time of a global shift in thought <u>**What** Washington does-or doesn't do-to promote alternative energy</u>
 2. 位于句尾：通常主语从句后置，句首用形式主语**it**
     - <u>It</u> seems pretty clear <u>**that** memory is changing</u>...
-        - == <u>**that** memory is changing</u> seem**s** pretty clear. => 句子位于句首相当于**单数**
+        - == <u>**That** memory is changing</u> seem**s** pretty clear. => 句子位于句首相当于**单数**
     - <u>It</u> remains to be seen <u>**how** weather conditions affect the air flows</u>...
     - <u>It</u> surely seems plausible <u>**that** happy people would be more forward-thinking and creative and lean towards R&D more than the average</u>...
 
 ### Words
 
+- cliche [klɪˈʃeɪ]
+    - n. 陈词滥调，老生常谈
 - overfish
     - v. 过渡捕捞
 - intricate [ˈɪntrɪkət]
