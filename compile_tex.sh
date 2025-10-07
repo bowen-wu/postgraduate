@@ -28,7 +28,7 @@ else
     # 删除临时文件
     for texfile in "${clean_files[@]}"; do
         texdir=$(dirname "$texfile")
-        find "$texdir/pdf" -maxdepth 1 -type f \( -name "*.aux" -o -name "*.log" -o -name "*.out" -o -name "*.toc" \) -delete
+        find "$texdir/pdf" -maxdepth 1 -type f \( -name "*.aux" -o -name "*.log" -o -name "*.out" \) -delete
     done
 
     echo "🎉🎉All changed .tex files compiled🎉🎉"

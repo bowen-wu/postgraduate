@@ -99,12 +99,17 @@
     - make sense 有意义；说得通
     - in one sense 在某种意义上
     - common sense 常识
-- nonsense n. 胡扯
+- nonsense n. 胡扯 😔
 - sensible adj. 明智的
 - sensitive adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
-- sensitivity n. （信息、话题等的）敏感性
-- insensitive adj. 不敏感的
-- sentiment n. 观点情绪
+    - be sensitive to 对...敏感
+    - Until this century, university libraries were not very price **sensitive**.
+    - sensitivity n. （信息、话题等的）敏感性
+    - insensitive adj. 不敏感的
+- sensibility n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
+- sentiment
+    - n. 观点；情绪
+    - At the next election none of the big parties seem likely to endorse(v. 赞同，支持) this **sentiment**.
 - emotion
     - n. 情绪
     - emotional adj. 情感上的；情绪的
@@ -112,22 +117,31 @@
 
 ## community
 
-- n. 社区；团体
-- communal adj. 团体的
+- n. 团体；社区
+- scientific community 科学界
+- communal [kəˈmjuːnl] adj. 团体的
 - communicate
     - vi. 交流
     - vt. 传达（想法、感情、思想等）
+    - communicate with
+    - When your body language **communicates** reluctance or anxiety, it undercuts the message.
     - communication n. 交流；（信息）传播
 - corporate adj. 公司的
     - corporation n. （大）公司
+        - == firm
+        - == company
 
 ## define
 
 - vt. 定义
+- To define is to limit.
 - definition n. 定义
 - redefine vt. 重新定义
+- definite adj. adj. 不会改变的; 明确的; (证据或信息)确凿的
+    - infinite adj. 无限的，无穷的; 极大的，极多的
 - definitely adv. 肯定
-- indefinitely adv. 无限期地
+    - infinitely adv. 无限地，无穷地; 极其
+- indefinitely adv. 无限期地；模糊不清的
 
 ## effort
 
@@ -136,8 +150,249 @@
     - make an effort to do sth. 努力做某事
         - == make efforts to do sth.
     - take efforts 付出努力
-- endeavor/endeavour vi. 努力
+- We should *spare no efforts to(不遗余力)*/*make great efforts to* protect the environment.
+- endeavor [ɪnˈdɛvər] vi. 努力
+    - endeavor to do
+    - California's Forest Carbon Plan **endeavors to**/*make efforts to* reduce the density of some of its forests.
 - strive vi. 努力
+    - strive to do
+    - The most successful monarchies(n. 君主制度) **strive to** abandon or hide their old aristocratic ways.
+
+## order
+
+- n. 秩序；规定；（法院）决议，法令
+- vt. 命令
+- 词组
+    - in order to 为了...
+    - in short order 立即
+- disorder n. 混乱；【医】紊乱
+    - == chaos [ˈkeɪɑːs] n. 混乱，杂乱
+        - chaotic adj. 混乱的; 乱糟糟的
+    - anxiety disorder 焦虑症
+    - depression n. 抑郁(症); 消沉; 萧条(期)
+- arrange
+    - v. 安排
+    - arrangement n. 安排；不知
+- sequence
+    - n. 一系列，一连串
+    - == progression
+    - When things come **in sequence**, they come in a **specific order**.
+    - subsequent adj. 随后的，后来的
+
+## account
+
+- n. 账户；描述；解释
+- vi. (~ for)（数量、比例上）占；(~ for)解释
+- factual account 基于事实的叙述/事实陈述
+- The proportion of Spring Festival gifts **accounted for**/occupy 40%.
+- accountable
+    - adj. 对...负有责任的
+    - == responsible
+    - The main purpose of this "clawback" rule is to hold bankers accountable for harmful risk taking.
+    - accountability n. 责任
+- count
+    - vi. 数数；有价值
+        - == matter
+        - It matters/counts a lot 这很重要
+    - vt. 认为；把...算入
+    - 词组
+        - count backward 倒数
+        - count on 指望，依靠
+        - count in 把...计算在内
+        - count for 值...
+- algorithm [ˈælɡəˌrɪðəm] n. 算法
+
+## claim
+
+- vt. 声称
+- n. 声明；所有权
+- claim- == to shout 叫喊
+- **acclaim** vt./n. 称赞 🙂
+- claimant n. （因失业等）领取救济金者
+- declare v. 宣布，声明
+- assert
+    - vt. 声称，断言
+    - assertion n. 声明；断言
+- allege vt. 声称，指称
+- announce
+    - vt. 宣布
+    - announcement n. 宣告
+- contend
+    - vi. （尤指在争论中）声称
+    - Rosenberg **contends/holds/believe/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
+    - It is time to **contend with** unfair discrimination.
+- compliment n. 称赞
+
+## describe
+
+- vt. 描述，描绘
+- description n. 描述
+- **pre**scription n. 药房
+- **sub**scribe
+    - vi. 订阅；签字，赞成；捐款
+    - Copyright *rested with(归...所有)* the journal publisher, and researchers seeking knowledge of the results would
+      have to **subscribe** to the journal.
+    - subscriber n. （报刊等的）订阅人
+    - subscription n. （报刊等的）订阅
+- **manu**script n. 手稿、原稿
+    - manu- 手
+        - manipulate n. （暗中）控制；操纵
+
+## opportunity
+
+- n. 机会
+- Look, if you had one shot, or one opportunity. To seize everything you ever wanted in one moment. Would you capture it
+  or just let it slip?
+- chance n. 机会；偶然
+- occasion
+    - n. 场合
+    - **The chances are**, if you said "thank you", you made someone's day. 也许你的一句“谢谢”，就让别人一天都充满好心情
+    - occasionally adv. 偶尔
+        - == from time to time
+        - == sometimes
+
+## practice
+
+- n. 实践；做法；练习；惯例
+- v. 练习
+- 词组
+    - in practice 在实践中；实际上
+    - common practice 惯例；习惯做法
+    - practice makes perfect 熟能生巧
+- malpractice n. 玩忽职守
+    - mal- == 坏、恶😔
+        - malicious adj. 恶意的，有敌意的；恶性的
+        - malfunction
+            - vi. 失灵; 发生故障
+            - n. 故障; 功能障碍; 失灵
+        - maladapted adj. 不适应的，不适合的
+- practical adj. 实际的；实践性的
+- impractical adj. 不切实际的
+- practically adv. 几乎；实际地
+- practicality n. 实用性
+- routine
+    - n. 常规，惯例
+    - adj. 常规的，日常的
+    - routinely adv. 例行地
+
+## nature
+
+- n. 自然；本质；天性
+- Mother Nature 大自然母亲
+- 词组
+    - in nature 本质上；事实上
+- natural adj. 自然的；正常的；天赋的
+- unnatural adj. 反常的
+- instinct
+    - n. 本能；直觉
+    - instinctive adj. 本能的
+    - instinctively adv. 本能地
+- viscerally adv. 发自内心地
+    - Knowing the result of Epley's study, it makes sense that many people hate photographs of themselves **viscerally**
+
+## trust
+
+- n. 相信；信托；受托基金机构
+- v. 相信
+- distrust n. 不信任
+- entrust vt. 委托
+- trustworthiness n. 可信度
+    - Most of us mistakenly believe our **trustworthiness** is obvious.
+- trustworthy adj. 值得信赖的，可靠的; 把稳; 妥靠; 信实
+
+## approach
+
+- n. 方法
+- v. 接近
+    - == come near
+    - With the Spring Festival approaching/coming near,...
+- vt. 与...接洽
+- There are a number of **approaches** to mastering the art of deep work.
+- method n. 方法
+
+## habit
+
+- n. 习惯；习性
+- habitually adv. 习惯地
+- inhabit vt. 占据；居住在；栖息于
+    - Everybody wants to know how the people who will soon **inhabit** those empty office cubicles will differ from
+      those who came before them.
+    - inhabitant n. 居民
+- habitat n. （动植物的）生活环境；栖息地
+
+## avoid
+
+- vt. 避免；躲避
+- If you avoid failure, you also avoid success.
+- evade vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
+    - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
+      to **evade** scientists.
+    - inevitable adj. 不可避免的
+    - inevitably adv. 不可避免地
+
+## compare
+
+- vt. 比较
+- 词组
+    - compare...with/to... 把...与...相比较
+    - compared with/to 与...相比
+- comparison n. 比较
+- comparable adj. （数量、重要性等）相当的；类似的
+- comparatively adv. 相对地
+- contrast
+    - n. 差别
+    - vt. 对比
+    - 词组
+        - by/in contrast 相比之下
+        - in contrast to 与...截然不同
+
+## evidence
+
+- n. 证据
+- evident adj. 明显的
+- clear
+    - adj. 清楚的；明显的
+    - vt. 使通过批准；清除
+    - vi. 放晴；变清晰
+    - If it clears the House,...
+    - ...have to clear another major handle.
+    - clarity n. 清晰
+        - Conditions allow telescopes to obtain images of *unsurpassed(adj. 非常卓越的; 绝伦)* **clarity**.
+- apparent adj. 显而易见的
+- obvious adj. 明显的
+- strikingly adv. 显然地
+
+## justice
+
+- n. 法官；正义
+- just- 正义
+- **justice** Anthony Kennedy wrote that the previous decisions were *flawed(adj. 有缺点的; 有缺陷的)*.
+- justify
+    - vt. 替...辩护；证明...是正当的
+    - It is curious that Stephen Koziatek fells almost *as though/as if(好像)* he has to **justify** his efforts to give
+      his students a better future.
+    - justification n. 正当的理由
+- jury
+    - n. 陪审团
+    - juror n. 陪审员
+    - jurisdiction n. 司法权；管辖权
+
+## note
+
+- vt. 提到；注意到
+- n. 证明；特征，调子，气氛
+- take notes 记笔记
+    - He listens well who takes notes.
+- The longest *bull run(牛市行情)* in a century of art market history ended on *a dramatic note* with a sale of 56 works
+  by Damien Hirst.
+- notably adv. 显著地；尤其
+    - == in particular
+    - == especially
+- notice
+    - n. 通知；注意
+    - vt. 注意到
+    - It takes about three weeks to a month to **notice** any significant changes in your weight due to altering your
+      training program.
 
 ## Words
 
@@ -153,7 +408,28 @@
 - aggravate
     - v. 加重; 使恶化; 激怒，惹恼
     - == worsen
+- progression
+    - n. （事件的）连续; 一系列; 发展，进展
+- counterbalance
+    - vt. 对...起平衡作用，抵消
+    - n. 抗衡 （力），平衡力
+- conclusion
+    - n. 结论; 结束; 末尾; 结局; 签订
+- guidance
+    - n. 指导; 导航
+- flawless
+    - adj. 完美的，无瑕的
+    - == perfect
 
 ## 词组
+
+- all too human
+    - 人之常情
+- in emergency
+    - 紧急情况
+- in peril
+    - 处于危险之中
+- in strength
+    - 人数多/力量强大
 
 ## 句式

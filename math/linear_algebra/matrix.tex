@@ -161,7 +161,7 @@
             &\;\Leftrightarrow\; A \text{无法表示为初等矩阵的乘积} \\
             &\Leftrightarrow\; A \text{无法通过初等变换能化为单位矩阵}  \\
             &\Leftrightarrow\; 0\text{是矩阵} A \text{的特征值}  \\
-            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}  \\
+            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}
         \end{align*}
         \item $A \overset{\sim}{=} B$
         \begin{align*}
@@ -283,7 +283,7 @@
                     a_1 a_3 & a_2 a_3 & a_3^2   & \dots  & a_3 a_n \\
                     \vdots  & \vdots  & \vdots  & \ddots & \vdots  \\
                     a_1 a_n & a_2 a_n & a_3 a_n & \dots  & a_n^2
-                \end{bmatrix} \text{(对称矩阵)}
+                \end{bmatrix} \textbf{(对称矩阵)}
             \]
             \item $\color{red}{r(\alpha\alpha^T) = 1}$
             \item $\alpha\alpha^T$特征值是{\color{red}{$||\alpha||^2, 0, 0, \dots, 0(n - 1\text{个})$}}
@@ -888,6 +888,12 @@
             \item \textbf{逆矩阵：} 列满秩 → 左逆，行满秩 → 右逆；方阵满秩 → 可逆
             \item \textbf{特征值：} 方阵秩 < n $\Rightarrow$ 0 是特征值；方阵满秩 $\Rightarrow$ 0 不是特征值
         \end{itemize}
+        \item $A$为$n$阶矩阵，$A$各行元素之和都为$0$，则
+        \begin{itemize}
+            \item 列向量都是$1$是$Ax = 0$的解
+            \item $A$的行向量线性相关
+            \item $r(A) < n$
+        \end{itemize}
     \end{enumerate}
 
     \subsection{理解}
@@ -925,6 +931,41 @@
                 \therefore r(A)=m,\quad r(B)=m.
             \]
         \end{analysisbox}
+        \item 矩阵相乘 \Leftrightarrow \text{两个数的{\color{red}{积}}相{\color{red}{加}}}
+        \item 秩
+        \begin{enumerate}
+            \item 给定一个矩阵$A$，它的秩就是矩阵中\textbf{线性无关的行（或列）的最大个数}
+            \item 秩 == 矩阵所包含的“独立信息量”
+            \item Case: 如果你有10行数据，但其中5行其实是由另外5行“复制”或“线性组合”出来的，那么这些重复的信息是“冗余的”，真正“独立”的信息只有5行 \Rightarrow r(A) = 5
+            \item 解线性方程组: 判断方程有没有解、是不是唯一解
+            \begin{enumerate}
+                \item 方程 $Ax = b$有解 \Leftrightarrow r(A) = r(A | b) = r(\bar{A})
+                \item 唯一解 \Leftrightarrow r(A) = r(\bar{A}) = \text{变量数}
+                \item 多解 \Leftrightarrow r(A) = r(\bar{A}) < \text{变量数}
+            \end{enumerate}
+            \item 判断向量独立性: 度量“向量空间中有多少个独立方向”
+            \begin{enumerate}
+                \item 如果列向量组成的矩阵$r(A) =$ 列数 \Rightarrow \text{向量组线性无关}
+                \item 否则线性相关
+            \end{enumerate}
+            \item 维度的桥梁: 刻画了“变换的本质效果”
+            \begin{enumerate}
+                \item 秩本质上就是矩阵对应线性映射的像空间（列空间）的维数
+                \item 这告诉我们，线性变换把空间压缩到了几维。
+                \item Case: $3 \times 3$矩阵$A$
+                \begin{itemize}
+                    \item $r(A) = 3$ \Rightarrow \text{保留三维空间的全部信息（可能只是旋转或缩放）}
+                    \item $r(A) = 2$ \Rightarrow \text{把三维空间压缩成二维平面}
+                    \item $r(A) = 1$ \Rightarrow \text{压缩成一条直线}
+                    \item $r(A) = 0$ \Rightarrow \text{全部压缩成原点}
+                \end{itemize}
+            \end{enumerate}
+            \item 与行列式、可逆性关系: 可逆性的根本判据
+            \begin{enumerate}
+                \item 如果$n$阶矩阵$A$，$r(A) = n$，那么$A$可逆，$|A| \neq 0$
+                \item 如果$r(A) < n$，矩阵$A$不可逆
+            \end{enumerate}
+        \end{enumerate}
     \end{enumerate}
 
 \end{document}
