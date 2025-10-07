@@ -68,8 +68,7 @@
 
 - 相同点: 位于名词后
 - 区别
-    1. 定语从句**修饰限定**名词: 当名词范围不确定时，需要用定语从句来限定该名词的范围，相当于回答了 which(哪一个、哪一些)
-       的问题
+    1. 定语从句**修饰限定**名词: 当名词范围不确定时，需要用定语从句来限定该名词的范围，相当于回答了 which(哪一个、哪一些)的问题
     2. 同位语从句**解释说明**名词: 当名词的含义不清楚时，需要用同位语从句来解释说明，相当于回答了 what(是什么) 的问题
 
 | 特点    | 同位语从句 (Appositive Clause)                                 | 限定性定语从句 (Restrictive Relative Clause)                         |
@@ -108,4 +107,128 @@
     - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, <u>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the some photograph</u>.
 
 ## Words
+
+- enact
+    - v. 制定（法律），通过（法案）
+- legislation
+    - n. 法律，法规
+- curb
+    - v. 限制，控制，抑制
+- cheerfulness
+    - n. 高兴，快乐
+- recommend
+    - v. 推荐
+- hold a conversion
+    - 召开一次大会
+- session
+    - n. 会议，开庭；学期
+- coach
+    - v. 指导，训练
+    - coach sb. on sth. 指导、训练某人做某事
+- shifting
+    - adj. 变化着的；移动着的
+    - the shifting landscape for... ...形式的变化
+- landscape
+    - n. 形势；自然风景，景色
+- auction house
+    - 拍卖行
+- guarantee
+    - n. 保证金；保证，担保
+    - v. 保证，担保
+- client
+    - n. 客户
+- authenticate
+    - v. 证实，认证
+- navigate
+    - v. 操纵
+- impossibility
+    - n. 不可能，不可能性
+- average
+    - adj. 普通的；平均的
+- high-quality
+    - 高质量的
+- criticism
+    - n. 评论，意见；批评，批判
+    - arts criticism 艺术评论
+- mechanical memorization
+    - 机械记忆
+- practical
+    - adj. 实践的，实用的
+- vulnerable
+    - adj. 脆弱的，有弱点的；易受伤的，易受攻击的
+- in the first place
+    - 首先，起初
+- folder
+    - n. 文件夹，纸夹
+- accurate
+    - adj. 精确地，准确的
+- depiction
+    - n. 描写
+- progress
+    - n. 进步，发展
+- sponsor
+    - v. 赞助
+- association
+    - n. 协会，联盟
+- hail from...
+    - 来自...
+- vaccine
+    - n. 疫苗
+- advance
+    - n. 进展，进步
+- in part
+    - 在某种程度上，部分地
+- place bit bets on...
+    - 在...上下大赌注
+- inhabit
+    - v. 居住于，栖居于
+- the cream of...
+    - ...的精华部分
+- wit
+    - n. 才智，智慧；风趣
+- intellect
+    - n. 智力，理解力，非凡的才智
+- receipt
+    - n. 收据
+- cash
+    - v. 兑现
+- withdraw
+    - v. 退回，撤回
+- interest
+    - n. 利息
+- a string of...
+    - 一系列的...，一连串的...
+- lucrative
+    - adj. 获利多的，赚钱的
+- the Nobel Prizes
+    - 诺贝尔奖
+- co-ordination
+    - 协作
+- a small majority
+    - 略占多数
+- liberalism
+    - n. 自由主义
+- rigour
+    - n. 严苛，严酷
+- feature
+    - v. 占据重要位置，发挥重要作用
+- stroller
+    - n. 散步者，流浪汉
+- unwittingly
+    - adv. 无意地，不知情地
+- assault
+    - v. 袭击，攻击
+- sequence
+    - n. 一系列
+
+
+
+
+
+
+
+
+
+
+
 

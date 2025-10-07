@@ -34,7 +34,7 @@
     - evidence 证据
     - indication 指示、暗示
     - implication 含意、暗指；可能的影响或结果
-    - insight 洞悉、洞察力: The insight <u>**that** curiosity can drive you to do self-destructive things</u> is a profound one.
+    - insight 洞悉、洞察力: The insight <u>**that** curiosity can drive you to do self-destructive things</u> is a profound(adj. 深厚的; 意义深远的; 严重的; 知识渊博的) one.
     - probability 可能性
     - requirement 要求
 - <u>**What** people don't realise</u> is <u>**that** in order to complete these tasks they need to use both the focus and unfocus circuits in their brain</u>...

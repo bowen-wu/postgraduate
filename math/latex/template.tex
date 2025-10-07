@@ -7,9 +7,30 @@
 \usepackage{geometry}       % 页面布局
 \usepackage{bm}             % 粗体
 \usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       %表格环境
+\usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}{
+    title=解析,
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
 
 % =========================
 % 字体设置
@@ -70,6 +91,11 @@
 
     \begin{enumerate}
 
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
     \end{enumerate}
 
 \end{document}

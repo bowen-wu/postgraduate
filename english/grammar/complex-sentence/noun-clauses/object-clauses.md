@@ -2,7 +2,7 @@
 
 - 复合句，又称"主从复合句"，就是指多件事之间根据重要性的不同，被分为"主句"和"从句"
 - 从句前一般有连接词引导
-- ...<u>if you plan property</u>, **you'll know** <u>that you only need...350g of skin of beef and sixrashers of bacon...</u>
+- ...<u>if you plan property</u>, **you'll know** <u>that you only need...350g of skin of beef and six rashers of bacon...</u>
 
 ## Noun Clauses
 
@@ -51,8 +51,8 @@
 3. 形容词 + 宾语从句(省略了介词，应该是: 形容词 + 介词 + 宾语从句)
     - I'm pretty **confident** <u>we're at the bottom</u>.
 4. 非谓语动词(及物动词) + 宾语从句
-    - Later this year, we will publish a white paper **setting** out exactly <u>how we will achieve this</u>.
-    - Yet rather than empowering teachers **to find** <u>what works best for their student</u>, the policy imposes a flat, across-the-board rule.
+    - Later this year, we will publish a white paper ***setting** out exactly(准确地阐明)* <u>how we will achieve this</u>.
+    - Yet rather than(不是...而是...) empowering(授权、赋能) teachers **to find** <u>what works best for their student</u>, the policy imposes(强加了) a flat, across-the-board rule.
     - **主谓宾补**句型中才可使用形式主语it: That kind of activity make <u>it</u> less likely <u>that the court's decisions will be accepted as impartial judgments</u>.
 
 ### Words
