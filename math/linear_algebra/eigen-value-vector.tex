@@ -6,7 +6,7 @@
 \usepackage{hyperref}       % 目录超链接
 \usepackage{geometry}       % 页面布局
 \usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
+\usepackage[table]{xcolor}  % 颜色
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
@@ -62,40 +62,319 @@
     \subsection{基础概念}
 
     \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{定理}
-
-    \begin{enumerate}
+        \item 设$A$是$n$阶矩阵，如果存在一个数$\lambda$及非零的$n$维列向量$\alpha$使得$A\alpha = \lambda\alpha$成立，则称$\lambda$是矩阵$A$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征值}}，称非零向量$\alpha$是矩阵$A$属于特征值$\lambda$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征向量}}
+        \item 设$A = [a_{ij}]$为一个$n$阶矩阵，则行列式
+        \[
+            |A - \lambda E| = \begin{vmatrix}
+                                  a_{11} - \lambda & a_{12}           & \cdots & a_{1n}           \\
+                                  a_{21}           & a_{22} - \lambda & \cdots & a_{2n}           \\
+                                  \vdots           & \vdots           & \ddots & \vdots           \\
+                                  a_{n1}           & a_{n2}           & \cdots & a_{nn} - \lambda
+            \end{vmatrix}
+        \]
+        称为矩阵$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征多项式}}，$|A - \lambda E| = 0$称为$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征方程}}
+        \item 设$A$和$B$都是$n$阶矩阵，如果存在可逆矩阵$P$，使得$P^{-1}AP = B$则称矩阵$A$和$B$相似，记作$A \sim B$。相似具有如下性质
+        \begin{itemize}
+            \item 反身性: $A \sim A$
+            \item 对称性: $A \sim B \Leftrightarrow B \sim A$
+            \item 传递性: $A \sim B, B \sim C \Rightarrow A \sim C$
+        \end{itemize}
+        \item 如果$A$能与\textbf{对角矩阵}相似，则称$A${\color[rgb]{0.2, 0.6, 0.3}{可对角化}}
+        \item 设 $\mathbf{A} = (a_{ij})_{n \times n}$ 为 $n$ 阶方阵，称 $\mathbf{A}$ 的\textbf{迹（trace）}为主对角线上元素之和，记作：$\operatorname{tr}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii}$
     \end{enumerate}
 
     \subsection{运算}
 
     \begin{enumerate}
+        \item 设矩阵 $A$ 的特征值为 $\lambda$，对应的特征向量为 $\bm{\alpha}$，即：$A\bm{\alpha} = \lambda \bm{\alpha}$则
+        \renewcommand{\arraystretch}{2.2} % 调整行距
+        \begin{center}
+            \setlength{\tabcolsep}{12pt} % 调整列间距
+            \begin{tabular}{c|cccccccc}
+                \hline
+                \rowcolor{gray!10}
+                $A$           & $kA + E$       & $A + kE$      & $A^{-1}$             & $A^{*}$                & $A^{T}$           & $A^{n}$       & $P^{-1}AP$          & $f(A)$       \\
+                \hline
+                $\lambda$     & $k\lambda + 1$ & $\lambda + k$ & $\dfrac{1}{\lambda}$ & $\dfrac{|A|}{\lambda}$     & $\lambda$ & $\lambda^n$ & $\lambda$  & $f(\lambda)$ \\
+                \hline
+                $\bm{\alpha}$ & $\bm{\alpha}$  & $\bm{\alpha}$ & $\bm{\alpha}$        & $\bm{\alpha}$          & $\bm{\alpha}^{T}$ & $\bm{\alpha}$ & $P^{-1}\bm{\alpha}$ & $\alpha$  \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{enumerate}
 
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item 如果$\alpha_1, \alpha_2, \dots, \alpha_t$都是矩阵$A$的属于特征值$\lambda$的特征向量，那么当$k_1\alpha_1 + k_2\alpha_2 + \dots + k_t\alpha_t$非零时，$k_1\alpha_1 + k_2\alpha_2 + \dots + k_t\alpha_t$仍是矩阵$A$属于特征值$\lambda$的特征向量
+        \item 若$\alpha_1, \alpha_2$是矩阵$A$不同特征值的特征向量，则$\alpha_1 + \alpha_2$不是$A$的特征向量
+        \item 设$A$是$n$阶矩阵，$\lambda_1, \lambda_2, \dots, \lambda_n$是矩阵$A$的特征值，则
+        \begin{align*}
+            &\Rightarrow\; \sum \lambda_i = \sum a_{ii}  \\
+            &\Rightarrow\; |A| =\lambda_1\lambda_2\dots\lambda_n \\
+            &\Rightarrow\; |A - \lambda E| = (\lambda_1 - \lambda)(\lambda_2 - \lambda)\cdots(\lambda_n - \lambda) \\
+            &\Rightarrow\; |A - aE| = (\lambda_1 - a)(\lambda_2 - a)\cdots(\lambda_n - a) \\
+            &\Rightarrow\; |A^{-1} + kE| = (\frac{1}{\lambda_1} + k)(\frac{1}{\lambda_2} + k)\cdots(\frac{1}{\lambda_n} + k)
+        \end{align*}
+        \item 如果$\lambda_1, \lambda_2, \dots, \lambda_m$是矩阵$A$的互不相同的特征值，$\alpha_1, \alpha_2, \dots, \alpha_m$分别是与之对应的特征向量，则$\alpha_1, \alpha_2, \dots, \alpha_m$线性无关
+        \item 如果$A$是$n$阶矩阵，$\lambda_i$是$A$的$m$重特征值，则属于$\lambda_i$的线性无关的特征向量的个数不超过$m$个
+        \item 如果$n$阶矩阵$A$与$B$相似，则
+        \begin{align*}
+            &{\color{red}{\Rightarrow}}\; \lambda_A = \lambda_B  \\
+            &{\color{red}{\Rightarrow}}\; A - \lambda E = B - \lambda E  \\
+            &{\color{red}{\Rightarrow}}\; |A| = |B| \\
+            &{\color{red}{\Rightarrow}}\; r(A) = r(B) \\
+            &{\color{red}{\Rightarrow}}\; tr_A = tr_B
+        \end{align*}
+        \item 单位矩阵只和自身相似
+        \item $n$阶方阵$A$可相似对角化的充分必要条件是$A$有$n$个线性无关的特征向量
+        \item $n$ 阶矩阵 $A$ 可相似对角化的充分必要条件是对于 $A$ 的每个特征值，其线性无关的特征向量的个数恰好等于该特征值的重数。即若 $A \sim \Lambda$，则
+        \begin{align*}
+            &\Leftrightarrow\; \lambda_i \text{ 是 } A \text{ 的 } n_i \text{ 重特征值，且 } \lambda_i \text{ 有 } n_i \text{ 个 {\color{red}{线性无关}}的特征向量}({\color{red}{n - r(A)}}) \\
+            &\Leftrightarrow\; r(A - \lambda_i E) = n - n_i,\quad \lambda_i \text{ 为 } n_i \text{ 重特征值}
+        \end{align*}
+        \item 若 $n$ 阶矩阵 $A$ 有 $n$ 个不同的特征值 $\lambda_1, \lambda_2, \dots, \lambda_n$，则 $A$ 可相似对角化，且有：
+
+        \[
+            A \sim
+            \begin{bmatrix}
+                \lambda_1 &           &        &           \\
+                & \lambda_2 &        &           \\
+                &           & \ddots &           \\
+                &           &        & \lambda_n
+            \end{bmatrix}
+            = \Lambda
+        \]
+
+        其中存在可逆矩阵 $P$ 使得：
+        \[
+            P^{-1} A P = \Lambda, \quad
+            P = [\,\bm{\alpha}_1,\, \bm{\alpha}_2,\, \dots,\, \bm{\alpha}_n\,],
+        \]
+        其中 $\bm{\alpha}_i$ 是与特征值 $\lambda_i$ 对应的特征向量
+        \item 实对称矩阵$A$的不同特征值$\lambda_1, \lambda_2$所对应的特征向量$\alpha_1, \alpha_2$比\textbf{正交}
+        \item 实对称矩阵$A$的特征值都是实数
+        \item $n$阶实对称矩阵$A$必可对角化，且总存在正交阵$Q$，使得
+        \[
+            Q^{-1}AQ = Q^{T}AQ = \begin{bmatrix}
+                                     \lambda_1 &           &        &           \\
+                                     & \lambda_2 &        &           \\
+                                     &           & \ddots &           \\
+                                     &           &        & \lambda_n
+            \end{bmatrix}
+        \]
+        其中$\lambda_1, \lambda_2, \dots, \lambda_n$是$A$的特征值
+        \item 上三角矩阵、下三角矩阵、对角矩阵的特征值就是矩阵主对角线上的元素
     \end{enumerate}
 
     \subsection{公式}
 
     \begin{enumerate}
+        \item $A_1 \sim B_1, A_2 \sim B_2$，则
+        \[
+            \begin{bmatrix}
+                A_1 &     \\
+                & A_2
+            \end{bmatrix} \sim \begin{bmatrix}
+                                   B_1 &     \\
+                                   & B_2
+            \end{bmatrix}
+        \]
 
     \end{enumerate}
 
     \subsection{方法步骤}
 
     \begin{enumerate}
-
+        \item Schmidt 正交规范化方法: 如果$\bm{\alpha}_1, \bm{\alpha}_2, \dots, \bm{\alpha}_n$线性无关，令
+        \[
+            \begin{aligned}
+                \bm{\beta}_1 &= \bm{\alpha}_1, \\[6pt]
+                \bm{\beta}_2 &= \bm{\alpha}_2 - \frac{(\bm{\alpha}_2, \bm{\beta}_1)}{(\bm{\beta}_1, \bm{\beta}_1)} \bm{\beta}_1, \\[6pt]
+                \bm{\beta}_3 &= \bm{\alpha}_3 - \frac{(\bm{\alpha}_3, \bm{\beta}_1)}{(\bm{\beta}_1, \bm{\beta}_1)} \bm{\beta}_1
+                - \frac{(\bm{\alpha}_3, \bm{\beta}_2)}{(\bm{\beta}_2, \bm{\beta}_2)} \bm{\beta}_2, \\[6pt]
+            \end{aligned}
+        \]
+        那么$\beta_1, \beta_2, \beta_3$两两正交，称为{\color[rgb]{0.2, 0.6, 0.3}{正交向量组}}，将其单位化，有
+        \[
+            \bm{\gamma}_i = \frac{\bm{\beta}_i}{\|\bm{\beta}_i\|}, \quad i = 1, 2, \dots, n.
+        \]
+        则$\bm{\alpha}_1, \bm{\alpha}_2, \dots, \bm{\alpha}_n$到$\bm{\gamma}_1, \bm{\gamma}_2, \bm{\gamma}_3$这一过程称为{\color[rgb]{0.2, 0.6, 0.3}{Schmidt正交规范化}}
+        \item 证明$A \sim B \Rightarrow A \sim \lambda \text{且} \lambda \sim B \Rightarrow A \sim B$
+        \item 证明$A$可相似对角化$\Rightarrow A \sim B \text{且} B \sim \lambda \Rightarrow A \sim \lambda$即$A$可相似对角化
+        \item 由$A\alpha = \lambda\alpha, \alpha \neq 0$有$(\lambda E - A)\alpha = 0$，即$\alpha$是齐次线性方程组$(\lambda E - A)\alpha = 0$的非零解
+        \begin{enumerate}
+            \item 先由$|A - \lambda E| = 0$求矩阵$A$的特征值$\lambda_i(\text{共}n\text{个，含重根})$
+            \item 再由$(A - \lambda E)\alpha = 0$求基础解系，即矩阵$A$属于特征值$\lambda_i$的线性无关的特征向量
+        \end{enumerate}
+        \item 判断$A$与$B$相似
+        \begin{enumerate}
+            \item 如果不满足以下条件则不相似
+            \begin{itemize}
+                \item $\lambda_A = \lambda_B$
+                \item $A - \lambda E = B - \lambda E$
+                \item $|A| = |B|$
+                \item $r(A) = r(B)$
+                \item $tr_A = tr_B$
+            \end{itemize}
+            \item $A$与$B$都可对角化
+        \end{enumerate}
+        \item 若已知两个特征向量，求第三个特征向量时，可根据正交条件构造方程组求解。即
+        \[
+            \bm{\alpha}_3 \perp \bm{\alpha}_1, \quad
+            \bm{\alpha}_3 \perp \bm{\alpha}_2.
+        \]
+        \item 若已知一个特征向量，且另两个特征值相同（即存在重根），则可设一般形式的特征向量，并利用正交条件建立方程组，求得一组线性无关的特征向量作为基础解系
+        \item 对于{\color[rgb]{0.2, 0.6, 0.3}{实对称矩阵$A$}}求正交矩阵$Q$或正交对角矩阵的时候需要对特征向量改造
+        \begin{itemize}
+            \item 特征值不同 \Rightarrow \text{单位化}
+            \item 特征值有重根
+            \begin{itemize}
+                \item 特征向量正交 \Rightarrow \text{单位化}
+                \item 特征向量不正交 \Rightarrow \text{Schmidt正交规范化，即正交化 + 单位化}
+                \item 故: 计算重根特征值的特征向量时直接给出正交的特征向量
+            \end{itemize}
+        \end{itemize}
+        \item 矩阵
+        \[
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                2 & 3 & 0 \\
+                4 & 5 & 6
+            \end{bmatrix}
+        \]特征值从主对角线上看出来，为$1, 3, 6$且特征值6的特征向量是$(0, 0, 1)^T$
+        \item 求实对称矩阵 $A$ 的特征值（解方程 $|A - \lambda E| = 0$）的方法：
+        \begin{enumerate}
+            \item 通过行列式初等变换，将副对角线元素化为 0（对角化处理）
+            \item 对列进行操作，例如 $C_3 - C_1$，简化行列式
+            \item 对行进行操作，例如 $R_1 + R_3$，进一步化简
+        \end{enumerate}
+        \item 用正交矩阵将实对称矩阵$A$化为对角矩阵的步骤
+        \begin{enumerate}
+            \item 处理一些未知参数
+            \item 求矩阵$A$的特征值
+            \item 求矩阵$A$的特征向量
+            \item 单位化，当特征值有重根时，{\color[rgb]{0.2, 0.6, 0.3}{可能}}还要Schmidt正交化
+            \item 构造正交矩阵$P$，使得$P^{-1}AP = \Lambda$，其中$P$与$\Lambda$次序要协调一致
+        \end{enumerate}
     \end{enumerate}
 
     \subsection{条件转换思路}
 
     \begin{enumerate}
-
+        \item 实对称矩阵
+        \begin{align*}
+            &\Leftrightarrow\; \text{必与对角矩阵相似}  \\
+            &\Leftrightarrow\; \text{可用正交矩阵对角化}  \\
+            &\Leftrightarrow\; \text{不同特征值的特征向量必正交}  \\
+            &\Leftrightarrow\; \text{特征值必是实数}  \\
+            &\Leftrightarrow\; k\text{重特征值必是实数必有}k\text{个线性无关的特征向量}
+        \end{align*}
+        \item $A \sim B$
+        \begin{align*}
+            &\Rightarrow\; A^n = PB^{n}P^{-1} \\
+            &{\color{red}{\Rightarrow}}\; \lambda_A = \lambda_B  \\
+            &{\color{red}{\Rightarrow}}\; A - \lambda E = B - \lambda E  \\
+            &{\color{red}{\Rightarrow}}\; |A| = |B| \\
+            &{\color{red}{\Rightarrow}}\; r(A) = r(B) \\
+            &{\color{red}{\Rightarrow}}\; tr_A = tr_B \\
+            &\Rightarrow\; A + kE \sim B + kE  \\
+            &\Rightarrow\; (A + kE)^n \sim (B + kE)^n  \\
+            &\Rightarrow\; f(A) \sim f(B) \\
+            &\Rightarrow\; |A + kE| = |B + kE|  \\
+            &\Rightarrow\; r(A + kE) = r(B + kE)  \\
+            &\Rightarrow\; A^n \sim B^n \\
+            &\Rightarrow\; A^T \sim B^T \\
+            &\Rightarrow\; A^* \sim B^* \\
+            &\Rightarrow\; A^{-1} \sim B^{-1} \\
+            &\Rightarrow\; \text{若 } A\bm{\alpha}_A = \lambda \bm{\alpha}_A,
+            \text{ 则 } B(P^{-1}\bm{\alpha}_A) = \lambda (P^{-1}\bm{\alpha}_A)
+            \Rightarrow {\color{red}{\bm{\alpha}_B = P^{-1}\bm{\alpha}_A}} \\
+            &\Rightarrow\; \text{若 } B\bm{\alpha}_B = \lambda \bm{\alpha}_B,
+            \text{ 则 } A(P\bm{\alpha}_B) = \lambda (P\bm{\alpha}_B)
+            \Rightarrow {\color{red}{\bm{\alpha}_A = P\bm{\alpha}_B}}
+        \end{align*}
+        \item $P_1^{-1}AP_1 = B, P_2^{-1}BP_2 = C \Rightarrow P^{-1}AP = C, \text{其中}P = P_{1}P_2$
+        \item $r(A) < n \Rightarrow 0 \text{是} A \text{的特征值}$
+        \item $A$是$n$阶矩阵，若 $r(A) = 1$，则
+        \begin{align*}
+            &\Leftrightarrow\; \text{矩阵 $A$ 的行向量组线性相关，且秩为 1}  \\
+            &\Rightarrow\; |A - \lambda E| = \lambda^n - \sum a_{ii}\lambda^{n-1}  \\
+            &\Rightarrow\; \lambda_1 = \lambda_2 = \dots = \lambda_{n-1} = 0  \\
+            &\Rightarrow\; \lambda_n = \operatorname{tr}(A) = a_{11} + a_{22} + \dots + a_{nn}
+        \end{align*}
+        \item 求矩阵$A$中参数
+        \begin{itemize}
+            \item 已知特征向量$\alpha$
+            \begin{enumerate}
+                \item 构造方程组
+                \item $A\alpha = \lambda \alpha$
+                \item 解$A$中变量和$\lambda$
+            \end{enumerate}
+            \item 相似于对角矩阵（可以对角化）
+            \begin{enumerate}
+                \item 需要有$n$个线性无关的特征向量
+                \item 若有重根，则$n - r(A - \lambda E) = \text{重根个数}$
+                \item $|A - \lambda E| = 0$计算特征值和特征向量
+            \end{enumerate}
+            \item 特征值$\lambda \Rightarrow |A - \lambda E| = 0$
+        \end{itemize}
+        \item 抽象矩阵思考:
+        \begin{itemize}
+            \item 线性相关 + 线性方程组
+            \item 秩
+        \end{itemize}
+        \item $A^2 = A \Rightarrow A$的特征值只能取$1$或$0$
     \end{enumerate}
 
     \subsection{理解}
 
     \begin{enumerate}
+        \item 在求参数的问题中，可以{\color[rgb]{0.2, 0.6, 0.3}{由特征向量可构造方程组}}
+        \item 特征向量 = $k$基础解系，其中$k$为非零常数
+        \item $a \neq 0$，矩阵 $A$ 如下
+        \[
+            A =
+            \begin{bmatrix}
+                1 & a & a & a \\
+                a & 1 & a & a \\
+                a & a & 1 & a \\
+                a & a & a & 1
+            \end{bmatrix}
+
+        \]
+        \begin{analysisbox}
+            \[
+                A = (1-a)E + a J_4,
+            \]
+            其中 $J_4$ 是 $4 \times 4$ 全 $1$ 矩阵。已知 $J_4$ 的特征值为 $4,0,0,0$
+            \[
+                \because J_4 \bm{\alpha}_1 = 4 \bm{\alpha}_1 \\
+            \]
+            \[
+                \therefore \text{特征值}4\text{的特征向量是}(1,1,1,1)^T
+            \]
+            对于 $\bm{\alpha}_2, \bm{\alpha}_3, \bm{\alpha}_4$，它们满足 $J_4 \bm{\alpha}_i = 0$，因为四个分量和为零，因此它们属于零特征值的特征空间，故取标准基
+            \[
+                \bm{\alpha}_2 = (1,-1,0,0)^T, \\
+                \bm{\alpha}_3 = (1,0,-1,0)^T, \\
+                \bm{\alpha}_4 = (1,0,0,-1)^T
+            \]
+
+            利用线性性质求 $A$ 的特征值：
+            \[
+                \begin{aligned}
+                    A \bm{\alpha}_1 &= (1-a) \bm{\alpha}_1 + a J_4 \bm{\alpha}_1 = (1-a)\bm{\alpha}_1 + a \cdot 4 \bm{\alpha}_1 = (1+3a) \bm{\alpha}_1, \\
+                    A \bm{\alpha}_2 &= (1-a)\bm{\alpha}_2 + a J_4 \bm{\alpha}_2 = (1-a)\bm{\alpha}_2 + a \cdot 0 = (1-a)\bm{\alpha}_2, \\
+                    A \bm{\alpha}_3 &= (1-a)\bm{\alpha}_3 + a J_4 \bm{\alpha}_3 = (1-a)\bm{\alpha}_3, \\
+                    A \bm{\alpha}_4 &= (1-a)\bm{\alpha}_4 + a J_4 \bm{\alpha}_4 = (1-a)\bm{\alpha}_4.
+                \end{aligned}
+            \]
+
+            \[
+                \text{故 $A$ 的特征值为 } 1+3a, 1-a, 1-a, 1-a, \quad \text{对应特征向量为 } \bm{\alpha}_1, \bm{\alpha}_2, \bm{\alpha}_3, \bm{\alpha}_4.
+            \]
+        \end{analysisbox}
     \end{enumerate}
 
 \end{document}

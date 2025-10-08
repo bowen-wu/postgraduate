@@ -19,14 +19,14 @@
 - 定语从句写法: 关系词 + 陈述句
 - 关系词选择 == 看先行词
 
-| 先行词                                | 关系词           | Example 例句                                                                                                                                                                                                                                                                                                                                                                      |
-|------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 物                                  | which/that    | <span style="white-space:nowrap">The key message <u>**that** have been put together for World Environment Day</u> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <u>**which included sessions to coach lawyers on the shifting landscape for patents.</span> | 
-| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <u>**who** were more rebellious</u> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <u>**that** you want to talk with</u> and you want to make this talk memorable.</span>                                                                             |
-| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <u>**whose** identities(用户的身份) have been authenticated</u> could navigate those systems.</span>                                                                                                                                                                             |
-| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <u>**when** high-quality arts criticism could be found in most big-city newspapers</u>.</span>                                                                                                                                   |
-| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <u>**where** happiness was spread more equally</u>. </span>                                                                                                                                                                                                                                       |
-| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <u>**why** these jobs are so vulnerable to technology in the first place</u>.</span>                                                                                                                                                                                                                |
+| 先行词                                | 关系词           | Example 例句                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 物                                  | which/that    | <span style="white-space:nowrap">The key message <u>**that** have been put together for World Environment Day</u> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <u>**which** included sessions to coach lawyers on the shifting landscape for patents.</span> | 
+| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <u>**who** were more rebellious</u> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <u>**that** you want to talk with</u> and you want to make this talk memorable.</span>                                                                               |
+| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <u>**whose** identities(用户的身份) have been authenticated</u> could navigate those systems.</span>                                                                                                                                                                               |
+| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <u>**when** high-quality arts criticism could be found in most big-city newspapers</u>.</span>                                                                                                                                     |
+| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <u>**where** happiness was spread more equally</u>. </span>                                                                                                                                                                                                                                         |
+| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <u>**why** these jobs are so vulnerable to technology in the first place</u>.</span>                                                                                                                                                                                                                  |
 
 **注**:
 
@@ -108,13 +108,13 @@
 
 ## Words
 
-- enact
+- enact [ɪˈnækt]
     - v. 制定（法律），通过（法案）
 - legislation
     - n. 法律，法规
-- curb
+- curb [kɜːrb]
     - v. 限制，控制，抑制
-- cheerfulness
+- cheerfulness ['tʃɪrfəlnəs]
     - n. 高兴，快乐
 - recommend
     - v. 推荐
@@ -125,19 +125,19 @@
 - coach
     - v. 指导，训练
     - coach sb. on sth. 指导、训练某人做某事
-- shifting
+- shifting [ʃɪftɪŋ]
     - adj. 变化着的；移动着的
-    - the shifting landscape for... ...形式的变化
-- landscape
+- landscape [ˈlændskeɪp]
     - n. 形势；自然风景，景色
-- auction house
+    - the shifting landscape for... ...形式的变化
+- auction([ˈɔːkʃn]) house
     - 拍卖行
-- guarantee
+- guarantee [ˌɡærənˈtiː]
     - n. 保证金；保证，担保
     - v. 保证，担保
 - client
     - n. 客户
-- authenticate
+- authenticate [ɔˈθɛntɪˌket]
     - v. 证实，认证
 - navigate
     - v. 操纵
@@ -147,33 +147,33 @@
     - adj. 普通的；平均的
 - high-quality
     - 高质量的
-- criticism
+- criticism [ˈkrɪtɪsɪzəm]
     - n. 评论，意见；批评，批判
-    - arts criticism 艺术评论
-- mechanical memorization
+    - arts([arts]) criticism 艺术评论
+- mechanical([məˈkænɪkl]) memorization
     - 机械记忆
-- practical
+- practical [ˈpræktɪkl]
     - adj. 实践的，实用的
-- vulnerable
+- vulnerable [ˈvʌlnərəbl]
     - adj. 脆弱的，有弱点的；易受伤的，易受攻击的
 - in the first place
     - 首先，起初
-- folder
+- folder [ˈfoʊldə(r)]
     - n. 文件夹，纸夹
-- accurate
+- accurate [ˈækjərət]
     - adj. 精确地，准确的
-- depiction
+- depiction [dɪˈpɪkʃən]
     - n. 描写
-- progress
-    - n. 进步，发展
-- sponsor
+- sponsor [ˈspɑːnsər]
     - v. 赞助
 - association
     - n. 协会，联盟
 - hail from...
     - 来自...
-- vaccine
+- vaccine [vækˈsiːn]
     - n. 疫苗
+- progress
+  - n. 进步，发展
 - advance
     - n. 进展，进步
 - in part
@@ -182,11 +182,11 @@
     - 在...上下大赌注
 - inhabit
     - v. 居住于，栖居于
-- the cream of...
+- the cream([kriːm]) of...
     - ...的精华部分
 - wit
     - n. 才智，智慧；风趣
-- intellect
+- intellect [ˈɪntəlekt]
     - n. 智力，理解力，非凡的才智
 - receipt
     - n. 收据
@@ -194,29 +194,29 @@
     - v. 兑现
 - withdraw
     - v. 退回，撤回
-- interest
+- interest [ˈɪntrəst]
     - n. 利息
 - a string of...
     - 一系列的...，一连串的...
-- lucrative
+- lucrative [ˈluːkrətɪv]
     - adj. 获利多的，赚钱的
-- the Nobel Prizes
+- the Nobel([noˈbɛl]) Prizes([praiziz])
     - 诺贝尔奖
 - co-ordination
     - 协作
-- a small majority
+- a small majority([məˈdʒɔːrəti])
     - 略占多数
-- liberalism
+- liberalism [ˈlɪbərəˌlɪzəm]
     - n. 自由主义
-- rigour
+- rigour [ˈrɪɡɚ]
     - n. 严苛，严酷
 - feature
     - v. 占据重要位置，发挥重要作用
-- stroller
+- stroller [ˈstroʊlə(r)]
     - n. 散步者，流浪汉
-- unwittingly
+- unwittingly [ˌʌnˈwɪtɪŋlɪ]
     - adv. 无意地，不知情地
-- assault
+- assault [əˈsɔːlt]
     - v. 袭击，攻击
 - sequence
     - n. 一系列

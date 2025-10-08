@@ -32,9 +32,10 @@
 
 <div class="controls">
     <label>选择任务类型:
-        <label><input type="radio" name="task-type" value="write" checked> 英语 Write</label>
-        <label><input type="radio" name="task-type" value="grammar"> 英语 Grammar</label>
-        <label><input type="radio" name="task-type" value="math"> 数学</label>
+        <label><input type="radio" name="task-type" value="write" checked> Write</label>
+        <label><input type="radio" name="task-type" value="grammar"> Grammar</label>
+        <label><input type="radio" name="task-type" value="linearAlgebra"> Linear Algebra</label>
+        <label><input type="radio" name="task-type" value="advancedMath"> Advanced Mathematics</label>
         <label><input type="radio" name="task-type" value="coreWord" checked> Core Word </label>
     </label>
 
@@ -191,7 +192,7 @@
       }, {label: '笔记&App训练', duration: 1}, {label: '笔记', duration: 1}],
       restDays: '2025-08-27,2025-08-29,2025-08-30,2025-09-02,2025-09-05,2025-09-06,2025-09-09,2025-09-13,2025-09-14,2025-09-19,2025-09-20,2025-09-22,2025-09-23,2025-09-24,2025-10-02,2025-10-03,2025-10-04,2025-10-05,2025-10-06,2025-10-07,2025-10-11,2025-10-17,2025-10-18,2025-10-24,2025-10-25,2025-10-31,2025-11-01,2025-11-07,2025-11-08'
     },
-    math: {
+    linearAlgebra: {
       startDate: '2025-08-11',
       reviewDays: '0,2,4,0,0,3,0,3,7,2,15,0,16',
       tasks: [
@@ -200,22 +201,45 @@
         {name: '向量', duration: 5},
         {name: '线性方程组', duration: 5},
         {name: '特征值与特征向量', duration: 5},
-        {name: '二次型', duration: 5},
-        {name: '函数、极限、连续', duration: 5},
-        {name: '一元函数微分学', duration: 5},
-        {name: '一元函数积分学', duration: 5},
-        {name: '多元函数微分学', duration: 5},
-        {name: '二重积分', duration: 5},
-        {name: '常微分方程', duration: 5}
+        {name: '二次型', duration: 5}
       ],
-      rounds: ['书', '辅导讲义/18讲', '660题', '基础', '总结', {label: '看笔记', duration: 2}, {
+      rounds: ['书', '辅导讲义', '660题', '基础', '总结', {label: '看笔记', duration: 2}, {
         label: '看笔记',
         duration: 2
       }, '提高', {label: '看笔记', duration: 2}, {label: '看笔记', duration: 2}, '660题第二遍', {
         label: '看笔记',
         duration: 1
       }, '提高第二遍', {label: '笔记', duration: 2}],
-      restDays: '2025-08-29,2025-08-30,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-09,2025-09-10,2025-09-11,2025-09-13,2025-09-16,2025-09-19,2025-09-20,2025-09-28,2025-09-30,2025-10-08,2025-10-09,2025-10-11,2025-10-12,2025-10-14,2025-10-17'
+      restDays: '2025-08-29,2025-08-30,2025-09-02,2025-09-03,2025-09-04,2025-09-05,2025-09-09,2025-09-10,2025-09-11,2025-09-13,2025-09-16,2025-09-19,2025-09-20'
+    },
+    advancedMath: {
+      startDate: '2025-10-12',
+      reviewDays: '0,2,4,0,0,3,0,3,7,2,15,0,16',
+      tasks: [
+        {name: '函数极限与连续', duration: 5},
+        {name: '数列极限', duration: 5},
+        {name: '一元函数微分学的概念', duration: 5},
+        {name: '一元函数微分学的计算', duration: 5},
+        {name: '一元函数微分学的几何应用', duration: 5},
+        {name: '一元函数微分学的应用', duration: 5},
+        {name: '一元函数微分学的物理与经济应用', duration: 5},
+        {name: '一元函数积分学的概念与性质', duration: 5},
+        {name: '一元函数积分学的计算', duration: 5},
+        {name: '一元函数积分学的几何应用', duration: 5},
+        {name: '一元函数积分学的积分（不）等式应用', duration: 5},
+        {name: '一元函数积分学的物理与经济应用', duration: 5},
+        {name: '多元函数微分学', duration: 5},
+        {name: '二重积分', duration: 5},
+        {name: '微分方程', duration: 5}
+      ],
+      rounds: ['书', '18讲', '660题', '基础', '总结', {label: '看笔记', duration: 2}, {
+        label: '看笔记',
+        duration: 2
+      }, '提高', {label: '看笔记', duration: 2}, {label: '看笔记', duration: 2}, '660题第二遍', {
+        label: '看笔记',
+        duration: 1
+      }, '提高第二遍', {label: '笔记', duration: 2}],
+      restDays: ''
     }
   };
 

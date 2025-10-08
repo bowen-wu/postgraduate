@@ -45,7 +45,7 @@
 - onto: 到...上面
 - off: 脱离
     - take off 拿走脱离
-        - 脱衣服: He took off his cost.
+        - 脱衣服: He took off his coat.
         - 拿走: He took the bag off the plan.
         - 起飞: The plane is taking off.
     - set off: set 安顿好
@@ -53,7 +53,7 @@
     - turn off the light
         - turn 旋转
 - across/through([θruː]): 穿过/经过...
-    - across the Atlantic
+    - across the Atlantic([ətˈlæntɪk])
     - through the forest
 - past: 经过...
 - along: 沿着...
@@ -102,7 +102,7 @@
     - n. 猎头
 - inequality [ˌɪnɪˈkwɑːləti]
     - n. 不平等；不平均
-- silently
+- silently [ˈsaɪləntlɪ]
     - adv. 静静地，默默地，不说话地
 - the link between A and B
     - A 与 B 之间的联系
