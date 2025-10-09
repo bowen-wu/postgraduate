@@ -10,6 +10,7 @@
 ## comment
 
 - n./v. 评论
+- comments on/about 评论
 - 词组
     - make comments 做出评论
     - give one's comments on sth. 就某事给出某人的观点
@@ -21,7 +22,7 @@
 - remark
     - n./v. 评论
     - How could she have let those enormous bonus payouts pass **unremarked**?
-    - remarkable adj. 引人注目的
+    - remarkable adj. 引人注目的，显著的        
 - attitude n. 态度
 - criticism n. 批判; 指责; (书籍或音乐等)评论
 
@@ -44,9 +45,11 @@
 ## major
 
 - adj. 主要的
+    - major cause 主要原因
 - n. 专业
 - vi. (~ in)主修
-- These are **disciplines** that are going out of style: 22% of American college graduates now **major in** business
+    - major in + 专业名 = my major is + 专业名
+- These are **disciplines**（学科） that are going out of style: 22% of American college graduates now **major in** business
   compared with only 2% **in** history and 4% **in** English.
 - majority n. 大多数
     - Like the **majority** of authors, he had to suffer many disappointments and rejections along the way, but these
@@ -69,8 +72,7 @@
 - largely adv. 在很大程度上；主要地
 - minor adj. 较小的
     - minority n. 少数
-        - In his book The Tipping Point, Malcolm Gladwell argues that "social epidemics" are driven in large part by the
-          actions of **a tiny minority of special individuals**.
+        - In his book The Tipping Point, Malcolm Gladwell argues that "social epidemics" are driven in large part by the Z/,.actions of **a tiny minority of special individuals**.
 
 ## online
 
@@ -100,15 +102,15 @@
     - in one sense 在某种意义上
     - common sense 常识
 - nonsense n. 胡扯 😔
-- sensible adj. 明智的
+- sensible adj. 明智的，理性的
 - sensitive adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
     - be sensitive to 对...敏感
     - Until this century, university libraries were not very price **sensitive**.
-    - sensitivity n. （信息、话题等的）敏感性
+    - sensitivity n. （信息、话题等的）敏感性，体贴
     - insensitive adj. 不敏感的
 - sensibility n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
 - sentiment
-    - n. 观点；情绪
+    - n. 观点；情绪（多愁善感）
     - At the next election none of the big parties seem likely to endorse(v. 赞同，支持) this **sentiment**.
 - emotion
     - n. 情绪
@@ -117,7 +119,7 @@
 
 ## community
 
-- n. 团体；社区
+- n. 团体；社区，圈子
 - scientific community 科学界
 - communal [kəˈmjuːnl] adj. 团体的
 - communicate
@@ -139,6 +141,7 @@
 - redefine vt. 重新定义
 - definite adj. adj. 不会改变的; 明确的; (证据或信息)确凿的
     - infinite adj. 无限的，无穷的; 极大的，极多的
+    - infinity stone 宝石
 - definitely adv. 肯定
     - infinitely adv. 无限地，无穷地; 极其
 - indefinitely adv. 无限期地；模糊不清的
@@ -175,7 +178,7 @@
     - arrangement n. 安排；不知
 - sequence
     - n. 一系列，一连串
-    - == progression
+    - == progression n. 发展，前进；一系列
     - When things come **in sequence**, they come in a **specific order**.
     - subsequent adj. 随后的，后来的
 
@@ -185,6 +188,8 @@
 - vi. (~ for)（数量、比例上）占；(~ for)解释
 - factual account 基于事实的叙述/事实陈述
 - The proportion of Spring Festival gifts **accounted for**/occupy 40%.
+- account for + 百分比 占比例
+- account for + 内容 解释
 - accountable
     - adj. 对...负有责任的
     - == responsible
