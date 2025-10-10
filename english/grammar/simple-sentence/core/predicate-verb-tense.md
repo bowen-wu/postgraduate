@@ -40,7 +40,7 @@
 1. 过去完成时：谓语动词 == **had + done**. 翻译成：过去的之前就已经.../过去的之前就...
     - 表示"站在**过去**的时间点回头看之前发生的一件事的完成结果"，强调（角度）：**"过去的之前"**
     - 过去完成时表达的是一个**时间段**，从"过去的之前"到"过去"
-        - Throughout the evening, one man <u>had been</u> particularly talkative. 整个晚上，有一位男士特别健谈
+        - Throughout the evening, one man <ins>had been</ins> particularly talkative. 整个晚上，有一位男士特别健谈
 2. 现在完成时：谓语动词 == **have/has + done**. 翻译成：现在的之前就已经.../现在的之前就...
     - 表示"站在**现在**的时间点回头看之前发生的一件事的完成结果"，强调（角度）：**"现在的之前"**
     - 现在完成时表达的是一个**时间段**，从"现在的之前"到"现在"，即"从过去到现在"
@@ -55,10 +55,10 @@
     - My dream has always been to work somewhere in an area between fashion and publishing.
     - 现在完成时 vs 一般过去时
         - 一般过去时只表示"过去"，而现在完成时表示"从过去到现在"这一时间段
-        - He <u>has left</u>, so I cannot find him now.
-        - He <u>left</u> two hours ago.
-        - We <u>have learned</u> English for 15 years.
-        - We <u>learned</u> English for 15 years.
+        - He <ins>has left</ins>, so I cannot find him now.
+        - He <ins>left</ins> two hours ago.
+        - We <ins>have learned</ins> English for 15 years.
+        - We <ins>learned</ins> English for 15 years.
 3. 将来完成时：谓语动词 == **will have + done**
     - 表示"站在将来的时间点回头看之前发生的一件事的完成结果"，强调（角度）：**"将来的之前"**
 
@@ -69,11 +69,11 @@
 1. 过去完成进行时：谓语动词 == **had been + doing**. 翻译成：**在过去的之前就已经...**
     - 表达"过去的之前"发生的事情
     - 过去完成时 vs 过去完成进行时
-        - 过去完成时：**强调结果** => We <u>had</u> not <u>won</u> the match
-        - 过去完成进行时：**强调过程** => We <u>had been working</u> hard for several months.
+        - 过去完成时：**强调结果** => We <ins>had</ins> not <ins>won</ins> the match
+        - 过去完成进行时：**强调过程** => We <ins>had been working</ins> hard for several months.
 2. 现在完成进行时：谓语动词 == **have/has been + doing**. 翻译成：**在现在的之前就已经...**
     - 表达"现在的之前"发生的事情，且**强调过程**
-    - Yes, new technology <u>has been eating</u> jobs forever, and always will.
+    - Yes, new technology <ins>has been eating</ins> jobs forever, and always will.
 3. 将来完成进行时：谓语动词 == **will have been + doing**
 
 ### Words

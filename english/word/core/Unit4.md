@@ -14,29 +14,28 @@
 - influential
     - adj. 有影响力的
     - n. 有影响力的人
-        - "two-step flow of communication": information flows from the media to the **influentials** and from them to
-          everyone else.
+        - "two-step flow of communication": information flow from the media to the **influentials** and from them to everyone else.
 - affect
-    - vt. 影响；感动
+    - **vt.** 影响；感动
 - effect
-    - n. 影响；效果
+    - **n.** 影响；效果
     - 词组
         - go/come into effect 生效
         - take effect 生效
         - in effect 实际上
         - to the effect that... 大意是...
     - effect vs affect
-        - But CCT Programs don't generally consider <u>affect/effect</u> on the environment.
+        - But CCT Programs don't generally consider <ins>affect/effect</ins> on the environment.
     - effective adj. 有效的；生效的
         - == works well
     - ineffective adj. 无效的
     - effectively adv. 有效地；实际上
     - effectiveness n. 效果；有效性
-    - efficient adj. 高效的
-    - efficiency n. 效率
-    - effective vs efficient
-        - When our brains switch between being focused and unfocused on a task, they tend to be more <u>
-          efficient/effective</u>
+    - efficient 
+            - adj. 高效的
+            - effective vs efficient
+                - When our brains switch between being focused and unfocused on a task, they tend to be more <ins>efficient/effective</ins>
+            - efficiency n. 效率
 - impact
     - n. 影响
     - v. (对...)有影响
@@ -51,13 +50,12 @@
 ## reason
 
 - v. 推断
-- n. 原因；道理；理性
+- n. 原因；道理；理性；推理
 - The heart has its reasons which reason knows not of.
 - reasoning n. 推理
 - reasonable adj. 合理的
 - unreasonable adj. 不合理的
-- We *reason(v. 推理)* together, challenge, revise, and complete each other's *reasoning(n. 推理)* and each other's
-  conceptions of *reason(n. 推理)*.
+- We *reason(v. 推理)* together, challenge, revise, and complete each other's *reasoning(n. 推理)* and each other's conceptions of *reason(n. 推理)*.
 - rational adj. 理性的
     - rationalist n. 理性主义者
     - irrational adj. 不合理的，荒谬的; 无理性的 😔
@@ -72,8 +70,7 @@
 - adj. 可能的；似乎合适的
 - adv. 可能
 - be likely to do sth. 可能做某事
-- But *a boost* (in the storage capacity of batteries) *is making their ability* (to keep power flowing around the
-  clock) more likely.
+- But *a boost* <ins>in the storage capacity of batteries</ins> *is making their ability* <ins>to keep power flowing around the clock</ins> more likely.
 - unlikely adj. 不大可能发生的；不可能的
 - possible
     - adj. 可能存在（或发生）的
@@ -82,49 +79,50 @@
         - possible == likely
         - possible 主语物: It is possible
         - likely 主语人
-    - impossible adj. 不可能存在（或发生）的
-        - It's almost impossible to go through life without experiencing some kind of failure.
+    - impossible adj. 不可能存在（或发生）的 😔
+        - It's almost impossible to go through life without experiencing some kind of failure. 人的一生几乎不可能不经历某种失败
     - possibly adv. 可能
     - possibility n. 可能，可能性；机会
-    - probably adv. 很可能
+- probably adv. 很可能
     - probability n. 概率；可能性
         - == possibility
-        - They found that after a surprise departure, the **probability** (that the company will subsequently have to
-          restate earnings) increased by nearly 20%.
+        - They found that after a surprise departure, the **probability** <ins>that the company will subsequently have to restate earnings</ins> increased by nearly 20%.
 - perhaps
     - adv. 也许
     - == maybe
 - potential
     - adj. 潜在的
     - n. 潜力；潜在性
+    - == possible
+    - If you can describe something as **<ins>possible</ins> but not yet actual**, choose the adjective **potential**.
     - Companies try to reach **potential/possible** customers through advertising.
-    - The potential of this work applied to healthcare is very great, but it could also lead to further **concentration
-      of power(垄断)** in the **tech giants(科技巨头)**.
+    - The *potential* of this work applied to healthcare is very great, but it could also lead to further **concentration of power(垄断)** in the **tech giants(科技巨头)**.
     - potentially adv. 潜在地
 
 ## information
 
 - n. 信息；数据
 - inform
-    - vt. 通知；对...有影响
-    - inform sb. of sth. 告知某人某事
+    - vt. 通知；对...有影响(== influence)
+    - inform sb. of/about sth. 告知某人某事
     - well-informed adj. 消息灵通的; 见多识广的
-    - Ideally, different kinds of reading **inform** each other, and act as useful reference points for and
-      *counterbalances(相互平衡)* to one another.
+    - Ideally, different kinds of reading **inform** each other, and act as useful reference points for and *counterbalances(相互平衡)* to one another.
 
 ## require
 
 - vt. 需要；要求
-- requirement n. 要求（或必要条件）；所需的（或所要的）东西
 - All great achievements require time.
-- On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will accomplish little
-  and **require** vary little of us.
-- acquire vt. 获得；购得；习得
+- On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will *accomplish little* and **require** vary little of us.
+- requirement n. 要求（或必要条件）；所需的（或所要的）东西
+- acquire 
+    - vt. 获得；购得；习得
     - 付出努力所获得的
+    - To **acquire** means to <ins>**get or come to own something**</ins>
     - You **acquire** an education by your own effort.
+    - Each spouse retains whatever property he or she brought into the marriage, and *jointly-acquired property* is divided equally.
     - acquisition n. 获得；习得；收购
-        - An acquisition is something you acquire - a book, a skill. It describes things you have **purchased**, things
-          you have **learned**, or things you have **gotten**.
+        - == learning
+        - An acquisition is something you acquire - a book, a skill. It describes things you have **purchased**, things you have **learned**, or things you have **gotten**.
 
 ## create
 
@@ -141,32 +139,34 @@
         - Re-invent yourself.
         - To reinvent something is to **completely change or remake it** so thoroughly that it seems **brand new**.
         - The driverless car is going to **reinvent** the way people think about driving.
-        - A *cynic* might *speculate* thant the UK is *on the verge* of disappearing into an endless *fever* of
-          *self-celebration* in its *desperation* to **reinvent itself** for the *post-Brexit* world.
-
+        - A *cynic(n. 怀疑者)* might *speculate(推测/猜测)* thant the UK is *on the verge(濒临；即将；快要)* of disappearing into an endless *fever* of *self-celebration* in its *desperation* to **reinvent itself** for the *post-Brexit* world. 一个怀疑论者可能会认为，英国正濒临陷入一场无休止的自我庆祝狂热之中，拼命地想在脱欧后的世界中重新塑造自己
+ 
 ## lead
 
 - vi. 导致；通往；领导
 - vt. 处于领先地位；过（某种生活）；引导
 - n. 领先地位
-- A lead to B => A 导致 B
+- They wouldn't like a national agency, but self-interest would lead them to deal with it.
 - 词组
     - lead to 导致；通向
+        - A lead to B => A 导致 B
     - lead the way 带路；领路
     - lead up to (把谈话）引向（某个话题）
     - lead a...life 过着...的生活
     - take the lead 带头，领先
 - leader n. 领导者；引导者
 - leadership n. 领导（地位）；领导班子；领导才能
-- leading adj. 最重要的; 主角的; 首位的，领先的
+- leading adj. 领先的；最重要的; 主角的; 首位的，
 - misleading adj. 误导的
 - guide
     - vt. 指导
     - n. 指南；指导者
+    - == lead sb. to do sth.
     - guidance n. 指导
     - guideline n. 指导准则
         - == instruction n. 指示; 教学; 用法说明; 计算机指令
     - principle n. 行为准则；原理；定律
+        - == guideline
 
 ## share
 
@@ -178,28 +178,28 @@
     - n. 股份；储备物；高汤
     - vt. 存货；贮存（事物，书籍等）
     - hold a stock 持股
+        - The average time for *holding a stock* in both the United states and Britain, he notes, has dropped from seven years to seven months in recent decades.
 
 ## plan
 
-- v. 计划
+- v.计划
 - n. 计划
 - plan to do sth.
 - project
     - n. 项目；课题
     - v. 计划；预测；投射
     - projection n. 体现；预测；投射
-- scheme
+    - projector n. 放映机，幻灯机; 投影仪; 
+- scheme [skiːm]
     - v. 密谋
     - vt. 认为
     - n. 计划；计谋
     - Even angels have their wicked schemes and you take that to new extremes.
-- design
-    - vt./n. 设计
+- design vt./n. 设计
 - program
     - n. 计划；程序
     - vt. 计划
-    - One possible response is for classical performers to **program(编排，创造)** attractive new music that is not yet
-      available on record.
+    - One possible response is for classical performers to **program(编排，创造)** attractive new music that is not yet available on record.
 
 ## report
 
@@ -211,8 +211,7 @@
     - n. 媒体
 - coverage
     - n. 新闻报道；覆盖范围
-    - ...perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their **arts
-      coverage(艺术报道)**.
+    - ...perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their **arts coverage(艺术报道)**.
 - phenomenon
     - n. 现象
 
@@ -275,8 +274,8 @@
     - vt. 产生（收益、效益等）；出产（作物）
     - vi. 屈服
     - n. 产量
-    - If she hopes her new-found fortune will **yield/produce lasting felling of fulfilment**, she could <u>do worse
-      than</u> read Happy Money by Elizabeth Dunn and Michael Norton.
+    - If she hopes her new-found fortune will **yield/produce lasting felling of fulfilment**, she could <ins>do worse
+      than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
         - do worse than + do sth. 最好做某事
 - reap
     - vt. 取得（成果）；收割（庄稼）
@@ -311,14 +310,14 @@
 - recall
     - vt. 回忆起；召回（某人/产品）
     - n. 召回；记忆力
-    - It's <u>in vain(徒劳)</u> to recall the pass, unless it works some influence upon the present.
+    - It's <ins>in vain(徒劳)</ins> to recall the pass, unless it works some influence upon the present.
     - I can **recall** the day my grandfather died and the sadness I felt when we went to the hospital the day before.
 
 ## concern
 
 - n. 担心；关心的事；(对人、组织等)重要的事情
 - vt. 涉及；担忧
-- Another <u>nationwide concern(举国关注的问题)</u> is whether public funds from other agencies are going into
+- Another <ins>nationwide concern(举国关注的问题)</ins> is whether public funds from other agencies are going into
   construction in fire-prone districts.
 - concerned
     - adj. 担心的；关注的；相关的
@@ -342,8 +341,8 @@
 - historically
 - chronic
     - adj. 慢性的；长期的
-    - <u>As well as(除了, == besides)</u> those **chronic** problems, the EU faces an acute crisis in its economic core,
-      the 16 countries that use the <u>single currency(统一货币)</u>.
+    - <ins>As well as(除了, == besides)</ins> those **chronic** problems, the EU faces an acute crisis in its economic core,
+      the 16 countries that use the <ins>single currency(统一货币)</ins>.
     - chronicle vt. 按时间顺序记载 n. 编年史
         - == record
         - To **chronicle** an event is to **record** it as it happens, and **a chronicle** is **a record** of those
@@ -372,10 +371,10 @@
     - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
 - arouse vt. 引起(感情、态度)；唤醒
     - == provoke
-- <u>arise / raise / arouse</u>
-    - A problem <u>_____</u>.
-    - He <u>_____</u> a question.
-    - Your <u>_____</u> my curiosity.
+- <ins>arise / raise / arouse</ins>
+    - A problem <ins>_____</ins>.
+    - He <ins>_____</ins> a question.
+    - Your <ins>_____</ins> my curiosity.
 
 ## back
 
@@ -394,3 +393,20 @@
     - == backdrop n. (实物或景象、事态或活动的)背景；(舞台的)背景幕布
 - backfire vi. 产生事与愿违的不良（或危险）后果；（车辆或其发动机）😔
 - feedback n. 反馈
+
+## Words
+
+- cautious
+    - adj. 小心的，谨慎的
+- glimpse
+    - n. 一瞥，扫视; 短暂的感受 
+    - v. 瞥见; 开始领悟
+- conclusion
+    - n. 结论; 结束; 末尾; 结局; 签订
+
+## 词组
+
+## 句式
+
+- demand/require/insist that sb. (should) do sth.
+    - I strongly require that my complaint be dealt with properly and promptly. 我强烈要求我的投诉得到妥善而及时的处理。

@@ -15,8 +15,8 @@
 2. 确定"被动的时间"，把be变成对应的时态
 3. 根据主语，确定be动词的单复数
 4. 如果强调被动的动作发出者，即强调"被谁做"，可以在被动后加上"by + 动作的发出者或发出对象"
-    - The shortage <u>is compounded</u> *by* <u>federal immigration raids</u>... 联邦移民突击检查/突击搜捕加剧了(劳动力)短缺
-    - I <u>was knocked</u> off my bike *by* a taxi.
+    - The shortage <ins>is compounded</ins> *by* <ins>federal immigration raids</ins>... 联邦移民突击检查/突击搜捕加剧了(劳动力)短缺
+    - I <ins>was knocked</ins> off my bike *by* a taxi.
 
 #### 被动语态 & 时态
 
@@ -28,7 +28,7 @@
 #### 被动语态 & 情态
 
 - 表示被动的动作想要与"情态"或"推测"相结合，则要把被动语态与情态动词相结合，即"**情态动词 + be done**"
-    - Their success <u>may be determined</u> by a suit(诉讼)...
+    - Their success <ins>may be determined</ins> by a suit(诉讼)...
 
 ### Words
 

@@ -34,34 +34,34 @@
 
 - 确定名词（逻辑主语）和非谓语动词之间的*主动*、*被动*或*目的*的关系，从而使用 doing，done 或 to do
 
-1. This <u>proposed</u> **mandate(n. 指令)** was born of frustration. => 被提议的指令
-2. It is the first worldwide **epidemic** <u>designated by the World Health Organization in 41 years</u>. => 被命名的传染病
-3. G. I. Joe had a distinguished **career** <u>fighting German, Japanese, and Korean troops</u>. => 去作战的职业生涯
-4. It's a reflecting simple of **people** <u>generally thinking well of themselves</u>. => 通常自我感觉良好的人们
-5. Splitting kids, or adults, into ever-tinier categories has proved a sure-fire **way** <u>to boost profits</u>. => 这个方法的目的是去提高利润
-6. ...such senior doctors back such radical moves, especially the **call** <u>to use some of the tough tactics</u>... => 这个呼吁的目的是去使用
+1. This <ins>proposed</ins> **mandate(n. 指令)** was born of frustration. => 被提议的指令
+2. It is the first worldwide **epidemic** <ins>designated by the World Health Organization in 41 years</ins>. => 被命名的传染病
+3. G. I. Joe had a distinguished **career** <ins>fighting German, Japanese, and Korean troops</ins>. => 去作战的职业生涯
+4. It's a reflecting simple of **people** <ins>generally thinking well of themselves</ins>. => 通常自我感觉良好的人们
+5. Splitting kids, or adults, into ever-tinier categories has proved a sure-fire **way** <ins>to boost profits</ins>. => 这个方法的目的是去提高利润
+6. ...such senior doctors back such radical moves, especially the **call** <ins>to use some of the tough tactics</ins>... => 这个呼吁的目的是去使用
  
 - 根据使用判断目的 <=> 根据目的去使用
 
-1. Here are many friends <u>gathering</u> together.
-2. Here are many friends <u>gathered</u> together.
-3. Here are many friends <u>to gather</u> together.
+1. Here are many friends <ins>gathering</ins> together.
+2. Here are many friends <ins>gathered</ins> together.
+3. Here are many friends <ins>to gather</ins> together.
 
 #### 非谓语动词修饰句子，作状语
 
 - 非谓语动词作状语，指的是修饰限定一个句子
 - 非谓语动词的逻辑主语（意思上的主语）就是这个句子的主语，从而可以确定非谓语动词表示的是*主动*、*被动*或*目的*
 
-1. <u>Looking around</u>, **I** *despaired* at the singular lack of imagination about girls' lives and interests.
-2. Throughout the evening, **one man** *had been* particularly talkative, <u>frequently offering ideas and anecdotes</u>...
-3. <u>Viewed in this light</u>, **guilt** *is* an opportunity.
-4. ...nearly 40% of **emigrants** *had* more than a high-school education, <u>compared with around 3.3% of all Indians over the age of 25</u>.
-5. <u>To avoid this uneasiness</u>, **we** *turn* to our phones.
-6. In Scotland, for example, **wind turbines** *provide* enough electricity <u>to power 95 percent of homes</u>.(非谓语动词修饰句子做状语时，通常可以翻译成独立的一句)
-7. *Can* **privacy** *be* preserved <u>**while** bringing safety and security to a world</u>...?(非谓语动词修饰句子做状语时，为了更加明确地表达补充的是什么内容，可以在非谓语动词前加上从属连词，突出表达和句子间的逻辑关系)
-8. <u>**When** applied to aircraft</u>, **the principles** *are* not substantially different.
-9. The **air** <u>flowing over a bird's wings</u> curls upwards behind the wingtips, a **phenomenon** <u>known as upwash</u>.
-10. <u>Followed by her mother</u>, the girl <u>wearing a red dress</u> ran into the room <u>to have dinner</u>.
+1. <ins>Looking around</ins>, **I** *despaired* at the singular lack of imagination about girls' lives and interests.
+2. Throughout the evening, **one man** *had been* particularly talkative, <ins>frequently offering ideas and anecdotes</ins>...
+3. <ins>Viewed in this light</ins>, **guilt** *is* an opportunity.
+4. ...nearly 40% of **emigrants** *had* more than a high-school education, <ins>compared with around 3.3% of all Indians over the age of 25</ins>.
+5. <ins>To avoid this uneasiness</ins>, **we** *turn* to our phones.
+6. In Scotland, for example, **wind turbines** *provide* enough electricity <ins>to power 95 percent of homes</ins>.(非谓语动词修饰句子做状语时，通常可以翻译成独立的一句)
+7. *Can* **privacy** *be* preserved <ins>**while** bringing safety and security to a world</ins>...?(非谓语动词修饰句子做状语时，为了更加明确地表达补充的是什么内容，可以在非谓语动词前加上从属连词，突出表达和句子间的逻辑关系)
+8. <ins>**When** applied to aircraft</ins>, **the principles** *are* not substantially different.
+9. The **air** <ins>flowing over a bird's wings</ins> curls upwards behind the wingtips, a **phenomenon** <ins>known as upwash</ins>.
+10. <ins>Followed by her mother</ins>, the girl <ins>wearing a red dress</ins> ran into the room <ins>to have dinner</ins>.
 
 #### 表示被动
 

@@ -8,7 +8,7 @@
 
 1. 表示顺接的并列连词
     - 和
-        - ...and...: A few wealthy people will own all the capital, <u>and</u> the masses will struggle in an impoverished wasteland.
+        - ...and...: A few wealthy people will own all the capital, <ins>and</ins> the masses will struggle in an impoverished wasteland.
         - both...and...
     - 不但...而且...(...和...)
         - not only...but...as well
@@ -18,37 +18,37 @@
         - not merely...but( also)...
 2. 表示转折的并列连词
     - 但是
-        - but: They didn't remember the information, <u>but</u> the remembered how to find the folder.
-        - yet: ...adult women do not remember being to obsessed with the color, <u>yet</u> it is pervasive in our young girls' lives.
+        - but: They didn't remember the information, <ins>but</ins> the remembered how to find the folder.
+        - yet: ...adult women do not remember being to obsessed with the color, <ins>yet</ins> it is pervasive in our young girls' lives.
 3. 表示选择的并列连词
     - 或者（二选一）
-        - or: In effect, the U.S. can import food <u>or</u> it can import the workers...
-        - either...or...: <u>Either</u> Entergy never really intended to live by those commitments, <u>or</u> it simply didn't foresee what would happen next.
+        - or: In effect, the U.S. can import food <ins>or</ins> it can import the workers...
+        - either...or...: <ins>Either</ins> Entergy never really intended to live by those commitments, <ins>or</ins> it simply didn't foresee what would happen next.
     - 既不...也不（两个都不选）
         - neither...nor...: 
 4. 表示因果的并列连词
     - 因为
         - for(+句子，一定表示**因为**)
     - 所以/因为
-        - so: ...these computers emit a great deal of heat, <u>so</u> the centres need to be well air-conditioned...
+        - so: ...these computers emit a great deal of heat, <ins>so</ins> the centres need to be well air-conditioned...
 
 **注：**
 
 - 若多件事之间并列，且并列连词相同，则只保留最后一个，把前面相同的连词省略，替换成逗号；若并列连词不同，则不能替换
-    - Then his marriage failed<u>, </u>his career burned out <u>and</u> his drinking became serious.
+    - Then his marriage failed<ins>, </ins>his career burned out <ins>and</ins> his drinking became serious.
 - 并列连词不一定非要连接句子，它也可以连接词或词组。在分析句子过程中，要重点研究前后连接句子的并列连词，连接词与词组的并列连词不做特别关注
-    - Parents don't have to be exquisitely present at all times, <u>but</u> there needs to be a balance <u>and</u> parents need to be responsive *and* sensitive to a child's verbal *or* nonverbal expressions of an emotional need,...
+    - Parents don't have to be exquisitely present at all times, <ins>but</ins> there needs to be a balance <ins>and</ins> parents need to be responsive *and* sensitive to a child's verbal *or* nonverbal expressions of an emotional need,...
 
 ### 并列句的省略
 
-- 并列句<u>**独有**</u>的特点：相同的成分(主语、(部分)谓语动词)可以省略，余下的成分保持不变
+- 并列句<ins>**独有**</ins>的特点：相同的成分(主语、(部分)谓语动词)可以省略，余下的成分保持不变
 
-1. *I* <u>had no money</u> **and** <u>needed the job</u>.
-2. Indeed, *predictions* <u>have been around for two decades</u> **but** <u>have not yet come to fruition</u>.
-3. *He* <u>ticks "astronaut"</u> **but** <u>quickly adds "scientist" to the list</u> **and** <u>selects it as well</u>.
-4. Then *the kids were* <u>handed chocolate coins</u>, **and** <u>given a chance to share them with an anonymous child</u>.
-5. *Even American newspapers...have* **not only** <u>survived</u> **but** often <u>returned to profit</u>.
-6. *Newport also recommends "deep scheduling" to* <u>combat constant interruptions</u> **and** <u>get more done in less time</u>.
+1. *I* <ins>had no money</ins> **and** <ins>needed the job</ins>.
+2. Indeed, *predictions* <ins>have been around for two decades</ins> **but** <ins>have not yet come to fruition</ins>.
+3. *He* <ins>ticks "astronaut"</ins> **but** <ins>quickly adds "scientist" to the list</ins> **and** <ins>selects it as well</ins>.
+4. Then *the kids were* <ins>handed chocolate coins</ins>, **and** <ins>given a chance to share them with an anonymous child</ins>.
+5. *Even American newspapers...have* **not only** <ins>survived</ins> **but** often <ins>returned to profit</ins>.
+6. *Newport also recommends "deep scheduling" to* <ins>combat constant interruptions</ins> **and** <ins>get more done in less time</ins>.
 
 ### 问题
 

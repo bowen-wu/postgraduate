@@ -33,8 +33,8 @@
 - near: 在...附近
 - by/next to: 在...旁边
 - beside(在...旁边): beside him on the couch
-- between/among: Yet the link <u>between</u> feeling good <u>and</u> *spending money on others* can be seen <u>among
-  rich and poor people</u>.
+- between/among: Yet the link <ins>between</ins> feeling good <ins>and</ins> *spending money on others* can be seen <ins>among
+  rich and poor people</ins>.
 - around: 在...周围
 - into(进入...里面): into my mind
     - in vs into
@@ -65,7 +65,7 @@
 #### 其他用法的介词
 
 - of:
-    - <u>A's B</u> vs <u>A of B</u>: 含义相同，只是位置不同
+    - <ins>A's B</ins> vs <ins>A of B</ins>: 含义相同，只是位置不同
     - 特例: 翻译成 **B的A** 也是没有问题的
         - A 是数词: two of the students
         - A 是量词: a piece of paper/a cut of tea
@@ -79,8 +79,8 @@
 - by:
     - 通过...方式或方法: by assembling([ə'semblɪŋ]) a bicycle
     - 被...做(被动语态 + by + 动作发出者)
-    - 相差了...(表示变化的差额): <u>the number of annual visitors</u> has <u>increased by more than 50%</u> <u>since
-      1980</u>
+    - 相差了...(表示变化的差额): <ins>the number of annual visitors</ins> has <ins>increased by more than 50%</ins> <ins>since
+      1980</ins>
 - as:
     - 作为...: as "the end of the world"
     - 像...一样，如同...

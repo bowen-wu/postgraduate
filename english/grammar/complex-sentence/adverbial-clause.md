@@ -7,7 +7,7 @@
 ### 状语从句写法
 
 - 状语从句构成：从属连词 + 完整的陈述句
-- 从属连词不做句子成分，但表示一定的逻辑关系，用来说明状语从句是描述何种信息的
+- 从属连词**不做句子成分**，但表示一定的逻辑关系，用来说明状语从句是描述何种信息的
 - 状语从句的种类是由从属连词决定的，即从属连词表示什么含义（逻辑关系），这个从句就是什么状语从句
 - <ins>**When** education becomes one-size-fits-all</ins>, it risks overlooking a nation's diversity of gifts.
 - <ins>**Because** electronic payments are immediate</ins>, they eliminate the float for the consumer.
@@ -40,7 +40,7 @@
 | since       | 自从...    | The current downturn in the art market is the worst <ins>**since** the Japanese stopped buying Impressionists at the end of 1989</ins>.                                                     |
 | until       | 直到/除非... | ...the corporate workplace will never be completely family-friendly <ins>**until** women are part of senior management decisions</ins>...                                                   |
 | as soon as  | 一...就... | Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise <ins>almost **as soon as** the deal wen through</ins>. |
-| by the time | 截止到...时候 | <ins>**By the time** a problem has been addressed adn remedied</ins> it may have vanished in the marketplace, to be replaced by new abuses of power.                                        |
+| by the time | 截止到...时候 | <ins>**By the time** a problem has been addressed and remedied</ins> it may have vanished in the marketplace, to be replaced by new abuses of power.                                        |
 
 #### 地点状语从句
 
@@ -55,11 +55,13 @@
 
 #### 原因状语从句
 
-| 从属连词    | 含义    | Example 例句                                                                                                                                                          |
-|---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| because | 因为... | I've also experienced greater success achieving my specific fitness goals, <ins>**because** I'm training according to those goals, not the number on a scale</ins>. |
-| since   | 因为... | <ins>**Since** weight loss is not my goal</ins>, it is less important for me to track my weight each week.                                                          |
-| as      | 因为... | They also need better public relations skills than their predecessors, <ins>**as** the costs of even a minor slipup can be significant.                             |
+| 从属连词     | 含义       | Example 例句                                                                                                                                                          |
+|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| because  | 因为...    | I've also experienced greater success in achieving my specific fitness goals, <ins>**because** I'm training according to those goals, not the number on a scale</ins>. |
+| since    | 因为...    | <ins>**Since** weight loss is not my goal</ins>, it is less important for me to track my weight each week.                                                          |
+| as       | 因为...    | They also need better public relations skills than their predecessors, <ins>**as** the costs of even a minor slipup can be significant.                             |
+| in that  | 因为...    |                                                                                                                                                                     |
+| not that | 既然/由于... |                                                                                                                                                                     |
 
 #### 结果状语从句
 

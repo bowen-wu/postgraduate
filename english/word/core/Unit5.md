@@ -109,8 +109,8 @@
 - contemplate vt. 考虑；沉思；深思熟虑
     - == consider
     - If you **contemplate** something, you **think about it carefully**.
-    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate** the <u>
-      pros and cons(优点和缺点)</u> of your decision.
+    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate** the <ins>
+      pros and cons(优点和缺点)</ins> of your decision.
         - pros == advantages（优点，好处）
         - cons == disadvantages（缺点，坏处）
 

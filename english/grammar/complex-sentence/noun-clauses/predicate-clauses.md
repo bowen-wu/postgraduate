@@ -5,7 +5,7 @@
 ### Predicate Clauses
 
 - 一个句子作表语，放到另一个句子(主句)中
-- But perhaps the most significant reason is <u>**that** the issue has always been so politically charged</u>.
+- But perhaps the most significant reason is <ins>**that** the issue has always been so politically charged</ins>.
 
 #### 写法
 
@@ -14,9 +14,9 @@
     - 特殊疑问句变宾语从句: **调整语序为陈述语序，即将主语提到谓语动词前**
     - 一般疑问句变宾语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
     - **但连接词是 that 时，不作成分也不能省略**
-- The other issue is <u>**that** many children-especially older ones-may base their real estate knowledge on HGTV shows</u>...
-- ...eye contact is <u>**where** all the magic happens</u>.
-- Another nationwide concern is <u>**whether** public funds from other agencies are going into construction in fire-prone districts</u>.
+- The other issue is <ins>**that** many children-especially older ones-may base their real estate knowledge on HGTV shows</ins>...
+- ...eye contact is <ins>**where** all the magic happens</ins>.
+- Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in fire-prone districts</ins>.
 
 #### 连接词作用
 
@@ -37,8 +37,8 @@
 #### 位置
 
 - 表语从句位于系动词后，**常用于 be 动词后**。极少情况会出现在其他系动词后
-- For Williams, those activities become <u>**what** he calls "electronic heroin(电子海洛因)"</u>.
-- Yet the fact remains <u>**that** the merger movement must be watched</u>.
+- For Williams, those activities become <ins>**what** he calls "electronic heroin(电子海洛因)"</ins>.
+- Yet the fact remains <ins>**that** the merger movement must be watched</ins>.
 
 ### Words
 

@@ -2,7 +2,7 @@
 
 - 复合句，又称"主从复合句"，就是指多件事之间根据重要性的不同，被分为"主句"和"从句"
 - 从句前一般有连接词引导
-- ...<u>if you plan property</u>, **you'll know** <u>that you only need...350g of skin of beef and six rashers of bacon...</u>
+- ...<ins>if you plan property</ins>, **you'll know** <ins>that you only need...350g of skin of beef and six rashers of bacon...</ins>
 
 ## Noun Clauses
 
@@ -15,14 +15,14 @@
 #### 宾语从句写法
 
 1. 陈述句变宾语从句: **前加 that**（that不做成分，可以省略，但尽量不要省略）
-    - Dr. Worm acknowledge <u>**that** these figures are conservative</u>.
+    - Dr. Worm acknowledge <ins>**that** these figures are conservative</ins>.
     - 其他三种从句不能省略*that* => 省略*that*的是**宾语从句**
 2. 特殊疑问句变宾语从句: **调整语序为陈述语序，即将主语提到谓语动词前**
-    - We suddenly can't remember <u>**where** we put the keys just a moment ago</u>.
+    - We suddenly can't remember <ins>**where** we put the keys just a moment ago</ins>.
 3. 一般疑问句变宾语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
-    - I don't know <u>**if** other clients are going to abandon me, too</u>.
+    - I don't know <ins>**if** other clients are going to abandon me, too</ins>.
     - 若主句是疑问句，内部包含的宾语从句依然遵循此原则
-        - Have you ever notice <u>**how** much children laugh</u>.
+        - Have you ever notice <ins>**how** much children laugh</ins>.
 
 **总结**
 
@@ -43,17 +43,17 @@
 
 1. 动宾
     - 动单宾: 及物动词 + 从句
-        - Some **worry** <u>that this is having a destructive effect on society</u>...
+        - Some **worry** <ins>that this is having a destructive effect on society</ins>...
     - 动双宾: 及物动词 + 人 + 从句
-        - He **reminds** *himself* <u>that not every lecture can be a Nobel winner; some will be less effective than others</u>.
+        - He **reminds** *himself* <ins>that not every lecture can be a Nobel winner; some will be less effective than others</ins>.
 2. 介宾: 介词 + 宾语从句
-    - A Google search can leak between 0.2 and 7.0 grams of CO<sub>2</sub>, depending **on** <u>how many attempts are needed to get the "right" answer</u>.
+    - A Google search can leak between 0.2 and 7.0 grams of CO<sub>2</sub>, depending **on** <ins>how many attempts are needed to get the "right" answer</ins>.
 3. 形容词 + 宾语从句(省略了介词，应该是: 形容词 + 介词 + 宾语从句)
-    - I'm pretty **confident** <u>we're at the bottom</u>.
+    - I'm pretty **confident** <ins>we're at the bottom</ins>.
 4. 非谓语动词(及物动词) + 宾语从句
-    - Later this year, we will publish a white paper ***setting** out exactly(准确地阐明)* <u>how we will achieve this</u>.
-    - Yet rather than(不是...而是...) empowering(授权、赋能) teachers **to find** <u>what works best for their student</u>, the policy imposes(强加了) a flat, across-the-board rule.
-    - **主谓宾补**句型中才可使用形式主语it: That kind of activity make <u>it</u> less likely <u>that the court's decisions will be accepted as impartial judgments</u>.
+    - Later this year, we will publish a white paper ***setting** out exactly(准确地阐明)* <ins>how we will achieve this</ins>.
+    - Yet rather than(不是...而是...) empowering(授权、赋能) teachers **to find** <ins>what works best for their student</ins>, the policy imposes(强加了) a flat, across-the-board rule.
+    - **主谓宾补**句型中才可使用形式主语it: That kind of activity make <ins>it</ins> less likely <ins>that the court's decisions will be accepted as impartial judgments</ins>.
 
 ### Words
 

@@ -5,7 +5,7 @@
 ### Subject Clauses
 
 - 一个句子作主语，放到另一个句子（主句）中
-- <u>**That** everyone's too busy these days</u> is a cliche.
+- <ins>**That** everyone's too busy these days</ins> is a cliche.
 
 #### 写法
 
@@ -15,9 +15,9 @@
     - 一般疑问句变宾语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
     - **但连接词是 that 时，不作成分也不能省略**
     - 表示"**是否**"时，**只能用whether**，不能用~~if~~
-- <u>**That** the seas are being overfished</u> has been known for years.
-- <u>**What** WhatsAPP offered Facebook</u> was an intricate and finely detailed web of its users' friendships and social lives.
-- <u>**Whether** the separation distances involved would satisfy air-traffic-control regulations</u> is another matter...
+- <ins>**That** the seas are being overfished</ins> has been known for years.
+- <ins>**What** WhatsAPP offered Facebook</ins> was an intricate and finely detailed web of its users' friendships and social lives.
+- <ins>**Whether** the separation distances involved would satisfy air-traffic-control regulations</ins> is another matter...
 
 #### 位置
 
@@ -25,13 +25,13 @@
 - 同一主语从句可位于两种不同的位置，但意思相同
 
 1. 位于句首：**通常**主语从句较短时位于句首
-    - <u>**What** Washington does-or doesn't do-to promote alternative energy</u> may mean less and less at a time of a global shift in thought.
-    - == <u>It</u> may mean less and less at a time of a global shift in thought <u>**What** Washington does-or doesn't do-to promote alternative energy</u>
+    - <ins>**What** Washington does-or doesn't do-to promote alternative energy</ins> may mean less and less at a time of a global shift in thought.
+    - == <ins>It</ins> may mean less and less at a time of a global shift in thought <ins>**What** Washington does-or doesn't do-to promote alternative energy</ins>
 2. 位于句尾：通常主语从句后置，句首用形式主语**it**
-    - <u>It</u> seems pretty clear <u>**that** memory is changing</u>...
-        - == <u>**That** memory is changing</u> seem**s** pretty clear. => 句子位于句首相当于**单数**
-    - <u>It</u> remains to be seen <u>**how** weather conditions affect the air flows</u>...
-    - <u>It</u> surely seems plausible <u>**that** happy people would be more forward-thinking and creative and lean towards R&D more than the average</u>...
+    - <ins>It</ins> seems pretty clear <ins>**that** memory is changing</ins>...
+        - == <ins>**That** memory is changing</ins> seem**s** pretty clear. => 句子位于句首相当于**单数**
+    - <ins>It</ins> remains to be seen <ins>**how** weather conditions affect the air flows</ins>...
+    - <ins>It</ins> surely seems plausible <ins>**that** happy people would be more forward-thinking and creative and lean towards R&D more than the average</ins>...
 
 ### Words
 

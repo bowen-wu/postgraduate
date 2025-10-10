@@ -3,13 +3,13 @@
 ## Attributive Clause
 
 - 定语从句就是一个句子作定语，去修饰限定名词（名词词组或代词），位置放在所修饰的名词后
-- This is *a skill* <u>**that** will help them all throughout life</u>.
+- This is *a skill* <ins>**that** will help them all throughout life</ins>.
 - 翻译为: *...的名词*
 - **先行词**: 定语从句所修饰的名词
 - **关系词**: 引出定语从句的连接词
     - 作用1: 引导
     - 作用2: 替代 => **关系词在定语从句中充当成分，它替代了从句中跟先行词一样的成分**
-        - This is **a skill** <u>**that** will help them all throughout life</u>.
+        - This is **a skill** <ins>**that** will help them all throughout life</ins>.
         - 主句: This is **a skill**.
         - 从句: **A skill** will help them all throughout life.
 - 定语从句的关系词在从句中**作成分**，且所做成分与先行词相同 => **关系词 == 先行词**
@@ -21,12 +21,12 @@
 
 | 先行词                                | 关系词           | Example 例句                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 物                                  | which/that    | <span style="white-space:nowrap">The key message <u>**that** have been put together for World Environment Day</u> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <u>**which** included sessions to coach lawyers on the shifting landscape for patents.</span> | 
-| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <u>**who** were more rebellious</u> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <u>**that** you want to talk with</u> and you want to make this talk memorable.</span>                                                                               |
-| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <u>**whose** identities(用户的身份) have been authenticated</u> could navigate those systems.</span>                                                                                                                                                                               |
-| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <u>**when** high-quality arts criticism could be found in most big-city newspapers</u>.</span>                                                                                                                                     |
-| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <u>**where** happiness was spread more equally</u>. </span>                                                                                                                                                                                                                                         |
-| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <u>**why** these jobs are so vulnerable to technology in the first place</u>.</span>                                                                                                                                                                                                                  |
+| 物                                  | which/that    | <span style="white-space:nowrap">The key message <ins>**that** have been put together for World Environment Day</ins> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <ins>**which** included sessions to coach lawyers on the shifting landscape for patents.</span> | 
+| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <ins>**who** were more rebellious</ins> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <ins>**that** you want to talk with</ins> and you want to make this talk memorable.</span>                                                                               |
+| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <ins>**whose** identities(用户的身份) have been authenticated</ins> could navigate those systems.</span>                                                                                                                                                                               |
+| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <ins>**when** high-quality arts criticism could be found in most big-city newspapers</ins>.</span>                                                                                                                                     |
+| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <ins>**where** happiness was spread more equally</ins>. </span>                                                                                                                                                                                                                                         |
+| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <ins>**why** these jobs are so vulnerable to technology in the first place</ins>.</span>                                                                                                                                                                                                                  |
 
 **注**:
 
@@ -36,21 +36,21 @@
 4. whom 指人，只能在**作宾语**时使用
 5. who/that 指人，可以做任何成分
 6. 关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略
-    - In the same study, a group was asked to remember both the information and *the folders* <u>it was stored in(介宾)</u>.
-    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <u>I am making(动宾) in the gym</u>.
-    - I want to share these *old truths* <u>I've learned(动宾) along the way</u>.
+    - In the same study, a group was asked to remember both the information and *the folders* <ins>it was stored in(介宾)</ins>.
+    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <ins>I am making(动宾) in the gym</ins>.
+    - I want to share these *old truths* <ins>I've learned(动宾) along the way</ins>.
 
 ### 定语从句分类
 
 1. 限定性定语从句: 先行词**范围*不*明确**，需**修饰限定**(解释说明)。不需使用逗号隔开
-    - He will call <u>his friend</u> who is working in London.
+    - He will call <ins>his friend</ins> who is working in London.
 2. 非限定性定语从句: 先行词**范围明确**。需**使用逗号**隔开
-    - He will call <u>his mother</u>, who is working in London.
+    - He will call <ins>his mother</ins>, who is working in London.
     - 先行词**范围明确** = "绝对明确" || "相对明确"
         - 绝对明确 => 专有名词、独一无二的: the Great Wall, mother, father
-            - Such a move could affect firms such as **McDonald's**, <u>which sponsors the youth coaching schema run by the Football Association</u>.
+            - Such a move could affect firms such as **McDonald's**, <ins>which sponsors the youth coaching schema run by the Football Association</ins>.
         - 相对明确 => 根据上下文可以判断出这个名词的范围是明确的
-            - **The new vaccine**, <u>which is different from the annual flu vaccine</u>, is available ahead of expectations.
+            - **The new vaccine**, <ins>which is different from the annual flu vaccine</ins>, is available ahead of expectations.
 
 | 特点  | 限定性定语从句 (Restrictive)                                          | 非限定性定语从句 (Non-restrictive)                            |
 |-----|----------------------------------------------------------------|-------------------------------------------------------|
@@ -60,9 +60,9 @@
 | 翻译  | 通常往前翻译<br>(译到先行词前，"...的名词")                                    | 通常无需往前翻译                                              |
 | 关系词 | 1. 关系词可以用 that<br> 2. 作宾语时可以省略<br> 3. 指人作宾语，用 whom/who/that 都可 | 1. 关系词**不能用 that**<br> 2. 不可以省略<br> 3. 指人作宾语，只能用 whom |
 
-- Even American newspapers, <u>which inhabit the most troubled corner of the global industry</u>, have not only survived but often returned to profit.
-- A couple of Christmases ago, my youngest stepdaughter, <u>who was nine years old at the time</u>, got a Superman T-shirt for Christmas.
-- Facebook...is a self-enhancer's paradise, <u>where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles</u>.
+- Even American newspapers, <ins>which inhabit the most troubled corner of the global industry</ins>, have not only survived but often returned to profit.
+- A couple of Christmases ago, my youngest stepdaughter, <ins>who was nine years old at the time</ins>, got a Superman T-shirt for Christmas.
+- Facebook...is a self-enhancer's paradise, <ins>where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles</ins>.
 
 ### 限定性定语从句 vs 同位语从句
 
@@ -78,33 +78,33 @@
 | 引导词成分 | n. + that 从句 => that**不充当成分**则是同位语从句                      | n. + that 从句 => that **充当成分**则可判断出是定语从句                       |
 | 省略    | 连接词不能省略                                                   | 关系词在定语从句中作宾语时（及物动词后的宾语或介词后的宾语）可省略 => n. + 省略关系词的从句，则可判断出是定语从句 |
 
-- In effect, the U.S. can import food or it can import the works <u>**who** pick it</u>.
-- Second, paper checks have the advantage <u>**that** they provide receipts</u>, something <u>**that** many consumers are unwilling to give up</u>.
-- Fear is not real. It is a product of thoughts <u>you create</u>.
+- In effect, the U.S. can import food or it can import the works <ins>**who** pick it</ins>.
+- Second, paper checks have the advantage <ins>**that** they provide receipts</ins>, something <ins>**that** many consumers are unwilling to give up</ins>.
+- Fear is not real. It is a product of thoughts <ins>you create</ins>.
     - **n. + 主谓 == 定语从句**
 
 ### 特殊的非限定性定语从句，补充说明整句话
 
 - 关系词只能用 which 或 as，且做成分
 - 特殊的非限定性定语从句**位于主句后** => 可以使用 which 或 as
-    - ...so the centres need to be well air-conditioned, <u>**which/as** uses event more energy.
-    - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <u>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
+    - ...so the centres need to be well air-conditioned, <ins>**which/as** uses event more energy.
+    - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <ins>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
 - 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as**
-    - <u>**As** Koziatek knows</u>, there is learning in just about everything.
-    - <u>**As** a News Feature article in Nature discusses</u>, a string of lucrative awards for researchers have joined the Nobel Prizes in recent years.
+    - <ins>**As** Koziatek knows</ins>, there is learning in just about everything.
+    - <ins>**As** a News Feature article in Nature discusses</ins>, a string of lucrative awards for researchers have joined the Nobel Prizes in recent years.
 
 ### 介词提前的定语从句
 
-- ...we would move quickly to the cashless society <u>**which** all payments are made electronically **in**</u>
-    - == ...we would move quickly to the cashless society <u>**in which** all payments are made electronically</u>
-- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**which** takeaways cannot open **within**</u>.
-    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <u>**within which** takeaways cannot open</u>.
+- ...we would move quickly to the cashless society <ins>**which** all payments are made electronically **in**</ins>
+    - == ...we would move quickly to the cashless society <ins>**in which** all payments are made electronically</ins>
+- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**which** takeaways cannot open **within**</ins>.
+    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**within which** takeaways cannot open</ins>.
 
 - 定语从句中，与关系词搭配的介词可以提前，也可以不提前
 - 介词提前与否，表达的意思都一样，差别**在于关系词的选择**
 - 如果定语从句介词提前 => **关系词不能省略** + **不能用 that**
-    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <u>**among whom** there is a small majority for free-market liberalism and economic rigour...</u>.
-    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, <u>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the some photograph</u>.
+    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom** there is a small majority for free-market liberalism and economic rigour...</ins>.
+    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, <ins>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the some photograph</ins>.
 
 ## Words
 
