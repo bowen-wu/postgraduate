@@ -15,9 +15,9 @@
     - The new work emphasizes that adolescence is a time of opportunity as well as risk.
 - 短语
     - work against 😔 起反作用，对... 不利
-    - work on  从事于
-    - work out  锻炼身体；实施，实现
-    - at work  起作用；在工作
+    - work on 从事于
+    - work out 锻炼身体；实施，实现
+    - at work 起作用；在工作
 - coworker n. 同事
 - workforce n. 劳动力；全体员工
 - workplace n. 训练，锻炼
@@ -26,7 +26,7 @@
 ## career
 
 - n. 职业，职业生涯
-- vocational  adj. 职业的，职业技术的
+- vocational adj. 职业的，职业技术的
     - vocational education 职业教育
     - vocational schools 职业技术学院
 
@@ -50,6 +50,7 @@
 - useless adj. 无用的
 - underused adj. 为充分利用的
 - misuse n. /vt. 误用；滥用
+    - ==? abuse
     - Relying on ethical persuasion rather than law to address the misuse of body ideals may be the best step.
 
 ## change
@@ -58,7 +59,7 @@
 - v. 改变；变换
 - exchange 交换
 - alter 改变
-- alternative n. 可供选择的事物 adj. 可供替代的  
+- alternative n. 可供选择的事物 adj. 可供替代的
     - == choice
     - For wild animals that cannot be returned to their natural habitats，zoos offer the best alternative.
 - switch vi. 转变 n. 改变；开关
@@ -71,11 +72,13 @@
 - vt. 陈述；规定
 - adj. 州的
 - state of mind 心境
-- They were comfortable in describing different emotional states and part of what you do in drama is <ins>put yourself in different shoes</ins>（设身处地的，将心比心的）.
-- They set new standards for ventilation，energy efficiency and heating，and state that new residential buildings must have charging points for <ins>electric vehicles</ins>（电动汽车 EV）.
+- They were comfortable in describing different emotional states and part of what you do in drama is <ins>put yourself
+  in different shoes</ins>（设身处地的，将心比心的）.
+- They set new standards for ventilation，energy efficiency and heating，and state that new residential buildings must
+  have charging points for <ins>electric vehicles</ins>（电动汽车 EV）.
 - statement n. 声明；说法
 - 同根词
-    - estate n. 地产  
+    - estate n. 地产
         - real estate 房地产
     - status n. 地位；状况
     - statute n. 法规
@@ -86,7 +89,7 @@
 
 ## take
 
-- 
+-
 
 ## Words
 
@@ -104,7 +107,7 @@
 
 ## 词组
 
-- A,rather than B  是A而不是B
+- A,rather than B 是A而不是B
 - check and balance 制衡
 
 ## 句式

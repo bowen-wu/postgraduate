@@ -55,13 +55,13 @@
 
 #### 原因状语从句
 
-| 从属连词     | 含义       | Example 例句                                                                                                                                                          |
-|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 从属连词     | 含义       | Example 例句                                                                                                                                                             |
+|----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | because  | 因为...    | I've also experienced greater success in achieving my specific fitness goals, <ins>**because** I'm training according to those goals, not the number on a scale</ins>. |
-| since    | 因为...    | <ins>**Since** weight loss is not my goal</ins>, it is less important for me to track my weight each week.                                                          |
-| as       | 因为...    | They also need better public relations skills than their predecessors, <ins>**as** the costs of even a minor slipup can be significant.                             |
-| in that  | 因为...    |                                                                                                                                                                     |
-| not that | 既然/由于... |                                                                                                                                                                     |
+| since    | 因为...    | <ins>**Since** weight loss is not my goal</ins>, it is less important for me to track my weight each week.                                                             |
+| as       | 因为...    | They also need better public relations skills than their predecessors, <ins>**as** the costs of even a minor slipup can be significant.                                |
+| in that  | 因为...    |                                                                                                                                                                        |
+| not that | 既然/由于... |                                                                                                                                                                        |
 
 #### 结果状语从句
 
@@ -71,4 +71,181 @@
 | such n./n.词组 that... | **太**...所以...<br>(such 后接n./n.词组) | Indeed, homelessness has reached <ins>**such**</ins> proportions <ins>**that** local governments can't possibly cope</ins>.          |
 | so that...           | 所以                                | Transitions should connect one paragraph to the next <ins>**so that** there are no abrupt or confusing shifts</ins>.                 |
 
+#### 目的状语从句
+
+- 目的状语从句一般都会包含情态动词
+
+| 从属连词             | 含义     | Example 例句                                                                                                                                                                                                   |
+|------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| so that...       | 目的是... | When you meet a person for the first time, make an effort to find the things which you and that person have in common <ins>**so that/in order that** you *can* build the conversation from that point</ins>. |
+| in order that... | 为了...  |                                                                                                                                                                                                              |
+
+- "so that..."既可表示目的，又可以表示结果，一般情况下如果从句中有**情态动词**，则表示**目的**，否则表示结果
+    - He ran to the bus station *so that* he **caught** the bus.
+    - He ran to the bus station *so that* he **might catch** the bus.
+
+#### 条件状语从句
+
+| 从属连词                  | 含义        | Example 例句                                                                                                                                  |
+|-----------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| if                    | 如果...     | <ins>**If** she didn't keep the conversation going</ins>, we'd spend the whole evening in silence.                                          |
+| unless(== if not)     | 如果不，除非... | The US Supreme Court frowns on sex-based classifications <ins>**unless** they are designed to address an "important" policy interest</ins>. |
+| once                  | 一旦...     | ...<ins>**once** you ge that first word out</ins> everything else will just flow.                                                           |
+| as long as/so long as | 只要...     | If you're a physician, you can risk your patients' suicide <ins>**as long as** you don't intend their suicide</ins>.                        |
+
+#### 让步状语从句
+
+- 让步状语从句，表示"**明让步，暗转折**"
+- 翻译让步状语从句时，可以自行在另一半句上加上"**但是**"，把"让步转折"的意思补充完整
+
+| 从属连词                      | 含义       | Example 例句                                                                                                                                                                                  |
+|---------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| although                  | 尽管，虽然... | For example, many collegiate and professional football players qualify as obese, <ins>**though** their percentage body fat in low</ins>.                                                    |
+| though                    | 尽管，虽然... | <ins>**Although** electronic means of payment may be more efficient than a payment system bases on paper</ins>, several factors work against the disappearance of the paper system.         |
+| even though               | 即使，虽然... | ...viewing a fast-food logo for just a few milliseconds primes us to read 20 percent faster, <ins>**even though** reading has little to do with eating</ins>.                               |
+| even if                   | 即使，虽然... | It doesn't feel like a human or democratic relationship, <ins>**even if** both sides benefit</ins>.                                                                                         |
+| while                     | 虽然，尽管... | <ins>**While** such numerical standards seem straightforward</ins>, they are not.                                                                                                           |
+| however(== no matter how) | 不管怎样...  | ...corporations in Europe as well as the US are evading the meritocratic hiring and promotion of women to top positions-<ins>**no matter how** much "soft pressure" is put upon them</ins>. |
+
+#### 比较状语从句
+
+| 从属连词 | 含义               | Example 例句                                                                                                                                                                       |
+|------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| than | 和...相比较（用在比较级中）  | ...teachers are not assigning more <ins>**than** they are willing to review and correct</ins>.<br>...surfing the web exercised the brain more <ins>**than** reading did...</ins> |
+| as   | 和...相比较（用在原级比较中） | The boy is convinced that if he read enough, he can explore as many career paths <ins>**as** he likes</ins>.                                                                     |
+
+#### 方式状语从句
+
+| 从属连词  | 含义            | Example 例句                                                                                                                                         |
+|-------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| as    | 按照...方式，如同... | Men make their own history, but they do not make it <ins>just **as** they please</ins>...                                                          |
+| as if | 似乎，好像...      | On a really good day, it no longer feels <ins>**as if** you're "making time to read", but just reading, and making time for everything else</ins>. |
+
+#### as
+
+- **as**作从属连词，引导状语从句
+
+1. 时间状语从句: 当...时候
+2. 原因状语从句: 因为...
+3. 比较状语从句: 和...相比较
+4. 方式状语从句: 按照...方式，如果...
+
+- 代入法: 看哪个意思带入句子中更合适
+- 只要**as**后引导的是*完整*的句子 => 状语从句
+- 若**as**引导的句子不*完整*，并且**as**在从句中*作成分* => 非限定性定语从句
+
 ### Words
+
+- one-size-fits-all
+    - 一刀切
+- risk doing sth.
+    - 冒险做某事
+- overlook
+    - v. 忽视、不计较；监督，检查；俯瞰
+- diversity
+    - n. 多样性，多样化；差异
+- eliminate
+    - v. 消除
+- efficient
+    - adj. 有效的，效率高的；生效的
+- measure
+    - v. 测量，估量
+    - n. 测量；措施
+- personalized medicine
+    - 个性化医疗
+- dairy
+    - adj. 生产乳品的；牛奶的
+- a small share of...
+    - 一小部分的...
+- automated
+    - adj. 自动化的
+- reliable
+    - adv. 可靠低，可信赖低；确实地
+- thin/thick slice
+    - 切成薄片/厚片
+- ground
+    - v. 打基础；使接触地面
+    - n. 地面，土地；范围；根据
+- current
+    - adj. 当前的，现行的；最近的；通用的，流行的
+- downturn
+    - n. 衰退，下降
+- the current downturn in the art market
+    - 当前艺术品市场的衰退
+- impressionist
+    - n. 印象派画家；印象派
+- corporate
+    - adj. 公司的；法人的
+- workplace
+    - n. 工作场所
+- family-friendly
+    - 家庭友好型
+- senior management decision
+    - 高层管理决策
+- break the promise
+    - 食言，违背承诺
+- go through
+    - 成交，通过
+- remedy
+    - v. 纠正，改正，改进
+    - n. 补救，解决方法；疗法
+- vanish
+    - v. 消失，突然不见
+- abuse
+    - n. 滥用；虐待；辱骂
+    - v. 滥用；虐待；辱骂
+- segment
+    - v. 细分，分割，划分
+- magnify
+    - v. 放大，夸大
+    - magnify gender differences 放大性别差异
+- previously
+    - adv. 以前，先前
+- public relations skill
+    - 公关技巧
+- predecessor
+    - n. 前辈，前任
+- a minor slipup
+    - 小失误，小疏忽
+- significant
+    - adj. 巨大的，意义重大的；显著的，相当数量的
+- conversation
+    - n. 谈话，交谈
+    - keep the conversation going 让谈话继续
+- frown
+    - v. 表示不同意；皱眉头，蹙眉
+- classification
+    - n. 分类，分级
+- address
+    - v. 设法解决
+- policy interest
+    - 政策利益
+- collegiate
+    - adj 大学的
+- qualify
+    - v. 使有资格
+- obese
+    - adj. 肥胖的
+- electronic
+    - adj. 电子的
+- prime
+    - v. 使准备好
+    - prime sb. to do sth. 使某人准备好做某事，应付某事
+- have little to do with...
+    - 与...关系不大
+- democratic
+    - adj. 民主的，民主精神的
+- numberical
+    - adj. 数字的
+- straightforward
+    - adj. 简单的，明了的
+- evade
+    - v. 规避，逃避，逃脱
+- promotion
+    - n. 晋升，提升；推销；促销；促进
+- soft pressure
+    - 软压力
+- no longer
+    - 不再
+- make time for sth.
+    - 挤时间去做某事
