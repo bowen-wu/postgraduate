@@ -10,6 +10,7 @@
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
+\usepackage{xstring}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % 抽离颜色和尺寸参数
@@ -20,8 +21,8 @@
 \newcommand{\analysisPadding}{6pt}
 
 % 定义 tcolorbox
-\newtcolorbox{analysisbox}{
-    title=解析,
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
     colback=\analysisBackColor,
     colframe=\analysisTitleColor,
     boxrule=\analysisBoxRule,
@@ -123,7 +124,7 @@
         \end{align*}
         \item 如果$\alpha_1, \alpha_2, \dots, \alpha_s (s \ge 2)$线性相关，则其中\textbf{必有一个向量}可用其余向量线性表出；反之，若有一个向量可用其余的$s-1$个向量线性表出，则这$s$个向量必线性相关
         \item 如果$\alpha_1, \alpha_2, \dots, \alpha_s$线性无关，$\alpha_1, \alpha_2, \dots, \alpha_s, \beta$线性相关，则$\beta$可由$\alpha_1, \alpha_2, \dots, \alpha_s$线性表出，且\textbf{表示法唯一}
-        \item 如果$\alpha_1, \alpha_2, \dots, \alpha_s$可由向量组$\beta_1, \beta_2, \dots, \beta_t$线性表出，且$s > t$，那么$\alpha_1, \alpha_2, \dots, \alpha_s$线性相关。即\textbf{如果多数向量能用少数向量线性表出，那么多数向量一定线性相关}
+        \item 如果$\alpha_1, \alpha_2, \dots, \alpha_s$可由向量组$\beta_1, \beta_2, \dots, \beta_t$线性表出，且$s > t$，那么$\alpha_1, \alpha_2, \dots, \alpha_s$线性相关。即{\color{red}{\textbf{如果多数向量能用少数向量线性表出，那么多数向量一定线性相关}}}
         \item 如果$\alpha_1, \alpha_2, \dots, \alpha_s$线性无关，且它可由可由$\beta_1, \beta_2, \dots, \beta_t$线性表出，则$s \le t$
         \item 设$\alpha_1, \alpha_2, \dots, \alpha_s$可由$\beta_1, \beta_2, \dots, \beta_t$线性表出，则$r(\alpha_1, \alpha_2, \dots, \alpha_s) \le r(\beta_1, \beta_2, \dots, \beta_t)$
         \item 如果$(I)(II)$是两个等价的向量组，则$r(I) = r(II)$
@@ -173,7 +174,7 @@
             \item \textbf{定义法}证$\alpha_1, \alpha_2, \dots, \alpha_s$线性无关
             \begin{enumerate}
                 \item 设$k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{s}\alpha_s = 0$
-                \item \Downarrow \text{恒等变形(同乘: 看条件 + 构造条件 或 重组)}
+                \item \Downarrow \text{恒等变形(\textbf{同乘}: 看条件 + 构造条件 或 重组)}
                 \item $k_1 = 0, k_2 = 0, \dots, k_s = 0$
             \end{enumerate}
             \item \textbf{秩}证$\alpha_1, \alpha_2, \dots, \alpha_s$线性无关
@@ -235,6 +236,26 @@
                 &\Leftrightarrow\; \text{若}B\text{线性无关} \Rightarrow A\text{线性无关} \\
                 &\Leftrightarrow\; \text{若}B\text{线性相关} \Rightarrow A\text{线性相关}
             \end{align*}
+        \end{enumerate}
+        \item 求极大线性无关组，并将其余向量用极大线性无关组线性表出
+        \begin{enumerate}
+            \item 初等行变换
+            \item 若有参数，分情况讨论
+            \item 主元就是极大线性无关组
+            \item 线性表示为对应向量的系数
+            \begin{analysisbox}[Case:]
+                \[
+                    \begin{bmatrix}
+                        1 & 0 & -1 & 2  \\
+                        0 & 1 & -2 & -1 \\
+                        0 & 0 & 0  & 0  \\
+                        0 & 0 & 0  & 0
+                    \end{bmatrix}
+                \]
+                极大线性无关组$\alpha_1, \alpha_2$ \\
+                $\alpha_3 = -\alpha_1 - 2\alpha_2$ \\
+                $\alpha_4 = 2\alpha_1 - \alpha_2$
+            \end{analysisbox}
         \end{enumerate}
     \end{enumerate}
 

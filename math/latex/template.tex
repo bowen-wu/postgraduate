@@ -6,10 +6,11 @@
 \usepackage{hyperref}       % 目录超链接
 \usepackage{geometry}       % 页面布局
 \usepackage{bm}             % 粗体
-\usepackage[table]{xcolor}  % 颜色
+\usepackage{xcolor}         % 颜色
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
+\usepackage{xstring}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % 抽离颜色和尺寸参数
@@ -20,8 +21,8 @@
 \newcommand{\analysisPadding}{6pt}
 
 % 定义 tcolorbox
-\newtcolorbox{analysisbox}{
-    title=解析,
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
     colback=\analysisBackColor,
     colframe=\analysisTitleColor,
     boxrule=\analysisBoxRule,

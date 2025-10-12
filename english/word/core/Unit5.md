@@ -12,6 +12,32 @@
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
 
+## 否定前缀
+
+- anti-
+    - antiwar adj. 反战的，反对战争的
+- dis-
+    - 否定
+        - disappear
+    - 分散
+        - distract vt. 分散（注意力）
+- il-
+    - illegal
+- im-
+- in-
+- ir-
+- non-
+- un-
+- -less
+    - adj. 词性
+    - hopeless adj. 没有希望的；无望的
+    - sleepless adj. 失眠的，睡不着的; 不眠的，醒着的; 无休止的; 警觉的
+    - boundless adj. 无限的; 无穷的; 无边际的; 广阔的
+        - boundary [ˈbaʊndri] n. 边界，分界线
+    - groundless adj. 无理由的，无根据的
+    - endless adj. 无止境的; 无穷尽的; 永久的; 环状的
+    - speechless adj. 无言的; （因惊愕）一时语塞的; 默然; 无言以对
+
 ## firm
 
 - n. 公司
@@ -19,6 +45,10 @@
 - take a firm stand 采取坚定立场/坚决表态/明确立场
 - deserve praise for 因...而值得赞扬
 - affirm vt. 肯定属实；申明
+    - "The Heart of the Matter", the just-released report by the American Academy of arts and Sciences(AAAS)
+      <ins>deserves praise for(值得赞扬)</ins> **affirming** the importance of the humanities and social sciences to the
+      prosperity and security of liberal democracy in America.
+    - == confirm
 - confirm vt. 确认；使确信
 
 ## hold
@@ -32,21 +62,25 @@
     - hold onto 保留（某物）；保住（优势）
     - hold off 推迟，延迟
         - == put off
-    - put on hold 推迟，搁置
+        - == put on hold 推迟，搁置
     - hold together 保持团结；（论点、理论）合乎情理
     - hold up 举起
     - hold one's nose 对...嗤之以鼻，蔑视 😔
         - contemptuous [kənˈtemptʃuəs] adj. 蔑视的，鄙视的
+        - But it did so while <ins>**holding its nose** at the ethics of his conduct</ins>, which included accepting
+          gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
     - take hole 开始完全控制；变得十分强大
     - keep a tight hold 严格控制
 - holder n. 持有者
-- withhold vt. 拒绝给
+- withhold vt. 拒绝给；保留；隐瞒
     - with- == backward 向后
         - withdraw v. （使）撤退/回/离; 停止提供; （使）退出; 提，取（款）; 脱离（社会）
-        - withhold v. 拒绝给; 保留；隐瞒
+        - withhold v. 拒绝给；保留；隐瞒
         - withstand v. 经受住; 承受 😔
     - Facebook is a self-enhancer's paradise because people can **withhold** their unflattering sides.
 - uphold vt. 维持（原判、裁决等）
+    - Tuesday, the appeals court **upheld** the 2017 order deregulating broadband providers.
+    - overturn vt. 推翻; 撤销（判决等）
 - grasp vt. 理解；毫不犹豫地抓住（机会） n. 理解（力）
 
 ## provide
@@ -75,6 +109,8 @@
     - == make
     - Render is a synonym of "**make**"-technically it means "**case to become**".
     - An illness might **render/make** you unable to walk, or a shocking sight might **render/make** you speechless.
+    - One could interpret much of the work of Beethoven by saying that suffering is inevitable, but the courage to fight
+      it **renders/makes** life worth living.
 - complementary adj. 补充的
 
 ## turn
@@ -91,7 +127,7 @@
     - the turn of sth. （某事的）转折点
     - turn sb./sth. (from sth.) into sth. 使...（从...）变成...
 - turnaround n. （观点、态度或方法的）彻底转变；周转期
-- turnover n. 货物周转率；（人员的）流动率
+- turnover n. 货物周转率；（人员的）流动率；营业额
     - CEO turnover
 - downturn n. （商业经济的）衰退
     - 经济衰退
@@ -100,8 +136,8 @@
         - economic boom/prosperity
 - overturn vt. 推翻（法律裁决）；倾覆
     - uphold vt. 维持（原判、裁决等）
-    - In a rare unanimous ruling, the U.S. Supreme Court has overturned the corruption conviction of a former Virginia
-      governor, Robert MacDonnell.
+    - In a rare unanimous ruling, the U.S. Supreme Court has **overturned** the corruption conviction of a former
+      Virginia governor, Robert MacDonnell.
 
 ## consider
 
@@ -113,11 +149,11 @@
     - considerate adj. 考虑周到的; 体贴的
 - considerably adv. 相当多地
 - consideration n. 考虑；必须考虑的事；关心
-- contemplate vt. 考虑；沉思；深思熟虑
+- contemplate vt. 考虑；沉思；**深思熟虑**
     - == consider
     - If you **contemplate** something, you **think about it carefully**.
-    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate** the <ins>
-      pros and cons(优点和缺点)</ins> of your decision.
+    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate**
+      the <ins>pros and cons(优点和缺点)</ins> of your decision.
         - pros == advantages（优点，好处）
         - cons == disadvantages（缺点，坏处）
 
@@ -128,7 +164,10 @@
 - politics n. 政治；政治学
 - policy n. 政策
 - regime n. 政权，政体；社会制度
+    - == administration
     - A **regime** is the **ruling government of a country**
+    - The amount of freedom and restriction that citizens of a country have can change
+      **from regime to regime(政权更迭)**.
 
 ## focus
 
@@ -150,10 +189,10 @@
     - v. 集中（注意力）
     - n. 浓缩物
     - concentrate on
+    - concentration n. 集中
     - One great cause of failure is lack of...
         - One great cause of failure is lack of concentration. 导致失败的一个主要原因是缺乏专注力
         - One great cause of life's failure is lack of **the positive attitude**
-    - concentration n. 集中
 
 ## industry
 
@@ -163,6 +202,7 @@
 - industrialist n. 实业家，工业家
 - industrious adj. 勤劳的，勤奋的
     - If you describe someone as **industrious**, you mean they **work very hard**.
+    - He was an **industrious** and willing worker.
 - agriculture n. 农业
     - agricultural adj. 农业的
 
@@ -170,34 +210,37 @@
 
 - n. 过程；流程
 - vt. 加工；处理（数据）
-- proceed vi. 继续做（或从事、进行）；行进
+- proceed
+    - vi. 继续做（或从事、进行）；行进
+    - n. [pl.] 收入，收益
     - == continue == go on
-    - pro- == forward 前进
-    - proclaim vt. 宣告，公布(正式); 表明; 赞扬，称颂
-    - prospect n. 前景; 期望; 眺望处; 景象
+    - pro- == forward 前进 🙂
+        - proclaim vt. 宣告，公布(正式); 表明; 赞扬，称颂
+        - prospect n. 前景; 期望; 眺望处; 景象
     - proceeds n. 收入，收益
         - == income
         - California's plan envisions treating 35,000 acres of forest a year by 2020, and 60,000 by 2030-financed from
-          the proceeds of the state's emissions-permit auctions.
+          the **proceeds** of the state's emissions-permit auctions.
 - procedure n. 手续；（商业、法律或政治上的）程序
 
 ## important
 
 - adj. 重要的
-- It is important for sb. to do sth.
+- It is important (for sb.) to do sth.
     - It is of (adj.(utmost/vital)) importance for sb. to do sth.
     - 做某事是重要的
+        - It's important for us to protect the environment.
+            - == It's of vital importance for us to protect the environment.
 - importance n. 重要性
 - == crucial == vital == significant
 - crucial adj. 至关重要的
 - vital adj. 必要的
 - significant adj. 重要的；显著的；重大的
     - insignificant adj. 微不足道的
-- foremost adj. 最著名的
+- foremost adj. 最著名的；最重要的
     - == most important
-    - first and foremost 首先
     - 词组
-        - first and foremost 首先
+        - **first and foremost** 首先
 - trivial adj. 不重要的，琐碎的
 - watershed n. 分水岭
     - World War II was the **watershed** event for higher education in modern Western societies.
@@ -379,6 +422,8 @@
 
 ## Words
 
+- bond
+    - n. 纽带; 联系;
 - capitalism
     - 资本主义
 - socialism

@@ -10,6 +10,7 @@
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
+\usepackage{amssymb}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % 抽离颜色和尺寸参数
@@ -835,7 +836,7 @@
             \begin{align*}
                 &\Rightarrow\; r(A) < n\text{且}r(B) < n \\
                 &\Rightarrow\; A\text{列向量线性相关} \\
-                &\Rightarrow\; B\text{行向量线性相关} \\
+                &\Rightarrow\; B\text{行向量线性相关}
             \end{align*}
         \end{enumerate}
         \item 若 $a_{ij} + A_{ij} = 0$ 则:
@@ -899,9 +900,9 @@
     \subsection{理解}
 
     \begin{enumerate}
-        \item 设$A, B$为$n$阶矩阵，记$(X Y)$表示分块矩阵，则$r(A, AB) == r(A)$
-        \begin{enumerate}
-            \item 记$AB = C$，对$A, C$ 按列分块有
+        \item 设$A, B$为$n$阶矩阵，记$(X Y)$表示分块矩阵，则$r(A, AB) == r(A)$且$C$的列向量组与$A$的列向量组等价
+        \begin{analysisbox}
+            记$AB = C$，对$A, C$ 按列分块有
             \[
                 [\alpha_1, \alpha_2, \dots, \alpha_n]
                 \begin{bmatrix}
@@ -916,7 +917,9 @@
             \[
                 r(A, AB) = r(\alpha_1, \alpha_2, \dots, \alpha_n, \beta_1, \beta_2, \dots, \beta_n) = r(\alpha_1, \alpha_2, \dots, \alpha_n) = r(A)
             \]
-        \end{enumerate}
+            同理$\alpha_1, \alpha_2, \dots, \alpha_n$可由$\beta_1, \beta_2, \dots, \beta_n$线性表出 \\
+            故$C$的列向量组与$A$的列向量组等价
+        \end{analysisbox}
         \item $A$是$m \times n$矩阵，$B$是$n \times m$矩阵，$E$为$m$阶单位矩阵，若$AB = E$，则{\color[rgb]{0.2, 0.6, 0.3}{$r(A) = m, r(B) = m$}}
         \begin{analysisbox}
             已知 $AB = E_m$，则
@@ -931,7 +934,21 @@
                 \therefore r(A)=m,\quad r(B)=m.
             \]
         \end{analysisbox}
-        \item 矩阵相乘 \Leftrightarrow \text{两个数的{\color{red}{积}}相{\color{red}{加}}}
+        \item 矩阵相乘 $\Leftrightarrow \text{两个数的{\color{red}{积}}相{\color{red}{加}}}$
+        \item 设 $\mathbf{A}$ 是 $m \times n$ 矩阵，$\mathbf{B}$ 是 $n \times s$ 矩阵，若 $\mathbf{AB} = \mathbf{O}$，且$A\;B$非零，则$A$列向量线性相关，$B$行向量线性相关
+        \begin{analysisbox}
+            已知$AB = O$
+            \[
+                \therefore r(A) + r(B) \le n
+            \]
+            由于$A, B$非零
+            \[
+                \therefore 0 < r(A) < n, 0 < r(B) < n
+            \]
+            故: \\
+            $r(A) = A$的列秩，即$A$的列向量组线性相关 \\
+            $r(B) = B$的行秩，即$B$的行向量组线性相关
+        \end{analysisbox}
         \item 秩
         \begin{enumerate}
             \item 给定一个矩阵$A$，它的秩就是矩阵中\textbf{线性无关的行（或列）的最大个数}

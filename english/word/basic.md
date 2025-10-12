@@ -35,6 +35,7 @@
 - non-
 - un-
 - -less
+    - adj. 词性
     - hopeless adj. 没有希望的；无望的
     - sleepless adj. 失眠的，睡不着的; 不眠的，醒着的; 无休止的; 警觉的
     - boundless adj. 无限的; 无穷的; 无边际的; 广阔的
