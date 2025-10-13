@@ -258,7 +258,7 @@
 - augment vt. 增加，提高
 - elevate vt. 提升
     - elevator n. 电梯
-    - Even better would be to help **elevate** notions of beauty beyond the material standards of a particular industry.
+    - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of a particular industry.
 
 ## measure
 
@@ -298,7 +298,7 @@
 - The crash **stresses** the urgency to strengthen security worldwide.
 - stressful adj. 有压力的
 - pressure n. 压力
-    - apply pressure on sb./sth. 对某人 / 某事施加压力
+    - apply pressure on sb./sth. 对某人/某事施加压力
 - burden n. 负担；重担
 - tension n. 紧张
 
@@ -315,8 +315,8 @@
     - unfavorable/unfavourable adj. 不利的；不赞同的
     - favorably/favourably adv. 更具优势地；赞同地
     - favoritism/favouritism n. 偏袒
-        - **Favoritism** in official access can fan public perceptions of corruption.
-        - == partiality
+        - **Favoritism** in official access can *fan(v. 扇（风）; 煽动)/affect/provoke* public perceptions of corruption.
+        - == partiality n. <正><贬>偏袒; 特别喜爱，酷爱; 偏心
 - prefer
     - vt. 更喜欢
     - prefer A to B 比起B更喜欢A
@@ -328,8 +328,7 @@
 - vi. (~ from)得益于
 - n. 好处；保险金；福利费
 - A benefit from B A得益于B
-- It is as though 20 years of ever-tougher reforms of the job search and **benefit** administration system never
-  happened.
+- It is as though 20 years of ever-tougher reforms of the job search and **benefit** administration system never happened.
 - beneficial adj. 有帮助的
 - benefactor n. 赞助者
 - profit
@@ -338,8 +337,7 @@
     - profit from
     - profitable adj. 可盈利的
         - == lucrative adj. 获利丰厚的
-            - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
-              finish line" whether that the toward graduate school, medical school or a **lucrative** career.
+            - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the finish line" whether that the toward graduate school, medical school or a **lucrative** career.
         - == handsome adj. **可观的**；帅气的
         - profitable/lucrative/handsome rewards/salary/income
 
@@ -355,8 +353,7 @@
     - vt. 分散（注意力）
     - attract v. 吸引
     - distraction n. 使人分心的事
-        - Gal Newport recommends **building a habit(养成一个习惯/建立习惯)** of "deep work"-the ability to focus without
-          distraction.
+        - Gal Newport recommends **building a habit(养成一个习惯/建立习惯)** of "deep work"-the ability to focus without distraction.
 
 ## fact
 
@@ -384,7 +381,7 @@
     - adj. 私有的；私营的；私人的
     - n. (in ~)私下里
     - privacy n. 隐私
-        - date leakage 数据泄露
+        - data leakage 数据泄露
 - individual
     - adj. 个别的；一个人的
     - n. 个人
@@ -394,7 +391,7 @@
 
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
-- argument n. 争论；论据；观点
+- argument n. 观点；争论；论据
 - dispute 😔
     - n. 争端；争论
     - vt. 对...表示异议（或怀疑）
@@ -404,8 +401,7 @@
     - n. 辩论；讨论
 - controversy 😔
     - n. （公开的）争论
-    - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
-      matched by few other industries.
+    - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way matched by few other industries.
     - controversial adj. 引起争论的 😔
 
 ## sign
@@ -419,6 +415,8 @@
     - vt. 布置（任务）
     - assignment n. （分派的）任务
 - mission n. 使命；军事行动
+    - == assignment
+- It is a <ins>worthy/universal/virtual/authentic</ins> truth that man is the only animal that has the power to speak and reason.
 
 ## Words
 

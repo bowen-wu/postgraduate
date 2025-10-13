@@ -36,13 +36,13 @@
     - [主语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/noun-clauses/subject-clauses.md)
     - [同位语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/noun-clauses/appositive-clauses.md)
 2. [定语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/attributive-clause.md)
-3. 状语从句
+3. [状语从句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/adverbial-clause.md)
 
 ### 特殊句式
 
-1. 虚拟
-2. 倒装
-3. 强调
+1. [虚拟](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/subjunctive.md)
+2. [倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/inversion.md)
+3. [强调](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/cleft.md)
 
 ## 分析长难句
 

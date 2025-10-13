@@ -7,9 +7,9 @@
 - 虚拟 == '非真实'。分成如下两种情况
 
 1. 与真实的情况进行比较，发现与真实情况不符
-2. 与假设的情况进行比较，发现及时假设，这个事情也不太可能成真
+2. 与假设的情况进行比较，发现即使假设，这个事情也不太可能成真
 
-- "虚拟"是谓语动词的一种特殊变化，通过把谓语动词"变态（改变时态）"来表达虚拟
+- "虚拟"是**谓语动词的一种特殊变化**，通过把谓语动词"变态（改变时态）"来表达虚拟
 
 ### if 虚拟条件句
 
@@ -17,13 +17,13 @@
 - 虚拟条件句 == 如果假设的这个事不是真的或者不太可能成为真的，则该句为虚拟条件句，就要用虚拟
 - 对不同时间范围内的事情进行假设，需要使用不同的"变态"形式（谓语动词改变时态）来表达虚拟
 
-| 时间范围 | if 从句        | 主句                                   | Example                                                                                                                                                                                                                                              | 
-|------|--------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 假设过去 | had done     | would/could/should/might + have done | If he <ins>had played</ins> last season, however, he <ins>would have been</ins> one of 42.                                                                                                                                                           |
-| 假设现在 | did/**were** | would/could/should/might + do        | "If we <ins>were</ins> really bold, we <ins>might</ins> even <ins>begin</ins> to think of high-calorie fast food in the same way as cigarattes-bysetting strict limits on advertising, product placement and sponsorship of sports events", he said. |
-| 假设将来 | did/were     | would/could/should/might + do        |                                                                                                                                                                                                                                                      |
-| 假设将来 | were to do   | would/could/should/might + do        | Dr. Kroo and his team modelled what <ins>would happen</ins> if three passenger jets departing from Los Angeles, San Francisco and Las Vegas <ins>were to assemble over Utah...                                                                       |
-| 假设将来 | should do    | would/could/should/might + do        |                                                                                                                                                                                                                                                      |
+| 时间范围 | if 从句        | 主句                                                            | Example                                                                                                                                                                                                                                              | 
+|------|--------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 假设过去 | had done     | would(将要、愿意)/could(能够、可以)/should(应该)/might(可能、可以) + have done | If he <ins>had played</ins> last season, however, he <ins>would have been</ins> one of 42.                                                                                                                                                           |
+| 假设现在 | did/**were** | would(将要、愿意)/could(能够、可以)/should(应该)/might(可能、可以) + do        | "If we <ins>were</ins> really bold, we <ins>might</ins> even <ins>begin</ins> to think of high-calorie fast food in the same way as cigarattes-bysetting strict limits on advertising, product placement and sponsorship of sports events", he said. |
+| 假设将来 | did/were     | would(将要、愿意)/could(能够、可以)/should(应该)/might(可能、可以) + do        |                                                                                                                                                                                                                                                      |
+| 假设将来 | were to do   | would(将要、愿意)/could(能够、可以)/should(应该)/might(可能、可以) + do        | Dr. Kroo and his team modelled what <ins>would happen</ins> if three passenger jets departing from Los Angeles, San Francisco and Las Vegas <ins>were to assemble/assembled/should assemble</ins> over Utah...                                                                       |
+| 假设将来 | should do    | would(将要、愿意)/could(能够、可以)/should(应该)/might(可能、可以) + do        |                                                                                                                                                                                                                                                      |
 
 - **从句往前推，主句四加一，将来同现在**
     1. 从句往前推: 表达虚拟时，要把从句往前推一个时态
