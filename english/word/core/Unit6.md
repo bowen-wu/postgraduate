@@ -19,11 +19,12 @@
     - == invest
 - *funding(主动)* agencies 出资机构
 - publicly *funded(被动)* research 政府资助的研究
-- Some growth stems from a commitment by governments and farsighted businesses to **fund** cleaner energy sources.
+- Some growth stems from a commitment by governments and farsighted businesses to **fund/invest** cleaner energy sources.
 - allowance n. 补贴
 - subsidy
     - n. 补贴
     - == allowance
+    - == grant
     - Taxes on low-wage labor need to be cut, and **wage subsidies** should be expanded.
     - subsidies/subsidize vt. 资助，补贴
 - grant
@@ -41,21 +42,20 @@
 - vi 往往会；趋向
 - tend to do sth. 往往，总是
 - tendency n. 倾向；趋势
-    - Involuntary part-tim employment in the U.S. shows a general **tendency** of decline.
+    - Involuntary part-time employment in the U.S. shows a general **tendency** of decline.
 - trend n. 趋势
 - inclination
     - n. 倾向
     - == tendency
-    - inclination for risk-taking 冒险倾向
     - incline vt.& vi. （使）倾斜; （使）偏向，倾向于
+    - inclination for risk-taking 冒险倾向
     - inclined adj. 想（做某事）的；有...倾向的
-        - be inclined to do sth. 倾向做某事
+        - be inclined to do sth. 往往做某事/倾向做某事
             - == tend to do sth.
             - == be prone to do sth.
 - prone adj. 有做（坏事）的倾向的；(-prone)有...倾向的
     - == inclined
-    - Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in *
-      *fire-prone districts**</ins>.
+    - Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in **fire-prone districts**</ins>.
 - tide n. 潮；潮流
     - Time and tide wait for no man.
     - a tide of emigration
@@ -93,6 +93,7 @@
 - adj. 常见的；普通的；共同的
 - n. 共同
 - == contain
+- == ordinary
 - 词组
     - common sense 常识
     - have sth. in common 有...共同点
@@ -102,10 +103,11 @@
 - commonness n. 平凡
 - average
     - n. 平均数
-    - adj. 平均的；普通的
+    - adj. 普通的；平均的
     - 词组
         - on the average 平均来说/一般而言/按平均计算
             - == on average
+            - On the average, a television set is in use in every home for about 6 hours each day.
         - an average of... 平均是...
     - The **average** time for holding a stock in both the United States and Britain, he notes, had dropped.
 - normal
@@ -123,9 +125,9 @@
 - evolve
     - v. 逐步发展
     - e- == ex- 外
-    - evolution n. 进化；发展
-        - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social
-          environment being a major contributory fctor.
+    - evolution n. 发展；进化
+        - == development
+        - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social environment being a major contributory fctor.
         - involution n. 内卷
     - evolutionary adj. 进化的
 - revolve
@@ -147,13 +149,13 @@
     - restrictive adj. 约束的
 - refrain
     - vi. 避免；克制；制止
-        - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from
-          doing it**.
-        - How shall I **refrain** from tears when we part?
+        - == restrict
+        - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing it**.
+        - How shall I **refrain from** tears when we part?
         - California has asked the justices to **refrain from** a sweeping ruling.
         - refrain from doing sth.
             - When someone burps in a quiet classroom it can be hard to **refrain from laughing**.
-    - n. 经常重复的评价（或抱怨）
+    - n. 经常重复的评价（或抱怨）；老话，陈词滥调
         - Complaints about poor food in schools have become a familiar **refrain**.
         - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.
 - sanction n. 制裁；<正式>许可
@@ -172,8 +174,7 @@
 - supply
     - n. 提供，供应（量）; 储备; 补给品
     - v. 供应，提供; 补充，填充
-- Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who demand high quarterly profits from companies, can hinder(
-  vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer loyalty.
+- Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who demand high quarterly profits from companies, can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer loyalty(n. 忠诚，忠实; 忠心).
 - command
     - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
     - vt. 命令；博得
@@ -436,6 +437,12 @@
 - found
     - v. 创立，创办
     - == set up
+- conceal
+    - v. 隐藏; 隐瞒，掩饰; 遮住
+- contradict
+    - v. 反驳; 相矛盾，违背
+- condemn
+    - v. 谴责; 宣判; 使陷入; 宣布…不安全; 证明…有罪
 - controversial
     - adj. 有争议的，引发争论的
 - indirect
@@ -457,7 +464,7 @@
     - 政党领导
 - a convicted terrorist
     - 定罪的恐怖分子
-- public companies
+- public company
     - == publicly traded company
     - 上市公司
 - media literacy skills
