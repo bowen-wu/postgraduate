@@ -25,8 +25,16 @@
 
 - 状语从句表示描述性的信息，用来补充说明主句
 - 状语从句的种类是由从属连词决定的
-- 共分为九类: **时间状语从句**、地点状语从句、**原因状语从句**、**结果状语从句**、目的状语从句、**条件状语从句**、
-  **让步状语从句**、比较状语从句、方式状语从句
+- 共分为九类:
+    1. **时间状语从句**: when/*while*/*as*/before/after/*since*/until/as soon as/by the tim
+    2. 地点状语从句: where
+    3. **原因状语从句**: because/*since*/*as*/in that/not that
+    4. **结果状语从句**: so adj./adv. that/such n./n.词组 that/so that
+    5. 目的状语从句: so that/in order that
+    6. **条件状语从句**: if/unless/once/as long as/so long as
+    7. **让步状语从句**: though/although/even though/even if/*while*/however/no matter how
+    8. 比较状语从句: than/*as*
+    9. 方式状语从句: *as*/as if
 
 #### 时间状语从句
 
@@ -100,8 +108,8 @@
 
 | 从属连词                      | 含义       | Example 例句                                                                                                                                                                                  |
 |---------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| although                  | 尽管，虽然... | For example, many collegiate and professional football players qualify as obese, <ins>**though** their percentage body fat in low</ins>.                                                    |
-| though                    | 尽管，虽然... | <ins>**Although** electronic means of payment may be more efficient than a payment system bases on paper</ins>, several factors work against the disappearance of the paper system.         |
+| although                  | 尽管，虽然... | <ins>**Although** electronic means of payment may be more efficient than a payment system bases on paper</ins>, several factors work against the disappearance of the paper system.         |
+| though                    | 尽管，虽然... | For example, many collegiate and professional football players qualify as obese, <ins>**though** their percentage body fat in low</ins>.                                                    |
 | even though               | 即使，虽然... | ...viewing a fast-food logo for just a few milliseconds primes us to read 20 percent faster, <ins>**even though** reading has little to do with eating</ins>.                               |
 | even if                   | 即使，虽然... | It doesn't feel like a human or democratic relationship, <ins>**even if** both sides benefit</ins>.                                                                                         |
 | while                     | 虽然，尽管... | <ins>**While** such numerical standards seem straightforward</ins>, they are not.                                                                                                           |
@@ -142,7 +150,7 @@
     - 冒险做某事
 - overlook
     - v. 忽视、不计较；监督，检查；俯瞰
-- diversity
+- diversity [daɪˈvɜːrsəti]
     - n. 多样性，多样化；差异
 - eliminate
     - v. 消除
@@ -151,28 +159,28 @@
 - measure
     - v. 测量，估量
     - n. 测量；措施
-- personalized medicine
+- personalized([ˈpɜrsənəlaɪzd]) medicine([ˈmedɪsn])
     - 个性化医疗
-- dairy
+- dairy [ˈderi]
     - adj. 生产乳品的；牛奶的
 - a small share of...
     - 一小部分的...
 - automated
     - adj. 自动化的
-- reliable
-    - adv. 可靠低，可信赖低；确实地
-- thin/thick slice
+- reliable [rɪˈlaɪəbl]
+    - adv. 可靠地，可信赖地；确实地
+- thin/thick([θɪk]) slice
     - 切成薄片/厚片
 - ground
     - v. 打基础；使接触地面
-    - n. 地面，土地；范围；根据
+    - n. 根据；地面，土地；范围
 - current
     - adj. 当前的，现行的；最近的；通用的，流行的
 - downturn
     - n. 衰退，下降
-- the current downturn in the art market
-    - 当前艺术品市场的衰退
-- impressionist
+    - the current downturn in the art market
+        - 当前艺术品市场的衰退
+- impressionist [ɪmˈpreʃənɪst]
     - n. 印象派画家；印象派
 - corporate
     - adj. 公司的；法人的
@@ -186,60 +194,60 @@
     - 食言，违背承诺
 - go through
     - 成交，通过
-- remedy
+- remedy [ˈremədi]
     - v. 纠正，改正，改进
     - n. 补救，解决方法；疗法
-- vanish
+- vanish [ˈvænɪʃ]
     - v. 消失，突然不见
-- abuse
+- abuse [əˈbjuːs]
     - n. 滥用；虐待；辱骂
     - v. 滥用；虐待；辱骂
 - segment
     - v. 细分，分割，划分
-- magnify
+- magnify [ˈmæɡnɪfaɪ]
     - v. 放大，夸大
-    - magnify gender differences 放大性别差异
+    - magnify gender differences(['dɪfərənsiz]) 放大性别差异
 - previously
     - adv. 以前，先前
 - public relations skill
     - 公关技巧
 - predecessor
     - n. 前辈，前任
-- a minor slipup
+- a minor slipup(['slɪpˌʌp])
     - 小失误，小疏忽
 - significant
     - adj. 巨大的，意义重大的；显著的，相当数量的
 - conversation
     - n. 谈话，交谈
     - keep the conversation going 让谈话继续
-- frown
+- frown [fraʊn]
     - v. 表示不同意；皱眉头，蹙眉
-- classification
+- classification [ˌklæsɪfɪˈkeɪʃn]
     - n. 分类，分级
 - address
     - v. 设法解决
 - policy interest
     - 政策利益
-- collegiate
+- collegiate  [kəˈliːdʒiət]
     - adj 大学的
-- qualify
+- qualify [ˈkwɑːlɪfaɪ]
     - v. 使有资格
-- obese
+- obese [oʊˈbiːs]
     - adj. 肥胖的
 - electronic
     - adj. 电子的
-- prime
+- prime [praɪm]
     - v. 使准备好
     - prime sb. to do sth. 使某人准备好做某事，应付某事
 - have little to do with...
     - 与...关系不大
-- democratic
+- democratic [ˌdeməˈkrætɪk]
     - adj. 民主的，民主精神的
 - numberical
     - adj. 数字的
-- straightforward
+- straightforward [ˌstreɪtˈfɔːrwərd]
     - adj. 简单的，明了的
-- evade
+- evade [ɪˈveɪd]
     - v. 规避，逃避，逃脱
 - promotion
     - n. 晋升，提升；推销；促销；促进

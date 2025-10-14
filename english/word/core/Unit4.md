@@ -36,9 +36,9 @@
         - But CCT programs don't generally consider <ins>affect/effect</ins> on the environment.
     - effective adj. 有效的；生效的
         - == works well
+        - effectively adv. 有效地；实际上
     - ineffective adj. 无效的
-    - effectively adv. 有效地；实际上
-    - effectiveness n. 效果；有效性
+        - effectiveness n. 效果；有效性
     - efficient
         - adj. 高效的
         - effective vs efficient
@@ -53,7 +53,7 @@
         - interact vi. 交流；相互影响
             - Firms are now studying how genes **interact**, looking for correlations that might be used to determine
               the causes of disease or predict a drug's *efficacy([ˈefɪkəsi] n. 功效; 效力)*.
-        - interaction n. 交流；相互影响
+            - interaction n. 交流；相互影响
         - interplay n. 相互影响
 
 ## reason
@@ -63,7 +63,7 @@
 - The heart has its reasons which reason knows not of. 心的理由，理性无法理解
 - reasoning n. 推理
 - reasonable adj. 合理的
-- unreasonable adj. 不合理的
+    - unreasonable adj. 不合理的
 - We *reason(v. 推理)* together, challenge, revise, and complete each other's *reasoning(n. 推理)* and each other's
   conceptions of *reason(n. 理性)*.
 - rational [ˈræʃnəl] adj. 理性的
@@ -71,7 +71,7 @@
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - logic n. 逻辑；（做某事的）道理
     - logical adj. 合乎逻辑的
-    - == coherent [koʊˈhɪrənt] adj. 合乎逻辑的
+        - == coherent [koʊˈhɪrənt] adj. 合乎逻辑的
     - On one hand, that viewpoint is a logical product(n. 产物) of America's evolution.
         - A is a logical product of B => A是B的产物 => A 是结果，B 是原因
 
@@ -91,7 +91,8 @@
         - possible 主语物: It is possible
         - likely 主语人
     - impossible adj. 不可能存在（或发生）的 😔
-        - It's almost impossible to go through life without experiencing some kind of failure([ˈfeɪljər]).
+        - It's almost impossible to go through life without experiencing([ɪk'spɪərənsɪŋ]) some kind of
+          failure([ˈfeɪljər]).
           人的一生几乎不可能不经历某种失败
     - possibly [ˈpɑːsəbli] adv. 可能
     - possibility n. 可能，可能性；机会
@@ -108,7 +109,7 @@
     - n. 潜力；潜在性
     - == possible
     - If you can describe something as **<ins>possible</ins> but not yet actual**, choose the adjective **potential**.
-    - Companies try to reach **potential/possible** customers through advertising.
+    - Companies try to reach **potential/possible** customers through advertising([ˈædvərtaɪzɪŋ]).
     - The *potential* of this work applied to healthcare is very great, but it could also lead to further
       **concentration of power(垄断)** in the **tech giants(科技巨头)**.
     - potentially adv. 潜在地
@@ -121,8 +122,7 @@
     - inform sb. of/about sth. 告知某人某事
     - well-informed adj. 消息灵通的; 见多识广的
     - Ideally, different kinds of reading **inform** each other, and <ins>act as(充当)</ins> useful reference points for
-      and
-      *counterbalances(相互平衡)* to one another. 理想情况下，不同类型的阅读彼此启发，并作为相互参照和相互平衡的有益依据
+      and *counterbalances(相互平衡)* to one another. 理想情况下，不同类型的阅读彼此启发，并作为相互参照和相互平衡的有益依据
 
 ## require
 
@@ -203,7 +203,7 @@
 
 ## plan
 
-- v.计划
+- v. 计划
 - n. 计划
 - plan to do sth.
 - project
@@ -254,7 +254,7 @@
             - The only way you might get reservations at one of the most **exclusive** restaurants in Los Angeles is to
               become friends with the boss, or become famous.
         - == undivided adj. 未分开的; 全神贯注的; 一心一意的
-    - exclusively adv. 排他地；独占地
+        - exclusively adv. 排他地；独占地
 
 ## value
 
@@ -277,12 +277,13 @@
 - adv. 大约；周围
 - 词组
     - around the corner 即将来临
+        - == coming sooner
     - around the world 全世界
 - With the Spring Festival **around the corner(== coming sooner 即将到来)**
 - surround [səˈraʊnd] vt. 环绕；包围；与...紧密联系
     - surrounding adj. 周围的；附近的
-    - surroundings n. 环境
-    - == environment
+        - surroundings n. 环境
+            - == environment
 - approximately [əˈprɑːksɪmətli] adv. 大约
 
 ## product
@@ -355,7 +356,7 @@
     - be concerned about 对...担心
 - discern [dɪˈsɜːrn]
     - vt. 了解；分辨
-    - If you can make out, pick out, or distinguish something, you can **discern** it.
+    - If you can make out, pick out, or distinguish([dɪˈstɪŋɡwɪʃ]) something, you can **discern** it.
     - This is a word for **recognizing** and **perceiving([pə'sivɪŋ] 理解)** things.
 - caregiver [ˈkerɡɪvər] n. 看护者
 
@@ -420,7 +421,8 @@
     - == support
 - adv. 以前，追溯至；回应（来信、电话、目光等）
 - adj. 背后的
-- One problem with the PreCheck program is the government's reluctance([rɪˈlʌktəns] n. 不情愿，勉强) to **back/support** it.
+- One problem with the PreCheck program is the government's reluctance([rɪˈlʌktəns] n. 不情愿，勉强) to **back/support**
+  it.
 - 词组
     - turn back (使)返回；无法改变计划
     - back and forth 来回地
