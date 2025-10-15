@@ -202,8 +202,7 @@
 - Life is just a series of trying to make up your mind.
 - mindset
     - n. 心态
-    - Happiness in not a point of future and not a moment from the past, but a mindset that can be designed into the
-      present.
+    - Happiness *is not* a point of future *and not* a moment from the past, *but* a mindset that can be designed into the present.
 - remind
     - vt. 提醒；使想起
     - remind sb. of/about sth.
@@ -211,13 +210,14 @@
 - wise adj. 明智的；充满智慧的
     - wisdom n. 智慧；明智；（社会或文化长期积累的）学问
 - ideology n. 意识；观念
+    - == belief
     - oppressive ideology 压迫性的观念
     - upper middle-class ideology 中上层阶级的意识形态
 
 ## move
 
 - n. 行动；措施；移动；转变
-- v. 移动；才去行动；进展；转变
+- v. 移动；才去行动；进展；转变；感动
 - 词组
     - move on 继续前往
     - move on to sth. 开始做（别的事）；换话题
@@ -227,16 +227,16 @@
     - move through 穿过
     - move out 搬出去
     - make a move 采取行动；动身
-- remove vt. 移开；去除
+- remove 
+    - vt. 移开；去除
     - get rid of
 - shift
-    - v. 移动；变换
     - n. 改变；换挡
+    - v. 移动；变换
     - a stick shift 手动挡
-    - While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a
-      remarkable **shift/change**.
+    - While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a remarkable **shift/change**.
 
-## patent
+## patent [ˈpætnt]
 
 - n. 专利权
 - patentable adj. 可给与专利权的
@@ -251,15 +251,15 @@
 
 ## risk
 
-- n. 风险
 - vt. 冒险（做某事）；冒着...的风险
+- n. 风险
 - 词组
     - at the risk of (doing sth.) 冒着...的危险
     - pose a risk to 对...造成危险
     - take a risk 冒险
     - reduce the risk of 降低...的风险
     - at risk 处境危险；受到威胁
-- When education becomes on-size-fits-all, it risks overlooking a nation's diversity of gifts.
+- When education becomes on-size-fits-all, it risks overlooking(v. 忽视) a nation's diversity of gifts.
 - risky
     - adj. 有危险或风险的
     - riskily adv. 冒险地
@@ -273,7 +273,8 @@
 - threat
     - n. 威胁
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
-- crisis n. 危机
+- crisis 
+    - n. 危机
     - go through an existential crisis 面临生存危机
     - housing crisis 住房危机
     - financial crisis 金融危机
@@ -283,7 +284,8 @@
         - == deal with the crisis
         - == cope with the crisis
     - economic crisis
-- venture n. （尤指有风险的）企业；风险投资
+- venture 
+    - n. （尤指有风险的）企业；风险投资
     - Successful **venture capital investment(风险资本投资)** is a lot harder than it sometimes looks.
 
 ## term
@@ -297,8 +299,9 @@
     - on good/friendly terms 关系好
 - More than half of all British scientific research is now published under open access **terms**.
 - terminology n. 术语
-- provision n. （法律文件的）规定，条款；提供
-    - One provision of the law was to roll back taxes to the 1975 level.
+- provision 
+    - n. （法律文件的）规定，条款；提供
+    - One **provision** of the law was to roll back taxes to the 1975 level.
 - item n. 项目；一件商品（或物品）
 
 ## technology/tech
@@ -310,7 +313,8 @@
     - n. 生物科技
     - biotech industries 生物技术行业
     - biotech companies 生物技术公司
-- technique n. 技术；技巧
+- technique 
+    - n. 技术；技巧
     - == skill
     - technical adj. 技术的；技巧的
     - technician n. 技术员
@@ -321,7 +325,7 @@
         - craftsmanship n. 技术，技艺; 工力
             - craftsmanship spirit 工匠精神
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
-    - As Cline is the first to not, it took Beaumont decades to prefect her **craft**; her example can't be knocked off.
+    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be knocked off.
 
 ## deal
 
@@ -331,7 +335,7 @@
 - 词组
     - deal with 解决；处理；应对
         - == cope with
-    - a great deal of + 不可数n. 大量的...
+    - a great deal of + **不可数n.** 大量的...
     - a big deal 一件大事
         - no big deal 小意思啦/没啥/不打紧
     - A deal is a deal. 一言为定、言出必行
@@ -341,33 +345,35 @@
     - 词组
         - cope with 处理...
 - handle vt. 处理（句式、人、工作或感情）
-- tackle vt. 处理（难题或局面）
-    - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty
-      air?
+- tackle 
+    - vt. 处理（难题或局面）
+    - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty air?
 - address
     - vt. 设法解决；演讲
     - n. 地址
 
 ## course
 
-- n. 课程；一道菜；航线；进程；行动方式
+- n. 课程；进程；一道菜；航线；行动方式
 - Before it ends, it will likely change the life **course** and character of a generation of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
-- discipline n. 自制力；学科；行为准则
+- discipline 
+    - n. 自制力；学科；行为准则
+    - v. 训练; 惩罚; 自我约束
     - self-discipline 自制力
     - When you have **discipline**, you have **self-control**.
-    - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and
-      correcting them.
+    - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and correcting them.
 - catalog/catalogue n. 目录
 
 ## board
 
-- n. （公司或其他机构的）董事会
 - v. 上船（或火车、飞机、公共汽车等）
+- n. （公司或其他机构的）董事会
 - billboard n. 广告牌
-- broad adj. 广泛的
-    - broaden v. 变宽; 扩大…的范围
+- broad 
+    - adj. 广泛的
+    - broaden v. 变宽; 扩大...的范围
     - abroad adv. 在国外
         - study abroad 出国留学
     - broadband n. 宽带连接
@@ -376,13 +382,12 @@
 ## develop
 
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
-- Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
-  comes in.
-- After you have clearly and adequately **developed** the body of your paper, pay particular attention to the
-  introductory and concluding paragraphs.
+- Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits comes in.
+- After you have clearly and adequately **developed(详尽阐述)** the body of your paper, pay particular attention to the introductory and concluding paragraphs.
 - developing adj. 发展中的
 - developed adj. 发达的
-- development n. 发展；开发
+- development 
+    - n. 发展；开发
     - == evolution
 - developmental adj. 发展的；开发中的
 
@@ -390,12 +395,12 @@
 
 - n. 环境
 - environmental adj. 环境的
-- environmentally adv. 环境方面地
+    - environmentally adv. 环境方面地
 - forest
     - n. 森林; 丛林; （森林似的）一丛; 一片
     - vt. 在...造林，使长满树林，使成为森林
-    - forestation n. 造林
-    - deforestation n. 砍伐森林
+    - forestation n. 造林 🙂
+        - deforestation n. 砍伐森林 😔
 - ecosystem n. 生态系统
 - extinction n. 灭绝
 
@@ -408,13 +413,12 @@
     - == explain
     - interpretation n. 解释
     - misinterpret vt. 误解
-    - misinterpretation n. 误解
-        - == misunderstanding n. 误解，误会
-        - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news" via
-          social media.
-        - Opportunities for **misinterpretation**, error, and self-deception **abound**.
-            - abound vi. 丰富，盛产; 非常多，大量存在; 充满
-            - Challenges abound, so do opportunities. 前方有挑战，也有机遇
+        - misinterpretation n. 误解
+            - == misunderstanding n. 误解，误会
+            - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news" via social media.
+            - Opportunities for **misinterpretation**, error, and self-deception **abound**.
+                - abound vi. 丰富，盛产; 非常多，大量存在; 充满
+                    - Challenges abound, so do opportunities. 前方有挑战，也有机遇
 - illustrate vt. （用实例、图标等）说明
     - == demonstrate
 

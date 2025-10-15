@@ -303,22 +303,24 @@
     - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
       depression, double the **rate** for working Americans.
 - scale
-    - n. 规模；秤；等级体系
     - vt. 缩减
+    - n. 规模；秤；等级体系
     - 词组
         - scale back 缩减
         - scale up 增大，扩大（规模或数量）
-- dimension n. 维度；方面
+- dimension [dɪˈmenʃn] n. 维度；方面
 
 ## stress
 
+- [stres]
+- vt. 强调
 - n. 压力
     - == pressure
-- vt. 强调
-- Such bodily reaction might help moderate the effects of psychological **stress**.
-- The crash **stresses** the urgency to strengthen security worldwide.
+- Such bodily reaction might help moderate([ˈmɑːdəreɪt] vt. 使和缓) the effects(n. 影响) of psychological **stress**.
+- The crash **stresses** the urgency to strengthen security worldwide. 这次坠机事件强调了在全球范围内加强安全措施的紧迫性
 - stressful adj. 有压力的
-- pressure n. 压力
+- pressure [ˈpreʃər]
+    - n. 压力
     - apply pressure on sb./sth. 对某人/某事施加压力
 - burden n. 负担；重担
 - tension n. 紧张
@@ -329,15 +331,17 @@
 - n. （钱财或物资上的）资助；支持
 - supporter n. 支持者
 - supportive adj. 给予支持的
-- favor/favour
+- favor/favour [ˈfeɪvər]
     - vt. 赞成
     - n. 支持；恩惠
     - favorable/favourable adj. 赞同的
-    - unfavorable/unfavourable adj. 不利的；不赞同的
-    - favorably/favourably adv. 更具优势地；赞同地
-    - favoritism/favouritism n. 偏袒
-        - **Favoritism** in official access can *fan(v. 扇（风）; 煽动)/affect/provoke* public perceptions of corruption.
-        - == partiality n. <正><贬>偏袒; 特别喜爱，酷爱; 偏心
+        - unfavorable/unfavourable adj. 不利的；不赞同的
+        - favorably/favourably adv. 更具优势地；赞同地
+    - favoritism/favouritism ['feɪvərɪtˌɪzəm]
+        - n. 偏袒
+        - **Favoritism** in official access can *fan(v. 扇（风）; 煽动)/affect/provoke* public perceptions(n. 看法) of
+          corruption(n. 腐败，贪污).
+        - == partiality [ˌpɑrʃiˈæləti] n. <正><贬>偏袒; 特别喜爱，酷爱; 偏心
 - prefer
     - vt. 更喜欢
     - prefer A to B 比起B更喜欢A
@@ -350,15 +354,15 @@
 - n. 好处；保险金；福利费
 - A benefit from B A得益于B
 - It is as though 20 years of ever-tougher reforms of the job search and **benefit** administration system never
-  happened.
+  happened. 看起来就好像二十年来对求职与福利管理体系日益严格的改革从未发生过一样。
 - beneficial adj. 有帮助的
-- benefactor n. 赞助者
+- benefactor [ˈbenɪfæktər] n. 赞助者
 - profit
     - v. （使）获利
     - n. 利润
     - profit from
     - profitable adj. 可盈利的
-        - == lucrative adj. 获利丰厚的
+        - == lucrative [ˈluːkrətɪv] adj. 获利丰厚的
             - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
               finish line" whether that the toward graduate school, medical school or a **lucrative** career.
         - == handsome adj. **可观的**；帅气的
@@ -383,20 +387,21 @@
 
 - n. 事实
 - factor n. 因素
-- factual adj. （根据）事实的
+- factual [ˈfæktʃuəl] adj. （根据）事实的
 - 词组
     - in fact 实际上
     - the fact that （用于探讨真实事情的意义）...这一事实
 - virtual
     - adj. 实际上的；（计算机）虚拟的
     - virtually adv. 几乎
-        - Plus, virtually/almost all major American companies are becoming tech companies.
-- truth
+        - Plus(此外、再者), virtually/almost all major American companies are becoming tech companies.
+- truth [truːθ]
     - n. 实际情况；真理
-    - truly adv. 真正地；由衷地
+    - truly [ˈtruːli] adv. 真正地；由衷地
 
 ## personal
 
+- [ˈpɜːrsənl]
 - adj. 个人的；私人的
 - interpersonal adj. 人际（关系）的
     - inter- == between/among
@@ -404,8 +409,9 @@
 - private
     - adj. 私有的；私营的；私人的
     - n. (in ~)私下里
-    - privacy n. 隐私
-        - data leakage 数据泄露
+    - privacy
+        - n. 隐私
+        - data leakage([ˈliːkɪdʒ]) 数据泄露
 - individual
     - adj. 个别的；一个人的
     - n. 个人
@@ -413,21 +419,21 @@
 
 ## argue
 
+- [ˈɑːrɡjuː]
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
 - argument n. 观点；争论；论据
-- dispute 😔
+- dispute [dɪˈspjuːt] 😔
     - n. 争端；争论
     - vt. 对...表示异议（或怀疑）
 - debate
     - v. （尤指正式）讨论
-        - == discussion
+        - == discussion [dɪˈskʌʃn]
     - n. 辩论；讨论
-- controversy 😔
+- controversy [ˈkɑːntrəvɜːrsi] 😔
     - n. （公开的）争论
-    - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
-      matched by few other industries.
-    - controversial adj. 引起争论的 😔
+    - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way matched by few other industries. 全球艺术市场将巨额财富、强烈的自我意识、贪婪、激情与争议融汇在一起，这种混合在其他行业中几乎无可匹敌。
+    - controversial [ˌkɑːntrəˈvɜːrʃl] adj. 引起争论的 😔
 
 ## sign
 
@@ -441,23 +447,22 @@
     - assignment n. （分派的）任务
 - mission n. 使命；军事行动
     - == assignment
-- It is a <ins>worthy/universal/virtual/authentic</ins> truth that man is the only animal that has the power to speak
-  and reason.
+- It is a <ins>worthy/universal/virtual/authentic</ins> truth that man is the only animal that has the power to speak and reason.
 
 ## Words
 
 - bond
     - n. 纽带; 联系;
-- capitalism
+- capitalism [ˈkæpɪtlˌɪzəm]
     - 资本主义
-- socialism
+- socialism [ˈsoʊʃəlɪzəm]
     - 社会主义
-- patriotism
+- patriotism [ˈpeɪtriətɪzəm]
     - 爱国主义
-- transcendent
+- transcendent [trænˈsɛndənt]
     - == outstanding
     - adj. 卓越的，出众的
-- tearful
+- tearful [ˈtɪrfl]
     - adj. 令人伤心的
 - indicative
     - adj. 指示的，表明的
@@ -466,7 +471,7 @@
 
 - come up with
     - 提出，想出
-    - come up with a brilliant idea
+    - come up with a brilliant([ˈbrɪliənt] adj. 巧妙的) idea
 - fit in
     - 融入
 - take a firm stand
