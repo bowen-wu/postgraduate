@@ -19,59 +19,72 @@
     - == invest
 - *funding(主动)* agencies 出资机构
 - publicly *funded(被动)* research 政府资助的研究
-- Some growth stems from a commitment by governments and farsighted businesses to **fund/invest** cleaner energy sources.
-- allowance n. 补贴
-- subsidy
+- Some growth stems from a commitment by governments and farsighted(['fɑ'saɪtɪd] adj. 有远见的) businesses to
+  **fund/invest** cleaner energy sources.
+- allowance [əˈlaʊəns] n. 补贴
+- subsidy [ˈsʌbsədi]
     - n. 补贴
     - == allowance
     - == grant
-    - Taxes on low-wage labor need to be cut, and **wage subsidies** should be expanded.
-    - subsidies/subsidize vt. 资助，补贴
-- grant
+    - subsidies/subsidize [ˈsʌbsɪdaɪz]
+        - vt. 资助，补贴
+        - Taxes on low-wage(n. 工资) labor need to be cut, and **wage subsidies** should be expanded.
+- grant [ɡrænt]
     - n. （政府、机构的）拨款
     - vt.（尤指正式地或法律上）同意；（勉强）承认
     - take sth. for granted 认为...理所当然
-- bonus n. 奖金
-    - How could she have let those enormous **bonus** payouts pass unremarked?
-        - let + 宾语 + do 让某人做某事（表示“允许”或“使”）
-- pension n. 养老金
-- welfare n. （政府给予的）福利；（个体或群体的）幸福，安全与健康
+- bonus [ˈboʊnəs]
+    - n. 奖金
+    - How could she have let those enormous([ɪˈnɔːrməs] adj. 巨大的) **bonus** payouts pass unremarked?
+        - let + 宾语 + do sth. 让某人做某事（表示“允许”或“使”）
+- pension [ˈpenʃn] n. 养老金
+- welfare [ˈwelfer] n. （政府给予的）福利；（个体或群体的）幸福，安全与健康
 
 ## tend
 
-- vi 往往会；趋向
+- vi. 往往会；趋向
 - tend to do sth. 往往，总是
-- tendency n. 倾向；趋势
-    - Involuntary part-time employment in the U.S. shows a general **tendency** of decline.
-- trend n. 趋势
-- inclination
+- tendency
+    - n. 倾向；趋势
+    - Involuntary([ɪnˈvɑlənteri] adj. 非自愿的) part-time employment in the U.S. shows a general **tendency** of
+      decline.
+- trend [trend] n. 趋势
+- inclination [ˌɪnklɪˈneɪʃn]
     - n. 倾向
     - == tendency
-    - incline vt.& vi. （使）倾斜; （使）偏向，倾向于
     - inclination for risk-taking 冒险倾向
+    - incline [ˈɪnklaɪn] vt.& vi. （使）倾斜; （使）偏向，倾向于
     - inclined adj. 想（做某事）的；有...倾向的
         - be inclined to do sth. 往往做某事/倾向做某事
             - == tend to do sth.
             - == be prone to do sth.
-- prone adj. 有做（坏事）的倾向的；(-prone)有...倾向的
+- prone [proʊn]
+    - adj. 有做（坏事）的倾向的；(-prone)有...倾向的
     - == inclined
-    - Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in **fire-prone districts**</ins>.
-- tide n. 潮；潮流
+    - Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in
+      **fire-prone districts**</ins>.
+- tide [taɪd]
+    - n. 潮；潮流
     - Time and tide wait for no man.
+        - 时间不会停下来等你，机遇稍纵即逝，要珍惜时间、把握当下
+        - 世事不等人，该做的事要及时去做
     - a tide of emigration
 
 ## form
 
-- n. 形式；种类
 - v. 组成；产生
+- n. 形式；种类
 - in the form of 以...的形式
-- formal adj. 正式的；正规的
+- formal [ˈfɔːrml]
+    - adj. 正式的；正规的
     - formally adv. 正式地
 - formation n. 编队
 - format n. 格式
-- formula n. 方案；公式；方程
+- formula
+    - n. 方案；公式；方程
     - formulate vt. 构想出（计划或提案）
-        - Cortina holds that early exposure to computer science makes it easier to **formulate** logical hypotheses.
+        - Cortina holds that early exposure([ɪkˈspoʊʒər]) to computer science makes it easier to **formulate** logical
+          hypotheses.
 - reform n./vt. 改革
 - transform
     - vt. 改变；转换
@@ -81,7 +94,7 @@
     - adj. 统一的
         - uniform rule
     - uni- == single
-    - uniformity n. 均匀性; 单调，无变化; 同样，一样
+    - uniformity [ˌjuːnɪˈfɔːrməti] n. 均匀性; 单调，无变化; 同样，一样
 - former
     - adj. 以前的；（两者中）前者的；前任的
     - pron. （两者中的）前者
@@ -97,13 +110,14 @@
 - 词组
     - common sense 常识
     - have sth. in common 有...共同点
-- commonality n. 共性
+- commonality [ˌkɑməˈnælɪti]
+    - n. 共性
     - In some ways, this quest for **commonalities** defines science.
 - commonly adv. 通常
 - commonness n. 平凡
 - average
-    - n. 平均数
     - adj. 普通的；平均的
+    - n. 平均数
     - 词组
         - on the average 平均来说/一般而言/按平均计算
             - == on average
@@ -119,22 +133,26 @@
 
 ## involve
 
+- [ɪnˈvɑːlv]
 - vt. 牵涉；使参与；需要
 - be involved in 参与其中，从事
 - involvement n. 参与
-- evolve
+- evolve [iˈvɑːlv]
     - v. 逐步发展
     - e- == ex- 外
-    - evolution n. 发展；进化
+    - evolution
+        - n. 发展；进化
         - == development
-        - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social environment being a major contributory fctor.
+        - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social
+          environment being a major contributory factor.
         - involution n. 内卷
-    - evolutionary adj. 进化的
-- revolve
+    - evolutionary [ˌiːvəˈluːʃəneri] adj. 进化的
+- revolve [rɪˈvɑːlv]
     - v./n. 旋转
     - revolution n. 革命
-    - revolutionary adj. 革命的
-        - This is hardly **revolutionary**, but it is presented in a charming format.
+    - revolutionary
+        - adj. 革命的
+        - This is hardly **revolutionary**, but it is presented in a charming(adj. 令人着迷的) format.
 
 ## limit
 
@@ -142,54 +160,58 @@
 - vt. 限制
 - Sky's the limit.
 - limitation n. 限制
-- restrict
+- restrict [rɪˈstrɪkt]
     - vt. 限制
     - == limit
     - restriction n. 限制
     - restrictive adj. 约束的
-- refrain
+- refrain [rɪˈfreɪn]
     - vi. 避免；克制；制止
         - == restrict
-        - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing it**.
+        - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from
+          doing it**.
         - How shall I **refrain from** tears when we part?
-        - California has asked the justices to **refrain from** a sweeping ruling.
+        - California has asked the justices to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
         - refrain from doing sth.
-            - When someone burps in a quiet classroom it can be hard to **refrain from laughing**.
-    - n. 经常重复的评价（或抱怨）；老话，陈词滥调
-        - Complaints about poor food in schools have become a familiar **refrain**.
+            - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
+    - n. 经常重复的评价（或抱怨）；老话，陈词滥调(cliche)
+        - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
         - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.
-- sanction n. 制裁；<正式>许可
-- confine
+- sanction [ˈsæŋkʃn] n. 制裁；<正式>许可
+- confine [kənˈfaɪn]
     - n. 局限
     - vt. 使局限；禁闭
 
 ## demand
 
-- n. （顾客的）需求；（坚决的）要求；需求量
+- [dɪˈmænd]
 - vt. 强烈要求；需要
+- n. （顾客的）需求；（坚决的）要求；需求量
 - 词组
     - demand for 对...的需求；对...的要求
     - in demand 需求量大；受欢迎
     - on demand 一经要求
 - supply
-    - n. 提供，供应（量）; 储备; 补给品
     - v. 供应，提供; 补充，填充
-- Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who demand high quarterly profits from companies, can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer loyalty(n. 忠诚，忠实; 忠心).
+    - n. 提供，供应（量）; 储备; 补给品
+- Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high quarterly profits from companies, can
+  hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
+  loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
 - command
-    - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
     - vt. 命令；博得
+    - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
     - 词组
         - in command 领导；指挥
         - have (a) good command of... 精通...
         - at one's command 某人可自由使用；服从某人的支配
-- mandate
+- mandate [ˈmændeɪt]
     - n. 命令
-    - The proposed initiative would **mandate** a reduction of carbon dioxide of 40%.
+    - The <ins>proposed initiative(拟议倡议)</ins> would **mandate** a reduction of carbon dioxide of 40%.
 
 ## mind
 
-- n. 头脑；思想；思维方式；富有才智的人
 - vt. 介意
+- n. 头脑；思想；思维方式；富有才智的人
 - 词组
     - keep/bear..in mind 将...记在心中
         - == remember
@@ -199,25 +221,28 @@
     - to my mind 依我看
         - == in my view
     - critical mind 批判性思维
-- Life is just a series of trying to make up your mind.
-- mindset
+- Life is just a series([ˈsɪriːz] n. 一系列; 连续) of trying to make up your **mind**.
+- mindset [ˈmaɪndset]
     - n. 心态
-    - Happiness *is not* a point of future *and not* a moment from the past, *but* a mindset that can be designed into the present.
+    - Happiness *is not* a point of future *and not* a moment from the past, *but* a **mindset** that can be designed
+      into the present.
 - remind
     - vt. 提醒；使想起
     - remind sb. of/about sth.
     - reminder n. 提醒人的事物
-- wise adj. 明智的；充满智慧的
-    - wisdom n. 智慧；明智；（社会或文化长期积累的）学问
-- ideology n. 意识；观念
-    - == belief
-    - oppressive ideology 压迫性的观念
+- wise [waɪz]
+    - adj. 明智的；充满智慧的
+    - wisdom [ˈwɪzdəm] n. 智慧；明智；（社会或文化长期积累的）学问
+- ideology [ˌaɪdiˈɑːlədʒi]
+    - n. 意识；观念
+    - == belief [bɪˈliːf]
+    - oppressive([əˈprɛsɪv]) ideology 压迫性的观念
     - upper middle-class ideology 中上层阶级的意识形态
 
 ## move
 
-- n. 行动；措施；移动；转变
 - v. 移动；才去行动；进展；转变；感动
+- n. 行动；措施；移动；转变
 - 词组
     - move on 继续前往
     - move on to sth. 开始做（别的事）；换话题
@@ -227,26 +252,28 @@
     - move through 穿过
     - move out 搬出去
     - make a move 采取行动；动身
-- remove 
+- remove
     - vt. 移开；去除
-    - get rid of
+    - == get rid of
 - shift
-    - n. 改变；换挡
     - v. 移动；变换
+    - n. 改变；换挡
     - a stick shift 手动挡
-    - While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a remarkable **shift/change**.
+    - While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a
+      remarkable **shift/change**.
 
-## patent [ˈpætnt]
+## patent
 
+- [ˈpætnt]
 - n. 专利权
 - patentable adj. 可给与专利权的
-- monopoly
+- monopoly [məˈnɑːpəli]
     - n. 垄断企业
-    - mono- == single
-        - monologue n. （戏剧）独白; 独角戏; 长篇大论
+    - mono- == uni- == single
+        - monologue [ˈmɑːnəlɔːɡ] n. （戏剧）独白; 独角戏; 长篇大论
     - pole- 极
     - Planters enjoyed a natural monopoly because they had no competitors.
-    - monopolise/monopolize vt. 垄断
+    - monopolise/monopolize [mə'nɒpəlaɪz] vt. 垄断
 - outlet n. 专营店；折扣品经销店
 
 ## risk
@@ -259,32 +286,32 @@
     - take a risk 冒险
     - reduce the risk of 降低...的风险
     - at risk 处境危险；受到威胁
-- When education becomes on-size-fits-all, it risks overlooking(v. 忽视) a nation's diversity of gifts.
-- risky
+- When education becomes on-size-fits-all, it **risks** overlooking(v. 忽视) a nation's diversity of gifts.
+- risky [ˈrɪski]
     - adj. 有危险或风险的
     - riskily adv. 冒险地
 - adventure
-    - n. 冒险; 奇遇; 冒险精神
     - v. 去某地探险
+    - n. 冒险; 奇遇; 冒险精神
     - Always do what you are afraid to do.
     - adventurous adj. 爱冒险的
-        - == courageous
-    - adventurism n. 冒险主义
+        - == courageous [kəˈreɪdʒəs] adj. 勇敢的，无畏的
+    - adventurism [ædˈvɛntʃəˌrɪzəm] n. 冒险主义
 - threat
     - n. 威胁
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
-- crisis 
+- crisis [ˈkraɪsɪs]
     - n. 危机
-    - go through an existential crisis 面临生存危机
+    - go through an existential([ˌɛɡzɪˈstɛnʃəl]) crisis 面临生存危机
     - housing crisis 住房危机
     - financial crisis 金融危机
-    - face an acute crisis in 面临...的严重危机
+    - face an acute([əˈkjuːt] adj. 严重的) crisis in 面临...的严重危机
     - handle the crisis 应对危机
         - == address the crisis
         - == deal with the crisis
         - == cope with the crisis
     - economic crisis
-- venture 
+- venture [ˈventʃər]
     - n. （尤指有风险的）企业；风险投资
     - Successful **venture capital investment(风险资本投资)** is a lot harder than it sometimes looks.
 
@@ -299,7 +326,7 @@
     - on good/friendly terms 关系好
 - More than half of all British scientific research is now published under open access **terms**.
 - terminology n. 术语
-- provision 
+- provision
     - n. （法律文件的）规定，条款；提供
     - One **provision** of the law was to roll back taxes to the 1975 level.
 - item n. 项目；一件商品（或物品）
@@ -313,7 +340,7 @@
     - n. 生物科技
     - biotech industries 生物技术行业
     - biotech companies 生物技术公司
-- technique 
+- technique
     - n. 技术；技巧
     - == skill
     - technical adj. 技术的；技巧的
@@ -325,7 +352,8 @@
         - craftsmanship n. 技术，技艺; 工力
             - craftsmanship spirit 工匠精神
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
-    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be knocked off.
+    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be knocked
+      off.
 
 ## deal
 
@@ -345,9 +373,10 @@
     - 词组
         - cope with 处理...
 - handle vt. 处理（句式、人、工作或感情）
-- tackle 
+- tackle
     - vt. 处理（难题或局面）
-    - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty air?
+    - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty
+      air?
 - address
     - vt. 设法解决；演讲
     - n. 地址
@@ -358,12 +387,13 @@
 - Before it ends, it will likely change the life **course** and character of a generation of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
-- discipline 
+- discipline
     - n. 自制力；学科；行为准则
     - v. 训练; 惩罚; 自我约束
     - self-discipline 自制力
     - When you have **discipline**, you have **self-control**.
-    - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and correcting them.
+    - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and
+      correcting them.
 - catalog/catalogue n. 目录
 
 ## board
@@ -371,7 +401,7 @@
 - v. 上船（或火车、飞机、公共汽车等）
 - n. （公司或其他机构的）董事会
 - billboard n. 广告牌
-- broad 
+- broad
     - adj. 广泛的
     - broaden v. 变宽; 扩大...的范围
     - abroad adv. 在国外
@@ -382,11 +412,13 @@
 ## develop
 
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
-- Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits comes in.
-- After you have clearly and adequately **developed(详尽阐述)** the body of your paper, pay particular attention to the introductory and concluding paragraphs.
+- Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
+  comes in.
+- After you have clearly and adequately **developed(详尽阐述)** the body of your paper, pay particular attention to the
+  introductory and concluding paragraphs.
 - developing adj. 发展中的
 - developed adj. 发达的
-- development 
+- development
     - n. 发展；开发
     - == evolution
 - developmental adj. 发展的；开发中的
@@ -415,7 +447,8 @@
     - misinterpret vt. 误解
         - misinterpretation n. 误解
             - == misunderstanding n. 误解，误会
-            - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news" via social media.
+            - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news"
+              via social media.
             - Opportunities for **misinterpretation**, error, and self-deception **abound**.
                 - abound vi. 丰富，盛产; 非常多，大量存在; 充满
                     - Challenges abound, so do opportunities. 前方有挑战，也有机遇

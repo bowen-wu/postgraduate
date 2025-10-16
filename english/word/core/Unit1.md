@@ -282,8 +282,7 @@
 - trade
     - n. 贸易；生意
 - transaction n. 交易
-- sale
-    - n. 销售；拍卖；销售额
+- sale n. 销售；拍卖；销售额
     - wholesale n. 批发
 - commodity n. 商品
 - bargain
