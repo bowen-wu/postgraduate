@@ -43,7 +43,7 @@
 
 ### Words
 
-- sponsorship
+- sponsorship [ˈspɑnsərʃɪp]
     - n. 赞助；倡议
 - minister
     - n. 部长；大臣
