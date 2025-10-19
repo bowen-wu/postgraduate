@@ -20,8 +20,8 @@
     - 做某事是重要的
         - It's important for us to protect the environment.
             - == It's of vital importance for us to protect the environment.
-- importance [ɪmˈpɔːrtns] n. 重要性
 - == crucial [ˈkruːʃl] == vital == significant
+- importance [ɪmˈpɔːrtns] n. 重要性
 - crucial adj. 至关重要的
 - vital adj. 必要的
 - significant
@@ -40,10 +40,12 @@
 ## improve
 
 - v. 改善；提高
-- There's always room for improvement.
 - == enhance == elevate
-- improvement n. 改善
-- enhance vt. 提高
+- improvement
+    - n. 改善
+    - There's always room for improvement.
+- enhance
+    - vt. 提高
     - enhancement n. 提高
     - enhancer n. 增强剂
 - elevate
@@ -52,17 +54,19 @@
     - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
       a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
 - augment [ɔːɡˈment] vt. 增加，提高
-- heighten [ˈhaɪtn] v. （使）增加
+- heighten [ˈhaɪtn]
+    - v. （使）增加
     - high adj. 高的
     - height n. 高度; 高
 
 ## measure
 
-- n. 测量；衡量；措施
 - vt. 衡量
+- n. 测量；衡量；措施
 - If you can not measure it, you can not improve it.
 - measurement n. 测量
-- degree n. 程度；学位；级别
+- degree
+    - n. 程度；学位；级别
     - college degree 大学学位
     - bachelor's degree 学士学位
     - master's degree 研究生学位
@@ -71,8 +75,8 @@
         - to some degree 在某种程度上
         - to a certain degree 在一定程度上
 - rate
-    - n. 率；速度；费用；比率
     - vt. 对...作评估；认为...非常好
+    - n. 率；速度；费用；比率
     - 词组
         - at any rate 无论如何
     - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
@@ -136,7 +140,8 @@
     - v. （使）获利
     - n. 利润
     - profit from
-    - profitable adj. 可盈利的
+    - profitable
+        - adj. 可盈利的
         - == lucrative [ˈluːkrətɪv] adj. 获利丰厚的
             - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
               finish line" whether that the toward graduate school, medical school or a **lucrative** career.
@@ -154,7 +159,8 @@
 - distract
     - vt. 分散（注意力）
     - attract v. 吸引
-    - distraction n. 使人分心的事
+    - distraction 
+        - n. 使人分心的事
         - Gal Newport recommends **building a habit(养成一个习惯/建立习惯)** of "deep work"-the ability to focus without
           distraction.
 
@@ -168,8 +174,9 @@
     - the fact that （用于探讨真实事情的意义）...这一事实
 - virtual
     - adj. 实际上的；（计算机）虚拟的
-    - virtually adv. 几乎
-        - Plus(此外、再者), virtually/almost all major American companies are becoming tech companies.
+    - virtually 
+        - adv. 几乎
+        - Plus(此外、再者), **virtually/almost** all major American companies are becoming tech companies.
 - truth [truːθ]
     - n. 实际情况；真理
     - truly [ˈtruːli] adv. 真正地；由衷地
@@ -178,7 +185,8 @@
 
 - [ˈpɜːrsənl]
 - adj. 个人的；私人的
-- interpersonal adj. 人际（关系）的
+- interpersonal 
+    - adj. 人际（关系）的
     - inter- == between/among
 - personality n. 性格；名人
 - private
@@ -197,10 +205,12 @@
 - [ˈɑːrɡjuː]
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
-- argument n. 观点；争论；论据
+- argument 
+    - n. 观点；争论；论据
+    - augment [ɔːɡˈment] vt. 增加，提高
 - dispute [dɪˈspjuːt] 😔
-    - n. 争端；争论
     - vt. 对...表示异议（或怀疑）
+    - n. 争端；争论
 - debate
     - v. （尤指正式）讨论
         - == discussion [dɪˈskʌʃn]
@@ -216,12 +226,13 @@
 - n. 迹象；标志（牌）；星座
 - vt. 签名
 - signal
-    - n. 信号；标志
     - vt. 示意；表明
+    - n. 信号；标志
 - assign
     - vt. 布置（任务）
     - assignment n. （分派的）任务
-- mission n. 使命；军事行动
+- mission 
+    - n. 使命；军事行动
     - == assignment
 - It is a <ins>worthy/universal/virtual/authentic</ins> truth that man is the only animal that has the power to speak
   and reason.

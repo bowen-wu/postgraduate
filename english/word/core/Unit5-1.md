@@ -26,7 +26,7 @@
 - im-
 - in-
 - ir-
-    - irrational adj. 不合理的，荒谬的; 无理性的 😔
+    - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - non-
 - un-
 - -less
@@ -44,17 +44,18 @@
 - adj. 坚固的；坚定的
 - n. 公司
 - take a firm stand 采取坚定立场/坚决表态/明确立场
-- affirm vt. 肯定属实；申明
+- affirm
+    - vt. 肯定属实；申明
     - "The Heart of the Matter", the just-released report by the American Academy of arts and Sciences(AAAS)
       <ins>deserves praise for(值得赞扬)</ins> **affirming** the importance of the humanities and social sciences to the
       prosperity([prɑːˈsperəti] n. 繁荣) and security of liberal democracy in America.
-        - deserve praise for 因...而值得赞扬
+        - deserve([dɪˈzɜːrv]) praise([preɪz]) for 因...而值得赞扬
     - == confirm
 - confirm vt. 确认；使确信
 
 ## hold
 
-- vt. 使保持（某种状态）；持有；担任（职务）；任务；句型；归咎于
+- vt. 使保持（某种状态）；持有；担任（职务）；任务；举行；归咎于
 - vi. （未来将要）发生；（论点、理论等）站得住脚
 - n. 控制
 - The average time for **holding a stock** in both the United States and Britain, he notes, has dropped from seven years
@@ -68,19 +69,24 @@
     - hold up 举起
     - hold one's nose 对...嗤之以鼻，蔑视 😔
         - contemptuous [kənˈtemptʃuəs] adj. 蔑视的，鄙视的
-        - But it did so while <ins>**holding its nose** at the ethics of his conduct</ins>, which included accepting
-          gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
+        - But it did so while <ins>**holding its nose** at the ethics([ˈɛθiks] n. 道德准则) of his conduct(n.
+          行为)</ins>, which included accepting gifts such as a Rolex watch and a Ferrari automobile from a company
+          seeking access to government.
     - take hole 开始完全控制；变得十分强大
     - keep a tight hold 严格控制
 - holder n. 持有者
-- withhold vt. 拒绝给；保留；隐瞒
+- withhold
+    - vt. 拒绝给；保留；隐瞒
     - with- == backward 向后
         - withdraw v. （使）撤退/回/离; 停止提供; （使）退出; 提，取（款）; 脱离（社会）
         - withstand v. 经受住; 承受 😔
-    - Facebook is a self-enhancer's paradise because people can **withhold** their unflattering sides.
+    - Facebook is a self-enhancer's paradise([ˈpærədaɪs] n. 天堂; 伊甸园) because people can **withhold** their
+      unflattering([ʌnˈflætərɪŋ] adj. 不讨好人的) sides.
 - uphold vt. 维持（原判、裁决等）
-    - Tuesday, the appeals court **upheld** the 2017 order deregulating broadband providers.
-    - overturn vt. 推翻; 撤销（判决等）
+    - Tuesday, the appeals court([kɔːrt]) **upheld** the 2017 order deregulating broadband providers.
+    - overturn
+        - vt. 推翻; 撤销（判决等）
+        - == knock out
 - grasp vt. 理解；毫不犹豫地抓住（机会） n. 理解（力）
 
 ## provide
@@ -92,9 +98,11 @@
 - provide an adequate([ˈædɪkwət]) service 提供足够的服务
 - provide digital([ˈdɪdʒɪtl]) service
 - provider n. 提供者
-- provision n. 规定，条款；供应品
+- provision
+    - n. 规定，条款；供应品
     - == rule
-- provided/providing conj. 假如
+- provided/providing
+    - conj. 假如
     - == if
     - ***Providing that*/If** you finish your homework by this evening, you can have tomorrow off.
 - offer
@@ -103,18 +111,20 @@
     - offer sb. sth.
     - offer sth. to sb.
 - supply
-    - vt. 提供 n. 供应
+    - vt. 提供
+    - n. 供应
     - supple sb. with sth.
     - supplement
         - vt. 补充
-        - n.补充（物）；（报纸的）增刊
+        - n. 补充（物）；（报纸的）增刊
 - render
     - vt. 使变得；提供
     - == make
     - Render is a synonym of "**make**"-technically it means "**case to become**".
     - An illness might **render/make** you unable to walk, or a shocking sight might **render/make** you speechless.
-    - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering is
-      inevitable(adj. 不可避免的), but the courage(n. 勇气; 无畏) to fight it **renders/makes** life worth living.
+    - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering(n. 痛苦; 受苦)
+      is inevitable([ɪnˈevɪtəbl] adj. 不可避免的), but the courage([ˈkɜːrɪdʒ] n. 勇气; 无畏) to fight it
+      **renders/makes** life worth living.
       人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
 - complementary adj. 补充的
 
@@ -132,14 +142,18 @@
     - the turn of sth. （某事的）转折点
     - turn sb./sth. (from sth.) into sth. 使...（从...）变成...
 - turnaround n. （观点、态度或方法的）彻底转变；周转期
-- turnover n. （人员的）流动率；货物周转率；营业额
+- turnover
+    - n. （人员的）流动率；货物周转率；营业额
     - CEO turnover
-- downturn n. （商业经济的）衰退
+- downturn
+    - n. （商业经济的）衰退
     - 经济衰退
         - economic depression/downturn/recession/slowdown/stagnation([stæɡˈneʃən] n. 淤塞，停滞; 不景气)/decline
     - 经济繁荣
         - economic boom/prosperity
-- overturn vt. 推翻（法律裁决）；倾覆
+- overturn
+    - vt. 推翻（法律裁决）；倾覆
+    - == knock out
     - uphold vt. 维持（原判、裁决等）
     - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
       Supreme Court has **overturned** the corruption(n. 腐败，贪污) conviction(n. 判罪) of a former Virginia governor,
@@ -151,11 +165,13 @@
 - vt. 认为
 - consider doing sth.
 - reconsider v. 重新考虑
-- considerable adj. 相当大（或多、重要等）的
+- considerable
+    - adj. 相当大（或多、重要等）的
     - considerate adj. 考虑周到的; 体贴的
     - considerably adv. 相当多地
 - consideration n. 考虑；必须考虑的事；关心
-- contemplate vt. **深思熟虑**；考虑；沉思
+- contemplate
+    - vt. **深思熟虑**；考虑；沉思
     - == consider
     - If you **contemplate** something, you **think about it carefully**.
     - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate**
@@ -188,7 +204,7 @@
 - emphasis
     - n. 重点
     - put/place emphasis on sth. 强调某事；重视某事
-        - == attach importance to sth. 重视
+        - == attach([əˈtætʃ]) importance to sth. 重视
         - == focus on 关注
         - == lay stress on 重视
         - And **placing too much emphasis on** their opinions can ruin([ˈruːɪn] v. 毁坏; 破坏) a
@@ -199,7 +215,8 @@
     - v. 集中（注意力）
     - n. 浓缩物
     - concentrate on
-    - concentration n. 集中
+    - concentration
+        - n. 集中
         - One great cause of failure([ˈfeɪljər]) is lack of... 失败的一个重要原因是缺乏...
             - One great cause of failure is lack of concentration. 导致失败的一个主要原因是缺乏专注力
             - One great cause of life's failure is lack of **the positive attitude([ˈætɪtuːd])**
@@ -210,7 +227,8 @@
 - the fashion industry 时尚界
 - industrial adj. 工业的，行业的；工业发达的
     - industrialist n. 实业家，工业家
-- industrious [ɪnˈdʌstriəs] adj. 勤劳的，勤奋的
+- industrious [ɪnˈdʌstriəs]
+    - adj. 勤劳的，勤奋的
     - If you describe someone as **industrious**, you mean they **work very hard**.
     - He was an **industrious** and willing(adj. 愿意的，乐意的; 自愿的; 积极肯干的) worker.
 - agriculture [ˈæɡrɪkʌltʃər]
@@ -219,10 +237,10 @@
 
 ## process
 
-- [ˈprɑːses]
-- n. 过程；流程
+- [prəˈses]
 - vt. 加工；处理（数据）
-- proceed
+- n. 过程；流程
+- proceed [proʊˈsiːd]
     - vi. 继续做（或从事、进行）；行进
         - == continue == go on
     - n. [pl.] 收入，收益

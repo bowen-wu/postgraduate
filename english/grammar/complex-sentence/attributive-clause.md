@@ -89,7 +89,7 @@
 - 特殊的非限定性定语从句**位于主句后** => 可以使用 which 或 as
     - ...so the centres need to be well air-conditioned, <ins>**which/as** uses event more energy.
     - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <ins>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
-- 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as**
+- 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as(翻译：正如)**
     - <ins>**As** Koziatek knows</ins>, there is learning in just about everything.
     - <ins>**As** a News Feature article in Nature discusses</ins>, a string of lucrative awards for researchers have joined the Nobel Prizes in recent years.
 
