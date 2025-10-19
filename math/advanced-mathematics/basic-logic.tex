@@ -1,0 +1,135 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{amsfonts}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{基本逻辑}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+        \item 全称命题: $\forall x,$均有$A$成立
+        \item 特称命题: $\exists x,$使得$A$成立
+        \begin{enumerate}
+            \item 全称命题和特称命题互为否定命题
+            \item 全称命题否定命题: $\exists x,$使得$\overline{A}$成立
+            \item 特称命题否定命题: $\forall x,$均有$\overline{A}$成立
+            \item Case: $\forall x \in \mathbb{R}$均有$x^2 \ge 0$成立。否定命题: $\exists x \in \mathbb{R},$使得$x^2 < 0$成立
+            \item Case: $\exists x \in \mathbb{R}$使得$x^2 \ge 0$。否定命题: $\forall x \in \mathbb{R},$均有$x^2 < 0$成立
+        \end{enumerate}
+        \item 蕴称命题: $A \Rightarrow B$(若$A$成立，则$B$成立)
+        \begin{enumerate}
+            \item 其{\color{red}{否定}}命题: $A$成立且$\overline{B}$成立
+            \item \textbf{逆否命题}: 若$B$不成立则$A$不成立($\overline{B} \Rightarrow \overline{A}$)。与蕴含命题\textbf{等价}
+            \item 其{\color{red}{否}}命题: $\overline{A} \Rightarrow \overline{B}$。原命题真，其否命题可真可假
+        \end{enumerate}
+        \item 多元命题: $\forall x, \forall y,$均有$A$成立；或$\forall x, \exists y,$使得$A$成立
+        \begin{align*}
+            & \lim\limits_{n \to \infty} x_n = a &\Leftrightarrow \forall \epsilon > 0, \exists N > 0, \forall n > N \Rightarrow |x_n - a| < \epsilon \\[6pt]
+            & \text{其否定命题: } a \text{ 不是 } x_n \text{ 的极限 } &\Leftrightarrow \exists \epsilon > 0, \forall N > 0, \exists n > N \Rightarrow |x_n - a| \ge \epsilon
+        \end{align*}
+        \item 充分条件: $A \Rightarrow B$，若$A$成立，则$B$成立，称$A$是$B$的充分条件
+        \item 必要条件: $A \Leftarrow B$，若$B$成立，则$A$成立，称$A$是$B$的必要条件
+        \item 充分必要条件: $A \Leftrightarrow B$，若$A$成立，则$B$成立，若$B$成立，则$A$成立，称$A$和$B$互为充分必要条件
+        \item 反证思路：所给出的\textbf{"否定命题"}是推理中增加的一个强有力的条件。假设其否定命题成立，推导出与已知成立的某条件矛盾，则思路完成。以下情形可用：
+        \begin{enumerate}
+            \item 显而易见但不易说明
+            \item 与常见形式对立
+        \end{enumerate}
+        \item 数学归纳：在试算$n$较小时的特殊情况后，增加$n=k$是$A$成立（第一数学归纳法）或者$n<k+1$是$A$成立（第二数学归纳法）这个强有力的条件，推导$n=k+1$是$A$成立
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法步骤}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+\end{document}

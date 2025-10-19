@@ -16,12 +16,18 @@
 
 - n. 结果；后果
 - vi. 因...发生；导致
-- as a result 结果是
-- as a result of 由于...的原因
-    - A is a result of B B是原因
-- result in == cause == lead to 导致（A是原因）
-- result from == stem from == originate from == spring from == derive from  来源于；由...引起（B是原因）
-    - Cooperation and sharing can result from either sympathy or guilt.
+- 词组
+    - as a result 结果是
+    - as a result of
+        - 结果是；由于...的原因
+        - **A(结果)** as a result of B
+    - result in
+        - 造成...结果, 导致
+        - A result in **B(结果)** == A cause B == A lead to B
+    - result from
+        - 由...引起
+        - **A(结果)** result from B == stem from == originate from == spring from == derive from
+        - Cooperation and sharing can result from either sympathy or guilt.
 - consequence
     - n. 结果；后果
     - consequently adv. 因此
@@ -77,6 +83,12 @@
 
 - n. 地方
 - vt. （小心或有意）放置；使人处于某位置
+- 词组
+    - in place 在正确位置；准备就绪
+    - in place of sb./sth. == in sb.'s/sth.'s place 代替，顶替
+    - in the first place 起初
+    - take place （尤指根据安排或计划）发生，进行
+    - place emphasis on 重视
 - placement n. 安置；安排
 - replace
     - vt. 代替
@@ -95,12 +107,15 @@
 - vt. 确定；使处于某种状态；创立；放
 - n. 一组
 - adj. 套；安排好的
-- set sth./sb. back 使推迟
-- set in 到来，开始
-- set off == set out 出发；启程
-- set sth. out 安排
-- set up 设立；安排
-- a set of 一组；一套
+- 词组
+    - set sb./sth. apart 使与众不同，使突出
+    - set sth. aside 把...放到一旁；留出（钱或时间）；暂时不考虑...
+    - set sth./sb. back 使推迟，使延误
+    - set in 到来，开始
+    - set off == set out 出发；启程
+    - set sth. out 安排；摆放；（有条理地）陈述
+    - set up 设立；安排
+    - a set of 一组；一套
 - setback n. 挫折
 - setter n. 制定者
 - settle
@@ -134,6 +149,10 @@
 
 - vt. 以...看待
 - n. 个人的看法
+- 词组
+    - in one's view 依某人的观点
+    - point of view 观点
+    - take a longer view 从更长远的角度来看
 - view A as B
 - in my view 在我看来
 - viewpoint n. 观点；角度
@@ -158,18 +177,28 @@
 ## Keep
 
 - v. 保持；继续；抑制
+- 词组
+    - keep an eye on == keep an eye out for 留意，密切关注
+    - keep away (from) 原理；不让接近
+    - keep from sth. 忍住（或克制自己）不做某事
+    - keep in mind (that) 记住
+    - keep sb. in 使某人留在室内（或某地）；使不外出
+    - keep sb./sth. out (of sth.) 使不进入；防止进入；把...关在外面
+    - keep track of 跟踪；记录
+    - keep up with == keep pace with 跟上；与...齐步前进
 - upkeep
     - n. 保养（费），维修（费）
     - infrastructure upkeep 基础设施维护
 - stay + adj.
     - vt. 保持； vi. 停留； n. 停留
-    - stay away from 远离；离开
-    - stay off 远离
-    - stay on 留下来继续学习
-    - stay out of the way 置身事外
-    - stay put 留在原地
-    - stay up 熬夜
-- remain + adj.   vt. 仍然是，保持；仍需去做； vi. 停留
+    - 词组
+        - stay away from 远离；离开
+        - stay off 远离；关闭
+        - stay on 留下来继续（学习、工作等）
+        - stay out of the way 置身事外
+        - stay put 留在原地
+        - stay up 熬夜
+- remain + adj. vt. 仍然是，保持；仍需去做； vi. 停留
 - abide
     - v. 容忍，遵守
     - I can't abide people who can't make up their minds.
@@ -183,7 +212,12 @@
     - departure n. 离开；出发；背离
     - a startling <ins>departure from (背离)</ins> tradition.
     - the president's departure for New York.
-- aside adv. 到旁边
+- aside
+    - adv. 到旁边
+    - 词组
+        - set aside 留，存；抽出
+        - put aside 把...暂放一遍；把...留作后用
+        - aside from 除...之外
 - detach
     - vi. 摆脱；拆卸
     - detachment n. 客观；超然物外
@@ -245,15 +279,7 @@
 - handsome adj. 慷慨的；丰厚的；可观的；英俊的
     - Her receives a handsome reward.
 - result == consequence == outcome
-- as a result of
-    - 由于
-    - **A(结果)** as a result of B
-- result in
-    - 造成...结果, 导致
-    - A result in **B(结果)** == A cause B == A lead to B
-- result from
-    - 由...引起
-    - **A(结果)** result from B == stem from == originate from == spring from == derive from
+
 - offense vs defense
 - A outweigh B
     - A比B重要
