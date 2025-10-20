@@ -156,7 +156,7 @@
 - exhibit
     - v. **展览**（正式）
     - vt. 表现
-    - exhibition n. 展览
+    - exhibition [ˌeksɪˈbɪʃn] n. 展览
 
 ## suggest
 
@@ -214,33 +214,6 @@
         - They <ins>cross-check(交叉检查)</ins> sources and prefer news from different perspectives.
         - One <ins>cross-generation(跨代)</ins> mark of a successful life is having a family with children.
 
-## rule
-
-- v. 判决
-- n. 规则；统治；惯例
-- The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
-- ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
-- overrule
-    - vt. 否决；统治
-    - == rule against
-- regulate
-    - vt. 监管；调节
-    - regulation n. 法规；监管
-    - regulator n. 监管者
-    - regulatory adj. 监管的
-        - ...the <ins>Supreme Court(最高法院)</ins> has *ruled that* states **do** have some **regulatory authority**
-          over nuclear power.
-- constitution
-    - n. 宪法
-    - constitutional
-        - adj. 有关宪法的
-        - <ins>The **Constitutional** principles</ins> ***that** Washington alone has the power to "establish a uniform
-          Rule of Naturalization"* and ***that** <ins>federal laws precede state laws</ins>* <ins>**are**
-          noncontroversial</ins>.
-            - A precede B A领先B/A优先于B
-    - unconstitutional adj. 违法宪法的
-- charter n. 章程
-
 ## Words
 
 - intelligent
@@ -257,6 +230,7 @@
     - v. 加工; 处理; 冲印; 审核; 列队行进
 - precede
     - vt.& vi. 在...之前发生或出现，先于; 在...之上，优于
+    - A precede B A领先B
 - possess
     - v. 拥有; 具备; 控制; 使言行失常
 - proceed

@@ -26,29 +26,29 @@
 - 状语从句表示描述性的信息，用来补充说明主句
 - 状语从句的种类是由从属连词决定的
 - 共分为九类:
-    1. **时间状语从句**: when/*while*/*as*/before/after/*since*/until/as soon as/by the tim
+    1. **时间状语从句**: when/*while*/*as*/before/after/*since*/until/as soon as/by the time
     2. 地点状语从句: where
     3. **原因状语从句**: because/*since*/*as*/in that/not that
     4. **结果状语从句**: so adj./adv. that/such n./n.词组 that/so that
     5. 目的状语从句: so that/in order that
-    6. **条件状语从句**: if/unless/once/as long as/so long as
+    6. **条件状语从句**: if/unless(if not)/once/as long as/so long as
     7. **让步状语从句**: though/although/even though/even if/*while*/however/no matter how
     8. 比较状语从句: than/*as*
     9. 方式状语从句: *as*/as if
 
 #### 时间状语从句
 
-| 从属连词        | 含义       | Example 例句                                                                                                                                                                                  |
-|-------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| when        | 当...时候   | <ins>**When** our brains switch between being focused and unfocused on a task</ins>, then tend to be more efficient.                                                                        | 
-| while       | 当...时候   | Researchers measured people's cortisol...<ins>**while** they were at work</ins> and <ins>**while** they were at home</ins> and found...                                                     | 
-| as          | 当...时候   | But <ins>**as** companies continue their attempt at personalized medicine</ins>, the courts will remain rather busy.                                                                        |
-| before      | 在...之前   | Even dairy farms, where robots do a small share of milking, have a long way to go <ins>**before** they're automated</ins>                                                                   |
-| after       | 在...之后   | ...we quickly "thin slice" information reliably <ins>only **after** we ground such snap reactions in "thick sliced" long-term study</ins>.                                                  |
-| since       | 自从...    | The current downturn in the art market is the worst <ins>**since** the Japanese stopped buying Impressionists at the end of 1989</ins>.                                                     |
-| until       | 直到/除非... | ...the corporate workplace will never be completely family-friendly <ins>**until** women are part of senior management decisions</ins>...                                                   |
-| as soon as  | 一...就... | Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise <ins>almost **as soon as** the deal wen through</ins>. |
-| by the time | 截止到...时候 | <ins>**By the time** a problem has been addressed and remedied</ins> it may have vanished in the marketplace, to be replaced by new abuses of power.                                        |
+| 从属连词        | 含义        | Example 例句                                                                                                                                                                                   |
+|-------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| when        | 当...时候    | <ins>**When** our brains switch between being focused and unfocused on a task</ins>, then tend to be more efficient.                                                                         | 
+| while       | 当...时候    | Researchers measured people's cortisol...<ins>**while** they were at work</ins> and <ins>**while** they were at home</ins> and found...                                                      | 
+| as          | 当...时候，随着 | But <ins>**as** companies continue their attempt at personalized medicine</ins>, the courts will remain rather busy.                                                                         |
+| before      | 在...之前    | Even dairy farms, where robots do a small share of milking, have a long way to go <ins>**before** they're automated</ins>                                                                    |
+| after       | 在...之后    | ...we quickly "thin slice" information reliably <ins>only **after** we ground such snap reactions in "thick sliced" long-term study</ins>.                                                   |
+| since       | 自从...     | The current downturn in the art market is the worst <ins>**since** the Japanese stopped buying Impressionists at the end of 1989</ins>.                                                      |
+| until       | 直到/除非...  | ...the corporate workplace will never be completely family-friendly <ins>**until** women are part of senior management decisions</ins>...                                                    |
+| as soon as  | 一...就...  | Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise <ins>almost **as soon as** the deal went through</ins>. |
+| by the time | 截止到...时候  | <ins>**By the time** a problem has been addressed and remedied</ins> it may have vanished in the marketplace, to be replaced by new abuses of power.                                         |
 
 #### 地点状语从句
 
@@ -98,7 +98,7 @@
 |-----------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | if                    | 如果...     | <ins>**If** she didn't keep the conversation going</ins>, we'd spend the whole evening in silence.                                          |
 | unless(== if not)     | 如果不，除非... | The US Supreme Court frowns on sex-based classifications <ins>**unless** they are designed to address an "important" policy interest</ins>. |
-| once                  | 一旦...     | ...<ins>**once** you ge that first word out</ins> everything else will just flow.                                                           |
+| once                  | 一旦...     | ...<ins>**once** you get that first word out</ins> everything else will just flow.                                                          |
 | as long as/so long as | 只要...     | If you're a physician, you can risk your patients' suicide <ins>**as long as** you don't intend their suicide</ins>.                        |
 
 #### 让步状语从句
@@ -132,12 +132,10 @@
 #### as
 
 - **as**作从属连词，引导状语从句
-
-1. 时间状语从句: 当...时候
-2. 原因状语从句: 因为...
-3. 比较状语从句: 和...相比较
-4. 方式状语从句: 按照...方式，如果...
-
+    1. 时间状语从句: 当...时候
+    2. 原因状语从句: 因为...
+    3. 比较状语从句: 和...相比较
+    4. 方式状语从句: 按照...方式，如果...
 - 代入法: 看哪个意思带入句子中更合适
 - 只要**as**后引导的是*完整*的句子 => 状语从句
 - 若**as**引导的句子不*完整*，并且**as**在从句中*作成分* => 非限定性定语从句
