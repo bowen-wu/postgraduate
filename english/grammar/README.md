@@ -40,22 +40,22 @@
 
 ### 特殊句式
 
-1. [虚拟](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/subjunctive.md)
-2. [倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/inversion.md)
-3. [强调](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/special-sentence-structures/cleft.md)
+1. [虚拟](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/subjunctive.md)
+2. [倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md)
+3. [强调](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/cleft.md)
 
 ## 分析长难句
 
 ### 基本结构的长难句分析
 
 1. 断开长难句
-    - 标点
-    - 连接词
-    - 分析主谓
-2. 简化长难句
+    - [标点](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/basic-structure/break-down-complex-sentence/punctuation.md)
+    - [连接词](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/basic-structure/break-down-complex-sentence/connectors.md)
+    - [分析主谓](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/basic-structure/break-down-complex-sentence/analyze-subject-predicate.md)
+2. [简化长难句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/basic-structure/simplify-complex-sentence.md)
 
 ### 特殊结构的长难句分析
 
-1. 分裂结构
-2. 嵌套结构
-3. 平行结构
+1. [分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md)
+2. [嵌套结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/nested-structure.md)
+3. [平行结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/parallel-structure.md)
