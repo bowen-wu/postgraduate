@@ -260,7 +260,7 @@
     - == get rid of
         - rid
             - v. （使）去掉，摆脱，消除
-            - adj. 摆脱…的
+            - adj. 摆脱...的
 - shift
     - v. 移动；变换
         - == change

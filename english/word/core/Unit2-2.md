@@ -18,6 +18,7 @@
 - n. 规则；统治；惯例
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
+  法院很可能裁定该法律违反了宪法所保障的“平等保护”原则
 - overrule
     - vt. 否决；统治
     - == rule against
@@ -63,7 +64,7 @@
 
 - n. 系统；体制
 - build a new **system** of *financial regulation*.
-- You have to manage a system. The system doesn't manage itself.
+- You have to manage a **system**. The **system** doesn't manage itself.
 - systematic
     - adj. 系统的；有计划的
     - systematically adv. 有系统地
@@ -74,7 +75,7 @@
 - 词组
     - decision on/about sth. 关于某事的决定
     - make/take a decision 做决定
-- decide
+- decide [dɪˈsaɪd]
     - v. 决定
     - decide to do sth. 决定做某事
 - decisive
@@ -101,7 +102,7 @@
 - testify
     - v. 证实；作证
     - testify == prove == verify == confirm
-    - Anyone who has toiled through SAT will **testify** that test-taking skill also matters，whether it's knowing when
+    - Anyone who has toiled through SAT will **testify** that test-taking skill also matters, whether it's knowing when
       to guess or what questions to skip.
 - contest
     - vt. 争辩；争取赢得（比赛、选举等）
@@ -147,8 +148,7 @@
     - at the end of 在...结束时
     - end up 最终成为；最后处于
     - end up with 以...结束或告终
-- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)
-  **</ins>
+- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)**</ins>
 - endless adj. 无止境的
 - deadline n. 截止日期
 - infinite adj. 无限的，无穷尽的
@@ -161,10 +161,10 @@
     - A differ *from* B
     - Ways of reading on the train or in bed are likely to **differ** considerably **from** reading in a seminar room.
 - difference n. 差异；差额
-- differentiate
+- differentiate [ˌdɪfəˈrenʃieɪt]
     - v. 区分
     - vt. 使有差别
-    - == distinguish == separate
+    - == distinguish == separate [ˈsepəreɪt]
 - distinction
     - n. 差别
     - distinctive
@@ -190,7 +190,7 @@
 - n. 权力；政权；力量；能量；电力供应；能力
 - In scotland, for example, wind turbines provide enough electricity to **power** 95 percent of homes.
 - powerful adj. 强有力的；有影响力的
-- strength
+- strength [streŋθ]
     - n. 力量；实力；优势
     - the relative strength 优势
     - strengthen v. 加强

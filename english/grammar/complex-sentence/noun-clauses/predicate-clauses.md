@@ -10,9 +10,9 @@
 #### 写法
 
 - 表语从句的写法与宾语从句相同
-    - 陈述句变宾语从句: **前加 that**
-    - 特殊疑问句变宾语从句: **调整语序为陈述语序，即将主语提到谓语动词前**
-    - 一般疑问句变宾语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
+    - 陈述句变表语从句: **前加 that**
+    - 特殊疑问句变表语从句: **调整语序为陈述语序，即将主语提到谓语动词前**
+    - 一般疑问句变表语从句: **调整语序为陈述语序（主语提前），再在前面加*是否(whether/if，优先使用whether)***
     - **但连接词是 that 时，不作成分也不能省略**
 - The other issue is <ins>**that** many children-especially older ones-may base their real estate knowledge on HGTV shows</ins>...
 - ...eye contact is <ins>**where** all the magic happens</ins>.

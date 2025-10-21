@@ -34,7 +34,7 @@
 - outcome n. 结果；成果
 - aftermath n. （战争、事故。不快事情等的）后果 😔
 - fallout n. 后果
-    - The financial fallout has begun，and the political fallout may not be far behind.
+    - The financial fallout has begun, and the political fallout may not be far behind.
 
 ## court
 
@@ -54,9 +54,9 @@
     - The police have decided not to prosecute because the evidence is not strong enough.
 - appeal
     - n./v. 上诉；吸引；呼吁，恳求
-    - Above all，the dress dose appeal to her.
+    - Above all, the dress dose appeal to her.
     - He will appeal to the state for an extension of unemployment benefits.
-    - Despite the appeals court's decision，big questions remain unanswered.
+    - Despite the appeals court's decision, big questions remain unanswered.
 - plead
     - v. 恳求；辩护；解释
     - The plead with someone is to try to convince them to see It your way.
@@ -268,7 +268,7 @@
     - analysis n. 分析
 - statistical
     - adj. 统计（上）的；统计学的
-    - If you can say It with numbers，then It is probably statistical.
+    - If you can say It with numbers, then It is probably statistical.
     - statistically adv. 统计学上
     - statistician n. 统计学家
     - statistic n. 统计学

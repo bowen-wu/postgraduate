@@ -16,20 +16,20 @@
 
 - v. 增长；增加
 - n. 增长，上涨
-- In developing counties，the number of mobile users <ins>increased sharply/spiked up/soared</ins> from
-  approximately less than one billion In the year 2000 to four billion in 2008.
+- In developing counties,the number of mobile users <ins>**increased** sharply/spiked up/soared</ins> from
+  approximately less than one billion in the year 2000 to four billion in 2008.
 - increasingly adv. 越来越多地
 - decrease
     - v./n. 下降；减少
     - de- 向下，完全
 - soar vi. 急剧增加
-- spike
+- spike [spaɪk]
     - vi. 激增
     - == soar
     - As the May, those rates had **spiked up to** 13.3 percent and 13.7 percent.
     - spike up 激增，飙升
     - spike up to + 百分比 飙升到
-- accelerate
+- accelerate [əkˈseləreɪt]
     - v. 使加速
     - acceleration n. 加速
 - fall
@@ -39,19 +39,19 @@
         - fall into 落入，陷入
         - fall asleep 入睡，睡着
         - fall sick/ill 生病，得病
-- reduce
+- reduce [rɪˈduːs]
     - vt. 减少
-    - reduction n. 减少
+    - reduction [rɪˈdʌkʃn] n. 减少
 - decline
     - vi. 下降；衰退
     - v. 谢绝
     - n. 下降；衰退
-    - == descend
+    - == descend [dɪˈsend]
     - economic decline 😔
-    - Microsoft **declined** to comment
-    - Now even the project's greatest <ins>cheerleaders(支持者)</ins> talk of a continent facing a "Bermuda triangle" of
-      debt, population **decline** and lower growth.
-- diminish
+    - Microsoft **declined** to comment.
+    - Now even the project's greatest *cheerleaders(支持者)* talk of a continent facing a "Bermuda triangle" of debt,
+      population **decline** and lower growth.
+- diminish [dɪˈmɪnɪʃ]
     - v. 使减少；减弱
     - Technology is **diminishing/reducing** man's job opportunities.
 
@@ -66,13 +66,15 @@
 - check
     - n. 支票
     - I lived from <ins>paycheck to paycheck(月光)</ins>.
-    - Alvarez paid practically everything by **check**.
+    - Alvarez paid practically([ˈpræktɪkli] adv. 几乎) everything by **check**.
 - payment n. 支付
 - payout n. （大笔）钱款
 - overpay
     - v. 付款过多；多付报酬
     - CEOs are not overpaid.
-- mortgage n. 房屋抵押贷款；vt. 抵押
+- mortgage [ˈmɔːrɡɪdʒ]
+    - vt. 抵押
+    - n. 房屋抵押贷款
 
 ## health
 
@@ -84,18 +86,18 @@
         - == suitable
     - fitness
         - n. 健康
-        - I've also experienced greater success in achieving my specific **fitness goals**, because I'm training
-          according to these goals, not the numbers on a scale.
+        - I've also experienced([ɪkˈspɪriənst] v. 经历) greater success in achieving my specific **fitness goals**,
+          because I'm training according to these goals, not the numbers on a scale.
 - wellbeing
     - n. 健康（状态）；安乐
-    - More TV watching and more and more electronic communication both <ins>correlated with(与...相关)</ins> lower
-      **wellbeing**. 😔
+    - More TV watching and more and more electronic communication both
+      <ins>correlated(['kɒrəleɪtɪd]) with(与...相关)</ins> lower **wellbeing**. 😔
 
 ## law
 
 - n. 法律；（针对某项罪行、协议等的一条）法规；定律
 - bill n. 法案（不具有法律效力）
-- If the *bills* become **law**, state boards and commissions will be required to set aside 50 percent of board seats
+- If the **bills** become **law**, state boards and commissions will be required to set aside 50 percent of board seats
   for women by 2022.
 - lawyer n. 律师
 - lawsuit
@@ -117,14 +119,14 @@
             - adj. 立法的
             - legislative power
             - Congress 国会
-            - the supreme court 最高法院
+            - the supreme([suːˈpriːm]) court([kɔːrt]) 最高法院
         - legislator n. 立法者
         - legislature n. 立法机构
 - proceedings n. 公报
 - enact
     - vt. 颁布；推行；实施
-    - That means more battles like the one now going on between the Justice Department and California, which **enacted
-      ** <ins>a tough net neutrality law</ins> in the wake of the FCC's abdication.
+    - That means more battles like the one now going on between the Justice Department and California, which
+      **enacted** <ins>a tough net neutrality law</ins> in the wake of the FCC's abdication.
       这意味着会出现更多类似美国司法部与加州之间的冲突。此前，在联邦通信委员会放弃网络中立监管之后，加州制定了一项严格的网络中立法
     - overturn
         - vt. 推翻; 撤销（判决等）
@@ -153,6 +155,7 @@
     - vt. 显现，表明
     - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to **manifest/demonstrate**
       the significant role(n. 诉讼; 角色; 地位; 作用) of good habits.
+        - so as to + 动词原形 为了...；以便...
 - demonstrate
     - vt. 证明；表现；
     - vi. 游行
@@ -166,7 +169,7 @@
 - vt. 建议；表明；暗示
 - I **suggest** him that he (should) **ask** some specific questions about her past.
     - suggest/demand/require sb. (should) do 虚拟
-- I'm not **suggesting** that is what is happening.
+- I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的
 - suggestion n. 建议
 - indicate
     - vt. 表明；暗示；指出
@@ -188,7 +191,7 @@
       inner voice. 精神健康通常被称为良知、本能、智慧、常识或内心的声音
     - ...*verdicts(n. 裁决)* should represent the **conscience** of the *community* and <ins>not just(不仅仅)</ins> the
       *letter* of the law.
-        - verdicts [ˈvɜːrdɪkt] == ruling == decision
+        - verdict [ˈvɜːrdɪkt] == ruling == decision
 
 ## through
 
@@ -203,8 +206,8 @@
     - work through 通过反复思考来解决问题
     - break through 突破
         - breakthrough n. 突破
-        - Be relentless(adj. 不懈的; 坚韧的，不屈不挠的) and then you'll break through.
-- Don't just go through it; grow through it.
+        - Be relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的) and then you'll **break through**.
+- Don't just **go through** it; grow **through** it.
 - However, Obamacare has allowed more than 12 million people to either get insurance(n. 保险) **through** Medicaid or
   the exchanges.
 - throughout
@@ -230,7 +233,7 @@
     - n. 负担; 重负
     - v. 烦扰; （使）担负
     - burdensome adj. 繁重的，烦累的，难以承担的; 累赘
-- process
+- process [prəˈses]
     - v. 加工; 处理; 冲印; 审核; 列队行进
     - n. 过程; 变化过程; 做事方法
 - possess [pəˈzes]

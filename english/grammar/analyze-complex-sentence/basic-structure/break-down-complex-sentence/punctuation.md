@@ -1,7 +1,7 @@
 # Basic Structure
 
 - 基本结构的长难句（即没有经过复杂结构变化的长难句），通过以下步骤
-    1. 断开: 把长难句断成简单句，即吧多件事断成一件一件事来看
+    1. 断开: 把长难句断成简单句，即把多件事断成一件一件事来看
     2. 简化: 把简单句（一件事）中非核心的扩展成分去掉，找到这件事的核心内容
 
 ## Break Down Complex Sentence
@@ -29,7 +29,7 @@
 #### 分号
 
 - "分号"表示**并列的关系**，前后通常是完整的句子，表示并且的多种情况，且连接词可有可无（通常不需要连接词）
-- Moreover, average overall margins are higher in wholesale than in retail<ins>**;**<ins> wholesale demand from the food service sector is growing quickly **as** more Europeans eat out more often<ins>**; and**</ins>**changes** in the competitive dynamics of this fragmented industry **are at last making** it feasible for wholesalers **to consolidate**.
+- Moreover, average overall margins are higher in wholesale than in retail<ins>**;**<ins> wholesale demand from the food service sector is growing quickly **as** more Europeans eat out more often<ins>**; and**</ins> **changes** in the competitive dynamics of this fragmented industry **are at last making** it feasible for wholesalers **to consolidate**.
 
 #### 补充
 
@@ -61,7 +61,3 @@
     - adj. 谨慎的；精明的
 - be aware of...
     - 意识到...，觉察到...
-- commute
-    - n. 上下班，通勤
-- reportedly
-    - adv. 据报道，据传说
