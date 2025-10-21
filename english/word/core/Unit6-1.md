@@ -14,9 +14,9 @@
 
 ## fund
 
-- n. 专款；（~s)资金
 - vt. 为...提供资金
     - == invest
+- n. 专款；（~s)资金
 - *funding(主动)* agencies 出资机构
 - publicly *funded(被动)* research 政府资助的研究
 - Some growth stems from a commitment by governments and farsighted(['fɑ'saɪtɪd] adj. 有远见的) businesses to
@@ -30,8 +30,8 @@
         - vt. 资助，补贴
         - Taxes on low-wage(n. 工资) labor need to be cut, and **wage subsidies** should be expanded.
 - grant [ɡrænt]
-    - n. （政府、机构的）拨款
     - vt.（尤指正式地或法律上）同意；（勉强）承认
+    - n. （政府、机构的）拨款
     - take sth. for granted 认为...理所当然
 - bonus [ˈboʊnəs]
     - n. 奖金
@@ -54,7 +54,8 @@
     - == tendency
     - inclination for risk-taking 冒险倾向
     - incline [ˈɪnklaɪn] vt.& vi. （使）倾斜; （使）偏向，倾向于
-    - inclined adj. 想（做某事）的；有...倾向的
+    - inclined
+        - adj. 想（做某事）的；有...倾向的
         - be inclined to do sth. 往往做某事/倾向做某事
             - == tend to do sth.
             - == be prone to do sth.
@@ -82,7 +83,8 @@
 - format n. 格式
 - formula
     - n. 方案；公式；方程
-    - formulate vt. 构想出（计划或提案）
+    - formulate
+        - vt. 构想出（计划或提案）
         - Cortina holds that early exposure([ɪkˈspoʊʒər]) to computer science makes it easier to **formulate** logical
           hypotheses.
 - reform n./vt. 改革
@@ -112,7 +114,7 @@
     - have sth. in common 有...共同点
 - commonality [ˌkɑməˈnælɪti]
     - n. 共性
-    - In some ways, this quest for **commonalities** defines science.
+    - In some ways, this quest(vt./n. 探索; 追求) for **commonalities** defines science.
 - commonly adv. 通常
 - commonness n. 平凡
 - average
@@ -145,19 +147,20 @@
         - == development
         - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social
           environment being a major contributory factor.
-        - involution n. 内卷
-    - evolutionary [ˌiːvəˈluːʃəneri] adj. 进化的
+        - involution [ˌɪnvə'luʃən] n. 内卷
+        - evolutionary [ˌiːvəˈluːʃəneri] adj. 进化的
 - revolve [rɪˈvɑːlv]
     - v./n. 旋转
     - revolution n. 革命
-    - revolutionary
-        - adj. 革命的
-        - This is hardly **revolutionary**, but it is presented in a charming(adj. 令人着迷的) format.
+        - revolutionary
+            - adj. 革命的
+            - This is hardly **revolutionary**, but it is presented in a charming(adj. 令人着迷的) format.
+              这几乎算不上革命性（的观点），但它的呈现形式很吸引人
 
 ## limit
 
-- n. 限制；极限
 - vt. 限制
+- n. 限制；极限
 - Sky's the limit.
 - limitation n. 限制
 - restrict [rɪˈstrɪkt]
@@ -168,19 +171,19 @@
 - refrain [rɪˈfreɪn]
     - vi. 避免；克制；制止
         - == restrict
-        - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from
-          doing it**.
-        - How shall I **refrain from** tears when we part?
-        - California has asked the justices to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
-        - refrain from doing sth.
-            - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
     - n. 经常重复的评价（或抱怨）；老话，陈词滥调(cliche)
-        - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
-        - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.
+    - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing
+      it**.
+    - How shall I **refrain from** tears when we part?
+    - California has asked the justices to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
+    - refrain from doing sth.
+        - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
+    - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
+    - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.
 - sanction [ˈsæŋkʃn] n. 制裁；<正式>许可
 - confine [kənˈfaɪn]
-    - n. 局限
     - vt. 使局限；禁闭
+    - n. 局限
 
 ## demand
 
@@ -191,12 +194,12 @@
     - demand for 对...的需求；对...的要求
     - in demand 需求量大；受欢迎
     - on demand 一经要求
-- supply
-    - v. 供应，提供; 补充，填充
-    - n. 提供，供应（量）; 储备; 补给品
 - Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high quarterly profits from companies, can
   hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
   loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
+- supply
+    - v. 供应，提供; 补充，填充
+    - n. 提供，供应（量）; 储备; 补给品
 - command
     - vt. 命令；博得
     - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
@@ -206,7 +209,7 @@
         - at one's command 某人可自由使用；服从某人的支配
 - mandate [ˈmændeɪt]
     - n. 命令
-    - The <ins>proposed initiative(拟议倡议)</ins> would **mandate** a reduction of carbon dioxide of 40%.
+    - The <ins>proposed initiative([ɪˈnɪʃətɪv] 拟议倡议)</ins> would **mandate** a reduction of carbon dioxide of 40%.
 
 ## mind
 
@@ -225,7 +228,7 @@
 - mindset [ˈmaɪndset]
     - n. 心态
     - Happiness *is not* a point of future *and not* a moment from the past, *but* a **mindset** that can be designed
-      into the present.
+      into the present. 幸福不是未来的目标，也不是过去的记忆，而是一种能**被用心融入当下**的心态
 - remind
     - vt. 提醒；使想起
     - remind sb. of/about sth.
@@ -241,8 +244,8 @@
 
 ## move
 
-- v. 移动；才去行动；进展；转变；感动
-- n. 行动；措施；移动；转变
+- v. 移动；采取行动；进展；转变；感动
+- n. **行动；措施**；移动；转变
 - 词组
     - move on 继续前往
     - move on to sth. 开始做（别的事）；换话题
@@ -255,9 +258,13 @@
 - remove
     - vt. 移开；去除
     - == get rid of
+        - rid
+            - v. （使）去掉，摆脱，消除
+            - adj. 摆脱…的
 - shift
     - v. 移动；变换
+        - == change
     - n. 改变；换挡
     - a stick shift 手动挡
-    - While the rest of the world takes the lead, notably China and Europe, the United States is also seeing a
-      remarkable **shift/change**.
+    - *While* the rest of the world takes the lead, notably(adv. 尤其) China and Europe, the United States is also
+      seeing a remarkable **shift/change**. 虽然世界其他地区（尤其是中国和欧洲）已走在前列，但美国也正在经历显著的转变。

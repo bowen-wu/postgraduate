@@ -63,9 +63,10 @@
 - 词组
     - pay attention to 注意
     - pay for 为...而付款
-- check n. 支票
+- check
+    - n. 支票
     - I lived from <ins>paycheck to paycheck(月光)</ins>.
-        - Alvarez paid practically everything by check.
+    - Alvarez paid practically everything by **check**.
 - payment n. 支付
 - payout n. （大笔）钱款
 - overpay
@@ -88,7 +89,7 @@
 - wellbeing
     - n. 健康（状态）；安乐
     - More TV watching and more and more electronic communication both <ins>correlated with(与...相关)</ins> lower
-      wellbeing. 😔
+      **wellbeing**. 😔
 
 ## law
 
@@ -100,17 +101,18 @@
 - lawsuit
     - n. 诉讼案；诉讼
     - Many of them instead become the kind of **nuisance-lawsuit** filer that makes the tort system a costly nightmare.
+      相反，他们中许多人变成了那种专门提起无理取闹诉讼的人，使整个侵权制度变得代价高昂、令人头疼
 - legal
     - adj. 与法律有关的；合法的
     - illegal adj. 非法的
-- legitimate
+- legitimate [lɪˈdʒɪtɪmət]
     - adj. 合法的；正当合理的
-    - legitimacy n. 合法性
-    - legislation
+    - legitimacy [lə'dʒɪtəməsi] n. 合法性
+    - legislation [ˌledʒɪsˈleɪʃn]
         - n. 立法
         - **Legislation** is the act or process of making or enacting laws.
-        - The European Union is now considering **legislation** to compel corporate boards to maintain a certain
-          proportion of women.
+        - The European Union is now considering **legislation** to compel([kəmˈpel] v. 强迫) corporate boards to
+          maintain a certain proportion of women.
         - legislative
             - adj. 立法的
             - legislative power
@@ -121,15 +123,16 @@
 - proceedings n. 公报
 - enact
     - vt. 颁布；推行；实施
-    - That means more battles like the one now going on between the Justice Department and California, which
-      **enacted** <ins>a tough net neutrality law</ins> in the wake of the FCC's abdication.
+    - That means more battles like the one now going on between the Justice Department and California, which **enacted
+      ** <ins>a tough net neutrality law</ins> in the wake of the FCC's abdication.
+      这意味着会出现更多类似美国司法部与加州之间的冲突。此前，在联邦通信委员会放弃网络中立监管之后，加州制定了一项严格的网络中立法
     - overturn
         - vt. 推翻; 撤销（判决等）
         - == knock out
 - bar
     - v. 阻止
-        - bar sb. from doing sth.
     - n. 律师职业
+    - bar sb. from doing sth. 禁止某人做某事；阻止某人做某事
     - the bar exam 律师资格考试
     - the American Bar Association 美国律师协会
     - Workers have been **barred** from the country since 1982.
@@ -149,11 +152,11 @@
 - manifest
     - vt. 显现，表明
     - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to **manifest/demonstrate**
-      the significant role of good habits.
+      the significant role(n. 诉讼; 角色; 地位; 作用) of good habits.
 - demonstrate
     - vt. 证明；表现；
     - vi. 游行
-- exhibit
+- exhibit [ɪɡˈzɪbɪt]
     - v. **展览**（正式）
     - vt. 表现
     - exhibition [ˌeksɪˈbɪʃn] n. 展览
@@ -161,9 +164,9 @@
 ## suggest
 
 - vt. 建议；表明；暗示
-- I suggest him that he (should) **ask** some specific questions about her past.
+- I **suggest** him that he (should) **ask** some specific questions about her past.
     - suggest/demand/require sb. (should) do 虚拟
-- I'm not suggesting that is what is happening.
+- I'm not **suggesting** that is what is happening.
 - suggestion n. 建议
 - indicate
     - vt. 表明；暗示；指出
@@ -178,9 +181,11 @@
 - n. 科学；科学研究
 - scientific adj. 科学的；严谨的
 - scientist n. 科学家
-- neuroscientist n. 神经系统科学家
-- conscience n. 良知；内疚
-    - Mental health has commonly been called **conscience**, instinct, wisdom, common sense, or the inner voice.
+- neuroscientist ['njʊəroʊsaɪəntɪst] n. 神经系统科学家
+- conscience [ˈkɑːnʃəns]
+    - n. 良知；内疚
+    - Mental(adj. 精神健康的) health has commonly been called **conscience**, instinct, wisdom, common sense, or the
+      inner voice. 精神健康通常被称为良知、本能、智慧、常识或内心的声音
     - ...*verdicts(n. 裁决)* should represent the **conscience** of the *community* and <ins>not just(不仅仅)</ins> the
       *letter* of the law.
         - verdicts [ˈvɜːrdɪkt] == ruling == decision
@@ -198,10 +203,10 @@
     - work through 通过反复思考来解决问题
     - break through 突破
         - breakthrough n. 突破
-        - Be relentless and then you'll break through.
+        - Be relentless(adj. 不懈的; 坚韧的，不屈不挠的) and then you'll break through.
 - Don't just go through it; grow through it.
-- However, Obamacare has allowed more than 12 million people to either get insurance **through** Medicaid or the
-  exchanges.
+- However, Obamacare has allowed more than 12 million people to either get insurance(n. 保险) **through** Medicaid or
+  the exchanges.
 - throughout
     - prep. 自始至终；遍及
     - adv. 自始至终；各处
@@ -218,7 +223,7 @@
 
 - intelligent
     - adj. 聪慧的; 有才智的; 智能的
-- attain
+- attain [əˈteɪn]
     - v. 获得; 达到
     - == gain
 - burden
@@ -226,15 +231,15 @@
     - v. 烦扰; （使）担负
     - burdensome adj. 繁重的，烦累的，难以承担的; 累赘
 - process
-    - n. 过程; 变化过程; 做事方法
     - v. 加工; 处理; 冲印; 审核; 列队行进
-- precede
+    - n. 过程; 变化过程; 做事方法
+- possess [pəˈzes]
+    - v. 拥有; 具备; 控制; 使言行失常
+- proceed [proʊˈsiːd]
+    - vi. 进行; 前进; （沿特定路线）行进; （尤指打断后）继续说
+- precede [prɪˈsiːd]
     - vt.& vi. 在...之前发生或出现，先于; 在...之上，优于
     - A precede B A领先B
-- possess
-    - v. 拥有; 具备; 控制; 使言行失常
-- proceed
-    - vi. 进行; 前进; （沿特定路线）行进; （尤指打断后）继续说
 
 ## 词组
 
