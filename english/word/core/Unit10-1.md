@@ -12,7 +12,7 @@
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
 
-## knwoledge
+## knowledge
 
 - n. 知识；知晓
 - knowledgeable adj. 知识渊博的
@@ -120,7 +120,7 @@
         - It's like the teacher who breaks up the troublemakers in the back row by pairing them with better-behaved classmates.
 - outbreak  
     - n. （战争、疾病等的）爆发；突然发生
-    - The outbreak of swine flu that was first detected in Mexico was declared a globale pidemicon June 11,2009.
+    - The outbreak of swine flu that was first detected in Mexico was declared a global pidemicon June 11, 2009.
         - social epidemic 社会潮流
 - breakthrough n. 突破
 - groundbreaking adj. 开创性的
@@ -132,7 +132,7 @@
 - paycheck == salary 薪资，薪酬
 - by check/cheque 用支票支付
 - You might check the oven to see If your cookies are done.
-- It is legitimate to check suspects's phone contents without being authorized.
+- It is legitimate to check suspect's phone contents without being authorized.
 - The government is determined to check the growth of public spending.
 - Justices intended to check the power of the Administration.
 - check and balance 制衡
@@ -218,7 +218,7 @@
 - vt. 以...为特色
 - vi. 起重要作用
 - This restaurant's menu features Italian dishes.
-- Practically every features at least one celebrity mom,or mom-to-be,smiling on the newsstands.
+- Practically every feature at least one celebrity mom, or mom-to-be, smiling on the newsstands.
 - character
     - n. 性格
     - characterize vt. 是...的特征；表现（...的特征、特点）
@@ -288,7 +288,7 @@
     - allocation n. 分配
 - devote
     - vt. 致力于
-    - But if you work is your "passion",you'll be more likely to devote yourself to it.
+    - But if your work is your "passion",you'll be more likely to devote yourself to it.
     - be devoted to == devote oneself
 
 ## exit

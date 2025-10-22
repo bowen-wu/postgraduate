@@ -22,7 +22,7 @@
     - mono- == uni- == single
         - monologue [ˈmɑːnəlɔːɡ] n. （戏剧）独白; 独角戏; 长篇大论
     - pole- 极
-    - Planters enjoyed a natural monopoly because they had no competitors.
+    - Planters enjoyed a natural **monopoly** because they had no competitors.
     - monopolise/monopolize [mə'nɒpəlaɪz] vt. 垄断
 - outlet n. 专营店；折扣品经销店
 
@@ -44,7 +44,8 @@
     - v. 去某地探险
     - n. 冒险; 奇遇; 冒险精神
     - Always do what you are afraid to do.
-    - adventurous adj. 爱冒险的
+    - adventurous
+        - adj. 爱冒险的
         - == courageous [kəˈreɪdʒəs] adj. 勇敢的，无畏的
     - adventurism [ædˈvɛntʃəˌrɪzəm] n. 冒险主义
 - threat
@@ -94,7 +95,7 @@
     - n. 技术；技巧
     - == skill
     - technical adj. 技术的；技巧的
-    - technician n. 技术员
+    - technician [tekˈnɪʃn] n. 技术员
 - craft
     - vt. 精心制作
     - n. 技艺；技巧；小船
@@ -119,11 +120,12 @@
     - A deal is a deal. 一言为定、言出必行
 - dealing n. [pl.] 往来
 - dealer n. 贸易商
-- cope vi. （成功地）处理
+- cope
+    - vi. （成功地）处理
     - 词组
         - cope with 处理...
 - handle vt. 处理（句式、人、工作或感情）
-- tackle
+- tackle [ˈtækl]
     - vt. 处理（难题或局面）
     - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty
       air?
@@ -133,13 +135,13 @@
 
 ## course
 
-- n. 课程；进程；一道菜；航线；行动方式
+- n. 进程；课程；一道菜；航线；行动方式
 - Before it ends, it will likely change the life **course** and character of a generation of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
 - discipline
-    - n. 自制力；学科；行为准则
     - v. 训练; 惩罚; 自我约束
+    - n. 自制力；学科；行为准则
     - self-discipline 自制力
     - When you have **discipline**, you have **self-control**.
     - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and
@@ -148,16 +150,18 @@
 
 ## board
 
+- [bɔːrd]
 - v. 上船（或火车、飞机、公共汽车等）
 - n. （公司或其他机构的）董事会
 - billboard n. 广告牌
-- broad
+- broad [brɔːd]
     - adj. 广泛的
     - broaden v. 变宽; 扩大...的范围
-    - abroad adv. 在国外
+    - abroad
+        - adv. 在国外
         - study abroad 出国留学
     - broadband n. 宽带连接
-- domestic adj. 国内的；家用的；家务的
+- domestic [dəˈmestɪk] adj. 国内的；家用的；家务的
 
 ## develop
 
@@ -176,15 +180,17 @@
 ## environment
 
 - n. 环境
-- environmental adj. 环境的
+- environmental
+    - adj. 环境的
     - environmentally adv. 环境方面地
 - forest
-    - n. 森林; 丛林; （森林似的）一丛; 一片
     - vt. 在...造林，使长满树林，使成为森林
-    - forestation n. 造林 🙂
+    - n. 森林; 丛林; （森林似的）一丛; 一片
+    - forestation
+        - n. 造林 🙂
         - deforestation n. 砍伐森林 😔
 - ecosystem n. 生态系统
-- extinction n. 灭绝
+- extinction [ɪkˈstɪŋkʃn] n. 灭绝
 
 ## explain
 
@@ -194,28 +200,31 @@
     - v. 解释
     - == explain
     - interpretation n. 解释
-    - misinterpret vt. 误解
+    - misinterpret
+        - vt. 误解
         - misinterpretation n. 误解
             - == misunderstanding n. 误解，误会
             - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news"
               via social media.
-            - Opportunities for **misinterpretation**, error, and self-deception **abound**.
-                - abound vi. 丰富，盛产; 非常多，大量存在; 充满
+            - Opportunities for **misinterpretation**, error, and self-deception **abound**. 误解、出错和自欺的可能性比比皆是
+                - abound [əˈbaʊnd]
+                    - vi. 丰富，盛产; 非常多，大量存在; 充满
                     - Challenges abound, so do opportunities. 前方有挑战，也有机遇
-- illustrate vt. （用实例、图标等）说明
+- illustrate
+    - vt. （用实例、图标等）说明
     - == demonstrate
 
 ## member
 
 - n. 成员
 - membership n. 会员资格；会员人数
-- staff
+- staff [stæf]
     - n. 全体员工
     - vt. 由...担任工作人员
-    - stuff
-        - n. 材料，原料，资料; 〈俚〉钱，现金; 填充物; 素材资料
+    - stuff [stʌf]
         - vt. 塞满; 填塞; 让吃饱
-- faculty n. （高等院校的）院系；（高等院校中院、系的）全体教员
+        - n. 材料，原料，资料; 〈俚〉钱，现金; 填充物; 素材资料
+- faculty [ˈfæklti] n. （高等院校的）院系；（高等院校中院、系的）全体教员
 
 ## Words
 
@@ -224,37 +233,37 @@
 - found
     - v. 创立，创办
     - == set up
-- conceal
+- conceal [kənˈsiːl]
     - v. 隐藏; 隐瞒，掩饰; 遮住
-- contradict
+- contradict [ˌkɑːntrəˈdɪkt]
     - v. 反驳; 相矛盾，违背
-- condemn
+- condemn [kənˈdem]
     - v. 谴责; 宣判; 使陷入; 宣布…不安全; 证明…有罪
-- controversial
+- controversial [ˌkɑːntrəˈvɜːrʃl]
     - adj. 有争议的，引发争论的
 - indirect
     - adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
-- adverse 😔
+- adverse [ədˈvɜːrs] 😔
     - adj. 不利的; 有害的; 反面的
-- glamorous
+- glamorous [ˈɡlæmərəs]
     - adj. 富有魅力的; 迷人的; 富于刺激的; 独特的
-- cautious
+- cautious  [ˈkɔːʃəs]
     - adj. 小心的，谨慎的
-- harmonious
+- harmonious [hɑrˈmoʊniəs]
     - adj. 和谐的，融洽的; 协调的; 音调优美的; 悦耳的
-- courageous
+- courageous [kəˈreɪdʒəs]
     - adj. 勇敢的，无畏的
 
 ## 词组
 
 - a party leader
     - 政党领导
-- a convicted terrorist
+- a convicted([kən'vɪktɪd]) terrorist([ˈterərɪst])
     - 定罪的恐怖分子
 - public company
     - == publicly traded company
     - 上市公司
-- media literacy skills
+- media literacy([ˈlɪtərəsi]) skills
     - 媒介素养能力；媒体识读能力
 
 ## 句式

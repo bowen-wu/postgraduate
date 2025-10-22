@@ -25,7 +25,8 @@
     - vt. 监管；调节
     - regulation n. 法规；监管
     - regulator n. 监管者
-    - regulatory adj. 监管的
+    - regulatory
+        - adj. 监管的
         - ...the <ins>Supreme Court(最高法院)</ins> has *ruled that* states **do** have some **regulatory authority**
           over nuclear power.
 - constitution
@@ -63,8 +64,9 @@
 - n. 系统；体制
 - build a new **system** of *financial regulation*.
 - You have to manage a system. The system doesn't manage itself.
-- systematic adj. 系统的；有计划的
-- systematically adv. 有系统地
+- systematic
+    - adj. 系统的；有计划的
+    - systematically adv. 有系统地
 
 ## decision
 
@@ -133,7 +135,7 @@
 - foundation
     - n. 地基；基金会；创建
     - He could not confide them even to his wife, although they provide the unacknowledged **foundation/basis** of his
-      fiction.
+      fiction. 他连妻子都不能倾诉这些事，尽管正是这些事构成了他小说创作中未被承认的基础。
 
 ## end
 
@@ -145,8 +147,8 @@
     - at the end of 在...结束时
     - end up 最终成为；最后处于
     - end up with 以...结束或告终
-- ...it means that many people will be having a very hard time **making ends meet/surviving the day**
-    - make ends meet == surviving the day 维持生计
+- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)
+  **</ins>
 - endless adj. 无止境的
 - deadline n. 截止日期
 - infinite adj. 无限的，无穷尽的
@@ -163,7 +165,8 @@
     - v. 区分
     - vt. 使有差别
     - == distinguish == separate
-- distinction n. 差别
+- distinction
+    - n. 差别
     - distinctive
         - adj. 独特的
         - == special
@@ -179,16 +182,17 @@
       one.
     - distinguish vs. differ
         - Could he <ins>distinguish/differ</ins> right from wrong？
-        - The two leaders had <ins>distinguish/differ</ins> on The issue.
+        - The two leaders had <ins>distinguish/differ</ins> on the issue.
 
 ## power
 
 - vt. 为...提供动力；驱动
 - n. 权力；政权；力量；能量；电力供应；能力
-- In scotland, for example, wind turines provide enough electricty to **power** 95 percent of homes.
+- In scotland, for example, wind turbines provide enough electricity to **power** 95 percent of homes.
 - powerful adj. 强有力的；有影响力的
 - strength
     - n. 力量；实力；优势
+    - the relative strength 优势
     - strengthen v. 加强
 - energy
     - n. 能源；精力
@@ -204,29 +208,32 @@
 ## culture
 
 - n. 文化；种植
-- It is very important to **cultivate** children's interest in <ins>traditional Chinese culture(中国传统文化)</ins> from
+- It is very important to cultivate children's interest in <ins>traditional Chinese **culture**(中国传统文化)</ins> from
   an early age.
-- civil
+- civil [ˈsɪvl]
     - adj. 公民的；政府的
     - civil rights 公民权利
-    - civilian n. 平民
-    - civilisation n. 文明
-    - civilised
+    - civilian [səˈvɪliən] n. 平民
+    - civilisation [ˌsɪvəlɪˈzeɪʃən] n. 文明
+    - civilised [ˈsɪvəˌlaɪzd]
         - adj. 文明的；有礼貌的
-        - civility n. 礼貌
-    - Both men emphasized the dirt and exhaustion of war <ins>the fragments of **civilization**(文明的碎片)</ins> that the soldiers
+        - civility [sɪˈvɪlɪti] n. 礼貌
+    - Both men emphasized the dirt and exhaustion of war <ins>the fragments of **civilization**(文明的碎片)</ins> that
+      the soldiers
       shared with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
 
 ## Words
 
-- nuisance n. 麻烦事，讨厌的人或事
-- knock out == overturn 推翻
-- verdict == ruling == decision
+- nuisance [ˈnuːsns]
+    - n. 麻烦事，讨厌的人或事
+- knock out
+    - == overturn
+    - 推翻
+- verdict [ˈvɜːrdɪkt]
     - n. 裁决
+    - == ruling == decision
     - ver- 真正
     - -dict- 说
-- the letter of the law
-    - 法律条文
 - impress
     - v. 给...留下...印象; 使敬佩; 给...深刻印象; 使铭记; 使...意识到
 - duplicate
@@ -239,11 +246,14 @@
         - n. 进化; 演变
     - revolution
         - n. 革命; 变革; 旋转
-- the relative strength 优势
 
 ## 词组
 
-- mental health 精神健康
-- physical health 身体健康
+- the letter of the law
+    - 法律条文
+- mental health
+    - 精神健康
+- physical health
+    - 身体健康
 
 ## 句式
