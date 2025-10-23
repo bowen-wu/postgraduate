@@ -35,7 +35,7 @@
 3. 定语从句的先行词是**物**，关系词用 which 和 that 都可以，不需要区分
 4. whom 指人，只能在**作宾语**时使用
 5. who/that 指人，可以做任何成分
-6. 关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略
+6. ⚠️❗<ins>关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略</ins> ❗⚠️
     - In the same study, a group was asked to remember both the information and *the folders* <ins>it was stored in(介宾)</ins>.
     - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <ins>I am making(动宾) in the gym</ins>.
     - I want to share these *old truths* <ins>I've learned(动宾) along the way</ins>.
