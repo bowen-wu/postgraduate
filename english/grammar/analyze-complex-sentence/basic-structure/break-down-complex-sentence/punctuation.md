@@ -53,7 +53,7 @@
     - adj. 零散的，片段的
 - consolidate
     - v. 巩固；联合
-- unempolyment
+- unemployment
     - n. 失业；失业率；失业人数
 - materialistic
     - adj. 物质主义的，金钱至上的；唯物主义的

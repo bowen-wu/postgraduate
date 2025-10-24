@@ -7,20 +7,21 @@
 - 有时从句的连接词会被省略，此时只能通过分析主谓来断开
 - 分析主谓时，由于主语变化形式很多，因此要先找到谓语动词，谓语动词前的自然就是主语（倒装句除外）
 - 分析主谓的结果：
-    1. 主谓<ins>主谓</ins>: 后面的是从句
-    2. 主<ins>主谓</ins>谓: 中间的是从句
+    1. 主谓<ins>*主谓*</ins>: 后面的是从句
+    2. 主<ins>*主谓*</ins>谓: 中间的是从句
+- **n. + 主谓(从句)**: 从句必是定语从句
 
-#### 主谓<ins>主谓</ins>，则后面的为从句
+#### 主谓<ins>*主谓*</ins>，则后面的为从句
 
-- India has just announced it will "eliminate all single-use plastic in the country by 2022".
-- ...this is one of the areas his team will investigate further.
-- Such a view would require a corresponding shift in the way US society today views fire....
+- India *has just announced* <ins>it *will "eliminate* all single-use plastic in the country by 2022"</ins>.
+- ...this *is* one of the areas <ins>his team *will investigate* further</ins>.
+- Such a view *would require* a corresponding shift in the way <ins>US society today *views* fire</ins>...
 
-#### 主<ins>主谓</ins>谓，则中间的为从句
+#### 主<ins>*主谓*</ins>谓，则中间的为从句
 
-- Everything he achieved in life was earned the hard way.
-- ...many of the products we use every day...are result of manufactured habits.
-- The product they're selling is data, and we...convert our lives to data for the benefit of the digital giants.
+- Everything <ins>he *achieved* in life</ins> *was earned* the hard way.
+- ...many of the products <ins>we *use* every day...</ins>*are* result of manufactured habits.
+- The product <ins>they*'re selling*</ins> *is* data**,** <ins>**and** we...*convert* our lives to data for the benefit of the digital giants</ins>.
 
 ### Words
 
@@ -37,7 +38,6 @@
     - n. 改变，转变，转换
 - achieve
     - v. 实现，获得，得到
-
 - manufacture
     - v. 制造
     - manufactured habits

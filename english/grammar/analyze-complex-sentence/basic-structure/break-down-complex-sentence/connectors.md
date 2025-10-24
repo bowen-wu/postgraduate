@@ -65,7 +65,7 @@
     - v. 证明...有道理，证明...合法
 - on average
     - 平均
-- fluctuant
+- fluctuate
     - adj. 波动的，起伏的；变化的
 - pack
     - v. 塞满，挤满
