@@ -45,7 +45,7 @@
 - select
     - vt. 选择
     - == choose
-    - Through carefully **selected** words and phrase,poems can be dramatic, funny, beautiful, moving and inspiring.
+    - Through carefully **selected** words and phrase, poems can be dramatic, funny, beautiful, moving and inspiring.
     - selection
         - n. 选择
         - natural([ˈnætʃrəl]) selection
@@ -85,7 +85,7 @@
     - Since the days of Aristotle, a search for *universal principles* has characterized the scientific **enterprise**.
     - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
 - trade n. 贸易；生意
-- transaction n. 交易
+- transaction [trænˈzækʃn] n. 交易
 - sale
     - n. 销售；拍卖；销售额
     - 词组
@@ -106,11 +106,11 @@
 - sector n. （经济的）部门
 - segment
     - v. 分割
-    - n. 部分；部门；
+    - n. 部分；部门
+    - market **segment** 市场细分领域
     - Big *retailers(['riteɪləz])* must understand these differences before they can identify the **segments** of
       European *wholesaling* in which their particular abilities might unseat smaller but entrenched competitors.
       大型零售商必须先了解这些差异，才能识别出欧洲批发业中那些能够让他们的特有优势取代规模较小但根基稳固竞争者的细分领域
-    - market **segment** 市场细分领域
 
 ## mark
 
@@ -144,8 +144,8 @@
 - vt. 质疑
 - n. 怀疑；（待讨论或处理的）事情；问题
 - To be or not to be that is the **question**.
-- It is fair to criticize and **question** the mechanism-that is the culture of research, <ins>after all(毕竟)</ins>-but
-  it is the prize-givers' money to do with as they please.
+- It is fair to criticize([ˈkrɪtɪsaɪz]) and **question** the mechanism-that is the culture of research,
+  <ins>after all(毕竟)</ins>-but it is the prize-givers' money to do with as they please.
   批评和质疑这种机制是合理的——毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
 - 词组
     - without question 毫无疑问
@@ -178,8 +178,8 @@
 - affair
     - n. 事情（大，正式）；[pl.]事务；风流韵事
     - == matter
-    - Another way affair is frequently used is to mean a love affair, particularly if the relationship is brief and
-      intense.
+    - Another way <ins>affair *is* frequently used</ins> is to mean a love affair, particularly if the relationship is
+      brief and intense.
 
 ## research
 
@@ -213,7 +213,7 @@
     - adj. 考古的；考古学的
     - The TMT site was chosen *to minimize* the telescope's visibility around the island <ins>and</ins> *to avoid*
       **archaeological** and environmental impact. TMT 的选址是为了尽量降低望远镜在岛上周围的可见度，并避免对考古遗迹和环境造成影响
-    - archeologist/archaeologist [ˌɑrkiˈɑlədʒɪst] adj. 考古的；考古学的
+    - archeologist/archaeologist [ˌɑrkiˈɑlədʒɪst] n. 考古学家
 - demographic [ˌdeməˈɡræfɪk]
     - adj. 人口学的；
     - n. 人口统计数据
@@ -223,7 +223,7 @@
 - n. 政府；治理
 - govern [ˈɡʌvərn]
     - vt. 治理；控制
-    - *Sensible* ideas have been around for a long time, but he *state*-level *bodies* that **govern** the *profession*
+    - *Sensible* ideas have been around for a long time, but the *state*-level *bodies* that **govern** the *profession*
       have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
       这些明智的想法早已存在，但管理该行业的州级机构一直过于保守，因而未能将其付诸实施
 - governmental adj. 政府的

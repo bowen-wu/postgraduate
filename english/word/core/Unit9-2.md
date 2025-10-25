@@ -12,40 +12,6 @@
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
 
-## professor
-
-- n. 教授
-- profession n. 职业；专业
-- professional adj. 职业的；专业的
-- professionalize vt. 使专业化
-- professionalism n. 专业水平
-- amateur [ˈæmətər]
-    - n. 业余爱好者
-    - adj. 业余的
-- expert [ˈekspɜːrt] n. 专家
-- specialist [ˈspeʃəlɪst]
-    - n. 专家；
-        - == expert
-    - adj. 专业的
-    - Yet only one of his books is now in print，and his <ins>vast body of(== oceans of 海量)</ins> writings on music is
-      unknown <ins>save to(== except 除了)</ins> **specialists**.
-
-## quality
-
-- n. 质量；品质
-- qualify
-    - v. 取得资格，有资格
-    - vt. 使有资格
-- qualified
-    - adj. 合格的；有资格的
-    - be qualified to do sth
-- qualification n. 资格
-- eligible [ˈelɪdʒəbl]
-    - adj. 合格的；符合条件的
-    - == qualified
-    - *Only* If the jobless arrive at the job centre with a CV, register for online job search, and start looking for
-      work will they be **eligible** for <ins>benefit(补助金；津贴)</ins>.
-
 ## apply
 
 - vt. 使用；应用；涉及
@@ -80,8 +46,8 @@
 
 - v. 寻求；寻找；试图，设法
 - vt. 请求
-- == look for == pursue == search
-    - pursue
+- == look for == search == pursue
+    - pursue [pərˈsuː]
         - vt. 继续; 追求; 进行; 追捕
         - vi. 追，追赶; 继续进行
 - **Seek** first to understand then to be understood. 首先寻求理解，然后被理解
@@ -100,7 +66,8 @@
     - 词组
         - hunt for 搜寻；寻找
         - hunt down 对...穷追到底
-    - hunter n. 猎人
+    - hunter
+        - n. 猎人
         - headhunter
             - n. 猎头
             - "The traditional rule was it's safer to stay where you are, but that's been fundamentally inverted" says
@@ -153,7 +120,7 @@
     - vt. 需要；牵涉；
     - v. 使必要，需要
     - n. 限定继承
-    - == involve
+    - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
     - Deliberate practice **entails** more than simply repeating a task.
 
@@ -171,10 +138,10 @@
 
 - adj. 流通的；现在的；通用的
 - n. 水流；电流
-- Some blame for the **current** controversy(n. 争论; 辩论) belongs to astronomers.
+- Some blame(n. 责任) for the **current** controversy(n. 争论; 辩论) belongs to astronomers.
 - currency
     - n. 货币，通货
-    - Yet the debate about how to save Europe's single **currency** from disintegration is stuck.
+    - Yet the debate about how to save Europe's single **currency** from disintegration(n. 瓦解) is stuck(adj. 动不了的)
 - currently adv. 当前
 - occur [əˈkɜːr]
     - vi. 发生，出现
@@ -221,7 +188,7 @@
     - adj. 中性的；中立的；不动声色的
     - neutrality [nuˈtræləti]
         - n. 中立（立场）；
-        - == disinterest n. 无兴趣; 不关心; 冷漠; 客观
+        - == disinterest [dɪsˈɪntərɪst] n. 无兴趣; 不关心; 冷漠; 客观
         - net-neutrality law 网络中立法
 
 ## official
@@ -274,7 +241,7 @@
       *tackle/deal with/cope with/handle/address* such problems.
 - otherwise
     - adv. 否则；在其他方面
-    - Failure can also teach us things about ourselves that we would never have learned **otherwise**.
+    - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
 - nevertheless [ˌnevərðəˈles] adv. 然而
 - nonetheless [ˌnʌnðəˈles] adv. 尽管如此
 
@@ -290,7 +257,7 @@
     - n. 终极; 顶点; 基本原理; 基本事实
     - == final
 - renaissance [ˈrenəsɑːns]
-  - n. 文艺复兴（时期）; 复活，复燃
+    - n. 文艺复兴（时期）; 复活，复燃
 
 ## 词组
 
