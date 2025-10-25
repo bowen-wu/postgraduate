@@ -14,9 +14,9 @@
 
 ## include
 
+- v. 包括
 - in- 里
 - ex- 外(exit)
-- v. 包括
 - inclusive adj. 包容性强的；包括的
 - exclude [ɪkˈskluːd]
     - vt. 把...排斥在外；不包括；排除（...的可能性）
@@ -53,10 +53,13 @@
     - around the corner 即将来临
         - == coming sooner
     - around the world 全世界
-- With the Spring Festival **around the corner(== coming sooner 即将到来)**
-- surround [səˈraʊnd] vt. 环绕；包围；与...紧密联系
-    - surrounding adj. 周围的；附近的
-        - surroundings n. 环境
+- With the Spring Festival **around the corner/coming sooner**
+- surround [səˈraʊnd]
+    - vt. 环绕；包围；与...紧密联系
+    - surrounding
+        - adj. 周围的；附近的
+        - surroundings
+            - n. 环境
             - == environment
 - approximately [əˈprɑːksɪmətli] adv. 大约
 
@@ -64,13 +67,15 @@
 
 - n. 产物；产品
 - I do completely agree that fears are just the product of our luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的) imagination.
-- produce vt. 生产；引起；培养；制作
+- produce
+    - vt. 生产；引起；培养；制作
     - producer n. 生产商；制片人
 - production n. 生产；产量；产生；制作
 - productive adj. 多产的；富有成效的
 - productivity n. 生产力；生产效率
-- byproduct n. 副产品
-    - 副作用 side effect
+- byproduct
+    - n. 副产品
+    - side effect 副作用
 - output
     - n. 产量；产生；输出
     - hourly output 每小时的产量
@@ -88,7 +93,8 @@
     - reap the best results 取得最好的结果
     - reap considerable gains 获得可观的收益
         - considerate vs considerable
-            - considerate adj. 考虑周到的; 体贴的
+            - considerate
+                - adj. 考虑周到的; 体贴的
                 - == kind
             - considerable adj. 相当大/多的
 
@@ -98,31 +104,35 @@
 - in case 以防万一
 - situation n. 情况，局面
 - circumstance [ˈsɜːrkəmstæns] n. 条件；状况；环境
-- condition n. 状态，状况；环境；条件
-    - conditional adj. 附带条件的
-        - Something conditional is dependent on other factors.
-- context n. 背景；语境
+- condition
+    - n. 状态，状况；环境；条件
+    - conditional
+        - adj. 附带条件的
+        - Something **conditional** is dependent on other factors.
+- context
+    - n. 背景；语境
     - == situation
     - The better you understand the cultural **context**, the more control you can have over your impact.
-- instance n. 实例
+- instance
+    - n. 实例
     - for example == for instance 例如
 
 ## call
 
-- n. 呼吁；电话；叫声
 - vt. 称呼；认为...是
+- n. 呼吁；电话；叫声
 - call for sth. 呼吁某事
 - recall
     - vt. 回忆起；召回（某人/产品）
     - n. 召回；记忆力
-    - It's <ins>in vain(徒劳)</ins> to recall the pass, unless it works some influence upon the present.
+    - It's <ins>in vain(徒劳)</ins> to **recall** the pass, unless it works some influence upon the present.
     - I can **recall** the day my grandfather died and the sadness I felt when we went to the hospital the day before.
 
 ## concern
 
-- n. 担心；关心的事；(对人、组织等)重要的事情
 - vt. 涉及；担忧
-- Another <ins>nationwide concern(举国关注的问题)</ins> is whether public funds from other agencies are going into
+- n. 担心；关心的事；(对人、组织等)重要的事情
+- Another <ins>nationwide **concern**(举国关注的问题)</ins> is whether public funds from other agencies are going into
   construction in <ins>fire-prone districts(火灾易发区)</ins>.
 - concerned
     - adj. 担心的；关注的；相关的
@@ -141,10 +151,10 @@
 - historian [hɪˈstɔːriən] n. 历史学家
 - historic adj. 有重大历史意义的；历史上
 - historical adj. (有关)历史的；历史学的
-- historic vs historical
-    - historic 表示具有重要(important)的历史意义
-    - historical 涉及历史、史学、过去的事实
-- historically adv. 从历史观点来说
+    - historic vs historical
+        - historic 表示具有重要(important)的历史意义
+        - historical 涉及历史、史学、过去的事实
+    - historically adv. 从历史观点来说
 - chronic [ˈkrɑːnɪk]
     - adj. 慢性的；长期的
     - <ins>As well as(除了, == besides)</ins> those **chronic** problems, the EU faces an acute crisis in its economic
@@ -155,14 +165,14 @@
         - == record
         - To **chronicle** an event is to **record** it as it happens, and **a chronicle** is **a record** of those
           events.
-        - If your grandmother took the time to **chronicle(v.)** the details of her 1920 journey to Japan, you can read
-          her **chronicle(n.)** today.
+        - If your grandmother took the time to **chronicle** the details of her 1920 journey to Japan, you can read her
+          **chronicle** today.
 
 ## rise
 
 - [raɪz]
-- n. 增加；增强
 - vi. 增加；变得更加成功；变得强烈
+- n. 增加；增强
 - Generation Zs are looking for more certainty and stability, because of the **rise(兴起)** of the gig economy.
 - 词组
     - rise above sth. 克服（障碍）；超越（限制）
@@ -170,7 +180,8 @@
     - rise to 增长至
     - give rise to 使发生（或存在)
     - on the rise 在增长
-- arise vi. 产生，出现；由...引起
+- arise
+    - vi. 产生，出现；由...引起
     - == appear
     - == occur [əˈkɜːr]
 - raise [reɪz]
@@ -182,7 +193,7 @@
     - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
 - arouse [əˈraʊz]
     - vt. 引起(感情、态度(主观))；唤醒
-    - == provoke [prəˈvoʊk]
+    - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒
 - <ins>arise/raise/arouse</ins>
     - A problem <ins>_____</ins>.
     - He <ins>_____</ins> a question.
@@ -190,9 +201,9 @@
 
 ## back
 
-- n. 背部；背面
 - vt. 支持
     - == support
+- n. 背部；背面
 - adv. 以前，追溯至；回应（来信、电话、目光等）
 - adj. 背后的
 - One problem with the PreCheck program is the government's reluctance([rɪˈlʌktəns] n. 不情愿，勉强) to **back/support**
@@ -203,9 +214,11 @@
     - get back to 重新开始
     - scale back 削减（尤指经费或生意）
     - back off 退缩，退却
-- background n. (出身、职业、事态发展等)背景
+- background
+    - n. (出身、职业、事态发展等)背景
     - == backdrop n. (实物或景象、事态或活动的)背景；(舞台的)背景幕布
-- backfire vi. 产生事与愿违的不良（或危险）后果；（车辆或其发动机）😔
+- backfire
+    - vi. 产生事与愿违的不良（或危险）后果 😔
     - "Whether you're a politician or a parent, it might be helpful to keep in mind that trying to maintain eye contact
       may **backfire** if you're trying to convince someone who has a different set of beliefs than you", said Minson.
 - feedback n. 反馈
@@ -243,6 +256,7 @@
 - as well as
     - == in addition to
     - == and also
+    - == besides
     - 以及、还、除了...之外
 
 ## 句式

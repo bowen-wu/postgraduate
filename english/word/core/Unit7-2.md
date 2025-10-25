@@ -3,14 +3,14 @@
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
 - vt. = transitive verb（及物动词）
-  - 动词 + 宾语
-  - 后面必须接宾语
-  - **不**需要加介词
-  - He **likes** apples
+    - 动词 + 宾语
+    - 后面必须接宾语
+    - **不**需要加介词
+    - He **likes** apples
 - vi. = intransitive verb（不及物动词）
-  - 动作**不需要对象**就能完整表达意思
-  - 动词 + 介词 + 宾语
-  - He **sleeps** early.
+    - 动作**不需要对象**就能完整表达意思
+    - 动词 + 介词 + 宾语
+    - He **sleeps** early.
 
 ## describe
 
@@ -113,7 +113,8 @@
 
 - vt. 避免；躲避
 - If you avoid failure, you also avoid success.
-- evade vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
+- evade
+    - vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
     - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
       to **evade** scientists.
     - inevitable adj. 不可避免的

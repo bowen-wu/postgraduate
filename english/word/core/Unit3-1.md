@@ -151,7 +151,6 @@
 - handsome adj. 慷慨的；丰厚的；可观的；英俊的
     - Her receives a handsome reward.
 - result == consequence == outcome
-
 - offense vs defense
 - A outweigh B
     - A比B重要

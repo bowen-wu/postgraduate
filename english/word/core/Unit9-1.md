@@ -15,7 +15,7 @@
 ## infer
 
 - vt. 推断；暗指
-- == imply
+- == imply v. 含有...的意思; 暗示; 说明; 必然包含
 - in- == im- 里
 - inference [ˈɪnfərəns] n. 推理
 - conclude
@@ -24,15 +24,14 @@
         - n. 结论
         - 词组
             - in conclusion 总之
-        - We can <ins>draw/come to</ins> a conclusion that...
+        - We can <ins>draw/come to</ins> a **conclusion** that...
     - conclusive
         - adj. 确凿的
         - == certain
         - **Conclusive** means you've got your answer, you've proved your theory, and there can't be any doubt about it.
         - inconclusive
             - adj. 无定论的；不确定的；非决定性的，无结果的
-            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are
-              **inconclusive**.
+            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are **inconclusive**.
                 - be aware([əˈwer]) of + 名词/从句 意识到/察觉到
 
 ## standard
@@ -64,11 +63,11 @@
     - n. 物理学
     - The US$3-million <ins>Fundamental **Physics** Prize(基础物理学奖)</ins> is indeed an interesting experiment, as
       Alexander Polyakov said when he accepted this year's award in March.
-- metaphysical
+- metaphysical [ˌmetə'fɪzɪkl]
     - adj. 形而上学的；超自然的
     - meta- == beyond 超过
     - Add the Greek prefix "meta-"(beyond) to the base "physical"(nature), and you ge metaphysical-a near synonym to the
-      Latinate word "supernatural".
+      Latinate word "supernatural([ˌsupərˈnætʃrəl])".
     - metabolism [məˈtæbəlɪzəm] n. 新陈代谢
 - psychology [saɪˈkɑːlədʒi]
     - n. 心理学
@@ -79,7 +78,7 @@
     - adj. 智力的；精神健康的
     - mental state 精神状态
     - a state of mind 心境
-- "Idleness ia as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to
+- "Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to
   getting any work done," he argues.
     - According to Newport, idleness is <ins>*___*</ins>
         - A. a major contributor to **physical health**
@@ -93,7 +92,7 @@
     - agree on 关于...取得一致意见
     - agree with 与...相符，一致
 - agreement n. 协议；（意见或看法）一致
-- consent
+- consent [kənˈsent]
     - v. 准许，同意；赞同
     - n. 赞同；准许
     - reserved consent 有保留的赞同
@@ -141,7 +140,7 @@
 - vt. 促进
 - vi.（知识、技术等）发展
 - n. 进步
-- advance the development == promote
+- **advance** the development == promote
 - Always **advance**. Never dig in. 永远要前进，绝不要固守
 - 词组
     - in advance 预先，提前
@@ -162,7 +161,7 @@
     - economic boom/prosperity 经济繁荣
 - bleak [bliːk] 😔
     - adj. 不乐观的，暗淡的；荒凉的
-    - == unpromising([ʌnˈprɑmɪsɪŋ] adj. 无前途的，没有希望的; 前途无望) == hopeless
+    - == hopeless == unpromising([ʌnˈprɑmɪsɪŋ] adj. 无前途的，没有希望的; 前途无望) 
     - The immediate outlook remains **bleak**. 近期前景依然黯淡
     - The island's pretty **bleak**.
     - "There is nothing left", she says **bleakly**.
@@ -183,7 +182,7 @@
     - n. 缺陷；缺少
     - Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may
       *compensate([ˈkɑːmpenseɪt] v. 补偿，赔偿; 弥补) for* an <ins>emotional **deficiency**</ins>.
-    - == flaw([flɔː] n. 错误; 缺点; 瑕疵) == shortage
+    - == shortage == flaw([flɔː] n. 错误; 缺点; 瑕疵) 
 - flawless 🙂
     - adj. 完美的，无瑕的
     - == perfect
@@ -227,7 +226,7 @@
 - philosopher [fəˈlɑːsəfər]
     - n. 哲学家，思想家; 善于思考的人
 - physician [fɪˈzɪʃn]
-  - n. 医生，内科医生
+    - n. 医生，内科医生
 - politician [ˌpɑːləˈtɪʃn]
     - n. 政治家; 政客
 - rumor [ˈruːmə(r)]
