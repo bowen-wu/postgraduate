@@ -201,12 +201,14 @@
     - v. 供应，提供; 补充，填充
     - n. 提供，供应（量）; 储备; 补给品
 - command
-    - vt. 命令；博得
+    - vt. 命令；博得；掌握
     - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
     - 词组
         - in command 领导；指挥
         - have (a) good command of... 精通...
         - at one's command 某人可自由使用；服从某人的支配
+    - Americans no longer expect public figures, whether in speech or in writing, to **command** the English language
+      with skill and gift. *Nor* do they aspire to such **command** themselves.
 - mandate [ˈmændeɪt]
     - n. 命令
     - The <ins>proposed initiative([ɪˈnɪʃətɪv] 拟议倡议)</ins> would **mandate** a reduction of carbon dioxide of 40%.

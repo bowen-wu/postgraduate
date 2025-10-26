@@ -14,47 +14,46 @@
 
 ## spread
 
+- [spred]
 - v. 传播；使分布
 - n. 传播
 - widespread
     - adj. 分布广的
-    - == prevailing adj. 盛行的；现存的
-    - == prevalent adj. 流行的
-- stretch
+    - == prevailing [prɪˈveɪlɪŋ] adj. 盛行的；现存的
+    - == prevalent [ˈprevələnt] adj. 流行的
+- stretch [stretʃ]
     - v. 绵延
     - n. （连续）一段时间
     - The river **stretches** across the center of the city into the distance.
-    - The days **stretch out** in an endless vista. 时日在无穷的展望中延展着
+    - The days **stretch out** in an endless vista([ˈvɪstə] n. 展望). 时日在无穷的展望中延展着
         - With time **stretching out** in an endless vista, ... 时光飞逝
 - extend
-    - vt. 扩大...的范围（或影响）；飞羽
+    - vt. 扩大...的范围（或影响）；给予
     - vi. 包括
     - extensive
         - adj. 广泛的
         - extensively adv. 广泛地
-    - extent
-        - n. 程度
+    - extent n. 程度
     - extension n. 延期
 - expand
     - v. 增加（尺码、数量或重要性）；扩展（业务）
     - ...gives companies opportunities to learn valuable information about the appeal of other companies' marketing, and
       may help **expand user traffic(扩大用户流量)** for all companies concerned.
-    - expansion n. 扩张，扩展
-- diffuse
+    - expansion  [ɪkˈspænʃn] n. 扩张，扩展
+- diffuse [dɪˈfjuːz]
     - v. 缓解；传播（知识、消息等）
     - adj. 弥漫的
-    - diffusionism n. 传播论
-- transmit
-    - v. 传送
+    - diffusionism [dɪf'juʒnɪzəm] n. 传播论
+- transmit v. 传送
 
 ## suffer 😔
 
 - vi. （因疾病、痛苦、悲伤等）受苦
 - vt. 遭受
 - 词组
-- suffer *from* 遭受
-- Every life is a genuine recollection of **suffering**; **suffering** for others the process is bitter, but to me it is
-  glorious trials and *hardships*.
+    - suffer *from* 遭受
+- Every life is a genuine([ˈdʒenjuɪn] adj. 真正的) recollection(n. 回忆) of **suffering**; **suffering** for others the
+  process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
     - hardships == suffering
 - confront 😔
     - vt. 面临（问题、任务、困难等）
@@ -69,36 +68,37 @@
 ## slave
 
 - n. 奴隶
-- slavery
+- slavery [ˈsleɪvəri]
     - n. 奴隶制
     - While Washington and Jefferson privately expressed distaste for **slavery**, they also understood that it was part
-      of the political and economic bedrock of the country they helped to create.
+      of the political and economic bedrock(n. 牢固基础) of the country they helped to create.
 - enslavement n. 奴役
-- colony
+- colony [ˈkɑːləni]
     - n. 殖民地，聚民区
-    - colonial adj. 英属殖民地时期的
+    - colonial [kəˈloʊniəl] adj. 英属殖民地时期的
 
 ## patient
 
 - n. 病人
 - adj. 有耐心的
-- patience n. 耐心
+- patience [ˈpeɪʃns] n. 耐心
 - impatience n. 不耐烦
 
 ## assess
 
+- [əˈses]
 - vt. 评定
 - == measure
 - Before you try to sell your car, you should ask an expert to **assess** its value-once you know what it's worth, it's
   easier to find a fair price.
 - When you **assess** a matter, you make a judgment about it.
-- access
+- access [ˈækses]
     - v. 访问，存取（计算机信息）; 到达，进入，使用
     - n. 入口，通道; （使用或见到的）机会/权利
 - assessment
     - n. 评估
     - == measurement
-- estimate
+- estimate [ˈestɪmeɪt]
     - vt. 估算
     - n. （对数量、成本等的）估计
     - overestimate
@@ -108,33 +108,36 @@
     - underestimate
         - vt. 低估
         - n. 低估
-- evaluate
+- evaluate [ɪˈvæljueɪt]
     - vt. 评估
     - == assess
     - evaluation n. 评估
 
 ## bias
 
+- [ˈbaɪəs]
 - vt. 使有偏见
 - n. 偏见
 - biased
     - adj. 有偏见的
-    - unbiased 🙂
+    - unbiased 🙂 [ʌnˈbaɪəst]
         - adj. 无偏见的；公正的
-        - == impartial adj. 不偏不倚的; 公平的，公正的; 无私的; 持平
-- stereotype
+        - == impartial [ɪmˈpɑːrʃl] adj. 不偏不倚的; 公平的，公正的; 无私的; 持平
+- stereotype [ˈsteriətaɪp]
     - vt. 把...模式化
     - n. 成见；模式化观念（或形象）
-    - We become defensive when criticised, and apply negative **stereotypes** to others to boost our own esteem.
-    - stereotypical adj. 模式化的
-- discrimination n. 歧视
-- prejudice
+    - We become defensive when criticised(['krɪtəˌsaɪz]), and apply negative **stereotypes** to others to boost our own
+      esteem(n. 尊重；敬重；自尊心).
+    - stereotypical [ˌsteriəˈtɪpɪkl] adj. 模式化的
+- discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
+- prejudice [ˈpredʒudɪs]
     - vt. 使...有偏见
     - n. 偏见
     - Pride and Prejudice 傲慢与偏见
 
 ## desire
 
+- [dɪˈzaɪər]
 - vt. 渴望
 - n. 渴望
 - desirable
@@ -144,23 +147,23 @@
         - n. 不受欢迎的人; 不良分子
 - eager
     - adj. 热切的；渴望的
-    - == desire
+    - == desirable
     - eagerness n. 渴望；
-- aspire
+- aspire [əˈspaɪər]
     - v. 渴望
     - == desire
-    - Americans no longer expect public figures, whether in speech or in writing, to *command* the English language with
-      skill and gift. *Nor* do they **aspire** to such command themselves.
-    - aspiration n. 抱负；志向
-- appetite
+    - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English
+      language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
+    - aspiration [ˌæspəˈreɪʃn] n. 抱负；志向
+- appetite [ˈæpɪtaɪt]
     - n. 欲望
-    - Since technology has such an **insatiable appetite(贪得无厌)** for eating up human jobs, this phenomenon will
-      continue to restructure our economy...
+    - Since technology has such an **insatiable([ɪnˈseɪʃəbl]) appetite(贪得无厌)** for eating up human jobs, this
+      phenomenon will continue to restructure our economy...
 - expect
     - v. 预料；期待
     - expect to do sth.
-    - unexpected adj. 意外的
     - expectation n. 期望
+    - unexpected adj. 意外的
 
 ## direct
 
@@ -174,17 +177,18 @@
 - directly adv. 直接地；正好；立即
 - director n. 经理；董事；理事；负责人；主任
 - indirect adj. 间接的
-- bearing
+- bearing [ˈberɪŋ]
     - n. 方位；举止；与...有关，对...有影响
-    - == posture
+    - == posture [ˈpɑːstʃər]
     - Experts generally agree that diet <ins>has an important **bearing** on</ins> your general health.
-    - She later wrote warmly of his <ins>**bearing** and behaviour(风度与举止)</ins>.
-- orient
+    - She later wrote warmly of his <ins>**bearing** and behaviour(风度与举止)</ins>. 她后来在文字中充满温情地回忆了他的风度与举止
+- orient [ˈɔːrient]
     - vt. 以...为方向；朝向
     - New Oriental Education & Technology Group
 
 ## doubt
 
+- [daʊt]
 - vt. 怀疑
 - n. 怀疑
 - 词组
@@ -192,15 +196,15 @@
     - without doubt 毫无疑问
     - cast doubt(s) on 对...产生疑问
 - doubtless adv. 无疑地
-- undoubtedly adv. 无疑地
-- suspect
+- undoubtedly [ʌn'daʊtɪdlɪ] adv. 无疑地
+- suspect [səˈspekt]
     - v. 怀疑；猜想；觉得
     - n. 犯罪嫌疑人
-    - suspicion n. 怀疑
-    - suspicious adj. 怀疑的
-- skeptical/sceptical
-    - adj. 怀疑的 😔 
-    - skepticism/scepticism n. 怀疑主义；怀疑态度 😔
+    - suspicion [səˈspɪʃn] n. 怀疑
+    - suspicious [səˈspɪʃəs] adj. 怀疑的
+- skeptical/sceptical [ˈskeptɪkl] 😔
+    - adj. 怀疑的
+    - skepticism/scepticism [ˈskɛptɪˌsɪzəm] n. 怀疑主义；怀疑态度 😔
 - challenge
     - vt. 对...质疑；向...提出挑战
     - n. 挑战；质疑
@@ -210,26 +214,27 @@
 - persistence
     - n. 坚持不懈; 执意; 持续; 留存，（荧光屏上余辉的）保留时间
 - conclude
-    - v. 推断出; 总结; 结束; 缔约
+    - v. 得出结论；（使）结束
 - persuade [pərˈsweɪd]
     - v. 劝说; 使信服
 - undergo
     - v. 经历; 承受
 - overshadow
     - vt. 使失色; 使阴暗; 夺去...的光辉; 遮阴
+    - v. 使... 蒙上阴影；使...蒙羞
 - partial
     - adj. 部分的; 偏袒的; 钟爱的
-- parade
+- parade [pəˈreɪd]
     - v. 游行; 展览; 招摇过市; 接受检阅
-    - n. 检阅; 游行; 一系列; 炫耀
+    - n. 检阅，游行
 
 ## 词组
 
 ## 句式
 
 - 像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音也没有影子
-    - Like a drop of water from the point of a needle disappearing into the ocean, my days are dripping into the stream
-      of time, soundless, traceless.
+    - Like a drop of water from the point of a needle([ˈniːdl] n. 针) disappearing into the ocean, my days are
+      dripping([ˈdrɪpɪŋ] v. 滴下) into the stream of time, soundless, traceless(['treɪslɪs]).
 - **It is a truth** <ins>**universally acknowledged**</ins>, **that** *a single man* **in possession of**
   *a good fortune*, must be **in want of** *a wife*.
     - **It is a truth universally acknowledged that** visiting museums can serve as a fine way to broaden our horizon.
