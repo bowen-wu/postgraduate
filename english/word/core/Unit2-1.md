@@ -166,7 +166,7 @@
 
 ## suggest
 
-- vt. 建议；表明；暗示
+- vt. 表明；暗示；建议
 - I **suggest** him that he (should) **ask** some specific questions about her past.
     - suggest/demand/require sb. (should) do 虚拟
 - I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的

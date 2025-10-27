@@ -31,7 +31,7 @@
     - adj. 最著名的；最重要的
     - == most important
     - 词组
-        - **first and foremost** 首先
+        - **first and foremost** 首先而且最重要的是
 - trivial [ˈtrɪviəl] adj. 不重要的，琐碎的
 - watershed [ˈwɔtərʃed]
     - n. 分水岭
@@ -43,7 +43,7 @@
 - == enhance == elevate
 - improvement
     - n. 改善
-    - There's always room for improvement.
+    - There's always room for **improvement**.
 - enhance
     - vt. 提高
     - enhancement n. 提高
@@ -63,7 +63,7 @@
 
 - vt. 衡量
 - n. 测量；衡量；措施
-- If you can not measure it, you can not improve it.
+- If you can not **measure** it, you can not improve it.
 - measurement n. 测量
 - degree
     - n. **程度**；学位；级别
@@ -143,11 +143,11 @@
     - profit **from**
     - profitable
         - adj. 可盈利的
+        - == handsome adj. **可观的**；帅气的
         - == lucrative [ˈluːkrətɪv]
             - adj. 获利丰厚的
             - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
               finish line" whether that the toward graduate school, medical school or a **lucrative** career.
-        - == handsome adj. **可观的**；帅气的
         - profitable/lucrative/handsome rewards/salary/income
 
 ## attention

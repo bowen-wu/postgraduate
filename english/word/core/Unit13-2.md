@@ -16,19 +16,20 @@
 
 - v. 缓解
 - n. 安逸；容易
-- at ease
-- relieve
+- at ease 放松的；自在的；不拘束的
+    - == comfortable == relaxed == not nervous
+- relieve [rɪˈliːv]
     - vt. 缓解
-    - relief n. （忧虑或痛苦消除后感到的）宽慰
-- assuage vt. 缓和
-- alleviate
+    - relief [rɪˈliːf] n. （忧虑或痛苦消除后感到的）宽慰
+- assuage [əˈsweɪdʒ] vt. 缓和
+- alleviate [əˈliːvieɪt]
     - vt. 减轻
     - == assuage
 - release
     - vt. 释放；发布
     - n. 释放；公开发布
-- unleash vt. 释放
-- rid
+- unleash [ʌnˈliːʃ] vt. 释放
+- rid [rɪd]
     - v. 摆脱
     - get rid of 摆脱
 
@@ -37,20 +38,20 @@
 - adj. 必不可少的
 - == important == necessary == indispensable
 - essentially adv. 本质上
-- essence n. 本质
-- indispensable 🙂 adj. 不可或缺的
+- essence [ˈesns] n. 本质
+- indispensable [ˌɪndɪˈspensəbl] 🙂 adj. 不可或缺的
 - fundamental
     - adj. 根本的；基础的；基本的
     - n. 基本原理
     - fundamentally adv. 根本地
 - underlying adj. 潜在的；基础的
 
-## center/centre
+## center
 
 - vt. 集中；以...为中心
 - n. 中心
 - central adj. 首要的；中心的
-- centerpiece n. 核心
+- centerpiece ['sentəˌpis] n. 核心
 
 ## rich
 
@@ -58,19 +59,17 @@
 - n. (the ~)富人
 - richness n. 丰富
 - enrich vt. 使丰富
-- abundant
-    - adj. 丰富的
-    - == rich == sufficient
-    - abundance n. 充裕
-- sufficient
+- sufficient [səˈfɪʃnt]
     - adj. 足够的
     - n. 充分条件
     - insufficient adj. 不充分的
     - sufficiency n. 充分
-- abound
+- abound [əˈbaʊnd]
     - vi. 大量存在
-    - abundant adj. 大量的，丰富的
-    - abundance n. 大量；丰富
+    - abundant [əˈbʌndənt]
+        - adj. 大量的，丰富的
+        - == rich == sufficient
+    - abundance n. 充裕；大量；丰富
     - Opportunities for misinterpretation, error, and self-deception **abound**
     - On our way ahead, <ins>**Challenge abound**</ins>, **so do opportunities**.
 
@@ -94,17 +93,17 @@
   for and **perform** better in college than those who do not.
 - performance
     - n. 表演；业绩；表现
-    - performance bonus 绩效奖金
+    - performance bonus([ˈboʊnəs]) 绩效奖金
 - performer n. 演员
 
 ## press
 
 - vt. 敦促
-- vi. 推进；压力按
+- vi. 推进；用力按
 - n. 报刊
-- suppress
+- suppress [səˈpres]
     - vt. 镇压；抑制
-    - == curb == inhibit
+    - == curb == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止
     - To **suppress** something means to **curb**, **inhibit**, or even stop it.
 - depressed
     - adj. 沮丧的
@@ -115,21 +114,22 @@
     - vt. 挤压
     - n. 困境
     - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
-      middle class **disproportionately squeezed**.
+      middle class **disproportionately([ˌdɪsprə'pɔʃənətlɪ] adv. 不匀称，不相称) squeezed**.
 
 ## separate
 
+- [ˈsepəreɪt]
 - vt. 使分离；区分
 - vi. 分离
 - adj. 分开的；单独的；不同的
 - separate A from B
 - go separate ways 分道扬镳
 - separation n. 分离
-- divide
+- divide [dɪˈvaɪd]
     - vt. （使）分开；使产生分歧；【数】除以
     - vi. 分隔
     - n. 隔阂
-    - division n. 分配
+    - division [dɪˈvɪʒn] n. 分配
 - split
     - vt. 使分开
     - vi. 分开
@@ -143,8 +143,8 @@
     - vt. （使）隔离，脱离
     - isolated
         - adj. 孤独的；单独的
-        - No matter how **isolated** you might feel and how serious the situation is, you should always remember that
-          you are not alone.
+        - <ins>No matter(不管怎样...)</ins> how **isolated** you might feel and how serious the situation is, you should
+          always remember that you are not alone.
 
 ## consume
 
@@ -152,22 +152,22 @@
 - Don't just **consume** things, create things.
 - consumer n. 消费者
 - consumption n. （能量、事物或材料的）消耗，消耗量；消费
-- assume
+- assume [əˈsuːm]
     - vt. 承担（责任）；认为；显露（特征）
     - We were wrong to **assume** she'd agree.
     - Everyone must **assume** his share of the responsibility to protect the environment.
-    - assumption n. 假设
+    - assumption [əˈsʌmpʃn] n. 假设
 
 ## imply
 
 - vt. 暗示；说明
-- implicit
+- implicit [ɪmˈplɪsɪt]
     - adj. 不直接言明的；内含的
     - implication n. 可能的影响（或作用、结果）；含意
-- explicit
+- explicit [ɪkˈsplɪsɪt]
     - adj. 明确的
     - == direct == clear == expressed
-    - explicitly adv. 明确地
+    - explicitly [ɪk'splɪsɪtlɪ] adv. 明确地
 
 ## celebrity
 
@@ -177,16 +177,15 @@
     - v. 庆祝; 赞美
 - reputation 🙂
     - n. 名誉；名声
-    - == fame == prestige
+    - == fame == prestige [preˈstiːʒ]
 - fame 🙂
     - n. 名誉；名声
     - famed adj. 著名的
-- prominent
+- prominent [ˈprɑːmɪnənt]
     - adj. 杰出的；显著的
-    - prominent figures 杰出人物
-- prestige [preˈstiːʒ] 🙂
-    - n. 威信；声望
-- notorious
+    - prominent figures(['fɪgəs]) 杰出人物
+- prestige [preˈstiːʒ] 🙂 n. 威信；声望
+- notorious [noʊˈtɔːriəs]
     - adj. 臭名昭著的; 臭名远扬的; 声名狼藉的; 恶名昭著
     - == ill-famed
     - Use the adjective **notorious** to describe people, places, or thins that are **famous for a bad reason**.
@@ -195,18 +194,17 @@
         - B. a man who is always helpful and considerate to others.
         - C. a man who has a reputation for not keeping his word
         - D. a man who is wealthy and known to be generous.
-    - notoriously
-        - adv. [贬义]众所周知地，声名狼藉地
+    - notoriously adv. [贬义]众所周知地，声名狼藉地
 
 ## Words
 
-- turbulent
+- turbulent [ˈtɜːrbjələnt]
     - adj. 骚乱的，混乱的; 激流的，湍流的; 吵闹的; 强横的
-- conflicting
+- conflicting [kənˈflɪktɪŋ]
     - adj. 相矛盾的，冲突的
-- absent-minded
+- absent-minded [ˌæbsəntˈmaɪndɪd]
     - adj. 心不在焉的，健忘的
-- half-hearted
+- half-hearted [ˈhæfˈhɑrtɪd]
     - adj. 粗心的; 没精打采的，缺乏热情的; 并非真心的; 半心半意的
 
 ## 词组

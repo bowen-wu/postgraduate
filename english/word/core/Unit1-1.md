@@ -14,13 +14,13 @@
 
 ## work
 
-- vi. 工作；产生...作用；争取
+- vi. 产生...作用；争取；工作
 - v. 使运转
 - n. 作品（可数）；工作（不可数）
-- Hard work is the price we must pay for success.
+- Hard **work** is the price we must pay for success.
 - The new teaching method may **work** best with Shakespeare.
-- Gates Chooses nonfiction titles because they explain how the world **works**.
-- The new **work** emphasizes that adolescence([ˌædəˈlesns] n. 青春（期）) is a time of opportunity as well as risk.
+- Gates chooses nonfiction titles because they explain how the world **works**.
+- The new **work** emphasizes that <ins>adolescence([ˌædəˈlesns] n. 青春（期）)</ins> is a time of opportunity as well as risk.
 - A number of priceless **works of art** were stolen from the gallery([ˈɡæləri] n. 美术馆).
 - 词组
     - work against 起反作用，对...不利 😔
@@ -40,7 +40,7 @@
 - patchwork
     - adj. 拼凑的
     - n. 拼凑之物
-    - Certainly, there are *valid concerns(合理的担忧)* about the **patchwork** regulations...
+    - Certainly, there are <ins>valid concerns(合理的担忧)</ins> about the **patchwork** regulations...
 - labor/labour
     - vi. 努力做（困难的事）
     - n. 劳动；劳工；英国工党(Labour)
