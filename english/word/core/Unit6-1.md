@@ -19,8 +19,8 @@
 - n. 专款；（~s)资金
 - *funding(主动)* agencies 出资机构
 - publicly *funded(被动)* research 政府资助的研究
-- Some growth stems from a commitment by governments and farsighted(['fɑ'saɪtɪd] adj. 有远见的) businesses to
-  **fund/invest** cleaner energy sources.
+- Some growth <ins>stems from(源自/起因于)</ins> a commitment(n. 承诺) by governments and
+  farsighted(['fɑ'saɪtɪd] adj. 有远见的) businesses to **fund/invest** cleaner energy sources.
 - allowance [əˈlaʊəns] n. 补贴
 - subsidy [ˈsʌbsədi]
     - n. 补贴
@@ -81,7 +81,7 @@
     - formally adv. 正式地
 - formation n. 编队
 - format n. 格式
-- formula
+- formula [ˈfɔːrmjələ]
     - n. 方案；公式；方程
     - formulate
         - vt. 构想出（计划或提案）
@@ -123,7 +123,7 @@
     - 词组
         - on the average 平均来说/一般而言/按平均计算
             - == on average
-            - On the average, a television set is in use in every home for about 6 hours each day.
+            - **On the average**, a television set is in use in every home for about 6 hours each day.
         - an average of... 平均是...
     - The **average** time for holding a stock in both the United States and Britain, he notes, had dropped.
 - normal
@@ -142,13 +142,13 @@
 - evolve [iˈvɑːlv]
     - v. 逐步发展
     - e- == ex- 外
-    - evolution
+    - evolution [ˌevəˈluːʃn]
         - n. 发展；进化
         - == development
         - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social
-          environment being a major contributory factor.
+          environment being a major contributory(adj. 促成的) factor.
         - involution [ˌɪnvə'luʃən] n. 内卷
-        - evolutionary [ˌiːvəˈluːʃəneri] adj. 进化的
+        - evolutionary [ˌevəˈluːʃəneri] adj. 进化的
 - revolve [rɪˈvɑːlv]
     - v./n. 旋转
     - revolution n. 革命
@@ -171,11 +171,11 @@
 - refrain [rɪˈfreɪn]
     - vi. 避免；克制；制止
         - == restrict
-    - n. 经常重复的评价（或抱怨）；老话，陈词滥调(cliche)
+    - n. 经常重复的评价（或抱怨）；老话，陈词滥调(cliche [klɪˈʃeɪ])
     - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing
       it**.
     - How shall I **refrain from** tears when we part?
-    - California has asked the justices to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
+    - California has asked *the justices* to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
     - refrain from doing sth.
         - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
     - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
@@ -194,8 +194,8 @@
     - demand for 对...的需求；对...的要求
     - in demand 需求量大；受欢迎
     - on demand 一经要求
-- Transient(adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high quarterly profits from companies, can
-  hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
+- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high quarterly profits from companies,
+  can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
   loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
 - supply
     - v. 供应，提供; 补充，填充
@@ -226,7 +226,7 @@
     - to my mind 依我看
         - == in my view
     - critical mind 批判性思维
-- Life is just a series([ˈsɪriːz] n. 一系列; 连续) of trying to make up your **mind**.
+- Life is just a series([ˈsɪriːz] n. 一系列; 连续) of trying to **make up your mind**.
 - mindset [ˈmaɪndset]
     - n. 心态
     - Happiness *is not* a point of future *and not* a moment from the past, *but* a **mindset** that can be designed
@@ -240,7 +240,7 @@
     - wisdom [ˈwɪzdəm] n. 智慧；明智；（社会或文化长期积累的）学问
 - ideology [ˌaɪdiˈɑːlədʒi]
     - n. 意识；观念
-    - == belief [bɪˈliːf]
+    - == belief [bɪˈliːf] n. 信念；信仰；信心
     - oppressive([əˈprɛsɪv]) ideology 压迫性的观念
     - upper middle-class ideology 中上层阶级的意识形态
 
