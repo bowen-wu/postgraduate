@@ -142,6 +142,29 @@
 
 ## Words
 
+- interviewer
+    - 面试者；求职者
+- revise vs review
+    - revise 修改；修订
+- from my perspective == in my view == in my opinion
+- retrospect vs prospect vs introspect
+    - retrospect 回首过去
+        - in retrospect == look back
+    - prospect 前途, 前景
+    - introspect 反省, 内省
+- infrastructure upkeep
+    - 基础设施维护
+- abide **by** the law
+    - 遵守法律
+    - abide by == follow
+- stay + adj.
+    - stay positive
+    - stay focused
+    - stay strong
+- incredible == fantastic == marvellous == wonderful == good
+- faithful == loyal
+- data leakage
+
 ## 词组
 
 ## 句式

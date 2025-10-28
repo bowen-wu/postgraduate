@@ -43,19 +43,20 @@
 
 ## economic
 
+- [ˌiːkəˈnɑːmɪk]
 - adj. 经济的
 - economic depression/recession/slowdown 经济衰退 😔
     - economic boom/prosperity 经济繁荣 🙂
     - economic recovery 经济复苏
-- economics
+- economics [ˌekəˈnɑːmɪks]
     - n. 经济学；经济状况
     - In just on generation, millions of mothers have gone to work, *transforming* basic family **economics/economic
       situation**.
-- economist n. 经济学家
-- economy n. 经济状况
-- economical
+- economist [ɪˈkɑnəmɪst] n. 经济学家
+- economy [ɪˈkɑːnəmi] n. 经济状况
+- economical [ˌeːkəˈnɑːmɪkl]
     - adj. 省钱的；节约的
-    - economically adv. 在经济上；节省地
+    - economically [ˌikəˈnɑmɪkli] adv. 在经济上；节省地
     - economic vs. economical
         - Here's his advice for <ins>economic/economical</ins> foodies.
         - It's a sure sign of <ins>economic/economical</ins> recovery.
@@ -165,14 +166,6 @@
     - v. 区分
     - vt. 使有差别
     - == distinguish == separate [ˈsepəreɪt]
-- distinction
-    - n. 差别
-    - distinctive
-        - adj. 独特的
-        - == special
-        - Nothing stops you from being **distinctive**.
-        - distinctiveness n. 特有性
-    - distinctly adv. 明显地
 - distinguish
     - v. 辨别
     - vt. 区分；使具有...特色
@@ -183,6 +176,14 @@
     - distinguish vs. differ
         - Could he <ins>distinguish/differ</ins> right from wrong？
         - The two leaders had <ins>distinguish/differ</ins> on the issue.
+- distinction
+    - n. 差别
+    - distinctive
+        - adj. 独特的
+        - == special
+        - Nothing stops you from being **distinctive**.
+        - distinctiveness n. 特有性
+    - distinctly adv. 明显地
 
 ## power
 
