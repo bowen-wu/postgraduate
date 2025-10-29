@@ -36,7 +36,7 @@
     - take a risk 冒险
     - reduce the risk of 降低...的风险
     - at risk 处境危险；受到威胁
-- When education becomes on-size-fits-all, it **risks** overlooking(v. 忽视) a nation's diversity of gifts.
+- When education becomes one-size-fits-all, it **risks** overlooking(v. 忽视) a nation's diversity of gifts.
 - risky [ˈrɪski]
     - adj. 有危险或风险的
     - riskily adv. 冒险地
@@ -103,8 +103,8 @@
         - craftsmanship n. 技术，技艺; 工力
             - craftsmanship spirit 工匠精神
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
-    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be knocked
-      off.
+    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be
+      <ins>knocked off(抄袭，复制)</ins>.
 
 ## deal
 
@@ -168,8 +168,8 @@
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
 - Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
   comes in.
-- After you have clearly and adequately **developed(详尽阐述)** the body of your paper, pay particular attention to the
-  introductory and concluding paragraphs.
+- After you have clearly and adequately(['ædɪkwətlɪ] adv. 足够地) **developed(详尽阐述)** the body of your paper, pay
+  particular attention to the introductory and concluding paragraphs.
 - developing adj. 发展中的
 - developed adj. 发达的
 - development
@@ -204,12 +204,12 @@
         - vt. 误解
         - misinterpretation n. 误解
             - == misunderstanding n. 误解，误会
-            - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news"
-              via social media.
+            - About a third say the problem of fake news lies in "**misinterpretation** or
+              exaggeration([ɪɡˌzædʒəˈreʃən] n. 夸张，夸大) of actual news" via social media.
             - Opportunities for **misinterpretation**, error, and self-deception **abound**. 误解、出错和自欺的可能性比比皆是
                 - abound [əˈbaʊnd]
-                    - vi. 丰富，盛产; 非常多，大量存在; 充满
-                    - Challenges abound, so do opportunities. 前方有挑战，也有机遇
+                    - vi. 大量存在
+                    - Challenges **abound**, so do opportunities. 前方有挑战，也有机遇
 - illustrate
     - vt. （用实例、图标等）说明
     - == demonstrate
@@ -222,8 +222,8 @@
     - n. 全体员工
     - vt. 由...担任工作人员
     - stuff [stʌf]
-        - vt. 塞满; 填塞; 让吃饱
-        - n. 材料，原料，资料; 〈俚〉钱，现金; 填充物; 素材资料
+        - vt. 填进，塞满
+        - n. 原料，材料(== thing)；
 - faculty [ˈfæklti] n. （高等院校的）院系；（高等院校中院、系的）全体教员
 
 ## Words
@@ -238,7 +238,7 @@
 - contradict [ˌkɑːntrəˈdɪkt]
     - v. 反驳; 相矛盾，违背
 - condemn [kənˈdem]
-    - v. 谴责; 宣判; 使陷入; 宣布…不安全; 证明…有罪
+    - v. 谴责; 宣判; 使陷入; 宣布...不安全; 证明...有罪
 - controversial [ˌkɑːntrəˈvɜːrʃl]
     - adj. 有争议的，引发争论的
 - indirect

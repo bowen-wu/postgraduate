@@ -40,7 +40,21 @@
     - The new vaccine, which is different from the annual flu vaccine, is available ahead of expectations.
     - I found, as Hacker observed years before, that most wives want their husbands to be...conversational partners, but
       few husbands share this expectation of their wives.
-2. 状语从句插入造成的分裂结构
+2. 状语从句插入造成的分裂结构: 状语从句是对主句的补充，表示描述性的信息，它通常有三种位置：主语前、主语后、终于中。当状语从句位于主句中间时，就会造成分裂结构
+    - Yet these creatures are members of the biotic community and, if its stability depends on its integrity, they are
+      entitled to continuance.
+    - Branch points out that, even if a growing number of official guidelines and textbooks reflect scientific consensus
+      on climate change, unofficial educational materials that convey more biased perspectives are being distributed to
+      teachers.
+
+#### 从句后移式的分裂结构
+
+- 有时从句过长，主句过短，为了避免意思表达的不连贯，因此把长的从句后移，保证主句的连贯性
+- 遇到这种分裂结构，只需要把后移的从句还原到原本的位置再分析即可
+- Certainly, no homework should be assigned that students cannot complete on their own or that they cannot do without
+  expensive equipment.
+- But as the Nuclear Regulatory Commission(NRC) reviews the company's application, it should keep it mind what promises
+  from Energy are worth.
 
 ### Words
 

@@ -204,7 +204,7 @@
     - dynamic
         - adj. 充满活力的；精力充沛的
         - == energetic
-- the relative <ins>power/strength/dynamics/dynamic</ins> of the English language. 英语的相对优势
+- the relative <ins>power/strength</ins> of the English language. 英语的相对优势
 
 ## culture
 
@@ -229,6 +229,7 @@
     - n. 麻烦事，讨厌的人或事
 - knock out
     - == overturn
+    - == overrule
     - 推翻
 - verdict [ˈvɜːrdɪkt]
     - n. 裁决

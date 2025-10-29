@@ -28,10 +28,12 @@
     - conclusive
         - adj. 确凿的
         - == certain
-        - **Conclusive** means you've got your answer, you've proved your theory, and there can't be any doubt about it.
+        - **Conclusive** means you've got your answer, you've proved your theory([ˈθiːəri]), and there can't be any
+          doubt about it.
         - inconclusive
             - adj. 无定论的；不确定的；非决定性的，无结果的
-            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are **inconclusive**.
+            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are *
+              *inconclusive**.
                 - be aware([əˈwer]) of + 名词/从句 意识到/察觉到
 
 ## standard
@@ -40,7 +42,7 @@
 - adj. 标准的
 - standardize [ˈstændərdaɪz]
     - vt. 使标准化; 用标准校检
-    - standardized
+    - standardized ['stændədaɪzd]
         - adj. 标准化的
         - Such **standardized** test may not assess(v. 评估) all the important elements necessary to succeed in school
           and in life, argues Robert J.Sternberg. 😔
@@ -66,7 +68,8 @@
 - metaphysical [ˌmetə'fɪzɪkl]
     - adj. 形而上学的；超自然的
     - meta- == beyond 超过
-    - Add the Greek prefix "meta-"(beyond) to the base "physical"(nature), and you ge metaphysical-a near synonym to the
+    - Add the Greek prefix "meta-"(beyond) to the base "physical"(nature), and you get metaphysical-a near synonym to
+      the
       Latinate word "supernatural([ˌsupərˈnætʃrəl])".
     - metabolism [məˈtæbəlɪzəm] n. 新陈代谢
 - psychology [saɪˈkɑːlədʒi]
@@ -111,7 +114,7 @@
             - The author's attitude toward choosing Mauna Kea as the TMT site is one of <ins>*_____*</ins>
                 - A. service criticism
                 - B. full **approval** 完全赞成
-    - disapproval [ˌdɪsəˈpruvəl] n. 不赞成
+        - disapproval [ˌdɪsəˈpruvəl] n. 不赞成
 
 ## continue
 
@@ -161,19 +164,19 @@
     - economic boom/prosperity 经济繁荣
 - bleak [bliːk] 😔
     - adj. 不乐观的，暗淡的；荒凉的
-    - == hopeless == unpromising([ʌnˈprɑmɪsɪŋ] adj. 无前途的，没有希望的; 前途无望) 
+    - == hopeless == unpromising([ʌnˈprɑmɪsɪŋ] adj. 无前途的，没有希望的; 前途无望)
     - The immediate outlook remains **bleak**. 近期前景依然黯淡
     - The island's pretty **bleak**.
     - "There is nothing left", she says **bleakly**.
 
 ## lack
 
+- [læk]
 - vt. 缺乏
 - n. 缺乏
 - lack + 宾语
-- be lacking in
-- lack in sth
-- Despite his **lack of** experience, he got the job.
+- be lacking in 缺乏...；在...方面不足
+- Despite his **lack** of experience, he got the job.
 - This car **lacked** the power of the American cars.
 - He said there was no **lack** of things for them to talk about.
 - shortage n. 缺少
@@ -182,7 +185,7 @@
     - n. 缺陷；缺少
     - Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may
       *compensate([ˈkɑːmpenseɪt] v. 补偿，赔偿; 弥补) for* an <ins>emotional **deficiency**</ins>.
-    - == shortage == flaw([flɔː] n. 错误; 缺点; 瑕疵) 
+    - == shortage == flaw([flɔː] n. 错误; 缺点; 瑕疵)
 - flawless 🙂
     - adj. 完美的，无瑕的
     - == perfect
@@ -196,7 +199,7 @@
 
 - adj. 地方的，当地的
 - local special 当地特色
-- locate
+- locate [ˈloʊkeɪt]
     - vt. 找出...的准确位置；把...安置在
     - be located in 位于.../坐落在...
 - site n. 场所；发生地；（事件发生的）现场；网站
@@ -205,7 +208,7 @@
     - n. 斑点；点； 地点，场所；污点;
     - 词组
         - be spot-on 准确的
-    - They stayed at several of the island's top <ins>tourist **spots**</ins>.
+    - They stayed at *several([ˈsevrəl])* of the island's top <ins>tourist **spots**</ins>.
     - Vicenzo failed to **spot** the error.
 
 ## professor
@@ -213,8 +216,8 @@
 - n. 教授
 - profession n. 职业；专业
 - professional adj. 职业的；专业的
-- professionalize vt. 使专业化
-- professionalism n. 专业水平
+- professionalize [prəˈfɛʃənəˌlaɪz] vt. 使专业化
+- professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平
 - amateur [ˈæmətər]
     - n. 业余爱好者
     - adj. 业余的
