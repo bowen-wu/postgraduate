@@ -13,7 +13,7 @@
 
 ### Example
 
-- <ins>During the late 1990s</ins>, <ins>national</ins> *spending* <ins>on social sciences and the humanities<ins> <ins>as a percentage of all research and development funds<ins>-<ins>including government, higher education, non-profit and corporate<ins>-**varied** <ins>from around 4% to 25%</ins>...
+- <ins>During the late 1990s</ins>, <ins>national</ins> *spending* <ins>on social sciences and the humanities<ins> <ins>as(prep. 作为) a percentage of all research and development funds<ins>-<ins>including government, higher education, non-profit and corporate<ins>-**varied** <ins>from around 4% to 25%</ins>...
 - <ins>A new</ins> *study* <ins>published in the journal Child Development</ins>, <ins>by Eveline Crone of the university of Leiden and colleagues</ins>, **suggests** <ins>**that** ~the positive and negative~ sides ~of teenagers~ **go** hand in hand</ins>.
 - <ins>Also</ins>, some *research* **suggests** <ins>**that** the *explanation* ~for rising rates~ ~of mortality, mental-health problems, and addiction~ ~among poorly-educated, middle-aged people~ **is** shortage ~of well-paid jobs~</ins>.
 - <ins>**As** much of *Mexico City* **shut** down ~at the height of a panic~</ins>, *cases* **began** to crop up <ins>in New York City</ins>, <ins>the southwestern United States and around the world</ins>.
@@ -27,7 +27,7 @@
     - 联合地；手拉手地
 - explanation
     - n. 解释，说明
-- mortality
+- mortality [mɔːrˈtæləti]
     - n. 死亡
 - addiction
     - n. 成瘾，痴迷
@@ -39,14 +39,13 @@
     - n. 恐慌，惊慌
 - a string of...
     - 一系列的...
-- collapse
+- collapse [kəˈlæps]
     - v./n. 坍塌，倒塌，瓦解
 - leakage
     - n. 渗漏，泄露
-- raise queations about
+- raise question about
     - 引起对...的质疑
 - misleading
     - adj. 误导性的，欺骗性的
 - statement
     - n. 声明，申述，叙述
-  
