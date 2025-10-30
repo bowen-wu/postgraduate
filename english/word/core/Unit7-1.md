@@ -14,7 +14,7 @@
 
 ## comment
 
-- n./v. 评论
+- v./n. 评论
 - comments on/about 评论
 - 词组
     - make comments 做出评论
@@ -25,17 +25,17 @@
         - in one's opinion 依某人的观点
         - have a low opinion of 对...评价不高
 - remark
-    - n./v. 评论
+    - v./n. 评论；标记
     - How could she have let those enormous bonus payouts pass **unremarked**?
-    - remarkable adj. 引人注目的，显著的        
-- attitude n. 态度
+    - remarkable adj. 引人注目的，显著的
 - criticism n. 批判; 指责; (书籍或音乐等)评论
+- attitude n. 态度
 
 ### control
 
 - vt. 控制
 - n. 控制权；控制能力；（实验中的）对照（组或物）
-- Everything is under control.
+- Everything is under **control**.
 - 词组
     - be under control 得到控制
     - get out of control 失去控制
@@ -49,16 +49,18 @@
 
 ## major
 
+- vi. (~ in)主修
 - adj. 主要的
     - major cause 主要原因
 - n. 专业
-- vi. (~ in)主修
-    - major in + 专业名 = my major is + 专业名
-- These are **disciplines**（学科） that are going out of style: 22% of American college graduates now **major in** business
+- What should you major in?
+    - major in + 专业名 
+    - == my major is + 专业名
+- These are **disciplines(学科)** that are going out of style: 22% of American college graduates now **major in** business
   compared with only 2% **in** history and 4% **in** English.
-- majority n. 大多数
-    - Like the **majority** of authors, he had to suffer many disappointments and rejections along the way, but these
-      made him all the more determined to succeed.
+- majority 
+    - n. 大多数
+    - Like the **majority** of authors, he had to suffer many disappointments and rejections along the way, but these made him all the more determined to succeed.
     - minority n. 少数; 少数民族; 未成年
 - chief
     - adj. 主要的；首席的
@@ -67,17 +69,16 @@
     - CFO == Chief Financial Officer 首席财务官
     - COO == Chief Operating Officer 首席运营官
 - main adj. 主要的
-- principal adj. 最重要的
-    - == fundamental
-    - == primary
-    - == major
+- principal 
+    - adj. 最重要的
+    - == fundamental == primary == major
     - the principal requirement
     - principle n. 道德原则; 法则; 观念; 理由; 定律
 - mostly adv. 主要地；大部分地
 - largely adv. 在很大程度上；主要地
 - minor adj. 较小的
     - minority n. 少数
-        - In his book The Tipping Point, Malcolm Gladwell argues that "social epidemics" are driven in large part by the Z/,.actions of **a tiny minority of special individuals**.
+        - In his book The Tipping Point, Malcolm Gladwell argues that "social epidemics" are driven in large part by the actions of <ins>a tiny **minority** of special individuals</ins>.
 
 ## online
 
@@ -86,29 +87,35 @@
 - network
     - n. （线路、道路、血管等的）网状系统；关系网；（广播或电视）网
     - vt. 将...连接成网络
-- hack vt. 非法侵入（他人计算机系统）
+- hack 
+    - vt. 非法侵入（他人计算机系统）
     - Journalists are known to have **hacked** the phones of up to 5,500 people.
-- download vt. 下载
-    - This is because the networked computer has sparked a secret war between **downloading** and **uploading**-between
-      passive consumption and active creation.
+- download 
+    - vt. 下载
+    - This is because the networked computer has sparked a secret war between **downloading** and **uploading**-between passive consumption and active creation.
 - upload
     - vt. 上传
     - n. 上传的数据
-- encode vt. 把...编码
+- encode 
+    - vt. 把...编码
     - Girls' attraction to pink may seem unavoidable, somehow **encoded** in their DNA.
 - code n. 密码，代码；行为规范，道德准则；法典
 
 ## sense
 
-- n. 感觉，意识；判断力；意义
 - vt. 检测出
+- n. 感觉，意识；判断力；意义
+- sense and sensibility 理智与情感
 - 词组
     - make sense 有意义；说得通
     - in one sense 在某种意义上
     - common sense 常识
 - nonsense n. 胡扯 😔
-- sensible adj. 明智的，理性的
-- sensitive adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
+- sensible 
+    - adj. 明智的，理性的
+    - sensible idea
+- sensitive 
+    - adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
     - be sensitive to 对...敏感
     - Until this century, university libraries were not very price **sensitive**.
     - sensitivity n. （信息、话题等的）敏感性，体贴
@@ -116,7 +123,7 @@
 - sensibility n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
 - sentiment
     - n. 观点；情绪（多愁善感）
-    - At the next election none of the big parties seem likely to endorse(v. 赞同，支持) this **sentiment**.
+    - At the next election none of the big parties seem likely to *endorse(v. 赞同，支持)* this **sentiment**.
 - emotion
     - n. 情绪
     - emotional adj. 情感上的；情绪的
@@ -129,14 +136,14 @@
 - communal [kəˈmjuːnl] adj. 团体的
 - communicate
     - vi. 交流
+        - communicate with
     - vt. 传达（想法、感情、思想等）
-    - communicate with
     - When your body language **communicates** reluctance or anxiety, it undercuts the message.
     - communication n. 交流；（信息）传播
-- corporate adj. 公司的
+- corporate 
+    - adj. 公司的
     - corporation n. （大）公司
-        - == firm
-        - == company
+        - == firm == company
 
 ## define
 
@@ -144,10 +151,13 @@
 - To define is to limit.
 - definition n. 定义
 - redefine vt. 重新定义
-- definite adj. adj. 不会改变的; 明确的; (证据或信息)确凿的
-    - infinite adj. 无限的，无穷的; 极大的，极多的
-    - infinity stone 宝石
-- definitely adv. 肯定
+- definite 
+    - adj. adj. 不会改变的; 明确的; (证据或信息)确凿的
+    - infinite 
+        - adj. 无限的，无穷的; 极大的，极多的
+        - infinity stone 宝石
+- definitely 
+    - adv. 肯定
     - infinitely adv. 无限地，无穷地; 极其
 - indefinitely adv. 无限期地；模糊不清的
 
@@ -158,23 +168,27 @@
     - make an effort to do sth. 努力做某事
         - == make efforts to do sth.
     - take efforts 付出努力
-- We should *spare no efforts to(不遗余力)*/*make great efforts to* protect the environment.
-- endeavor [ɪnˈdɛvər] vi. 努力
+- We should **spare no efforts to(不遗余力)/make great efforts to** protect the environment.
+- endeavor [ɪnˈdɛvər] 
+    - vi. 努力
     - endeavor to do
-    - California's Forest Carbon Plan **endeavors to**/*make efforts to* reduce the density of some of its forests.
-- strive vi. 努力
+    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the density of some of its forests.
+- strive 
+    - vi. 努力
     - strive to do
-    - The most successful monarchies(n. 君主制度) **strive to** abandon or hide their old aristocratic ways.
+    - The most successful *monarchies(n. 君主制度)* **strive to** abandon or hide their old aristocratic ways.
 
 ## order
 
-- n. 秩序；规定；（法院）决议，法令
 - vt. 命令
+- n. 秩序；规定；（法院）决议，法令
 - 词组
     - in order to 为了...
     - in short order 立即
-- disorder n. 混乱；【医】紊乱
-    - == chaos [ˈkeɪɑːs] n. 混乱，杂乱
+- disorder 😔
+    - n. 混乱；【医】紊乱
+    - == chaos [ˈkeɪɑːs] 
+        - n. 混乱，杂乱
         - chaotic adj. 混乱的; 乱糟糟的
     - anxiety disorder 焦虑症
     - depression n. 抑郁(症); 消沉; 萧条(期)
@@ -189,21 +203,24 @@
 
 ## account
 
-- n. 账户；描述；解释
 - vi. (~ for)（数量、比例上）占；(~ for)解释
+- n. 描述；账户；解释
+- bank account
 - factual account 基于事实的叙述/事实陈述
-- The proportion of Spring Festival gifts **accounted for**/occupy 40%.
+- The proportion of Spring Festival gifts **accounted for/occupy** 40 percent.
 - account for + 百分比 占比例
 - account for + 内容 解释
+    - A(原因) account for B(结果)
+    - His hard work accounts for his success.
 - accountable
     - adj. 对...负有责任的
     - == responsible
-    - The main purpose of this "clawback" rule is to hold bankers accountable for harmful risk taking.
+    - The main purpose of this "clawback" rule is to hold bankers **accountable** for harmful risk taking.
     - accountability n. 责任
 - count
     - vi. 数数；有价值
         - == matter
-        - It matters/counts a lot 这很重要
+        - It <ins>matters/counts</ins> a lot 这很重要
     - vt. 认为；把...算入
     - 词组
         - count backward 倒数
@@ -212,23 +229,38 @@
         - count for 值...
 - algorithm [ˈælɡəˌrɪðəm] n. 算法
 
-## claim
+## Words
 
-- vt. 声称
-- n. 声明；所有权
-- claim- == to shout 叫喊
-- **acclaim** vt./n. 称赞 🙂
-- claimant n. （因失业等）领取救济金者
-- declare v. 宣布，声明
-- assert
-    - vt. 声称，断言
-    - assertion n. 声明；断言
-- allege vt. 声称，指称
-- announce
-    - vt. 宣布
-    - announcement n. 宣告
-- contend
-    - vi. （尤指在争论中）声称
-    - Rosenberg **contends/holds/believe/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
-    - It is time to **contend with** unfair discrimination.
-- compliment n. 称赞
+- explicit [ɪkˈsplɪsɪt]
+  - == clear
+  - adj. 易于理解的; 明确的; 直言的
+  - implicit adj. 不言明[含蓄]的; 无疑问的，绝对的; 成为一部份的; 内含的
+    - == unclear
+    - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
+- propagate [ˈprɑːpəɡeɪt]
+  - vt. 繁衍，增殖; 使遗传; 扩散; 使蔓延
+  - vi. 繁殖; 扩大; [物] 通过媒介传送
+- aggravate
+  - v. 加重; 使恶化; 激怒，惹恼
+  - == worsen
+- cooperative
+    - adj. 合作的，协作的; 配合的 
+    - n. 合作社，合作机构
+- disavow [ˌdɪsə'vaʊ]
+    - vt. 不承认，抵赖，拒绝对...承担责任
+- anticipate
+    - v. 预期; 预计; 期盼; 先于...做
+- elect [ɪˈlekt]
+    - v. 选举; 选择 
+    - adj. 候任的
+- counterbalance
+  - vt. 对...起平衡作用，抵消
+  - n. 抗衡 （力），平衡力
+- conclusion
+  - n. 结论; 结束; 末尾; 结局; 签订
+- guidance
+  - n. 指导; 导航
+
+## 词组
+
+## 句式

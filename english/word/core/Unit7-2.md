@@ -12,6 +12,27 @@
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
 
+## claim
+
+- vt. 声称
+- n. 声明；所有权
+- claim- == to shout 叫喊
+- **acclaim** vt./n. 称赞 🙂
+- claimant n. （因失业等）领取救济金者
+- declare v. 宣布，声明
+- assert
+    - vt. 声称，断言
+    - assertion n. 声明；断言
+- allege vt. 声称，指称
+- announce
+    - vt. 宣布
+    - announcement n. 宣告
+- contend
+    - vi. （尤指在争论中）声称
+    - Rosenberg **contends/holds/believe/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
+    - It is time to **contend with** unfair discrimination.
+- compliment n. 称赞
+
 ## describe
 
 - vt. 描述，描绘
@@ -186,27 +207,6 @@
 
 ## Words
 
-- explicit [ɪkˈsplɪsɪt]
-    - == clear
-    - adj. 易于理解的; 明确的; 直言的
-    - implicit adj. 不言明[含蓄]的; 无疑问的，绝对的; 成为一部份的; 内含的
-        - == unclear
-        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
-- propagate [ˈprɑːpəɡeɪt]
-    - vt. 繁衍，增殖; 使遗传; 扩散; 使蔓延
-    - vi. 繁殖; 扩大; [物] 通过媒介传送
-- aggravate
-    - v. 加重; 使恶化; 激怒，惹恼
-    - == worsen
-- progression
-    - n. （事件的）连续; 一系列; 发展，进展
-- counterbalance
-    - vt. 对...起平衡作用，抵消
-    - n. 抗衡 （力），平衡力
-- conclusion
-    - n. 结论; 结束; 末尾; 结局; 签订
-- guidance
-    - n. 指导; 导航
 - flawless
     - adj. 完美的，无瑕的
     - == perfect

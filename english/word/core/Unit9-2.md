@@ -38,7 +38,7 @@
 
 - vt. 平衡；均衡
 - n. 平衡；余额
-- check and balance 制约
+- check and balance 制约和平衡
 - imbalance n. 不平衡
 - counterbalance vt. 平衡；抵消
 
@@ -122,7 +122,7 @@
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - Deliberate practice **entails** more than simply repeating a task.
+    - Deliberate practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a task.
 
 ## source
 
@@ -198,11 +198,12 @@
 - executive [ɪɡˈzekjətɪv]
     - adj. 经营管理的；行政的；
     - n. 管理人员，领导层
-    - Chief Executive Officer(CEO) 首席执行官
+    - Chief([tʃiːf]) Executive Officer(CEO) 首席执行官
+    - execute [ˈeksɪkjuːt] v. 处死; 实施; 完成; 制作
 - authority [əˈθɔːrəti]
     - n. 权力；权威；官方机构；权威人士
-    - authorization [ˌɔθərəˈzeɪʃn] n. 授权
     - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
+    - authorization [ˌɔθərəˈzeɪʃn] n. 授权
 - authentic [ɔːˈθentɪk]
     - adj. 真实的；可靠的；正宗的
     - Kids need a range of **authentic** role models.
@@ -242,6 +243,7 @@
 - otherwise
     - adv. 否则；在其他方面
     - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
+      失败也能教会我们关于自己的一些事情，这些是我们否则无法学到的
 - nevertheless [ˌnevərðəˈles] adv. 然而
 - nonetheless [ˌnʌnðəˈles] adv. 尽管如此
 

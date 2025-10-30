@@ -26,8 +26,10 @@
 - interview
     - vt. 采访
     - n. 面试；采访
-    - interviewer n. 采访者
-    - interviewee n. 求职者
+    - interviewer n. 面试者；采访者
+    - interviewee 
+      - n. 求职者
+      - == jobseeker
 - review
     - v. 审查，写（关于数据、戏剧、电影等的）评论；（尤指为准备考试而）温习
     - n. 评审；评论；回顾
