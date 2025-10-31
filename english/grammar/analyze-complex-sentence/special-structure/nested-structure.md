@@ -8,13 +8,30 @@
 
 ### Case
 
-- One idea is that teenage behavior is related to what researchers call "reward sensitivity".
-- Gates chooses nonfiction titles because they explain how the world works.
-- The consequence is that you perceive that the trip has taken less time than it actually has.
-- I don't think the findings that we have are any evidence of personal delusion.
-- According to Ben-Shahar, realistic optimists are those who make the best of things than happen, but not those who
-  believe everything happens for the best.
-- Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who
-  came before them.
+- One idea **is** <ins>**that** teenage behavior **is related** to ***what*** _researchers_ ***call*** _"reward sensitivity"_</ins>.
+- Gates **chooses** nonfiction titles <ins>**because** they **explain** ***how*** _the world_ ***works***</ins>.
+- The consequence **is** <ins>**that** you **perceive** ***that*** _the trip_ ***has taken*** _less time_ **than** it actually **has**</ins>.
+- I **don't think** <ins>the findings ***that*** _we_ ***have*** **are** any evidence of personal delusion<ins>.
+- According to Ben-Shahar, realistic optimists **are** those <ins>**who** **make** the best of things ***that happen***<ins>, but not those <ins>**who believe** _everything_ ***appens*** _for the best_</ins>.
+    - 主句: According to Ben-Shahar, realistic optimists **are** those but not those
+- Everybody **wants** to know **how** the people <ins>**who** **will soon inhabit** those empty office cubicles<ins> **will differ** from those <ins>**who** **came** before them</ins>.
 
 ### Words
+
+- sensitivity
+    - n. 敏感性；敏感；体贴，体恤
+- consequence
+    - n. 结果，后果
+- perceive
+    - v. 感觉，察觉
+- delusion
+    - n. 错觉，幻想，妄想；迷惑，欺骗
+- realistic
+    - adj. 现实的
+- inhabit
+    - v. 占据，留在；居住于
+- cubicle
+    - n. 隔间，小房间
+- differ from...
+    - 与...不同；区别于...
+

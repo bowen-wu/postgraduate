@@ -121,9 +121,8 @@
 - vt. 陈述；规定
 - n. 州；状态；国家；政府
 - adj. 州的
-- Youth is not a time of life, it is <ins>state of mind(心境)</ins>.
-- They were comfortable in describing different emotional **states** and part of what you do in drama is
-  <ins>put yourself in different shoes(设身处地的，将心比心的)</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
+- Youth is not a time of life, it is <ins>**state** of mind(心境)</ins>.
+- They were comfortable in describing different emotional **states** <ins>and part of _what you_ ***do*** _in drama_ **is** *put yourself in different shoes(设身处地的，将心比心的)*</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
 - They set new standards for ventilation, energy efficiency and heating, and **state** that new residential buildings
   must have charging points for <ins>electric vehicles(电动汽车 EV)</ins>.
 - statement n. 声明；说法
