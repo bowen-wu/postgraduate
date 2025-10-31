@@ -13,15 +13,15 @@
 
 #### 主谓<ins>*主谓*</ins>，则后面的为从句
 
-- India *has just announced* <ins>it *will "eliminate* all single-use plastic in the country by 2022"</ins>.
-- ...this *is* one of the areas <ins>his team *will investigate* further</ins>.
-- Such a view *would require* a corresponding shift in the way <ins>US society today *views* fire</ins>...
+- India **has just announced** <ins>it **will "eliminate** all single-use plastic in the country by 2022"</ins>.
+- ...this **is** one of the areas <ins>his team **will investigate** further</ins>.
+- Such a view **would require** a corresponding shift in the way <ins>US society today **views** fire</ins>...
 
 #### 主<ins>*主谓*</ins>谓，则中间的为从句
 
-- Everything <ins>he *achieved* in life</ins> *was earned* the hard way.
-- ...many of the products <ins>we *use* every day...</ins>*are* result of manufactured habits.
-- The product <ins>they*'re selling*</ins> *is* data**,** <ins>**and** we...*convert* our lives to data for the benefit of the digital giants</ins>.
+- Everything <ins>he **achieved** in life</ins> **was earned** the hard way.
+- ...many of the products <ins>we **use** every day...</ins>**are** result of manufactured habits.
+- The product <ins>they **are selling**</ins> **is** data, <ins>**and** we...**convert** our lives to data for(prep. 为了...) the benefit of the digital giants</ins>.
 
 ### Words
 

@@ -163,6 +163,7 @@
 - vt. 暗示；说明
 - implicit [ɪmˈplɪsɪt]
     - adj. 不直接言明的；内含的
+    - == indirect == unclear
     - implication n. 可能的影响（或作用、结果）；含意
 - explicit [ɪkˈsplɪsɪt]
     - adj. 明确的

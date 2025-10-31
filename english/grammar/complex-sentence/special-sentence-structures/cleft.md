@@ -19,17 +19,17 @@
 
 - **It is/was...that/who...**
 - 强调句中，强调现在的事用**is**，强调过去的事用**was**
+    - <ins>It was</ins> **_not until(直到...才...)_ the 1940s** <ins>that</ins> a majority of states made women eligible([ˈelɪdʒəbl] adj. 有资格的) for jury duty(n. 责任).
 - 不论强调的是什么成分，都可以使用**that**，如果被强调的部分是人时，也可以使用**who**
-- <ins>It is</ins> **man, real, living man** <ins>who</ins> does all that.
-- <ins>It was</ins> **not until the 1940s** <ins>that</ins> a majority of states made women eligible for jury duty.
+    - <ins>It is</ins> **man, real, living man** <ins>who</ins> does all that.
 - 强调句不能强调**形容词或动词**，但可以强调其他词或词组，也可以强调从句
-- <ins>It was</ins> **only after "toddler" became a common shoppers' term** <ins>that</ins> it evolved into a broadly accepted developmental stage.
+    - <ins>It was</ins> **only after "toddler" became a common shoppers' term** <ins>that</ins> it evolved into a broadly accepted developmental stage.
 
 ### 强调句 vs 主语从句后置
 
-- It is...that...句型既可以表示强调句，也可表示后置主语从句，区分方法如下
+- It is...that...句型既可以表示**强调句**，也可表示**后置主语从句**，区分方法如下
     1. 根据强调句构成原理，如果去掉*It is...that...*，余下部分可还原成一个完整的句子，则是强调句；反之是后置主语从句
-    2. 如果 *It is...that...* 中间是形容词或动词，则该句是后置主语从句
+    2. 如果 *It is...that...* 中间是**形容词或动词**，则该句是后置主语从句
         - <ins>It is</ins> quite possible <ins>that</ins> the homework helped.
         - Yet <ins>it is</ins> principally during this period of stronger governance <ins>that</ins> CEO pay has been high and rising.
         - <ins>It is</ins> a fact <ins>that</ins> the earth moves around the sun.
@@ -40,7 +40,7 @@
     - 赶上...
 - be left behind
     - 落后
-- a majority of...
+- a majority([məˈdʒɔːrəti]) of...
     - 大多数的...；大部分的...
 - eligible [ˈelɪdʒəbl]
     - adj. 有资格的；合格的，合适的；符合条件的
