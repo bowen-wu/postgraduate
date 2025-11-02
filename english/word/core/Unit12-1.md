@@ -11,6 +11,8 @@
     - 动作**不需要对象**就能完整表达意思
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
+- [e] -> 哎(ai)
+- [ə] -> 额(e)
 
 ## manage
 
@@ -28,7 +30,8 @@
 - memory loss 失忆
 - memorable
     - adj. 难忘的
-    - Honestly，if we got stuck in the rut of "hi","hello","how are you?" and "what's going on?",you will fail to give the initial jolt to the conversation (that can make it so memorable).
+    - Honestly，if we got stuck in the rut of "hi","hello","how are you?" and "what's going on?",you will fail to give
+      the initial jolt to the conversation (that can make it so memorable).
 - memorization n. 记忆
 
 ## regard
@@ -36,7 +39,8 @@
 - vt. 把...视为
 - n. 关注
 - regard A as B
-- Many Americans regard <ins>the jury system(陪审团制度)==> decision == verdict</ins> as a concrete expression of crucial democratic values，including the principles that...
+- Many Americans regard <ins>the jury system(陪审团制度)==> decision == verdict</ins> as a concrete expression of
+  crucial democratic values，including the principles that...
 - in/with regard to 关于
 - regarding == about prep. 关于
 - disregard n. 忽视
@@ -80,7 +84,8 @@
     - in the foreseeable future 在可预见的未来
 - foreshadow
     - vt. 预示
-    - ...the author produced a remarkable work of speculative fiction that would foreshadow many ethical questions to be raised by technologies yet to come.
+    - ...the author produced a remarkable work of speculative fiction that would foreshadow many ethical questions to be
+      raised by technologies yet to come.
 
 ## prevent
 
@@ -143,6 +148,10 @@
 - v. (向...)收费
 - vt. 控告；指责；使...承担责任
 - in charge （of）负责
+- charged
+    - adj. 充满情绪的、带有某种强烈色彩的
+    - politically charged 政治意味浓厚的；有政治争议的
+    - emotionally charged 情绪化的；充满情感的
 - accuse
     - vt. 指责；指控
     - accuse sb. of sth. == charge sb. with sth. 职责某人某事
@@ -169,7 +178,8 @@
     - conflict with 和...冲突
 - wreak
     - vt. 造成（混乱或破坏）
-    - ...although American men tend to talk more than women in public situations，they often talk less at home. And this pattern is wreaking havoc with marriage.
+    - ...although American men tend to talk more than women in public situations，they often talk less at home. And this
+      pattern is wreaking havoc with marriage.
 - harmonization
     - n. 和谐
     - in harmony with 与...和谐共处

@@ -39,7 +39,7 @@
 
 ### Words 
 
-- momentum
+- momentum [moʊˈmentəm]
     - n. 势头
 - account for
     - 占...比例；解释，说明
@@ -49,15 +49,15 @@
     - adj. 竞争的
 - dynamics
     - n. 动力学，力学
-- fragmented
+- fragmented [ˈfræɡmentɪd]
     - adj. 零散的，片段的
-- consolidate
+- consolidate [kənˈsɑːlɪdeɪt]
     - v. 巩固；联合
 - unemployment
     - n. 失业；失业率；失业人数
-- materialistic
+- materialistic [məˌtɪriəˈlɪstɪk]
     - adj. 物质主义的，金钱至上的；唯物主义的
-- prudent
+- prudent [ˈpruːdnt]
     - adj. 谨慎的；精明的
 - be aware of...
     - 意识到...，觉察到...

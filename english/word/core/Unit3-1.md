@@ -11,6 +11,8 @@
     - 动作**不需要对象**就能完整表达意思
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
+- [e] -> 哎(ai)
+- [ə] -> 额(e)
 
 ## result
 
@@ -24,7 +26,8 @@
         - **A(结果)** as a result of B(原因)
     - result from
         - 由...引起
-        - **A(结果)** result from B(原因) == stem from == originate([əˈrɪdʒɪneɪt]) from == spring from == derive from
+        - **A(结果)** result from B(原因) == originate([əˈrɪdʒɪneɪt]) from == spring from ==
+          derive([dɪˈraɪv] v. （使）起源于，来自) from == stem([stem] v. 阻止) from
     - result in
         - 造成...结果, 导致
         - A result in **B(结果)** == A cause B == A lead to B
@@ -59,7 +62,7 @@
     - prosecutor n. 检察官；公诉人
     - persecute [ˈpɜːrsɪkjuːt]
         - v. **迫害**；残害
-        - Weaver and his family have been **persecuted** by the authorities for their beliefs(n. 信仰).
+        - Weaver and his family have been **persecuted** by the authorities for their beliefs([bɪ'lifs] n. 信仰).
 - appeal
     - v. 吸引；上诉；呼吁，恳求
     - n. 吸引；上诉；呼吁，恳求
@@ -70,13 +73,13 @@
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释
-    - To **plead with** someone is to try to convince them to see it your way.
+    - To **plead with** someone is to try to convince([kənˈvɪns] v. 说服) them to see it your way.
     - plead with sb. 恳求某人
     - plead for 恳求；呼吁
     - Your kids **plead with** you to let them go on the super-huge outrageous([aʊtˈreɪdʒəs] adj. 极限的)
       *roller coaster(过山车)* built in 1968, but you know better.
     - Only Ukip, sensing([sensɪŋ] n. 感觉) its chance, <ins>has sided with(支持...)</ins> those **pleading for** a more
-      considered approach to using green land.
+      considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
 
 ## market
 
@@ -167,18 +170,18 @@
 - n. 服务；国家政府部门
 - servant [ˈsɜːrvənt]
     - n. 仆人
-    - public/civil servant 公务员
+    - public/civil([ˈsɪvl]) servant 公务员
 - deserve
     - v. 值得
     - You **deserve** it.
     - We **deserve** things based on our actions.
-    - For example, many people believe murderers **deserve** the death penalty([ˈpenəlti] n. 刑罚).
+    - For example, many people believe murderers([ˈmɜːrdərər]) **deserve** the death penalty([ˈpenəlti] n. 刑罚).
 - observe
     - vt. 观察；注意到
     - Their capacity for tolerating stress may even be greater than men's, she **observed**.
     - observation n. 观察；评论
     - observer n. 观察者
-- preserve
+- preserve [prɪˈzɜːrv]
     - vt. 维护；保护；
     - ...these creatures(['kritʃəz] n. 生物) **preserve** the health of *game(n. 猎物)* by killing the physically weak.
 - reserve

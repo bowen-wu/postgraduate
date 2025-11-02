@@ -11,6 +11,8 @@
     - 动作**不需要对象**就能完整表达意思
     - 动词 + 介词 + 宾语
     - He **sleeps** early.
+- [e] -> 哎(ai)
+- [ə] -> 额(e)
 
 ## spread
 
@@ -52,13 +54,13 @@
 - vt. 遭受
 - 词组
     - suffer *from* 遭受
-- Every life is a genuine([ˈdʒenjuɪn] adj. 真正的) recollection(n. 回忆) of **suffering**; **suffering** for others the
+- Every life is a *genuine([ˈdʒenjuɪn] adj. 真正的)* *recollection(n. 回忆)** of **suffering**; **suffering** for others the
   process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
     - hardships == suffering
 - confront 😔
     - vt. 面临（问题、任务、困难等）
     - **Confront** means either to <ins>face a situation that makes you uncomfortable</ins>, or to <ins>say something to
-      someone about something they've done that bothers you</ins>.
+      someone about something they've done that bothers([ˈbɔðəz] v. 打扰) you</ins>.
     - be confronted with 😔
         - == be faced with (中性)
         - 面对...（困难、问题、情况）
@@ -67,6 +69,7 @@
 
 ## slave
 
+- [sleɪv]
 - n. 奴隶
 - slavery [ˈsleɪvəri]
     - n. 奴隶制
