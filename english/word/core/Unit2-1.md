@@ -18,7 +18,7 @@
 
 - v. 增长；增加
 - n. 增长，上涨
-- In developing counties,the number of mobile users <ins>**increased** sharply/spiked up/soared</ins> from
+- In developing counties, the number of mobile users <ins>**increased** sharply/spiked up/soared</ins> from
   approximately less than one billion in the year 2000 to four billion in 2008.
 - increasingly adv. 越来越多地
 - decrease
@@ -28,9 +28,9 @@
 - spike [spaɪk]
     - vi. 激增
     - == soar
-    - As the May, those rates had **spiked up to** 13.3 percent and 13.7 percent.
     - spike up 激增，飙升
     - spike up to + 百分比 飙升到
+    - As the May, those rates had **spiked up to** 13.3 percent and 13.7 percent.
 - accelerate [əkˈseləreɪt]
     - v. 使加速
     - acceleration n. 加速
@@ -99,8 +99,8 @@
 
 - n. 法律；（针对某项罪行、协议等的一条）法规；定律
 - bill n. 法案（不具有法律效力）
-- If the **bills** become **law**, state boards and commissions will be required to set aside 50 percent of board seats
-  for women by 2022.
+- If the **bills** become **law**, state boards and commissions will be required to *set aside(留，存；抽出)* 50 percent
+  of board seats for women by 2022.
 - lawyer n. 律师
 - lawsuit
     - n. 诉讼案；诉讼
@@ -117,7 +117,7 @@
         - **Legislation** is the act or process of making or enacting laws.
         - The European Union is now considering **legislation** to compel([kəmˈpel] v. 强迫) corporate boards to
           maintain a certain proportion of women.
-        - legislative
+        - legislative [ˈledʒɪsleɪtɪv]
             - adj. 立法的
             - legislative power
             - Congress 国会
@@ -128,8 +128,8 @@
 - enact
     - vt. 颁布；推行；实施
     - That means more battles like the one now going on between the Justice Department and California, which
-      **enacted** <ins>a tough net neutrality law</ins> in the wake of the FCC's abdication.
-      这意味着会出现更多类似美国司法部与加州之间的冲突。此前，在联邦通信委员会放弃网络中立监管之后，加州制定了一项严格的网络中立法
+      **enacted** <ins>a tough([tʌf] adj. 强硬的) net neutrality law</ins> in the wake of the FCC's abdication.
+      这意味着将会出现更多的论战，一如当前司法部和加利福利亚洲之间正在进行的：加利福尼亚州在FCC退出后颁布了一项颇为严厉的网络中立法规
     - overturn
         - vt. 推翻; 撤销（判决等）
         - == knock out
@@ -155,7 +155,7 @@
     - n. 展示；表演
 - manifest
     - vt. 显现，表明
-    - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to **manifest/demonstrate**
+    - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 *so as to* **manifest/demonstrate**
       the significant role(n. 诉讼; 角色; 地位; 作用) of good habits.
         - so as to + 动词原形 为了...；以便...
 - demonstrate
@@ -210,19 +210,19 @@
         - breakthrough n. 突破
         - Be relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的) and then you'll **break through**.
 - Don't just **go through** it; grow **through** it.
-- However, Obamacare has allowed more than 12 million people to either get insurance(n. 保险) **through** Medicaid or
-  the exchanges.
+- However, Obamacare has allowed more than 12 million people to either get insurance([ɪnˈʃʊrəns] n. 保险) **through**
+  Medicaid or the exchanges.
 - throughout
     - prep. 自始至终；遍及
     - adv. 自始至终；各处
         - == always == everywhere
-- cross
+- cross [krɔːs]
     - v. 穿越；交叉；
     - adj. 交叉的
     - finger cross 好运
     - cross- 交叉
-        - They <ins>cross-check(交叉检查)</ins> sources and prefer news from different perspectives.
-        - One <ins>cross-generation(跨代)</ins> mark of a successful life is having a family with children.
+        - They _**cross**-check(交叉检查)_ sources and prefer news from different perspectives([pərˈspektɪv] n. 视角).
+        - One _**cross**-generation(跨代)_ mark of a successful life is having a family with children.
 
 ## Words
 
@@ -230,10 +230,10 @@
     - adj. 聪慧的; 有才智的; 智能的
 - attain [əˈteɪn]
     - v. 获得; 达到
-    - == gain
+    - == gain [ɡeɪn]
 - burden
-    - n. 负担; 重负
     - v. 烦扰; （使）担负
+    - n. 负担; 重负
     - burdensome adj. 繁重的，烦累的，难以承担的; 累赘
 - process [prəˈses]
     - v. 加工; 处理; 冲印; 审核; 列队行进

@@ -169,7 +169,7 @@
     - implication n. 可能的影响（或作用、结果）；含意
 - explicit [ɪkˈsplɪsɪt]
     - adj. 明确的
-    - == direct == clear == expressed
+    - == direct == clear == express
     - explicitly [ɪk'splɪsɪtlɪ] adv. 明确地
 
 ## celebrity

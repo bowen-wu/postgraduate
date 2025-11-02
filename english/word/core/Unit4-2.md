@@ -55,7 +55,7 @@
     - around the corner 即将来临
         - == coming sooner
     - around the world 全世界
-- With the Spring Festival **around the corner/coming sooner**
+- With the Spring Festival **approaching/around the corner/coming sooner**
 - surround [səˈraʊnd]
     - vt. 环绕；包围；与...紧密联系
     - surrounding

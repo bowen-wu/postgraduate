@@ -78,7 +78,7 @@
         - television commercials 电视广告
 - enterprise
     - n. 事业；企业；冒险精神
-    - **Enterprise** describes <ins>a readiness to act boldly to get something started</ins>.
+    - **Enterprise** describes <ins>a readiness to act boldly(['boʊldlɪ] adv. 大胆地) to get something started</ins>.
     - People will say you show **extraordinary enterprise** for your willingness to take on such a challenging project,
       meaning you have initiative([ɪˈnɪʃətɪv] n. 主动性) and drive.
       人们会说，你表现出了非凡的进取心，因为你愿意承担这样一个具有挑战性的项目，也就是说，你有主动性和干劲
@@ -119,13 +119,14 @@
 - vt. 标志着；给...确定性质
 - n. 标志；痕迹
 - A mark B
-- Last year **marked** *the third year in a row* that Indonesia's bleak rate of *deforestation* has *slowed* in pace. 🙂
+- Last year **marked** *the third year in a row* that Indonesia's
+  *bleak rate of deforestation(令人沮丧的砍伐速度/严峻的砍伐率)* has *slowed* in *pace(n. 速度)*. 🙂
 - This year **marks** *exactly two centuries* since the publication of Frankenstein; or, The modern Prometheus, by Mary
   Shelley.
 - marked
     - adj. 显著的
-    - In the 1960s and 1970s, European universities saw **marked** changes in their governance arrangements, with the
-      empowerment of junior faculty and to some degree of students as well.
+    - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,
+      *with the empowerment of junior faculty and to some degree of students as well(赋予初级教师和一定程度的学生权力)*.
     - markedly adv. 显著地
 - remarkable adj. 非凡的，不同寻常的
 
@@ -156,15 +157,15 @@
 - query
     - vt. 向...提问
     - n. 疑问
-    - inquire/enquire vt. 询问；探究
-    - inquiry/enquiry n. 询问
+    - inquire/enquire [ɪn'kwaɪr] vt. 询问；探究
+    - inquiry/enquiry [ɪnˈkwaɪəri] n. 询问
 - issue
     - vt. 发布；发给；发出
     - n. 问题；议题；
     - 词组
         - at issue 讨论或争论中的
     - **issue** a report 发布报告
-    - The Administration is dominant over immigration **issues**.
+    - The Administration is *dominant([ˈdɑːmɪnənt]) over(对...占据主导地位/控制权)* immigration **issues**.
     - Faced with the demand for net neutrality rules，the FCC has **issued** a special resolution.
 - matter
     - **vi. 重要； 关系重大**
@@ -174,14 +175,14 @@
         - == sth. important
     - *Some* people like small talk in a meeting before digging into important **matters**, *while* others are more
       straightforward([ˌstreɪtˈfɔːrwərd] adj. 简单明了的; 坦率的).
-    - <ins>What **matters** is that(重要的是.../关键在于...)</ins> they will belong to a private
-      <ins>monopoly(n. 垄断企业)</ins> which developed them using public resources.
+    - <ins>What **matters** is that(重要的是.../关键在于...)</ins> they will belong to a private *monopoly(n. 垄断企业)*
+      which developed them using public resources.
       关键在于，它们将归属于一家私人垄断企业，而这家企业是利用公共资源开发它们的
 - affair
     - n. 事情（大，正式）；[pl.]事务；风流韵事
     - == matter
-    - Another way <ins>affair *is* frequently used</ins> is to mean a love affair, particularly if the relationship is
-      brief and intense.
+    - Another way <ins>affair **is** frequently used</ins> **is** to mean a love affair, particularly if the
+      relationship is brief and intense.
 
 ## research
 
@@ -225,8 +226,8 @@
 - n. 政府；治理
 - govern [ˈɡʌvərn]
     - vt. 治理；控制
-    - *Sensible* ideas have been around for a long time, but the *state*-level *bodies* that **govern** the *profession*
-      have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
+    - *Sensible* ideas have been around for a long time, but the *state*-level *bodies* <ins>that **govern** the
+      *profession(n. 职业)*</ins> have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
       这些明智的想法早已存在，但管理该行业的州级机构一直过于保守，因而未能将其付诸实施
 - governmental adj. 政府的
 - governance n. 控制；治理
@@ -275,7 +276,9 @@
         - 致力于
 - sensibility [ˌsɛnsəˈbɪlɪti]
     - n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
-    - sense n. 理智
+    - sense
+        - n. 理智
+        - makes sense 有意义；说得通；有道理
 
 ## 词组
 
