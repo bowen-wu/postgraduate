@@ -213,6 +213,7 @@
 - n. 文化；种植
 - It is very important to cultivate children's interest in <ins>traditional Chinese **culture**(中国传统文化)</ins> from
   an early age.
+- cultural [ˈkʌltʃərəl] adj. 与文化/艺术有关的
 - civil [ˈsɪvl]
     - adj. 公民的；政府的
     - civil rights 公民权利

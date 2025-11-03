@@ -54,7 +54,7 @@
 #### 补充
 
 1. 如果连接词的前后不是句子（即没有谓语动词）则这个连接词无效，不需要从这里断开
-    - Take a broader **look** at our species' place in the universe, <ins>**and** it **becomes** clear ***that*** _we_ **have** _an excellent chance of surviving for tens, if not hundreds, of thousands of years_</ins>.
+    - *Take a broader look(从更广泛的角度看)* at our species' place in the universe, <ins>**and** it **becomes** clear ***that*** _we_ **have** _an excellent chance of surviving for tens, if not hundreds, of thousands of years_</ins>.
 2. that 出现时，不一定可以用来断开句子，因为 that 除作连接词（引出从句）外，还可以做代词，表示"那个，那种"
     - On one hand, that viewpoint is a logical product of America's evolution.
 

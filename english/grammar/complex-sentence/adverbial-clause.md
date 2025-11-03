@@ -42,7 +42,7 @@
 |-------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | when        | 当...时候    | <ins>**When** our brains switch between being focused and unfocused on a task</ins>, then tend to be more efficient.                                                                         | 
 | while       | 当...时候    | Researchers measured people's cortisol...<ins>**while** they were at work</ins> and <ins>**while** they were at home</ins> and found...                                                      | 
-| as          | 当...时候，随着 | But <ins>**as** companies continue their attempt at personalized medicine</ins>, the courts will remain rather busy.                                                                         |
+| as          | 当...时候，随着 | But <ins>**as** companies continue their *attempt at(在...方面的尝试/企图)* personalized medicine</ins>, the courts will remain rather busy.                                                         |
 | before      | 在...之前    | Even dairy farms, where robots do a small share of milking, have a long way to go <ins>**before** they're automated</ins>                                                                    |
 | after       | 在...之后    | ...we quickly "thin slice" information reliably <ins>only **after** we ground such snap reactions in "thick sliced" long-term study</ins>.                                                   |
 | since       | 自从...     | The current downturn in the art market is the worst <ins>**since** the Japanese stopped buying Impressionists at the end of 1989</ins>.                                                      |
@@ -101,6 +101,8 @@
 | once                  | 一旦...     | ...<ins>**once** you get that first word out</ins> everything else will just flow.                                                          |
 | as long as/so long as | 只要...     | If you're a physician, you can risk your patients' suicide <ins>**as long as** you don't intend their suicide</ins>.                        |
 
+- get sth. out 说出来/吐露出来/发出来
+
 #### 让步状语从句
 
 - 让步状语从句，表示"**明让步，暗转折**"
@@ -120,7 +122,7 @@
 | 从属连词 | 含义               | Example 例句                                                                                                                                                                       |
 |------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | than | 和...相比较（用在比较级中）  | ...teachers are not assigning more <ins>**than** they are willing to review and correct</ins>.<br>...surfing the web exercised the brain more <ins>**than** reading did...</ins> |
-| as   | 和...相比较（用在原级比较中） | The boy is convinced that if he read enough, he can explore as many career paths <ins>**as** he likes</ins>.                                                                     |
+| as   | 和...相比较（用在原级比较中） | The boy is convinced that if he read enough, he can explore **as** many career paths <ins>**as** he likes</ins>.                                                                 |
 
 #### 方式状语从句
 
@@ -135,7 +137,7 @@
     1. 时间状语从句: 当...时候
     2. 原因状语从句: 因为...
     3. 比较状语从句: 和...相比较
-    4. 方式状语从句: 按照...方式，如果...
+    4. 方式状语从句: 按照...方式，如同...
 - 代入法: 看哪个意思带入句子中更合适
 - 只要**as**后引导的是*完整*的句子 => 状语从句
 - 若**as**引导的句子不*完整*，并且**as**在从句中*作成分* => 非限定性定语从句

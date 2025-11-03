@@ -22,7 +22,8 @@
 - Hard **work** is the price we must pay for success.
 - The new teaching method may **work** best with Shakespeare.
 - Gates chooses nonfiction titles because they explain how the world **works**.
-- The new **work** emphasizes that <ins>adolescence([ˌædəˈlesns] n. 青春（期）)</ins> is a time of opportunity as well as risk.
+- The new **work** emphasizes that <ins>adolescence([ˌædəˈlesns] n. 青春（期）)</ins> is a time of opportunity as well as
+  risk.
 - A number of priceless **works of art** were stolen from the gallery([ˈɡæləri] n. 美术馆).
 - 词组
     - work against 起反作用，对...不利 😔
@@ -124,7 +125,8 @@
 - n. 州；状态；国家；政府
 - adj. 州的
 - Youth is not a time of life, it is <ins>**state** of mind(心境)</ins>.
-- They were comfortable in describing different emotional **states** <ins>and part of _what you_ ***do*** _in drama_ **is** *put yourself in different shoes(设身处地的，将心比心的)*</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
+- They were comfortable in describing different emotional **states** <ins>and part of _what you_ ***do*** _in drama_ *
+  *is** *put yourself in different shoes(设身处地的，将心比心的)*</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
 - They set new standards for ventilation, energy efficiency and heating, and **state** that new residential buildings
   must have charging points for <ins>electric vehicles(电动汽车 EV)</ins>.
 - statement n. 声明；说法
@@ -145,7 +147,7 @@
     - A **statute** is a written law.
 - statue [ˈstætʃuː]
     - n. 雕像，雕塑
-    - A **statue** is a figure of a person, animal, or object that is carved or cast from some material.
+    - A **statue** is a *figure([ˈfɪɡjər])* of a person, animal, or object that is carved or cast from some material.
 - stake [steɪk]
     - v. 立界标以表明（所有权）；以...打赌
     - n. **重大利害关系**；*桩子*；股份
@@ -168,9 +170,9 @@
 
 - v. 采取（措施）；需要...时间；持有...看法；举例
 - n. 看法
-- At issue before the U.S. Court of <ins>Appeals(上诉)</ins> for the District of Columbia Circuit was <ins>the latest
-  **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
-  提交给美国哥伦比亚特区巡回上诉法院审理的问题是联邦通信委员会(FCC)关于网络中立性的最新看法
+- *At issue(争议/待解决的问题)* before <ins>the U.S. Court of *Appeals(上诉)* for the District of Columbia Circuit(
+  哥伦比亚特区巡回上诉法院)</ins> was <ins>the latest **take**</ins> of *the Federal Communications Commission(FCC)* on
+  net neutrality. 在哥伦比亚特区巡回上诉法院审理的争议是 FCC 关于网络中立的最新立场
 - 词组
     - take a(n)...approach([əˈproʊtʃ]) 采取...方法
     - take a(n)...stand/stance([stæns]) 采取...立场
@@ -210,7 +212,7 @@
 - adj. 社会的；社交的
 - And capacity in <ins>**social** care(社会关怀)</ins> needs to be greater, to support the growing number of people
   living with long-term conditions.
-- At the same time AI can also be used to generate content for <ins>**social** media</ins> *posts(帖子) and chat sites.
+- At the same time AI can also be used to generate content for <ins>**social** media</ins> *posts(帖子)* and chat sites.
 - sociable adj. 好交际的
 - socialise/socialize
     - vi. 和他人交往；
@@ -219,8 +221,8 @@
     - adj. 缺乏社交性的
     - a- 表示强调/表示否定
     - anti- 反
-    - They housed eight adult rats with two types of robotic rat-one social and one **asocial** for 5 our days.
-- sociologist n. 社会学家
+    - They housed eight adult rats with two types of robotic rat---one social and one **asocial** for 5 our days.
+- sociologist [ˌsoʊsiˈɑːlədʒɪst] n. 社会学家
 - society n. 社会；社团；
 
 ## accord
@@ -229,8 +231,7 @@
 - vi. 与...一致（或相符）
 - 词组
     - accord with 与...一致；同...相符合
-- Since desire and will are damaged by the presence of thoughts that do not **accord with** desire, Allen concluded: "
-  We do not attract what we want, but what we are". 由于欲望和意志会受到与欲望不一致的想法的干扰，艾伦得出结论：“我们吸引的不是我们想要的，而是我们自身的状态。”
+- <ins>**Since** desire and *will(n. 意志)* **are damaged** by the presence of thoughts ***that*** _do not_ **accord with** _desire_</ins>, <ins>Allen **concluded**</ins>: "We do not **attract** <ins>**what** we want</ins>, but <ins>**what** we **are**"</ins>. 由于欲望和意志会受到与欲望不一致的想法的干扰，艾伦得出结论：“我们吸引的不是我们想要的，而是我们自身的状态。”
 - according to 依据；根据
 - accordingly adv. 相应地；因此
 
@@ -239,7 +240,7 @@
 - n. 陪伴；公司；剧团；同伴
 - accompany
     - vt. 陪伴；伴随；为...伴奏
-    - Little reward **accompanies(随之而来/得到)** duplication and confirmation of what is already known and believed.
+    - Little reward **accompanies** duplication and confirmation of <ins>**what** **is** already known and believed</ins>.
       对已知和已被相信的事物进行重复和确认，很少有回报
 - companion [kəmˈpæniən]
     - n. 同伴；伴侣
