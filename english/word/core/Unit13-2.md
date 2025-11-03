@@ -146,8 +146,9 @@
     - vt. （使）隔离，脱离
     - isolated
         - adj. 孤独的；单独的
-        - <ins>No matter(不管怎样...)</ins> how **isolated** you might feel and how serious the situation is, you should
+        - <ins>No matter how(不管怎样...)</ins> **isolated** you might feel and how serious the situation is, you should
           always remember that you are not alone.
+            - no matter how 不管怎样...。让步状语从属连词
 
 ## consume
 
@@ -182,17 +183,17 @@
 - reputation 🙂
     - n. 名誉；名声
     - == fame == prestige [preˈstiːʒ]
+- prestige [preˈstiːʒ] 🙂 n. 威信；声望
 - fame 🙂
     - n. 名誉；名声
     - famed adj. 著名的
 - prominent [ˈprɑːmɪnənt]
     - adj. 杰出的；显著的
     - prominent figures(['fɪgəs]) 杰出人物
-- prestige [preˈstiːʒ] 🙂 n. 威信；声望
 - notorious [noʊˈtɔːriəs]
     - adj. 臭名昭著的; 臭名远扬的; 声名狼藉的; 恶名昭著
     - == ill-famed
-    - Use the adjective **notorious** to describe people, places, or thins that are **famous for a bad reason**.
+    - Use the adjective **notorious** to describe people, places, or things that are **famous for a bad reason**.
     - Which of the following would most likely be considered **notorious**?
         - A. a man who is well-known as a writer and a speaker.
         - B. a man who is always helpful and considerate to others.
