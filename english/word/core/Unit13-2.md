@@ -72,7 +72,7 @@
         - adj. 大量的，丰富的
         - == rich == sufficient
     - abundance n. 充裕；大量；丰富
-    - Opportunities for misinterpretation, error, and self-deception **abound**
+    - Opportunities for misinterpretation, error, and self-deception **abound**.
     - On our way ahead, <ins>**Challenge abound**</ins>, **so do opportunities**.
 
 ## ideal
@@ -124,6 +124,7 @@
 - vt. 使分离；区分
 - vi. 分离
 - adj. 分开的；单独的；不同的
+- == differentiate == distinguish
 - separate A from B
 - go separate ways 分道扬镳
 - separation n. 分离
