@@ -1,4 +1,4 @@
-# Unit 8
+# Unit 8-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -16,15 +16,21 @@
 
 ## force
 
-- n. 力量 == strength
 - vt. 促使；强迫
+- n. 力量
+    - == strength
+- May the force be with you.
 - force sb. to do sth.
-- The bans，If fully enforced，would suggest to women (and many men)that they should not let others be arbiters of their beauty.
 - reinforce vt. 强化；巩固
 - enforce
     - v. 执行
+    - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be arbiters
+      of their beauty.
     - enforcement n. 执行
-- compel vt. 迫使
+- compel
+    - vt. 迫使
+    - The European Union is now considering legislation to **compel** corporate boards to maintain a certain proportion
+      of women-up to 60 percent.
 - oblige
     - vt. 迫使
     - obligation n. 义务
@@ -32,7 +38,7 @@
 ## protect
 
 - vt. 保护；防护
-- protect sb. from doing 保护某人免受
+- protect/prevent sb. from doing 保护某人免受
 - protection n. 保护；防护
 - protective adj. 保护的；防护的
 - shelter
@@ -41,50 +47,70 @@
 
 ## subject
 
-- n. 主题；实验对象；学科
-- adj. 服从于...的
-    - be subject to sth
-    - be subject to doing sth.
 - vt. 使臣服
+- n. 实验对象；主题；学科
+- adj. 服从于...的；受支配的；易遭受...的
+    - be subject to sth. 受...影响/遭受.../受制于.../服从于...
+    - be subject to doing sth. 容易遭受/可能会经历
+- White noise was played into the **subject**'s ears through headphones.
+- Prices may be **subject** to the relation of supply and demand.
+- The study is a genome-wide analysis conducted on 1932 unique **subjects** which compared pairs of unrelated friends
+  and unrelated strangers.
+- In addition, the computer programs a company uses to estimate relationships may be patented and not **subject** to
+  peer review or outside evaluation.
 - subjective
     - adj. 主观的
-    - objective adj. 主观的
-    - If you go see a movie about a super hero，the topic is objective. But whether it's a good movie or not is subjective.
-- 实验对象
-    - White noise was played into the subject's ears through headphones.
-- adj. 受支配的；易遭受...的
-    - Prices may be subject to the relation of supply and demand.
+    - objective adj. 客观的
+    - If you go see a movie about a super hero, the topic is *objective*. But whether it's a good movie or not is *
+      *subjective**.
 - susceptible
     - adj. 易患病的；易受...影响的
-    - be susceptible to sth.
-    - Women are particularly susceptible to developing depression and anxiety disorder In response to stress compared to men.
-- be susceptible to == be subject to == be vulnerable to 遭受；承受
+    - be susceptible to (doing) sth.
+    - Women are particularly **susceptible** to developing depression and anxiety disorder in response to stress
+      compared to men.
+    - be susceptible to 遭受；承受
+        - == be subject to
+        - == be vulnerable to
 
 ## success
 
 - n. 成功；成就
-- succeed vi. 成功；有成就；做成；继承； vt. 继任
+- **Success** is not about reaching the top at all.
+- succeed
+    - vi. 有成就；做成；继承；成功；
+    - vt. 继任
 - successful adj. 成功的
 - succession
     - n. 继任，继承；一系列；连续
+    - The art market had witnessed a **succession** of victories.
     - successor n. 继承者；继任者
-    - The art market had witnessed a succession of victories.
-    - successive adj. 连续的，依次的；接替的
-- fail vi. 失败；未能（做到）；出故障； vt. 使失望
+- successive
+    - adj. 连续的，依次的；接替的
+    - But successive governments have presided over <ins>selling green spaces</ins>, <ins>squeezing money from local
+      authorities</ins> **and** <ins>declining attention on sport in education</ins>.
+- fail
+    - vi. 失败；未能（做到）；出故障；
+    - vt. 使失望
     - failure n. 失败；失败的事
 
 ## union
 
 - n. 工会；联盟；协会
-- Will the European Union make it？
+- Will the European Union *make it/survive*?
 - unionist n. 工会会员；工会主义者
 - unification
     - n. 统一
+    - unify vt. 使联合; 使相同; 使一致; 统一
     - uniform n. 制服
-- alliance n. 联盟，结盟
-- align v. 公开支持 == support；与...一致
+- alliance
+    - n. 联盟，结盟
+    - A native literary drama had been created, its **alliance** with the public playhouses established, and at least
+      some of its great traditions had been begun.
+- align
+    - v. 公开支持；与...一致
+    - == support
 - associate
-    - v. 联想，联系；支持
+    - v. 支持；联想，联系
     - association n. 联系；协会；联盟；交往
 
 ## carry
@@ -95,7 +121,8 @@
     - delivery n. 递送
 - vehicle n. 手段；车辆
 - commute
-    - vi. 上下班往返 n. 上下班路程
+    - vi. 上下班往返；通勤
+    - n. 上下班路程
     - commuter n. （远距离）上下班往返的人
 
 ## encourage
@@ -104,11 +131,11 @@
 - courage
     - n. 勇气
     - courageous adj. 勇敢的
-    - discourage vt. 阻止；使灰心
+    - discourage
+        - vt. 阻止；使灰心
         - discourage sb. from doing sth.
-- encouragement
-    - n. 鼓励；鼓舞
-    - inspire vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
+- encouragement n. 鼓励；鼓舞
+- inspire vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
 
 ## global
 
@@ -117,23 +144,32 @@
 - globalization n. 全球化
 - universe
     - n. 宇宙
-    - universal adj. 普遍的；全世界的； n. 普遍原则，通用原理
-    - It is a truth universally acknowledged,that a aingle man in possession of a good fortune,must be in want of a wife.
-        - It is a truth universally acknowledged == as we all know举世公认的真理
+    - universal
+    - adj. 普遍的；全世界的
+    - n. 普遍原则，通用原理
+    - It is a truth **universally** acknowledged, that a aingle man in possession of a good fortune, must be in want of
+      a wife.
+        - It is a truth **universally** acknowledged 举世公认的真理
+            - == as we all know
 
 ## graduate
 
-- n. （大学）毕业生
 - vi. 毕业
+- n. （大学）毕业生
 - graduation n. 毕业
-- undergraduate
-    - n. 大学本科生
-    - postgraduate n. 研究生
+- undergraduate n. 大学本科生
+- postgraduate n. 研究生
 - gradual
     - adj. 逐渐的
     - gradually adv. 逐渐地
 
 ## Words
+
+- quote
+    - vt.& vi. 引述，引用
+    - vt. 报价; 引述
+    - vi. 引用
+    - n. 引用; 报价; 引号
 
 ## 词组
 

@@ -17,8 +17,8 @@
 ## present
 
 - [pri'zent] vt. 提出
-- ['preznt] adj. 当前的 
-- n. 目前；现在；礼物 
+- ['preznt] adj. 当前的
+- n. 目前；现在；礼物
 - Yesterday is history. Tomorrow is a mystery. But today is a gift. That is why it's called **present**.
 - presently adv. 现在，目前；不久
 - presence n. 出席；存在
@@ -26,19 +26,21 @@
 - represent
     - v. 代表
     - representation n. 代理人；代表
-    - representative 
+    - representative [ˌreprɪˈzentətɪv]
         - n. 代表，代理人
-        - adj. 典型的，有代表性的； 代议制的
-        - representative goverment
+        - adj. 典型的，有代表性的；代议制的
+        - representative government
         - Congress(legislative power)
-            - Senate 参议院
+            - Senate [ˈsenət] 参议院
             - House of representatives 众议院
         - check and balance 制衡
-- embody
+- embody [ɪmˈbɑːdi]
     - v. 具象，征体表现，体现(具体 -> 抽象)
-    - When public opinion is particularly polarized...monarchs can rise above "mere" politics and "**embody**" a spirit of national unity.
+    - When public opinion is particularly *polarized(['poʊləraɪzd] 两极分化的、对立的)*...*monarchs([ˈmɔnəks] n.
+      君主)* <ins>can rise(超越、不受...影响)</ins> above "mere" politics and "**embody**" a spirit of national unity.
+      当公众舆论特别两极分化时，君主可以超越“单纯的政治”，体现民族团结的精神
     - Many exhibits in the museum **embody** *the spirit of the craftsmanship(工匠精神)*.
-    - embodiment 
+    - embodiment
         - n. 集中体现
         - She is the **embodiment** of kindness. 她是善良的化身
 - behalf n. 代表
@@ -49,7 +51,8 @@
 - n. 同等地位的人；同龄人
 - peer groups 同龄群体
 - peer pressure 同辈压力
-    - Come on——Everybody's doing it. That whispered message, half invitation and half forcing, is what most of us think of when we hear the words **peer pressure**.
+    - Come on——Everybody's doing it. That whispered(['wɪspəd] adj. 低语的) message, half invitation and half forcing, is
+      what most of us think of when we hear the words **peer pressure**.
 - counterpart
     - n. 对应的人（或事物）
     - The women's shoe, like its male **counterpart**, is specially designed for the serious tennis player.
@@ -58,98 +61,111 @@
 
 - adj. 单一的；单个的；单身的；（特指某人或某事物）
 - You're **single** so make the most out of it.
-- sole adj. 唯一的，仅有的
+- sole [soʊl] adj. 唯一的，仅有的
 - respectively
     - adv. 分别地，依次地
-    - The students who travelled in order to make new friends and cultivate independence account for 9% and 6% **respectively**.
-        - account for + % == take up + % == occupy + %  占百分比
+    - The students who travelled in order to make new friends and cultivate independence account for 9% and 6%
+      **respectively**.
+        - account for + % == take up + % == occupy + % 占百分比
 
 ## figure
 
+- [ˈfɪɡjər]
 - v. 弄清楚
 - n. 人物；（尤指官方资料中的）数字
 - figure out
 - Today the **figure** is more than 25% and growing rapidly.
-- Americans no longer expect public **figures**, whether in speech or in writing to command the English language with skill and gift.
-- reckon  
+- Americans no longer expect public **figures**, whether in speech or in writing to command the English language with
+  skill and gift.
+- reckon [ˈrekən]
     - v. 计算；估算；认为；把...看做
     - reckon/regard/view/see A as B 把A看做B
     - The American Society of News Editors **reckons** that 13,500 newsroom jobs have gone since 2007.
-- calculate 
+- calculate
     - v. 计算，核算
     - calculator n. 计算器
 
 ## appear
 
 - vi. 看起来；出现；出版
-- **Appear** as you are，Be as you **appear**. 表里如一
+- **Appear** as you are, Be as you **appear**. 表里如一
 - appearance
     - n. 出现
     - disappearance n. 消失
 - disappear v. 消失
-- emerge 
+- emerge [iˈmɜːrdʒ]
     - v. 浮现；出现；显露
     - == appear
 - fade
     - v. 逐渐消失；使褪色；逐渐变弱
     - make sth. fade 使...黯然失色
     - fade away 逐渐消失
-    - Many *recruiters(雇主)* say the old disgrace is **fading** for top performers. 许多招聘人员表示：过去那种耻辱感正在消退对于那些顶尖人才而言
-- vanish v. 突然不见，消失；不复存在
+    - Many *recruiters([rɪˈkrutɚ] n. 招聘人员)* say the old disgrace([dɪsˈɡreɪs] n. 耻辱) is **fading** for top
+      performers. 许多招聘人员表示：过去那种耻辱感正在消退对于那些顶尖人才而言
+- vanish [ˈvænɪʃ] v. 突然不见，消失；不复存在
 
 ## promote
 
 - vt. 促进🙂；促销；晋升
 - Findings of the Stanford University researchers will **promote** the sales of new Boeing and Airbus aircraft.
+  斯坦福大学研究人员的研究结果将促进新型波音和空客飞机的销售
 - == prompt == boost == spur == foster
 - promotion n. 晋升；促销
-- prompt 
+- prompt [prɑːmpt]
     - vt. 促使
     - adj. 迅速的
     - n. 提示，提示信息
-- boost
-    - vt. 是增长； 
+- boost [buːst]
+    - vt. 使增长
     - n. 增长；增强
-    - A move back to self-sufficiency, the argument goes, would **boost** the farming industry, political sovereighty and even the nation's health.
-- spur vt. 激增；刺激
-- foster vt. 促进；培养
+    - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would **boost** the farming industry,
+      political sovereignty([ˈsɑːvrənti] n. 国家的主权) and even the nation's health.
+- spur [spɜːr] vt. 激增；刺激
+- foster [ˈfɑːstər] vt. 促进；培养
 
 ## extra
 
+- [ˈekstrə]
 - adj. 额外的
-- Excellence is going the **extra** mile.
+- Excellence is <ins>going the **extra** mile(付出额外努力)</ins>.
 - extraordinary
     - adj. 卓越的；非凡的；特别的
-    - Shakespeare's lifetime *was concident with(巧合，与..相吻合)* a period of **extraordinary** activity and achievement in the drama.
+    - Shakespeare's lifetime *was confident with(巧合，与...相吻合)* a period of **extraordinary** activity and
+      achievement in the drama.
     - extraordinarily adv.极其地
-- extravagant 
+- extravagant [ɪkˈstrævəɡənt]
     - adj. 奢侈的；挥霍的
     - == wasteful
-- luxury 
+- luxury [ˈlʌkʃəri]
     - n. 奢华；奢侈品
     - adj. 奢侈的
     - Make your print newspaper a **luxury** good.
-- vanity n. 虚荣心，自负
+- vanity [ˈvænəti] n. 虚荣心，自负
 
 ## image
 
+- [ˈɪmɪdʒ]
 - n. 图像；(个人，团体或组织的)形象
 - company image
-- imagine vt. 想象；猜想
-- imagination
+- imagine [ɪˈmædʒɪn] vt. 想象；猜想
+- imagination [ɪˌmædʒɪˈneɪʃn]
     - n. 想象力
-    - I do completely agree that fears are just the *product(产物)* of our luxuriant **imagination**.
-- imaginative adj. 富于想象力的
+    - I do completely agree that fears are just the *product(产物)* of our *luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的)*
+      **imagination**.
+- imaginative [ɪˈmædʒɪnətɪv] adj. 富于想象力的
 
 ## suppose
 
 - vt. 假设
 - v. 认为
-- I **suppose** the most revolutionary act one can engage in is to tell the truth.
-- be supposed to do sth. 应该做模式
-- supposedly
+- I **suppose** the most revolutionary act <ins>one can _engage([ɪnˈɡeɪdʒ]) in(从事于/参与（某项活动）)_<ins> is to tell
+  the truth.
+- be supposed to do sth. 应该做某事
+- supposedly [səˈpoʊzɪdli]
     - adv. 据说；据传；想象中的
-    - In some states，for example，jury duty was limited to persons of **supposedly** superior intelligence，education，and moral character.
+    - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins> <ins>persons of(
+      具有...特征的人)</ins> **supposedly** superior <ins>intelligence, education, and moral([ˈmɔːrəl] n. 道德)
+      character</ins>.
 - -pose- 放
     - expose
         - v. 揭露；曝光；接触；面对
@@ -158,44 +174,46 @@
             - be exposed to stress 面对压力、承受压力
         - ex- 外
         - To **expose** means to **uncover** or **allow to be in the open air**.
-        - exposure n. 暴露; 揭发; 报道
+        - exposure [ɪkˈspoʊʒər] n. 暴露; 揭发; 报道
     - impose
         - v. 强加；施压于；征税
         - im- 里
-        - If you want to **impose** your musical taste on your parents，play your tunes all day at top volume.
-    - oppose 
+        - If you want to **impose** your musical taste on your parents, play your tunes all day at top volume.
+    - oppose [əˈpoʊz]
         - v. 反抗，阻碍
         - opposite adj. 完全相反的，截然不同的
         - opposition n. （强烈的）反对，反抗
-        - opponent n. 对手，竞争者；反对者
+        - opponent [əˈpoʊnənt] n. 对手，竞争者；反对者
     - propose
         - v. 提议，建议；求婚
         - pro- 向前
-        - proposal n. 提议，建议; 求婚
+        - proposal [prəˈpoʊzl] n. 提议，建议; 求婚
     - pose
-        - v. 造成，引起；提出
+        - v. 提出（问题）；造成，引起
         - == bring about
-        - ...remarks the significant moves may <ins>**pose**/bring about</ins> chanllenges to children.
-        - The coming use of *autonomous vehicles(自动驾驶汽车)*, for example, <ins>**poses** thorny ethical questions(提出了棘手的伦理问题)</ins>.
-- hypothesis n. 假说，假设
-- premise n. 前提，假设
-- presumably adj. 相反的
+        - Ryan Hooper remarks <ins>the significant moves(重大举措)</ins> may <ins>**pose**/bring about</ins> challenges
+          to children.
+        - The coming use of *autonomous([ɔːˈtɑːnəməs] adj. 自治的) vehicles(自动驾驶汽车)*, for example, <ins>**poses**
+          thorny ethical questions(提出了棘手的伦理问题)</ins>.
+- hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
+- premise [ˈpremɪs] n. 前提，假设
+- presumably [prɪˈzuːməbli] adj. 相反的
+- contrary adj. 相反的
 
 ## Words
 
-- evaluate
+- evaluate [ɪˈvæljueɪt]
     - v. 估计
-- impassioned
-    - adj. 充满激情的; 热烈的; 感激的; 慷慨激昂
-- fierce
+- fierce [fɪrs]
     - adj. 凶猛的; 狂热的; 强烈的; 恶劣的
     - fierce competition 残酷的竞争
-- passion 
+- passion
     - n. 激情
+    - impassioned [ɪmˈpæʃnd] adj. 充满激情的; 热烈的; 感激的; 慷慨激昂
 
 ## 词组
 
 ## 句式
 
-- Half of the people who have embarked on a one-hundred mile journey may fall by the wayside. 
+- Half of the people who have embarked on a one-hundred mile journey may fall by the wayside.
     - 行百里者半九十

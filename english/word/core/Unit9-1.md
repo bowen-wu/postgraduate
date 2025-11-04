@@ -34,8 +34,9 @@
           doubt about it.
         - inconclusive
             - adj. 无定论的；不确定的；非决定性的，无结果的
-            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are *
-              *inconclusive**.
+            - undetermined adj. 未确定的，未解决的
+            - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are
+              **inconclusive**.
                 - be aware([əˈwer]) of + 名词/从句 意识到/察觉到
 
 ## standard

@@ -203,7 +203,8 @@
     - Chief([tʃiːf]) Executive Officer(CEO) 首席执行官
     - execute [ˈeksɪkjuːt] v. 处死; 实施; 完成; 制作
 - authority [əˈθɔːrəti]
-    - n. 权力；权威；官方机构；权威人士
+    - n. 官方机构；权力；权威；权威人士
+    - Weaver and his family have been persecuted by the **authorities** for their beliefs([bɪ'lifs] n. 信仰).
     - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
     - authorization [ˌɔθərəˈzeɪʃn] n. 授权
 - authentic [ɔːˈθentɪk]
