@@ -124,7 +124,8 @@
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - Deliberate practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a task.
+    - Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的) practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a
+      task.
 
 ## source
 
@@ -204,7 +205,8 @@
     - execute [ˈeksɪkjuːt] v. 处死; 实施; 完成; 制作
 - authority [əˈθɔːrəti]
     - n. 官方机构；权力；权威；权威人士
-    - Weaver and his family have been persecuted by the **authorities** for their beliefs([bɪ'lifs] n. 信仰).
+    - Weaver and his family have been persecuted([ˈpɜːrsɪkjuːt] v. **迫害**) by the **authorities** for their
+      beliefs([bɪ'lifs] n. 信仰).
     - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
     - authorization [ˌɔθərəˈzeɪʃn] n. 授权
 - authentic [ɔːˈθentɪk]
@@ -246,7 +248,7 @@
 - otherwise
     - adv. 否则；在其他方面
     - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
-      失败也能教会我们关于自己的一些事情，这些是我们否则无法学到的
+      失败也能教会我们一些关于自己的事情，而这些事情若非失败，我们永远不会学到
 - nevertheless [ˌnevərðəˈles] adv. 然而
 - nonetheless [ˌnʌnðəˈles] adv. 尽管如此
 

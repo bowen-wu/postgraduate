@@ -44,7 +44,7 @@
         - With time he came to <ins>revise/review</ins> his opinion of the profession(n. 职业).
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
         - A doctor might <ins>revise/review</ins> your medical([ˈmedɪkl]) record to help diagnose your sickness.
-- perspective
+- perspective [pərˈspektɪv]
     - n. 观点
     - from my perspective 从我的角度来看/在我看来/就我个人的看法
         - == in my view
@@ -55,12 +55,12 @@
     - n. 可能性；前途；前景；
     - If *circumstances(['sɜkəmstənsɪz] n. 环境)* always determined the life and **prospect** of people, then humanity
       would never have *progressed*.
-    - retrospect [ˈretrəspekt]
-        - vi. 回顾，追溯；回想
-        - vt. 回顾；追忆
-        - n. 回顾，回想
-        - in retrospect == looking back 后头看、回想起来
-    - introspect [ˌɪntrə'spekt] v. 内省，内观
+- retrospect [ˈretrəspekt]
+    - vi. 回顾，追溯；回想
+    - vt. 回顾；追忆
+    - n. 回顾，回想
+    - in retrospect == looking back 回头看、回想起来
+- introspect [ˌɪntrə'spekt] v. 内省，内观
 
 ## keep
 
@@ -114,7 +114,7 @@
 - leaf
     - n. 叶子
     - leaves leaf的复数
-    - One falling **leaf** is indicative of the coming of autumn. 一叶知秋
+    - One falling **leaf** is indicative of the coming of autumn([ˈɔtəm]). 一叶知秋
     - The boundless forest <ins>sheds its **leaves**</ins> shower by shower. The endless river <ins>rolls its
       waves</ins> hour after hour.
 - depart
@@ -128,7 +128,7 @@
     - adv. 到旁边
     - 词组
         - set aside 留，存；抽出
-        - put aside 把...暂放一遍；把...留作后用
+        - put aside 把...暂放一边；把...留作后用
         - aside from 除...之外
 - detach
     - vi. 摆脱；拆卸
@@ -146,7 +146,7 @@
         - Federal government 联邦政府
             - == Washington == The Administration == The White House
         - State government 州政府
-- The Constitutional principle that...and that <ins>**federal** laws precede state laws</ins> are noncontroversial.
+- The constitutional principle that...and that <ins>**federal** laws precede state laws</ins> are noncontroversial.
 - democratic [ˌdeməˈkrætɪk]
     - adj. 民主的
     - democrat n. 美国民主党党员
@@ -201,12 +201,12 @@
 - database n. 数据库
 - analyse/analyze [ˈænəlaɪz]
     - vt. 分析
-    - analyst n. 分析者
-    - analytical adj. 分析的
-    - analysis n. 分析
+    - analyst [ˈænəlɪst] n. 分析者
+    - analytical [ˌænəˈlɪtɪkl] adj. 分析的
+    - analysis [əˈnæləsɪs] n. 分析
 - statistical [stəˈtɪstɪkl]
     - adj. 统计（上）的；统计学的
-    - If you can say it with numbers，then it is probably **statistical**.
+    - If you can say it with numbers, then it is probably **statistical**.
     - statistically adv. 统计学上
     - statistician [ˌstætɪˈstɪʃən] n. 统计学家
     - statistics [stəˈtɪstɪks] n. 统计学

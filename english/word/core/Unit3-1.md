@@ -190,7 +190,10 @@
     - n. ...保护区；...储备量
     - nature reserves 自然保护区
     - massive financial reserves 庞大的财务储备
-- conservation n. 节约；保护
+- conservation
+    - n. 节约；保护
+    - conservative [kənˈsɜːrvətɪv]
+        - adj. 保守的；英国保守党的
 
 ## Words
 
