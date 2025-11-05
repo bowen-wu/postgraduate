@@ -68,13 +68,13 @@
 - chance
     - vi. 偶然发生
     - n. 机会；偶然
+    - **The chances are(很有可能)**, if you said "thank you", you made someone's day. 也许你的一句“谢谢”，就让别人一天都充满好心情
 - occasion [əˈkeɪʒn]
     - n. 场合
-        - **The chances are(很有可能)**, if you said "thank you", you made someone's day. 也许你的一句“谢谢”，就让别人一天都充满好心情
-        - occasionally [əˈkeɪʒnəli]
-            - adv. 偶尔
-            - == from time to time
-            - == sometimes
+    - occasionally [əˈkeɪʒnəli]
+        - adv. 偶尔
+        - == from time to time
+        - == sometimes
 
 ## practice
 
@@ -95,8 +95,8 @@
 - practical
     - adj. 实际的；实践性的
     - impractical adj. 不切实际的
-- practically adv. 几乎；实际地
-- practicality [ˌpræktɪˈkælətɪ] n. 实用性
+    - practically adv. 几乎；实际地
+    - practicality [ˌpræktɪˈkælətɪ] n. 实用性
 - routine
     - n. 常规，惯例
     - adj. 常规的，日常的
@@ -212,7 +212,7 @@
 - justify
     - vt. 替...辩护；证明...是正当的
     - It is curious([ˈkjʊriəs] adj. 耐人寻味的) that Stephen Koziatek feels almost *as though/as if(好像)* he has to
-      **justify** his efforts to give his students a better future. 斯蒂芬·科齐亚泰克觉得他似乎不得不证明自己所做的牡蛎是为了给他的学生们一个更好的未来，这令人感到费解
+      **justify** his efforts to give his students a better future. 斯蒂芬·科齐亚泰克觉得他似乎不得不证明自己所做的努力是为了给他的学生们一个更好的未来，这令人感到费解
     - justification n. 正当的理由
 - jury
     - n. 陪审团
@@ -225,6 +225,7 @@
 - n. 证明；特征，调子，气氛
 - take notes 记笔记
     - He listens well <ins>who **takes notes**</ins>.
+        - [从句后移式的分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md#%E4%BB%8E%E5%8F%A5%E5%90%8E%E7%A7%BB%E5%BC%8F%E7%9A%84%E5%88%86%E8%A3%82%E7%BB%93%E6%9E%84)
         - == The person who takes notes listens well.
 - The longest *bull run(牛市行情)* in a century of art market history ended
   **on a dramatic note(以戏剧性的方式/带有戏剧性意味地)** with a sale of 56 works by Damien Hirst.

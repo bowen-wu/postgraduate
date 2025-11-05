@@ -140,6 +140,7 @@
     - n. 奢华；奢侈品
     - adj. 奢侈的
     - Make your print newspaper a **luxury** good.
+    - luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
 - vanity [ˈvænəti] n. 虚荣心，自负
 
 ## image
@@ -150,8 +151,7 @@
 - imagine [ɪˈmædʒɪn] vt. 想象；猜想
 - imagination [ɪˌmædʒɪˈneɪʃn]
     - n. 想象力
-    - I do completely agree that fears are just the *product(产物)* of our *luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的)*
-      **imagination**.
+    - I do completely agree that fears are just the *product(产物)* of our luxuriant **imagination**.
 - imaginative [ɪˈmædʒɪnətɪv] adj. 富于想象力的
 
 ## suppose
@@ -181,8 +181,8 @@
         - If you want to **impose** your musical taste on your parents, play your tunes all day at top volume.
     - oppose [əˈpoʊz]
         - v. 反抗，阻碍
-        - opposite adj. 完全相反的，截然不同的
-        - opposition n. （强烈的）反对，反抗
+        - opposite [ˈɑːpəzɪt] adj. 完全相反的，截然不同的
+        - opposition [ˌɑːpəˈzɪʃn] n. （强烈的）反对，反抗
         - opponent [əˈpoʊnənt] n. 对手，竞争者；反对者
     - propose
         - v. 提议，建议；求婚

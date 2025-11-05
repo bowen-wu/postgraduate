@@ -24,16 +24,16 @@
 - reinforce vt. 强化；巩固
 - enforce
     - v. 执行
-    - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be arbiters
-      of their beauty.
+    - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be
+      arbiters([ˈɑrbɪtə(r)] n. 裁决者) of their beauty.
     - enforcement n. 执行
-- compel
+- compel [kəmˈpel]
     - vt. 迫使
     - The European Union is now considering legislation to **compel** corporate boards to maintain a certain proportion
       of women-up to 60 percent.
-- oblige
+- oblige [əˈblaɪdʒ]
     - vt. 迫使
-    - obligation n. 义务
+    - obligation [ˌɑːblɪˈɡeɪʃn] n. 义务
 
 ## protect
 
@@ -41,9 +41,9 @@
 - protect/prevent sb. from doing 保护某人免受
 - protection n. 保护；防护
 - protective adj. 保护的；防护的
-- shelter
+- shelter [ˈʃeltər]
     - n. 住处；遮蔽物；庇护所
-    - the basic drives for food or shelter
+    - the basic drives for food or **shelter**
 
 ## subject
 
@@ -54,40 +54,43 @@
     - be subject to doing sth. 容易遭受/可能会经历
 - White noise was played into the **subject**'s ears through headphones.
 - Prices may be **subject** to the relation of supply and demand.
-- The study is a genome-wide analysis conducted on 1932 unique **subjects** which compared pairs of unrelated friends
-  and unrelated strangers.
-- In addition, the computer programs a company uses to estimate relationships may be patented and not **subject** to
-  peer review or outside evaluation.
+- The study is a genome([ˈdʒinoʊm] n. 基因组)-wide analysis conducted(vt. 实施) on 1932 unique(adj. 独特的) **subjects**
+  which compared pairs of unrelated friends and unrelated strangers([st'reɪndʒəz] n. 陌生人).
+    - conducted on 1932 unique **subjects** 非谓语动词短语做定语，修饰名词 analysis
+- In addition, the computer programs <ins>a company uses to estimate relationships</ins> may _be_ patented and not
+  ***subject*** _to_ peer review or outside evaluation.
 - subjective
     - adj. 主观的
     - objective adj. 客观的
-    - If you go see a movie about a super hero, the topic is *objective*. But whether it's a good movie or not is *
-      *subjective**.
-- susceptible
+    - If you go see a movie about a super hero, the topic is **objective**. But whether it's a good movie or not is
+      **subjective**.
+- susceptible [səˈseptəbl]
     - adj. 易患病的；易受...影响的
     - be susceptible to (doing) sth.
-    - Women are particularly **susceptible** to developing depression and anxiety disorder in response to stress
-      compared to men.
+    - Women are particularly(adv. 特别) **susceptible** to developing(v. 患（病）) depression and anxiety disorder in
+      response to stress compared to men.
     - be susceptible to 遭受；承受
         - == be subject to
-        - == be vulnerable to
+        - == be vulnerable([ˈvʌlnərəbl]) to
+            - vulnerable adj. （地方）易受攻击的; 易受伤的; 易受批评的
 
 ## success
 
+- [səkˈses]
 - n. 成功；成就
 - **Success** is not about reaching the top at all.
-- succeed
+- succeed [səkˈsiːd]
     - vi. 有成就；做成；继承；成功；
     - vt. 继任
 - successful adj. 成功的
-- succession
+- succession [səkˈseʃn]
     - n. 继任，继承；一系列；连续
-    - The art market had witnessed a **succession** of victories.
-    - successor n. 继承者；继任者
-- successive
+    - The art market had witnessed([ˈwitnist] v. 作证) a **succession** of victories.
+    - successor [səkˈsesər] n. 继承者；继任者
+- successive [səkˈsesɪv]
     - adj. 连续的，依次的；接替的
-    - But successive governments have presided over <ins>selling green spaces</ins>, <ins>squeezing money from local
-      authorities</ins> **and** <ins>declining attention on sport in education</ins>.
+    - But **successive** governments have presided([priˈzaidid] v. 主持) over selling green spaces, squeezing money from
+      local authorities and declining attention on sport in education.
 - fail
     - vi. 失败；未能（做到）；出故障；
     - vt. 使失望
@@ -97,29 +100,29 @@
 
 - n. 工会；联盟；协会
 - Will the European Union *make it/survive*?
-- unionist n. 工会会员；工会主义者
-- unification
+- unionist [ˈjunjənɪst] n. 工会会员；工会主义者
+- unification [ˌjunɪfɪ'keɪʃn]
     - n. 统一
     - unify vt. 使联合; 使相同; 使一致; 统一
     - uniform n. 制服
-- alliance
+- alliance [əˈlaɪəns]
     - n. 联盟，结盟
-    - A native literary drama had been created, its **alliance** with the public playhouses established, and at least
-      some of its great traditions had been begun.
+    - A native literary([ˈlɪtəreri] adj. 文学的) drama had been created, its **alliance** with the public playhouses
+      established, and at least some of its great traditions(n. 传统) had been begun.
 - align
     - v. 公开支持；与...一致
     - == support
-- associate
+- associate [əˈsəʊʃieɪt]
     - v. 支持；联想，联系
     - association n. 联系；协会；联盟；交往
 
 ## carry
 
 - vt. 拿，带；带来（某种结果或后果）；销售；刊登；承担（责任、负担等）
-- deliver
+- deliver [dɪˈlɪvər]
     - vt. 发表；传话；传递，传达；交付
     - delivery n. 递送
-- vehicle n. 手段；车辆
+- vehicle [ˈviːəkl] n. 手段；车辆
 - commute
     - vi. 上下班往返；通勤
     - n. 上下班路程
@@ -130,27 +133,30 @@
 - vt. 鼓励；促进
 - courage
     - n. 勇气
-    - courageous adj. 勇敢的
+    - courageous [kəˈreɪdʒəs] adj. 勇敢的
     - discourage
         - vt. 阻止；使灰心
-        - discourage sb. from doing sth.
+        - 词组
+            - discourage sb. from doing sth.
 - encouragement n. 鼓励；鼓舞
-- inspire vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
+- inspire [ɪnˈspaɪər]
+    - vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
+    - inspiration n. 灵感; 鼓舞人心/启发灵感的人或事; 好主意
 
 ## global
 
 - adj. 全球的
 - globalize v. 使全球化
 - globalization n. 全球化
-- universe
+- universe [ˈjuːnɪvɜːrs]
     - n. 宇宙
     - universal
-    - adj. 普遍的；全世界的
-    - n. 普遍原则，通用原理
-    - It is a truth **universally** acknowledged, that a aingle man in possession of a good fortune, must be in want of
-      a wife.
-        - It is a truth **universally** acknowledged 举世公认的真理
-            - == as we all know
+        - adj. 普遍的；全世界的
+        - n. 普遍原则，通用原理
+        - It is a truth **universally** acknowledged, that a single man in possession of a good fortune, must be in want
+          of a wife.
+            - It is a truth **universally** acknowledged 举世公认的真理
+                - == as we all know
 
 ## graduate
 
@@ -159,13 +165,13 @@
 - graduation n. 毕业
 - undergraduate n. 大学本科生
 - postgraduate n. 研究生
-- gradual
+- gradual [ˈɡrædʒuəl]
     - adj. 逐渐的
     - gradually adv. 逐渐地
 
 ## Words
 
-- quote
+- quote [kwoʊt]
     - vt.& vi. 引述，引用
     - vt. 报价; 引述
     - vi. 引用

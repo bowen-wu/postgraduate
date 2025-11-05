@@ -19,14 +19,14 @@
 - 定语从句写法: 关系词 + 陈述句
 - 关系词选择 == 看先行词
 
-| 先行词                                | 关系词           | Example 例句                                                                                                                                                                                                                                                                                                                                                                        |
-|------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 物                                  | which/that    | <span style="white-space:nowrap">The key message <ins>**that** have been put together for World Environment Day</ins> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <ins>**which** included sessions to coach lawyers on the shifting landscape for patents.</span> | 
-| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <ins>**who** were more rebellious</ins> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <ins>**that** you want to talk with</ins> and you want to make this talk memorable.</span>                                                                               |
-| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <ins>**whose** identities(用户的身份) have been authenticated</ins> could navigate those systems.</span>                                                                                                                                                                               |
-| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <ins>**when** high-quality arts criticism could be found in most big-city newspapers</ins>.</span>                                                                                                                                     |
-| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <ins>**where** happiness was spread more equally</ins>. </span>                                                                                                                                                                                                                                         |
-| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <ins>**why** these jobs are so vulnerable to technology in the first place</ins>.</span>                                                                                                                                                                                                                  |
+| 先行词                                | 关系词           | Example 例句                                                                                                                                                                                                                                                                                                                                                                                               |
+|------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 物                                  | which/that    | <span style="white-space:nowrap">The key message <ins>**that** has been *put together(组装、整理、组织、汇总、编制)* for World Environment Day</ins> do include a call for governments to enact legislation to curb single-use plastics.</span><br><span style="white-space:nowrap">The BIO recently held a convention <ins>**which** included sessions to coach lawyers on the shifting landscape for patents.</span> | 
+| 人                                  | who/whom/that | <span style="white-space:nowrap">The teenagers <ins>**who** were more rebellious</ins> were also more likely to help others.</span><br><span style="white-space:nowrap">...you have limited time with the person <ins>**that** you want to talk with</ins> and you want to make this talk memorable.</span>                                                                                              |
+| 人/物<br>（表示人或物的所有关系，即"**某人的/某物的**"） | whose         | <span style="white-space:nowrap">Users could select which system to join, and only registered users <ins>**whose** identities(用户的身份) have been authenticated</ins> could navigate those systems.</span>                                                                                                                                                                                                  |
+| 时间                                 | when          | <span style="white-space:nowrap">It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time <ins>**when** high-quality arts criticism could be found in most big-city newspapers</ins>.</span>                                                                                                                                                        |
+| 地点/范围                              | where         | <span style="white-space:nowrap">The relationship was also stronger in places <ins>**where** happiness was spread more equally</ins>. </span>                                                                                                                                                                                                                                                            |
+| 原因                                 | why           | <span style="white-space:nowrap">...Brynjolfsson and McAfee miss the reason <ins>**why** these jobs are so vulnerable to technology in the first place</ins>.</span>                                                                                                                                                                                                                                     |
 
 **注**:
 
@@ -36,8 +36,10 @@
 4. whom 指人，只能在**作宾语**时使用
 5. who/that 指人，可以做任何成分
 6. ⚠️❗<ins>关系词在定语从句中做宾语时（**及物动词的宾语**或**介词后的宾语**），都可以省略</ins> ❗⚠️
-    - In the same study, a group was asked to remember both the information and *the folders* <ins>it was stored in(介宾)</ins>.
-    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <ins>I am making(动宾) in the gym</ins>.
+    - In the same study, a group was asked to remember both the information and *the folders* <ins>it was stored in(
+      介宾)</ins>.
+    - ...weighing myself daily did not provide an accurate depiction of *the hard work and progress* <ins>I am making(
+      动宾) in the gym</ins>.
     - I want to share these *old truths* <ins>I've learned(动宾) along the way</ins>.
 
 ### 定语从句分类
@@ -48,9 +50,11 @@
     - He will call <ins>his mother</ins>, who is working in London.
     - 先行词**范围明确** = "绝对明确" || "相对明确"
         - 绝对明确 => 专有名词、独一无二的: the Great Wall, mother, father
-            - Such a move could affect firms such as **McDonald's**, <ins>which sponsors the youth coaching schema run by the Football Association</ins>.
+            - Such a move could affect firms such as **McDonald's**, <ins>which sponsors the youth coaching schema run
+              by the Football Association</ins>.
         - 相对明确 => 根据上下文可以判断出这个名词的范围是明确的
-            - **The new vaccine**, <ins>which is different from the annual flu vaccine</ins>, is available ahead of expectations.
+            - **The new vaccine**, <ins>which is different from the annual flu vaccine</ins>, is available ahead of
+              expectations.
 
 | 特点  | 限定性定语从句 (Restrictive)                                          | 非限定性定语从句 (Non-restrictive)                            |
 |-----|----------------------------------------------------------------|-------------------------------------------------------|
@@ -60,15 +64,19 @@
 | 翻译  | 通常往前翻译<br>(译到先行词前，"...的名词")                                    | 通常无需往前翻译                                              |
 | 关系词 | 1. 关系词可以用 that<br> 2. 作宾语时可以省略<br> 3. 指人作宾语，用 whom/who/that 都可 | 1. 关系词**不能用 that**<br> 2. 不可以省略<br> 3. 指人作宾语，只能用 whom |
 
-- Even American newspapers, <ins>which inhabit the most troubled corner of the global industry</ins>, have not only survived but often returned to profit.
-- A couple of Christmases ago, my youngest stepdaughter, <ins>who was nine years old at the time</ins>, got a Superman T-shirt for Christmas.
-- Facebook...is a self-enhancer's paradise, <ins>where people can share only the most flattering photos, the cream of their wit, style, beauty, intellect and lifestyles</ins>.
+- Even American newspapers, <ins>which inhabit the most troubled corner of the global industry</ins>, have not only
+  survived but often returned to profit.
+- A couple of Christmases ago, my youngest stepdaughter, <ins>who was nine years old at the time</ins>, got a Superman
+  T-shirt for Christmas.
+- Facebook...is a self-enhancer's paradise, <ins>where people can share only the most flattering photos, the cream of
+  their wit, style, beauty, intellect and lifestyles</ins>.
 
 ### 限定性定语从句 vs 同位语从句
 
 - 相同点: 位于名词后
 - 区别
-    1. 定语从句**修饰限定**名词: 当名词范围不确定时，需要用定语从句来限定该名词的范围，相当于回答了 which(哪一个、哪一些)的问题
+    1. 定语从句**修饰限定**名词: 当名词范围不确定时，需要用定语从句来限定该名词的范围，相当于回答了 which(哪一个、哪一些)
+       的问题
     2. 同位语从句**解释说明**名词: 当名词的含义不清楚时，需要用同位语从句来解释说明，相当于回答了 what(是什么) 的问题
 
 | 特点    | 同位语从句 (Appositive Clause)                                 | 限定性定语从句 (Restrictive Relative Clause)                         |
@@ -79,7 +87,8 @@
 | 省略    | 连接词不能省略                                                   | 关系词在定语从句中作宾语时（及物动词后的宾语或介词后的宾语）可省略 => n. + 省略关系词的从句，则可判断出是定语从句 |
 
 - In effect, the U.S. can import food or it can import the works <ins>**who** pick it</ins>.
-- Second, paper checks have the advantage <ins>**that** they provide receipts</ins>, something <ins>**that** many consumers are unwilling to give up</ins>.
+- Second, paper checks have the advantage <ins>**that** they provide receipts</ins>, something <ins>**that** many
+  consumers are unwilling to give up</ins>.
 - Fear is not real. It is a product of thoughts <ins>you create</ins>.
     - **n. + 主谓 == 定语从句**
 
@@ -88,23 +97,30 @@
 - 关系词只能用 which 或 as，且做成分
 - 特殊的非限定性定语从句**位于主句后** => 可以使用 which 或 as
     - ...so the centres need to be well air-conditioned, <ins>**which/as** uses event more energy.
-    - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <ins>**which/as** means that the writer of the check can earn interest on the funds in the meantime.
+    - ...it takes several days before a check is cashed and funds are withdrawn from the issuer's account, <ins>*
+      *which/as** means that the writer of the check can earn interest on the funds in the meantime.
 - 特殊的非限定性定语从句**位于主句前或主句中** => **只能用 as(翻译：正如)**
     - <ins>**As** Koziatek knows</ins>, there is learning in just about everything.
-    - <ins>**As** a News Feature article in Nature discusses</ins>, a string of lucrative awards for researchers have joined the Nobel Prizes in recent years.
+    - <ins>**As** a News Feature article in Nature discusses</ins>, a string of lucrative awards for researchers have
+      joined the Nobel Prizes in recent years.
 
 ### 介词提前的定语从句
 
 - ...we would move quickly to the cashless society <ins>**which** all payments are made electronically **in**</ins>
     - == ...we would move quickly to the cashless society <ins>**in which** all payments are made electronically</ins>
-- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**which** takeaways cannot open **within**</ins>.
-    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**within which** takeaways cannot open</ins>.
+- He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**which** takeaways
+  cannot open **within**</ins>.
+    - He also urged councils to impose "fast-food-free zones" around schools and hospitals-areas <ins>**within which**
+      takeaways cannot open</ins>.
 
 - 定语从句中，与关系词搭配的介词可以提前，也可以不提前
 - 介词提前与否，表达的意思都一样，差别**在于关系词的选择**
-- 如果定语从句介词提前 => **关系词不能省略** + **不能用 that**
-    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom** there is a small majority for free-market liberalism and economic rigour...</ins>.
-    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, <ins>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly assaulted in a sequence of images that turn out to be different parts of the some photograph</ins>.
+- 如果定语从句介词提前 => **关系词不能省略** + **不能用 that**(介宾)
+    - 人 => **"介词 + whom"**: ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom
+      ** there is a small majority for free-market liberalism and economic rigour...</ins>.
+    - 物 => **"介词 + which"**: Parks feature, particularly in the earlier works, such as John Hilliard's very funny
+      Across the Park, <ins>**in which** a long-haired stroller is variously smiled at by a pretty girl and unwittingly
+      assaulted in a sequence of images that turn out to be different parts of the some photograph</ins>.
 
 ## Words
 
@@ -173,7 +189,7 @@
 - vaccine [vækˈsiːn]
     - n. 疫苗
 - progress
-  - n. 进步，发展
+    - n. 进步，发展
 - advance
     - n. 进展，进步
 - in part
