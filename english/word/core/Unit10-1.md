@@ -13,6 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
+- 破折号: ——
 
 ## knowledge
 
@@ -21,9 +22,10 @@
 - knowledgeable adj. 知识渊博的
 - acknowledge
     - vt. 承认；告知收悉；感谢
-    - unacknowledged 
+    - unacknowledged
         - adj. 未被承认的；不被承认的
-        - He could not confide them even to his wife，although they provided the **unacknowledged** foundation of his fiction.
+        - He could not confide them even to his wife, although they provided the **unacknowledged** foundation of his
+          fiction.
 
 ## sure
 
@@ -39,12 +41,14 @@
     - We tried to **ensure/make sure** that everyone got a fair deal.
 - insure
     - vt. 承保；确保
-    - To **insure** is to *guarantee or protect the monetary value* of something with, as you might imagine, insurance.
+    - To **insure** is to **guarantee or protect the monetary value** of something with, as you might imagine,
+      insurance.
     - insurance n. 保险；保险费
 - assure
-    - vt. 向...保证 
+    - vt. 向...保证
     - == guarantee
-    - If you **assure** your boss that you'll finish your project by Tuesday, you are <ins>making a promise or commitment/assure somebody(作出承诺)</ins> to have it done by Tuesday.
+    - If you **assure** your boss that you'll finish your project by Tuesday, you are <ins>making a promise or
+      commitment/assure somebody(作出承诺)</ins> to have it done by Tuesday.
 
 ## mass
 
@@ -54,12 +58,13 @@
 - ...that history should be the story of the **masses** and their record of struggle.
 - massive
     - adj. （尺寸、数量、规模）非常大的
-    - ...at least at some major U.S. airports with increasingly massive security lines.
-    - First two hours, now three hours-this is how far in advance authorities are recommaneding people show up to catch demestic flight, at least at some major U.S. airports with increasingly **massive** security lines.
+    - First two hours, now three hours——this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
+      people show up to catch domestic flight, at least at some major U.S. airports with increasingly **massive**
+      security lines.
 - biomass
     - n. 生物量（以单位面积或容积表示）
-    - the biomass of large predators([p'redətəz] n. 食肉动物)
-- substantial
+    - the **biomass** of large predators([p'redətəz] n. 食肉动物)
+- substantial [səbˈstænʃl]
     - adj. 大量的；重大的
     - == massive
     - substantially adv. 很大程度地
@@ -67,24 +72,29 @@
 ## array
 
 - n. 大量
-- He was constantly ill, with <ins>an **array** of(一系列)</ins> symptoms.
-- series
+- He was constantly ill, with <ins>an **array** of(一系列)</ins> symptoms(['sɪmptəmz] n. 症状).
+- series [ˈsɪriːz]
     - n. 一系列；系列节目
     - a series of 一系列
 
 ## nation
 
 - n. 国家；民族
-- United Nations
-- peoples 民族
-- national 
+- United Nations 联合国
+- peoples n. 民族
+- national
     - adj. 国家的；民族的；国内的
-    - nationalization 
+    - nationalization
         - n. 国有化
-        - The threat of **nationalisation** may have been seen off for now...
+        - The threat([θret] n. 威胁) of **nationalisation** may have been seen off for now...
+            - theatre [ˈθiːətər] n. 戏院，剧场; 戏剧，演出
 - nationwide
-- international
+    - adj. 全国范围的
+    - adv. 在全国范围内
+- international adj. 国际的
 - multinational
+    - adj. 跨国的
+    - n. 跨国公司
 
 ## accept 🙂
 
@@ -110,26 +120,28 @@
 - capacity
     - n. 容量；能力
     - == ability
-    - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create *superfluous(多余的)* material goods——paintings，sculpture and architecture, and superfluour experiences——music, literature, religion and philosophy.
+    - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create
+      <ins>*superfluous(多余的)* material goods——paintings, sculpture and architecture<ins>, <ins>**and** superfluous
+      experiences——music, literature, religion and philosophy</ins>.
 
 ## achieve
 
 - vt. (尤指经过努力)实现
-- achievement 
+- achievement
     - n. 成就
-    - Great **achievement** always requires great sacrifice.
-- accomplish
+    - Great **achievement** always requires great sacrifice([ˈsækrɪfaɪs] n. 牺牲).
+- accomplish [əˈkɑːmplɪʃ]
     - vt. 完成
     - == achieve == fulfill
-    - accomplishment 
+    - accomplishment
         - n. 成就；完成
         - == fulfillment
 - fulfill
     - vt. 实现；满足
     - fulfillment
         - n. 实现；满足；履行
-        - **Fulfillment** is a feeling of **happiness and satisfaction**.
-        - It's also the **completion** of something, like the **fufillment** of a promise.
+        - **Fulfillment** is a feeling of **happiness and satisfaction(n. 满意)**.
+        - It's also the **completion** of something, like the **fulfillment** of a promise.
 
 ## break
 
@@ -141,49 +153,53 @@
     - break through 突破
     - break down 分解
     - break up 拆开
-- It's like the teacher who **breaks up** the troublemakers in the back row by pairing them with better-behaved classmates. The tactic never really works.
+- It's like the teacher who **breaks up** the troublemakers in the back row by pairing them with better-behaved
+  classmates. The tactic([ˈtæktɪk] n. 手段) never really works.
 - outbreak 😔
     - n. （战争、疾病等的）爆发；突然发生
     - The **outbreak** of swine flu that was first detected in Mexico was declared a global epidemic on June 11, 2009.
         - social epidemic 社会潮流
-        - epidemic == pandemic
+        - epidemic == pandemic [pænˈdɛmɪk] n. （全国或全球性）流行病，大流行病
 - breakthrough n. 突破
-- groundbreaking 
+- groundbreaking
     - adj. 开创性的
-    - pioneering
+    - == pioneering [ˌpaɪəˈnɪrɪŋ] adj. 首创的; 先驱的; 开创性的
 
 ## check
 
 - v. 检查；查看；打勾；抑制
-- n. 调查；检查；支票 
-    - == cheque
-- One of the most common is to "to **inspect or verify**"
-- You might **check** the oven the see if your cookies are done.
-- paycheck == salary 薪资，薪酬
+- n. 调查；检查；支票
+    - == cheque n. 支票
+- One of the most common is to "**inspect or verify**"
+- You might **check** the oven([ˈʌvn] n. 烤箱) the see if your cookies are done.
+- paycheck == salary 薪资, 薪酬
 - The government is determined to **check** the growth of public spending.
-- It is legitimate to **check** suspect's phone contents without being authorized.
+- It is legitimate([lɪˈdʒɪtɪmət] adj. 合法的) to **check** suspect's phone contents without being
+  authorized(['ɔθəˌraɪzd]).
 - Justices intended to **check** the power of the Administration.
 - by check/cheque 用支票支付
 - check and balance 制衡
-- examine vt. 仔细检查
+- examine [ɪɡˈzæmɪn] vt. 仔细检查
 - inspect
     - vt. 检查
     - inspection n. 检查
     - inspector n. 检查员
-- scrutiny
+- scrutiny [ˈskruːtəni]
     - n. 仔细检查
-    - But it takes collective **scrutiny** and acceptance to transform a discovery claim into a mature discovery.
+    - But it takes collective(adj. 集体的) <ins>**scrutiny** and acceptance</ins> to transform a discovery claim into a
+      mature discovery. 但要将一项“发现的主张”转化为真正成熟的科学发现，必须经过集体的审查与认可
         - it takes something to do sth. 做某事需要
-    - scrutinize vt. 认真检查
+    - scrutinize [ˈskruːtənaɪz] vt. 认真检查
 
 ## identify
 
 - vt. 识别；确定
 - == recognize
-- identifiable
+- identifiable [aɪˌdentɪˈfaɪəbl]
     - adj. 可识别的
-    - Privacy law builds on the concept of damage to an individual from **identifiable** knowledge about them.
-- identity 
+    - <ins>Privacy law(隐私法)</ins> builds on the concept of damage to an individual from **identifiable** knowledge
+      about them. 隐私法建立在这样一种概念之上： 个人可能因可识别其身份的信息而遭受损害
+- identity
     - n. 身份
     - ID == identity
 - recognize
@@ -195,32 +211,35 @@
 - n. 部；局；司；处；系；（医院的）科；（大型商店的）货品区
 - He moved to the **sales department**.
 - the U.S. **Department of Health and Human Services**.
-- bureau
+- bureau [ˈbjʊroʊ]
     - n. （提供某方面信息的办事处）；调查部门
-    - Federal Bureau of Investigation 联邦调查局
-    - bureaucratic 😔
+    - Federal **Bureau** of Investigation 联邦调查局(FBI)
+    - bureaucratic [ˌbjʊrəˈkrætɪk] 😔
         - adj. 官僚（主义）的
-        - Anything **bureaucratic** <ins>has to do with(有关系)</ins> the business of running an organization——usually **not in a very efficient manner**.
-        - The report revealed a great deal of **bureaucratic** inefficiency.
+        - Anything **bureaucratic** <ins>has to do with(有关系)</ins> the business of running an organization——usually
+          **not in a very efficient manner**.
+        - The report revealed([rɪ'vild] v. 显示) a great deal of **bureaucratic** inefficiency.
 
 ## Words
 
-- intimate
+- intimate [ˈɪntɪmət]
     - v. 暗示，提示; 宣布，通知
-    - adj. 亲密的，亲近的; 私人的，个人的; 内部的; 直接的 
-    - n. 至交; 密友 
+    - adj. 亲密的，亲近的; 私人的，个人的; 内部的; 直接的
+    - n. 至交; 密友
 - cheat
     - v. 作弊; 欺骗; 感情不忠
     - n. 作弊者; 欺骗手段; 作弊软件
-- found
+- found [faʊnd]
     - find - found
     - v. 创立；创办；建立
-    - set up
-- fund
+    - == set up
+- fund [fʌnd]
     - v. 资助
     - funding 投资
     - funding bodies 投资机构
-- flawless == perfect
+- flawless [ˈflɔlɪs]
+    - adj. 完美的，无瑕的
+    - == perfect
 
 ## 词组
 

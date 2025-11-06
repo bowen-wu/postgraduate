@@ -13,6 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
+- 破折号: ——
 
 ## patent
 

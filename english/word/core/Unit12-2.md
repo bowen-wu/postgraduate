@@ -13,12 +13,13 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
+- 破折号: ——
 
 ## collect
 
 - v. 收（钱款）；收集；领取
 - collection n. 收藏品；一批物品；一群人；汇集；作品集；系列时装
-- collective ad. 集体的；总的
+- collective adj. 集体的；总的
 - gather v. 召集； vt. 搜集；集中（思想、精神等）
 - accumulation
     - n. 堆积；积累
