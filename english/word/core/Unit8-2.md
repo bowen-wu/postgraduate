@@ -20,7 +20,7 @@
 - vt. 促使；强迫
 - n. 力量
     - == strength
-- May the force be with you.
+- May the **force** be with you.
 - force sb. to do sth.
 - reinforce vt. 强化；巩固
 - enforce
@@ -67,10 +67,9 @@
       **subjective**.
 - susceptible [səˈseptəbl]
     - adj. 易患病的；易受...影响的
-    - be susceptible to (doing) sth.
     - Women are particularly(adv. 特别) **susceptible** to developing(v. 患（病）) depression and anxiety disorder in
       response to stress compared to men.
-    - be susceptible to 遭受；承受
+    - be susceptible to (doing) sth. 遭受；承受
         - == be subject to
         - == be vulnerable([ˈvʌlnərəbl]) to
             - vulnerable adj. （地方）易受攻击的; 易受伤的; 易受批评的
@@ -80,10 +79,10 @@
 - [səkˈses]
 - n. 成功；成就
 - **Success** is not about reaching the top at all.
+- successful adj. 成功的
 - succeed [səkˈsiːd]
     - vi. 有成就；做成；继承；成功；
     - vt. 继任
-- successful adj. 成功的
 - succession [səkˈseʃn]
     - n. 继任，继承；一系列；连续
     - The art market had witnessed([ˈwitnist] v. 作证) a **succession** of victories.
@@ -100,11 +99,11 @@
 ## union
 
 - n. 工会；联盟；协会
-- Will the European Union *make it/survive*?
+- Will the European **Union** *make it/survive*?
 - unionist [ˈjunjənɪst] n. 工会会员；工会主义者
-- unification [ˌjunɪfɪ'keɪʃn]
-    - n. 统一
-    - unify vt. 使联合; 使相同; 使一致; 统一
+- unify
+    - vt. 使联合; 使相同; 使一致; 统一
+    - unification [ˌjunɪfɪ'keɪʃn] n. 统一
     - uniform n. 制服
 - alliance [əˈlaɪəns]
     - n. 联盟，结盟
@@ -142,7 +141,7 @@
 - encouragement n. 鼓励；鼓舞
 - inspire [ɪnˈspaɪər]
     - vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
-    - inspiration n. 灵感; 鼓舞人心/启发灵感的人或事; 好主意
+    - inspiration [ˌɪnspəˈreɪʃn] n. 灵感; 鼓舞人心/启发灵感的人或事; 好主意
 
 ## global
 

@@ -239,8 +239,8 @@
 - accountable
     - adj. 对...负有责任的
     - == responsible
-    - The main purpose of this "clawback" rule is to hold bankers **accountable** for harmful risk taking.
-      这一“追回”规则的主要目的是让银行家对有害的风险承担责任
+    - The main purpose([ˈpɜːrpəs] n. 意图) of this "clawback" rule is to hold bankers **accountable** for harmful risk
+      taking. 这一“追回”规则的主要目的是让银行家对有害的风险承担责任
     - accountability n. 责任
 - count
     - vi. 数数；有价值

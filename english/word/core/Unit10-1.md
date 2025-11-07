@@ -229,17 +229,6 @@
 - cheat
     - v. 作弊; 欺骗; 感情不忠
     - n. 作弊者; 欺骗手段; 作弊软件
-- found [faʊnd]
-    - find - found
-    - v. 创立；创办；建立
-    - == set up
-- fund [fʌnd]
-    - v. 资助
-    - funding 投资
-    - funding bodies 投资机构
-- flawless [ˈflɔlɪs]
-    - adj. 完美的，无瑕的
-    - == perfect
 
 ## 词组
 

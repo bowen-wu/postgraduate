@@ -13,6 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
+- 破折号: ——
 
 ## privilege
 
@@ -20,14 +21,16 @@
 - n. 特权；特殊待遇
 - prioritize
     - vt. 确定优先顺序；优先考虑
-    - Another approach to getting more done in less time Is to rethink how you prioritise your day——in particular how we craft our <ins>to-do lists(待做清单)</ins>.
+    - Another approach to getting more done in less time Is to rethink how you prioritise your day——in particular how we
+      craft our <ins>to-do lists(待做清单)</ins>.
 - priority
     - n. 优先事项；优先权
     - give ... priority over... 将...置于比...更优先的位置
-    - give （top） priority to  优先考虑
+    - give （top） priority to 优先考虑
     - prior
         - adj. 先前的
-        - Prior knowledge and Interests influence what we experience，what we think our experiences mean，and the subsequent actions we take.
+        - Prior knowledge and Interests influence what we experience，what we think our experiences mean，and the
+          subsequent actions we take.
 
 ## react
 
@@ -39,7 +42,7 @@
 
 - n. 宗教
 - religious adj. 宗教的
-- ritual n. 例行公事；仪式；习惯；  adj. 仪式上的
+- ritual n. 例行公事；仪式；习惯； adj. 仪式上的
 - sacred
     - adj. 神圣的
     - ...viewed their presence as disrespect for sacred land.
@@ -84,7 +87,8 @@
 - vt. 使烦恼；打乱
 - adj. 失望的
 - Fishing will upset the ecological balance. 😔
-- The decision was an 8-0 defeat for the Administration's effort to <ins>upset the balance(打破权利平衡)</ins> of power between the federal government and the states.
+- The decision was an 8-0 defeat for the Administration's effort to <ins>upset the balance(打破权利平衡)</ins> of power
+  between the federal government and the states.
 - anxiety
     - n. 焦虑
     - anxious adj. 忧虑的；渴望的
@@ -113,7 +117,8 @@
 - adj. 慷慨的；充足的
 - lenient
     - adj. （惩罚或执法时）宽大的
-    - If you're not overly strict,and you show tolerance and mercy when someone dose something wrong,you're being lenient.
+    - If you're not overly strict,and you show tolerance and mercy when someone dose something wrong,you're being
+      lenient.
     - == merciful
 
 ## parallel
@@ -140,7 +145,8 @@
 - n. 激情
 - passionate
     - adj. 狂热的
-    - ...passionate consumers will <ins>voice their opinions(表达观点)</ins> in quicker，more visible，and much more damaging ways.
+    - ...passionate consumers will <ins>voice their opinions(表达观点)</ins> in quicker，more visible，and much more
+      damaging ways.
 - enthusiasm
     - n. 热情；热衷的事物
     - intense excitement
