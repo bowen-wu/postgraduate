@@ -213,6 +213,8 @@
 - authentic [ɔːˈθentɪk]
     - adj. 真实的；可靠的；正宗的
     - Kids need a range of **authentic** role models.
+- authorize [ˈɔːθəraɪz]
+    - v. 批准; 授权
 
 ## responsibility
 

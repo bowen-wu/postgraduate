@@ -24,8 +24,8 @@
     - vt. 承认；告知收悉；感谢
     - unacknowledged
         - adj. 未被承认的；不被承认的
-        - He could not confide them even to his wife, although they provided the **unacknowledged** foundation of his
-          fiction.
+        - He could not confide([kənˈfaɪd] v. 吐露（秘密）) them even to his wife, although they provided the
+          **unacknowledged** foundation of his fiction.
 
 ## sure
 
@@ -36,19 +36,21 @@
     - be sure to do sth. 一定会做某事
     - make sure 弄清，查明
     - for sure 肯定地
-- ensure
+- ensure [ɪnˈʃʊr]
     - vt. 保证
     - We tried to **ensure/make sure** that everyone got a fair deal.
-- insure
+- insure [ɪnˈʃʊr]
     - vt. 承保；确保
-    - To **insure** is to **guarantee or protect the monetary value** of something with, as you might imagine,
-      insurance.
+    - To **insure** is to **guarantee or protect the monetary([ˈmɑːnɪteri] adj. 金钱的) value** of something with, as
+      you might imagine, insurance.
     - insurance n. 保险；保险费
 - assure
     - vt. 向...保证
-    - == guarantee
+    - == guarantee v. 担保
     - If you **assure** your boss that you'll finish your project by Tuesday, you are <ins>making a promise or
-      commitment/assure somebody(作出承诺)</ins> to have it done by Tuesday.
+      commitment</ins> to have it done by Tuesday.
+    - assure somebody 作出承诺
+        - == making a promise
 
 ## mass
 
@@ -59,8 +61,8 @@
 - massive
     - adj. （尺寸、数量、规模）非常大的
     - First two hours, now three hours——this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
-      people show up to catch domestic flight, at least at some major U.S. airports with increasingly **massive**
-      security lines.
+      people show up to catch domestic([dəˈmestɪk] adj. 国内的) flight, at least at some major U.S. airports with
+      increasingly **massive** security lines.
 - biomass
     - n. 生物量（以单位面积或容积表示）
     - the **biomass** of large predators([p'redətəz] n. 食肉动物)
@@ -99,7 +101,7 @@
 ## accept 🙂
 
 - vt. 接受；认可；接纳（为成员等）
-- Learn to **accept** people for who they are not who you want then to be.
+- Learn to **accept** people for who they are not who you want them to be.
 - acceptance n. 接受
 - acceptable adj. 可接受的
 - receive v. 收到（客观）
@@ -108,7 +110,7 @@
 
 - adj. 能够的；有才能的
 - be able to do sth.
-- enable vt. 使能够；是成为可能
+- enable vt. 使能够；使成为可能
 - ability
     - n. 能力
     - disability n. （身体或智力上的）残疾
@@ -121,8 +123,9 @@
     - n. 容量；能力
     - == ability
     - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create
-      <ins>*superfluous(多余的)* material goods——paintings, sculpture and architecture<ins>, <ins>**and** superfluous
-      experiences——music, literature, religion and philosophy</ins>.
+      <ins>*superfluous([suːˈpɜːrfluəs] adj. 多余的)* material goods——paintings, sculpture([ˈskʌlptʃər] n. 雕刻作品) and
+      architecture<ins>, <ins>**and** superfluous experiences——music, literature([ˈlɪtrətʃər] n. 著作), religion and
+      philosophy([fəˈlɑːsəfi] n. 哲学)</ins>.
 
 ## achieve
 
@@ -140,7 +143,7 @@
     - vt. 实现；满足
     - fulfillment
         - n. 实现；满足；履行
-        - **Fulfillment** is a feeling of **happiness and satisfaction(n. 满意)**.
+        - **Fulfillment** is a feeling of **happiness and satisfaction([ˌsætɪsˈfækʃn] n. 满意)**.
         - It's also the **completion** of something, like the **fulfillment** of a promise.
 
 ## break
@@ -157,7 +160,8 @@
   classmates. The tactic([ˈtæktɪk] n. 手段) never really works.
 - outbreak 😔
     - n. （战争、疾病等的）爆发；突然发生
-    - The **outbreak** of swine flu that was first detected in Mexico was declared a global epidemic on June 11, 2009.
+    - The **outbreak** of swine([swaɪn] n. 猪) flu that was first detected in Mexico was declared a global epidemic on
+      June 11, 2009.
         - social epidemic 社会潮流
         - epidemic == pandemic [pænˈdɛmɪk] n. （全国或全球性）流行病，大流行病
 - breakthrough n. 突破
@@ -167,14 +171,15 @@
 
 ## check
 
+- [tʃek]
 - v. 检查；查看；打勾；抑制
 - n. 调查；检查；支票
-    - == cheque n. 支票
+    - == cheque [tʃek] n. 支票
 - One of the most common is to "**inspect or verify**"
-- You might **check** the oven([ˈʌvn] n. 烤箱) the see if your cookies are done.
+- You might **check** the oven([ˈʌvn] n. 烤箱) to see if your cookies are done.
 - paycheck == salary 薪资, 薪酬
 - The government is determined to **check** the growth of public spending.
-- It is legitimate([lɪˈdʒɪtɪmət] adj. 合法的) to **check** suspect's phone contents without being
+- It is legitimate([lɪˈdʒɪtɪmət] adj. 合法的) to **check** suspect's([səˈspekt] n. 嫌疑犯) phone contents without being
   authorized(['ɔθəˌraɪzd]).
 - Justices intended to **check** the power of the Administration.
 - by check/cheque 用支票支付
@@ -197,8 +202,8 @@
 - == recognize
 - identifiable [aɪˌdentɪˈfaɪəbl]
     - adj. 可识别的
-    - <ins>Privacy law(隐私法)</ins> builds on the concept of damage to an individual from **identifiable** knowledge
-      about them. 隐私法建立在这样一种概念之上： 个人可能因可识别其身份的信息而遭受损害
+    - <ins>Privacy law(隐私法)</ins> builds on the concept([ˈkɑːnsept] n. 概念) of damage([ˈdæmɪdʒ] n. 损坏) to an
+      individual from **identifiable** knowledge about them. 隐私法建立在这样一种概念之上： 个人可能因可识别其身份的信息而遭受损害
 - identity
     - n. 身份
     - ID == identity
@@ -218,7 +223,7 @@
         - adj. 官僚（主义）的
         - Anything **bureaucratic** <ins>has to do with(有关系)</ins> the business of running an organization——usually
           **not in a very efficient manner**.
-        - The report revealed([rɪ'vild] v. 显示) a great deal of **bureaucratic** inefficiency.
+        - The report revealed([rɪ'vild] v. 显示) a great deal of **bureaucratic** inefficiency([ɪnɪˈfɪʃənsi]).
 
 ## Words
 
@@ -226,7 +231,7 @@
     - v. 暗示，提示; 宣布，通知
     - adj. 亲密的，亲近的; 私人的，个人的; 内部的; 直接的
     - n. 至交; 密友
-- cheat
+- cheat [tʃiːt]
     - v. 作弊; 欺骗; 感情不忠
     - n. 作弊者; 欺骗手段; 作弊软件
 
