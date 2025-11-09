@@ -14,6 +14,8 @@
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
 - 破折号: ——
+- C: Cause
+- R: Result
 
 ## result
 
@@ -24,14 +26,17 @@
         - As a result, that...
     - as a result of
         - 结果是；由于...的原因
-        - **A(结果)** as a result of B(原因)
+        - **R(结果)** as a result of C(原因)
     - result from
         - 由...引起
-        - **A(结果)** result from B(原因) == originate([əˈrɪdʒɪneɪt]) from == spring from ==
-          derive([dɪˈraɪv] v. （使）起源于，来自) from == stem([stem] v. 阻止) from
+        - **R(结果)** result from C(原因)
+            - == originate([əˈrɪdʒɪneɪt]) from
+            - == spring from
+            - == derive([dɪˈraɪv] v. （使）起源于，来自) from
+            - == stem([stem] v. 阻止) from
     - result in
         - 造成...结果, 导致
-        - A result in **B(结果)** == A cause B == A lead to B
+        - R result in **C(结果)** == R cause C == R lead to C
 - Cooperation and sharing can **result from** either sympathy([ˈsɪmpəθi] n. 同情) or guilt([ɡɪlt]).
 - consequence
     - n. 结果；后果

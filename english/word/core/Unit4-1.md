@@ -14,6 +14,8 @@
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
 - 破折号: ——
+- C: Cause
+- R: Result
 
 ## influence
 
@@ -79,7 +81,7 @@
 - logic
     - n. 逻辑；（做某事的）道理
     - On one hand, that viewpoint is a **logical** product(n. 产物) of America's evolution.
-        - A is a logical product of B => A是B的产物 => A 是结果，B 是原因
+        - R is a logical product of C => R是C的产物 => R 是结果，C 是原因
     - logical adj. 合乎逻辑的
         - == coherent [koʊˈhɪrənt] adj. 合乎逻辑的
 

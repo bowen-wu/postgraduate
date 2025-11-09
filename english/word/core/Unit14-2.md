@@ -14,6 +14,8 @@
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
 - 破折号: ——
+- C: Cause
+- R: Result
 
 ## competition
 
@@ -23,7 +25,8 @@
     - adj. 竞争的
     - == aggressive
     - If you're competitive，you want to be the best.
-    - No one likes to lose，but if you are a competitive person，it will be especially disappointing to see someone else win.
+    - No one likes to lose，but if you are a competitive person，it will be especially disappointing to see someone else
+      win.
 - competitor n. 竞争者
 - competent adj. 能胜任的；有能力的
 - rival n. 竞争对手
@@ -44,7 +47,7 @@
 ## engineer
 
 - n. 工程师；技师
-vt. 策划；改变...的基因（或遗传）结构；设计制造
+  vt. 策划；改变...的基因（或遗传）结构；设计制造
 - engineering n. 工程学
 - mechanism
     - n. 机制；机械装置
@@ -112,7 +115,7 @@ vt. 策划；改变...的基因（或遗传）结构；设计制造
     - resistance n. 抵制；耐力；阻力
     - resistant adj. 耐...的；抵制的
 - exist
-    - v. 存在；生存
+    - vi. 存在；生存
     - ex- 向外
     - existence n. 存在；实体
     - coexist v. 共存；和平共处
@@ -133,7 +136,8 @@ vt. 策划；改变...的基因（或遗传）结构；设计制造
 ## obtain
 
 - vt. 获得
-- Mauua Kea's peak rises above the bulk of our planet's dense atmosphere,where conditions allow telescopes to obtain images of unsurpassed clarity.
+- Mauua Kea's peak rises above the bulk of our planet's dense atmosphere,where conditions allow telescopes to obtain
+  images of unsurpassed clarity.
 - attain vt. 获得
 - retain v. 保留
 
@@ -173,7 +177,8 @@ vt. 策划；改变...的基因（或遗传）结构；设计制造
 - lobby v. 游说； n. 游说，游说团体
 - elect
     - vt. 选举
-    - In a direct democracy，citizens take turns governing themselves，rather than electing representatives to govern for them.
+    - In a direct democracy，citizens take turns governing themselves，rather than electing representatives to govern for
+      them.
         - A rather than B 肯定A否定B
     - election n. 选举
     - electoral adj. 与选举有关的

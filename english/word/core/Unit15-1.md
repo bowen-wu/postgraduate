@@ -14,6 +14,8 @@
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
 - 破折号: ——
+- C: Cause
+- R: Result
 
 ## confidence
 
@@ -21,7 +23,8 @@
 - confident adj. 自信的
 - boast
     - v. 吹嘘 😔
-    - When you boast，you are bragging about yourself and your accomplishments，often to the boredom and annoyance of your audience.
+    - When you boast，you are bragging about yourself and your accomplishments，often to the boredom and annoyance of your
+      audience.
     - If is the charity's proud boast that it has never yet turned anyone away.
 
 ## disease
@@ -30,7 +33,8 @@
 - epidemic
     - n. 流行病；盛行； adj. 流行（性）的
     - The outbreak of wine flu that was first detected In Mexico was declared a global epidemic on June 11,2009.
-    - Yet it is precisely these non-celebrity influentials who according to the two-step-flow theory,are supposed to drive social epidemics.
+    - Yet it is precisely these non-celebrity influentials who according to the two-step-flow theory,are supposed to
+      drive social epidemics.
     - pandemic
         - n. （正式）大流行病
         - With the pandemic，unemployment is very high indeed.
@@ -74,7 +78,8 @@
 - epochal
     - adj. 划时代的
     - == important
-    - Epochal describes events so important and significant they have the power to usher in a new epoch. In other words they're "epoch-making."
+    - Epochal describes events so important and significant they have the power to usher in a new epoch. In other words
+      they're "epoch-making."
     - These epochal figures represented lives hard to imitate...
 
 ## ban
@@ -85,7 +90,8 @@
 - keep/stop/prohibit sb. from doing sth.
 - prohibit
     - vt. 禁止
-    - Although the Supreme Court of the United States had prohibited intentional <ins>(种族歧视)</ins>racial discrimination in jury selection...
+    - Although the Supreme Court of the United States had prohibited intentional <ins>(种族歧视)</ins>racial
+      discrimination in jury selection...
     - class struggle 阶级斗争
 
 ## exactly
@@ -120,7 +126,8 @@
 - So few suthors have brains enough or literary gift enough to keep their own end up in journalism.
 - literacy
     - n. 读写能力
-    - Yet as distrust has risen toward all media,people may be starting to <ins>(== improve 加强，增强)</ins>beef up their media literacy skills.
+    - Yet as distrust has risen toward all media,people may be starting to <ins>(== improve 加强，增强)</ins>beef up
+      their media literacy skills.
 - literally adv. 真正地，确实地
 - literate
     - adj. 有读写能力的
@@ -170,7 +177,7 @@
 ## 词组
 
 - result In 导致
-- A result from B 由...导致 （A结果，B原因）
+- R result from C 由...导致
 - carry forward 执行；推动
 - be distracted by 分心
 - be involved In 包含

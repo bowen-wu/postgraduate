@@ -14,6 +14,8 @@
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
 - 破折号: ——
+- C: Cause
+- R: Result
 
 ## comment
 
@@ -234,7 +236,7 @@
     - The proportion([prəˈpɔːrʃn] n. 比例) of Spring Festival gifts **accounted for/occupy([ˈɑːkjupaɪ])** 40 percent.
 - account for + 内容
     - 解释
-    - A(原因) account for B(结果)
+    - C(原因) account for R(结果)
     - His hard work **accounts for** his success.
 - accountable
     - adj. 对...负有责任的
