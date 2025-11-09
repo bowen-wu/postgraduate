@@ -24,6 +24,8 @@
 1. [非谓语作核心成分（主语、宾语、表语）](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/subject-obejct-predicative.md)
 2. [非谓语作扩展成分（定语、状语）](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md)
 
+### [考场攻略](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/exam-tips.md)
+
 ## 长难句
 
 ### [并列句](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/compound-sentence.md)
@@ -44,6 +46,8 @@
 2. [倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md)
 3. [强调](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/cleft.md)
 
+### [考场攻略](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/exam-tips.md)
+
 ## 分析长难句
 
 ### 基本结构的长难句分析
@@ -59,3 +63,6 @@
 1. [分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md)
 2. [嵌套结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/nested-structure.md)
 3. [平行结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/parallel-structure.md)
+
+
+### [考场攻略](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/exam-tips.md)

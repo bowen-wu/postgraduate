@@ -57,13 +57,14 @@
 - vt. 遭受
 - 词组
     - suffer *from* 遭受
-- Every life is a *genuine([ˈdʒenjuɪn] adj. 真正的)* *recollection(n. 回忆)** of **suffering**; **suffering** for others the
+- Every life is a *genuine([ˈdʒenjuɪn] adj. 真正的)* *recollection(n. 回忆)** of **suffering**; **suffering** for others
+  the
   process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
     - hardships == suffering
 - confront 😔
     - vt. 面临（问题、任务、困难等）
     - **Confront** means either to <ins>face a situation that makes you uncomfortable</ins>, or to <ins>say something to
-      someone about something they've done that bothers([ˈbɔðəz] v. 打扰) you</ins>.
+      someone about something they've done that *bothers([ˈbɔðəz] v. 打扰)* you</ins>.
     - be confronted with 😔
         - == be faced with (中性)
         - 面对...（困难、问题、情况）
@@ -77,7 +78,7 @@
 - slavery [ˈsleɪvəri]
     - n. 奴隶制
     - While Washington and Jefferson privately expressed distaste for **slavery**, they also understood that it was part
-      of the political and economic bedrock(n. 牢固基础) of the country they helped to create.
+      of the political and economic *bedrock(n. 牢固基础)* of the country they helped to create.
 - enslavement n. 奴役
 - colony [ˈkɑːləni]
     - n. 殖民地，聚民区
@@ -154,7 +155,7 @@
 - eager
     - adj. 热切的；渴望的
     - == desirable
-    - eagerness n. 渴望；
+    - eagerness n. 渴望
 - aspire [əˈspaɪər]
     - v. 渴望
     - == desire
@@ -164,7 +165,7 @@
 - appetite [ˈæpɪtaɪt]
     - n. 欲望
     - Since technology has such an **insatiable([ɪnˈseɪʃəbl]) appetite(贪得无厌)** for eating up human jobs, this
-      phenomenon will continue to restructure our economy...
+      phenomenon will continue to restructure([riˈstrʌktʃɚ]) our economy...
 - expect
     - v. 预料；期待
     - expect to do sth.
