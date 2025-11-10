@@ -147,6 +147,8 @@
         - n. 实现；满足；履行
         - **Fulfillment** is a feeling of **happiness and satisfaction([ˌsætɪsˈfækʃn] n. 满意)**.
         - It's also the **completion** of something, like the **fulfillment** of a promise.
+        - If she hopes her new-found fortune will yield lasting felling of **fulfilment**, she could <ins>do worse
+          than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
 
 ## break
 

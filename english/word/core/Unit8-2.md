@@ -128,6 +128,8 @@
 - commute
     - vi. 上下班往返；通勤
     - n. 上下班路程
+    - In fact, these **commutes** were reportedly more enjoyable compared with those without communication, which makes
+      absolute sense, since human beings thrive off of social connections.
     - commuter n. （远距离）上下班往返的人
 
 ## encourage

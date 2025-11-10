@@ -30,7 +30,8 @@
 - converge
     - vi. 趋于一致
     - converge on sth.
-    - Young and old converge on one key point： Overwhelming majorities of both groups said they believe It is harder for Young people today to get started in life than It was for earlier generations.
+    - Young and old converge on one key point： Overwhelming majorities of both groups said they believe It is harder for
+      Young people today to get started in life than It was for earlier generations.
 
 ## reward
 
@@ -87,7 +88,11 @@
     - == awareness
 - aware
     - adj. 意识到...的；察觉到的
-    - be aware of 意识到
+    - be aware of 意识到...
+    - Many said that unemployment, while extremely painful, had improved them in some way: they had become less
+      materialistic and more financially prudent; they <ins>were more **aware** of</ins> the struggles of others.
+    - Second, the majority of people who use networked computers to upload <ins>are not even **aware** of</ins> the
+      significance of what they are doing.
     - awareness n. 知道；意识
     - cognitive adj. 认知的
 
@@ -114,7 +119,8 @@
 - n. 损失；伤害
 - undermine
     - vt. 逐渐削弱（信心、权威等）
-    - If <ins>connections(关系，人脉)</ins> can be bought，a basic premise of democratic society——that all are equal in treatment by government——is undermined.
+    - If <ins>connections(关系，人脉)</ins> can be bought，a basic premise of democratic society——that all are equal in
+      treatment by government——is undermined.
     - well-connected 人脉广
 - impair vt. 削弱；损害
 - destroy
@@ -126,7 +132,7 @@
 - disruptive adj. 扰乱性的，颠覆性的
 - havocs
     - n. 灾害，祸患
-    - be wreaking  havoc 造成破坏
+    - be wreaking havoc 造成破坏
     - disaster 灾难
     - chaos 混乱
 
@@ -147,7 +153,9 @@
 - vt. （尤指经过努力）获得；使安全
 - security
     - n. 安全（感）
-    - <ins>(Job security or stability工作稳定)</ins> was the second most important career goal （<ins>work-life balance(工作生活平衡)</ins> was number one），followed by a sense of <ins>being dedicated to a cause(事业奉献)</ins> or to feel good about serving the greater good.
+    - <ins>(Job security or stability工作稳定)</ins> was the second most important career goal （<ins>work-life balance(
+      工作生活平衡)</ins> was number one），followed by a sense of <ins>being dedicated to a cause(事业奉献)</ins> or to
+      feel good about serving the greater good.
 - safe
     - adj. 安全的
     - safety n. 安全

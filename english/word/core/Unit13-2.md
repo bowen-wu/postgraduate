@@ -42,7 +42,11 @@
 
 - adj. 必不可少的
 - == important == necessary == indispensable
-- essentially adv. 本质上
+- essentially
+    - adv. 本质上
+    - ...if the district is **essentially** giving a pass to students who do not do their homework because of
+      complicated family lives, it is going riskily close to the implication that standards need to be lowered for poor
+      children.
 - essence [ˈesns] n. 本质
 - indispensable [ˌɪndɪˈspensəbl] 🙂 adj. 不可或缺的
 - fundamental

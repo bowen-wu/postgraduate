@@ -139,7 +139,7 @@
 ## require
 
 - vt. 需要；要求
-- All great achievements require time.
+- All great achievements **require** time.
 - On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will *accomplish
   little* and **require** vary little of us.
 - requirement n. 要求（或必要条件）；所需的（或所要的）东西
@@ -186,7 +186,7 @@
 - They wouldn't like a national agency, but self-interest would **lead** them to deal with it.
 - 词组
     - lead to 导致；通向
-        - A lead to B => A 导致 B
+        - C lead to R => C 导致 R
     - lead the way 带路；领路
     - lead up to (把谈话）引向（某个话题）
     - lead a...life 过着...的生活

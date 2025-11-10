@@ -71,7 +71,7 @@
 ## product
 
 - n. 产物；产品
-- I do completely agree that fears are just the product of our luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的) imagination.
+- I do completely agree that fears are just the **product** of our luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的) imagination.
 - produce
     - vt. 生产；引起；培养；制作
     - producer n. 生产商；制片人
@@ -89,7 +89,7 @@
     - vt. 产生（收益、效益等）；出产（作物）
     - vi. 屈服
     - n. 产量
-    - If she hopes her new-found fortune(n. 大笔的钱) will **yield/produce lasting felling of fulfilment**, she could
+    - If she hopes her new-found fortune(n. 大笔的钱) will **yield/produce lasting feeling of fulfillment**, she could
       <ins>do worse than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
         - do worse than do sth. 最好做某事
 - reap

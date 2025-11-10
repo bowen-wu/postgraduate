@@ -135,7 +135,10 @@
     - n. 成见；模式化观念（或形象）
     - We become defensive when criticised(['krɪtəˌsaɪz]), and apply negative **stereotypes** to others to boost our own
       esteem(n. 尊重；敬重；自尊心).
-    - stereotypical [ˌsteriəˈtɪpɪkl] adj. 模式化的
+    - stereotypical [ˌsteriəˈtɪpɪkl]
+        - adj. 模式化的
+        - In short, the image that best represents the current crisis is the **stereotypical** cartoon scene of a man
+          sitting at the breakfast table with a newspaper held up in front of his face...
 - discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
 - prejudice [ˈpredʒudɪs]
     - vt. 使...有偏见
