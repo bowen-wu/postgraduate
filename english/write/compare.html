@@ -18,6 +18,9 @@
         .question { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
         .question-wrap { display: flex; align-items: center; gap: 20px; margin-bottom: 10px; }
         .hidden { display: none; }
+        #audioPlayer {
+            width: 600px;
+        }
     </style>
 </head>
 <body>
@@ -201,10 +204,12 @@
     const directions = markdownToText(getSection('Directions'));
     example = getSection('Example'); // 保留 HTML
     const translation = getSection('译文'); // 保留 HTML
+    console.log('translation -> ', translation);
 
     if (currentMode === 'Dictation') {
       // Dictation 模式才显示音频上传
       audioSectionEl.classList.remove('hidden');
+      chineseEl.innerHTML = `<div class="section">${translation}</div>`;
     } else {
       // 重置文件选择器，确保用户选择同一个文件能触发事件
       audioSectionEl.value = '';
@@ -212,7 +217,7 @@
       document.getElementById('audioPlayer').classList.add('hidden');
       document.getElementById('audioPlayer').src = '';
 
-      // 只有中译英模式才显示译文
+      // 中译英模式显示译文
       if (currentMode === 'ChToEn') {
         chineseEl.innerHTML = `<div class="section">${translation}</div>`;
       } else {

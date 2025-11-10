@@ -19,6 +19,7 @@
 
 ## claim
 
+- [kleɪm]
 - vt. 声称
 - n. 声明；所有权
 - claim- == to shout 叫喊
@@ -29,7 +30,7 @@
         - a**c** + **c**laim => a**cc**laim
         - a**f** + **f**irm => a**ff**irm
         - a**r** + range => arrange
-- claimant [ˈklemənt] n. （因失业等）领取救济金者
+- claimant [ˈkleɪmənt] n. （因失业等）领取救济金者
 - declare v. 宣布，声明
 - assert
     - vt. 声称，断言
@@ -81,6 +82,7 @@
 
 ## practice
 
+- [ˈpræktɪs]
 - v. 练习
 - n. 实践；做法；练习；惯例
 - 词组
@@ -90,10 +92,10 @@
 - malpractice [ˌmælˈpræktɪs]
     - n. 玩忽职守；不法行为
     - mal- == 坏、恶😔
-        - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
         - malfunction [mælˈfʌŋkʃən]
             - vi. 失灵; 发生故障
             - n. 故障; 功能障碍; 失灵
+        - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
         - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
 - practical
     - adj. 实际的；实践性的
@@ -135,18 +137,19 @@
     - adj. 值得信赖的，可靠的; 把稳; 妥靠; 信实
     - trustworthiness ['trʌstwɜðɪnəs]
         - n. 可信度
-        - Most of us mistakenly(adv. 错误地) believe our **trustworthiness** is obvious.
+        - Most of us *mistakenly(adv. 错误地)* believe our **trustworthiness** is obvious.
 
 ## approach
 
+- [əˈproʊtʃ]
 - v. 接近
     - == around the corner == come near
 - vt. 与...接洽
 - n. 方法
     - == method == ways
-- take a(n)...approach([əˈproʊtʃ]) 采取...方法
+- take a(n)...approach 采取...方法
 - With the Spring Festival **approaching/around the corner**
-- There are a number of **approaches** to mastering(v. 掌握) the art of deep work.
+- There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
 - method n. 方法
 
 ## habit
@@ -214,7 +217,7 @@
 - **Justice** Anthony Kennedy wrote that the previous decisions were *flawed([flɔd] adj. 有缺点的; 有缺陷的)*.
 - justify
     - vt. 替...辩护；证明...是正当的
-    - It is curious([ˈkjʊriəs] adj. 耐人寻味的) that Stephen Koziatek feels almost *as though/as if(好像)* he has to
+    - It is *curious([ˈkjʊriəs] adj. 耐人寻味的)* that Stephen Koziatek feels almost *as though/as if(好像)* he has to
       **justify** his efforts to give his students a better future. 斯蒂芬·科齐亚泰克觉得他似乎不得不证明自己所做的努力是为了给他的学生们一个更好的未来，这令人感到费解
     - justification n. 正当的理由
 - jury

@@ -10,6 +10,8 @@
 - 名词在句子中主要做四种成分：宾语(宾语从句)、表语(表语从句)、主语(主语从句)、同位语(同位语从句)
 - 四种名词性从句写法基本相同，只是位置不同
 
+![Noun Clauses Position](../../../../assets/noun-clauses-position.png)
+
 ### Object Clauses
 
 #### 宾语从句写法

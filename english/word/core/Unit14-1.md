@@ -24,10 +24,14 @@
 - preparation n. 准备 == readiness
 - readiness
     - n. 愿意
-    - Here are few measures，drawn from my book Ready or Not，Here Life Comes，that parents can take to prevent what I can "work-life unreadiness".
+    - Here are few measures，drawn from my book Ready or Not，Here Life Comes，that parents can take to prevent what I
+      can "work-life unreadiness".
 - reluctant
     - adj. 不情愿的
-    - If the adjective reluctant applies to you，It means that you are undergoing some inner struggle and are unwilling or unable to decide.
+    - If the adjective reluctant applies to you，It means that you are undergoing some inner struggle and are unwilling
+      or unable to decide.
+    - reluctance n. 不情愿的
+        - One problem with the PreCheck program is the government's **reluctance** to back it.
 
 ## primary
 
@@ -46,14 +50,15 @@
     - infer v. 推断
     - suffer 遭受😔
 - reference n. 涉及；参考文献
-- transfer  
+- transfer
     - v. （使）转移，搬迁
     - transferability n. 通用性
     - Transformer 变形金刚
 - consult
     - v. 咨询
     - discuss v. 讨论（平等的）
-    - The largest firms in America and Britain together spend more than $15 billion a year on CSR，according to an estimate by EPG，a consulting firm.
+    - The largest firms in America and Britain together spend more than $15 billion a year on CSR，according to an
+      estimate by EPG，a consulting firm.
 
 ## reflect
 
@@ -65,7 +70,8 @@
 - reflective
     - adj. 反思的
     - On dark nights children should wear reflective clothing.
-    - Being reflective is an important part of active learning because it means that you are thinking about the information.
+    - Being reflective is an important part of active learning because it means that you are thinking about the
+      information.
 
 ## strategy
 
@@ -73,7 +79,8 @@
 - strategic adj. 战略上的
 - tactic
     - n. 策略 == method（具体）
-    - If begging doesn't convince your parents to raise your allowance，you might want to try a different tactic--like doing all your chores without being asked.
+    - If begging doesn't convince your parents to raise your allowance，you might want to try a different tactic--like
+      doing all your chores without being asked.
 - skillful adj. 娴熟的
 
 ## trouble
@@ -85,7 +92,8 @@
     - sb. have trouble doing sth. 某人做某事有困难
 - dilemma
     - n. （进退两难的）困境
-    - Nowadays many university graduates are facing the dilemma about whether they should apply for a job or continue further study.
+    - Nowadays many university graduates are facing the dilemma about whether they should apply for a job or continue
+      further study.
 
 ## weigh
 
@@ -95,10 +103,11 @@
     - weigh on 使（某人或某人的精神等）忧虑
     - weigh down 使负荷太重
     - weigh in （在讨论、辩论等中）发表有分量的意见；（赛前）测体重；**加入**比赛
-        - Republican Speaker  of the House of Representatives John Boehner was also quick to weigh in.
+        - Republican Speaker of the House of Representatives John Boehner was also quick to weigh in.
         - Two potential giants may yet weigh in.
         - Leading doctors today weigh in on the debate over the government's role in promoting public health...
-        - A federal appeals court weighed in again Tuesday,but instead of providing a badly needed resolution,it only prolonged the fight.
+        - A federal appeals court weighed in again Tuesday,but instead of providing a badly needed resolution,it only
+          prolonged the fight.
             - instead of A,B 否定A，肯定B
 - weight n. 重量；压力； vt. 在...上加重量
 - outweigh
@@ -169,7 +178,8 @@
 - renaissance
     - n. 文艺复兴（时期）；复兴
     - Renaissance 文艺复兴
-    - From the earliest days of the Renaissance，the writing of history meant recounting the exemplary lives of great men.
+    - From the earliest days of the Renaissance，the writing of history meant recounting the exemplary lives of great
+      men.
 
 ## connect
 
