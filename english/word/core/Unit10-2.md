@@ -103,11 +103,11 @@
 - [ˈɪmɪɡrənt]
 - n. （外来）移民
 - immigration n. 移居（入境）；移民局检查站
-- immigrate vt. **外来移民**
-- migrate vi. 迁徙；迁移
+- immigrate **vt. 外来移民**
+- migrate **vi.** 迁徙；迁移
     - migration n. 移民
     - emigrate [ˈemɪɡreɪt]
-        - vi. **移居国外**
+        - **vi. 移居国外**
         - n. 移民
         - emigrate vs immigrate
             - emigrate **移居国外**
@@ -144,7 +144,7 @@
       him."
         - with + (no/an/some) air of + 名词 + about sb. 某人身上带有（或没有）...的气质/神态/架子
             - with an air of mystery about him 他身上带着一股神秘感
-            - with no air of confidence about him 他显得自信
+            - with no air of confidence about him 他显得没有自信
 - behave
     - v. 表现
     - behavior n. 行为
@@ -160,21 +160,22 @@
 - attribute
     - vt. 把...归因于；认为...属于
     - n. 属性
-    - attribute A to B 把A归因于B （B是**原因**）
+    - attribute R to C 把R归因于C
     - Over time, the **attributes** of greatness shifted.
     - Women tend to **attribute** their success **to** external causes such as luck.
 - distribute
     - vt. 分配；使分布
     - distribution n. 分布
     - redistribution n. 重新分配
+- allocate [ˈæləkeɪt]
+    - vt. 分配
+    - The effect is caused by the way we **allocate** our attention. 这种现象的产生源于我们注意力分配的方式
+        - 影响被产生由于我们分配注意力的方式
+    - allocation n. 分配
 - designate [ˈdezɪɡneɪt]
     - vt. 指派
     - designate A as B 指定/任命A为B
         - == designate A B
-- allocate [ˈæləkeɪt]
-    - vt. 分配
-    - The effect is caused by the way we **allocate** our attention. 这种现象的产生源于我们注意力分配的方式
-    - allocation n. 分配
 - devote [dɪˈvoʊt]
     - vt. 致力于
     - be devoted to sth. 致力于.../献身于.../专心于...
@@ -223,8 +224,12 @@
     - adj. 质量极高的
     - With **superb** skill he managed to make a perfect landing.
 - superfluous [suːˈpɜːrfluəs]
-    - adj. 过剩的；奢侈的
+    - adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
     - She gave him a look that made words **superfluous**. 她的一个眼神，让言语变得多余
+    - Humans are unique in their capacity to not only make tools but then turn around and use them to create
+      **superfluous** material goods——paintings, sculpture([ˈskʌlptʃər] n. 雕刻作品) and architecture, and
+      **superfluous** experiences——music, literature([ˈlɪtrətʃər] n. 著作), religion and philosophy([fəˈlɑːsəfi] n.
+      哲学).
 
 ## Words
 
@@ -239,6 +244,9 @@
 - inferior [ɪnˈfɪriər]
     - adj. （质量等）低劣的; 下级的，下等的; （位置在）下面的; [植]下位的
     - n. 部下，下属; 次品; 晚辈; [印]下角码
+- superior
+  - adj. 比...好的; 优良的; 更高级的; 傲慢的; 居多的 
+  - n. 上级; 能人
 - flawless [ˈflɔlɪs]
     - adj. 完美的，无瑕的
     - == perfect

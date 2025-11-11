@@ -4,7 +4,7 @@
 
 ### 首先
 
-1. in the first place 
+1. in the first place
 
 ### 其次
 
@@ -12,7 +12,7 @@
 
 ### 因此，结果是
 
-1. hence 
+1. hence
 2. as a result
 3. accordingly
 4. thus
@@ -30,7 +30,7 @@
 
 1. As far as I am concerned,
 2. In my view,
-3. From my point of view, 
+3. From my point of view,
 4. In my opinion,
 
 ### 总而言之，综上所述
@@ -39,7 +39,14 @@
 2. In summary,
 3. In conclusion,
 
-## 越来越多
+### 如图所示
+
+1. As is revealed in the graph,
+2. As illustrated in the graph,
+
+## 常见表达
+
+### 越来越多
 
 1. <名词复数> + in + <现在分词> + numbers 越来越多的.../数量不断增长的
     - people in growing numbers 越来越多的

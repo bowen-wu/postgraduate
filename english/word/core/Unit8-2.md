@@ -69,8 +69,8 @@
       **subjective**.
 - susceptible [səˈseptəbl]
     - adj. 易患病的；易受...影响的
-    - Women are particularly(adv. 特别) **susceptible** to developing(v. 患（病）) depression and anxiety disorder in
-      response to stress compared to men.
+    - Women are particularly(adv. 特别) **susceptible** to developing(v. 患（病）) depression and anxiety([æŋˈzaɪəti])
+      disorder in response to stress compared to men.
     - be susceptible to (doing) sth. 遭受；承受
         - == be subject to
         - == be vulnerable([ˈvʌlnərəbl]) to
@@ -130,6 +130,9 @@
     - n. 上下班路程
     - In fact, these **commutes** were reportedly more enjoyable compared with those without communication, which makes
       absolute sense, since human beings thrive off of social connections.
+        - thrive [θraɪv]
+            - vi. 兴盛，兴隆; 长得健壮; 茁壮成长
+            - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
     - commuter n. （远距离）上下班往返的人
 
 ## encourage
@@ -183,10 +186,13 @@
 
 ## 词组
 
-- the best and brightest
-    - 最优秀、最聪明的人才
+- bright [braɪt]
+    - adj. 明亮的; 鲜艳的; 晴朗的; 欢快的; 聪明的; 有希望的
+    - adv. 明亮地
+    - the best and brightest
+        - 最优秀、最聪明的人才
 - crop up 猛增
-- go hand in hand (with …)
+- go hand in hand (with...)
     - 两者密切相关/相辅相成/并行存在
 
 ## 句式
