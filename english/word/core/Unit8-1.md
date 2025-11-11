@@ -84,6 +84,8 @@
     - v. 计算；估算；认为；把...看做
     - reckon/regard/view/see A as B 把A看做B
     - The American Society of News Editors **reckons** that 13,500 newsroom jobs have gone since 2007.
+    - This time experts **reckon** that prices are about 40% down on their peak on average, though some have been for
+      more fluctuate.
 - calculate
     - v. 计算，核算
     - calculator n. 计算器
@@ -143,7 +145,9 @@
     - n. 奢华；奢侈品
     - adj. 奢侈的
     - Make your print newspaper a **luxury** good.
-    - luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
+    - luxuriant [lʌɡˈʒʊriənt]
+        - adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
+        - I do completely agree that fears are just the product of our **luxuriant** imagination.
 - vanity [ˈvænəti] n. 虚荣心，自负
 
 ## image
@@ -154,7 +158,7 @@
 - imagine [ɪˈmædʒɪn] vt. 想象；猜想
 - imagination [ɪˌmædʒɪˈneɪʃn]
     - n. 想象力
-    - I do completely agree that fears are just the *product(产物)* of our luxuriant **imagination**.
+    - I do completely agree that fears are just the product of our luxuriant **imagination**.
 - imaginative [ɪˈmædʒɪnətɪv] adj. 富于想象力的
 
 ## suppose
@@ -169,6 +173,10 @@
     - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins> <ins>persons of(
       具有...特征的人)</ins> **supposedly** superior <ins>intelligence, education, and moral([ˈmɔːrəl] n. 道德)
       character</ins>.
+- hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
+- premise [ˈpremɪs] n. 前提，假设
+- presumably [prɪˈzuːməbli] adj. 相反的
+- contrary adj. 相反的
 - -pose- 放
     - expose
         - v. 揭露；曝光；接触；面对
@@ -198,10 +206,6 @@
           to children.
         - The coming use of *autonomous([ɔːˈtɑːnəməs] adj. 自治的) vehicles(自动驾驶汽车)*, for example, <ins>**poses**
           thorny ethical questions(提出了棘手的伦理问题)</ins>.
-- hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
-- premise [ˈpremɪs] n. 前提，假设
-- presumably [prɪˈzuːməbli] adj. 相反的
-- contrary adj. 相反的
 
 ## Words
 

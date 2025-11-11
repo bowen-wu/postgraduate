@@ -183,5 +183,11 @@
 
 ## 词组
 
+- the best and brightest
+    - 最优秀、最聪明的人才
+- crop up 猛增
+- go hand in hand (with …)
+    - 两者密切相关/相辅相成/并行存在
+
 ## 句式
 
