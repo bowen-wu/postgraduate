@@ -58,6 +58,7 @@
     - elevator n. 电梯
     - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
       a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
+        - Even better would be to... 更好的做法/选择是...
 - augment [ɔːɡˈment] vt. 增加，提高
 - heighten [ˈhaɪtn]
     - v. （使）增加
@@ -141,7 +142,10 @@
 - It is as though 20 years of ever-tougher reforms of the job search and **benefit administration system** never
   happened. 看起来就好像二十年来对求职与福利管理体系日益严格的改革从未发生过一样
 - beneficial adj. 有帮助的
-- benefactor [ˈbenɪfæktər] n. 赞助者
+- benefactor [ˈbenɪfæktər]
+    - n. 赞助者
+    - These **benefactors** have succeeded in their chosen fields, they say, and they want to use their wealth to draw
+      attention to those who have succeeded in science.
 - profit
     - v. （使）获利
     - n. 利润
@@ -159,6 +163,7 @@
 
 - n. 注意力；关注
 - pay (adj.(close/no)) attention to sth./sb./(doing sth.) 注意.../关注...
+- draw attention to sb./sth **引起人们**对某人/某事的注意
 - attentive
     - adj. 注意的；体贴的
     - 体贴的
@@ -227,6 +232,7 @@
     - n. （公开的）争论
     - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
       matched by few other industries. 全球艺术市场将巨额财富、强烈的自我意识、贪婪、激情与争议融汇在一起，这种混合在其他行业中几乎无可匹敌。
+        - bring together 使聚集、集合、汇集
     - controversial [ˌkɑːntrəˈvɜːrʃl] adj. 引起争论的 😔
 
 ## sign

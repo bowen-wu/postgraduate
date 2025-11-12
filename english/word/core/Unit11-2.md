@@ -187,6 +187,9 @@
 
 ## Words
 
+- in retrospect 回首
+- nightmare 噩梦
+
 ## 词组
 
 ## 句式

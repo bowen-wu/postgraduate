@@ -15,7 +15,7 @@
 - [ə] -> 额(e)
 - 破折号: ——
 - C: Cause
-- R: Result 
+- R: Result
 
 ## engage
 
@@ -30,7 +30,8 @@
     - occupation
         - n. 职业；侵占；占领
         - ...a painful reminder of the occupation of what was once a sovereign nation.
-        - But many middle-class occupations——trucking，financial advice，software engineering——have aroused their Interest，of soon will.
+        - But many middle-class occupations——trucking，financial advice，software engineering——have aroused their
+          Interest，of soon will.
 
 ## object
 
@@ -42,7 +43,8 @@
 - objective
     - adj. 客观的
     - We aim to be objective，but we cannot escape the context of our unique life experiences.
-    - There were goals，there were strategies，there were objectives，but we didn't talk about energy；we didn't talk about passion.
+    - There were goals，there were strategies，there were objectives，but we didn't talk about energy；we didn't talk about
+      passion.
     - subjective adj. 主观的
 - objectivity n. 客观性
 - target vt. 以...为目标；n. 目标
@@ -89,7 +91,10 @@
 - optimism n. 乐观主义
 - optimist
     - n. 乐观的人
-    - ...realistic optimists are those who make the best of things that happen，but not those who believe everything happens for the best.
+    - ...realistic optimists are those who make the best of things that happen，but not those who believe everything
+      happens for the best.
+        - make the best of sth. 尽力把事情变好/积极应对
+        - everything happens for the best 所有事情都是最好的/万事皆有最好的安排
 - optimize vt. 使最优化
 - pessimistic adj. 悲观的
 
@@ -105,14 +110,16 @@
     - revision n. 修改
 - amendment
     - n. （法律、文件的）修订，修改；修正案；美国宪法修正案（Amendment）
-    - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook of an <ins>arrestee(被逮捕的人)</ins> without <ins>warrant(搜查令)</ins>.
+    - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook
+      of an <ins>arrestee(被逮捕的人)</ins> without <ins>warrant(搜查令)</ins>.
 
 ## sight
 
 - n. 景象
 - insight
     - n. 领悟；洞察力
-    - ...many first-generation students lack insight about why they are struggling and do not understand how students 'like them'can improve.
+    - ...many first-generation students lack insight about why they are struggling and do not understand how students '
+      like them'can improve.
 - horizon n. (欲望、知识或兴趣的)范围，眼界
 
 ## active
@@ -146,7 +153,8 @@
     - vt. 推迟；延期；听从，遵从，尊敬
     - == put off
     - deference n. 尊重，遵从
-    - In the US，the Sarbanes-Oxley Act of 2002 has pushed most public companies to defer <ins>performance bonuses(绩效奖金)</ins> for senior executives by about a year.
+    - In the US，the Sarbanes-Oxley Act of 2002 has pushed most public companies to defer <ins>performance bonuses(
+      绩效奖金)</ins> for senior executives by about a year.
 - postpone vt. 推迟
 
 ## fix

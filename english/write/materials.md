@@ -52,3 +52,12 @@
     - people in growing numbers 越来越多的
     - gymnasiums in creasing numbers 越来越多的
     - gymnasiums in mounting numbers 数量急剧上升
+2. a + <adj.> + number of + <可数名词复数>
+    - a growing number of people
+    - a increasing number of people
+    - a mounting number of people
+
+### never fails to + 动词原形
+
+- 总是会...，每次都能...，无一例外地会...
+- 语气上带有强调的肯定性，通常用于表达某个行为或事物一贯产生积极（或确定）的结果。

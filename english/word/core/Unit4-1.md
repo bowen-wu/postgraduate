@@ -210,6 +210,9 @@
 - v. 与...观点一致；分享；共有
 - n. **股份**；（在若干人之间分得的）一份；（某人拥有或应负担的）一份
 - Except(conj. 除了) in the District of Columbia, non-lawyers may not own any **share** of a law firm.
+- I found, as Hacker observed years before, that most wives want their husbands to be...conversational partners, but few
+  husbands **share** this expectation of their wives.
+    - share this expectation (of sb.) 有相同的期望（与某人）
 - shareholder n. 股东
 - stock
     - vt. 存货；贮存（事物，书籍等）
