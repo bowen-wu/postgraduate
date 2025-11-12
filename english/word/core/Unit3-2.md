@@ -55,7 +55,7 @@
 - landscape n. 风景（自然）；乡村风景画
 - prospect
     - vi. 勘探
-    - n. 可能性；前途；前景；
+    - n. 可能性；前途；前景
     - If *circumstances(['sɜkəmstənsɪz] n. 环境)* always determined the life and **prospect** of people, then humanity
       would never have *progressed*.
 - retrospect [ˈretrəspekt]
@@ -71,7 +71,7 @@
 - 词组
     - keep an eye on 留意，密切关注
         - == keep an eye out for
-    - keep away (from) 原理；不让接近
+    - keep away (from) 远离；不让接近
     - keep from sth. 忍住（或克制自己）不做某事
     - keep in mind (that) 记住
     - keep sb. in 使某人留在室内（或某地）；使不外出
@@ -177,11 +177,11 @@
     - n. 信心
     - faithful
         - adj. 忠实的; 忠诚的; 如实的
-            - faithfulness
-                - n. 忠诚
-                - loyal [ˈlɔɪəl] adj. 忠诚的
-                - **Faithfulness** refers to this quality of being <ins>**faithful and loyal**</ins>.
-                - **Faithfulness** is especially valued in spouses(['spaʊsɪz] n. 配偶) and in sports fans.
+        - loyal [ˈlɔɪəl] adj. 忠诚的
+        - faithfulness
+            - n. 忠诚
+            - **Faithfulness** refers to this quality of being <ins>**faithful and loyal**</ins>.
+            - **Faithfulness** is especially valued in spouses(['spaʊsɪz] n. 配偶) and in sports fans.
 - credit [ˈkredɪt]
     - n. 学分；信用；认可；
     - credit card
@@ -231,5 +231,5 @@
 
 ## 句式
 
-- A small sing can indicate a great trend.
+- A small sign can indicate a great trend.
 

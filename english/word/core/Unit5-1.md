@@ -258,7 +258,9 @@
     - n. [pl.] 收入，收益
     - pro- == forward 前进 🙂
         - proclaim [prəˈkleɪm] vt. 宣告，公布(正式); 表明; 赞扬，称颂
-        - prospect [ˈprɑːspekt] n. 前景; 期望; 眺望处; 景象
+        - prospect [ˈprɑːspekt]
+            - vi. 勘探
+            - n. 可能性；前途；前景
     - proceeds [ˈproʊsidz]
         - n. 收入，收益
         - == income

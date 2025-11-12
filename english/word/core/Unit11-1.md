@@ -21,19 +21,23 @@
 
 - vt. 保持；坚称；养护
 - == keep
-- sb. **believe/hold/maintain/argue** that 某人认为 
-- The European Union is now considering legislation to compel corporate boards to **maintain** a certain proportion of women-up to 60 percent.
-- George Annas, chair of the health law department at Boston University, **maintains** that, as long as a doctor prescribes a drug for a legitimate medical purpose...
+- sb. **believe/hold/maintain/argue** that 某人认为
+- The European Union is now considering legislation to compel corporate boards to **maintain** a certain proportion of
+  women-up to 60 percent.
+- George Annas, chair of the health law department at Boston University, **maintains** that, as long as a doctor
+  prescribes a drug for a legitimate medical purpose...
 - maintenance n. 维护
 - sustain
     - vt. 使保持；维持
     - sustainability
         - n. 可持续性
-        - "**Sustainability**" has become a popular word <ins>these days(如今)</ins>, but to Ted Ning, the concept will always have personal meaning.
+        - "**Sustainability**" has become a popular word <ins>these days(如今)</ins>, but to Ted Ning, the concept will
+          always have personal meaning.
         - those days 过去
-    - sustainable 
+    - sustainable
         - adj. 可持续的
-        - Yet this enormous resource is not contributing enough to today's global challenges, including climate change, security, **sustainable** development and health.
+        - Yet this enormous resource is not contributing enough to today's global challenges, including climate change,
+          security, **sustainable** development and health.
     - sustainably adv. 可持续地
 
 ## ignore
@@ -42,12 +46,13 @@
 - == neglect == overlook
 - ignorant adj. 无知的
 - neglect
-    - vt. 疏于照顾；不予重视； 
+    - vt. 疏于照顾；不予重视；
     - n. 忽视
     - Which part of jobs picture was **neglected**?
 - overlook
     - vt. 忽略；（对于不良现象等）不予理会
-    - However, there is another important part of the jobs *picture(情况；情形 == situation == condition)* that was largely **overlooked**.
+    - However, there is another important part of the jobs *picture(情况；情形 == situation == condition)* that was
+      largely **overlooked**.
         - See the big picture. 有全局观/看长远/从大局出发/
         - Try to **see the big picture** before making any decision.
 
@@ -63,8 +68,8 @@
 - prevalent
     - adj. 流行的
     - == common
-    - Something **prevalent** is **common** in a particular place at a particular time. 
-    - **Prevalent** things are **hard to avoid**. 
+    - Something **prevalent** is **common** in a particular place at a particular time.
+    - **Prevalent** things are **hard to avoid**.
     - When you see the word **prevalent**, think "**it's everywhere**!"
 
 ## function
@@ -98,12 +103,13 @@
 - in reality 实际上
 - VR: virtual **reality**
 - AR: augmented **reality**
-- realize 
+- realize
     - v. 意识到；
     - vt. 实现
 - realistic
     - adj. 现实的；能够实现的
-    - According to Ben-Shahar, <ins>**realistic** optimists(现实的乐观主义者)</ins> are those who make the best of things that happen, but not those who believe everything happens for the best.
+    - According to Ben-Shahar, <ins>**realistic** optimists(现实的乐观主义者)</ins> are those who make the best of
+      things that happen, but not those who believe everything happens for the best.
 
 ## stick
 
@@ -125,7 +131,8 @@
 - bond
     - vt. 建立关系；纽带；债券；羁绊
     - bond with sb.
-    - They may have <ins>**bonded** more with</ins> the social robot because it displayed behaviors like communal exploring and playing.
+    - They may have <ins>**bonded** more with</ins> the social robot because it displayed behaviors like communal
+      exploring and playing.
 - conjunction
     - n. 结合；同时发生
     - in conjunction with ... 与...一起做
@@ -144,7 +151,7 @@
 
 - adj. 医学的；医疗的
 - medical care
-- hygiene 
+- hygiene
     - n. 卫生（学）
     - Before the birth of proper dentistry, mouths were often in a shocking state of **hygiene**.
 - infection n. 感染
@@ -157,13 +164,12 @@
 - vt. 尊敬
 - n. 尊重；（事物的）方面
 - -spect- 看
-    - prospect 
-        - n. 前景; 期望; 眺望处; 景象 
-        - vi. 勘探; 勘察; （矿等）有希望; 有前途 
-        - vt. 找矿; 对…进行仔细调查展望未来
-    - retrospect 
-        - n. 回顾，回想 
-        - vi. 回顾，追溯；回想 
+    - prospect
+        - vi. 勘探
+        - n. 可能性；前途；前景
+    - retrospect
+        - n. 回顾，回想
+        - vi. 回顾，追溯；回想
         - vt. 回顾；追忆
     - introspect v. 内省，内观
 - in respect of... 就..而言
@@ -174,7 +180,7 @@
 - esteem
     - n. 尊重；敬重
     - self-esteem 自尊心
-- mock 
+- mock
     - vt. 嘲笑；蔑视
     - == make fun of 取笑；嘲笑；拿某人或某事开玩笑
 - decent adj. 相当不错的；体面的
@@ -202,16 +208,17 @@
     - n. 优势
     - take advantage of 利用
     - disadvantage n. 不利条件
-- merit 
+- merit
     - n. 优点；功绩
-    - Vaus says that Science's idea to pass some papers to statisticians "has some **merit**, but a wekness is that it relies on the board of reviewing editors to...
+    - Vaus says that Science's idea to pass some papers to statisticians "has some **merit**, but a wekness is that it
+      relies on the board of reviewing editors to...
 - weakness n. 弱点
 - flaw
     - n. 瑕疵
-    - flawless 
+    - flawless
         - adj. 完美的，无瑕的
         - == perfect
-- downside 
+- downside
     - n. 不利的一面
     - upside n. 好处; 上边; （糟糕局面的）好的一面; 颠倒着
 
@@ -223,7 +230,7 @@
 - predictive
     - adj. 预言性的，成为前兆的
 - equivalent
-    - adj. 相等的，相同的 
+    - adj. 相等的，相同的
     - n. 等同物; 对应物
 
 ## 词组
