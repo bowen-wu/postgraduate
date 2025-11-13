@@ -150,7 +150,7 @@
     - evolution [ˌevəˈluːʃn]
         - n. 发展；进化
         - == development
-        - Studying this could help understand why human **evolution** picked pace in the last 30,000 years, with social
+        - Studying this could help understand why human **evolution** <ins>picked up pace(加快步伐)</in> in the last 30,000 years, with social
           environment being a major contributory(adj. 促成的) factor.
         - involution [ˌɪnvə'luʃən] n. 内卷
         - evolutionary [ˌevəˈluːʃəneri] adj. 进化的
@@ -181,7 +181,7 @@
       it**.
     - How shall I **refrain from** tears when we part?
     - California has asked *the justices* to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
-    - refrain from doing sth.
+    - refrain from doing sth. 克制/避免做某事
         - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
     - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
     - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.

@@ -44,6 +44,15 @@
 1. As is revealed in the graph,
 2. As illustrated in the graph,
 
+### 由于.../因... /作为...的结果
+
+- as a result of
+
+### 幸运的是
+
+- Fortunately
+- Unfortunately
+
 ## 常见表达
 
 ### 越来越多
@@ -61,3 +70,40 @@
 
 - 总是会...，每次都能...，无一例外地会...
 - 语气上带有强调的肯定性，通常用于表达某个行为或事物一贯产生积极（或确定）的结果。
+
+### 中国传统文化
+
+- traditional Chinese culture 强调文化
+- China's traditional culture 强调中国
+- the traditional culture of China 强调对比
+
+### ...的数量
+
+- the number of + <可数名词复数>
+- the amount of + <不可数名词>
+
+### 增长、上升
+
+- an increase of
+- a rise of
+
+#### 形容增长、上升
+
+- rose dramatically 上升得很剧烈
+- increased considerably 增加得相当明显
+- rose steadily 稳定上升
+- spike up to + 百分比 飙升到
+
+### on the part of + 人/组织
+
+- 由...方面/出自...的努力、行动
+- the active efforts ... on the part of the Chinese government 中国政府方面所做的积极努力
+
+### can be considered + 形容词/名词
+
+- 可以被认为/看作...
+- the future of China's traditional culture can be considered "safe" 中国传统文化的未来可以被认为是“安全”的
+
+## 句子
+
+- Traditional Chinese culture is not only certain to survive, but is, in fact, destined to thrive and prosper. 中国传统文化不但肯定能够存续，而且事实上必将会繁荣兴盛
