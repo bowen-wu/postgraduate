@@ -51,14 +51,19 @@
 - vt. 描述，描绘
 - -scrib- == -scrip- 写
 - description n. 描述
-- **pre**scription n. 药房
-- **sub**scribe
+- prescribe
+    - vt. 指定，规定; 开处方，给医嘱
+    - vi. 建立规定，法律或指示
+    - George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor
+      **prescribes** a drug for a legitimate medical purpose...
+    - prescription n. 药房
+- subscribe
     - vi. 订阅；签字，赞成；捐款
     - Copyright *rested with(归...所有)* the journal([ˈdʒɜːrnl]) publisher, and researchers seeking knowledge of the
       results would have to **subscribe** to the journal.
     - subscriber n. （报刊等的）订阅人
     - subscription n. （报刊等的）订阅
-- **manu**script
+- manuscript
     - n. 手稿，原稿
     - manu- 手
         - manipulate [məˈnɪpjuleɪt] n. （暗中）控制；操纵
@@ -89,6 +94,7 @@
     - in practice 在实践中；实际上
     - common practice 惯例；习惯做法
     - practice makes perfect 熟能生巧
+- All members of the association adhere to a strict <ins>code of **practice**(行为规范、操作准则)</ins>.
 - malpractice [ˌmælˈpræktɪs]
     - n. 玩忽职守；不法行为
     - mal- == 坏、恶😔

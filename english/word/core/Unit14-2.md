@@ -123,8 +123,10 @@
 ## rural
 
 - adj. 农村的
-- aristocratic
+- aristocratic [əˌrɪstəˈkrætɪk]
     - adj. 贵族的
+    - The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* strive to abandon or hide their old **aristocratic**
+      ways.
     - aristocrat
         - n. 贵族
         - An aristocrat is someone form the ruling class，usually those with nobility，money，or both.

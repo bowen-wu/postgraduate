@@ -30,8 +30,11 @@
     - adj. 不情愿的
     - If the adjective reluctant applies to you，It means that you are undergoing some inner struggle and are unwilling
       or unable to decide.
-    - reluctance n. 不情愿的
+    - reluctance
+        - n. 不情愿的
         - One problem with the PreCheck program is the government's **reluctance** to back it.
+        - When your body language communicates **reluctance** or *anxiety([æŋˈzaɪəti] n. 焦虑)*, it *undercuts(v. 削弱)*
+          the message.
 
 ## primary
 

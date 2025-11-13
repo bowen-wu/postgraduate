@@ -93,7 +93,9 @@
       materialistic and more financially prudent; they <ins>were more **aware** of</ins> the struggles of others.
     - Second, the majority of people who use networked computers to upload <ins>are not even **aware** of</ins> the
       significance of what they are doing.
-    - awareness n. 知道；意识
+    - awareness
+        - n. 知道；意识
+        - We should <ins>attach importance to raising</ins> people's **awareness** of environmental protection.
     - cognitive adj. 认知的
 
 ## concept
@@ -109,6 +111,8 @@
 ## climate
 
 - n. 气候；环境氛围
+- Yet this enormous resource is not contributing enough to today's global challenges, including **climate** change,
+  security, sustainable development and health.
 - acclimation
     - n. 适应（环境、条件、气候等）
     - Help reverse the acclimation and get back on home time by eating an hour later each day for three days.

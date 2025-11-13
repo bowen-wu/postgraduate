@@ -54,6 +54,8 @@
 ## explore
 
 - vt. 探索；探究
+- They may have <ins>bonded more with</ins> the social robot because it displayed behaviors like
+  communal([kəˈmjuːnl] adj. 集体的) **exploring** and playing.
 - exploration n. 探索；探究
 - excavation n. 挖掘
 
@@ -124,7 +126,9 @@
 - n. 目的
 - vi. 以...为目标；打算；针对
 - take aim at sb./sth. == aim to do 把批评的矛头指向某人或某事物
-- purpose n. 目的；目标
+- purpose [ˈpɜːrpəs]
+    - n. 目的；目标
+    - The main ***purpose** of this "clawback" rule is to hold bankers accountable for harmful risk taking.
 
 ## attract
 

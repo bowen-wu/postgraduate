@@ -50,7 +50,8 @@
 - permission n. 准许
 - permissive 😔
     - adj. 纵容的
-    - Authoritative parents are more likely than permissive parents to have children who as adolescents are self-confident，high in self-esteem，and responsibility independent.
+    - Authoritative parents are more likely than permissive parents to have children who as adolescents are
+      self-confident，high in self-esteem，and responsibility independent.
 - admission n. 准许进入
 - license vt. 批准； n. 执照 == license
 
@@ -59,12 +60,14 @@
 - adj. 适度的；谦虚的；普通的
 - adj. 适度的，较少的
 - He lives on a modest income.
-- Politicians have repeatedly "backloaded" public-sector pay deals，keeping the pay increase modest but adding to holidays and especially pensions that are already generous.
+- Politicians have repeatedly "backloaded" public-sector pay deals，keeping the pay increase modest but adding to
+  holidays and especially pensions that are already generous.
 - moderate v. （使）缓和； adj. 适度的；合理的
 
 ## proportion
 
 - n. 部分；比例
+- The **proportion** of Spring Festival gifts *accounted for/occupy([ˈɑːkjupaɪ])* 40 percent.
 - disproportionately
     - adv. 不成比例地
     - squeeze 挤压
@@ -95,7 +98,8 @@
 - bind
     - vt. （使）联合在一起；系
     - legally binding 法律约束
-    - ...a result seen in France and other countries with legally binding provision on placing women in top business positions.
+    - ...a result seen in France and other countries with legally binding provision on placing women in top business
+      positions.
 
 ## trait
 
@@ -131,7 +135,8 @@
 - vt. 劫持（交通工具，尤指飞机）；强行控制
 - poach
     - vt. 挖走（人员等）
-    - For years executives and headhunters have adhered to the rule that the most attractive CEO candidates are the ones who must be poached.
+    - For years executives and headhunters have adhered to the rule that the most attractive CEO candidates are the ones
+      who must be poached.
 
 ## imitate
 

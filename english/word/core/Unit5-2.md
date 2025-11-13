@@ -59,7 +59,9 @@
     - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
       a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
         - Even better would be to... 更好的做法/选择是...
-- augment [ɔːɡˈment] vt. 增加，提高
+- augment [ɔːɡˈment]
+    - vt. 增加，提高
+    - **Augmented** Reality 增强现实 AR
 - heighten [ˈhaɪtn]
     - v. （使）增加
     - high adj. 高的

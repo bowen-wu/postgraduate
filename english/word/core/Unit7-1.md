@@ -58,17 +58,17 @@
 - [ˈmeɪdʒər]
 - vi. (~ in)主修
 - adj. 主要的
-    - major cause 主要原因
 - n. 专业
+- major cause 主要原因
 - What should you major in?
     - major in + 专业名
     - == my major is + 专业名
-- These are **disciplines(['dɪsɪplɪnz] n. 学科)** that are *going out of style(过时；不再流行)*: 22% of American
+- These are *disciplines(['dɪsɪplɪnz] n. 学科)* that are *going out of style(过时；不再流行)*: 22% of American
   college graduates now **major in** business compared with only 2% **in** history and 4% **in** English.
 - majority
     - n. 大多数
-    - Like the **majority** of authors, he had to suffer many disappointments(n. 失望) and rejections along the way, but
-      these made him all the more determined to succeed.
+    - Like the **majority** of authors, he had to suffer many *disappointments(n. 失望)* and rejections along the way,
+      but these made him all the more determined to succeed.
     - minority [maɪˈnɔːrəti] n. 少数; 少数民族; 未成年
 - chief
     - adj. 主要的；首席的
@@ -83,12 +83,14 @@
     - the principal requirement
     - principle [ˈprɪnsəpl] n. 道德原则; 法则; 观念; 理由; 定律
 - mostly adv. 主要地；大部分地
-- largely adv. 在很大程度上；主要地
+- largely
+    - adv. 在很大程度上；主要地
+    - However, there is another important part of the jobs picture that was **largely** overlooked.
 - minor [ˈmaɪnər]
     - adj. 较小的
     - minority
         - n. 少数
-        - In his book The Tipping Point, Malcolm Gladwell argues([ˈɑ:ɡju:z] v. 辩论) that "social epidemics" are driven
+        - In his book The Tipping Point, Malcolm Gladwell argues([ˈɑ:ɡju:z] vt. 论证) that "social epidemics" are driven
           *in large part* by the actions of *a tiny **minority** of special individuals*.
             - in large part 在很大程度上；主要地；多半地
 
@@ -114,7 +116,9 @@
 - encode
     - vt. 把...编码
     - Girls' attraction to pink may seem unavoidable([ˌʌnəˈvɔɪdəbl] adj. 不可避免的), somehow **encoded** in their DNA.
-- code n. 密码，代码；行为规范，道德准则；法典
+- code
+    - n. 密码，代码；行为规范，道德准则；法典
+    - All members of the association adhere to a strict <ins>**code** of practice(行为规范、操作准则)</ins>.
 
 ## sense
 
@@ -176,10 +180,10 @@
     - definitely
         - adv. 肯定
         - indefinitely adv. 无限期地；模糊不清的
-    - infinite
-        - adj. 无限的，无穷的; 极大的，极多的
-        - infinity stone 无限宝石
-        - infinitely adv. 无限地，无穷地; 极其
+- infinite [ˈɪnfɪnət]
+    - adj. 无限的，无穷的; 极大的，极多的
+    - infinity stone 无限宝石
+    - infinitely adv. 无限地，无穷地; 极其
 
 ## effort
 
@@ -241,14 +245,14 @@
 - accountable
     - adj. 对...负有责任的
     - == responsible
-    - The main purpose([ˈpɜːrpəs] n. 意图) of this "clawback" rule is to hold bankers **accountable** for harmful risk
+    - The main *purpose([ˈpɜːrpəs] n. 意图)* of this "clawback" rule is to hold bankers **accountable** for harmful risk
       taking. 这一“追回”规则的主要目的是让银行家对有害的风险承担责任
     - accountability n. 责任
 - count
+    - vt. 认为；把...算入
     - vi. 数数；有价值
         - == matter
         - It **matters/counts** a lot 这很重要
-    - vt. 认为；把...算入
     - 词组
         - count backward 倒数
         - count on 指望，依靠
@@ -276,13 +280,12 @@
 - disavow [ˌdɪsə'vaʊ]
     - vt. 不承认，抵赖，拒绝对...承担责任
 - anticipate
-    - v. 预期; 预计; 期盼; 先于...做
+    - vt. 预料
 - elect [ɪˈlekt]
     - v. 选举; 选择
     - adj. 候任的
 - counterbalance
-    - vt. 对...起平衡作用，抵消
-    - n. 抗衡 （力），平衡力
+    - vt. 平衡；抵消
 - conclusion
     - n. 结论; 结束; 末尾; 结局; 签订
 - guidance [ˈɡaɪdns]
