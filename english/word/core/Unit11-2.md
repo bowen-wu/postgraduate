@@ -22,12 +22,13 @@
 - vt. 包括；足以支付；遮盖；报道
 - n. 封面
 - cover the costs 覆盖成本
-    - == pay 
+    - == pay
 - cover me 掩护我
 - cover up 遮盖；隐藏
 - Mass media are included to **cover** disaster and deaths.
-- It's no surptise that Jennifer Senior’s insightful, provocative magnazine **cover** story, "I love My Children, I Hate My Life, "is arousing much chatter.
-- discover 
+- It's no surptise that Jennifer Senior’s insightful, provocative magnazine **cover** story, "I love My Children, I Hate
+  My Life, "is arousing much chatter.
+- discover
     - vt. 发现；发明
     - discovery n. 发现；发明
 - recovery n. 复苏；康复；恢复
@@ -48,7 +49,7 @@
         - Legislative power
             - Senate [ˈsenət] 参议院
             - House of representatives 众议院
-    - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4, 
+    - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4,
 - congressional adj. 国会的
 - parliament n. 议会
 - council n. 地方会议；理事会
@@ -65,13 +66,13 @@
 - n. 批评；评论
 - arts criticism 艺术评论
 - critic n. 批评者；评论家
-- critical 
+- critical
     - adj. 关键的；批评的
     - critically adv. 极为重要地
 - criticise vt. 批评
 - critique n. 批判
 - condemn vt. 谴责
-- blame 
+- blame
     - vt. 把...归咎于
     - n. （坏事或错事）的责任
     - blame...for sth. 把某事归咎于...
@@ -86,16 +87,18 @@
 - dishonor a promise/commitment 未履行承诺
 - compromise
     - v. 使陷入危险
-    - n. 妥协 
+    - n. 妥协
     - make compromises 做出让步
-    - Works of several historians reveal the moral **compromises** made by the nation's early leaders and the *fragile nature* of the country's infancy.
-- guarantee 
-    - vt. 保证； 
+    - Works of several historians reveal the moral **compromises** made by the nation's early leaders and the *fragile
+      nature* of the country's infancy.
+- guarantee
+    - vt. 保证；
     - n. 保证 （口头或书面，较正式）
 - pledge
-    - v. 承诺； 
+    - v. 承诺；
     - n. 保证 （正式）
-    - The Government has **pledged** to change the law to introduce a minimum service requirement so that, even when strikes occur, services can continue to operate.
+    - The Government has **pledged** to change the law to introduce a minimum service requirement so that, even when
+      strikes occur, services can continue to operate.
 - warrant n. 搜查令
 
 ## range
@@ -126,19 +129,22 @@
     - afford to do sth.
     - affordable
         - adj. 负担得起的；价格实惠的
-        - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is *desperate(令人绝望的)*. Waiting lists increase all the time and we are simply not building enough new homes.
+        - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is *desperate(令人绝望的)*. Waiting
+          lists increase all the time and we are simply not building enough new homes.
 - auction
     - n. 拍卖
     - auctioneer n. 拍卖商
 - bid
     - n. （尤指拍卖中的）出价；投标；努力；企图
     - make a bid for 企图获得
-    - As the **auctioneer** <ins>called out **bids**(喊出报价)</ins>, in New York one of the oldest banks on Wall Street, Lehman Brothers, filed for bankruptcy.
+    - As the **auctioneer** <ins>called out **bids**(喊出报价)</ins>, in New York one of the oldest banks on Wall
+      Street, Lehman Brothers, filed for bankruptcy.
 
 ## struggle
 
 - v. 奋斗；艰难地行进
 - n. 斗争
+- One day, in retrospect, the years of **struggle** will strike you as the most beautiful.
 - battle n. 战役；斗争
 - combat vt. 与...战斗；防止
 - defeat n. 失败
@@ -156,7 +162,10 @@
 - n. 内容
 - adj. 满意的
 - be content with 使满足于
-    - == be satisfied with 
+    - == be satisfied with
+- would not be content to do sth
+    - 不会满足于做某事/不甘心做某事
+    - I <ins>would not be **content** to</ins> simply end my formal education with college level.
 - The test **contents** and formats for adults and children may be different.
 - satisfy
     - vt. 使满意；满足（需求；需要等）
@@ -180,7 +189,7 @@
 - complicated adj. 复杂的
 - intricate
     - adj. 复杂精细的
-    - intricacy 
+    - intricacy
         - n. 错综复杂
         - == complexity
 - sophisticated
@@ -194,19 +203,22 @@
 
 - vt. 产生（电等能量）；造成
 - C generate R
-- generation n. 一代人；（家史中的）一代；一辈；（尤指电、热等的）产生
+- generation
+    - n. 一代人；（家史中的）一代；一辈；（尤指电、热等的）产生
+    - Before it ends, it will likely change the life course and character of a *generation(n. 一代人)* of young adults.
 - generational adj. 一代的；代与代之间的
 - generative adj. （语言学中）生成的
 - millennial // TODO
     - n. 千禧世代；一千年的
-    - 千禧一代 millennials 1981-1995 
+    - 千禧一代 millennials 1981-1995
 
 ## liberal
 
 - adj. 自由党的；人文（教育）的
 - illiberal 😔
     - adj. 不容言论（或行动）自由的；不开朗的
-    - "The Heart of the Matter" never gets to the heart of the matter: the **illiberal** nature of liberal education at our leading colleges and universities. 😔
+    - "The Heart of the Matter" never gets to the heart of the matter: the **illiberal** nature of liberal education at
+      our leading colleges and universities. 😔
 - liberate vt. 解放
 - liberty
     - n. 自由

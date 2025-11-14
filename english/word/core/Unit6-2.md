@@ -55,6 +55,7 @@
     - adventurism [ædˈvɛntʃəˌrɪzəm] n. 冒险主义
 - threat
     - n. 威胁
+    - The **threat** of nationalisation may have been seen off for now...
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
 - crisis [ˈkraɪsɪs]
     - n. 危机
@@ -81,7 +82,7 @@
     - come to terms with sth. 接受...；对...妥协
     - on good/friendly terms 关系好
 - More than half of all British scientific research is now published under open access **terms**.
-- terminology n. 术语
+- terminology [ˌtɜːrmɪˈnɑːlədʒi] n. 术语
 - provision
     - n. （法律文件的）规定，条款；提供
     - One **provision** of the law was to roll back taxes to the 1975 level.
@@ -104,12 +105,14 @@
 - craft
     - vt. 精心制作
     - n. 技艺；技巧；小船
-    - craftsman n. 工匠; 手艺人; 名匠; 技工
-        - craftsmanship n. 技术，技艺; 工力
+    - As Cline is the first to note, it *took* Beaumont decades to perfect her **craft**; her example can't be
+      <ins>knocked off(抄袭，复制)</ins>.
+    - craftsman
+        - n. 工匠; 手艺人; 名匠; 技工
+        - craftsmanship
+            - n. 技术，技艺; 工力
             - craftsmanship spirit 工匠精神
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
-    - As Cline is the first to not, it *took* Beaumont decades to prefect her **craft**; her example can't be
-      <ins>knocked off(抄袭，复制)</ins>.
 
 ## deal
 
@@ -141,7 +144,7 @@
 ## course
 
 - n. 进程；课程；一道菜；航线；行动方式
-- Before it ends, it will likely change the life **course** and character of a generation of young adults.
+- Before it ends, it will likely change the life **course** and character of a *generation(n. 一代人)* of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
 - discipline
@@ -177,8 +180,10 @@
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
 - Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
   comes in.
-- After you have clearly and adequately(['ædɪkwətlɪ] adv. 足够地) **developed(详尽阐述)** the body of your paper, pay
+- After you have clearly and adequately(['ædɪkwətlɪ] adv. 足够地) **developed** the body of your paper, pay
   particular attention to the introductory and concluding paragraphs.
+- Women are particularly(adv. 特别) susceptible to **developing** depression and anxiety([æŋˈzaɪəti]) disorder in
+  response to stress compared to men.
 - developing adj. 发展中的
 - developed adj. 发达的
 - development
@@ -197,7 +202,12 @@
     - n. 森林; 丛林; （森林似的）一丛; 一片
     - forestation
         - n. 造林 🙂
-        - deforestation n. 砍伐森林 😔
+        - deforestation [ˌdiːˌfɔːrɪˈsteɪʃn]
+            - n. 砍伐森林 😔
+            - Even if this program didn't reduce poverty, Ferraro says, "the value of the avoided **deforestation** just
+              for carbon dioxide emission alone is more than the program costs."
+            - Last year marked the third year in a row that Indonesia's bleak rate of **deforestation** has slowed in
+              pace.
 - ecosystem n. 生态系统
 - extinction [ɪkˈstɪŋkʃn] n. 灭绝
 
@@ -272,7 +282,7 @@
 - public company
     - == publicly traded company
     - 上市公司
-- media literacy([ˈlɪtərəsi]) skills
+- media literacy([ˈlɪtərəsi] n. 读写能力) skills
     - 媒介素养能力；媒体识读能力
 
 ## 句式

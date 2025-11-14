@@ -63,7 +63,7 @@
     - gymnasiums in mounting numbers 数量急剧上升
 2. a + <adj.> + number of + <可数名词复数>
     - a growing number of people
-    - a increasing number of people
+    - an increasing number of people
     - a mounting number of people
 
 ### never fails to + 动词原形
@@ -104,6 +104,12 @@
 - 可以被认为/看作...
 - the future of China's traditional culture can be considered "safe" 中国传统文化的未来可以被认为是“安全”的
 
+### Common
+
+- attend a postgraduate program 攻读研究生学位
+- would not be content to do sth 不会满足于做某事/不甘心做某事
+
 ## 句子
 
 - Traditional Chinese culture is not only certain to survive, but is, in fact, destined to thrive and prosper. 中国传统文化不但肯定能够存续，而且事实上必将会繁荣兴盛
+- I decided to stay on the academic assembly line. 我决定继续留在学校体系中深造

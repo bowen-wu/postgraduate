@@ -167,6 +167,7 @@
 - exhibit [ɪɡˈzɪbɪt]
     - v. **展览**（正式）
     - vt. 表现
+    - Many **exhibits** in the museum embody the spirit of the craftsmanship.
     - exhibition [ˌeksɪˈbɪʃn] n. 展览
 
 ## suggest

@@ -54,6 +54,7 @@
             - == situation == condition == overall view
 - overlook
     - vt. 忽略；（对于不良现象等）不予理会
+    - When education becomes one-size-fits-all, it risks **overlooking** a nation's diversity of gifts.
     - However, there is another important part of the jobs picture that was largely(adv. 在很大程度上) **overlooked**.
         - See the big picture. 有全局观/看长远/从大局出发/
         - Try to **see the big picture** before making any decision.
@@ -196,6 +197,7 @@
 - adj. 学术的
 - n. 学者
 - academic pursuits 学术追求
+- I decided to stay on <ins>the **academic** assembly line</ins>. 我决定继续留在学校体系中深造
 - academically adv. 学术上；学业上
 - academy [əˈkædəmi] n. 学院
 - intellectual [ˌɪntəˈlektʃuəl]

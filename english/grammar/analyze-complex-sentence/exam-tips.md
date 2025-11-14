@@ -32,7 +32,9 @@
 
 ### 解决嵌套结构的关键是分层次
 
-- 嵌套结构，就是大句子套小句子。首先，正常断开长难句；然后按照层次由外向内（或由内向外），逐层看懂句意
+- 嵌套结构，就是大句子套小句子
+    - 首先: 正常断开长难句
+    - 然后: 按照层次由外向内，逐层看懂句意
 - Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who came before them.
 
 ### 解决平行结构的关键是理清多个并列
@@ -46,8 +48,8 @@
 
 ### 综合
 
-- As a linguist, he acknowledges that all varieties of human language, including non——standard ones like Black English, can be powerfully expressive——there exists no language or dialect in the world than cannot convey complex ideas.
-- Young people who are still getting started in life were more likely than order adults to prioritize personal fulfillment in their work, to believe they will advance their careers most by regularly changing jobs, to favor communities with more public services and a faster pace of life, to agree that couples should be financially secure before getting married or having children, and to maintain that children are best served by two parents working outside the home...
+- As a linguist, he acknowledges that all varieties of human language, including non-standard ones like Black English, can be powerfully expressive——there exists no language or dialect in the world than cannot convey complex ideas.
+- Young people who are still getting started in life were more likely than older adults to prioritize personal fulfillment in their work, to believe they will advance their careers most by regularly changing jobs, to favor communities with more public services and a faster pace of life, to agree that couples should be financially secure before getting married or having children, and to maintain that children are best served by two parents working outside the home...
 
 ## Words
 
