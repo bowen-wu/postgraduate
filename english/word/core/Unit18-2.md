@@ -55,7 +55,8 @@
 - vt. 追溯；勾画出（轮廓），描绘
 - track
     - vt. 追踪；跟踪； n. 轨道
-    - In December 2010 America's Federal Trade Commission proposed adding a "<ins>do not track(无痕浏览)</ins>" option to internet browsers...
+    - In December 2010 America's Federal Trade Commission proposed adding a "<ins>do not track(无痕浏览)</ins>" option
+      to internet browsers...
 - hint v. 暗示（hint at）
 - cue n. 提示；暗示
 
@@ -137,7 +138,7 @@
 - rarely adv. 很少
 - rarity n. 极为罕见
 
-## alter
+## alert
 
 - vt. 使意识到
 - n. 警戒

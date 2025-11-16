@@ -72,6 +72,8 @@
 
 - adj. 巨大的
 - a enormous/tremendous/vast/grand/gigantic/mega/immense number of
+- And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands
+  protections and see for themselves the **enormous** stake involved.
 - tremendous adj. 巨大的
 - vast adj. 巨大的；大量的
 - grand adj. 宏大的；（Grand）（用于大建筑物等的名称）大

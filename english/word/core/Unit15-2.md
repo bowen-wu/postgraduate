@@ -26,7 +26,9 @@
     - harsh weather
 - slack
     - adj. 懈怠的
-    - Everybody loves a <ins>fat pay rise(可观的涨薪)</ins>. Yet pleasure at your own can <ins>(消失 == disappear)</ins>vanish If you learn that a <ins>colleague(同事)</ins> has been given a bigger one. Indeed，If he <ins>has a reputation for(有...名声)</ins> slacking，you might even <ins>be outraged(感到愤怒)</ins>.
+    - Everybody loves a <ins>fat pay rise(可观的涨薪)</ins>. Yet pleasure at your own can <ins>(消失 == disappear)</ins>
+      vanish If you learn that a <ins>colleague(同事)</ins> has been given a bigger one. Indeed，If he <ins>has a
+      reputation for(有...名声)</ins> slacking，you might even <ins>be outraged(感到愤怒)</ins>.
 - idleness n. 懒惰
 
 ## treat
@@ -76,10 +78,11 @@
 - obliged
     - adj. 感激；被迫做某事
     - be obliged to do sth.
-    - == duty-bound adj. 义不容辞的 
-- compulsive 😔 
+    - == duty-bound adj. 义不容辞的
+- compulsive 😔
     - adj. 难以制止的
-    - Compulsive people have irresistible urges to do certain things，like a compulsive gossip who simply cannot keep a secret.
+    - Compulsive people have irresistible urges to do certain things，like a compulsive gossip who simply cannot keep a
+      secret.
     - He was a <ins>compulsive(欲罢不能)</ins> gambler and <ins>often heavily In debt(债台高筑)</ins>.
 
 ## absorb
@@ -102,7 +105,8 @@
     - astronomical adj. 天文学的
 - atmosphere
     - n. 大气层；气氛；空气
-    - These men wrote and published extensively，reaching both New World and Old World audiences，and giving New England and atmosphere of intellectual earnestness.
+    - These men wrote and published extensively，reaching both New World and Old World audiences，and giving New England
+      and atmosphere of intellectual earnestness.
 - space n. 空间
 - cyberspace n. 网络空间
 
@@ -146,7 +150,9 @@
 - convincing adj. 令人信服的
 - persuade
     - vt. 劝说
-    - persuasion n. 劝说
+    - persuasion [pərˈsweɪʒn]
+        - n. 劝说
+        - Relying on ethical **persuasion** rather than law to address the misuse of body ideals may be the best step.
     - persuasive adj. 有说服力的
 
 ## electronic

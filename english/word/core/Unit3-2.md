@@ -63,6 +63,7 @@
     - vt. 回顾；追忆
     - n. 回顾，回想
     - in retrospect == looking back 回头看、回想起来
+    - One day, <in>in **retrospect**</in>, the years of struggle will strike you as the most beautiful.
 - introspect [ˌɪntrə'spekt] v. 内省，内观
 
 ## keep
@@ -151,10 +152,12 @@
     - Congress
         - Legislative power
             - Senate [ˈsenət] 参议院
-            - House of representatives 众议院
+            - House of representatives [reprɪ'zentətɪvz] 众议院
 - The constitutional principle that...and that <ins>**federal** laws precede state laws</ins> are noncontroversial.
 - democratic [ˌdeməˈkrætɪk]
     - adj. 民主的
+    - Many Americans regard the jury system as a concrete expression of crucial **democratic** values, including the
+      principles that...
     - democrat n. 美国民主党党员
 - republican [rɪˈpʌblɪkən]
     - adj. 共和党的

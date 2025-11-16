@@ -129,7 +129,7 @@
     - vt. 使变得；提供
     - == make
     - Render is a synonym of "**make**"-technically it means "**cause to become**".
-    - An illness might **render/make** you unable to walk, or a shocking sight might **render/make** you speechless.
+    - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you speechless.
     - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering(n. 痛苦; 受苦)
       is inevitable([ɪnˈevɪtəbl] adj. 不可避免的), but the courage([ˈkɜːrɪdʒ] n. 勇气; 无畏) to fight it
       **renders/makes** life worth living.

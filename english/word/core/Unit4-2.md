@@ -111,6 +111,8 @@
 - circumstance [ˈsɜːrkəmstæns] n. 条件；状况；环境
 - condition
     - n. 状态，状况；环境；条件
+    - And capacity in <ins>social care(社会关怀)</ins> needs to be greater, to support the growing number of people
+      living with <ins>long-term **conditions**(长期疾病)</ins>.
     - conditional
         - adj. 附带条件的
         - Something **conditional** is dependent on other factors.
@@ -196,6 +198,8 @@
     - raise a baby 抚养小孩
     - raise money 筹集
     - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
+    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow many
+      ethical questions to be **raised** by technologies yet to come.
 - arouse [əˈraʊz]
     - vt. 引起(感情、态度(主观))；唤醒
     - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒
@@ -246,6 +250,9 @@
 - advocate [ˈædvəkeɪt]
     - vt. 拥护; 主张; 鼓吹
     - n. 拥护者，支持者; 辩护律师
+    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
+      谦逊的 == modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的) conductor</ins>
+      about him."
 - promote
     - v. 促进; 促销; 晋升; 使…升级
 - announce [əˈnaʊns]

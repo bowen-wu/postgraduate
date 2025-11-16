@@ -111,7 +111,8 @@
 ## able
 
 - adj. 能够的；有才能的
-- be able to do sth.
+- 词组
+    - be able to do sth.
 - enable vt. 使能够；使成为可能
 - ability
     - n. 能力
@@ -186,7 +187,8 @@
 - It is legitimate([lɪˈdʒɪtɪmət] adj. 合法的) to **check** suspect's([səˈspekt] n. 嫌疑犯) phone contents without being
   authorized(['ɔθəˌraɪzd]).
 - Justices intended to **check** the power of the Administration.
-- by check/cheque 用支票支付
+- 词组
+    - by check/cheque 用支票支付
 - check and balance 制衡
 - examine [ɪɡˈzæmɪn] vt. 仔细检查
 - inspect

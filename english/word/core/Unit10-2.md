@@ -30,8 +30,8 @@
 - vt. 把...联系起来；讲述
 - vi. 与...有关
 - be related to
-- So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course "
-  Fashion Media & Promotion".
+- So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course
+  "Fashion Media & Promotion".
 - correlate
     - v. 相互关联；显示紧密联系
     - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership——that is, it
@@ -78,7 +78,8 @@
 - This restaurant's menu **features** Italian dishes.
 - Practically every week **features** at least one celebrity mom, or mom-to-be, smiling on the newsstands.
 - character
-    - n. 性格
+    - n. 性格；特征；人品；（电影、书、戏剧中的）人物
+    - Before it ends, it will likely change the life course and **character** of a generation of young adults.
     - characterize
         - vt. 是...的特征；表现（...的特征、特点）
         - == feature
@@ -104,7 +105,7 @@
 - n. （外来）移民
 - immigration n. 移居（入境）；移民局检查站
 - immigrate **vt. 外来移民**
-- migrate **vi.** 迁徙；迁移
+- migrate [ˈmaɪɡreɪt] **vi.** 迁徙；迁移
     - migration n. 移民
     - emigrate [ˈemɪɡreɪt]
         - **vi. 移居国外**
@@ -114,7 +115,8 @@
             - immigrate **外来移民**
         - emigrant [ˈemɪɡrənt]
             - n. 移民
-            - An **emigrant** is a person who leaves his or her home country to live permanently in another country.
+            - An **emigrant** is a person who leaves his or her home country to live permanently(['pɜːmənəntli]) in
+              another country.
             - Many Irish **emigrant** came to the United States in the late 1800s.
 
 ## institution
@@ -140,7 +142,7 @@
 - conductor
     - n. （交响乐、合唱团的）指挥
     - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
-      modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)</ins> **conductor** about
+      modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的) **conductor**</ins> about
       him."
         - with + (no/an/some) air of + 名词 + about sb. 某人身上带有（或没有）...的气质/神态/架子
             - with an air of mystery about him 他身上带着一股神秘感
@@ -170,7 +172,6 @@
 - allocate [ˈæləkeɪt]
     - vt. 分配
     - The effect is caused by the way we **allocate** our attention. 这种现象的产生源于我们注意力分配的方式
-        - 影响被产生由于我们分配注意力的方式
     - allocation n. 分配
 - designate [ˈdezɪɡneɪt]
     - vt. 指派
@@ -197,7 +198,7 @@
 - gene patents 基因专利
 - genetic [dʒəˈnetɪk]
     - adj. 基因的
-    - genetically
+    - genetically [dʒə'netɪklɪ]
         - adv. 从基因方面
         - Death is normal; we are **genetically** programmed to disintegrate([dɪsˈɪntɪɡreɪt] v. 瓦解) and
           perish([ˈperɪʃ] vi. 死亡), even under ideal conditions.
@@ -211,14 +212,15 @@
     - maternal [məˈtɜːrnl] adj. 母系的
     - paternity [pəˈtɜrnəti]
         - n. 父系
-        - Among the most popular: **paternity** and kinship testing, which adopted children can use to find their
-          biological relatives and families can use to track down kids put up for adoption.
+        - Among the most popular: **paternity** and *kinship(n. 亲属关系)* testing, which adopted children can use to
+          find their biological relatives **and** families can use to <ins>track down(追查到)</ins> kids <ins>put up for
+          adoption(送去领养)</ins>.
 
 ## supreme
 
 - [suːˈpriːm]
 - adj. （级别或地位）最高的；（程度）很大的 （不与比较级、最高级连用）
-- The ethical([ˈeθɪkl] adj. 道德的) judgments of <ins>the **Supreme** Court</ins> justices have become an important
+- The *ethical([ˈeθɪkl] adj. 道德的)* judgments of <ins>the **Supreme** Court</ins> justices have become an important
   issue recently.
 - superb [suːˈpɜːrb]
     - adj. 质量极高的
@@ -227,9 +229,9 @@
     - adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
     - She gave him a look that made words **superfluous**. 她的一个眼神，让言语变得多余
     - Humans are unique in their capacity to not only make tools but then turn around and use them to create
-      **superfluous** material goods——paintings, sculpture([ˈskʌlptʃər] n. 雕刻作品) and architecture, and
-      **superfluous** experiences——music, literature([ˈlɪtrətʃər] n. 著作), religion and philosophy([fəˈlɑːsəfi] n.
-      哲学).
+      **superfluous** material goods——paintings, *sculpture([ˈskʌlptʃər] n. 雕刻作品)* and architecture, and
+      **superfluous** experiences——music, *literature([ˈlɪtrətʃər] n. 著作)*, religion and
+      *philosophy([fəˈlɑːsəfi] n. 哲学)*.
 
 ## Words
 
@@ -245,8 +247,8 @@
     - adj. （质量等）低劣的; 下级的，下等的; （位置在）下面的; [植]下位的
     - n. 部下，下属; 次品; 晚辈; [印]下角码
 - superior
-  - adj. 比...好的; 优良的; 更高级的; 傲慢的; 居多的 
-  - n. 上级; 能人
+    - adj. 比...好的; 优良的; 更高级的; 傲慢的; 居多的
+    - n. 上级; 能人
 - flawless [ˈflɔlɪs]
     - adj. 完美的，无瑕的
     - == perfect

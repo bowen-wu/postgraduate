@@ -78,6 +78,8 @@
 - appropriate adj. 合适的
 - proper
     - adj. 恰当的；正常的
+    - Before the birth of **proper** dentistry([ˈdɛntɪstri]), mouths were often in a *shocking(adj. 可怕的)* state of
+      hygiene.
     - properly adv. 恰当地
 - file
     - vt. 提起（诉讼）；提出（申请）；归档

@@ -137,9 +137,10 @@
 
 ## obtain
 
+- [əbˈteɪn]
 - vt. 获得
-- Mauua Kea's peak rises above the bulk of our planet's dense atmosphere,where conditions allow telescopes to obtain
-  images of unsurpassed clarity.
+- Mauua Kea's peak rises above the bulk of our planet's dense atmosphere, where conditions allow telescopes to
+  **obtain** images of unsurpassed clarity.
 - attain vt. 获得
 - retain v. 保留
 

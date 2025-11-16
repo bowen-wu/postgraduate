@@ -24,7 +24,10 @@
 - n. 目前；现在；礼物
 - Yesterday is history. Tomorrow is a mystery. But today is a gift. That is why it's called **present**.
 - presently adv. 现在，目前；不久
-- presence n. 出席；存在
+- presence
+    - n. 出席；存在
+    - Since desire and will are damaged by the **presence** of thoughts that do not accord with desire, Allen
+      concluded: "We do not attract what we want, but what we are."
 - presentation n. （颁奖等）仪式，典礼；展示
 - represent
     - v. 代表
@@ -35,7 +38,7 @@
         - representative government
         - Congress(legislative power)
             - Senate [ˈsenət] 参议院
-            - House of representatives 众议院
+            - House of representatives [reprɪ'zentətɪvz] 众议院
         - check and balance 制衡
 - embody [ɪmˈbɑːdi]
     - v. 具象，征体表现，体现(具体 -> 抽象)
@@ -174,7 +177,10 @@
       具有...特征的人)</ins> **supposedly** superior <ins>intelligence, education, and moral([ˈmɔːrəl] n. 道德)
       character</ins>.
 - hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
-- premise [ˈpremɪs] n. 前提，假设
+- premise [ˈpremɪs]
+    - n. 前提，假设
+    - If connections can be bought, a basic **premise** of democratic society——that all are equal in treatment by
+      government——is undermined.
 - presumably [prɪˈzuːməbli] adj. 相反的
 - contrary adj. 相反的
 - -pose- 放

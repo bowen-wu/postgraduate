@@ -141,6 +141,8 @@
 ## imitate
 
 - vt. 模仿
+- What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues
+  to evade scientists.
 - imitation n. 模仿
 
 ## inflation

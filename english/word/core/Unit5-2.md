@@ -188,6 +188,7 @@
 - factual [ˈfæktʃuəl] adj. （根据）事实的
 - virtual
     - adj. 实际上的；（计算机）虚拟的
+    - VR: **Virtual** Reality
     - virtually
         - adv. 几乎
         - == almost

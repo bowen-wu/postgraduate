@@ -131,7 +131,10 @@
     - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,
       *with the empowerment of junior faculty and to some degree of students as well(赋予初级教师和一定程度的学生权力)*.
     - markedly adv. 显著地
-- remarkable adj. 非凡的，不同寻常的
+- remarkable
+    - adj. 非凡的，不同寻常的
+    - ...the author produced a **remarkable** work of <ins>speculative fiction(推理小说)</ins> that would foreshadow
+      many ethical questions to be raised by technologies yet to come.
 
 ## public
 
@@ -167,6 +170,8 @@
     - n. 问题；议题；
     - 词组
         - at issue 讨论或争论中的
+        - <ins>At **issue**</ins> before the U.S. Court of Appeals for the District of Columbia Circuit was <ins>the
+          latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
     - **issue** a report 发布报告
     - The Administration is *dominant([ˈdɑːmɪnənt]) over(对...占据主导地位/控制权)* immigration **issues**.
     - Faced with the demand for net neutrality rules，the FCC has **issued** a special resolution.

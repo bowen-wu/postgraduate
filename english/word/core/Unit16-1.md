@@ -71,7 +71,9 @@
     - various adj. 各种各样的
 - diverse
     - adj. 多种多样的
-    - diversity n. 多样性；差异
+    - diversity
+        - n. 多样性；差异
+        - When education becomes one-size-fits-all, it risks overlooking a nation's **diversity** of gifts.
 
 ## poverty
 
@@ -91,7 +93,7 @@
 - optimism n. 乐观主义
 - optimist
     - n. 乐观的人
-    - ...realistic optimists are those who make the best of things that happen，but not those who believe everything
+    - ...realistic **optimists** are those who make the best of things that happen，but not those who believe everything
       happens for the best.
         - make the best of sth. 尽力把事情变好/积极应对
         - everything happens for the best 所有事情都是最好的/万事皆有最好的安排
@@ -110,16 +112,21 @@
     - revision n. 修改
 - amendment
     - n. （法律、文件的）修订，修改；修正案；美国宪法修正案（Amendment）
-    - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook
-      of an <ins>arrestee(被逮捕的人)</ins> without <ins>warrant(搜查令)</ins>.
+    - The court has ruled that police don't violate the Fourth **Amendment** when they go through the wallet or
+      pocketbook of an arrested person without warrant.
 
 ## sight
 
 - n. 景象
+- An illness might render you unable to walk, or a *shocking(adj. 可怕的)* **sight** might render you speechless.
 - insight
     - n. 领悟；洞察力
     - ...many first-generation students lack insight about why they are struggling and do not understand how students '
       like them'can improve.
+    - insightful [ˈɪnˌsaɪtfəl]
+        - adj. 富有洞察力的
+        - It's no surprise that Jennifer Senior’s **insightful**, provocative([prəˈvɑːkətɪv] adj. 挑衅的) magazine cover
+          story, "I love My Children, I Hate My Life, " is <ins>arousing much chatter(引起大量议论)</ins>.
 - horizon n. (欲望、知识或兴趣的)范围，眼界
 
 ## active
@@ -144,6 +151,9 @@
     - vt. 正式通过（建议、政策等）；采用（某方法）；采取（某态度）；收养
     - adoption n. 采用；收养
     - adoptive adj. 收养的
+    - Among the most popular: paternity and *kinship(n. 亲属关系)* testing, which **adopted** children can use to
+      find their biological relatives **and** families can use to <ins>track down(追查到)</ins> kids <ins>put up for
+      **adoption**(送去领养)</ins>.
 
 ## delay
 

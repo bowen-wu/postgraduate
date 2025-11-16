@@ -1,4 +1,4 @@
-# Unit 12
+# Unit 12-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -25,7 +25,9 @@
 - try to do sth. 设法去做某事（侧重过程）
 - management
     - n. 管理；管理者
-    - ...a regulatory structure that denies **management** the flexibility to adjust its operations to the new reality.
+    - ...a regulatory structure(n. 结构) that denies([diˈnaiz] v. 拒绝) **management** the flexibility to adjust its
+      operations to the new reality.
+        - deny someone something 拒绝某人某物/使某人得不到某物
 
 ## memory
 
@@ -33,133 +35,160 @@
 - memory loss 失忆
 - memorable
     - adj. 难忘的
-    - Honestly, if we got stuck in the rut of "hi", "hello", "how are you?" and "what's going on?", you will fail to give the initial jolt to the conversation (that can make it so **memorable**).
-- memorization n. 记忆
+    - Honestly([ˈɑːnɪstli]), if we <ins>got stuck in the rut(墨守成规、老套的方式)</ins> of "hi", "hello", "how are you?"
+      and "what's going on?", you will fail to give the initial jolt([dʒoʊlt] n. 震惊) to the conversation that can
+      make it so **memorable**.
+        - fail to do 无法做到/没能做到
+- memorization [ˌmemə'rɪzeɪʃən] n. 记忆
 
 ## regard
 
 - vt. 把...视为
 - n. 关注
 - regard A as B
-- Many Americans **regard** <ins>the jury system</ins> **as** a concrete expression of crucial democratic values, including the principles that...
+- Many Americans **regard** <ins>the jury system</ins> **as** a concrete expression of crucial democratic values,
+  including the principles that...
     - the jury system 陪审团制度
-- in/with regard to 关于
-- regarding 
+- 词组
+    - in/with regard to 关于
+- regarding
     - prep. 关于
-    - == about 
-- disregard 
+    - == about
+- disregard
     - n. 忽视
     - shows his **disregard** for the character of rural areas.
 - regardless of
     - 不管
-    - **regardless of** how it goes down, life goes on.
+    - **regardless of** how it goes down, life goes on. 无论发生什么，生活还得继续
 
 ## explore
 
+- [ɪkˈsplɔːr]
 - vt. 探索；探究
-- They may have <ins>bonded more with</ins> the social robot because it displayed behaviors like communal([kəˈmjuːnl] adj. 集体的) **exploring** and playing.
-- exploration n. 探索；探究
-- excavation n. 挖掘
+- They may have <ins>bonded more with</ins> the social robot because it displayed behaviors like communal([kəˈmjuːnl]
+  adj. 集体的) **exploring** and playing.
+    - bond with sb/sth 与...建立情感联系/变得更亲近
+    - bonded more with 更容易与...产生情感连结
+- exploration [ˌekspləˈreɪʃn] n. 探索；探究
+- excavation [ˌekskəˈveɪʃn] n. 挖掘
 
 ## express
 
+- [ɪkˈspres]
 - vt. 表达
 - n. 快递服务
 - adj. 明确的；特快的
 - expression n. 表达；表情；表达方式
 - expressive adj. 有表现力的
-- convey
+- convey [kənˈveɪ]
     - vt. 表达
-    - When you **convey** something, you **carry** or **deliver** it.
+    - When you **convey** something, you **carry** or **deliver([dɪˈlɪvər])** it.
     - Your smile might **convey** more about your feelings than works ever could.
-- utterance n. 话语
-- gasp 
+- utterance [ˈʌtərəns] n. 话语
+- gasp [ɡæsp]
     - vi. 喘气
     - n. 深呼吸
 
 ## predict
 
+- [prɪˈdɪkt]
 - vt. 预测（主观）
+- ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership——that is, it
+  **predicted** the opposite([ˈɑːpəzɪt] n. 对立物).
 - predictable adj. 可预见的
-- predicatably adv. 可预见地
+- predictably [prɪˈdɪktəblɪ] adv. 可预见地
 - prediction n. 预测
-- anticipate vt. 预料
-- forecast
+- anticipate [ænˈtɪsɪpeɪt]
+    - vt. 预料
+    - ...to **anticipate** every imaginable driving situation is a difficult programming problem.
+- forecast [ˈfɔːrkæst]
     - vt. 预测
     - n. 预测；预报（客观）
     - weather forecast 天气预报
-- foreseeable
+- foreseeable [fɔːrˈsiːəbl]
     - adj. 可预见的
-    - foresee vt. 预知，预见; 有先见之明
+    - foresee [fɔːrˈsiː] vt. 预知，预见; 有先见之明
     - in the foreseeable future 在可预见的未来
-- foreshadow
+- foreshadow [fɔrˈʃædoʊ]
     - vt. 预示
     - Those dark clouds **foreshadow** a storm.
-    - ...the author produced a remarkable work of speculative fiction that would **foreshadow** many ethical questions to be raised by technologies yet to come.
+    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would **foreshadow**
+      many ethical questions to be raised by technologies yet to come.
 
 ## prevent
 
 - vt. 阻止
-- prevent/keep/stop sb. from doing sth. 阻止某人做某事
-- prevention n. 预防
-- hinder vt. 阻碍
+- 词组
+    - prevent/keep/stop sb. from doing sth. 阻止某人做某事
+- prevention [prɪˈvenʃn] n. 预防
+- hinder [ˈhɪndər]
+    - vt. 阻碍
+    - Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who demand high quarterly profits from companies,
+      can **hinder** a firm's efforts to invest in long-term research or to build up customer loyalty([ˈlɔɪəlti] n.
+      忠诚).
 - curb
-    - vt./n. 抑制，控制 
+    - vt./n. 抑制，控制
     - == limit
-    - They argue that government action is necessary to **curb** Britain's addiction to unhealthy food...
+    - They argue that government action is necessary to **curb** Britain's addiction(n. 嗜好) to unhealthy food...
 - barrier n. 障碍
-- obstacle 
+- obstacle [ˈɑːbstəkl]
     - n. 障碍
     - == barrier
-- facilitate v. 促进; 使便利
-
+- facilitate [fəˈsɪlɪteɪt] v. 促进; 使便利
 
 ## similar
 
+- [ˈsɪmələr]
 - adj. 相像的
-- (be) similar to 与...相似
-- similarity n. 相似点
-- resemble 
+- 词组
+    - (be) similar to 与...相似
+- similarity [ˌsɪməˈlærəti] n. 相似点
+- resemble [rɪˈzembl]
     - vt. 像
     - A resemble B
     - == (be) similar to
-- likewise
+- likewise [ˈlaɪkwaɪz]
     - adv. 同样
-    - He lent money, made donations and encouraged others to do **likewise**.
-- analogy
+    - He lent money, made donations(n. 捐赠) and encouraged others to do **likewise**.
+- analogy [əˈnælədʒi]
     - n. 类比
-    - == comparison
+    - == comparison [kəmˈpærɪsn] n. 比较
     - When you draw an **analogy** between two things, you **compare** them for the purpose of explanation.
     - The movie character Forrest Gump made a famous **analogy**: "Life is like a box of chocolates."
-    - analogous adj. 相似的，类似的
+    - analogous [əˈnæləɡəs] adj. 相似的，类似的
 
 ## aim
 
-- n. 目的
 - vi. 以...为目标；打算；针对
-- take aim at sb./sth. 把批评的矛头指向某人或某事物
-    - == aim to do
+- n. 目的
+- 词组
+    - take aim at sb./sth. 把批评的矛头指向某人或某事物
+        - == aim to do
 - purpose [ˈpɜːrpəs]
     - n. 目的；目标
     - The main **purpose** of this "clawback" rule is to hold bankers accountable for harmful risk taking.
+    - George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor
+      prescribes a drug for a legitimate medical **purpose**...
 
 ## attract
 
+- [əˈtrækt]
 - v. 吸引；引起（反应）
 - at(强调)-tract(拉；拽)
 - attraction n. 吸引；向往的地方；有吸引力的事
-- attractive 
+- attractive
     - adj. 吸引人的
     - attractively adv. 有吸引力地
     - unattractive adj. 没有吸引力的
 - attractiveness n. 吸引力
-- extract
+- extract [ˈekstrækt]
     - vt. （用力）拔出
-    - So he hired a dentist to transplant nine teeth into his jaw——having **extracted** them from the mouths of his slaves.
-- contract 
+    - So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw——having **extracted** them from the mouths
+      of his slaves.
+- contract [ˈkɑːntrækt]
     - v. （使）收缩
     - n. 合同
-- abstract
+- abstract [ˈæbstrækt]
     - adj. 抽象派的；抽象的
     - n. 摘要
     - abstract writing 摘要写作
@@ -170,28 +199,31 @@
 - v. （向...）收费
 - vt. 控告；指责；使...承担责任
 - n. 指控；主管
-- in charge (of) 负责
+- 词组
+    - in charge (of) 负责
 - charged
     - adj. 充满情绪的、带有某种强烈色彩的
     - politically charged 政治意味浓厚的；有政治争议的
     - emotionally charged 情绪化的；充满情感的
-- accuse
+- accuse [əˈkjuːz]
     - vt. 指责；指控
     - accuse sb. of sth. 指责某人某事
-        - == charge sb. with sth. 
-    - Still, we need to be careful not to **accuse** opponents of bad arguments too quickly.
-- expense
+        - == charge sb. with sth.
+    - Still, we need to be careful not to **accuse** opponents([ə'poʊnənts] n. 对手) **of** bad arguments too quickly.
+- expense [ɪkˈspens]
     - n. 费用（一般 小）
-    - at the expense of 在牺牲（或损害）...的情况下
-    - expenditure n. 开支（官方 大）
+    - 词组
+        - at the expense of 在牺牲（或损害）...的情况下
+    - expenditure [ɪkˈspendɪtʃər] n. 开支（官方 大）
 
 ## guilt
 
 - n. 内疚
 - guilty adj. 感到内疚的；有罪责的
 - conviction
-    - n. 判罪；坚定的信念（或主张）
-    - ...the U.S. Supreme Court has overturned the corruption **conviction** of a former Virginia governor, Robert McDonnell.
+    - n. 判罪
+    - ...the U.S. Supreme Court has overturned the corruption **conviction** of a former Virginia governor, Robert
+      McDonnell.
 
 ## conflict
 
@@ -200,23 +232,26 @@
 - 词组
     - in conflict 有矛盾
     - conflict with 和...冲突
-- wreak 😔
+- wreak [rik] 😔
     - vt. 造成（混乱或破坏）
-    - ...although American men tend to talk more than women in public situations, they often talk less at home. And this pattern is <ins>**wreaking** havoc</ins> with marriage.
-- harmonization
+    - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
+      pattern is <ins>**wreaking** havoc</ins> with marriage.
+        - wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
+- harmonization [ˌhɑmənaɪ'zeɪʃn]
     - n. 和谐
-    - in harmony with 与...和谐共处
+    - in harmony([ˈhɑːrməni]) with 与...和谐共处
 
 ## Words
 
-- rigid 
+- rigid [ˈrɪdʒɪd]
     - adj. 严格的; 僵硬的; （规则、方法等）死板的; 刚硬的，顽固的
-- hole 
-    - n. 洞； 
+- hole [hoʊl]
+    - n. 洞；
     - v. 挖掘
-- throne 
+- throne [θroʊn]
     - n. 宝座; 御座; 王位; 王权
-- bvide 新娘
+- bride [braɪd]
+    - n. 新娘
 
 ## 词组
 

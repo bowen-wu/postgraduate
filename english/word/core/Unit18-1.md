@@ -109,7 +109,7 @@
 - initially adv. 开始，最初
 - initiate vt. 发起
 - initiation n. （常包含特殊仪式的）入会
-- initiative
+- initiative [ɪˈnɪʃətɪv]
     - n. 倡议；新方案；主动性；主动权；积极性；计划
     - == plan （具体）
     - == willingness（抽象）

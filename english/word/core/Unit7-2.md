@@ -24,6 +24,8 @@
 - n. 声明；所有权
 - claim- == to shout 叫喊
 - == declare == assert == announce
+- We cannot overstate our debt to the past, but the moment has the supreme **claim**.
+    - We cannot overstate X 我们再怎么强调 X 都不为过
 - **acclaim**
     - vt./n. 称赞 🙂
     - axx- 表示强调
@@ -32,7 +34,7 @@
         - a**r** + range => arrange
 - claimant [ˈkleɪmənt] n. （因失业等）领取救济金者
 - declare v. 宣布，声明
-- assert
+- assert [əˈsɜːrt]
     - vt. 声称，断言
     - assertion n. 声明；断言
 - allege [əˈledʒ] vt. 声称，指称
@@ -59,11 +61,11 @@
     - prescription n. 药房
 - subscribe
     - vi. 订阅；签字，赞成；捐款
-    - Copyright *rested with(归...所有)* the journal([ˈdʒɜːrnl]) publisher, and researchers seeking knowledge of the
+    - Copyright *rested with(归...所有)* the *journal([ˈdʒɜːrnl])* publisher, and researchers seeking knowledge of the
       results would have to **subscribe** to the journal.
     - subscriber n. （报刊等的）订阅人
     - subscription n. （报刊等的）订阅
-- manuscript
+- manuscript [ˈmænjuskrɪpt]
     - n. 手稿，原稿
     - manu- 手
         - manipulate [məˈnɪpjuleɪt] n. （暗中）控制；操纵
@@ -71,7 +73,7 @@
 ## opportunity
 
 - n. 机会
-- Look, if you had *one shot(一次机会)*, or _one ***opportunity***(一个机遇)_. To seize([siːz] v. 抓住) everything you
+- Look, if you had *one shot(一次机会)*, or _one ***opportunity***(一个机遇)_. To *seize([siːz] v. 抓住)* everything you
   ever wanted in one moment. Would you capture it or just let it slip?
   听好了——若命运只给你一次机会，让你实现所有的梦想，你会紧紧抓住，还是眼睁睁看它溜走？
 - chance
@@ -106,7 +108,9 @@
 - practical
     - adj. 实际的；实践性的
     - impractical adj. 不切实际的
-    - practically adv. 几乎；实际地
+    - practically
+        - adv. 几乎；实际地
+        - **Practically** every week features at least one celebrity mom, or mom-to-be, smiling on the newsstands.
     - practicality [ˌpræktɪˈkælətɪ] n. 实用性
 - routine
     - n. 常规，惯例
@@ -115,11 +119,12 @@
 
 ## nature
 
+- [ˈneɪtʃər]
 - n. 本质；天性；自然
 - Mother Nature 大自然母亲
 - 词组
     - in nature 本质上；事实上
-- natural adj. 自然的；正常的；天赋的
+- natural [ˈnætʃrəl] adj. 自然的；正常的；天赋的
 - unnatural adj. 反常的
 - instinct [ˈɪnstɪŋkt]
     - n. 本能；直觉
@@ -128,8 +133,8 @@
     - instinctively adv. 本能地
 - viscerally [ˈvɪsərəli]
     - adv. 发自内心地
-    - Knowing the result of Epley's study, it *makes sense(有道理、说得通、可以理解)* that many people hate photographs of
-      themselves **viscerally**
+    - Knowing the result of Epley's study, it <ins>makes sense(有道理、说得通、可以理解)</ins> that many people hate
+      photographs of themselves **viscerally**
 
 ## trust
 
@@ -161,11 +166,12 @@
 ## habit
 
 - n. 习惯；习性
-- cultivate(v. 培养)/pick up habit 培养习惯
+- cultivate(v. 培养) a habit 培养习惯
+    - == pick up habit
 - inhabit
     - vt. 占据；居住在；栖息于
-    - Everybody wants to know how the people who will soon **inhabit** those empty office cubicles will differ from
-      those who came before them.
+    - Everybody wants to know how the people who will soon **inhabit** those empty office cubicles([ˈkju:bɪkəlz]) will
+      differ from those who came before them.
     - inhabitant [ɪnˈhæbɪtənt] n. 居民
 - habitually [həˈbɪtʃuəli] adv. 习惯地
 - habitat [ˈhæbɪtæt] n. （动植物的）生活环境；栖息地
@@ -178,7 +184,10 @@
     - vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
     - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
       to **evade** scientists.
-    - inevitable [ɪnˈevɪtəbl] adj. 不可避免的
+    - inevitable [ɪnˈevɪtəbl]
+        - adj. 不可避免的
+        - One could interpret much of the work of Beethoven(贝多芬) by saying that suffering is **inevitable**, but the
+          courage to fight it renders life worth living.
     - inevitably [ɪnˈevɪtəbli] adv. 不可避免地
 
 ## compare
@@ -187,7 +196,9 @@
 - 词组
     - compare...with/to... 把...与...相比较
     - compared with/to 与...相比
-- comparison [kəmˈpærɪsn] n. 比较
+- comparison [kəmˈpærɪsn]
+    - n. 比较
+    - analogy [əˈnælədʒi] n. 类比
 - comparable [ˈkɑːmpərəbl] adj. （数量、重要性等）相当的；类似的
 - comparatively adv. 相对地
 - contrast
@@ -210,7 +221,7 @@
     - vi. 放晴；变清晰
     - adj. 清楚的；明显的
     - If it **clears** the House,... 如果它在众议院获得通过
-    - ...have to **clear** another major hurdle([ˈhɜːrdl] n. 障碍).
+    - ...have to **clear** another major *hurdle([ˈhɜːrdl] n. 障碍)*.
     - clarity [ˈklærəti]
         - n. 清晰
         - Conditions allow telescopes to obtain images of *unsurpassed([ˌʌnsərˈpæst] adj. 非常卓越的)* **clarity**.
@@ -223,7 +234,7 @@
 - **Justice** Anthony Kennedy wrote that the previous decisions were *flawed([flɔd] adj. 有缺点的; 有缺陷的)*.
 - justify
     - vt. 替...辩护；证明...是正当的
-    - It is *curious([ˈkjʊriəs] adj. 耐人寻味的)* that Stephen Koziatek feels almost *as though/as if(好像)* he has to
+    - It is *curious([ˈkjʊriəs] adj. 难以理解的)* that Stephen Koziatek feels almost *as though/as if(好像)* he has to
       **justify** his efforts to give his students a better future. 斯蒂芬·科齐亚泰克觉得他似乎不得不证明自己所做的努力是为了给他的学生们一个更好的未来，这令人感到费解
     - justification n. 正当的理由
 - jury
@@ -239,13 +250,13 @@
     - He listens well <ins>who **takes notes**</ins>.
         - [从句后移式的分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md#%E4%BB%8E%E5%8F%A5%E5%90%8E%E7%A7%BB%E5%BC%8F%E7%9A%84%E5%88%86%E8%A3%82%E7%BB%93%E6%9E%84)
         - == The person who takes notes listens well.
-- The longest *bull run(牛市行情)* in a century of art market history ended
+- The longest *bull([bʊl]) run(牛市行情)* in a century of art market history ended
   **on a dramatic note(以戏剧性的方式/带有戏剧性意味地)** with a sale of 56 works by Damien Hirst.
     - bear run 熊市行情
 - notably
     - adv. 显著地；尤其
     - == in particular(adj. 特指的；特殊的；尤其的)
-    - == especially
+    - == especially [ɪˈspeʃəli] adv. 尤其
 - notice
     - vt. 注意到
     - n. 通知；注意
@@ -269,7 +280,7 @@
     - 把...推出去，推出来
 - all too human
     - 人之常情
-- in emergency
+- in emergency([iˈmɜːrdʒənsi])
     - 紧急情况
 - in peril([ˈperəl])
     - 处于危险之中

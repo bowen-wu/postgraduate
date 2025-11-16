@@ -19,19 +19,22 @@
 
 ## cover
 
-- vt. 包括；足以支付；遮盖；报道
+- vt. 报道；包括；足以支付；遮盖
 - n. 封面
 - cover the costs 覆盖成本
     - == pay
 - cover me 掩护我
-- cover up 遮盖；隐藏
-- Mass media are included to **cover** disaster and deaths.
-- It's no surptise that Jennifer Senior’s insightful, provocative magnazine **cover** story, "I love My Children, I Hate
-  My Life, "is arousing much chatter.
+- 词组
+    - cover up 遮盖；隐藏
+- Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
+- It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 挑衅的)* magazine **cover**
+  story, "I love My Children, I Hate My Life, " is <ins>arousing much chatter(引起大量议论)</ins>.
 - discover
     - vt. 发现；发明
     - discovery n. 发现；发明
-- recovery n. 复苏；康复；恢复
+- recovery
+    - n. 复苏；康复；恢复
+    - economic recovery
 
 ## congress
 
@@ -48,114 +51,131 @@
     - Congress
         - Legislative power
             - Senate [ˈsenət] 参议院
-            - House of representatives 众议院
+            - House of representatives [reprɪ'zentətɪvz] 众议院
     - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4,
-- congressional adj. 国会的
-- parliament n. 议会
-- council n. 地方会议；理事会
+- congressional [kənˈɡreʃənl] adj. 国会的
+- parliament [ˈpɑːrləmənt] n. 议会
+- council [ˈkaʊnsl] n. 地方会议；理事会
 - senate
     - n. 参议院
     - senator n. 参议员
-- minister n. 牧师；部长
-- president
+- minister [ˈmɪnɪstər] n. 牧师；部长
+- president [ˈprezɪdənt]
     - n. 主席；总统；总裁；校长
     - presidential adj. 总统的
 
 ## criticism
 
-- n. 批评；评论
+- [ˈkrɪtɪsɪzəm]
+- n. 评论；批评
 - arts criticism 艺术评论
 - critic n. 批评者；评论家
-- critical
+- critical [ˈkrɪtɪkl]
     - adj. 关键的；批评的
-    - critically adv. 极为重要地
-- criticise vt. 批评
-- critique n. 批判
-- condemn vt. 谴责
-- blame
+    - critically [ˈkrɪtɪkli] adv. 极为重要地
+- criticise ['krɪtəˌsaɪz] vt. 批评
+- critique [krɪˈtik] n. 批判
+- condemn [kənˈdem] vt. 谴责
+- blame [bleɪm]
     - vt. 把...归咎于
     - n. （坏事或错事）的责任
-    - blame...for sth. 把某事归咎于...
-    - blame sth. on... 因某事指责/怪罪
+    - 词组
+        - blame...for sth. 把某事归咎于...
+        - blame sth. on... 因某事指责/怪罪...
 
 ## promise
 
+- [ˈprɑːmɪs]
 - vt. 保证
 - n. 承诺 （主观）
 - (fail to )make a promise 作出承诺
 - (fail to )keep a promise 履行承诺
-- dishonor a promise/commitment 未履行承诺
-- compromise
+- dishonor([dɪs'ɒnə] vt. 拒付) a promise/commitment 未履行承诺
+- compromise [ˈkɑːmprəmaɪz]
     - v. 使陷入危险
     - n. 妥协
-    - make compromises 做出让步
-    - Works of several historians reveal the moral **compromises** made by the nation's early leaders and the *fragile
-      nature* of the country's infancy.
+    - 词组
+        - make compromises 做出让步
+    - Works of several historians reveal the *moral([ˈmɔːrəl] n. 道德)* **compromises** made by the nation's early
+      leaders **and** the <ins>*fragile([ˈfrædʒl]) nature*(脆弱的本质)</ins> of the country's infancy.
 - guarantee
-    - vt. 保证；
+    - vt. 保证
     - n. 保证 （口头或书面，较正式）
-- pledge
+- pledge [pledʒ]
     - v. 承诺；
     - n. 保证 （正式）
     - The Government has **pledged** to change the law to introduce a minimum service requirement so that, even when
       strikes occur, services can continue to operate.
-- warrant n. 搜查令
+    - He again **pledged** to <ins>forge ahead with</ins> his plans for reform.
+- warrant [ˈwɔːrənt]
+    - n. 搜查令
+    - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook
+      of an arrested person without **warrant**.
 
 ## range
 
 - vi. （在...内）变动
 - n. 范围；（同类事物的）一系列；距离
-- a range of 一系列
+- 词组
+    - a range of 一系列
 - scope n. 范围
 - boundary
     - n. 边界；范围
     - == edge
-- spectrum n. 范围
+- spectrum [ˈspektrəm] n. 范围
 - territory n. 领土
-- realm n. 领域
-- domain
+- realm [relm]
+    - n. 领域
+    - Whole new **realms** of understanding——from gender to race to cultural studies——were opened up as scholars
+      unpicked the multiplicity of lost societies.
+- domain [doʊˈmeɪn]
     - n. （知识、活动的）领域；（尤指旧时个人、国家等所拥有或统治的）领土
-    - The justices had to specify *novel(新颖的)* rules for the new personal **domain** of the passenger car then.
-- acreage n. 土地面积
-- district n. 行政区
+    - The justices had to *specify([ˈspesɪfaɪ] 明确规定)* *novel([ˈnɑːvl] adj. 新颖的)* rules for the new personal
+      **domain** of the passenger car then.
+- acreage [ˈekərɪdʒ] n. 土地面积
+- district [ˈdɪstrɪkt] n. 行政区
 - region n. 地区；身体部位
 
 ## purchase
 
+- [ˈpɜːrtʃəs]
 - vt. 购买
 - n. 购买
 - afford
     - vt. 买得起；给予；承担得起（后果）
     - afford to do sth.
-    - affordable
+    - affordable [əˈfɔːrdəbl]
         - adj. 负担得起的；价格实惠的
-        - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is *desperate(令人绝望的)*. Waiting
-          lists increase all the time and we are simply not building enough new homes.
-- auction
+        - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is
+          *desperate([ˈdespərət] adj. 绝望的)*. Waiting lists increase all the time and we are simply not building
+          enough new homes.
+- auction [ˈɔːkʃn]
     - n. 拍卖
-    - auctioneer n. 拍卖商
-- bid
+    - auctioneer [ˌɔkʃəˈnɪr] n. 拍卖商
+- bid [bɪd]
     - n. （尤指拍卖中的）出价；投标；努力；企图
-    - make a bid for 企图获得
-    - As the **auctioneer** <ins>called out **bids**(喊出报价)</ins>, in New York one of the oldest banks on Wall
-      Street, Lehman Brothers, filed for bankruptcy.
+    - 词组
+        - make a bid for 企图获得
+        - call out bid 喊出报价
+    - As the **auctioneer** <ins>called out **bids**</ins>, in New York one of the oldest banks on Wall Street, Lehman
+      Brothers, filed for *bankruptcy([ˈbæŋkrʌptsi])*.
 
 ## struggle
 
 - v. 奋斗；艰难地行进
 - n. 斗争
-- One day, in retrospect, the years of **struggle** will strike you as the most beautiful.
+- One day, <in>in retrospect([ˈretrəspekt] 回首)</in>, the years of **struggle** will strike you as the most beautiful.
 - battle n. 战役；斗争
 - combat vt. 与...战斗；防止
-- defeat n. 失败
+- defeat [dɪˈfiːt] n. 失败
 - victory n. 胜利
-- triumph
+- triumph [ˈtraɪʌmf]
     - vi. 成功
     - n. 成就
     - The winning team returned home <ins>in **triumph**(带着胜利的姿态、洋洋得意地、胜利地)</ins>.
     - A **triumph** over B A战胜B
-        - Good shall **triumph** over evil in the end. 善良终会战胜邪恶
-- military adj. 军事的
+        - Good shall **triumph** over evil([ˈiːvl]) in the end. 善良终会战胜邪恶
+- military [ˈmɪləteri] adj. 军事的
 
 ## content
 
@@ -172,27 +192,28 @@
     - satisfied adj. 满意的；满足的
     - satisfaction n. 满足；满意
     - dissatisfaction n. 不满意
-- gratification
+- gratification [ˌɡrætəfɪˈkeʃən]
     - n. 满足；令人满意的事物
     - == satisfaction
-    - A feed will usually provide instant **gratification** to a crying baby.
-- cater
+    - A *feed(vt. 为...提供食物)* will usually provide instant **gratification** to a crying baby. 喂食通常能迅速让哭泣的婴儿感到满足
+- cater [ˈkeɪtər]
     - v. 满足...的需要
     - cater **to** sb./sth. 满足...的需要；迎合
     - They only publish novels which **cater** to the mass-market.
 
 ## complex
 
+- [kəmˈpleks]
 - adj. 复杂的
 - == complicated
-- complexity n. 复杂性
-- complicated adj. 复杂的
+- complexity [kəmˈpleksəti] n. 复杂性
+- complicated [ˈkɑːmplɪkeɪtɪd] adj. 复杂的
 - intricate
     - adj. 复杂精细的
     - intricacy
         - n. 错综复杂
         - == complexity
-- sophisticated
+- sophisticated [səˈfɪstɪkeɪtɪd]
     - adj. （机器、装置等）高级的，精密的
     - It something is **sophisticated**, it's **complicated and intricate**.
     - The inner workings of a computer are **sophisticated**.
@@ -205,30 +226,35 @@
 - C generate R
 - generation
     - n. 一代人；（家史中的）一代；一辈；（尤指电、热等的）产生
-    - Before it ends, it will likely change the life course and character of a *generation(n. 一代人)* of young adults.
+    - Before it ends, it will likely change the life course and character of a **generation** of young adults.
 - generational adj. 一代的；代与代之间的
 - generative adj. （语言学中）生成的
-- millennial // TODO
+- millennial [mɪˈleniəl]
     - n. 千禧世代；一千年的
-    - 千禧一代 millennials 1981-1995
 
 ## liberal
 
+- [ˈlɪbərəl]
 - adj. 自由党的；人文（教育）的
+- liberal education 通识教育/博雅教育/人文素养教育
 - illiberal 😔
     - adj. 不容言论（或行动）自由的；不开朗的
-    - "The Heart of the Matter" never gets to the heart of the matter: the **illiberal** nature of liberal education at
-      our leading colleges and universities. 😔
-- liberate vt. 解放
-- liberty
+    - "The Heart of the Matter" never gets to the heart of the matter: the **illiberal** nature of
+      <ins>**liberal** education</ins> at our leading colleges and universities. 😔
+      "问题的核心" 并没有抓住真正的核心：顶尖大学的博雅教育看似开放，其实非常不开放。
+- liberate [ˈlɪbəreɪt] vt. 解放
+- liberty [ˈlɪbərti]
     - n. 自由
     - the Statue of Liberty 自由女神雕像
+- liberalism [ˈlɪbərəˌlɪzəm]
+    - n. 自由主义
+    - ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom** there is a small
+      majority for free-market **liberalism** and economic rigour...</ins>.
 
 ## Words
 
-- premise
+- premise [ˈpremɪs]
     - n. 前提
-- in retrospect 回首
 
 ## 词组
 

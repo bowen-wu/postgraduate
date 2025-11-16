@@ -72,6 +72,8 @@
 ## debt
 
 - n. 债务；负债情况
+- We cannot overstate our **debt** to the past, but the moment has the supreme claim.
+    - We cannot overstate X 我们再怎么强调 X 都不为过
 - gamble v.（牌戏、赛马等）赌博
 - casino n. 赌场
 
@@ -96,6 +98,7 @@
     - awareness
         - n. 知道；意识
         - We should <ins>attach importance to raising</ins> people's **awareness** of environmental protection.
+            - == **Great importance should be attached to** raising people's **awareness** of environmental protection.
     - cognitive adj. 认知的
 
 ## concept
@@ -121,9 +124,11 @@
 
 - vt. 伤害；破坏
 - n. 损失；伤害
+- Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen
+  concluded: "We do not attract what we want, but what we are."
 - undermine
     - vt. 逐渐削弱（信心、权威等）
-    - If <ins>connections(关系，人脉)</ins> can be bought，a basic premise of democratic society——that all are equal in
+    - If <ins>connections(关系，人脉)</ins> can be bought, a basic premise of democratic society——that all are equal in
       treatment by government——is undermined.
     - well-connected 人脉广
 - impair vt. 削弱；损害
@@ -134,10 +139,12 @@
 - spoil vt. 破坏
 - ruin vt. 毁坏
 - disruptive adj. 扰乱性的，颠覆性的
-- havocs
+- havoc
     - n. 灾害，祸患
     - be wreaking havoc 造成破坏
-    - disaster 灾难
+    - disaster
+        - n. 灾难；不幸
+        - Mass media are included to cover ***disaster** and deaths.
     - chaos 混乱
 
 ## eliminate

@@ -29,7 +29,7 @@
 - maintenance n. 维护
 - sustain [səˈsteɪn]
     - vt. 使保持；维持
-    - sustainable
+    - sustainable [səˈsteɪnəbl]
         - adj. 可持续的
         - Yet this enormous resource is not contributing enough to today's global challenges, including climate change,
           security, **sustainable** development and health.
@@ -70,7 +70,7 @@
     - == prevalent == dominant [ˈdɑːmɪnənt] adj. 主导的；盛行的
 - prevalent
     - adj. 流行的
-    - == common
+    - == common adj. 常见的；普通的；共同的
     - Something **prevalent** is **common** in a particular place at a particular time.
     - **Prevalent** things are **hard to avoid**.
     - When you see the word **prevalent**, think "**it's everywhere**!"
@@ -98,14 +98,15 @@
 - forge [fɔːrdʒ]
     - vt. （努力）制造；形成；缔造
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
-    - He again pledged(vt. 许诺) to <ins>**forge** ahead with</ins> his plans for reform.
-    - They agreed to **forge** closer economic ties([taɪz] n. 结).
+    - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
+    - They agreed to **forge** closer economic *ties([taɪz] n. 结)*.
 
 ## reality
 
 - [riˈæləti]
 - n. 现实
-- in reality 实际上
+- 词组
+    - in reality 实际上
 - VR: Virtual **Reality**
 - AR: Augmented **Reality**
 - realize [ˈriːəlaɪz]
@@ -128,9 +129,10 @@
 - attach [əˈtætʃ]
     - vt. 附；贴
     - attach A to B A重要
-    - attach importance to sth. 认为...重要；重视...
+    - 词组
+        - attach importance to sth. 认为...重要；重视...
     - We should <ins>**attach** importance to</ins> children's mental health.
-    - We should <ins>**attach** importance to raising</ins> people's awareness(n. 意识) of environmental protection.
+    - We should <ins>**attach** importance to raising</ins> people's *awareness(n. 意识)* of environmental protection.
         - == **Great importance should be attached to** raising people's awareness of environmental protection.
         - 中文多主动，英文多被动
     - attachment n. 依恋
@@ -138,10 +140,11 @@
     - vt. 建立关系；纽带；债券；羁绊
     - bond with sb. 建立情感联系
     - They may have <ins>**bonded** more with</ins> the social robot because it displayed behaviors like
-      communal([kəˈmjuːnl] adj. 集体的) exploring([ɪks'plɔrɪŋ] vt. 探索) and playing.
+      communal([kəˈmjuːnl] adj. 集体的) *exploring([ɪks'plɔrɪŋ] vt. 探索)* and playing.
 - conjunction [kənˈdʒʌŋkʃn]
     - n. 结合；同时发生
-    - in conjunction with... 与...一起做
+    - 词组
+        - in conjunction with... 与...一起做
 - cling [klɪŋ]
     - vt. 紧紧抓住
     - cling to sth.
@@ -156,15 +159,18 @@
 ## medical
 
 - adj. 医学的；医疗的
-- medical care
+- medical care 医疗护理
 - hygiene [ˈhaɪdʒiːn]
     - n. 卫生（学）
-    - Before the birth of proper(adj. 正规的) dentistry([ˈdɛntɪstri]), mouths were often in a shocking(adj. 可怕的)
+    - Before the birth of *proper(adj. 正规的)* dentistry([ˈdɛntɪstri]), mouths were often in a *shocking(adj. 可怕的)*
       state of **hygiene**.
 - infection n. 感染
 - pandemic [pænˈdɛmɪk]
     - n. （正式）流行病
+    - With the **pandemic**, unemployment is very high indeed.
     - == epidemic
+        - The outbreak of *swine([swaɪn] n. 猪)** flu that was first detected in Mexico was declared a global
+          **epidemic** on June 11, 2009.
 
 ## respect
 
@@ -173,13 +179,14 @@
 - -spect- 看
     - prospect
         - vi. 勘探
-        - n. 可能性；前途；前景
-    - retrospect
+        - n. 前景；可能性；前途
+    - retrospect [ˈretrəspekt]
         - n. 回顾，回想
         - vi. 回顾，追溯；回想
         - vt. 回顾；追忆
     - introspect v. 内省，内观
-- in respect of... 就...而言
+- 词组
+    - in respect of... 就...而言
 - in some respects/ways 在某些方面
 - respectable adj. 体面的
 - disrespect n. 不尊敬 😔
@@ -206,6 +213,8 @@
     - intellect [ˈɪntəlekt] n. 智力
 - scholar [ˈskɑːlər]
     - n. 学者
+    - Whole new realms of understanding——from gender to race to cultural studies——were opened up as **scholars**
+      unpicked the multiplicity of lost societies.
     - scholarly adj. （书、文章、问题、活动等）学术性的
     - scholarship n. 奖学金; 学术（研究）
 
@@ -215,19 +224,23 @@
 - n. 资产；有价值的人或物
 - advantage
     - n. 优势
-    - take advantage of 利用
+    - 词组
+        - take advantage of 利用
     - disadvantage n. 不利条件
 - merit [ˈmerɪt]
     - n. 优点；功绩
     - Vaus says that Science's idea to pass some papers to statisticians "<ins>has some **merit**(有一定道理)</ins>, but
       a **weakness** is that it relies on <ins>the board of reviewing editors(审稿编辑委员会)</ins> to..."
-      Vaus 说，Science（《科学》杂志）打算把一些论文交给统计学家审阅的这个想法有一定道理，但它的一个弱点在于：这种做法依赖于审稿编辑委员会去...
+      Vaus 说，《科学》杂志打算把一些论文交给统计学家审阅的这个想法有一定道理，但它的一个弱点在于：这种做法依赖于审稿编辑委员会去...
 - weakness n. 弱点
 - flaw
     - n. 瑕疵
     - flawless
         - adj. 完美的，无瑕的
         - == perfect
+    - flawed
+        - adj. 有缺陷的、有瑕疵的、不完美的
+        - Justice Anthony Kennedy wrote that the previous decisions were **flawed**.
 - downside
     - n. 不利的一面
     - upside n. 好处; 上边; （糟糕局面的）好的一面; 颠倒着

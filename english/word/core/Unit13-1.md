@@ -75,6 +75,8 @@
 
 - [sleɪv]
 - n. 奴隶
+- So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw——having extracted them from the mouths of his
+  **slaves**.
 - slavery [ˈsleɪvəri]
     - n. 奴隶制
     - While Washington and Jefferson privately expressed distaste for **slavery**, they also understood that it was part
@@ -205,6 +207,7 @@
     - no doubt 无疑
     - without doubt 毫无疑问
     - cast doubt(s) on 对...产生疑问
+- Many young Americans <ins>cast **doubts** on</ins> the administration's ability to handle information.
 - doubtless adv. 无疑地
 - undoubtedly [ʌn'daʊtɪdlɪ] adv. 无疑地
 - suspect [səˈspekt]

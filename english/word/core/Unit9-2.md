@@ -108,7 +108,11 @@
 - n. 寓意
 - ethics [ˈɛθiks]
     - n. 道德准则；伦理学；伦理
-    - ethical adj. 道德的；伦理的；合乎情理的
+    - ethical
+        - adj. 道德的；伦理的；合乎情理的
+        - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow
+          many **ethical** questions to be raised by technologies yet to come.
+        - The **ethical** judgments of <ins>the Supreme Court</ins> justices have become an important issue recently.
 - virtue [ˈvɜːrtʃuː] 🙂
     - n. 美德；优点，优势
     - But completeness is no longer a **virtue** in the newspaper business.
@@ -127,7 +131,7 @@
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的) practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a
+    - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a
       task.
 
 ## source
@@ -144,7 +148,7 @@
 
 - adj. 流通的；现在的；通用的
 - n. 水流；电流
-- Some blame(n. 责任) for the **current** controversy(n. 争论; 辩论) belongs to astronomers.
+- Some blame(n. 责任) for the **current** *controversy(n. 争论; 辩论)* belongs to astronomers.
 - currency
     - n. 货币，通货
     - Yet the debate about how to save Europe's single **currency** from disintegration(n. 瓦解) is stuck(adj. 动不了的)
@@ -254,7 +258,10 @@
     - adv. 否则；在其他方面
     - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
       失败也能教会我们一些关于自己的事情，而这些事情若非失败，我们永远不会学到
-- nevertheless [ˌnevərðəˈles] adv. 然而
+- nevertheless [ˌnevərðəˈles]
+    - adv. 然而
+    - **Nevertheless**, the <ins>affordable housing(经济适用房)</ins> situation is *desperate([ˈdespərət] adj. 绝望的)*.
+      Waiting lists increase all the time and we are simply not building enough new homes.
 - nonetheless [ˌnʌnðəˈles] adv. 尽管如此
 
 ## Words

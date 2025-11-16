@@ -138,6 +138,7 @@
 ## encourage
 
 - vt. 鼓励；促进
+- He lent money, made donations and **encouraged** others to do likewise.
 - courage
     - n. 勇气
     - courageous [kəˈreɪdʒəs] adj. 勇敢的

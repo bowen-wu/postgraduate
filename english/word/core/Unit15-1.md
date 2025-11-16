@@ -32,7 +32,7 @@
 - n. 疾病；弊病
 - epidemic
     - n. 流行病；盛行； adj. 流行（性）的
-    - The outbreak of wine flu that was first detected In Mexico was declared a global epidemic on June 11,2009.
+    - The outbreak of wine flu that was first detected In Mexico was declared a global epidemic on June 11, 2009.
     - Yet it is precisely these non-celebrity influentials who according to the two-step-flow theory,are supposed to
       drive social epidemics.
     - pandemic
