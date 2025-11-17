@@ -22,7 +22,7 @@
 - 插入语是插入句子中间的补充信息
 - 分析句子时，不必纠结是插入语还是同位语，只需要知道它是插入的补充信息，造成了分裂结构，先去掉不看即可
 - Work by Tina Malti<ins>, a psychology professor at the University of Toronto,</ins> **suggests** <ins>**that** guilt **may compensate** for an emotional deficiency</ins>.
-- Whole new realms of understanding<ins>*——*from gender to race to cultural studies*——*</ins>**were opened** up <ins>**as** scholars **unpicked** the multiplicity of lost societies</ins>.
+- Whole new realms of understanding<ins>*—*from gender to race to cultural studies*—*</ins>**were opened** up <ins>**as** scholars **unpicked** the multiplicity of lost societies</ins>.
 - The average supermarket<ins>, according to the Food Marketing Institute,</ins> **carries** some 44,000 different items, <ins>**and** many **carry** tens of thousands more</ins>.
 - Universal history<ins>, the history of what man has accomplished in this world,</ins> **is** at bottom the History of the Great Men <ins>**who** **have worked** here</ins>...
 - These benefactors **have succeeded** in their chosen fields<ins>, they **say**,</ins> <ins>**and** they **want** to use their wealth to draw attention to those</ins> <ins>**who** **have succeeded** in science</ins>.

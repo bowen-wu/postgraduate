@@ -1,4 +1,4 @@
-# Unit 9
+# Unit 9-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -143,6 +143,7 @@
     - permanent [ˈpɜːrmənənt]
         - adj. 永久的；（问题、困难）不断发生的；（家庭住址）固定的
         - The only this **permanent** is change.
+        - Along with the many folks looking to make a **permanent** home in the United States came those who had no intention to stay, and who would make some money and then go home
 
 ## advance
 

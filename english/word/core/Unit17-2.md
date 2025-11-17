@@ -1,4 +1,4 @@
-# Unit 17
+# Unit 17-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 
 ## import
 
@@ -149,8 +149,10 @@
 
 - n. 通货膨胀（率）
 - inflate v. （使）涨高
-- fluctuate
+- fluctuate [ˈflʌktʃueɪt]
     - vi. （大小、数量、质量等）波动
+    - This time experts reckon that prices are about 40% down on their peak on average, though some have been for more
+      **fluctuate**.
     - fluctuant adj. 波动的
     - fluctuation
         - n. 波动，起伏

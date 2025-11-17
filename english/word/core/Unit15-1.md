@@ -1,4 +1,4 @@
-# Unit 15
+# Unit 15-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -53,7 +53,7 @@
     - intermarriage
         - n. 通婚
         - inter- 两者或三者之间的关系
-        - Now，consider three indices of assimilation——language，home ownership and intermarriage.
+        - Now，consider three indices of assimilation—language，home ownership and intermarriage.
 
 ## except
 

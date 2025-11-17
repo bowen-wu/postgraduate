@@ -43,6 +43,7 @@
 
 1. As is revealed in the graph,
 2. As illustrated in the graph,
+3. As is reflected by the diagram, 如图表所示
 
 ### 由于.../因... /作为...的结果
 
@@ -104,6 +105,11 @@
 - 可以被认为/看作...
 - the future of China's traditional culture can be considered "safe" 中国传统文化的未来可以被认为是“安全”的
 
+### 一些主要原因可以解释这种现象
+
+- Several primary factors could contribute to this phenomenon.
+- The primary factors that account for the aforementioned phenomenon can be summarized as follows. 造成上述现象的主要因素可以概括如下
+
 ### Common
 
 - attend a postgraduate program 攻读研究生学位
@@ -113,3 +119,8 @@
 
 - Traditional Chinese culture is not only certain to survive, but is, in fact, destined to thrive and prosper. 中国传统文化不但肯定能够存续，而且事实上必将会繁荣兴盛
 - I decided to stay on the academic assembly line. 我决定继续留在学校体系中深造
+
+## Grammar
+
+- to do sth. 表示目的、意图
+- for n./n.短语 表示用途、对象

@@ -1,4 +1,4 @@
-# Unit 14
+# Unit 14-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -51,7 +51,8 @@
 - engineering n. 工程学
 - mechanism
     - n. 机制；机械装置
-    - It is fair to criticize and question the mechanism——that is the culture of research...
+    - It is fair to criticize and question the **mechanism**—that is, the culture of research—<ins>after all</ins>,
+      but it is the prize-givers' money to do with as they please.
 - mechanical adj. 机械的；机械般的
 - mechanize vt. 使机械化
 
@@ -151,6 +152,8 @@
 - 词组
     - in the wake of 跟随...之后
     - wake up 醒来；唤醒；使清醒
+- That means more battles like the one now going on between the Justice Department and California, which enacted
+  <ins>a *tough([tʌf] adj. 强硬的)* net neutrality law</ins> <ins>in the **wake** of</ins> the FCC's abdication.
 - awake
     - adj. 醒着的
     - asleep adj. 睡着的

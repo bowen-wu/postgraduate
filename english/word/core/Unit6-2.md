@@ -1,4 +1,4 @@
-# Unit6
+# Unit 6-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -28,6 +28,8 @@
         - monologue [ˈmɑːnəlɔːɡ] n. （戏剧）独白; 独角戏; 长篇大论
     - pole- 极
     - Planters enjoyed a natural **monopoly** because they had no competitors.
+    - <ins>What matters is that(重要的是.../关键在于...)</ins> they will belong to a private **monopoly** which
+      developed them using public resources.
     - monopolise/monopolize [mə'nɒpəlaɪz] vt. 垄断
 - outlet n. 专营店；折扣品经销店
 
@@ -171,7 +173,7 @@
     - broadband n. 宽带连接
 - domestic [dəˈmestɪk]
     - adj. 国内的；家用的；家务的
-    - First two hours, now three hours——this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
+    - First two hours, now three hours—this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
       people show up to catch **domestic** flight, at least at some major U.S. airports with increasingly massive
       security lines.
 

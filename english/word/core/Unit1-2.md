@@ -1,4 +1,4 @@
-# Unit1-2
+# Unit 1-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -67,7 +67,7 @@
 
 - n. 企业；商业；事情；日常工作；职责
 - mind your own business 管好自己的事情
-- In the early 2010s, a wide range of **businesses** started processing purchases([ˈpɜːrtʃəs] n. 购买) with iPads and
+- In the early 2010s, a wide range of **businesses** started processing *purchases([ˈpɜːrtʃəs] n. 购买)* with iPads and
   other digital payment system.
 - Trust is a tricky([ˈtrɪki] adj. 棘手的) **business**.
 - businessman n. 商人
@@ -153,9 +153,9 @@
 - vt. 质疑
 - n. 怀疑；（待讨论或处理的）事情；问题
 - To be or not to be that is the **question**.
-- It is fair to criticize([ˈkrɪtɪsaɪz]) and **question** the mechanism-that is the culture of research,
-  <ins>after all(毕竟)</ins>-but it is the prize-givers' money to do with as they please.
-  批评和质疑这种机制是合理的——毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
+- It is fair to *criticize([ˈkrɪtɪsaɪz])* and **question** the mechanism—that is, the culture of research—<ins>after
+  all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
+  批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
 - 词组
     - without question 毫无疑问
     - in question 正被考虑或讨论的
@@ -172,9 +172,10 @@
         - at issue 讨论或争论中的
         - <ins>At **issue**</ins> before the U.S. Court of Appeals for the District of Columbia Circuit was <ins>the
           latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
+            - [主表倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md#%E4%B8%BB%E8%A1%A8%E5%80%92%E8%A3%85)
     - **issue** a report 发布报告
     - The Administration is *dominant([ˈdɑːmɪnənt]) over(对...占据主导地位/控制权)* immigration **issues**.
-    - Faced with the demand for net neutrality rules，the FCC has **issued** a special resolution.
+    - Faced with the demand for net neutrality rules, the FCC has **issued** a special resolution.
 - matter
     - **vi. 重要； 关系重大**
     - n. 事情；物质；材料；
@@ -182,14 +183,13 @@
         - == It is important
         - == sth. important
     - *Some* people like small talk in a meeting before digging into important **matters**, *while* others are more
-      straightforward([ˌstreɪtˈfɔːrwərd] adj. 简单明了的; 坦率的).
+      *straightforward([ˌstreɪtˈfɔːrwərd] adj. 简单明了的; 坦率的)*.
     - <ins>What **matters** is that(重要的是.../关键在于...)</ins> they will belong to a private *monopoly(n. 垄断企业)*
       which developed them using public resources.
-      关键在于，它们将归属于一家私人垄断企业，而这家企业是利用公共资源开发它们的
 - affair
     - n. 事情（大，正式）；[pl.]事务；风流韵事
     - == matter
-    - Another way <ins>affair **is** frequently used</ins> **is** to mean a love affair, particularly if the
+    - Another way <ins>**affair** **is** frequently used</ins> **is** to mean a love affair, particularly if the
       relationship is brief and intense.
 
 ## research
@@ -223,7 +223,7 @@
 - archaeological [ˌɑrkiəˈlɑdʒɪkəl]
     - adj. 考古的；考古学的
     - The TMT site was chosen *to minimize* the telescope's visibility around the island <ins>and</ins> *to avoid*
-      **archaeological** and environmental impact. TMT 的选址是为了尽量降低望远镜在岛上周围的可见度，并避免对考古遗迹和环境造成影响
+      **archaeological** and environmental impact.
     - archeologist/archaeologist [ˌɑrkiˈɑlədʒɪst] n. 考古学家
 - demographic [ˌdeməˈɡræfɪk]
     - adj. 人口学的；
@@ -236,7 +236,6 @@
     - vt. 治理；控制
     - *Sensible* ideas have been around for a long time, but the *state*-level *bodies* <ins>that **govern** the
       *profession(n. 职业)*</ins> have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
-      这些明智的想法早已存在，但管理该行业的州级机构一直过于保守，因而未能将其付诸实施
 - governmental adj. 政府的
 - governance n. 控制；治理
 - governor n. 州长
@@ -255,7 +254,7 @@
     - vt. 谨慎地考虑; 谨慎地说
     - n. 默想
 - objective
-    - n. 目标；
+    - n. 目标
     - adj. 客观的
 - attribute
     - v. 把...归因于; 认为是...所为

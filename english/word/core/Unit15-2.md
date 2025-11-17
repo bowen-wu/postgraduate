@@ -1,4 +1,4 @@
-# Unit 15
+# Unit 15-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -35,7 +35,10 @@
 
 - vt. 把...看作；款待；以...态度对待；处理
 - treat/regard/view A as B
-- treatment n. 对待；治疗 (侧重过程)
+- treatment
+    - n. 对待；治疗 (侧重过程)
+    - If connections can be bought, a basic premise of democratic society—that all are equal in **treatment** by
+      government—is undermined.
 - cure
     - vt. 治好（疾病）； n. （解决问题、改善糟糕情况等的）措施 (侧重结果)
     - solution
@@ -121,13 +124,16 @@
 
 - adj. 精英的
 - n. 精英
+- The Olympic bidders...wanted to get more people doing sport and to produce more **elite** athletes.
 - elitism 精英主义
 - talent n. 人才；天赋
 
 ## dominate
 
 - vt. 主导，控制；在...中具有最重要（或明显）的特色
-- dominant adj. 主导的
+- dominant [ˈdɑːmɪnənt]
+    - adj. 主导的
+    - The Administration is <ins>**dominant** over(对...占据主导地位/控制权)</ins> immigration issues.
 - dominance n. 统治地位
 - predominance n. （一类人或物在数量上的）优势
 

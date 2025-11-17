@@ -1,4 +1,4 @@
-# Unit7
+# Unit 7-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -132,7 +132,8 @@
 - nonsense n. 胡扯 😔
 - sensible
     - adj. 明智的，理性的
-    - sensible idea
+    - **Sensible** ideas have been around for a long time, but the *state*-level *bodies* <ins>that govern the
+      *profession(n. 职业)*</ins> have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
 - sensitive
     - adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
     - be sensitive to 对...敏感

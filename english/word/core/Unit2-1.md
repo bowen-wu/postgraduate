@@ -1,4 +1,4 @@
-# Unit2
+# Unit 2-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -70,10 +70,12 @@
     - pay for 为...而付款
 - check
     - n. 支票
-    - I lived from <ins>paycheck to paycheck(月光)</ins>.
-    - Alvarez paid practically([ˈpræktɪkli] adv. 几乎) everything by **check**.
+    - I lived <ins>from paycheck to paycheck(月光)</ins>.
+    - Alvarez paid *practically([ˈpræktɪkli] adv. 几乎)* everything by **check**.
 - payment n. 支付
-- payout n. （大笔）钱款
+- payout
+    - n. （大笔）钱款
+    - How could she have let those *enormous([ɪˈnɔːrməs] adj. 巨大的)* bonus **payouts** pass unremarked?
 - overpay
     - v. 付款过多；多付报酬
     - CEOs are not overpaid.
@@ -91,7 +93,7 @@
         - == suitable
     - fitness
         - n. 健康
-        - I've also experienced([ɪkˈspɪriənst] v. 经历) greater success in achieving my specific **fitness goals**,
+        - I've also *experienced([ɪkˈspɪriənst] v. 经历)* greater success in achieving my specific **fitness goals**,
           because I'm training according to these goals, not the numbers on a scale.
 - wellbeing
     - n. 健康（状态）；安乐
@@ -107,7 +109,8 @@
 - lawyer n. 律师
 - lawsuit
     - n. 诉讼案；诉讼
-    - Many of them instead become the kind of **nuisance-lawsuit** filer that makes the tort system a costly nightmare.
+    - Many of them instead become the kind of **nuisance-lawsuit** filer([ˈfaɪlər] n. 申诉人) that makes
+      <ins>the tort([tɔrt]) system(侵权诉讼体系)</ins> a costly nightmare.
       相反，他们中许多人变成了那种专门提起无理取闹诉讼的人，使整个侵权制度变得代价高昂、令人头疼
 - legal
     - adj. 与法律有关的；合法的
@@ -118,7 +121,7 @@
     - legislation [ˌledʒɪsˈleɪʃn]
         - n. 立法
         - **Legislation** is the act or process of making or enacting laws.
-        - The European Union is now considering **legislation** to compel([kəmˈpel] v. 强迫) corporate boards to
+        - The European Union is now considering **legislation** to *compel([kəmˈpel] v. 强迫)* corporate boards to
           maintain a certain proportion of women.
         - legislative [ˈledʒɪsleɪtɪv]
             - adj. 立法的
@@ -126,13 +129,13 @@
             - Congress 国会
             - the supreme([suːˈpriːm]) court([kɔːrt]) 最高法院
         - legislator n. 立法者
-        - legislature n. 立法机构
+        - legislature [ˈlɛdʒɪˌsletʃɚ] n. 立法机构
 - proceedings n. 公报
 - enact
     - vt. 颁布；推行；实施
     - That means more battles like the one now going on between the Justice Department and California, which
-      **enacted** <ins>a tough([tʌf] adj. 强硬的) net neutrality law</ins> in the wake of the FCC's abdication.
-      这意味着将会出现更多的论战，一如当前司法部和加利福利亚洲之间正在进行的：加利福尼亚州在FCC退出后颁布了一项颇为严厉的网络中立法规
+      **enacted** <ins>a tough([tʌf] adj. 强硬的) net neutrality law</ins> <ins>in the wake of(跟随...之后)</ins> the
+      FCC's abdication.
     - overturn
         - vt. 推翻; 撤销（判决等）
         - == knock out
@@ -156,11 +159,11 @@
 - display
     - v. 表现；陈列
     - n. 展示；表演
-- manifest
+- manifest [ˈmænɪfest]
     - vt. 显现，表明
-    - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 *so as to* **manifest/demonstrate**
-      the significant role(n. 诉讼; 角色; 地位; 作用) of good habits.
-        - so as to + 动词原形 为了...；以便...
+    - Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 <ins>so as to</ins>
+      **manifest/demonstrate** the significant *role(n. 诉讼; 角色; 地位; 作用)* of good habits.
+        - so as to do 为了...；以便...
 - demonstrate
     - vt. 证明；表现；
     - vi. 游行
@@ -193,8 +196,8 @@
 - neuroscientist ['njʊəroʊsaɪəntɪst] n. 神经系统科学家
 - conscience [ˈkɑːnʃəns]
     - n. 良知；内疚
-    - Mental(adj. 精神健康的) health has commonly been called **conscience**, instinct, wisdom, common sense, or the
-      inner voice. 精神健康通常被称为良知、本能、智慧、常识或内心的声音
+    - Mental health has commonly been called **conscience**, instinct([ˈɪnstɪŋkt]), wisdom([ˈwɪzdəm]), common sense, or
+      the inner voice.
     - ...*verdicts(n. 裁决)* should represent the **conscience** of the *community* and <ins>not just(不仅仅)</ins> the
       *letter* of the law.
         - verdict [ˈvɜːrdɪkt] == ruling == decision
@@ -212,9 +215,9 @@
     - work through 通过反复思考来解决问题
     - break through 突破
         - breakthrough n. 突破
-        - Be relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的) and then you'll **break through**.
+- Be *relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的)* and then you'll **break through**.
 - Don't just **go through** it; grow **through** it.
-- However, Obamacare has allowed more than 12 million people to either get insurance([ɪnˈʃʊrəns] n. 保险) **through**
+- However, Obamacare has allowed more than 12 million people to either get *insurance([ɪnˈʃʊrəns] n. 保险)* **through**
   Medicaid or the exchanges.
 - throughout
     - prep. 自始至终；遍及
@@ -225,7 +228,7 @@
     - adj. 交叉的
     - finger cross 好运
     - cross- 交叉
-        - They _**cross**-check(交叉检查)_ sources and prefer news from different perspectives([pərˈspektɪv] n. 视角).
+        - They _**cross**-check(交叉检查)_ sources and prefer news from different *perspectives([pərˈspektɪv] n. 视角)*.
         - One _**cross**-generation(跨代)_ mark of a successful life is having a family with children.
 
 ## Words

@@ -1,4 +1,4 @@
-# Unit 16
+# Unit 16-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,16 +13,18 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
 ## engage
 
+- [ɪnˈɡeɪdʒ]
 - vi. 从事，参与
-    - engage In sth.
-    - == be involved In sth.
+    - engage in sth.
+    - == be involved in sth.
 - vt. 使加入
+- I suppose the most revolutionary act one can **engage** in is to tell the truth.
 - engagement n. 参与；婚约
 - occupy
     - vt. 占据（空间、面积、时间等）
@@ -30,7 +32,7 @@
     - occupation
         - n. 职业；侵占；占领
         - ...a painful reminder of the occupation of what was once a sovereign nation.
-        - But many middle-class occupations——trucking，financial advice，software engineering——have aroused their
+        - But many middle-class occupations—trucking，financial advice，software engineering—have aroused their
           Interest，of soon will.
 
 ## object

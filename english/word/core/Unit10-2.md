@@ -1,4 +1,4 @@
-# Unit 10
+# Unit 10-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -34,7 +34,7 @@
   "Fashion Media & Promotion".
 - correlate
     - v. 相互关联；显示紧密联系
-    - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership——that is, it
+    - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
       predicted(vt. 预测) the opposite([ˈɑːpəzɪt] n. 对立物).
         - be **correlated** with 与...相关
         - be positively/negatively **correlated** with 与...正/负相关
@@ -139,6 +139,7 @@
 
 - vt. 实施；引导
 - n. 举止；实施办法
+- Quinn and her colleagues **conducted** a test to see if rats can distinguish a friendly rat from a hostile one.
 - conductor
     - n. （交响乐、合唱团的）指挥
     - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
@@ -182,6 +183,14 @@
     - be devoted to sth. 致力于.../献身于.../专心于...
         - == devote oneself to sth.
     - But if your work is your "passion", you'll be more likely to **devote** yourself to it.
+- dedicate [ˈdedɪkeɪt]
+    - vt. 把...奉献给
+    - be dedicated to
+        - == dedicate oneself to sth.
+        - == committed to
+        - 致力于
+    - Job security or stability was the second most important career goal work-life balance was number one, followed
+      by a sense of <ins>being **dedicated** to(致力于)</ins> a cause or to feel good about serving the greater good.
 
 ## exist
 
@@ -229,8 +238,8 @@
     - adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
     - She gave him a look that made words **superfluous**. 她的一个眼神，让言语变得多余
     - Humans are unique in their capacity to not only make tools but then turn around and use them to create
-      **superfluous** material goods——paintings, *sculpture([ˈskʌlptʃər] n. 雕刻作品)* and architecture, and
-      **superfluous** experiences——music, *literature([ˈlɪtrətʃər] n. 著作)*, religion and
+      **superfluous** material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕刻作品)* and architecture, and
+      **superfluous** experiences—music, *literature([ˈlɪtrətʃər] n. 著作)*, religion and
       *philosophy([fəˈlɑːsəfi] n. 哲学)*.
 
 ## Words

@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -75,7 +75,7 @@
 
 - [sleɪv]
 - n. 奴隶
-- So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw——having extracted them from the mouths of his
+- So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw—having extracted them from the mouths of his
   **slaves**.
 - slavery [ˈsleɪvəri]
     - n. 奴隶制

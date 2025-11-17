@@ -1,4 +1,4 @@
-# Unit4
+# Unit 4-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -50,7 +50,11 @@
         - effective vs efficient
             - When our brains switch between being focused and unfocused on a task, they tend to be more
               <ins>efficient/effective</ins>
-        - efficiency n. 效率
+        - efficiency
+            - n. 效率
+            - inefficiency [ɪnɪˈfɪʃənsi]
+                - n. 无效率
+                - The report *revealed([rɪ'vild] v. 显示)* a great deal of bureaucratic **inefficiency**.
 - impact
     - v. (对...)有影响
     - n. 影响

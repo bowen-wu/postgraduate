@@ -5,8 +5,13 @@
     <title>Article Compare</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
-        textarea { width: 90%; height: 240px; margin-top: 10px; }
+        textarea {
+            width: 100%; height: 240px; margin-top: 10px;
+            font-size: 16px;
+            line-height: 22px;
+        }
         label { font-weight: bold; display: block; }
+        .label {margin-top: 16px;}
         .diff { margin-top: 10px; white-space: pre-wrap; font-family: monospace; line-height: 1.5; }
         .added { background: yellow; text-decoration: line-through; }
         .removed { background: #fbb6c2; font-weight: bold; }
@@ -21,10 +26,7 @@
         #audioPlayer {
             width: 600px;
         }
-        #textB {
-            font-size: 16px;
-            line-height: 22px;
-        }
+        pre {margin: 0;}
     </style>
 </head>
 <body>
@@ -59,8 +61,7 @@
 <div id="directions"></div>
 <div id="chinese"></div>
 
-<br><br>
-<label for="textB" id="textBLabel" class="hidden">Your Article (with errors)：</label>
+<label for="textB" id="textBLabel" class="hidden label">Your Article (with errors)：</label>
 <textarea id="textB" placeholder="Paste your article (Article B) here..." spellcheck="false" class="hidden"></textarea>
 
 <div class="legend hidden" id="legend">
@@ -205,10 +206,13 @@
       return m ? m[1].trim() : '';
     };
 
-    const directions = markdownToText(getSection('Directions'));
+    const directions = markdownToText(getSection('Directions')).replace(
+      /!\[(.*?)\]\(\.\/assets\/(.*?)\)/g,
+      (match, alt, file) => `<img src="../assets/${file}" alt="${alt}" style="max-width:30%;">`
+    );
+
     example = getSection('Example'); // 保留 HTML
     const translation = getSection('译文'); // 保留 HTML
-    console.log('translation -> ', translation);
 
     if (currentMode === 'Dictation') {
       // Dictation 模式才显示音频上传

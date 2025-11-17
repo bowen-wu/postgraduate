@@ -1,4 +1,4 @@
-# Unit2
+# Unit 2-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -23,7 +23,6 @@
 - n. 规则；统治；惯例
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
-  法院很可能裁定该法律违反了宪法所保障的“平等保护”原则
 - overrule
     - vt. 否决；统治
     - == rule against
@@ -43,7 +42,7 @@
           Rule of Naturalization"* and ***that** <ins>federal laws precede state laws</ins>* <ins>**are**
           noncontroversial</ins>.
             - A precede B A领先B/A优先于B
-    - unconstitutional adj. 违法宪法的
+    - unconstitutional adj. 违反宪法的
 - charter n. 章程
 
 ## economic
@@ -141,20 +140,21 @@
 - basis n. 基础
 - foundation
     - n. 地基；基金会；创建
-    - He could not confide them even to his wife, although they provide the unacknowledged **foundation/basis** of his
-      fiction. 他连妻子都不能倾诉这些事，尽管正是这些事构成了他小说创作中未被承认的基础。
+    - He could not *confide([kənˈfaɪd] v. 吐露（秘密）)* them even to his wife, although they provide the unacknowledged
+      **foundation/basis** of his fiction.
 
 ## end
 
 - v. 结束
-- n. 终止；
+- n. 终止
 - 词组
     - put an end to 终止...，结束...
     - by the end of 到...时为止
     - at the end of 在...结束时
     - end up 最终成为；最后处于
     - end up with 以...结束或告终
-- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)**</ins>
+- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)
+  **</ins>
 - endless adj. 无止境的
 - deadline n. 截止日期
 - infinite adj. 无限的，无穷尽的
@@ -164,7 +164,7 @@
 - adj. 不同的
 - differ
     - vi. 不同与；持不同看法
-    - A differ *from* B
+    - A differ **from** B A和B不同
     - Ways of reading on the train or in bed are likely to **differ** considerably **from** reading in a seminar room.
 - difference n. 差异；差额
 - differentiate [ˌdɪfəˈrenʃieɪt]
@@ -175,9 +175,8 @@
     - v. 辨别
     - vt. 区分；使具有...特色
     - == separate
-    - distinguish A from B 区分
-    - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
-      one.
+    - distinguish A from B 把 A 和 B 区分开来
+    - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile one.
     - distinguish vs. differ
         - Could he <ins>distinguish/differ</ins> right from wrong？
         - The two leaders had <ins>distinguish/differ</ins> on the issue.
@@ -213,6 +212,7 @@
 
 ## culture
 
+- [ˈkʌltʃər]
 - n. 文化；种植
 - It is very important to cultivate children's interest in <ins>traditional Chinese **culture**(中国传统文化)</ins> from
   an early age.

@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -73,8 +73,8 @@
       disorder in response to stress compared to men.
     - be susceptible to (doing) sth. 遭受；承受
         - == be subject to
-        - == be vulnerable([ˈvʌlnərəbl]) to
-            - vulnerable adj. （地方）易受攻击的; 易受伤的; 易受批评的
+        - == be vulnerable to
+            - vulnerable [ˈvʌlnərəbl] adj. （地方）易受攻击的; 易受伤的; 易受批评的
 
 ## success
 
@@ -87,16 +87,17 @@
     - vt. 继任
 - succession [səkˈseʃn]
     - n. 继任，继承；一系列；连续
-    - The art market had witnessed([ˈwitnist] v. 作证) a **succession** of victories.
+    - The art market had *witnessed([ˈwitnist] v. 作证)* a **succession** of victories.
     - successor [səkˈsesər] n. 继承者；继任者
 - successive [səkˈsesɪv]
     - adj. 连续的，依次的；接替的
-    - But **successive** governments have presided([priˈzaidid] v. 主持) over selling green spaces, squeezing money from
+    - But **successive** governments have *presided([priˈzaidid] v. 主持)* over selling green spaces, squeezing money
+      from
       local authorities and declining attention on sport in education.
 - fail
     - vi. 失败；未能（做到）；出故障；
     - vt. 使失望
-    - failure n. 失败；失败的事
+    - failure [ˈfeɪljər] n. 失败；失败的事
 
 ## union
 
@@ -131,7 +132,7 @@
     - In fact, these **commutes** were reportedly more enjoyable compared with those without communication, which makes
       absolute sense, since human beings thrive off of social connections.
         - thrive [θraɪv]
-            - vi. 兴盛，兴隆; 长得健壮; 茁壮成长
+            - vi. 繁荣，兴旺
             - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
     - commuter n. （远距离）上下班往返的人
 
@@ -145,11 +146,11 @@
     - discourage
         - vt. 阻止；使灰心
         - 词组
-            - discourage sb. from doing sth.
+            - discourage sb. from doing sth. 阻止某人做某事
 - encouragement n. 鼓励；鼓舞
 - inspire [ɪnˈspaɪər]
     - vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
-    - inspiration [ˌɪnspəˈreɪʃn] n. 灵感; 鼓舞人心/启发灵感的人或事; 好主意
+    - inspiration [ˌɪnspəˈreɪʃn] n. 鼓舞；灵感
 
 ## global
 
@@ -184,14 +185,14 @@
     - vt. 报价; 引述
     - vi. 引用
     - n. 引用; 报价; 引号
-
-## 词组
-
 - bright [braɪt]
     - adj. 明亮的; 鲜艳的; 晴朗的; 欢快的; 聪明的; 有希望的
     - adv. 明亮地
     - the best and brightest
         - 最优秀、最聪明的人才
+
+## 词组
+
 - crop up 猛增
 - go hand in hand (with...)
     - 两者密切相关/相辅相成/并行存在

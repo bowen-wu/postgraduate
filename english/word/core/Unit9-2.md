@@ -1,4 +1,4 @@
-# Unit 9
+# Unit 9-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -90,8 +90,10 @@
     - == detailed
     - elaborate layout 精心的布局
 - concrete [ˈkɑːŋkriːt]
-    - adj. 确实的；具体的；实在的
+    - adj. 具体的；确实的；实在的
     - n. 混凝土
+    - Many Americans regard <ins>the jury system</ins> **as** a **concrete** expression of crucial democratic values,
+      including the principles that...
 - simplify [ˈsɪmplɪfaɪ]
     - vt. 简化
     - simple == easy
@@ -106,6 +108,8 @@
 - [ˈmɔːrəl]
 - adj. 道德的
 - n. 寓意
+- In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins> <ins>persons of(
+  具有...特征的人)</ins> supposedly superior <ins>intelligence, education, and **moral** character</ins>.
 - ethics [ˈɛθiks]
     - n. 道德准则；伦理学；伦理
     - ethical
@@ -131,7 +135,8 @@
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating a
+    - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating
+      a
       task.
 
 ## source
@@ -200,6 +205,7 @@
         - n. 中立（立场）；
         - == disinterest [dɪsˈɪntərɪst] n. 无兴趣; 不关心; 冷漠; 客观
         - net-neutrality law 网络中立法
+        - Faced with the demand for net **neutrality** rules, the FCC has issued a special resolution.
 
 ## official
 

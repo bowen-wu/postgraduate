@@ -1,4 +1,4 @@
-# Unit 11
+# Unit 11-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -31,7 +31,10 @@
   story, "I love My Children, I Hate My Life, " is <ins>arousing much chatter(引起大量议论)</ins>.
 - discover
     - vt. 发现；发明
-    - discovery n. 发现；发明
+    - discovery
+        - n. 发现；发明
+        - But it takes *collective(adj. 集体的)* <ins>scrutiny and acceptance</ins> to transform a **discovery** claim
+          into a mature **discovery**.
 - recovery
     - n. 复苏；康复；恢复
     - economic recovery
@@ -42,6 +45,7 @@
 - -gress- 走
 - Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
     - The Supreme([suːˈpriːm]) Court
+        - Judicial Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权
@@ -73,7 +77,11 @@
 - critical [ˈkrɪtɪkl]
     - adj. 关键的；批评的
     - critically [ˈkrɪtɪkli] adv. 极为重要地
-- criticise ['krɪtəˌsaɪz] vt. 批评
+- criticize ['krɪtəˌsaɪz]
+    - vt. 批评
+    - It is fair to **criticize([ˈkrɪtɪsaɪz])** and question the mechanism—that is, the culture of research—<ins>after
+      all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
+      批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
 - critique [krɪˈtik] n. 批判
 - condemn [kənˈdem] vt. 谴责
 - blame [bleɪm]
@@ -126,7 +134,7 @@
 - territory n. 领土
 - realm [relm]
     - n. 领域
-    - Whole new **realms** of understanding——from gender to race to cultural studies——were opened up as scholars
+    - Whole new **realms** of understanding—from gender to race to cultural studies—were opened up as scholars
       unpicked the multiplicity of lost societies.
 - domain [doʊˈmeɪn]
     - n. （知识、活动的）领域；（尤指旧时个人、国家等所拥有或统治的）领土
@@ -141,6 +149,8 @@
 - [ˈpɜːrtʃəs]
 - vt. 购买
 - n. 购买
+- In the early 2010s, a wide range of businesses started processing **purchases** with iPads and other digital payment
+  system.
 - afford
     - vt. 买得起；给予；承担得起（后果）
     - afford to do sth.
@@ -167,7 +177,9 @@
 - One day, <in>in retrospect([ˈretrəspekt] 回首)</in>, the years of **struggle** will strike you as the most beautiful.
 - battle n. 战役；斗争
 - combat vt. 与...战斗；防止
-- defeat [dɪˈfiːt] n. 失败
+- defeat [dɪˈfiːt]
+    - n. 失败
+    - Man is not made for **defeat**. A man can be destroyed but not **defeated**.
 - victory n. 胜利
 - triumph [ˈtraɪʌmf]
     - vi. 成功

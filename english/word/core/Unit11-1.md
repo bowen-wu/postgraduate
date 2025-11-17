@@ -1,4 +1,4 @@
-# Unit 11
+# Unit 11-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -213,7 +213,7 @@
     - intellect [ˈɪntəlekt] n. 智力
 - scholar [ˈskɑːlər]
     - n. 学者
-    - Whole new realms of understanding——from gender to race to cultural studies——were opened up as **scholars**
+    - Whole new realms of understanding—from gender to race to cultural studies—were opened up as **scholars**
       unpicked the multiplicity of lost societies.
     - scholarly adj. （书、文章、问题、活动等）学术性的
     - scholarship n. 奖学金; 学术（研究）

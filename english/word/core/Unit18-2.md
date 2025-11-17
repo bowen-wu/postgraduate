@@ -1,4 +1,4 @@
-# Unit 18
+# Unit 18-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -49,6 +49,7 @@
     - barely
         - adv. 几乎不
         - We barely talk.
+        - ...there was so many people in a much worse state, with **barely** any money to spend on food...
 
 ## trace
 
@@ -147,7 +148,10 @@
     - n. 谨慎；警告
     - cautious adj. 谨慎的
 - precautionary adj. 预防的
-- prudent adj. 谨慎的
+- prudent  [ˈpruːdnt]
+    - adj. 谨慎的
+    - Many said that unemployment, while extremely painful, had improved them in some way: they had become less
+      materialistic and more financially **prudent**; they <ins>were more aware of</ins> the struggles of others.
 
 ## addicted
 
@@ -194,6 +198,9 @@
 ## Words
 
 ## 词组
+
+- beside the point
+    - 无关紧要的
 
 ## 句式
 

@@ -29,7 +29,7 @@
 ### 介词短语的平行并列
 
 - Information flows <ins>from the media to the influentials</ins> **and** <ins>from them to everyone else</ins>.
-- So disciplines acquire a monopoly **not just** <ins>over the production of knowledge</ins>, **but also** <ins>over the production of teh producers of knowledge</ins>.
+- So disciplines acquire a monopoly **not just** <ins>over the production of knowledge</ins>, **but also** <ins>over the production of the producers of knowledge</ins>.
 
 ### 句子的平行并列
 

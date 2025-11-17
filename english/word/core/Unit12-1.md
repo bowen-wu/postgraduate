@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -46,8 +46,8 @@
 - vt. 把...视为
 - n. 关注
 - regard A as B
-- Many Americans **regard** <ins>the jury system</ins> **as** a concrete expression of crucial democratic values,
-  including the principles that...
+- Many Americans **regard** <ins>the jury system</ins> **as** a <ins>concrete expression(具体体现)</ins> of crucial
+  democratic values, including the principles that...
     - the jury system 陪审团制度
 - 词组
     - in/with regard to 关于
@@ -82,7 +82,7 @@
 - expressive adj. 有表现力的
 - convey [kənˈveɪ]
     - vt. 表达
-    - When you **convey** something, you **carry** or **deliver([dɪˈlɪvər])** it.
+    - When you **convey** something, you **carry** or **deliver([dɪˈlɪvər] vt. 发表；传话；传递，传达；交付)** it.
     - Your smile might **convey** more about your feelings than works ever could.
 - utterance [ˈʌtərəns] n. 话语
 - gasp [ɡæsp]
@@ -93,7 +93,7 @@
 
 - [prɪˈdɪkt]
 - vt. 预测（主观）
-- ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership——that is, it
+- ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it
   **predicted** the opposite([ˈɑːpəzɪt] n. 对立物).
 - predictable adj. 可预见的
 - predictably [prɪˈdɪktəblɪ] adv. 可预见地
@@ -164,6 +164,10 @@
 - 词组
     - take aim at sb./sth. 把批评的矛头指向某人或某事物
         - == aim to do
+    - the aim of + n./doing ...的目的
+        - aim at + n./doing 旨在...
+        - in order to do 为了
+        - the purpose of n./doing ...的目的/用意
 - purpose [ˈpɜːrpəs]
     - n. 目的；目标
     - The main **purpose** of this "clawback" rule is to hold bankers accountable for harmful risk taking.
@@ -183,11 +187,14 @@
 - attractiveness n. 吸引力
 - extract [ˈekstrækt]
     - vt. （用力）拔出
-    - So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw——having **extracted** them from the mouths
+    - So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw—having **extracted** them from the mouths
       of his slaves.
 - contract [ˈkɑːntrækt]
     - v. （使）收缩
     - n. 合同
+    - contrast
+        - vt. 对比
+        - n. 差别
 - abstract [ˈæbstrækt]
     - adj. 抽象派的；抽象的
     - n. 摘要
@@ -235,8 +242,8 @@
 - wreak [rik] 😔
     - vt. 造成（混乱或破坏）
     - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
-      pattern is <ins>**wreaking** havoc</ins> with marriage.
-        - wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
+      pattern <ins>is **wreaking** havoc(造成破坏)</ins> with marriage.
+        - be wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
 - harmonization [ˌhɑmənaɪ'zeɪʃn]
     - n. 和谐
     - in harmony([ˈhɑːrməni]) with 与...和谐共处

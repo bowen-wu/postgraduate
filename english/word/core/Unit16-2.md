@@ -1,4 +1,4 @@
-# Unit 16
+# Unit 16-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -23,7 +23,7 @@
 - n. 特权；特殊待遇
 - prioritize
     - vt. 确定优先顺序；优先考虑
-    - Another approach to getting more done in less time Is to rethink how you prioritise your day——in particular how we
+    - Another approach to getting more done in less time Is to rethink how you prioritise your day—in particular how we
       craft our <ins>to-do lists(待做清单)</ins>.
 - priority
     - n. 优先事项；优先权
@@ -167,6 +167,7 @@
 
 ## trick
 
+- vt. 欺骗
 - n. 诀窍
 - ...a marketing trick that has turned the pork sandwich into an object of obsession.
 - deceive vt. 欺骗

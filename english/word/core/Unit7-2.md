@@ -1,4 +1,4 @@
-# Unit7
+# Unit 7-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -75,7 +75,7 @@
 - n. 机会
 - Look, if you had *one shot(一次机会)*, or _one ***opportunity***(一个机遇)_. To *seize([siːz] v. 抓住)* everything you
   ever wanted in one moment. Would you capture it or just let it slip?
-  听好了——若命运只给你一次机会，让你实现所有的梦想，你会紧紧抓住，还是眼睁睁看它溜走？
+  听好了—若命运只给你一次机会，让你实现所有的梦想，你会紧紧抓住，还是眼睁睁看它溜走？
 - chance
     - vi. 偶然发生
     - n. 机会；偶然
@@ -129,6 +129,7 @@
 - instinct [ˈɪnstɪŋkt]
     - n. 本能；直觉
     - == nature
+    - Mental health has commonly been called conscience, **instinct**, wisdom([ˈwɪzdəm]), common sense, or the inner voice. 
     - instinctive adj. 本能的
     - instinctively adv. 本能地
 - viscerally [ˈvɪsərəli]
@@ -161,6 +162,7 @@
 - take a(n)...approach 采取...方法
 - With the Spring Festival **approaching/around the corner**
 - There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
+- Some applaud the **approach**; others are concerned.
 - method n. 方法
 
 ## habit

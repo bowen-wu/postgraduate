@@ -12,9 +12,20 @@
 ### 全部倒装
 
 - 全部倒装: 把句子中的谓语动词全部置于主语前
+
+#### 主表倒装
+
+- 判断是主表倒装
+    1. 句子里的动词是不是 be 动词
+    2. 把句子倒回正常语序，看前置成分是否为表语（描述主语的性质或状态）
 - Also unclear **is** <ins>why Microsoft has gone it along</ins>.
     - 正常语序: <ins>Why Microsoft has gone it along</ins> **is** also unclear.
-    - 形容词作表语提前，句子全部倒装
+    - 形容词作表语提前，句子全部倒装 => 主表倒装
+- <ins>At **issue**</ins> before the U.S. Court of Appeals for the District of Columbia Circuit **was** <ins>the latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
+    - 反倒装: The latest take of the FCC was at issue before the court...
+
+#### There be 句型
+
 - There be句型基本结构: **There be + n.**
     - 表示: "有..."(**客观存在**)
     - There be 句型是一个倒装句
@@ -31,6 +42,13 @@
 - There be 中 be 可以结合情态，表示不同情态下的"有"或推测"可能有"
     - <ins>There will</ins> always <ins>be</ins> change-new jobs, new products, new services.
     - <ins>There may be</ins> more matches in the database...
+
+#### 主状倒装
+
+- **Along with** the many folks looking to make a permanent home in the United States **came** **those** who had no intention to stay, and who would make some money and then go home
+    - Along with... 句首 → 常引发全部倒装（谓语在前，主语在后）
+    - Along with A came B.  伴随 A 的到来，B 也来了
+
 
 ### 部分倒装
 

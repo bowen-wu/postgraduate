@@ -1,4 +1,4 @@
-# Unit1
+# Unit 1-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -179,6 +179,7 @@
 - <ins>At issue(讨论或争论中的)</ins> before the U.S. Court of Appeals for the District of Columbia Circuit was <ins>the
   latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
   在哥伦比亚特区巡回上诉法院审理的争议是 FCC 关于网络中立的最新立场
+    - [主表倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md#%E4%B8%BB%E8%A1%A8%E5%80%92%E8%A3%85)
 - 词组
     - take a(n)...approach([əˈproʊtʃ]) 采取...方法
     - take a(n)...stand/stance([stæns]) 采取...立场
@@ -227,7 +228,7 @@
     - adj. 缺乏社交性的
     - a- 表示强调/表示否定
     - anti- 反
-    - They housed eight adult rats with two types of robotic rat——one social and one **asocial** for 5 our days.
+    - They housed eight adult rats with two types of robotic rat—one social and one **asocial** for 5 our days.
 - sociologist [ˌsoʊsiˈɑːlədʒɪst] n. 社会学家
 - society n. 社会；社团；
 

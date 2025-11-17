@@ -1,4 +1,4 @@
-# Unit6
+# Unit 6-1
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -38,6 +38,7 @@
     - vt.（尤指正式地或法律上）同意；（勉强）承认
     - n. （政府、机构的）拨款
     - take sth. for granted 认为...理所当然
+    - giant [ˈdʒaɪənt] adj. 巨大的；伟大的
 - bonus [ˈboʊnəs]
     - n. 奖金
     - How could she have let those enormous([ɪˈnɔːrməs] adj. 巨大的) **bonus** payouts pass unremarked?
@@ -150,17 +151,21 @@
     - evolution [ˌevəˈluːʃn]
         - n. 发展；进化
         - == development
-        - Studying this could help understand why human **evolution** <ins>picked up pace(加快步伐)</in> in the last 30,000 years, with social
+        - Studying this could help understand why human **evolution** <ins>picked up pace(加快步伐)</in> in the last
+          30,000 years, with social
           environment being a major contributory(adj. 促成的) factor.
         - involution [ˌɪnvə'luʃən] n. 内卷
         - evolutionary [ˌevəˈluːʃəneri] adj. 进化的
 - revolve [rɪˈvɑːlv]
     - v./n. 旋转
-    - revolution n. 革命
+    - revolution
+        - n. 革命
         - revolutionary
             - adj. 革命的
             - This is hardly **revolutionary**, but it is presented in a charming(adj. 令人着迷的) format.
               这几乎算不上革命性（的观点），但它的呈现形式很吸引人
+            - I suppose the most **revolutionary** act <ins>one can _engage([ɪnˈɡeɪdʒ]) in(从事于/参与（某项活动）)_<ins>
+              is to tell the truth.
 
 ## limit
 
@@ -242,7 +247,9 @@
     - reminder n. 提醒人的事物
 - wise [waɪz]
     - adj. 明智的；充满智慧的
-    - wisdom [ˈwɪzdəm] n. 智慧；明智；（社会或文化长期积累的）学问
+    - wisdom [ˈwɪzdəm]
+        - n. 智慧；明智；（社会或文化长期积累的）学问
+        - Mental health has commonly been called conscience, instinct, **wisdom**, common sense, or the inner voice.
 - ideology [ˌaɪdiˈɑːlədʒi]
     - n. 意识；观念
     - == belief [bɪˈliːf] n. 信念；信仰；信心

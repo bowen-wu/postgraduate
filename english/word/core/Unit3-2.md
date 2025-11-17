@@ -1,4 +1,4 @@
-# Unit3-2
+# Unit 3-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -52,6 +52,7 @@
     - from my perspective 从我的角度来看/在我看来/就我个人的看法
         - == in my view
         - == in my opinion
+    - They cross-check sources and prefer news from different **perspectives**.
 - landscape n. 风景（自然）；乡村风景画
 - prospect
     - vi. 勘探
@@ -80,6 +81,7 @@
     - keep track of 跟踪；记录
     - keep up with 跟上；与...齐步前进
         - == keep pace with
+    - keep one's word 遵守某人的承诺
 - upkeep
     - n. 保养（费），维修（费）
     - infrastructure upkeep 基础设施维护
@@ -143,6 +145,7 @@
 - adj. 联邦（政府）的
 - Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
     - The Supreme([suːˈpriːm]) Court
+        - Judicial Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权

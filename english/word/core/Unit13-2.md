@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -37,6 +37,7 @@
 - rid [rɪd]
     - v. 摆脱
     - get rid of 摆脱
+        - == eliminate == remove
 
 ## essential
 

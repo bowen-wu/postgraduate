@@ -4,7 +4,7 @@
 
 ### 名词性从句的句型模板
 
-1. 表达人们对一件事的观点或看法: It is <done> + 主语从句.
+1. **表达人们对一件事的观点或看法**: It is \<done\> + 主语从句.
     - 形式主语 It 保持不变
     - 助动词 is 可以换成不同的时态
         - 表达**现在**: is
@@ -23,7 +23,7 @@
     - "**that + 任意陈述句**"都可构成主语从句，表达针对任何事情的观点
     - The years ago on Monday, <ins>it was announced that</ins> the Games of the 30th Olympiad would be in London.
     - This year, <ins>it was proposed that</ins> the system be changed...
-2. 表达对一件事的评价: It is + adj/n. + 主语从句.
+2. **表达对一件事的评价**: It is + adj/n. + 主语从句.
     - 形式主语 It 保持不变
     - 助动词 is 可以换成不同的时态
         - 表达**现在**: is
@@ -33,14 +33,14 @@
     - adj./n. 表示对后面主语从句这件事的评价
     - "**that + 任意陈述句**"都可构成主语从句
     - So <ins>it's not surprising that</ins> people are more stressed at home.
-    - Second, <ins>it is surely a good thing that</ins> the money and attention come to science rather thant go elsewhere.
+    - Second, <ins>it is surely a good thing that</ins> the money and attention come to science rather than go elsewhere.
     - For example, <ins>it is unclear whether</ins> the sequencing of a whole genome violates the patents of individual genes within it.
-3. 对作主语的名词进行详细说明: n. + is + 表语从句.
+3. **对作主语的名词进行详细说明**: n. + is + 表语从句.
     - ...是...
     - n.: 表示抽象概念相关的任意名词
     - The proposal/The implication/The problem/The result/The good news/The simple explanation/A strong possibility/Another surprise/My idea is that... 提议/含义/问题/结果/好消息/简单的解释/很大的可能/另一件令人惊讶的事/我的想法是...
     - <ins>The real problem is that</ins> the parks have been chronically starved of funding.
-    - <ins>Another surprise is that</ins> the findins hold true for both those with children and without...
+    - <ins>Another surprise is that</ins> the findings hold true for both those with children and without...
     - <ins>The proposal is that</ins> it should sit alongside the existing city of culture title...
 
 ### 找到从句

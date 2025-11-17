@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -22,6 +22,11 @@
 - desperate
     - Nevertheless, the <ins>affordable housing(经济适用房)</ins> situation is **desperate**. Waiting lists increase all
       the time and we are simply not building enough new homes.
+- thrive
+    - vi. 繁荣，兴旺
+    - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
+    - In fact, these commutes were reportedly more enjoyable compared with those without communication, which makes
+      absolute sense, since human beings <ins>**thrive** off of</ins> social connections.
 
 ## Words
 

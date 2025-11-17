@@ -1,4 +1,4 @@
-# Unit5
+# Unit 5-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -13,7 +13,7 @@
     - He **sleeps** early.
 - [e] -> 哎(ai)
 - [ə] -> 额(e)
-- 破折号: ——
+- 破折号: —
 - C: Cause
 - R: Result
 
@@ -236,7 +236,10 @@
     - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
       matched by few other industries. 全球艺术市场将巨额财富、强烈的自我意识、贪婪、激情与争议融汇在一起，这种混合在其他行业中几乎无可匹敌。
         - bring together 使聚集、集合、汇集
-    - controversial [ˌkɑːntrəˈvɜːrʃl] adj. 引起争论的 😔
+    - controversial [ˌkɑːntrəˈvɜːrʃl]
+        - adj. 引起争论的 😔
+        - In Arizona vs. United States, the majority overturned three of the four <ins>contested provisions(
+          有争议的法律条款)</ins> of Arizona's **controversial** plan.
 
 ## sign
 
