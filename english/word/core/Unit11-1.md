@@ -55,7 +55,7 @@
 - overlook
     - vt. 忽略；（对于不良现象等）不予理会
     - When education becomes one-size-fits-all, it risks **overlooking** a nation's diversity of gifts.
-    - However, there is another important part of the jobs picture that was largely(adv. 在很大程度上) **overlooked**.
+    - However, there is another important part of the jobs picture that was *largely(adv. 在很大程度上)* **overlooked**.
         - See the big picture. 有全局观/看长远/从大局出发/
         - Try to **see the big picture** before making any decision.
 
@@ -82,12 +82,12 @@
 - The **function** of leadership is to produce more leaders, not more followers.
 - function well 运转良好
 - functional adj. 实用的
-- malfunction 😔
+- malfunction [mælˈfʌŋkʃən] 😔
     - v. 出现故障，运转失灵
     - n. 故障；失灵
-    - mal- 😔
-        - malicious [məˈlɪʃəs]  adj. 恶意的，有敌意的; 蓄意的; 预谋的; 存心不良的
-        - male
+    - mal- == 坏、恶😔
+        - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
+        - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
 
 ## manufacture
 
@@ -132,7 +132,7 @@
     - 词组
         - attach importance to sth. 认为...重要；重视...
     - We should <ins>**attach** importance to</ins> children's mental health.
-    - We should <ins>**attach** importance to raising</ins> people's *awareness(n. 意识)* of environmental protection.
+    - We should <ins>**attach** importance to</ins> raising people's *awareness(n. 意识)* of environmental protection.
         - == **Great importance should be attached to** raising people's awareness of environmental protection.
         - 中文多主动，英文多被动
     - attachment n. 依恋
@@ -147,13 +147,11 @@
         - in conjunction with... 与...一起做
 - cling [klɪŋ]
     - vt. 紧紧抓住
-    - cling to sth.
-    - cling to doing
+    - cling to (doing) sth.
 - adhere [ədˈhɪr]
     - vi. 遵守
     - == cling
-    - adhere to sth.
-    - adhere to doing
+    - adhere to (doing) sth.
     - All members of the association **adhere** to a strict <ins>code of practice(行为规范、操作准则)</ins>.
 
 ## medical
@@ -169,8 +167,6 @@
     - n. （正式）流行病
     - With the **pandemic**, unemployment is very high indeed.
     - == epidemic
-        - The outbreak of *swine([swaɪn] n. 猪)** flu that was first detected in Mexico was declared a global
-          **epidemic** on June 11, 2009.
 
 ## respect
 
@@ -180,10 +176,7 @@
     - prospect
         - vi. 勘探
         - n. 前景；可能性；前途
-    - retrospect [ˈretrəspekt]
-        - n. 回顾，回想
-        - vi. 回顾，追溯；回想
-        - vt. 回顾；追忆
+    - retrospect [ˈretrəspekt] v. 回顾
     - introspect v. 内省，内观
 - 词组
     - in respect of... 就...而言
@@ -201,6 +194,7 @@
 
 ## academic
 
+- [ˌækəˈdemɪk]
 - adj. 学术的
 - n. 学者
 - academic pursuits 学术追求
@@ -227,12 +221,12 @@
     - 词组
         - take advantage of 利用
     - disadvantage n. 不利条件
+- weakness n. 弱点
 - merit [ˈmerɪt]
     - n. 优点；功绩
     - Vaus says that Science's idea to pass some papers to statisticians "<ins>has some **merit**(有一定道理)</ins>, but
       a **weakness** is that it relies on <ins>the board of reviewing editors(审稿编辑委员会)</ins> to..."
       Vaus 说，《科学》杂志打算把一些论文交给统计学家审阅的这个想法有一定道理，但它的一个弱点在于：这种做法依赖于审稿编辑委员会去...
-- weakness n. 弱点
 - flaw
     - n. 瑕疵
     - flawless

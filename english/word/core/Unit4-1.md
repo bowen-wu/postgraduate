@@ -80,6 +80,8 @@
     - unreasonable adj. 不合理的
 - rational [ˈræʃnəl]
     - adj. 理性的
+    - Least rousing, he thinks, was **rational** argument, although his co-authors say reason might
+      <ins>play a bigger role(发挥更重要作用)</ins>.
     - rationalist [ˈræʃnəlɪst] n. 理性主义者
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - logic

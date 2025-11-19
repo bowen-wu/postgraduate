@@ -182,7 +182,9 @@
     - n. 前提，假设
     - If connections can be bought, a basic **premise** of democratic society—that all are equal in treatment by
       government—is undermined.
-- presumably [prɪˈzuːməbli] adj. 相反的
+- presumably [prɪˈzuːməbli]
+    - adj. 相反的
+    - ...they **presumably** have enough independence to disagree with the chief executive's proposals.
 - contrary adj. 相反的
 - -pose- 放
     - expose

@@ -58,7 +58,9 @@
 
 - n. 视野；想象；远见卓识
 - We need to create a new vision for public health where all of society works together to get healthy and live longer.
-- envision vt. 设想
+- envision [ɛnˈvɪʒən]
+    - vt. 设想
+    - That's because Congress has always **envisioned** joint federal-state immigration enforcement.
 - visible
     - adj. 看得见的
     - ...passionate consumers will voice their opinions In quicker， more visible，and much more damaging ways.
@@ -152,6 +154,8 @@
 
 - vt. 说服
 - I am convinced that...我确信
+- If begging doesn't **convince** your parents to raise your allowance, you might want to try a different tactic—like
+  doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
 - convinced adj. 确信的
 - convincing adj. 令人信服的
 - persuade

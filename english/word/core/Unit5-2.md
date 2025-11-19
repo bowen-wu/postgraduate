@@ -223,6 +223,8 @@
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
 - argument
     - n. 观点；争论；论据
+    - Least rousing, he thinks, was rational **argument**, although his co-authors say reason might
+      <ins>play a bigger role(发挥更重要作用)</ins>.
     - augment [ɔːɡˈment] vt. 增加，提高
 - dispute [dɪˈspjuːt] 😔
     - vt. 对...表示异议（或怀疑）

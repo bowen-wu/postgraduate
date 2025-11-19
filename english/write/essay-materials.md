@@ -1,22 +1,49 @@
 # Materials
 
+## Structure
+
+### Introduction
+
+#### General Description
+
+- This pie chart clearly illustrates...
+- The pie chart above clearly reveals...
+- As is revealed in the graph, 如图所示
+- As illustrated in the graph, 如图所示
+- As is reflected by the diagram, 如图表所示
+- By contrast, 相比之下
+- On the contrary, 相反
+
+### Body
+
+#### Topic Sentence
+
+- Several primary factors could contribute to this phenomenon. 一些主要原因可以解释这种现象
+- The primary factors that account for the aforementioned phenomenon can be summarized as follows. 造成上述现象的主要因素可以概括如下
+- Several primary causes that contribute to the above-mentioned phenomenon could be summarized as follows.
+  造成上述现象的几个主要因素可以概括如下
+
+#### Argument
+
+- On the one hand, ... On the other hand, ... 一方面，另一方面
+- In the first place, ... In the second place, ... 首先, 其次
+
+#### Summary
+
+### Conclusion
+
+- Taking all these factors into consideration, 考虑到所有这些因素
+- With due consideration of all these contributors, 充分考虑到所有这些因素
+
 ## Transition
-
-### 首先
-
-1. in the first place
-
-### 其次
-
-1. in the second place
 
 ### 因此，结果是
 
 1. hence
-2. as a result
-3. accordingly
-4. thus
-5. therefore
+2. therefore
+3. thus
+4. as a result
+5. accordingly
 6. consequently
 
 ### 此外
@@ -39,11 +66,9 @@
 2. In summary,
 3. In conclusion,
 
-### 如图所示
+### 同时
 
-1. As is revealed in the graph,
-2. As illustrated in the graph,
-3. As is reflected by the diagram, 如图表所示
+- Meanwhile,
 
 ### 由于.../因... /作为...的结果
 
@@ -54,6 +79,14 @@
 - Fortunately
 - Unfortunately
 
+### 现在
+
+- Nowadays,
+
+### 在这篇选段中
+
+- In this excerpt,
+
 ## 常见表达
 
 ### 越来越多
@@ -62,10 +95,12 @@
     - people in growing numbers 越来越多的
     - gymnasiums in creasing numbers 越来越多的
     - gymnasiums in mounting numbers 数量急剧上升
+    - customers in expanding numbers 越来越多的消费者
 2. a + <adj.> + number of + <可数名词复数>
     - a growing number of people
     - an increasing number of people
     - a mounting number of people
+    - a large number of teenagers
 
 ### never fails to + 动词原形
 
@@ -105,10 +140,12 @@
 - 可以被认为/看作...
 - the future of China's traditional culture can be considered "safe" 中国传统文化的未来可以被认为是“安全”的
 
-### 一些主要原因可以解释这种现象
+### 图表
 
-- Several primary factors could contribute to this phenomenon.
-- The primary factors that account for the aforementioned phenomenon can be summarized as follows. 造成上述现象的主要因素可以概括如下
+- table 表格图
+- pie chart 饼状图
+- column chart 柱状图
+- line chart 曲线图
 
 ### Common
 
@@ -117,7 +154,8 @@
 
 ## 句子
 
-- Traditional Chinese culture is not only certain to survive, but is, in fact, destined to thrive and prosper. 中国传统文化不但肯定能够存续，而且事实上必将会繁荣兴盛
+- Traditional Chinese culture is not only certain to survive, but is, in fact, destined to thrive and prosper.
+  中国传统文化不但肯定能够存续，而且事实上必将会繁荣兴盛
 - I decided to stay on the academic assembly line. 我决定继续留在学校体系中深造
 
 ## Grammar

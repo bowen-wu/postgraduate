@@ -194,5 +194,7 @@
 
 ## 词组
 
+- critical thinking 批判性思维
+
 ## 句式
 

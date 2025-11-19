@@ -23,6 +23,8 @@
 - n. 规则；统治；惯例
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
+- rule out 排除；不予考虑
+    - ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
 - overrule
     - vt. 否决；统治
     - == rule against
@@ -176,7 +178,8 @@
     - vt. 区分；使具有...特色
     - == separate
     - distinguish A from B 把 A 和 B 区分开来
-    - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile one.
+    - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
+      one.
     - distinguish vs. differ
         - Could he <ins>distinguish/differ</ins> right from wrong？
         - The two leaders had <ins>distinguish/differ</ins> on the issue.

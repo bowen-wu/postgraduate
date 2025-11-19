@@ -114,7 +114,7 @@
     - n. 保证 （正式）
     - The Government has **pledged** to change the law to introduce a minimum service requirement so that, even when
       strikes occur, services can continue to operate.
-    - He again **pledged** to <ins>forge ahead with</ins> his plans for reform.
+    - He again **pledged** to <ins>forge ahead with(坚定地推进（某事）)</ins> his plans for reform.
 - warrant [ˈwɔːrənt]
     - n. 搜查令
     - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook
@@ -167,6 +167,7 @@
     - 词组
         - make a bid for 企图获得
         - call out bid 喊出报价
+        - in a bid to do 为了.../以期.../试图...
     - As the **auctioneer** <ins>called out **bids**</ins>, in New York one of the oldest banks on Wall Street, Lehman
       Brothers, filed for *bankruptcy([ˈbæŋkrʌptsi])*.
 

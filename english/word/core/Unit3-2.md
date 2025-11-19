@@ -59,13 +59,11 @@
     - n. 可能性；前途；前景
     - If *circumstances(['sɜkəmstənsɪz] n. 环境)* always determined the life and **prospect** of people, then humanity
       would never have *progressed*.
-- retrospect [ˈretrəspekt]
-    - vi. 回顾，追溯；回想
-    - vt. 回顾；追忆
-    - n. 回顾，回想
-    - in retrospect == looking back 回头看、回想起来
-    - One day, <in>in **retrospect**</in>, the years of struggle will strike you as the most beautiful.
-- introspect [ˌɪntrə'spekt] v. 内省，内观
+    - retrospect [ˈretrəspekt]
+        - v. 回顾
+        - in retrospect == looking back 回头看、回想起来
+        - One day, <in>in **retrospect**</in>, the years of struggle will strike you as the most beautiful.
+    - introspect [ˌɪntrə'spekt] v. 内省，内观
 
 ## keep
 
