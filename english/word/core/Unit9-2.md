@@ -92,7 +92,7 @@
 - concrete [ˈkɑːŋkriːt]
     - adj. 具体的；确实的；实在的
     - n. 混凝土
-    - Many Americans regard <ins>the jury system</ins> **as** a **concrete** expression of crucial democratic values,
+    - Many Americans regard <ins>the jury system</ins> as a **concrete** expression of crucial democratic values,
       including the principles that...
 - simplify [ˈsɪmplɪfaɪ]
     - vt. 简化

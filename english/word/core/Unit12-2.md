@@ -65,7 +65,7 @@
 ## special
 
 - adj. 特殊的；有专门目的的
-- This law abolished **special** educational requirements for federal jurors.
+- This law *abolished([əˈbɑːlɪʃ] vt. 废除)* **special** educational requirements for federal jurors.
 - specially adv. 专门地
 - specialized adj. 专门的；专业的
 - especial [ɪˈspeʃl]
@@ -98,6 +98,7 @@
 
 ## conscious
 
+- [ˈkɑːnʃəs]
 - adj. 意识到；（尤指由于不满或自觉重要而）注意的；有意的；有知觉的
 - 词组
     - be conscious of 意识到
@@ -127,10 +128,11 @@
 
 - [ˈkɑːnsept]
 - n. 概念；观念
-- conception n. 概念
-- misconception n. 错误认识（或误解）
+- conception
+    - n. 概念
+    - misconception n. 错误认识（或误解）
 - conceptual [kənˈseptʃuəl] adj. 概念上的
-- notion
+- notion [ˈnoʊʃn]
     - n. 看法
     - == concept
     - Even better would be to help elevate **notions** of beauty beyond the material standards of a particular industry.
@@ -141,7 +143,7 @@
 - n. 气候；环境氛围
 - Yet this enormous resource is not contributing enough to today's global challenges, including **climate** change,
   security, sustainable development and health.
-- acclimation
+- acclimation [ˌækləˈmeɪʃn]
     - n. 适应（环境、条件、气候等）
     - Help reverse the **acclimation** and get back on home time by eating an hour later each day for three days.
 
@@ -161,14 +163,14 @@
     - vt. 摧毁，破坏
     - Man is not made for defeat. A man can be **destroyed** but not defeated.
     - destructive [dɪˈstrʌktɪv] adj. 破坏性的
-- spoil [spɔɪl] vt. 破坏
 - ruin [ˈruːɪn] vt. 毁坏
+- spoil [spɔɪl] vt. 破坏
 - disruptive [dɪsˈrʌptɪv] adj. 扰乱性的，颠覆性的
 - havoc [ˈhævək]
     - n. 灾害，祸患
     - be wreaking havoc 造成破坏
     - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
-      pattern <ins>is wreaking **havoc**</ins> with marriage.
+      pattern <ins>is wreaking **havoc** with</ins> marriage.
     - disaster [dɪˈzæstər]
         - n. 灾难；不幸
         - Mass media are included to cover **disaster** and deaths.
@@ -182,12 +184,12 @@
 - abolish [əˈbɑːlɪʃ]
     - vt. 废除（法律、制度、习俗等）
     - This law **abolished** special educational requirements for federal jurors.
-- deprive
+- deprive [dɪˈpraɪv]
     - vt. 剥夺，使丧失
     - deprive sb. of sth. 剥夺某人某物
-    - rob
-        - vt. 非法剥夺
-        - rob sb. of sth. 剥夺某人某物
+- rob [rɑːb]
+    - vt. 非法剥夺
+    - rob sb. of sth. 剥夺某人某物
 
 ## secure
 
@@ -219,7 +221,7 @@
 - category n. （人或事物的）类别，种类
 - species [ˈspiːʃiːz]
     - n. 物种
-    - The fossil([ˈfɑːsl] n. 化石) record shows that many **species** have endured([ɪnˈdʊr] v. 持续) for millions of
+    - The *fossil([ˈfɑːsl] n. 化石)* record shows that many **species** have *endured([ɪnˈdʊr] v. 持续)* for millions of
       years—so why shouldn't we?
 
 ## Words

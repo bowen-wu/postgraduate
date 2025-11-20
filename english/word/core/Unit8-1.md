@@ -80,7 +80,7 @@
 
 - [ˈfɪɡjər]
 - v. 弄清楚
-- n. 人物；（尤指官方资料中的）数字
+- n. 人物；（尤指官方资料中的）数字；身材
 - figure out 弄清楚/理解/解决/想明白
 - Today the **figure** is more than 25% and growing rapidly.
 - Americans no longer expect public **figures**, whether in speech or in writing to command the English language with
@@ -130,7 +130,10 @@
     - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would **boost** the farming industry,
       political *sovereignty([ˈsɑːvrənti] n. 国家的主权)* and even the nation's health.
 - spur [spɜːr] vt. 激增；刺激
-- foster [ˈfɑːstər] vt. 促进；培养
+- foster [ˈfɑːstər]
+    - vt. 促进；培养
+    - To sum up, by **fostering** enthusiasm for sports and exercise, society can ensure a generation of healthy and
+      sportsmanlike citizens.
 
 ## extra
 

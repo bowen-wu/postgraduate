@@ -128,6 +128,9 @@
     - n. 读写能力
     - Yet as distrust has risen toward all media,people may be starting to <ins>(== improve 加强，增强)</ins>beef up
       their media literacy skills.
+    - illiteracy [ɪˈlɪtərəsi]
+        - n. 文盲
+        - eliminate illiteracy 扫盲
 - literally adv. 真正地，确实地
 - literate
     - adj. 有读写能力的

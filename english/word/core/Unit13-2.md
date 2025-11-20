@@ -135,7 +135,9 @@
 - == differentiate == distinguish
 - separate A from B
 - go separate ways 分道扬镳
-- separation n. 分离
+- separation
+    - n. 分离
+    - She declined to be more specific about the reasons for the **separation**.
 - divide [dɪˈvaɪd]
     - vt. （使）分开；使产生分歧；【数】除以
     - vi. 分隔

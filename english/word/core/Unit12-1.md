@@ -25,7 +25,7 @@
 - try to do sth. 设法去做某事（侧重过程）
 - management
     - n. 管理；管理者
-    - ...a regulatory structure(n. 结构) that denies([diˈnaiz] v. 拒绝) **management** the flexibility to adjust its
+    - ...a regulatory *structure(n. 结构)* that *denies([diˈnaiz] v. 拒绝)* **management** the flexibility to adjust its
       operations to the new reality.
         - deny someone something 拒绝某人某物/使某人得不到某物
 
@@ -36,7 +36,7 @@
 - memorable
     - adj. 难忘的
     - Honestly([ˈɑːnɪstli]), if we <ins>got stuck in the rut(墨守成规、老套的方式)</ins> of "hi", "hello", "how are you?"
-      and "what's going on?", you will fail to give the initial jolt([dʒoʊlt] n. 震惊) to the conversation that can
+      and "what's going on?", you will fail to give the initial *jolt([dʒoʊlt] n. 震惊)* to the conversation that can
       make it so **memorable**.
         - fail to do 无法做到/没能做到
 - memorization [ˌmemə'rɪzeɪʃən] n. 记忆
@@ -46,8 +46,8 @@
 - vt. 把...视为
 - n. 关注
 - regard A as B
-- Many Americans **regard** <ins>the jury system</ins> **as** a <ins>concrete expression(具体体现)</ins> of crucial
-  democratic values, including the principles that...
+- Many Americans **regard** <ins>the jury system</ins> **as** a concrete expression of crucial democratic values,
+  including the principles that...
     - the jury system 陪审团制度
 - 词组
     - in/with regard to 关于
@@ -65,8 +65,8 @@
 
 - [ɪkˈsplɔːr]
 - vt. 探索；探究
-- They may have <ins>bonded more with</ins> the social robot because it displayed behaviors like communal([kəˈmjuːnl]
-  adj. 集体的) **exploring** and playing.
+- They may have <ins>bonded more with</ins> the social robot because it displayed behaviors like
+  *communal([kəˈmjuːnl] adj. 集体的)* **exploring** and playing.
     - bond with sb/sth 与...建立情感联系/变得更亲近
     - bonded more with 更容易与...产生情感连结
 - exploration [ˌekspləˈreɪʃn] n. 探索；探究
@@ -93,8 +93,8 @@
 
 - [prɪˈdɪkt]
 - vt. 预测（主观）
-- ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it
-  **predicted** the opposite([ˈɑːpəzɪt] n. 对立物).
+- ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it **predicted**
+  the opposite([ˈɑːpəzɪt] n. 对立物).
 - predictable adj. 可预见的
 - predictably [prɪˈdɪktəblɪ] adv. 可预见地
 - prediction n. 预测
@@ -123,13 +123,12 @@
 - prevention [prɪˈvenʃn] n. 预防
 - hinder [ˈhɪndər]
     - vt. 阻碍
-    - Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who demand high quarterly profits from companies,
-      can **hinder** a firm's efforts to invest in long-term research or to build up customer loyalty([ˈlɔɪəlti] n.
-      忠诚).
+    - *Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的)* investors, who demand high quarterly profits from companies, can
+      **hinder** a firm's efforts to invest in long-term research or to build up customer *loyalty([ˈlɔɪəlti] n. 忠诚)*.
 - curb
     - vt./n. 抑制，控制
     - == limit
-    - They argue that government action is necessary to **curb** Britain's addiction(n. 嗜好) to unhealthy food...
+    - They argue that government action is necessary to **curb** Britain's *addiction(n. 嗜好)* to unhealthy food...
 - barrier n. 障碍
 - obstacle [ˈɑːbstəkl]
     - n. 障碍
@@ -149,7 +148,7 @@
     - == (be) similar to
 - likewise [ˈlaɪkwaɪz]
     - adv. 同样
-    - He lent money, made donations(n. 捐赠) and encouraged others to do **likewise**.
+    - He lent money, made *donations(n. 捐赠)* and encouraged others to do **likewise**.
 - analogy [əˈnælədʒi]
     - n. 类比
     - == comparison [kəmˈpærɪsn] n. 比较
@@ -165,9 +164,9 @@
     - take aim at sb./sth. 把批评的矛头指向某人或某事物
         - == aim to do
     - the aim of + n./doing ...的目的
-        - aim at + n./doing 旨在...
-        - in order to do 为了
         - the purpose of n./doing ...的目的/用意
+        - aim at + n./doing 旨在...
+        - in order to **do** 为了
 - purpose [ˈpɜːrpəs]
     - n. 目的；目标
     - The main **purpose** of this "clawback" rule is to hold bankers accountable for harmful risk taking.
@@ -187,7 +186,7 @@
 - attractiveness n. 吸引力
 - extract [ˈekstrækt]
     - vt. （用力）拔出
-    - So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw—having **extracted** them from the mouths
+    - So he hired a dentist to *transplant(vt. 移植)* nine teeth into his jaw—having **extracted** them from the mouths
       of his slaves.
 - contract [ˈkɑːntrækt]
     - v. （使）收缩
@@ -216,7 +215,7 @@
     - vt. 指责；指控
     - accuse sb. of sth. 指责某人某事
         - == charge sb. with sth.
-    - Still, we need to be careful not to **accuse** opponents([ə'poʊnənts] n. 对手) **of** bad arguments too quickly.
+    - Still, we need to be careful not to **accuse** *opponents([ə'poʊnənts] n. 对手)* **of** bad arguments too quickly.
 - expense [ɪkˈspens]
     - n. 费用（一般 小）
     - 词组
@@ -242,7 +241,7 @@
 - wreak [rik] 😔
     - vt. 造成（混乱或破坏）
     - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
-      pattern <ins>is **wreaking** havoc(造成破坏)</ins> with marriage.
+      pattern <ins>is **wreaking** havoc with</ins> marriage.
         - be wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
 - harmonization [ˌhɑmənaɪ'zeɪʃn]
     - n. 和谐

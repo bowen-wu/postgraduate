@@ -36,6 +36,8 @@
         - adj. 监管的
         - ...the <ins>Supreme Court(最高法院)</ins> has *ruled that* states **do** have some **regulatory authority**
           over nuclear power.
+        - ...a **regulatory** *structure(n. 结构)* that *denies([diˈnaiz] v. 拒绝)* management the flexibility to adjust
+          its operations to the new reality.
 - constitution
     - n. 宪法
     - constitutional

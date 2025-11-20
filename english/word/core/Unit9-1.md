@@ -37,7 +37,7 @@
           doubt about it.
         - inconclusive
             - adj. 无定论的；不确定的；非决定性的，无结果的
-            - undetermined adj. 未确定的，未解决的
+            - undetermined [ˌʌndɪ'tɜmɪnd] adj. 未确定的，未解决的
             - <ins>Are</ins> humans actually <ins>aware of</ins> the world they live in? So far the results are
               **inconclusive**.
                 - be aware([əˈwer]) of + 名词/从句 意识到/察觉到
@@ -75,8 +75,7 @@
     - adj. 形而上学的；超自然的
     - meta- == beyond 超过
     - Add the Greek prefix "meta-"(beyond) to the base "physical"(nature), and you get metaphysical-a near synonym to
-      the
-      Latinate word "supernatural([ˌsupərˈnætʃrəl])".
+      the Latinate word "**supernatural**([ˌsupərˈnætʃrəl])".
     - metabolism [məˈtæbəlɪzəm] n. 新陈代谢
 - psychology [saɪˈkɑːlədʒi]
     - n. 心理学
@@ -118,7 +117,7 @@
         - There is no reason why everyone cannot be welcomed on Mauna Kea to **embrace their cultural heritage** and to
           study the stars.
             - The author's attitude toward choosing Mauna Kea as the TMT site is one of <ins>*_____*</ins>
-                - A. service criticism
+                - A. severe criticism
                 - B. full **approval** 完全赞成
         - disapproval [ˌdɪsəˈpruvəl] n. 不赞成
 

@@ -209,6 +209,7 @@
 - 词组
     - think through 充分考虑
     - go through 检查；经历（尤为艰难时期 hardships）
+        - go through the motions 走过场；做做样子；敷衍了事
     - live through 度过；经受过
         - == survive
     - carry through 贯彻

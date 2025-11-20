@@ -208,7 +208,7 @@
 - gratification [ˌɡrætəfɪˈkeʃən]
     - n. 满足；令人满意的事物
     - == satisfaction
-    - A *feed(vt. 为...提供食物)* will usually provide instant **gratification** to a crying baby. 喂食通常能迅速让哭泣的婴儿感到满足
+    - A *feed(vt. 为...提供食物)* will usually provide instant **gratification** to a crying baby.
 - cater [ˈkeɪtər]
     - v. 满足...的需要
     - cater **to** sb./sth. 满足...的需要；迎合
@@ -221,9 +221,9 @@
 - == complicated
 - complexity [kəmˈpleksəti] n. 复杂性
 - complicated [ˈkɑːmplɪkeɪtɪd] adj. 复杂的
-- intricate
+- intricate [ˈɪntrɪkət]
     - adj. 复杂精细的
-    - intricacy
+    - intricacy [ˈɪntrɪkəsi]
         - n. 错综复杂
         - == complexity
 - sophisticated [səˈfɪstɪkeɪtɪd]
