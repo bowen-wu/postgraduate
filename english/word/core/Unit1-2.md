@@ -41,7 +41,11 @@
     - vt. 打算；想要；意指
     - intend to do sth.
     - intention n. 意图
-    - intentionally [ɪnˈtɛnʃənlɪ] adv. 故意地
+    - intentional
+        - adj. 有意的，故意的
+        - Although the Supreme Court of the United States had prohibited **intentional**
+          <ins>racial discrimination([ˈreɪʃl dɪˌskrɪmɪˈneɪʃn] 种族歧视)</ins> in jury selection...
+        - intentionally [ɪnˈtɛnʃənlɪ] adv. 故意地
 
 ## choose
 

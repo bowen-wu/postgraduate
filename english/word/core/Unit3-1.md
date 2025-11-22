@@ -32,14 +32,15 @@
         - **R(结果)** result from C(原因)
             - == originate([əˈrɪdʒɪneɪt]) from
             - == spring from
-            - == derive([dɪˈraɪv] v. （使）起源于，来自) from
-            - == stem([stem] v. 阻止) from
+            - == derive([dɪˈraɪv] v. 从...衍生出；起源于) from
+            - == stem([stem] vi. 起源于) from
     - result in
         - 造成...结果, 导致
         - R result in **C(结果)** == R cause C == R lead to C
 - Cooperation and sharing can **result from** either sympathy([ˈsɪmpəθi] n. 同情) or guilt([ɡɪlt]).
 - consequence
     - n. 结果；后果
+    - The **consequence** is that you perceive that the trip has taken less time than it actually has.
     - consequently adv. 因此
 - outcome n. 结果；成果
 - aftermath n. （战争、事故、不快事情等的）后果 😔
@@ -185,7 +186,9 @@
 - observe
     - vt. 观察；注意到
     - Their capacity for tolerating stress may even be greater than men's, she **observed**.
-    - observation n. 观察；评论
+    - observation
+        - n. 观察；评论
+        - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
     - observer n. 观察者
 - preserve [prɪˈzɜːrv]
     - vt. 维护；保护；

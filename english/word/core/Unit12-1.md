@@ -220,6 +220,7 @@
     - n. 费用（一般 小）
     - 词组
         - at the expense of 在牺牲（或损害）...的情况下
+    - There seems to be a predominance of short-term thinking <ins>at the **expense** of</ins> long-term investing.
     - expenditure [ɪkˈspendɪtʃər] n. 开支（官方 大）
 
 ## guilt

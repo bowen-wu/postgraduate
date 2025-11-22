@@ -30,7 +30,8 @@
       concluded: "We do not attract what we want, but what we are."
 - presentation n. （颁奖等）仪式，典礼；展示
 - represent
-    - v. 代表
+    - v. 代表；展现、体现
+    - These epochal figures **represented** lives hard to *imitate(vt. 模仿)*...
     - representation n. 代理人；代表
     - representative [ˌreprɪˈzentətɪv]
         - n. 代表，代理人
@@ -112,7 +113,9 @@
     - fade away 逐渐消失
     - Many *recruiters([rɪˈkrutɚ] n. 招聘人员)* say the old *disgrace([dɪsˈɡreɪs] n. 耻辱)* is **fading** for top
       performers.
-- vanish [ˈvænɪʃ] v. 突然不见，消失；不复存在
+- vanish [ˈvænɪʃ]
+    - v. 突然不见，消失；不复存在
+    - == disappear
 
 ## promote
 
@@ -174,7 +177,9 @@
 - v. 认为
 - I **suppose** the most revolutionary act <ins>one can _engage([ɪnˈɡeɪdʒ]) in(从事于/参与（某项活动）)_<ins> is to tell
   the truth.
-- be supposed to do sth. 应该做某事
+- be supposed to do sth. 应该做某事/据说/被认为/按理论理应
+    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 准确地)* these non-celebrity influentials <ins>*who*</ins>,
+      according to the two-step-flow theory, are **supposed** to drive social epidemics.
 - supposedly [səˈpoʊzɪdli]
     - adv. 据说；据传；想象中的
     - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins>
@@ -204,8 +209,14 @@
         - If you want to **impose** your musical taste on your parents, play your tunes all day at top volume.
     - oppose [əˈpoʊz]
         - v. 反抗，阻碍
-        - opposite [ˈɑːpəzɪt] adj. 完全相反的，截然不同的
-        - opposition [ˌɑːpəˈzɪʃn] n. （强烈的）反对，反抗
+        - opposite [ˈɑːpəzɪt]
+            - adj. 完全相反的，截然不同的
+            - ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it
+              *predicted(vt. 预测)* the **opposite**.
+        - opposition [ˌɑːpəˈzɪʃn]
+            - n. （强烈的）反对，反抗
+            - ...have met with fierce opposition
+                - meet with 遭遇，受到
         - opponent [əˈpoʊnənt] n. 对手，竞争者；反对者
     - propose
         - v. 提议，建议；求婚

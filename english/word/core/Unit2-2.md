@@ -30,7 +30,9 @@
     - == rule against
 - regulate
     - vt. 监管；调节
-    - regulation n. 法规；监管
+    - regulation
+        - n. 法规；监管
+        - laws and regulations 法律法规
     - regulator n. 监管者
     - regulatory
         - adj. 监管的

@@ -153,6 +153,7 @@
 - n. 损失；伤害
 - Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen concluded: "We
   do not attract what we want, but what we are."
+- ...passionate consumers will voice their opinions in quicker, more visible, and much more **damaging** ways.
 - undermine
     - vt. 逐渐削弱（信心、权威等）
     - If connections can be bought, a basic premise of democratic society—that all are equal in treatment by

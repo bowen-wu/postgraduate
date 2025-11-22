@@ -251,8 +251,8 @@
 - spoil [spɔɪl]
     - v. 溺爱
 - advocate [ˈædvəkeɪt]
-    - vt. 拥护; 主张; 鼓吹
-    - n. 拥护者，支持者; 辩护律师
+    - vt. 提倡；主张
+    - n. 倡导者；拥护者
     - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
       谦逊的 == modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的) conductor</ins>
       about him."

@@ -23,7 +23,10 @@
 - n. 增长，上涨
 - In developing counties, the number of mobile users <ins>**increased** sharply/spiked up/soared</ins> from
   approximately less than one billion in the year 2000 to four billion in 2008.
-- increasingly adv. 越来越多地
+- increasingly
+    - adv. 越来越多地
+    - become increasingly + adj. 变得越来越...
+        - become increasingly mature
 - decrease
     - v./n. 下降；减少
     - de- 向下，完全
@@ -167,6 +170,7 @@
 - demonstrate
     - vt. 证明；表现；
     - vi. 游行
+    - be demonstrated by 被...所证明/被...所展示
 - exhibit [ɪɡˈzɪbɪt]
     - v. **展览**（正式）
     - vt. 表现

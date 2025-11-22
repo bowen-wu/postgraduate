@@ -255,7 +255,7 @@
     - v. 创立，创办
     - == set up
 - conceal [kənˈsiːl]
-    - v. 隐藏; 隐瞒，掩饰; 遮住
+    - vt. 隐藏；隐瞒（信息）
 - contradict [ˌkɑːntrəˈdɪkt]
     - v. 反驳; 相矛盾，违背
 - condemn [kənˈdem]

@@ -273,5 +273,6 @@
     - People **owe** things when they're in *debt([det] n. 债务; 负债)* to someone.
     - A friend can **owe** you a favor, and your employer **owes** you a *paycheck(薪水，薪资)*.
     - I don't **owe** you anything.
+    - The reforms <ins>**owe** a great deal to(很大程度上得益于...)</ins> the resolution of one man.
     - Its current leader, Ed Miliband, **owes** his position **to** votes from public-sector unions.
       现任领导人埃德·米利班德（Ed Miliband）得益于公共部门工会的选票，才获得了他的职位

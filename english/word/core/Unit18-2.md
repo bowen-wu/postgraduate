@@ -118,7 +118,12 @@
 
 - vt. 引起；激怒
 - evoke vt. 唤起
-- advocate vt. 提倡；主张； n. 倡导者；拥护者
+- advocate [ˈædvəkeɪt]
+    - vt. 提倡；主张
+    - n. 倡导者；拥护者
+    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
+      谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
+      about him."
 - trigger vt. 引发； n. （尤指引发不良反应或发展的）起因😔
 - spark vt. 引发
 
@@ -186,6 +191,9 @@
 - appointment
     - n. 预约；任命
     - have an appointment with sb.
+    - Even Tommasini, who had advocated Cilbert's **appointment** in the Times, calls him "an *unpretentious(adj.
+      谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
+      about him."
 
 ## explosion
 

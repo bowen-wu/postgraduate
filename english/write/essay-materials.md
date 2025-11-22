@@ -9,20 +9,23 @@
 - This pie chart clearly illustrates...
 - The pie chart above clearly reveals...
 - The bar chart above clearly reflects...
+- As can be seen from the bar chart above,... 从上面的柱状图可以看出
 - As is revealed in the graph, 如图所示
 - As illustrated in the graph, 如图所示
 - As is reflected by the diagram, 如图表所示
 - According to the data given above, 根据上图中给出的数据
 - By contrast, 相比之下
 - On the contrary, 相反
+- In the meantime, 与此同时
 
 ### Body
 
 #### Topic Sentence
 
-- Several primary factors could contribute to this phenomenon. 一些主要原因可以解释这种现象
 - The primary factors that account for the aforementioned phenomenon can be summarized as follows. 造成上述现象的主要因素可以概括如下
 - Several factors that account for the above-mentioned phenomena could be summarized as follows. 造成上述现象的一些因素可以概括如下
+- Several primary factors could contribute to this phenomenon. 一些主要原因可以解释这种现象
+- Several factors may contribute to this phenomenon. 可能有几个因素促成了这个现象
 - Several primary causes that contribute to the above-mentioned phenomenon could be summarized as follows.
   造成上述现象的几个主要因素可以概括如下
 
@@ -31,14 +34,16 @@
 - On the one hand, ... On the other hand, ... 一方面，另一方面
 - In the first place, ... In the second place, ... 首先, 其次
 - To start with, ... Furthermore..., ... 首先，此外
+- To start with, ... Moreover, ... 首先，其次
 
 #### Summary
 
 ### Conclusion
 
 - Taking all these factors into consideration, 考虑到所有这些因素
-- With due consideration of all these contributors, 充分考虑到所有这些因素
 - To sum up, 总之
+- With due consideration of all these contributors, 充分考虑到所有这些因素
+- Accordingly, 因此
 
 ## Transition
 

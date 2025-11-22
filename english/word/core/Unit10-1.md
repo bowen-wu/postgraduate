@@ -128,7 +128,7 @@
     - n. 容量；能力
     - == ability
     - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create
-      <ins>*superfluous([suːˈpɜːrfluəs] adj. 多余的)* material goods—paintings, sculpture([ˈskʌlptʃər] n. 雕刻作品) and
+      <ins>*superfluous([suːˈpɜːrfluəs] adj. 多余的)* material goods—paintings, sculpture([ˈskʌlptʃər] n. 雕塑) and
       architecture<ins>, <ins>**and** superfluous experiences—music, literature([ˈlɪtrətʃər] n. 著作), religion and
       philosophy([fəˈlɑːsəfi] n. 哲学)</ins>.
 

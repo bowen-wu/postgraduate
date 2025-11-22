@@ -76,12 +76,14 @@
     - sufficiency n. 充分
 - abound [əˈbaʊnd]
     - vi. 大量存在
+    - Opportunities for misinterpretation, error, and self-deception **abound**.
+    - On our way ahead, <ins>**Challenge abound**</ins>, **so do opportunities**.
     - abundant [əˈbʌndənt]
         - adj. 大量的，丰富的
         - == rich == sufficient
-    - abundance n. 充裕；大量；丰富
-    - Opportunities for misinterpretation, error, and self-deception **abound**.
-    - On our way ahead, <ins>**Challenge abound**</ins>, **so do opportunities**.
+    - abundance
+        - n. 充裕；大量；丰富
+        - *Elegance(n. 优雅)*, he believed, did not derive from **abundance**.
 
 ## ideal
 
@@ -111,6 +113,7 @@
 - vt. 敦促
 - vi. 推进；用力按
 - n. 报刊
+- The government is <ins>**pressing** for</ins> an early resolution of the dispute.
 - suppress [səˈpres]
     - vt. 镇压；抑制
     - == curb == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止

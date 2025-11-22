@@ -141,6 +141,7 @@
 ## imitate
 
 - vt. 模仿
+- These epochal figures represented lives hard to **imitate**...
 - What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues
   to evade scientists.
 - imitation n. 模仿

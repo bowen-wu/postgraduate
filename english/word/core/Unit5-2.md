@@ -46,6 +46,7 @@
 
 - v. 改善；提高
 - == enhance == elevate
+- be improved 得到改善/被完善
 - improvement
     - n. 改善
     - There's always room for **improvement**.
@@ -172,6 +173,7 @@
         - == considerate == kind
 - distract
     - vt. 分散（注意力）
+    - be distracted by 被...分心/因...而注意力分散
     - attract v. 吸引
     - distraction
         - n. 使人分心的事
@@ -229,6 +231,7 @@
 - dispute [dɪˈspjuːt] 😔
     - vt. 对...表示异议（或怀疑）
     - n. 争端；争论
+    - The government is <ins>pressing for(敦促)</ins> an early resolution of the **dispute**.
 - debate
     - v. （尤指正式）讨论
         - == discussion [dɪˈskʌʃn]

@@ -141,7 +141,10 @@
         - adj. 模式化的
         - In short, the image that best represents the current crisis is the **stereotypical** cartoon scene of a man
           sitting at the breakfast table with a newspaper held up in front of his face...
-- discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
+- discrimination [dɪˌskrɪmɪˈneɪʃn]
+    - n. 歧视
+    - Although the Supreme Court of the United States had **prohibited** intentional
+      <ins>racial([ˈreɪʃl]) **discrimination**(种族歧视)</ins> in jury selection...
 - prejudice [ˈpredʒudɪs]
     - vt. 使...有偏见
     - n. 偏见
@@ -174,7 +177,9 @@
 - expect
     - v. 预料；期待
     - expect to do sth.
-    - expectation n. 期望
+    - expectation
+        - n. 期望
+        - The new vaccine, which is different from the annual flu vaccine, is available ahead of **expectations**.
     - unexpected adj. 意外的
 
 ## direct
@@ -215,8 +220,11 @@
     - n. 犯罪嫌疑人
     - suspicion [səˈspɪʃn] n. 怀疑
     - suspicious [səˈspɪʃəs] adj. 怀疑的
-- skeptical/sceptical [ˈskeptɪkl] 😔
+- skeptical [ˈskeptɪkl] 😔
     - adj. 怀疑的
+    - be skeptical about... 对...持怀疑态度
+    - ...people who were at first **skeptical** about express delivery business service now become convinced that it is
+      safe and reliable.
     - skepticism/scepticism [ˈskɛptɪˌsɪzəm] n. 怀疑主义；怀疑态度 😔
 - challenge
     - vt. 对...质疑；向...提出挑战

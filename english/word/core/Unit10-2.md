@@ -27,20 +27,12 @@
 
 ## relate
 
+- [rɪˈleɪt]
 - vt. 把...联系起来；讲述
 - vi. 与...有关
 - be related to
 - So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course
   "Fashion Media & Promotion".
-- correlate
-    - v. 相互关联；显示紧密联系
-    - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
-      predicted(vt. 预测) the opposite([ˈɑːpəzɪt] n. 对立物).
-        - be **correlated** with 与...相关
-        - be positively/negatively **correlated** with 与...正/负相关
-    - correlation
-        - n. 相互关系，关联；相关
-        - == relation
 - related
     - adj. 相关的；有亲属关系的
     - unrelated adj. 不相关的；无亲属关系的
@@ -49,10 +41,19 @@
     - relationship
         - n. （人、团体、国家之间的）关系；（事物之间的）关联；情爱关系
         - relationship with sb./sth.
-- relative
-    - adj. 相对的； 与...相比
+- relative [ˈrelətɪv]
+    - adj. 相对的；与...相比
     - relatively adv. 相对地
-    - relevant adj. 相关的；有意义的
+    - relevant [ˈreləvənt] adj. 相关的；有意义的
+- correlate [ˈkɔːrələt]
+    - v. 相互关联；显示紧密联系
+    - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
+      *predicted(vt. 预测)* the *opposite([ˈɑːpəzɪt] n. 对立物)*.
+        - be **correlated** with 与...相关
+        - be positively/negatively **correlated** with 与...正/负相关
+    - correlation
+        - n. 相互关系，关联；相关
+        - == relation
 
 ## available
 
@@ -75,11 +76,12 @@
 - vi. 起重要作用
 - n. 特点；（报纸、电视等的）特写
 - A **feature** is a part of something that **makes it special** or **able to work better**.
-- This restaurant's menu **features** Italian dishes.
+- This restaurant's menu **features** Italian dishes(['dɪʃɪz]).
 - Practically every week **features** at least one celebrity mom, or mom-to-be, smiling on the newsstands.
 - character
     - n. 性格；特征；人品；（电影、书、戏剧中的）人物
     - Before it ends, it will likely change the life course and **character** of a generation of young adults.
+    - The movie **character** Forrest Gump made a famous *analogy([əˈnælədʒi])*: "Life is like a box of chocolates."
     - characterize
         - vt. 是...的特征；表现（...的特征、特点）
         - == feature
@@ -92,8 +94,8 @@
 ## reveal
 
 - vt. 揭示；显示
-- These poems **reveal** his gentle([ˈdʒentl] adj. 温和的) side.
-- revelation [ˌrevəˈleɪʃn] n. 被透露的事实
+- These poems **reveal** his *gentle([ˈdʒentl] adj. 温和的)* side.
+- revelation [ˌrevəˈleɪʃn] n. 被透露的事实；揭露
 - conceal [kənˈsiːl] vt. 隐藏；隐瞒（信息）
 - disclose
     - vt. 揭露
@@ -115,8 +117,8 @@
             - immigrate **外来移民**
         - emigrant [ˈemɪɡrənt]
             - n. 移民
-            - An **emigrant** is a person who leaves his or her home country to live permanently(['pɜːmənəntli]) in
-              another country.
+            - An **emigrant** is a person who **leaves** his or her home country to live *permanently(['pɜːmənəntli])*
+              in another country.
             - Many Irish **emigrant** came to the United States in the late 1800s.
 
 ## institution
@@ -127,6 +129,7 @@
 - institute
     - vt. 制定（体系；政策等）
     - n. 研究所；
+    - He reads so passionately that his parents have to **institute** a "no reading policy" at the dinner table.
 - establish [ɪˈstæblɪʃ]
     - vt. 建立（尤指正式关系）；确立（地位）
     - == institute
@@ -139,11 +142,12 @@
 
 - vt. 实施；引导
 - n. 举止；实施办法
-- Quinn and her colleagues **conducted** a test to see if rats can distinguish a friendly rat from a hostile one.
+- Quinn and her *colleagues([ˈkɑligz])* **conducted** a test to see if rats can distinguish a friendly rat from a
+  *hostile([ˈhɑːstl] adj. 敌对的)* one.
 - conductor
     - n. （交响乐、合唱团的）指挥
     - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
-      modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的) **conductor**</ins> about
+      modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* **conductor**</ins> about
       him."
         - with + (no/an/some) air of + 名词 + about sb. 某人身上带有（或没有）...的气质/神态/架子
             - with an air of mystery about him 他身上带着一股神秘感
@@ -183,19 +187,21 @@
     - be devoted to sth. 致力于.../献身于.../专心于...
         - == devote oneself to sth.
     - But if your work is your "passion", you'll be more likely to **devote** yourself to it.
+    - earnest
+        - adj. 认真的、诚恳的、真挚的
+        - earnestness n. 认真、诚恳的态度
 - dedicate [ˈdedɪkeɪt]
     - vt. 把...奉献给
-    - be dedicated to
+    - be dedicated to 致力于
         - == dedicate oneself to sth.
         - == committed to
-        - 致力于
     - Job security or stability was the second most important career goal work-life balance was number one, followed
       by a sense of <ins>being **dedicated** to(致力于)</ins> a cause or to feel good about serving the greater good.
 
 ## exist
 
 - vi. 存在；生存
-- existence [ɪɡˈzɪstəns] n. 存在；生活方式
+- existence [ɪɡˈzɪstəns] n. 存在；生活方式；实体
 - existential
     - adj. 有关生存的
     - existential crisis 生存危机
@@ -209,8 +215,8 @@
     - adj. 基因的
     - genetically [dʒə'netɪklɪ]
         - adv. 从基因方面
-        - Death is normal; we are **genetically** programmed to disintegrate([dɪsˈɪntɪɡreɪt] v. 瓦解) and
-          perish([ˈperɪʃ] vi. 死亡), even under ideal conditions.
+        - Death is normal; we are **genetically** programmed to *disintegrate([dɪsˈɪntɪɡreɪt] v. 瓦解)* and
+          *perish([ˈperɪʃ] vi. 死亡)*, even under ideal conditions.
     - genetics [dʒəˈnetɪks]
         - n. 遗传学
         - economics n. 经济学
@@ -222,7 +228,7 @@
     - paternity [pəˈtɜrnəti]
         - n. 父系
         - Among the most popular: **paternity** and *kinship(n. 亲属关系)* testing, which adopted children can use to
-          find their biological relatives **and** families can use to <ins>track down(追查到)</ins> kids <ins>put up for
+          find their biological relatives and families can use to <ins>track down(追查到)</ins> kids <ins>put up for
           adoption(送去领养)</ins>.
 
 ## supreme
@@ -238,8 +244,8 @@
     - adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
     - She gave him a look that made words **superfluous**. 她的一个眼神，让言语变得多余
     - Humans are unique in their capacity to not only make tools but then turn around and use them to create
-      **superfluous** material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕刻作品)* and architecture, and
-      **superfluous** experiences—music, *literature([ˈlɪtrətʃər] n. 著作)*, religion and
+      **superfluous** material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and
+      **superfluous** experiences—music, *literature([ˈlɪtrətʃər] n. 文学作品)*, religion and
       *philosophy([fəˈlɑːsəfi] n. 哲学)*.
 
 ## Words

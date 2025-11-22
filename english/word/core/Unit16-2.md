@@ -98,6 +98,8 @@
     - anxious adj. 忧虑的；渴望的
 - disappointing
     - adj. 令人失望的
+    - No one likes to lose, but if you are a competitive person, it will be especially **disappointing** to see someone
+      else win.
     - disappointment n. 失望；令人失望的人（或事物）
 
 ## random
@@ -149,10 +151,12 @@
 - n. 激情
 - passionate
     - adj. 狂热的
-    - ...passionate consumers will <ins>voice their opinions(表达观点)</ins> in quicker，more visible，and much more
-      damaging ways.
+    - ...**passionate** consumers will voice their opinions in quicker，more visible，and much more damaging ways.
 - enthusiasm
     - n. 热情；热衷的事物
+    - enthusiasm **for** sth. 对某事的热情
+        - To sum up, fostering **enthusiasm for** sports and exercise, society can ensure a generation of healthy and
+          sportsmanlike citizens.
     - intense excitement
     - enthusiastic adj. 热情的
 

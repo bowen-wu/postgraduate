@@ -50,7 +50,8 @@
 ## abandon
 
 - vt. 放弃
-- The most successful <ins>monarchies(君主)</ins> strive to abandon or hide their old <ins>aristocratic(贵族的)</ins> ways.
+- The most successful <ins>monarchies(君主)</ins> strive to abandon or hide their old <ins>aristocratic(贵族的)</ins>
+  ways.
 - discard
     - vt. 丢弃；摒弃
     - They should start by discarding California's lame argument that...😔
@@ -63,7 +64,9 @@
 ## elegant
 
 - adj. 优雅的
-- elegance n. 优雅
+- elegance
+    - n. 优雅
+    - **Elegance**, he believed, did not derive from abundance.
 - intelligent
     - adj. 智能的；有智慧的
     - intelligence n. 智力
@@ -135,7 +138,8 @@
 - crash 😔
     - n. 崩溃；暴跌；坠机
     - car crash 车祸
-    - The crash of EgyptAir Flight 804 terrorists may have downed over the Mediterranean Sea，provides another tragic reminder of why.
+    - The crash of EgyptAir Flight 804 terrorists may have downed over the Mediterranean Sea，provides another tragic
+      reminder of why.
 
 ## leak
 
@@ -147,17 +151,22 @@
 
 ## hostile
 
+- [ˈhɑːstl]
 - adj. 敌对的
+- Quinn and her *colleagues([ˈkɑligz])* conducted a test to see if rats can distinguish a friendly rat from a
+  **hostile** one.
 - hostility n. 敌意；反对
 - resentment
     - n. 怨恨
     - forgiveness 原谅，宽恕
-    - In the Internet age，it is particularly easy to see the resentment that has always been hidden within American society.
+    - In the Internet age，it is particularly easy to see the resentment that has always been hidden within American
+      society.
 
 ## sketch
 
 - n. 幽默短句；简述
-- The first published sketch，"A Dinner at Poplar Walk" brought tears to Dickens's eyes when he discovered it in the pages of the Monthly Magazine.
+- The first published sketch，"A Dinner at Poplar Walk" brought tears to Dickens's eyes when he discovered it in the
+  pages of the Monthly Magazine.
 - profile n. 简介
 - high-profile adj. 引人注目的
 

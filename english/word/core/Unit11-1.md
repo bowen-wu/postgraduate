@@ -204,6 +204,8 @@
 - intellectual [ˌɪntəˈlektʃuəl]
     - adj. 智力的
     - n. 知识分子
+    - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New England
+      an atmosphere of <ins>**intellectual** earnestness(热衷学术)</ins>.
     - intellect [ˈɪntəlekt] n. 智力
 - scholar [ˈskɑːlər]
     - n. 学者

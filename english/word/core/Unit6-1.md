@@ -54,7 +54,9 @@
     - n. 倾向；趋势
     - Involuntary([ɪnˈvɑlənteri] adj. 非自愿的) part-time employment in the U.S. shows a general **tendency** of
       decline.
-- trend [trend] n. 趋势
+- trend [trend]
+    - n. 趋势
+    - embrace this irreversible trend 拥抱（接受）这一不可逆转的趋势
 - inclination [ˌɪnklɪˈneɪʃn]
     - n. 倾向
     - == tendency

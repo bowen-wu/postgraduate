@@ -47,8 +47,10 @@
 - compensate for
 - compensation
     - n. 补偿金；补偿
-    - But by the end of 2009 Ms.Simmons was under fire for having sat on Goldman's <ins>compensation committee(薪酬委员会)</ins>...
-    - Within companies，the right compensation design can provide incentives for executives to think beyond their own time at the company and on behalf of all stakeholders.
+    - But by the end of 2009 Ms.Simmons was under fire for having sat on Goldman's <ins>compensation committee(
+      薪酬委员会)</ins>...
+    - Within companies，the right compensation design can provide incentives for executives to think beyond their own
+      time at the company and on behalf of all stakeholders.
 
 ## comply
 
@@ -105,12 +107,17 @@
 - exhaustion n. 筋疲力尽
 - fatigue
     - n. 疲劳
-    - The point of a  style upgrade isn't to become more vain or to spend more time fussing over what to where. Instead，use it as an opportunity to reduce decision fatigue.
+    - The point of a style upgrade isn't to become more vain or to spend more time fussing over what to where.
+      Instead，use it as an opportunity to reduce decision fatigue.
     - A,instead,B B是重点
 
 ## philosophy
 
+- [fəˈlɑːsəfi]
 - n. 哲学
+- Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
+  material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous
+  experiences—music, literature, religion and **philosophy**.
 - philosopher n. 哲学家
 - philosophical adj. 哲学的
 
@@ -176,5 +183,5 @@
 ## 句式
 
 - Half of the people who have embarked on a one-hundred mile journey may fall by the wayside. 行百里者半九十
-- No matter how high the mountain is，one can always ascend to it's top.  华山再高，顶有过路
+- No matter how high the mountain is，one can always ascend to it's top. 华山再高，顶有过路
 - For the ideal that I hold dear to my heart,I'd not regret at thousand times to die. 亦余心之所向兮，虽九死其犹未悔

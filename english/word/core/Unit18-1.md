@@ -33,8 +33,9 @@
 - subtle feeling
 - delicate
     - adj. 需要谨慎处理的；微妙的
-    - Delicate things，like a flower，a necklace，or someone's feelings are fragile，easily broken，and often quite beautiful.
-    - In Its early days the U.S. was confronted with delicate  situations.
+    - Delicate things，like a flower，a necklace，or someone's feelings are fragile，easily broken，and often quite
+      beautiful.
+    - In Its early days the U.S. was confronted with delicate situations.
     - vulnerable 脆弱的
 
 ## master
@@ -77,7 +78,8 @@
 - We must possess a positive attitude towards the problems confronting us.
 - possession
     - n. 拥有；财物
-    - <ins>It is a truth universally acknowledged(众所周知 == as we all know )</ins>，that <ins>a single man</ins> <ins>In possession of</ins> <ins>a good fortune</ins>，must be <ins>in want of</ins> wife.
+    - <ins>It is a truth universally acknowledged(众所周知 == as we all know )</ins>，that <ins>a single man</ins> <ins>
+      In possession of</ins> <ins>a good fortune</ins>，must be <ins>in want of</ins> wife.
 
 ## pursue
 
@@ -95,7 +97,8 @@
 ## appreciate
 
 - vt. 欣赏；感激；理解
-- I appreciate the efforts you will make to help me find the ideal candidate and I look forward to hearing form you as soon as possible.
+- I appreciate the efforts you will make to help me find the ideal candidate and I look forward to hearing form you as
+  soon as possible.
 - appreciation n. 欣赏；理解
 - appreciative adj. 欣赏的
 - gratitude n. 感激
@@ -119,8 +122,10 @@
 
 ## innocent
 
+- [ˈɪnəsnt]
 - adj. 天真无邪的；无罪的；无恶意的
 - n. 无辜者
+- He insisted that he was **innocent**.
 - innocence n. 天真
 - forgiveness n. 宽恕
 - punishment n. 惩罚

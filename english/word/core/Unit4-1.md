@@ -47,6 +47,7 @@
     - ineffective adj. 无效的
     - efficient
         - adj. 高效的
+        - Economic condition was only a *stimulus([ˈstɪmjələs] n. 促进因素)* for the trend toward **efficient** living.
         - effective vs efficient
             - When our brains switch between being focused and unfocused on a task, they tend to be more
               <ins>efficient/effective</ins>
@@ -59,7 +60,7 @@
     - v. (对...)有影响
     - n. 影响
     - exert(v. 运用，施加) influence/impact on sth. 对某事施加影响/产生作用
-    - inter- 相互；互相
+    - inter- == between/among == 相互；互相
         - interact
             - vi. 交流；相互影响
             - Firms are now studying how genes **interact**, looking for correlations that might be used to determine
@@ -71,6 +72,8 @@
 
 - v. 推断
 - n. 理性；推理；原因；道理
+- reason **for** sth. 某事的原因
+    - The main **reason for** sports and exercise is to encourage a healthy lifestyle.
 - The heart has its reasons which reason knows not of. 心的理由，理性无法理解
 - We **reason(v. 推理)** together, challenge, revise, and complete each other's **reasoning(n. 推理)** and each other's
   conceptions of **reason(n. 理性)**.

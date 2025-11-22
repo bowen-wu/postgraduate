@@ -23,168 +23,202 @@
 - confident adj. 自信的
 - boast
     - v. 吹嘘 😔
-    - When you boast，you are bragging about yourself and your accomplishments，often to the boredom and annoyance of your
-      audience.
-    - If is the charity's proud boast that it has never yet turned anyone away.
+    - vt. 自豪地说；有（值得自豪的东西） 🙂
+    - When you **boast**, you are **bragging(v. 吹嘘，夸耀) about yourself and your accomplishments**, often to the
+      *boredom([ˈbɔːrdəm] n. 讨厌)* and *annoyance([əˈnɔɪəns] n. 烦恼)* of your *audience([ˈɑːdiəns] n. 听众)*.
+    - <ins>*It is*</ins> the charity's <ins>proud **boast**(值得骄傲的宣称)</ins> <ins>*that*</ins> it has never yet
+      turned anyone away.
+        - turn sb. away 拒绝某人进入/不接纳某人/把人打发走
 
 ## disease
 
+- [dɪˈziːz]
 - n. 疾病；弊病
 - epidemic
-    - n. 流行病；盛行； adj. 流行（性）的
-    - The outbreak of wine flu that was first detected In Mexico was declared a global epidemic on June 11, 2009.
-    - Yet it is precisely these non-celebrity influentials who according to the two-step-flow theory,are supposed to
-      drive social epidemics.
+    - n. 流行病；盛行
+    - adj. 流行（性）的
+    - The outbreak of wine flu that was first detected in Mexico was declared a global **epidemic** on June 11, 2009.
+    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 准确地)* these non-celebrity influentials <ins>*who*</ins>,
+      according to the two-step-flow theory, are supposed to drive social **epidemics**.
     - pandemic
         - n. （正式）大流行病
-        - With the pandemic，unemployment is very high indeed.
-- symptom n. 症状
-- virus n. 病毒
-- vaccine n. 疫苗
+        - With the **pandemic**, unemployment is very high indeed.
+- symptom [ˈsɪmptəm] n. 症状
+- virus [ˈvaɪrəs] n. 病毒
+- vaccine [vækˈsiːn]
+    - n. 疫苗
+    - The new **vaccine**, which is different from the annual flu **vaccine**, is available ahead of expectations.
 
 ## divorce
 
+- [dɪˈvɔːrs]
 - vt. 离婚
 - n. 离婚
-- di- 二
+- di- double
 - marry
     - vt. （和某人）结婚
     - marriage n. 婚姻；结婚
     - intermarriage
         - n. 通婚
-        - inter- 两者或三者之间的关系
-        - Now，consider three indices of assimilation—language，home ownership and intermarriage.
+        - inter- == between/among
+        - Now, consider three indices of *assimilation([əˌsɪməˈleɪʃn] n. 同化)*—language, home ownership and
+          **intermarriage**.
 
 ## except
 
+- [ɪkˈspekt]
 - prep. 除...之外
 - conj. 除了...
-- expect for 除了...以外
-- exception
+- Not dogs **except** guide dogs.
+- 词组
+    - expect for 除了...以外
+- exception [ɪkˈsepʃn]
     - n. 例外
-    - with the exception of 除了...以外
+    - 词组
+        - with the exception of 除了...以外
     - exceptional
         - adj. 出色的 🙂
         - == outstanding
 - besides
-    - prep. 除...之外（还）
-    - What other sports do you play besides basketball？ （肯定，打篮球）
-    - I like all sports except football. （否定，不喜欢足球）
+    - prep. 除...之外（还）；此外
+- What other sports do you play **besides** basketball? 肯定，打篮球
+- I like all sports **except** football. 否定，不喜欢足球
 
 ## era
 
+- [ˈɪrə]
 - n. 时代
-- In an ear of AI.
-- epochal
-    - adj. 划时代的
-    - == important
-    - Epochal describes events so important and significant they have the power to usher in a new epoch. In other words
-      they're "epoch-making."
-    - These epochal figures represented lives hard to imitate...
+- In an **ear** of AI.
+- epoch [ˈepək]
+    - n. 时代，纪元
+    - epochal ['epəkəl]
+        - adj. 划时代的
+        - **Epochal** describes events so important and significant they have the power to *usher([ˈʌʃɚ] v. 引领)* in a
+          new **epoch**. In other words they're "**epoch-making**".
+        - These **epochal** figures *represented(v. 体现)* lives hard to *imitate(vt. 模仿)*...
 
 ## ban
 
 - vt. 明令禁止
 - n. 禁令
-- ban sb. from doing sth. 禁止某人做某事
-- keep/stop/prohibit sb. from doing sth.
+- keep/stop/prohibit/prevent/**ban** sb. from doing sth. 禁止某人做某事
 - prohibit
     - vt. 禁止
-    - Although the Supreme Court of the United States had prohibited intentional <ins>(种族歧视)</ins>racial
-      discrimination in jury selection...
-    - class struggle 阶级斗争
+    - Although the Supreme Court of the United States had **prohibited** *intentional(adj. 故意的)*
+      <ins>racial discrimination([ˈreɪʃl dɪˌskrɪmɪˈneɪʃn] 种族歧视)</ins> in jury selection...
 
 ## exactly
 
 - adv. 准确地；（要求得到更多信息）究竟，到底
-- precisely adv. 准确地；精确地；（强调真实或明显）正是
-- accurate
+- precisely [prɪˈsaɪsli]
+    - adv. 准确地；精确地；（强调真实或明显）正是
+    - == exactly
+    - Yet <ins>*it is*</ins> **precisely** these non-celebrity influentials <ins>*who*</ins>, according to the
+      two-step-flow theory, are supposed to drive social epidemics.
+- accurate [ˈækjərət]
     - adj. 精确的
-    - accuracy n. 准确性；精确度
+    - accuracy [ˈækjərəsi] n. 准确性；精确度
 
 ## incentive
 
 - n. 动机；激励
-- propel
+- propel [prəˈpel]
     - vt. 推动
     - propel sb. to do sth.
 - motivate
     - vt. 成为...的动机；激励
+    - == propel
     - motivation n. 动力
     - demotivate 😔
         - vt. 使失去动力
-        - ...the detailed daily plans demotived students.
-- stimulate vt. 激发；激励
-- stimulus
-    - n. 促进因素
-    - Economic condition was only a stimulus for the trend toward efficient living.
-- momentum n. 推动力
+        - ...the detailed daily plans **demotivated** students.
+- stimulate [ˈstɪmjuleɪt]
+    - vt. 激发；激励
+    - == propel == motivate
+    - stimulus [ˈstɪmjələs]
+        - n. 促进因素
+        - Economic condition was only(仅仅) a **stimulus** for the trend toward efficient living.
+- momentum [moʊˈmentəm] n. 推动力
 
 ## literary
 
 - adj. 文学的
-- So few suthors have brains enough or literary gift enough to keep their own end up in journalism.
+- So few authors have brains enough or **literary** gift enough to keep their own end up in journalism.
 - literacy
     - n. 读写能力
-    - Yet as distrust has risen toward all media,people may be starting to <ins>(== improve 加强，增强)</ins>beef up
-      their media literacy skills.
+    - Yet as distrust has risen toward all media, people may be starting to <ins>beef up(== improve 加强，增强)</ins>
+      their media **literacy** skills.
     - illiteracy [ɪˈlɪtərəsi]
         - n. 文盲
         - eliminate illiteracy 扫盲
-- literally adv. 真正地，确实地
+- literal [ˈlɪtərəl]
+    - adj. 字面的
+    - literally adv. 真正地，确实地
 - literate
     - adj. 有读写能力的
     - illiterate adj. 不识字的，文盲的
-- literature n. 文学；文学作品；（某学科的）文献
+- literature [ˈlɪtrətʃər]
+    - n. 文学；文学作品；（某学科的）文献
+    - Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
+      material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous
+      experiences—music, **literature**, religion and *philosophy([fəˈlɑːsəfi] n. 哲学)*.
 
 ## nuclear
 
 - adj. 核能的
 - nuclear power 核能
-- core n. 核心（团体）；（问题的）核心； adj. 核心的；核心成员的
+- core
+    - n. 核心（团体）；（问题的）核心；
+    - adj. 核心的；核心成员的
 
 ## origin
 
 - n. 起源
-- original adj. 最初的；原作的
-- originally adv. 起初
-- originate
+- original
+    - adj. 最初的；原作的
+    - originally adv. 起初
+- **R(结果)** result from C(原因) C导致了R
+    - == originate from
+    - == derive from
+    - == stem from
+    - == spring from
+- originate [əˈrɪdʒɪneɪt]
     - v. 来自；起源；发明
-    - originate from 起源于
-- derive
+    - Hindrance to the reform of the legal system **originates from**...
+- derive [dɪˈraɪv]
     - v. 从...衍生出；起源于
-    - derive from == originate from == stem from
-    - Elegance，he believed，did not derive from abundance.
-- stem
+    - *Elegance(n. 优雅)*, he believed, did not **derive from** abundance.
+- stem [stem]
     - vi. 起源于
-    - stem form
-    - The researchers' argument stems from a simple observation about social influence.
+    - The researchers' argument **stems from** a simple observation about social influence.
 
 ## perceive
 
+- [pərˈsiːv]
 - v. 感知；注意到；将...理解为
+- The consequence is that you **perceive** that the trip has taken less time than it actually has.
 - perception
-    - n. 感知
+    - n. 感知；看法；印象
     - == understanding
-- detect vt. 察觉
+    - Favoritism in official access can fan public **perceptions** of *corruption(n. 腐败，贪污)*.
+- detect
+    - vt. 察觉
+    - == perceive
 
 ## Words
 
-- absent adj. 缺席的
-- absent-minded adj. 心不在焉的
-- tyrannical adj. 残暴的
-- sharpen
-    - v. 使锋利
-    - sharpen the skills 提升技能
+- pragmatic [præɡˈmætɪk]
+    - adj. 实际的; 实用主义的; 好管闲事的; 国事的
+- actually
+    - adv. 的确，事实上
+- stubbornly [ˈstʌbɚnɪ]
+    - adv. 倔强地，顽强地，顽固地
+- delight [dɪˈlaɪt]
+    - vt. 使高兴
+    - n. 高兴；快乐；
+- conceal
+    - vt. 隐藏；隐瞒（信息）
 
 ## 词组
 
-- result In 导致
-- R result from C 由...导致
-- carry forward 执行；推动
-- be distracted by 分心
-- be involved In 包含
-- be demonstrated by 被...所证明
-
 ## 句式
-

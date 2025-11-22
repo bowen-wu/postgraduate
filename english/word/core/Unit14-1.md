@@ -20,6 +20,8 @@
 ## prepare
 
 - vt. 准备
+- get prepared (to do sth.)
+    - 做好准备（去做某事）
 - unprepared adj. 无准备的
 - preparation
     - n. 准备
