@@ -206,6 +206,8 @@
 - arouse [əˈraʊz]
     - vt. 引起(感情、态度(主观))；唤醒
     - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒
+    - But many middle-class occupations—trucking, financial advice, software engineering—have **aroused** their
+      interest, or soon will.
 - <ins>arise/raise/arouse</ins>
     - A problem <ins>_____</ins>.
     - He <ins>_____</ins> a question.

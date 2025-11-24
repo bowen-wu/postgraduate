@@ -74,6 +74,8 @@
 - particular
     - adj. 特指的；特殊的；尤其的
     - Even better would be to help elevate notions of beauty beyond the material standards of a **particular** industry.
+        - Even better would be to... 更好的做法/选择是... => 倒装句
+        - help do sth./help sb. do sth. 帮助做某事
     - particularly
         - adv. 特别；尤其
         - == especially
@@ -136,6 +138,8 @@
     - n. 看法
     - == concept
     - Even better would be to help elevate **notions** of beauty beyond the material standards of a particular industry.
+        - Even better would be to... 更好的做法/选择是... => 倒装句
+        - help do sth./help sb. do sth. 帮助做某事
 
 ## climate
 

@@ -60,7 +60,10 @@
     - n. 遵守
     - bring sth. into compliance
 - compliant adj. 顺从的
-- violate vt. 违反（法律、协议等）；侵犯
+- violate
+    - vt. 违反（法律、协议等）；侵犯
+    - The court has ruled that police don't **violate** the Fourth Amendment when they go through the wallet or
+      pocketbook of an arrested person without warrant.
 - obey v. 遵守
 - defy
     - vt. 违抗

@@ -39,7 +39,7 @@
 - meaningful adj. 有意义的；易于理解的
 - intend
     - vt. 打算；想要；意指
-    - intend to do sth.
+    - intend to do sth. 打算做某事
     - intention n. 意图
     - intentional
         - adj. 有意的，故意的

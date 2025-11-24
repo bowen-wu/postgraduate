@@ -20,7 +20,7 @@
 ## distort
 
 - vt. 歪曲
-- dis-  ①否定； ②分散 distract
+- dis- ①否定； ②分散 distract
 - The author holds that the current <ins>collective doctrine (集体主义)</ins> shows generally distorted values.
 - twist
     - n. 曲折处
@@ -46,7 +46,8 @@
 - vt. 夸大
 - exaggeration
     - n. 夸大
-    - About a third say the problem of take news lies in "misinterpretation or exaggeration of actual news" via social media.
+    - About a third say the problem of take news lies in "misinterpretation or exaggeration of actual news" via social
+      media.
 - alarmist
     - adj. 危言耸听的
     - This isn't to be alarmist.
@@ -88,13 +89,17 @@
 - loyalty n. 忠诚
 - allegiance
     - n. 忠诚
-    - These terms are also intended to infuse work with meaning—and,as Rakesh Khurana,another professor,points out,increase allegiance to the firm.
+    - These terms are also intended to infuse work with meaning—and,as Rakesh Khurana,another professor,points
+      out,increase allegiance to the firm.
 
 ## arrest
 
+- [əˈrest]
 - v. 逮捕
 - n. 逮捕
-- arrestee n. 被捕者
+- The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or
+  pocketbook of an **arrested** person without warrant.
+- arrestee [əres'ti] n. 被捕者
 - criminal adj. 犯罪的
 - imprisonment n. 监禁
 - victim n. 受害者；牺牲品

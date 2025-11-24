@@ -149,11 +149,16 @@
 ## passion
 
 - n. 激情
-- passionate
+- passionate [ˈpæʃənət]
     - adj. 狂热的
     - ...**passionate** consumers will voice their opinions in quicker，more visible，and much more damaging ways.
 - enthusiasm
     - n. 热情；热衷的事物
+    - 抽象名词 + for/of
+        - 抽象名词 + for + n. 为了n.的\<抽象名词\>/对n.的\<抽象名词\>
+            - 抽象名词于某事
+        - 抽象名词 + of + n. （某人）表现出来的\<抽象名词\>/某人所具有的\<抽象名词\>/某物的\<抽象名词\>特征
+            - 抽象名词属于谁
     - enthusiasm **for** sth. 对某事的热情
         - To sum up, fostering **enthusiasm for** sports and exercise, society can ensure a generation of healthy and
           sportsmanlike citizens.

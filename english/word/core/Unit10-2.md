@@ -189,7 +189,10 @@
     - But if your work is your "passion", you'll be more likely to **devote** yourself to it.
     - earnest
         - adj. 认真的、诚恳的、真挚的
-        - earnestness n. 认真、诚恳的态度
+        - earnestness ['ɜnɪstnəs]
+            - n. 认真、诚恳的态度
+            - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New
+              England an atmosphere of <ins>intellectual **earnestness**(热衷学术)</ins>.
 - dedicate [ˈdedɪkeɪt]
     - vt. 把...奉献给
     - be dedicated to 致力于

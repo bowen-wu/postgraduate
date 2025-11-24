@@ -129,7 +129,8 @@
 - instinct [ˈɪnstɪŋkt]
     - n. 本能；直觉
     - == nature
-    - Mental health has commonly been called conscience, **instinct**, wisdom([ˈwɪzdəm]), common sense, or the inner voice. 
+    - Mental health has commonly been called conscience, **instinct**, wisdom([ˈwɪzdəm]), common sense, or the inner
+      voice.
     - instinctive adj. 本能的
     - instinctively adv. 本能地
 - viscerally [ˈvɪsərəli]
@@ -176,7 +177,9 @@
       differ from those who came before them.
     - inhabitant [ɪnˈhæbɪtənt] n. 居民
 - habitually [həˈbɪtʃuəli] adv. 习惯地
-- habitat [ˈhæbɪtæt] n. （动植物的）生活环境；栖息地
+- habitat [ˈhæbɪtæt]
+    - n. （动植物的）生活环境；栖息地
+    - The environmental conditions of freshwater **habitats** are highly variable.
 
 ## avoid
 

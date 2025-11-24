@@ -19,6 +19,7 @@
 
 ## ease
 
+- [iːz]
 - v. 缓解
 - n. 安逸；容易
 - at ease 放松的；自在的；不拘束的
@@ -48,6 +49,9 @@
     - ...if the district is **essentially** giving a pass to students who do not do their homework because of
       complicated family lives, it is going riskily close to the implication that standards need to be lowered for poor
       children.
+        - give a pass to someone 放过某人、不追究、让某人免于惩罚/要求
+        - go close to sth. 几乎接近，快要滑向（某个不好的结论）
+            - go riskily close to sth. 危险地接近（某个含义/后果）
 - essence [ˈesns] n. 本质
 - indispensable [ˌɪndɪˈspensəbl] 🙂 adj. 不可或缺的
 - fundamental
@@ -83,14 +87,14 @@
         - == rich == sufficient
     - abundance
         - n. 充裕；大量；丰富
-        - *Elegance(n. 优雅)*, he believed, did not derive from **abundance**.
+        - *Elegance(n. 优雅)*, he believed, did not <ins>derive from</ins> **abundance**.
 
 ## ideal
 
 - adj. 理想的
 - n. 理想；完美的人（或事物）；典范
 - What is your **ideal** vacation spot?
-- idealised/idealized
+- idealised
     - adj. 理想化的
     - In the **idealized** version of how science is done, facts about the world are waiting to be *observed* and
       collected by objective researchers who use the scientific method to <ins>carry out(执行；实施；贯彻；完成)</ins>
@@ -113,7 +117,7 @@
 - vt. 敦促
 - vi. 推进；用力按
 - n. 报刊
-- The government is <ins>**pressing** for</ins> an early resolution of the dispute.
+- The government is <ins>**pressing** for(敦促)</ins> an early resolution of the dispute.
 - suppress [səˈpres]
     - vt. 镇压；抑制
     - == curb == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止
@@ -121,7 +125,7 @@
 - depressed
     - adj. 沮丧的
     - depression
-        - n. 抑郁；萧条期
+        - n. 抑郁(症); 消沉; 萧条(期)
         - economic depression 经济萧条
 - squeeze
     - vt. 挤压
@@ -159,8 +163,8 @@
     - vt. （使）隔离，脱离
     - isolated
         - adj. 孤独的；单独的
-        - <ins>No matter how(不管怎样...)</ins> **isolated** you might feel and how serious the situation is, you should
-          always remember that you are not alone.
+        - <ins>No matter how</ins> **isolated** you might feel and how serious the situation is, you should always
+          remember that you are not alone.
             - no matter how 不管怎样...。让步状语从属连词
 
 ## consume
@@ -168,7 +172,7 @@
 - vt. 消耗（燃料、能量、时间等）；吃
 - Don't just **consume** things, create things.
 - consumer n. 消费者
-- consumption n. （能量、事物或材料的）消耗，消耗量；消费
+- consumption [kənˈsʌmpʃn] n. （能量、事物或材料的）消耗，消耗量；消费
 - assume [əˈsuːm]
     - vt. 承担（责任）；认为；显露（特征）
     - We were wrong to **assume** she'd agree.
@@ -181,7 +185,14 @@
 - implicit [ɪmˈplɪsɪt]
     - adj. 不直接言明的；内含的
     - == indirect == unclear
-    - implication n. 可能的影响（或作用、结果）；含意
+    - implication
+        - n. 可能的影响（或作用、结果）；含意
+        - ...if the district is essentially giving a pass to students who do not do their homework because of
+          complicated family lives, it is going riskily close to the **implication** that standards need to be
+          lowered for poor children.
+            - give a pass to someone 放过某人、不追究、让某人免于惩罚/要求
+            - go close to sth. 几乎接近，快要滑向（某个不好的结论）
+                - go riskily close to sth. 危险地接近（某个含义/后果）
 - explicit [ɪkˈsplɪsɪt]
     - adj. 明确的
     - == direct == clear == express

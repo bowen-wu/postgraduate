@@ -66,12 +66,12 @@
 
 ## except
 
-- [ɪkˈspekt]
+- [ɪkˈsept]
 - prep. 除...之外
 - conj. 除了...
 - Not dogs **except** guide dogs.
 - 词组
-    - expect for 除了...以外
+    - except for 除了...以外
 - exception [ɪkˈsepʃn]
     - n. 例外
     - 词组

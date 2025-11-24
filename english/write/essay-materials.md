@@ -7,6 +7,7 @@
 #### General Description
 
 - This pie chart clearly illustrates...
+- The diagram above clearly illustrates... 上面的图标清楚地揭示了
 - The pie chart above clearly reveals...
 - The bar chart above clearly reflects...
 - As can be seen from the bar chart above,... 从上面的柱状图可以看出
@@ -24,6 +25,7 @@
 
 - The primary factors that account for the aforementioned phenomenon can be summarized as follows. 造成上述现象的主要因素可以概括如下
 - Several factors that account for the above-mentioned phenomena could be summarized as follows. 造成上述现象的一些因素可以概括如下
+- Some driving factors that contribute to the above-mentioned change may be summarized as follows. 促成上述变化的一些驱动因素可以概括如下
 - Several primary factors could contribute to this phenomenon. 一些主要原因可以解释这种现象
 - Several factors may contribute to this phenomenon. 可能有几个因素促成了这个现象
 - Several primary causes that contribute to the above-mentioned phenomenon could be summarized as follows.
@@ -33,6 +35,7 @@
 
 - On the one hand, ... On the other hand, ... 一方面，另一方面
 - In the first place, ... In the second place, ... 首先, 其次
+- First and foremost, ... In addition, ... 首先，此外
 - To start with, ... Furthermore..., ... 首先，此外
 - To start with, ... Moreover, ... 首先，其次
 
@@ -42,6 +45,7 @@
 
 - Taking all these factors into consideration, 考虑到所有这些因素
 - To sum up, 总之
+- Meanwhile 与此同时
 - With due consideration of all these contributors, 充分考虑到所有这些因素
 - Accordingly, 因此
 

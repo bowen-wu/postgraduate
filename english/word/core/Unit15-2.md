@@ -19,15 +19,16 @@
 
 ## strict
 
+- [strɪkt]
 - adj. 严格的
-- rigid adj. 过于严格的；死板的
-- harsh
+- rigid [ˈrɪdʒɪd] adj. 过于严格的；死板的
+- harsh [hɑːrʃ]
     - adj. 残酷的
     - harsh weather
-- slack
+- slack [slæk]
     - adj. 懈怠的
     - Everybody loves a fat pay rise. Yet pleasure at your own can vanish if you learn that a colleague has been given a
-      bigger one. Indeed, if he has a reputation for **slacking**, you might even <ins>be outraged(感到愤怒)</ins>.
+      bigger one. Indeed, if he has a reputation for **slacking**, you might even be outraged(['aʊtreɪdʒəd] adj. 愤慨).
 - idleness n. 懒惰
 
 ## treat
@@ -39,7 +40,7 @@
     - n. 对待；治疗
     - If connections can be bought, a basic premise of democratic society—that all are equal in **treatment** by
       government—is undermined.
-- cure
+- cure [kjʊr]
     - vt. 治好（疾病）；
     - n. （解决问题、改善糟糕情况等的）措施
     - cure vs treatment
@@ -75,15 +76,16 @@
     - ...passionate consumers will voice their opinions in quicker, more **visible**, and much more damaging ways.
     - invisible adj. 无形的
     - visibility n. 明显性
-- visual
+- visual [ˈvɪʒuəl]
     - adj. 视觉的
-    - visualize vt. 设想
+    - visualize [ˈvɪʒuəlaɪz] vt. 设想
 - supervise
-    - vt. 指导
+    - vt. 指导；监督
     - supervision n. 监督
 
 ## voluntary
 
+- [ˈvɑːlənteri]
 - adj. 自愿的；自发的
 - involuntary adj. 非自愿的
 - volunteer
@@ -94,26 +96,28 @@
     - adj. 感激；被迫做某事
     - be obliged to do sth.
     - == duty-bound adj. 义不容辞的
-- compulsive
+- compulsive [kəmˈpʌlsɪv]
     - adj. 难以制止的
-    - **Compulsive** people have **irresistible** urges to do certain things, like a compulsive gossip who simply cannot
-      keep a secret.
+    - **Compulsive** people have **irresistible** urges to do certain things, like a **compulsive**
+      gossip([ˈɡɑːsɪp] 爱说长道短的人) who simply cannot keep a secret.
     - He was a **compulsive** gambler and <ins>often heavily in debt(债台高筑)</ins>.
-    - compulsory
+    - compulsory [kəmˈpʌlsəri]
         - adj. 强迫的; 义务的; 规定的
         - **compulsory** courses 必修课
         - selective/optional courses 选修课
 
 ## absorb
 
+- [əbˈzɔːrb]
 - vt. 吸收；使并入；🙂 理解；吸引全部注意力；承受😔
 - I never <ins>feel overwhelmed(感到不堪重负/压力很大)</ins> with the amount of information my brain **absorbs**.
 - be absorbed in 全神贯注于...
     - == concentrate on
-- Better not to fancy something when the evening sun sets, but to <ins>be **absorbed** in</ins> word when the morning
-  sun rise. 🙂
+- Better not to *fancy([ˈfænsi] v. 幻想)* something when the evening sun sets, but to <ins>be **absorbed** in</ins> work
+  when the morning sun rises. 🙂
+    - Better not to... but to... 与其...不如...
 - During the same period, families have been asked to **absorb** much more risk in their retirement income. 😔
-- absorption n. 吸引；并入；专心致志
+- absorption [əbˈsɔrpʃn] n. 吸引；并入；专心致志
 - assimilation [əˌsɪməˈleɪʃn]
     - n. 吸收；同化
     - Now, consider three indices of **assimilation**—language, home ownership and intermarriage.
@@ -122,43 +126,47 @@
 
 - n. 飞机
 - flight n. 飞行；航班
-- aerial adj. 航空的
-- astronomer
+- aerial [ˈeriəl] adj. 航空的
+- astronomer [əˈstrɑːnəmər]
     - n. 天文学家
     - astronomy n. 天文学
-    - astronomical adj. 天文学的
-- atmosphere
+    - astronomical [ˌæstrəˈnɑːmɪkl] adj. 天文学的
+- atmosphere [ˈætməsfɪr]
     - n. 气氛；大气层；空气
     - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New England
       an **atmosphere** of <ins>intellectual earnestness(热衷学术)</ins>.
 - space
     - n. 空间
-    - cyberspace n. 网络空间
+    - cyberspace [ˈsaɪbərspeɪs] n. 网络空间
 
 ## ancient
 
+- [ˈeɪnʃənt]
 - adj. 古代的；古老的
-- ancestor n. 祖先
-- ancestry n. （统称）祖先
-- descendant n. 后代
+- ancestor [ˈænsestər] n. 祖先
+- ancestry [ˈænsestri] n. （统称）祖先
+- descendant [dɪˈsendənt] n. 后代
 
 ## elite
 
+- [eɪˈliːt]
 - adj. 精英的
 - n. 精英
-- The Olympic bidders...wanted to get more people doing sport and to produce more **elite** athletes.
-- elitism n. 精英主义
+- The Olympic bidders...wanted to get more people doing sport and to produce more **elite**
+  *athletes([ˈæθliːt] n. 运动员)*.
+- elitism [eɪˈliˌtɪzəm] n. 精英主义
 - talent n. 人才；天赋
 
 ## dominate
 
+- [ˈdɑːmɪneɪt]
 - vt. 主导，控制；在...中具有最重要（或明显）的特色
 - dominant [ˈdɑːmɪnənt]
     - adj. 主导的
     - The Administration is <ins>**dominant** over(对...占据主导地位/控制权)</ins> immigration issues.
 - dominance
     - n. 统治地位
-    - predominance
+    - predominance [prɪˈdɑmɪnəns]
         - n. （一类人或物在数量上的）优势
         - == dominance
         - There seems to be a **predominance** of short-term thinking <ins>at the expense of(在牺牲...的情况下)</ins>
@@ -172,15 +180,16 @@
 - confusing adj. 难以理解的
 - chaos
     - n. 混乱
-    - chaotic
+    - chaotic [keɪˈɑtɪk]
         - adj. 混乱的
-        - The traffic in the city is **chaotic** in the rush hour.
-- puzzle
+        - The traffic in the city is **chaotic** <ins>in the rush hour(在高峰时段)</ins>.
+- puzzle [ˈpʌzl]
     - vt. （使）困惑
     - == confuse
 
 ## convince
 
+- [kənˈvɪns]
 - vt. 说服
 - I am convinced that... 我确信
 - If begging doesn't **convince** your parents to raise your allowance, you might want to try a different tactic—like
@@ -189,12 +198,12 @@
     - adj. 确信的
     - become convinced that + 从句 变得确信...
 - convincing adj. 令人信服的
-- persuade
+- persuade [pərˈsweɪd]
     - vt. 劝说
     - persuasion [pərˈsweɪʒn]
         - n. 劝说
         - Relying on ethical **persuasion** rather than law to address the misuse of body ideals may be the best step.
-    - persuasive
+    - persuasive [pərˈsweɪsɪv]
         - adj. 有说服力的
         - == convincing
 
@@ -202,7 +211,7 @@
 
 - adj. 电子的
 - electronic device 电子设备
-- electric adj. 电的；电动的；供电的
+- electric [ɪˈlektrɪk] adj. 电的；电动的；供电的
 - electrical
     - adj. 与电有关的
     - == electric
@@ -225,10 +234,11 @@
 - overall
     - adj. 总的
     - adv. 总的来说
-- holistic
+- holistic [hoʊˈlɪstɪk]
     - adj. 整体的
-    - Academic inquiry, at least in some fields, may need to become less exclusionary and more **holistic**.
-- wholly adv. 完全地；完整地
+    - Academic inquiry, at least in some fields, may need to become less *exclusionary(adj. 排他的)* and more
+      **holistic**.
+- wholly [ˈhoʊlli] adv. 完全地；完整地
 - absolute adj. 绝对的；完全的；明确的
 
 ## Words
@@ -240,14 +250,14 @@
 - absent
     - adj. 缺席的
     - absent-minded adj. 心不在焉的
-- tyrannical
+- tyrannical [tɪˈrænɪkəl]
     - adj. 残暴的
-- sharpen
+- sharpen [ˈʃɑːrpən]
     - v. 使锋利
     - sharpen the skills 提升技能
-- languid
+- languid [ˈlæŋɡwɪd]
     - adj. 疲倦的; 没精打采的，呆滞的; 萧条的; 慢吞吞
-- arguably
+- arguably [ˈɑːrɡjuəbli]
     - adv. 可论证地; 可以说; 按理说
     - Efforts in Canada and elsewhere have been **arguably languid** at best.
 

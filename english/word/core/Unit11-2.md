@@ -28,7 +28,7 @@
     - cover up 遮盖；隐藏
 - Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
 - It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 挑衅的)* magazine **cover**
-  story, "I love My Children, I Hate My Life, " is <ins>arousing much chatter(引起大量议论)</ins>.
+  story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
 - discover
     - vt. 发现；发明
     - discovery
@@ -141,7 +141,14 @@
     - The justices had to *specify([ˈspesɪfaɪ] 明确规定)* *novel([ˈnɑːvl] adj. 新颖的)* rules for the new personal
       **domain** of the passenger car then.
 - acreage [ˈekərɪdʒ] n. 土地面积
-- district [ˈdɪstrɪkt] n. 行政区
+- district [ˈdɪstrɪkt]
+    - n. 行政区
+    - ...if the **district** is essentially giving a pass to students who do not do their homework because of
+      complicated family lives, it is going riskily close to the implication that standards need to be lowered for poor
+      children.
+        - give a pass to someone 放过某人、不追究、让某人免于惩罚/要求
+        - go close to sth. 几乎接近，快要滑向（某个不好的结论）
+            - go riskily close to sth. 危险地接近（某个含义/后果）
 - region n. 地区；身体部位
 
 ## purchase
@@ -220,7 +227,14 @@
 - adj. 复杂的
 - == complicated
 - complexity [kəmˈpleksəti] n. 复杂性
-- complicated [ˈkɑːmplɪkeɪtɪd] adj. 复杂的
+- complicated [ˈkɑːmplɪkeɪtɪd]
+    - adj. 复杂的
+    - ...if the district is essentially giving a pass to students who do not do their homework because of
+      **complicated** family lives, it is going riskily close to the implication that standards need to be lowered for
+      poor children.
+        - give a pass to someone 放过某人、不追究、让某人免于惩罚/要求
+        - go close to sth. 几乎接近，快要滑向（某个不好的结论）
+            - go riskily close to sth. 危险地接近（某个含义/后果）
 - intricate [ˈɪntrɪkət]
     - adj. 复杂精细的
     - intricacy [ˈɪntrɪkəsi]

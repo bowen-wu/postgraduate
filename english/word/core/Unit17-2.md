@@ -57,6 +57,7 @@
 
 ## modest
 
+- [ˈmɑːdɪst]
 - adj. 适度的；谦虚的；普通的
 - adj. 适度的，较少的
 - He lives on a modest income.
@@ -68,9 +69,10 @@
 
 - n. 部分；比例
 - The **proportion** of Spring Festival gifts *accounted for/occupy([ˈɑːkjupaɪ])* 40 percent.
-- disproportionately
-    - adv. 不成比例地
-    - squeeze 挤压
+- disproportionately [ˌdɪsprə'pɔʃənətlɪ]
+    - adv. 不成比例地；不匀称，不相称
+    - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
+      middle class **disproportionately squeezed**.
 - percent
     - n. 百分比
     - percentage n. 百分比

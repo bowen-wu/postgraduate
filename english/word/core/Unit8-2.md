@@ -29,7 +29,11 @@
     - v. 执行
     - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be
       arbiters([ˈɑrbɪtə(r)] n. 裁决者) of their beauty.
-    - enforcement n. 执行
+    - enforcement
+        - n. 执行
+        - The White House claims that its power of **enforcement** outweighs that held by the states.
+        - That's because Congress has always *envisioned([enˈvɪʒənd] vt. 设想)* joint federal-state immigration
+          **enforcement**.
 - compel [kəmˈpel]
     - vt. 迫使
     - The European Union is now considering legislation to **compel** corporate boards to maintain a certain proportion

@@ -23,7 +23,7 @@
 - get prepared (to do sth.)
     - 做好准备（去做某事）
 - unprepared adj. 无准备的
-- preparation
+- preparation [ˌprepəˈreɪʃn]
     - n. 准备
     - == readiness
 - readiness
@@ -32,7 +32,6 @@
       take to prevent what I call "work-life **unreadiness**".
 - reluctant 😔
     - adj. 不情愿的
-    - == uneager
     - If the adjective **reluctant** applies to you, it means that you are undergoing some **inner struggle** and are
       **unwilling or unable to decide**.
     - reluctance
@@ -99,8 +98,8 @@
     - n. 策略
     - == method（具体）
     - **Tactic** is another word for a **maneuver([məˈnuvər] n. 策略)** or **method**.
-    - If begging doesn't convince your parents to raise your allowance, you might want to try a different **tactic**
-      —like doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
+    - If begging doesn't *convince(vt. 说服)* your parents to raise your allowance, you might want to try a different
+      **tactic**—like doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
 - skillful adj. 娴熟的
 
 ## trouble
@@ -119,13 +118,13 @@
 
 - [weɪ]
 - vi. （对看法或结果）有影响
-- vt. 称...的重量；权衡
+- vt. 权衡；称...的重量
 - 词组
     - weigh on 使（某人或某人的精神等）忧虑
     - weigh down 使负荷太重
-    - weigh in **加入**比赛；（在讨论、辩论等中）发表有分量的意见；（赛前）测体重
+    - weigh in （在讨论、辩论等中）发表有分量的意见；**加入**比赛；（赛前）测体重
 - Republican Speaker of the House of Representatives John Boehner was also quick to **weigh in**.
-- Two *potential(adj. 潜在的)* giants may yet **weigh in**.
+- Two potential giants may yet **weigh in**.
 - Leading doctors today **weigh in** on the debate over the government's role in promoting public health...
 - A federal appeals court **weighed in** again Tuesday, but instead of providing a badly needed resolution, it only
   *prolonged(vt. 延长)* the fight.
@@ -149,8 +148,8 @@
 - 词组
     - be worth doing sth. 值得做某事
     - be worth sb.'s while (to do/doing sth.) 值得某人做某事
-- How much is this painting **worth**?
 - It's not **worth** losing sleep over.
+- How much is this painting **worth**?
 - worthwhile
     - adj. 值得的
     - It is **worthwhile** to do sth. 做某事是值得的
@@ -177,6 +176,7 @@
     - v. 协商
     - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that *each want
       something* out of the deal.
+        - out of 在...之外；（== form）从...中获得、因...、由...
     - You might **negotiate** with your mom—offering to do more *chores([tʃɔːr] n. 家务活)* for a rise in your
       allowance.
     - Two companies debate the terms of a contract.
@@ -215,10 +215,10 @@
 - outlive v. 比...活的长
 - renaissance
     - n. (the R-)文艺复兴（时期）；复兴
-    - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* the
-      exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的) <ins>lives of great men(伟人的人生)</in>.
-    - Havaiian culture is not a relic([ˈrelɪk] n. 遗物) of the past; it is a living culture undergoing a **renaissance**
-      today.
+    - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* <ins>the
+      *exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的)* lives of great men(伟人的典范人生)</in>.
+    - Havaiian culture is not a *relic([ˈrelɪk] n. 遗物)* of the past; it is a living culture undergoing a
+      **renaissance** today.
 
 ## connect
 
@@ -235,7 +235,7 @@
     - in contact with sb. 与某人保持联系
 - constitute [ˈkɑːnstɪtuːt]
     - v. 组成，构成；成立
-    - To **constitute** is to **make up** a whole from smaller parts, or "constituents".
+    - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**".
     - "What **constitutes** a family?" means "What **makes up** a family?"
     - constituent [kənˈstɪtʃuənt] n. （选区的）选民；成分
 - joint

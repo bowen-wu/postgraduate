@@ -32,7 +32,7 @@
     - sustainable [səˈsteɪnəbl]
         - adj. 可持续的
         - Yet this enormous resource is not contributing enough to today's global challenges, including climate change,
-          security, **sustainable** development and health.
+          security, <ins>**sustainable** development(可持续发展)</ins> and health.
     - sustainably adv. 可持续地
     - sustainability [səˌsteɪnəˈbɪləti]
         - n. 可持续性
@@ -198,6 +198,7 @@
 - adj. 学术的
 - n. 学者
 - academic pursuits 学术追求
+- **Academic** inquiry, at least in some fields, may need to become less exclusionary and more holistic.
 - I decided to stay on <ins>the **academic** assembly line</ins>. 我决定继续留在学校体系中深造
 - academically adv. 学术上；学业上
 - academy [əˈkædəmi] n. 学院

@@ -37,7 +37,10 @@
     - vi. 包括
     - extensive
         - adj. 广泛的
-        - extensively adv. 广泛地
+        - extensively
+            - adv. 广泛地
+            - These men wrote and published **extensively**, reaching both New World and Old World audiences, and giving
+              New England an atmosphere of <ins>intellectual earnestness(热衷学术)</ins>.
     - extent n. 程度
     - extension n. 延期
 - expand
@@ -160,7 +163,7 @@
     - undesirable
         - adj. 不受欢迎的，讨厌的; 不合需要的; 不方便的; 不良的
         - n. 不受欢迎的人; 不良分子
-- eager
+- eager [ˈiːɡər]
     - adj. 热切的；渴望的
     - == desirable
     - eagerness n. 渴望
@@ -179,7 +182,7 @@
     - expect to do sth.
     - expectation
         - n. 期望
-        - The new vaccine, which is different from the annual flu vaccine, is available ahead of **expectations**.
+        - The new *vaccine([vækˈsiːn])*, which is different from the annual flu vaccine, is available ahead of **expectations**.
     - unexpected adj. 意外的
 
 ## direct
@@ -223,7 +226,7 @@
 - skeptical [ˈskeptɪkl] 😔
     - adj. 怀疑的
     - be skeptical about... 对...持怀疑态度
-    - ...people who were at first **skeptical** about express delivery business service now become convinced that it is
+    - ...people who <ins>were</ins> at first <ins>**skeptical** about</ins> express delivery business service now become convinced that it is
       safe and reliable.
     - skepticism/scepticism [ˈskɛptɪˌsɪzəm] n. 怀疑主义；怀疑态度 😔
 - challenge

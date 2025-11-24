@@ -46,7 +46,14 @@
 - When education becomes one-size-fits-all, it **risks** overlooking(v. 忽视) a nation's diversity of gifts.
 - risky [ˈrɪski]
     - adj. 有危险或风险的
-    - riskily adv. 冒险地
+    - riskily
+        - adv. 冒险地
+        - ...if the district is essentially giving a pass to students who do not do their homework because of
+          complicated family lives, it is going **riskily** close to the implication that standards need to be lowered
+          for poor children.
+            - give a pass to someone 放过某人、不追究、让某人免于惩罚/要求
+            - go close to sth. 几乎接近，快要滑向（某个不好的结论）
+                - go riskily close to sth. 危险地接近（某个含义/后果）
 - adventure
     - v. 去某地探险
     - n. 冒险; 奇遇; 冒险精神
@@ -119,6 +126,8 @@
 ## deal
 
 - n. 交易；协议；大量
+- owe a great deal to 很大程度上得益于...
+- The reforms <ins>owe a great **deal** to</ins> the resolution of one man.
 - Do we have a deal?
     - Deal!
 - 词组

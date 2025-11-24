@@ -55,6 +55,7 @@
 - recruit [rɪˈkruːt] 
   - vt. 招募
   - == employ
+  - recruitment n. 招募; 招聘
 
 ## engineer
 
@@ -63,7 +64,7 @@
 - engineering n. 工程学
 - mechanism [ˈmekənɪzəm]
     - n. 机制；机械装置
-    - It is fair to criticize and question the **mechanism**—that is, the culture of research—<ins>after all</ins>,
+    - It is fair to criticize and question the **mechanism**—that is the culture of research—<ins>after all</ins>,
       but it is the prize-givers' money to do with as they please.
     - mechanical [məˈkænɪkl] adj. 机械的；机械般的
     - mechanize [ˈmɛkəˌnaɪz] vt. 使机械化
@@ -115,7 +116,7 @@
 - He **insisted** that he was *innocent(adj. 无罪的)*.
 - He **insists** that she should come.
 - insistence n. 坚持
-- assist
+- assist [əˈsɪst]
     - v. 帮助
     - assistance n. 帮助
     - assistant adj. 助理的
@@ -167,9 +168,9 @@
 
 - [əbˈteɪn]
 - vt. 获得
-- **Obtain** means to **get something that is not so easy to come** by such as knowleget, rights, or a large amount of
+- **Obtain** means to **get something that is not so easy to come** by such as knowledge, rights, or a large amount of
     money.
-- You wouldn't say you **obtained** a parir of pants unless they were one of a kind.
+- You wouldn't say you **obtained** a pair of pants unless they were one of a kind.
 - Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins> <ins>the bulk of(...的大部分)</ins>
   our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to **obtain**
   images of unsurpassed clarity. 坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
@@ -232,13 +233,13 @@
     - adj. 合作的
 - destructive [dɪˈstrʌktɪv]
     - adj. 破坏性的
-- toddler
+- toddler [ˈtɑːdlər]
     - n. 蹒跚行走的人; 幼童装; 学步的幼儿
 - princess [ˈprɪnses]
     - n. 公主
-- kitten
+- kitten [ˈkɪtn]
     - n. 小猫; 小动物
-- interference
+- interference [ˌɪntərˈfɪrəns]
     - n. 干涉，干扰，冲突; 介入; 妨碍，打扰，阻碍物; 冲突，抵触
 - instrument [ˈɪnstrəmənt]
     - n. 仪器，器械，工具；乐器
