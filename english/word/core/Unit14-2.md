@@ -21,7 +21,9 @@
 
 - [ˌkɑːmpəˈtɪʃn]
 - n. 竞争
-- compete [kəmˈpiːt] vi. 竞争
+- compete [kəmˈpiːt] 
+  - vi. 竞争
+  - compete with sb.
 - competitive [kəmˈpetətɪv]
     - adj. 竞争的
     - == aggressive [əˈɡresɪv] adj. 好强的🙂; 攻击性强的😔
@@ -29,7 +31,11 @@
     - No one likes to lose, but if you are a **competitive** person, it will be especially disappointing to see someone
       else win.
 - competitor [kəmˈpetɪtər] n. 竞争者
-- competent [ˈkɑːmpɪtənt] adj. 能胜任的；有能力的
+- competent [ˈkɑːmpɪtənt] 
+    - adj. 能胜任的；有能力的
+    - If you are **competent**, you have the **necessary ability or skills** to do somethings.
+    - ...all citizens who meet minimal qualifications of age and literacy are equally **competent/qualified** to serve
+      on juries.
 - rival [ˈraɪvl] n. 竞争对手
 
 ## employ
@@ -46,7 +52,9 @@
 - employment
     - n. 工作；就业；雇用
     - unemployment n. 失业；失业率
-- recruit [rɪˈkruːt] vt. 招募
+- recruit [rɪˈkruːt] 
+  - vt. 招募
+  - == employ
 
 ## engineer
 
@@ -66,8 +74,9 @@
 - vt. 等于；导致
 - adj. （大小、数量、价值等）相同的；平等的
 - equally adv. 平等地；同样地；（引出同样重要的内容）同样
-- equality [iˈkwɑːləti] n. 平等
-- inequality n. 不平等
+- equality [iˈkwɑːləti] 
+    - n. 平等
+    - inequality n. 不平等
 - equation [ɪˈkweɪʒn]
     - n. 方程式
     - X and Y in the **equation** are both unknowns.
@@ -81,6 +90,7 @@
 - equivalent [ɪˈkwɪvələnt]
     - adj. （价值、数量、意义、重要性等）相等的；
     - n. 相等的东西
+    - be equivalent of sth.
 - impartial
     - adj. 公正的
     - The kind of activity <ins>makes it less likely that(使...不太可能发生)</ins> the court's decisions will <ins>be
@@ -94,6 +104,7 @@
 - device n. 装置，仪器（个人）
 - equip
     - vt. 配备；使有能力
+    - equip sb. with sth.
     - equipment n. 设备（个人）
 
 ## insist
@@ -112,6 +123,7 @@
     - vi. 由...组成
     - con- 共同
     - consist of 由...组成
+        - == be made up of
     - consistent adj. 一致的
     - inconsistent
         - adj. 反复无常的；不一致的
@@ -119,6 +131,7 @@
     - consistently adv. 持续地
 - persist [pərˈsɪst]
     - vi. 持续存在
+    - persisit in doing sth.
     - persistence n. 坚持
     - persistent adj. 持续的
 - resist [rɪˈzɪst]
@@ -154,6 +167,9 @@
 
 - [əbˈteɪn]
 - vt. 获得
+- **Obtain** means to **get something that is not so easy to come** by such as knowleget, rights, or a large amount of
+    money.
+- You wouldn't say you **obtained** a parir of pants unless they were one of a kind.
 - Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins> <ins>the bulk of(...的大部分)</ins>
   our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to **obtain**
   images of unsurpassed clarity. 坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
@@ -167,8 +183,8 @@
 - 词组
     - in the wake of 跟随...之后
     - wake up 醒来；唤醒；使清醒
-- That means more battles like the one now going on between the Justice Department and California, which enacted
-  <ins>a *tough([tʌf] adj. 强硬的)* net neutrality law</ins> <ins>in the **wake** of</ins> the FCC's abdication.
+- That means more battles like the one now going on between the Justice Department and California, which enacted <ins>a
+  *tough([tʌf] adj. 强硬的)* net neutrality law</ins> <ins>in the **wake** of</ins> the FCC's abdication.
 - awake
     - adj. 醒着的
     - asleep adj. 睡着的
@@ -200,6 +216,7 @@
 - lobby [ˈlɑːbi]
     - v. 游说
     - n. 游说，游说团体
+    - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
 - elect
     - vt. 选举
     - In a direct democracy, citizens take turns governing themselves, rather than **electing** representatives to
@@ -210,6 +227,21 @@
 - candidate n. 候选人
 
 ## Words
+
+- cooperative
+    - adj. 合作的
+- destructive [dɪˈstrʌktɪv]
+    - adj. 破坏性的
+- toddler
+    - n. 蹒跚行走的人; 幼童装; 学步的幼儿
+- princess [ˈprɪnses]
+    - n. 公主
+- kitten
+    - n. 小猫; 小动物
+- interference
+    - n. 干涉，干扰，冲突; 介入; 妨碍，打扰，阻碍物; 冲突，抵触
+- instrument [ˈɪnstrəmənt]
+    - n. 仪器，器械，工具；乐器
 
 ## 词组
 

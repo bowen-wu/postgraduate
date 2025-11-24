@@ -138,8 +138,8 @@
 - v. 使融入
 - disintegration
     - n. 瓦解；解体
-    - save A from B 拯救A免遭B
-    - save Europe's single currency from disintegration
+    - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck(adj. 动不了的)*.
+        - save A from B 使A免于B/拯救A不至于B
 - integrity
     - n. 完整；正值；诚实
     - == righteousness
@@ -154,7 +154,10 @@
     - He used to reign over popular music，always topping the charts.
     - reigning monarch 统治地位的君主
 - throne n. 王座
-- sovereign adj. 有主权的
+- sovereign
+    - adj. 有主权的
+    - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would **boost** the farming industry,
+      political *sovereignty([ˈsɑːvrənti] n. 国家的主权)* and even the nation's health.
 
 ## Words
 

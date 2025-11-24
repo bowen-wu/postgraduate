@@ -51,10 +51,7 @@
 
 - v. 寻求；寻找；试图，设法
 - vt. 请求
-- == look for == search == pursue
-    - pursue [pərˈsuː]
-        - vt. 继续; 追求; 进行; 追捕
-        - vi. 追，追赶; 继续进行
+- == look for == search == pursue [pərˈsuː] vt. 追求
 - **Seek** first to understand then to be understood. 首先寻求理解，然后被理解
 - 词组
     - seek out 找到；追寻到
@@ -130,14 +127,13 @@
 - necessarily adv. 必然地
 - necessity [nəˈsesəti] n. 必要
 - entail
-    - vt. 需要；牵涉；
+    - vt. 需要；牵涉
     - v. 使必要，需要
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
     - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating
-      a
-      task.
+      a task.
 
 ## source
 
@@ -156,7 +152,9 @@
 - Some blame(n. 责任) for the **current** *controversy(n. 争论; 辩论)* belongs to astronomers.
 - currency
     - n. 货币，通货
-    - Yet the debate about how to save Europe's single **currency** from disintegration(n. 瓦解) is stuck(adj. 动不了的)
+    - Yet the debate about how to save Europe's single **currency** from *disintegration(n. 瓦解)* is
+      *stuck(adj. 动不了的)*.
+        - save A from B 使A免于B/拯救A不至于B
 - currently adv. 当前
 - occur [əˈkɜːr]
     - vi. 发生，出现
@@ -175,9 +173,9 @@
 
 - vi. (~ on)取决于；依靠
 - **Depend** on yourself; you won't be let down. 靠自己，你就不会被辜负
-- dependency n. 依赖
+- dependency [dɪˈpendənsi] n. 依赖
 - dependent adj. 依赖的；取决于...的
-- independence
+- independence [ˌɪndɪˈpendəns]
     - n. 独立；自力
     - independent adj. 独立的
 - rely
@@ -221,12 +219,12 @@
     - Weaver and his family have been persecuted([ˈpɜːrsɪkjuːt] v. **迫害**) by the **authorities** for their
       beliefs([bɪ'lifs] n. 信仰).
     - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
-    - authorization [ˌɔθərəˈzeɪʃn] n. 授权
 - authentic [ɔːˈθentɪk]
     - adj. 真实的；可靠的；正宗的
     - Kids need a range of **authentic** role models.
 - authorize [ˈɔːθəraɪz]
     - v. 批准; 授权
+    - authorization [ˌɔθərəˈzeɪʃn] n. 授权
 
 ## responsibility
 
@@ -282,7 +280,7 @@
     - n. 终极; 顶点; 基本原理; 基本事实
     - == final
 - renaissance [ˈrenəsɑːns]
-    - n. 文艺复兴（时期）; 复活，复燃
+    - n. (the R-)文艺复兴（时期）；复兴
 
 ## 词组
 
