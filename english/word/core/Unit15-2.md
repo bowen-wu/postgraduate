@@ -149,12 +149,12 @@
 
 ## elite
 
-- [eɪˈliːt]
+- [ɪˈliːt]
 - adj. 精英的
 - n. 精英
 - The Olympic bidders...wanted to get more people doing sport and to produce more **elite**
   *athletes([ˈæθliːt] n. 运动员)*.
-- elitism [eɪˈliˌtɪzəm] n. 精英主义
+- elitism [ɪˈliˌtɪzəm] n. 精英主义
 - talent n. 人才；天赋
 
 ## dominate
@@ -169,8 +169,8 @@
     - predominance [prɪˈdɑmɪnəns]
         - n. （一类人或物在数量上的）优势
         - == dominance
-        - There seems to be a **predominance** of short-term thinking <ins>at the expense of(在牺牲...的情况下)</ins>
-          long-term investing.
+        - <ins>There seems to be(似乎存在)</ins> <ins>a **predominance** of(...占主导地位/占多数/占优势)</ins>
+          short-term thinking <ins>at the expense of(在牺牲...的情况下)</ins> long-term investing.
 
 ## confuse
 
@@ -255,11 +255,6 @@
 - sharpen [ˈʃɑːrpən]
     - v. 使锋利
     - sharpen the skills 提升技能
-- languid [ˈlæŋɡwɪd]
-    - adj. 疲倦的; 没精打采的，呆滞的; 萧条的; 慢吞吞
-- arguably [ˈɑːrɡjuəbli]
-    - adv. 可论证地; 可以说; 按理说
-    - Efforts in Canada and elsewhere have been **arguably languid** at best.
 
 ## 词组
 

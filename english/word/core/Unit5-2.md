@@ -224,6 +224,12 @@
 - [ˈɑːrɡjuː]
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
+- arguable
+    - adj. 可论证的；有一定理由的；有争议的
+    - arguably [ˈɑːrɡjuəbli]
+        - adv. 可论证地; 可以说; 按理说
+        - Efforts in Canada and elsewhere have been **arguably languid** at best.
+            - languid [ˈlæŋɡwɪd] adj. 疲倦的; 没精打采的，呆滞的; 萧条的; 慢吞吞
 - argument
     - n. 观点；争论；论据
     - Least rousing, he thinks, was rational **argument**, although his co-authors say reason might
