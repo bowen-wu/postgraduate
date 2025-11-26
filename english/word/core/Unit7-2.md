@@ -107,6 +107,7 @@
         - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
 - practical
     - adj. 实际的；实践性的
+    - practical skills 实用性的技能
     - impractical adj. 不切实际的
     - practically
         - adv. 几乎；实际地
