@@ -77,7 +77,7 @@
 - v. 反映；深思
 - Taking time to **reflect**.
 - reflection
-    - n. 反映；思考
+    - n. 思考；反映
     - It's a **reflection** *simply(adv. 仅仅)* of people generally thinking well of themselves. 这种情况只是通常自我感觉良好的那种人的一种反映
     - above-average effect 优于平均效应
 - reflective

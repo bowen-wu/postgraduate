@@ -29,6 +29,7 @@
 - occupy
     - vt. 占据（空间、面积、时间等）
     - == account for + 百分比
+    - ...**occupying** their conscious working memory.
     - occupation [ˌɑːkjuˈpeɪʃn]
         - n. 职业；侵占；占领
         - ...a painful reminder of the **occupation** of what was once a sovereign nation. ...这是对那个曾经主权独立的国家如今遭受占领的惨痛提醒
@@ -69,7 +70,7 @@
 - vt. 改变
 - vi. 变化
 - == change
-- My opinion of my whole experience **varies** from time to time.
+- My opinion of my whole experience **varies** <ins>from time to time(偶尔/时不时/不时地)</ins>.
 - variation [ˌveriˈeɪʃn]
     - n. （数量、水平等的）变化；变体
     - variety
@@ -144,9 +145,9 @@
       students 'like them' can improve.
     - insightful [ˈɪnˌsaɪtfəl]
         - adj. 富有洞察力的
-        - It's no surprise that Jennifer Senior’s **insightful**, provocative([prəˈvɑːkətɪv] adj. 挑衅的) magazine cover
-          story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
-- horizon n. (欲望、知识或兴趣的)范围，眼界
+        - It's no surprise that Jennifer Senior’s <ins>**insightful**, provocative([prəˈvɑːkətɪv] adj. 引人深思的)<ins>
+          magazine cover story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
+- horizon n. （欲望、知识或兴趣的）范围，眼界
 
 ## active
 
@@ -158,8 +159,8 @@
 
 - [əˈdæpt]
 - v. （使）适应
-- adapt sth. for sth.
-- adapt (oneself) to sth.
+- adapt sth. for sth. 为某个目的而改编/改造某物
+- adapt (oneself) to sth. 适应某事/某环境
 - adaptable
     - adj. 能适应的
     - be adaptable to

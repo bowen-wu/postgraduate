@@ -64,8 +64,10 @@
 ## intuitive
 
 - adj. 直觉的
+- Demonstrating the **intuitive** nature of the social precessing.
 - intuition
     - n. 直觉
+    - **Intuition**'s special powers are unleashed only in certain circumstances.
     - == instinct
 - illusion
     - n. 错觉

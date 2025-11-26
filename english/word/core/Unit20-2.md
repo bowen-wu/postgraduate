@@ -65,6 +65,7 @@
 - adj. 故意的
 - deliberation
     - n. 仔细考虑；深思熟虑
+    - **Deliberation** focused them on vivid but misleading cues.
     - thoughtfulness
 - deliberately adv. 故意；从容谨慎的
 
@@ -93,7 +94,7 @@
     - n. 介入
     - == interference
 - interfere vi. 干涉，介入；妨碍；干扰
-- interference
+- interference [ˌɪntərˈfɪrəns]
     - n. 干涉
     - The number of women on corporate boards has been steadily increasing without government interference.
 
@@ -170,7 +171,8 @@
     - overwhelming adj. （数量上）压倒性的
     - overwhelmingly
         - adv. 压倒性地；不可抵抗地
-        - ...students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain？
+        - ...students should be able to name the 13th president of the United States but be utterly overwhelmed by a
+          broken bike chain？
 
 ## constitute
 

@@ -179,7 +179,9 @@
 - vt. 欺骗
 - n. 诀窍
 - ...a marketing trick that has turned the pork sandwich into an object of obsession.
-- deceive vt. 欺骗
+- deceive
+    - vt. 欺骗
+    - deception n. 欺骗
 - fraud n. 欺诈罪
 - disguise
     - vt. 伪装

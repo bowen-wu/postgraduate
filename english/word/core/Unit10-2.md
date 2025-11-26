@@ -49,7 +49,7 @@
     - v. 相互关联；显示紧密联系
     - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
       *predicted(vt. 预测)* the *opposite([ˈɑːpəzɪt] n. 对立物)*.
-        - be **correlated** with 与...相关
+        - be **correlated** *with* 与...相关
         - be positively/negatively **correlated** with 与...正/负相关
     - correlation
         - n. 相互关系，关联；相关

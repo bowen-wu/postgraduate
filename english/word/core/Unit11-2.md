@@ -27,7 +27,7 @@
 - 词组
     - cover up 遮盖；隐藏
 - Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
-- It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 挑衅的)* magazine **cover**
+- It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 引人深思的)* magazine **cover**
   story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
 - discover
     - vt. 发现；发明

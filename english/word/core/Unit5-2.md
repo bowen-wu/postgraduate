@@ -89,6 +89,7 @@
     - n. 率；速度；费用；比率
     - 词组
         - at any rate 无论如何
+    - To **rate** the instructor's overall effectiveness.
     - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
       depression, double the **rate** for working Americans.
 - scale
@@ -135,7 +136,9 @@
 - prefer
     - vt. 更喜欢
     - prefer A to B 比起B更喜欢A
-    - preference n. 偏好；优先考虑
+    - preference
+        - n. 偏好；优先考虑
+        - Thinking too much can also harm our ability to form **preferences**
 
 ## benefit
 

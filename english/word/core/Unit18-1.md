@@ -154,7 +154,7 @@
     - He used to reign over popular music，always topping the charts.
     - reigning monarch 统治地位的君主
 - throne n. 王座
-- sovereign
+- sovereign [ˈsɑːvrɪn]
     - adj. 有主权的
     - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would **boost** the farming industry,
       political *sovereignty([ˈsɑːvrənti] n. 国家的主权)* and even the nation's health.

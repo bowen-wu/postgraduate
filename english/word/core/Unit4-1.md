@@ -43,7 +43,9 @@
         - adj. 有效的；生效的
         - == works well
         - effectively adv. 有效地；实际上
-        - effectiveness n. 效果；有效性
+        - effectiveness
+            - n. 效果；有效性
+            - To rate the instructor's overall effectiveness.
     - ineffective adj. 无效的
     - efficient
         - adj. 高效的
@@ -174,10 +176,13 @@
 - creative
     - adj. 有创造力的；创造性的
     - creative potential 创新潜能
-- creativity [ˌkriːeɪˈtɪvəti] n. 创造力
+- creativity [ˌkriːeɪˈtɪvəti]
+    - n. 创造力
+    - Vocabulary comprehension needs **creativity**.
 - invent [ɪnˈvent]
     - vt. 发明；编造
     - invention n. 发明；发明物；创造能力；编造
+    - inventiveness [ɪn'ventɪvnəs] n. 创造性
     - reinvent
         - vt. 以新形象示人；彻底改造，重新创造
         - **Re-invent** yourself.

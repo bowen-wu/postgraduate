@@ -236,6 +236,7 @@
     - adv. 总的来说
 - holistic [hoʊˈlɪstɪk]
     - adj. 整体的
+    - a holistic impression
     - Academic inquiry, at least in some fields, may need to become less *exclusionary(adj. 排他的)* and more
       **holistic**.
 - wholly [ˈhoʊlli] adv. 完全地；完整地

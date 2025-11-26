@@ -23,7 +23,8 @@
 - ultimate outcome 最终成果
 - ultimately
     - adv. 最终
-    - And ultimately，it is likely to <ins>reshape(重塑)</ins> our politics，our culture，and the character of our society for years.
+    - And ultimately，it is likely to <ins>reshape(重塑)</ins> our politics，our culture，and the character of our society
+      for years.
 
 ## honor/honour
 
@@ -131,13 +132,16 @@
 - abrupt adj. 突然的
 - bankruptcy
     - n. 破产
-    - As the auctioneer called out bids，In New York one of the oldest banks on Wall Street，Lehman Brothers，filed for bankruptcy.
+    - As the auctioneer called out bids，In New York one of the oldest banks on Wall Street，Lehman Brothers，filed for
+      bankruptcy.
 - bribery n. 贿赂
 
 ## comprehend
 
 - v. 理解
-- comprehension n. 理解
+- comprehension
+    - n. 理解
+    - Vocabulary **comprehension** needs creativity.
 - comprehensive adj. 全面的
 
 ## degrade

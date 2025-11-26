@@ -117,7 +117,9 @@
       two-step-flow theory, are supposed to drive social epidemics.
 - accurate [ˈækjərət]
     - adj. 精确的
-    - accuracy [ˈækjərəsi] n. 准确性；精确度
+    - accuracy [ˈækjərəsi]
+        - n. 准确性；精确度
+        - Accuracy dropped dramatically.
 
 ## incentive
 

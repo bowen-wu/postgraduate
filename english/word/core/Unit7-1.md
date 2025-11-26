@@ -30,6 +30,8 @@
     - 词组
         - in one's opinion 依某人的观点
         - have a low opinion of 对...评价不高
+        - opinion of 对...的看法
+    - My <ins>**opinion** of</ins> my whole experience varies from time to time.
 - remark
     - v./n. 评论；标记
     - How could she have let those *enormous([ɪˈnɔːrməs] adj. 巨大的)* bonus payouts pass **unremarked**?
