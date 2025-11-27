@@ -35,6 +35,7 @@
         - n. 发现；发明
         - But it takes *collective(adj. 集体的)* <ins>scrutiny and acceptance</ins> to transform a **discovery** claim
           into a mature **discovery**.
+            - it takes ... to do ... 做某事需要...
 - recovery
     - n. 复苏；康复；恢复
     - economic recovery
@@ -215,7 +216,7 @@
 - gratification [ˌɡrætəfɪˈkeʃən]
     - n. 满足；令人满意的事物
     - == satisfaction
-    - A *feed(vt. 为...提供食物)* will usually provide instant **gratification** to a crying baby.
+    - A *feed(n.（给婴儿）一次喂奶)* will usually provide <ins>instant **gratification**(即时满足)</ins> to a crying baby.
 - cater [ˈkeɪtər]
     - v. 满足...的需要
     - cater **to** sb./sth. 满足...的需要；迎合
@@ -277,6 +278,10 @@
     - n. 自由主义
     - ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom** there is a small
       majority for free-market **liberalism** and economic rigour...</ins>.
+        - a small majority 略占多数
+        - for: 支持；赞成 => 在政治/立法/立场语境下 for == 支持；赞成
+            - voters for the policy 支持该政策的选民
+            - majority for independence 支持独立的多数
 
 ## Words
 

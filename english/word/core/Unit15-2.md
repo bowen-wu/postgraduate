@@ -220,12 +220,12 @@
     - vt. 使带电
     - -fy & -en 使役（使动）后缀
         - 让...变成...、使...变得...
-        - -fy == make/cause to become 多和名词/形容词构成动词
-            - simplify 使简单化
-            - clarify 使清晰化
-        - -en == to make/become 主要是形容词 → 动词
-            - widen 使变宽
-            - brighten 使变亮
+        - -fy == make/cause to become 多和名词/形容词 → **动词**
+            - simplify v. 使简单化
+            - clarify v. 使清晰化
+        - -en == to make/become 主要是形容词 → **动词**
+            - widen v. 使变宽
+            - brighten v. 使变亮
 
 ## entire
 

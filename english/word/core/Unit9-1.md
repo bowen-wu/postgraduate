@@ -66,7 +66,9 @@
 - adj. 实物的；外在的；物理的；身体的
 - physical contact 肢体接触
 - physical asset 实物资产
-- physically adv. 身体上地
+- physically
+    - adv. 身体上地
+        - ...these *creatures(['kritʃəz] n. 生物)* preserve the health of game by killing the **physically** weak.
 - physics [ˈfɪzɪks]
     - n. 物理学
     - The US$3-million <ins>Fundamental **Physics** Prize(基础物理学奖)</ins> is indeed an interesting experiment, as

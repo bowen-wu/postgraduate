@@ -185,6 +185,9 @@
     - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins>
       <ins>persons of(具有...特征的人)</ins> **supposedly** superior <ins>intelligence, education, and
       *moral([ˈmɔːrəl] n. 道德)* character</ins>.
+- position
+    - n. 位置；姿势；地位；观点；职位
+    - Having asserted you **position**(as a position, not as a fact), demonstrate equal curiosity about other views.
 - hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
 - premise [ˈpremɪs]
     - n. 前提，假设

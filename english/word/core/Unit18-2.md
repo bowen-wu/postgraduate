@@ -174,7 +174,7 @@
     - absession n. 迷恋
 - indulge 😔
     - v. 沉溺； vt. 放任
-    - be indulge In sth.
+    - be indulge in sth.
     - indulgence n. 纵容
 - immersive adj. （计算机系统或图像）沉浸式的
 

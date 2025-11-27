@@ -37,7 +37,7 @@
     - result in
         - 造成...结果, 导致
         - R result in **C(结果)** == R cause C == R lead to C
-- Cooperation and sharing can **result from** either sympathy([ˈsɪmpəθi] n. 同情) or guilt([ɡɪlt]).
+- Cooperation and sharing can **result from** either *sympathy([ˈsɪmpəθi] n. 同情)* or *guilt([ɡɪlt])*.
 - consequence
     - n. 结果；后果
     - The **consequence** is that you perceive that the trip has taken less time than it actually has.
@@ -61,7 +61,7 @@
         - n. 被告
         - plaintiff [ˈpleɪntɪf] n. <律>原告
 - prosecute [ˈprɑːsɪkjuːt]
-    - vt. 起诉；
+    - vt. 起诉
     - vi. 担任控方律师
     - sec- 跟
     - The police have decided not to **prosecute** because the evidence is not strong enough.
@@ -76,17 +76,18 @@
     - Court Of Appeals
     - <ins>Above all(最重要的是)</ins>, the dress does **appeal** to her.
     - He will **appeal** to the state for an extension of unemployment benefits.
+        - appeal to sb for sth 请求/呼吁某人给予某物
     - Despite the **appeals** court's decision, big questions remain unanswered.
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释
-    - To **plead with** someone is to try to convince([kənˈvɪns] v. 说服) them to see it your way.
     - plead with sb. 恳求某人
+        - To **plead with** someone is to try to *convince([kənˈvɪns] v. 说服)* them to see it your way.
+        - Your kids **plead with** you to let them go on the super-huge *outrageous([aʊtˈreɪdʒəs] adj. 极限的)*
+          *roller coaster(过山车)* built in 1968, but you know better.
     - plead for 恳求；呼吁
-    - Your kids **plead with** you to let them go on the super-huge outrageous([aʊtˈreɪdʒəs] adj. 极限的)
-      *roller coaster(过山车)* built in 1968, but you know better.
-    - Only Ukip, sensing([sensɪŋ] n. 感觉) its chance, <ins>has sided with(支持...)</ins> those **pleading for** a more
-      considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
+        - Only Ukip, *sensing([sensɪŋ] n. 感觉)* its chance, <ins>has sided with(支持...)</ins> those **pleading for** a
+          more considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
 
 ## market
 
@@ -95,7 +96,7 @@
 - marketer n. 市场营销人员
 - marketing n. 营销；促销
 - budget [ˈbʌdʒɪt]
-    - n. 预算；
+    - n. 预算
     - adj. 价格低廉的
     - A **budget** is telling your money where to go instead of wondering where it went.
     - an unbalanced budget 不均衡的预算
@@ -103,7 +104,7 @@
     - a tight/loose([luːs]) budget 预算紧张/宽松
 - levy [ˈlevi]
     - vt. 征收；征税
-    - n. 税款；
+    - n. 税款
     - Use the word **levy** as you would use the word **tax**.
     - imposed a **levy/tax** 征收税款
     - A judge has now overruled the city's decision to stop <ins>**levying** fines(征收罚款)</ins>, ordering them
@@ -136,15 +137,16 @@
     - n. 替代者
     - == alternative
     - Something or someone that takes the place of another is said to be a **substitute**.
-    - You may be sent into a game as a **substitute** for an injured([ˈɪndʒərd] adj. 受伤的) player.
-    - There is no **substitute** for hard work.
+    - You may be sent into a game as a <ins>**substitute** for</ins> an *injured([ˈɪndʒərd] adj. 受伤的)* player.
+    - There is no <ins>**substitute** for</ins> hard work.
 
 ## set
 
 - vt. 确定；使处于某种状态；创立；放
 - n. 一组
 - adj. 套；安排好的
-- You can do anything you **set** your mind to.
+- You can do anything you <ins>**set** your mind to</ins>.
+- **set** your mind to sth. 下定决心去做某事/专心致志于某事/全力以赴做某事
 - 词组
     - set sb./sth. apart 使与众不同，使突出
     - set sth. aside 把...放到一旁；留出（钱或时间）；暂时不考虑...
@@ -163,8 +165,8 @@
         - settle down somewhere
         - settle down to work/study
         - settle down with sb.
-    - While admitting([əd'mɪtɪŋ] v. 承认) that climate([ˈklaɪmət] n. 气候) is a key element, Moritz notes that public
-      debates have not **settled/solved** yet.
+    - While *admitting([əd'mɪtɪŋ] v. 承认)* that *climate([ˈklaɪmət] n. 气候)* is a key element, Moritz notes that
+      public debates have not **settled/solved** yet.
     - settlement n. 定居地
     - unsettle
         - vt. 使心神不宁
@@ -182,7 +184,7 @@
     - v. 值得
     - You **deserve** it.
     - We **deserve** things based on our actions.
-    - For example, many people believe murderers([ˈmɜːrdərər]) **deserve** the death penalty([ˈpenəlti] n. 刑罚).
+    - For example, many people believe *murderers([ˈmɜːrdərər])* **deserve** the death *penalty([ˈpenəlti] n. 刑罚)*.
 - observe
     - vt. 观察；注意到
     - Their capacity for tolerating stress may even be greater than men's, she **observed**.
@@ -191,10 +193,10 @@
         - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
     - observer n. 观察者
 - preserve [prɪˈzɜːrv]
-    - vt. 维护；保护；
+    - vt. 维护；保护
     - ...these creatures(['kritʃəz] n. 生物) **preserve** the health of *game(n. 猎物)* by killing the physically weak.
 - reserve
-    - vt. 保留；预定；
+    - vt. 保留；预定
         - == book
     - n. ...保护区；...储备量
     - nature reserves 自然保护区

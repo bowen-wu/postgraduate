@@ -165,6 +165,8 @@
 - With the Spring Festival **approaching/around the corner**
 - There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
 - Some applaud the **approach**; others are concerned.
+- Only Ukip, sensing its chance, <ins>has sided with(支持...)</ins> those <ins>pleading for</ins> a more considered
+  **approach** to using green land.
 - method n. 方法
 
 ## habit

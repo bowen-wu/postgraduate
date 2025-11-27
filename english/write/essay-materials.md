@@ -11,13 +11,19 @@
 - The pie chart above clearly reveals...
 - The bar chart above clearly reflects...
 - As can be seen from the bar chart above,... 从上面的柱状图可以看出
+- From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
+
+##### Transition
+
 - As is revealed in the graph, 如图所示
 - As illustrated in the graph, 如图所示
 - As is reflected by the diagram, 如图表所示
 - According to the data given above, 根据上图中给出的数据
+- Among all the five categories, 在所有五组分类数据中
 - By contrast, 相比之下
 - On the contrary, 相反
 - In the meantime, 与此同时
+- During this period, 在此期间
 
 ### Body
 
@@ -28,6 +34,7 @@
 - Some driving factors that contribute to the above-mentioned change may be summarized as follows. 促成上述变化的一些驱动因素可以概括如下
 - Several primary factors could contribute to this phenomenon. 一些主要原因可以解释这种现象
 - Several factors may contribute to this phenomenon. 可能有几个因素促成了这个现象
+- At least two fundamental factors could have contributed to this phenomenon. 至少有两点主要原因造成了这种现象
 - Several primary causes that contribute to the above-mentioned phenomenon could be summarized as follows.
   造成上述现象的几个主要因素可以概括如下
 
@@ -48,17 +55,17 @@
 - Meanwhile 与此同时
 - With due consideration of all these contributors, 充分考虑到所有这些因素
 - Accordingly, 因此
+- Although the fact remains that... 尽管如此，事实仍然是...
 
 ## Transition
 
 ### 因此，结果是
 
-1. hence
-2. therefore
-3. thus
-4. as a result
-5. accordingly
-6. consequently
+1. As a result
+2. Hence
+3. Therefore
+4. Thus
+5. Accordingly
 
 ### 此外
 

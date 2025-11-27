@@ -83,8 +83,11 @@
     - properly adv. 恰当地
 - file
     - vt. 提起（诉讼）；提出（申请）；归档
+    - file for... 申报...
     - Companies are unlikely to file many more patents for human DNA molecules.
     - Later，more established companies raced to add such patents to their files.
+    - As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers, **filed**
+      for *bankruptcy([ˈbæŋkrʌptsi])*.
 
 ## upset
 

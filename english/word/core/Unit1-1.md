@@ -75,6 +75,9 @@
               homework.
         - strike up sth. (with sb.)
             - （和某人）开始来往
+    - striking
+        - adj. 显著的，引人注目的
+        - strikingly adv. 显然地
 
 ## use
 

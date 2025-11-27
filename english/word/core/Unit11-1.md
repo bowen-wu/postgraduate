@@ -36,8 +36,8 @@
     - sustainably adv. 可持续地
     - sustainability [səˌsteɪnəˈbɪləti]
         - n. 可持续性
-        - "**Sustainability**" has become a popular word <ins>these days(如今)</ins>, but to Ted Ning, the
-          *concept(n. 概念)* will always have personal meaning.
+        - "**Sustainability**" has become a popular word <ins>these days(如今)</ins>, but to Ted Ning, the concept will
+          always have personal meaning.
             - those days 过去
 
 ## ignore
@@ -99,6 +99,12 @@
     - vt. （努力）制造；形成；缔造
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
     - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
+        - | 用法       | 含义     | 示例                        |
+                                        |----------|--------|---------------------------|
+          | for + 目的 | 为了...  | plans for reform（改革计划）    |
+          | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
+          | for + 好处 | 对...有利 | good for you              |
+          | for + 原因 | 因为...  | punished for lying        |
     - They agreed to **forge** closer economic *ties([taɪz] n. 结)*.
 
 ## reality
@@ -171,7 +177,7 @@
 ## respect
 
 - vt. 尊敬
-- n. 尊重；（事物的）方面
+- n. （事物的）方面；尊重
 - -spect- 看
     - prospect
         - vi. 勘探
@@ -212,6 +218,9 @@
     - n. 学者
     - Whole new realms of understanding—from gender to race to cultural studies—were opened up as **scholars**
       unpicked the multiplicity of lost societies.
+        - (形容词) + 核心名词 + (of + 名词修饰)
+            - 先翻类别（是什么） → 再翻程度（怎么样）
+            - Whole new realms of understanding 全新的理解
     - scholarly adj. （书、文章、问题、活动等）学术性的
     - scholarship n. 奖学金; 学术（研究）
 

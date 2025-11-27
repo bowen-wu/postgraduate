@@ -79,10 +79,11 @@
 - durable
     - adj. 持久的
     - "Mass-produced clothing,like fast food,fills a hunger and need,yet is non-durable and wasteful,"Cline argues.
-- tolerate
+- tolerate [ˈtɑːləreɪt]
     - vt. 容忍
     - tolerance n. 宽容；忍耐力
     - tolerant adj. 容忍的
+    - Their capacity for **tolerating** stress may even be greater than men's, she observed.
 - beer
     - vt. 具有（相似之处或关系）；承担（责任、费用）
     - 词组
