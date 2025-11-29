@@ -46,7 +46,7 @@
 - -gress- 走
 - Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
     - The Supreme([suːˈpriːm]) Court
-        - Judicial Power 司法权
+        - Judicial([dʒuˈdɪʃl]) Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权
@@ -188,6 +188,7 @@
 - combat vt. 与...战斗；防止
 - defeat [dɪˈfiːt]
     - n. 失败
+    - defeat for sb./sth. 对...的失败/使...遭遇失败
     - Man is not made for **defeat**. A man can be destroyed but not **defeated**.
 - victory n. 胜利
 - triumph [ˈtraɪʌmf]

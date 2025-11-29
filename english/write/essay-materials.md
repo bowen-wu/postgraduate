@@ -154,6 +154,10 @@
 - increased considerably 增加得相当明显
 - rose steadily 稳定上升
 - spike up to + 百分比 飙升到
+- grow at an incredible/astonishing speed 以难以置信的速度增长
+- grow at a rapid pace 快速增长
+- grow at an alarming rate 以惊人的速度增长
+- grow at a steady rate 以稳定的速度增长
 
 ### on the part of + 人/组织
 

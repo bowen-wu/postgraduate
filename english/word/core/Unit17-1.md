@@ -88,7 +88,9 @@
 ## ambiguous
 
 - adj. 模棱两可的
-- ambiguity n. 模棱两可
+- ambiguity [ˌæmbɪˈɡjuːəti]
+    - n. 模棱两可
+    - It's a work of paradox and **ambiguity**.
 - navigate
     - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）
     - Many first-generation students struggle to <ins>navigate(适应)</ins> the middle-class culture of higher

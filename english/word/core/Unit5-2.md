@@ -136,9 +136,12 @@
 - prefer
     - vt. 更喜欢
     - prefer A to B 比起B更喜欢A
+    - prefer A from B 从某个来源或角度来看，偏好 A
+    - They cross-check sources and **prefer** news from different perspectives.
     - preference
         - n. 偏好；优先考虑
         - Thinking too much can also harm our ability to form **preferences**
+        - **Preference** will be given to those experienced in international conferences or other similar activities.
 
 ## benefit
 
@@ -187,6 +190,7 @@
 ## fact
 
 - n. 事实
+- the fact remains that... 事实依然是.../依然不可否认的是...
 - 词组
     - in fact 实际上
     - the fact that （用于探讨真实事情的意义）...这一事实

@@ -73,6 +73,7 @@
     - especially [ɪˈspeʃəli] adv. 尤其
 - particular
     - adj. 特指的；特殊的；尤其的
+    - in particular 尤其是、特别是
     - Even better would be to help elevate notions of beauty beyond the material standards of a **particular** industry.
         - Even better would be to... 更好的做法/选择是... => 倒装句
         - help do sth./help sb. do sth. 帮助做某事

@@ -159,6 +159,7 @@
 - advanced [ədˈvænst]
     - adj. 先进的；高等的
     - advanced courses 高级课程
+    - advanced economy 经济发达
 - progress
     - vi. 进展
     - n. 进步；进展；

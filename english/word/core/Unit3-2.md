@@ -25,7 +25,7 @@
     - in one's view 依某人的观点
     - point of view 观点
     - take a longer view 从更长远的角度来看
-- view A as B
+- view A as B 把 A 视为 B/将 A 看作 B
 - in my view 在我看来
 - viewpoint n. 观点；角度
 - interview
@@ -44,25 +44,27 @@
         - revise
             - vt. 修订; 改变; 修正; [主英国英语]复习
             - vi. 修订，校订
-        - With time he came to <ins>revise/review</ins> his opinion of the profession(n. 职业).
+        - With time he came to <ins>**revise/review**</ins> his opinion of the *profession(n. 职业)*.
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
-        - A doctor might <ins>revise/review</ins> your medical([ˈmedɪkl]) record to help diagnose your sickness.
+        - A doctor might <ins>revise/review</ins> your *medical([ˈmedɪkl])* record to help diagnose your sickness.
 - perspective [pərˈspektɪv]
     - n. 观点
     - from my perspective 从我的角度来看/在我看来/就我个人的看法
         - == in my view
         - == in my opinion
     - They cross-check sources and prefer news from different **perspectives**.
+        - prefer A from B 从某个来源或角度来看，偏好 A
 - landscape n. 风景（自然）；乡村风景画
 - prospect
     - vi. 勘探
     - n. 可能性；前途；前景
-    - If *circumstances(['sɜkəmstənsɪz] n. 环境)* always determined the life and **prospect** of people, then humanity
-      would never have *progressed*.
+    - If circumstances always determined <ins>the life and **prospect** of people(人们的生活和前景)</ins>, then
+      humanity would never have progressed.
     - retrospect [ˈretrəspekt]
         - v. 回顾
-        - in retrospect == looking back 回头看、回想起来
-        - One day, <in>in **retrospect**</in>, the years of struggle will strike you as the most beautiful.
+        - in retrospect == looking back 回首、回头看、回想起来
+        - One day, <in>in **retrospect**</in>, the years of struggle will <ins>strike you as the most beautiful<ins>.
+            - strike someone as something(strike + 人 + as + 形容词/名词) 给人...印象/让某人觉得...
     - introspect [ˌɪntrə'spekt] v. 内省，内观
 
 ## keep
@@ -100,13 +102,16 @@
     - vt. 仍然是，保持；仍需去做；
     - vi. 停留
     - remain + adj.
+        - remain steady 保持平稳
 - abide [əˈbaɪd]
     - v. 容忍，遵守
     - **Abide** *by* the law
     - **abide** means "**to be able to live with or put up with**".
     - I can't **abide** people who can't make up their minds.
-    - ...it announced(v. 宣布) it was reneging([rɪˈnɪgɪŋ] v. 违约) on a longstanding commitment to **abide by/follow**
-      the state's strict nuclear regulations. 它宣布已经不再履行对遵守该州严格核能规定的长期承诺
+    - ...it *announced(v. 宣布)* it was *reneging([rɪˈnɪgɪŋ] v. 违约)* on a longstanding commitment to
+      **abide by/follow** the state's strict nuclear regulations.
+      它宣布将违背此前长期承诺的内容，即遵守该州严格的核能法规
+      它宣布不再履行长期以来遵守该州严格核能法规的承诺
 
 ## leave
 
@@ -118,16 +123,20 @@
 - leaf
     - n. 叶子
     - leaves leaf的复数
-    - One falling **leaf** is indicative of the coming of autumn([ˈɔtəm]). 一叶知秋
-    - The boundless forest <ins>sheds its **leaves**</ins> shower by shower. The endless river <ins>rolls its
-      waves</ins> hour after hour.
+    - One falling **leaf** is indicative of the coming of *autumn([ˈɔtəm])*. 一叶知秋
+    - The boundless forest <ins>sheds its **leaves**</ins> shower by shower.
+      The endless river <ins>rolls its waves</ins> hour after hour.
 - depart
     - v. 离开；离职
     - departure
         - n. 离开；出发；背离
-        - a startling <ins>**departure** from(背离)</ins> tradition. 标新立异
-        - the president's <ins>**departure** for</ins> New York.
+        - a startling <ins>**departure** from(背离, 强调离开的起点)</ins> tradition. 标新立异
+        - the president's <ins>**departure** for(强调出发的目的地)</ins> New York.
         - The modern world saw a <ins>**departure** from</ins> what it had once known. 现代社会随之告别了其过去所知的一切
+            - a departure from + 传统/过去方式/规则/旧做法/惯例 与过去不同的改变/摆脱旧有模式/偏离以往
+            - had once known 过去完成时
+                - once 曾经
+                - had known: 在过去某个时间之前就已经熟悉
 - aside
     - adv. 到旁边
     - 词组
@@ -143,7 +152,7 @@
 - adj. 联邦（政府）的
 - Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
     - The Supreme([suːˈpriːm]) Court
-        - Judicial Power 司法权
+        - Judicial([dʒuˈdɪʃl]) Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权
@@ -188,19 +197,21 @@
         - faithfulness
             - n. 忠诚
             - **Faithfulness** refers to this quality of being <ins>**faithful and loyal**</ins>.
-            - **Faithfulness** is especially valued in spouses(['spaʊsɪz] n. 配偶) and in sports fans.
+            - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
 - credit [ˈkredɪt]
-    - n. 学分；信用；认可；
+    - n. 学分；信用；认可
     - credit card
     - credible
         - adj. 可信任的
         - incredible
             - adj. 极好的；难以置信的
             - **incredible**: <ins>extraordinarily good or great</ins>
-                - == fantastic([fænˈtæstɪk]) == marvellous([ˈmɑːrvələs]) == wonderful == good
+                - == fantastic([fænˈtæstɪk]) == wonderful == good
+                  == marvellous [ˈmɑːrvələs] adj. 不可思议的; 惊奇的; 极好的; 绝妙的
             - **incredible**: <ins>beyond belief or understanding</ins>
-                - The book's plot([plɑːt] n. 情节) is simply **incredible**.
+                - The book's *plot([plɑːt] n. 情节)* is simply **incredible**.
             - Or, we can look at failure as the **incredible** learning experience that it often is.
+                - look at...as... 把...视为...
     - credibility n. 可信性
 
 ## data
@@ -238,5 +249,5 @@
 
 ## 句式
 
-- A small sign can indicate a great trend.
+- A small sign can indicate a great trend. 积微见著/见微知著
 

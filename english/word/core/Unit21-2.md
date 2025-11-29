@@ -24,7 +24,7 @@
 - marvel at sth.
 - astonish
     - vt. 使吃惊，使十分惊讶
-    - astonishing adj. 令人十分惊讶的
+    - astonishing [əˈstɑːnɪʃɪŋ] adj. 令人十分惊讶的
     - astonished adj. 惊讶的
 
 ## maximise

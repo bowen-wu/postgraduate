@@ -171,7 +171,10 @@
 - addict n. 对...着迷的人
 - obsessed 😔
     - adj. 着迷的
-    - absession n. 迷恋
+    - obsession [əbˈseʃn]
+        - n. 迷恋
+        - ...a marketing trick that has <ins>*turned*</ins> the pork sandwich <ins>*into*</ins> an object of
+          **obsession**.
 - indulge 😔
     - v. 沉溺； vt. 放任
     - be indulge in sth.

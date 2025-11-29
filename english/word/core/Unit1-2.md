@@ -168,7 +168,9 @@
     - vt. 向...提问
     - n. 疑问
     - inquire/enquire [ɪn'kwaɪr] vt. 询问；探究
-    - inquiry/enquiry [ɪnˈkwaɪəri] n. 询问
+    - inquiry/enquiry [ɪnˈkwaɪəri] 
+      - n. 询问
+      - Phone and email **enquiries** are encouraged; no visit please.
 - issue
     - vt. 发布；发给；发出
     - n. 问题；议题；
@@ -276,6 +278,7 @@
 - unconscious [ʌnˈkɑːnʃəs]
     - adj. 不省人事的; 无意识的; 未觉察的; 潜意识的
     - n. 无意识
+    - ...dreams were the disguised shadows of our **unconscious** desires and fears.
 - lack
     - v. 缺少
     - n. 缺乏

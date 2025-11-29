@@ -40,6 +40,7 @@
 - Cooperation and sharing can **result from** either *sympathy([ˈsɪmpəθi] n. 同情)* or *guilt([ɡɪlt])*.
 - consequence
     - n. 结果；后果
+    - sequence n. 一系列，一连串
     - The **consequence** is that you perceive that the trip has taken less time than it actually has.
     - consequently adv. 因此
 - outcome n. 结果；成果

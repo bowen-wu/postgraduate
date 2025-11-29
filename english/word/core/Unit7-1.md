@@ -202,6 +202,7 @@
 - endeavor [ɪnˈdɛvər]
     - vi. 努力
     - endeavor to do
+        - ...endeavor to live a joyful life
     - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the density([ˈdensəti] n. 密度) of some of
       its forests.
 - strive [straɪv]
@@ -231,7 +232,11 @@
     - n. 一系列，一连串
     - == progression [prəˈɡrɛʃən] n. 发展，前进；一系列
     - When things come **in sequence**, they come in a **specific order**.
-    - subsequent adj. 随后的，后来的
+    - consequence n. 结果；后果
+    - subsequent
+        - adj. 随后的，后来的
+        - Prior knowledge and interests influence <ins>what we experience<ins>, <ins>what we think our experiences
+          mean<ins>, **and** <ins>the **subsequent** actions we take<ins>.
 
 ## account
 

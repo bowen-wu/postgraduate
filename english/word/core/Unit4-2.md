@@ -39,6 +39,7 @@
 
 - vi. 重视；给...估价
 - n. 价值；益处
+- Faithfulness is especially **valued** in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
 - Even if this program didn't reduce poverty, Ferraro says, "**the value of the avoided
   deforestation([ˌdiːˌfɔːrɪˈsteɪʃn] n. 采伐森林)** just for carbon dioxide emission alone is more than the program
   costs."

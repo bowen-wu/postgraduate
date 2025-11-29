@@ -75,8 +75,9 @@
     - n. （数量、水平等的）变化；变体
     - variety
         - n. 多样性；种类
-        - a variety of 各种各样的
-            - == a kind of
+        - 词组
+            - a variety of 各种各样的
+                - == a kind of
     - variable
         - n. 变量；变化
         - The environmental conditions of freshwater habitats are highly **variable**.
@@ -202,9 +203,6 @@
 
 ## Words
 
-- humble [ˈhʌmbl]
-    - adj. 谦虚的
-    - == modest [ˈmɑːdɪst] adj. 适度的；谦虚的；普通的
 
 ## 词组
 

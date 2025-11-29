@@ -86,6 +86,8 @@
     - adj. 精心制作的；详尽的；复杂的
     - == detailed
     - elaborate layout 精心的布局
+    - elaboration [ɪˌlæbəˈreʃən]
+        - n. 精心制作; 详尽阐述; 苦心经营
 - concrete [ˈkɑːŋkriːt]
     - adj. 具体的；确实的；实在的
     - n. 混凝土

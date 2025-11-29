@@ -28,6 +28,7 @@
     - ...a regulatory *structure(n. 结构)* that *denies([diˈnaiz] v. 拒绝)* **management** the flexibility to adjust its
       operations to the new reality.
         - deny someone something 拒绝某人某物/使某人得不到某物
+        - the flexibility to do something 做某事的灵活性/自由度
 
 ## memory
 
@@ -107,8 +108,8 @@
     - weather forecast 天气预报
 - foreseeable [fɔːrˈsiːəbl]
     - adj. 可预见的
-    - foresee [fɔːrˈsiː] vt. 预知，预见; 有先见之明
     - in the foreseeable future 在可预见的未来
+    - foresee [fɔːrˈsiː] vt. 预知，预见; 有先见之明
 - foreshadow [fɔrˈʃædoʊ]
     - vt. 预示
     - Those dark clouds **foreshadow** a storm.
@@ -202,8 +203,8 @@
 
 ## charge
 
-- v. （向...）收费
 - vt. 控告；指责；使...承担责任
+- v. （向...）收费
 - n. 指控；主管
 - 词组
     - in charge (of) 负责

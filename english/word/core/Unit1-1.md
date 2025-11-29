@@ -67,7 +67,9 @@
     - sth. strikes sb. 让某人突然想到/意识到/觉得
         - It strikes me that we've met before.
     - The lion crouched ready to **strike**.
-    - One day, <in>in retrospect([ˈretrəspekt])</in>, the years of struggle will **strike** you as the most beautiful.
+    - strike someone as something(strike + 人 + as + 形容词/名词) 给人...印象/让某人觉得...
+        - One day, <ins>in retrospect</ins>, the years of struggle will <ins>**strike** you **as** the most
+          beautiful<ins>.
     - 词组
         - strike a balance
             - 找到折中办法

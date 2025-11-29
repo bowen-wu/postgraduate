@@ -97,6 +97,8 @@
 - determine
     - vt. 确定；决定；
     - vi. 决心
+    - If circumstances always **determined** <ins>the life and prospect of people</ins>, then humanity would never have
+      progressed.
     - be determined to do sth. 决定做某事
         - == decide to do sth.
     - determination n. 决心
@@ -141,6 +143,8 @@
 - n. 基础
 - base A on B 把A建立在B的基础上
 - be based on 以...为基础
+- the user base of... ...的用户群
+    - ...the user base of Facebook...
 - baseline n. 基准，基础；底线
 - basic adj. 基本的
 - basis n. 基础
