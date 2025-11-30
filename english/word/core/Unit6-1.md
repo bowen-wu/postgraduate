@@ -123,7 +123,10 @@
 - commonality [ˌkɑməˈnælɪti]
     - n. 共性
     - In some ways, this quest(vt./n. 探索; 追求) for **commonalities** defines science.
-- commonly adv. 通常
+- commonly
+    - adv. 通常
+    - Mental health has commonly been called conscience, **instinct**, *wisdom([ˈwɪzdəm] n. 智慧)*, common sense, or
+      the inner voice.
 - commonness n. 平凡
 - average
     - adj. 普通的；平均的

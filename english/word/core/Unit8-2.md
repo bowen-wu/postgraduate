@@ -23,6 +23,7 @@
 - n. 力量
     - == strength
 - May the **force** be with you.
+- Rosenberg contends/holds/believes/maintains that peer pressure can also be a positive **force**.
 - force sb. to do sth.
 - reinforce vt. 强化；巩固
 - enforce

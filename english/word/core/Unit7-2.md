@@ -41,8 +41,9 @@
 - announce
     - vt. 宣布
     - announcement n. 宣告
-- contend
+- contend [kənˈtend]
     - vi. （尤指在争论中）声称；竞争
+    - content [ˈkɑːntent]
     - Rosenberg **contends/holds/believes/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
     - It is time to **contend with** unfair *discrimination(n. 歧视)*.
         - contend with 对付、应对、努力克服（困难、不公、问题）
@@ -125,13 +126,14 @@
 - Mother Nature 大自然母亲
 - 词组
     - in nature 本质上；事实上
-- natural [ˈnætʃrəl] adj. 自然的；正常的；天赋的
-- unnatural adj. 反常的
+- natural [ˈnætʃrəl]
+    - adj. 自然的；正常的；天赋的
+    - unnatural adj. 反常的
 - instinct [ˈɪnstɪŋkt]
     - n. 本能；直觉
     - == nature
-    - Mental health has commonly been called conscience, **instinct**, wisdom([ˈwɪzdəm]), common sense, or the inner
-      voice.
+    - Mental health has commonly been called conscience, **instinct**, *wisdom([ˈwɪzdəm] n. 智慧)*, common sense, or the
+      inner voice.
     - instinctive adj. 本能的
     - instinctively adv. 本能地
 - viscerally [ˈvɪsərəli]
@@ -164,7 +166,7 @@
 - take a(n)...approach 采取...方法
 - With the Spring Festival **approaching/around the corner**
 - There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
-- Some applaud the **approach**; others are concerned.
+- Some *applaud([əˈplɔːd] v. 赞许)* the **approach**; others are concerned.
 - Only Ukip, sensing its chance, <ins>has sided with(支持...)</ins> those <ins>pleading for</ins> a more considered
   **approach** to using green land.
 - method n. 方法

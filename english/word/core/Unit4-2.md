@@ -62,6 +62,7 @@
 - With the Spring Festival **approaching/around the corner**
 - surround [səˈraʊnd]
     - vt. 环绕；包围；与...紧密联系
+    - == border 边界；接壤
     - surrounding
         - adj. 周围的；附近的
         - surroundings
@@ -87,6 +88,7 @@
     - side effect 副作用
 - output
     - n. 产量；产生；输出
+    - == emission
     - hourly output 每小时的产量
     - carbon dioxide([daɪˈɑːksaɪd]) output/emission 二氧化碳排放量
 - yield
@@ -105,6 +107,7 @@
             - considerate
                 - adj. 考虑周到的; 体贴的
                 - == kind
+                - It is so considerate of you
             - considerable adj. 相当大/多的
 
 ## case
@@ -189,7 +192,7 @@
     - rise above sth. 克服（障碍）；超越（限制）
     - rise from 从...增长
     - rise to 增长至
-    - give rise to 使发生（或存在)
+    - give rise to 使发生（或存在）
     - on the rise 在增长
 - arise
     - vi. 产生，出现；由...引起
