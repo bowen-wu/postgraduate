@@ -178,6 +178,9 @@
 
 - vt. 为...提供服务
 - n. 服务；国家政府部门
+- serve
+    - v. 为（人、机构）服务；上（食物、饮料）；对...有用；履行义务；可用作
+    - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
 - servant [ˈsɜːrvənt]
     - n. 仆人
     - public/civil([ˈsɪvl]) servant 公务员

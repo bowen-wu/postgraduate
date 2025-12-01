@@ -38,8 +38,9 @@
     - n. 流行病；盛行
     - adj. 流行（性）的
     - The outbreak of wine flu that was first detected in Mexico was declared a global **epidemic** on June 11, 2009.
-    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 准确地)* these non-celebrity influentials <ins>*who*</ins>,
+    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 恰恰是)* these non-celebrity influentials <ins>*who*</ins>,
       according to the two-step-flow theory, are supposed to drive social **epidemics**.
+        - be supposed to do sth. 应该做某事/据说/被认为/按理论理应
     - pandemic
         - n. （正式）大流行病
         - With the **pandemic**, unemployment is very high indeed.
@@ -111,7 +112,7 @@
 
 - adv. 准确地；（要求得到更多信息）究竟，到底
 - precisely [prɪˈsaɪsli]
-    - adv. 准确地；精确地；（强调真实或明显）正是
+    - adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
     - == exactly
     - Yet <ins>*it is*</ins> **precisely** these non-celebrity influentials <ins>*who*</ins>, according to the
       two-step-flow theory, are supposed to drive social epidemics.
@@ -139,6 +140,7 @@
     - == propel == motivate
     - stimulus [ˈstɪmjələs]
         - n. 促进因素
+        - stimulus for sth. 对...的刺激/推动力
         - Economic condition was only(仅仅) a **stimulus** for the trend toward efficient living.
 - momentum [moʊˈmentəm] n. 推动力
 

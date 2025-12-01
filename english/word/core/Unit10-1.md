@@ -208,6 +208,7 @@
 
 - vt. 识别；确定
 - == recognize
+- identify with sb./sth. 认同/产生共鸣/与...有心理认同
 - identifiable [aɪˌdentɪˈfaɪəbl]
     - adj. 可识别的
     - <ins>Privacy law(隐私法)</ins> builds on the *concept([ˈkɑːnsept] n. 概念)* of *damage([ˈdæmɪdʒ] n. 损坏)* to an

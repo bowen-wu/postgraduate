@@ -70,6 +70,7 @@
 ## keep
 
 - v. 保持；继续；抑制
+- keep one’s end up 支撑自己的职责/做好自己的工作/不掉队
 - 词组
     - keep an eye on 留意，密切关注
         - == keep an eye out for

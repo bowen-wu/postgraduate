@@ -177,6 +177,11 @@
 
 ## Words
 
+- explicit
+    - adj. 直抒胸臆的
+    - == direct
+    - implicit adj. 隐晦的；暗含的
+
 ## 词组
 
 ## 句式

@@ -21,9 +21,9 @@
 
 - [ˌkɑːmpəˈtɪʃn]
 - n. 竞争
-- compete [kəmˈpiːt] 
-  - vi. 竞争
-  - compete with sb.
+- compete [kəmˈpiːt]
+    - vi. 竞争
+    - compete with sb.
 - competitive [kəmˈpetətɪv]
     - adj. 竞争的
     - == aggressive [əˈɡresɪv] adj. 好强的🙂; 攻击性强的😔
@@ -31,7 +31,7 @@
     - No one likes to lose, but if you are a **competitive** person, it will be especially disappointing to see someone
       else win.
 - competitor [kəmˈpetɪtər] n. 竞争者
-- competent [ˈkɑːmpɪtənt] 
+- competent [ˈkɑːmpɪtənt]
     - adj. 能胜任的；有能力的
     - If you are **competent**, you have the **necessary ability or skills** to do somethings.
     - ...all citizens who meet minimal qualifications of age and literacy are equally **competent/qualified** to serve
@@ -52,10 +52,10 @@
 - employment
     - n. 工作；就业；雇用
     - unemployment n. 失业；失业率
-- recruit [rɪˈkruːt] 
-  - vt. 招募
-  - == employ
-  - recruitment n. 招募; 招聘
+- recruit [rɪˈkruːt]
+    - vt. 招募
+    - == employ
+    - recruitment n. 招募; 招聘
 
 ## engineer
 
@@ -75,12 +75,16 @@
 - vt. 等于；导致
 - adj. （大小、数量、价值等）相同的；平等的
 - equally adv. 平等地；同样地；（引出同样重要的内容）同样
-- equality [iˈkwɑːləti] 
+- equality [iˈkwɑːləti]
     - n. 平等
     - inequality n. 不平等
 - equation [ɪˈkweɪʒn]
     - n. 方程式
     - X and Y in the **equation** are both unknowns.
+- equivalent [ɪˈkwɪvələnt]
+    - adj. （价值、数量、意义、重要性等）相等的；
+    - n. 相等的东西
+    - be equivalent of sth.
 - fair
     - adj. 合理的；公平的；相当大的
     - fairly adv. 相当地；公平地
@@ -88,10 +92,6 @@
     - fairness
         - n. 公平性
         - ensure **fairness** for taxpayers
-- equivalent [ɪˈkwɪvələnt]
-    - adj. （价值、数量、意义、重要性等）相等的；
-    - n. 相等的东西
-    - be equivalent of sth.
 - impartial
     - adj. 公正的
     - The kind of activity <ins>makes it less likely that(使...不太可能发生)</ins> the court's decisions will <ins>be
@@ -100,12 +100,13 @@
 ## infrastructure
 
 - n. （国家或机构的）基础设施 (宏观)
-- facility [fəˈsɪləti] n. 设施（微观）
-- facilitate vt. 促使；使便利
+- facility [fəˈsɪləti]
+    - n. 设施（微观）
+    - facilitate vt. 促使；使便利
 - device n. 装置，仪器（个人）
 - equip
     - vt. 配备；使有能力
-    - equip sb. with sth.
+    - equip sb. with sth. 为某人配备/提供某物（能力、工具、资源等）
     - equipment n. 设备（个人）
 
 ## insist
@@ -113,7 +114,7 @@
 - [ɪnˈsɪst]
 - v. 坚持要求；坚称
 - -sist- 站
-- He **insisted** that he was *innocent(adj. 无罪的)*.
+- He **insisted** that he was *innocent([ˈɪnəsnt] adj. 无罪的)*.
 - He **insists** that she should come.
 - insistence n. 坚持
 - assist [əˈsɪst]
@@ -132,7 +133,7 @@
     - consistently adv. 持续地
 - persist [pərˈsɪst]
     - vi. 持续存在
-    - persisit in doing sth.
+    - persisit in doing sth. 坚持做某事（尤其在困难或反对下）
     - persistence n. 坚持
     - persistent adj. 持续的
 - resist [rɪˈzɪst]
@@ -169,7 +170,7 @@
 - [əbˈteɪn]
 - vt. 获得
 - **Obtain** means to **get something that is not so easy to come** by such as knowledge, rights, or a large amount of
-    money.
+  money.
 - You wouldn't say you **obtained** a pair of pants unless they were one of a kind.
 - Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins> <ins>the bulk of(...的大部分)</ins>
   our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to **obtain**
@@ -220,8 +221,8 @@
     - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
 - elect
     - vt. 选举
-    - In a direct democracy, citizens take turns governing themselves, rather than **electing** representatives to
-      govern for them.
+    - In a direct democracy, citizens <ins>take turns(take turns)</ins> governing themselves, rather than **electing**
+      representatives to govern for them.
         - A rather than B 肯定A否定B
     - election n. 选举
     - electoral [ɪˈlektərəl] adj. 与选举有关的
@@ -240,7 +241,7 @@
 - kitten [ˈkɪtn]
     - n. 小猫; 小动物
 - interference [ˌɪntərˈfɪrəns]
-    - n. 干涉，干扰，冲突; 介入; 妨碍，打扰，阻碍物; 冲突，抵触
+    - n. 干涉
 - instrument [ˈɪnstrəmənt]
     - n. 仪器，器械，工具；乐器
 

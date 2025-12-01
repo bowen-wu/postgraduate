@@ -41,7 +41,9 @@
             - adv. 广泛地
             - These men wrote and published **extensively**, reaching both New World and Old World audiences, and giving
               New England an atmosphere of <ins>intellectual earnestness(热衷学术)</ins>.
-    - extent n. 程度
+    - extent
+        - n. 程度
+        - to some extent 在某种程度上/有一点/部分地
     - extension
         - n. 延期
         - He will appeal to the state for an **extension** of unemployment benefits.

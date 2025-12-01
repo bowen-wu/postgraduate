@@ -65,9 +65,15 @@
 ## vision
 
 - n. 视野；想象；远见卓识
+- a vision for... 关于...的愿景/针对...的构想
 - **Vision** is the art of seeing what is invisible to others.
 - We need to create a new **vision** for public health where all of society works together to get healthy and live
-  longer.
+  longer. 我们需要为公共健康构建一个新愿景，在这个愿景中，全社会将共同努力，让每个人更健康、活得更长
+    - work together to do sth. 共同努力去.../合作做某事
+    - where 用于概念名词 vision, situation, system, environment, world，表示：
+        - 在其中...
+        - 在那样的愿景/环境/体系下...
+        - 所以这里的 where = in which
 - envision [ɛnˈvɪʒən]
     - vt. 设想
     - That's because Congress has always **envisioned** joint federal-state immigration enforcement.
@@ -100,7 +106,7 @@
     - adj. 难以制止的
     - **Compulsive** people have **irresistible** urges to do certain things, like a **compulsive**
       gossip([ˈɡɑːsɪp] 爱说长道短的人) who simply cannot keep a secret.
-    - He was a **compulsive** gambler and <ins>often heavily in debt(债台高筑)</ins>.
+    - He was a **compulsive** gambler and often <ins>heavily in debt(债台高筑)</ins>.
     - compulsory [kəmˈpʌlsəri]
         - adj. 强迫的; 义务的; 规定的
         - **compulsory** courses 必修课
@@ -110,11 +116,11 @@
 
 - [əbˈzɔːrb]
 - vt. 吸收；使并入；🙂 理解；吸引全部注意力；承受😔
-- I never <ins>feel overwhelmed(感到不堪重负/压力很大)</ins> with the amount of information my brain **absorbs**.
 - be absorbed in 全神贯注于...
     - == concentrate on
-- Better not to *fancy([ˈfænsi] v. 幻想)* something when the evening sun sets, but to <ins>be **absorbed** in</ins> work
-  when the morning sun rises. 🙂
+- I never <ins>feel overwhelmed(感到不堪重负/压力很大)</ins> with the amount of information my brain **absorbs**.
+- <ins>Better not to</ins> *fancy([ˈfænsi] v. 幻想)* something when the evening sun sets, <ins>but to</ins>
+  <ins>be **absorbed** in</ins> work when the morning sun rises. 🙂
     - Better not to... but to... 与其...不如...
 - During the same period, families have been asked to **absorb** much more risk in their retirement income. 😔
 - absorption [əbˈsɔrpʃn] n. 吸引；并入；专心致志
@@ -191,11 +197,11 @@
 
 - [kənˈvɪns]
 - vt. 说服
-- I am convinced that... 我确信
 - If begging doesn't **convince** your parents to raise your allowance, you might want to try a different tactic—like
   doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
 - convinced
     - adj. 确信的
+    - I am convinced that... 我确信
     - become convinced that + 从句 变得确信...
 - convincing adj. 令人信服的
 - persuade [pərˈsweɪd]
