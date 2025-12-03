@@ -80,6 +80,7 @@
                 - == a kind of
     - variable
         - n. 变量；变化
+        - adj. 多变的、变化大的
         - The environmental conditions of freshwater habitats are highly **variable**.
         - That brings me to another **variable** we need to consider.
     - varying ['veərɪŋ] adj. 不同的
@@ -108,13 +109,13 @@
 - [ˌɑːptɪˈmɪstɪk]
 - adj. 乐观的
 - optimism [ˈɑːptɪmɪzəm] n. 乐观主义
-- optimist
+- optimist [ˈɑptɪmɪst]
     - n. 乐观的人
     - ...realistic **optimists** are those who make the best of things that happen, but not those who believe everything
       happens for the best.
         - make the best of sth. 尽力把事情变好/积极应对
         - everything happens for the best 所有事情都是最好的/万事皆有最好的安排
-- optimize vt. 使最优化
+- optimize [ˈɑptɪmaɪz] vt. 使最优化
 - pessimistic [ˌpesɪˈmɪstɪk] adj. 悲观的
 
 ## modify
@@ -142,8 +143,10 @@
 - An illness might render you unable to walk, or a *shocking(adj. 可怕的)* **sight** might render you speechless.
 - insight
     - n. 领悟；洞察力
-    - ...many first-generation students lack **insight** about why they are struggling and do not understand how
-      students 'like them' can improve.
+    - ...many first-generation students <ins>lack **insight** about why they are struggling<ins> **and** <ins>do not
+      understand how students 'like them' can improve</ins>.
+        - lack insight about sth. 缺乏对某事的洞察力
+        - do not understand how...can... 不理解某事如何发生
     - insightful [ˈɪnˌsaɪtfəl]
         - adj. 富有洞察力的
         - It's no surprise that Jennifer Senior’s <ins>**insightful**, provocative([prəˈvɑːkətɪv] adj. 引人深思的)<ins>
@@ -202,7 +205,6 @@
 - installment n. （报章连载小说的）一节
 
 ## Words
-
 
 ## 词组
 

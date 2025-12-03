@@ -175,6 +175,8 @@
     - n. 共和党党员
 - conservative [kənˈsɜːrvətɪv]
     - adj. 保守的；英国保守党的
+    - Sensible ideas have been around for a long time, but the state-level bodies that govern the profession have been
+      too **conservative** to implement them.
     - Conservative Party 保守党
     - The Labour Party 工党
     - Liberal([ˈlɪbərəl]) Democratic Party 自由民主党

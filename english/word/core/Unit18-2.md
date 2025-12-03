@@ -127,7 +127,10 @@
       谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
       about him."
 - trigger vt. 引发； n. （尤指引发不良反应或发展的）起因😔
-- spark vt. 引发
+- spark
+    - vt. 引发
+    - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
+      passive consumption and active creation.
 
 ## fortune
 

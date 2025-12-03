@@ -59,6 +59,8 @@
 - density
     - n. 密度
     - lower the density
+    - California's Forest Carbon Plan <ins>endeavors to/make efforts to</ins> reduce the **density** of some of its
+      forests.
 
 ## deliberate
 

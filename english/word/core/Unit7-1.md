@@ -20,7 +20,8 @@
 ## comment
 
 - [ˈkɑːment]
-- v./n. 评论
+- v. 评论
+- n. 评论
 - comments on/about 评论
 - 词组
     - make comments 做出评论
@@ -31,9 +32,10 @@
         - in one's opinion 依某人的观点
         - have a low opinion of 对...评价不高
         - opinion of 对...的看法
-    - My <ins>**opinion** of</ins> my whole experience varies from time to time.
+    - My <ins>**opinion** of</ins> my whole experience varies <ins>from time to time(时不时；有时；偶尔)</ins>.
 - remark
-    - v./n. 评论；标记
+    - v. 评论；标记
+    - n. 评论；标记
     - How could she have let those *enormous([ɪˈnɔːrməs] adj. 巨大的)* bonus payouts pass **unremarked**?
     - remarkable adj. 引人注目的，显著的
 - criticism n. 批判; 指责; (书籍或音乐等)评论
@@ -70,8 +72,15 @@
 - majority
     - n. 大多数
     - Like the **majority** of authors, he had to suffer many *disappointments(n. 失望)* and rejections along the way,
-      but these made him all the more determined to succeed.
-    - minority [maɪˈnɔːrəti] n. 少数; 少数民族; 未成年
+      but these made him <ins>all the more(更加...)</ins> determined to succeed.
+- minor [ˈmaɪnər]
+    - adj. 较小的
+    - minority [maɪˈnɔːrəti]
+        - n. 少数; 少数民族; 未成年
+        - Chinese minority group
+        - In his book The Tipping Point, Malcolm Gladwell *argues([ˈɑ:ɡju:z] vt. 论证)* that "social epidemics" are
+          driven *in large part* by the actions of *a tiny **minority** of special individuals*.
+            - in large part 在很大程度上；主要地；多半地
 - chief
     - adj. 主要的；首席的
     - n. 最高领导人
@@ -88,13 +97,6 @@
 - largely
     - adv. 在很大程度上；主要地
     - However, there is another important part of the jobs picture that was **largely** overlooked.
-- minor [ˈmaɪnər]
-    - adj. 较小的
-    - minority
-        - n. 少数
-        - In his book The Tipping Point, Malcolm Gladwell argues([ˈɑ:ɡju:z] vt. 论证) that "social epidemics" are driven
-          *in large part* by the actions of *a tiny **minority** of special individuals*.
-            - in large part 在很大程度上；主要地；多半地
 
 ## online
 
@@ -108,16 +110,17 @@
     - Journalists are known to have **hacked** the phones of up to 5,500 people.
         - be known to have done 众所周知曾经做过某事
         - be known to do 众所周知会做某事
+- upload
+    - vt. 上传
+    - n. 上传的数据
 - download
     - vt. 下载
     - This is because the networked computer has *sparked([spɑːrk] vt. 发动，触发)* a secret war between **downloading**
       and **uploading**-between passive consumption and active creation.
-- upload
-    - vt. 上传
-    - n. 上传的数据
 - encode
     - vt. 把...编码
-    - Girls' attraction to pink may seem unavoidable([ˌʌnəˈvɔɪdəbl] adj. 不可避免的), somehow **encoded** in their DNA.
+    - Girls' attraction to pink may seem *unavoidable([ˌʌnəˈvɔɪdəbl] adj. 不可避免的)*, somehow **encoded** in their
+      DNA.
 - code
     - n. 密码，代码；行为规范，道德准则；法典
     - All members of the association adhere to a strict <ins>**code** of practice(行为规范、操作准则)</ins>.
@@ -135,18 +138,18 @@
 - nonsense n. 胡扯 😔
 - sensible
     - adj. 明智的，理性的
-    - **Sensible** ideas have been around for a long time, but the *state*-level *bodies* <ins>that govern the
-      *profession(n. 职业)*</ins> have been <ins>too</ins> *conservative* <ins>to</ins> *implement* them.
+    - **Sensible** ideas have been around for a long time, but the state-level bodies that govern the
+      *profession(n. 职业)* have been too conservative to implement them.
 - sensitive
     - adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
     - be sensitive to 对...敏感
-    - Until this century([ˈsentʃəri]), university libraries were not very price **sensitive**.
+    - Until this *century([ˈsentʃəri])*, university libraries were not very price **sensitive**.
     - sensitivity n. （信息、话题等的）敏感性，体贴
     - insensitive adj. 不敏感的
 - sensibility n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
 - sentiment [ˈsentɪmənt]
     - n. 观点；情绪（多愁善感）
-    - At the next election(n. 选举) none of the big parties seem likely to *endorse([ɪnˈdɔːrs] v. 赞同，支持)* this
+    - At the next election none of the big parties seem likely to *endorse([ɪnˈdɔːrs] v. 赞同，支持)* this
       **sentiment**.
 - emotion
     - n. 情绪
@@ -162,14 +165,16 @@
     - vi. 交流
         - communicate with
     - vt. 传达（想法、感情、思想等）
-    - When your body language **communicates** *reluctance([rɪˈlʌktəns] n. 不情愿)* or *anxiety([æŋˈzaɪəti] n. 焦虑)*,
-      it *undercuts(v. 削弱)* the message.
+    - When your body language **communicates** reluctance or *anxiety([æŋˈzaɪəti] n. 焦虑)*, it *undercuts(v. 削弱)* the
+      message.
     - communication n. 交流；（信息）传播
 - corporate
     - adj. 公司的
     - corporation
         - n. （大）公司
         - == firm == company
+    - cooperate vi. 合作；配合
+    - cooperation n. 合作
 
 ## define
 
@@ -177,8 +182,8 @@
 - vt. 定义
 - To define is to limit. 定义即限制/每一个定义，都是一种约束
     - To do...is to do... 做A等于做B
-- definition [ˌdefɪˈnɪʃn] n. 定义
 - redefine [ˌriːdɪˈfaɪn] vt. 重新定义
+- definition [ˌdefɪˈnɪʃn] n. 定义
 - definite [ˈdefɪnət]
     - adj. 不会改变的; 明确的; (证据或信息)确凿的
     - definitely
@@ -203,8 +208,8 @@
     - vi. 努力
     - endeavor to do
         - ...endeavor to live a joyful life
-    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the density([ˈdensəti] n. 密度) of some of
-      its forests.
+    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the *density([ˈdensəti] n. 密度)* of some
+      of its forests.
 - strive [straɪv]
     - vi. 努力
     - strive to do
@@ -246,7 +251,7 @@
 - factual account 基于事实的叙述/事实陈述
 - account for + 百分比
     - 占比例
-    - The proportion([prəˈpɔːrʃn] n. 比例) of Spring Festival gifts **accounted for/occupy([ˈɑːkjupaɪ])** 40 percent.
+    - The *proportion([prəˈpɔːrʃn] n. 比例)* of Spring Festival gifts **accounted for/occupy([ˈɑːkjupaɪ])** 40 percent.
 - account for + 内容
     - 解释
     - C(原因) account for R(结果)
@@ -296,7 +301,7 @@
 - counterbalance
     - vt. 平衡；抵消
 - conclusion
-    - n. 结论; 结束; 末尾; 结局; 签订
+    - n. 结论;
 - guidance [ˈɡaɪdns]
     - n. 指导; 导航
 

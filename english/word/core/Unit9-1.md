@@ -224,7 +224,10 @@
 ## professor
 
 - n. 教授
-- profession n. 职业；专业
+- profession
+    - n. 职业；专业
+    - Sensible ideas have been around for a long time, but the state-level bodies that govern the **profession** have
+      been too conservative to implement them.
 - professional adj. 职业的；专业的
 - professionalize [prəˈfɛʃənəˌlaɪz] vt. 使专业化
 - professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平

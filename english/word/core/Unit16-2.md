@@ -64,6 +64,7 @@
     - A **doctrine** is **a set of beliefs**. The word comes from the Latin([ˈlætn]) doctor for "teacher", so think of a
       **doctrine** is the teachings of a school, religion, or political group.
     - Their political **doctrine** has blinded them to the real needs of the country. 他们的政治教条使他们对国家的真正需求视而不见
+        - blind sb. to sth. 使某人对某事视而不见/看不清/忽视
     - == dogma [ˈdɔːɡmə] n. 教条，信条，教义
 
 ## stable
@@ -120,7 +121,10 @@
       else win.
     - disappoint v. 使失望; 使落空
     - disappointed adj. 失望的，灰心的
-    - disappointment n. 失望；令人失望的人（或事物）
+    - disappointment
+        - n. 失望；令人失望的人（或事物）
+        - Like the **majority** of authors, he had to suffer many *disappointments(n. 失望)* and rejections along the
+          way, but these made him <ins>all the more(更加...)</ins> determined to succeed.
 
 ## random
 
@@ -174,7 +178,7 @@
         - n. 瘫痪；（活动、工作等）能力的完全丧失
         - The strike caused total **paralysis** in the city.
         - And dead markets partly reflect the **paralysis** of banks...
-        - **Paralysis** by analysis can waste years of your life.
+        - <ins>**Paralysis** by analysis(因为过度分析而瘫痪/想太多结果不行动)</ins> can waste years of your life.
 
 ## passion
 
