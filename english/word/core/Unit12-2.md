@@ -33,7 +33,7 @@
 - assemble v. 集合；收集
 - converge [kənˈvɜːrdʒ]
     - vi. 趋于一致
-    - converge on sth.
+    - converge on sth. 达成一致
     - Young and old <ins>**converge** on</ins> one key point: *Overwhelming([ˌoʊvərˈwelmɪŋ] adj. 压倒一切的)* majorities
       of both groups said they believe it is harder for young people today to get started in life than it was for
       earlier generations.
@@ -42,7 +42,8 @@
 
 - v. 奖励
 - n. 奖励
-- There is no **reward** without sacrifice.
+- There is no **reward** without sacrifice. 没有付出就没有回报
+    - no...without... 如果没有...就不会有.../只有...才...(表示因果关系)
 - award
     - n. 奖品（官方）
     - This movie won <ins>the Academy **Award**(奥斯卡金像奖)</ins> in the Best Animated Feature category in 2002.
@@ -159,6 +160,8 @@
 - Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen concluded: "We
   do not attract what we want, but what we are."
 - ...passionate consumers will voice their opinions in quicker, more visible, and much more **damaging** ways.
+    - much + more + adj. 要更...得多/大大地更.../远比...更...
+        - 程度副词 + 比较级 + 形容词/副词/名词
 - undermine
     - vt. 逐渐削弱（信心、权威等）
     - If connections can be bought, a basic premise of democratic society—that all are equal in treatment by
@@ -204,7 +207,7 @@
 - adj. 稳固的
 - **security**
     - n. 安全（感）
-    - Job **security** or stability was the second most important career goal work-life balance was number one, followed
+    - Job **security** or stability was the second most important career goal; work-life balance was number one, followed
       by a sense of <ins>being dedicated to(致力于)</ins> a cause or to feel good about serving the greater good.
 - safe
     - adj. 安全的
@@ -213,7 +216,8 @@
 - save
     - v. 拯救；节省；
     - prep. 除了...外
-    - save for
+    - save for 除了...之外
+        - == except for
 
 ## sort
 

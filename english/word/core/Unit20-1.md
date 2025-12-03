@@ -137,7 +137,7 @@
 - ceaselessly adv. 无休无止
 - suspend
     - vt. 暂停
-    - ...a new conservative city council <ins>suspended enforcement (暂停执行)</ins> of the clean air zone.
+    - ...a new conservative city council <ins>suspended enforcement(暂停执行)</ins> of the clean air zone.
 
 ## construct
 

@@ -161,6 +161,8 @@
 
 ## Words
 
+- diligent [ˈdɪlɪdʒənt]
+    - adj. 勤奋的，勤勉的
 - inappropriateness == improper n. 不合适
 - irritate
     - v. 激怒，惹怒

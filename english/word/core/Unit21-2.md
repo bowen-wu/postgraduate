@@ -95,13 +95,15 @@
 
 - n. 羡慕；嫉妒
 - be the envy of sb./sth. 成为羡慕（或嫉妒）的对象/东西
-- By most recent measures，the UK's GDP has been the envy of the Western world，with record low unemployment and high growth figures.
+- By most recent measures，the UK's GDP has been the envy of the Western world，with record low unemployment and high
+  growth figures.
 - enviable adj. 令人羡慕的
 
 ## hitherto
 
 - adv. 迄今
-- "The history of all hitherto existing society is the history of class struggles," wrote Marx and Engels In the Communist Manifesto.
+- "The history of all hitherto existing society is the history of class struggles," wrote Marx and Engels In the
+  Communist Manifesto.
 - hence adv. 此后
 
 ## transplant
@@ -120,7 +122,8 @@
 ## exceed
 
 - vt. 超过（数量）
-- It reported a <ins>net loss (净损失)</ins> of $5.6 billion for fiscal 2016，the 10th straight year Its expenses have exceeded revenue.
+- It reported a <ins>net loss (净损失)</ins> of $5.6 billion for fiscal 2016，the 10th straight year Its expenses have
+  exceeded revenue.
 - excess
     - adj. 超额的； n. 过量
     - excessive adj. 过度的
@@ -137,7 +140,8 @@
 - spontaneous
     - adj. 自发的，自然的
     - Many people spontaneously stood up and cheered.
-    - The coming use of autonomous vehicles，for example，poses <ins>thorny (难以处理的，棘手的)</ins> ethical questions.
+    - The coming use of **autonomous** vehicles，for example，poses *thorny([ˈθɔrni] adj. (难以处理的，棘手的))* ethical
+      questions.
 
 ## painful
 
@@ -172,7 +176,7 @@
 - desperate
     - adj. 不顾一切的，很危急的；非常想要的
     - ...both figures seem to rise unstoppably despite increasingly desperate efforts to change them.
-     - Nevertheless, the <ins>affordable housing(经济适用房)</ins> situation is **desperate**. Waiting lists increase all
+    - Nevertheless, the <ins>affordable housing(经济适用房)</ins> situation is **desperate**. Waiting lists increase all
       the time and we are simply not building enough new homes.
 - thrive
     - vi. 繁荣，兴旺

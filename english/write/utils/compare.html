@@ -19,7 +19,7 @@
         th, td { border: 1px solid #ccc; padding: 5px; text-align: left; vertical-align: top; }
         .legend span { display: inline-block; margin-right: 10px; padding: 2px 5px; }
         .red-text-green-bg { background: #d4fcbc; color: red; font-weight: bold; text-decoration: underline; }
-        .section { margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
+        .section { margin-top: 15px; padding: 10px; padding-top: 0px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
         .question { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
         .question-wrap { display: flex; align-items: center; gap: 20px; margin-bottom: 10px; }
         .hidden { display: none; }
@@ -37,18 +37,14 @@
         <label for="seq">No.：</label>
         <input type="text" id="seq">
     </div>
-    <div class="question">
-        <label for="files">Select Markdown file (contains correct articles)：</label>
-        <input type="file" id="files" accept=".md">
-    </div>
-</div>
 
-<!-- Mode 选择 -->
-<div id="modeSelection" class="question">
-    <label>Mode：</label>
-    <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
-    <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
-    <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
+    <!-- Mode 选择 -->
+    <div id="modeSelection" class="question">
+        <label>Mode：</label>
+        <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
+        <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
+        <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
+    </div>
 </div>
 
 <!-- Dictation 音频上传（默认隐藏） -->
@@ -71,7 +67,10 @@
     <span class="red-text-green-bg">(Red text, green background)</span> = Spelling mistake
 </div>
 
-<button onclick="compare()" id="compareBtn" class="hidden">Compare</button>
+<button onclick="compare()" id="compareBtn" class="hidden"
+        style="background-color: #F9F9F9; color: #000; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; transition: background-color 0.3s;">
+    Compare
+</button>
 
 <div id="result" class="diff"></div>
 
@@ -127,22 +126,48 @@
 
   function updateModeStatus() {
     const seqFilled = !!document.getElementById('seq').value.trim();
-    const fileSelected = !!fileContent;
     const radios = document.querySelectorAll('input[name="mode"]');
-    radios.forEach(radio => radio.disabled = !(seqFilled && fileSelected));
+    radios.forEach(radio => radio.disabled = !seqFilled);
   }
 
   // 监听 seq 输入
   document.getElementById('seq').addEventListener('input', updateModeStatus);
 
-  // 监听文件选择
-  document.getElementById('files').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      fileContent = await file.text();
-      updateModeStatus(); // 文件选择后检查是否启用 Mode
+  // 加载远程文件
+  async function loadRemoteFiles() {
+    try {
+      const files = [
+        'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/001-020_letter.md',
+        'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/041-060_essay.md'
+      ];
+
+      const responses = await Promise.all(files.map(url => fetch(url)));
+
+      for (const response of responses) {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+      }
+
+      const contents = await Promise.all(responses.map(res => res.text()));
+      fileContent = contents.join('\n\n');
+
+      updateModeStatus(); // 文件加载后检查是否启用 Mode
+      console.log('Remote files loaded successfully');
+
+      // 如果此时用户已经输入了seq，自动更新sections
+      const seq = document.getElementById('seq').value.trim();
+      if (seq && currentMode) {
+        extractSections();
+      }
+    } catch (error) {
+      console.error('Error loading remote files:', error);
+      alert('Failed to load files from GitHub. Please try again later.');
     }
-  });
+  }
+
+  // 页面加载时立即加载远程文件
+  window.addEventListener('DOMContentLoaded', loadRemoteFiles);
 
   async function initDictionary() {
     try {
@@ -153,14 +178,6 @@
       console.warn('Dictionary not loaded, spelling check disabled');
     }
   }
-
-  // 监听文件选择，保存内容
-  document.getElementById('files').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      fileContent = await file.text();
-    }
-  });
 
   function markdownToText(md) {
     return md

@@ -59,7 +59,9 @@
 ## curious
 
 - adj. 难以理解的
-- curiosity n. 好奇心
+- curiosity
+    - n. 好奇心
+    - Having asserted your position(as a position, not as a fact), demonstrate equal **curiosity** about other views.
 
 ## feasible
 

@@ -131,6 +131,7 @@
     - vt. 引发
     - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
       passive consumption and active creation.
+    - ...it is sure to **spark** intense opposition from the far large number of motorists who will then be affected.
 
 ## fortune
 
@@ -141,7 +142,9 @@
 - fortunately adv. 幸运地
 - unfortunately adv. 不幸地
 - destiny n. 命运
-- fate n. 命运
+- fate
+    - n. 命运
+    - Its **fate** is yet to be decided.
 
 ## rare
 
@@ -158,7 +161,7 @@
     - n. 谨慎；警告
     - cautious adj. 谨慎的
 - precautionary adj. 预防的
-- prudent  [ˈpruːdnt]
+- prudent [ˈpruːdnt]
     - adj. 谨慎的
     - Many said that unemployment, while extremely painful, had improved them in some way: they had become less
       materialistic and more financially **prudent**; they <ins>were more aware of</ins> the struggles of others.

@@ -69,7 +69,9 @@
     - **Elegance**, he believed, did not derive from abundance.
 - intelligent
     - adj. 智能的；有智慧的
-    - intelligence n. 智力
+    - intelligence
+        - n. 智力
+        - Artificial Intelligence(AI) 人工智能
 
 ## profound
 

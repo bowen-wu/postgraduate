@@ -60,8 +60,8 @@
 - n. 同等地位的人；同龄人
 - peer groups 同龄群体
 - peer pressure 同辈压力
-    - Come on—Everybody's doing it. That *whispered(['wɪspəd] adj. 低语的)* message, half invitation and half forcing,
-      is what most of us think of when we hear the words **peer pressure**.
+- Come on—Everybody's doing it. That *whispered(['wɪspəd] adj. 低语的)* message, half invitation and half forcing, is
+  what most of us think of when we hear the words **peer pressure**.
 - counterpart
     - n. 对应的人（或事物）
     - The women's shoe, like its male **counterpart**, is specially designed for the serious tennis player.
@@ -90,8 +90,9 @@
     - v. 计算；估算；认为；把...看做
     - reckon/regard/view/see A as B 把A看做B
     - The American Society of News Editors **reckons** that 13,500 newsroom jobs have gone since 2007.
-    - This time experts **reckon** that prices are about 40% down on their peak on average, though some have been for
-      more fluctuate.
+    - This time experts **reckon** that prices are about 40% down on their peak on average, though some have been far
+      more *fluctuate([ˈflʌktʃueɪt] vi. 波动)*.
+        - down on/from the peak 从峰值下降
 - calculate
     - v. 计算，核算
     - calculator n. 计算器
@@ -143,7 +144,7 @@
 - [ˈekstrə]
 - adj. 额外的
 - Excellence is <ins>going the **extra** mile(付出额外努力)</ins>.
-- extraordinary
+- extraordinary [ɪkˈstrɔːrdəneri]
     - adj. 卓越的；非凡的；特别的
     - Shakespeare's lifetime <ins>was confident with(与...相吻合)</ins> a period of **extraordinary** activity and
       achievement in the drama.
@@ -178,16 +179,19 @@
 - I **suppose** the most revolutionary act <ins>one can _engage([ɪnˈɡeɪdʒ]) in(从事于/参与（某项活动）)_<ins> is to tell
   the truth.
 - be supposed to do sth. 应该做某事/据说/被认为/按理论理应
-    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 准确地)* these non-celebrity influentials <ins>*who*</ins>,
+    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 恰恰是)* these non-celebrity influentials <ins>*who*</ins>,
       according to the two-step-flow theory, are **supposed** to drive social epidemics.
 - supposedly [səˈpoʊzɪdli]
     - adv. 据说；据传；想象中的
     - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins>
-      <ins>persons of(具有...特征的人)</ins> **supposedly** superior <ins>intelligence, education, and
-      *moral([ˈmɔːrəl] n. 道德)* character</ins>.
+      <ins>persons of(具有...特征的人)</ins> **supposedly** superior intelligence, education, and
+      *moral([ˈmɔːrəl] n. 道德)* character.
 - position
     - n. 位置；姿势；地位；观点；职位
-    - Having asserted you **position**(as a position, not as a fact), demonstrate equal curiosity about other views.
+    - Having asserted your **position**(as a position, not as a fact), demonstrate equal curiosity about other views.
+        - assert your position 表达、阐明你的观点/立场
+        - demonstrate curiosity 表现出好奇心
+        - equal curiosity 同等程度的兴趣
 - hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
 - premise [ˈpremɪs]
     - n. 前提，假设
@@ -231,7 +235,7 @@
         - Ryan Hooper remarks <ins>the significant moves(重大举措)</ins> may <ins>**pose**/bring about</ins> challenges
           to children.
         - The coming use of <ins>autonomous([ɔːˈtɑːnəməs] adj. 自治的) vehicles(自动驾驶汽车)</ins>, for example,
-          <ins>**poses** thorny ethical questions(提出了棘手的伦理问题)</ins>.
+          <ins>**poses** *thorny([ˈθɔrni])* ethical questions(提出了棘手的伦理问题)</ins>.
 
 ## Words
 

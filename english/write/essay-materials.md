@@ -7,6 +7,7 @@
 #### General Description
 
 - The diagram above clearly illustrates... 上面的图标清楚地揭示了
+- The diagram above clearly illustrates that a dramatic increase has occurred in... 上面的图表清楚地表明，在...方面出现了显著的增长
 - From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
 - This pie chart clearly illustrates...
 - The pie chart above clearly reveals...
@@ -193,3 +194,15 @@
 
 - to do sth. 表示目的、意图
 - for n./n.短语 表示用途、对象
+
+## Economy
+
+- with the prosperity of the (China's) economy
+- with the rapid and steady development of China’s economy 随着中国经济的快速且稳定的发展
+- with the continuous and significant development of China’s economy 随着中国经济持续而显著的发展
+- the prosperity of China's/the economy
+- promotes/boosts economy development
+- poomotes/boosts local economic development
+
+
+

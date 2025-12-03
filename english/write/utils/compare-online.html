@@ -7,7 +7,7 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; max-width: 100%; overflow-x: hidden; }
         textarea {
-            width: 100%; height: 240px; margin-top: 10px;
+            width: 100%; height: 264px; margin-top: 10px;
             font-size: 16px;
             line-height: 22px;
             box-sizing: border-box;
@@ -15,17 +15,33 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        label { font-weight: bold; display: block; }
+        @media (max-width: 768px) {
+            textarea {
+                height: 420px;
+            }
+
+            #compareBtn {
+                background-color: #4CAF50 !important;
+                color: white !important;
+                font-weight: bold;
+                padding: 15px !important;
+                margin-top: 15px !important;
+                font-size: 18px !important;
+            }
+        }
+        label { font-weight: bold; display: block; white-space: nowrap; }
         .label {margin-top: 16px;}
         .diff { margin-top: 10px; white-space: pre-wrap; font-family: monospace; line-height: 1.5; }
         .added { background: yellow; text-decoration: line-through; }
         .removed { background: #fbb6c2; font-weight: bold; }
         table { border-collapse: collapse; margin-top: 10px; width: 100%; }
         th, td { border: 1px solid #ccc; padding: 5px; text-align: left; vertical-align: top; }
-        .legend span { display: inline-block; margin-right: 10px; padding: 2px 5px; }
+        .legend {display: flex; align-items: center; padding: 6px 0;}
+        .legend .legend-inner {display: flex; gap: 12px; margin-left: 6px;}
+        .legend .legend-inner span { display: inline-block; padding: 2px 5px; }
         .red-text-green-bg { background: #d4fcbc; color: red; font-weight: bold; text-decoration: underline; }
-        .section { margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
-        .question { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+        .section { margin-top: 15px; padding: 10px; padding-top: 0px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
+        .question { display: flex; align-items: center; gap: 8px;}
         .question-wrap { display: flex; align-items: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; }
         .hidden { display: none; }
         #audioPlayer {
@@ -67,8 +83,7 @@
             body { margin: 10px; }
 
             .question, .question-wrap {
-                flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 gap: 5px;
                 width: 100%;
             }
@@ -86,24 +101,37 @@
             }
 
             #modeSelection {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                display: flex;
+                align-items: center;
                 gap: 10px;
                 width: 100%;
+                margin: 8px 0;
             }
 
             #modeSelection label:first-child {
                 grid-column: 1 / 3;
             }
 
-            .legend {
+            .legend {display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding: 0;
+            }
+
+            .legend .legend-inner {
                 display: flex;
                 flex-direction: column;
+                margin-left: 0;
+                margin-top: 8px;
+                gap: 0;
             }
 
             .legend span {
                 margin-bottom: 5px;
             }
+        }
+        #result {
+            padding-bottom: 24px;
         }
 
         /* 所有元素都使用 border-box 盒模型 */
@@ -120,15 +148,17 @@
         <label for="seq">No.：</label>
         <input type="text" id="seq" placeholder="Enter article number">
     </div>
+
+
+    <!-- Mode 选择 -->
+    <div id="modeSelection" class="question">
+        <label>Mode：</label>
+        <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
+        <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
+        <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
+    </div>
 </div>
 
-<!-- Mode 选择 -->
-<div id="modeSelection" class="question">
-    <label>Mode：</label>
-    <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
-    <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
-    <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
-</div>
 
 <!-- Dictation 音频上传（默认隐藏） -->
 <div id="audioSection" class="question hidden">
@@ -145,14 +175,16 @@
 
 <div class="legend hidden" id="legend">
     <strong>Legend:</strong>
-    <div style="margin-top: 8px;">
+    <div class="legend-inner">
         <div><span class="added">Yellow background</span> = Extra word</div>
         <div><span class="removed">Red background</span> = Missing word</div>
         <div><span class="red-text-green-bg">(Red text, green background)</span> = Spelling mistake</div>
     </div>
 </div>
-
-<button onclick="compare()" id="compareBtn" class="hidden">Compare</button>
+<button onclick="compare()" id="compareBtn" class="hidden"
+        style="background-color: #F9F9F9; color: #000; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; transition: background-color 0.3s;">
+    Compare
+</button>
 
 <div id="result" class="diff"></div>
 
@@ -310,7 +342,7 @@
 
     const directions = markdownToText(getSection('Directions')).replace(
       /!\[(.*?)\]\(\.\/assets\/(.*?)\)/g,
-      (match, alt, file) => `<img src="../assets/${file}" alt="${alt}" style="max-width:40%; max-width:calc(min(300px, 60%)); display: block; margin: 10px auto;">`
+      (match, alt, file) => `<img src="../assets/${file}" alt="${alt}" style="max-width:calc(min(360px, 80%)); display: block;">`
     );
 
     example = getSection('Example'); // 保留 HTML

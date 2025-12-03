@@ -18,42 +18,45 @@
 ## sympathy
 
 - n. **同情**
-- **Sympathy** is a feeling of pity or sense of **compassion**—it's when you feel bad or someon else who's going through
-  something hard.
-- == compassion
-- empathy
-    - n. **同理心**共鸣，同情；感同身受；
-    - Use **empathy** if you're looking for a noun meaning "the ability to identify with another's feelings".
-- sympathetic adj. 同情的
+- **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone
+  else who's going through something hard.
+- == compassion [kəmˈpæʃn] n. 怜悯，同情
+- empathy [ˈempəθi]
+    - n. **同理心**，共鸣，同情；感同身受
+    - Use **empathy** if you're looking for a noun meaning "<ins>the ability to(做...的能力)</ins>
+      <ins>identify with(认同)</ins> another's feelings".
+- sympathetic [ˌsɪmpəˈθetɪk] adj. 同情的
 
 ## capital
 
 - n. **资本；资产**；首都
-- capitalism
+- capitalism [ˈkæpɪtlˌɪzəm]
     - n. 资本主义
     - socialism n. 社会主义
 - capitalize vi. 利用
-- provincial
+- provincial [prəˈvɪnʃəl]
     - adj. 省的
     - interprovincial adj. 省际的
 
 ## severe
 
+- [sɪˈvɪr]
 - adj. 十分严重的；严厉的
 - severely adv. 严重地
-- serverity n. 严重
-- seriously
+- severity [sɪ'verəti] n. 严重
+- seriously [ˈsɪriəsli]
     - adv. 严重地；认真地
     - take sth. seriously 对...认真对待
+    - serious [ˈsɪriəs] adj. 严重的；重大的；严肃的；认真的
 
 ## capture
 
 - vt. 攻占；引起（注意；兴趣）；描述；拍摄
-- Look, if you had on shou, or one opportunity, to seize everything you ever wanted in one moment. Would you **capture**
-  it or just let it slip?
-- predator
+- Look, if you had on shot, or one opportunity, to *seize([siːz] v. 抓住)* everything you ever wanted in one moment.
+  Would you **capture** it or just let it slip?
+- predator [ˈpredətər]
     - n. 捕食动物
-    - predatory adj. 捕食性的
+    - predatory [ˈpredətɔːri] adj. 捕食性的
 
 ## impression
 
@@ -61,71 +64,84 @@
 - impressionist n. 印象派画家
 - impressive
     - adj. 令人赞叹的
-    - The less you try to imprss, the more impressive you are.
-- impressionable
+    - The less you try to impress, the more **impressive** you are. 你越不刻意表现、越自然，反而越能打动别人
+- impressionable [ɪmˈprɛʃənəbəl]
     - adj. 易受影响的
-    - They were **impressionable** kids during the crash of 2008, when many of their parents lost their jobs or their
-      life saving or both.
+    - They were **impressionable** kids during <ins>the crash of 2008(指代: 2008 金融危机)</ins>, when many of their
+      parents lost their jobs or their <ins>life saving(毕生积蓄)</ins> or both.
 
 ## fiction
 
 - n. 小说；虚构的事
 - Science Fiction 科幻小说
-- artificial
+- artificial [ˌɑːrtɪˈfɪʃl]
     - adj. 人造的；虚假的
     - Artificial Intelligence(AI) 人工智能
-- novel
+- novel [ˈnɑːvl]
     - n. （长篇）小说；
     - adj. 新颖的
-    - a novel discovery 一个新颖的发明
+    - a **novel** discovery 一个新颖的发明
     - novelist n. 小说家
 - fake adj. 假的
 
 ## enormous
 
+- [ɪˈnɔːrməs]
 - adj. 巨大的
 - a enormous/tremendous/vast/grand/gigantic/mega/immense number of
 - And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands protections
   and see for themselves the **enormous** stake involved.
-- tremendous adj. 巨大的
-- vast adj. 巨大的；大量的
-- grand adj. 宏大的；（Grand）（用于大建筑物等的名称）大
-- gigantic
-    - adj. 巨大的
-    - have gigantic consequences 产生重大后果
-- mega
+    - see for oneself/see for themselves 亲自确认、自己验证
+    - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
+- tremendous [trəˈmendəs] adj. 巨大的
+- vast [væst] adj. 巨大的；大量的
+- grand [ɡrænd]
+    - adj. 宏大的；（Grand）（用于大建筑物等的名称）大
+    - giant [ˈdʒaɪənt] adj. 巨大的；伟大的
+- mega [ˈmeɡə]
     - adj. 巨大的
     - governments and mega-corporations 政府和特大公司
-- immense adj. 巨大的
+- immense [ɪˈmens] adj. 巨大的
+- gigantic [dʒaɪˈɡæntɪk]
+    - adj. 巨大的
+    - have **gigantic** consequences 产生重大后果
 
 ## ambiguous
 
+- [æmˈbɪɡjuəs]
 - adj. 模棱两可的
-- == obscure == vagur == dim == blur
+- == obscure == vague == dim == blur
 - ambiguity [ˌæmbɪˈɡjuːəti]
     - n. 模棱两可
     - It's a work of paradox and **ambiguity**.
 - navigate
     - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
-    - Many first-generation students struggle to **navigate** the middle-class culture of higher education...
-- obscure
+    - Many first-generation students <ins>struggle to **navigate**</ins> the middle-class culture of higher education...
+        - struggle to do sth. 努力去做某事/挣扎去做某事
+        - navigate + 抽象事物
+            - navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
+            - navigate + 社会环境/文化/系统/bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
+- obscure [əbˈskjʊr]
     - adj. 鲜为人知的；费解的
-    - The legal issures in the case are **obscure**...
-- vague adj. 含糊的
+    - The legal issues in the case are **obscure**...
+- vague [veɪɡ] adj. 含糊的
 - dim
     - adj. 迟钝的😔
     - dimmed adj. 暗淡的，无效的
-- blur
+- blur [blɜːr]
     - v. （使）变得模糊不清
+    - blurring of ...的模糊化/混淆
     - blurring of roles 角色模糊
     - The **blurring** of working women's role refers to the fact that...
+        - refer to the fact that... 指的是...这一事实
+        - working women 职业女性
 
 ## counter
 
 - v. 反驳
 - n. （商店、银行等的）柜台
 - adj. 反对的
-- counteract vt. 抵消
+- counteract [ˌkaʊntərˈækt] vt. 抵消
 - counterbalance vt. 平衡；抵消
 
 ## extreme
@@ -134,48 +150,57 @@
 - adj. 极度的；异乎寻常的（或严重的）
 - go to extremes 走极端
 - extremely adv. 非常（或极其）
-- ultra
+- ultra [ˈʌltrə]
     - adj. 极其...的
     - ultra-low emission zone(ULEZ) 超低排放区
-- sheer
+- sheer [ʃɪr]
     - adj. （用来强调事物的大小、程度或数量）极其...的；完全的 （表示强调）
-    - The **sheer** volume of available choice is enough to send shoppers into a state of <ins>information overload(信息过载)</ins>.
+    - The <ins>**sheer** volume of</ins> available choice is enough to send shoppers into a state of <ins>information
+      overload(信息过载)</ins>.
+        - sheer volume of... 强调数量大或规模巨大
+        - send sb. into a state of... 让某人进入...状态
 
 ## finance
 
+- [ˈfaɪnæns]
 - vt. 给...提供资金
 - n. 金融；（pl. ）财务状况
 - == fund
 - financial adj. 财政的，财务的，金融的
-- fiscal 
+- fiscal [ˈfɪskl]
     - n. 财政年度
     - adj. 政府财政的
-- revenue
+- revenue [ˈrevənuː]
     - n. （公司、组织的）收入；（政府的）财政收入
-    - The Supreme Court's opinion Thursday overruled a pair of decades-old decisions that states said cost them billions of dollars in lost **revenue** annually.
+    - The Supreme Court's opinion Thursday overruled a pair of decades-old decisions that states said cost them billions
+      of dollars in lost **revenue** annually.
 - income n. 收入
 - margin n. 利润率；页边空白；（pl.）边缘部分
-- monetary adj. 钱的；（尤指一国）货币的（或金融的）
+- monetary [ˈmɑːnɪteri] adj. 钱的；（尤指一国）货币的（或金融的）
 - cashless adj. 不用现金的
-- exchequer 
+- exchequer [ɪksˈtʃɛkɚ]
     - n. （英国）财政部
-    - Chancellor of the Exchequer 英国财政大臣/财政大臣
-- premium
+    - *Chancellor([ˈtʃænsələr] n. （英国）财政大臣)* of the Exchequer 英国财政大臣/财政大臣
+- premium [ˈpriːmiəm]
     - n. 保险费
-    - put a premium on sth. 珍视
+    - 词组
+        - put a premium on sth. 珍视
 
 ## immune
 
+- [ɪˈmjuːn]
 - adj. 有免疫力的；免除的；豁免的；免疫（系统）的；不受影响的
 - 7 ways to boost your **immune** system
 - 词组
     - immune to 对...免疫；不受...影响
     - be immune from 免于...
 - immunity n. 免疫力
-- exempt
+- exempt [ɪɡˈzempt]
     - vt. 免除（或豁免）
     - adj. 免除（责任、付款等）的
-    - Even then several states automatically **exempted** women from jury duty unless they personally asked to have their names included on the jury list.
+    - <ins>Even then(即便如此)</ins> several states automatically **exempted** women from jury duty unless they
+      personally asked to have their names included on the jury list.
+        - exempt someone from something 免除某人的某种义务
 
 ## Words
 
@@ -189,7 +214,7 @@
     - n. 猎物
 - reliable
     - adj. 可靠的
-- gorgeous
+- gorgeous [ˈɡɔːrdʒəs]
     - adj. 华丽的，艳丽的; 极好的，称心的; 美丽动人的，光彩夺目的; 令人愉快的，令人享受的
 
 ## 词组

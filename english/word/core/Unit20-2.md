@@ -80,6 +80,7 @@
 ## intense
 
 - adj. 十分强烈的；激烈的
+- ...it is sure to spark **intense** opposition from the far large number of motorists who will then be affected.
 - intensify v. 使加强
 - intensity n. 强度
 - intensive adj. 密集的

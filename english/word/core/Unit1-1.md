@@ -168,6 +168,8 @@
     - And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands
       protections and see for themselves the enormous(adj. 巨大的) **stake** *involved(v. 包含，涉及)*.
       因此，我们会呼吁从里士满到奥尔巴尼的州立立法者，考虑审查各自的湿地保护法规，并亲自了解所涉及的巨大利益。
+        - see for oneself/see for themselves 亲自确认、自己验证
+        - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
     - stakeholder n. 利益相关者；股东
 - administer
     - vt. 管理；施行

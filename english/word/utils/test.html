@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单词学习 - Unit1-1</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { text-align: center; }
+        .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        .word { font-weight: bold; font-size: 1.2em; }
+        .phonetic { color: #555; margin-left: 5px; }
+        .definition, .derivative, .example { margin-left: 20px; margin-top: 5px; }
+        button { margin-left: 10px; cursor: pointer; }
+        .quiz { margin-top: 20px; border-top: 2px solid #eee; padding-top: 15px; }
+    </style>
+</head>
+<body>
+<h1>Unit1-1 单词学习</h1>
+<div id="word-container"></div>
+
+<div class="quiz">
+    <h2>选择题练习</h2>
+    <div id="quiz-container"></div>
+    <button onclick="checkQuiz()">提交答案</button>
+    <div id="quiz-result"></div>
+</div>
+
+<script>
+  const markdownUrl = "https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word/core/Unit1-1.md";
+
+  // TTS 发音
+  function speak(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+  }
+
+  // 简单 Markdown 解析
+  async function loadWords() {
+    const res = await fetch(markdownUrl);
+    const text = await res.text();
+
+    const entries = text.split(/^##\s+/m).filter(Boolean);
+
+    const words = entries.map(entry => {
+      const lines = entry.split('\n').filter(Boolean);
+      const word = lines[0].trim();
+      const phoneticLine = lines.find(line => line.match(/^\-\s*\[.*\]/));
+      const phonetic = phoneticLine ? phoneticLine.match(/\[(.*)\]/)[1] : '';
+      const definitions = lines.filter(line => line.match(/^\- [a-z]+\./)).map(d => d.replace(/^\- /, ''));
+      const examples = lines.filter(line => line.match(/^\- .*[*]/)); // 含斜体或加粗
+      return { word, phonetic, definitions, examples };
+    });
+
+    renderWords(words);
+    renderQuiz(words);
+  }
+
+  // 渲染单词卡片
+  function renderWords(words) {
+    const container = document.getElementById('word-container');
+    words.forEach(w => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+      <div class="word">${w.word} <span class="phonetic">${w.phonetic}</span>
+        <button onclick="speak('${w.word}')">🔊</button>
+      </div>
+      <div class="definition">${w.definitions.join('<br>')}</div>
+      <div class="example">${w.examples.join('<br>')}</div>
+    `;
+      container.appendChild(card);
+    });
+  }
+
+  // 生成简单选择题（中文释义选英文单词）
+  function renderQuiz(words) {
+    const container = document.getElementById('quiz-container');
+    words.forEach((w, idx) => {
+      const options = [w.word];
+      while (options.length < 4) {
+        const rand = words[Math.floor(Math.random() * words.length)].word;
+        if (!options.includes(rand)) options.push(rand);
+      }
+      options.sort(() => Math.random() - 0.5);
+      const html = `
+      <div>
+        <p>${idx + 1}. ${w.definitions[0]}</p>
+        ${options.map((opt, i) => `
+          <label>
+            <input type="radio" name="q${idx}" value="${opt}"> ${opt}
+          </label>
+        `).join('<br>')}
+      </div>
+    `;
+      container.innerHTML += html;
+    });
+  }
+
+  // 检查选择题答案
+  function checkQuiz() {
+    const quizResult = document.getElementById('quiz-result');
+    const inputs = document.querySelectorAll('#quiz-container input[type=radio]:checked');
+    let score = 0;
+    inputs.forEach(input => {
+      const idx = parseInt(input.name.replace('q',''));
+      const correct = document.querySelectorAll('#word-container .card')[idx].querySelector('.word').textContent.trim().split(' ')[0];
+      if (input.value === correct) score++;
+    });
+    quizResult.textContent = `你答对了 ${score} / ${inputs.length} 题`;
+  }
+
+  loadWords();
+</script>
+</body>
+</html>

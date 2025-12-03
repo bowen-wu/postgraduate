@@ -137,7 +137,7 @@
     - vt. 附；贴
     - attach A to B A重要
     - 词组
-        - attach importance/significance/value/weight to sth. 认为...重要；重视...
+        - attach (utmost) importance/significance/value/weight to sth. 认为...重要；重视...
     - We should <ins>**attach** importance to</ins> children's mental health.
     - We should <ins>**attach** importance to</ins> raising people's *awareness(n. 意识)* of environmental protection.
         - == **Great importance should be attached to** raising people's awareness of environmental protection.

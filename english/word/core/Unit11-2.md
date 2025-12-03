@@ -183,6 +183,7 @@
 
 - v. 奋斗；艰难地行进
 - n. 斗争
+- struggle to do sth. 努力去做某事/挣扎去做某事
 - One day, <in>in retrospect([ˈretrəspekt] 回首)</in>, the years of **struggle** will strike you as the most beautiful.
 - battle n. 战役；斗争
 - combat vt. 与...战斗；防止
