@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Compare</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; max-width: 100%; overflow-x: hidden; }
+        textarea {
+            width: 100%; height: 240px; margin-top: 10px;
+            font-size: 16px;
+            line-height: 22px;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        label { font-weight: bold; display: block; }
+        .label {margin-top: 16px;}
+        .diff { margin-top: 10px; white-space: pre-wrap; font-family: monospace; line-height: 1.5; }
+        .added { background: yellow; text-decoration: line-through; }
+        .removed { background: #fbb6c2; font-weight: bold; }
+        table { border-collapse: collapse; margin-top: 10px; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 5px; text-align: left; vertical-align: top; }
+        .legend span { display: inline-block; margin-right: 10px; padding: 2px 5px; }
+        .red-text-green-bg { background: #d4fcbc; color: red; font-weight: bold; text-decoration: underline; }
+        .section { margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
+        .question { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+        .question-wrap { display: flex; align-items: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; }
+        .hidden { display: none; }
+        #audioPlayer {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 10px;
+        }
+        pre {margin: 0;}
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            body { margin: 10px; }
+
+            .question, .question-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+                margin-top: 10px;
+                font-size: 16px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+            }
+
+            #modeSelection {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                width: 100%;
+            }
+
+            #modeSelection label:first-child {
+                grid-column: 1 / 3;
+            }
+
+            .legend {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .legend span {
+                margin-bottom: 5px;
+            }
+        }
+
+        /* 所有元素都使用 border-box 盒模型 */
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<h2>Compare Articles</h2>
+
+<div class="question-wrap">
+    <div class="question">
+        <label for="seq">No.：</label>
+        <input type="text" id="seq" placeholder="Enter article number">
+    </div>
+</div>
+
+<!-- Mode 选择 -->
+<div id="modeSelection" class="question">
+    <label>Mode：</label>
+    <label><input type="radio" name="mode" value="Dictation" disabled> Dictation</label>
+    <label><input type="radio" name="mode" value="ChToEn" disabled> Ch to En</label>
+    <label><input type="radio" name="mode" value="Writing" disabled> Writing</label>
+</div>
+
+<!-- Dictation 音频上传（默认隐藏） -->
+<div id="audioSection" class="question hidden">
+    <label for="audioFile">Optional Audio File：</label>
+    <input type="file" id="audioFile" accept="audio/*">
+    <audio id="audioPlayer" controls class="hidden" loop></audio>
+</div>
+
+<div id="directions"></div>
+<div id="chinese"></div>
+
+<label for="textB" id="textBLabel" class="hidden label">Your Article (with errors)：</label>
+<textarea id="textB" placeholder="Paste your article (Article B) here..." spellcheck="false" class="hidden"></textarea>
+
+<div class="legend hidden" id="legend">
+    <strong>Legend:</strong>
+    <div style="margin-top: 8px;">
+        <div><span class="added">Yellow background</span> = Extra word</div>
+        <div><span class="removed">Red background</span> = Missing word</div>
+        <div><span class="red-text-green-bg">(Red text, green background)</span> = Spelling mistake</div>
+    </div>
+</div>
+
+<button onclick="compare()" id="compareBtn" class="hidden">Compare</button>
+
+<div id="result" class="diff"></div>
+
+<script src="https://unpkg.com/diff@5.2.0/dist/diff.min.js"></script>
+<script src="https://unpkg.com/typo-js@1.2.2/typo.js"></script>
+
+<script>
+  let dictionary;
+  let fileContent = '';
+  let example = '';
+
+  let currentMode = '';
+
+  // 监听 mode 改变
+  document.querySelectorAll('input[name="mode"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      currentMode = e.target.value;
+      extractSections(); // mode 改变时调用
+
+      // 显示文章编辑区和按钮
+      document.getElementById('textB').classList.remove('hidden');
+      document.getElementById('textBLabel').classList.remove('hidden');
+      document.getElementById('legend').classList.remove('hidden');
+      document.getElementById('compareBtn').classList.remove('hidden');
+
+      // Dictation 模式才显示音频上传
+      if (currentMode === 'Dictation') {
+        document.getElementById('audioSection').classList.remove('hidden');
+      } else {
+        // 重置文件选择器，确保用户选择同一个文件能触发事件
+        const audioFileInput = document.getElementById('audioFile');
+        audioFileInput.value = '';
+        document.getElementById('audioSection').classList.add('hidden');
+        document.getElementById('audioPlayer').classList.add('hidden');
+        document.getElementById('audioPlayer').src = '';
+      }
+    });
+  });
+
+  // 监听音频文件选择
+  document.getElementById('audioFile').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    const player = document.getElementById('audioPlayer');
+    if (file) {
+      const url = URL.createObjectURL(file);
+      player.src = url;
+      player.classList.remove('hidden');
+    } else {
+      player.src = '';
+      player.classList.add('hidden');
+    }
+  });
+
+  function updateModeStatus() {
+    const seqFilled = !!document.getElementById('seq').value.trim();
+    const fileSelected = !!fileContent;
+    const radios = document.querySelectorAll('input[name="mode"]');
+    radios.forEach(radio => radio.disabled = !(seqFilled && fileSelected));
+  }
+
+  // 监听 seq 输入
+  document.getElementById('seq').addEventListener('input', updateModeStatus);
+
+  // 加载远程文件
+  async function loadRemoteFiles() {
+    try {
+      const files = [
+        'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/001-020_letter.md',
+        'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/041-060_essay.md'
+      ];
+
+      const responses = await Promise.all(files.map(url => fetch(url)));
+
+      for (const response of responses) {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+      }
+
+      const contents = await Promise.all(responses.map(res => res.text()));
+      fileContent = contents.join('\n\n');
+
+      updateModeStatus(); // 文件加载后检查是否启用 Mode
+      console.log('Remote files loaded successfully');
+    } catch (error) {
+      console.error('Error loading remote files:', error);
+      alert('Failed to load files from GitHub. Please try again later.');
+    }
+  }
+
+  // 页面加载时自动获取远程文件
+  document.addEventListener('DOMContentLoaded', loadRemoteFiles);
+
+  async function initDictionary() {
+    try {
+      const aff = await fetch('https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/utils/en_US.aff').then(r => r.text());
+      const dic = await fetch('https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/utils/en_US.dic').then(r => r.text());
+      dictionary = new Typo('en_US', aff, dic, {platform: 'any'});
+    } catch (e) {
+      console.warn('Dictionary not loaded, spelling check disabled');
+    }
+  }
+
+  // 监听文件选择，保存内容
+  document.getElementById('files').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      fileContent = await file.text();
+    }
+  });
+
+  function markdownToText(md) {
+    return md
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/&emsp;/g, ' ')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/\r\n/g, '\n')
+      .trim();
+  }
+
+  // 提取 Directions、Example 和 译文
+  function extractSections() {
+    const seq = document.getElementById('seq').value.trim();
+    const audioSectionEl = document.getElementById('audioSection');
+    const directionsEl = document.getElementById('directions');
+    const chineseEl = document.getElementById('chinese');
+
+    directionsEl.innerHTML = '';
+    chineseEl.innerHTML = '';
+
+    if (!seq) {
+      alert('请输入编号');
+      return;
+    }
+    if (!fileContent) {
+      alert('请先选择 Markdown 文件');
+      return;
+    }
+
+    const regex = new RegExp(`##\\s*${seq}([\\s\\S]*?)(?=##\\s*\\d+|$)`, 'i');
+    const match = fileContent.match(regex);
+    if (!match) {
+      alert(`未找到编号 ${seq} 对应的文章`);
+      return;
+    }
+
+    const block = match[1];
+    const getSection = (title) => {
+      const re = new RegExp(`###\\s*${title}([\\s\\S]*?)(?=###|$)`, 'i');
+      const m = block.match(re);
+      return m ? m[1].trim() : '';
+    };
+
+    const directions = markdownToText(getSection('Directions')).replace(
+      /!\[(.*?)\]\(\.\/assets\/(.*?)\)/g,
+      (match, alt, file) => `<img src="../assets/${file}" alt="${alt}" style="max-width:40%; max-width:calc(min(300px, 60%)); display: block; margin: 10px auto;">`
+    );
+
+    example = getSection('Example'); // 保留 HTML
+    const translation = getSection('译文'); // 保留 HTML
+
+    if (currentMode === 'Dictation') {
+      // Dictation 模式才显示音频上传
+      audioSectionEl.classList.remove('hidden');
+      chineseEl.innerHTML = `<div class="section">${translation}</div>`;
+    } else {
+      // 重置文件选择器，确保用户选择同一个文件能触发事件
+      audioSectionEl.value = '';
+      audioSectionEl.classList.add('hidden');
+      document.getElementById('audioPlayer').classList.add('hidden');
+      document.getElementById('audioPlayer').src = '';
+
+      // 中译英模式显示译文
+      if (currentMode === 'ChToEn') {
+        chineseEl.innerHTML = `<div class="section">${translation}</div>`;
+      } else {
+        directionsEl.innerHTML = `<div class="section"><h3>Directions</h3><pre style="white-space: pre-wrap; word-break: break-word; max-width: 100%;">${directions}</pre></div>`;
+      }
+    }
+  }
+
+  // Compare：直接用 Example 作为 Article A
+  async function compare() {
+    const textB = document.getElementById('textB').value;
+    const resultEl = document.getElementById('result');
+    resultEl.innerHTML = '';
+
+    if (!example) {
+      alert('请先点击 “Extract Directions & Example & Translation” 提取 Example');
+      return;
+    }
+    if (!textB) {
+      alert('请输入需要对比的文章（Article B）');
+      return;
+    }
+
+    // 使用已经提取的 example
+    const textA = markdownToText(example);
+
+    const diff = Diff.diffWords(textA, textB);
+    let resultHTML = '';
+    let errors = [];
+
+    for (let i = 0; i < diff.length; i++) {
+      const part = diff[i];
+
+      if (part.removed && i + 1 < diff.length && diff[i + 1].added) {
+        const removedWords = part.value.split(/\s+/).filter(Boolean);
+        const addedWords = diff[i + 1].value.split(/\s+/).filter(Boolean);
+
+        if (removedWords.length === 1 && addedWords.length === 1) {
+          const correct = removedWords[0];
+          const wrong = addedWords[0];
+          resultHTML += `<span style="color:green;">${correct}</span> `;
+          resultHTML += `<span class="red-text-green-bg">(${wrong})</span> `;
+          errors.push({word: wrong, correct: correct, type: '拼写错误'});
+          i++;
+          continue;
+        }
+      }
+
+      if (part.added) {
+        const words = part.value.split(/\s+/).filter(Boolean);
+        words.forEach((w) => {
+          resultHTML += `<span class="added">${w}</span> `;
+          errors.push({word: w, type: '多写'});
+        });
+      } else if (part.removed) {
+        const words = part.value.split(/\s+/).filter(Boolean);
+        words.forEach(w => {
+          resultHTML += `<span class="removed">${w}</span> `;
+          errors.push({word: w, type: '漏写'});
+        });
+      } else {
+        resultHTML += part.value;
+      }
+    }
+
+    resultEl.innerHTML = resultHTML;
+  }
+
+  initDictionary();
+</script>
+</body>
+</html>

@@ -6,24 +6,25 @@
 
 #### General Description
 
-- This pie chart clearly illustrates...
 - The diagram above clearly illustrates... 上面的图标清楚地揭示了
+- From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
+- This pie chart clearly illustrates...
 - The pie chart above clearly reveals...
 - The bar chart above clearly reflects...
 - As can be seen from the bar chart above,... 从上面的柱状图可以看出
-- From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
 
 ##### Transition
 
+- According to the data given above, 根据上图中给出的数据
+- During this period, 在此期间
+- there has been a dramatic increase from 0.4 to 4 billion...
 - As is revealed in the graph, 如图所示
 - As illustrated in the graph, 如图所示
 - As is reflected by the diagram, 如图表所示
-- According to the data given above, 根据上图中给出的数据
 - Among all the five categories, 在所有五组分类数据中
 - By contrast, 相比之下
 - On the contrary, 相反
 - In the meantime, 与此同时
-- During this period, 在此期间
 
 ### Body
 
