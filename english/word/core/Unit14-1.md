@@ -122,7 +122,10 @@
 - 词组
     - weigh on 使（某人或某人的精神等）忧虑
     - weigh down 使负荷太重
-    - weigh in （在讨论、辩论等中）发表有分量的意见；**加入**比赛；（赛前）测体重
+    - weigh in 体重以确定参赛资格；**加入**比赛；
+        - 引申
+            - （比喻）（在讨论、辩论等中）发表看法 / 参与讨论
+            - （比喻）加入、介入某个争议或事件；发表有分量的意见
 - Republican Speaker of the House of Representatives John Boehner was also quick to **weigh in**.
 - Two potential giants may yet **weigh in**.
 - Leading doctors today **weigh in** on the debate over the government's role in promoting public health...
@@ -147,7 +150,7 @@
 - adj. 值...钱；值得
 - 词组
     - be worth doing sth. 值得做某事
-    - be worth sb.'s while (to do/doing sth.) 值得某人做某事
+    - be worth sb.'s while to do sth. 值得某人花时间/精力去做某事
 - It's not **worth** losing sleep over.
 - How much is this painting **worth**?
 - worthwhile
@@ -186,6 +189,7 @@
 
 - [prəˈpoʊz]
 - vt. 提出；提议
+- purpose [ˈpɜːrpəs] n. 目的；目标
 - proposal [prəˈpoʊzl]
     - n. 提议
     - ...they *presumably([prɪˈzuːməbli] adj. 相反的)* have enough independence to disagree with the chief executive's

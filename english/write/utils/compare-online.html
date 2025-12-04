@@ -181,10 +181,24 @@
         <div><span class="red-text-green-bg">(Red text, green background)</span> = Spelling mistake</div>
     </div>
 </div>
-<button onclick="compare()" id="compareBtn" class="hidden"
-        style="background-color: #F9F9F9; color: #000; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; transition: background-color 0.3s;">
-    Compare
-</button>
+<div style="display: flex; gap: 8px; margin-top: 10px;">
+    <button onclick="compare()" id="compareBtn" class="hidden"
+            style="background-color: #F9F9F9; color: #000; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+        Compare
+    </button>
+    <button onclick="reset()" id="resetBtn" class="hidden"
+            style="background-color: #f44336; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+        Reset
+    </button>
+</div>
+
+<script>
+  // Reset function needs to be defined before the other script
+  function reset() {
+    document.getElementById('textB').value = '';
+    document.getElementById('result').innerHTML = '';
+  }
+</script>
 
 <div id="result" class="diff"></div>
 
@@ -209,6 +223,7 @@
       document.getElementById('textBLabel').classList.remove('hidden');
       document.getElementById('legend').classList.remove('hidden');
       document.getElementById('compareBtn').classList.remove('hidden');
+      document.getElementById('resetBtn').classList.remove('hidden');
 
       // Dictation 模式才显示音频上传
       if (currentMode === 'Dictation') {

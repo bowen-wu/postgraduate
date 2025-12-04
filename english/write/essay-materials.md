@@ -6,12 +6,10 @@
 
 #### General Description
 
-- The diagram above clearly illustrates... 上面的图标清楚地揭示了
+- The pie/bar chart above clearly illustrates/reveals/reflects...
 - The diagram above clearly illustrates that a dramatic increase has occurred in... 上面的图表清楚地表明，在...方面出现了显著的增长
 - From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
-- This pie chart clearly illustrates...
-- The pie chart above clearly reveals...
-- The bar chart above clearly reflects...
+    - From the information given in the above column chart, we can see a striking contrast between developing and developed countries in mobile-phone subscriptions from 2000 to 2008.
 - As can be seen from the bar chart above,... 从上面的柱状图可以看出
 
 ##### Transition

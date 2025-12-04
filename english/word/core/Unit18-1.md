@@ -36,7 +36,7 @@
     - Delicate things，like a flower，a necklace，or someone's feelings are fragile，easily broken，and often quite
       beautiful.
     - In Its early days the U.S. was confronted with delicate situations.
-    - vulnerable 脆弱的
+    - vulnerable adj. （地方）易受攻击的; 易受伤的; 易受批评的
 
 ## master
 

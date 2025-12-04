@@ -62,8 +62,8 @@
     - be subject to doing sth. 容易遭受/可能会经历
 - White noise was played into the **subject**'s ears through headphones.
 - Prices may be **subject** to the relation of supply and demand.
-- The study is a genome([ˈdʒinoʊm] n. 基因组)-wide analysis conducted(vt. 实施) on 1932 unique(adj. 独特的) **subjects**
-  which compared pairs of unrelated friends and unrelated strangers([st'reɪndʒəz] n. 陌生人).
+- The study is a genome([ˈdʒinoʊm] n. 基因组)-wide analysis *conducted(vt. 实施)* on 1932 *unique(adj. 独特的)*
+  **subjects** which compared pairs of unrelated friends and unrelated strangers([st'reɪndʒəz] n. 陌生人).
     - conducted on 1932 unique **subjects** 非谓语动词短语做定语，修饰名词 analysis
 - In addition, the computer programs <ins>a company uses to estimate relationships</ins> may _be_ patented and not
   ***subject*** _to_ peer review or outside evaluation.
@@ -74,12 +74,12 @@
       **subjective**.
 - susceptible [səˈseptəbl]
     - adj. 易患病的；易受...影响的
-    - Women are particularly(adv. 特别) **susceptible** to developing(v. 患（病）) depression and anxiety([æŋˈzaɪəti])
-      disorder in response to stress compared to men.
     - be susceptible to (doing) sth. 遭受；承受
         - == be subject to
         - == be vulnerable to
             - vulnerable [ˈvʌlnərəbl] adj. （地方）易受攻击的; 易受伤的; 易受批评的
+    - Women are *particularly(adv. 特别)* **susceptible** to *developing(v. 患（病）)* depression and anxiety([æŋˈzaɪəti])
+      disorder in response to stress compared to men.
 
 ## success
 
@@ -97,10 +97,9 @@
 - successive [səkˈsesɪv]
     - adj. 连续的，依次的；接替的
     - But **successive** governments have *presided([priˈzaidid] v. 主持)* over selling green spaces, squeezing money
-      from
-      local authorities and declining attention on sport in education.
+      from local authorities and declining attention on sport in education.
 - fail
-    - vi. 失败；未能（做到）；出故障；
+    - vi. 失败；未能（做到）；出故障
     - vt. 使失望
     - failure [ˈfeɪljər] n. 失败；失败的事
 
@@ -115,8 +114,8 @@
     - uniform n. 制服
 - alliance [əˈlaɪəns]
     - n. 联盟，结盟
-    - A native literary([ˈlɪtəreri] adj. 文学的) drama had been created, its **alliance** with the public playhouses
-      established, and at least some of its great traditions(n. 传统) had been begun.
+    - A native *literary([ˈlɪtəreri] adj. 文学的)* drama had been created, its **alliance** with the public playhouses
+      established, and at least some of its great *traditions(n. 传统)* had been begun.
 - align
     - v. 公开支持；与...一致
     - == support

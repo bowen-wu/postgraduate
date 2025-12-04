@@ -221,7 +221,7 @@
     - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
 - elect
     - vt. 选举
-    - In a direct democracy, citizens <ins>take turns(take turns)</ins> governing themselves, rather than **electing**
+    - In a direct democracy, citizens <ins>take turns(轮流)</ins> governing themselves, rather than **electing**
       representatives to govern for them.
         - A rather than B 肯定A否定B
     - election n. 选举
