@@ -43,7 +43,10 @@
     - n. 奖金
     - How could she have let those enormous([ɪˈnɔːrməs] adj. 巨大的) **bonus** payouts pass unremarked?
         - let + 宾语 + do sth. 让某人做某事（表示“允许”或“使”）
-- pension [ˈpenʃn] n. 养老金
+- pension [ˈpenʃn]
+    - n. 养老金
+    - Politicians have repeatedly "backloaded" *public-sector pay deals(公共部门薪酬协议)*, keeping the pay increase
+      modest but adding to holidays and especially **pensions** that are already generous.
 - welfare [ˈwelfer] n. （政府给予的）福利；（个体或群体的）幸福，安全与健康
 
 ## tend

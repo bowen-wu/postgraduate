@@ -9,7 +9,8 @@
 - The pie/bar chart above clearly illustrates/reveals/reflects...
 - The diagram above clearly illustrates that a dramatic increase has occurred in... 上面的图表清楚地表明，在...方面出现了显著的增长
 - From the information given in the above column chart, we can see... 根据上面的柱状图提供的信息，我们可以看出
-    - From the information given in the above column chart, we can see a striking contrast between developing and developed countries in mobile-phone subscriptions from 2000 to 2008.
+    - From the information given in the above column chart, we can see a striking contrast between developing and
+      developed countries in mobile-phone subscriptions from 2000 to 2008.
 - As can be seen from the bar chart above,... 从上面的柱状图可以看出
 
 ##### Transition
@@ -198,6 +199,7 @@
 - with the prosperity of the (China's) economy
 - with the rapid and steady development of China’s economy 随着中国经济的快速且稳定的发展
 - with the continuous and significant development of China’s economy 随着中国经济持续而显著的发展
+- with the rapid increase in economic development happening in developing countries 随着发展中国家的经济快速增长
 - the prosperity of China's/the economy
 - promotes/boosts economy development
 - poomotes/boosts local economic development

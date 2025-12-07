@@ -160,6 +160,7 @@
 
 ## innovate
 
+- [ˈɪnəveɪt]
 - v. 改革；创新
 - innovation n. 创新；革新；新思想；新想法
 - innovative adj. 富有创新思想的；采用新方法的；革新的

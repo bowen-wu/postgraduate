@@ -164,6 +164,8 @@
 - n. 渴望
 - desirable
     - adj. 令人向往的；值得拥有的
+    - ...the career office found the most **desirable** trait in a future employer was the ability to offer secure
+      employment.
     - undesirable
         - adj. 不受欢迎的，讨厌的; 不合需要的; 不方便的; 不良的
         - n. 不受欢迎的人; 不良分子

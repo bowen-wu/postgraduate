@@ -101,7 +101,7 @@
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
     - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
         - | 用法       | 含义     | 示例                        |
-                                                  |----------|--------|---------------------------|
+                                                                                                    |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -160,6 +160,8 @@
     - == cling
     - adhere to (doing) sth.
     - All members of the association **adhere** to a strict <ins>code of practice(行为规范、操作准则)</ins>.
+    - <ins>For years(多年来)</ins> executives and headhunters have **adhered** to the rule that the most attractive CEO
+      candidates are the ones who must be poached.
 
 ## medical
 

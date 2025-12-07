@@ -137,6 +137,8 @@
 
 - n. 大笔的钱（可数）；命运（不可数）
 - a good fortune
+- If she hopes her new-found **fortune** will yield lasting felling of fulfillment, she could <ins>do worse than</ins>
+  read Happy Money by Elizabeth Dunn and Michael Norton.
 - fortunate adj. 幸运的
 - unfortunate adj. 不幸的
 - fortunately adv. 幸运地

@@ -65,6 +65,7 @@
 - impressive
     - adj. 令人赞叹的
     - The less you try to impress, the more **impressive** you are. 你越不刻意表现、越自然，反而越能打动别人
+        - impress v. 给...留下...印象; 使敬佩; 给...深刻印象; 使铭记; 使...意识到
 - impressionable [ɪmˈprɛʃənəbəl]
     - adj. 易受影响的
     - They were **impressionable** kids during <ins>the crash of 2008(指代: 2008 金融危机)</ins>, when many of their
@@ -114,13 +115,6 @@
 - ambiguity [ˌæmbɪˈɡjuːəti]
     - n. 模棱两可
     - It's a work of paradox and **ambiguity**.
-- navigate
-    - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
-    - Many first-generation students <ins>struggle to **navigate**</ins> the middle-class culture of higher education...
-        - struggle to do sth. 努力去做某事/挣扎去做某事
-        - navigate + 抽象事物
-            - navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
-            - navigate + 社会环境/文化/系统/bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
 - obscure [əbˈskjʊr]
     - adj. 鲜为人知的；费解的
     - The legal issues in the case are **obscure**...
@@ -135,6 +129,13 @@
     - The **blurring** of working women's role refers to the fact that...
         - refer to the fact that... 指的是...这一事实
         - working women 职业女性
+- navigate
+    - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
+    - Many first-generation students <ins>struggle to **navigate**</ins> the middle-class culture of higher education...
+        - struggle to do sth. 努力去做某事/挣扎去做某事
+        - navigate + 抽象事物
+            - navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
+            - navigate + 社会环境/文化/系统/bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
 
 ## counter
 
@@ -166,7 +167,7 @@
 - vt. 给...提供资金
 - n. 金融；（pl. ）财务状况
 - == fund
-- financial adj. 财政的，财务的，金融的
+- financial [faɪˈnænʃl] adj. 财政的，财务的，金融的
 - fiscal [ˈfɪskl]
     - n. 财政年度
     - adj. 政府财政的

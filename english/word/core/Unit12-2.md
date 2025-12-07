@@ -157,6 +157,9 @@
 
 - vt. 伤害；破坏
 - n. 损失；伤害
+- damage to + 人/物 (固定搭配) 对...的伤害
+    - <ins>Privacy law(隐私法)</ins> builds on the *concept([ˈkɑːnsept] n. 概念)* of **damage** to an individual from
+      identifiable knowledge about them.
 - Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen concluded: "We
   do not attract what we want, but what we are."
 - ...passionate consumers will voice their opinions in quicker, more visible, and much more **damaging** ways.
@@ -205,9 +208,12 @@
 - [sɪˈkjʊr]
 - vt. （尤指经过努力）获得；使安全
 - adj. 稳固的
+- ...the career office found the most desirable trait in a future employer was the ability to offer **secure**
+  employment.
 - **security**
     - n. 安全（感）
-    - Job **security** or stability was the second most important career goal; work-life balance was number one, followed
+    - Job **security** or stability was the second most important career goal; work-life balance was number one,
+      followed
       by a sense of <ins>being dedicated to(致力于)</ins> a cause or to feel good about serving the greater good.
 - safe
     - adj. 安全的

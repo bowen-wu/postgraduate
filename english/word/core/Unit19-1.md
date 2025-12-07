@@ -32,7 +32,9 @@
 - vt. 进行（自杀）；承诺
 - They are sitting on the fence and refusing to commit themselves.
 - If I was poor and desperate，I might <ins>commit crimes(犯罪)</ins> to feed my family.
-- commitment n. 承诺；信奉
+- commitment
+    - n. 承诺；信奉
+    - **Commitment** is inherent in any *genuinely([ˈdʒɛnjʊɪnlɪ] adv. 真正地、诚挚地)* loving relationship.
 - commission
     - n. 委员会
     - America's Federal Trade Commission launched a round of talks about how to save newspapers.
@@ -169,6 +171,7 @@
 
 ## adolescent
 
+- [ˌædəˈlesnt]
 - adj. 青春期的
 - n. 青少年
 - mature

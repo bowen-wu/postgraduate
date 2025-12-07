@@ -24,18 +24,20 @@
 
 ## inherent
 
+- [ɪnˈhɪərənt]
 - adj. 国有的，内在的
-- Commitment is **inherent** in any genuinely loving relationship.
+- inherent in sth 某物中固有的、密不可分的、不可避免的
+- Commitment is **inherent** in any *genuinely([ˈdʒɛnjʊɪnlɪ] adv. 真正地、诚挚地)* loving relationship.
 - inherently adv. 固有地，内在地
-- inherit
+- inherit [ɪnˈherɪt]
     - vt. 继承（金钱、财产等）
     - inheritage n. 遗产（指国家或社会长期形成的历史、传统和特色）
-- legacy
+- legacy [ˈleɡəsi]
     - n. （事件或历史的）遗留影响
     - Now it's time for us to continue your **legacy**.
-- innate adj. （品质、感情等）天生的
+- innate [ɪˈneɪt] adj. （品质、感情等）天生的
 - inborn adj. 天生的
-- intrinsic adj. 固有的，内在的
+- intrinsic [ɪnˈtrɪnsɪk] adj. 固有的，内在的
 
 ## internal
 
@@ -46,16 +48,18 @@
 
 ## permit
 
+- [pərˈmɪt]
 - v. 允许
 - n. 许可证
 - permission n. 准许
 - permissive 😔
     - adj. 纵容的
-    - Authoritative parents are more likely than **permissive** parents to have children who as adolescents are self-confident, high in self-esteem, and responsibility independent.
+    - Authoritative parents are more likely than **permissive** parents to have children who as
+      *adolescents([ˌædəˈlesnt] n. 青少年)* are self-confident, high in self-esteem, and responsibly independent.
 - admission n. 准许进入
-- license 
+- license
     - vt. 批准
-    - n. 执照 
+    - n. 执照
     - == permit
 
 ## modest
@@ -63,8 +67,10 @@
 - [ˈmɑːdɪst]
 - adj. 适度的；谦虚的；普通的；较少的
 - He lives on a **modest** income.
-- Politicians have repeatedly "backloaded" public-sector pay deals, keeping the pay increase **modest** but adding to holidays and especially pensions that are already generous.
-- moderate 
+    - live on + 名词 靠...生活/以...为生
+- Politicians have repeatedly "backloaded" *public-sector pay deals(公共部门薪酬协议)*, keeping the pay increase
+  **modest** but adding to holidays and especially pensions that are already generous.
+- moderate
     - v. （使）缓和
     - adj. 适度的；合理的
     - == modest
@@ -75,51 +81,58 @@
 - The **proportion** of Spring Festival gifts *accounted for/occupy([ˈɑːkjupaɪ])* 40 percent.
 - disproportionately [ˌdɪsprə'pɔʃənətlɪ]
     - adv. 不成比例地；不匀称，不相称
-    - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the middle class **disproportionately squeezed**.
+    - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
+      middle class **disproportionately squeezed**.
 - percent
     - n. 百分比
-    - percentage 
+    - percentage
         - n. 百分比
         - == proportion
 
 ## schedule
 
 - n. 日程安排
-- agenda
-    - n. 目的；计划 
+- agenda [əˈdʒendə]
+    - n. 目的；计划
     - == plan
-    - put sth. on the top of the agenda 
-        - == attach much importance to
+    - put sth. on the top of the agenda 把某事放在最优先处理的位置/列为首要任务
+        - attach (utmost/much) importance/significance/value/weight to sth. 认为...重要；重视...
 
 ## strain
 
-- vt. 过度使用 
+- [streɪn]
+- vt. 过度使用
     - == overused
 - n. 压力
-    - stress
-- their **strained** relations with the boards.
+    - == stress
+- strained
+    - adj. 紧张的；不和谐的；恶化的；勉强维持的
+    - their <ins>**strained** relations(紧张的关系/不和谐的关系)<ins> with the boards.
 - constrain
     - vt. 限制
     - constraint
         - n. 约束
-        - ...online-only competitors don't have the same set of financial **constraints**.
+        - ...online-only competitors don't have the same *set(n. 一组/一套)* of financial **constraints**.
 - restrain
     - vt. 抑制
-    - restraint 
+    - restraint
         - n. 克制
         - == constraint
 - bind
     - vt. （使）联合在一起；系
-    - ...a result seen in France and other countries with <ins>legally **binding**(法律约束)</ins> provision on placing women in top business positions.
+    - ...a result seen in France and other countries with <ins>legally **binding**(法律约束)</ins> provision on placing
+      women in top business positions.
 
 ## trait
 
+- [treɪt]
 - n. 特点，特征
 - == characteristic
-- ...the career office found the most desirable **trait** in a future employer was the ability to offer secure employment.
-- portrait
+- ...the career office found the most desirable **trait** in a future employer was the ability to offer secure
+  employment.
+- portrait [ˈpɔːrtrət]
     - n. 肖像
-    - portray vt. 描绘
+    - portray [pɔːrˈtreɪ] vt. 描绘
 
 ## furthermore
 
@@ -133,7 +146,6 @@
         - n. 未来; 前途; 未来的事; 期货
         - adj. 未来的
 - moreover adv. 此外，而且
-- in addition
 
 ## emission
 
@@ -145,55 +157,66 @@
 ## entitle
 
 - vt. 使享有权利；给...题名
-- be entitled to sth.
+- be entitled to sth. 有权利享有某物/有资格获得某物
 - Everyone's **entitled** to their own opinion.
-- They are **entitled** to first class travel.
+- They are **entitled** to <ins>first class(头等舱)</ins> travel.
+    - class n. 仓位
 - The court, though, may want to allow room for police to cite situations where they **are entitled to** more freedom.
 - subtitle n. 字幕；副标题
 
 ## hijack
 
+- [ˈhaɪdʒæk]
 - vt. 劫持（交通工具，尤指飞机）；强行控制
-- poach
+- poach [poʊtʃ]
     - vt. 挖走（人员等）
-    - For years executives and headhunters have adhered to the rule that the most attractive CEO candidates are the ones who must be **poached**.
+    - <ins>For years(多年来)</ins> executives and headhunters have adhered to the rule that the most attractive CEO
+      candidates are the ones who must be **poached**.
 
 ## imitate
 
 - vt. 模仿
-- First you **imitate**, then you innovate.
+- First you **imitate**, then you innovate([ˈɪnəveɪt]).
 - These epochal figures represented lives hard to **imitate**...
-- What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues to evade scientists.
+- What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues
+  to evade scientists.
 - imitation n. 模仿
 
 ## inflation
 
+- [ɪnˈfleɪʃn]
 - n. 通货膨胀（率）
 - inflate v. （使）涨高
 - fluctuate [ˈflʌktʃueɪt]
     - vi. （大小、数量、质量等）波动
-    - This time experts reckon that prices are about 40% down on their peak on average, though some have been for more **fluctuate**.
-    - fluctuant adj. 波动的
-    - fluctuation
+    - This time experts reckon that prices are about 40% down on their peak on average, though some have been for more
+      **fluctuate**.
+    - fluctuant ['flʌktʃʊrnt] adj. 波动的
+    - fluctuation [ˌflʌktʃʊˈeɪʃn]
         - n. 波动，起伏
         - Weighing yourself regularly is a wonderful way to stay aware of any significant weight **fluctuations**.
-- afloat
+- afloat [əˈfloʊt]
     - adj. 能维持下去
     - stay afloat 勉强存活
-        - == survive 
+        - == survive
     - keep the Postal Service **afloat**
-- circulation
+- circulation [ˌsɜːrkjəˈleɪʃn]
     - n. 流通；（报刊）发行量
     - factors promoting artwork **circulation**
 
 ## Words
 
-- inconvenience
-- emotionalism
-- explicit
-    - adj. 直抒胸臆的
-    - == direct
-    - implicit adj. 隐晦的；暗含的
+- inconvenience [ˌɪnkənˈviːniəns]
+    - n. 不方便; 麻烦; 为难之处; 麻烦事
+    - vt. 给...带来不便; 给...添麻烦; 打扰; 使为难
+- emotionalism [ɪ'moʊʃənəlˌɪzəm]
+    - n. 感情主义
+- explicit [ɪkˈsplɪsɪt]
+    - == direct == clear == express
+    - adj. 明确的
+    - implicit adj. 不直接言明的；内含的
+        - == unclear
+        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
 
 ## 词组
 
