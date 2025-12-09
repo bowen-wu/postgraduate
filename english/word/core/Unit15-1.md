@@ -89,7 +89,7 @@
 
 - [ˈɪrə]
 - n. 时代
-- In an **ear** of AI.
+- In an **era** of AI.
 - epoch [ˈepək]
     - n. 时代，纪元
     - epochal ['epəkəl]
@@ -188,7 +188,7 @@
     - == spring from
 - originate [əˈrɪdʒɪneɪt]
     - v. 来自；起源；发明
-    - Hindrance to the reform of the legal system **originates from**...
+    - *Hindrance([ˈhɪndrəns] n. 阻碍)* to the reform of the legal system **originates from**...
 - derive [dɪˈraɪv]
     - v. 从...衍生出；起源于
     - *Elegance(n. 优雅)*, he believed, did not **derive from** abundance.
