@@ -21,7 +21,7 @@
 
 - vt. 为...提供资金
     - == invest
-- n. 专款；（~s)资金
+- n. 专款；（~s）资金
 - *funding(主动)* agencies 出资机构
 - publicly *funded(被动)* research 政府资助的研究
 - Some growth <ins>stems from(源自/起因于)</ins> a commitment(n. 承诺) by governments and
@@ -208,13 +208,15 @@
 - [dɪˈmænd]
 - vt. 强烈要求；需要
 - n. （顾客的）需求；（坚决的）要求；需求量
+- I strongly demand that 我强烈要求
 - 词组
     - demand for 对...的需求；对...的要求
     - in demand 需求量大；受欢迎
     - on demand 一经要求
-- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high quarterly profits from companies,
+- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high <ins>quarterly profits (净利润)</ins> from companies,
   can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
   loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
+    - public companies/publicly traded company 上市公司
 - supply
     - v. 供应，提供; 补充，填充
     - n. 提供，供应（量）; 储备; 补给品
