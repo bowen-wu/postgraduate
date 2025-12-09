@@ -82,6 +82,7 @@
 
 ## fragile
 
+- [ˈfrædʒl]
 - adj. 脆弱的
 - fragile period 脆弱的时期
 - fraction n. 小部分；一点儿

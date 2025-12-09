@@ -202,6 +202,7 @@
     - keep the Postal Service **afloat**
 - circulation [ˌsɜːrkjəˈleɪʃn]
     - n. 流通；（报刊）发行量
+    - It was to ruin lives <ins>in the quest for</ins> **circulation** and impact.
     - factors promoting artwork **circulation**
 
 ## Words

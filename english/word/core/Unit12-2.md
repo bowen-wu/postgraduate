@@ -175,7 +175,9 @@
     - vt. 摧毁，破坏
     - Man is not made for defeat. A man can be **destroyed** but not defeated.
     - destructive [dɪˈstrʌktɪv] adj. 破坏性的
-- ruin [ˈruːɪn] vt. 毁坏
+- ruin [ˈruːɪn]
+    - vt. 毁坏
+    - It was to **ruin** lives <ins>in the quest for</ins> circulation and impact.
 - spoil [spɔɪl] vt. 破坏
 - disruptive [dɪsˈrʌptɪv] adj. 扰乱性的，颠覆性的
 - havoc [ˈhævək]

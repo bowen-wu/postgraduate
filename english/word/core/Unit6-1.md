@@ -125,7 +125,7 @@
     - have sth. in common 有...共同点
 - commonality [ˌkɑməˈnælɪti]
     - n. 共性
-    - In some ways, this quest(vt./n. 探索; 追求) for **commonalities** defines science.
+    - In some ways, this *quest(vt. 追求)* for **commonalities** defines science.
 - commonly
     - adv. 通常
     - Mental health has commonly been called conscience, **instinct**, *wisdom([ˈwɪzdəm] n. 智慧)*, common sense, or

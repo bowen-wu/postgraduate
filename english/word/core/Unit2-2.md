@@ -19,10 +19,11 @@
 
 ## rule
 
-- v. 判决
+- v. 判决；统治
 - n. 规则；统治；惯例
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
+- Rain falls from above, and people who reign <ins>**rule** from<ins> a position above others.
 - rule out 排除；不予考虑
     - ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
 - overrule

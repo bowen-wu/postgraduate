@@ -218,6 +218,11 @@
 
 ## Words
 
+- irritate
+    - v. 激怒，惹怒
+    - irritation n. 激怒
+- indifferent 漠不关心的
+
 ## 词组
 
 - beside the point
