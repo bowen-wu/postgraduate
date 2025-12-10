@@ -37,7 +37,9 @@
     - v. 评论；标记
     - n. 评论；标记
     - How could she have let those *enormous([ɪˈnɔːrməs] adj. 巨大的)* bonus payouts pass **unremarked**?
-    - remarkable adj. 引人注目的，显著的
+    - remarkable
+        - adj. 引人注目的，显著的
+        - remarkable change
 - criticism n. 批判; 指责; (书籍或音乐等)评论
 - attitude n. 态度
 
