@@ -123,8 +123,8 @@
     - disappointed adj. 失望的，灰心的
     - disappointment
         - n. 失望；令人失望的人（或事物）
-        - Like the **majority** of authors, he had to suffer many *disappointments(n. 失望)* and rejections along the
-          way, but these made him <ins>all the more(更加...)</ins> determined to succeed.
+        - Like the majority of authors, he had to suffer many **disappointments** and rejections along the way, but
+          these made him <ins>all the more(更加...)</ins> determined to succeed.
 
 ## random
 
@@ -237,10 +237,10 @@
     - == modest [ˈmɑːdɪst] adj. 适度的；谦虚的；普通的
 - sincere
     - adj. 诚挚的，真诚的
-- intellectual
+- intellectual [ˌɪntəˈlektʃuəl]
     - adj. 智力的
     - n. 知识分子
-- excitement
+- excitement [ɪkˈsaɪtmənt]
     - n. 激动，兴奋
 - endurance [ɪnˈdʊrəns]
     - n. 忍耐（力）

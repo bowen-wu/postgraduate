@@ -194,7 +194,9 @@
     - deference [ˈdefərəns]
         - n. 尊重，遵从
         - == respect
-- postpone [poʊˈspoʊn] vt. 推迟
+- postpone [poʊˈspoʊn]
+    - vt. 推迟
+    - postpone + 名词/动名词 + to + 时间
 
 ## fix
 

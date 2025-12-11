@@ -22,7 +22,7 @@
 - vt. 监控；监听
 - surveillance
     - n. 监视
-    - survey 调查
+    - survey vt. 调查
 
 ## operate
 
@@ -38,26 +38,30 @@
 
 - vt. 发起；赞助
 - n. 倡议者
-- sponsorship n. 赞助
+- sponsorship
+    - n. 赞助
+    - limit **sponsorship** of sports events
 
 ## mere
 
 - adj. 仅仅的
+- **Mere** curiosity adds wings to every step.
 - merely adv. 仅仅
 - bare
     - adj. 刚刚够的
     - barely
         - adv. 几乎不
-        - We barely talk.
+        - We **barely** talk.
         - ...there was so many people in a much worse state, with **barely** any money to spend on food...
 
 ## trace
 
 - vt. 追溯；勾画出（轮廓），描绘
 - track
-    - vt. 追踪；跟踪； n. 轨道
-    - In December 2010 America's Federal Trade Commission proposed adding a "<ins>do not track(无痕浏览)</ins>" option
-      to internet browsers...
+    - vt. 追踪；跟踪
+    - n. 轨道
+    - In December 2010 America's Federal Trade Commission proposed adding a "<ins>do not **track**(无痕浏览)</ins>"
+      option to internet browsers...
 - hint v. 暗示（hint at）
 - cue n. 提示；暗示
 
@@ -68,7 +72,7 @@
 - intuition
     - n. 直觉
     - **Intuition**'s special powers are unleashed only in certain circumstances.
-    - == instinct
+    - == instinct [ˈɪnstɪŋkt] n. 本能；直觉
 - illusion
     - n. 错觉
     - illusory adj. 虚幻的
@@ -82,24 +86,27 @@
 
 - n. 默认
 - betray
-    - vt. 违背
-    - When I tell someone I will not betray confidence I keep my word.
-    - She studied his face，but it betrayed nothing.
+    - vt. 违背；流露
+    - When I tell someone I will not **betray** confidence I keep my word.
+    - She studied his face, but it **betrayed** nothing.
 
 ## summit
 
 - n. 顶峰
-- peak vt. 达到最高水平；n. 高峰；山峰；尖形
+- peak
+    - vt. 达到最高水平
+    - n. 高峰；山峰；尖形
 
 ## odd
 
-- adj. 任意的
+- adj. 任意的；古怪的
 - odds
     - n. （事情发生的）可能性
-    - the odds
-    - The odds of a long，nasty recession are growing.
+    - The **odds** of a long, nasty recession are growing.
     - be at odds with 与...有差异
-- weird adj. 怪异的
+- weird
+    - adj. 怪异的
+    - bizarre adj. 奇异的; 古怪的
 
 ## cooperate
 
@@ -107,7 +114,7 @@
 - cooperate with sb.
 - cooperation
     - n. 合作
-    - corporation 公司
+    - corporation n. （大）公司
 - cooperative adj. 合作的
 - collaborate
     - vi. 合作
@@ -115,23 +122,28 @@
     - collaborative
         - adj. 合作的
         - collaborative nature of modern research 现代研究的合作性
+        - Opposite: solitary
+            - adj. 独自的，独立的; 单个的; 唯一的; 隐居的
+            - n. 独居者，隐士; 单独禁闭
 
 ## provoke
 
 - vt. 引起；激怒
 - evoke vt. 唤起
+- trigger
+    - vt. 引发
+    - n. （尤指引发不良反应或发展的）起因😔
+- spark
+    - vt. 引发
+    - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
+      passive consumption and active creation.
+    - ...it is sure to **spark** intense opposition from the far large number of motorists who will then be affected.
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者
     - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
       谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
       about him."
-- trigger vt. 引发； n. （尤指引发不良反应或发展的）起因😔
-- spark
-    - vt. 引发
-    - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
-      passive consumption and active creation.
-    - ...it is sure to **spark** intense opposition from the far large number of motorists who will then be affected.
 
 ## fortune
 
@@ -139,11 +151,17 @@
 - a good fortune
 - If she hopes her new-found **fortune** will yield lasting felling of fulfillment, she could <ins>do worse than</ins>
   read Happy Money by Elizabeth Dunn and Michael Norton.
-- fortunate adj. 幸运的
-- unfortunate adj. 不幸的
-- fortunately adv. 幸运地
-- unfortunately adv. 不幸地
-- destiny n. 命运
+- fortunate
+    - adj. 幸运的
+    - fortunately adv. 幸运地
+- unfortunate
+    - adj. 不幸的
+    - unfortunately adv. 不幸地
+- destiny
+    - n. 命运
+    - Destiny is what's meant to be.
+    - You might think it's your **destiny** to own a dog, but your sad goldfish survival rate should tell you that happy
+      pets probably aren't in your future.
 - fate
     - n. 命运
     - Its **fate** is yet to be decided.
@@ -218,10 +236,29 @@
 
 ## Words
 
+- purity
+    - n. [化学]纯度; 纯洁，纯净; 清洁，清白，清廉; （语言）纯正
+    - impurity [ɪmˈpjʊrəti] n. 污点，污染; 掺杂，不纯; 不道德，罪恶; 混杂物，粗劣品
 - irritate
     - v. 激怒，惹怒
     - irritation n. 激怒
-- indifferent 漠不关心的
+- indifferent
+    - adj. 漠不关心的
+- estimable
+    - adj. 值得尊敬的; 可估计的; 难能可贵
+- offensive
+    - adj. 冒犯的; 令人不适的; 攻击（性）的
+    - n. 侵犯; 进攻
+    - defensive
+        - adj. 防御(性)的; 戒备的; 防守的
+        - n. 存有戒心
+- snare
+    - vt. 捕捉; 诱惑; 安圈套; 陷害
+    - n. 陷阱，罗网; 诱惑; （绷在小鼓下面的）肠线; [外]（肿瘤等的）勒除器
+- degree
+    - n. **程度**；学位；级别
+- consciousness
+    - n. 意识（或觉察）
 
 ## 词组
 

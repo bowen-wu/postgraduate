@@ -35,7 +35,7 @@
 
 - vt. 把...看作；款待；以...态度对待；处理
 - treat/regard/view A as B
-- How they **treat** you defines them. How you **tread** others defines you.
+- How they **treat** you defines them. How you **treat** others defines you.
 - treatment
     - n. 对待；治疗
     - If connections can be bought, a basic premise of democratic society—that all are equal in **treatment** by
