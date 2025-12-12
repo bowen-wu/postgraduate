@@ -183,6 +183,8 @@
 
 ## Words
 
+- scandalous 丑闻的
+
 ## 词组
 
 ## 句式
