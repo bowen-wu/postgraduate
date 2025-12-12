@@ -182,6 +182,8 @@
 - attend a postgraduate program 攻读研究生学位
 - would not be content to do sth 不会满足于做某事/不甘心做某事
 - at a low of... 最低值/最低水平
+- among those... 在...人群中
+- lie in sth. 在于...
 
 ## 句子
 
