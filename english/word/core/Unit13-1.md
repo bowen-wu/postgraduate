@@ -162,6 +162,7 @@
 - [dɪˈzaɪər]
 - vt. 渴望
 - n. 渴望
+- desire to do sth.
 - desirable
     - adj. 令人向往的；值得拥有的
     - ...the career office found the most **desirable** trait in a future employer was the ability to offer secure
@@ -176,13 +177,11 @@
 - aspire [əˈspaɪər]
     - v. 渴望
     - == desire
-    - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English
-      language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
+    - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
     - aspiration [ˌæspəˈreɪʃn] n. 抱负；志向
 - appetite [ˈæpɪtaɪt]
     - n. 欲望
-    - Since technology has such an **insatiable([ɪnˈseɪʃəbl]) appetite(贪得无厌)** for eating up human jobs, this
-      phenomenon will continue to restructure([riˈstrʌktʃɚ]) our economy...
+    - Since technology has such an **insatiable([ɪnˈseɪʃəbl]) appetite(贪得无厌)** for eating up human jobs, this phenomenon will continue to restructure([riˈstrʌktʃɚ]) our economy...
 - expect
     - v. 预料；期待
     - expect to do sth.
@@ -208,6 +207,7 @@
     - n. 方位；举止；与...有关，对...有影响
     - == posture [ˈpɑːstʃər]
     - Experts generally agree that diet <ins>has an important **bearing** on</ins> your general health.
+        - has an important bearing on 对...有影响
     - She later wrote warmly of his <ins>**bearing** and behaviour(风度与举止)</ins>. 她后来在文字中充满温情地回忆了他的风度与举止
 - orient [ˈɔːrient]
     - vt. 以...为方向；朝向
@@ -259,6 +259,8 @@
 - parade [pəˈreɪd]
     - v. 游行; 展览; 招摇过市; 接受检阅
     - n. 检阅，游行
+- insatiable
+    - adj. 不可满足的
 
 ## 词组
 
