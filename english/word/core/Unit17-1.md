@@ -192,6 +192,7 @@
 - [ɪˈmjuːn]
 - adj. 有免疫力的；免除的；豁免的；免疫（系统）的；不受影响的
 - 7 ways to boost your **immune** system
+- Jobs that were once thought to be **immune** from automation suddenly become threatened.
 - 词组
     - immune to 对...免疫；不受...影响
     - be immune from 免于...

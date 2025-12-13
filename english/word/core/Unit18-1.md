@@ -20,8 +20,8 @@
 ## biological
 
 - adj. 与生命过程有关的
-- biology [baɪˈɑːlədʒi] n. 生物学
 - biologically adv. 在生物学上
+- biology [baɪˈɑːlədʒi] n. 生物学
 - biologist n. 生物学家
 - biotic
     - adj. 生物的
@@ -32,7 +32,7 @@
 - [ˈsʌtl]
 - adj. 微妙的；巧妙的
 - subtle feeling
-- delicate
+- delicate [ˈdelɪkət]
     - adj. 需要谨慎处理的；微妙的；脆弱的
     - **Delicate** things, like a flower, a necklace, or someone's feelings are *fragile([ˈfrædʒl] adj. 脆弱的)*, easily
       broken, and often quite beautiful.
@@ -88,7 +88,7 @@
 - possession [pəˈzeʃn]
     - n. 拥有；财物
     - <ins>It is a truth universally acknowledged</ins>, that <ins>a single man</ins> <ins>in **possession**
-      of</ins> <ins>a good fortune</ins>, must be <ins>in want of</ins> a wife.
+      of</ins> <ins>a good *fortune(n. 大笔的钱（可数）)*</ins>, must be <ins>in want of</ins> a wife.
         - It is a truth universally acknowledged 众所周知
             - == as we all know
 
@@ -102,9 +102,9 @@
 - quest
     - n. 探索，追求
     - quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）
+        - In some ways, this <ins>**quest** for<ins> *commonalities([ˌkɑməˈnælɪti] n. 共性)* defines science.
     - in the quest for 在追求...的过程中/为了...而努力/为了寻求...
-    - In some ways, this <ins>**quest** for<ins> *commonalities([ˌkɑməˈnælɪti] n. 共性)* defines science.
-    - It was to ruin lives <ins>in the **quest** for</ins> circulation and impact.
+        - It was to ruin lives <ins>in the **quest** for</ins> circulation and impact.
 
 ## appreciate
 
@@ -158,11 +158,10 @@
 - v. 使融入
 - disintegration
     - n. 瓦解；解体
-    - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck([stʌk] adj.
-      动不了的)*.
+    - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck([stʌk] adj. 动不了的)*.
         - save A from B 使A免于B/拯救A不至于B
 - integrity [ɪnˈteɡrəti]
-    - n. 完整；正值；诚实
+    - n. 完整；正直；诚实
     - == righteousness ['raɪtʃəsnəs] n. 正直; 正当; 正义
 - upright adj. 笔直的；立式的
 
@@ -174,7 +173,7 @@
 - reign [reɪn]
     - vi. 统治
     - n. 君主统治时期
-    - Rain falls from above, and people who **reign** rule from a position above others.
+    - Rain falls from above, and people <ins>who **reign**<ins> <ins>rule from</ins> a position above others.
         - rule from/rule over 统治某个地方/人民
     - He used to **reign** over popular music, always topping the charts.
     - "The ancient Hawaiians were *astronomers([əˈstrɑːnəmər] n. 天文学家)*", wrote Queen Liliuokalani, Hawaii's
