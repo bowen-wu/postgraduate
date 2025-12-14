@@ -156,10 +156,15 @@
 
 - [ˈɪntɪɡreɪt]
 - v. 使融入
-- disintegration
-    - n. 瓦解；解体
-    - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck([stʌk] adj. 动不了的)*.
-        - save A from B 使A免于B/拯救A不至于B
+- disintegrate
+    - v. 瓦解
+    - Death is normal; we are genetically programmed to **disintegrate** and *perish([ˈperɪʃ] vi. 死亡)*, even under
+      ideal conditions.
+    - disintegration
+        - n. 瓦解；解体
+        - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck([stʌk] adj.
+          动不了的)*.
+            - save A from B 使A免于B/拯救A不至于B
 - integrity [ɪnˈteɡrəti]
     - n. 完整；正直；诚实
     - == righteousness ['raɪtʃəsnəs] n. 正直; 正当; 正义

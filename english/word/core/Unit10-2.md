@@ -17,34 +17,26 @@
 - C: Cause
 - R: Result
 
-## investment
-
-- n. 投资；投资金额
-- invest
-    - v. 投资
-    - == fund vt. 为...提供资金
-- investor n. 投资者
-
 ## relate
 
 - [rɪˈleɪt]
 - vt. 把...联系起来；讲述
 - vi. 与...有关
 - be related to
-- So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course
-  "Fashion Media & Promotion".
 - related
     - adj. 相关的；有亲属关系的
+    - So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course
+      "Fashion Media & Promotion".
     - unrelated adj. 不相关的；无亲属关系的
 - relation
     - n. 关系
     - relationship
         - n. （人、团体、国家之间的）关系；（事物之间的）关联；情爱关系
         - relationship with sb./sth.
+- relevant [ˈreləvənt] adj. 相关的；有意义的
 - relative [ˈrelətɪv]
     - adj. 相对的；与...相比
     - relatively adv. 相对地
-    - relevant [ˈreləvənt] adj. 相关的；有意义的
 - correlate [ˈkɔːrələt]
     - v. 相互关联；显示紧密联系
     - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
@@ -70,13 +62,13 @@
     - accessible [əkˈsesəbl] adj. 可接近的
     - assess [əˈses] v. 评估
 
-## feature
+## feature [ˈfiːtʃər]
 
 - vt. 以...为特色
 - vi. 起重要作用
 - n. 特点；（报纸、电视等的）特写
 - A **feature** is a part of something that **makes it special** or **able to work better**.
-- This restaurant's menu **features** Italian dishes(['dɪʃɪz]).
+- This restaurant's menu **features** Italian *dishes(['dɪʃɪz])*.
 - Practically every week **features** at least one celebrity mom, or mom-to-be, smiling on the newsstands.
 - character
     - n. 性格；特征；人品；（电影、书、戏剧中的）人物
@@ -105,9 +97,10 @@
 
 - [ˈɪmɪɡrənt]
 - n. （外来）移民
-- immigration n. 移居（入境）；移民局检查站
 - immigrate **vt. 外来移民**
-- migrate [ˈmaɪɡreɪt] **vi.** 迁徙；迁移
+- immigration n. 移居（入境）；移民局检查站
+- migrate [ˈmaɪɡreɪt]
+    - **vi.** 迁徙；迁移
     - migration n. 移民
     - emigrate [ˈemɪɡreɪt]
         - **vi. 移居国外**
@@ -198,8 +191,9 @@
     - be dedicated to 致力于
         - == dedicate oneself to sth.
         - == committed to
-    - Job security or stability was the second most important career goal work-life balance was number one, followed
+    - Job security or stability was the second most important career goal, work-life balance was number one, followed
       by a sense of <ins>being **dedicated** to(致力于)</ins> a cause or to feel good about serving the greater good.
+        - a sense of... 一种...的感觉
 
 ## exist
 

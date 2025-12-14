@@ -128,8 +128,8 @@
     - n. 容量；能力
     - == ability
     - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create
-      <ins>*superfluous([suːˈpɜːrfluəs] adj. 多余的)* material goods—paintings, sculpture([ˈskʌlptʃər] n. 雕塑) and
-      architecture<ins>, <ins>**and** superfluous experiences—music, literature([ˈlɪtrətʃər] n. 著作), religion and
+      <ins>*superfluous([suːˈpɜːrfluəs] adj. 超出生存所需的)* material goods—paintings, sculpture([ˈskʌlptʃər] n. 雕塑)
+      and architecture<ins>, <ins>**and** superfluous experiences—music, literature([ˈlɪtrətʃər] n. 著作), religion and
       philosophy([fəˈlɑːsəfi] n. 哲学)</ins>.
 
 ## achieve
@@ -233,6 +233,14 @@
         - Anything **bureaucratic** <ins>has to do with(有关系)</ins> the business of running an organization—usually
           **not in a very efficient manner**.
         - The report *revealed([rɪ'vild] v. 显示)* a great deal of **bureaucratic** *inefficiency([ɪnɪˈfɪʃənsi])*.
+
+## investment
+
+- n. 投资；投资金额
+- invest
+    - v. 投资
+    - == fund vt. 为...提供资金
+- investor n. 投资者
 
 ## Words
 

@@ -16,9 +16,9 @@
 ##### Transition
 
 - According to the data given above, 根据上图中给出的数据
+- As is revealed in the graph, 如图所示
 - During this period, 在此期间
 - there has been a dramatic increase from 0.4 to 4 billion...
-- As is revealed in the graph, 如图所示
 - As illustrated in the graph, 如图所示
 - As is reflected by the diagram, 如图表所示
 - Among all the five categories, 在所有五组分类数据中

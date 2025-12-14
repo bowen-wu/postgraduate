@@ -20,6 +20,9 @@
 ## kinship
 
 - n. 亲属关系
+- Among the most popular: paternity and **kinship** testing, which adopted children can use to find their biological
+  relatives and families can use to <ins>track down(追查到)</ins> kids <ins>put up for
+  adoption(送去领养)</ins>.
 - acquaintance
     - n. 熟人
     - nodding acquaintance 点头之交

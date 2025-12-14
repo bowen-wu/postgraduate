@@ -79,7 +79,7 @@
     - adj. 人造的；虚假的
     - Artificial Intelligence(AI) 人工智能
 - novel [ˈnɑːvl]
-    - n. （长篇）小说；
+    - n. （长篇）小说
     - adj. 新颖的
     - a **novel** discovery 一个新颖的发明
     - novelist n. 小说家
@@ -119,7 +119,7 @@
     - adj. 鲜为人知的；费解的
     - The legal issues in the case are **obscure**...
 - vague [veɪɡ] adj. 含糊的
-- dim
+- dim [dɪm]
     - adj. 迟钝的😔
     - dimmed adj. 暗淡的，无效的
 - blur [blɜːr]
@@ -192,10 +192,12 @@
 - [ɪˈmjuːn]
 - adj. 有免疫力的；免除的；豁免的；免疫（系统）的；不受影响的
 - 7 ways to boost your **immune** system
-- Jobs that were once thought to be **immune** from automation suddenly become threatened.
 - 词组
     - immune to 对...免疫；不受...影响
     - be immune from 免于...
+- Jobs that were once thought to <ins>be **immune** from</ins> automation suddenly become threatened.
+    - be thought to be... 人们认为...
+        - = It is thought that...
 - immunity n. 免疫力
 - exempt [ɪɡˈzempt]
     - vt. 免除（或豁免）

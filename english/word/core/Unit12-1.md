@@ -179,7 +179,7 @@
 - [əˈtrækt]
 - v. 吸引；引起（反应）
 - at(强调)-tract(拉；拽)
-- be attracted to sth. 被某物吸引
+- be attracted **to** sth. 被某物吸引
 - attraction n. 吸引；向往的地方；有吸引力的事
 - attractive
     - adj. 吸引人的
