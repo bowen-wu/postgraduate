@@ -206,5 +206,18 @@
 - promotes/boosts economy development
 - poomotes/boosts local economic development
 
+## First
+
+- The table above clearly illustrates the statistics of staff's job satisfaction in a certain company. According to the data given above, we can conclude that the percentage of people satisfied with their jobs is the highest among those over 50 years old, at about 40%. In contrast, the percentage of the staff not satisfied with their jobs is about 64% among those in their forties, the highest among all the three age groups.<br>
+- The pie chart above clearly illustrates the purposes of touring for students in a certain university. According to the data given above, 37 percent of college students travel in order to appreciate the scenery. Next comes the aim of relieving pressure, accounting for 33 percent. By contrast, the percentages of students travelling aiming at other goals, making friends and cultivating independence account for 15%, 9% and 6% respectively.<br>
+- The bar chart above clearly illustrates the results of a survey on the types of exercise among residents in a certain city. According to the data given above, the percentage of people exercising alone accounts for 54.3%, the highest among the four categories. The percentages of people exercising with friends, family and by taking part in group activities take up 47.7%, 23.9% and 15.8% respectively.<br>
+- The pie chart above clearly illustrates the factors of consumers' concern on choosing restaurants in a certain city in 2017. Among all the five categories, the percentages of feature, service and environment are the highest, accounting for 36.3%, 26.8% and 23.8% respectively. On the contrary, the statistics of price and other factors take up merely 8.4% and 4.7% respectively, the lowest among the five groups.<br>
+- The column chart above clearly illustrates a considerable increase in the express delivery business in China between 2018 and 2020. During this three-year period, the total number of express delivery parcels jumped markedly from 51 billion to 83 billion. In the meantime, the number of express delivery parcels in rural areas rose dramatically from 12 billion to 30 billion.<br>
+- The column chart above clearly illustrate a striking contrast between developing and developed countries in mobile-phone subscriptions from 2000 to 2008. During this period, there has been a dramatic increase from 0.4 to 4 billion mobile-phone subscriptions in developing countries, while those of developed countries remained steady at just under 1 billion.<br>
+- The diagram above clearly illustrates a dramatic increase in the recruitment of Master of Engineering(ME) in China during the past seven years. In 1998, the number was at a low of only about 2,500. Surprisingly, it reached more than 35,000 in 2004, within no more than seven years.<br>
+
+- The picture vividly depicts a lovely American girl in traditional Chinese costume with a sweet smile on her face. She wears ribbons, necklaces and other accessories that are characteristic of the clothes of a certain Chinese minority group. Undoubtedly, the costume has added oriental charm to her beautiful features.<br>
+- Nowadays, a large number of teenagers have lost the right to play outside and instead indulge in computer use. In this excerpt, the author maintains that since parents have robbed their children of the opportunity to wander around, a good many youngsters use the computer to socialize with their friends. I agree with the writer's idea.<br>
+
 
 

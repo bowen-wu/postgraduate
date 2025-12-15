@@ -138,13 +138,15 @@
 
 - adv. 此外，而且
 - == moreover == in addition
-- further
+- further [ˈfɜːrðər]
     - adv. （空间距离）较/更远地; (时间上)更(早或晚); 更极端地; (发展中)进一步地; 在更大程度上; 而且
     - adj. 更多的; 附加的
     - v. 促进; 增进
-    - future
-        - n. 未来; 前途; 未来的事; 期货
-        - adj. 未来的
+    - future [ˈfjuːtʃər] n. 未来; 前途;
+    - feature  [ˈfiːtʃər]
+        - vt. 以...为特色
+        - vi. 起重要作用
+        - n. 特点；（报纸、电视等的）特写
 - moreover adv. 此外，而且
 
 ## emission
