@@ -44,6 +44,7 @@
 
 - adj. 必不可少的
 - == important == necessary == indispensable
+- They believe it is **essential** to defy convention.
 - essentially
     - adv. 本质上
     - ...if the district is **essentially** giving a pass to students who do not do their homework because of

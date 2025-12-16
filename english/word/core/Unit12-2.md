@@ -58,6 +58,7 @@
 - traditional adj. 传统的
 - convention
     - n. （文学、艺术或戏剧的）传统手法；（谋职业、政党等成员的）大会；习俗
+    - They believe it is essential to defy **convention**.
     - conventional
         - adj. （行为、观念等）传统的；（方法或产品）传统的
         - conventionally adv. 按照惯例

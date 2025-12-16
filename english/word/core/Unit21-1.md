@@ -26,16 +26,16 @@
     - And ultimately，it is likely to <ins>reshape(重塑)</ins> our politics，our culture，and the character of our society
       for years.
 
-## honor/honour
+## honor
 
 - vt. 尊重；给予..的光荣
 - n. 荣誉；荣幸
-- dishonour
+- dishonor
     - vt. 使蒙羞；不遵守； n. 丢脸
     - disgrace 不光彩
-    - dishonour a commitment 违背承诺
+    - dishonor a commitment 违背承诺
     - ...provoked justified outrage In VErmont last week when it announced it was dishonoring a longstanding commitment.
-- honourably adv. 值得尊敬地
+- honorably adv. 值得尊敬地
 - glory n. 荣誉；辉煌
 
 ## crack

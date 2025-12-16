@@ -95,7 +95,7 @@
 - [prɪˈdɪkt]
 - vt. 预测（主观）
 - ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it **predicted**
-  the opposite([ˈɑːpəzɪt] n. 对立物).
+  the *opposite([ˈɑːpəzɪt] n. 对立物)*.
 - predictable adj. 可预见的
 - predictably [prɪˈdɪktəblɪ] adv. 可预见地
 - prediction n. 预测
@@ -186,7 +186,7 @@
     - attractively adv. 有吸引力地
     - unattractive adj. 没有吸引力的
 - attractiveness n. 吸引力
-- extract [ˈekstrækt]
+- extract [ɪkˈstrækt]
     - vt. （用力）拔出
     - So he hired a dentist to *transplant(vt. 移植)* nine teeth into his jaw—having **extracted** them from the mouths
       of his slaves.
@@ -255,7 +255,7 @@
 - rigid [ˈrɪdʒɪd]
     - adj. 严格的; 僵硬的; （规则、方法等）死板的; 刚硬的，顽固的
 - hole [hoʊl]
-    - n. 洞；
+    - n. 洞
     - v. 挖掘
 - throne [θroʊn]
     - n. 宝座; 御座; 王位; 王权

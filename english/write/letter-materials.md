@@ -18,6 +18,21 @@
 | **on** | **具体日期/星期**   | on May 12, on Sunday            |
 | **at** | **具体时间点**     | at 3 pm, at midnight            |
 
+## Start
+
+
+- Volunteers are needed for the International Conference on Globalization to be held on this campus in early July.<br>
+- I have just arrived at my home from the airport. As I sit down at my desk, I just want to write a letter to you to thank you for your warm **reception** in the **cultural** exchange program. You and your family left a deep impression upon me. Indeed, the program is one of the most wonderful **memories** in my life.<br>
+- I bought an electronic dictionary from your online store on January 1st, but after using it for a short period of time, I found it has some problems.<br>
+- I am looking forward to my travel to the United States and visiting you in Harvard University.<br>
+- As you know, I am extremely keen on the ancient Chinese novel-Romance of the Three Kingdoms. Now I am planning to direct a short play revised from it.<br>
+
+- On behalf of the Students' Union of Beijing Foreign Studies University, I would like to extend our heartfelt welcome to all the overseas students who will study in our university.<br>
+- On behalf of the "Talents" English Speech Contest committee, I am writing to invite you to serve as one of our judges.<br>
+- We are greatly honored to welcome you as a guest professor at our university. I would like to recommend two scenic spots in our city: the Palace Museum and the Great Wall.<br>
+
+- I'm glad to hear from you. How have you been these days? Since you're going to present an oral report on an ancient Chinese scientist, Bi Sheng is an ideal candidate.<br>
+- I'm glad to hear from you. Thank you for your enthusiastic response to the event!<br>
 
 ## End
 

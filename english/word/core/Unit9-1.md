@@ -236,6 +236,9 @@
 - amateur [ˈæmətər]
     - n. 业余爱好者
     - adj. 业余的
+    - Moreover, the **amateur** tradition in music criticism has been in *headlong(adv. 快速地)* **retreat**.
+        - be in retreat 处于退却/衰退状态
+        - headlong retreat 急剧的、失控式的退却
 - expert [ˈekspɜːrt] n. 专家
 - specialist [ˈspeʃəlɪst]
     - n. 专家；

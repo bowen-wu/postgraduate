@@ -73,6 +73,7 @@
 
 - [ˈkrɪtɪsɪzəm]
 - n. 评论；批评
+- Moreover, the amateur tradition in music **criticism** has been in *headlong(adv. 快速地)* retreat.
 - arts criticism 艺术评论
 - critic n. 批评者；评论家
 - critical [ˈkrɪtɪkl]

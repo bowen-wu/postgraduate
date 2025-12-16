@@ -125,6 +125,9 @@
 ## incentive
 
 - n. 动机；激励
+- Within companies, the right compensation design can provide **incentives** for executives to think beyond their own
+  time at the company and on behalf of all stakeholders.
+- provide incentives for sb to do sth 为某人提供做某事的激励
 - propel [prəˈpel]
     - vt. 推动
     - propel sb. to do sth.

@@ -206,6 +206,7 @@
 - convincing adj. 令人信服的
 - persuade [pərˈsweɪd]
     - vt. 劝说
+    - ...passionate consumers would try to **persuade** others to boycott products.
     - persuasion [pərˈsweɪʒn]
         - n. 劝说
         - Relying on ethical **persuasion** rather than law to address the misuse of body ideals may be the best step.

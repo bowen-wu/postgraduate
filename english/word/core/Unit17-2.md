@@ -113,6 +113,7 @@
     - constraint
         - n. 约束
         - ...online-only competitors don't have the same *set(n. 一组/一套)* of financial **constraints**.
+    - constrained adj. 不舒服的，被强迫的，拘泥的
 - restrain
     - vt. 抑制
     - restraint

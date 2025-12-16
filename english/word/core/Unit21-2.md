@@ -178,6 +178,7 @@
     - ...both figures seem to rise unstoppably despite increasingly desperate efforts to change them.
     - Nevertheless, the <ins>affordable housing(经济适用房)</ins> situation is **desperate**. Waiting lists increase all
       the time and we are simply not building enough new homes.
+    - If I was poor and **desperate**, I might <ins>commit crimes(犯罪)</ins> to feed my family.
 - thrive
     - vi. 繁荣，兴旺
     - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
