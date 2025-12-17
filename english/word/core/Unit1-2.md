@@ -253,8 +253,13 @@
 - up-skilling
     - 提高技能
 - address
-    - vt. 设法解决；演讲
+    - vt. 设法解决；演讲；写...姓名地址
     - n. 地址
+    - PE
+        - v./n. 演讲，致辞
+            - He is about to address a conference on human rights.
+        - v. 设法解决
+            - Governments have been slow to address the problem of global warming.
 - muse [mjuz]
     - vi. 沉思; 冥想
     - vt. 谨慎地考虑; 谨慎地说

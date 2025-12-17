@@ -175,10 +175,17 @@
 - consumer n. 消费者
 - consumption [kənˈsʌmpʃn] n. （能量、事物或材料的）消耗，消耗量；消费
 - assume [əˈsuːm]
-    - vt. 承担（责任）；认为；显露（特征）
+    - vt. 承担（责任）；假定，认为；显露（特征）
     - We were wrong to **assume** she'd agree.
     - Everyone must **assume** his share of the responsibility to protect the environment.
-    - assumption [əˈsʌmpʃn] n. 假设
+    - PE
+        - v. 呈现
+            - take on 呈现，承担
+            - He managed to assume an air of calmness.
+        - v. 承担，接收
+            - Being a grownup means **assuming responsibility for** yourself.
+    - assumption [əˈsʌmpʃn] n. 假设，设想
+        - The court's ruling is based on the assumption that public officials are
 
 ## imply
 

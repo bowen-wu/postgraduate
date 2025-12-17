@@ -180,7 +180,10 @@
     - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
     - aspiration [ˌæspəˈreɪʃn] n. 抱负；志向
 - appetite [ˈæpɪtaɪt]
+    - n. 胃口，食欲
+        - He has such an appetite for delicious food.
     - n. 欲望
+    - == desire
     - Since technology has such an **insatiable([ɪnˈseɪʃəbl]) appetite(贪得无厌)** for eating up human jobs, this phenomenon will continue to restructure([riˈstrʌktʃɚ]) our economy...
 - expect
     - v. 预料；期待

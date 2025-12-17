@@ -190,12 +190,12 @@
     - vi. 避免；克制；制止
         - == restrict
     - n. 经常重复的评价（或抱怨）；老话，陈词滥调(cliche [klɪˈʃeɪ])
+    - **refrain from** doing sth. 克制/避免做某事
     - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing
       it**.
     - How shall I **refrain from** tears when we part?
     - California has asked *the justices* to **refrain from** a <ins>sweeping ruling(全面裁决)</ins>.
-    - refrain from doing sth. 克制/避免做某事
-        - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
+    - When someone burps in a quiet classroom it can be hard to **refrain from laughing([ˈlæfɪŋ])**.
     - Complaints about poor food in schools have become a familiar([fəˈmɪliər] adj. 熟悉的) **refrain**.
     - The decline in American manufacturing is a common **refrain**, particularly from Donald Trump.
 - sanction [ˈsæŋkʃn] n. 制裁；<正式>许可
@@ -213,7 +213,8 @@
     - demand for 对...的需求；对...的要求
     - in demand 需求量大；受欢迎
     - on demand 一经要求
-- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high <ins>quarterly profits (净利润)</ins> from companies,
+- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high <ins>quarterly profits (
+  净利润)</ins> from companies,
   can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
   loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
     - public companies/publicly traded company 上市公司

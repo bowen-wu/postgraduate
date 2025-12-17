@@ -165,7 +165,10 @@
 - vt. 与...接洽
 - n. 方法
     - == method == ways
-- take a(n)...approach 采取...方法
+    - take a(n)...approach 采取...方法
+    - approaches to gathering information
+- vt. 处理
+    - Governments trend to approach the issue from different angles.
 - With the Spring Festival **approaching/around the corner**
 - There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
 - Some *applaud([əˈplɔːd] v. 赞许)* the **approach**; others are concerned.

@@ -76,9 +76,10 @@
     - n. 吸引；上诉；呼吁，恳求
     - Court Of Appeals
     - <ins>Above all(最重要的是)</ins>, the dress does **appeal** to her.
+        - above to 吸引
     - He will **appeal** to the state for an extension of unemployment benefits.
         - appeal to sb for sth 请求/呼吁某人给予某物
-    - Despite the **appeals** court's decision, big questions remain unanswered.
+    - Despite the **appeals** court's <ins>decision (裁决 == ruling == verdict)</ins>, big questions remain unanswered.
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释

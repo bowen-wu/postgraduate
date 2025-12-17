@@ -171,7 +171,8 @@
 
 - [bɔːrd]
 - v. 上船（或火车、飞机、公共汽车等）
-- n. （公司或其他机构的）董事会
+- n. （公司或其他机构的）董事会，委员会
+    - He sits on the company's management board.
 - billboard n. 广告牌
 - broad [brɔːd]
     - adj. 广泛的

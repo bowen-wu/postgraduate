@@ -75,6 +75,13 @@
     - n. 支票
     - I lived <ins>from paycheck to paycheck(月光)</ins>.
     - Alvarez paid *practically([ˈpræktɪkli] adv. 几乎)* everything by **check**.
+    - PE
+        - v./n. 核对，核查
+            - One of the most common is "to inspect or verify."
+            - You might check the oven to see if your cookies are done.
+        - v. 抑制
+            - The Government is determined to check The growth of public spending.
+            - check and balance
 - payment n. 支付
 - payout
     - n. （大笔）钱款
@@ -115,6 +122,11 @@
     - Many of them instead become the kind of **nuisance-lawsuit** filer([ˈfaɪlər] n. 申诉人) that makes
       <ins>the tort([tɔrt]) system(侵权诉讼体系)</ins> a costly nightmare.
       相反，他们中许多人变成了那种专门提起无理取闹诉讼的人，使整个侵权制度变得代价高昂、令人头疼
+    - PE
+        - n. 账单，票据
+        - n. 法案，议案（刚提出的）
+            - pose a bill 提出一项议案
+            - == act （确定的）
 - legal
     - adj. 与法律有关的；合法的
     - illegal adj. 非法的
@@ -144,12 +156,16 @@
         - == knock out
 - bar
     - v. 阻止
-    - n. 律师职业
+    - n. 律师职业，法律界
+    - n./v. 阻碍
+        - == stop
+        - Harry moved to bar his way.
     - bar sb. from doing sth. 禁止某人做某事；阻止某人做某事
     - the bar exam 律师资格考试
     - the American Bar Association 美国律师协会
     - Workers have been **barred** from the country since 1982.
     - Less than a quarter of graduates from the law school pass the **bar** exam on the first try.
+    - Another is to let students sit for the bar after only two years of law school.
 
 ## show
 
