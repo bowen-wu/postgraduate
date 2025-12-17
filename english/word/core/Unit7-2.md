@@ -42,7 +42,12 @@
     - vt. 宣布
     - announcement n. 宣告
 - contend [kənˈtend]
-    - vi. （尤指在争论中）声称；竞争
+    - vi. （尤指在争论中）声称；竞争，争夺
+    - PE
+        - v. 主张，认为
+            - People used to contend that the earth was flat.
+            - == assert/maintain/hold
+            - But in her new book Join the Club,Tina Rosenberg contends that peer pressure can also be a positive forve through what she calls the social cure.
     - content [ˈkɑːntent]
     - Rosenberg **contends/holds/believes/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
     - It is time to **contend with** unfair *discrimination(n. 歧视)*.

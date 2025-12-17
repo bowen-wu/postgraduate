@@ -254,6 +254,10 @@
 ## company
 
 - n. 陪伴；公司；剧团；同伴
+- PE
+    - n. 陪伴
+        - I enjoy his company.
+        - Misery loves company. 祸不单行
 - accompany
     - vt. 陪伴；伴随；为...伴奏
     - Little reward **accompanies** duplication and confirmation of what is already known and believed.

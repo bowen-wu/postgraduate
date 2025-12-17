@@ -155,6 +155,12 @@
 ## course
 
 - n. 进程；课程；一道菜；航线；行动方式
+    - PE
+        - n. 航线
+            - Sometimes storms blew the vessels far off their course.
+        - n. 进程，发展
+            - Twenty years is a blink in the long course of history.
+            - These designers came to exert enormous influence on the course of American architecture.
 - Before it ends, it will likely change the life **course** and character of a *generation(n. 一代人)* of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
