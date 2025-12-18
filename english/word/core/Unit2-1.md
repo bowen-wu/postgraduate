@@ -113,7 +113,13 @@
 ## law
 
 - n. 法律；（针对某项罪行、协议等的一条）法规；定律
-- bill n. 法案（不具有法律效力）
+- bill  
+    - n. 法案（不具有法律效力）
+    - PE
+        - n. 账单，票据
+        - n. 法案，议案（刚提出的）
+            - pose a bill 提出一项议案
+            - == act （确定的）
 - If the **bills** become **law**, state boards and commissions will be required to *set aside(留，存；抽出)* 50 percent
   of board seats for women by 2022.
 - lawyer n. 律师
@@ -122,11 +128,6 @@
     - Many of them instead become the kind of **nuisance-lawsuit** filer([ˈfaɪlər] n. 申诉人) that makes
       <ins>the tort([tɔrt]) system(侵权诉讼体系)</ins> a costly nightmare.
       相反，他们中许多人变成了那种专门提起无理取闹诉讼的人，使整个侵权制度变得代价高昂、令人头疼
-    - PE
-        - n. 账单，票据
-        - n. 法案，议案（刚提出的）
-            - pose a bill 提出一项议案
-            - == act （确定的）
 - legal
     - adj. 与法律有关的；合法的
     - illegal adj. 非法的
