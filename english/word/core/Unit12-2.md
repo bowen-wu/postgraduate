@@ -37,6 +37,7 @@
     - Young and old <ins>**converge** on</ins> one key point: *Overwhelming([ˌoʊvərˈwelmɪŋ] adj. 压倒一切的)* majorities
       of both groups said they believe it is harder for young people today to get started in life than it was for
       earlier generations.
+        - get started in life 踏入社会/开始独立的人生
 
 ## reward
 
@@ -82,7 +83,7 @@
     - particularly
         - adv. 特别；尤其
         - == especially
-- **specific** [spəˈsɪfɪk]
+- specific [spəˈsɪfɪk]
     - adj. 明确的；特定的
     - She declined to be more **specific** about the reasons for the separation.
     - specifically
@@ -159,8 +160,8 @@
 - vt. 伤害；破坏
 - n. 损失；伤害
 - damage to + 人/物 (固定搭配) 对...的伤害
-    - <ins>Privacy law(隐私法)</ins> builds on the *concept([ˈkɑːnsept] n. 概念)* of **damage** to an individual from
-      identifiable knowledge about them.
+    - <ins>Privacy law(隐私法)</ins> builds on the concept of **damage** to an individual from identifiable knowledge
+      about them.
 - Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen concluded: "We
   do not attract what we want, but what we are."
 - ...passionate consumers will voice their opinions in quicker, more visible, and much more **damaging** ways.
@@ -213,20 +214,20 @@
 - adj. 稳固的
 - ...the career office found the most desirable trait in a future employer was the ability to offer **secure**
   employment.
-- **security**
+- security
     - n. 安全（感）
     - Job **security** or stability was the second most important career goal; work-life balance was number one,
-      followed
-      by a sense of <ins>being dedicated to(致力于)</ins> a cause or to feel good about serving the greater good.
+      followed by a sense of <ins>being dedicated to(致力于)</ins> a cause or to feel good about serving the greater
+      good.
 - safe
     - adj. 安全的
     - safety n. 安全
     - safeguard [ˈseɪfɡɑːrd] vt. 保护，捍卫
 - save
-    - v. 拯救；节省；
+    - v. 拯救；节省
     - prep. 除了...外
     - save for 除了...之外
-        - == except for
+        - == except([ɪkˈsept]) for
 
 ## sort
 

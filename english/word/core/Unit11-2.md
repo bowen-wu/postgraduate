@@ -128,16 +128,17 @@
 - n. 范围；（同类事物的）一系列；距离
 - 词组
     - a range of 一系列
+    - a wide range of 各种各样的/范围广泛的/多种多样的
 - scope n. 范围
 - boundary
     - n. 边界；范围
-    - == edge
+    - == edge [edʒ] n. **边缘**; v. 侧着移动
 - spectrum [ˈspektrəm] n. 范围
 - territory n. 领土
 - realm [relm]
     - n. 领域
-    - Whole new **realms** of understanding—from gender to race to cultural studies—were opened up as scholars
-      unpicked the multiplicity of lost societies.
+    - Whole new **realms** of understanding—from gender to race to cultural studies—were opened up as scholars unpicked
+      the multiplicity of lost societies.
 - domain [doʊˈmeɪn]
     - n. （知识、活动的）领域；（尤指旧时个人、国家等所拥有或统治的）领土
     - The justices had to *specify([ˈspesɪfaɪ] 明确规定)* *novel([ˈnɑːvl] adj. 新颖的)* rules for the new personal
@@ -162,7 +163,7 @@
   system.
 - afford
     - vt. 买得起；给予；承担得起（后果）
-    - afford to do sth.
+    - afford to do sth. 有钱/有资源去做某事
     - affordable [əˈfɔːrdəbl]
         - adj. 负担得起的；价格实惠的
         - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is
@@ -203,8 +204,8 @@
 
 ## content
 
-- n. 内容
 - adj. 满意的
+- n. 内容
 - be content with 使满足于
     - == be satisfied with
 - would not be content to do sth
@@ -213,7 +214,9 @@
 - The test **contents** and formats for adults and children may be different.
 - satisfy
     - vt. 使满意；满足（需求；需要等）
-    - satisfied adj. 满意的；满足的
+    - satisfied
+        - adj. 满意的；满足的
+        - be satisfied with
     - satisfaction n. 满足；满意
     - dissatisfaction n. 不满意
 - gratification [ˌɡrætəfɪˈkeʃən]
