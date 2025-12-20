@@ -26,6 +26,9 @@
 - cover me 掩护我
 - 词组
     - cover up 遮盖；隐藏
+- PE
+    - v. （新闻）报道
+    - The BBC will cover all the major games of the tournament.
 - Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
 - It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 引人深思的)* magazine **cover**
   story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
@@ -72,7 +75,8 @@
 ## criticism
 
 - [ˈkrɪtɪsɪzəm]
-- n. 评论；批评
+- n. 评论（PE）；批评，指责
+- Critics who review books and movies consider their reviews to be criticism，whether they're positive or negative.
 - Moreover, the amateur tradition in music **criticism** has been in *headlong(adv. 快速地)* retreat.
 - arts criticism 艺术评论
 - critic n. 批评者；评论家

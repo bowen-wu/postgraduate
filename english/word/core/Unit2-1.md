@@ -51,11 +51,13 @@
     - vt. 减少
     - reduction [rɪˈdʌkʃn] n. 减少
 - decline
-    - vi. 下降；衰退
-    - v. 谢绝
+    - vi. 下降；衰退(PE)
+    - v. 谢绝(PE)
+        - He declined their invitation.
     - n. 下降；衰退
     - == descend [dɪˈsend]
     - economic decline 😔
+    - Westward declines the sun;Far,far from home is the heartbroken one. 夕阳西下，断肠人在天涯
     - Microsoft **declined** to comment.
     - Now even the project's greatest *cheerleaders(支持者)* talk of a continent facing a "Bermuda triangle" of debt,
       population **decline** and lower growth.

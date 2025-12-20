@@ -60,8 +60,12 @@
     - They should start by **discarding** California's lame argument that...😔
     - lame adj. 跛的，瘸的，站不住脚的，蹩脚的
 - dismiss
-    - vt. 不予考虑；（法律）不受理 😔
-    - Don't **dismiss** that possibility entirely.
+    - v. 解散；解雇
+        - If you are dismissed from your job，it means you've been fired.
+    - PE
+        - vt. 不予考虑；（法律）不受理 😔
+        - Don't **dismiss** that possibility entirely.
+        - He just laughed and dismissed my proposal as unrealistic.
 - quit v. 离开（工作职位、学校等）；停止
 
 ## elegant

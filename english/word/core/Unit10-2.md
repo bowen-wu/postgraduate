@@ -70,6 +70,11 @@
 - A **feature** is a part of something that **makes it special** or **able to work better**.
 - This restaurant's menu **features** Italian *dishes(['dɪʃɪz])*.
 - Practically every week **features** at least one celebrity mom, or mom-to-be, smiling on the newsstands.
+- PE
+    - n. 特别报道（报刊）
+        - A special feature on children's reference books.
+    - 以...为特色，由...主演
+        - This restaurant's menu features Italian dishes.
 - character
     - n. 性格；特征；人品；（电影、书、戏剧中的）人物
     - Before it ends, it will likely change the life course and **character** of a generation of young adults.

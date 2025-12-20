@@ -81,7 +81,7 @@
 
 - [ˈfɪɡjər]
 - v. 弄清楚
-- n. 人物；（尤指官方资料中的）数字；身材
+- n. （重要）人物（PE）；（尤指官方资料中的）**数字**；身材； 形状； 人像
 - figure out 弄清楚/理解/解决/想明白
 - Today the **figure** is more than 25% and growing rapidly.
 - Americans no longer expect public **figures**, whether in speech or in writing to command the English language with

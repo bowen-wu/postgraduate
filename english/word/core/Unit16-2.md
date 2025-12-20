@@ -140,7 +140,7 @@
 - == involve
 - container n. 容器
 - embrace
-    - vt. 包含；欣然接受
+    - vt. 包含；欣然接受(PE)
     - n. 拥抱 🙂
     - Believe it or not, a warm **embrace** might even help you avoid getting sick this winter.
     - Marketers have **embraced** the two-step flow because...
