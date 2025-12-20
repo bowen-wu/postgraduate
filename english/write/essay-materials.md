@@ -219,5 +219,68 @@
 - The picture vividly depicts a lovely American girl in traditional Chinese costume with a sweet smile on her face. She wears ribbons, necklaces and other accessories that are characteristic of the clothes of a certain Chinese minority group. Undoubtedly, the costume has added oriental charm to her beautiful features.<br>
 - Nowadays, a large number of teenagers have lost the right to play outside and instead indulge in computer use. In this excerpt, the author maintains that since parents have robbed their children of the opportunity to wander around, a good many youngsters use the computer to socialize with their friends. I agree with the writer's idea.<br>
 
+## Error
+
+1. link the whole world **together**
+2. with the rapid and steady development of China’s economy 随着中国经济的快速且稳定的发展
+3. with the rapid increase in economic development happening in developing countries 随着发展中国家的经济快速增长.
+4. **the fact remains** that...
+5. ...**will continue** to widen in the future
+6. it will be my **great pleasure** to...
+7. Please give my best **regards** to your family.
+8. The major determinant of satisfaction **lies in** people's attitudes.
+9. achieving the **ultimate** success
+10. appreciate the scenery
+11. the battery needs **recharging**
+12. it is nearly impossible **to** type anything with them
+13. I find this to be completely **unacceptable**.
+14. the factors of **consumers'** concern on
+15. the increase of people's income **in recent decades**
+16. attach **utmost** significance/importance to
+17. in a **bid** to
+18. **customers**
+19. **school**-wide contest
+20. you can be **the** judge for our **competition**
+21. the results of a survey on the types of exercise among residents
+22. the main reason for sports and exercise is to encourage a healthy lifestyle
+23. ...could **instill** the **values** of teamwork and sportsmanship.
+24. We are **greatly honored to welcome you** as a guest professor at our university
+25. ...a considerable increase **in** the express delivery business in China between 2018 and 2020.
+26. During this three-year period,...
+27. the **prosperity** of electronic commerce and online shopping
+28. **as** the express delivery business is becoming increasingly **mature** and
+29. ...were at first **skeptical** about...
+30. let us **get prepared to embrace this irreversible trend**.
+31. I will therefore not **be able to** make the travel plan
+32. to another day **later this year**
+33. I promise that such a **situation** does not usually happen, and apologize for any **inconvenience** this may cause you
+34. Please excuse me for **not being able to** inform you of my situation sooner
+35. ...illustrates **a dramatic increase** in the recruitment...
+36. ...take effective **measures**...
+37. ...choose **majors**...
+38. ...which has led to **an increased demand** for...
+39. **the number was at a low of only about** 2,500
+40. Since you **are going to** present
+41. which **saved much** time and money **compared** with
+42. Printing **provided** favorable conditions **for**...
+43. In the middle of the **11th** century during the Song Dynasty...
+44. Chinese **minority** group
+45. the **mysterious** Chinese culture
+46. to some extent 在某种程度上
+47. **Since the trend of globalization has become irresistible**...
+48. **national culture** should be **preserved and cherished** as a **priceless spiritual treasure**
+49. to absorb its **virtues** and to resist its dark side
+50. ...make our world **multidimensional**, colorful and vigorous.
+51. Thank you for your **enthusiastic response to** the event.
+52. have lost the right **to** play outside
+53. have robbed their children **of** the opportunity to wander around
+54. upcoming **examinations** and endless assignments
+55. it is necessary for teenagers to use technology in a reasonable way and **refrain** from overindulgence.
+56. military **struggles**
+57. reveals the turbulent society
+58. **It successfully portrays images of classic characters**,...
+59. I **cordially** invite you to...
+60. I am sure you will **be quite interested in** it...
+
 
 
