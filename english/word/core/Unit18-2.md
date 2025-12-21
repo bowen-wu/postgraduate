@@ -20,7 +20,7 @@
 ## monitor
 
 - vt. 监控；监听
-- surveillance
+- surveillance [sɜːrˈveɪləns]
     - n. 监视
     - survey vt. 调查
 
@@ -36,6 +36,7 @@
 
 ## sponsor
 
+- [ˈspɑːnsər]
 - vt. 发起；赞助
 - n. 倡议者
 - sponsorship
@@ -45,9 +46,9 @@
 ## mere
 
 - adj. 仅仅的
-- **Mere** curiosity adds wings to every step.
+- **Mere** curiosity adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力
 - merely adv. 仅仅
-- bare
+- bare [ber]
     - adj. 刚刚够的
     - barely
         - adv. 几乎不
@@ -62,33 +63,40 @@
     - n. 轨道
     - In December 2010 America's Federal Trade Commission proposed adding a "<ins>do not **track**(无痕浏览)</ins>"
       option to internet browsers...
-- hint v. 暗示（hint at）
-- cue n. 提示；暗示
+- hint
+    - v. 暗示
+    - hint at
+- cue [kjuː] n. 提示；暗示
 
 ## intuitive
 
+- [ɪnˈtuːɪtɪv]
 - adj. 直觉的
-- Demonstrating the **intuitive** nature of the social precessing.
-- intuition
+- Demonstrating the **intuitive** nature of the social processing. 展示了社会信息加工的直觉性本质
+    - the intuitive nature of... ...的直觉性本质/直觉特征
+    - social processing 社会信息加工/社会信息处理
+- intuition [ˌɪntuˈɪʃn]
     - n. 直觉
     - **Intuition**'s special powers are unleashed only in certain circumstances.
     - == instinct [ˈɪnstɪŋkt] n. 本能；直觉
-- illusion
+- illusion [ɪˈluːʒn]
     - n. 错觉
-    - illusory adj. 虚幻的
+    - illusory [ɪˈlusəri] adj. 虚幻的
 
 ## platform
 
 - n. 平台
-- plateau n. 稳定期
+- plateau [plæˈtoʊ] n. 稳定期
 
 ## default
 
 - n. 默认
-- betray
+- betray [bɪˈtreɪ]
     - vt. 违背；流露
     - When I tell someone I will not **betray** confidence I keep my word.
-    - She studied his face, but it **betrayed** nothing.
+        - betray confidence 辜负信任/泄露他人托付的秘密
+        - keep one’s word 信守诺言
+    - She studied his face, but it **betrayed** nothing. 她端详着他的神情，却看不出任何端倪
 
 ## summit
 
@@ -99,30 +107,33 @@
 
 ## odd
 
-- adj. 任意的；古怪的
-- odds
+- adj. 任意的；古怪的；奇数的
+- odds [ɑːdz]
     - n. （事情发生的）可能性
-    - The **odds** of a long, nasty recession are growing.
-    - be at odds with 与...有差异
-- weird
+    - The **odds** of a long, *nasty([ˈnæsti] adj. 严重的、痛苦的、破坏性强的)* recession are growing.
+        - the odds of sth. ...发生的可能性/概率
+    - 词组
+        - be at odds with 与...有差异
+- weird [wɪrd]
     - adj. 怪异的
-    - bizarre adj. 奇异的; 古怪的
+    - bizarre [bɪˈzɑːr] adj. 奇异的; 古怪的
 
 ## cooperate
 
+- [koʊˈɑːpəreɪt]
 - vi. 合作；配合
 - cooperate with sb.
 - cooperation
     - n. 合作
-    - corporation n. （大）公司
+    - corporation [ˌkɔːrpəˈreɪʃn] n. （大）公司
 - cooperative adj. 合作的
-- collaborate
+- collaborate [kəˈlæbəreɪt]
     - vi. 合作
     - collaboration n. 合作
     - collaborative
         - adj. 合作的
         - collaborative nature of modern research 现代研究的合作性
-        - Opposite: solitary
+        - Opposite: solitary [ˈsɑːləteri]
             - adj. 独自的，独立的; 单个的; 唯一的; 隐居的
             - n. 独居者，隐士; 单独禁闭
 
@@ -137,7 +148,7 @@
     - vt. 引发
     - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
       passive consumption and active creation.
-    - ...it is sure to **spark** intense opposition from the far large number of motorists who will then be affected.
+    - ...it is sure to **spark** intense opposition from the far larger number of motorists who will then be affected.
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者
@@ -147,8 +158,9 @@
 
 ## fortune
 
+- [ˈfɔːrtʃən]
 - n. 大笔的钱（可数）；命运（不可数）
-- a good fortune
+- a good fortune 一大笔钱/一笔财富
 - If she hopes her new-found **fortune** will yield lasting felling of fulfillment, she could <ins>do worse than</ins>
   read Happy Money by Elizabeth Dunn and Michael Norton.
 - fortunate
@@ -157,30 +169,33 @@
 - unfortunate
     - adj. 不幸的
     - unfortunately adv. 不幸地
-- destiny
+- destiny [ˈdestəni]
     - n. 命运
-    - Destiny is what's meant to be.
+    - **Destiny** is what's meant to be.
+        - be meant to do sth. 注定做某事；应该做某事
     - You might think it's your **destiny** to own a dog, but your sad goldfish survival rate should tell you that happy
-      pets probably aren't in your future.
-- fate
+      *pets([pets] n. 宠物)* probably aren't in your future.
+- fate [feɪt]
     - n. 命运
     - Its **fate** is yet to be decided.
+        - be yet to be done 尚未完成/尚待决定
 
 ## rare
 
+- [rer]
 - adj. 罕见的；不常发生的
 - rarely adv. 很少
-- rarity n. 极为罕见
+- rarity [ˈrerəti] n. 极为罕见
 
 ## alert
 
 - vt. 使意识到
 - n. 警戒
-- alarm vt. 使惊恐
-- caution
+- alarm [əˈlɑːrm] vt. 使惊恐
+- caution [ˈkɔːʃn]
     - n. 谨慎；警告
     - cautious adj. 谨慎的
-- precautionary adj. 预防的
+    - precautionary [prɪˈkɔʃəˌnɛri] adj. 预防的
 - prudent [ˈpruːdnt]
     - adj. 谨慎的
     - Many said that unemployment, while extremely painful, had improved them in some way: they had become less
@@ -188,31 +203,34 @@
 
 ## addicted
 
+- [əˈdɪktɪd]
 - adj. 成瘾的；入迷的 😔
-- be addicted to sth.
-- be absorbed In == be preoccupied with 投入学习
+- be addicted to sth. 对...上瘾/无法自拔
+    - be absorbed in 全神贯注于/沉浸在...中
+    - be preoccupied([priˈɑkjupaɪd]) with 心思被...占据/念念不忘
 - addiction
     - n. （毒品、酒或赌博）瘾
-    - ...government action is necessary to curb Britain's addiction to unhealthy food.
-- addict n. 对...着迷的人
-- obsessed 😔
+    - ...government action is necessary to curb Britain's **addiction** to unhealthy food.
+- addict [ˈædɪkt] n. 对...着迷的人
+- obsessed [əb'sest] 😔
     - adj. 着迷的
     - obsession [əbˈseʃn]
         - n. 迷恋
         - ...a marketing trick that has <ins>*turned*</ins> the pork sandwich <ins>*into*</ins> an object of
           **obsession**.
 - indulge 😔
-    - v. 沉溺； vt. 放任
+    - v. 沉溺
+    - vt. 放任
     - be indulge in sth.
     - indulgence n. 纵容
-- immersive adj. （计算机系统或图像）沉浸式的
+- immersive [ɪˈmɜrsɪv] adj. （计算机系统或图像）沉浸式的
 
 ## ambition
 
 - n. 雄心；理想 🙂
-- ambitious adj. （计划、措施等）宏达的
-- aggressive adj. 好强的🙂; 攻击性强的😔
-- radical
+- ambitious adj. （计划、措施等）宏大的
+- aggressive [əˈɡresɪv] adj. 好强的🙂; 攻击性强的😔
+- radical [ˈrædɪkl]
     - adj. 彻底的；激进的
     - radically adv. 根本上
 
@@ -228,36 +246,41 @@
 
 ## explosion
 
+- [ɪkˈsploʊʒn]
 - n. 猛增
-- plausible
+- plausible [ˈplɔːzəbl]
     - adj. 貌似合理的；可信的
-    - implausible adj. 难以置信的
-    - One oft-debated cure for this labor shortage remains as implausible as it has been all along...
+    - implausible adj. 难以置信的；不切实际
+    - One oft-debated *cure(n. （解决问题、改善糟糕情况等的）措施)* for this labor shortage remains as **implausible** as
+      it has been all along...
+        - oft-debated 经常被讨论/争论的
+        - all along 一直以来/从头到尾/始终如此
+        - X remains as + 评价词 + as it has been all along X 依然和一直以来一样...
 
 ## Words
 
-- purity
+- purity [ˈpjʊrəti]
     - n. [化学]纯度; 纯洁，纯净; 清洁，清白，清廉; （语言）纯正
     - impurity [ɪmˈpjʊrəti] n. 污点，污染; 掺杂，不纯; 不道德，罪恶; 混杂物，粗劣品
-- irritate
+- irritate [ˈɪrɪteɪt]
     - v. 激怒，惹怒
     - irritation n. 激怒
 - indifferent
     - adj. 漠不关心的
-- estimable
+- estimable [ˈestɪməbl]
     - adj. 值得尊敬的; 可估计的; 难能可贵
-- offensive
+- offensive [əˈfensɪv]
     - adj. 冒犯的; 令人不适的; 攻击（性）的
     - n. 侵犯; 进攻
     - defensive
-        - adj. 防御(性)的; 戒备的; 防守的
+        - adj. 防御（性）的; 戒备的; 防守的
         - n. 存有戒心
-- snare
+- snare [sner]
     - vt. 捕捉; 诱惑; 安圈套; 陷害
     - n. 陷阱，罗网; 诱惑; （绷在小鼓下面的）肠线; [外]（肿瘤等的）勒除器
 - degree
     - n. **程度**；学位；级别
-- consciousness
+- consciousness [ˈkɑːnʃəsnəs]
     - n. 意识（或觉察）
 
 ## 词组

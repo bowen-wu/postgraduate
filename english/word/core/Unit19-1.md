@@ -64,6 +64,7 @@
     - Within companies, the right **compensation** design can provide incentives for executives to think beyond their
       own time at the company and on behalf of all stakeholders.
         - provide incentives for sb to do sth 为某人提供做某事的激励
+        - think beyond 超越...来思考/不局限于...
 
 ## comply
 
@@ -89,6 +90,7 @@
 
 ## endure
 
+- [ɪnˈdʊr]
 - vt. 忍受
 - vi. 持续
 - He can't **endure** being defeated.
@@ -118,11 +120,11 @@
 
 - adj. 合理的；有效的
 - invalid adj. 失效的
-- validity [vəˈlɪdəti]
-    - n. 符合逻辑
-    - invalidate
+    - invalidate [ɪnˈvælɪdeɪt]
         - vt. 使无效
         - Yes, we can **invalidate** that fingerprint.
+- validity [vəˈlɪdəti]
+    - n. 符合逻辑
 
 ## exhaust
 
@@ -158,7 +160,7 @@
     - Stress and lack of sleep can **aggravate** the situation.
 - deteriorate [dɪˈtɪriəreɪt]
     - vi. 恶化
-    - ...today's social indices hardly suggest a dark and **deteriorating** social environment.
+    - ...today's social *indices(index 复数)* hardly suggest a dark and **deteriorating** social environment.
 
 ## receptor
 
@@ -171,7 +173,7 @@
 - vt. 撤回；取（银行账户中的款）
 - Entergy will **withdraw** its Plymouth application.
 - the **withdrawal([wɪðˈdrɔːəl] n. 撤回)** of bank support
-- deposit n. 押金；存款
+- deposit [dɪˈpɑːzɪt] n. 押金；存款
 - retreat [rɪˈtriːt]
     - n. 躲避；僻静处；退却；衰退
     - Moreover, the amateur tradition in music criticism has been in *headlong(adv. 快速地)* **retreat**.
@@ -183,8 +185,9 @@
 - adj. 时尚的
 - style
     - n. 风格；样式；类型
-    - The point of a **style** upgrade isn't to become more *vain(adj. 虚荣的)* or to spend more time <ins>fussing
-      over<ins> what to wear. Instead, use it as an opportunity to reduce <ins>decision fatigue(决策疲劳)</ins>.
+    - The point of a **style** upgrade isn't to become more *vain(adj. 虚荣的)* or to spend more time
+      <ins>fussing over<ins> what to wear. Instead, use it as an opportunity to reduce
+      <ins>decision fatigue(决策疲劳)</ins>.
         - The point of X isn’t to A (or B). Instead/It’s to C. X 的目的不是 A（或 B），而是 C。
         - fuss over sth 为...过度操心/瞎折腾/小题大做
 - stylist [ˈstaɪlɪst] n. 造型设计师；文体家

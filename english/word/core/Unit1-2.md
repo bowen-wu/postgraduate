@@ -22,6 +22,7 @@
 - vt. 意味着；意思是；打算
 - adj. 吝啬的；不友好的 😔
     - == ungenerous [ʌnˈdʒɛnərəs]
+- Destiny is what's **meant** to be.
 - 词组
     - be meant to do sth. 注定做某事；应该做某事
     - mean well 本意是好的；出于好心
@@ -168,9 +169,9 @@
     - vt. 向...提问
     - n. 疑问
     - inquire/enquire [ɪn'kwaɪr] vt. 询问；探究
-    - inquiry/enquiry [ɪnˈkwaɪəri] 
-      - n. 询问
-      - Phone and email **enquiries** are encouraged; no visit please.
+    - inquiry/enquiry [ɪnˈkwaɪəri]
+        - n. 询问
+        - Phone and email **enquiries** are encouraged; no visit please.
 - issue
     - vt. 发布；发给；发出
     - n. 问题；议题；

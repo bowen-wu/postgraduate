@@ -43,6 +43,7 @@
 - cure [kjʊr]
     - vt. 治好（疾病）；
     - n. （解决问题、改善糟糕情况等的）措施
+    - One oft-debated **cure** for this labor shortage remains as implausible as it has been all along...
     - cure vs treatment
         - cure 侧重结果
         - treatment 侧重过程

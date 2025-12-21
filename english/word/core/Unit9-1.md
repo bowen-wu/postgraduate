@@ -170,6 +170,7 @@
 - recession [rɪˈseʃn] 😔
     - n. 经济衰退
     - economic slowdown/downturn/decline/depression/recession 经济衰退
+    - The odds of a long, *nasty([ˈnæsti] adj. 严重的)* **recession** are growing.
     - economic stagnation([stæɡˈneʃən]) 经济停滞
     - economic boom/prosperity 经济繁荣
 - bleak [bliːk] 😔

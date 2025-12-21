@@ -34,7 +34,9 @@
 - release
     - vt. 释放；发布
     - n. 释放；公开发布
-- unleash [ʌnˈliːʃ] vt. 释放
+- unleash [ʌnˈliːʃ]
+    - vt. 释放
+    - Intuition's special powers are **unleashed** only in certain circumstances.
 - rid [rɪd]
     - v. 摆脱
     - get rid of 摆脱
