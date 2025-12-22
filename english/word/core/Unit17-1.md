@@ -171,6 +171,8 @@
 - fiscal [ˈfɪskl]
     - n. 财政年度
     - adj. 政府财政的
+    - It reported a <ins>net loss(净损失)</ins> of $5.6 billion for **fiscal** 2016, the 10th straight year its expenses
+      have exceeded revenue.
 - revenue [ˈrevənuː]
     - n. （公司、组织的）收入；（政府的）财政收入
     - The Supreme Court's opinion Thursday overruled a pair of decades-old decisions that states said cost them billions

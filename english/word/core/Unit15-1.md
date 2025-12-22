@@ -204,7 +204,7 @@
 - [pərˈsiːv]
 - v. 感知；注意到；将...理解为
 - The consequence is that you **perceive** that the trip has taken less time than it actually has.
-- perception
+- perception [pərˈsepʃn]
     - n. 感知；看法；印象
     - == understanding
     - Favoritism in official access can fan public **perceptions** of *corruption(n. 腐败，贪污)*.

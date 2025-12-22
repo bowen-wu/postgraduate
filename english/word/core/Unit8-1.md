@@ -146,7 +146,7 @@
 - Excellence is <ins>going the **extra** mile(付出额外努力)</ins>.
 - extraordinary [ɪkˈstrɔːrdəneri]
     - adj. 卓越的；非凡的；特别的
-    - Shakespeare's lifetime <ins>was confident with(与...相吻合)</ins> a period of **extraordinary** activity and
+    - Shakespeare's lifetime <ins>was coincident with(与...相吻合)</ins> a period of **extraordinary** activity and
       achievement in the drama.
     - extraordinarily adv. 极其地
 - extravagant [ɪkˈstrævəɡənt]

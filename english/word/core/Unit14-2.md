@@ -133,7 +133,7 @@
     - consistently adv. 持续地
 - persist [pərˈsɪst]
     - vi. 持续存在
-    - persisit in doing sth. 坚持做某事（尤其在困难或反对下）
+    - persist in doing sth. 坚持做某事（尤其在困难或反对下）
     - persistence n. 坚持
     - persistent adj. 持续的
 - resist [rɪˈzɪst]

@@ -217,7 +217,9 @@
 - reputation 🙂
     - n. 名誉；名声
     - == fame == prestige [preˈstiːʒ]
-- prestige [preˈstiːʒ] 🙂 n. 威信；声望
+- prestige [preˈstiːʒ] 🙂
+    - n. 威信；声望
+    - His affair with a slave stained his **prestige**.
 - fame 🙂
     - n. 名誉；名声
     - famed adj. 著名的

@@ -27,27 +27,27 @@
 
 ## honor
 
-- vt. 尊重；给予..的光荣
+- vt. 尊重；给予...的光荣
 - n. 荣誉；荣幸
 - dishonor
     - vt. 使蒙羞；不遵守
     - n. 丢脸
-    - disgrace n. 耻辱；丢脸的人（或事）
+    - disgrace [dɪsˈɡreɪs] n. 耻辱；丢脸的人（或事）
     - dishonor a commitment 违背承诺
         - == break a promise
-    - ...provoked justified outrage in Vermont last week when it announced it was **dishonoring** a longstanding
-      commitment.
-- honorably adv. 值得尊敬地
-- glory n. 荣誉；辉煌
+    - ...provoked justified *outrage(n. 愤怒)* in Vermont last week when it announced it was **dishonoring** a
+      longstanding commitment.
+- honorably ['ɒnərəblɪ] adv. 值得尊敬地
+- glory [ˈɡlɔːri] n. 荣誉；辉煌
 
 ## crack
 
 - v. 重击
 - vt. 解决（难题）
 - 词组
-    - crack down (on sb./sth.) 接力取缔；严厉打击
+    - crack down (on sb./sth.) 竭力取缔；严厉打击
     - get cracking (on/about sth.) 开始；开始工作
-- ...a status that gives that federal officials greater regulatory power to <ins>**crack** down on threats<ins>.
+- ...a status that gives federal officials greater regulatory power to <ins>**crack** down on threats<ins>.
 - cracker n. 薄脆饼干
 - firecracker n. 爆竹，鞭炮
 - snap adj. 匆忙的
@@ -58,37 +58,44 @@
 - n. 体形
 - framework
     - n. 框架
-    - That **framework** has contributed *mightily(adv. 非常)* to our broken immigration system.
+    - That **framework** has contributed *mightily([ˈmaɪtli] adv. 非常)* to our *broken(adj. 破碎的)* immigration
+      system.
 
 ## curious
 
+- [ˈkjʊriəs]
 - adj. 难以理解的；好奇的
 - It is **curious** that Stephen Koziatek feels almost *as though/as if(好像)* he has to justify his efforts to give his
   students a better future.
 - curiosity [ˌkjʊriˈɑːsəti]
     - n. 好奇心
     - Your **curiosity** is your growth point. Always.
-    - Having asserted your position(as a position, not as a fact), demonstrate equal **curiosity** about other views.
-    - Mere **curiosity** adds wings to every step.
+    - Having asserted your position (as a position, not as a fact), demonstrate equal **curiosity** about other views.
+        - assert one’s position 明确表明某人的立场
+        - curiosity about sth
+    - Mere **curiosity** adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力
 
 ## feasible
 
+- [ˈfiːzəbl]
 - adj. 可行的
 - feasibility
     - n. 可行性
     - I doubt the **feasibility** of the plan.
-- viable adj. 可行的
+- viable [ˈvaɪəbl] adj. 可行的
 
 ## rage
 
+- [reɪdʒ]
 - n. 愤怒；盛行
-- Do not go gently into that good night, Old age should burn and rave at close of day **Rage**, **rage** against the
-  dying of the light...
+- Do not go gentle into that good night, Old age should burn and rave at close of day; **Rage**, **rage** against the
+  dying of the light. — 狄兰·托马斯（Dylan Thomas）《Do not go gentle into that good night》
+  不要温顺地走向死亡。人在生命将尽之时，仍应燃烧、呐喊，而非安静接受。愤怒吧，愤怒地反抗生命之光的消逝。
 - outraged adj. 震怒的
-- indignation
+- indignation [ˌɪndɪɡˈneɪʃn]
     - n. 愤怒
     - == rage
-    - Feelings of righteous **indignation**, it seems, are not the preserve of people alone.
+    - Feelings of *righteous([ˈraɪtʃəs] adj. 正义的)* **indignation**, it seems, are not the preserve of people alone.
 
 ## fragile
 
@@ -100,65 +107,78 @@
     - v. 使分裂
     - n. 碎片
 - feeble adj. 虚弱的
-- vulnerable
+- vulnerable [ˈvʌlnərəbl]
     - adj. 脆弱的；易受伤害的
-    - be **vulnerable** to sth.
-    - Large animal were **vulnerable** to the charging environment.
+    - be vulnerable to sth. 容易受到...的伤害/影响/攻击
+    - Large animals were **vulnerable** to the changing environment.
 
 ## anonymity
 
+- [ˌænəˈnɪmɪti]
 - n. 匿名
 - He claims many more people would support him in the **anonymity** of a voting booth.
-- anonymous adj. 匿名的
+- anonymous [əˈnɑːnɪməs] adj. 匿名的
 
 ## exploit
 
+- [ɪkˈsplɔɪt]
 - vt. 利用
-- exploitation n. 剥削；开发
+- exploitation [ˌɛksplɔɪˈteʃən] n. 剥削；开发
 
 ## frustrate
 
+- [ˈfrʌstreɪt]
 - vt. 使沮丧
-- frustrating adj. 令人沮丧的
+- frustrating [ˈfrʌstreɪtɪŋ] adj. 令人沮丧的
 - frustrated adj. 沮丧的
-- frustration n. 挫折；沮丧
-- annoy
+- frustration [frʌˈstreɪʃn] n. 挫折；沮丧
+- annoy [əˈnɔɪ]
     - vt. 使恼怒
-    - annoyed adj. 恼怒的
-    - annoying adj. 恼人的
+    - annoyed [əˈnɔɪd] adj. 恼怒的
+    - annoying [əˈnɔɪɪŋ] adj. 恼人的
 
 ## authentic
 
+- [ɔːˈθentɪk]
 - adj. 真实的
-- authenticate vt. 证明...是真实的
-- genuine adj. 真的；真诚的；诚恳的
+- authenticate [ɔˈθɛntɪˌket] vt. 证明...是真实的
+- genuine [ˈdʒenjuɪn] adj. 真的；真诚的；诚恳的
 
 ## corrupt
 
+- [kəˈrʌpt]
 - vt. 破坏
-- corruption n. 贿赂
+- corruption
+    - n. 贿赂
+    - Favoritism in official access can fan public perceptions of **corruption**.
+    - In a *rare([rer] adj. 稀少的，罕见的)* *unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的)* ruling, the
+      U.S.
+      Supreme Court has overturned the **corruption** conviction of a former Virginia governor, Robert MacDonnell.
 - disruption n. 扰乱
 - interrupt
     - v. 中断，打断
     - interruption n. 干扰
-- erupt
+- erupt [ɪˈrʌpt]
     - vi. 爆发
     - eruption n. 爆发
-- abrupt adj. 突然的
-- bankruptcy
+- abrupt [əˈbrʌpt] adj. 突然的
+- bankruptcy [ˈbæŋkrʌptsi]
     - n. 破产
     - As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers, filed for
       **bankruptcy**.
-- bribery n. 贿赂
+- bribery [ˈbraɪbəri] n. 贿赂
 
 ## comprehend
 
+- [ˌkɑːmprɪˈhend]
 - v. 理解
-- comprehension
+- comprehension [ˌkɑːmprɪˈhenʃn]
     - n. 理解
     - == understanding
     - Neither **comprehension** nor learning can take place in an atmosphere of anxiety.
-    - Vocabulary **comprehension** needs creativity.
+        - neither A nor B A和B都不...
+        - take place 发生/进行
+    - Vocabulary **comprehension** needs *creativity([ˌkriːeɪˈtɪvəti] n. 创造力)*.
 - comprehensive adj. 全面的
 
 ## degrade
@@ -169,10 +189,10 @@
     - v. 使（机器、计算机系统等）升级
     - vt. 改善；提拔
     - n. 升级，提升
-- disgrace
+- disgrace [dɪsˈɡreɪs]
     - n. 耻辱；丢脸的人（或事）
-    - Today We have a tendency to label obesity as a **disgrace**.
-- stain
+    - Today we have a tendency to label obesity as a **disgrace**.
+- stain [steɪn]
     - vt. 给...着色；败坏（名声）
     - His affair with a slave **stained** his prestige.
 
@@ -185,9 +205,9 @@
     - **Innovation** is taking two things that already exist and putting them together in a new way.
 - innovative adj. 富有创新思想的；采用新方法的；革新的
 - innovativeness n. 创新性
-- novelty
+- novelty [ˈnɑːvlti]
     - n. 新奇的事物
-    - novel
+    - novel [ˈnɑːvl]
         - n. 小说
         - adj. 新颖的
             - == new
@@ -198,7 +218,7 @@
     - adj. 临时的; 权宜之计的; 凑合的
 - linguistic [lɪŋˈɡwɪstɪk]
     - adj. 语言的; 语言学的
-- retrospective
+- retrospective [ˌrɛtrəˈspɛktɪv]
     - adj. 回顾的; 怀旧的; [法]有追溯力的; 可追溯的
     - n. 回首
     - in retrospect 回首

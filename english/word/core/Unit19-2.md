@@ -217,7 +217,7 @@
 - cautious
     - adj. 谨慎的
 - vulnerable
-    - adj. （地方）易受攻击的; 易受伤的; 易受批评的
+    - adj. 脆弱的；易受伤害的
 - scandalous
     - adj. 丢脸的; 诽谤性的
 

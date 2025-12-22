@@ -231,8 +231,9 @@
 - guilty adj. 感到内疚的；有罪责的
 - conviction
     - n. 判罪
-    - ...the U.S. Supreme Court has overturned the corruption **conviction** of a former Virginia governor, Robert
-      McDonnell.
+    - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
+      Supreme Court has overturned the corruption( [kəˈrʌpʃn] n. 腐败，贪污) **conviction** of a former Virginia
+      governor, Robert MacDonnell.
 
 ## conflict
 

@@ -37,7 +37,7 @@
     - **Delicate** things, like a flower, a necklace, or someone's feelings are *fragile([ˈfrædʒl] adj. 脆弱的)*, easily
       broken, and often quite beautiful.
     - In its early days the U.S. was confronted with **delicate** situations.
-    - vulnerable [ˈvʌlnərəbl] adj. （地方）易受攻击的; 易受伤的; 易受批评的
+    - vulnerable [ˈvʌlnərəbl] adj. 脆弱的；易受伤害的
 
 ## master
 
@@ -81,10 +81,11 @@
 
 - [pəˈzes]
 - vt. 拥有
-- Fashion you can buy, but style you **possess**.
+- Fashion you can buy, but style you **possess**. 时尚可以购买，风格却属于你自己
 - To **possess** something is to **have or own** it. You can **possess** a physical object, you can **possess** a
   particular quality or skill, or you can **possess** control or influence over someone.
 - We must **possess** a positive attitude towards the problems confronting us.
+    - confronting us 是[现在分词短语，作后置定语](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md#%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BF%AE%E9%A5%B0%E5%90%8D%E8%AF%8D%E4%BD%9C%E5%AE%9A%E8%AF%AD)，修饰 problems
 - possession [pəˈzeʃn]
     - n. 拥有；财物
     - <ins>It is a truth universally acknowledged</ins>, that <ins>a single man</ins> <ins>in **possession**
@@ -94,9 +95,10 @@
 
 ## pursue
 
+- [pərˈsuː]
 - vt. 追求
 - pursue your dream 追求梦想
-- pursuit
+- pursuit [pərˈsuːt]
     - n. 追求
     - in pursuit of sth. 为了追求某物；追寻；谋求
 - quest
@@ -178,7 +180,7 @@
 - reign [reɪn]
     - vi. 统治
     - n. 君主统治时期
-    - Rain falls from above, and people <ins>who **reign**<ins> <ins>rule from</ins> a position above others.
+    - Rain falls from above, and people <ins>who **reign**</ins> rule from a position above others.
         - rule from/rule over 统治某个地方/人民
     - He used to **reign** over popular music, always topping the charts.
     - "The ancient Hawaiians were *astronomers([əˈstrɑːnəmər] n. 天文学家)*", wrote Queen Liliuokalani, Hawaii's
