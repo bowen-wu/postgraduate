@@ -131,6 +131,8 @@
   *bleak rate of deforestation(令人沮丧的砍伐速度/严峻的砍伐率)* has *slowed* in *pace(n. 速度)*. 🙂
 - This year **marks** *exactly two centuries* since the publication of Frankenstein; or, The modern Prometheus, by Mary
   Shelley.
+- mark + 节日/事件/周年 纪念/庆祝/表示对...的重视
+    - About three thousand people held a rally to **mark** international human rights day.
 - marked
     - adj. 显著的
     - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,

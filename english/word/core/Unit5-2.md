@@ -231,6 +231,7 @@
 - [ˈɑːrɡjuː]
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
+- It is **argued** that the influence of transient investment on public companies can be *adverse(adj. 不利的)*.
 - arguable
     - adj. 可论证的；有一定理由的；有争议的
     - arguably [ˈɑːrɡjuəbli]

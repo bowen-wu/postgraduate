@@ -107,7 +107,7 @@
     - == stress
 - strained
     - adj. 紧张的；不和谐的；恶化的；勉强维持的
-    - their <ins>**strained** relations(紧张的关系/不和谐的关系)<ins> with the boards.
+    - their <ins>**strained** relations(紧张的关系/不和谐的关系)</ins> with the boards.
 - constrain
     - vt. 限制
     - constraint
@@ -165,6 +165,8 @@
 - They are **entitled** to <ins>first class(头等舱)</ins> travel.
     - class n. 仓位
 - The court, though, may want to allow room for police to cite situations where they **are entitled to** more freedom.
+    - allow room for 留有余地/给...保留空间
+    - more freedom 在法律语境中通常指： 行动自由/自由裁量权
 - subtitle n. 字幕；副标题
 
 ## hijack

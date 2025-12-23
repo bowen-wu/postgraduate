@@ -90,6 +90,7 @@
 
 ## strategy
 
+- [ˈstrætədʒi]
 - n. 策略
 - == plan（大）
 - A **strategy** is any **plan** you make to achieve a goal.
@@ -122,9 +123,9 @@
 - 词组
     - weigh on 使（某人或某人的精神等）忧虑
     - weigh down 使负荷太重
-    - weigh in 体重以确定参赛资格；**加入**比赛；
+    - weigh in **加入**比赛；（公开）发表意见、参与讨论、表态
         - 引申
-            - （比喻）（在讨论、辩论等中）发表看法 / 参与讨论
+            - （比喻）（在讨论、辩论等中）发表看法 / 参与讨论 weigh in (on / with sth)
             - （比喻）加入、介入某个争议或事件；发表有分量的意见
 - Republican Speaker of the House of Representatives John Boehner was also quick to **weigh in**.
 - Two potential giants may yet **weigh in**.
@@ -132,15 +133,16 @@
 - A federal appeals court **weighed in** again Tuesday, but instead of providing a badly needed resolution, it only
   *prolonged(vt. 延长)* the fight.
     - instead of A, B 不是 A，而是 B（否定A，肯定B）
-- weight
-    - vt. 在...上加重量
-    - n. 重量；压力
+    - badly needed 迫切需要的/久需未解的
 - outweigh
     - vt. （在重要性或意义上）超过
     - A outweigh B A比B重要
     - == override vt. 推翻，无视; 践踏; 优先于; 覆盖
     - The White House claims that its power of enforcement **outweighs** that held by the states.
-- overweight adj. 超重的
+- weight
+    - vt. 在...上加重量
+    - n. 重量；压力
+    - overweight adj. 超重的
 - obese [oʊˈbiːs]
     - adj. 过度肥胖的
     - obesity [oʊˈbisəti] n. 过度肥胖
@@ -152,6 +154,7 @@
     - be worth doing sth. 值得做某事
     - be worth sb.'s while to do sth. 值得某人花时间/精力去做某事
 - It's not **worth** losing sleep over.
+    - lose sleep over sth 为某事烦恼/担心到睡不着觉
 - How much is this painting **worth**?
 - worthwhile
     - adj. 值得的
@@ -168,7 +171,7 @@
     - v. 出席；上（学）
     - attendance
         - n. 出席
-        - The theater **attendance** is on the rise. 剧院的上座率正在上升
+        - The theater **attendance** is on the rise.
 
 ## discuss
 
@@ -192,8 +195,8 @@
 - purpose [ˈpɜːrpəs] n. 目的；目标
 - proposal [prəˈpoʊzl]
     - n. 提议
-    - ...they *presumably([prɪˈzuːməbli] adj. 相反的)* have enough independence to disagree with the chief executive's
-      **proposals**.
+    - ...they *presumably([prɪˈzuːməbli] adv. 大概可以认为；想必；据推测)* have enough independence to disagree with the
+      chief executive's **proposals**.
 - advise [ədˈvaɪz]
     - v. 建议
     - advise sb. to do sth.

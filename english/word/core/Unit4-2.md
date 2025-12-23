@@ -63,6 +63,7 @@
 - surround [səˈraʊnd]
     - vt. 环绕；包围；与...紧密联系
     - == border 边界；接壤
+    - People in earlier *eras(n. 时代; 年代)* were **surrounded** by reminders of misery.
     - surrounding
         - adj. 周围的；附近的
         - surroundings

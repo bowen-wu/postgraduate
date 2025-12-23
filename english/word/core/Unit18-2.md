@@ -72,12 +72,12 @@
 
 - [ɪnˈtuːɪtɪv]
 - adj. 直觉的
-- Demonstrating the **intuitive** nature of the social processing. 展示了社会信息加工的直觉性本质
+- Demonstrating the **intuitive** nature of the social processing.
     - the intuitive nature of... ...的直觉性本质/直觉特征
     - social processing 社会信息加工/社会信息处理
 - intuition [ˌɪntuˈɪʃn]
     - n. 直觉
-    - **Intuition**'s special powers are unleashed only in certain circumstances.
+    - **Intuition**'s special powers are *unleashed([ʌnˈliːʃ] vt. 释放)* only in certain circumstances.
     - == instinct [ˈɪnstɪŋkt] n. 本能；直觉
 - illusion [ɪˈluːʒn]
     - n. 错觉
