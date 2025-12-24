@@ -179,6 +179,7 @@
 - creativity [ˌkriːeɪˈtɪvəti]
     - n. 创造力
     - Vocabulary comprehension needs **creativity**.
+    - What keeps life fascinating is the constant **creativity** of the soul.
 - invent [ɪnˈvent]
     - vt. 发明；编造
     - invention n. 发明；发明物；创造能力；编造

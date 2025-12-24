@@ -210,7 +210,9 @@
 - strength [streŋθ]
     - n. 力量；实力；优势
     - the relative strength 优势
-    - strengthen v. 加强
+    - strengthen [ˈstreŋθn]
+        - v. 加强
+        - The crash stresses the urgency to **strengthen** security worldwide.
 - energy
     - n. 能源；精力
     - clean energy

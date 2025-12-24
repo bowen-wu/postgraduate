@@ -251,11 +251,11 @@
 - plausible [ˈplɔːzəbl]
     - adj. 貌似合理的；可信的
     - implausible adj. 难以置信的；不切实际
-    - One oft-debated *cure(n. （解决问题、改善糟糕情况等的）措施)* for this labor shortage remains as **implausible** as
-      it has been all along...
-        - oft-debated 经常被讨论/争论的
-        - all along 一直以来/从头到尾/始终如此
-        - X remains as + 评价词 + as it has been all along X 依然和一直以来一样...
+        - One oft-debated *cure(n. （解决问题、改善糟糕情况等的）措施)* for this labor shortage remains as **implausible**
+          as it has been all along...
+            - oft-debated 经常被讨论/争论的
+            - all along 一直以来/从头到尾/始终如此
+            - X remains as + 评价词 + as it has been all along X 依然和一直以来一样...
 
 ## Words
 

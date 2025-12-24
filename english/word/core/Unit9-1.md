@@ -135,6 +135,7 @@
     - adj. 固定的；连续发生的；持续不断的；
         - == continuous
     - n. 恒定物
+    - What keeps life fascinating is the **constant** creativity of the soul. 
     - constantly adv. 始终
 - perpetuate [pərˈpetʃueɪt] 😔
     - v. 使继续；使永久化；使长久（尤指不好的事物）

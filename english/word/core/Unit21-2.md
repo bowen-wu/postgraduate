@@ -168,7 +168,7 @@
 - adj. 自主的
 - The coming use of **autonomous** vehicles, for example, poses *thorny([ˈθɔrni] adj. 难以处理的, 棘手的)* ethical
   questions.
-- automation n. 自动化
+- automation [ˌɔːtəˈmeɪʃn] n. 自动化
 - spontaneous [spɑːnˈteɪniəs]
     - adj. 自发的，自然的
     - Many people **spontaneously** stood up and cheered.

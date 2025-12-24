@@ -238,7 +238,9 @@
 ## entire
 
 - adj. 全部的
-- entirely adv. 完全的（常用于强调）
+- entirely
+    - adv. 完全的（常用于强调）
+    - Don't dismiss that possibility **entirely**.
 - overall
     - adj. 总的
     - adv. 总的来说

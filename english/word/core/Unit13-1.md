@@ -37,6 +37,7 @@
     - vi. 包括
     - extensive
         - adj. 广泛的
+        - Chinese tea culture is both **extensive** and profound.
         - extensively
             - adv. 广泛地
             - These men wrote and published **extensively**, reaching both New World and Old World audiences, and giving

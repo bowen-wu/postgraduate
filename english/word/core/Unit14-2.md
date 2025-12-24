@@ -172,6 +172,7 @@
 - **Obtain** means to **get something that is not so easy to come** by such as knowledge, rights, or a large amount of
   money.
 - You wouldn't say you **obtained** a pair of pants unless they were one of a kind.
+    - one of a kind 独一无二
 - Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins> <ins>the bulk of(...的大部分)</ins>
   our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to **obtain**
   images of unsurpassed clarity. 坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
@@ -214,7 +215,10 @@
 
 - v. 投票
 - n. 投票
-- campaign [kæmˈpeɪn] n. 战役；（有计划的）运动；竞选运动
+- campaign [kæmˈpeɪn]
+    - n. 战役；（有计划的）运动；竞选运动
+    - A political candidate might **campaign** on promises to bring sweeping change to a country.
+        - campaign on 以某个议题/政策/立场作为竞选或活动的核心内容
 - lobby [ˈlɑːbi]
     - v. 游说
     - n. 游说，游说团体
