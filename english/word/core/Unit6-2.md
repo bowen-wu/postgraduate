@@ -242,7 +242,7 @@
         - misinterpretation n. 误解
             - == misunderstanding n. 误解，误会
             - About a third say the problem of fake news lies in "**misinterpretation** or
-              exaggeration([ɪɡˌzædʒəˈreʃən] n. 夸张，夸大) of actual news" via social media.
+              *exaggeration([ɪɡˌzædʒəˈreʃən] n. 夸张，夸大)* of actual news" via social media.
             - Opportunities for **misinterpretation**, error, and self-deception **abound**. 误解、出错和自欺的可能性比比皆是
                 - abound [əˈbaʊnd]
                     - vi. 大量存在

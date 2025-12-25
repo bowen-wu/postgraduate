@@ -72,7 +72,7 @@
 - vi. 遵守
 - We will not **comply**.
 - comply **with** the rules
-- compliance
+- compliance [kəmˈplaɪəns]
     - n. 遵守
     - bring sth into compliance (with sth) 使某事符合（法规/标准/要求）；让某事达到合规状态
 - compliant adj. 顺从的
@@ -83,10 +83,10 @@
       pocketbook of an arrested person without warrant.
 - defy [dɪˈfaɪ]
     - vt. 违抗
-    - They believe it is essential to **defy** convention.
+    - They believe it is *essential(adj. 必不可少的)* to **defy** convention.
 - boycott [ˈbɔɪkɑːt]
     - vt. 联合抵制
-    - ...passionate consumers would try to persuade others to **boycott** products.
+    - ...passionate consumers would try to *persuade(vt. 劝说)* others to **boycott** products.
 
 ## endure
 
@@ -186,7 +186,7 @@
 - style
     - n. 风格；样式；类型
     - The point of a **style** upgrade isn't to become more *vain(adj. 虚荣的)* or to spend more time
-      <ins>fussing over<ins> what to wear. Instead, use it as an opportunity to reduce
+      <ins>fussing over</ins> what to wear. Instead, use it as an opportunity to reduce
       <ins>decision fatigue(决策疲劳)</ins>.
         - The point of X isn’t to A (or B). Instead/It’s to C. X 的目的不是 A（或 B），而是 C。
         - fuss over sth 为...过度操心/瞎折腾/小题大做

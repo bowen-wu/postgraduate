@@ -63,7 +63,9 @@
     - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4,
 - congressional [kənˈɡreʃənl] adj. 国会的
 - parliament [ˈpɑːrləmənt] n. 议会
-- council [ˈkaʊnsl] n. 地方会议；理事会
+- council [ˈkaʊnsl]
+    - n. 地方会议；理事会
+    - ...a new conservative city **council** suspended enforcement of the clean air zone.
 - senate
     - n. 参议院
     - senator n. 参议员

@@ -115,7 +115,7 @@
 ## law
 
 - n. 法律；（针对某项罪行、协议等的一条）法规；定律
-- bill  
+- bill
     - n. 法案（不具有法律效力）
     - PE
         - n. 账单，票据
@@ -221,7 +221,7 @@
     - n. 良知；内疚
     - Mental health has commonly been called **conscience**, instinct([ˈɪnstɪŋkt]), wisdom([ˈwɪzdəm]), common sense, or
       the inner voice.
-    - ...*verdicts(n. 裁决)* should represent the **conscience** of the *community* and <ins>not just(不仅仅)</ins> the
+    - ...*verdicts(n. 裁决)* should represent the **conscience** of the community and <ins>not just(不仅仅)</ins> the
       *letter* of the law.
         - verdict [ˈvɜːrdɪkt] == ruling == decision
 

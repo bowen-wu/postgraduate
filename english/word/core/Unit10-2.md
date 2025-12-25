@@ -142,6 +142,7 @@
 - n. 举止；实施办法
 - Quinn and her *colleagues([ˈkɑligz])* **conducted** a test to see if rats can distinguish a friendly rat from a
   *hostile([ˈhɑːstl] adj. 敌对的)* one.
+- The court was contemptuous of McDonnell's **conduct**.
 - conductor
     - n. （交响乐、合唱团的）指挥
     - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
