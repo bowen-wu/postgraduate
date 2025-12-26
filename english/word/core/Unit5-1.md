@@ -64,6 +64,10 @@
 - vt. 使保持（某种状态）；持有；担任（职务）；任务；举行；归咎于
 - vi. （未来将要）发生；（论点、理论等）站得住脚
 - n. 控制
+- PE
+    - v. 认为（表达观点）
+        - I still hold that his decision is mistaken.
+        - == contend/maintain/argue
 - The average time for **holding a stock** in both the United States and Britain, he notes, has dropped from seven years
   to seven months.
 - 词组

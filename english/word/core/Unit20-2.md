@@ -121,7 +121,14 @@
 ## loom
 
 - vi. （问题或困难）逐渐逼近 😔
-- n. 织布机
+- n. 织布机；若隐若现
+- PE
+    - vi. 赫然出现😔
+        - To loom is to appear or stand over someone in a threatening way.
+        - Don't loom over the person you're teaching to weave! You'll just make her nervous.
+    - vi. 逼近，迫近
+        - Anything that looms is coming into view slowly and isn't something you want to see.
+        - If a deadline loons,better get to work.
 - boom
 - doom
 - **Loom** has two distinct meanings, Fist, a **loom** is a **tool** for weaving. Second, to **loom** is to **appear**

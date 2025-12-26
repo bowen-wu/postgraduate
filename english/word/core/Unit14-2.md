@@ -220,9 +220,13 @@
     - A political candidate might **campaign** on promises to bring sweeping change to a country.
         - campaign on 以某个议题/政策/立场作为竞选或活动的核心内容
 - lobby [ˈlɑːbi]
+    - n. 大厅，休息室
+        - a hotel lobby
     - v. 游说
-    - n. 游说，游说团体
-    - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
+    - PE
+        - n. 游说，游说团体（政治）
+            - political lobby group 政治游说团体
+            - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
 - elect
     - vt. 选举
     - In a direct democracy, citizens <ins>take turns(轮流)</ins> governing themselves, rather than **electing**

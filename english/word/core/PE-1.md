@@ -178,3 +178,23 @@
     - a handsome reward
     - a handsome number of votes
     - The report，makes heavy reading for publishers who have，so far，made handsome profits.
+
+## hit
+
+- n./v. 打击，碰撞
+- v./n. 产生不良影响 😔
+    - The tax increases will certainly hit the poor.
+    - Italy was one of the hardest hit countries.
+- n. 达到
+    - == reach
+    - The euro hit a record low In trading today.
+    - As many people hit middle age...
+
+## Interest
+
+- n. 兴趣
+- n. 利息
+    - If a bank loans you $10000,you have to pay back the $10000 plus the interest.
+- n. 利益，好处
+    - It is In your best Interest to cooperate.
+    That suggests it is in the broader corporate Interest to recruit top candidates for increasingly tough jobs.

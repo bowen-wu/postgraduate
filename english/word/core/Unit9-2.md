@@ -192,6 +192,12 @@
     - vi. (~ towards)倾向于；
     - adj. 瘦且健康的；贫乏的
     - lean towards 倾向于
+    - PE
+        - v. 倾斜
+            - The tower is leaning dangerously.
+        - v. 倚靠，依靠
+            - She walked slowly，leaning on her friend's arm.
+            - No shock there,considering how much work it is to raise a kid without a partner to lean on.
 
 ## negative
 

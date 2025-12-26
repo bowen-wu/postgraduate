@@ -80,7 +80,9 @@
     - Artificial Intelligence(AI) 人工智能
 - novel [ˈnɑːvl]
     - n. （长篇）小说
-    - adj. 新颖的
+    - PE
+        - adj. 新颖的，新奇的
+        - Sometimes years are required for truly novel discovery claims to be accepted and appreciated.
     - a **novel** discovery 一个新颖的发明
     - novelist n. 小说家
 - fake adj. 假的
@@ -194,6 +196,11 @@
 - [ɪˈmjuːn]
 - adj. 有免疫力的；免除的；豁免的；免疫（系统）的；不受影响的
 - 7 ways to boost your **immune** system
+- PE
+    - adj. 不受影响的
+        - We are immune to advertising.
+        - I become immune to criticism.
+        - be immune to 不受...影响
 - 词组
     - immune to 对...免疫；不受...影响
     - be immune from 免于...

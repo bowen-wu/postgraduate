@@ -66,8 +66,10 @@
 
 - [ˈmɑːdɪst]
 - adj. 适度的；谦虚的；普通的；较少的
-- He lives on a **modest** income.
-    - live on + 名词 靠...生活/以...为生
+- PE
+    - adj. 适度的；较少的
+    - He lives on a **modest** income.
+        - live on + 名词 靠...生活/以...为生
 - Politicians have repeatedly "backloaded" *public-sector pay deals(公共部门薪酬协议)*, keeping the pay increase
   **modest** but adding to holidays and especially pensions that are already generous.
 - moderate

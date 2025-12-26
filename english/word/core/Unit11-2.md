@@ -170,6 +170,12 @@
 - afford
     - vt. 买得起；给予；承担得起（后果）
     - afford to do sth. 有钱/有资源去做某事
+    - PE
+        - vt. 给予，提供
+        - == provide
+            - We can't afford to wait.
+            - The tree affords some shelter from the sun.
+            - The Internet affords anonymity to its users,a blessing to privacy and freedom of speech.
     - affordable [əˈfɔːrdəbl]
         - adj. 负担得起的；价格实惠的
         - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is
