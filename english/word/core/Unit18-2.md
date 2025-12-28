@@ -66,7 +66,9 @@
 - hint
     - v. 暗示
     - hint at
-- cue [kjuː] n. 提示；暗示
+- cue [kjuː]
+    - n. 提示；暗示
+    - Deliberation focused them on vivid but misleading **cues**.
 
 ## intuitive
 
@@ -116,7 +118,7 @@
         - be at odds with 与...有差异
 - weird [wɪrd]
     - adj. 怪异的
-    - bizarre [bɪˈzɑːr] adj. 奇异的; 古怪的
+- bizarre [bɪˈzɑːr] adj. 奇异的; 古怪的
 
 ## cooperate
 

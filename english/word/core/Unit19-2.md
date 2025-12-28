@@ -63,8 +63,8 @@
         - lame adj. 跛的，瘸的，站不住脚的，蹩脚的
 - dismiss
     - v. 解散；解雇
-        - If you are **dismissed** from your job, it means you've been fired.
-            - be dismissed from one's job 被雇主正式解除雇佣关系
+    - If you are **dismissed** from your job, it means you've been fired.
+        - be dismissed from one's job 被雇主正式解除雇佣关系
     - PE
         - vt. 不予考虑；（法律）不受理 😔
         - Don't **dismiss** that possibility entirely.
@@ -131,8 +131,8 @@
 - vt. 使自动化
 - automation [ˌɔːtəˈmeɪʃn]
     - n. 自动化
-    - man versus machine 人机对抗
     - Jobs that were once thought to be immune from **automation** suddenly become threatened.
+    - man versus machine 人机对抗
     - Artificial Intelligence(AI) 人工智能
     - big data 大数据
     - ethical crisis 伦理道德危机
@@ -147,14 +147,14 @@
 - 词组
     - be superior to 优于...
 - superiority [suːˌpɪriˈɔːrəti] n. 优越性；优越感
-- senior
-    - adj. 级别（或地位）高的
-    - n. 高年级学生
 - inferior [ɪnˈfɪriər]
     - adj. 比不上...的
     - 词组
         - be inferior to 次于...
     - inferiority [ɪnˌfɪriˈɔrəti] n. 低等
+- senior
+  - adj. 级别（或地位）高的
+  - n. 高年级学生
 - humble [ˈhʌmbl]
     - vt. 使谦恭
     - adj. 谦逊的
@@ -173,7 +173,7 @@
     - car crash 车祸
     - The **crash** of EgyptAir Flight 804, which terrorists may have downed over the Mediterranean Sea, provides
       another *tragic([ˈtrædʒɪk] adj. 悲惨的)* reminder of why.
-    - The **crash** stresses the urgency to strengthen security worldwide.
+    - The **crash** *stresses(vt. 强调)* the urgency to strengthen security worldwide.
 
 ## leak
 

@@ -63,7 +63,7 @@
 
 % =========================
 
-    \section{title}
+    \section{不等式}
 
     \subsection{基础概念}
 
@@ -74,7 +74,6 @@
 
     \begin{enumerate}
     \end{enumerate}
-
 
     \subsection{定理}
 
@@ -90,6 +89,38 @@
     \subsection{公式}
 
     \begin{enumerate}
+        \item 若$b > a > 0$，则$a \leq |x| < b \Leftrightarrow a \leq x < b\text{或}-b < x \leq -a$
+        \item 均值不等式: $\displaystyle \frac{2}{\displaystyle \frac{1}{a}+\frac{1}{b}} \leq \sqrt{ab} \leq \frac{a+b}{2} \leq \sqrt{\frac{a^2+b^2}{2}}, \qquad a,b>0$
+        \item $a^2 + b^2 \geq 2ab$
+        \begin{itemize}
+            \item $\displaystyle \frac{a + b}{2} \geq \sqrt{ab}, \qquad a,b > 0$
+            \item $\displaystyle \frac{a}{b} \leq \frac{a^2 + \displaystyle \frac{1}{b^2}}{2}$
+            \item $\displaystyle a + \frac{1}{a} \geq 2, \qquad a>0$
+            \item $\displaystyle \frac{a + b + c}{3} \geq \sqrt[3]{abc}$
+        \end{itemize}
+        \item 三角不等式: $||a| - |b|| \le |a \pm b| \le |a| + |b|$
+        \begin{itemize}
+            \item $||a| - |b|| = |a + b| \Leftrightarrow ab \leq 0$
+            \item $|a + b| = |a| + |b| \Leftrightarrow ab \geq 0$
+            \item $||a| - |b|| = |a - b| \Leftrightarrow ab \geq 0$
+            \item $|a - b| = |a| + |b| \Leftrightarrow ab \leq 0$
+        \end{itemize}
+        \item 柯西不等式:
+        \[
+            \left(a_1^2 + a_2^2 + \cdots + a_n^2\right)
+            \left(b_1^2 + b_2^2 + \cdots + b_n^2\right)
+            \geq
+            \left(a_1 b_1 + a_2 b_2 + \cdots + a_n b_n\right)^2
+        \]
+
+        令 \( b_1 = b_2 = \cdots = b_n = 1 \)，则有
+        \[
+            a_1^2 + a_2^2 + \cdots + a_n^2
+            \geq
+            \frac{(a_1 + a_2 + \cdots + a_n)^2}{n}
+        \]
+        注: $\color{red}{(a_1^2 + a_2^2)(b_1^2 + b_2^2) \geq (a_{1}b_{1} + a_2 b_2)^2}$
+        \item Bernoulli（伯努利）不等式: $(1+x)^n \ge 1 + nx, x > -1$
 
     \end{enumerate}
 

@@ -21,13 +21,17 @@
 
 - n. 习俗；[pl.] 海关；关税
 - The **custom** of lighting the Olympic flame goes back centuries.
+    - the custom of doing sth 做某事的传统/习俗
+    - go back (some time) 追溯到（某个久远的时间）
 - The ship was boarded by **customs** officials.
+    - board a ship/plane/aircraft 登上（船 / 飞机）进行检查或执法
+    - be boarded by sb 被某人登上并检查（执法语境）
 - customer n. 顾客
 - accustom
     - vt. 使习惯于
     - accustomed
         - adj. 习惯的
-        - be accustomed to doing sth.
+        - be accustomed to doing sth. 习惯于做某事
             - == be used to doing sth.
         - She was a person **accustomed** to having eight hours' sleep a night.
 
@@ -41,10 +45,11 @@
 
 - adj. （时间或空间上）遥远的
 - distance n. 距离
-- remote adj. 微小的；偏远的
+- remote adj. 微小的；偏远的；远程的
 
 ## enroll
 
+- [ɪnˈroʊl]
 - vt. 使加入
 - vi. 注册
 - Before you **enroll** in online classes, take a few minutes to interview the school of your choice.
@@ -65,16 +70,17 @@
 
 ## deliberate
 
+- [dɪˈlɪbəreɪt]
 - vi. 仔细考虑
 - adj. 故意的
 - deliberate practice
-- deliberation
+- deliberation [dɪˌlɪbəˈreʃən]
     - n. 仔细考虑；**深思熟虑**
     - The process of **carefully considering what to do** is called **deliberation**, like your **deliberation** before
       making one of the most important decisions in your life.
-    - **Deliberation** focused them on vivid but misleading cues.
-    - == thoughtfulness
-- deliberately adv. 故意；从容谨慎的
+    - **Deliberation** focused them on vivid but misleading cues. 反复思考反而让他们把注意力集中在生动却具有误导性的线索上
+    - == thoughtfulness [ˈθɔtfəlnɪs] n. 深思; 熟虑; 体贴; 亲切
+- deliberately [dɪˈlɪbərətli] adv. 故意；从容谨慎的
 
 ## flexible
 
@@ -87,28 +93,30 @@
 ## intense
 
 - adj. 十分强烈的；激烈的
-- intense feelings for sb./sth.
+- intense feelings for sb./sth. 对某人或某事怀有强烈而深刻的情感
 - ...it is sure to spark **intense** opposition from the far large number of motorists who will then be affected.
 - intensify v. 使加强
 - intensity n. 强度
 - intensive adj. 密集的
-- consolidate v. 巩固；加强；合并
+- consolidate [kənˈsɑːlɪdeɪt] v. 巩固；加强；合并
 - solid
     - adj. 固体的；可靠的
     - lay a **solid** foundation for sth. 为...打下坚实基础
 
 ## intervene
 
+- [ˌɪntərˈviːn]
 - vi. 介入
 - 词组
     - intervene in sth. 介入某事
-- intervention
+- intervention [ˌɪntərˈvenʃn]
     - n. 介入
     - == interference
-- interfere vi. 干涉，介入；妨碍；干扰
-- interference [ˌɪntərˈfɪrəns]
-    - n. 干涉
-    - The number of women on corporate boards has been steadily increasing without government **interference**.
+- interfere
+    - vi. 干涉，介入；妨碍；干扰
+    - interference [ˌɪntərˈfɪrəns]
+        - n. 干涉
+        - The number of women on corporate boards has been steadily increasing without government **interference**.
 
 ## intimate
 
@@ -117,35 +125,43 @@
 - intimately
     - adv. 紧密地
     - Social media allows users to experience news events more **intimately** and immediately...
+        - experience [ɪkˈspɪriəns]
+            - n. 经验; 经历; 往事
+            - v. 经历; 感受
+        - express [ɪkˈspres]
+            - vt. 表达
+            - n. 快递服务
+            - adj. 明确的；特快的
 
 ## loom
 
-- vi. （问题或困难）逐渐逼近 😔
+- vi. （问题或困难）逐渐逼近；（常以可怕的方式）赫然出现 😔
 - n. 织布机；若隐若现
-- PE
-    - vi. 赫然出现😔
-        - To loom is to appear or stand over someone in a threatening way.
-        - Don't loom over the person you're teaching to weave! You'll just make her nervous.
-    - vi. 逼近，迫近
-        - Anything that looms is coming into view slowly and isn't something you want to see.
-        - If a deadline loons,better get to work.
-- boom
-- doom
+- boom n. （贸易和经济活动的）激增；（某种体育活动、音乐等）突然风靡的时期
+- doom n. 厄运
 - **Loom** has two distinct meanings, Fist, a **loom** is a **tool** for weaving. Second, to **loom** is to **appear**
   or stand over someone in a **threatening** way.
 - The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized **looms**.
+- PE
+    - vi. 赫然出现😔
+        - Don't **loom** over the person you're teaching to *weave([wiːv] v. 编，织)*! You'll just make her nervous.
+            - loom over sb 居高临下地站在某人旁边、逼近式地注视
+    - vi. 逼近，迫近
+        - Anything that **looms** is coming into view slowly and isn't something you want to see.
+        - If a deadline **looms**, better get to work.
 - looming
     - adj. （不希望或不愉快的事情）迫近的，逼近的
     - A **looming** threat to business-method patents.
     - Meanwhile, as the recession is **looming** large, people are getting anxious.
+        - loom large (over sb / sth) 显得迫在眉睫/阴影笼罩/变得非常重要
 - upcoming adj. 即将发生（或来临）的
 
 ## musical
 
 - adj. 音乐的
 - musician n. 音乐家
-- orchestra n. 管弦乐队
-- philharmonic n. (pl.)爱乐乐团；交响旅团
+- orchestra [ˈɔːrkɪstrə] n. 管弦乐队
+- philharmonic [ˌfɪlərˈmɑnɪk] n. (pl.)爱乐乐团；交响旅团
 
 ## precede
 
@@ -156,25 +172,26 @@
 - proceed [proʊˈsiːd]
     - vi. 继续做（或从事、进行）；行进
     - n. [pl.] 收入，收益
-- predecessor
+- predecessor [ˈpredəsesər]
     - n. 前任
     - successor [səkˈsesər] n. 继承者；继任者
-- unprecedented
+- unprecedented [ʌnˈpresɪdentɪd]
     - adj. 前所未有的
     - ...exhausted **unprecedented** management efforts
 
 ## renew
 
 - vt. 更新
-- renewal n. 更新
-- renewable
+- renewal [rɪˈnuːəl] n. 更新
+- renewable [rɪˈnuːəbl]
     - adj. 可再生的
     - renewable energy 可再生能源
 - refresh vt. 使更新
-- restore vt. 恢复
+- restore [rɪˈstɔːr] vt. 恢复
 
 ## sharp
 
+- [ʃɑːrp]
 - adj. 强烈的；急剧的；尖锐的；严厉的；锋利的
 - sharpen
     - v. 使变锋利
@@ -184,44 +201,46 @@
     - == improve
     - We had to **sharpen** our thinking and not live in the past, he says.
     - ...people may be starting to **sharpen** their media literacy skills.
-- acute adj. 敏锐的；严重的
-- drastic
+- acute [əˈkjuːt] adj. 敏锐的；严重的
+- drastic [ˈdræstɪk]
     - adj. 剧烈的；极端的
     - Something that is **drastic** is **violent**, **forceful**, and **extreme**.
     - If you are saving for a car and you only have $50, you need to make a **drastic** change to your money
       accumulation scheme.
-    - In previous ears of **drastic** technological change, entrepreneurs...
+    - In previous eras of **drastic** technological change, entrepreneurs...
     - drastically adv. 大幅度地；剧烈地
 - dramatic
     - adj. 戏剧的
     - dramatically adv. 急剧的；剧烈地
-- steep adj. 陡峭的；急剧的
-- stiff
+- steep [stiːp] adj. 陡峭的；急剧的
+- stiff [stɪf]
     - adj. 激烈的
     - stiffly adv. 僵硬地
 - overly adv. 过度地
-- overwhelm
+- overwhelm [ˌoʊvərˈwelm]
     - vt. 使不知所措
+    - ...students should be able to name the 13th president of the United States but be utterly **overwhelmed** by a
+      broken bike chain? 学生理应能说出美国第 13 任总统的名字，却会被一根断掉的自行车链条弄得完全不知所措吗？
+        - be overwhelmed by 面对...完全不知所措；精神/能力上招架不住
     - overwhelming adj. （数量上）压倒性的
     - overwhelmingly
         - adv. 压倒性地；不可抵抗地
         - Europe's top corporate-governance positions remain **overwhelmingly** male.
-        - ...students should be able to name the 13th president of the United States but be utterly **overwhelmed** by a
-          broken bike chain?
-            - be overwhelmed by
 
 ## constitute
 
 - v. 组成；构成
 - Constitution n. 宪法
 - component n. 组成部分；成分
-- compound v. 使恶化； n. 混合物；化合物
-- composition n. 作品；作曲
+- compound [ˈkɑːmpaʊnd]
+    - v. 使恶化
+    - n. 混合物；化合物
+- composition n. 作品；作曲；成分；构成
 - element n. 组成部分；要素
 
 ## Words
 
-- venture
+- venture [ˈventʃər]
     - n. （尤指有风险的）企业；风险投资
 - weaken
     - v. 使虚弱；减弱

@@ -71,7 +71,7 @@
     - n. 好奇心
     - Your **curiosity** is your growth point. Always.
     - Having asserted your position (as a position, not as a fact), demonstrate equal **curiosity** about other views.
-        - assert one’s position 明确表明某人的立场
+        - assert one's position 明确表明某人的立场
         - curiosity about sth
     - Mere **curiosity** adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力
 
@@ -96,6 +96,7 @@
     - n. 愤怒
     - == rage
     - Feelings of *righteous([ˈraɪtʃəs] adj. 正义的)* **indignation**, it seems, are not the preserve of people alone.
+        - the preserve of sb. 某人/某类群体所独有的东西
 
 ## fragile
 
@@ -116,7 +117,8 @@
 
 - [ˌænəˈnɪmɪti]
 - n. 匿名
-- He claims many more people would support him in the **anonymity** of a voting booth.
+- He claims many more people would support him in the **anonymity** of a voting *booth([buːθ] n. 小隔间)*.
+    - a voting booth 投票隔间/投票亭
 - anonymous [əˈnɑːnɪməs] adj. 匿名的
 
 ## exploit
@@ -150,10 +152,10 @@
 - vt. 破坏
 - corruption
     - n. 贿赂
-    - Favoritism in official access can fan public perceptions of **corruption**.
+    - Favoritism in official access can *fan(vt. 煽动，扇)* public *perceptions([pərˈsepʃn] 看法)* of **corruption**.
+        - fan public perceptions of sth 煽动、助长公众对某事的看法
     - In a *rare([rer] adj. 稀少的，罕见的)* *unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的)* ruling, the
-      U.S.
-      Supreme Court has overturned the **corruption** conviction of a former Virginia governor, Robert MacDonnell.
+      U.S. Supreme Court has overturned the **corruption** conviction of a former Virginia governor, Robert MacDonnell.
 - disruption n. 扰乱
 - interrupt
     - v. 中断，打断
@@ -194,7 +196,7 @@
     - Today we have a tendency to label obesity as a **disgrace**.
 - stain [steɪn]
     - vt. 给...着色；败坏（名声）
-    - His affair with a slave **stained** his prestige.
+    - His affair with a slave **stained** his *prestige([preˈstiːʒ] n. 威信；声望)*.
 
 ## innovate
 
