@@ -74,8 +74,14 @@
 
 ## reflect
 
-- v. 反映；深思
+- v. 反映；反射
 - Taking time to **reflect**.
+- PE
+    - v. 反思，深思
+    - Before I decide，I need time to reflect.
+    - self-reflection 反省
+        - == introspection
+    - McGee says leaving without a position lined up gave him time to reflect on what kind of company he wanted to run.
 - reflection
     - n. 思考；反映
     - It's a **reflection** *simply(adv. 仅仅)* of people generally thinking well of themselves. 这种情况只是通常自我感觉良好的那种人的一种反映

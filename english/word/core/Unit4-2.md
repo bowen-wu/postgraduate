@@ -201,13 +201,15 @@
     - == occur [əˈkɜːr]
 - raise [reɪz]
     - vt. 增加，提高；筹集；引起；抚养；饲养；举起
+    - PE
+        - v. 筹集
+        - v. 养育
     - raise my hand 举手
     - raise a question 提出问题/引起问题
     - raise a baby 抚养小孩
     - raise money 筹集
     - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
-    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow many
-      ethical questions to be **raised** by technologies yet to come.
+    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow many ethical questions to be **raised** by technologies yet to come.
 - arouse [əˈraʊz]
     - vt. 引起(感情、态度(主观))；唤醒
     - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒

@@ -262,8 +262,9 @@
 - n. 过程；流程
 - proceed [proʊˈsiːd]
     - vi. 继续做（或从事、进行）；行进
-        - == continue == go on
-    - n. [pl.] 收入，收益
+        - == continue == go on == carry on
+    - PE
+        - n. [pl.] 收入，收益
     - pro- == forward 前进 🙂
         - proclaim [prəˈkleɪm] vt. 宣告，公布(正式); 表明; 赞扬，称颂
         - prospect [ˈprɑːspekt]
@@ -272,7 +273,6 @@
     - proceeds [ˈproʊsidz]
         - n. 收入，收益
         - == income
-        - California's plan envisions([ɛnˈvɪʒən] vt. 设想; 想象) treating(处理) 35,000 acres of forest a year by 2020,
-          and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
+        - California's plan envisions([ɛnˈvɪʒən] vt. 设想; 想象) treating(处理) 35,000 acres of forest a year by 2020,and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
           加州的计划设想，到 2020 年每年治理 3.5 万英亩森林，到 2030 年增加到 6 万英亩 — 资金来源于该州排放许可拍卖所得的收益。
 - procedure n. 手续；（商业、法律或政治上的）程序

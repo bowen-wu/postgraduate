@@ -74,6 +74,9 @@
 
 - v. 推断
 - n. 理性；推理；原因；道理
+- PE
+    - n. 理性
+    - v. 推论
 - reason **for** sth. 某事的原因
     - The main **reason for** sports and exercise is to encourage a healthy lifestyle.
 - The heart has its reasons which reason knows not of. 心的理由，理性无法理解

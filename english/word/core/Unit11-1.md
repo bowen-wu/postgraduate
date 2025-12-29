@@ -180,7 +180,10 @@
 ## respect
 
 - vt. 尊敬
-- n. （事物的）方面；尊重
+- n. 尊重
+- PE
+    - n. （事物的）方面
+    - Writing in the last year of his life，he expressed the opinion that in two or three respects his mind had changed during the preceding twenty or thirty years.
 - -spect- 看
     - prospect
         - vi. 勘探
