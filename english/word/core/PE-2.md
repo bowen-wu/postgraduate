@@ -168,3 +168,8 @@
 - n. 火箭
 - v. 迅速增加；飞涨
     - The reason，of course，is that <ins>costs (成本)</ins> have rocketed and ticket prices have stayed low.
+
+## plant
+
+- n. 工厂
+- The conflict has been surfacing since 2002，when the corporation bought Vermont's only nuclear power plant,an aging reactor in Vernon.
