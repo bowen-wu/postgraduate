@@ -26,7 +26,7 @@
 - 词组
     - be meant to do sth. 注定做某事；应该做某事
     - mean well 本意是好的；出于好心
-- mean**s**
+- means
     - n. 方法，方式；财富
     - == way
     - 词组
@@ -37,6 +37,7 @@
       *crucial([ˈkruːʃl] adj. 至关重要的)* as the **means/way** to *transcend([trænˈsend] vt. 超越)* the influence of
       *deep-pocketed(adj. 有钱的)* *special interests(特殊利益集团)* in neighboring states.
       这也提醒我们，美国环境保护署（EPA）在切萨皮克湾治理项目中的参与，长期以来都至关重要，因为它是克服周边州那些资金雄厚的特殊利益集团影响力的关键手段。
+- meaning n. 意义；含义；意图
 - meaningful adj. 有意义的；易于理解的
 - intend
     - vt. 打算；想要；意指
@@ -160,13 +161,14 @@
 - vt. 质疑
 - n. 怀疑；（待讨论或处理的）事情；问题
 - To be or not to be that is the **question**.
-- It is fair to *criticize([ˈkrɪtɪsaɪz])* and **question** the mechanism—that is, the culture of research—<ins>after all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
+- It is fair to *criticize([ˈkrɪtɪsaɪz])* and **question** the mechanism—that is, the culture of research—<ins>after
+  all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
   批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
 - PE
     - v. 质疑，怀疑
     - It never occurs to them to question the doctor's decisions.
         - it occurs to sb. 某人突然想到
-    - Bob Herz，the FASB's chairman,cried out against those who "question our motives."
+    - Bob Herz, the FASB's chairman, cried out against those who "question our motives."
 - 词组
     - without question 毫无疑问
     - in question 正被考虑或讨论的

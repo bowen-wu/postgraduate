@@ -54,7 +54,7 @@
 - vt. 夸大
 - exaggeration
     - n. 夸大
-    - About a third say the problem of take news lies in "misinterpretation or **exaggeration** of actual news" via
+    - About a third say the problem of fake news lies in "misinterpretation or **exaggeration** of actual news" via
       social media.
 - alarmist [əˈlɑrmɪst]
     - adj. 危言耸听的
@@ -68,6 +68,7 @@
     - tempt sb. to do sth. 诱使/引诱某人去做某事
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
 - You might even be **tempted** to assume that humanity has little future to look forward to.
+    - have + 程度(little/much/nothing) + to look forward to 对未来几乎没有期待/有很多期待
 - temptation n. 诱惑
 - lure [lʊr] vt. 引诱 😔
 - coax [koʊks]
@@ -88,7 +89,7 @@
 - vt. 有效利用
 - On June 7 Google *pledged([pledʒ] v. 承诺)* not to "design or **deploy** AI" that would cause "overall harm,"...
 - disposition
-    - n. 性情
+    - n. 性情；意向
     - == inclination [ˌɪnklɪˈneɪʃn] n. 倾向
     - Someone's **disposition** is their mood or general attitude about life.
     - The *rides(游乐园的游乐设施)* are unsuitable for people of a *nervous(adj. 焦虑的)* **disposition**.
@@ -102,8 +103,8 @@
 - loyalty [ˈlɔɪəlti] n. 忠诚
 - allegiance [əˈliːdʒəns]
     - n. 忠诚
-    - These terms are also intended to infuse work with meaning—and, as Rakesh Khurana, another professor, points out,
-      increase **allegiance** to the firm.
+    - These terms are also intended to infuse work with *meaning(n. 意义)*—and, as Rakesh Khurana, another professor,
+      points out, increase **allegiance** to the firm.
         - be intended to do sth 被设计/被用来做某事
         - infuse A with B 向A中注入B，使其具有某种抽象特质
             - infuse vt. 灌输，加入（一种特性）; 使充满; 浸渍; 鼓舞，激发
@@ -132,7 +133,7 @@
 - n. （陪审团的）裁定
 - == ruling == decision
 - -dict- 说
-- ...**verdicts** should represent the conscience of the community and not just
+- ...**verdicts** should represent the *conscience([ˈkɑːnʃəns])* of the community and not just
   <ins>the letter of the law(法律条文)</ins>.
 - contradict [ˌkɑːntrəˈdɪkt]
     - vt. 反驳；与...相矛盾
@@ -163,7 +164,8 @@
     - ceaselessly adv. 无休无止
 - suspend [səˈspend]
     - vt. 暂停
-    - ...a new conservative city council **suspended** enforcement of the clean air zone.
+    - ...a new *conservative([kənˈsɜːrvətɪv] adj. 保守的)* city *council([ˈkaʊnsl] n. 地方会议)* **suspended**
+      enforcement of the clean air zone.
 
 ## construct
 
@@ -182,8 +184,8 @@
     - n. 结构
 - architect [ˈɑːrkɪtekt]
     - n. 建筑师
-    - architectural [ˌɑrkɪˈtektʃərəl] adj. 建筑方面的
     - architecture n. 建筑风格；结构
+    - architectural [ˌɑrkɪˈtektʃərəl] adj. 建筑方面的
 - pyramid [ˈpɪrəmɪd] n. 呈金字塔形的组织或系统
 
 ## contempt
