@@ -39,17 +39,18 @@
 ## object
 
 - vi. 反对
-- n. 物体；对象
+- n. 物体；对象；目标
 - object to doing sth.
 - The **object** of education is to teach us to love what is beautiful.
 - Many local people <ins>**object** to the building</ins> of the new airport.
 - objection n. 反对；反对的理由
 - objective
     - adj. 客观的
-        - objective criteria 客观标准
+    - objective criteria 客观标准
     - PE
         - n. 目标，目的
-        - There were goals, there were strategies, there were **objectives**, but we didn't talk about energy; we didn't talk about passion.
+        - There were goals, there were strategies, there were **objectives**, but we didn't talk about energy; we didn't
+          talk about passion.
     - We aim to be **objective**, but we cannot escape the context of our unique life experiences.
     - subjective adj. 主观的
     - objectivity n. 客观性
@@ -60,7 +61,7 @@
 - reject
     - vt. 拒绝
     - rejection n. 拒绝
-- deny
+- deny [dɪˈnaɪ]
     - vt. 否认；拒绝
     - == reject == refuse
     - denial [dɪˈnaɪəl] n. 否认，拒绝

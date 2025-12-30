@@ -80,7 +80,7 @@
       making one of the most important decisions in your life.
     - **Deliberation** focused them on vivid but misleading cues. 反复思考反而让他们把注意力集中在生动却具有误导性的线索上
     - == thoughtfulness [ˈθɔtfəlnɪs] n. 深思; 熟虑; 体贴; 亲切
-- deliberately [dɪˈlɪbərətli] adv. 故意；从容谨慎的
+- deliberately [dɪˈlɪbərətli] adv. 故意；从容谨慎地
 
 ## flexible
 
@@ -142,8 +142,11 @@
 - **Loom** has two distinct meanings, Fist, a **loom** is a **tool** for weaving. Second, to **loom** is to **appear**
   or stand over someone in a **threatening** way.
 - The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized **looms**.
+    - didn't go so well for sb 对某人来说结果不太好（委婉表达）
+    - go well for sb 对某人有利 
+    - go badly/not go well for sb 对某人不利
 - PE
-    - vi. 赫然出现😔
+    - vi. 赫然出现 😔
         - Don't **loom** over the person you're teaching to *weave([wiːv] v. 编，织)*! You'll just make her nervous.
             - loom over sb 居高临下地站在某人旁边、逼近式地注视
     - vi. 逼近，迫近

@@ -77,7 +77,7 @@
     - be susceptible to (doing) sth. 遭受；承受
         - == be subject to
         - == be vulnerable to
-            - vulnerable [ˈvʌlnərəbl] adj. （地方）易受攻击的; 易受伤的; 易受批评的
+            - vulnerable [ˈvʌlnərəbl] adj. 脆弱的；易受伤害的
     - Women are *particularly(adv. 特别)* **susceptible** to *developing(v. 患（病）)* depression and anxiety([æŋˈzaɪəti])
       disorder in response to stress compared to men.
 

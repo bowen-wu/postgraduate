@@ -67,14 +67,220 @@
 
     \subsection{基础概念}
 
+    \renewcommand{\arraystretch}{1.6}
+    \setlength{\tabcolsep}{6pt}
+
+    \begin{tabular}{|c|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
+        \hline
+        $x \backslash f(x)$
+        & $f(x)\to A$
+        & $f(x)\to +\infty$
+        & $f(x)\to -\infty$
+        & $f(x)\to \infty$
+        \\ \hline
+
+        $x\to x_0$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists\delta>0,\\
+               &0<|x-x_0|<\delta\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<|x-x_0|<\delta\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<|x-x_0|<\delta\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<|x-x_0|<\delta\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+
+        $x\to x_0^+$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists\delta>0,\\
+               &0<x-x_0<\delta\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x-x_0<\delta\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x-x_0<\delta\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x-x_0<\delta\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+
+        $x\to x_0^-$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists\delta>0,\\
+               &0<x_0-x<\delta\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x_0-x<\delta\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x_0-x<\delta\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists\delta>0,\\
+               &0<x_0-x<\delta\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+
+        $x\to +\infty$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists N>0,\\
+               &x>N\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x>N\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x>N\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x>N\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+
+        $x\to -\infty$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists N>0,\\
+               &x<-N\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x<-N\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x<-N\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &x<-N\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+
+        $x\to \infty$
+        & $\begin{aligned}
+               &\forall\varepsilon>0,\ \exists N>0,\\
+               &|x|>N\\
+               &\Rightarrow |f(x)-A|<\varepsilon
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &|x|>N\\
+               &\Rightarrow f(x)>M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &|x|>N\\
+               &\Rightarrow f(x)<-M
+        \end{aligned}$
+        & $\begin{aligned}
+               &\forall M>0,\ \exists N>0,\\
+               &|x|>N\\
+               &\Rightarrow |f(x)|>M
+        \end{aligned}$
+        \\ \hline
+    \end{tabular}
+
     \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{函数极限的性质}
+    \begin{enumerate}
+        \item 唯一性: 如果极限$\lim\limits_{x\to{x_0}}f(x)$存在，那么极限唯一
+        \begin{itemize}
+            \item 函数极限存在的充要条件: \textbf{左右极限存在且相等}
+        \end{itemize}
+        \item 局部有界性: 如果$\lim\limits_{x\to{x_0}}f(x) = A$，则存在正常数$M$和$\delta$，使得当$0 < |x - x_0| < \delta$时，有$|f(x)| \leq M$
+        \begin{itemize}
+            \item 若$f(x)$在$(a, b)$内是连续函数，且$\lim\limits_{x\to a^+}f(x)$, $\lim\limits_{x\to b^-}f(x)$都存在，则$f(x)$在$(a, b)$内必定有界
+        \end{itemize}
+        \item $\color{red}{\bigstar}$局部保号性:
+        \begin{itemize}
+            \item 脱帽严格不等
+            \item $\lim f > 0 \Rightarrow f > 0$
+            \item $\lim f < 0 \Rightarrow f < 0$
+            \item 带帽非严格不等
+            \item $f \geq 0 \Rightarrow \lim f \geq 0$
+            \item $f \leq 0 \Rightarrow \lim f \leq 0$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{等价无穷小}
+    \begin{enumerate}
+        \item $\displaystyle \lim_{x\to x_0}\frac{\alpha(x)}{\beta(x)}=\infty$，
+        则 $\alpha(x)$ 是 $\beta(x)$ 的低阶无穷小
+        \item $\displaystyle \lim_{x\to x_0}\frac{\alpha(x)}{\beta(x)}=0$，
+        则 $\alpha(x)$ 是 $\beta(x)$ 的高阶无穷小
+        \item $\displaystyle \lim_{x\to x_0}\frac{\alpha(x)}{\beta(x)}=c\neq 0$，
+        则 $\alpha(x)$ 与 $\beta(x)$ 是同阶无穷小
+        \item $\displaystyle \lim_{x\to x_0}\frac{\alpha(x)}{\beta(x)}=1$，
+        则 $\alpha(x)\sim\beta(x)$，称为等价无穷小，记为$\alpha(x) \sim \beta(x)$
+        \item 有界函数与无穷小的乘积是无穷小
+        \item 当 $x \to 0$ 时，常用的等价无穷小
+        \begin{itemize}
+            \item $x \sim \sin x$
+            \item $x \sim \tan x$
+            \item $x \sim \arcsin x$
+            \item $x \sim \arctan x$
+            \item $x \sim \ln(1+x)$
+            $\Rightarrow\ \ln u \sim u - 1 \quad (u \to 1)$
+            \item $x \sim e^x - 1$
+            \item $x \sim \ln\!\left(x + \sqrt{x^2 + 1}\right)$
+            \item $a^x - 1 \sim x \ln a \quad (a>0,\ a\neq 1)$
+            $\Rightarrow\ e^{x\ln a} - 1 \sim x \ln a$
+            \item $1 - \cos x \sim \displaystyle\frac{1}{2}x^2$
+            $\Rightarrow\ 1 - (\cos x)^a \sim \displaystyle\frac{a}{2}x^2 \quad (a\neq 0)$
+            \item $x - \ln(1 + x) \sim \displaystyle\frac{1}{2}x^2$
+            \item $(1+x)^a - 1 \sim ax$
+            \item $\tan x - \sin x = \tan x(1 - \cos x) \sim \displaystyle\frac{1}{2}x^3$
+        \end{itemize}
+
+        \item 当$x \to 0^+$时，$(1 + x)^{\displaystyle\frac{1}{x}} - e \sim -\displaystyle\frac{e}{2}x$
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
+        \item 极限存在必有界，有界极限不一定存在
+        \item 若$\lim\limits_{x\to a^+}f(x)$存在，则存在$\delta > 0$，当$x\in(a, a + \delta)$时，$f(x)$有界
     \end{enumerate}
-
 
     \subsection{定理}
 
@@ -90,13 +296,17 @@
     \subsection{公式}
 
     \begin{enumerate}
+        \item $\lim\limits_{u\to+\infty}e^u = +\infty$
+        \item $\lim\limits_{u\to-\infty}e^u = 0$
 
     \end{enumerate}
 
-    \subsection{方法步骤}
+    \subsection{方法总结}
 
     \begin{enumerate}
-
+        \item 遇到$e^{\infty}$，需讨论$e^{-\infty}$和$e^{+\infty}$
+        \item 分段函数在分段点处的极限要考虑左、右极限
+        \item 对于 $e^{\tan x} - e^{\sin x}$，通常先提取公因式，使其化为 $e^{\Box} - 1$ 的形式。
     \end{enumerate}
 
     \subsection{条件转换思路}

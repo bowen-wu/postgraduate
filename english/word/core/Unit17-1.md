@@ -169,7 +169,10 @@
 - vt. 给...提供资金
 - n. 金融；（pl. ）财务状况
 - == fund
-- financial [faɪˈnænʃl] adj. 财政的，财务的，金融的
+- financial [faɪˈnænʃl]
+    - adj. 财政的，财务的，金融的
+    - But many middle-class occupations—trucking, **financial** advice, software engineering—have aroused their
+      interest, or soon will.
 - fiscal [ˈfɪskl]
     - n. 财政年度
     - adj. 政府财政的

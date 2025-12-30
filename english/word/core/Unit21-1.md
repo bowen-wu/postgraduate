@@ -59,7 +59,8 @@
 - framework
     - n. 框架
     - That **framework** has contributed *mightily([ˈmaɪtli] adv. 非常)* to our *broken(adj. 破碎的)* immigration
-      system.
+      system. 那套制度框架在很大程度上促成了我们如今这个失灵的移民体系
+        - contribute to 导致
 
 ## curious
 
@@ -111,6 +112,7 @@
 - vulnerable [ˈvʌlnərəbl]
     - adj. 脆弱的；易受伤害的
     - be vulnerable to sth. 容易受到...的伤害/影响/攻击
+        - be susceptible to (doing) sth. 遭受；承受
     - Large animals were **vulnerable** to the changing environment.
 
 ## anonymity
