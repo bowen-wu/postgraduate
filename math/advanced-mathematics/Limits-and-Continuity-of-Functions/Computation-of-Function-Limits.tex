@@ -65,16 +65,204 @@
 
     \section{函数极限的计算}
 
-    \subsection{基础概念}
+    \subsection{方法}
 
     \begin{enumerate}
+        \item \textbf{极限四则运算规则}: 当$f(x)$和$g(x)$极限都存在时，函数的加减乘除的极限分别等于极限的加减乘除（除要求分母的极限不为零）
+        \item \textbf{洛必达法则一（$\color{red}{\dfrac{0}{0}}$ 型）}
+        \begin{itemize}
+            \item 设当
+            \[
+                x \to a \quad \text{或} \quad x \to \infty
+            \]
+            时，函数 $f(x)$ 与 $F(x)$ 都趋于{\color{red}{零}}，即
+            \[
+                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = 0
+                \quad
+                \text{或}
+                \quad
+                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = 0
+            \]
+
+            \item 在点 $a$ 的某去心邻域内，
+            或当 $|x|>X$（其中 $X$ 为充分大的正数）时，
+            $f'(x)$ 与 $F'(x)$ 存在，且
+            \[
+                F'(x)\neq 0
+            \]
+
+            \item 若极限
+            \[
+                \lim_{x\to a} \frac{f'(x)}{F'(x)}
+                \quad \text{或} \quad
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+            \]
+            存在或为无穷大，
+
+            \item 则有
+            \[
+                \lim_{x\to a} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to a} \frac{f'(x)}{F'(x)},
+                \qquad
+                \lim_{x\to \infty} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+            \]
+        \end{itemize}
+        \item \textbf{洛必达法则二（$\color{red}{\dfrac{\infty}{\infty}}$ 型）}
+        \begin{itemize}
+            \item 设当
+            \[
+                x \to a \quad \text{或} \quad x \to \infty
+            \]
+            时，函数 $f(x)$ 与 $F(x)$ 都趋于{\color{red}{无穷大}}，即
+            \[
+                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = \infty
+                \quad
+                \text{或}
+                \quad
+                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = \infty
+            \]
+
+            \item 在点 $a$ 的某去心邻域内，
+            或当 $|x|>X$（其中 $X$ 为充分大的正数）时，
+            $f'(x)$ 与 $F'(x)$ 存在，且
+            \[
+                F'(x)\neq 0
+            \]
+
+            \item 若极限
+            \[
+                \lim_{x\to a} \frac{f'(x)}{F'(x)}
+                \quad \text{或} \quad
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+            \]
+            存在或为无穷大，
+
+            \item 则有
+            \[
+                \lim_{x\to a} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to a} \frac{f'(x)}{F'(x)},
+                \qquad
+                \lim_{x\to \infty} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+            \]
+        \end{itemize}
+        \item \textbf{泰勒公式}: 设$f(x)$在点$x = a$处$n$阶可导，则存在$x = a$的一个邻域，对于该邻域内的任一点$x$，有
+        \[
+            f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2
+            + \frac{f^{(n)}(a)}{n!}(x-a)^n + o(x^n)
+        \]
+        \begin{itemize}
+            \item $\displaystyle \sin x = x - \frac{x^3}{3!} + o(x^3) \Rightarrow \text{狗} - \sin \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
+            \item $\displaystyle \arcsin x = x + \frac{x^3}{6} + o(x^3) \Rightarrow \arcsin \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
+            \item $\displaystyle \arctan x = x - \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \arctan \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
+            \item $\displaystyle e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + o(x^3) \Rightarrow e^{\text{狗}} - 1 - \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
+            \item $\displaystyle \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^4) \Rightarrow 1 - \cos \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
+            \item $\displaystyle \tan x = x + \frac{1}{3}x^3 + o(x^3) \Rightarrow \tan \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
+            \item $\displaystyle \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \ln(1+\text{狗}) \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
+            \item $\displaystyle (1+x)^a = 1 + ax + \frac{a(a-1)}{2!}x^2 + o(x^2) \Rightarrow (1+\text{狗})^a - 1 - a\text{狗} \sim \frac{a(a-1)}{2}\text{狗}^2, \quad \text{狗}\to 0$
+            \item $\displaystyle \frac{1}{1+x^2} = 1 - x^2 + x^4 + o(x^4)$
+        \end{itemize}
+        \item \textbf{无穷小计算}
+        \item \textbf{泰勒公式应用时的展开原则:}
+        \begin{itemize}
+            \item $\displaystyle\frac{A}{B}$型，适用"上下同阶"原则: 如果分母（或分子）是$x$的$k$次幂，则应把分子（或分母）展开到$x$的$k$次幂
+            \item $A - B$型，适用"幂次最低"原则: 将$A, B$分别展开到他们的系数不相等的$x$的最低次幂为止
+        \end{itemize}
+        \item \textbf{两个重要极限:}
+        \begin{itemize}
+            \item $\displaystyle \lim_{x\to 0} \frac{\sin x}{x} = 1
+            \Rightarrow \lim_{\text{狗}\to 0} \frac{\sin \text{狗}}{\text{狗}} = 1$
+            \item $\displaystyle \lim_{x\to \infty} \left(1 + \frac{1}{x}\right)^x = e
+            \Rightarrow \lim_{\text{狗}\to \infty} \left(1 + \frac{1}{\text{狗}}\right)^\text{狗} = e$
+            \item $\displaystyle \text{狗} = \frac{1}{x} \Rightarrow \lim_{x\to 0} (1+x)^{\displaystyle\frac{1}{x}} = e$
+        \end{itemize}
+        \item \textbf{夹逼准则:} 如果函数$f(x), g(x)$及$h(x)$满足下列条件：
+        \begin{itemize}
+            \item $h(x) \leq f(x) \leq g(x)$
+            \item $\displaystyle \lim h(x) = \lim g(x) = A$
+        \end{itemize}
+        则 $\displaystyle \lim f(x)$ 存在，且 $\displaystyle \lim f(x) = A$
+    \end{enumerate}
+
+    \subsection{七种未定式的计算}
+
+    \begin{enumerate}
+        \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}, 0\times \infty, \infty - \infty, \infty^0, 0^0, 1^\infty$
+        \item 解题思路
+        \begin{itemize}
+            \item 化简先行
+            \begin{enumerate}
+                \item 提出极限不为$0$的因式
+                \item 等价无穷小替换
+                \item 恒等变形：提公因式、拆项、合并、分子分母同除变量的最高次幂 + 换元法（负代换、倒代换）
+            \end{enumerate}
+            \item 判断类型（运算类型）
+            \item 选择方法
+        \end{itemize}
+        \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}$
+        \begin{itemize}
+            \item 泰勒公式
+            \item 洛必达法则
+            \item \[
+                      \lim_{x \to \infty}
+                      \frac{a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0}
+                      {b_mx^m + b_{m-1}x^{m-1} + \dots + b_1x + b_0}
+                      =
+                      \begin{cases}
+                          \dfrac{a_n}{b_m}, & n = m,\\[1.5mm]
+                          \infty, & n > m,\\[1mm]
+                          0, & n < m.
+                      \end{cases}
+            \]
+
+            \textbf{抓大头法:} \\
+            当 $x \to \infty$，则应抓分子和分母中关于 $x$ 的最高次项即可判断极限； \\
+            当 $x \to 0$，则应抓分子和分母中关于 $x$ 的最低次项
+            \item 脱帽法: 若$\lim\limits_{x\to 0} f(x) = A$，则$f(x) = A + \alpha(x)$，其中$\lim\limits_{x\to 0} \alpha(x) = 0$
+        \end{itemize}
+        \item $0\cdot \infty$: 设置分母，简单因式下放
+        \begin{itemize}
+            \item $\displaystyle \frac{0}{\displaystyle\frac{1}{\infty}} = \frac{0}{0}$
+            \item $\displaystyle \frac{\infty}{\displaystyle\frac{1}{0}} = \frac{\infty}{\infty}$
+            \item 简单因式: $x^\alpha, e^{\betax}, \sin rx$
+            \item 复杂因式: $\arctan x, \arcsin x, \ln x$
+        \end{itemize}
+        \item $\infty - \infty$
+        \begin{itemize}
+            \item 如果函数是有分母，则通分，将加减法变形为乘除法，以便使用其他计算工具（$\displaystyle\frac{0}{0}, \frac{\infty}{\infty}$）
+            \item 如果函数中没有分母，则可以通过提取公因式或者做倒代换（创造分母再通分），出现分母后，再利用通分等恒等变形的方法，将加减法变形为乘除法
+        \end{itemize}
+        \item $\infty^0, 0^0$: $\lim u^v = e^{\lim v\lim u}$
+        \item $1^\infty$: $\lim u^v = e^{\lim v(u - 1)}$
+        \item 泰勒公式
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
+        \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A$，且$\lim g(x) = 0$，则$\lim f(x) = 0$
+        \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A \neq 0$，且$\lim f(x) = 0$，则$\lim g(x) = 0$
+        \item 当 $x \to +\infty$ 时，有$\ln^{\alpha} x \ll x^{\beta} \ll a^{x}$，其中$\alpha,\beta>0,\ a>1$
+        \item 当 $n \to \infty$ 时，有$\ln^{\alpha} n \ll n^{\beta} \ll a^{n} \ll n! \ll n^{n}$，其中$\alpha,\beta>0,\ a>1$
+        \item 当 $\alpha > 0$ 时，
+        \[
+            \lim_{x \to 0^+} x^\alpha \ln x
+            = \lim_{x \to 0^+} \frac{\ln x}{x^{-\alpha}}
+            \overset{\text{洛必达求导}}{=}
+            \lim_{x \to 0^+}
+            \frac{\dfrac{1}{x}}{-\alpha x^{-\alpha-1}}
+            = -\frac{1}{\alpha}
+            \lim_{x \to 0^+} x^\alpha
+            = 0.
+        \]
+        一般形式: $\lim\limits_{x\to 0^+} x^\alpha\ln^\beta x = 0$，其中$\alpha, \beta > 0$
+        \item $\text{狗} - 1 < [\text{狗}] \leq \text{狗}$
     \end{enumerate}
-
 
     \subsection{定理}
 
@@ -96,7 +284,58 @@
     \subsection{方法总结}
 
     \begin{enumerate}
+        \item 遇到幂指函数，用$e$括起来，$u(x)^{v(x)} = e^{v(x)\ln u(x)}$
+        \item $f(x) = (1 + x)^{\displaystyle\frac{1}{x}}$在$x > 0$时有以下性质
+        \begin{itemize}
+            \item $f(x)$单调减少
+            \item $\lim\limits_{x\to 0^+} f(x) = e$
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    xshift=-1.8cm,
+                    axis lines=middle,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    domain=-3:3,
+                    samples=200,
+                    width=11cm,
+                    height=9cm,
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-1, xmax=25,
+                    ymin=-0.5, ymax=4,      % y 轴范围，保证 y=1 和 y=e 在视野内
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=240pt,
+                        yshift=-56pt,
+                        draw=none
+                    }
+                    ]
 
+                    % 红色曲线: (1+x)^(1/x), x>0
+                    \addplot[red, thick, domain=0.01:20, samples=5000] {(1 + x)^(1/x)};
+                    \addlegendentry{$y=(1+x)^{1/x}$}
+
+                    % 红色空心圆表示未定义，不加入图例
+                    \addplot[red, mark=o, only marks, forget plot] coordinates {(0,2.71828)};
+
+                    % 绿色曲线: (1+1/x)^x, x>0
+                    \addplot[green, thick, domain=0.001:20, samples=5000] {(1 + 1/x)^x};
+                    \addlegendentry{$y=(1+1/x)^x$}
+
+                    % 绿色空心圆表示未定义，不加入图例
+                    \addplot[green, mark=o, only marks, forget plot] coordinates {(0,1)};
+
+                    % 虚线 y=1 和 y=e
+                    \addplot[dashed, black, domain=0:20] {1};
+                    \addlegendentry{$y=1$}
+
+                    \addplot[dashed, black, domain=0:20] {exp(1)};
+                    \addlegendentry{$y=e$}
+                \end{axis}
+            \end{tikzpicture}
+        \end{itemize}
     \end{enumerate}
 
     \subsection{条件转换思路}
@@ -108,6 +347,13 @@
     \subsection{理解}
 
     \begin{enumerate}
+        \item 对于
+        \[
+            \lim_{x\to a} \frac{f(x)}{F(x)}
+            =
+            \lim_{x\to a} \frac{f'(x)}{F'(x)},
+        \]
+        \textbf{右极限存在，则左极限存在；但左极限存在，并不意味着右极限一定存在。} Case: $\lim\limits_{x\to 0} \displaystyle\frac{x^2 \sin \displaystyle\frac{1}{x}}{x}$
     \end{enumerate}
 
 \end{document}

@@ -90,7 +90,7 @@
         - withdraw v. （使）撤退/回/离; 停止提供; （使）退出; 提，取（款）; 脱离（社会）
         - withstand v. 经受住; 承受 😔
     - Facebook is a self-enhancer's paradise([ˈpærədaɪs] n. 天堂; 伊甸园) because people can **withhold** their
-      unflattering([ʌnˈflætərɪŋ] adj. 不讨好人的) sides.
+      *unflattering([ʌnˈflætərɪŋ] adj. 不讨好人的)* sides.
 - uphold
     - vt. 维持（原判、裁决等）
     - Tuesday, the appeals court([kɔːrt]) **upheld** the 2017 order deregulating broadband providers.
