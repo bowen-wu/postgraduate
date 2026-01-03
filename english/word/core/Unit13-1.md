@@ -178,6 +178,7 @@
 - aspire [əˈspaɪər]
     - v. 渴望
     - == desire
+    - aspire to do sth 渴望/立志去做某事（正式、理想性）
     - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
     - aspiration [ˌæspəˈreɪʃn] n. 抱负；志向
 - appetite [ˈæpɪtaɪt]

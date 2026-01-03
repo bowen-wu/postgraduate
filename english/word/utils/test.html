@@ -1,115 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>单词学习 - Unit1-1</title>
+    <meta charset="UTF-8" />
+    <title>Review Item Trainer</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1 { text-align: center; }
-        .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
-        .word { font-weight: bold; font-size: 1.2em; }
-        .phonetic { color: #555; margin-left: 5px; }
-        .definition, .derivative, .example { margin-left: 20px; margin-top: 5px; }
-        button { margin-left: 10px; cursor: pointer; }
-        .quiz { margin-top: 20px; border-top: 2px solid #eee; padding-top: 15px; }
+        body {
+            font-family: system-ui, -apple-system;
+            background: #f6f6f6;
+            padding: 20px;
+        }
+        header, footer {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        button {
+            padding: 6px 12px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .prompt {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .type {
+            font-size: 12px;
+            color: #666;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .answer {
+            margin-top: 10px;
+        }
+        .stat {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
-<h1>Unit1-1 单词学习</h1>
-<div id="word-container"></div>
 
-<div class="quiz">
-    <h2>选择题练习</h2>
-    <div id="quiz-container"></div>
-    <button onclick="checkQuiz()">提交答案</button>
-    <div id="quiz-result"></div>
-</div>
+<header>
+    <button onclick="setMode('input')">浏览</button>
+    <button onclick="setMode('recall')">遮挡</button>
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
+</header>
+
+<div class="card" id="card"></div>
+
+<footer>
+    <button onclick="markKnow()">我会</button>
+    <button onclick="confirm(true)">真的会</button>
+    <button onclick="confirm(false)">不会</button>
+</footer>
 
 <script>
-  const markdownUrl = "https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word/core/Unit1-1.md";
+  /* ========= 配置 ========= */
+  const MD_URL =
+    "https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word/core/Unit10-1.md";
+  const STORAGE_KEY = "review_item_progress";
 
-  // TTS 发音
-  function speak(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(utterance);
+  /* ========= 状态 ========= */
+  let items = [];
+  let idx = 0;
+  let mode = "input";
+
+  /* ========= localStorage ========= */
+  function loadAll() {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+  }
+  function saveAll(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+  function getProgress(id) {
+    const all = loadAll();
+    if (!all[id]) {
+      all[id] = { level: 0, seen: 0, wrong: 0, selfMarked: false };
+      saveAll(all);
+    }
+    return all[id];
+  }
+  function updateProgress(id, fn) {
+    const all = loadAll();
+    fn(all[id]);
+    saveAll(all);
   }
 
-  // 简单 Markdown 解析
-  async function loadWords() {
-    const res = await fetch(markdownUrl);
-    const text = await res.text();
-
-    const entries = text.split(/^##\s+/m).filter(Boolean);
-
-    const words = entries.map(entry => {
-      const lines = entry.split('\n').filter(Boolean);
-      const word = lines[0].trim();
-      const phoneticLine = lines.find(line => line.match(/^\-\s*\[.*\]/));
-      const phonetic = phoneticLine ? phoneticLine.match(/\[(.*)\]/)[1] : '';
-      const definitions = lines.filter(line => line.match(/^\- [a-z]+\./)).map(d => d.replace(/^\- /, ''));
-      const examples = lines.filter(line => line.match(/^\- .*[*]/)); // 含斜体或加粗
-      return { word, phonetic, definitions, examples };
-    });
-
-    renderWords(words);
-    renderQuiz(words);
+  /* ========= Markdown 解析 ========= */
+  function parseMarkdown(md) {
+    return md
+      .split(/^##\s+/m)
+      .filter(Boolean)
+      .map(parseBlock);
   }
 
-  // 渲染单词卡片
-  function renderWords(words) {
-    const container = document.getElementById('word-container');
-    words.forEach(w => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-      <div class="word">${w.word} <span class="phonetic">${w.phonetic}</span>
-        <button onclick="speak('${w.word}')">🔊</button>
-      </div>
-      <div class="definition">${w.definitions.join('<br>')}</div>
-      <div class="example">${w.examples.join('<br>')}</div>
-    `;
-      container.appendChild(card);
-    });
-  }
+  function parseBlock(block) {
+    const lines = block.split("\n").map(l => l.trim());
+    const word = lines[0];
 
-  // 生成简单选择题（中文释义选英文单词）
-  function renderQuiz(words) {
-    const container = document.getElementById('quiz-container');
-    words.forEach((w, idx) => {
-      const options = [w.word];
-      while (options.length < 4) {
-        const rand = words[Math.floor(Math.random() * words.length)].word;
-        if (!options.includes(rand)) options.push(rand);
+    let phonetic = "";
+    let meanings = [];
+    let related = [];
+    let phrases = [];
+    let sentences = [];
+    let section = "meaning";
+
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i];
+      if (!line) continue;
+
+      if (line.startsWith("###")) {
+        if (line.includes("Related")) section = "related";
+        else if (line.includes("Phrase")) section = "phrases";
+        else if (line.includes("Sentence")) section = "sentences";
+        continue;
       }
-      options.sort(() => Math.random() - 0.5);
-      const html = `
-      <div>
-        <p>${idx + 1}. ${w.definitions[0]}</p>
-        ${options.map((opt, i) => `
-          <label>
-            <input type="radio" name="q${idx}" value="${opt}"> ${opt}
-          </label>
-        `).join('<br>')}
-      </div>
-    `;
-      container.innerHTML += html;
-    });
+
+      if (line.startsWith("/") && !phonetic) {
+        phonetic = line;
+        continue;
+      }
+
+      if (section === "meaning") meanings.push(line);
+
+      if (section === "related" && line.startsWith("-")) {
+        const [w, type] = line.slice(1).trim().split(/\s+/);
+        related.push({ word: w, type });
+      }
+
+      if (section === "phrases" && line.startsWith("-")) {
+        const t = line.slice(1).trim();
+        const i = t.search(/[^\x00-\xff]/);
+        phrases.push({
+          en: i === -1 ? t : t.slice(0, i).trim(),
+          cn: i === -1 ? "" : t.slice(i).trim()
+        });
+      }
+
+      if (section === "sentences" && line.startsWith("-")) {
+        const en = line.slice(1).trim();
+        const cn = lines[++i] || "";
+        sentences.push({ en, cn });
+      }
+    }
+
+    return { word, phonetic, meanings, related, phrases, sentences };
   }
 
-  // 检查选择题答案
-  function checkQuiz() {
-    const quizResult = document.getElementById('quiz-result');
-    const inputs = document.querySelectorAll('#quiz-container input[type=radio]:checked');
-    let score = 0;
-    inputs.forEach(input => {
-      const idx = parseInt(input.name.replace('q',''));
-      const correct = document.querySelectorAll('#word-container .card')[idx].querySelector('.word').textContent.trim().split(' ')[0];
-      if (input.value === correct) score++;
+  /* ========= 展开为 ReviewItem ========= */
+  function expand(word) {
+    const arr = [];
+
+    arr.push({
+      id: `${word.word}::word`,
+      type: "word",
+      prompt: word.word,
+      answer: word.meanings.join("；")
     });
-    quizResult.textContent = `你答对了 ${score} / ${inputs.length} 题`;
+
+    word.related.forEach(r => {
+      arr.push({
+        id: `${word.word}::related::${r.word}`,
+        type: "related",
+        prompt: r.word,
+        answer: r.type || ""
+      });
+    });
+
+    word.phrases.forEach(p => {
+      arr.push({
+        id: `${word.word}::phrase::${p.en.replace(/\s+/g, "_")}`,
+        type: "phrase",
+        prompt: p.en,
+        answer: p.cn
+      });
+    });
+
+    word.sentences.forEach((s, i) => {
+      arr.push({
+        id: `${word.word}::sentence::${i}`,
+        type: "sentence",
+        prompt: s.en.replace(word.word, "_____"),
+        answer: s.en,
+        extra: s.cn
+      });
+    });
+
+    return arr;
   }
 
-  loadWords();
+  /* ========= 渲染 ========= */
+  function render() {
+    const it = items[idx];
+    const p = getProgress(it.id);
+
+    updateProgress(it.id, x => x.seen++);
+
+    const hide = mode === "recall" && !p.selfMarked;
+
+    document.getElementById("card").innerHTML = `
+    <div class="type">${it.type}</div>
+    <div class="prompt">${it.prompt}</div>
+
+    <div class="answer ${hide ? "hidden" : ""}">
+      ${it.answer}
+      ${it.extra ? `<div>${it.extra}</div>` : ""}
+    </div>
+
+    <div class="stat">
+      熟练度: ${p.level} |
+      出现: ${p.seen} |
+      错误: ${p.wrong}
+    </div>
+  `;
+  }
+
+  /* ========= 交互 ========= */
+  function setMode(m) {
+    mode = m;
+    render();
+  }
+  function next() {
+    idx = (idx + 1) % items.length;
+    render();
+  }
+  function prev() {
+    idx = (idx - 1 + items.length) % items.length;
+    render();
+  }
+  function markKnow() {
+    updateProgress(items[idx].id, p => p.selfMarked = true);
+    render();
+  }
+  function confirm(ok) {
+    updateProgress(items[idx].id, p => {
+      if (ok) p.level = Math.min(p.level + 1, 3);
+      else {
+        p.wrong++;
+        p.level = Math.max(p.level - 1, 0);
+      }
+      p.selfMarked = false;
+    });
+    render();
+  }
+
+  /* ========= 初始化 ========= */
+  fetch(MD_URL)
+    .then(r => r.text())
+    .then(md => {
+      const words = parseMarkdown(md);
+      items = words.flatMap(expand);
+      render();
+    });
 </script>
+
 </body>
 </html>
