@@ -70,87 +70,78 @@
     \begin{enumerate}
         \item \textbf{极限四则运算规则}: 当$f(x)$和$g(x)$极限都存在时，函数的加减乘除的极限分别等于极限的加减乘除（除要求分母的极限不为零）
         \item \textbf{洛必达法则一（$\color{red}{\dfrac{0}{0}}$ 型）}
-        \begin{itemize}
-            \item 设当
-            \[
-                x \to a \quad \text{或} \quad x \to \infty
-            \]
-            时，函数 $f(x)$ 与 $F(x)$ 都趋于{\color{red}{零}}，即
-            \[
-                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = 0
-                \quad
-                \text{或}
-                \quad
-                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = 0
-            \]
 
-            \item 在点 $a$ 的某去心邻域内，
-            或当 $|x|>X$（其中 $X$ 为充分大的正数）时，
-            $f'(x)$ 与 $F'(x)$ 存在，且
-            \[
-                F'(x)\neq 0
-            \]
+        设当
+        \[
+            x \to a \quad \text{或} \quad x \to \infty
+        \]
+        时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{0}}，即
+        \[
+            \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = 0
+            \quad \text{或} \quad
+            \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = 0.
+        \]
 
-            \item 若极限
-            \[
-                \lim_{x\to a} \frac{f'(x)}{F'(x)}
-                \quad \text{或} \quad
-                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
-            \]
-            存在或为无穷大，
+        若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
+        $f'(x)$ 与 $F'(x)$ 存在，且
+        \[
+            F'(x) \neq 0,
+        \]
+        并且极限
+        \[
+            \lim_{x\to a} \frac{f'(x)}{F'(x)}
+            \quad \text{或} \quad
+            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+        \]
+        存在或为无穷大，
 
-            \item 则有
-            \[
-                \lim_{x\to a} \frac{f(x)}{F(x)}
-                =
-                \lim_{x\to a} \frac{f'(x)}{F'(x)},
-                \qquad
-                \lim_{x\to \infty} \frac{f(x)}{F(x)}
-                =
-                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
-            \]
-        \end{itemize}
+        则有
+        \[
+            \lim_{x\to a} \frac{f(x)}{F(x)}
+            =
+            \lim_{x\to a} \frac{f'(x)}{F'(x)},
+            \qquad
+            \lim_{x\to \infty} \frac{f(x)}{F(x)}
+            =
+            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+        \]
         \item \textbf{洛必达法则二（$\color{red}{\dfrac{\infty}{\infty}}$ 型）}
-        \begin{itemize}
-            \item 设当
-            \[
-                x \to a \quad \text{或} \quad x \to \infty
-            \]
-            时，函数 $f(x)$ 与 $F(x)$ 都趋于{\color{red}{无穷大}}，即
-            \[
-                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = \infty
-                \quad
-                \text{或}
-                \quad
-                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = \infty
-            \]
 
-            \item 在点 $a$ 的某去心邻域内，
-            或当 $|x|>X$（其中 $X$ 为充分大的正数）时，
-            $f'(x)$ 与 $F'(x)$ 存在，且
-            \[
-                F'(x)\neq 0
-            \]
+        设当
+        \[
+            x \to a \quad \text{或} \quad x \to \infty
+        \]
+        时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{无穷大}}，即
+        \[
+            \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = \infty
+            \quad \text{或} \quad
+            \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = \infty.
+        \]
 
-            \item 若极限
-            \[
-                \lim_{x\to a} \frac{f'(x)}{F'(x)}
-                \quad \text{或} \quad
-                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
-            \]
-            存在或为无穷大，
+        若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
+        $f'(x)$ 与 $F'(x)$ 存在，且
+        \[
+            F'(x) \neq 0,
+        \]
+        并且极限
+        \[
+            \lim_{x\to a} \frac{f'(x)}{F'(x)}
+            \quad \text{或} \quad
+            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+        \]
+        存在或为无穷大，
 
-            \item 则有
-            \[
-                \lim_{x\to a} \frac{f(x)}{F(x)}
-                =
-                \lim_{x\to a} \frac{f'(x)}{F'(x)},
-                \qquad
-                \lim_{x\to \infty} \frac{f(x)}{F(x)}
-                =
-                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
-            \]
-        \end{itemize}
+        则有
+        \[
+            \lim_{x\to a} \frac{f(x)}{F(x)}
+            =
+            \lim_{x\to a} \frac{f'(x)}{F'(x)},
+            \qquad
+            \lim_{x\to \infty} \frac{f(x)}{F(x)}
+            =
+            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+        \]
+
         \item \textbf{泰勒公式}: 设$f(x)$在点$x = a$处$n$阶可导，则存在$x = a$的一个邻域，对于该邻域内的任一点$x$，有
         \[
             f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2
@@ -315,14 +306,14 @@
 
                     % 红色曲线: (1+x)^(1/x), x>0
                     \addplot[red, thick, domain=0.01:20, samples=5000] {(1 + x)^(1/x)};
-                    \addlegendentry{$y=(1+x)^{1/x}$}
+                    \addlegendentry{$y=(1+x)^{\displaystyle\frac{1}{x}}$}
 
                     % 红色空心圆表示未定义，不加入图例
                     \addplot[red, mark=o, only marks, forget plot] coordinates {(0,2.71828)};
 
                     % 绿色曲线: (1+1/x)^x, x>0
                     \addplot[green, thick, domain=0.001:20, samples=5000] {(1 + 1/x)^x};
-                    \addlegendentry{$y=(1+1/x)^x$}
+                    \addlegendentry{$y=(1+\displaystyle\frac{1}{x})^x$}
 
                     % 绿色空心圆表示未定义，不加入图例
                     \addplot[green, mark=o, only marks, forget plot] coordinates {(0,1)};
