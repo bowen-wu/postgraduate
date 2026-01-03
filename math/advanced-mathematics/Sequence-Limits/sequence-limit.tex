@@ -1,0 +1,211 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{数列极限}
+
+    \subsection{数列}
+
+    \begin{enumerate}
+        \item 等差数列
+        \item 等比数列
+    \end{enumerate}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+        \item 设${x_n}$为以数列，若存在常数$a$，对于任意的$\epsilon > 0$（不论它多么小)，总存在正整数$N$，使得当$n > N$时，$|x_n - a| < \epsilon$，则称常数$a$是数列${x_n}$的极限，或者称数列${x_n}$收敛于$a$，记为
+        \begin{gather*}
+            \lim_{n \to \infty} x_n = a \\
+            \forall \epsilon > 0,\ \exists N > 0,\ n > N \Rightarrow |x_n - a| < \epsilon
+        \end{gather*}
+        \item 有界数列: 若对所有正整数$n$，存在正实数$M$，有$|a_n| \leq M$，则称数列${a_n}$为有界数列。证明数列有界的方法
+        \begin{itemize}
+            \item 找$M$，使得$|a_n| \leq M$
+            \item 放缩法
+            \item 找最值
+            \item 基本不等式法
+        \end{itemize}
+        \item 设 $\{x_n\}$ 为一数列，若存在常数$a$，对任意 $\varepsilon>0$（无论它多么小），总存在正整数 $N$，使得当 $n>N$ 时，$|x_n - a| < \varepsilon$恒成立，则称数列 $\{x_n\}$ \textbf{收敛于} $a$，或者称常数$a$是数列${x_n}$的极限，记作$\lim\limits_{n\to\infty} x_n = a$
+    \end{enumerate}
+
+
+    \subsection{收敛数列的性质}
+
+    \begin{enumerate}
+        \item 唯一性: 给出数列$\{x_n\}$，若$\lim\limits_{n\to\infty} x_n = a$（存在），则$a$是唯一的
+        \item 有界性: 若数列$\{x_n\}$极限存在，则数列$\{x_n\}$有界
+        \item 保号性: 设数列 $\{x_n\}$ 收敛于 $a$，$b$ 为任意实数。
+
+        \begin{enumerate}
+            \item 若 $a>b$（或 $a<b$），
+            则存在正整数 $N$，
+            使得当 $n>N$ 时，
+            恒有
+            \[
+                x_n>b \quad (\text{或 } x_n<b).
+            \]
+
+            \item 若存在正整数 $N$，
+            使得当 $n>N$ 时，
+            恒有
+            \[
+                x_n\ge b \quad (\text{或 } x_n\le b),
+            \]
+            且
+            \[
+                \lim_{n\to\infty} x_n=a,
+            \]
+            则必有
+            \[
+                a\ge b \quad (\text{或 } a\le b).
+            \]
+        \end{enumerate}
+
+        其中常考情形为 $b=0$
+        \item \textbf{脱帽（严格不等）：} $\lim\limits_{n\to\infty} x_n > b \Rightarrow x_n > b \quad (\text{或 } \lim\limits_{n\to\infty} x_n < b \Rightarrow x_n < b)$
+        \item \textbf{带帽（非严格不等）：} $x_n \geq b \Rightarrow \lim\limits_{n\to\infty} x_n \geq b \quad (\text{或 } x_n \leq b \Rightarrow \lim\limits_{n\to\infty} x_n \leq b)$
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item 若数列 $\{a_n\}$ 收敛，则其任意子列 $\{a_{n_k}\}$ 也收敛，
+        且
+        \[
+            \lim_{k\to\infty} a_{n_k}
+            =
+            \lim_{n\to\infty} a_n.
+        \]
+        \item 海涅定理（归结原则）: 设 $f(x)$ 在$\mathring{U}(x_0,\delta)$内有定义，则$\lim\limits_{x\to x_0} f(x) = A$存在 $\Leftrightarrow$ 对任何$\mathring{U}(x_0,\delta)$内以$x_0$为极限的数列$\{x_n\}(x_n \neq x_0)$，极限$\lim\limits_{x\to x_0} f(x_n) = A$存在
+        \begin{itemize}
+            \item 当$x\to 0$时，取$x_n = \displaystyle\frac{1}{n}$，若$\lim\limits_{x\to 0} f(x) = A$，则$\lim\limits_{n\to \infty} f(\displaystyle\frac{1}{n}) = A$
+            \item 当$x\to +\infty$时，取$x_n = n$，若$\lim\limits_{x\to +\infty} f(x) = A$，则$\lim\limits_{n\to \infty} f(n) = A$
+            \item 当$x\to a$时，且$x_n \neq a$时，若$\lim\limits_{x\to a} f(x) = A$，则$\lim\limits_{n\to \infty} f(x_n) = A$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item 判断数列发散的方法
+        \begin{itemize}
+            \item 对于一个数列$\{a_n\}$，如果能找到一个发散的子列，则原数列一定发散
+            \item 对于一个数列$\{a_n\}$，如果能找到至少两个收敛的子列$\{x_{n_k}\}$和$\{x_{n'_k}\}$，但它们收敛到不同极限，则原数列一定发散
+        \end{itemize}
+        \item $\lim\limits_{n\to\infty} a_n = A \; {\color{red}{\Rightarrow}} \lim\limits_{n\to\infty} |a_n| = |A|$
+        \item $\lim\limits_{x\to x_0} f(x) = A \; {\color{red}{\Rightarrow}} \lim\limits_{x\to x_0} |f(x)| = |A|$
+        \item $\lim\limits_{x\to x_0} f(x) = 0 \; {\color{red}{\Leftrightarrow}} \lim\limits_{x\to x_0} |f(x)| = 0$
+        \item $\lim\limits_{n\to\infty} a_n = 0 \; {\color{red}{\Leftrightarrow}} \lim\limits_{n\to\infty} |a_n| = 0$ \\
+        因此，若要证明
+        \[
+            \lim_{n\to\infty} a_n = 0,
+        \]
+        只需证明
+        \[
+            \lim_{n\to\infty} |a_n| = 0.
+        \]
+
+        又由于 $|a_n|\ge 0$，
+        可利用夹逼准则：
+        若存在数列 $\{b_n\}$，使得
+        \[
+            0 \le |a_n| \le b_n,
+            \qquad
+            \lim_{n\to\infty} b_n = 0,
+        \]
+        则有
+        \[
+            \lim_{n\to\infty} a_n = 0.
+        \]
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法步骤}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+\end{document}
