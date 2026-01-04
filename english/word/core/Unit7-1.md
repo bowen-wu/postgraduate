@@ -127,8 +127,13 @@
     - Girls' attraction to pink may seem *unavoidable([ˌʌnəˈvɔɪdəbl] adj. 不可避免的)*, somehow **encoded** in their
       DNA.
 - code
+    - v. 编码
     - n. 密码，代码；行为规范，道德准则；法典
+    - A **code** can be a set of principles.
+    - high-school **coding** classes
     - All members of the association adhere to a strict <ins>**code** of practice(行为规范、操作准则)</ins>.
+    - The profession has a strict **code** of practice.
+    - Parts of the problem is that the justices are not bound by an ethics **code**.
 
 ## sense
 

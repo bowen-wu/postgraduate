@@ -42,14 +42,13 @@
     - vt. 宣布
     - announcement n. 宣告
 - contend [kənˈtend]
-    - vi. （尤指在争论中）声称；竞争，争夺
-    - PE
-        - v. 主张，认为
-            - People used to contend that the earth was flat.
-            - == assert/maintain/hold
-            - But in her new book Join the Club,Tina Rosenberg contends that peer pressure can also be a positive forve through what she calls the social cure.
+    - vi. （尤指在争论中）声称，主张，认为；竞争，争夺
+    - **Contend** for the faith.
+    - People used to **contend** that the earth was flat.
+        - == assert/maintain/hold that...
+    - But in her new book Join the Club, Tina Rosenberg **contends/holds/believes/maintains** that
+      *peer pressure(同龄人压力)* can also be a positive force through what she calls the social cure.
     - content [ˈkɑːntent]
-    - Rosenberg **contends/holds/believes/maintains** that *peer pressure(同龄人压力)* can also be a positive force.
     - It is time to **contend with** unfair *discrimination(n. 歧视)*.
         - contend with 对付、应对、努力克服（困难、不公、问题）
 - compliment n. 称赞
@@ -134,7 +133,8 @@
 - a good-natured man 脾气好的人
 - PE
     - n. 本质，实质
-    - Regrettably，However，the report's failure to address the trew nature of the crisis facing liberal enducation may cause more harm than good.
+    - Regrettably，However，the report's failure to address the trew nature of the crisis facing liberal enducation may
+      cause more harm than good.
 - 词组
     - in nature 本质上；事实上
 - natural [ˈnætʃrəl]
@@ -171,15 +171,16 @@
 - [əˈproʊtʃ]
 - v. 接近
     - == around the corner == come near
-- vt. 与...接洽
+- vt. 与...接洽；处理
 - n. 方法
     - == method == ways
+- 词组
     - take a(n)...approach 采取...方法
-    - approaches to gathering information
-- vt. 处理
-    - Governments trend to approach the issue from different angles.
+- **approaches** to gathering information
+- To **approach** is to get near something.
 - With the Spring Festival **approaching/around the corner**
 - There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
+- Governments trend to **approach** the issue from different angles.
 - Some *applaud([əˈplɔːd] v. 赞许)* the **approach**; others are concerned.
 - Only Ukip, sensing its chance, <ins>has sided with(支持...)</ins> those <ins>pleading for</ins> a more considered
   **approach** to using green land.

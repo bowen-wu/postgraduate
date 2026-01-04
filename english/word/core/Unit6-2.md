@@ -150,17 +150,18 @@
       air?
 - address
     - vt. 设法解决；演讲
-    - n. 地址
+    - n. 地址；致辞
+    - He is about to **address** a conference on human rights.
+    - Governments have been slow to **address** the problem of global warming.
+    - I was **addressing** a small gathering in a suburban Virgina living room—a women's group that had invited men to
+      join them.
 
 ## course
 
-- n. 进程；课程；一道菜；航线；行动方式
-    - PE
-        - n. 航线
-            - Sometimes storms blew the vessels far off their course.
-        - n. 进程，发展
-            - Twenty years is a blink in the long course of history.
-            - These designers came to exert enormous influence on the course of American architecture.
+- n. 进程，发展；课程；一道菜；航线；行动方式
+- Sometimes storms blew the vessels far off their **course**.
+- Twenty years is a blink in the long **course** of history.
+- These designers came to exert enormous influence on the **course** of American architecture.
 - Before it ends, it will likely change the life **course** and character of a *generation(n. 一代人)* of young adults.
 - discourse n. 话篇；话语
 - curriculum n. （学校等的）**全部**课程
@@ -178,7 +179,8 @@
 - [bɔːrd]
 - v. 上船（或火车、飞机、公共汽车等）
 - n. （公司或其他机构的）董事会，委员会
-    - He sits on the company's management board.
+- He sits on the company's management **board**.
+- Reding invited corporations to sign up for gender balance goals of 40 percent female **board** membership.
 - billboard n. 广告牌
 - broad [brɔːd]
     - adj. 广泛的

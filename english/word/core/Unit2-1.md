@@ -116,12 +116,13 @@
 
 - n. 法律；（针对某项罪行、协议等的一条）法规；定律
 - bill
-    - n. 法案（不具有法律效力）
-    - PE
-        - n. 账单，票据
-        - n. 法案，议案（刚提出的）
-            - pose a bill 提出一项议案
-            - == act （确定的）
+    - n. 法案，议案（不具有法律效力）；账单，票据
+    - act n. 法令（确定的）
+    - a statute in draft before it becomes law
+    - pose a bill 提出一项议案
+    - ...but nothing would be more important than passing some kind of **G.I.Bill** for the 21st century that ensures
+      that every American has access to post-high school education.
+        - G.I.Bill 军人安置法案
 - If the **bills** become **law**, state boards and commissions will be required to *set aside(留，存；抽出)* 50 percent
   of board seats for women by 2022.
 - lawyer n. 律师
@@ -158,17 +159,16 @@
         - vt. 推翻; 撤销（判决等）
         - == knock out
 - bar
-    - v. 阻止
+    - v. 阻止，阻碍
     - n. 律师职业，法律界
-    - n./v. 阻碍
-        - == stop
-        - Harry moved to bar his way.
+    - When you **bar** something, you make it inaccessible in some way.
+    - Harry moved to **bar** his way.
     - bar sb. from doing sth. 禁止某人做某事；阻止某人做某事
     - the bar exam 律师资格考试
     - the American Bar Association 美国律师协会
     - Workers have been **barred** from the country since 1982.
     - Less than a quarter of graduates from the law school pass the **bar** exam on the first try.
-    - Another is to let students sit for the bar after only two years of law school.
+    - Another is to let students sit for the **bar** after only two years of law school.
 
 ## show
 

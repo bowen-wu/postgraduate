@@ -19,10 +19,11 @@
 
 ## calm
 
+- [kɑːm]
 - vt. 使冷静
 - adj. （海）风平浪静的；沉着的
-- keep calm
 - 词组
+    - keep calm
     - calm down 使冷静下来
 - composure [kəmˈpoʊʒər]
     - n. 镇静
@@ -33,8 +34,8 @@
 ## commit
 
 - vt. 进行（自杀）；承诺
-- commit suicide([ˈsuːɪsaɪd] n. 自杀) 自杀/结束自己的生命”
-- commit oneself (to sth / to doing sth) 明确表态/作出承诺/投入其中/让自己承担责任
+- commit suicide([ˈsuːɪsaɪd] n. 自杀) 自杀/结束自己的生命
+- commit oneself (to sth/to doing sth) 明确表态/作出承诺/投入其中/让自己承担责任
 - They are <ins>sitting on the fence</ins> and refusing to **commit** themselves.
     - sit on the fence 保持中立/不站队/不作决定
 - If I was poor and *desperate([ˈdespərət] adj. 绝望的)*, I might <ins>**commit** crimes(犯罪)</ins> to feed my family.
@@ -47,11 +48,12 @@
     - commissioner [kəˈmɪʃənɚ] n. （委员会的）委员
     - committee n. 委员会
 - submit
-    - vt. 主张；
+    - vt. 主张
     - vi. 提交（报告或请求等）
 
 ## compensate
 
+- [ˈkɑːmpenseɪt]
 - vt. 补偿（损失）
 - vi. 弥补（过失、不足）
 - compensate for
@@ -60,7 +62,7 @@
     - But by the end of 2009 Ms. Simmons was under fire for having sat on Goldman's
       <ins>**compensation** committee(薪酬委员会)</ins>...
         - be under fire (for sth) 因某事而受到猛烈抨击/质疑/批评
-        - sit on a committee/board/panel 担任...的委员 / 董事 / 成员
+        - sit on a committee/board/panel 担任...的委员/董事/成员
     - Within companies, the right **compensation** design can provide incentives for executives to think beyond their
       own time at the company and on behalf of all stakeholders.
         - provide incentives for sb to do sth 为某人提供做某事的激励
@@ -97,12 +99,12 @@
 - durable [ˈdʊrəbl]
     - adj. 持久的
     - "Mass-produced clothing, like fast food, fills a hunger and need, yet is non-**durable** and wasteful", Cline
-      argues.
+      *argues([ˈɑ:ɡju:z])*.
 - tolerate [ˈtɑːləreɪt]
     - vt. 容忍
     - Their capacity for **tolerating** stress may even be greater than men's, she observed.
     - tolerance [ˈtɑːlərəns] n. 宽容；忍耐力
-    - tolerant adj. 容忍的
+    - tolerant [ˈtɑːlərənt] adj. 容忍的
 - beer
     - vt. 具有（相似之处或关系）；承担（责任、费用）
     - 词组
@@ -119,12 +121,12 @@
 ## valid
 
 - adj. 合理的；有效的
-- invalid adj. 失效的
+- invalid
+    - adj. 失效的
     - invalidate [ɪnˈvælɪdeɪt]
         - vt. 使无效
         - Yes, we can **invalidate** that fingerprint.
-- validity [vəˈlɪdəti]
-    - n. 符合逻辑
+- validity [vəˈlɪdəti] n. 符合逻辑
 
 ## exhaust
 
@@ -176,7 +178,7 @@
 - deposit [dɪˈpɑːzɪt] n. 押金；存款
 - retreat [rɪˈtriːt]
     - n. 躲避；僻静处；退却；衰退
-    - Moreover, the amateur tradition in music criticism has been in *headlong(adv. 快速地)* **retreat**.
+    - Moreover, the *amateur([ˈæmətər])* tradition in music criticism has been in *headlong(adv. 快速地)* **retreat**.
         - be in retreat 处于退却/衰退状态
         - headlong retreat 急剧的、失控式的退却
 
@@ -225,7 +227,7 @@
 - revision
     - n. 修改
 - sound
-    - adj. 合理的，健全的
+    - adj. 健全的，合理的
     - safe and sound 平安无事; 平安无恙
     - unsound adj. 不健全的; 不稳固的; 无根据的; 腐烂的
 - constrained

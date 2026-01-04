@@ -43,6 +43,7 @@
 - cure [kjʊr]
     - vt. 治好（疾病）；
     - n. （解决问题、改善糟糕情况等的）措施
+    - a cure for... 对...的良方/...的解药/治本之策
     - One oft-debated **cure** for this labor shortage remains as implausible as it has been all along...
     - cure vs treatment
         - cure 侧重结果
@@ -116,7 +117,7 @@
 ## absorb
 
 - [əbˈzɔːrb]
-- vt. 吸收；使并入；🙂 理解；吸引全部注意力；承受😔
+- vt. 吸收；使并入；🙂 理解；吸引全部注意力；承受 😔
 - be absorbed in 全神贯注于...
     - == concentrate on
 - I never <ins>feel overwhelmed(感到不堪重负/压力很大)</ins> with the amount of information my brain **absorbs**.

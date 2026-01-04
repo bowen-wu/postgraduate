@@ -20,14 +20,14 @@
 ## custom
 
 - n. 习俗；[pl.] 海关；关税
-- The **custom** of lighting the Olympic flame goes back centuries.
+- The **custom** of lighting the Olympic *flame(n. 火焰)* goes back centuries.
     - the custom of doing sth 做某事的传统/习俗
     - go back (some time) 追溯到（某个久远的时间）
 - The ship was boarded by **customs** officials.
     - board a ship/plane/aircraft 登上（船 / 飞机）进行检查或执法
     - be boarded by sb 被某人登上并检查（执法语境）
 - customer n. 顾客
-- accustom
+- accustom [əˈkʌstəm]
     - vt. 使习惯于
     - accustomed
         - adj. 习惯的
@@ -120,14 +120,15 @@
 
 ## intimate
 
+- [ˈɪntɪmeɪt]
 - adj. 紧密的
 - intimate relationship 亲密关系
 - intimately
     - adv. 紧密地
     - Social media allows users to experience news events more **intimately** and immediately...
         - experience [ɪkˈspɪriəns]
-            - n. 经验; 经历; 往事
             - v. 经历; 感受
+            - n. 经验; 经历; 往事
         - express [ɪkˈspres]
             - vt. 表达
             - n. 快递服务
@@ -143,7 +144,7 @@
   or stand over someone in a **threatening** way.
 - The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized **looms**.
     - didn't go so well for sb 对某人来说结果不太好（委婉表达）
-    - go well for sb 对某人有利 
+    - go well for sb 对某人有利
     - go badly/not go well for sb 对某人不利
 - PE
     - vi. 赫然出现 😔
@@ -155,8 +156,8 @@
 - looming
     - adj. （不希望或不愉快的事情）迫近的，逼近的
     - A **looming** threat to business-method patents.
-    - Meanwhile, as the recession is **looming** large, people are getting anxious.
-        - loom large (over sb / sth) 显得迫在眉睫/阴影笼罩/变得非常重要
+    - Meanwhile, as the recession is **looming** large, people are getting *anxious([ˈæŋkʃəs])*.
+        - loom large (over sb/sth) 显得迫在眉睫/阴影笼罩/变得非常重要
 - upcoming adj. 即将发生（或来临）的
 
 ## musical

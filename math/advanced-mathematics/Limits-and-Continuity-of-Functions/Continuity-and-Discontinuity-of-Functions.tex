@@ -65,16 +65,41 @@
 
     \section{函数的连续与间断}
 
-    \subsection{基础概念}
+    \subsection{连续点的定义}
 
     \begin{enumerate}
+        \item 设函数$f(x)$在点$x_0$的某一邻域内有定义，且有$\lim\limits_{x\to x_0}f(x) = f(x_0)$，则称函数$f(x)$在点$x_0$处连续
+        \begin{itemize}
+            \item $\lim\limits_{x\to x_0^-}f(x) = \lim\limits_{x\to x_0^+}f(x) = f(x_0) \Leftrightarrow f(x)\text{在点}x_0\text{处连续}$
+            \item 设$f(x)$在点$x=x_0$处连续，且$f(x_0) > 0$（或$f(x_0) < 0$），则存在$\delta > 0$，使得当$|x - x_0| < \delta$时，$f(x) > 0$（或$f(x) < 0$）
+        \end{itemize}
+        \item 连续性运算法则
+        \begin{itemize}
+            \item 两个函数如果在同一点$x_0$处连续，则它们的和差商积在这点也是连续的
+            \item 复合函数的连续性: 设$u=\psi(x)$在点$x = x_0$处连续，$y = f(u)$在点$u = u_0$处连续，且$u_0 = \psi(x_0)$，则$f[\psi(x)]$在点$x = x_0$处连续
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{间断点的定义与分类}
+
+    \begin{enumerate}
+        \item 讨论间断点只看\textbf{无定义点}和\textbf{分段点}
+        \item 第一类间断点 = 可去间断点 + 跳跃间断点
+        \begin{itemize}
+            \item 可去间断点: 若$\lim\limits_{x\to x_0} f(x) = A \neq f(x_0)(f(x_0)\text{甚至可以无定义})$，则$x = x_0$称为\textbf{可去间断点}，或称\textbf{可补间断点}
+            \item 跳跃间断点: 若$\lim\limits_{x\to x_0^-}f(x)$与$\lim\limits_{x\to x_0^+}f(x)$都存在，但$\lim\limits_{x\to x_0^-}f(x) \neq \lim\limits_{x\to x_0^+}f(x)$，则$x = x_0$称为\textbf{跳跃间断点}
+        \end{itemize}
+        \item 第二类间断点: 无穷间断点和震荡间断点都属于第二类间断点
+        \begin{itemize}
+            \item 无穷间断点: 若$\lim\limits_{x\to x_0}f(x) = \infty$或$\lim\limits_{x\to x_0^+}f(x) = \infty$或$\lim\limits_{x\to x_0^-}f(x) = \infty$，则$x = x_0$称为\textbf{无穷间断点}（左右极限至少有一个无穷大）
+            \item 震荡间断点: 若$\lim\limits_{x\to x_0}f(x)$震荡不存在，则$x = x_0$称为\textbf{震荡间断点}
+        \end{itemize}
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
     \end{enumerate}
-
 
     \subsection{定理}
 

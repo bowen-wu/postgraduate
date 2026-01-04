@@ -119,7 +119,7 @@
 
 - vt. 敦促
 - vi. 推进；用力按
-- n. 报刊;按，压
+- n. 报刊；按，压
 - PE
     - n. 印刷机
     - n. 新闻界，报刊
@@ -181,17 +181,17 @@
 - consumer n. 消费者
 - consumption [kənˈsʌmpʃn] n. （能量、事物或材料的）消耗，消耗量；消费
 - assume [əˈsuːm]
-    - vt. 承担（责任）；假定，认为；显露（特征）
+    - vt. 假定，认为；承担（责任），接收；显露（特征），呈现
+    - take on 呈现，承担
     - We were wrong to **assume** she'd agree.
     - Everyone must **assume** his share of the responsibility to protect the environment.
-    - PE
-        - v. 呈现
-            - take on 呈现，承担
-            - He managed to assume an air of calmness.
-        - v. 承担，接收
-            - Being a grownup means **assuming responsibility for** yourself.
-    - assumption [əˈsʌmpʃn] n. 假设，设想
-        - The court's ruling is based on the assumption that public officials are
+    - He managed to **assume** an air of calmness.
+    - Being a grownup means <ins>**assuming** responsibility for</ins> yourself.
+    - "Many young people **assume** a great deal of personal responsibility for educating themselves and actively
+      seeking out opposing viewpoints", the survey concluded.
+    - assumption [əˈsʌmpʃn]
+        - n. 假设，设想
+        - The court's ruling is based on the **assumption** that public officials are...
 
 ## imply
 

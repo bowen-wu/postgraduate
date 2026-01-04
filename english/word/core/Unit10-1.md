@@ -179,7 +179,7 @@
 ## check
 
 - [tʃek]
-- v. 检查；查看；打勾；抑制
+- v. 抑制；检查；查看；打勾
 - n. 调查；检查；支票
     - == cheque [tʃek] n. 支票
 - One of the most common is to "**inspect or verify**"

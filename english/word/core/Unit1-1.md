@@ -253,11 +253,11 @@
 
 ## company
 
-- n. 陪伴；公司；剧团；同伴
-- PE
-    - n. 陪伴
-        - I enjoy his company.
-        - Misery loves company. 祸不单行
+- n. 同伴；陪伴；公司；剧团
+- I enjoy his **company**.
+- Misery loves **company**. 祸不单行
+- As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic
+  medium, following the pamphlet and the book and in the **company** of the journal.
 - accompany
     - vt. 陪伴；伴随；为...伴奏
     - Little reward **accompanies** duplication and confirmation of what is already known and believed.

@@ -152,6 +152,7 @@
 - [ɪnˈvɑːlv]
 - vt. 牵涉；使参与；需要
 - be involved in 参与其中，从事
+- The Bilski case **involves** a claimed patent on a method for <ins>hedging risk(对冲风险)</ins> in the energy market.
 - involvement n. 参与
 - evolve [iˈvɑːlv]
     - v. 逐步发展
