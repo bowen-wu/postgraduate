@@ -1,264 +1,848 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <title>Review Item Trainer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词汇复习大师 V3 - 智能解析版</title>
     <style>
-        body {
-            font-family: system-ui, -apple-system;
-            background: #f6f6f6;
-            padding: 20px;
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --secondary: #64748b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --background: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #475569;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
-        header, footer {
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+        body { background-color: var(--background); color: var(--text-main); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            padding: 1rem 1.5rem;
             display: flex;
-            gap: 10px;
-            margin-bottom: 12px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            z-index: 10;
         }
+        h1 { font-size: 1.25rem; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
+        .controls { display: flex; gap: 0.5rem; }
+
         button {
-            padding: 6px 12px;
+            cursor: pointer;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
         }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--primary-hover); }
+        .btn-secondary { background: var(--background); color: var(--text-sub); border: 1px solid #e2e8f0; }
+        .btn-secondary:hover { background: #e2e8f0; }
+        .btn-danger { background: #fee2e2; color: var(--danger); }
+        .btn-danger:hover { background: #fecaca; }
+        .btn-success { background: #d1fae5; color: var(--success); }
+        .btn-success:hover { background: #a7f3d0; }
+
+        /* Main Layout */
+        main { flex: 1; display: flex; overflow: hidden; position: relative; }
+
+        /* Sidebar (Stats) */
+        aside {
+            width: 300px;
+            background: var(--card-bg);
+            border-right: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);
+            position: absolute;
+            top: 0; bottom: 0; left: 0;
+            z-index: 20;
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        aside.open { transform: translateX(0); }
+        .aside-header { padding: 1rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; display: flex; justify-content: space-between; }
+        .stats-content { flex: 1; overflow-y: auto; padding: 1rem; }
+        .stat-item { margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .stat-label { color: var(--text-sub); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-value { font-size: 1rem; font-weight: 600; color: var(--text-main); margin-top: 2px;}
+
+        /* Card Area */
+        .workspace {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow-y: auto;
+        }
+
         .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 700px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 400px;
+            transition: all 0.3s ease;
         }
-        .prompt {
-            font-size: 26px;
+
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #f1f5f9;
+            background: linear-gradient(to right, #f8fafc, #ffffff);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .main-word { font-size: 2.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem; line-height: 1.2; word-break: break-word; }
+        .pronunciation { color: var(--secondary); font-family: "Lucida Console", Monaco, monospace; font-size: 1.1rem; }
+
+        .badge-group { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+        .relation-badge, .type-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .relation-badge { background: #e0e7ff; color: #4338ca; }
+        .type-badge { background: #f1f5f9; color: #475569; }
+
+        .card-body { padding: 1.5rem; flex: 1; overflow-y: auto; max-height: 60vh; }
+
+        /* Items List */
+        .item-list { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; }
+        .item-entry { position: relative; padding-bottom: 0.5rem; }
+        .item-entry:not(:last-child)::after {
+            content: ""; position: absolute; bottom: 0; left: 0; right: 0;
+            height: 1px; background: #f1f5f9;
+        }
+
+        .item-type {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .type-def { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+        .type-sentence { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+        .type-phrase { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+
+        .item-content {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        /* Markdown formatting support in content */
+        .item-content strong { color: var(--primary); }
+
+        .item-translation {
+            font-size: 1rem;
+            color: var(--text-sub);
+            transition: opacity 0.3s, filter 0.3s, transform 0.3s;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        /* Recall Mode Styles */
+        .mode-recall .item-translation {
+            filter: blur(5px);
+            opacity: 0.4;
+            user-select: none;
+            cursor: pointer;
+            transform: translateX(5px);
+        }
+        .mode-recall .item-translation:hover {
+            filter: blur(3px);
+            opacity: 0.7;
+        }
+        .mode-recall .item-translation.revealed {
+            filter: none;
+            opacity: 1;
+            border-left-color: var(--primary);
+            cursor: default;
+            transform: translateX(0);
+        }
+
+        .reveal-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255,255,255,0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            color: var(--primary);
             font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            backdrop-filter: blur(1px);
+            z-index: 5;
         }
-        .type {
-            font-size: 12px;
-            color: #666;
+        .item-translation.revealed .reveal-overlay { display: none; }
+
+        .error-badge {
+            position: absolute;
+            top: 0; right: 0;
+            background: var(--danger);
+            color: white;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 10px;
+            display: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .hidden {
-            visibility: hidden;
+        .has-error .error-badge { display: block; }
+
+        /* Footer Controls */
+        .card-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
         }
-        .answer {
-            margin-top: 10px;
+        .progress-text { font-size: 0.85rem; color: var(--secondary); font-variant-numeric: tabular-nums; }
+
+        /* Dialogs & Toasts */
+        .confirm-dialog {
+            position: fixed; bottom: 30px; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #1e293b; color: white;
+            padding: 1rem 1.5rem; border-radius: 12px;
+            display: flex; gap: 1rem; align-items: center;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+            opacity: 0; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 100; min-width: 320px;
         }
-        .stat {
-            margin-top: 12px;
-            font-size: 12px;
-            color: #666;
+        .confirm-dialog.active { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+        .toast {
+            position: fixed; top: 20px; right: 20px;
+            background: white; padding: 0.75rem 1.25rem;
+            border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--primary);
+            transform: translateX(120%); transition: transform 0.3s ease;
+            z-index: 100; font-size: 0.9rem; font-weight: 500;
+        }
+        .toast.show { transform: translateX(0); }
+
+        /* Loader */
+        .loader-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--background);
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 50;
+        }
+        .spinner {
+            width: 40px; height: 40px; border: 4px solid #e2e8f0;
+            border-top: 4px solid var(--primary); border-radius: 50%;
+            animation: spin 1s linear infinite; margin-bottom: 1rem;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .hidden { display: none !important; }
+
+        @media (max-width: 600px) {
+            header { padding: 0.75rem; }
+            h1 span { display: none; }
+            .card { height: 100%; border-radius: 0; }
+            .workspace { padding: 0; }
+            .main-word { font-size: 1.75rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <button onclick="setMode('input')">浏览</button>
-    <button onclick="setMode('recall')">遮挡</button>
-    <button onclick="prev()">←</button>
-    <button onclick="next()">→</button>
+    <h1>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        <span>VocabMaster V3</span>
+    </h1>
+    <div class="controls">
+        <button id="modeToggleBtn" class="btn-secondary" onclick="app.toggleMode()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <span id="modeLabel">浏览模式</span>
+        </button>
+        <button class="btn-secondary" onclick="app.toggleStats()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            统计
+        </button>
+    </div>
 </header>
 
-<div class="card" id="card"></div>
+<main>
+    <aside id="statsPanel">
+        <div class="aside-header">
+            学习统计
+            <button onclick="app.toggleStats()" style="background:none; padding:0;">✕</button>
+        </div>
+        <div class="stats-content">
+            <div class="stat-item">
+                <div class="stat-label">总卡片数</div>
+                <div class="stat-value" id="statTotalWords">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">进度</div>
+                <div class="stat-value" id="statProgress">0%</div>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1rem 0;">
+            <div id="wordStatsList" style="max-height: 60vh; overflow-y: auto;"></div>
+            <div style="margin-top: 1rem;">
+                <button class="btn-danger" style="width: 100%; justify-content: center;" onclick="app.resetProgress()">重置进度</button>
+            </div>
+        </div>
+    </aside>
 
-<footer>
-    <button onclick="markKnow()">我会</button>
-    <button onclick="confirm(true)">真的会</button>
-    <button onclick="confirm(false)">不会</button>
-</footer>
+    <div class="workspace" id="workspace">
+        <div id="loader" class="loader-overlay">
+            <div class="spinner"></div>
+            <p>正在智能解析词库 V3...</p>
+        </div>
+
+        <div id="emptyState" class="hidden" style="text-align: center; margin-top: 50px;">
+            <h2>词库为空</h2>
+            <p style="color: #64748b; margin-top: 1rem;">请检查 Markdown 格式或网络连接。</p>
+        </div>
+
+        <div id="cardContainer" class="card hidden">
+            <div class="card-header">
+                <div>
+                    <div style="display:flex; align-items:baseline; gap:0.5rem; flex-wrap:wrap;">
+                        <span class="main-word" id="mainWord">Word</span>
+                        <span class="pronunciation" id="pronunciation"></span>
+                    </div>
+                    <div class="badge-group">
+                        <span id="relationBadge" class="relation-badge hidden"></span>
+                        <span id="typeBadge" class="type-badge hidden"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <ul class="item-list" id="itemList"></ul>
+            </div>
+            <div class="card-footer">
+                <button class="btn-secondary" onclick="app.prevWord()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    上一个
+                </button>
+                <span class="progress-text" id="progressIndicator">1 / 10</span>
+
+                <div id="recallActions" class="hidden" style="display: flex; gap: 0.5rem;">
+                    <button class="btn-danger" onclick="app.handleRecall(false)">不会</button>
+                    <button class="btn-success" onclick="app.handleRecall(true)">会</button>
+                </div>
+
+                <button id="nextBtn" class="btn-primary" onclick="app.nextWord()">
+                    下一个
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="confirmDialog" class="confirm-dialog">
+    <span>确认真的想起来了？</span>
+    <div style="display:flex; gap: 0.5rem; margin-left: auto;">
+        <button class="btn-danger" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;" onclick="app.confirmMastery(false)">否 (记错)</button>
+        <button class="btn-success" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;" onclick="app.confirmMastery(true)">是</button>
+    </div>
+</div>
+
+<div id="toast" class="toast">Message here</div>
 
 <script>
-  /* ========= 配置 ========= */
-  const MD_URL =
-    "https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word/core/Unit10-1.md";
-  const STORAGE_KEY = "review_item_progress";
+  const CONFIG = {
+    markdownUrl: 'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word/core/Unit10-1.md',
+    storageKey: 'vocab_master_data_v3'
+  };
 
-  /* ========= 状态 ========= */
-  let items = [];
-  let idx = 0;
-  let mode = "input";
+  class VocabApp {
+    constructor() {
+      this.words = [];
+      this.currentIndex = 0;
+      this.mode = 'input';
+      this.stats = {};
+      this.isProcessingAction = false;
 
-  /* ========= localStorage ========= */
-  function loadAll() {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-  }
-  function saveAll(data) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  }
-  function getProgress(id) {
-    const all = loadAll();
-    if (!all[id]) {
-      all[id] = { level: 0, seen: 0, wrong: 0, selfMarked: false };
-      saveAll(all);
+      this.elements = {
+        loader: document.getElementById('loader'),
+        emptyState: document.getElementById('emptyState'),
+        card: document.getElementById('cardContainer'),
+        mainWord: document.getElementById('mainWord'),
+        relationBadge: document.getElementById('relationBadge'),
+        typeBadge: document.getElementById('typeBadge'),
+        pronunciation: document.getElementById('pronunciation'),
+        itemList: document.getElementById('itemList'),
+        progress: document.getElementById('progressIndicator'),
+        modeBtn: document.getElementById('modeToggleBtn'),
+        modeLabel: document.getElementById('modeLabel'),
+        recallActions: document.getElementById('recallActions'),
+        nextBtn: document.getElementById('nextBtn'),
+        workspace: document.getElementById('workspace'),
+        confirmDialog: document.getElementById('confirmDialog'),
+        toast: document.getElementById('toast'),
+        statsPanel: document.getElementById('statsPanel'),
+        statTotalWords: document.getElementById('statTotalWords'),
+        statProgress: document.getElementById('statProgress'),
+        wordStatsList: document.getElementById('wordStatsList')
+      };
+
+      this.init();
     }
-    return all[id];
-  }
-  function updateProgress(id, fn) {
-    const all = loadAll();
-    fn(all[id]);
-    saveAll(all);
-  }
 
-  /* ========= Markdown 解析 ========= */
-  function parseMarkdown(md) {
-    return md
-      .split(/^##\s+/m)
-      .filter(Boolean)
-      .map(parseBlock);
-  }
+    async init() {
+      this.loadStats();
+      await this.fetchMarkdown();
+      this.render();
+      this.updateStatsPanel();
+    }
 
-  function parseBlock(block) {
-    const lines = block.split("\n").map(l => l.trim());
-    const word = lines[0];
-
-    let phonetic = "";
-    let meanings = [];
-    let related = [];
-    let phrases = [];
-    let sentences = [];
-    let section = "meaning";
-
-    for (let i = 1; i < lines.length; i++) {
-      const line = lines[i];
-      if (!line) continue;
-
-      if (line.startsWith("###")) {
-        if (line.includes("Related")) section = "related";
-        else if (line.includes("Phrase")) section = "phrases";
-        else if (line.includes("Sentence")) section = "sentences";
-        continue;
-      }
-
-      if (line.startsWith("/") && !phonetic) {
-        phonetic = line;
-        continue;
-      }
-
-      if (section === "meaning") meanings.push(line);
-
-      if (section === "related" && line.startsWith("-")) {
-        const [w, type] = line.slice(1).trim().split(/\s+/);
-        related.push({ word: w, type });
-      }
-
-      if (section === "phrases" && line.startsWith("-")) {
-        const t = line.slice(1).trim();
-        const i = t.search(/[^\x00-\xff]/);
-        phrases.push({
-          en: i === -1 ? t : t.slice(0, i).trim(),
-          cn: i === -1 ? "" : t.slice(i).trim()
-        });
-      }
-
-      if (section === "sentences" && line.startsWith("-")) {
-        const en = line.slice(1).trim();
-        const cn = lines[++i] || "";
-        sentences.push({ en, cn });
+    async fetchMarkdown() {
+      try {
+        const response = await fetch(CONFIG.markdownUrl);
+        if (!response.ok) throw new Error('Network response was not ok');
+        const text = await response.text();
+        this.parseMarkdownV3(text);
+      } catch (error) {
+        console.error('Fetch error:', error);
+        this.elements.loader.innerHTML = `<p style="color:red">加载失败: ${error.message}</p>`;
       }
     }
 
-    return { word, phonetic, meanings, related, phrases, sentences };
-  }
+    // --- V3 Parser: Multi-Mode aware ---
 
-  /* ========= 展开为 ReviewItem ========= */
-  function expand(word) {
-    const arr = [];
+    parseMarkdownV3(text) {
+      const lines = text.split('\n');
+      const flatWords = [];
 
-    arr.push({
-      id: `${word.word}::word`,
-      type: "word",
-      prompt: word.word,
-      answer: word.meanings.join("；")
-    });
+      // Use 'let' to allow reassignment (fixing the const bug)
+      let stack = [];
+      let hasStarted = false;
 
-    word.related.forEach(r => {
-      arr.push({
-        id: `${word.word}::related::${r.word}`,
-        type: "related",
-        prompt: r.word,
-        answer: r.type || ""
+      // Modes: 'HIERARCHY' (Main body), 'LIST' (Footer sections like Phrases/Sentences)
+      let mode = 'HIERARCHY';
+      let listType = null; // For LIST mode: 'WORD', 'PHRASE', 'SENTENCE'
+
+      lines.forEach(line => {
+        // 1. Skip Header Junk (Everything before first ##)
+        if (!hasStarted) {
+          if (line.startsWith('##')) hasStarted = true;
+          else return;
+        }
+
+        // 2. Section Header Detection
+        if (line.startsWith('##')) {
+          const title = line.substring(2).trim();
+
+          if (title === '词组') {
+            mode = 'LIST';
+            listType = 'PHRASE';
+            stack = []; // Clear context
+            return;
+          }
+          if (title === '句式') {
+            mode = 'LIST';
+            listType = 'SENTENCE';
+            stack = [];
+            return;
+          }
+          if (title === 'Words') {
+            mode = 'HIERARCHY'; // Treat footer words as hierarchy entries
+            stack = [];
+            return;
+          }
+
+          // Default: Treat as a Main Word Header (## Word)
+          mode = 'HIERARCHY';
+          stack = []; // Reset stack for new root
+          const headerContent = title;
+          const pronMatch = headerContent.match(/\/[^\/]+\//);
+          let pronunciation = '';
+          let mainWordText = headerContent;
+
+          if (pronMatch) {
+            pronunciation = pronMatch[0];
+            mainWordText = headerContent.replace(pronMatch[0], '').trim();
+          }
+
+          const newWord = {
+            id: mainWordText.toLowerCase().replace(/\s/g, '_'),
+            mainWord: mainWordText,
+            pronunciation: pronunciation,
+            relation: null,
+            cardType: 'WORD',
+            items: []
+          };
+          flatWords.push(newWord);
+          stack.push({ data: newWord, indent: -1 });
+          return;
+        }
+
+        // 3. List Item Processing
+        const listMatch = line.match(/^(\s*)-\s+(.*)/);
+        if (listMatch) {
+          const indent = listMatch[1].length;
+          const contentRaw = listMatch[2].trim();
+
+          // Clean content (remove HTML tags like <ins>)
+          const content = this.cleanMarkdown(contentRaw);
+
+          if (mode === 'LIST') {
+            // Create independent card for Phrases/Sentences sections
+            const newItem = {
+              id: `list_${flatWords.length}`,
+              mainWord: content.split(/\s/).slice(0, 3).join(' ') + (content.length > 20 ? '...' : ''), // Short preview as title
+              fullContent: content, // Store full content
+              cardType: listType,
+              items: [{
+                type: listType === 'PHRASE' ? 'phrase' : 'sentence',
+                en: content,
+                cn: '' // Footer items might not have split Chinese, treating as single line
+              }]
+            };
+            flatWords.push(newItem);
+          } else {
+            // HIERARCHY Mode (Main Body)
+            if (stack.length === 0) return; // Should not happen if header is present
+
+            // Find parent based on indentation
+            while (stack.length > 1 && stack[stack.length - 1].indent >= indent) {
+              stack.pop();
+            }
+            const parent = stack[stack.length - 1].data;
+
+            // Heuristic: Is this a new word node?
+            // Matches: "word", "word adj.", "word [ipa]"
+            const isWordNode = /^[A-Za-z-]+(?:\s+[a-z]+\.)?$|^[A-Za-z-]+\s+\[[^\]]+\]$/.test(content);
+            // Matches: Sentence (contains spaces, punctuation)
+            const isSentence = content.includes(' ') && (content.includes('.') || content.includes('?') || content.includes('!'));
+
+            if (isWordNode) {
+              // Extract word text
+              const wordText = content.split(/\s/)[0];
+              const ipaMatch = content.match(/\[.*?\]/);
+              const ipa = ipaMatch ? ipaMatch[0] : '';
+
+              const newWord = {
+                id: `${parent.id}_${wordText.toLowerCase()}`,
+                mainWord: wordText,
+                pronunciation: ipa,
+                relation: parent.mainWord,
+                cardType: 'WORD',
+                items: []
+              };
+              flatWords.push(newWord);
+              stack.push({ data: newWord, indent: indent });
+            } else if (isSentence) {
+              const en = content.split(/[\u4e00-\u9fa5]/)[0].trim();
+              const cn = content.replace(en, '').trim();
+              parent.items.push({
+                type: 'sentence',
+                en: en,
+                cn: cn
+              });
+            } else {
+              // Definition or Phrase (e.g., "a series of")
+              const isPhrase = !/^[a-z]+\./.test(content) && content.includes(' ');
+              const en = isPhrase ? content.split(/[\u4e00-\u9fa5]/)[0].trim() : content;
+              const cn = content.replace(en, '').trim();
+
+              parent.items.push({
+                type: isPhrase ? 'phrase' : 'def',
+                en: en,
+                cn: cn
+              });
+            }
+          }
+        }
       });
-    });
 
-    word.phrases.forEach(p => {
-      arr.push({
-        id: `${word.word}::phrase::${p.en.replace(/\s+/g, "_")}`,
-        type: "phrase",
-        prompt: p.en,
-        answer: p.cn
-      });
-    });
+      this.words = flatWords;
 
-    word.sentences.forEach((s, i) => {
-      arr.push({
-        id: `${word.word}::sentence::${i}`,
-        type: "sentence",
-        prompt: s.en.replace(word.word, "_____"),
-        answer: s.en,
-        extra: s.cn
-      });
-    });
-
-    return arr;
-  }
-
-  /* ========= 渲染 ========= */
-  function render() {
-    const it = items[idx];
-    const p = getProgress(it.id);
-
-    updateProgress(it.id, x => x.seen++);
-
-    const hide = mode === "recall" && !p.selfMarked;
-
-    document.getElementById("card").innerHTML = `
-    <div class="type">${it.type}</div>
-    <div class="prompt">${it.prompt}</div>
-
-    <div class="answer ${hide ? "hidden" : ""}">
-      ${it.answer}
-      ${it.extra ? `<div>${it.extra}</div>` : ""}
-    </div>
-
-    <div class="stat">
-      熟练度: ${p.level} |
-      出现: ${p.seen} |
-      错误: ${p.wrong}
-    </div>
-  `;
-  }
-
-  /* ========= 交互 ========= */
-  function setMode(m) {
-    mode = m;
-    render();
-  }
-  function next() {
-    idx = (idx + 1) % items.length;
-    render();
-  }
-  function prev() {
-    idx = (idx - 1 + items.length) % items.length;
-    render();
-  }
-  function markKnow() {
-    updateProgress(items[idx].id, p => p.selfMarked = true);
-    render();
-  }
-  function confirm(ok) {
-    updateProgress(items[idx].id, p => {
-      if (ok) p.level = Math.min(p.level + 1, 3);
-      else {
-        p.wrong++;
-        p.level = Math.max(p.level - 1, 0);
+      if (this.words.length === 0) {
+        this.elements.loader.innerHTML = `<p>未解析到数据。</p>`;
+      } else {
+        this.elements.loader.classList.add('hidden');
+        this.elements.card.classList.remove('hidden');
       }
-      p.selfMarked = false;
-    });
-    render();
+    }
+
+    cleanMarkdown(text) {
+      // Remove HTML tags like <ins> but keep content
+      let cleaned = text.replace(/<\/?ins>/g, '');
+      // Convert simple markdown bold/italic to HTML for display if needed,
+      // but for simplicity in this parser, we keep the text raw but clean.
+      // However, let's ensure newlines or weird chars don't break layout.
+      return cleaned.trim();
+    }
+
+    // --- State Management ---
+
+    loadStats() {
+      const stored = localStorage.getItem(CONFIG.storageKey);
+      if (stored) {
+        const data = JSON.parse(stored);
+        this.currentIndex = data.currentIndex || 0;
+        this.mode = data.mode || 'input';
+        this.stats = data.stats || {};
+      }
+    }
+
+    saveStats() {
+      const data = {
+        currentIndex: this.currentIndex,
+        mode: this.mode,
+        stats: this.stats
+      };
+      localStorage.setItem(CONFIG.storageKey, JSON.stringify(data));
+      this.updateStatsPanel();
+    }
+
+    resetProgress() {
+      if(confirm("确定重置所有进度吗？")) {
+        this.stats = {};
+        this.currentIndex = 0;
+        this.saveStats();
+        this.render();
+        this.showToast('已重置');
+      }
+    }
+
+    toggleMode() {
+      this.mode = this.mode === 'input' ? 'recall' : 'input';
+      this.render();
+      this.saveStats();
+    }
+
+    toggleStats() {
+      this.elements.statsPanel.classList.toggle('open');
+    }
+
+    nextWord() {
+      if (this.currentIndex < this.words.length - 1) {
+        this.currentIndex++;
+        this.render();
+      } else {
+        this.showToast('已是最后一张');
+      }
+    }
+
+    prevWord() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        this.render();
+      }
+    }
+
+    // --- Rendering ---
+
+    render() {
+      if (this.words.length === 0) return;
+      const word = this.words[this.currentIndex];
+
+      this.elements.mainWord.textContent = word.mainWord;
+      this.elements.pronunciation.textContent = word.pronunciation || '';
+      this.elements.progress.textContent = `${this.currentIndex + 1} / ${this.words.length}`;
+
+      // Badges
+      if (word.relation) {
+        this.elements.relationBadge.textContent = `↳ ${word.relation}`;
+        this.elements.relationBadge.classList.remove('hidden');
+      } else {
+        this.elements.relationBadge.classList.add('hidden');
+      }
+
+      if (word.cardType === 'PHRASE') {
+        this.elements.typeBadge.textContent = '词组';
+        this.elements.typeBadge.classList.remove('hidden');
+      } else if (word.cardType === 'SENTENCE') {
+        this.elements.typeBadge.textContent = '句式';
+        this.elements.typeBadge.classList.remove('hidden');
+      } else {
+        this.elements.typeBadge.classList.add('hidden');
+      }
+
+      // Mode Styling
+      if (this.mode === 'recall') {
+        this.elements.workspace.classList.add('mode-recall');
+        this.elements.modeLabel.textContent = '遮挡模式';
+        this.elements.nextBtn.classList.add('hidden');
+        this.elements.recallActions.classList.remove('hidden');
+        this.elements.recallActions.style.display = 'flex';
+      } else {
+        this.elements.workspace.classList.remove('mode-recall');
+        this.elements.modeLabel.textContent = '浏览模式';
+        this.elements.nextBtn.classList.remove('hidden');
+        this.elements.recallActions.classList.add('hidden');
+        this.elements.recallActions.style.display = 'none';
+      }
+
+      // Render Items
+      this.elements.itemList.innerHTML = '';
+      // If this is a Footer LIST item (Phrase/Sentence), it stores the content in 'fullContent'
+      const itemsToRender = word.cardType === 'WORD' ? word.items : [{
+        type: word.cardType.toLowerCase(),
+        en: word.fullContent || word.mainWord,
+        cn: ''
+      }];
+
+      itemsToRender.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = `item-entry ${this.getItemErrorCount(word.id, index) > 0 ? 'has-error' : ''}`;
+
+        let typeLabel = '内容';
+        if (item.type === 'def') typeLabel = '释义';
+        if (item.type === 'phrase') typeLabel = '词组';
+        if (item.type === 'sentence') typeLabel = '例句';
+
+        const errorCount = this.getItemErrorCount(word.id, index);
+        const errorHtml = errorCount > 0 ? `<span class="error-badge">错 ${errorCount}</span>` : '';
+
+        li.innerHTML = `
+                        <span class="item-type type-${item.type}">${typeLabel}</span>
+                        ${errorHtml}
+                        <div class="item-content">${item.en}</div>
+                        <div class="item-translation" onclick="app.revealItem(this)">
+                            <span class="reveal-overlay">点击查看</span>
+                            ${item.cn}
+                        </div>
+                    `;
+        this.elements.itemList.appendChild(li);
+      });
+    }
+
+    revealItem(el) {
+      if (this.mode === 'recall') {
+        el.classList.add('revealed');
+      }
+    }
+
+    // --- Recall Logic ---
+
+    handleRecall(userClaimKnows) {
+      if (!userClaimKnows) {
+        this.recordErrorsForCurrentCard();
+        this.showToast('已记录不熟悉');
+        this.revealAllAnswers();
+      } else {
+        this.elements.confirmDialog.classList.add('active');
+        this.isProcessingAction = true;
+      }
+    }
+
+    revealAllAnswers() {
+      document.querySelectorAll('.item-translation').forEach(el => el.classList.add('revealed'));
+    }
+
+    confirmMastery(actuallyCorrect) {
+      this.elements.confirmDialog.classList.remove('active');
+      this.isProcessingAction = false;
+      if (actuallyCorrect) {
+        this.showToast('正确！');
+        this.nextWord();
+      } else {
+        this.recordErrorsForCurrentCard();
+        this.showToast('已记录错误');
+        this.revealAllAnswers();
+      }
+    }
+
+    recordErrorsForCurrentCard() {
+      const word = this.words[this.currentIndex];
+      if (!this.stats[word.id]) this.stats[word.id] = { items: {} };
+
+      // Determine number of items. For LIST type, it's conceptually 1 item.
+      const count = word.cardType === 'WORD' ? word.items.length : 1;
+
+      for (let i = 0; i < count; i++) {
+        if (!this.stats[word.id].items[i]) this.stats[word.id].items[i] = { errors: 0 };
+        this.stats[word.id].items[i].errors++;
+      }
+
+      this.saveStats();
+      this.render();
+    }
+
+    getItemErrorCount(wordId, idx) {
+      if (this.stats[wordId] && this.stats[wordId].items[idx]) {
+        return this.stats[wordId].items[idx].errors;
+      }
+      return 0;
+    }
+
+    updateStatsPanel() {
+      this.elements.statTotalWords.textContent = this.words.length;
+      const percent = Math.round(((this.currentIndex + 1) / this.words.length) * 100);
+      this.elements.statProgress.textContent = `${percent}%`;
+
+      this.elements.wordStatsList.innerHTML = '';
+      // Show list context
+      this.words.slice(Math.max(0, this.currentIndex - 10), this.currentIndex + 5).forEach((w, i) => {
+        const div = document.createElement('div');
+        div.className = 'stat-item';
+        div.style.padding = '0.5rem';
+        div.style.background = w.id === this.words[this.currentIndex].id ? '#f1f5f9' : 'transparent';
+        div.style.cursor = 'pointer';
+        div.style.borderRadius = '4px';
+        div.onclick = () => {
+          this.currentIndex = this.words.findIndex(x => x.id === w.id);
+          this.render();
+        };
+
+        let totalErr = 0;
+        if (this.stats[w.id] && this.stats[w.id].items) {
+          Object.values(this.stats[w.id].items).forEach(x => totalErr += x.errors);
+        }
+
+        let icon = '';
+        if (w.cardType === 'PHRASE') icon = '📝 ';
+        if (w.cardType === 'SENTENCE') icon = '💬 ';
+
+        div.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; font-size:0.9rem;">
+                            <span>${icon}${w.mainWord}</span>
+                            ${totalErr > 0 ? `<span style="color:var(--danger); font-weight:bold;">${totalErr}</span>` : ''}
+                        </div>
+                    `;
+        this.elements.wordStatsList.appendChild(div);
+      });
+    }
+
+    showToast(msg) {
+      this.elements.toast.textContent = msg;
+      this.elements.toast.classList.add('show');
+      setTimeout(() => this.elements.toast.classList.remove('show'), 2000);
+    }
   }
 
-  /* ========= 初始化 ========= */
-  fetch(MD_URL)
-    .then(r => r.text())
-    .then(md => {
-      const words = parseMarkdown(md);
-      items = words.flatMap(expand);
-      render();
-    });
+  const app = new VocabApp();
 </script>
-
 </body>
 </html>
