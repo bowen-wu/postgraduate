@@ -120,7 +120,9 @@
 - obscure [əbˈskjʊr]
     - adj. 鲜为人知的；费解的
     - The legal issues in the case are **obscure**...
-- vague [veɪɡ] adj. 含糊的
+- vague [veɪɡ]
+    - adj. 含糊的
+    - While the statement is **vague**, it represents one starting point.
 - dim [dɪm]
     - adj. 迟钝的😔
     - dimmed adj. 暗淡的，无效的

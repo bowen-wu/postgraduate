@@ -11,6 +11,7 @@
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
 \usepackage{xstring}
+\usepackage{enumitem}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 % 抽离颜色和尺寸参数
@@ -88,7 +89,6 @@
         \item 设 $\{x_n\}$ 为一数列，若存在常数$a$，对任意 $\varepsilon>0$（无论它多么小），总存在正整数 $N$，使得当 $n>N$ 时，$|x_n - a| < \varepsilon$恒成立，则称数列 $\{x_n\}$ \textbf{收敛于} $a$，或者称常数$a$是数列${x_n}$的极限，记作$\lim\limits_{n\to\infty} x_n = a$
     \end{enumerate}
 
-
     \subsection{收敛数列的性质}
 
     \begin{enumerate}
@@ -142,16 +142,16 @@
             \item 当$x\to +\infty$时，取$x_n = n$，若$\lim\limits_{x\to +\infty} f(x) = A$，则$\lim\limits_{n\to \infty} f(n) = A$
             \item 当$x\to a$时，且$x_n \neq a$时，若$\lim\limits_{x\to a} f(x) = A$，则$\lim\limits_{n\to \infty} f(x_n) = A$
         \end{itemize}
+        \item 单调有界准则: 若数列${x_n}$单调增加（减少）且有上界（下界），则$\lim\limits_{x\to \infty} x_n$存在
+        \begin{itemize}
+            \item $x_n \leq x_{n+1} \leq a$，则$\lim\limits_{x\to \infty} x_n$存在
+            \item $a \leq x_{n+1} \leq x_n$，则$\lim\limits_{x\to \infty} x_n$存在
+        \end{itemize}
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
-        \item 判断数列发散的方法
-        \begin{itemize}
-            \item 对于一个数列$\{a_n\}$，如果能找到一个发散的子列，则原数列一定发散
-            \item 对于一个数列$\{a_n\}$，如果能找到至少两个收敛的子列$\{x_{n_k}\}$和$\{x_{n'_k}\}$，但它们收敛到不同极限，则原数列一定发散
-        \end{itemize}
         \item $\lim\limits_{n\to\infty} a_n = A \; {\color{red}{\Rightarrow}} \lim\limits_{n\to\infty} |a_n| = |A|$
         \item $\lim\limits_{x\to x_0} f(x) = A \; {\color{red}{\Rightarrow}} \lim\limits_{x\to x_0} |f(x)| = |A|$
         \item $\lim\limits_{x\to x_0} f(x) = 0 \; {\color{red}{\Leftrightarrow}} \lim\limits_{x\to x_0} |f(x)| = 0$
@@ -177,6 +177,11 @@
         \[
             \lim_{n\to\infty} a_n = 0.
         \]
+        \item $\color{red}{\bigstar}$若 $a_1,a_2,\dots,a_m \ge 0$，则
+        \[
+            \lim_{n\to\infty} \sqrt[n]{a_1^n + a_2^n + \cdots + a_m^n}
+            = \max\{a_1,a_2,\dots,a_m\}
+        \]
     \end{enumerate}
 
     \subsection{运算}
@@ -194,7 +199,45 @@
     \subsection{方法步骤}
 
     \begin{enumerate}
+        \item 判断数列发散的方法
+        \begin{itemize}
+            \item 对于一个数列$\{a_n\}$，如果能找到一个发散的子列，则原数列一定发散
+            \item 对于一个数列$\{a_n\}$，如果能找到至少两个收敛的子列$\{x_{n_k}\}$和$\{x_{n'_k}\}$，但它们收敛到不同极限，则原数列一定发散
+        \end{itemize}
+        \item \textbf{证明数列 $\{x_n\}$ 单调性的常用方法}
+        \begin{enumerate}[label=\alph*.]
+            \item \textbf{差分法或比值法}
+            \[
+                x_{n+1}-x_n > 0 \ (\text{或 } < 0),
+                \quad \text{或} \quad
+                \frac{x_{n+1}}{x_n} > 1 \ (\text{或 } < 1).
+            \]
 
+            \item \textbf{数学归纳法}
+            \begin{enumerate}
+                \item 验证 $n=1$ 时结论成立；
+                \item 假设 $n=k$ 时结论成立；
+                \item 证明 $n=k+1$ 时结论仍成立。
+            \end{enumerate}
+
+            \item \textbf{利用重要不等式}
+
+            \item \textbf{利用递推形式 $x_{n+1}=f(x_n)(n = 1, 2, \cdots)$}
+
+            设 $x_n \in I$，且 $f(x)$ 在区间 $I$ 上可导：
+            \begin{itemize}
+                \item 若 $f'(x) > 0$（即 $f(x)$ 在 $I$ 上单调增加），
+                则数列 $\{x_n\}$ 单调（无法确定是单调递增还是单调递减），且
+                \[
+                    \begin{cases}
+                        x_2 > x_1, & \text{则 } \{x_n\} \text{ 单调递增}, \\[2mm]
+                        x_2 < x_1, & \text{则 } \{x_n\} \text{ 单调递减}.
+                    \end{cases}
+                \]
+                \item 若 $f'(x) < 0$（即 $f(x)$ 在 $I$ 上单调减少），
+                则数列 $\{x_n\}$ \textbf{不单调}（通常呈振荡）。
+            \end{itemize}
+        \end{enumerate}
     \end{enumerate}
 
     \subsection{条件转换思路}
@@ -206,6 +249,29 @@
     \subsection{理解}
 
     \begin{enumerate}
+        \item 压缩映射原理: 使用时，需写出证明过程
+        \begin{itemize}
+            \item 对数列${x_n}$，若存在常数$k(0 < k < 1)$，使得$|x_{n+1} - a| \leq k|x_n - a|, n = 1, 2, \cdots$，则${x_n}$收敛于$a$
+            \item {\color{red}{TODO: 证}}
+            \item
+            设数列 $\{x_n\}$ 满足
+            \[
+                x_{n+1}=f(x_n), \quad n=1,2,\dots,
+            \]
+            其中 $f(x)$ 在 $\mathbb{R}$ 上可导，$a$ 是方程
+            \[
+                f(x)=x
+            \]
+            的唯一解。若存在常数 $k$，使得对任意 $x\in\mathbb{R}$ 都有
+            \[
+                |f'(x)|\le k<1,
+            \]
+            则数列 $\{x_n\}$ 收敛，且
+            \[
+                \lim_{n\to\infty} x_n = a.
+            \]
+            \item {\color{red}{TODO: 证}}
+        \end{itemize}
     \end{enumerate}
 
 \end{document}
