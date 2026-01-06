@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>核心词汇智能复习 | VocabMaster V5</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --primary-light: #e0e7ff;
+            --secondary: #64748b;
+            --success: #10b981;
+            --success-bg: #d1fae5;
+            --danger: #ef4444;
+            --danger-bg: #fee2e2;
+            --background: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #475569;
+            --border-color: #e2e8f0;
+            --radius-lg: 16px;
+            --radius-md: 8px;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        /* --- Header --- */
+        header {
+            background: var(--card-bg);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            z-index: 20;
+            flex-shrink: 0;
+        }
+        .brand { font-weight: 800; font-size: 1.2rem; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
+        .header-controls { display: flex; gap: 0.75rem; align-items: center; }
+        button {
+            border: none; outline: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: #f1f5f9; color: var(--text-sub);
+            white-space: nowrap;
+        }
+        button:hover { background: #e2e8f0; }
+        button:active { transform: scale(0.96); }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--primary-hover); }
+        .btn-success { background: var(--success); color: white; }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn-ghost { background: transparent; color: var(--secondary); }
+        .btn-ghost:hover { background: rgba(0, 0, 0, 0.05); }
+        .toggle-switch {
+            display: flex; background: #e2e8f0; padding: 3px; border-radius: 20px; position: relative;
+        }
+        .toggle-switch button {
+            background: transparent; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 18px; z-index: 1; color: var(--secondary);
+        }
+        .toggle-switch button.active { background: white; color: var(--primary); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+        /* --- Layout --- */
+        main { flex: 1; position: relative; overflow: hidden; display: flex; }
+        /* Sidebar */
+        aside {
+            width: 320px;
+            background: var(--card-bg);
+            border-right: 1px solid var(--border-color);
+            position: absolute; top: 0; bottom: 0; left: 0;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 30;
+            display: flex; flex-direction: column;
+        }
+        aside.open { transform: translateX(0) !important; }
+        #filePanel.open { z-index: 66; }  /* File panel on top when open */
+        #statsPanel.open { z-index: 30; }
+        .aside-header { padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; font-weight: bold; }
+        .stats-list { flex: 1; overflow-y: auto; padding: 1rem; }
+        .stat-row { display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; cursor: pointer; }
+        .stat-row:hover { background: #f8fafc; }
+        .stat-row.active { background: var(--primary-light); font-weight: bold; }
+        .stat-word { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 180px; }
+        .tag-pill { font-size: 0.7rem; padding: 1px 4px; border-radius: 4px; margin-right: 4px; background: #e2e8f0; }
+        /* File Selection Styles */
+        .file-item, .folder-item {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .file-item:hover, .folder-item:hover { background: #f8fafc; }
+        .file-item.active, .folder-item.active { background: var(--primary-light); font-weight: bold; }
+        .file-item-icon, .folder-item-icon { font-size: 1.2rem; flex-shrink: 0; }
+        .file-item-name, .folder-item-name { flex: 1; font-size: 0.9rem; }
+        .folder-item-name { font-weight: 600; }
+        .breadcrumb {
+            padding: 0.5rem 1rem;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .breadcrumb-item {
+            color: var(--secondary);
+            cursor: pointer;
+        }
+        .breadcrumb-item:hover { color: var(--primary); }
+        .breadcrumb-separator { color: var(--secondary); }
+        .current-file-info {
+            padding: 0.75rem 1rem;
+            background: var(--primary-light);
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        /* Workspace */
+        .workspace {
+            flex: 1; padding: 2rem; display: flex; justify-content: center; align-items: center; overflow-y: auto; position: relative;
+        }
+        /* Card */
+        .card {
+            background: var(--card-bg);
+            width: 100%; max-width: 800px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            display: flex; flex-direction: column;
+            min-height: 500px; max-height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-header {
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, #ffffff, #f8fafc);
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+        .word-title-group { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+        .main-word { font-size: 2.5rem; font-weight: 800; color: var(--text-main); line-height: 1.1; display: flex; align-items: center; gap: 0.5rem; }
+        .main-word button { opacity: 0.6; transition: opacity 0.2s; }
+        .main-word button:hover { opacity: 1; }
+        .pronunciation { font-family: "Lucida Console", Monaco, monospace; color: var(--secondary); font-size: 1.2rem; background: #f1f5f9; padding: 2px 6px; border-radius: 4px; display: none !important; }
+        .badges { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+        .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; font-weight: 600; text-transform: uppercase; }
+        .badge-rel { background: var(--primary-light); color: var(--primary); }
+        .badge-syn { background: #f3e8ff; color: #9333ea; }
+        .badge-sent { background: #dbeafe; color: #2563eb; }
+        .badge-err { background: var(--danger-bg); color: var(--danger); }
+        .card-body {
+            flex: 1; overflow-y: auto; padding: 2rem;
+        }
+        .item-list { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+        /* Hide definition items in recall mode until user clicks "记得" */
+        body.mode-recall .item-list {
+            display: none;
+        }
+        body.mode-recall .item-list.revealed {
+            display: flex;
+        }
+        .item { position: relative; }
+        .item-tag {
+            font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--secondary);
+            margin-bottom: 0.5rem; display: block; letter-spacing: 0.05em;
+        }
+        .tag-def::before { content: "DEFINITION"; color: var(--primary); }
+        .en-text { font-size: 1.25rem; color: var(--text-main); line-height: 1.6; font-weight: 500; margin-bottom: 0.5rem; }
+        .cn-text { font-size: 1rem; color: var(--text-sub); line-height: 1.5; transition: all 0.3s; padding-left: 1rem; border-left: 3px solid var(--border-color); cursor: pointer; }
+        /* Synonyms Styles */
+        .synonyms-section {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        .synonyms-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--secondary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .synonyms-label::before {
+            content: "🔄";
+            font-size: 1rem;
+        }
+        .synonym-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0.4rem 0.75rem;
+            background: #f3e8ff;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .synonym-word {
+            font-weight: 600;
+            color: #9333ea;
+        }
+        .synonym-def {
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+        .synonym-play-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.2rem;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .synonym-play-btn:hover {
+            opacity: 1;
+        }
+        /* Synonyms in recall mode */
+        body.mode-recall .synonyms-section {
+            display: none;
+        }
+        body.mode-recall .synonyms-section.revealed {
+            display: block;
+        }
+        /* Sentence Card Styles */
+        .card.is-sentence .card-header {
+            display: none;
+        }
+        .sentence-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--secondary);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .sentence-label::before {
+            content: "💬";
+            font-size: 1rem;
+        }
+        .sentence-content { font-size: 1.35rem; line-height: 1.8; color: var(--text-main); font-weight: 400; margin-bottom: 1rem; }
+        .sentence-content .highlight-word { background: linear-gradient(120deg, var(--primary-light) 0%, transparent 100%); padding: 2px 4px; border-radius: 4px; font-weight: 600; }
+        .card.is-sentence .card-body { padding: 2rem; }
+        .card.is-sentence .card-footer { border-top: 1px solid var(--border-color); background: var(--card-bg); }
+        .sentence-cn {
+            font-size: 1.05rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+            padding: 1rem;
+            background: #f8fafc;
+            border-left: 3px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+        }
+        /* Sentence Chinese in recall mode */
+        body.mode-recall .sentence-cn {
+            filter: blur(6px);
+            opacity: 0.4;
+            user-select: none;
+            cursor: pointer;
+        }
+        body.mode-recall .sentence-cn.revealed {
+            filter: none;
+            opacity: 1;
+            cursor: default;
+        }
+        /* Sentence English content in recall mode */
+        body.mode-recall .sentence-content.blur-target {
+            filter: blur(4px);
+            opacity: 0.7;
+        }
+        body.mode-recall .sentence-content.blur-target.revealed {
+            filter: none;
+            opacity: 1;
+        }
+        /* Recall Mode Styles */
+        body.mode-recall .cn-text {
+            filter: blur(6px); opacity: 0.4; user-select: none; transform: translateX(5px);
+        }
+        body.mode-recall .cn-text:hover { filter: blur(4px); opacity: 0.6; }
+        body.mode-recall .cn-text.revealed { filter: none; opacity: 1; transform: translateX(0); border-left-color: var(--primary); cursor: default; }
+        body.mode-recall .en-text { filter: blur(4px); opacity: 0.7; }
+        body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
+        .card-footer {
+            padding: 1.25rem 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex; justify-content: space-between; align-items: center;
+            background: #fafafa;
+            flex-shrink: 0;
+            min-height: 70px;
+        }
+        .progress-indicator { font-size: 0.9rem; color: var(--secondary); font-variant-numeric: tabular-nums; }
+        .action-area { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end; }
+        .toast {
+            position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px);
+            background: #1e293b; color: white; padding: 0.75rem 1.5rem; border-radius: 50px;
+            font-size: 0.9rem; font-weight: 500; opacity: 0; transition: 0.3s; pointer-events: none;
+            z-index: 100; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        .loader {
+            position: absolute; inset: 0; background: var(--background);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; z-index: 50;
+        }
+        .spinner { width: 40px; height: 40px; border: 4px solid #e2e8f0; border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .hidden { display: none !important; }
+        @media (max-width: 600px) {
+            .card { height: 100%; max-height: 100vh; border-radius: 0; }
+
+            .card-header { padding: 1rem; }
+
+            .card-body { padding: 1rem; }
+
+            .card-footer { padding: 1rem; flex-direction: column; align-items: stretch; gap: 1rem; }
+
+            .action-area { justify-content: space-between; }
+
+            .main-word { font-size: 1.8rem; }
+
+            aside { width: 85%; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="brand">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        <span>VocabMaster V5</span>
+    </div>
+    <div class="header-controls">
+        <div class="toggle-switch">
+            <button id="btnModeInput" class="active" onclick="app.setMode('input')">浏览</button>
+            <button id="btnModeRecall" onclick="app.setMode('recall')">遮挡</button>
+        </div>
+        <button class="btn-ghost" onclick="app.toggleFiles()" title="选择文件">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3h18v18H3z"></path>
+                <path d="M9 3v18"></path>
+                <path d="M3 9h18"></path>
+            </svg>
+        </button>
+        <button class="btn-ghost" onclick="app.toggleStats()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+        </button>
+    </div>
+</header>
+<aside id="filePanel">
+    <div class="aside-header">
+        <span>选择文件</span>
+        <div style="display: flex; gap: 0.5rem;">
+            <button class="btn-ghost" onclick="app.refreshFileList()" title="刷新列表" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">
+                🔄
+            </button>
+            <button class="btn-ghost" onclick="app.toggleFiles()">✕</button>
+        </div>
+    </div>
+    <div class="stats-list" id="fileListContainer">
+        <div style="padding: 1rem; text-align: center; color: var(--secondary);">
+            <div class="spinner" style="margin: 0 auto 1rem;"></div>
+            加载中...
+        </div>
+    </div>
+</aside>
+
+<aside id="statsPanel">
+    <div class="aside-header">
+        <span>学习列表</span>
+        <button class="btn-ghost" onclick="app.toggleStats()">✕</button>
+    </div>
+    <div class="stats-list" id="wordListContainer"></div>
+    <div style="padding: 1rem; border-top: 1px solid #f1f5f9;">
+        <button class="btn-danger" style="width: 100%; justify-content: center;" onclick="app.resetData()">重置进度
+        </button>
+    </div>
+</aside>
+<main>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+        <p>正在深度解析句子与生词...</p>
+    </div>
+    <div class="workspace">
+        <article class="card hidden" id="cardContainer">
+            <header class="card-header">
+                <div class="word-title-group">
+                    <span class="main-word" id="displayWord">Loading...</span>
+                    <span class="pronunciation" id="displayPronunciation"></span>
+                </div>
+                <div class="badges" id="displayBadges"></div>
+            </header>
+            <div class="card-body">
+                <ul class="item-list" id="itemList"></ul>
+            </div>
+            <footer class="card-footer">
+                <button class="btn-ghost" onclick="app.prevCard()" id="btnPrev">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    上一个
+                </button>
+                <span class="progress-indicator" id="progressText">0 / 0</span>
+                <div class="action-area" id="actionArea"></div>
+            </footer>
+        </article>
+    </div>
+</main>
+<div id="toast" class="toast">Message</div>
+<script>
+  /**
+   * CONFIGURATION & STATE
+   */
+  const CONFIG = {
+    baseApiUrl: 'https://api.github.com/repos/bowen-wu/postgraduate/contents/english/word',
+    baseRawUrl: 'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/word',
+    storageKey: 'vocab_master_v8_data',
+    cacheKey: 'vocab_master_v8_cache',
+    cacheDuration: 24 * 60 * 60 * 1000,  // 24 hours in ms
+    version: 4  // Increment this when data structure changes
+  };
+  const STATE = {
+    cards: [],
+    currentIndex: 0,
+    mode: 'input',
+    stats: {},
+    currentPath: null,  // e.g., "core/Unit10-1.md"
+    currentFile: null   // Current file info from GitHub API
+  };
+
+  /**
+   * GITHUB API HELPER
+   */
+  class GitHubApi {
+    static getCacheKey(path) {
+      return `${CONFIG.cacheKey}_${path || "root"}`;
+    }
+
+    static getCachedData(path) {
+      try {
+        const cacheKey = this.getCacheKey(path);
+        const cached = localStorage.getItem(cacheKey);
+        if (!cached) return null;
+
+        const parsed = JSON.parse(cached);
+        const now = Date.now();
+
+        // Check if cache is still valid
+        if (now - parsed.timestamp < CONFIG.cacheDuration) {
+          console.log(`✅ Using cached data for: ${path || "root"}`);
+          return parsed.data;  // Return the wrapped data
+        } else {
+          // Cache expired
+          localStorage.removeItem(cacheKey);
+          return null;
+        }
+      } catch (e) {
+        console.warn('Cache read error:', e);
+        return null;
+      }
+    }
+
+    static setCachedData(path, data) {
+      try {
+        const cacheKey = this.getCacheKey(path);
+        // Don't use spread operator on arrays!
+        const cacheData = {
+          data: data,  // Wrap data properly
+          timestamp: Date.now()
+        };
+        localStorage.setItem(cacheKey, JSON.stringify(cacheData));
+        console.log(`💾 Cached data for: ${path || "root"}`);
+      } catch (e) {
+        console.warn('Cache write error:', e);
+      }
+    }
+
+    static clearCache() {
+      const keys = Object.keys(localStorage);
+      keys.forEach(key => {
+        if (key.startsWith(CONFIG.cacheKey)) {
+          localStorage.removeItem(key);
+        }
+      });
+      console.log('🗑️ All cache cleared');
+    }
+
+    static async fetchContents(path = "", forceRefresh = false) {
+      const url = path ? `${CONFIG.baseApiUrl}/${path}` : CONFIG.baseApiUrl;
+
+      // Try cache first
+      if (!forceRefresh) {
+        const cached = this.getCachedData(path);
+        if (cached) return cached;
+      }
+
+      // Fetch from API
+      const res = await fetch(url);
+
+      // Handle rate limiting
+      if (res.status === 403) {
+        const resetTime = res.headers.get('X-RateLimit-Reset');
+        const resetDate = resetTime ? new Date(parseInt(resetTime) * 1000) : null;
+        const timeRemaining = resetDate ? Math.ceil((resetDate - Date.now()) / 60000) : 60;
+
+        throw new Error(
+          `GitHub API 速率限制已达到。请等待 ${timeRemaining} 分钟后重试，或点击"刷新列表"按钮。`
+        );
+      }
+
+      if (!res.ok) throw new Error(`GitHub API Error: ${res.status} ${res.statusText}`);
+
+      const data = await res.json();
+      console.log('GitHub API Response:', data);
+
+      // GitHub API returns array for directories, single object for files
+      // Ensure we always work with an array
+      const contents = Array.isArray(data) ? data : [data];
+
+      // Cache the result
+      this.setCachedData(path, contents);
+
+      return contents;
+    }
+
+    static async fetchFileContent(path) {
+      const url = `${CONFIG.baseRawUrl}/${path}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Fetch Error: ${res.status}`);
+      return await res.text();
+    }
+
+    static filterMdFiles(items) {
+      if (!Array.isArray(items)) {
+        console.error('filterMdFiles - items is not an array:', items);
+        return [];
+      }
+      return items.filter(item =>
+        item.type === "file" &&
+        item.name.endsWith(".md") &&
+        item.name !== "template.md" &&
+        item.name !== "basic.md"
+      );
+    }
+
+    static filterFolders(items) {
+      if (!Array.isArray(items)) {
+        console.error('filterFolders - items is not an array:', items);
+        return [];
+      }
+      return items.filter(item => item.type === "dir");
+    }
+
+    static async fetchFolderContents(path, forceRefresh = false) {
+      const contents = await this.fetchContents(path, forceRefresh);
+      return {
+        folders: this.filterFolders(contents),
+        files: this.filterMdFiles(contents)
+      };
+    }
+  }
+
+  /**
+   * ADVANCED MARKDOWN PARSER (V5 - Sentence & Header Logic)
+   */
+  class MarkdownParser {
+    constructor(text) {
+      // 1. Cut off everything before the first ##
+      const firstHeaderIdx = text.indexOf('##');
+      if (firstHeaderIdx > -1) {
+        text = text.substring(firstHeaderIdx);
+      }
+      // 2. Merge multi-line list items into single lines
+      text = this.mergeMultiLineItems(text);
+      // 3. Expand synonym formats like "epidemic == pandemic [音标] 释义"
+      text = this.expandSynonymFormats(text);
+      this.lines = text.split('\n');
+      this.cards = [];
+      this.activeContextCard = null;
+    }
+
+    /**
+     * Merge multi-line list items
+     * Lines that start with spaces/tabs (without -) and follow a list item
+     * should be merged with the previous line
+     */
+    mergeMultiLineItems(text) {
+      const lines = text.split('\n');
+      const result = [];
+
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const trimmed = line.trim();
+
+        // If this line starts with '- ', it's a new list item
+        if (trimmed.startsWith('-')) {
+          result.push(line);
+        }
+        // If this line is indented but doesn't start with '-', and the previous line was a list item
+        else if (line.length > 0 && !trimmed.startsWith('-') && /^\s/.test(line)) {
+          // Check if previous line in result was a list item
+          if (result.length > 0 && result[result.length - 1].trim().startsWith('-')) {
+            // Merge with previous line
+            result[result.length - 1] = result[result.length - 1] + ' ' + trimmed;
+          } else {
+            // Not a continuation, keep as is
+            result.push(line);
+          }
+        }
+        // Headers or other lines
+        else {
+          result.push(line);
+        }
+      }
+
+      return result.join('\n');
+    }
+
+    /**
+     * Expand special synonym formats
+     * - "word1 == word2 [音标] 释义" -> "- word2 [音标] 释义\n    - == word1"
+     * - "word1 == word2 中文1, 中文2" -> "- word1 中文1\n- word2 中文2"
+     */
+    expandSynonymFormats(text) {
+      const lines = text.split('\n');
+      const result = [];
+
+      for (let line of lines) {
+        const trimmed = line.trim();
+        if (!trimmed.startsWith('-')) {
+          result.push(line);
+          continue;
+        }
+
+        const content = trimmed.substring(1).trim();
+
+        // Pattern 1: "word1 == word2 [音标] 释义"
+        const matchWithIpa = content.match(/^([a-zA-Z-]+)\s+==\s+([a-zA-Z-]+)\s+\[([^\]]+)\]\s*(.+)$/);
+        if (matchWithIpa) {
+          // "epidemic == pandemic [音标] 释义"
+          // Extract: pandemic is the main word with IPA and definition
+          // epidemic is the synonym
+          const word1 = matchWithIpa[1];
+          const word2 = matchWithIpa[2];
+          const ipa = matchWithIpa[3];
+          const def = matchWithIpa[4].trim();
+
+          // Add main word with IPA and definition
+          result.push(`- ${word2} [${ipa}] ${def}`);
+          // Add word1 as synonym (indented to make it a child item)
+          result.push(`    - == ${word1}`);
+          continue;
+        }
+
+        // Pattern 2: "word1 == word2 中文1, 中文2"
+        const matchWithChinese = content.match(/^([a-zA-Z-]+)\s+==\s+([a-zA-Z-]+)\s+(.+)$/);
+        if (matchWithChinese) {
+          // "paycheck == salary 薪资, 薪酬"
+          const word1 = matchWithChinese[1];
+          const word2 = matchWithChinese[2];
+          const chineseParts = matchWithChinese[3].split(/,\s*/);
+
+          // Add both words with their respective definitions
+          result.push(`- ${word1} ${chineseParts[0] || ''}`);
+          result.push(`- ${word2} ${chineseParts[1] || ''}`);
+          continue;
+        }
+
+        // No special format, keep original
+        result.push(line);
+      }
+
+      return result.join('\n');
+    }
+
+    parse() {
+      try {
+        this.lines.forEach((line, index) => {
+          try {
+            const trimmed = line.trim();
+            if (!trimmed) return;
+            // 1. Level 2 Headers (##)
+            if (trimmed.startsWith('##')) {
+              const content = trimmed.substring(2).trim();
+              // Filter: Must be a Word (Starts with Letter)
+              if (this.isValidWordHeader(content)) {
+                const card = this.createCard(content, 'word');
+                this.cards.push(card);
+                this.activeContextCard = card;
+              } else {
+                // Ignore header (Unit, Numbers, Words, 词组)
+                this.activeContextCard = null;
+              }
+              return;
+            }
+            // 2. List Items
+            if (trimmed.startsWith('-')) {
+              const content = trimmed.substring(1).trim();
+              // Ignore List Item
+              if (this.isIgnoredListItem(content)) return;
+
+              // Check indentation level (count leading spaces/tabs before the dash)
+              const leadingSpaces = line.match(/^(\s*)-/);
+              const indentLevel = leadingSpaces ? leadingSpaces[1].length : 0;
+
+              // LOGIC BRANCH: Floating Mode vs Context Mode
+              if (this.activeContextCard) {
+                // If indented (nested item), always add to current context card
+                if (indentLevel > 0) {
+                  this.processWithContext(content, this.activeContextCard);
+                } else {
+                  // Same level - could be new word or continue context
+                  this.processWithContext(content, this.activeContextCard);
+                }
+              } else {
+                // Floating Mode (e.g., under ## 024)
+                // Skip definition lines that don't start with a letter
+                if (this.isWordStart(content) && !this.isDefinitionLine(content)) {
+                  const newRoot = this.createCard(content, 'word');
+                  this.cards.push(newRoot);
+                  this.activeContextCard = newRoot;
+                }
+              }
+            }
+          } catch (lineError) {
+            console.warn(`解析第 ${index + 1} 行时出错:`, line, lineError);
+            // 继续解析下一行，不中断整个流程
+          }
+        });
+        return this.cards;
+      } catch (error) {
+        console.error('解析过程出错:', error);
+        throw new Error(`解析失败: ${error.message}`);
+      }
+    }
+
+    isValidWordHeader(text) {
+      if (/^(Words|词组|句式)$/.test(text)) return false;
+      return /^[a-zA-Z]/.test(text);
+    }
+
+    isIgnoredListItem(content) {
+      if (/^\[.*?\]$/.test(content)) return true;
+      if (/^(词组|句式|Sentences|Words)$/.test(content)) return true;
+      return false;
+    }
+
+    isWordStart(content) {
+      return /^[a-zA-Z]/.test(content);
+    }
+
+    // Check if content is just a definition (starts with pos.)
+    isDefinitionLine(content) {
+      return /^[a-z]+\.\s*/.test(content);
+    }
+
+    processWithContext(content, parent) {
+      // Type: Definition (n./v./...) with optional Chinese
+      // Pattern: "vt. 承认；告知收悉；感谢" or "n. 知识；知晓"
+      if (/^[a-z]+\.\s+/.test(content)) {
+        const posMatch = content.match(/^([a-z]+\.)\s+(.+)$/);
+        if (posMatch) {
+          const pos = posMatch[1]; // "vt."
+          const rest = posMatch[2]; // "承认；告知收悉；感谢"
+
+          // Check if rest contains Chinese
+          const chineseMatch = rest.match(/[\u4e00-\u9fa5]+/);
+          if (chineseMatch) {
+            // Has Chinese: split POS and Chinese
+            parent.items.push({type: 'def', en: pos, cn: rest});
+          } else {
+            // No Chinese: keep as is
+            parent.items.push({type: 'def', en: content, cn: ''});
+          }
+        } else {
+          // No match, keep original
+          parent.items.push({type: 'def', en: content, cn: ''});
+        }
+        return;
+      }
+      // Type: Synonym (==)
+      if (/^===?\s+/.test(content)) {
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
+        // Handle multiple synonyms separated by == (e.g., "word1 == word2")
+        const synonymParts = synonymContent.split(/\s+==\s+/);
+
+        if (parent) {
+          if (!parent.synonyms) parent.synonyms = [];
+
+          synonymParts.forEach(part => {
+            const partTrimmed = part.trim();
+            if (!partTrimmed) return;
+
+            // Pattern: word1 == word2 [音标] 释义
+            // The IPA and definition belong to the first word, so we need to extract it
+            const matchWithIpa = partTrimmed.match(/^([a-zA-Z-]+)\s+([a-zA-Z-]+)\s+\[([^\]]+)\](.+)$/);
+            if (matchWithIpa) {
+              // "epidemic == pandemic [音标] 释义"
+              // The first word (epidemic) has IPA and definition
+              const word = matchWithIpa[1];
+              const ipa = `[${matchWithIpa[3]}]`;
+              const def = matchWithIpa[4].trim();
+              parent.synonyms.push({
+                word: word,
+                def: def,
+                ipa: ipa
+              });
+            } else {
+              // Check if it's "word1 == word2 中文1, 中文2" format
+              const matchWithChinese = partTrimmed.match(/^([a-zA-Z-]+)\s+([a-zA-Z-]+)\s+(.+)$/);
+              if (matchWithChinese) {
+                // "paycheck == salary 薪资, 薪酬"
+                const words = [matchWithChinese[1], matchWithChinese[2]];
+                const chineseParts = matchWithChinese[3].split(/,\s*/);
+
+                words.forEach((w, idx) => {
+                  parent.synonyms.push({
+                    word: w,
+                    def: chineseParts[idx] || ''
+                  });
+                });
+              } else {
+              // Pattern 1: word pos. definition (e.g., "guarantee v. 担保")
+              const synonymWithPos = partTrimmed.match(/^([a-zA-Z-]+)\s+([a-z]+\.\s+.+)$/);
+              // Pattern 2: phrase/word definition (e.g., "making a promise" or "word definition")
+              const synonymWithoutPos = partTrimmed.match(/^([a-zA-Z-\s]+?)\s+(.+)$/);
+
+              if (synonymWithPos) {
+                // Has POS: "guarantee v. 担保"
+                parent.synonyms.push({
+                  word: synonymWithPos[1],
+                  def: synonymWithPos[2]
+                });
+              } else if (synonymWithoutPos) {
+                // No POS: "making a promise"
+                parent.synonyms.push({
+                  word: synonymWithoutPos[1].trim(),
+                  def: synonymWithoutPos[2].trim()
+                });
+              } else {
+                // Just a word or phrase without definition
+                parent.synonyms.push({
+                  word: partTrimmed,
+                  def: ''
+                });
+              }
+              }
+            }
+          });
+        }
+        // Don't create a separate card, just add to parent
+        return;
+      }
+      // Type: Sentence (Deep Parsing)
+      // Check if content looks like a sentence:
+      // - Starts with uppercase letter (with optional bold markers or <ins> tag), OR
+      // - Starts with ... (continuation), OR
+      // - Starts with articles (the, a, an) or common sentence starters, OR
+      // - Contains sentence patterns
+      const startsWithUppercase = /^(\*{0,2})?(<ins>)?([A-Z])/.test(content);
+      const startsWithEllipsis = /^\.\.\./.test(content);
+      const startsWithArticle = /^(\*{0,2})?(<ins>)?(the|a|an|this|that|these|those|there|here)\b/i.test(content);
+      const hasSentencePattern = /[\s\.\?\!\,]/.test(content);
+      const hasBoldOrItalic = /\*\*/.test(content) || /\*/.test(content) || /<ins>/.test(content);
+
+      if ((startsWithUppercase || startsWithEllipsis || startsWithArticle) && (hasSentencePattern || hasBoldOrItalic)) {
+        const extracted = this.parseSentence(content);
+        // 1. Add extracted embedded words/phrases first
+        if (extracted.extracted && extracted.extracted.length > 0) {
+          extracted.extracted.forEach(item => {
+            // Check if card already exists for this word (check both 'related' and main 'word' types)
+            let card = this.cards.find(c => c.word === item.word && (c.type === 'related' || c.type === 'word'));
+            if (!card) {
+              card = this.createCard(item.word, 'related');
+              // If item has IPA, add it to the card
+              if (item.ipa) {
+                card.ipa = `[${item.ipa}]`;
+              }
+              this.cards.push(card);
+            } else {
+              // If card exists but doesn't have IPA and item has IPA, add it
+              if (item.ipa && !card.ipa) {
+                card.ipa = `[${item.ipa}]`;
+              }
+            }
+            // Add definition if it doesn't exist
+            let defEn = item.word;
+            let defCn = item.def || '';
+            const defExists = card.items.some(i => i.en === defEn);
+            if (!defExists) {
+              card.items.push({type: 'def', en: defEn, cn: defCn});
+            }
+          });
+        }
+        // 2. Add Clean Sentence Card
+        // Extract first few words as title
+        const titleWords = extracted.clean.split(/\s+/).slice(0, 6).join(' ');
+        const title = titleWords.length > 40 ? titleWords.substring(0, 40) + '...' : titleWords;
+        const sentCard = {
+          id: `sent_${this.cards.length}`,
+          word: title,
+          fullText: extracted.clean,
+          type: 'sentence',
+          items: [{type: 'sentence', en: extracted.clean, cn: ''}]
+        };
+        this.cards.push(sentCard);
+
+        // Check if there's Chinese translation for the sentence (next line)
+        const nextLineIdx = index + 1;
+        if (nextLineIdx < this.lines.length) {
+          const nextLine = this.lines[nextLineIdx].trim();
+          // Check if it's a Chinese translation (starts with - and contains Chinese, no English letters)
+          if (nextLine.startsWith('-') && /[\u4e00-\u9fa5]/.test(nextLine) && !/[a-zA-Z]/.test(nextLine)) {
+            const cnText = nextLine.substring(1).trim();
+            sentCard.items[0].cn = cnText;
+            // Mark this line as processed to avoid creating a separate card
+            // We'll skip it in the main loop by setting a flag
+            this.lines[nextLineIdx] = ''; // Clear the line
+          }
+        }
+        // Note: We do NOT switch activeContextCard to sentence. Definitions still belong to previous word.
+        return;
+      }
+      // Type: Word/Phrase with POS and Chinese Translation (e.g., "knowledgeable adj. 知识渊博的")
+      // Pattern: word pos. 中文 or word 中文
+      const chineseMatch = content.match(/[\u4e00-\u9fa5]+/);
+      if (chineseMatch) {
+        const chineseStart = content.indexOf(chineseMatch[0]);
+        const beforeChinese = content.substring(0, chineseStart).trim();
+        const chinesePart = content.substring(chineseStart).trim();
+
+        if (beforeChinese) {
+          // Remove ** markers from the English part before processing
+          const cleanBeforeChinese = beforeChinese.replace(/\*\*/g, '');
+
+          // Check if there's a POS (part of speech) pattern: word pos.
+          // POS patterns: adj., adv., n., v., vt., vi., prep., conj., etc.
+          const posMatch = cleanBeforeChinese.match(/\s+([a-z]+\.)\s*$/);
+          let wordPart, posPart;
+
+          if (posMatch) {
+            // Has POS: "knowledgeable adj."
+            posPart = posMatch[1]; // "adj."
+            wordPart = cleanBeforeChinese.substring(0, posMatch.index).trim(); // "knowledgeable"
+          } else {
+            // No POS: "housing crisis" or "Federal Bureau of Investigation"
+            wordPart = cleanBeforeChinese;
+            posPart = '';
+          }
+
+          if (wordPart) {
+            // Check if we should add to parent or create new card
+            // If parent exists and matches the word, add to parent
+            if (parent && parent.word === wordPart) {
+              // Add definition to existing parent card
+              // If there's a POS, only show the POS (not the word again)
+              const defEn = posPart || wordPart;
+              parent.items.push({type: 'def', en: defEn, cn: chinesePart});
+              return;
+            }
+
+            // Create or find card for this word
+            let card = this.cards.find(c => c.word === wordPart && c.type === 'related');
+            if (!card) {
+              card = this.createCard(wordPart, 'related');
+              this.cards.push(card);
+            }
+
+            // Add definition with POS and Chinese
+            // en: If there's a POS, only show the POS (e.g., "adj."), otherwise show the word
+            // cn: Chinese translation
+            const defEn = posPart || wordPart;
+            card.items.push({type: 'def', en: defEn, cn: chinesePart});
+
+            // Update active context
+            this.activeContextCard = card;
+            return;
+          }
+        }
+      }
+
+      // Type: Word/Phrase with Chinese Translation (e.g., "housing crisis 住房危机")
+      // This is a fallback for cases without POS
+
+      // Type: Related Word (Default)
+      const wordText = content.split(/\s+/)[0];
+      const card = this.createCard(content, 'related');
+      this.cards.push(card);
+      this.activeContextCard = card;
+    }
+
+    /**
+     * Sentence Deep Parsing
+     * Rules:
+     * a. *xxx* -> Unknown word (extract as card)
+     * b. **xxx** -> Known word (remove bold markers only)
+     * c. <ins>xxx</ins> -> Phrase (extract as card)
+     * d. word(def) -> Unknown word (extract as card)
+     * e. Clean result -> Sentence Card
+     */
+    parseSentence(raw) {
+      const extracted = [];
+      let clean = raw;
+
+      // 0. First, extract *word([音标] 释义)* patterns before anything else
+      // This handles nested patterns like <ins>*word(def)* extra text</ins>
+      clean = clean.replace(/\*([a-zA-Z'-]+)\(\[([^\]]+)\]\s*(.+?)\)\*/g, (match, p1, p2, p3) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+
+        // Check if definition contains Chinese or POS pattern
+        const hasChinese = /[\u4e00-\u9fa5]/.test(p3);
+        const hasPOS = /[a-z]+\./.test(p3);
+
+        if (!hasChinese && !hasPOS) {
+          // Just IPA without meaningful definition, skip creating card
+          return word; // Keep just the word
+        }
+
+        // Extract word, IPA (音标), and definition
+        extracted.push({
+          word: word,
+          fullMatch: match,
+          type: 'word',
+          ipa: p2.trim(),
+          def: p3.trim()
+        });
+        return word; // Keep just the word
+      });
+
+      // 0.1. Extract *word(释义)* patterns without IPA (e.g., "*collective(adj. 集体的)*")
+      clean = clean.replace(/\*([a-zA-Z'-]+)\(([^)]+)\)\*/g, (match, p1, p2) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+
+        // Extract word and definition
+        extracted.push({
+          word: word,
+          fullMatch: match,
+          type: 'word',
+          def: p2.trim()
+        });
+        return word; // Keep just the word
+      });
+
+      // 0.2. Remove *word([音标])* patterns with only IPA (e.g., "*inefficiency([ɪnɪˈfɪʃənsi])*")
+      // These have no definition, so just keep the word without creating a card
+      clean = clean.replace(/\*([a-zA-Z'-]+)\(\[([^\]]+)\]\)\*/g, (match, p1, p2) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+        return word; // Keep just the word, no card created
+      });
+
+      // 0.5. Extract word([音标] 释义) patterns without asterisks
+      // This handles patterns like "monetary([ˈmɑːnɪteri] adj. 金钱的)" or "predators([p'redətəz] n. 食肉动物)"
+      clean = clean.replace(/([a-zA-Z'-]+)\(\[([^\]]+)\](?:\s*)?\(([^)]+)\)/g, (match, p1, p2, p3) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+
+        // Check if definition contains Chinese or POS pattern
+        const hasChinese = /[\u4e00-\u9fa5]/.test(p3);
+        const hasPOS = /[a-z]+\./.test(p3);
+
+        if (!hasChinese && !hasPOS) {
+          // Just IPA without meaningful definition, skip creating card
+          return word; // Keep just the word
+        }
+
+        // Extract word, IPA (音标), and definition
+        extracted.push({
+          word: word,
+          fullMatch: match,
+          type: 'word',
+          ipa: p2.trim(),
+          def: p3.trim()
+        });
+        return word; // Keep just the word
+      });
+
+      // 0.5. Extract word([音标] 释义) patterns without asterisks
+      // This handles patterns like "monetary([ˈmɑːnɪteri] adj. 金钱的)" or "predators([p'redətəz] n. 食肉动物)"
+      clean = clean.replace(/([a-zA-Z'-]+)\(\[([^\]]+)\](?:\s*)?\(([^)]+)\)/g, (match, p1, p2, p3) => {
+        // p1 = word, p2 = IPA, p3 = definition
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+
+        // Check if definition contains Chinese or POS pattern
+        const hasChinese = /[\u4e00-\u9fa5]/.test(p3);
+        const hasPOS = /[a-z]+\./.test(p3);
+
+        if (!hasChinese && !hasPOS) {
+          // Just IPA without meaningful definition, skip creating card
+          return word; // Keep just the word
+        }
+
+        // Check if it's already extracted (avoid duplicates)
+        const alreadyExtracted = extracted.some(e => e.word === word && e.fullMatch === match);
+        if (!alreadyExtracted) {
+          extracted.push({
+            word: word,
+            fullMatch: match,
+            type: 'word',
+            ipa: p2.trim(),
+            def: p3.trim()
+          });
+        }
+        return word; // Keep just the word
+      });
+
+      // 0.6. Remove word([音标]) patterns with only IPA (no asterisks)
+      // e.g., "authorized(['ɔθəˌraɪzd])"
+      clean = clean.replace(/([a-zA-Z'-]+)\(\[([^\]]+)\]\)/g, (match, p1, p2) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+        return word; // Keep just the word, no card created
+      });
+
+      // 1. Extract <ins>phrase</ins> or <ins>phrase(def)</ins> (词组)
+      // Now that *word(...)* patterns are removed, we can extract phrases
+      clean = clean.replace(/<ins>(.*?)<\/ins>/g, (match, p1) => {
+        // Check if it contains definition in parentheses: phrase(def)
+        const phraseWithDef = p1.match(/^(.+)\(([^)]+)\)$/);
+        if (phraseWithDef) {
+          // Has definition: "in advance(提前；事先)"
+          let phrase = phraseWithDef[1].trim();
+          // Remove ** markers from phrase
+          phrase = phrase.replace(/\*\*/g, '').replace(/\*/g, '');
+          extracted.push({
+            word: phrase,
+            fullMatch: match,
+            type: 'phrase',
+            def: phraseWithDef[2].trim()
+          });
+          return phrase; // Keep just the phrase without ** markers
+        } else {
+          // No definition, just the phrase
+          let phrase = p1.trim();
+          // Remove ** markers from phrase
+          phrase = phrase.replace(/\*\*/g, '').replace(/\*/g, '');
+          extracted.push({word: phrase, fullMatch: match, type: 'phrase'});
+          return phrase; // keep text, remove tags and ** markers
+        }
+      });
+
+      // 2. Remove bold markers **word** (known words - just remove markers)
+      // Must be before *word* to avoid conflicts
+      clean = clean.replace(/\*\*(.*?)\*\*/g, '$1');
+
+      // 3. Extract *word* (Italics - unknown words)
+      // Must be after word(def) patterns and **word** removal to avoid conflicts
+      clean = clean.replace(/\*([a-zA-Z-]+)\*/g, (match, p1) => {
+        // Check if already extracted
+        const alreadyExtracted = extracted.some(e => e.word === p1.trim() && e.fullMatch === match);
+        if (!alreadyExtracted) {
+          extracted.push({word: p1.trim(), fullMatch: match, type: 'word'});
+        }
+        return p1.trim(); // Keep just the word
+      });
+
+      // 4. Final cleanup: Remove any remaining asterisks (catch any missed patterns)
+      clean = clean.replace(/\*/g, '');
+
+      return {extracted, clean};
+    }
+
+    createCard(content, type) {
+      const ipaMatch = content.match(/\/.*?\//);
+      let ipa = '';
+      let wordText = content;
+      if (ipaMatch) {
+        ipa = ipaMatch[0];
+        wordText = content.replace(ipaMatch[0], '').trim();
+      }
+
+      // Extract emoji from word text
+      let emoji = '';
+      const emojiMatch = wordText.match(/[\p{Emoji}\p{Emoji_Presentation}]/u);
+      if (emojiMatch) {
+        emoji = emojiMatch[0];
+        wordText = wordText.replace(emojiMatch[0], '').trim();
+      }
+
+      let def = '';
+      let cn = '';
+      if (/^[a-zA-Z-]+\s+[a-z]+\./.test(wordText)) {
+        const parts = wordText.split(/(?=\s[a-z]+\.)/);
+        wordText = parts[0].trim();
+        const rest = parts.join(' ').trim();
+        // Try to split into POS (en) and Chinese (cn)
+        // Pattern: "n. （身体或智力上的）残疾"
+        const posMatch = rest.match(/^([a-z]+\.)/);
+        if (posMatch) {
+          def = posMatch[1]; // Extract POS (n.)
+          cn = rest.substring(def.length).trim(); // Rest is Chinese
+        } else {
+          def = rest;
+        }
+      }
+
+      const card = {
+        id: `card_${this.cards.length}`,
+        word: wordText,
+        ipa: ipa,
+        type: type,
+        emoji: emoji,
+        items: def ? [{type: 'def', en: def, cn: cn}] : []
+      };
+
+      return card;
+    }
+  }
+
+  /**
+   * MAIN APP
+   */
+  class VocabApp {
+    constructor() {
+      this.ui = {
+        loader: document.getElementById('loader'),
+        card: document.getElementById('cardContainer'),
+        word: document.getElementById('displayWord'),
+        ipa: document.getElementById('displayPronunciation'),
+        badges: document.getElementById('displayBadges'),
+        list: document.getElementById('itemList'),
+        progress: document.getElementById('progressText'),
+        statsList: document.getElementById('wordListContainer'),
+        actionArea: document.getElementById('actionArea'),
+        statsPanel: document.getElementById('statsPanel'),
+        filePanel: document.getElementById('filePanel'),
+        fileListContainer: document.getElementById('fileListContainer'),
+        btnInput: document.getElementById('btnModeInput'),
+        btnRecall: document.getElementById('btnModeRecall'),
+        btnPrev: document.getElementById('btnPrev')
+      };
+      this.init();
+    }
+
+    async init() {
+      // Initialize speech synthesis voices
+      if ('speechSynthesis' in window) {
+        // Load voices (some browsers need this)
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+          speechSynthesis.onvoiceschanged = () => {
+            // Voices loaded
+          };
+        }
+      }
+
+      // Force clear ALL cache on init to avoid old format issues
+      console.log('🗑️ Clearing all file cache to fix format issues');
+      const cacheKeys = Object.keys(localStorage);
+      cacheKeys.forEach(key => {
+        if (key.startsWith(CONFIG.cacheKey)) {
+          localStorage.removeItem(key);
+        }
+      });
+
+      this.loadState();
+      console.log('init - STATE.cards.length:', STATE.cards.length, 'currentPath:', STATE.currentPath);
+
+      if (STATE.cards.length === 0) {
+        // Check if we have a saved file path
+        if (STATE.currentPath) {
+          console.log('init - Loading saved file:', STATE.currentPath);
+          await this.loadFile(STATE.currentPath);
+        } else {
+          console.log('init - No saved file, showing file selection');
+          // Show file selection panel
+          this.toggleFiles(true);
+          await this.loadRootFolders();
+        }
+      } else {
+        console.log('init - Rendering existing cards');
+        this.render();
+      }
+      this.updateStatsUI();
+    }
+
+    async fetchData() {
+      // This method is deprecated, use loadFile instead
+      console.warn('fetchData is deprecated, use loadFile');
+    }
+
+    async loadFile(path) {
+      try {
+        console.log('开始加载文件:', path);
+        // Show loader
+        this.ui.loader.classList.remove('hidden');
+        this.ui.card.classList.add('hidden');
+
+        const text = await GitHubApi.fetchFileContent(path);
+        console.log('文件加载完成，长度:', text.length);
+
+        if (!text || text.trim().length === 0) {
+          throw new Error('数据为空');
+        }
+
+        console.log('开始解析...');
+        const parser = new MarkdownParser(text);
+        STATE.cards = parser.parse();
+        console.log('解析完成，卡片数量:', STATE.cards.length);
+
+        if (STATE.cards.length === 0) {
+          throw new Error('解析后没有生成任何卡片，请检查数据格式');
+        }
+
+        // Save current path and load stats for this file
+        STATE.currentPath = path;
+        this.loadStatsForFile(path);
+
+        this.saveState();
+        this.ui.loader.classList.add('hidden');
+        this.ui.card.classList.remove('hidden');
+        this.render();
+        this.showToast(`解析完成：${STATE.cards.length} 张卡片`);
+      } catch (e) {
+        console.error('加载失败:', e);
+        let errorMsg = e.message;
+        if (e.name === 'AbortError') {
+          errorMsg = '请求超时，请检查网络连接';
+        }
+        this.ui.loader.innerHTML = `
+          <div style="text-align: center; padding: 2rem;">
+            <p style="color:red; font-size: 1.1rem; margin-bottom: 1rem;">加载失败: ${errorMsg}</p>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">请检查网络连接或数据源</p>
+            <p style="color: #999; font-size: 0.8rem; margin-bottom: 1rem;">路径: ${path}</p>
+            <button class="btn-primary" onclick="location.reload()" style="margin-top: 1rem;">重新加载</button>
+          </div>
+        `;
+      }
+    }
+
+    render() {
+      if (STATE.cards.length === 0) return;
+      const card = STATE.cards[STATE.currentIndex];
+
+      // Ensure card has required fields (for backward compatibility)
+      if (!card.items) card.items = [];
+      if (!card.synonyms) card.synonyms = [];
+      if (!card.emoji) card.emoji = '';
+
+      const stats = STATE.stats[card.id] || {errors: 0};
+
+      // Add/remove sentence class
+      if (card.type === 'sentence') {
+        this.ui.card.classList.add('is-sentence');
+      } else {
+        this.ui.card.classList.remove('is-sentence');
+      }
+
+      // Header
+      // Add play button for word pronunciation
+      const wordEscaped = card.word.replace(/'/g, "\\'");
+      const playButton = `<button class="btn-ghost" onclick="app.playWord('${wordEscaped}')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>`;
+      this.ui.word.innerHTML = `<span>${card.word}</span> ${playButton}`;
+      this.ui.ipa.textContent = ''; // 不显示音标
+      this.ui.ipa.style.display = 'none'; // 完全隐藏音标元素
+      // Badges
+      let bHtml = '';
+      if (card.type === 'synonym') bHtml += `<span class="badge badge-syn">同义词</span>`;
+      else if (card.type === 'related') bHtml += `<span class="badge badge-rel">生词/词组</span>`;
+      else if (card.type === 'sentence') bHtml += `<span class="badge badge-sent">例句</span>`;
+      if (stats.errors > 0) bHtml += `<span class="badge badge-err">错 ${stats.errors}</span>`;
+      this.ui.badges.innerHTML = bHtml;
+      // Items
+      this.ui.list.innerHTML = '';
+
+      // Special rendering for sentence cards
+      if (card.type === 'sentence') {
+        const li = document.createElement('li');
+        li.className = 'item';
+
+        // Add sentence label
+        const labelDiv = document.createElement('div');
+        labelDiv.className = 'sentence-label';
+        labelDiv.textContent = 'Example Sentence';
+        this.ui.list.appendChild(labelDiv);
+
+        // The fullText is already cleaned (no ** markers), but we need to add highlight to known words
+        // Since we removed ** markers during parsing, we can't add highlights anymore
+        // Just display the clean sentence
+        const sentenceHtml = card.fullText;
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'sentence-content';
+        // Sentences are always visible, even in recall mode
+        contentDiv.innerHTML = sentenceHtml;
+        this.ui.list.appendChild(contentDiv);
+
+        // Add Chinese translation if exists
+        const item = card.items[0];
+        if (item.cn && item.cn.trim() !== '') {
+          const cnDiv = document.createElement('div');
+          cnDiv.className = 'sentence-cn';
+          cnDiv.textContent = item.cn;
+          // Chinese is also always visible for sentences
+          this.ui.list.appendChild(cnDiv);
+        }
+
+        this.ui.list.appendChild(li);
+      } else {
+        // Normal rendering for word cards
+        const items = card.items;
+        items.forEach((item, idx) => {
+          const li = document.createElement('li');
+          li.className = 'item';
+          const cleanEn = item.en
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*/g, ''); // remove remaining italics for clean look
+
+          // 准备中文内容
+          const hasCn = item.cn && item.cn.trim() !== '';
+          // 如果没有中文，不显示任何内容（包括"点击查看中文"）
+          let cnHtml = '';
+          if (hasCn) {
+            let cnDisplay = item.cn;
+            // Add emoji to first Chinese definition if exists
+            if (idx === 0 && card.emoji) {
+              cnDisplay = card.emoji + ' ' + cnDisplay;
+            }
+
+            if (STATE.mode === 'recall') {
+              cnDisplay = cnDisplay;  // 遮挡模式下显示实际内容（会被CSS模糊）
+            } else {
+              cnDisplay = cnDisplay; // 浏览模式下直接显示
+            }
+            cnHtml = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
+          }
+          li.innerHTML = `
+                          <span class="item-tag tag-def"></span>
+                          <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${cleanEn}</div>
+                          ${cnHtml}
+                      `;
+          this.ui.list.appendChild(li);
+        });
+
+        // Add synonyms section if exists
+        if (card.synonyms && card.synonyms.length > 0) {
+          const synSection = document.createElement('div');
+          synSection.className = 'synonyms-section';
+
+          const synLabel = document.createElement('div');
+          synLabel.className = 'synonyms-label';
+          synLabel.textContent = 'Synonyms';
+          synSection.appendChild(synLabel);
+
+          const synList = document.createElement('div');
+          synList.className = 'synonyms-list';
+
+          card.synonyms.forEach(syn => {
+            const synItem = document.createElement('span');
+            synItem.className = 'synonym-item';
+
+            // Play button
+            const playBtn = document.createElement('button');
+            playBtn.className = 'synonym-play-btn';
+            playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>`;
+            const synWordEscaped = syn.word.replace(/'/g, "\\'");
+            playBtn.onclick = () => app.playWord(synWordEscaped);
+
+            const synWord = document.createElement('span');
+            synWord.className = 'synonym-word';
+            synWord.textContent = syn.word;
+
+            synItem.appendChild(playBtn);
+            synItem.appendChild(synWord);
+
+            // Only add definition if it exists
+            if (syn.def && syn.def.trim() !== '') {
+              const synDef = document.createElement('span');
+              synDef.className = 'synonym-def';
+              synDef.textContent = syn.def;
+              synItem.appendChild(synDef);
+            }
+
+            synList.appendChild(synItem);
+          });
+
+          synSection.appendChild(synList);
+          this.ui.list.appendChild(synSection);
+        }
+      }
+      // Progress
+      this.ui.progress.textContent = `${STATE.currentIndex + 1} / ${STATE.cards.length}`;
+      // Mode Actions
+      if (STATE.mode === 'recall') {
+        document.body.classList.add('mode-recall');
+        this.ui.btnInput.classList.remove('active');
+        this.ui.btnRecall.classList.add('active');
+        this.ui.btnPrev.classList.remove('hidden'); // Show prev button in recall mode
+        this.renderRecallActions();
+      } else {
+        document.body.classList.remove('mode-recall');
+        this.ui.btnInput.classList.add('active');
+        this.ui.btnRecall.classList.remove('active');
+        this.ui.btnPrev.classList.remove('hidden');
+        this.renderInputActions();
+      }
+    }
+
+    renderInputActions() {
+      this.ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+    }
+
+    renderRecallActions() {
+      const card = STATE.cards[STATE.currentIndex];
+
+      // For sentence cards without Chinese translation, just show "Next" button
+      if (card.type === 'sentence') {
+        const hasChinese = card.items[0].cn && card.items[0].cn.trim() !== '';
+        if (!hasChinese) {
+          // No Chinese translation, just show next button
+          this.renderNextAction();
+          return;
+        }
+      }
+
+      // For word cards or sentences with Chinese, show recall buttons
+      this.ui.actionArea.innerHTML = `
+	                    <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
+	                    <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
+	                `;
+    }
+
+    renderConfirmationActions() {
+      // State 2: Definition Revealed, User Needs to Verify
+      this.ui.actionArea.innerHTML = `
+	                    <button class="btn-danger" onclick="app.confirmRecall(false)">其实不会</button>
+	                    <button class="btn-success" onclick="app.confirmRecall(true)">确认掌握</button>
+	                `;
+    }
+
+    renderNextAction() {
+      // State 3: Just go to next
+      this.ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个</button>`;
+    }
+
+    reveal(el) {
+      if (STATE.mode === 'recall') {
+        // 在遮挡模式下，点击后显示中文（移除模糊效果）
+        el.classList.add('revealed');
+      }
+      // 在浏览模式下，中文已经直接显示，不需要额外处理
+    }
+
+    setMode(newMode) {
+      STATE.mode = newMode;
+      this.saveState();
+      this.render();
+    }
+
+    handleRecall(claimedKnown) {
+      // Always reveal definitions first
+      this.revealAll();
+      if (!claimedKnown) {
+        // Don't remember -> Record Error immediately -> Show Next button
+        this.recordError();
+        this.showToast('已记录不记得');
+        this.renderNextAction();
+      } else {
+        // Remember -> Show definition first, then offer verification
+        // Switch buttons to "Yes/No" without blocking view
+        this.renderConfirmationActions();
+      }
+    }
+
+    confirmRecall(actuallyCorrect) {
+      if (actuallyCorrect) {
+        this.showToast('正确！');
+        this.nextCard();
+      } else {
+        this.recordError();
+        this.showToast('已记录错误');
+        this.renderNextAction();
+      }
+    }
+
+    revealAll() {
+      document.querySelectorAll('.cn-text, .en-text').forEach(el => el.classList.add('revealed'));
+      // Also reveal synonyms section
+      const synonymsSection = document.querySelector('.synonyms-section');
+      if (synonymsSection) {
+        synonymsSection.classList.add('revealed');
+      }
+      // Reveal item-list (definition items)
+      const itemList = document.querySelector('.item-list');
+      if (itemList) {
+        itemList.classList.add('revealed');
+      }
+    }
+
+    recordError() {
+      const id = STATE.cards[STATE.currentIndex].id;
+      if (!STATE.stats[id]) STATE.stats[id] = {errors: 0};
+      STATE.stats[id].errors++;
+      this.saveState();
+      this.updateStatsUI();
+      // We don't re-render immediately here to avoid hiding the buttons if we are in a flow
+      // But we might want to show the error badge. Let's update badges specifically.
+      const card = STATE.cards[STATE.currentIndex];
+      const stats = STATE.stats[card.id] || {errors: 0};
+      let bHtml = document.getElementById('displayBadges').innerHTML;
+      if (!bHtml.includes('错')) {
+        bHtml += `<span class="badge badge-err">错 ${stats.errors}</span>`;
+        document.getElementById('displayBadges').innerHTML = bHtml;
+      }
+    }
+
+    nextCard() {
+      if (STATE.currentIndex < STATE.cards.length - 1) {
+        STATE.currentIndex++;
+        this.render();
+      } else {
+        // Last card reached - show completion screen
+        this.showCompletionScreen();
+      }
+    }
+
+    showCompletionScreen() {
+      // Calculate statistics
+      const totalCards = STATE.cards.length;
+      const totalErrors = Object.values(STATE.stats).reduce((sum, stat) => sum + stat.errors, 0);
+      const accuracy = totalCards > 0 ? Math.round(((totalCards - totalErrors) / totalCards) * 100) : 100;
+
+      // Show completion screen with confetti effect
+      this.ui.card.innerHTML = `
+        <div style="text-align: center; padding: 3rem 2rem;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+          <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">完结撒花！</h2>
+          <p style="font-size: 1.2rem; color: var(--text-sub); margin-bottom: 2rem;">
+            恭喜你完成了所有 ${totalCards} 张卡片！
+          </p>
+          <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+              <div>
+                <div style="font-size: 2rem; font-weight: 700; color: var(--primary);">${totalCards}</div>
+                <div style="font-size: 0.875rem; color: var(--text-sub);">总卡片</div>
+              </div>
+              <div>
+                <div style="font-size: 2rem; font-weight: 700; color: var(--danger);">${totalErrors}</div>
+                <div style="font-size: 0.875rem; color: var(--text-sub);">错误次数</div>
+              </div>
+              <div>
+                <div style="font-size: 2rem; font-weight: 700; color: var(--success);">${accuracy}%</div>
+                <div style="font-size: 0.875rem; color: var(--text-sub);">正确率</div>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button class="btn-primary" onclick="app.restart()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+              🔄 重新开始
+            </button>
+            <button class="btn-secondary" onclick="app.clearDataAndReload()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+              🗑️ 清除进度
+            </button>
+          </div>
+        </div>
+      `;
+
+      // Hide action area and progress
+      this.ui.actionArea.innerHTML = '';
+      this.ui.progress.textContent = `${totalCards} / ${totalCards}`;
+
+      // Trigger confetti effect
+      this.triggerConfetti();
+    }
+
+    restart() {
+      STATE.currentIndex = 0;
+      this.render();
+    }
+
+    clearDataAndReload() {
+      localStorage.removeItem(CONFIG.storageKey);
+      location.reload();
+    }
+
+    triggerConfetti() {
+      // Simple confetti effect using emojis
+      const container = this.ui.card;
+      const emojis = ['🎉', '🎊', '✨', '⭐', '🌟', '💫', '🎈', '🎁'];
+
+      for (let i = 0; i < 30; i++) {
+        setTimeout(() => {
+          const confetti = document.createElement('div');
+          confetti.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+          confetti.style.cssText = `
+            position: absolute;
+            font-size: ${Math.random() * 20 + 15}px;
+            left: ${Math.random() * 100}%;
+            top: -50px;
+            animation: fall ${Math.random() * 2 + 2}s linear forwards;
+            pointer-events: none;
+            z-index: 1000;
+          `;
+          container.style.position = 'relative';
+          container.appendChild(confetti);
+
+          setTimeout(() => confetti.remove(), 4000);
+        }, i * 50);
+      }
+
+      // Add animation keyframes if not exists
+      if (!document.getElementById('confetti-style')) {
+        const style = document.createElement('style');
+        style.id = 'confetti-style';
+        style.textContent = `
+          @keyframes fall {
+            to {
+              transform: translateY(100vh) rotate(720deg);
+              opacity: 0;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    }
+
+    prevCard() {
+      if (STATE.currentIndex > 0) {
+        STATE.currentIndex--;
+        this.render();
+      }
+    }
+
+    /* --- SPEECH --- */
+    playWord(word) {
+      if (!word) return;
+
+      // Use Web Speech API
+      if ('speechSynthesis' in window) {
+        // Cancel any ongoing speech
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9; // Slightly slower for clarity
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        // Try to use American English voice first
+        const voices = window.speechSynthesis.getVoices();
+        const usVoice = voices.find(voice =>
+          voice.lang === 'en-US'
+        ) || voices.find(voice =>
+          voice.lang.startsWith('en-US')
+        ) || voices.find(voice =>
+          voice.lang.startsWith('en') && voice.localService
+        ) || voices.find(voice => voice.lang.startsWith('en'));
+
+        if (usVoice) {
+          utterance.voice = usVoice;
+        }
+
+        window.speechSynthesis.speak(utterance);
+      } else {
+        this.showToast('浏览器不支持语音播放');
+      }
+    }
+
+    /* --- STORAGE --- */
+    getStorageKey() {
+      // Generate key based on current file path
+      if (!STATE.currentPath) return CONFIG.storageKey;
+      // Replace / with _ to avoid key issues
+      const pathKey = STATE.currentPath.replace(/\//g, '_').replace(/\.md$/, '');
+      return `${CONFIG.storageKey}_${pathKey}`;
+    }
+
+    loadStatsForFile(path) {
+      // Load stats for specific file
+      const oldPath = STATE.currentPath;
+      STATE.currentPath = path;
+      const key = this.getStorageKey();
+      const stored = localStorage.getItem(key);
+
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        STATE.stats = parsed.stats || {};
+      } else {
+        STATE.stats = {};
+      }
+
+      // Restore old path
+      STATE.currentPath = oldPath;
+    }
+
+    loadState() {
+      const globalKey = CONFIG.storageKey;
+      const stored = localStorage.getItem(globalKey);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        // Check version compatibility
+        if (parsed.version !== CONFIG.version) {
+          console.log('Data version mismatch, clearing old data');
+          localStorage.removeItem(globalKey);
+          return;
+        }
+        STATE.currentPath = parsed.currentPath || null;
+        STATE.mode = parsed.mode || 'input';
+        // Load stats for current file
+        if (STATE.currentPath) {
+          this.loadStatsForFile(STATE.currentPath);
+        }
+      }
+    }
+
+    saveState() {
+      // Save global state (current path, mode)
+      const globalData = {
+        currentPath: STATE.currentPath,
+        mode: STATE.mode,
+        version: CONFIG.version
+      };
+      localStorage.setItem(CONFIG.storageKey, JSON.stringify(globalData));
+
+      // Save file-specific stats
+      if (STATE.currentPath) {
+        const key = this.getStorageKey();
+        const fileData = {
+          stats: STATE.stats,
+          version: CONFIG.version
+        };
+        localStorage.setItem(key, JSON.stringify(fileData));
+      }
+      this.updateStatsUI();
+    }
+
+    resetData() {
+      if (confirm('确定重置？')) {
+        // Clear current file stats
+        if (STATE.currentPath) {
+          const key = this.getStorageKey();
+          localStorage.removeItem(key);
+        }
+        // Clear global state
+        localStorage.removeItem(CONFIG.storageKey);
+        location.reload();
+      }
+    }
+
+    /* --- FILE SELECTION --- */
+    toggleFiles(forceOpen = false) {
+      console.log('toggleFiles called, forceOpen:', forceOpen, 'filePanel:', this.ui.filePanel);
+      if (forceOpen) {
+        this.ui.filePanel.classList.add('open');
+        // Close stats panel if open
+        this.ui.statsPanel.classList.remove('open');
+      } else {
+        this.ui.filePanel.classList.toggle('open');
+      }
+      console.log('toggleFiles - filePanel classes:', this.ui.filePanel.classList.toString());
+    }
+
+    async loadRootFolders(forceRefresh = false) {
+      try {
+        console.log('📂 Loading root folders, fileListContainer:', this.ui.fileListContainer);
+        console.log('filePanel element:', this.ui.filePanel);
+        console.log('filePanel classes before:', this.ui.filePanel.classList.toString());
+        console.log('filePanel computed style.display:', window.getComputedStyle(this.ui.filePanel).display);
+        console.log('filePanel computed style.visibility:', window.getComputedStyle(this.ui.filePanel).visibility);
+
+        this.ui.fileListContainer.innerHTML = `
+          <div style="padding: 1rem; text-align: center; color: var(--secondary);">
+            <div class="spinner" style="margin: 0 auto 1rem;"></div>
+            加载文件夹...
+          </div>
+        `;
+        console.log('innerHTML set, should show loading...');
+
+        const contents = await GitHubApi.fetchContents('', forceRefresh);
+        console.log('loadRootFolders - contents type:', typeof contents, 'isArray:', Array.isArray(contents));
+        console.log('loadRootFolders - contents:', contents);
+
+        const folders = GitHubApi.filterFolders(contents);
+        const files = GitHubApi.filterMdFiles(contents);
+
+        // Render current file info if exists
+        let html = '';
+        if (STATE.currentPath) {
+          html += `
+            <div class="current-file-info">
+              <span>📄</span>
+              <span>当前文件: <strong>${STATE.currentPath}</strong></span>
+            </div>
+          `;
+        }
+
+        // Render breadcrumb
+        html += `
+          <div class="breadcrumb">
+            <span class="breadcrumb-item">📁 English/Word</span>
+          </div>
+        `;
+
+        // Render folders
+        if (folders.length > 0) {
+          folders.forEach(folder => {
+            html += `
+              <div class="folder-item" onclick="app.loadFolder('${folder.path}')">
+                <span class="folder-item-icon">📁</span>
+                <span class="folder-item-name">${folder.name}</span>
+              </div>
+            `;
+          });
+        }
+
+        // Render files
+        if (files.length > 0) {
+          files.forEach(file => {
+            const isActive = file.path === STATE.currentPath;
+            html += `
+              <div class="file-item ${isActive ? 'active' : ''}" onclick="app.selectFile('${file.path}', '${file.name}')">
+                <span class="file-item-icon">📄</span>
+                <span class="file-item-name">${file.name}</span>
+              </div>
+            `;
+          });
+        }
+
+        this.ui.fileListContainer.innerHTML = html;
+      } catch (e) {
+        console.error('加载文件夹失败:', e);
+        this.ui.fileListContainer.innerHTML = `
+          <div style="padding: 1rem; text-align: center; color: var(--danger);">
+            <p>加载失败: ${e.message}</p>
+            <button class="btn-primary" onclick="app.loadRootFolders()" style="margin-top: 1rem;">重试</button>
+          </div>
+        `;
+      }
+    }
+
+    async loadFolder(path, forceRefresh = false) {
+      try {
+        this.ui.fileListContainer.innerHTML = `
+          <div style="padding: 1rem; text-align: center; color: var(--secondary);">
+            <div class="spinner" style="margin: 0 auto 1rem;"></div>
+            加载中...
+          </div>
+        `;
+
+        const { folders, files } = await GitHubApi.fetchFolderContents(path, forceRefresh);
+
+        // Build breadcrumb
+        const pathParts = path.split('/');
+        let breadcrumbHtml = `
+          <div class="breadcrumb">
+            <span class="breadcrumb-item" onclick="app.loadRootFolders()">📁 English/Word</span>
+        `;
+
+        let currentPath = '';
+        pathParts.forEach((part, idx) => {
+          currentPath += (idx > 0 ? '/' : '') + part;
+          breadcrumbHtml += `
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-item" onclick="app.loadFolder('${currentPath}')">${part}</span>
+          `;
+        });
+        breadcrumbHtml += '</div>';
+
+        let html = breadcrumbHtml;
+
+        // Render folders
+        if (folders.length > 0) {
+          folders.forEach(folder => {
+            html += `
+              <div class="folder-item" onclick="app.loadFolder('${folder.path}')">
+                <span class="folder-item-icon">📁</span>
+                <span class="folder-item-name">${folder.name}</span>
+              </div>
+            `;
+          });
+        }
+
+        // Render files
+        if (files.length > 0) {
+          files.forEach(file => {
+            const isActive = file.path === STATE.currentPath;
+            html += `
+              <div class="file-item ${isActive ? 'active' : ''}" onclick="app.selectFile('${file.path}', '${file.name}')">
+                <span class="file-item-icon">📄</span>
+                <span class="file-item-name">${file.name}</span>
+              </div>
+            `;
+          });
+        }
+
+        if (folders.length === 0 && files.length === 0) {
+          html += `
+            <div style="padding: 2rem; text-align: center; color: var(--secondary);">
+              此文件夹为空
+            </div>
+          `;
+        }
+
+        this.ui.fileListContainer.innerHTML = html;
+      } catch (e) {
+        console.error('加载文件夹失败:', e);
+        this.ui.fileListContainer.innerHTML = `
+          <div style="padding: 1rem; text-align: center; color: var(--danger);">
+            <p>加载失败: ${e.message}</p>
+            <button class="btn-primary" onclick="app.loadRootFolders()" style="margin-top: 1rem;">返回根目录</button>
+          </div>
+        `;
+      }
+    }
+
+    selectFile(path, name) {
+      if (path === STATE.currentPath) {
+        // Already on this file, close panel
+        this.toggleFiles();
+        return;
+      }
+
+      // Show confirmation dialog
+      const hasStarted = STATE.cards.length > 0 && STATE.currentIndex > 0;
+      let message = `确定要切换到文件 "${name}" 吗？`;
+      if (hasStarted) {
+        message += `\n\n当前文件的学习进度将被保存。`;
+      }
+
+      if (confirm(message)) {
+        this.confirmSwitchFile(path);
+      }
+    }
+
+    async confirmSwitchFile(path) {
+      try {
+        // Close file panel
+        this.ui.filePanel.classList.remove('open');
+
+        // Save current progress before switching
+        if (STATE.currentPath && STATE.cards.length > 0) {
+          this.saveState();
+        }
+
+        // Reset state and load new file
+        STATE.cards = [];
+        STATE.currentIndex = 0;
+        await this.loadFile(path);
+
+        // Update file panel to show new active file
+        await this.loadRootFolders();
+      } catch (e) {
+        console.error('切换文件失败:', e);
+        this.showToast('切换文件失败: ' + e.message);
+      }
+    }
+
+    async refreshFileList() {
+      try {
+        // Clear all cache
+        GitHubApi.clearCache();
+
+        // Reload current folder
+        const currentPath = this.getCurrentFolderPath();
+        if (currentPath === null) {
+          await this.loadRootFolders(true);
+        } else {
+          await this.loadFolder(currentPath, true);
+        }
+
+        this.showToast('✅ 列表已刷新');
+      } catch (e) {
+        console.error('刷新列表失败:', e);
+        this.showToast('❌ 刷新失败: ' + e.message);
+      }
+    }
+
+    getCurrentFolderPath() {
+      // Determine current folder path from STATE.currentPath
+      if (!STATE.currentPath) return null;
+
+      const parts = STATE.currentPath.split('/');
+      parts.pop(); // Remove filename
+      return parts.join('/');
+    }
+
+    toggleStats() {
+      this.ui.statsPanel.classList.toggle('open');
+    }
+
+    updateStatsUI() {
+      let html = '';
+      STATE.cards.forEach((c, idx) => {
+        const s = STATE.stats[c.id];
+        const isActive = idx === STATE.currentIndex;
+        const err = s && s.errors ? `(${s.errors})` : '';
+        let icon = '📝';
+        if (c.type === 'synonym') icon = '🔄';
+        if (c.type === 'sentence') icon = '💬';
+        if (c.type === 'related') icon = '🔗';
+        html += `
+	                        <div class="stat-row ${isActive ? 'active' : ''}" onclick="app.jumpTo(${idx})">
+	                            <span class="stat-word"><span class="tag-pill">${icon}</span>${c.word.substring(0, 18)}${c.word.length > 18 ? '...' : ''}</span>
+	                            <span class="stat-val" style="color:${s && s.errors ? 'var(--danger)' : 'inherit'}">${err}</span>
+	                        </div>
+	                    `;
+      });
+      this.ui.statsList.innerHTML = html;
+      const active = this.ui.statsList.querySelector('.active');
+      if (active) active.scrollIntoView({block: 'center'});
+    }
+
+    jumpTo(idx) {
+      STATE.currentIndex = idx;
+      this.render();
+      this.toggleStats();
+    }
+
+    showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2000);
+    }
+  }
+
+  const app = new VocabApp();
+</script>
+</body>
+</html>
