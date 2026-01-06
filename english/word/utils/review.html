@@ -29,9 +29,13 @@
             background-color: var(--background);
             color: var(--text-main);
             height: 100vh;
+            height: 100dvh;
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+            position: fixed;
+            width: 100%;
         }
         /* --- Header --- */
         header {
@@ -45,6 +49,15 @@
             flex-shrink: 0;
         }
         .brand { font-weight: 800; font-size: 1.2rem; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
+        .current-file-display {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            max-width: 400px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         .header-controls { display: flex; gap: 0.75rem; align-items: center; }
         button {
             border: none; outline: none;
@@ -74,7 +87,21 @@
         }
         .toggle-switch button.active { background: white; color: var(--primary); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
         /* --- Layout --- */
-        main { flex: 1; position: relative; overflow: hidden; display: flex; }
+        main { flex: 1; position: relative; overflow: hidden; display: flex; min-height: 0; }
+        @media (max-width: 600px) {
+            .header-controls { gap: 0.5rem; }
+            .brand {
+                font-size: 0.9rem;
+                max-width: 120px;
+            }
+            .toggle-switch {
+                max-width: 200px;
+            }
+            button {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
         /* Sidebar */
         aside {
             width: 320px;
@@ -300,11 +327,11 @@
         }
         /* Recall Mode Styles */
         body.mode-recall .cn-text {
-            filter: blur(6px); opacity: 0.4; user-select: none; transform: translateX(5px);
+            filter: blur(10px); opacity: 0; user-select: none;
         }
-        body.mode-recall .cn-text:hover { filter: blur(4px); opacity: 0.6; }
+        body.mode-recall .cn-text:hover { filter: blur(6px); opacity: 0; }
         body.mode-recall .cn-text.revealed { filter: none; opacity: 1; transform: translateX(0); border-left-color: var(--primary); cursor: default; }
-        body.mode-recall .en-text { filter: blur(4px); opacity: 0.7; }
+        body.mode-recall .en-text { filter: blur(8px); opacity: 0; }
         body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
         .card-footer {
             padding: 1.25rem 2rem;
@@ -332,6 +359,60 @@
             to { transform: rotate(360deg); }
         }
         .hidden { display: none !important; }
+        /* Confirmation Dialog */
+        .dialog-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        .dialog-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .dialog {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            max-width: 400px;
+            width: 90%;
+            padding: 2rem;
+            transform: scale(0.95);
+            transition: transform 0.2s;
+        }
+        .dialog-overlay.show .dialog {
+            transform: scale(1);
+        }
+        .dialog-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .dialog-message {
+            font-size: 1rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .dialog-message .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .dialog-actions {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: flex-end;
+        }
         @media (max-width: 600px) {
             .card { height: 100%; max-height: 100vh; border-radius: 0; }
 
@@ -356,7 +437,7 @@
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
         </svg>
-        <span>VocabMaster V5</span>
+        <span id="currentFileDisplay" class="current-file-display"></span>
     </div>
     <div class="header-controls">
         <div class="toggle-switch">
@@ -439,6 +520,23 @@
     </div>
 </main>
 <div id="toast" class="toast">Message</div>
+
+<!-- Confirmation Dialog -->
+<div id="confirmDialog" class="dialog-overlay">
+    <div class="dialog">
+        <div class="dialog-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span>切换文件</span>
+        </div>
+        <div class="dialog-message" id="dialogMessage"></div>
+        <div class="dialog-actions">
+            <button class="btn-ghost" onclick="app.confirmDialog.cancel()">取消</button>
+            <button class="btn-primary" id="dialogConfirmBtn">确定</button>
+        </div>
+    </div>
+</div>
 <script>
   /**
    * CONFIGURATION & STATE
@@ -557,6 +655,7 @@
 
     static async fetchFileContent(path) {
       const url = `${CONFIG.baseRawUrl}/${path}`;
+      console.log('📥 Fetching file content from URL:', url);
       const res = await fetch(url);
       if (!res.ok) throw new Error(`Fetch Error: ${res.status}`);
       return await res.text();
@@ -666,19 +765,18 @@
 
         const content = trimmed.substring(1).trim();
 
-        // Pattern 1: "word1 == word2 [音标] 释义"
-        const matchWithIpa = content.match(/^([a-zA-Z-]+)\s+==\s+([a-zA-Z-]+)\s+\[([^\]]+)\]\s*(.+)$/);
+        // Pattern 1: "word1 == word2 释义"
+        const matchWithIpa = content.match(/^([a-zA-Z-]+)\s+==\s+([a-zA-Z-]+)\s+(.+)$/);
         if (matchWithIpa) {
-          // "epidemic == pandemic [音标] 释义"
-          // Extract: pandemic is the main word with IPA and definition
+          // "epidemic == pandemic 释义"
+          // Extract: pandemic is the main word with definition
           // epidemic is the synonym
           const word1 = matchWithIpa[1];
           const word2 = matchWithIpa[2];
-          const ipa = matchWithIpa[3];
-          const def = matchWithIpa[4].trim();
+          const def = matchWithIpa[3].trim();
 
-          // Add main word with IPA and definition
-          result.push(`- ${word2} [${ipa}] ${def}`);
+          // Add main word with definition
+          result.push(`- ${word2} ${def}`);
           // Add word1 as synonym (indented to make it a child item)
           result.push(`    - == ${word1}`);
           continue;
@@ -942,7 +1040,7 @@
         if (nextLineIdx < this.lines.length) {
           const nextLine = this.lines[nextLineIdx].trim();
           // Check if it's a Chinese translation (starts with - and contains Chinese, no English letters)
-          if (nextLine.startsWith('-') && /[\u4e00-\u9fa5]/.test(nextLine) && !/[a-zA-Z]/.test(nextLine)) {
+          if (nextLine.startsWith('-') && /[\u4e00-\u9fa5]/.test(nextLine)) {
             const cnText = nextLine.substring(1).trim();
             sentCard.items[0].cn = cnText;
             // Mark this line as processed to avoid creating a separate card
@@ -1173,7 +1271,7 @@
         if (phraseWithDef) {
           // Has definition: "in advance(提前；事先)"
           let phrase = phraseWithDef[1].trim();
-          // Remove ** markers from phrase
+          // Remove ** markers from phrase FIRST, then extract
           phrase = phrase.replace(/\*\*/g, '').replace(/\*/g, '');
           extracted.push({
             word: phrase,
@@ -1196,6 +1294,49 @@
       // Must be before *word* to avoid conflicts
       clean = clean.replace(/\*\*(.*?)\*\*/g, '$1');
 
+      // 2.1. After bold markers removed, handle word([音标] 释义) patterns
+      // This catches cases like "gallery([音标] 释义)" after ** is removed
+      clean = clean.replace(/([a-zA-Z'-]+)\(\[([^\]]+)\]\s*\(([^)]+)\)\)/g, (match, p1, p2, p3) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+
+        // Check if definition contains Chinese or POS pattern
+        const hasChinese = /[\u4e00-\u9fa5]/.test(p3);
+        const hasPOS = /[a-z]+\./.test(p3);
+
+        if (!hasChinese && !hasPOS) {
+          // Just IPA without meaningful definition, skip creating card
+          return word; // Keep just the word
+        }
+
+        // Check if it's already extracted (avoid duplicates)
+        const alreadyExtracted = extracted.some(e => e.word === word && e.fullMatch === match);
+        if (!alreadyExtracted) {
+          extracted.push({
+            word: word,
+            fullMatch: match,
+            type: 'word',
+            ipa: p2.trim(),
+            def: p3.trim()
+          });
+        }
+        return word; // Keep just the word
+      });
+
+      // 2.2. After bold markers removed, handle word([音标]) patterns
+      // This catches cases like "authorized([音标])" after ** is removed
+      clean = clean.replace(/([a-zA-Z'-]+)\(\[([^\]]+)\]\)/g, (match, p1, p2) => {
+        // Strip possessive 's from word (e.g., "suspect's" -> "suspect")
+        let word = p1.trim();
+        if (word.endsWith("'s") || word.endsWith("'S")) {
+          word = word.slice(0, -2);
+        }
+        return word; // Keep just the word, no card created
+      });
+
       // 3. Extract *word* (Italics - unknown words)
       // Must be after word(def) patterns and **word** removal to avoid conflicts
       clean = clean.replace(/\*([a-zA-Z-]+)\*/g, (match, p1) => {
@@ -1214,12 +1355,17 @@
     }
 
     createCard(content, type) {
-      const ipaMatch = content.match(/\/.*?\//);
+      // Support both /.../ and [...] formats for IPA
+      const ipaMatchSlash = content.match(/\/.*?\//);
+      const ipaMatchBracket = content.match(/\[[^\]]+\]/);
       let ipa = '';
       let wordText = content;
-      if (ipaMatch) {
-        ipa = ipaMatch[0];
-        wordText = content.replace(ipaMatch[0], '').trim();
+      if (ipaMatchSlash) {
+        ipa = ipaMatchSlash[0];
+        wordText = content.replace(ipaMatchSlash[0], '').trim();
+      } else if (ipaMatchBracket) {
+        ipa = ipaMatchBracket[0];
+        wordText = content.replace(ipaMatchBracket[0], '').trim();
       }
 
       // Extract emoji from word text
@@ -1280,7 +1426,11 @@
         fileListContainer: document.getElementById('fileListContainer'),
         btnInput: document.getElementById('btnModeInput'),
         btnRecall: document.getElementById('btnModeRecall'),
-        btnPrev: document.getElementById('btnPrev')
+        btnPrev: document.getElementById('btnPrev'),
+        confirmDialog: document.getElementById('confirmDialog'),
+        dialogMessage: document.getElementById('dialogMessage'),
+        dialogConfirmBtn: document.getElementById('dialogConfirmBtn'),
+        currentFileDisplay: document.getElementById('currentFileDisplay')
       };
       this.init();
     }
@@ -1338,7 +1488,10 @@
         this.ui.loader.classList.remove('hidden');
         this.ui.card.classList.add('hidden');
 
-        const text = await GitHubApi.fetchFileContent(path);
+        // Handle full paths from GitHub API (e.g., "english/word/core/Unit1-1.md" -> "core/Unit1-1.md")
+        const relativePath = path.startsWith('english/word/') ? path.substring('english/word/'.length) : path;
+        console.log('📍 Relative path for fetch:', relativePath);
+        const text = await GitHubApi.fetchFileContent(relativePath);
         console.log('文件加载完成，长度:', text.length);
 
         if (!text || text.trim().length === 0) {
@@ -1354,13 +1507,21 @@
           throw new Error('解析后没有生成任何卡片，请检查数据格式');
         }
 
-        // Save current path and load stats for this file
-        STATE.currentPath = path;
-        this.loadStatsForFile(path);
+        // Save relative path and load stats for this file
+        STATE.currentPath = relativePath;
+        this.loadStatsForFile(relativePath);
 
         this.saveState();
         this.ui.loader.classList.add('hidden');
         this.ui.card.classList.remove('hidden');
+
+        // Update current file name in header (remove .md extension)
+        const pathParts = relativePath.split('/');
+        const fileName = pathParts.pop().replace('.md', '');
+        const directory = pathParts.length > 0 ? pathParts[0].charAt(0).toUpperCase() + pathParts[0].slice(1) : '';
+        const displayText = directory ? `${directory} / ${fileName}` : fileName;
+        this.ui.currentFileDisplay.textContent = displayText;
+
         this.render();
         this.showToast(`解析完成：${STATE.cards.length} 张卡片`);
       } catch (e) {
@@ -1437,17 +1598,22 @@
 
         const contentDiv = document.createElement('div');
         contentDiv.className = 'sentence-content';
-        // Sentences are always visible, even in recall mode
         contentDiv.innerHTML = sentenceHtml;
         this.ui.list.appendChild(contentDiv);
 
         // Add Chinese translation if exists
         const item = card.items[0];
-        if (item.cn && item.cn.trim() !== '') {
+        if (item.cn && typeof item.cn.trim === 'function' && item.cn.trim() !== '') {
           const cnDiv = document.createElement('div');
           cnDiv.className = 'sentence-cn';
           cnDiv.textContent = item.cn;
-          // Chinese is also always visible for sentences
+          // In recall mode, Chinese translation should be blurred (same as word cards)
+          if (STATE.mode === 'recall') {
+            cnDiv.classList.add('blur-target');
+          }
+          // Allow click to reveal
+          cnDiv.onclick = () => app.reveal(cnDiv);
+          cnDiv.style.cursor = 'pointer';
           this.ui.list.appendChild(cnDiv);
         }
 
@@ -1463,7 +1629,7 @@
             .replace(/\*/g, ''); // remove remaining italics for clean look
 
           // 准备中文内容
-          const hasCn = item.cn && item.cn.trim() !== '';
+          const hasCn = item.cn && item.cn.trim && item.cn.trim() !== '';
           // 如果没有中文，不显示任何内容（包括"点击查看中文"）
           let cnHtml = '';
           if (hasCn) {
@@ -1473,15 +1639,10 @@
               cnDisplay = card.emoji + ' ' + cnDisplay;
             }
 
-            if (STATE.mode === 'recall') {
-              cnDisplay = cnDisplay;  // 遮挡模式下显示实际内容（会被CSS模糊）
-            } else {
-              cnDisplay = cnDisplay; // 浏览模式下直接显示
-            }
             cnHtml = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
           }
           li.innerHTML = `
-                          <span class="item-tag tag-def"></span>
+                          <span class="item-tag tag-def ${STATE.mode === 'recall' ? 'blur-target' : ''}"></span>
                           <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${cleanEn}</div>
                           ${cnHtml}
                       `;
@@ -1563,7 +1724,7 @@
 
       // For sentence cards without Chinese translation, just show "Next" button
       if (card.type === 'sentence') {
-        const hasChinese = card.items[0].cn && card.items[0].cn.trim() !== '';
+        const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
         if (!hasChinese) {
           // No Chinese translation, just show next button
           this.renderNextAction();
@@ -1964,7 +2125,9 @@
         // Render files
         if (files.length > 0) {
           files.forEach(file => {
-            const isActive = file.path === STATE.currentPath;
+            // Compare relative paths since STATE.currentPath is now relative
+            const relativePath = file.path.startsWith('english/word/') ? file.path.substring('english/word/'.length) : file.path;
+            const isActive = relativePath === STATE.currentPath;
             html += `
               <div class="file-item ${isActive ? 'active' : ''}" onclick="app.selectFile('${file.path}', '${file.name}')">
                 <span class="file-item-icon">📄</span>
@@ -1995,7 +2158,9 @@
           </div>
         `;
 
-        const { folders, files } = await GitHubApi.fetchFolderContents(path, forceRefresh);
+        // Handle full paths from GitHub API (e.g., "english/word/core" -> "core")
+        const relativePath = path.startsWith('english/word/') ? path.substring('english/word/'.length) : path;
+        const { folders, files } = await GitHubApi.fetchFolderContents(relativePath, forceRefresh);
 
         // Build breadcrumb
         const pathParts = path.split('/');
@@ -2031,7 +2196,9 @@
         // Render files
         if (files.length > 0) {
           files.forEach(file => {
-            const isActive = file.path === STATE.currentPath;
+            // Compare relative paths since STATE.currentPath is now relative
+            const relativePath = file.path.startsWith('english/word/') ? file.path.substring('english/word/'.length) : file.path;
+            const isActive = relativePath === STATE.currentPath;
             html += `
               <div class="file-item ${isActive ? 'active' : ''}" onclick="app.selectFile('${file.path}', '${file.name}')">
                 <span class="file-item-icon">📄</span>
@@ -2070,19 +2237,19 @@
 
       // Show confirmation dialog
       const hasStarted = STATE.cards.length > 0 && STATE.currentIndex > 0;
-      let message = `确定要切换到文件 "${name}" 吗？`;
+      let message = `确定要切换到文件 <span class="highlight">${name}</span> 吗？`;
       if (hasStarted) {
-        message += `\n\n当前文件的学习进度将被保存。`;
+        message += `<br><br>当前文件的学习进度将被保存。`;
       }
 
-      if (confirm(message)) {
-        this.confirmSwitchFile(path);
-      }
+      this.confirmDialog.show(message, () => this.confirmSwitchFile(path));
     }
 
     async confirmSwitchFile(path) {
       try {
-        // Close file panel
+        console.log('📁 confirmSwitchFile called with path:', path);
+
+        // Close file panel immediately
         this.ui.filePanel.classList.remove('open');
 
         // Save current progress before switching
@@ -2093,13 +2260,22 @@
         // Reset state and load new file
         STATE.cards = [];
         STATE.currentIndex = 0;
+        console.log('🔄 About to call loadFile with path:', path);
         await this.loadFile(path);
 
-        // Update file panel to show new active file
-        await this.loadRootFolders();
+        // Update current file info in file panel (without full reload)
+        const fileInfo = document.querySelector('.current-file-info');
+        if (fileInfo) {
+          fileInfo.innerHTML = `
+            <span>📄</span>
+            <span>当前文件: <strong>${STATE.currentPath}</strong></span>
+          `;
+        }
       } catch (e) {
         console.error('切换文件失败:', e);
         this.showToast('切换文件失败: ' + e.message);
+        // Show file panel again on error
+        this.ui.filePanel.classList.add('open');
       }
     }
 
@@ -2170,6 +2346,47 @@
       t.classList.add('show');
       setTimeout(() => t.classList.remove('show'), 2000);
     }
+
+    confirmDialog = {
+      confirmCallback: null,
+
+      show(message, onConfirm) {
+        console.log('🔲 confirmDialog.show called');
+        const overlay = app.ui.confirmDialog;
+        const msgEl = app.ui.dialogMessage;
+        const confirmBtn = app.ui.dialogConfirmBtn;
+
+        // Set message and callback
+        msgEl.innerHTML = message;
+        this.confirmCallback = onConfirm;
+        console.log('🔲 Callback set:', typeof onConfirm);
+
+        // Setup confirm button
+        confirmBtn.onclick = () => {
+          console.log('✅ Confirm button clicked!');
+          // Execute callback FIRST before hiding (hide() sets confirmCallback to null)
+          if (this.confirmCallback) {
+            console.log('🔲 Executing callback...');
+            const callback = this.confirmCallback;
+            this.confirmCallback = null;
+            callback();
+          }
+          this.hide();
+        };
+
+        // Show dialog
+        overlay.classList.add('show');
+      },
+
+      hide() {
+        app.ui.confirmDialog.classList.remove('show');
+        this.confirmCallback = null;
+      },
+
+      cancel() {
+        this.hide();
+      }
+    };
   }
 
   const app = new VocabApp();
