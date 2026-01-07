@@ -19,7 +19,11 @@
 
 ## rule
 
-- v. 判决；统治
+- PE  v. 判决；统治
+    - v. 作出裁决
+    - The deal may be ruled illegal.
+    - ruling= verdict n. 裁决
+        - The court's ruling is a step forward in the struggle against both corruption and official favoritism.
 - n. 规则；统治；惯例
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
@@ -209,7 +213,12 @@
 - powerful adj. 强有力的；有影响力的
 - strength [streŋθ]
     - n. 力量；实力；优势
+    - PE
+        - n. 优点，长处
+        - strength and weakness 优缺点
+        - At first this might seem like a strength that grants the ability to make judgements which are unbiased by external factors.
     - the relative strength 优势
+    - Strength in Numbers 众志成城
     - strengthen [ˈstreŋθn]
         - v. 加强
         - The crash stresses the urgency to **strengthen** security worldwide.

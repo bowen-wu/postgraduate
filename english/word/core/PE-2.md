@@ -173,3 +173,29 @@
 
 - n. 工厂
 - The conflict has been surfacing since 2002，when the corporation bought Vermont's only nuclear power plant,an aging reactor in Vernon.
+
+## row
+
+- n. 行，排；划船
+    - Memorize vocabulary for 21 days <ins>in a row (连续不断的)</ins> in order to make It a true habit.
+- n. 争吵
+    - On May 31st Microsoft set off the row.
+
+## shape
+
+- n. 形状，样子
+- v. 塑造，影响
+    - And ultimately，It is likely to reshape our politics，our culture，and the character of our society for years.
+
+## sentence
+
+- n. 句子
+- n./v. 宣判，判决
+    - be under sentence of death 处以死刑
+    - For example，he theorised that a judge (fearful of appaering too soft on crime)might be more likely to send someone to prison/if he had already sentemced five or six other defendants only to forced community service on that day. 例如，他从理论上推测，如果一位担心对犯罪行为表现得太过仁慈的法官在一天当中已经对五六名被告只判处了强制性社区服务，那么他更有可能会将接下来的被告送进监狱。
+
+## shield
+
+- n. 盾牌
+- v. 保护，庇护
+    - Shielded by third-party payers from the cost of our care，we demand everything that can possibly be done for us，even If it's useless.

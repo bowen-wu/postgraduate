@@ -147,10 +147,15 @@
     - vt. 引发
     - n. （尤指引发不良反应或发展的）起因😔
 - spark
+    - n. 火花
+    - v. 发出火花；点燃
     - vt. 引发
-    - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
+    - PE
+        - v. 导致
+        - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
       passive consumption and active creation.
     - ...it is sure to **spark** intense opposition from the far larger number of motorists who will then be affected.
+    - sparkling 闪耀
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者

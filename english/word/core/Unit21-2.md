@@ -59,6 +59,9 @@
 - dwell [dwel]
     - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
     - Don't <ins>**dwell** on</ins> the past.
+    - PE
+        - v. 细想某事
+        - It wasspecifically to provided city dwellers with spaces forleisurewhere They could experience " a refreshing air."
 - dweller n. 居住者
 - resident
     - n. 居民；住户

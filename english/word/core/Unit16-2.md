@@ -107,8 +107,11 @@
 
 ## upset
 
-- vt. 打乱；使烦恼
+- vt. 使烦恼
 - adj. 失望的
+- PE
+    - v. 打乱，扰乱
+    - But on the more important matter of the Constitution，the decision was an 8-0 defeat for the Administration's effort to upset the balance of power between the federal government and the states.
 - Fishing will **upset** the ecological balance. 😔
 - The decision was an 8-0 defeat for the Administration's effort to
   <ins>**upset** the balance of power(打破权利平衡)</ins> between the federal government and the states.

@@ -18,8 +18,11 @@
 ## sympathy
 
 - n. **同情**
-- **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone
-  else who's going through something hard.
+- **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone else who's going through something hard.
+- PE
+    - n. （情感上）支持，赞同
+        - I'm sure she will be in sympathy with your proposal.
+        - Your humor must be relevant to the audience and should help to show them that you are one of them or that you understand their situation and are in sympathy with their point of view.
 - == compassion [kəmˈpæʃn] n. 怜悯，同情
 - empathy [ˈempəθi]
     - n. **同理心**，共鸣，同情；感同身受
