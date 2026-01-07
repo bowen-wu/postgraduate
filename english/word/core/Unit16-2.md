@@ -39,7 +39,7 @@
 ## react
 
 - vi. 对...做出反应；回应
-- rejection n. 反应；回应
+- reaction n. 反应；回应
 - reactor n. 核反应堆
 
 ## religion

@@ -199,6 +199,7 @@
 - implicit [ɪmˈplɪsɪt]
     - adj. 不直接言明的；内含的
     - == indirect == unclear
+    - Use the adjective **implicit** when you mean that something is understood but **not clearly stated**.
     - implication
         - n. 可能的影响（或作用、结果）；含意
         - ...if the district is essentially giving a pass to students who do not do their homework because of
