@@ -61,7 +61,8 @@
     - Don't <ins>**dwell** on</ins> the past.
     - PE
         - v. 细想某事
-        - It wasspecifically to provided city dwellers with spaces forleisurewhere They could experience " a refreshing air."
+        - It was specifically to provided city dwellers with spaces for leisure where They could experience " a
+          refreshing air."
 - dweller n. 居住者
 - resident
     - n. 居民；住户
@@ -191,7 +192,7 @@
 
 - n. 发生的事情（尤指不寻常的或讨厌的）
 - incidental adj. 附带发生的；作为自然结果的
-- incidentally adv. 顺便说及对
+- incidentally adv. 顺便说；及对
 - coincide [ˌkoʊɪnˈsaɪd]
     - vi. 同时发生
     - coincident [koʊˈɪnsɪdənt]

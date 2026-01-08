@@ -165,6 +165,25 @@
         .workspace {
             flex: 1; padding: 2rem; display: flex; justify-content: center; align-items: center; overflow-y: auto; position: relative;
         }
+        /* File Title Bar (shows current file name above card) */
+        .file-title-bar {
+            width: 100%; max-width: 800px;
+            background: var(--card-bg);
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            display: none; /* Hidden on desktop by default */
+        }
+        .file-title-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         /* Card */
         .card {
             background: var(--card-bg);
@@ -445,6 +464,13 @@
             justify-content: flex-end;
         }
         @media (max-width: 600px) {
+            /* Show file title bar on mobile */
+            .file-title-bar { display: block; }
+
+            /* Simplify header on mobile */
+            .current-file-display { display: none; }
+            .brand { max-width: auto; }
+
             .card { height: 100%; max-height: 100vh; border-radius: 0; }
 
             .card-header { padding: 1rem; }
@@ -539,6 +565,10 @@
         <p>正在深度解析句子与生词...</p>
     </div>
     <div class="workspace">
+        <!-- File Title Bar (shows on mobile) -->
+        <div class="file-title-bar" id="fileTitleBar">
+            <div class="file-title-text" id="fileTitleText"></div>
+        </div>
         <article class="card hidden" id="cardContainer">
             <header class="card-header">
                 <div class="word-title-group">
@@ -591,7 +621,13 @@
     storageKey: 'vocab_master_v8_data',
     cacheKey: 'vocab_master_v8_cache',
     cacheDuration: 24 * 60 * 60 * 1000,  // 24 hours in ms
-    version: 5  // V2: Refactored card types (word|phrase|sentence)
+    version: 5,  // V2: Refactored card types (word|phrase|sentence)
+    // Audio sources priority (local → cambridge → TTS)
+    localAudioBaseUrl: 'https://bowen-wu.github.io/postgraduate/english/audio',
+    corsProxy: 'https://corsproxy.io/?',
+    // Alternative proxies (uncomment if needed):
+    // corsProxy: 'https://api.allorigins.win/raw?url=',
+    // corsProxy: 'https://cors-anywhere.herokuapp.com/',
   };
   const STATE = {
     cards: [],
@@ -754,6 +790,7 @@
       this.activeContextCard = null;
       this.inPhraseList = false;  // Track if we're under "- 词组" list
       this.delayedSentenceCard = null;  // Store sentence card to push after its children
+      this.lastWordCard = null;  // Track the last word/phrase card (before sentences)
     }
 
     /**
@@ -872,6 +909,14 @@
                 // Current line is not a child of the sentence, push the delayed sentence card now
                 this.cards.push(this.delayedSentenceCard);
                 this.delayedSentenceCard = null;
+              } else if (this.activeContextCard && this.activeContextCard.type !== 'sentence') {
+                // Special case: active context is NOT a sentence (e.g., word/phrase)
+                // This means we're moving from a word/phrase to a new sentence
+                // Push the delayed sentence card now
+                if (this.delayedSentenceCard) {
+                  this.cards.push(this.delayedSentenceCard);
+                  this.delayedSentenceCard = null;
+                }
               }
             }
 
@@ -882,6 +927,7 @@
               if (this.isValidWordHeader(content)) {
                 const card = this.createCard(content, 'word');
                 this.cards.push(card);
+                this.lastWordCard = card;  // Track last word/phrase card
                 this.activeContextCard = card;
               } else {
                 // Ignore header (Unit, Numbers, Words, 词组)
@@ -891,6 +937,11 @@
             }
             // 2. List Items
             if (trimmed.startsWith('-')) {
+              // Check indentation level (count leading spaces/tabs before the dash)
+              // IMPORTANT: Calculate this BEFORE using it!
+              const leadingSpaces = line.match(/^(\s*)-/);
+              const indentLevel = leadingSpaces ? leadingSpaces[1].length : 0;
+
               const content = trimmed.substring(1).trim();
 
               // Check for "- 词组" marker (no indentation)
@@ -908,15 +959,35 @@
               // Ignore List Item
               if (this.isIgnoredListItem(content)) return;
 
-              // Check indentation level (count leading spaces/tabs before the dash)
-              const leadingSpaces = line.match(/^(\s*)-/);
-              const indentLevel = leadingSpaces ? leadingSpaces[1].length : 0;
-
               // Special handling: In phrase list
               if (this.inPhraseList && indentLevel > 0) {
                 // All indented items under "- 词组" are phrases
-                const card = this.createCard(content, 'phrase');
-                this.cards.push(card);
+                // Extract Chinese definition if present
+                const chineseMatch = content.match(/[\u4e00-\u9fa5]+/);
+                if (chineseMatch) {
+                  // Has Chinese definition: extract word and Chinese
+                  const chineseStart = content.indexOf(chineseMatch[0]);
+                  const beforeChinese = content.substring(0, chineseStart).trim();
+                  const chinesePart = content.substring(chineseStart).trim();
+
+                  // Clean the English part (remove IPA if any)
+                  let cleanEnglish = beforeChinese.replace(/(\[[^\]]+\]|\/[^\/]+\/)\s*/g, '').trim();
+
+                  // Create phrase card with definition
+                  const card = this.createCard(cleanEnglish, 'phrase');
+                  card.items = [{type: 'def', en: cleanEnglish, cn: chinesePart}];
+                  this.cards.push(card);
+                  this.lastWordCard = card;  // Track last word/phrase card
+                } else {
+                  // No Chinese, just create phrase card
+                  const card = this.createCard(content, 'phrase');
+                  // Add default item
+                  if (card.items.length === 0) {
+                    card.items = [{type: 'def', en: card.word, cn: ''}];
+                  }
+                  this.cards.push(card);
+                  this.lastWordCard = card;  // Track last word/phrase card
+                }
                 return;
               }
 
@@ -924,18 +995,30 @@
               if (this.activeContextCard) {
                 // If indented (nested item), always add to current context card
                 if (indentLevel > 0) {
-                  this.processWithContext(content, this.activeContextCard);
+                  this.processWithContext(content, this.activeContextCard, index);
                 } else {
                   // Same level - could be new word or continue context
-                  this.processWithContext(content, this.activeContextCard);
+                  this.processWithContext(content, this.activeContextCard, index);
                 }
               } else {
-                // Floating Mode (e.g., under ## 024)
-                // Skip definition lines that don't start with a letter
-                if (this.isWordStart(content) && !this.isDefinitionLine(content)) {
+                // Floating Mode (e.g., under ## 024, ## 句式)
+                // Check if it's a sentence FIRST, before checking if it's a word
+                const startsWithUppercase = /^[A-Z]/.test(content);
+                const hasPunctuation = /[,.!?]/.test(content);
+                const looksLikeSentence = startsWithUppercase && (hasPunctuation || content.includes(',') || content.includes('.'));
+
+                if (looksLikeSentence) {
+                  // It's a sentence, use processWithContext to handle it properly
+                  this.processWithContext(content, null, index);
+                } else if (this.isWordStart(content) && !this.isDefinitionLine(content)) {
+                  // It's a word/phrase
                   const newRoot = this.createCard(content, 'word');
-                  this.cards.push(newRoot);
-                  this.activeContextCard = newRoot;
+                  // Check if createCard returned a valid card (not empty word)
+                  if (newRoot.word && newRoot.word.length > 0) {
+                    this.cards.push(newRoot);
+                    this.lastWordCard = newRoot;  // Track last word/phrase card
+                    this.activeContextCard = newRoot;
+                  }
                 }
               }
             }
@@ -978,47 +1061,79 @@
       return /^[a-z]+\.\s*/.test(content);
     }
 
-    processWithContext(content, parent) {
+    processWithContext(content, parent, index) {
+      // Special handling: Pure IPA line (e.g., "- [音标]")
+      // If the line only contains IPA (no word, no Chinese), update parent's IPA
+      const ipaMatchSlash = content.match(/^\/.*\/$/);
+      const ipaMatchBracket = content.match(/^\[.*\]$/);
+      if ((ipaMatchSlash || ipaMatchBracket) && parent) {
+        // This is a pure IPA line, update parent's IPA
+        if (ipaMatchSlash && !parent.ipa) {
+          parent.ipa = ipaMatchSlash[0];
+        } else if (ipaMatchBracket && !parent.ipa) {
+          parent.ipa = ipaMatchBracket[0];
+        }
+        return; // Don't create a new card
+      }
+
       // Special handling: Child of sentence card
       // Sentences only have word/phrase children, never nested sentences
       if (parent && parent.type === 'sentence') {
         // Check if this content is a synonym/antonym (== or Opposite:)
-        // If yes, it should be added to the word BEFORE the sentence, not the sentence itself
         if (/^===?\s+/.test(content)) {
-          // Don't add to sentence, skip it
-          // The synonym/antonym will be ignored because we don't have the original word context
-          // This is a limitation of the current parsing logic
+          // Add to lastWordCard's synonyms, not to the sentence
+          if (this.lastWordCard) {
+            const synonymContent = content.replace(/^===?\s+/, '').trim();
+            this.lastWordCard.synonyms = this.lastWordCard.synonyms || [];
+            this.lastWordCard.synonyms.push({word: synonymContent, def: ''});
+          }
           return;
         }
 
-        // Check if this is a phrase without Chinese (e.g., "scold sb. for sth.")
-        // If it doesn't have Chinese, it's likely related to a previous word, not the sentence
+        // Check if it's a pure definition (starts with pos. and has Chinese, no word)
+        // e.g., "n. 居民；住户"
+        if (/^[a-z]+\.\s+/.test(content) && /[\u4e00-\u9fa5]/.test(content)) {
+          // This is a pure definition line, add to lastWordCard
+          if (this.lastWordCard) {
+            const posMatch = content.match(/^([a-z]+\.)\s+(.+)$/);
+            if (posMatch) {
+              this.lastWordCard.items.push({type: 'def', en: posMatch[1], cn: posMatch[2]});
+            }
+          }
+          return;
+        }
+
+        // Check if this content has Chinese
         const hasChinese = /[\u4e00-\u9fa5]/.test(content);
         if (!hasChinese) {
-          // No Chinese, skip it (it's likely a phrase form that should be with the parent word)
           return;
         }
 
-        // Has Chinese: create as independent card
-        // IMPORTANT: Remove IPA/phonetic symbols and POS BEFORE checking if it's a phrase
-        // e.g., "conquer [ˈkɑːŋkər] vt. 征服" should be treated as a single word, not a phrase
-        let textForCheck = content;
-        // Remove IPA: [ipa] or /ipa/
-        textForCheck = textForCheck.replace(/(\[[^\]]+\]|\/[^\/]+\/)\s*/g, '').trim();
-        // Remove POS at start (e.g., "vt. 征服" -> "征服")
-        const posMatch = textForCheck.match(/^[a-z]+\.\s*/);
-        if (posMatch) {
-          textForCheck = textForCheck.substring(posMatch[0].length).trim();
+        // Has Chinese: Check if it has POS marker (e.g., "dweller n. 居住者")
+        const hasPosInContent = /^[a-zA-Z-]+\s+[a-z]+\./.test(content) ||
+                                 /^[a-zA-Z-]+\s+\[.*?\]\s*[a-z]+\./.test(content);
+
+        if (hasPosInContent) {
+          // Has POS marker: Create as WORD card (always word if has POS)
+          const card = this.createCard(content, 'word');
+          this.cards.push(card);
+          this.lastWordCard = card;
+          this.activeContextCard = card;
+          return;
         }
 
+        // No POS marker: Check if it's a phrase or word
+        // Remove IPA first
+        let textForCheck = content.replace(/(\[[^\]]+\]|\/[^\/]+\/)\s*/g, '').trim();
+
+        // Check if it's a phrase (contains space) or word
         const isPhrase = /\s/.test(textForCheck);
         const cardType = isPhrase ? 'phrase' : 'word';
+
         const card = this.createCard(content, cardType);
-        // For phrase cards without definitions, add default item
-        if (cardType === 'phrase' && card.items.length === 0) {
-          card.items = [{type: 'def', en: card.word, cn: ''}];
-        }
         this.cards.push(card);
+        this.lastWordCard = card;
+        this.activeContextCard = card;
         return;
       }
 
@@ -1164,12 +1279,12 @@
       }
       // Type: Sentence (Deep Parsing)
       // Check if content looks like a sentence:
-      // - Starts with uppercase letter (with optional bold markers or <ins> tag), OR
+      // - Starts with uppercase letter (with optional bold markers, <ins> tag, or quotes), OR
       // - Starts with ... (continuation), OR
       // - Starts with articles (the, a, an) or common sentence starters, OR
       // - Starts with common abbreviations (sb., sth., someone, something), OR
       // - Contains sentence punctuation (comma, period, question mark, exclamation mark)
-      const startsWithUppercase = /^(\*{0,2})?(<ins>)?([A-Z])/.test(content);
+      const startsWithUppercase = /^(\*{0,2})?(<ins>)?["']?([A-Z])/.test(content);
       const startsWithEllipsis = /^\.\.\./.test(content);
       const startsWithArticle = /^(\*{0,2})?(<ins>)?(the|a|an|this|that|these|those|there|here)\b/i.test(content);
       // Add common abbreviations: sb., sth., someone, something, etc.
@@ -1204,11 +1319,13 @@
                 card.ipa = `[${item.ipa}]`;
               }
               this.cards.push(card);
+              this.lastWordCard = card;  // Track last word/phrase card
             } else {
               // If card exists but doesn't have IPA and item has IPA, add it
               if (item.ipa && !card.ipa) {
                 card.ipa = `[${item.ipa}]`;
               }
+              this.lastWordCard = card;  // Update last word card
             }
             // Add definition if it doesn't exist
             // Parse the definition to separate POS from Chinese meaning
@@ -1273,6 +1390,13 @@
         const beforeChinese = content.substring(0, chineseStart).trim();
         const chinesePart = content.substring(chineseStart).trim();
 
+        if (content.includes('dweller')) {
+          console.log(`🔍 [DEBUG] Processing dweller line:`);
+          console.log(`  content: "${content}"`);
+          console.log(`  beforeChinese: "${beforeChinese}"`);
+          console.log(`  chinesePart: "${chinesePart}"`);
+        }
+
         if (beforeChinese) {
           // Remove ** markers from the English part before processing
           let cleanBeforeChinese = beforeChinese.replace(/\*\*/g, '');
@@ -1281,9 +1405,18 @@
           // e.g., "silly [ˈsɪli] adj." -> "silly adj."
           cleanBeforeChinese = cleanBeforeChinese.replace(/(\[[^\]]+\]|\/[^\/]+\/)\s*/g, '').trim();
 
+          if (content.includes('dweller')) {
+            console.log(`  cleanBeforeChinese: "${cleanBeforeChinese}"`);
+          }
+
           // Check if there's a POS (part of speech) pattern: word pos.
           // POS patterns: adj., adv., n., v., vt., vi., prep., conj., etc.
-          const posMatch = cleanBeforeChinese.match(/\s+([a-z]+\.)\s*$/);
+          // The POS can be followed by Chinese or nothing (e.g., "surpassed adj. 可超过的")
+          const posMatch = cleanBeforeChinese.match(/\s+([a-z]+\.)/);
+
+          if (content.includes('dweller')) {
+            console.log(`  posMatch:`, posMatch);
+          }
           let wordPart, posPart;
 
           if (posMatch) {
@@ -1321,6 +1454,7 @@
                 card.items = [{type: 'def', en: wordPart, cn: ''}];
               }
               this.cards.push(card);
+              this.lastWordCard = card;  // Track last word/phrase card
             }
 
             // Add definition with POS and Chinese
@@ -1328,13 +1462,25 @@
             // cn: Chinese translation
             const defEn = posPart || wordPart;
 
-            // If the default item exists and is empty, update it
-            // Otherwise, add a new definition
-            if (card.items.length === 1 && card.items[0].cn === '' && card.items[0].en === wordPart) {
+            // Check if we need to add/update the definition
+            // Case 1: Card has an item from createCard with the same def - don't duplicate
+            // Case 2: Card has empty/default item - update it
+            // Case 3: Card has different items - add new definition
+            const hasMatchingDef = card.items.length > 0 &&
+                                   card.items[0].en === defEn &&
+                                   card.items[0].cn === chinesePart;
+
+            if (hasMatchingDef) {
+              // Already has the correct definition from createCard, don't duplicate
+              console.log(`  -> Card already has correct definition, skipping duplicate`);
+            } else if (card.items.length === 1 && card.items[0].cn === '' && card.items[0].en === wordPart) {
               // Update the default item
               card.items[0] = {type: 'def', en: defEn, cn: chinesePart};
+            } else if (card.items.length === 0) {
+              // No items yet, add the first one
+              card.items.push({type: 'def', en: defEn, cn: chinesePart});
             } else {
-              // Add new definition
+              // Add new definition (different from existing ones)
               card.items.push({type: 'def', en: defEn, cn: chinesePart});
             }
 
@@ -1352,21 +1498,47 @@
       // Determine if it's a phrase (multiple words) or word (single word)
       // IMPORTANT: Remove IPA/phonetic symbols BEFORE checking if it's a phrase!
       // e.g., "deter [dɪˈtɜːr]" should be treated as a single word, not a phrase
-      const ipaMatchSlash = content.match(/\/.*?\//);
-      const ipaMatchBracket = content.match(/\[[^\]]+\]/);
+      const fallbackIpaMatchSlash = content.match(/\/.*?\//);
+      const fallbackIpaMatchBracket = content.match(/\[[^\]]+\]/);
       let textWithoutIpa = content;
-      if (ipaMatchSlash) {
-        textWithoutIpa = content.replace(ipaMatchSlash[0], '').trim();
-      } else if (ipaMatchBracket) {
-        textWithoutIpa = content.replace(ipaMatchBracket[0], '').trim();
+      if (fallbackIpaMatchSlash) {
+        textWithoutIpa = content.replace(fallbackIpaMatchSlash[0], '').trim();
+      } else if (fallbackIpaMatchBracket) {
+        textWithoutIpa = content.replace(fallbackIpaMatchBracket[0], '').trim();
       }
 
-      // Now check if the text (without IPA) contains spaces
-      const isPhrase = /\s/.test(textWithoutIpa);
+      // Check if this is a pure IPA line (no actual word content)
+      // If so, skip creating a card
+      if (!textWithoutIpa || textWithoutIpa.length === 0) {
+        // This is just an IPA line, skip it
+        return;
+      }
+
+      // Check if there's a POS pattern (e.g., "surpassed adj.")
+      // This helps distinguish "surpassed adj." (word) from "housing crisis" (phrase)
+      const posMatch = textWithoutIpa.match(/\s+([a-z]+\.)/);
+      let wordPart = textWithoutIpa;
+      if (posMatch) {
+        // Has POS: extract word part (before POS)
+        wordPart = textWithoutIpa.substring(0, posMatch.index).trim();
+      }
+
+      // Check if it's a phrase (multiple words) or single word
+      const isPhrase = /\s/.test(wordPart);
       const cardType = isPhrase ? 'phrase' : 'word';
+
+      if (content.includes('dweller')) {
+        console.log(`🔍 [DEBUG] Fallback case for dweller:`);
+        console.log(`  content: "${content}"`);
+        console.log(`  textWithoutIpa: "${textWithoutIpa}"`);
+        console.log(`  wordPart: "${wordPart}"`);
+        console.log(`  isPhrase: ${isPhrase}`);
+        console.log(`  cardType: ${cardType}`);
+      }
 
       const card = this.createCard(content, cardType);
       this.cards.push(card);
+      this.lastWordCard = card;  // Track last word/phrase card
       this.activeContextCard = card;
     }
 
@@ -1591,7 +1763,8 @@
       if (/^[a-zA-Z-]+\s+[a-z]+\./.test(wordText)) {
         const parts = wordText.split(/(?=\s[a-z]+\.)/);
         wordText = parts[0].trim();
-        const rest = parts.join(' ').trim();
+        // Use parts[1] directly (the part after the word), not join
+        const rest = parts.length > 1 ? parts[1].trim() : '';
         // Try to split into POS (en) and Chinese (cn)
         // Pattern: "n. （身体或智力上的）残疾"
         const posMatch = rest.match(/^([a-z]+\.)/);
@@ -1655,9 +1828,12 @@
         // Load voices (some browsers need this)
         if (speechSynthesis.onvoiceschanged !== undefined) {
           speechSynthesis.onvoiceschanged = () => {
-            // Voices loaded
+            // Voices loaded, pre-warm the synthesis engine
+            this.prewarmSpeechSynthesis();
           };
         }
+        // Also try to pre-warm immediately if voices are already available
+        this.prewarmSpeechSynthesis();
       }
 
       // Force clear ALL cache on init to avoid old format issues
@@ -1735,6 +1911,13 @@
         const directory = pathParts.length > 0 ? pathParts[0].charAt(0).toUpperCase() + pathParts[0].slice(1) : '';
         const displayText = directory ? `${directory} / ${fileName}` : fileName;
         this.ui.currentFileDisplay.textContent = displayText;
+
+        // Update mobile title bar
+        const fileTitleBar = document.getElementById('fileTitleBar');
+        const fileTitleText = document.getElementById('fileTitleText');
+        if (fileTitleText) {
+          fileTitleText.textContent = displayText;
+        }
 
         this.render();
         this.showToast(`解析完成：${STATE.cards.length} 张卡片`);
@@ -2113,10 +2296,22 @@
         return;
       }
 
-      // For word cards or phrases with Chinese, show standard recall buttons
+      // For word cards or phrases: check if they have Chinese definitions
+      // If no Chinese, show "下一个" button directly
+      const hasChinese = card.items && card.items.some(item =>
+        item.cn && item.cn.trim && item.cn.trim() !== ''
+      );
+
+      if (!hasChinese) {
+        // No Chinese translation: just show next button
+        this.renderNextAction();
+        return;
+      }
+
+      // Has Chinese: show standard recall buttons
       this.ui.actionArea.innerHTML = `
-        <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
         <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
+        <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
       `;
     }
 
@@ -2345,38 +2540,209 @@
     }
 
     /* --- SPEECH --- */
-    playWord(word) {
+    prewarmSpeechSynthesis() {
+      try {
+        // Get voices to trigger initialization
+        const voices = window.speechSynthesis.getVoices();
+
+        // Speak a silent utterance to pre-warm the engine
+        const utterance = new SpeechSynthesisUtterance('');
+        utterance.volume = 0; // Silent
+        window.speechSynthesis.speak(utterance);
+
+        console.log('🔊 Speech synthesis pre-warmed');
+      } catch (e) {
+        console.warn('Failed to pre-warm speech synthesis:', e);
+      }
+    }
+
+    playWord(word, useTTSFallback = false) {
       if (!word) return;
 
-      // Use Web Speech API
+      // Priority: Local Audio → Cambridge Dictionary → Browser TTS
+      if (!useTTSFallback) {
+        // Try local audio first
+        this.playLocalAudio(word).then(() => {
+          console.log('✅ [Local] Successfully played:', word);
+        }).catch(() => {
+          console.log('⚠️ [Local] Not available, trying Cambridge...');
+          // Local audio not available, try Cambridge
+          this.playCambridgeAudio(word).catch((error) => {
+            console.warn('⚠️ [Cambridge] Failed, falling back to TTS:', error);
+            // Both failed, use TTS as last resort
+            this.playWord(word, true);
+          });
+        });
+        return;
+      }
+
+      // Fallback: Use Web Speech API (browser TTS)
       if ('speechSynthesis' in window) {
-        // Cancel any ongoing speech
-        window.speechSynthesis.cancel();
+        try {
+          // Cancel any ongoing speech
+          window.speechSynthesis.cancel();
 
-        const utterance = new SpeechSynthesisUtterance(word);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.9; // Slightly slower for clarity
-        utterance.pitch = 1;
-        utterance.volume = 1;
+          const utterance = new SpeechSynthesisUtterance(word);
+          utterance.lang = 'en-US';
+          utterance.rate = 0.9; // Slightly slower for clarity
+          utterance.pitch = 1;
+          utterance.volume = 1;
 
-        // Try to use American English voice first
-        const voices = window.speechSynthesis.getVoices();
-        const usVoice = voices.find(voice =>
-          voice.lang === 'en-US'
-        ) || voices.find(voice =>
-          voice.lang.startsWith('en-US')
-        ) || voices.find(voice =>
-          voice.lang.startsWith('en') && voice.localService
-        ) || voices.find(voice => voice.lang.startsWith('en'));
+          // Add event handlers for better debugging
+          utterance.onstart = () => {
+            console.log('🔊 [TTS] Playing:', word);
+          };
 
-        if (usVoice) {
-          utterance.voice = usVoice;
+          utterance.onerror = (event) => {
+            console.warn('Speech synthesis error:', event.error);
+            if (event.error === 'canceled') {
+              // User canceled, not really an error
+              return;
+            }
+            this.showToast('语音播放失败');
+          };
+
+          utterance.onend = () => {
+            console.log('✅ [TTS] Finished playing:', word);
+          };
+
+          // Try to use American English voice first
+          const voices = window.speechSynthesis.getVoices();
+
+          // If voices aren't loaded yet, they may be empty
+          // Force load them
+          if (voices.length === 0) {
+            console.warn('No voices available, trying to reload...');
+            // The onvoiceschanged event should trigger later
+            window.speechSynthesis.getVoices();
+          }
+
+          const usVoice = voices.find(voice =>
+            voice.lang === 'en-US'
+          ) || voices.find(voice =>
+            voice.lang.startsWith('en-US')
+          ) || voices.find(voice =>
+            voice.lang.startsWith('en') && voice.localService
+          ) || voices.find(voice => voice.lang.startsWith('en'));
+
+          if (usVoice) {
+            utterance.voice = usVoice;
+            console.log('🎤 [TTS] Using voice:', usVoice.name);
+          } else {
+            console.warn('No English voice found, using default');
+          }
+
+          window.speechSynthesis.speak(utterance);
+        } catch (e) {
+          console.error('Speech synthesis exception:', e);
+          this.showToast('语音播放出错');
         }
-
-        window.speechSynthesis.speak(utterance);
       } else {
         this.showToast('浏览器不支持语音播放');
       }
+    }
+
+    /**
+     * Play local audio from GitHub repository
+     * @param {string} word - The word to pronounce
+     * @returns {Promise} - Resolves when audio plays, rejects on error
+     */
+    async playLocalAudio(word) {
+      try {
+        // Clean the word: remove extra spaces, convert to lowercase
+        const cleanWord = word.trim().toLowerCase().replace(/\s+/g, '-');
+        const firstLetter = cleanWord.charAt(0);
+
+        // Local audio URL (from your GitHub repository)
+        const audioUrl = `${CONFIG.localAudioBaseUrl}/${firstLetter}/${cleanWord}.mp3`;
+
+        console.log('🎵 [Local] Trying:', audioUrl);
+
+        await this.playAudioUrl(audioUrl);
+        return;
+      } catch (error) {
+        console.warn('Local audio failed:', error);
+        throw error;
+      }
+    }
+
+    /**
+     * Play real human pronunciation from Cambridge Dictionary
+     * Uses CORS proxy to avoid cross-origin issues on GitHub Pages
+     * Tries multiple URL patterns and accents (US/UK)
+     * @param {string} word - The word to pronounce
+     * @returns {Promise} - Resolves when audio plays, rejects on error
+     */
+    async playCambridgeAudio(word) {
+      try {
+        // Clean the word: remove extra spaces, convert to lowercase
+        const cleanWord = word.trim().toLowerCase().replace(/\s+/g, '-');
+        const firstLetter = cleanWord.charAt(0);
+
+        // Try multiple URL patterns in order
+        const urlPatterns = [
+          // US pronunciation (primary)
+          `https://dictionary.cambridge.org/us/media/english/us_pron/${firstLetter}/${cleanWord}.mp3`,
+          // UK pronunciation (secondary)
+          `https://dictionary.cambridge.org/us/media/english/uk_pron/${firstLetter}/${cleanWord}.mp3`,
+          // Alternative: sometimes words are in subfolders
+          `https://dictionary.cambridge.org/us/media/english/us_pron/${firstLetter}/${cleanWord}_1.mp3`,
+          `https://dictionary.cambridge.org/us/media/english/uk_pron/${firstLetter}/${cleanWord}_1.mp3`,
+        ];
+
+        // Try each URL until one works
+        for (const originalUrl of urlPatterns) {
+          try {
+            // Use CORS proxy to bypass cross-origin restrictions
+            const proxiedUrl = CONFIG.corsProxy + encodeURIComponent(originalUrl);
+            console.log('🎵 [Cambridge] Trying:', proxiedUrl);
+            await this.playAudioUrl(proxiedUrl);
+            console.log('✅ [Cambridge] Successfully played:', cleanWord);
+            return; // Success, exit
+          } catch (err) {
+            console.log('⚠️ [Cambridge] Failed:', originalUrl, err.message);
+            // Try next URL
+            continue;
+          }
+        }
+
+        // All URLs failed
+        throw new Error('No Cambridge audio available for this word');
+      } catch (error) {
+        console.error('Cambridge audio error:', error);
+        throw error;
+      }
+    }
+
+    /**
+     * Play audio from URL with proper error handling
+     * @param {string} url - Audio URL
+     * @returns {Promise} - Resolves when audio plays
+     */
+    playAudioUrl(url) {
+      return new Promise((resolve, reject) => {
+        const audio = new Audio();
+
+        audio.onloadeddata = () => {
+          console.log('🎵 Audio loaded:', url);
+          audio.play()
+            .then(() => {
+              console.log('▶️ Playing...');
+            })
+            .catch(reject);
+        };
+
+        audio.onerror = (e) => {
+          reject(new Error('Audio load failed'));
+        };
+
+        audio.onended = () => {
+          resolve();
+        };
+
+        audio.src = url;
+        audio.load();
+      });
     }
 
     /* --- STORAGE --- */
