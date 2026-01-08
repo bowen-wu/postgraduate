@@ -17,22 +17,23 @@
 
 ## sympathy
 
-- n. **同情**
-- **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone else who's going through something hard.
-- PE
-    - n. （情感上）支持，赞同
-        - I'm sure she will be in sympathy with your proposal.
-        - Your humor must be relevant to the audience and should help to show them that you are one of them or that you understand their situation and are in sympathy with their point of view.
+- n. 同情；（情感上）支持，赞同
 - == compassion [kəmˈpæʃn] n. 怜悯，同情
+- **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone
+  else who's going through something hard.
+- Your humor must be relevant to the audience and should help to show them that you are one of them or that you
+  understand their situation and are in **sympathy** with their point of view.
 - empathy [ˈempəθi]
-    - n. **同理心**，共鸣，同情；感同身受
+    - n. 同理心，共鸣，同情；感同身受
     - Use **empathy** if you're looking for a noun meaning "<ins>the ability to(做...的能力)</ins>
       <ins>identify with(认同)</ins> another's feelings".
-- sympathetic [ˌsɪmpəˈθetɪk] adj. 同情的
+- sympathetic [ˌsɪmpəˈθetɪk]
+    - adj. 同情的
+    - I'm sure she will be **sympathetic** to your proposal.
 
 ## capital
 
-- n. **资本；资产**；首都
+- n. 资本；资产；首都
 - capitalism [ˈkæpɪtlˌɪzəm]
     - n. 资本主义
     - socialism n. 社会主义
@@ -83,9 +84,8 @@
     - Artificial Intelligence(AI) 人工智能
 - novel [ˈnɑːvl]
     - n. （长篇）小说
-    - PE
-        - adj. 新颖的，新奇的
-        - Sometimes years are required for truly novel discovery claims to be accepted and appreciated.
+    - adj. 新颖的，新奇的
+    - Sometimes years are required for truly **novel** discovery claims to be accepted and appreciated.
     - a **novel** discovery 一个新颖的发明
     - novelist n. 小说家
 - fake adj. 假的
@@ -95,7 +95,7 @@
 - [ɪˈnɔːrməs]
 - adj. 巨大的
 - a enormous/tremendous/vast/grand/gigantic/mega/immense number of
-- And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands protections
+- And so we would call on state lawmakers from Richmond to Albany to consider reviewing their own wetlands protections
   and see for themselves the **enormous** stake involved.
     - see for oneself/see for themselves 亲自确认、自己验证
     - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
@@ -202,19 +202,16 @@
 ## immune
 
 - [ɪˈmjuːn]
-- adj. 有免疫力的；免除的；豁免的；免疫（系统）的；不受影响的
+- adj. 不受影响的；有免疫力的；免除的；豁免的；免疫（系统）的
 - 7 ways to boost your **immune** system
-- PE
-    - adj. 不受影响的
-        - We are immune to advertising.
-        - I become immune to criticism.
-        - be immune to 不受...影响
 - 词组
-    - immune to 对...免疫；不受...影响
+    - (be) immune to 对...免疫；不受...影响
     - be immune from 免于...
+- We are **immune** to advertising.
+- I become **immune** to criticism.
 - Jobs that were once thought to <ins>be **immune** from</ins> automation suddenly become threatened.
     - be thought to be... 人们认为...
-        - = It is thought that...
+        - == It is thought that...
 - immunity n. 免疫力
 - exempt [ɪɡˈzempt]
     - vt. 免除（或豁免）

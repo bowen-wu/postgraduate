@@ -74,7 +74,7 @@
     \subsection{基础概念}
 
     \begin{enumerate}
-        \item 设${x_n}$为以数列，若存在常数$a$，对于任意的$\epsilon > 0$（不论它多么小)，总存在正整数$N$，使得当$n > N$时，$|x_n - a| < \epsilon$，则称常数$a$是数列${x_n}$的极限，或者称数列${x_n}$收敛于$a$，记为
+        \item 设${x_n}$为一数列，若存在常数$a$，对于任意的$\epsilon > 0$（不论它多么小)，总存在正整数$N$，使得当$n > N$时，$|x_n - a| < \epsilon$，则称常数$a$是数列${x_n}$的极限，或者称数列${x_n}$收敛于$a$，记为
         \begin{gather*}
             \lim_{n \to \infty} x_n = a \\
             \forall \epsilon > 0,\ \exists N > 0,\ n > N \Rightarrow |x_n - a| < \epsilon
@@ -87,6 +87,25 @@
             \item 基本不等式法
         \end{itemize}
         \item 设 $\{x_n\}$ 为一数列，若存在常数$a$，对任意 $\varepsilon>0$（无论它多么小），总存在正整数 $N$，使得当 $n>N$ 时，$|x_n - a| < \varepsilon$恒成立，则称数列 $\{x_n\}$ \textbf{收敛于} $a$，或者称常数$a$是数列${x_n}$的极限，记作$\lim\limits_{n\to\infty} x_n = a$
+        \item 数列收敛于$a$的速度问题：设数列$\{x_n\}, \{y_n\}$在$n\to \infty$的过程中同时趋于$a$，记$u_n = |x_n - a|, v_n = |y_n - a|$，且当$n\to \infty$时，$u_n$和$v_n$都是无穷小量。若$I = \lim\limits_{n\to\infty} \displaystyle\frac{u_n}{v_n}$存在，则有
+
+        \begin{itemize}
+            \item \textbf{高阶无穷小}：当$I = 0$时，称$u_n$是$v_n$的高阶无穷小，记作$u_n = o(v_n)$。此时$\{x_n\}$比$\{y_n\}$更快收敛于$a$
+            \item \textbf{同阶无穷小}：当$I = c \neq 0$时（$c$为常数），称$u_n$与$v_n$是同阶无穷小，记作$u_n = O(v_n)$。此时$\{x_n\}$与$\{y_n\}$以相同速度收敛于$a$
+            \item \textbf{等价无穷小}：当$I = 1$时，称$u_n$与$v_n$是等价无穷小，记作$u_n \sim v_n$。这是同阶无穷小的特例
+            \item \textbf{低阶无穷小}：当$I = \infty$时，称$u_n$是$v_n$的低阶无穷小（或$v_n$是$u_n$的高阶无穷小）。此时$\{x_n\}$比$\{y_n\}$更慢收敛于$a$
+        \end{itemize}
+
+        \begin{analysisbox}[示例]
+            设$x_n = \dfrac{1}{n}$，$y_n = \dfrac{1}{\sqrt{n}}$，$\lim\limits_{n\to \infty} x_n = \lim\limits_{n\to \infty} y_n = 0$，则
+            \[
+                I = \lim\limits_{n\to\infty} \dfrac{\left|\dfrac{1}{n} - 0\right|}{\left|\dfrac{1}{\sqrt{n}} - 0\right|}
+                = \lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n}}{\dfrac{1}{\sqrt{n}}}
+                = \lim\limits_{n\to\infty} \dfrac{1}{\sqrt{n}}
+                = 0
+            \]
+            故$\dfrac{1}{n} = o\!\left(\dfrac{1}{\sqrt{n}}\right)$，即$x_n = \dfrac{1}{n}$比$y_n = \dfrac{1}{\sqrt{n}}$更快收敛于$0$。
+        \end{analysisbox}
     \end{enumerate}
 
     \subsection{收敛数列的性质}
@@ -272,6 +291,7 @@
             \]
             \item {\color{red}{TODO: 证}}
         \end{itemize}
+        \item 极限定义中$\epsilon$的含义：$\epsilon$必须是不依赖于$n$的任意小正数。若$\epsilon$与$n$有关，相当于对收敛速度提出了额外要求，而极限定义并不限制收敛速度
     \end{enumerate}
 
 \end{document}

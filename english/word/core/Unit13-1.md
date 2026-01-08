@@ -239,8 +239,7 @@
     - adj. 怀疑的
     - be skeptical about... 对...持怀疑态度
     - ...people who <ins>were</ins> at first <ins>**skeptical** about</ins> express delivery business service now become
-      convinced that it is
-      safe and reliable.
+      convinced that it is safe and reliable.
     - skepticism/scepticism [ˈskɛptɪˌsɪzəm] n. 怀疑主义；怀疑态度 😔
 - challenge
     - vt. 对...质疑；向...提出挑战
