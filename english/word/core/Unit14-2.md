@@ -130,6 +130,7 @@
     - inconsistent
         - adj. 反复无常的；不一致的
         - ...have proved to be **inconsistent**.
+        - We had a terrific start to the season, but recently we've been **inconsistent**.
     - consistently adv. 持续地
 - persist [pərˈsɪst]
     - vi. 持续存在

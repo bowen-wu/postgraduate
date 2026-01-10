@@ -135,7 +135,7 @@
     - adj. 固定的；连续发生的；持续不断的；
         - == continuous
     - n. 恒定物
-    - What keeps life fascinating is the **constant** creativity of the soul. 
+    - What keeps life fascinating is the **constant** creativity of the soul.
     - constantly adv. 始终
 - perpetuate [pərˈpetʃueɪt] 😔
     - v. 使继续；使永久化；使长久（尤指不好的事物）
@@ -243,9 +243,9 @@
         - headlong retreat 急剧的、失控式的退却
 - expert [ˈekspɜːrt] n. 专家
 - specialist [ˈspeʃəlɪst]
-    - n. 专家；
-        - == expert
+    - n. 专家
     - adj. 专业的
+    - == expert
     - Yet only one of his books is now in print，and his <ins>vast body of/oceans of(海量)</ins> writings on music is
       unknown <ins>save to/except(除了)</ins> **specialists**.
 
