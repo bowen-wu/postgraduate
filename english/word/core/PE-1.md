@@ -73,107 +73,81 @@
 - A turbulent business environment also has senior managers cautious of letting vague pronouncements **cloud** their
   reputations.
 
-## craft
-
-- n. 手艺，工艺
-- craftsmanship 工匠精神
-    - Swiss army knife embodies Swiss craftsmanship.
-- v. 精心制作
-    - She crafted the chair lovingly.
-
-## legacy
-
-- n. 遗赠，遗产
-- 遗志，遗留精神
-- Now it's time for us to continue your legacy.
-- Planning documents pledged that the great legacy of the Games would be to lever a nation of sport lovers away from
-  their counches.
-
-## curb
-
-- n. 路源；勒马绳
-- v./n. 限制，控制
-    - He curbed his temper.
-
 ## fashion
 
-- n. 时尚
-- n. 方式
-    - It can also refer to a way something is done, as In "We train dogs in a certain fashion."
+- n. 时尚；方式
 - v. 制定，建造
-    - We fashioned a shelter out of rocks and mud.
-    - Arizona had attempted to fashion state policies that ran parallel to the existing federal ones.
+- It can also refer to a way something is done, as in "We train dogs in a certain **fashion**."
+- To **fashion** something means to build it, as in "We **fashioned** a shelter out of rocks and mud."
+- Arizona had attempted to **fashion** state policies that ran parallel to the existing federal ones.
 
 ## fetch
 
-- v. 取来，接来
-    - To fetch something is to go and get it.
-- v. 卖得（钱）
-    - <ins>All but two (除了)</ins>pieces sold, fetching more than $70m,a record for a sale by a single artist.
+- v. 取来，接来；卖得（钱）
+- To **fetch** something is to go and get it.
+- If you sell something for a good price, you can **fetch**, or bring in, a decent amount of money.
+- <ins>All but(除了)</ins>two pieces sold, **fetching** more than $70m, a record for a sale by a single artist.
 
 ## fold
 
-- v. 折叠；倒闭
-    - He folded the paper carefully.
+- v. 折叠；倒闭；屈服，抵挡不住
 - n. 褶皱
-- v. 屈服，抵挡不住
-    - a team that never folded under pressure
+- He **folded** the paper carefully.
+- a team that never **folded** under pressure
+- The IASB says it does not want to act without overall planning, but the pressure to fold when it completes its
+  reconstruction of rules later this year is strong.
 
 ## fuel
 
+- v. 刺激；推动；煽动
 - n. 燃料
 - fossil fuel 化石燃料
 - biofuel 生物燃料
-- v. 刺激；推动；煽动
-- You'd think this might fuel the efficiency mind-set,but in fact,Eberle notes,such ritualistic behaviour helps us "step
-  outside time's flow"into "soul time,"
+- A teacher assigns readings to **fuel** meaningful class discussion.
+- You'd think this might **fuel** the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps
+  us "step outside time's flow" into "soul time".
 
 ## game
 
-- n. 游戏；比赛
-- n. 猎物
-- Wild animals that you hunt and eat are called game.
-- <ins>Time was when （曾几何时）</ins>biologists somewhat overworked the evidence that thest creatures preserve the
-  health of game by killing the physically weak,or that they *prey* only *on* "worthless"species.
+- n. 猎物；游戏；比赛
+- Wild animals that you hunt and eat are called **game**.
+- <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these creatures preserve the
+  health of **game** by killing the physically weak, or that they prey only on "worthless" species.
 
 ## gift
 
 - n. 礼物
 - n. 天赋
-- He has a gift for languages.
+- Yesterday is history, tomorrow is a mystery, but today is a **gift**, that is why it's called present.
+- He has a **gift** for languages.
+- "So few authors have brains enough or literary **gift** enough to keep their own end up in journalism", Newman
+  wrote, "that I am tempted to define journalism as a term of contempt applied by writers who are not red to
+  writers who are".
 
 ## ground
 
-- n. 地面
-- n. 根据，理由
-    - Worries about automation are in fact groundless.
-    - But There are few places where clients have more grounds for complaint than America
-
-## guide
-
-- v. 指导
-    - guide sb. to do sth.
-- n. 向导；指南
-- n. 准则
-    - As a rough guide, a normal adult needs to drink eight glasses of water a day.
-    - To rough marking success used To be that you got what you paid for.
+- n. 根据，理由；地面；范围
+- If you are too formal, people won't be at easy around you. Act too casual and people may not take you seriously. Aim
+  for the middle **ground**!
+- Worries about automation are in fact **groundless**.
+- But there are few places where clients have more **grounds** for complaint than America
 
 ## fan
 
 - n. 风扇；粉丝
-- v. 给...扇风
-    - She would have to wait in the truck, fanning herself with a piece of cardboard.
-- v. 煽动，激起
-    - His writings fanned the flames of hatred.
-    - Favoritism in official access can fan public perceptions of corruption.
+- v. 给...扇风；煽动，激起
+- She would have to wait in the truck, **fanning** herself with a piece of cardboard.
+- His writings **fanned** the flames of hatred.
+- Favoritism in official access can **fan** public perceptions of corruption.
 
 ## handsome
 
 - adj. 英俊的
 - adj. 可观的，相当大的
-    - a handsome reward
-    - a handsome number of votes
-    - The report, makes heavy reading for publishers who have, so far, made handsome profits.
+- **Handsome** is always a compliment, an admiring way of describing someone or something.
+- a handsome reward
+- a handsome number of votes
+- The report makes heavy reading for publishers who have, so far, made **handsome** profits.
 
 ## hit
 

@@ -114,13 +114,17 @@
 - craft
     - vt. 精心制作
     - n. 技艺；技巧；小船
+    - She **crafted** the chair lovingly.
     - As Cline is the first to note, it *took* Beaumont decades to perfect her **craft**; her example can't be
       <ins>knocked off(抄袭，复制)</ins>.
+    - Another approach to getting more done in less time is to rethink how you prioritise your day—in particular how we
+      **craft** our to-do lists.
     - craftsman
         - n. 工匠; 手艺人; 名匠; 技工
         - craftsmanship
             - n. 技术，技艺; 工力
             - craftsmanship spirit 工匠精神
+            - Swiss army knife embodies Swiss **craftsmanship**.
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
 
 ## deal

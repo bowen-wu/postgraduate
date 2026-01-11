@@ -63,12 +63,15 @@
         - lame adj. 跛的，瘸的，站不住脚的，蹩脚的
 - dismiss
     - v. 解散；解雇
+    - vt. 不予考虑；（法律）不受理(PE) 😔
     - If you are **dismissed** from your job, it means you've been fired.
         - be dismissed from one's job 被雇主正式解除雇佣关系
-    - PE
-        - vt. 不予考虑；（法律）不受理 😔
-        - Don't **dismiss** that possibility entirely.
-        - He just laughed and **dismissed** my proposal as unrealistic.
+    - "Don't **dismiss** me!" is something you say when the person you're talking to is not taking you and your comments
+      seriously.
+    - Don't **dismiss** that possibility entirely.
+    - He just laughed and **dismissed** my proposal as unrealistic.
+    - President Trump has underlined fossil fuels—especially coal—as the path to economic growth. In the recent speech
+      in lowa, he **dismissed** wind power as an unreliable energy source.
 - quit v. 离开（工作职位、学校等）；停止
 
 ## elegant
@@ -153,8 +156,8 @@
         - be inferior to 次于...
     - inferiority [ɪnˌfɪriˈɔrəti] n. 低等
 - senior
-  - adj. 级别（或地位）高的
-  - n. 高年级学生
+    - adj. 级别（或地位）高的
+    - n. 高年级学生
 - humble [ˈhʌmbl]
     - vt. 使谦恭
     - adj. 谦逊的

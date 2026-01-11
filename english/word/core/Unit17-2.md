@@ -33,8 +33,10 @@
     - vt. 继承（金钱、财产等）
     - inheritage n. 遗产（指国家或社会长期形成的历史、传统和特色）
 - legacy [ˈleɡəsi]
-    - n. （事件或历史的）遗留影响
+    - n. （事件或历史的）遗留影响；遗赠，遗产
     - Now it's time for us to continue your **legacy**.
+    - Planning documents pledged that the great **legacy** of the Games would be to lever a nation of sport lovers away
+      from their couches.
 - innate [ɪˈneɪt] adj. （品质、感情等）天生的
 - inborn adj. 天生的
 - intrinsic [ɪnˈtrɪnsɪk] adj. 固有的，内在的

@@ -111,7 +111,8 @@
 - adj. 失望的
 - PE
     - v. 打乱，扰乱
-    - But on the more important matter of the Constitution，the decision was an 8-0 defeat for the Administration's effort to upset the balance of power between the federal government and the states.
+    - But on the more important matter of the Constitution，the decision was an 8-0 defeat for the Administration's
+      effort to upset the balance of power between the federal government and the states.
 - Fishing will **upset** the ecological balance. 😔
 - The decision was an 8-0 defeat for the Administration's effort to
   <ins>**upset** the balance of power(打破权利平衡)</ins> between the federal government and the states.
@@ -146,7 +147,10 @@
     - vt. 包含；欣然接受(PE)
     - n. 拥抱 🙂
     - Believe it or not, a warm **embrace** might even help you avoid getting sick this winter.
-    - Marketers have **embraced** the two-step flow because...
+    - Marketers have **embraced** the two-step flow because it suggests that if they just find and influence the
+      influentials, those selected people will do most of the work for them.
+    - You might **embrace** your sweetheart, or even changes in technology.
+    - If you can't erase it, **embrace** it.
 
 ## generous
 

@@ -127,9 +127,12 @@
     - *Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的)* investors, who demand high quarterly profits from companies, can
       **hinder** a firm's efforts to invest in long-term research or to build up customer *loyalty([ˈlɔɪəlti] n. 忠诚)*.
 - curb
-    - vt./n. 抑制，控制
+    - vt. 抑制，控制
+    - n. 限制，控制；路源；勒马绳
     - == limit
     - They argue that government action is necessary to **curb** Britain's *addiction(n. 嗜好)* to unhealthy food...
+    - The key messages that have been put together for World Environment Day do include a call for governments to enact
+      legislation to **curb** single-use plastics.
 - barrier n. 障碍
 - obstacle [ˈɑːbstəkl]
     - n. 障碍

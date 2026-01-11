@@ -22,7 +22,7 @@
 - [pri'zent] vt. 提出
 - ['preznt] adj. 当前的
 - n. 目前；现在；礼物
-- Yesterday is history. Tomorrow is a mystery. But today is a gift. That is why it's called **present**.
+- Yesterday is history, tomorrow is a mystery, but today is a gift, that is why it's called **present**.
 - presently adv. 现在，目前；不久
 - presence
     - n. 出席；存在
@@ -83,9 +83,13 @@
 - v. 弄清楚
 - n. （重要）人物（PE）；（尤指官方资料中的）**数字**；身材； 形状； 人像
 - figure out 弄清楚/理解/解决/想明白
+- Anything with form has a certain shape, or **figure**.
 - Today the **figure** is more than 25% and growing rapidly.
 - Americans no longer expect public **figures**, whether in speech or in writing to command the English language with
   skill and gift.
+- The movement is supported by three key **figures**.
+- Among the commission's 51 members are top-tier-university presidents, scholars, lawyers, judges, and business
+  executives, as well as prominent **figures** from diplomacy, filmmaking, music and journalism.
 - reckon [ˈrekən]
     - v. 计算；估算；认为；把...看做
     - reckon/regard/view/see A as B 把A看做B

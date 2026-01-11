@@ -19,19 +19,20 @@
 
 ## cover
 
-- vt. 报道；包括；足以支付；遮盖
+- vt. （新闻）报道；包括；足以支付；遮盖
 - n. 封面
 - cover the costs 覆盖成本
     - == pay
 - cover me 掩护我
 - 词组
     - cover up 遮盖；隐藏
-- PE
-    - v. （新闻）报道
-    - The BBC will cover all the major games of the tournament.
+- The BBC will **cover** all the major games of the tournament.
 - Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
 - It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 引人深思的)* magazine **cover**
   story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
+- I **covered** my exit by claiming "I wanted to spend more time with my family".
+- In those far-off days, it was taken for granted that the critics of major papers would write in detail and at length
+  about the events they **covered**.
 - discover
     - vt. 发现；发明
     - discovery
@@ -77,8 +78,10 @@
 ## criticism
 
 - [ˈkrɪtɪsɪzəm]
-- n. 评论（PE）；批评，指责
-- Critics who review books and movies consider their reviews to be criticism，whether they're positive or negative.
+- n. 评论；批评，指责
+- Critics who review books and movies consider their reviews to be **criticism**, whether they're positive or negative.
+- It is difficult to the point of impossibility for the average reader under the age of forty to imagine a time when
+  high-quality arts **criticism** could be found in most big-city newspapers.
 - Moreover, the amateur tradition in music **criticism** has been in *headlong(adv. 快速地)* retreat.
 - arts criticism 艺术评论
 - critic n. 批评者；评论家

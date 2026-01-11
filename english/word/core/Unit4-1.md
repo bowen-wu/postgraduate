@@ -215,8 +215,12 @@
 - misleading adj. 误导的
 - guide
     - vt. 指导
-    - n. 指南；指导者
+    - n. 指南；指导者；向导；准则
     - == lead sb. to do sth.
+    - guide sb. to do sth.
+    - We hired a local **guide** to get us across the mountains.
+    - As a rough **guide**, a normal adult needs to drink eight glasses of water a day.
+    - The rough **guide** to marketing success used to be that you got what you paid for.
     - guidance n. 指导
     - guideline
         - n. 指导准则
