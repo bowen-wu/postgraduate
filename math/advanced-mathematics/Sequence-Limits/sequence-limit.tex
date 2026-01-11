@@ -86,7 +86,6 @@
             \item 找最值
             \item 基本不等式法
         \end{itemize}
-        \item 设 $\{x_n\}$ 为一数列，若存在常数$a$，对任意 $\varepsilon>0$（无论它多么小），总存在正整数 $N$，使得当 $n>N$ 时，$|x_n - a| < \varepsilon$恒成立，则称数列 $\{x_n\}$ \textbf{收敛于} $a$，或者称常数$a$是数列${x_n}$的极限，记作$\lim\limits_{n\to\infty} x_n = a$
         \item 数列收敛于$a$的速度问题：设数列$\{x_n\}, \{y_n\}$在$n\to \infty$的过程中同时趋于$a$，记$u_n = |x_n - a|, v_n = |y_n - a|$，且当$n\to \infty$时，$u_n$和$v_n$都是无穷小量。若$I = \lim\limits_{n\to\infty} \displaystyle\frac{u_n}{v_n}$存在，则有
 
         \begin{itemize}
@@ -155,10 +154,19 @@
             =
             \lim_{n\to\infty} a_n.
         \]
-        \item 海涅定理（归结原则）: 设 $f(x)$ 在$\mathring{U}(x_0,\delta)$内有定义，则$\lim\limits_{x\to x_0} f(x) = A$存在 $\Leftrightarrow$ 对任何$\mathring{U}(x_0,\delta)$内以$x_0$为极限的数列$\{x_n\}(x_n \neq x_0)$，极限$\lim\limits_{x\to x_0} f(x_n) = A$存在
+        \item 海涅定理（归结原则）: 设 $f(x)$ 在$\mathring{U}(x_0,\delta)$内有定义，则$\lim\limits_{x\to x_0} f(x) = A$存在 $\Leftrightarrow$ 对任何$\mathring{U}(x_0,\delta)$内以$x_0$为极限的数列$\{x_n\}(x_n \neq x_0)$，极限$\lim\limits_{x\to x_0} f(x_n) = A$存在（\textbf{在极限存在的条件下，函数极限和数列极限可以相互转化}）
         \begin{itemize}
             \item 当$x\to 0$时，取$x_n = \displaystyle\frac{1}{n}$，若$\lim\limits_{x\to 0} f(x) = A$，则$\lim\limits_{n\to \infty} f(\displaystyle\frac{1}{n}) = A$
-            \item 当$x\to +\infty$时，取$x_n = n$，若$\lim\limits_{x\to +\infty} f(x) = A$，则$\lim\limits_{n\to \infty} f(n) = A$
+            \item 当$x\to +\infty$时，取$x_n = n$，若$\lim\limits_{x\to +\infty} f(x) = A$，则$\lim\limits_{n\to \infty} f(n) = A$。
+            \begin{analysisbox}[Case]
+                \[
+                    \lim_{n\to\infty}\frac{\ln n}{n}
+                    = \lim_{x\to+\infty}\frac{\ln x}{x}
+                    \overset{\text{洛必达}}=
+                    \lim_{x\to+\infty}\frac{\displaystyle\frac{1}{x}}{1}
+                    = 0
+                \]
+            \end{analysisbox}
             \item 当$x\to a$时，且$x_n \neq a$时，若$\lim\limits_{x\to a} f(x) = A$，则$\lim\limits_{n\to \infty} f(x_n) = A$
         \end{itemize}
         \item 单调有界准则: 若数列${x_n}$单调增加（减少）且有上界（下界），则$\lim\limits_{x\to \infty} x_n$存在
@@ -292,6 +300,15 @@
             \item {\color{red}{TODO: 证}}
         \end{itemize}
         \item 极限定义中$\epsilon$的含义：$\epsilon$必须是不依赖于$n$的任意小正数。若$\epsilon$与$n$有关，相当于对收敛速度提出了额外要求，而极限定义并不限制收敛速度
+        \begin{analysisbox}[示例]
+            \begin{gather*}
+                \lim_{n \to \infty} a_n = a \\
+                \Rightarrow \forall \epsilon > 0,\ \exists N > 0,\ n > N:\ |a_n - a| < \epsilon \\
+                \Rightarrow ||a_n| - |a|| \leq |a_n - a| < \epsilon \quad (\text{由绝对值不等式}) \\
+                \Rightarrow \lim_{n \to \infty} |a_n| = |a|
+                \Rightarrow |a| - \epsilon < |a_n| < |a| + \epsilon
+            \end{gather*}
+        \end{analysisbox}
     \end{enumerate}
 
 \end{document}

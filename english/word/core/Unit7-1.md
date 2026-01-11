@@ -275,8 +275,8 @@
 - count
     - vt. 认为；把...算入
     - vi. 数数；有价值
-        - == matter
-        - It **matters/counts** a lot 这很重要
+    - == matter
+    - It **matters/counts** a lot 这很重要
     - 词组
         - count backward 倒数
         - count on 指望，依靠
