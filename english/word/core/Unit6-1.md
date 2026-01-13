@@ -73,8 +73,9 @@
 - prone [proʊn]
     - adj. 有做（坏事）的倾向的；(-prone)有...倾向的
     - == inclined
-    - Another nationwide concern is <ins>**whether** public funds from other agencies are going into construction in
-      **fire-prone districts**</ins>.
+    - be prone to n./doing sth 有...的倾向/容易...
+    - Another nationwide concern is whether public funds from other agencies are going into construction in
+      **fire-prone** districts.
 - tide [taɪd]
     - n. 潮；潮流
     - Time and tide wait for no man.
