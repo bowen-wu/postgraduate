@@ -841,7 +841,11 @@
    *   5. 其他 → sentence
    */
   class MarkdownParser {
- constructor(text) {
+    // Valid POS (Part of Speech) markers - using Set for O(1) lookup
+    static POS_MARKERS = new Set([
+      'n.', 'v.', 'vt.', 'vi.', 'adj.', 'adv.', 'prep.', 'conj.', 'int.', 'pron.', 'art.', 'num.']);
+
+    constructor(text) {
       this.lines = text.split('\n');
       this.cards = [];
       this.inPhraseList = false;  // Track if we're under "- 词组" marker
@@ -911,8 +915,13 @@
               continue;
             }
 
-            // Process this list item
-            this.processListItem(line, indentLevel, content, i);
+            // Process this list item and get the last line index (if any)
+            const lastLineIndex = this.processListItem(line, indentLevel, content, i);
+            if (lastLineIndex !== null && lastLineIndex !== undefined && lastLineIndex > i) {
+              // Skip to the last processed line (children have already been handled)
+              i = lastLineIndex;
+              if (this.debug) console.log(`[DEBUG] Main loop: Skipping to line ${lastLineIndex}`);
+            }
           }
 
           i++;
@@ -928,6 +937,7 @@
 
     /**
      * Process a single list item
+     * @returns {number|undefined} The last line index processed (for sentences), or undefined for other card types
      */
     processListItem(line, indentLevel, content, lineIndex) {
       if (this.debug) {
@@ -939,28 +949,28 @@
       if (this.isSynonymMarker(content)) {
         if (this.debug) console.log(`[DEBUG] → Synonym marker`);
         this.addSynonymToParent(content);
-        return;
+        return undefined;
       }
 
       // Rule 2: Check if it's a pure POS line (belongs to parent)
       if (this.isPurePosLine(content)) {
         if (this.debug) console.log(`[DEBUG] → Pure POS line, adding to parent`);
         this.addPosToParent(content);
-        return;
+        return undefined;
       }
 
       // Rule 3: Check if it's a pure IPA line (belongs to parent)
       if (this.isPureIpaLine(content)) {
         if (this.debug) console.log(`[DEBUG] → Pure IPA line, adding to parent`);
         this.addIpaToParent(content);
-        return;
+        return undefined;
       }
 
       // Rule 4: Check for "词组" marker (at any level)
       if (content === '词组') {
         if (this.debug) console.log(`[DEBUG] → Phrase list marker`);
         this.inPhraseList = true;
-        return;
+        return undefined;
       }
 
       // Rule 5: Exit phrase list mode on level-0 items
@@ -970,10 +980,13 @@
       }
 
       // Rule 6: Check if we're in phrase list (and indented)
-      if (this.inPhraseList && indentLevel > 0) {
+      // But only if content doesn't have POS marker (POS means it's a word, not a phrase)
+      if (this.inPhraseList && indentLevel > 0 && !this.hasPosMarker(content)) {
         if (this.debug) console.log(`[DEBUG] → Creating phrase card (in phrase list)`);
-        this.createPhraseCard(content);
-        return;
+        const card = this.createPhraseCard(content);
+        this.cards.push(card);
+        if (this.debug) console.log(`[DEBUG] Created phrase card: "${card.word}"`);
+        return undefined;
       }
 
       // Rule 7: Determine card type
@@ -982,16 +995,24 @@
 
       // Create the card
       if (cardType === 'sentence') {
-        this.processSentence(content, indentLevel, lineIndex);
+        const lastLineIndex = this.processSentence(content, indentLevel, lineIndex);
+        if (this.debug && lastLineIndex !== null && lastLineIndex > lineIndex) {
+          console.log(`[DEBUG] Sentence processing ended at line ${lastLineIndex}`);
+        }
+        return lastLineIndex;
       } else if (cardType === 'word') {
         const card = this.createWordCard(content, indentLevel);
         this.cards.push(card);
         if (this.debug) console.log(`[DEBUG] Created word card: "${card.word}"`);
+        return undefined;
       } else if (cardType === 'phrase') {
         const card = this.createPhraseCard(content);
         this.cards.push(card);
         if (this.debug) console.log(`[DEBUG] Created phrase card: "${card.word}"`);
+        return undefined;
       }
+
+      return undefined;
     }
 
     /**
@@ -1007,8 +1028,19 @@
       // Check if content has IPA (word with pronunciation only)
       if (this.hasIpaMarker(content)) return 'word';
 
-      // Check if first child has POS (规则4: firstChildHasPos → word)
+      // Check if first child has POS (e.g., "inadequate" has child "adj. 不够的")
       if (this.firstChildHasPos(content, indentLevel)) return 'word';
+
+      // 规则5d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
+      // 注意：只针对"句子"的子级，不针对"单词"的子级
+      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
+      const isChild = this.parentCard && this.parentLevel < indentLevel;
+      if (isChild && hasChinese && !this.hasPosMarker(content)) {
+        // 只当父级是 sentence 时，才判断为 phrase
+        if (this.parentCard.type === 'sentence') {
+          return 'phrase';
+        }
+      }
 
       // Otherwise, it's a sentence
       return 'sentence';
@@ -1016,6 +1048,7 @@
 
     /**
      * Process sentence - extract words/phrases and create sentence card
+     * @returns {number} The last line index processed (including children), or null if no children
      */
     processSentence(content, indentLevel, lineIndex) {
       const extractedCards = [];
@@ -1048,15 +1081,18 @@
           }
 
           // If deeper indent, check if it's a real child card or just continuation
-          // Real child cards have: POS markers, "词组", synonyms, or specific patterns
-          // Continuation lines have: plain text, <ins>, *word()* patterns
+          // Real child cards have: POS markers, "词组", synonyms, Chinese text, or specific patterns
+          // Continuation lines have: plain English text only
           const lineContent = trimmed.substring(1).trim();
+          const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(lineContent);
           const isRealChild =
             this.isPurePosLine(lineContent) ||
             this.isPureIpaLine(lineContent) ||
             this.isSynonymMarker(lineContent) ||
             lineContent === '词组' ||
-            (this.hasPosMarker(lineContent) && !lineContent.includes('<ins>') && !lineContent.includes('*'));
+            (this.hasPosMarker(lineContent) && !lineContent.includes('<ins>') && !lineContent.includes('*')) ||
+            // 🔧 FIX: Lines with Chinese are child cards (phrases), not continuation lines
+            hasChinese;
 
           if (isRealChild) {
             // This is a real child card, stop merging
@@ -1105,10 +1141,24 @@
       // Step 3: Extract <ins>phrase</ins> patterns
       clean = this.extractInsPhrases(clean, extractedCards);
 
-      // Step 4: Process children (extracted words/phrases go before sentence)
+      // Step 4: Create sentence card FIRST (so parentCard is set before processing children)
+      // This ensures children can correctly detect they are children of a sentence
+      const sentenceCard = {
+        id: `card_${this.cardCounter++}`,
+        word: clean.substring(0, 50) + (clean.length > 50 ? '...' : ''),
+        type: 'sentence',
+        fullText: clean,  // Required for rendering (with Chinese translations)
+        items: []
+      };
+
+      // Set parentCard NOW so children can detect they are under a sentence
+      this.parentCard = sentenceCard;
+      this.parentLevel = indentLevel;
+
+      // Step 5: Process children (extracted words/phrases go before sentence)
       // ⚠️ Skip merged lines when processing children
       this.pendingSynonyms = [];  // Reset for this sentence
-      const childrenCards = this.processChildren(indentLevel, lineIndex, mergedLines);
+      const { children: childrenCards, lastLineIndex } = this.processChildren(indentLevel, lineIndex, mergedLines);
       extractedCards.push(...childrenCards);
 
       // Add extracted cards before the sentence
@@ -1116,7 +1166,7 @@
         this.cards.push(card);
       });
 
-      // Step 5: Split English and Chinese
+      // Step 6: Split English and Chinese
       // First, remove all (中文) patterns from the sentence for clean English text
       // This handles cases like: "... track down(追查到) kids ..." -> "... track down kids ..."
       const cleanEn = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
@@ -1137,23 +1187,19 @@
 
       console.log('Sentence split:', { en, cn });
 
-      // Create sentence card
-      const sentenceCard = {
-        id: `card_${this.cardCounter++}`,
-        word: clean.substring(0, 50) + (clean.length > 50 ? '...' : ''),
-        type: 'sentence',
-        fullText: clean,  // Required for rendering (with Chinese translations)
-        items: [{type: 'sentence', en: en, cn: cn}]
-      };
+      // Update the pre-created sentence card with the split en/cn
+      sentenceCard.items = [{type: 'sentence', en: en, cn: cn}];
 
       // Add synonyms if any
       if (this.pendingSynonyms && this.pendingSynonyms.length > 0) {
         sentenceCard.synonyms = this.pendingSynonyms.map(word => ({word}));
       }
 
+      // Push the sentence card to the cards array
       this.cards.push(sentenceCard);
-      this.parentCard = sentenceCard;
-      this.parentLevel = indentLevel;
+
+      // Return the last line index processed (so main loop can skip children)
+      return lastLineIndex;
     }
 
     /**
@@ -1161,6 +1207,7 @@
      * @param {number} parentIndentLevel - Indent level of parent line
      * @param {number} lineIndex - Index of parent line
      * @param {Array} skipLines - Array of line indices to skip (already merged)
+     * @returns {Object} { children: Array, lastLineIndex: number } - Last line index is the last line processed (i - 1 after loop exits)
      */
     processChildren(parentIndentLevel, lineIndex, skipLines = []) {
       const children = [];
@@ -1238,7 +1285,8 @@
         i++;
       }
 
-      return children;
+      // Return both children and the last line index processed (i - 1 because the loop exited after finding a non-child line)
+      return { children, lastLineIndex: i - 1 };
     }
 
     /**
@@ -1345,19 +1393,37 @@
       }
 
       // Check if there's a POS marker (like "n.", "v.", "adj." etc)
-      // Format: word pos. definition (pos后面可以是空格或直接中文)
-      const posMatch = word.match(/\s([a-z]+\.)/);
-      console.log('POS match result:', posMatch);
-      if (posMatch) {
-        // Found a POS marker - extract word before it
-        const posIndex = word.indexOf(posMatch[1]);
-        pos = posMatch[1];
+      // Use Set-based lookup to avoid false positives like "that.", "fired.", etc.
+      // Find the FIRST valid POS marker in the text
+      let validPosMatch = null;
+      let validPosIndex = -1;
 
-        // Extract Chinese definition BEFORE modifying word
-        cn = word.substring(posIndex + posMatch[1].length).trim();
+      // Check each POS marker in our Set
+      for (const posMarker of MarkdownParser.POS_MARKERS) {
+        const index = word.toLowerCase().indexOf(posMarker);
+        if (index !== -1) {
+          // Make sure it's a whole word match (preceded by space or start)
+          const prevChar = index > 0 ? word[index - 1] : ' ';
+          if (prevChar === ' ' || prevChar === '') {
+            // Found a valid POS marker
+            if (validPosIndex === -1 || index < validPosIndex) {
+              validPosMatch = posMarker;
+              validPosIndex = index;
+            }
+          }
+        }
+      }
 
-        // Now modify word
-        word = word.substring(0, posIndex).trim();
+      console.log('POS match result:', validPosMatch, 'at index:', validPosIndex);
+      if (validPosMatch) {
+        // Found a valid POS marker - extract word before it
+        pos = validPosMatch;
+
+        // Extract Chinese definition AFTER the POS marker
+        cn = word.substring(validPosIndex + validPosMatch.length).trim();
+
+        // Now modify word (remove the POS and everything after)
+        word = word.substring(0, validPosIndex).trim();
         console.log('After POS extraction:', {word, pos, cn});
       } else {
         // No POS marker - check if there's Chinese
@@ -1440,15 +1506,16 @@
 
     /**
      * Check if content has POS marker
+     * Uses Set-based whitelist for O(1) lookup performance
      * Ignores POS markers inside *word(...)* patterns (which will be extracted separately)
      */
     hasPosMarker(content) {
       // First, remove *word(...)* patterns to avoid matching POS inside them
       const cleaned = content.replace(/\*[a-zA-Z'-]+\([^)]*\)\*/g, '');
-      // Then check for POS marker in the remaining content
-      // Only match actual part-of-speech markers (n., v., adj., adv., vt., vi., prep., etc.)
-      // Use word boundaries to avoid matching words like "that." or "argument."
-      return /\s+(n\.|v\.|adj\.|adv\.|vt\.|vi\.|prep\.|conj\.|int\.|art\.|num\.|pron\.|aux\.|mod\.)(?=[\s\u4e00-\u9fa5]|$)/.test(cleaned);
+      // Find all potential POS markers (word followed by dot)
+      const matches = cleaned.match(/\b[a-z]+\./gi) || [];
+      // Check if any match is in our valid POS markers Set
+      return matches.some(match => MarkdownParser.POS_MARKERS.has(match.toLowerCase()));
     }
 
     /**
@@ -1516,12 +1583,68 @@
 
     /**
      * Add synonym to parent card
+     * Parses synonym content to extract word, ipa, pos, and cn
+     * Example: "sufficient [səˈfɪʃnt] adj. 足够的"
      */
     addSynonymToParent(content) {
       if (this.parentCard) {
-        const synonymWord = content.replace(/^===?\s+/, '').trim();
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
         this.parentCard.synonyms = this.parentCard.synonyms || [];
-        this.parentCard.synonyms.push({word: synonymWord});
+
+        // Parse the synonym content
+        let word = synonymContent;
+        let ipa = '';
+        let pos = '';
+        let cn = '';
+
+        // Extract IPA first
+        const ipaMatch = word.match(/\[([^\]]+)\]|\/([^\/]+)\//);
+        if (ipaMatch) {
+          ipa = ipaMatch[0];
+          word = word.replace(ipa, '').trim();
+        }
+
+        // Extract POS marker (use Set-based lookup to avoid false positives)
+        // Find the FIRST valid POS marker in the text
+        let validPosMatch = null;
+        let validPosIndex = -1;
+
+        // Check each POS marker in our Set
+        for (const posMarker of MarkdownParser.POS_MARKERS) {
+          const index = word.toLowerCase().indexOf(posMarker);
+          if (index !== -1) {
+            // Make sure it's a whole word match (preceded by space or start)
+            const prevChar = index > 0 ? word[index - 1] : ' ';
+            if (prevChar === ' ' || prevChar === '') {
+              // Found a valid POS marker
+              if (validPosIndex === -1 || index < validPosIndex) {
+                validPosMatch = posMarker;
+                validPosIndex = index;
+              }
+            }
+          }
+        }
+
+        if (validPosMatch) {
+          pos = validPosMatch;
+          cn = word.substring(validPosIndex + validPosMatch.length).trim();
+          word = word.substring(0, validPosIndex).trim();
+        } else {
+          // No POS - check if there's Chinese
+          const cnMatch = word.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+          if (cnMatch) {
+            cn = word.substring(word.indexOf(cnMatch[0])).trim();
+            word = word.substring(0, word.indexOf(cnMatch[0])).trim();
+          }
+        }
+
+        // Add parsed synonym
+        const synonym = {word};
+        if (ipa) synonym.ipa = ipa;
+        if (pos) synonym.pos = pos;
+        if (cn) synonym.cn = cn;
+
+        this.parentCard.synonyms.push(synonym);
       }
     }
 

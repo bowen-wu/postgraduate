@@ -841,7 +841,11 @@
    *   5. 其他 → sentence
    */
   class MarkdownParser {
- constructor(text) {
+    // Valid POS (Part of Speech) markers - using Set for O(1) lookup
+    static POS_MARKERS = new Set([
+      'n.', 'v.', 'vt.', 'vi.', 'adj.', 'adv.', 'prep.', 'conj.', 'int.', 'pron.', 'art.', 'num.']);
+
+    constructor(text) {
       this.lines = text.split('\n');
       this.cards = [];
       this.inPhraseList = false;  // Track if we're under "- 词组" marker
@@ -1007,8 +1011,19 @@
       // Check if content has IPA (word with pronunciation only)
       if (this.hasIpaMarker(content)) return 'word';
 
-      // Check if first child has POS (规则4: firstChildHasPos → word)
+      // Check if first child has POS (e.g., "inadequate" has child "adj. 不够的")
       if (this.firstChildHasPos(content, indentLevel)) return 'word';
+
+      // 规则5d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
+      // 注意：只针对"句子"的子级，不针对"单词"的子级
+      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
+      const isChild = this.parentCard && this.parentLevel < indentLevel;
+      if (isChild && hasChinese && !this.hasPosMarker(content)) {
+        // 只当父级是 sentence 时，才判断为 phrase
+        if (this.parentCard.type === 'sentence') {
+          return 'phrase';
+        }
+      }
 
       // Otherwise, it's a sentence
       return 'sentence';
@@ -1345,19 +1360,37 @@
       }
 
       // Check if there's a POS marker (like "n.", "v.", "adj." etc)
-      // Format: word pos. definition (pos后面可以是空格或直接中文)
-      const posMatch = word.match(/\s([a-z]+\.)/);
-      console.log('POS match result:', posMatch);
-      if (posMatch) {
-        // Found a POS marker - extract word before it
-        const posIndex = word.indexOf(posMatch[1]);
-        pos = posMatch[1];
+      // Use Set-based lookup to avoid false positives like "that.", "fired.", etc.
+      // Find the FIRST valid POS marker in the text
+      let validPosMatch = null;
+      let validPosIndex = -1;
 
-        // Extract Chinese definition BEFORE modifying word
-        cn = word.substring(posIndex + posMatch[1].length).trim();
+      // Check each POS marker in our Set
+      for (const posMarker of MarkdownParser.POS_MARKERS) {
+        const index = word.toLowerCase().indexOf(posMarker);
+        if (index !== -1) {
+          // Make sure it's a whole word match (preceded by space or start)
+          const prevChar = index > 0 ? word[index - 1] : ' ';
+          if (prevChar === ' ' || prevChar === '') {
+            // Found a valid POS marker
+            if (validPosIndex === -1 || index < validPosIndex) {
+              validPosMatch = posMarker;
+              validPosIndex = index;
+            }
+          }
+        }
+      }
 
-        // Now modify word
-        word = word.substring(0, posIndex).trim();
+      console.log('POS match result:', validPosMatch, 'at index:', validPosIndex);
+      if (validPosMatch) {
+        // Found a valid POS marker - extract word before it
+        pos = validPosMatch;
+
+        // Extract Chinese definition AFTER the POS marker
+        cn = word.substring(validPosIndex + validPosMatch.length).trim();
+
+        // Now modify word (remove the POS and everything after)
+        word = word.substring(0, validPosIndex).trim();
         console.log('After POS extraction:', {word, pos, cn});
       } else {
         // No POS marker - check if there's Chinese
@@ -1440,15 +1473,16 @@
 
     /**
      * Check if content has POS marker
+     * Uses Set-based whitelist for O(1) lookup performance
      * Ignores POS markers inside *word(...)* patterns (which will be extracted separately)
      */
     hasPosMarker(content) {
       // First, remove *word(...)* patterns to avoid matching POS inside them
       const cleaned = content.replace(/\*[a-zA-Z'-]+\([^)]*\)\*/g, '');
-      // Then check for POS marker in the remaining content
-      // Only match actual part-of-speech markers (n., v., adj., adv., vt., vi., prep., etc.)
-      // Use word boundaries to avoid matching words like "that." or "argument."
-      return /\s+(n\.|v\.|adj\.|adv\.|vt\.|vi\.|prep\.|conj\.|int\.|art\.|num\.|pron\.|aux\.|mod\.)(?=[\s\u4e00-\u9fa5]|$)/.test(cleaned);
+      // Find all potential POS markers (word followed by dot)
+      const matches = cleaned.match(/\b[a-z]+\./gi) || [];
+      // Check if any match is in our valid POS markers Set
+      return matches.some(match => MarkdownParser.POS_MARKERS.has(match.toLowerCase()));
     }
 
     /**
@@ -1516,12 +1550,68 @@
 
     /**
      * Add synonym to parent card
+     * Parses synonym content to extract word, ipa, pos, and cn
+     * Example: "sufficient [səˈfɪʃnt] adj. 足够的"
      */
     addSynonymToParent(content) {
       if (this.parentCard) {
-        const synonymWord = content.replace(/^===?\s+/, '').trim();
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
         this.parentCard.synonyms = this.parentCard.synonyms || [];
-        this.parentCard.synonyms.push({word: synonymWord});
+
+        // Parse the synonym content
+        let word = synonymContent;
+        let ipa = '';
+        let pos = '';
+        let cn = '';
+
+        // Extract IPA first
+        const ipaMatch = word.match(/\[([^\]]+)\]|\/([^\/]+)\//);
+        if (ipaMatch) {
+          ipa = ipaMatch[0];
+          word = word.replace(ipa, '').trim();
+        }
+
+        // Extract POS marker (use Set-based lookup to avoid false positives)
+        // Find the FIRST valid POS marker in the text
+        let validPosMatch = null;
+        let validPosIndex = -1;
+
+        // Check each POS marker in our Set
+        for (const posMarker of MarkdownParser.POS_MARKERS) {
+          const index = word.toLowerCase().indexOf(posMarker);
+          if (index !== -1) {
+            // Make sure it's a whole word match (preceded by space or start)
+            const prevChar = index > 0 ? word[index - 1] : ' ';
+            if (prevChar === ' ' || prevChar === '') {
+              // Found a valid POS marker
+              if (validPosIndex === -1 || index < validPosIndex) {
+                validPosMatch = posMarker;
+                validPosIndex = index;
+              }
+            }
+          }
+        }
+
+        if (validPosMatch) {
+          pos = validPosMatch;
+          cn = word.substring(validPosIndex + validPosMatch.length).trim();
+          word = word.substring(0, validPosIndex).trim();
+        } else {
+          // No POS - check if there's Chinese
+          const cnMatch = word.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+          if (cnMatch) {
+            cn = word.substring(word.indexOf(cnMatch[0])).trim();
+            word = word.substring(0, word.indexOf(cnMatch[0])).trim();
+          }
+        }
+
+        // Add parsed synonym
+        const synonym = {word};
+        if (ipa) synonym.ipa = ipa;
+        if (pos) synonym.pos = pos;
+        if (cn) synonym.cn = cn;
+
+        this.parentCard.synonyms.push(synonym);
       }
     }
 
