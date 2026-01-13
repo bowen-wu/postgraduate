@@ -184,7 +184,7 @@
 
 - vt. 使迷惑
 - confuse sb. 使某人困惑
-- confused adj. 混乱的
+- confused adj. 混乱的；困惑的
 - confusing adj. 难以理解的
 - chaos
     - n. 混乱

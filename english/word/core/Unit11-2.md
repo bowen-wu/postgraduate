@@ -206,6 +206,7 @@
 - combat vt. 与...战斗；防止
 - defeat [dɪˈfiːt]
     - n. 失败
+    - v. 击败
     - defeat for sb./sth. 对...的失败/使...遭遇失败
     - Man is not made for **defeat**. A man can be destroyed but not **defeated**.
 - victory n. 胜利

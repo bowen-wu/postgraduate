@@ -153,7 +153,7 @@
     - PE
         - v. 导致
         - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
-      passive consumption and active creation.
+          passive consumption and active creation.
     - ...it is sure to **spark** intense opposition from the far larger number of motorists who will then be affected.
     - sparkling 闪耀
 - advocate [ˈædvəkeɪt]
@@ -257,6 +257,8 @@
 - n. 猛增
 - plausible [ˈplɔːzəbl]
     - adj. 貌似合理的；可信的
+    - The supposed importance of influentials derives from a **plausible**-sounding but largely untested theory called
+      the "two step flow of communication."
     - implausible adj. 难以置信的；不切实际
         - One oft-debated *cure(n. （解决问题、改善糟糕情况等的）措施)* for this labor shortage remains as **implausible**
           as it has been all along...

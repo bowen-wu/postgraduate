@@ -1,0 +1,147 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{一元函数微分学的概念}
+
+    \subsection{导数}
+
+    \begin{enumerate}
+        \item 设\( y = f(x) \)定义在区间\( I \)上，让自变量在\( x = x_0 \)处加一个增量\( \Delta x \)（可正可负），其中\( x_0 \in I, x_0 + \Delta x \in I \)，则可得函数的增量\( \Delta y = f(x_0 + \Delta x) - f(x_0) \)。若函数增量\( \Delta y \)与自变量增量\( \Delta x \)的比值在\( \Delta x \to 0 \)时的极限存在，即\( \lim\limits_{\Delta x \to 0} \displaystyle\frac{\Delta y}{\Delta x} \)存在，则称函数\( y = f(x) \)在点\( x_0 \)处可导，并称这个{\color{red}{极限}}为\( y = f(x) \)在点\( x_0 \)处的{\color{red}{导数（变化率）}}，记作\( f'(x_0) \)，即
+        \[
+            \frac{dy}{dx}\bigg|_{x=x_0} = f'(x_0) = \lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim\limits_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.
+            \tag{*}
+        \]
+        广义化
+        \[
+            \lim_{\text{狗} \to 0} \frac{f(x_0 + \text{狗}) - f(x_0)}{\text{狗}}.
+            \tag{**}
+        \]
+        令 $x_0 + \Delta x = x$，从而得到
+        \[
+            \text{函数式 } f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0},
+            \tag{***}
+        \]
+        \item 下面这三种提法是等价的:
+        \begin{itemize}
+            \item $y = f(x)$在点$x_0$处可导；
+            \item $y = f(x)$在点$x_0$处导数存在；
+            \item $f'(x_0) = A$（$A$为有限数）。
+        \end{itemize}
+        \item $\color{red}{\bigstar}$ 函数在一点可导的充要条件: $f'(x_0)$存在 $\Leftrightarrow$ 其左导数$f'_-(x_0)$与右导数$f'_+(x_0)$均存在且相等
+        \item 函数在一点可导的必要条件: 若$f(x)$在一点可导 $\Rightarrow$ $f(x)$在该点连续
+        \item 导数的性质
+        \begin{itemize}
+            \item $\color{red}{\bigstar}$求导一次，奇偶性互换
+            \item 若$f(x)$是可导的周期为$T$的周期函数，则$f'(x)$也是以$T$为周期的周期函数
+            \item 若$f'(x) > 0$，$f(x)$单调递增；若$f'(x) < 0$，则$f(x)$单调递减
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法总结}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+\end{document}

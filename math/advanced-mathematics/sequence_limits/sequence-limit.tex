@@ -278,37 +278,98 @@
     \begin{enumerate}
         \item 压缩映射原理: 使用时，需写出证明过程
         \begin{itemize}
-            \item 对数列${x_n}$，若存在常数$k(0 < k < 1)$，使得$|x_{n+1} - a| \leq k|x_n - a|, n = 1, 2, \cdots$，则${x_n}$收敛于$a$
-            \item {\color{red}{TODO: 证}}
-            \item
-            设数列 $\{x_n\}$ 满足
+
+            \item \textbf{原理一（压缩不等式）}
+            设数列 $\{x_n\}$，若存在常数 $k\,({\color{red}{0 < k < 1}})$，使得对一切
+            $n=1,2,\dots$，
             \[
-                x_{n+1}=f(x_n), \quad n=1,2,\dots,
-            \]
-            其中 $f(x)$ 在 $\mathbb{R}$ 上可导，$a$ 是方程
-            \[
-                f(x)=x
-            \]
-            的唯一解。若存在常数 $k$，使得对任意 $x\in\mathbb{R}$ 都有
-            \[
-                |f'(x)|\le k<1,
+                |x_{n+1}-a|\le k|x_n-a|,
             \]
             则数列 $\{x_n\}$ 收敛，且
             \[
-                \lim_{n\to\infty} x_n = a.
+                \lim_{n\to\infty}x_n=a.
             \]
-            \item {\color{red}{TODO: 证}}
+
+            \textbf{{\color{red}{证}}：}
+            由已知条件，
+            \[
+                0\le |x_{n+1}-a|\le k|x_n-a|.
+            \]
+            递推可得
+            \[
+                \begin{aligned}
+                    0\le |x_{n+1}-a|
+                    &\le k|x_n-a| \\
+                    &\le k^2|x_{n-1}-a| \\
+                    &\ \ \vdots \\
+                    &\le k^n|x_1-a|.
+                \end{aligned}
+            \]
+            又因为 $0<k<1$，
+            \[
+                \lim_{n\to\infty}k^n=0.
+            \]
+            由夹逼准则，
+            \[
+                \lim_{n\to\infty}|x_{n+1}-a|=0,
+            \]
+            从而
+            \[
+                \lim_{n\to\infty}x_n=a.
+            \]
+
+            \item \textbf{原理二（迭代函数收敛原理）}
+            设数列 $\{x_n\}$ 由
+            \[
+                x_{n+1}=f(x_n), \quad n=1,2,\dots
+            \]
+            定义，其中 $f(x)$ 在 $\mathbb{R}$ 上可导，且方程
+            \[
+                f(x)=x
+            \]
+            有唯一解 $a$。
+            若存在常数 $k\,(0<k<1)$，使得对任意 $x\in\mathbb{R}$，
+            \[
+                |f'(x)|\le k,
+            \]
+            则数列 $\{x_n\}$ 收敛，且
+            \[
+                \lim_{n\to\infty}x_n=a.
+            \]
+
+            \textbf{{\color{red}{证}}：}
+            由于 $f(a)=a$，有
+            \[
+                |x_{n+1}-a|=|f(x_n)-f(a)|.
+            \]
+            由拉格朗日中值定理，存在 $\xi$ 介于 $x_n$ 与 $a$ 之间，使得
+            \[
+                |f(x_n)-f(a)|
+                =|f'(\xi)|\,|x_n-a|.
+            \]
+            又由条件 $|f'(x)|\le k<1$，可得
+            \[
+                |x_{n+1}-a|\le k|x_n-a|.
+            \]
+            由原理一（压缩不等式），得
+            \[
+                \lim_{n\to\infty}x_n=a.
+            \]
         \end{itemize}
-        \item 极限定义中$\epsilon$的含义：$\epsilon$必须是不依赖于$n$的任意小正数。若$\epsilon$与$n$有关，相当于对收敛速度提出了额外要求，而极限定义并不限制收敛速度
+        \item 极限定义中$\epsilon$的含义：$\epsilon$必须是不依赖于$n$的任意小正数。若$\epsilon$与$n$有关，相当于对收敛速度提出了额外要求，而极限定义并不限制收敛速度。下面的示例说明了在推理过程中，$\epsilon$ 必须作为一个与 $n$ 无关的常数来使用。
         \begin{analysisbox}[示例]
-            \begin{gather*}
-                \lim_{n \to \infty} a_n = a \\
-                \Rightarrow \forall \epsilon > 0,\ \exists N > 0,\ n > N:\ |a_n - a| < \epsilon \\
-                \Rightarrow ||a_n| - |a|| \leq |a_n - a| < \epsilon \quad (\text{由绝对值不等式}) \\
-                \Rightarrow \lim_{n \to \infty} |a_n| = |a|
-                \Rightarrow |a| - \epsilon < |a_n| < |a| + \epsilon
-            \end{gather*}
+            \[
+                \begin{aligned}
+                    \lim_{n \to \infty} a_n = a
+                    &\Rightarrow \forall \epsilon > 0,\ \exists N > 0,\ n > N:\ |a_n - a| < \epsilon \\[4pt]
+                    &\Rightarrow \bigl||a_n| - |a|\bigr| \le |a_n - a| < \epsilon
+                    \quad (\text{由绝对值不等式}) \\[4pt]
+                    &\Rightarrow \lim_{n \to \infty} |a_n| = |a|.
+                    &\Rightarrow |a| - \epsilon < |a_n| < |a| + \epsilon \\[4pt]
+                \end{aligned}
+            \]
         \end{analysisbox}
+
     \end{enumerate}
 
 \end{document}
