@@ -88,8 +88,8 @@
     - confronting us 是[现在分词短语，作后置定语](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md#%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BF%AE%E9%A5%B0%E5%90%8D%E8%AF%8D%E4%BD%9C%E5%AE%9A%E8%AF%AD)，修饰 problems
 - possession [pəˈzeʃn]
     - n. 拥有；财物
-    - <ins>It is a truth universally acknowledged</ins>, that <ins>a single man</ins> <ins>in **possession**
-      of</ins> <ins>a good *fortune(n. 大笔的钱（可数）)*</ins>, must be <ins>in want of</ins> a wife.
+    - It is a truth universally acknowledged, that a single manin **possession** of a good *fortune(n. 大笔的钱（可数）)*,
+      must be in want of a wife.
         - It is a truth universally acknowledged 众所周知
             - == as we all know
 
@@ -104,9 +104,9 @@
 - quest
     - n. 探索，追求
     - quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）
-        - In some ways, this <ins>**quest** for<ins> *commonalities([ˌkɑməˈnælɪti] n. 共性)* defines science.
-    - in the quest for 在追求...的过程中/为了...而努力/为了寻求...
-        - It was to ruin lives <ins>in the **quest** for</ins> circulation and impact.
+    - In some ways, this **quest** for *commonalities([ˌkɑməˈnælɪti] n. 共性)* defines science.
+    - It was to ruin lives in the **quest** for circulation and impact.
+        - in the quest for 在追求...的过程中/为了...而努力/为了寻求...
 
 ## appreciate
 
@@ -129,14 +129,14 @@
 - initiation n. （常包含特殊仪式的）入会
 - initiative [ɪˈnɪʃətɪv]
     - n. 倡议；新方案；主动性；主动权；积极性；计划
-    - **Initiative** is all about <ins>taking charge</ins>.
+    - == plan(具体)
+    - == willingness(抽象) n. 愿意; 乐意
+    - **Initiative** is all about taking charge.
         - is all about 本质就是.../说到底就是...
         - taking charge 负责；掌控局面；主动承担责任
     - An **initiative** is the **first** in the series of actions.
     - **Initiative** can also mean **a personal quality** that show a **willingness** to get things done and take
       responsibility.
-    - == plan(具体)
-    - == willingness(抽象) n. 愿意; 乐意
 - preliminary [prɪˈlɪmɪneri]
     - adj. 初步的
     - Its lawmakers gave **preliminary** approval last week to a law.
@@ -164,8 +164,8 @@
       ideal conditions.
     - disintegration
         - n. 瓦解；解体
-        - Yet the debate about how to save Europe's single currency from **disintegration** is *stuck([stʌk] adj.
-          动不了的)*.
+        - Yet the debate about how to save Europe's single currency from **disintegration** is
+          *stuck([stʌk] adj. 动不了的)*.
             - save A from B 使A免于B/拯救A不至于B
 - integrity [ɪnˈteɡrəti]
     - n. 完整；正直；诚实
@@ -180,7 +180,7 @@
 - reign [reɪn]
     - vi. 统治
     - n. 君主统治时期
-    - Rain falls from above, and people <ins>who **reign**</ins> rule from a position above others.
+    - Rain falls from above, and people who **reign** rule from a position above others.
         - rule from/rule over 统治某个地方/人民
     - He used to **reign** over popular music, always topping the charts.
     - "The ancient Hawaiians were *astronomers([əˈstrɑːnəmər] n. 天文学家)*", wrote Queen Liliuokalani, Hawaii's

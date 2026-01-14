@@ -218,6 +218,7 @@
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; font-weight: 600; text-transform: uppercase; }
         .badge-word { background: #d1fae5; color: #10b981; }
         .badge-rel { background: #f3e8ff; color: #9333ea; border: 2px solid #d8b4fe; }
+        .badge-pre { background: #fef3c7; color: #d97706; border: 2px solid #fbbf24; }
         .badge-syn { background: #f3e8ff; color: #9333ea; }
         .badge-sent { background: #dbeafe; color: #2563eb; }
         .badge-err { background: var(--danger-bg); color: var(--danger); }
@@ -848,7 +849,7 @@
    *   - 标记 "- 词组" 和 "## 词组" 本身忽略（不创建卡片）
    *   - 子级卡片类型为 phrase
    *
-   * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀，前缀后缀会有中文释义
+   * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀，前缀后缀会有中文释义，要注意前缀和连字符的区分
    *
    * 规则6: 句子解析规则
    *   a) 先删除 **xx** 标记中的 ** 符号
@@ -1024,7 +1025,7 @@
       }
 
       // Rule 7: Determine card type
-      const cardType = this.determineCardType(content, indentLevel);
+      const cardType = this.determineCardType(content, indentLevel, lineIndex);
       if (this.debug) console.log(`[DEBUG] → Card type: ${cardType}`);
 
       // Create the card
@@ -1044,6 +1045,11 @@
         this.cards.push(card);
         if (this.debug) console.log(`[DEBUG] Created phrase card: "${card.word}"`);
         return undefined;
+      } else if (cardType === 'prefix') {
+        const card = this.createPrefixCard(content, indentLevel, lineIndex);
+        this.cards.push(card);
+        if (this.debug) console.log(`[DEBUG] Created prefix card: "${card.word}"`);
+        return undefined;
       }
 
       return undefined;
@@ -1052,18 +1058,38 @@
     /**
      * Determine card type based on content and context
      */
-    determineCardType(content, indentLevel) {
+    determineCardType(content, indentLevel, lineIndex = null) {
+      console.log(`[determineCardType] content="${content}", lineIndex=${lineIndex}`);
+
+      // 规则5: Check if it's a prefix or suffix (-xx-, -xxx, xx-)
+      if (this.isPrefixOrSuffix(content, lineIndex)) {
+        console.log(`[determineCardType] → returning 'prefix'`);
+        return 'prefix';
+      }
+
       // Check if in phrase list (规则4: - 词组 or ## 词组)
-      if (this.inPhraseList || this.inPhraseHeader) return 'phrase';
+      if (this.inPhraseList || this.inPhraseHeader) {
+        console.log(`[determineCardType] → returning 'phrase' (inPhraseList)`);
+        return 'phrase';
+      }
 
       // Check if content has POS marker (规则3: 只要有词性，一定是单词)
-      if (this.hasPosMarker(content)) return 'word';
+      if (this.hasPosMarker(content)) {
+        console.log(`[determineCardType] → returning 'word' (has POS)`);
+        return 'word';
+      }
 
       // Check if content has IPA (word with pronunciation only)
-      if (this.hasIpaMarker(content)) return 'word';
+      if (this.hasIpaMarker(content)) {
+        console.log(`[determineCardType] → returning 'word' (has IPA)`);
+        return 'word';
+      }
 
       // Check if first child has POS (e.g., "inadequate" has child "adj. 不够的")
-      if (this.firstChildHasPos(content, indentLevel)) return 'word';
+      if (this.firstChildHasPos(content, indentLevel)) {
+        console.log(`[determineCardType] → returning 'word' (first child has POS)`);
+        return 'word';
+      }
 
       // 规则5d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
       // 注意：只针对"句子"的子级，不针对"单词"的子级
@@ -1072,11 +1098,13 @@
       if (isChild && hasChinese && !this.hasPosMarker(content)) {
         // 只当父级是 sentence 时，才判断为 phrase
         if (this.parentCard.type === 'sentence') {
+          console.log(`[determineCardType] → returning 'phrase' (sentence child)`);
           return 'phrase';
         }
       }
 
       // Otherwise, it's a sentence
+      console.log(`[determineCardType] → returning 'sentence' (default)`);
       return 'sentence';
     }
 
@@ -1294,13 +1322,15 @@
         }
 
         // Determine card type for this child
-        const cardType = this.determineCardType(content, indentLevel);
+        const cardType = this.determineCardType(content, indentLevel, lineIndex);
 
         // Create the appropriate card
         if (cardType === 'word') {
           children.push(this.createWordCard(content, indentLevel));
         } else if (cardType === 'phrase') {
           children.push(this.createPhraseCard(content));
+        } else if (cardType === 'prefix') {
+          children.push(this.createPrefixCard(content, indentLevel));
         } else {
           // Sentence - shouldn't happen at level 8, but handle it
           const sentenceCard = {
@@ -1367,6 +1397,24 @@
         card.items.push({type: 'def', en: pos, cn: cn || ''});
       }
 
+      // 规则9: Check if this word is an antonym (has 😔 marker)
+      if (this.hasAntonymMarker(content)) {
+        // Remove the emoji from the word for cleaner display
+        card.word = word.replace(/😔/g, '').trim();
+
+        // Add to parent card's antonyms if parent exists
+        if (this.parentCard && !this.parentCard.antonyms) {
+          this.parentCard.antonyms = [];
+        }
+        if (this.parentCard) {
+          this.parentCard.antonyms.push({
+            word: card.word,
+            pos: pos,
+            cn: cn
+          });
+        }
+      }
+
       // Always update parent reference (this card becomes the parent for its children)
       this.parentCard = card;
       this.parentLevel = indentLevel;
@@ -1389,6 +1437,40 @@
       // Update parent reference
       this.parentCard = card;
       this.parentLevel = 4;  // Phrase cards are typically at level 4
+
+      return card;
+    }
+
+    /**
+     * Create prefix/suffix card (规则5)
+     * Format: dis- 否定；分散, pre- 在前
+     * The Chinese meaning can have multiple definitions separated by ； or 、
+     */
+    createPrefixCard(content, indentLevel, lineIndex = null) {
+      // Extract prefix and Chinese meaning
+      // Note: content already has the leading '-' removed (from processListItem)
+      const trimmed = content.trim();
+      const parts = trimmed.split(/\s+/);
+      const prefix = parts[0]; // Get first part (the prefix itself, e.g., "dis-")
+      let cn = '';
+
+      // Extract Chinese: everything after the prefix (joined with spaces)
+      if (parts.length > 1) {
+        cn = parts.slice(1).join(' '); // Get all remaining parts as Chinese definition
+      }
+
+      const card = {
+        id: `card_${this.cardCounter++}`,
+        word: prefix,
+        type: 'prefix',
+        items: [{type: 'def', en: prefix, cn: cn}]
+      };
+
+      // Update parent reference
+      this.parentCard = card;
+      this.parentLevel = indentLevel;
+
+      console.log(`[createPrefixCard] Created prefix card: word="${prefix}", cn="${cn}"`);
 
       return card;
     }
@@ -1611,6 +1693,40 @@
         }
       }
       return false;
+    }
+
+    /**
+     * 规则5: Check if content is a prefix or suffix
+     * Formats: -xx-, -xxx, xx- (with hyphens) + Chinese definition
+     * Example: "dis- 否定；分散" or "pre- 在前"
+     */
+    isPrefixOrSuffix(content, lineIndex = null) {
+      const trimmed = content.trim();
+      // 提取空格前的部分（前缀本身）
+      const firstPart = trimmed.split(/\s+/)[0];
+      // Match patterns like: dis-, -dis-, pre-, -pre
+      const prefixSuffixPattern = /^-?[a-z]{1,5}-?$/;
+      const patternMatch = prefixSuffixPattern.test(firstPart);
+      const hasPosMarker = this.hasPosMarker(content);
+
+      // Check if Chinese is on the same line
+      const hasChineseOnSameLine = /[\u4e00-\u9fa5]/.test(content);
+
+      const result = patternMatch &&
+                    !hasPosMarker &&
+                    hasChineseOnSameLine;
+
+      // Debug log
+      console.log(`[isPrefixOrSuffix] content="${content}", firstPart="${firstPart}", patternMatch=${patternMatch}, hasChinese=${hasChineseOnSameLine}, result=${result}`);
+
+      return result;
+    }
+
+    /**
+     * 规则9: Check if content has antonym marker (😔)
+     */
+    hasAntonymMarker(content) {
+      return content.includes('😔');
     }
 
     /**
@@ -1975,6 +2091,10 @@
       if (STATE.cards.length === 0) return;
       const card = STATE.cards[STATE.currentIndex];
 
+      console.log(`[render] ========== Rendering card ${STATE.currentIndex} ==========`);
+      console.log(`[render] card.word="${card.word}", card.type="${card.type}"`);
+      console.log(`[render] STATE.mode="${STATE.mode}"`);
+
       // Ensure card has required fields (for backward compatibility)
       if (!card.items) card.items = [];
       if (!card.synonyms) card.synonyms = [];
@@ -2007,6 +2127,7 @@
       let bHtml = '';
       if (card.type === 'word') bHtml += `<span class="badge badge-word">单词</span>`;
       else if (card.type === 'phrase') bHtml += `<span class="badge badge-rel">词组</span>`;
+      else if (card.type === 'prefix') bHtml += `<span class="badge badge-pre">前缀/后缀</span>`;
       else if (card.type === 'sentence') bHtml += `<span class="badge badge-sent">例句</span>`;
       if (stats.errors > 0) bHtml += `<span class="badge badge-err">错 ${stats.errors}</span>`;
       this.ui.badges.innerHTML = bHtml;
@@ -2291,6 +2412,8 @@
     renderInputActions() {
       const card = STATE.cards[STATE.currentIndex];
 
+      console.log(`[renderInputActions] card.type="${card.type}", card=`, card);
+
       // For sentence cards with Chinese translation, show special buttons
       if (card.type === 'sentence') {
         const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
@@ -2313,12 +2436,26 @@
         }
       }
 
+      // For word cards and prefix cards, show "记得/不记得" buttons
+      if (card.type === 'word' || card.type === 'prefix') {
+        console.log(`[renderInputActions] Showing word/prefix buttons for card:`, card.word);
+        this.ui.actionArea.innerHTML = `
+          <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
+          <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
+        `;
+        return;
+      }
+
       // Default: show "下一个" button
+      console.log(`[renderInputActions] Showing next button (default) for card:`, card.word);
       this.ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
     }
 
     renderRecallActions() {
       const card = STATE.cards[STATE.currentIndex];
+
+      console.log(`[renderRecallActions] card.word="${card.word}", card.type="${card.type}"`);
+      console.log(`[renderRecallActions] card.items=`, card.items);
 
       // For sentence cards with Chinese translation, show special buttons
       if (card.type === 'sentence') {
@@ -2356,13 +2493,17 @@
         item.cn && item.cn.trim && item.cn.trim() !== ''
       );
 
+      console.log(`[renderRecallActions] hasChinese=${hasChinese}`);
+
       if (!hasChinese) {
         // No Chinese translation: just show next button
+        console.log(`[renderRecallActions] No Chinese, showing next button`);
         this.renderNextAction();
         return;
       }
 
       // Has Chinese: show standard recall buttons
+      console.log(`[renderRecallActions] Has Chinese, showing recall buttons`);
       this.ui.actionArea.innerHTML = `
         <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
         <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
