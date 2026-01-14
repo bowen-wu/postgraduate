@@ -124,6 +124,7 @@
 - favor/favour [ˈfeɪvər]
     - vt. 赞成
     - n. 支持；恩惠
+    - favor A over B 更偏向 A，而不是 B/更青睐 A 胜过 B
     - favorable/favourable
         - adj. 赞同的
         - unfavorable/unfavourable adj. 不利的；不赞同的
