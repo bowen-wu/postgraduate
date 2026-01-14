@@ -69,7 +69,7 @@
     - tempt sb. to do sth. 诱使/引诱某人去做某事
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
 - You might even be **tempted** to assume that humanity has little future to look forward to.
-    - have + 程度(little/much/nothing) + to look forward to 对未来几乎没有期待/有很多期待
+    - have + little/much/nothing(程度) + to look forward to 对未来几乎没有期待/有很多期待
 - temptation n. 诱惑
 - lure [lʊr] vt. 引诱 😔
 - coax [koʊks]
@@ -108,7 +108,7 @@
       points out, increase **allegiance** to the firm.
         - be intended to do sth 被设计/被用来做某事
         - infuse A with B 向A中注入B，使其具有某种抽象特质
-            - infuse vt. 灌输，加入（一种特性）; 使充满; 浸渍; 鼓舞，激发
+        - infuse vt. 灌输，加入（一种特性）; 使充满; 浸渍; 鼓舞，激发
 
 ## arrest
 
