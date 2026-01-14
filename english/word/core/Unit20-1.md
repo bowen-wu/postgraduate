@@ -21,10 +21,8 @@
 
 - [dɪˈstɔːrt]
 - vt. 歪曲
-- dis-
-    - 否定
-    - 分散
-        - distract vt. 分散（注意力）
+- dis- 否定；分散
+    - distract vt. 分散（注意力）
 - The author holds that the current <ins>collective *doctrine([ˈdɑːktrɪn] n. 信条；教义)*(集体主义)</ins> shows generally
   **distorted** values.
 - twist [twɪst]

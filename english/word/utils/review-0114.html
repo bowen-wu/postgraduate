@@ -318,6 +318,33 @@
         .synonym-play-btn:hover {
             opacity: 1;
         }
+        /* Audio play button loading state */
+        .audio-play-btn {
+            transition: all 0.2s;
+            position: relative;
+        }
+        .audio-play-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .audio-play-btn .btn-spinner {
+            display: none;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e2e8f0;
+            border-top-color: currentColor;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        .audio-play-btn.loading svg {
+            display: none;
+        }
+        .audio-play-btn.loading .btn-spinner {
+            display: block;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
         /* Synonyms in recall mode */
         body.mode-recall .synonyms-section {
             display: none;
@@ -653,8 +680,8 @@
     cacheKey: 'vocab_master_v8_cache',
     cacheDuration: 24 * 60 * 60 * 1000,  // 24 hours in ms
     version: 5,  // V2: Refactored card types (word|phrase|sentence)
-    // Audio sources priority (local → cambridge → TTS)
-    localAudioBaseUrl: 'https://bowen-wu.github.io/postgraduate/english/audio',
+    // Audio sources priority (youdao → TTS)
+    localAudioBaseUrl: 'https://bowen-wu.github.io/postgraduate/english/audio',  // Reserved (not used currently)
     corsProxy: 'https://corsproxy.io/?'
     // Alternative proxies (uncomment if needed):
     // corsProxy: 'https://api.allorigins.win/raw?url=',
@@ -821,7 +848,9 @@
    *   - 标记 "- 词组" 和 "## 词组" 本身忽略（不创建卡片）
    *   - 子级卡片类型为 phrase
    *
-   * 规则5: 句子解析规则
+   * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀，前缀后缀会有中文释义
+   *
+   * 规则6: 句子解析规则
    *   a) 先删除 **xx** 标记中的 ** 符号
    *   b) *word(pos. def)* 包裹的：
    *      - 如果括号内有词性 → 提取为单词卡片
@@ -829,19 +858,16 @@
    *   c) <ins>phrase</ins> 包裹的 → 提取为词组卡片
    *   d) 句子的子级（缩进）：
    *      - 有词性的 → 单词卡片
+   *      - 前缀后缀 -> 前缀后缀卡片
    *      - 其余 → 词组卡片
    *
-   * 规则6: == 标记的是同义词
+   * 规则7: == 标记的是同义词
    *   - == word 或 === word → 添加到父卡片的 synonyms
    *
-   * === TYPE DETERMINATION LOGIC ===
+   * 规则8: 音标一定是被[]包裹的，其他的都不是
    *
-   * 判断顺序 (determineCardType):
-   *   1. inPhraseList || inPhraseHeader → phrase
-   *   2. hasPosMarker(content) → word
-   *   3. hasIpaMarker(content) → word
-   *   4. firstChildHasPos(content, indentLevel) → word
-   *   5. 其他 → sentence
+   * 规则9: Opposite: 代表的是反义词，添加到单词的反义词中
+   *
    */
   class MarkdownParser {
     // Valid POS (Part of Speech) markers - using Set for O(1) lookup
@@ -1381,7 +1407,23 @@
       let cn = '';
 
       // Extract IPA first (remove it from content)
-      const ipaMatch = content.match(/\[([^\]]+)\]|\/([^\/]+)\//);
+      // Check for [ipa] format - always valid
+      let ipaMatch = content.match(/\[([^\]]+)\]/);
+      if (!ipaMatch) {
+        // Check for /ipa/ format - but only if it looks like real IPA
+        ipaMatch = content.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
+        // Exclude common English patterns
+        if (ipaMatch) {
+          const ipaContent = ipaMatch[1];
+          const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
+          if (excludePattern.test(ipaContent)) {
+            const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
+            if (!hasPhoneticSymbols) {
+              ipaMatch = null;
+            }
+          }
+        }
+      }
       if (ipaMatch) {
         ipa = ipaMatch[0];
         word = word.replace(ipa, '').trim();
@@ -1488,7 +1530,32 @@
      * Check if it's a pure IPA line ([音标])
      */
     isPureIpaLine(content) {
-      return /^(\[[^\]]+\]|\/[^\/]+\/)$/.test(content.trim());
+      const trimmed = content.trim();
+
+      // Check for [ipa] format - always valid
+      if (/^\[[^\]]+\]$/.test(trimmed)) return true;
+
+      // Check for /ipa/ format - but only if it looks like real IPA
+      // Real IPA typically has special phonetic symbols and stress marks
+      const ipaPattern = /^\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\/$/;
+
+      // Also exclude common English patterns
+      const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
+
+      if (ipaPattern.test(trimmed)) {
+        const match = trimmed.match(/^\/([^\/]+)\/$/);
+        if (match) {
+          const ipaContent = match[1];
+          if (excludePattern.test(ipaContent)) {
+            const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
+            if (!hasPhoneticSymbols) {
+              return false;
+            }
+          }
+          return true;
+        }
+      }
+      return false;
     }
 
     /**
@@ -1512,8 +1579,38 @@
     hasIpaMarker(content) {
       // First, remove *word(...)* patterns to avoid matching IPA inside them
       const cleaned = content.replace(/\*[a-zA-Z'-]+\([^)]*\)\*/g, '');
-      // Then check for IPA marker in the remaining content
-      return /(\[[^\]]+\]|\/[^\/]+\/)/.test(cleaned);
+
+      // Check for [ipa] format - always valid
+      if (/\[[^\]]+\]/.test(cleaned)) return true;
+
+      // Check for /ipa/ format - but only if it looks like real IPA
+      // Real IPA typically has:
+      // 1. Special phonetic symbols (ə, ɪ, ɛ, æ, ʌ, ɑ, ɔ, ʊ, ʃ, ʒ, θ, ð, ŋ)
+      // 2. Stress marks (ˈ, ˌ)
+      // 3. Not just regular English words like /plane/ or /make efforts to/
+      const ipaPattern = /\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//;
+
+      // Also exclude common English patterns that look like IPA but aren't
+      const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
+
+      if (ipaPattern.test(cleaned)) {
+        // Check if it's a real IPA pattern by ensuring it contains phonetic symbols
+        // and not just common English words
+        const match = cleaned.match(/\/([^\/]+)\//);
+        if (match) {
+          const ipaContent = match[1];
+          // If it contains common English words, it's probably not IPA
+          if (excludePattern.test(ipaContent)) {
+            // But also check if it has real phonetic symbols
+            const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
+            if (!hasPhoneticSymbols) {
+              return false;
+            }
+          }
+          return true;
+        }
+      }
+      return false;
     }
 
     /**
@@ -1585,7 +1682,23 @@
         let cn = '';
 
         // Extract IPA first
-        const ipaMatch = word.match(/\[([^\]]+)\]|\/([^\/]+)\//);
+        // Check for [ipa] format - always valid
+        let ipaMatch = word.match(/\[([^\]]+)\]/);
+        if (!ipaMatch) {
+          // Check for /ipa/ format - but only if it looks like real IPA
+          ipaMatch = word.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
+          // Exclude common English patterns
+          if (ipaMatch) {
+            const ipaContent = ipaMatch[1];
+            const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
+            if (excludePattern.test(ipaContent)) {
+              const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
+              if (!hasPhoneticSymbols) {
+                ipaMatch = null;
+              }
+            }
+          }
+        }
         if (ipaMatch) {
           ipa = ipaMatch[0];
           word = word.replace(ipa, '').trim();
@@ -1880,10 +1993,12 @@
       // Header
       // Add play button for word pronunciation
       const wordEscaped = card.word.replace(/'/g, '\\\'');
-      const playButton = `<button class="btn-ghost" onclick="app.playWord('${wordEscaped}')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+      const playButtonId = `play-btn-main`;
+      const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg>
+        <span class="btn-spinner"></span>
       </button>`;
       this.ui.word.innerHTML = `<span>${card.word}</span> ${playButton}`;
       this.ui.ipa.textContent = ''; // 不显示音标
@@ -2058,12 +2173,14 @@
 
               // Play button
               const playBtn = document.createElement('button');
-              playBtn.className = 'synonym-play-btn';
-              playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>`;
+              playBtn.className = 'synonym-play-btn audio-play-btn';
               const synWordEscaped = syn.word.replace(/'/g, '\\\'');
-              playBtn.onclick = () => app.playWord(synWordEscaped);
+              const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+              playBtn.id = synBtnId;
+              playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg><span class="btn-spinner"></span>`;
+              playBtn.onclick = () => app.playWord(synWordEscaped, synBtnId);
 
               const synWord = document.createElement('span');
               synWord.className = 'synonym-word';
@@ -2114,12 +2231,14 @@
 
               // Play button
               const playBtn = document.createElement('button');
-              playBtn.className = 'synonym-play-btn';
+              playBtn.className = 'synonym-play-btn audio-play-btn';
+              const antWordEscaped = ant.word.replace(/'/g, '\\\'');
+              const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+              playBtn.id = antBtnId;
               playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>`;
-              const antWordEscaped = ant.word.replace(/'/g, '\\\'');
-              playBtn.onclick = () => app.playWord(antWordEscaped);
+              </svg><span class="btn-spinner"></span>`;
+              playBtn.onclick = () => app.playWord(antWordEscaped, antBtnId);
 
               const antWord = document.createElement('span');
               antWord.className = 'synonym-word';
@@ -2513,22 +2632,38 @@
       }
     }
 
-    async playWord(word, useTTSFallback = false) {
+    async playWord(word, buttonId = null, useTTSFallback = false) {
       if (!word) return;
 
-      console.log('🎵 [PLAY] Request to play:', word, 'TTS:', useTTSFallback);
+      // Helper function to set button loading state
+      const setButtonLoading = (isLoading, btnId) => {
+        if (!btnId) return;
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          if (isLoading) {
+            btn.classList.add('loading');
+            btn.disabled = true;
+          } else {
+            btn.classList.remove('loading');
+            btn.disabled = false;
+          }
+        }
+      };
+
+      // Show loading state on button
+      setButtonLoading(true, buttonId);
 
       // Priority: Youdao Dictionary → Browser TTS
       if (!useTTSFallback) {
         // Try Youdao first
         this.playCambridgeAudio(word).then(() => {
-          console.log('✅ [Youdao] Successfully played:', word);
+          setButtonLoading(false, buttonId);
           this.showToast('🔊 播放中');
         }).catch((error) => {
-          console.warn('⚠️ [Youdao] Failed, falling back to TTS:', error);
           // Youdao failed, use TTS as last resort
           this.showToast('🔊 使用浏览器语音...');
-          this.playWord(word, true);
+          // Don't clear loading yet, TTS will handle it
+          this.playWord(word, buttonId, true);
         });
         return;
       }
@@ -2550,11 +2685,12 @@
 
           // Add event handlers for better debugging
           utterance.onstart = () => {
-            console.log('🔊 [TTS] Playing:', word);
+            setButtonLoading(false, buttonId);
           };
 
           utterance.onerror = (event) => {
             console.warn('Speech synthesis error:', event.error);
+            setButtonLoading(false, buttonId);
             if (event.error === 'canceled') {
               // User canceled, not really an error
               return;
@@ -2564,6 +2700,7 @@
 
           utterance.onend = () => {
             console.log('✅ [TTS] Finished playing:', word);
+            setButtonLoading(false, buttonId);
           };
 
           // Try to use American English voice first
@@ -2595,40 +2732,18 @@
           window.speechSynthesis.speak(utterance);
         } catch (e) {
           console.error('Speech synthesis exception:', e);
+          setButtonLoading(false, buttonId);
           this.showToast('语音播放出错');
         }
       } else {
+        setButtonLoading(false, buttonId);
         this.showToast('浏览器不支持语音播放');
       }
     }
 
     /**
-     * Play local audio from GitHub repository
-     * @param {string} word - The word to pronounce
-     * @returns {Promise} - Resolves when audio plays, rejects on error
-     */
-    async playLocalAudio(word) {
-      try {
-        // Clean the word: remove extra spaces, convert to lowercase
-        const cleanWord = word.trim().toLowerCase().replace(/\s+/g, '-');
-        const firstLetter = cleanWord.charAt(0);
-
-        // Local audio URL (from your GitHub repository)
-        const audioUrl = `${CONFIG.localAudioBaseUrl}/${firstLetter}/${cleanWord}.mp3`;
-
-        console.log('🎵 [Local] Trying:', audioUrl);
-
-        await this.playAudioUrl(audioUrl);
-        return;
-      } catch (error) {
-        console.warn('Local audio failed:', error);
-        throw error;
-      }
-    }
-
-    /**
      * Play pronunciation from Youdao Dictionary
-     * Uses CORS proxy to avoid cross-origin issues on GitHub Pages
+     * Direct request without CORS proxy for faster response
      * @param {string} word - The word to pronounce
      * @returns {Promise} - Resolves when audio plays, rejects on error
      */
@@ -2647,16 +2762,11 @@
         ];
 
         // Try each URL until one works
-        for (const originalUrl of urlPatterns) {
+        for (const url of urlPatterns) {
           try {
-            // Use CORS proxy to bypass cross-origin restrictions
-            const proxiedUrl = CONFIG.corsProxy + encodeURIComponent(originalUrl);
-            console.log('🎵 [Youdao] Trying:', proxiedUrl);
-            await this.playAudioUrl(proxiedUrl);
-            console.log('✅ [Youdao] Successfully played:', cleanWord);
+            await this.playAudioUrl(url);
             return; // Success, exit
           } catch (err) {
-            console.log('⚠️ [Youdao] Failed:', originalUrl, err.message);
             // Try next URL
             continue;
           }
@@ -2685,9 +2795,7 @@
 
         // Mobile browsers require explicit user interaction
         audio.play().then(() => {
-          console.log('▶️ Playing audio...');
           audio.onended = () => {
-            console.log('✅ Audio finished');
             resolve();
           };
         }).catch((err) => {
