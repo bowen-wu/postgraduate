@@ -2498,18 +2498,8 @@
         }
       }
 
-      // For word cards and prefix cards, show "记得/不记得" buttons
-      if (card.type === 'word' || card.type === 'prefix') {
-        console.log(`[renderInputActions] Showing word/prefix buttons for card:`, card.word);
-        this.ui.actionArea.innerHTML = `
-          <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
-          <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
-        `;
-        return;
-      }
-
-      // Default: show "下一个" button
-      console.log(`[renderInputActions] Showing next button (default) for card:`, card.word);
+      // 浏览模式：所有卡片类型都显示"下一个"按钮
+      console.log(`[renderInputActions] Showing next button for card:`, card.word);
       this.ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
     }
 
