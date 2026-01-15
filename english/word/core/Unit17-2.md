@@ -78,6 +78,7 @@
     - v. （使）缓和
     - adj. 适度的；合理的
     - == modest
+    - moderation n. 适度; 自我节制; 稳定，镇定
 
 ## proportion
 
