@@ -865,7 +865,9 @@
    * 规则7: == 标记的是同义词
    *   - == word 或 === word → 添加到父卡片的 synonyms
    *
-   * 规则8: 音标一定是被[]包裹的，其他的都不是
+   * 规则8: [] 包裹的内容必须包含音标符号才被认为是音标（否则为语法说明）
+   *   - 音标符号: əɪɛæʌɑɔʊʃʒθðŋˈˌ
+   *   - 示例: [əˈfɜːmər] 是音标，[现在分词短语] 不是
    *
    * 规则9: Opposite: 代表的是反义词，添加到单词的反义词中
    *
@@ -874,6 +876,17 @@
     // Valid POS (Part of Speech) markers - using Set for O(1) lookup
     static POS_MARKERS = new Set([
       'n.', 'v.', 'vt.', 'vi.', 'adj.', 'adv.', 'prep.', 'conj.', 'int.', 'pron.', 'art.', 'num.']);
+
+    // 规则8: IPA (音标) symbols - using Set for O(1) lookup
+    // [] 包裹的内容必须包含这些符号才被认为是音标
+    static IPA_SYMBOLS = new Set([
+      // 元音
+      'ə', 'ɪ', 'ɛ', 'æ', 'ʌ', 'ɑ', 'ɔ', 'ʊ',
+      // 辅音
+      'ʃ', 'ʒ', 'θ', 'ð', 'ŋ',
+      // 重音与长短音
+      'ˈ', 'ˌ', 'ː'
+    ]);
 
     constructor(text) {
       this.lines = text.split('\n');
@@ -1489,8 +1502,20 @@
       let cn = '';
 
       // Extract IPA first (remove it from content)
-      // Check for [ipa] format - always valid
-      let ipaMatch = content.match(/\[([^\]]+)\]/);
+      // Check for [ipa] format - must contain IPA symbols (规则8)
+      let ipaMatch = null;
+      const bracketMatch = content.match(/\[([^\]]+)\]/);
+      if (bracketMatch) {
+        const innerContent = bracketMatch[1];
+        // Check if any IPA symbol is present (using Set for O(1) lookup per character)
+        for (const char of innerContent) {
+          if (MarkdownParser.IPA_SYMBOLS.has(char)) {
+            ipaMatch = bracketMatch;
+            break;
+          }
+        }
+        // If no IPA symbols found, it's a grammar note, not IPA
+      }
       if (!ipaMatch) {
         // Check for /ipa/ format - but only if it looks like real IPA
         ipaMatch = content.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
@@ -1610,12 +1635,24 @@
 
     /**
      * Check if it's a pure IPA line ([音标])
+     * 规则8: [] 包裹的内容必须包含音标符号才被认为是音标
      */
     isPureIpaLine(content) {
       const trimmed = content.trim();
 
-      // Check for [ipa] format - always valid
-      if (/^\[[^\]]+\]$/.test(trimmed)) return true;
+      // Check for [ipa] format - must contain IPA symbols
+      const bracketMatch = trimmed.match(/^\[([^\]]+)\]$/);
+      if (bracketMatch) {
+        const innerContent = bracketMatch[1];
+        // Check if any IPA symbol is present (using Set for O(1) lookup per character)
+        for (const char of innerContent) {
+          if (MarkdownParser.IPA_SYMBOLS.has(char)) {
+            return true;
+          }
+        }
+        // No IPA symbols found - it's a grammar note, not IPA
+        return false;
+      }
 
       // Check for /ipa/ format - but only if it looks like real IPA
       // Real IPA typically has special phonetic symbols and stress marks
@@ -1657,13 +1694,26 @@
     /**
      * Check if content has IPA marker (word with pronunciation)
      * Ignores IPA markers inside *word(...)* patterns (which will be extracted separately)
+     * 规则8: [] 包裹的内容必须包含音标符号才被认为是音标
      */
     hasIpaMarker(content) {
       // First, remove *word(...)* patterns to avoid matching IPA inside them
       const cleaned = content.replace(/\*[a-zA-Z'-]+\([^)]*\)\*/g, '');
 
-      // Check for [ipa] format - always valid
-      if (/\[[^\]]+\]/.test(cleaned)) return true;
+      // Check for [ipa] format - must contain IPA symbols
+      const bracketMatches = cleaned.match(/\[([^\]]+)\]/g);
+      if (bracketMatches) {
+        for (const bracket of bracketMatches) {
+          const innerContent = bracket.slice(1, -1); // Remove [ and ]
+          // Check if any IPA symbol is present (using Set for O(1) lookup per character)
+          for (const char of innerContent) {
+            if (MarkdownParser.IPA_SYMBOLS.has(char)) {
+              return true;
+            }
+          }
+        }
+        // Found [] but no IPA symbols - they are grammar notes, not IPA
+      }
 
       // Check for /ipa/ format - but only if it looks like real IPA
       // Real IPA typically has:
@@ -1798,8 +1848,20 @@
         let cn = '';
 
         // Extract IPA first
-        // Check for [ipa] format - always valid
-        let ipaMatch = word.match(/\[([^\]]+)\]/);
+        // Check for [ipa] format - must contain IPA symbols (规则8)
+        let ipaMatch = null;
+        const bracketMatch = word.match(/\[([^\]]+)\]/);
+        if (bracketMatch) {
+          const innerContent = bracketMatch[1];
+          // Check if any IPA symbol is present (using Set for O(1) lookup per character)
+          for (const char of innerContent) {
+            if (MarkdownParser.IPA_SYMBOLS.has(char)) {
+              ipaMatch = bracketMatch;
+              break;
+            }
+          }
+          // If no IPA symbols found, it's a grammar note, not IPA
+        }
         if (!ipaMatch) {
           // Check for /ipa/ format - but only if it looks like real IPA
           ipaMatch = word.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
