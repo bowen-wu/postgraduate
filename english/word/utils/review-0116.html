@@ -78,6 +78,20 @@
         .btn-danger { background: var(--danger); color: white; }
         .btn-ghost { background: transparent; color: var(--secondary); }
         .btn-ghost:hover { background: rgba(0, 0, 0, 0.05); }
+        .btn-icon-toggle {
+            background: transparent;
+            color: var(--secondary);
+            padding: 0.5rem;
+            position: relative;
+        }
+        .btn-icon-toggle:hover { background: rgba(0, 0, 0, 0.05); }
+        .btn-icon-toggle.active {
+            color: var(--primary);
+            background: rgba(79, 70, 229, 0.1);
+        }
+        .btn-icon-toggle svg {
+            transition: all 0.2s;
+        }
         .toggle-switch {
             display: flex; background: #e2e8f0; padding: 3px; border-radius: 20px; position: relative;
         }
@@ -515,12 +529,32 @@
 
             /* Make toggle-switch more compact on mobile */
             .toggle-switch {
-                max-width: 140px;
+                max-width: 120px;
             }
 
             .toggle-switch button {
-                padding: 0.4rem 0.6rem;
-                font-size: 0.75rem;
+                padding: 0.35rem 0.5rem;
+                font-size: 0.7rem;
+            }
+
+            /* Icon button styles on mobile */
+            .header-controls button.btn-icon-toggle {
+                padding: 0.4rem;
+            }
+
+            .header-controls button.btn-icon-toggle svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            /* Hide stats button on very small screens if needed */
+            .header-controls button.btn-ghost {
+                padding: 0.35rem 0.5rem;
+            }
+
+            .header-controls button.btn-ghost svg {
+                width: 16px;
+                height: 16px;
             }
 
             /* Fix workspace layout on mobile - stack vertically */
@@ -582,6 +616,16 @@
             <button id="btnModeInput" class="active" onclick="app.setMode('input')">浏览</button>
             <button id="btnModeRecall" onclick="app.setMode('recall')">遮挡</button>
         </div>
+
+        <button id="btnAutoPlay" class="btn-icon-toggle" onclick="app.toggleAutoPlay()" title="自动播放">
+            <svg id="iconAutoPlayOff" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+            <svg id="iconAutoPlayOn" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+        </button>
 
         <button class="btn-ghost" onclick="app.toggleStats()">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -694,7 +738,8 @@
     mode: 'input',
     stats: {},
     currentPath: null,  // e.g., "core/Unit10-1.md"
-    currentFile: null   // Current file info from GitHub API
+    currentFile: null,  // Current file info from GitHub API
+    autoPlay: false     // Auto-play pronunciation for words
   };
 
   /**
@@ -869,7 +914,7 @@
    *   - 音标符号: əɪɛæʌɑɔʊʃʒθðŋˈˌ
    *   - 示例: [əˈfɜːmər] 是音标，[现在分词短语] 不是
    *
-   * 规则9: Opposite: 代表的是反义词，添加到单词的反义词中
+   * 规则9: 以 - Opposite: 开头的后面的是反义词，添加到单词的反义词中
    *
    */
   class MarkdownParser {
@@ -881,11 +926,20 @@
     // [] 包裹的内容必须包含这些符号才被认为是音标
     static IPA_SYMBOLS = new Set([
       // 元音
-      'ə', 'ɪ', 'ɛ', 'æ', 'ʌ', 'ɑ', 'ɔ', 'ʊ',
+      'i', 'ɪ', 'e', 'ɛ', 'æ',
+      'ɑ', 'ɒ', 'ɔ', 'ʊ', 'u',
+      'ʌ', 'ə', 'ɜ', 'ɚ',
+
       // 辅音
-      'ʃ', 'ʒ', 'θ', 'ð', 'ŋ',
-      // 重音与长短音
-      'ˈ', 'ˌ', 'ː'
+      'p', 'b', 't', 'd', 'k', 'g',
+      'f', 'v', 'θ', 'ð', 's', 'z',
+      'ʃ', 'ʒ', 'h',
+      'm', 'n', 'ŋ',
+      'l', 'r', 'j', 'w',
+      't', 'ʃ', 'd', 'ʒ',
+
+      // 重音 / 音长 / 分隔
+      'ˈ', 'ˌ', 'ː', '.'
     ]);
 
     constructor(text) {
@@ -986,9 +1040,14 @@
      * @returns {number|undefined} The last line index processed (for sentences), or undefined for other card types
      */
     processListItem(line, indentLevel, content, lineIndex) {
-      if (this.debug) {
+      // 特别追踪 "His face" 这行
+      const isTargetLine = content.includes('His face');
+
+      if (this.debug || isTargetLine) {
         console.log(`\n[DEBUG] Line ${lineIndex}: "${content}" (indent: ${indentLevel})`);
         console.log(`[DEBUG] parentCard: ${this.parentCard ? this.parentCard.word : 'null'}`);
+        console.log(`[DEBUG] parentCard.type: ${this.parentCard ? this.parentCard.type : 'null'}`);
+        console.log(`[DEBUG] parentLevel: ${this.parentLevel}`);
       }
 
       // Rule 1: Check if it's a synonym marker (==)
@@ -1031,7 +1090,7 @@
       // But only if content doesn't have POS marker (POS means it's a word, not a phrase)
       if (this.inPhraseList && indentLevel > 0 && !this.hasPosMarker(content)) {
         if (this.debug) console.log(`[DEBUG] → Creating phrase card (in phrase list)`);
-        const card = this.createPhraseCard(content);
+        const card = this.createPhraseCard(content, indentLevel);
         this.cards.push(card);
         if (this.debug) console.log(`[DEBUG] Created phrase card: "${card.word}"`);
         return undefined;
@@ -1054,7 +1113,7 @@
         if (this.debug) console.log(`[DEBUG] Created word card: "${card.word}"`);
         return undefined;
       } else if (cardType === 'phrase') {
-        const card = this.createPhraseCard(content);
+        const card = this.createPhraseCard(content, indentLevel);
         this.cards.push(card);
         if (this.debug) console.log(`[DEBUG] Created phrase card: "${card.word}"`);
         return undefined;
@@ -1072,7 +1131,19 @@
      * Determine card type based on content and context
      */
     determineCardType(content, indentLevel, lineIndex = null) {
-      console.log(`[determineCardType] content="${content}", lineIndex=${lineIndex}`);
+      const isTargetLine = content.includes('His face');
+      if (isTargetLine) {
+        console.log(`\n========== [TARGET LINE] determineCardType ==========`);
+        console.log(`[determineCardType] content="${content}"`);
+        console.log(`[determineCardType] lineIndex=${lineIndex}`);
+        console.log(`[determineCardType] indentLevel=${indentLevel}`);
+        console.log(`[determineCardType] parentCard.type=${this.parentCard ? this.parentCard.type : 'null'}`);
+        console.log(`[determineCardType] parentLevel=${this.parentLevel}`);
+        console.log(`[determineCardType] inPhraseList=${this.inPhraseList}`);
+        console.log(`[determineCardType] inPhraseHeader=${this.inPhraseHeader}`);
+      } else {
+        console.log(`[determineCardType] content="${content}", lineIndex=${lineIndex}`);
+      }
 
       // 规则5: Check if it's a prefix or suffix (-xx-, -xxx, xx-)
       if (this.isPrefixOrSuffix(content, lineIndex)) {
@@ -1098,9 +1169,12 @@
         return 'word';
       }
 
-      // Check if first child has POS (e.g., "inadequate" has child "adj. 不够的")
+      // 规则3: 检查子级是否以词性开头（如 "adv. 相互地"）
+      // 如果子级的开头就是词性标记，说明父级是word卡片
+      // 例如: "mutually" 的子级 "adv. 相互地" 以词性开头 → mutually是word
+      // 反例: "His face..." 的子级 "barely adv. 几乎不" 以单词开头 → 父级是sentence
       if (this.firstChildHasPos(content, indentLevel)) {
-        console.log(`[determineCardType] → returning 'word' (first child has POS)`);
+        console.log(`[determineCardType] → returning 'word' (rule 3: child starts with POS)`);
         return 'word';
       }
 
@@ -1117,7 +1191,12 @@
       }
 
       // Otherwise, it's a sentence
-      console.log(`[determineCardType] → returning 'sentence' (default)`);
+      if (isTargetLine) {
+        console.log(`[determineCardType] → returning 'sentence' (default)`);
+        console.log(`[determineCardType] ========== END TARGET LINE ==========\n`);
+      } else {
+        console.log(`[determineCardType] → returning 'sentence' (default)`);
+      }
       return 'sentence';
     }
 
@@ -1126,6 +1205,15 @@
      * @returns {number} The last line index processed (including children), or null if no children
      */
     processSentence(content, indentLevel, lineIndex) {
+      const isTargetLine = content.includes('His face');
+      if (isTargetLine) {
+        console.log(`\n========== [processSentence] TARGET LINE ==========`);
+        console.log(`[processSentence] content="${content}"`);
+        console.log(`[processSentence] indentLevel=${indentLevel}`);
+        console.log(`[processSentence] lineIndex=${lineIndex}`);
+        console.log(`[processSentence] ========== END TARGET ==========\n`);
+      }
+
       const extractedCards = [];
 
       // 🔧 FIX: Merge continuation lines before processing
@@ -1157,7 +1245,6 @@
 
           // If deeper indent, check if it's a real child card or just continuation
           // Real child cards have: POS markers, "词组", synonyms, Chinese text, or specific patterns
-          // Continuation lines have: plain English text only
           const lineContent = trimmed.substring(1).trim();
           const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(lineContent);
           const isRealChild =
@@ -1173,26 +1260,24 @@
             // This is a real child card, stop merging
             break;
           } else {
-            // This is a continuation line (indented list item that continues the sentence)
-            mergedContent += ' ' + lineContent;
-            mergedLines.push(nextLineIndex);
-            nextLineIndex++;
-            continue;
+            // 🔧 FIX: Lines with "-" are independent cards, NOT continuation lines!
+            // Only pure text (without "-") should be merged as continuation
+            // Break here and let it be processed as a separate card (phrase/sentence)
+            break;
           }
         }
 
-        // Not a list item - check if it's a plain continuation (indented text without -)
+        // Not a list item - if it doesn't start with '-', merge it as continuation
         if (!trimmed.startsWith('-')) {
-          const nextIndentMatch = nextLine.match(/^(\s*)/);
-          const nextIndentLevel = nextIndentMatch ? nextIndentMatch[1].length : 0;
-
-          // If indented, it's a continuation line
-          if (nextIndentLevel > indentLevel) {
-            mergedContent += ' ' + trimmed;
-            mergedLines.push(nextLineIndex);
-            nextLineIndex++;
-            continue;
+          // Stop at section headers (##)
+          if (trimmed.startsWith('##')) {
+            break;
           }
+          // Any other line without '-' is part of the sentence
+          mergedContent += ' ' + trimmed;
+          mergedLines.push(nextLineIndex);
+          nextLineIndex++;
+          continue;
         }
 
         // Not a continuation line
@@ -1214,7 +1299,7 @@
       clean = clean.replace(/\*([a-zA-Z'-]+)\*/g, '$1');  // Remove * around single words
 
       // Step 3: Extract <ins>phrase</ins> patterns
-      clean = this.extractInsPhrases(clean, extractedCards);
+      clean = this.extractInsPhrases(clean, extractedCards, indentLevel);
 
       // Step 4: Create sentence card FIRST (so parentCard is set before processing children)
       // This ensures children can correctly detect they are children of a sentence
@@ -1285,6 +1370,10 @@
       const children = [];
       let i = lineIndex + 1;
 
+      // Save parent state before processing children
+      const savedParentCard = this.parentCard;
+      const savedParentLevel = this.parentLevel;
+
       while (i < this.lines.length) {
         // Skip lines that were already merged as continuation
         if (skipLines.includes(i)) {
@@ -1334,6 +1423,10 @@
           continue;
         }
 
+        // Restore parent state before determining card type
+        this.parentCard = savedParentCard;
+        this.parentLevel = savedParentLevel;
+
         // Determine card type for this child
         const cardType = this.determineCardType(content, indentLevel, lineIndex);
 
@@ -1341,7 +1434,7 @@
         if (cardType === 'word') {
           children.push(this.createWordCard(content, indentLevel));
         } else if (cardType === 'phrase') {
-          children.push(this.createPhraseCard(content));
+          children.push(this.createPhraseCard(content, indentLevel));
         } else if (cardType === 'prefix') {
           children.push(this.createPrefixCard(content, indentLevel));
         } else {
@@ -1359,31 +1452,39 @@
         i++;
       }
 
+      // Restore parent state after processing children
+      this.parentCard = savedParentCard;
+      this.parentLevel = savedParentLevel;
+
       // Return both children and the last line index processed (i - 1 because the loop exited after finding a non-child line)
       return { children, lastLineIndex: i - 1 };
     }
 
     /**
      * Extract *word(pos. definition)* patterns from sentence
+     * Only extracts if definition has POS marker (n., v., adj., etc.)
+     * Patterns without POS (e.g., *word([ipa])*) are kept unchanged
      */
     extractItalicWords(text, extractedCards) {
       // Match *word(def)* format - use lazy quantifier to stop at first )*
       return text.replace(/\*([a-zA-Z'-]+)\(([^*]*?)\)\*/g, (match, word, def) => {
-        // Check if definition has POS
+        // Only extract if definition has POS marker
         if (this.hasPosMarker(def)) {
           extractedCards.push(this.createWordCard(`${word} ${def}`, 0));
+          return word; // Replace with plain word
         }
-        return word;
+        // No POS marker - keep original format unchanged
+        return match;
       });
     }
 
     /**
      * Extract <ins>phrase</ins> patterns from sentence
      */
-    extractInsPhrases(text, extractedCards) {
+    extractInsPhrases(text, extractedCards, indentLevel) {
       return text.replace(/<ins>(.*?)<\/ins>/g, (match, phrase) => {
         const cleanPhrase = phrase.replace(/\*/g, '').trim();
-        extractedCards.push(this.createPhraseCard(cleanPhrase));
+        extractedCards.push(this.createPhraseCard(cleanPhrase, indentLevel));
         return cleanPhrase;
       });
     }
@@ -1393,6 +1494,19 @@
      */
     createWordCard(content, indentLevel) {
       const {word, ipa, pos, cn} = this.parseWordContent(content);
+
+      // 特别追踪 "His face" 或包含 "face" 的word卡片
+      const isTargetCard = word.includes('His face') || word.includes('face');
+      if (isTargetCard) {
+        console.log(`\n========== [createWordCard] TARGET CARD ==========`);
+        console.log(`[createWordCard] content="${content}"`);
+        console.log(`[createWordCard] parsed word="${word}"`);
+        console.log(`[createWordCard] ipa="${ipa || ''}"`);
+        console.log(`[createWordCard] pos="${pos || ''}"`);
+        console.log(`[createWordCard] cn="${cn || ''}"`);
+        console.log(`[createWordCard] ========== END TARGET CARD ==========\n`);
+      }
+
       const card = {
         id: `card_${this.cardCounter++}`,
         word: word,
@@ -1410,10 +1524,14 @@
         card.items.push({type: 'def', en: pos, cn: cn || ''});
       }
 
-      // 规则9: Check if this word is an antonym (has 😔 marker)
+      // 规则9: Check if this word is an antonym (以 - Opposite: 开头)
       if (this.hasAntonymMarker(content)) {
-        // Remove the emoji from the word for cleaner display
-        card.word = word.replace(/😔/g, '').trim();
+        // Extract the antonym word (after "Opposite: ")
+        const antonymMatch = content.match(/^Opposite:\s*(\S+)/);
+        if (antonymMatch) {
+          const antonymWord = antonymMatch[1];
+          card.word = antonymWord;
+        }
 
         // Add to parent card's antonyms if parent exists
         if (this.parentCard && !this.parentCard.antonyms) {
@@ -1438,7 +1556,7 @@
     /**
      * Create phrase card
      */
-    createPhraseCard(content) {
+    createPhraseCard(content, indentLevel) {
       const {word, cn} = this.parsePhraseContent(content);
       const card = {
         id: `card_${this.cardCounter++}`,
@@ -1449,7 +1567,7 @@
 
       // Update parent reference
       this.parentCard = card;
-      this.parentLevel = 4;  // Phrase cards are typically at level 4
+      this.parentLevel = indentLevel;
 
       return card;
     }
@@ -1752,11 +1870,15 @@
      */
     isPrefixOrSuffix(content, lineIndex = null) {
       const trimmed = content.trim();
-      // 提取空格前的部分（前缀本身）
-      const firstPart = trimmed.split(/\s+/)[0];
-      // Match patterns like: dis-, -dis-, pre-, -pre
+
+      // Find the first Chinese character to split English and Chinese
+      const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
+      const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
+
+      // The entire English part should match the prefix pattern
+      // Not just the first word - so "trash disposal" won't match, but "-ee" will
       const prefixSuffixPattern = /^-?[a-z]{1,5}-?$/;
-      const patternMatch = prefixSuffixPattern.test(firstPart);
+      const patternMatch = prefixSuffixPattern.test(englishPart);
       const hasPosMarker = this.hasPosMarker(content);
 
       // Check if Chinese is on the same line
@@ -1767,20 +1889,22 @@
                     hasChineseOnSameLine;
 
       // Debug log
-      console.log(`[isPrefixOrSuffix] content="${content}", firstPart="${firstPart}", patternMatch=${patternMatch}, hasChinese=${hasChineseOnSameLine}, result=${result}`);
+      console.log(`[isPrefixOrSuffix] content="${content}", englishPart="${englishPart}", patternMatch=${patternMatch}, hasChinese=${hasChineseOnSameLine}, result=${result}`);
 
       return result;
     }
 
     /**
-     * 规则9: Check if content has antonym marker (😔)
+     * 规则9: Check if content has antonym marker
+     * 格式: - Opposite: word (以 Opposite: 开头)
      */
     hasAntonymMarker(content) {
-      return content.includes('😔');
+      return /^Opposite:\s*/.test(content);
     }
 
     /**
      * Check if first child has POS
+     * 修复：不依赖缩进，直接查找下一个以词性开头的行
      */
     firstChildHasPos(content, indentLevel) {
       // Find the current line index
@@ -1803,7 +1927,7 @@
 
       if (currentLineIndex === -1) return false;
 
-      // Look at next lines to find first child with greater indent
+      // Look at next lines to find first item (not necessarily indented)
       for (let i = currentLineIndex + 1; i < this.lines.length; i++) {
         const line = this.lines[i];
         const trimmed = line.trim();
@@ -1811,21 +1935,48 @@
         // Skip empty lines
         if (!trimmed) continue;
 
+        // Stop if we hit a new header (##)
+        if (trimmed.startsWith('##')) break;
+
         // Check if it's a list item
         if (!trimmed.startsWith('-')) break;
 
-        // Check indent level
+        // Get the next line's indent level
         const indentMatch = line.match(/^(\s*)-/);
         if (!indentMatch) break;
-
         const nextIndentLevel = indentMatch[1].length;
 
-        // Exit if not a child (same level or higher)
-        if (nextIndentLevel <= indentLevel) break;
+        // Exit if we've moved to a higher level (less indented) - this is a sibling, not a child
+        if (nextIndentLevel < indentLevel) break;
 
-        // This is a child - check if it has POS
+        // This is a child or same-level item - check if it STARTS with POS
+        // 规则3: 子级以词性开头 → 父级是word
+        // - "v. 使倾斜" starts with POS → true (parent is word)
+        // - "barely adv. 几乎不" starts with word, not POS → false (parent is sentence)
         const nextContent = trimmed.substring(1).trim();
-        return this.isPurePosLine(nextContent) || this.hasPosMarker(nextContent);
+
+        // Check if content starts with a valid POS marker
+        // Using the same Set-based lookup as hasPosMarker
+        const posMatch = nextContent.match(/^([a-z]+)\./);
+        if (posMatch) {
+          const pos = posMatch[1] + '.';
+          if (MarkdownParser.POS_MARKERS.has(pos)) {
+            console.log(`[firstChildHasPos] Found child with POS: "${nextContent}"`);
+            return true;
+          }
+        }
+
+        // Also check with isPurePosLine for strict matching
+        if (this.isPurePosLine(nextContent)) {
+          console.log(`[firstChildHasPos] Pure POS line found: "${nextContent}"`);
+          return true;
+        }
+
+        // If this is same-level item and doesn't start with POS, stop searching
+        // (we've moved to a sibling, not a child definition)
+        if (nextIndentLevel === indentLevel) {
+          break;
+        }
       }
 
       return false;
@@ -1835,94 +1986,105 @@
      * Add synonym to parent card
      * Parses synonym content to extract word, ipa, pos, and cn
      * Example: "sufficient [səˈfɪʃnt] adj. 足够的"
+     * 支持多个同义词：== word1 == word2 == word3
      */
     addSynonymToParent(content) {
       if (this.parentCard) {
-        const synonymContent = content.replace(/^===?\s+/, '').trim();
+        // 移除开头的 == 或 ===
+        let synonymContent = content.replace(/^===?\s+/, '').trim();
         this.parentCard.synonyms = this.parentCard.synonyms || [];
 
-        // Parse the synonym content
-        let word = synonymContent;
-        let ipa = '';
-        let pos = '';
-        let cn = '';
+        // 检查是否有多个同义词（用 == 分隔）
+        const multipleSynonyms = synonymContent.split(/\s+==\s+/);
 
-        // Extract IPA first
-        // Check for [ipa] format - must contain IPA symbols (规则8)
-        let ipaMatch = null;
-        const bracketMatch = word.match(/\[([^\]]+)\]/);
-        if (bracketMatch) {
-          const innerContent = bracketMatch[1];
-          // Check if any IPA symbol is present (using Set for O(1) lookup per character)
-          for (const char of innerContent) {
-            if (MarkdownParser.IPA_SYMBOLS.has(char)) {
-              ipaMatch = bracketMatch;
-              break;
+        // 处理每个同义词
+        for (const syn of multipleSynonyms) {
+          const trimmed = syn.trim();
+          if (!trimmed) continue;
+
+          // Parse the synonym content
+          let word = trimmed;
+          let ipa = '';
+          let pos = '';
+          let cn = '';
+
+          // Extract IPA first
+          // Check for [ipa] format - must contain IPA symbols (规则8)
+          let ipaMatch = null;
+          const bracketMatch = word.match(/\[([^\]]+)\]/);
+          if (bracketMatch) {
+            const innerContent = bracketMatch[1];
+            // Check if any IPA symbol is present (using Set for O(1) lookup per character)
+            for (const char of innerContent) {
+              if (MarkdownParser.IPA_SYMBOLS.has(char)) {
+                ipaMatch = bracketMatch;
+                break;
+              }
+            }
+            // If no IPA symbols found, it's a grammar note, not IPA
+          }
+          if (!ipaMatch) {
+            // Check for /ipa/ format - but only if it looks like real IPA
+            ipaMatch = word.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
+            // Exclude common English patterns
+            if (ipaMatch) {
+              const ipaContent = ipaMatch[1];
+              const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
+              if (excludePattern.test(ipaContent)) {
+                const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
+                if (!hasPhoneticSymbols) {
+                  ipaMatch = null;
+                }
+              }
             }
           }
-          // If no IPA symbols found, it's a grammar note, not IPA
-        }
-        if (!ipaMatch) {
-          // Check for /ipa/ format - but only if it looks like real IPA
-          ipaMatch = word.match(/\/([^\/]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\/]*)\//);
-          // Exclude common English patterns
           if (ipaMatch) {
-            const ipaContent = ipaMatch[1];
-            const excludePattern = /\b(the|a|an|to|of|in|on|at|by|for|with|from|about|plane|ship|aircraft|make|efforts|endeavors|much|little|nothings)\b/i;
-            if (excludePattern.test(ipaContent)) {
-              const hasPhoneticSymbols = /[əɪɛæʌɑɔʊʃʒθðŋˈˌ]/.test(ipaContent);
-              if (!hasPhoneticSymbols) {
-                ipaMatch = null;
+            ipa = ipaMatch[0];
+            word = word.replace(ipa, '').trim();
+          }
+
+          // Extract POS marker (use Set-based lookup to avoid false positives)
+          // Find the FIRST valid POS marker in the text
+          let validPosMatch = null;
+          let validPosIndex = -1;
+
+          // Check each POS marker in our Set
+          for (const posMarker of MarkdownParser.POS_MARKERS) {
+            const index = word.toLowerCase().indexOf(posMarker);
+            if (index !== -1) {
+              // Make sure it's a whole word match (preceded by space or start)
+              const prevChar = index > 0 ? word[index - 1] : ' ';
+              if (prevChar === ' ' || prevChar === '') {
+                // Found a valid POS marker
+                if (validPosIndex === -1 || index < validPosIndex) {
+                  validPosMatch = posMarker;
+                  validPosIndex = index;
+                }
               }
             }
           }
-        }
-        if (ipaMatch) {
-          ipa = ipaMatch[0];
-          word = word.replace(ipa, '').trim();
-        }
 
-        // Extract POS marker (use Set-based lookup to avoid false positives)
-        // Find the FIRST valid POS marker in the text
-        let validPosMatch = null;
-        let validPosIndex = -1;
-
-        // Check each POS marker in our Set
-        for (const posMarker of MarkdownParser.POS_MARKERS) {
-          const index = word.toLowerCase().indexOf(posMarker);
-          if (index !== -1) {
-            // Make sure it's a whole word match (preceded by space or start)
-            const prevChar = index > 0 ? word[index - 1] : ' ';
-            if (prevChar === ' ' || prevChar === '') {
-              // Found a valid POS marker
-              if (validPosIndex === -1 || index < validPosIndex) {
-                validPosMatch = posMarker;
-                validPosIndex = index;
-              }
+          if (validPosMatch) {
+            pos = validPosMatch;
+            cn = word.substring(validPosIndex + validPosMatch.length).trim();
+            word = word.substring(0, validPosIndex).trim();
+          } else {
+            // No POS - check if there's Chinese
+            const cnMatch = word.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+            if (cnMatch) {
+              cn = word.substring(word.indexOf(cnMatch[0])).trim();
+              word = word.substring(0, word.indexOf(cnMatch[0])).trim();
             }
           }
+
+          // Add parsed synonym
+          const synonym = {word};
+          if (ipa) synonym.ipa = ipa;
+          if (pos) synonym.pos = pos;
+          if (cn) synonym.cn = cn;
+
+          this.parentCard.synonyms.push(synonym);
         }
-
-        if (validPosMatch) {
-          pos = validPosMatch;
-          cn = word.substring(validPosIndex + validPosMatch.length).trim();
-          word = word.substring(0, validPosIndex).trim();
-        } else {
-          // No POS - check if there's Chinese
-          const cnMatch = word.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
-          if (cnMatch) {
-            cn = word.substring(word.indexOf(cnMatch[0])).trim();
-            word = word.substring(0, word.indexOf(cnMatch[0])).trim();
-          }
-        }
-
-        // Add parsed synonym
-        const synonym = {word};
-        if (ipa) synonym.ipa = ipa;
-        if (pos) synonym.pos = pos;
-        if (cn) synonym.cn = cn;
-
-        this.parentCard.synonyms.push(synonym);
       }
     }
 
@@ -2000,6 +2162,9 @@
         fileListContainer: document.getElementById('fileListContainer'),
         btnInput: document.getElementById('btnModeInput'),
         btnRecall: document.getElementById('btnModeRecall'),
+        btnAutoPlay: document.getElementById('btnAutoPlay'),
+        iconAutoPlayOff: document.getElementById('iconAutoPlayOff'),
+        iconAutoPlayOn: document.getElementById('iconAutoPlayOn'),
         btnPrev: document.getElementById('btnPrev'),
         confirmDialog: document.getElementById('confirmDialog'),
         dialogMessage: document.getElementById('dialogMessage'),
@@ -2034,6 +2199,9 @@
 
       this.loadState();
       console.log('init - STATE.cards.length:', STATE.cards.length, 'currentPath:', STATE.currentPath);
+
+      // Initialize autoPlay button state
+      this.updateAutoPlayButton();
 
       if (STATE.cards.length === 0) {
         // Check if we have a saved file path
@@ -2469,6 +2637,15 @@
         this.ui.btnPrev.classList.remove('hidden');
         this.renderInputActions();
       }
+
+      // Auto-play word pronunciation if enabled and card is a word
+      if (STATE.autoPlay && card.type === 'word') {
+        // Use setTimeout to avoid blocking UI render
+        setTimeout(() => {
+          // Pass showToast=false for auto-play to avoid annoying popups
+          this.playWord(card.word, 'play-btn-main', false, false);
+        }, 300);
+      }
     }
 
     renderInputActions() {
@@ -2587,6 +2764,25 @@
       STATE.mode = newMode;
       this.saveState();
       this.render();
+    }
+
+    toggleAutoPlay() {
+      STATE.autoPlay = !STATE.autoPlay;
+      this.updateAutoPlayButton();
+      this.saveState();
+      this.showToast(STATE.autoPlay ? '自动播放已开启' : '自动播放已关闭');
+    }
+
+    updateAutoPlayButton() {
+      if (STATE.autoPlay) {
+        this.ui.btnAutoPlay.classList.add('active');
+        this.ui.iconAutoPlayOff.classList.add('hidden');
+        this.ui.iconAutoPlayOn.classList.remove('hidden');
+      } else {
+        this.ui.btnAutoPlay.classList.remove('active');
+        this.ui.iconAutoPlayOff.classList.remove('hidden');
+        this.ui.iconAutoPlayOn.classList.add('hidden');
+      }
     }
 
     handleRecall(claimedKnown) {
@@ -2825,7 +3021,7 @@
       }
     }
 
-    async playWord(word, buttonId = null, useTTSFallback = false) {
+    async playWord(word, buttonId = null, useTTSFallback = false, showNotification = true) {
       if (!word) return;
 
       // Helper function to set button loading state
@@ -2849,14 +3045,19 @@
       // Priority: Youdao Dictionary → Browser TTS
       if (!useTTSFallback) {
         // Try Youdao first
-        this.playCambridgeAudio(word).then(() => {
-          setButtonLoading(false, buttonId);
-          this.showToast('🔊 播放中');
+        this.playCambridgeAudio(word).then((result) => {
+          // result.onplay is true when audio actually starts playing
+          if (result && result.onplay) {
+            setButtonLoading(false, buttonId);
+            if (showNotification) {
+              this.showToast('🔊 播放中');
+            }
+          }
         }).catch((error) => {
           // Youdao failed, use TTS as last resort
-          this.showToast('🔊 使用浏览器语音...');
+          console.log('有道音频失败，切换到TTS:', error);
           // Don't clear loading yet, TTS will handle it
-          this.playWord(word, buttonId, true);
+          this.playWord(word, buttonId, true, showNotification);
         });
         return;
       }
@@ -2879,6 +3080,9 @@
           // Add event handlers for better debugging
           utterance.onstart = () => {
             setButtonLoading(false, buttonId);
+            if (showNotification) {
+              this.showToast('🔊 播放中');
+            }
           };
 
           utterance.onerror = (event) => {
@@ -2938,7 +3142,7 @@
      * Play pronunciation from Youdao Dictionary
      * Direct request without CORS proxy for faster response
      * @param {string} word - The word to pronounce
-     * @returns {Promise} - Resolves when audio plays, rejects on error
+     * @returns {Promise} - Resolves with { onplay: true, audio } when audio starts playing
      */
     async playCambridgeAudio(word) {
       try {
@@ -2957,8 +3161,8 @@
         // Try each URL until one works
         for (const url of urlPatterns) {
           try {
-            await this.playAudioUrl(url);
-            return; // Success, exit
+            const result = await this.playAudioUrl(url);
+            return result; // Success, return the result with onplay flag
           } catch (err) {
             // Try next URL
             continue;
@@ -2976,7 +3180,7 @@
     /**
      * Play audio from URL with proper error handling
      * @param {string} url - Audio URL
-     * @returns {Promise} - Resolves when audio plays
+     * @returns {Promise} - Resolves when audio actually starts playing (onplay event)
      */
     playAudioUrl(url) {
       return new Promise((resolve, reject) => {
@@ -2986,20 +3190,43 @@
         // Set source first
         audio.src = url;
 
-        // Mobile browsers require explicit user interaction
-        audio.play().then(() => {
-          audio.onended = () => {
-            resolve();
-          };
-        }).catch((err) => {
-          console.error('❌ Audio play failed:', err);
-          reject(err);
-        });
+        // Track if we've already resolved (to avoid double resolve)
+        let resolved = false;
+
+        // onplay fires when audio actually starts playing (after buffering)
+        audio.onplay = () => {
+          console.log('✅ [Audio] Started playing:', url);
+          if (!resolved) {
+            resolved = true;
+            resolve({ onplay: true, audio });
+          }
+        };
+
+        audio.onended = () => {
+          console.log('✅ [Audio] Finished playing:', url);
+          // If we haven't resolved yet (very short audio), resolve now
+          if (!resolved) {
+            resolved = true;
+            resolve({ onplay: true, audio });
+          }
+        };
 
         audio.onerror = (e) => {
           console.error('❌ Audio load error:', e);
-          reject(new Error('Audio load failed'));
+          if (!resolved) {
+            resolved = true;
+            reject(new Error('Audio load failed'));
+          }
         };
+
+        // Start playing - this returns immediately, audio will play when buffered
+        audio.play().catch((err) => {
+          console.error('❌ Audio play() failed:', err);
+          if (!resolved) {
+            resolved = true;
+            reject(err);
+          }
+        });
       });
     }
 
@@ -3044,6 +3271,7 @@
           }
           STATE.currentPath = parsed.currentPath || null;
           STATE.mode = parsed.mode || 'input';
+          STATE.autoPlay = parsed.autoPlay || false;
           // Load stats for current file
           if (STATE.currentPath) {
             this.loadStatsForFile(STATE.currentPath);
@@ -3060,6 +3288,7 @@
       const globalData = {
         currentPath: STATE.currentPath,
         mode: STATE.mode,
+        autoPlay: STATE.autoPlay,
         version: CONFIG.version
       };
       localStorage.setItem(CONFIG.storageKey, JSON.stringify(globalData));
