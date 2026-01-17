@@ -954,7 +954,7 @@
         \begin{enumerate}
             \item 给定一个矩阵$A$，它的秩就是矩阵中\textbf{线性无关的行（或列）的最大个数}
             \item 秩 == 矩阵所包含的“独立信息量”
-            \item Case: 如果你有10行数据，但其中5行其实是由另外5行“复制”或“线性组合”出来的，那么这些重复的信息是“冗余的”，真正“独立”的信息只有5行 \Rightarrow r(A) = 5
+            \item \emph{e.g.} 如果你有10行数据，但其中5行其实是由另外5行“复制”或“线性组合”出来的，那么这些重复的信息是“冗余的”，真正“独立”的信息只有5行 \Rightarrow r(A) = 5
             \item 解线性方程组: 判断方程有没有解、是不是唯一解
             \begin{enumerate}
                 \item 方程 $Ax = b$有解 \Leftrightarrow r(A) = r(A | b) = r(\bar{A})
@@ -970,7 +970,7 @@
             \begin{enumerate}
                 \item 秩本质上就是矩阵对应线性映射的像空间（列空间）的维数
                 \item 这告诉我们，线性变换把空间压缩到了几维。
-                \item Case: $3 \times 3$矩阵$A$
+                \item \emph{e.g.} $3 \times 3$矩阵$A$
                 \begin{itemize}
                     \item $r(A) = 3$ \Rightarrow \text{保留三维空间的全部信息（可能只是旋转或缩放）}
                     \item $r(A) = 2$ \Rightarrow \text{把三维空间压缩成二维平面}

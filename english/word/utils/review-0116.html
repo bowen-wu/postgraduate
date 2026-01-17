@@ -1473,8 +1473,9 @@
           extractedCards.push(this.createWordCard(`${word} ${def}`, 0));
           return word; // Replace with plain word
         }
-        // No POS marker - keep original format unchanged
-        return match;
+        // No POS marker - remove the *...* markers, keep only the word
+        // 规则6b: 其他情况 → 忽略（删除标记，只保留word）
+        return word;
       });
     }
 

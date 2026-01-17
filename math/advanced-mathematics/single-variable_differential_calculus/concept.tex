@@ -113,8 +113,16 @@
             y - y_0 = -\frac{1}{f'(x_0)}\,(x - x_0) \; (f'(x_0) \neq 0)
         \]
         \item 切线存在不代表导数存在，但导数存在切线一定存在
-        \item 若 $f_+'(x_0) \neq f_-'(x_0)$ 即在点 $x_0$ 处出现角点（或尖点），则函数 $f(x)$ 在 $x_0$ 处不可导，且不存在切线
-        \item 若函数 $f(x)$ 在点 $x_0$ 处具有无穷导数，则该点处存在切线，但导数不存在
+        \begin{itemize}
+            \item $f'_+(x_0) \neq f'_-(x_0)$，出现角点（尖点），则$f(x)$在$x_0$处不可导，没有切线。\emph{e.g.} $f(x) = |x|$在$x = 0$处
+            \item $f(x)$在点$x_0$的导数是无穷导数时，在该点有切线但无导数。\emph{e.g.} $f(x) = x^\frac{1}{3}$在$x = 0$处
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{微分的概念}
+
+    \begin{enumerate}
+        \item
     \end{enumerate}
 
     \subsection{基础概念}
@@ -126,8 +134,8 @@
 
     \begin{enumerate}
         \item 若函数 $\varphi(x)$ 在 $x=x_0$ 处连续，则函数$f(x)=|x-x_0|\,\varphi(x)$在 $x=x_0$ 处可导的充要条件是 $\varphi(x_0)=0$
-        \item \item 函数 $f(x)$ 与 $|f(x)|$ 的连续性与可导性关系总结：
-        \begin{item}
+        \item 函数 $f(x)$ 与 $|f(x)|$ 的连续性与可导性关系总结：
+        \begin{itemize}
             \item 若 $f(x)$ 在 $x_0$ 处连续，则 $|f(x)|$ 在 $x_0$ 处连续； 反之不成立。
             \item 若 $f(x)$ 在 $x_0$ 处可导，则：
             \begin{enumerate}[label=(\alph*)]
@@ -166,7 +174,8 @@
                     |f(x)| \text{ 在 } x_0 \text{ 处 {\color{red}{不可导}}}
                 \]
             \end{enumerate}
-        \end{item}
+        \end{itemize}
+        \item $f^{(n)}(x_0)$存在 $\Rightarrow f^{(n - 1)}(x)$在$x_0$附近有定义且在$x_0$处连续
     \end{enumerate}
 
     \subsection{定理}
