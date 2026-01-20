@@ -19,7 +19,7 @@
 
 ## rule
 
-- PE  v. 判决；统治
+- PE v. 判决；统治
     - v. 作出裁决
     - The deal may be ruled illegal.
     - ruling= verdict n. 裁决
@@ -61,12 +61,12 @@
 - [ˌiːkəˈnɑːmɪk]
 - adj. 经济的
 - economic depression/recession/slowdown 经济衰退 😔
-    - economic boom/prosperity 经济繁荣 🙂
-    - economic recovery 经济复苏
+- economic boom/prosperity 经济繁荣 🙂
+- economic recovery 经济复苏
 - economics [ˌekəˈnɑːmɪks]
     - n. 经济学；经济状况
-    - In just on generation, millions of mothers have gone to work, *transforming* basic family **economics/economic
-      situation**.
+    - In just on generation, millions of mothers have gone to work, *transforming* basic family
+      **economics/economic situation**.
 - economist [ɪˈkɑnəmɪst] n. 经济学家
 - economy [ɪˈkɑːnəmi] n. 经济状况
 - economical [ˌeːkəˈnɑːmɪkl]
@@ -216,7 +216,8 @@
     - PE
         - n. 优点，长处
         - strength and weakness 优缺点
-        - At first this might seem like a strength that grants the ability to make judgements which are unbiased by external factors.
+        - At first this might seem like a strength that grants the ability to make judgements which are unbiased by
+          external factors.
     - the relative strength 优势
     - Strength in Numbers 众志成城
     - strengthen [ˈstreŋθn]

@@ -13,6 +13,7 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{pifont}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -34,6 +35,13 @@
     right=\analysisPadding,
     top=4pt,
     bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
 }
 
 % =========================

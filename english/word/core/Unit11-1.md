@@ -101,7 +101,7 @@
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
     - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
         - | 用法       | 含义     | 示例                        |
-          |----------|--------|---------------------------|
+                    |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -183,7 +183,8 @@
 - n. 尊重
 - PE
     - n. （事物的）方面
-    - Writing in the last year of his life，he expressed the opinion that in two or three respects his mind had changed during the preceding twenty or thirty years.
+    - Writing in the last year of his life，he expressed the opinion that in two or three respects his mind had changed
+      during the preceding twenty or thirty years.
 - -spect- 看
     - prospect
         - vi. 勘探
@@ -237,7 +238,7 @@
 - advantage
     - n. 优势
     - 词组
-        - take advantage of 利用
+        - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
     - disadvantage n. 不利条件
 - weakness n. 弱点
 - merit [ˈmerɪt]

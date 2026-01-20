@@ -138,11 +138,13 @@
         - working women 职业女性
 - navigate
     - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
-    - Many first-generation students <ins>struggle to **navigate**</ins> the middle-class culture of higher education...
+    - Many first-generation students "struggle to **navigate** the middle-class culture of higher education, learn
+      the 'rules of the game', and take advantage of college resources", they write.
         - struggle to do sth. 努力去做某事/挣扎去做某事
-        - navigate + 抽象事物
-            - navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
-            - navigate + 社会环境/文化/系统/bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
+        - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
+        - navigate + 抽象事物 navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
+            - navigate + 社会环境/文化/系统/bureaucracy
+                - bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
 
 ## counter
 

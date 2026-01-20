@@ -13,6 +13,7 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{pifont}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -34,6 +35,13 @@
     right=\analysisPadding,
     top=4pt,
     bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
 }
 
 % =========================
@@ -112,7 +120,7 @@
         \[
             y - y_0 = -\frac{1}{f'(x_0)}\,(x - x_0) \; (f'(x_0) \neq 0)
         \]
-        \item 切线存在不代表导数存在，但导数存在切线一定存在
+        \item 切线存在不代表导数存在，但{\color{red}{导数存在切线一定存在}}
         \begin{itemize}
             \item $f'_+(x_0) \neq f'_-(x_0)$，出现角点（尖点），则$f(x)$在$x_0$处不可导，没有切线。\emph{e.g.} $f(x) = |x|$在$x = 0$处
             \item $f(x)$在点$x_0$的导数是无穷导数时，在该点有切线但无导数。\emph{e.g.} $f(x) = x^\frac{1}{3}$在$x = 0$处
@@ -122,7 +130,35 @@
     \subsection{微分的概念}
 
     \begin{enumerate}
-        \item
+        \item 设函数$y = f(x)$在点$x_0$的某邻域内有定义，且$x_0 + \Delta x$在该邻域内，对于增量函数
+        \[
+            \color{red}{\Delta y = f(x_0 + \Delta x) - f(x_0)}
+        \]
+        若存在与$\Delta x$无关的常数$A$，使得
+        \[
+            \color{red}{\Delta y = A\,\Delta x + o(\Delta x)
+                = dy + o(\Delta x).}
+        \]
+        其中$o(\Delta x)$是在$\Delta x \to 0$时比$\Delta x$更高阶的无穷小，则称$f(x)$在点$x_0$处\textbf{可微}，并把增量的主要部分$A\Delta x$称为线性主部，也叫做$f(x)$在点$x_0$处的微分，记$\color{red}{\left. dy \right|_{x=x_0} = A\Delta x = f'(x_0)\,dx}$
+        \item 可微的判别
+        \begin{itemize}
+            \item 一元函数可微 $\Leftrightarrow$ 可导
+            \item 做极限
+            \begin{circlenum}
+                \item 写增量 $\Delta y = f(x_0 + \Delta x) - f(x_0)$
+                \item 写线性增量 $A\Delta x = f'(x_0)\Delta x$
+                \item 做极限
+                \[
+                    \lim_{\Delta x \to 0}
+                    \frac{\Delta y - A\Delta x}{\Delta x}
+                    \Leftrightarrow
+                    \Delta y = A\Delta x + o(\Delta x)
+                \]
+                \item 若该极限等于 $0$，则 $y=f(x)$ 在点 $x_0$ 处可微，否则不可微
+            \end{circlenum}
+        \end{itemize}
+        \item 可微的含义：用形式简单的“线性增量 $A\Delta x$”去代替形式复杂的“增量 $\Delta y$”，且其误差“$\Delta y - A\Delta x$”是 $o(\Delta x)$，即用“简单的量”代替了“复杂的量”，且产生的误差又可以忽略不计
+        \item 可微的几何意义：若$f(x)$在点$x_0$处可微，则在点$(x_0, y_0)$附近可以用切线段近似代替曲线段
     \end{enumerate}
 
     \subsection{基础概念}
@@ -141,10 +177,10 @@
             \begin{enumerate}[label=(\alph*)]
                 \item 若 $f(x_0) \neq 0$，则 $|f(x)|$ 在 $x_0$ 处{\color{red}{可导}}，且
                 \[
-                    \left.|\,|f(x)|\,\right.'\right|_{x=x_0}
+                    \left.(|f(x)|)'\right|_{x=x_0}
                     =
                     \begin{cases}
-                        f'(x_0), & f(x_0) > 0, \\
+                        f'(x_0), & f(x_0) > 0, \\[0.3em]
                         -f'(x_0), & f(x_0) < 0.
                     \end{cases}
                 \]
@@ -287,12 +323,8 @@
 
             \medskip
             \textbf{综上，}
-            $f(x)$ 在 $x=0$ 处连续、可导，且 $f'(0)=0$。$\square$
+            $f(x)$ 在 $x=0$ 处连续、可导，且 $f'(0)=0$
 
         \end{analysisbox}
-
-        \item
     \end{enumerate}
-
-
 \end{document}

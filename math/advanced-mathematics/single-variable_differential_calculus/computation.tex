@@ -13,6 +13,7 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{pifont}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -34,6 +35,13 @@
     right=\analysisPadding,
     top=4pt,
     bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
 }
 
 % =========================
@@ -66,6 +74,52 @@
 
     \section{一元函数微分学的计算}
 
+    \subsection{基本求导公式}
+
+    \begin{enumerate}
+        \item $(x^a)' = a x^{a-1}\,(a \text{ 为常数})$
+
+        \item $(a^x)' = a^x \ln a \,(a>0,\ a\neq1)$
+
+        \item $(e^x)' = e^x$
+
+        \item $(\log_a x)' = \displaystyle\frac{1}{x\ln a}
+        \,(a>0,\ a\neq1)$
+
+        \item $(\ln |x|)' = \displaystyle\frac{1}{x}$
+
+        \item 三角函数求导
+        \begin{itemize}
+            \item $(\sin x)' = \cos x$
+            \item $(\cos x)' = -\sin x$
+            \item $(\tan x)' = \sec^2 x$
+            \item $(\cot x)' = -\csc^2 x$
+            \item $(\sec x)' = \sec x \tan x$
+            \item $(\csc x)' = -\csc x \cot x$
+            \item $(\arcsin x)' = \displaystyle\frac{1}{\sqrt{1-x^2}}$
+            \item $(\arccos x)' = -\displaystyle\frac{1}{\sqrt{1-x^2}}$
+            \item $(\arctan x)' = \displaystyle\frac{1}{1+x^2}$
+            \item $(\arccot x)' = -\displaystyle\frac{1}{1+x^2}$
+        \end{itemize}
+
+        \item $\bigl[\ln (x+\sqrt{x^2+1})\bigr]'
+        = \displaystyle\frac{1}{\sqrt{x^2+1}}$
+
+        \item $\bigl[\ln (x+\sqrt{x^2-1})\bigr]'
+        = \displaystyle\frac{1}{\sqrt{x^2-1}}$
+    \end{enumerate}
+
+    \subsection{四则运算}
+
+    \begin{enumerate}
+        \item $(u \pm v)' = u' \pm v'$
+
+        \item $(uv)' = u'v + uv'$
+
+        \item $\left(\dfrac{u}{v}\right)'
+        = \dfrac{u'v - uv'}{v^2}\qquad (v \neq 0)$
+    \end{enumerate}
+
     \subsection{基础概念}
 
     \begin{enumerate}
@@ -75,7 +129,6 @@
 
     \begin{enumerate}
     \end{enumerate}
-
 
     \subsection{定理}
 

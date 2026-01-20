@@ -196,7 +196,7 @@
     - take a toll on 给...造成重大损失
     - take a tough line on 对...采取强硬措施
     - take action 采取行动
-    - take advantage of 利用
+    - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
     - take care of 照顾
     - take effect 起作用
     - take...for granted 认为...理所当然
