@@ -12,6 +12,8 @@
 \usepackage{tcolorbox}
 \usepackage{xstring}
 \usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -33,6 +35,13 @@
     right=\analysisPadding,
     top=4pt,
     bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
 }
 
 % =========================
@@ -234,11 +243,15 @@
         \item $\color{red}{\bigstar}$局部保号性:
         \begin{itemize}
             \item 脱帽严格不等
-            \item $\lim f > 0 \Rightarrow f > 0$
-            \item $\lim f < 0 \Rightarrow f < 0$
+            \begin{circlenum}
+                \item $\lim f > 0 \Rightarrow f > 0$
+                \item $\lim f < 0 \Rightarrow f < 0$
+            \end{circlenum}
             \item 带帽非严格不等
-            \item $f \geq 0 \Rightarrow \lim f \geq 0$
-            \item $f \leq 0 \Rightarrow \lim f \leq 0$
+            \begin{circlenum}
+                \item $f \geq 0 \Rightarrow \lim f \geq 0$
+                \item $f \leq 0 \Rightarrow \lim f \leq 0$
+            \end{circlenum}
         \end{itemize}
     \end{enumerate}
 
@@ -275,7 +288,6 @@
         \item 当$x \to 0^+$时，$(1 + x)^{\displaystyle\frac{1}{x}} - e \sim -\displaystyle\frac{e}{2}x \Rightarrow (1 + \text{狗})^{\displaystyle\frac{1}{\text{狗}}} - e \sim -\displaystyle\frac{e}{2}\text{狗}$
         \begin{itemize}
             \item 当$n \to \infty$时，若$(1 + \displaystyle\frac{1}{n})^n - e$与$\displaystyle\frac{a}{n}$是等价无穷小，则$a = -\displaystyle\frac{e}{2}$
-            \item 当$n \to \infty$时，$(1 + \displaystyle\frac{1}{n})^n - e \sim -\displaystyle\frac{e}{2}\cdot\frac{1}{n}$
         \end{itemize}
     \end{enumerate}
 
@@ -310,7 +322,7 @@
     \begin{enumerate}
         \item 遇到$e^{\infty}$，需讨论$e^{-\infty}$和$e^{+\infty}$
         \item 分段函数在分段点处的极限要考虑左、右极限
-        \item 对于 $e^{\tan x} - e^{\sin x}$，通常先提取公因式，使其化为 $e^{\Box} - 1$ 的形式。
+        \item 对于 $e^{\tan x} - e^{\sin x}$，通常先提取公因式，使其化为 $e^{\Box} - 1$ 的形式
     \end{enumerate}
 
     \subsection{条件转换思路}
