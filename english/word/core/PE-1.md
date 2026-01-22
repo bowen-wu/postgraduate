@@ -29,8 +29,8 @@
 
 ## answer
 
-- n. 相对应的人或物（equivalent）；答案
 - v. 回答
+- n. 相对应的人或物（equivalent）；答案
 - Tang Xianzu, eastern world's **answer** to Shakespeare...
 - Overdressed is the fashion world's **answer** to consumer-activist bestsellers like Michael Pollan's The Omnivore's
   Dilemma.
@@ -38,28 +38,46 @@
 
 ## bear
 
-- n. 熊；体型笨重的人；（股票）卖空者
 - v. 忍受，承担
+- n. 熊；体型笨重的人；（股票）卖空者
 - bear/bull market
 - The longest bull run in a century of art-market history ended...
 - To **bear** is to carry or endure, whether by physical and mental force.
 - They will have to **bear** the misery of living in constant fear of war.
+    - misery [ˈmɪzəri] n. 痛苦; 不幸; 穷困; 悲惨的境遇
 - unbearable
     - adj. 难以忍受的
-    - In our contemporary culture, the prospect of communicating with—or even looking at—a stranger is virtually
-      **unbearable**.
+    - In our contemporary culture, the prospect of communicating with—or even looking at—a *stranger(n. 陌生人)* is
+      *virtually(adv. 几乎)* **unbearable**.
+        - contemporary adj. 当代的
+        - prospect
+            - vi. 勘探
+            - n. 可能性；前途；前景
+
+## lame
+
+- v. 变跛
+- adj. 跛足的；无说服力的；蹩脚的
+- Sleeping too late is a **lame** excuse for being late.
+- They should start by discarding California's **lame** argument that exploring the contents of a smart phone—a vast
+  storehouse of digital information—is similar to, say, rifling through a suspect's purse.
+    - start by + V-ing 从...开始做
+    - be similar to 与...类似
+    - rifle through 快速、粗暴地翻找
+    - say 插入语: 比如说/举例来说
 
 ## buy
 
-- v. 购买；相信，接受
+- v. 相信，接受；购买
 - I don't **buy** it—means that you don't accept that fact as the truth.
 - Lots of Americans **bought** that nonsense, and over three decades, some 10 million smokers went to early graves.
 - I don't **buy** his lame excuse.
 
 ## cement
 
-- n. 水泥
+- [sɪˈment]
 - v. 加强，巩固🙂；使...停滞不前😔
+- n. 水泥
 - Our object is to further **cement** trade relations.
 - They could **cement** the <ins>status quo(现状)</ins> of peer reviewed research.
 
@@ -68,17 +86,20 @@
 - v. 遮蔽，影响
 - n. 云，阴云
 - cloud computing 云计算
-- Every **cloud** has a silver lining.
+- Every **cloud** has a silver lining. 塞翁失马，焉知非福
+    - silver lining 一线希望/好的一面/转机
 - I hope this disagreement won't **cloud** our friendship.
-- A turbulent business environment also has senior managers cautious of letting vague pronouncements **cloud** their
-  reputations.
+- A turbulent business environment also has senior managers *cautious(adj. 谨慎的)* of letting vague pronouncements
+  **cloud** their reputations.
+    - turbulent adj. 动荡的
+    - has sb cautious of doing sth 使某人对做某事保持谨慎
 
 ## fashion
 
-- n. 时尚；方式
 - v. 制定，建造
-- It can also refer to a way something is done, as in "We train dogs in a certain **fashion**."
-- To **fashion** something means to build it, as in "We **fashioned** a shelter out of rocks and mud."
+- n. 方式；时尚
+- It can also refer to a **way** something is done, as in "We train dogs in a certain **fashion**."
+- To **fashion** something means to **build** it, as in "We **fashioned** a shelter out of rocks and mud."
 - Arizona had attempted to **fashion** state policies that ran parallel to the existing federal ones.
 
 ## fetch
@@ -86,7 +107,8 @@
 - v. 取来，接来；卖得（钱）
 - To **fetch** something is to go and get it.
 - If you sell something for a good price, you can **fetch**, or bring in, a decent amount of money.
-- <ins>All but(除了)</ins>two pieces sold, **fetching** more than $70m, a record for a sale by a single artist.
+    - decent adj. 相当不错的；体面的
+- <ins>All but(除了)</ins> two pieces sold, **fetching** more than $70m, a record for a sale by a single artist.
 
 ## fold
 
@@ -94,11 +116,12 @@
 - n. 褶皱
 - He **folded** the paper carefully.
 - a team that never **folded** under pressure
-- The IASB says it does not want to act without overall planning, but the pressure to fold when it completes its
+- The IASB says it does not want to act without overall planning, but the pressure to **fold** when it completes its
   reconstruction of rules later this year is strong.
 
 ## fuel
 
+- [ˈfjuːəl]
 - v. 刺激；推动；煽动
 - n. 燃料
 - fossil fuel 化石燃料
@@ -106,13 +129,18 @@
 - A teacher assigns readings to **fuel** meaningful class discussion.
 - You'd think this might **fuel** the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps
   us "step outside time's flow" into "soul time".
+    - ritualistic [ˌrɪtʃuəˈlɪstɪk] adj. 仪式的，固守仪式的; 惯例的
+    - the efficiency mind-set 效率至上的思维方式
+    - step outside time’s flow 跳出时间的流动/暂时脱离时间的支配
 
 ## game
 
 - n. 猎物；游戏；比赛
-- Wild animals that you hunt and eat are called **game**.
-- <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these creatures preserve the
-  health of **game** by killing the physically weak, or that they prey only on "worthless" species.
+- Wild animals that you *hunt([hʌnt] v. 搜寻；打猎)* and eat are called **game**.
+- <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
+  *creatures(['kritʃəz] n. 生物)* preserve the health of **game** by killing the physically weak, or that they prey only
+  on "worthless" species.
+    - prey on 捕食；掠夺
 
 ## gift
 
@@ -121,33 +149,44 @@
 - Yesterday is history, tomorrow is a mystery, but today is a **gift**, that is why it's called present.
 - He has a **gift** for languages.
 - "So few authors have brains enough or literary **gift** enough to keep their own end up in journalism", Newman
-  wrote, "that I am tempted to define journalism as a term of contempt applied by writers who are not red to
-  writers who are".
+  wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
+  not red to writers who are".
+    - be tempted to do sth. 很想做某事/经不住诱惑想做某事
+    - keep one’s end up 撑得住；保持水准；不掉队
+    - a term of contempt 贬损性的称呼/带蔑视意味的术语
 
 ## ground
 
 - n. 根据，理由；地面；范围
-- If you are too formal, people won't be at easy around you. Act too casual and people may not take you seriously. Aim
-  for the middle **ground**!
-- Worries about automation are in fact **groundless**.
+- If you are too formal, people won't be at ease around you. Act too *casual([ˈkæʒuəl] adj. 随意的)* and people may not
+  take you seriously. Aim for the middle **ground**!
+    - be at ease (around sb.) 感到放松、自在、不拘束
+    - take sb. seriously 认真对待某人/认为某人值得重视
+    - aim for 以...为目标/力求达到
+    - the middle ground 中间立场/折中方案/平衡点
 - But there are few places where clients have more **grounds** for complaint than America
+- groundless
+    - adj. 无理由的，无根据的
+    - Worries about automation are in fact **groundless**.
 
 ## fan
 
-- n. 风扇；粉丝
 - v. 给...扇风；煽动，激起
+- n. 风扇；粉丝
 - She would have to wait in the truck, **fanning** herself with a piece of cardboard.
-- His writings **fanned** the flames of hatred.
+- His writings **fanned** the flames of *hatred([ˈheɪtrɪd] n. 仇恨，憎恶; 敌意)*.
+    - fan the flames of... 煽动/火上浇油/使（情绪、冲突）升级
 - Favoritism in official access can **fan** public perceptions of corruption.
 
 ## handsome
 
-- adj. 英俊的
-- adj. 可观的，相当大的
-- **Handsome** is always a compliment, an admiring way of describing someone or something.
+- adj. 可观的，相当大的；英俊的
+- **Handsome** is always a *compliment(n. 称赞)*, an *admiring([əd'maɪərɪŋ] adj. 赞赏的，钦佩的)* way of describing
+  someone or something.
 - a handsome reward
 - a handsome number of votes
 - The report makes heavy reading for publishers who have, so far, made **handsome** profits.
+    - make heavy reading 读起来沉重、令人不快、难以接受
 
 ## hit
 
@@ -155,9 +194,11 @@
 - n. 产生不良影响 😔；打击，碰撞
 - == reach
 - to have a bad effect on sb./sth.
-- to reach a particular level
+- to hit a particular level 达到某个（特定的）水平/数值/水平线
 - The tax increases will certainly **hit** the poor.
 - Italy was one of the hardest **hit** countries.
+    - hardest hit 被严重影响/遭受重创
+      == be (hard) hit
 - The euro **hit** a record low in trading today.
 - As many people **hit** middle age, they often start to notice that their memory and mental clarity are not what they
   used to be.
@@ -168,65 +209,31 @@
 - He was a man of wide **interests** outside his work.
 - If a bank loans you $10000, you have to pay back the $10000 plus the **interest**.
 - It is in your best **interest** to cooperate.
-- That suggests it is in the broader corporate **interest** to recruit top candidates for increasingly tough jobs.
-
-## ladder
-
-- n. （晋升）阶梯、门路；梯子
-- If you climb the corporate **ladder**, you're moving up in the business world.
-- Do we need quotas to ensure that women can continue to climb the corporate **ladder** fairly as they balance work and
-  family?
-
-## lame
-
-- v. 变跛
-- adj. 跛足的；无说服力的；蹩脚的
-- Sleeping too late is a **lame** excuse for being late.
-- They should start by discarding California's **lame** argument that exploring the contents of a smart phone—a vast
-  storehouse of digital information—is similar to, say, rifling through a suspect's purse.
-
-## live
-
-- v. 活着；居住
-- adj. 活的；实时的，现场的
-- The verb **live** means remain alive.
-- There is traditional **live** music played most nights.
-- Devoted concertgoers who reply that recordings are no substitute for **live** performance are missing the point.
-
-## lot
-
-- n. 一块地；命运
-- pron. 大量，许多
-- A **lot** is a plot of land.
-- Parking lot
-- She tried to accept her marriage as her **lot** in life but could not.
-- But we are now knowledgeable enough to reduce many of the risk that threatened the existence of earlier humans，and
-  to improve the **lot** of those to come.
-
-## might
-
-- v. 可能
-- n. 力量，威力
-- **Might** is physical strength or power.
-- We fear the military **might** of the enemy.
-- mighty
-    - adj. 强有力的，有势力的
-    - mightily
-        - adv. 非常，很大程度上；猛烈地
-        - That framework has contributed **mightily** to our broken immigration system.
+- That suggests it is in the broader corporate **interest** to *recruit([rɪˈkruːt] vt. 招募)* top candidates for
+  increasingly tough jobs.
+    - increasingly tough jobs 要求越来越高/越来越艰难的岗位
 
 ## Words
 
-- cascade
-- principal
-- compress
+- cascade [kæˈskeɪd]
+    - n. 倾泻; 小瀑布，瀑布状物; 串联
+    - vi. 流注; 大量落下
+- principal [ˈprɪnsəpl]
+    - n. 校长，院长
+    - adj. 最重要的
+- compress [kəmˈpres]
+    - v. （使）压缩; 精简
+    - n. 敷布，压布
 
 ## 词组
 
 - go to extremes 走极端; 偏激; 过火
-- set up
-- count on
-- raise up
+- set up 建立，创建；安排，组织；安装，架设
+    - set up a company
+    - set up an appointment
+    - set up equipment
+- count on 依靠；指望；相信某人/某事
+- raise up 抬起；举起；扶起
 
 ## 句式
 

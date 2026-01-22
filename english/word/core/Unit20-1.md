@@ -66,6 +66,11 @@
     - be tempted into... 被吸引到...
     - tempt sb. to do sth. 诱使/引诱某人去做某事
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
+- "So few authors have brains enough or literary gift enough to keep their own end up in journalism", Newman wrote,
+  "that I am **tempted** to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
+  not red to writers who are".
+    - keep one’s end up 撑得住；保持水准；不掉队
+    - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - You might even be **tempted** to assume that humanity has little future to look forward to.
     - have + little/much/nothing(程度) + to look forward to 对未来几乎没有期待/有很多期待
 - temptation n. 诱惑
@@ -191,6 +196,12 @@
 
 - [kənˈtempt]
 - n. 轻视
+- "So few authors have brains enough or literary gift enough to keep their own end up in journalism", Newman wrote,
+  "that I am tempted to define journalism as a term of **contempt** applied by writers who are not red to writers
+  who are".
+    - be tempted to do sth. 很想做某事/经不住诱惑想做某事
+    - keep one’s end up 撑得住；保持水准；不掉队
+    - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - contemptuous [kənˈtemptʃuəs]
     - adj. 鄙视的
     - be contemptuous of 对...表示轻蔑

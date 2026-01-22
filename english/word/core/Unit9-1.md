@@ -68,7 +68,10 @@
 - physical asset 实物资产
 - physically
     - adv. 身体上地
-        - ...these *creatures(['kritʃəz] n. 生物)* preserve the health of game by killing the **physically** weak.
+    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
+      *creatures(['kritʃəz] n. 生物)* preserve the health of *game(n. 猎物)* by killing the **physically** weak, or that
+      they prey only on "worthless" species.
+        - prey on 捕食；掠夺
 - physics [ˈfɪzɪks]
     - n. 物理学
     - The US$3-million <ins>Fundamental **Physics** Prize(基础物理学奖)</ins> is indeed an interesting experiment, as

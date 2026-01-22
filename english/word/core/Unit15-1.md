@@ -150,7 +150,12 @@
 ## literary
 
 - adj. 文学的
-- So few authors have brains enough or **literary** gift enough to keep their own end up in journalism.
+- "So few authors have brains enough or **literary** gift enough to keep their own end up in journalism", Newman
+  wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
+  not red to writers who are".
+    - be tempted to do sth. 很想做某事/经不住诱惑想做某事
+    - keep one’s end up 撑得住；保持水准；不掉队
+    - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - literacy
     - n. 读写能力
     - Yet as distrust has risen toward all media, people may be starting to <ins>beef up(== improve 加强，增强)</ins>

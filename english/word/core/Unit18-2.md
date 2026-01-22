@@ -202,6 +202,9 @@
 - caution [ˈkɔːʃn]
     - n. 谨慎；警告
     - cautious adj. 谨慎的
+        - A turbulent business environment also has senior managers **cautious** of letting vague pronouncements cloud
+          their reputations.
+            - has sb cautious of doing sth 使某人对做某事保持谨慎
     - precautionary [prɪˈkɔʃəˌnɛri] adj. 预防的
 - prudent [ˈpruːdnt]
     - adj. 谨慎的

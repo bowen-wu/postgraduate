@@ -17,6 +17,43 @@
 - C: Cause
 - R: Result
 
+## ladder
+
+- n. （晋升）阶梯、门路；梯子
+- If you climb the corporate **ladder**, you're moving up in the business world.
+- Do we need quotas to ensure that women can continue to climb the corporate **ladder** fairly as they balance work and
+  family?
+
+## live
+
+- v. 活着；居住
+- adj. 活的；实时的，现场的
+- The verb **live** means remain alive.
+- There is traditional **live** music played most nights.
+- Devoted concertgoers who reply that recordings are no substitute for **live** performance are missing the point.
+
+## lot
+
+- n. 一块地；命运
+- pron. 大量，许多
+- A **lot** is a plot of land.
+- Parking lot
+- She tried to accept her marriage as her **lot** in life but could not.
+- But we are now knowledgeable enough to reduce many of the risk that threatened the existence of earlier humans，and
+  to improve the **lot** of those to come.
+
+## might
+
+- v. 可能
+- n. 力量，威力
+- **Might** is physical strength or power.
+- We fear the military **might** of the enemy.
+- mighty
+  - adj. 强有力的，有势力的
+  - mightily
+    - adv. 非常，很大程度上；猛烈地
+    - That framework has contributed **mightily** to our broken immigration system.
+
 ## model
 
 - v. 仿效，以...为榜样

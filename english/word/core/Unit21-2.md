@@ -72,6 +72,8 @@
 ## turbulent
 
 - adj. 动荡的
+- A **turbulent** business environment also has senior managers cautious of letting vague pronouncements cloud their
+  reputations.
 - turbulence n. 动荡；湍流
 
 ## coordinate

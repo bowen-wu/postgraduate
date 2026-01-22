@@ -240,6 +240,61 @@
     \subsection{\textcolor{red}{$\bigstar$} 高阶导数}
     \begin{enumerate}
         \item 归纳法：逐次求导，探索规律，得出通式
+        \item 莱布尼茨公式：设$u = u(x), v = v(x)$均$n$阶可导，则
+        \begin{itemize}
+            \item $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$
+            \item ${\color{red}{\bigstar}}(uv)^{(n)} = \displaystyle\sum_{k=0}^{n}C_n^k\,u^{(k)}\,v^{(n-k)}$
+            \item $C_n^k = \displaystyle\frac{n!}{k!(n-k)!}$
+            \item \[
+                      \begin{array}{ccccccccc}
+                          & & & & 1 \\
+                          & & & 1 & & 1 \\
+                          & & 1 & & 2 & & 1 \\
+                          & 1 & & 3 & & 3 & & 1 \\
+                          1 & & 4 & & 6 & & 4 & & 1
+                      \end{array}
+            \]
+        \end{itemize}
+        \item 泰勒展开式
+        \begin{circlenum}
+            \item 抽象展开：任何一个在点 $x_0$ 的邻域内无穷阶可导的函数，
+            都可以表示为其泰勒级数
+            \[
+                y=f(x)
+                =
+                \sum_{n=0}^{\infty}
+                \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n.
+            \]
+            特别地，当 $x_0=0$ 时，称为麦克劳林展开式：
+            \[
+                y=f(x)
+                =
+                \sum_{n=0}^{\infty}
+                \frac{f^{(n)}(0)}{n!}x^n.
+            \]
+
+            \item 具体展开：当题目给出具体的无穷阶可导函数 $y=f(x)$ 时，
+            可利用已知基本函数的展开式，将其展开为幂级数。
+
+            \item 函数泰勒展开式的唯一性：无论 $f(x)$ 通过何种方法展开，
+            其泰勒展开式具有唯一性。
+            因此可通过比较\ding{202}、\ding{203}中幂级数的系数，
+            求出 $f^{(n)}(x_0)$ 或 $f^{(n)}(0)$。
+        \end{circlenum}
+        \[
+            \begin{aligned}
+                e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots, & -\infty < x < +\infty \\
+                \frac{1}{1-x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, & |x| < 1 \\
+                \frac{1}{1+x} &= \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, & |x| < 1 \\
+                \ln(1+x) &= \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, & |x| < 1 \\
+                \sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots, & -\infty < x < +\infty \\
+                \cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots, & -\infty < x < +\infty \\
+                (1+x)^a &= \sum_{n=0}^{\infty} \binom{a}{n} x^n = 1 + ax + \frac{a(a-1)}{2!} x^2 + \cdots, & |x| < 1 \\
+                \tan x &= x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots, & |x| < \frac{\pi}{2} \\
+                \arcsin x &= \sum_{n=0}^{\infty} \frac{(2n)!}{4^n (n!)^2 (2n+1)} x^{2n+1} = x + \frac{x^3}{6} + \frac{3x^5}{40} + \cdots, & |x| \le 1 \\
+                \arctan x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots, & |x| \le 1
+            \end{aligned}
+        \]
     \end{enumerate}
 
     \subsection{基础概念}
@@ -269,12 +324,20 @@
         \item $[\ln(x + \sqrt {x^2 + a^2})]' = \displaystyle\frac{1}{\sqrt {x^2 + a^2}}$
         \item $(x\ln x)' = \ln x + 1$
         \item $(\displaystyle\frac{1}{x} \ln x)' = -\displaystyle\frac{1}{x^2} \ln x + \frac{1}{x^2}$
+        \item 常用的高阶导数
+        \begin{itemize}
+            \item $\bigl(e^{ax+b}\bigr)^{(n)} = a^{n} e^{ax+b}.$
+            \item $\bigl[\sin(ax+b)\bigr]^{(n)} = a^{n} \sin\!\left(ax+b+\frac{n\pi}{2}\right)$
+            \item $\bigl[\cos(ax+b)\bigr]^{(n)} = a^{n} \cos\!\left(ax+b+\frac{n\pi}{2}\right)$
+            \item $\bigl[\ln(ax+b)\bigr]^{(n)} = (-1)^{\,n-1}a^{n}\displaystyle\frac{(n-1)!}{(ax+b)^{n}}$
+            \item $\left(\displaystyle\frac{1}{ax+b}\right)^{(n)} = (-1)^{\,n}a^{n}\displaystyle\frac{n!}{(ax+b)^{n+1}} \Rightarrow (\displaystyle\frac{1}{1 + x})^{(n)} = (-1)^{\,n}\displaystyle\frac{n!}{(x+1)^{n+1}}$
+        \end{itemize}
     \end{enumerate}
 
     \subsection{方法总结}
 
     \begin{enumerate}
-
+        \item 对于$g(x) = x^k f(x)$型，可以考虑用泰勒公式求$g^{(n)}(0)$
     \end{enumerate}
 
     \subsection{条件转换思路}

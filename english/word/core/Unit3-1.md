@@ -202,7 +202,10 @@
     - observer n. 观察者
 - preserve [prɪˈzɜːrv]
     - vt. 维护；保护
-    - ...these creatures(['kritʃəz] n. 生物) **preserve** the health of *game(n. 猎物)* by killing the physically weak.
+    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
+      *creatures(['kritʃəz] n. 生物)* **preserve** the health of *game(n. 猎物)* by killing the physically weak, or that
+      they prey only on "worthless" species.
+        - prey on 捕食；掠夺
 - reserve
     - vt. 保留；预定
         - == book

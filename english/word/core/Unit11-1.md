@@ -101,7 +101,7 @@
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
     - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
         - | 用法       | 含义     | 示例                        |
-                    |----------|--------|---------------------------|
+                              |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -203,7 +203,9 @@
 - mock
     - vt. 嘲笑；蔑视
     - == make fun of 取笑；嘲笑；拿某人或某事开玩笑
-- decent adj. 相当不错的；体面的
+- decent
+    - adj. 相当不错的；体面的
+    - If you sell something for a good price, you can fetch, or bring in, a **decent** amount of money.
 
 ## academic
 
