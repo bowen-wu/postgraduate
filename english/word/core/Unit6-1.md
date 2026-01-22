@@ -272,7 +272,7 @@
 ## move
 
 - v. 进展；转变；感动；移动；采取行动
-- n. **行动；措施**；移动；转变
+- n. 行动；措施(PE)；移动；转变
 - 词组
     - move on 继续前往
     - move on to sth. 开始做（别的事）；换话题
@@ -282,6 +282,9 @@
     - move through 穿过
     - move out 搬出去
     - make a move 采取行动；动身
+- Abolishing the tax altogether would be a bold **move**.
+- In a **move** that has intellectual—property lawyers abuzz, the U.S. Court of Appeals for the Federal Circuit said
+  it would use a particular case to conduct a broad review of business—method patents.
 - remove
     - vt. 移开；去除
     - == get rid of

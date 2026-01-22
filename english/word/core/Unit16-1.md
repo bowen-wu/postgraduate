@@ -46,11 +46,11 @@
 - objection n. 反对；反对的理由
 - objective
     - adj. 客观的
+    - n. 目标，目的(PE)
+    - An **objective** is something you plan to achieve.
     - objective criteria 客观标准
-    - PE
-        - n. 目标，目的
-        - There were goals, there were strategies, there were **objectives**, but we didn't talk about energy; we didn't
-          talk about passion.
+    - There were goals, there were strategies, there were **objectives**, but we didn't talk about energy; we didn't
+      talk about passion.
     - We aim to be **objective**, but we cannot escape the context of our unique life experiences.
     - subjective adj. 主观的
     - objectivity n. 客观性

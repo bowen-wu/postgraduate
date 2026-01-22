@@ -171,14 +171,13 @@
 - In the early 2010s, a wide range of businesses started processing **purchases** with iPads and other digital payment
   system.
 - afford
-    - vt. 买得起；给予；承担得起（后果）
+    - vt. 买得起；给予，提供(PE)；承担得起（后果）
+    - == provide
+    - It can mean money, also refer to **time**, or even **access**.
     - afford to do sth. 有钱/有资源去做某事
-    - PE
-        - vt. 给予，提供
-        - == provide
-            - We can't afford to wait.
-            - The tree affords some shelter from the sun.
-            - The Internet affords anonymity to its users,a blessing to privacy and freedom of speech.
+    - We can't **afford** to wait.
+    - The tree **affords** some shelter from the sun.
+    - The Internet **affords** anonymity to its users, a blessing to privacy and freedom of speech.
     - affordable [əˈfɔːrdəbl]
         - adj. 负担得起的；价格实惠的
         - Nevertheless, the <ins>**affordable** housing(经济适用房)</ins> situation is

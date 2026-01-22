@@ -85,6 +85,7 @@
 - novel [ˈnɑːvl]
     - n. （长篇）小说
     - adj. 新颖的，新奇的
+    - If something is so new and original that it's never been sen, used or even thought of before, call it **novel**.
     - Sometimes years are required for truly **novel** discovery claims to be accepted and appreciated.
     - a **novel** discovery 一个新颖的发明
     - novelist n. 小说家
@@ -204,14 +205,15 @@
 ## immune
 
 - [ɪˈmjuːn]
-- adj. 不受影响的；有免疫力的；免除的；豁免的；免疫（系统）的
-- 7 ways to boost your **immune** system
+- adj. 不受影响的(PE)；有免疫力的；免除的；豁免的；免疫（系统）的
 - 词组
     - (be) immune to 对...免疫；不受...影响
     - be immune from 免于...
+- 7 ways to boost your **immune** system
 - We are **immune** to advertising.
 - I become **immune** to criticism.
-- Jobs that were once thought to <ins>be **immune** from</ins> automation suddenly become threatened.
+- When there is rapid improvement in the price and performance of technology, jobs that were once thought to
+  <ins>be **immune** from</ins> automation suddenly become threatened.
     - be thought to be... 人们认为...
         - == It is thought that...
 - immunity n. 免疫力
@@ -236,6 +238,10 @@
     - adj. 可靠的
 - gorgeous [ˈɡɔːrdʒəs]
     - adj. 华丽的，艳丽的; 极好的，称心的; 美丽动人的，光彩夺目的; 令人愉快的，令人享受的
+- vicious [ˈvɪʃəs] 😔
+    - adj. 恶性的
+- jealous [ˈdʒeləs]
+    - adj. 嫉妒的，猜忌的；唯恐失去的
 
 ## 词组
 

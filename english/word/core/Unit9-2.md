@@ -189,15 +189,12 @@
         - adj. 可靠的
         - unreliable adj. 不可靠的，靠不住的; 不能信任的
 - lean
-    - vi. (~ towards)倾向于；
-    - adj. 瘦且健康的；贫乏的
+    - vi. (~ towards)倾向于；倾斜(PE)；倚靠(PE)；依靠(PE)
+    - adj. 贫乏的；瘦且健康的
     - lean towards 倾向于
-    - PE
-        - v. 倾斜
-            - The tower is leaning dangerously.
-        - v. 倚靠，依靠
-            - She walked slowly，leaning on her friend's arm.
-            - No shock there,considering how much work it is to raise a kid without a partner to lean on.
+    - The tower is **leaning** dangerously.
+    - She walked slowly, **leaning** on her friend's arm.
+    - No shock there, considering how much work it is to raise a kid without a partner to **lean** on.
 
 ## negative
 

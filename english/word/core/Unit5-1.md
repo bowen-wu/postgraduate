@@ -63,11 +63,9 @@
 
 - vt. 使保持（某种状态）；持有；担任（职务）；任务；举行；归咎于
 - vi. （未来将要）发生；（论点、理论等）站得住脚
+- v. 认为（表达观点）(PE)
 - n. 控制
-- PE
-    - v. 认为（表达观点）
-        - I still hold that his decision is mistaken.
-        - == contend/maintain/argue
+- I still **hold/contend/maintain/argue** that his decision is mistaken.
 - The average time for **holding a stock** in both the United States and Britain, he notes, has dropped from seven years
   to seven months.
 - 词组
@@ -273,6 +271,7 @@
     - proceeds [ˈproʊsidz]
         - n. 收入，收益
         - == income
-        - California's plan envisions([ɛnˈvɪʒən] vt. 设想; 想象) treating(处理) 35,000 acres of forest a year by 2020,and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
+        - California's plan envisions([ɛnˈvɪʒən] vt. 设想; 想象) treating(处理) 35,000 acres of forest a year by
+          2020,and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
           加州的计划设想，到 2020 年每年治理 3.5 万英亩森林，到 2030 年增加到 6 万英亩 — 资金来源于该州排放许可拍卖所得的收益。
 - procedure n. 手续；（商业、法律或政治上的）程序

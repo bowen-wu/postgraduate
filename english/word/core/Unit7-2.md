@@ -128,13 +128,12 @@
 ## nature
 
 - [ˈneɪtʃər]
-- n. 本质；天性；自然
+- n. 本质，实质；天性；自然
 - Mother Nature 大自然母亲
 - a good-natured man 脾气好的人
-- PE
-    - n. 本质，实质
-    - Regrettably，However，the report's failure to address the trew nature of the crisis facing liberal enducation may
-      cause more harm than good.
+- It's her duty to help them to realize the **nature** of their problems.
+- Regrettably，However，the report's failure to address the true **nature** of the crisis facing liberal education may
+  cause more harm than good.
 - 词组
     - in nature 本质上；事实上
 - natural [ˈnætʃrəl]

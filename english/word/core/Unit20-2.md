@@ -136,7 +136,7 @@
 
 ## loom
 
-- vi. （问题或困难）逐渐逼近；（常以可怕的方式）赫然出现 😔
+- vi. （问题或困难）逐渐逼近，迫近；（常以可怕的方式）赫然出现 😔
 - n. 织布机；若隐若现
 - boom n. （贸易和经济活动的）激增；（某种体育活动、音乐等）突然风靡的时期
 - doom n. 厄运
@@ -146,13 +146,10 @@
     - didn't go so well for sb 对某人来说结果不太好（委婉表达）
     - go well for sb 对某人有利
     - go badly/not go well for sb 对某人不利
-- PE
-    - vi. 赫然出现 😔
-        - Don't **loom** over the person you're teaching to *weave([wiːv] v. 编，织)*! You'll just make her nervous.
-            - loom over sb 居高临下地站在某人旁边、逼近式地注视
-    - vi. 逼近，迫近
-        - Anything that **looms** is coming into view slowly and isn't something you want to see.
-        - If a deadline **looms**, better get to work.
+- Don't **loom** over the person you're teaching to *weave([wiːv] v. 编，织)*! You'll just make her nervous.
+    - loom over sb 居高临下地站在某人旁边、逼近式地注视
+- Anything that **looms** is coming into view slowly and isn't something you want to see.
+- If a deadline **looms**, better get to work.
 - looming
     - adj. （不希望或不愉快的事情）迫近的，逼近的
     - A **looming** threat to business-method patents.

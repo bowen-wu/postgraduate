@@ -1257,13 +1257,13 @@
           }
 
           // If deeper indent, check if it's a real child card or just continuation
-          // Real child cards have: POS markers, "词组", synonyms, Chinese text, or specific patterns
+          // Real child cards have: POS markers, "词组", Chinese text, or specific patterns
+          // 🔧 FIX: Removed synonym markers from this check - synonyms are now handled by processListItem()
           const lineContent = trimmed.substring(1).trim();
           const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(lineContent);
           const isRealChild =
             this.isPurePosLine(lineContent) ||
             this.isPureIpaLine(lineContent) ||
-            this.isSynonymMarker(lineContent) ||
             lineContent === '词组' ||
             (this.hasPosMarker(lineContent) && !lineContent.includes('<ins>') && !lineContent.includes('*')) ||
             // 🔧 FIX: Lines with Chinese are child cards (phrases), not continuation lines
@@ -1360,10 +1360,8 @@
       // Update the pre-created sentence card with the split en/cn
       sentenceCard.items = [{type: 'sentence', en: en, cn: cn}];
 
-      // Add synonyms if any
-      if (this.pendingSynonyms && this.pendingSynonyms.length > 0) {
-        sentenceCard.synonyms = this.pendingSynonyms.map(word => ({word}));
-      }
+      // 🔧 FIX: Removed pending synonyms logic - synonyms are now handled by processListItem()
+      // and added to the correct parent card (word card) instead of the sentence card
 
       // Push the sentence card to the cards array
       this.cards.push(sentenceCard);
@@ -1411,27 +1409,29 @@
 
         const content = trimmed.substring(1).trim();
 
-        // Check if it's a synonym marker
+        // 🔧 FIX: Handle synonym markers by adding them to the parent card
+        // When processing children of a sentence, if a word card was created,
+        // this.parentCard will point to that word card (not the sentence)
+        // This ensures synonyms are added to the word card, not the sentence card
         if (this.isSynonymMarker(content)) {
-          // Add to parent sentence's synonyms
-          const synonymWord = content.replace(/^===?\s+/, '').trim();
-          // Will be added to sentence card after it's created
-          if (!this.pendingSynonyms) {
-            this.pendingSynonyms = [];
-          }
-          this.pendingSynonyms.push(synonymWord);
+          // Add to parent card (which should be the word card at this point)
+          this.addSynonymToParent(content);
           i++;
           continue;
         }
 
-        // Check if it's a pure POS line - skip (belongs to previous sibling)
+        // Check if it's a pure POS line - add to parent and skip
         if (this.isPurePosLine(content)) {
+          // 🔧 FIX: Call addPosToParent to add POS to parent card before skipping
+          this.addPosToParent(content);
           i++;
           continue;
         }
 
-        // Check if it's a pure IPA line - skip (belongs to previous sibling)
+        // Check if it's a pure IPA line - add to parent and skip
         if (this.isPureIpaLine(content)) {
+          // 🔧 FIX: Call addIpaToParent to add IPA to parent card before skipping
+          this.addIpaToParent(content);
           i++;
           continue;
         }
@@ -1536,6 +1536,14 @@
       // Add items if pos exists
       if (pos) {
         card.items.push({type: 'def', en: pos, cn: cn || ''});
+      } else if (cn) {
+        // 🔧 FIX: If no POS but has Chinese, still add an item
+        // This handles cases like "bold 中文" where the Chinese is the definition
+        card.items.push({type: 'def', en: word, cn: cn});
+      } else {
+        // 🔧 FIX: Word card without any definition - add a placeholder item
+        // This shouldn't normally happen, but ensures cards always have items
+        card.items.push({type: 'def', en: word, cn: ''});
       }
 
       // Note: 规则9 (Opposite:) is now handled in processListItem, not here
@@ -2171,6 +2179,14 @@
           // Simply use all text after POS as the Chinese definition
           // This includes Chinese, English notes in parentheses like "（常pl. ）", emoji, etc.
           const cn = rest.trim();
+
+          // 🔧 FIX: Remove placeholder item (where en equals word and cn is empty) before adding real POS
+          const placeholderIndex = this.parentCard.items.findIndex(
+            item => item.en === this.parentCard.word && item.cn === ''
+          );
+          if (placeholderIndex !== -1) {
+            this.parentCard.items.splice(placeholderIndex, 1);
+          }
 
           this.parentCard.items.push({
             type: 'def',

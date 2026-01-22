@@ -151,28 +151,75 @@
 
 ## hit
 
-- n./v. 打击，碰撞
-- v./n. 产生不良影响 😔
-    - The tax increases will certainly hit the poor.
-    - Italy was one of the hardest hit countries.
-- n. 达到
-    - == reach
-    - The euro hit a record low In trading today.
-    - As many people hit middle age...
+- v. 产生不良影响 😔；达到；打击，碰撞
+- n. 产生不良影响 😔；打击，碰撞
+- == reach
+- to have a bad effect on sb./sth.
+- to reach a particular level
+- The tax increases will certainly **hit** the poor.
+- Italy was one of the hardest **hit** countries.
+- The euro **hit** a record low in trading today.
+- As many people **hit** middle age, they often start to notice that their memory and mental clarity are not what they
+  used to be.
 
 ## interest
 
-- n. 兴趣
-- n. 利息
-    - If a bank loans you $10000,you have to pay back the $10000 plus the interest.
-- n. 利益，好处
-    - It is In your best Interest to cooperate.
-      That suggests it is in the broader corporate Interest to recruit top candidates for increasingly tough jobs.
+- n. 兴趣；利息；利益，好处
+- He was a man of wide **interests** outside his work.
+- If a bank loans you $10000, you have to pay back the $10000 plus the **interest**.
+- It is in your best **interest** to cooperate.
+- That suggests it is in the broader corporate **interest** to recruit top candidates for increasingly tough jobs.
+
+## ladder
+
+- n. （晋升）阶梯、门路；梯子
+- If you climb the corporate **ladder**, you're moving up in the business world.
+- Do we need quotas to ensure that women can continue to climb the corporate **ladder** fairly as they balance work and
+  family?
+
+## lame
+
+- v. 变跛
+- adj. 跛足的；无说服力的；蹩脚的
+- Sleeping too late is a **lame** excuse for being late.
+- They should start by discarding California's **lame** argument that exploring the contents of a smart phone—a vast
+  storehouse of digital information—is similar to, say, rifling through a suspect's purse.
+
+## live
+
+- v. 活着；居住
+- adj. 活的；实时的，现场的
+- The verb **live** means remain alive.
+- There is traditional **live** music played most nights.
+- Devoted concertgoers who reply that recordings are no substitute for **live** performance are missing the point.
+
+## lot
+
+- n. 一块地；命运
+- pron. 大量，许多
+- A **lot** is a plot of land.
+- Parking lot
+- She tried to accept her marriage as her **lot** in life but could not.
+- But we are now knowledgeable enough to reduce many of the risk that threatened the existence of earlier humans，and
+  to improve the **lot** of those to come.
+
+## might
+
+- v. 可能
+- n. 力量，威力
+- **Might** is physical strength or power.
+- We fear the military **might** of the enemy.
+- mighty
+    - adj. 强有力的，有势力的
+    - mightily
+        - adv. 非常，很大程度上；猛烈地
+        - That framework has contributed **mightily** to our broken immigration system.
 
 ## Words
 
 - cascade
 - principal
+- compress
 
 ## 词组
 
@@ -184,4 +231,3 @@
 ## 句式
 
 - Love once begun, will never end. The lovers may die for love, the dead in love may revive. 情不知所起，一往情深。生者可以死，死可以生
-
