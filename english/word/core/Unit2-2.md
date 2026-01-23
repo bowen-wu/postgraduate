@@ -130,6 +130,8 @@
 - protest
     - vt. 抗议
     - n. 抗议
+    - **Protests** have erupted over construction of the Thirty Meter Telescope(TMT), a giant observatory that promises
+      to revolutionize humanity's view of the cosmos.
 - verify
     - vt. 证实；核实
     - When you **verify** something, you show that **it's true**.

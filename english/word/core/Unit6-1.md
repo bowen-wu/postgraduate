@@ -106,7 +106,7 @@
 - uniform
     - n. 制服
     - adj. 统一的
-        - uniform rule
+    - uniform rule
     - uni- == single
     - uniformity [ˌjuːnɪˈfɔːrməti] n. 均匀性; 单调，无变化; 同样，一样
 - former

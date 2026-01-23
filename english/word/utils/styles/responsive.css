@@ -1,0 +1,105 @@
+/* Responsive Design - Media Queries */
+
+@media (max-width: 600px) {
+    /* Header adjustments */
+    .header-controls { gap: 0.5rem; }
+
+    .brand {
+        font-size: 0.9rem;
+        flex: 1;
+        margin-right: 0.2rem;
+    }
+
+    .toggle-switch {
+        max-width: 200px;
+    }
+
+    button {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Show file title bar on mobile */
+    .file-title-bar { display: block; }
+
+    .brand {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    /* Ensure header-controls doesn't get squeezed */
+    .header-controls {
+        flex-shrink: 0;
+        gap: 0.5rem;
+    }
+
+    /* Make toggle-switch more compact on mobile */
+    .toggle-switch {
+        max-width: 120px;
+    }
+
+    .toggle-switch button {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    /* Icon button styles on mobile */
+    .header-controls button.btn-icon-toggle {
+        padding: 0.4rem;
+    }
+
+    .header-controls button.btn-icon-toggle svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Hide stats button on very small screens if needed */
+    .header-controls button.btn-ghost {
+        padding: 0.35rem 0.5rem;
+    }
+
+    .header-controls button.btn-ghost svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Fix workspace layout on mobile - stack vertically */
+    .workspace {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .file-title-bar {
+        flex-shrink: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .card { height: 100%; max-height: 100vh; border-radius: 0; }
+
+    .card-header { padding: 1rem; }
+
+    .card-body { padding: 1rem; }
+
+    .card-footer { padding: 1rem; flex-direction: column; align-items: stretch; gap: 1rem; }
+
+    .action-area { justify-content: space-between; }
+
+    .main-word { font-size: 1.8rem; }
+
+    /* Phrase card mobile adjustments */
+    .phrase-title {
+        font-size: 1.3rem;
+        padding-left: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .card.is-phrase::before {
+        width: 4px;
+    }
+
+    .card.is-phrase {
+        border-width: 1px;
+    }
+
+    aside { width: 85%; }
+}

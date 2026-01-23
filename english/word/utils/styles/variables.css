@@ -1,0 +1,19 @@
+/* CSS Variables - Theme Configuration */
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #e0e7ff;
+    --secondary: #64748b;
+    --success: #10b981;
+    --success-bg: #d1fae5;
+    --danger: #ef4444;
+    --danger-bg: #fee2e2;
+    --background: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-sub: #475569;
+    --border-color: #e2e8f0;
+    --radius-lg: 16px;
+    --radius-md: 8px;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
