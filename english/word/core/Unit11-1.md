@@ -101,7 +101,7 @@
     - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
     - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
         - | 用法       | 含义     | 示例                        |
-                              |----------|--------|---------------------------|
+                                                                                |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -180,11 +180,11 @@
 ## respect
 
 - vt. 尊敬
-- n. 尊重
-- PE
-    - n. （事物的）方面
-    - Writing in the last year of his life，he expressed the opinion that in two or three respects his mind had changed
-      during the preceding twenty or thirty years.
+- n. 尊重；（事物的）方面
+- Treat people with **respect** if you want to be **respected**.
+- In many **respects** this is an important decision.
+- Writing in the last year of his life，he expressed the opinion that in two or three **respects** his mind had changed
+  during the preceding twenty or thirty years.
 - -spect- 看
     - prospect
         - vi. 勘探

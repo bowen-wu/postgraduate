@@ -184,7 +184,11 @@
     - v. 为（人、机构）服务；上（食物、饮料）；对...有用；履行义务；可用作
     - serve as 充当...；作为...使用；担任...
     - serve on 在...任职/担任...成员
+    - serve + abstract noun(抽象名词) 为...服务/投身于...
     - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
+    - When you **serve** your passions, proficiency *gradually(adv. 逐渐地)* takes over and becomes
+      *habitual([həˈbɪtʃuəl] adj. 习惯性的)*.
+        - gradually takes over 慢慢地、不知不觉地占据主导地位
 - servant [ˈsɜːrvənt]
     - n. 仆人
     - public/civil([ˈsɪvl]) servant 公务员

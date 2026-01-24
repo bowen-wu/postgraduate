@@ -148,8 +148,8 @@
 - similarity [ˌsɪməˈlærəti] n. 相似点
 - resemble [rɪˈzembl]
     - vt. 像
-    - A resemble B
     - == (be) similar to
+    - A resemble B
 - likewise [ˈlaɪkwaɪz]
     - adv. 同样
     - He lent money, made *donations(n. 捐赠)* and encouraged others to do **likewise**.

@@ -99,6 +99,8 @@
 - [ˈkʌnɪŋ]
 - n. 狡猾
 - conning personality
+- Since the dawn of human ingenuity, people have devised ever more **cunning** tools to cope with work that is
+  dangerous, boring, burdensome, or just plain nasty.
 - tricky [ˈtrɪki] adj. 棘手的；狡猾的；诡计多端的（人）
 
 ## wander

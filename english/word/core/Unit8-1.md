@@ -235,11 +235,14 @@
         - proposal [prəˈpoʊzl] n. 提议，建议; 求婚
     - pose
         - v. 提出（问题）；造成，引起
+        - n. 姿势；装模作样
         - == bring about
+        - I saw him out **posing** in his new sports car.
+        - Heavy traffic **poses** a problem in many old towns.
         - Ryan Hooper remarks <ins>the significant moves(重大举措)</ins> may <ins>**pose**/bring about</ins> challenges
           to children.
-        - The coming use of <ins>autonomous([ɔːˈtɑːnəməs] adj. 自治的) vehicles(自动驾驶汽车)</ins>, for example,
-          <ins>**poses** *thorny([ˈθɔrni])* ethical questions(提出了棘手的伦理问题)</ins>.
+        - The coming use of <ins>*autonomous([ɔːˈtɑːnəməs] adj. 自治的)* vehicles(自动驾驶汽车)</ins>, for example,
+          **poses** *thorny([ˈθɔrni] adj. 难以处理的, 棘手的)* ethical questions.
 
 ## Words
 

@@ -297,8 +297,8 @@
     - the Statue of Liberty 自由女神雕像
 - liberalism [ˈlɪbərəˌlɪzəm]
     - n. 自由主义
-    - ...economic co-ordination should involve all 27 members of the EU club, <ins>**among whom** there is a small
-      majority for free-market **liberalism** and economic rigour...</ins>.
+    - ...economic co-ordination should involve all 27 members of the EU club, among whom there is a small
+      majority for free-market **liberalism** and economic rigour...
         - a small majority 略占多数
         - for: 支持；赞成 => 在政治/立法/立场语境下 for == 支持；赞成
             - voters for the policy 支持该政策的选民

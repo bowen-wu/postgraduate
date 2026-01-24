@@ -158,17 +158,15 @@
 
 ## question
 
-- vt. 质疑
+- vt. 质疑，怀疑
 - n. 怀疑；（待讨论或处理的）事情；问题
 - To be or not to be that is the **question**.
+- It never occurs to them to **question** the doctor's decisions.
+    - it occurs to sb. 某人突然想到
+- Bob Herz, the FASB's chairman, cried out against those who "**question** our motives."
 - It is fair to *criticize([ˈkrɪtɪsaɪz])* and **question** the mechanism—that is, the culture of research—<ins>after
   all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
   批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
-- PE
-    - v. 质疑，怀疑
-    - It never occurs to them to question the doctor's decisions.
-        - it occurs to sb. 某人突然想到
-    - Bob Herz, the FASB's chairman, cried out against those who "question our motives."
 - 词组
     - without question 毫无疑问
     - in question 正被考虑或讨论的

@@ -91,11 +91,12 @@
     - COO == Chief Operating Officer 首席运营官
 - main adj. 主要的
 - principal [ˈprɪnsəpl]
-    - n. 校长，院长
     - adj. 最重要的
+    - n. 校长，院长
     - == fundamental == primary == major
     - the principal requirement
-    - Beethoven's importance in music has been principally defined by revolutionary nature of his compositions.
+    - The **principal** reason for my change of mind is this.
+    - Beethoven's importance in music has been **principally** defined by revolutionary nature of his compositions.
     - principle [ˈprɪnsəpl] n. 道德原则; 法则; 观念; 理由; 定律
 - mostly adv. 主要地；大部分地
 - largely

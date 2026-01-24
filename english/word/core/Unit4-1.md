@@ -72,16 +72,14 @@
 
 ## reason
 
-- v. 推断
+- v. 推断，推论
 - n. 理性；推理；原因；道理
-- PE
-    - n. 理性
-    - v. 推论
+- Love has **reasons** that **reason** knows not. 爱情自有其因，理性不知其然
 - reason **for** sth. 某事的原因
-    - The main **reason for** sports and exercise is to encourage a healthy lifestyle.
+- The main **reason for** sports and exercise is to encourage a healthy lifestyle.
 - The heart has its reasons which reason knows not of. 心的理由，理性无法理解
-- We **reason(v. 推理)** together, challenge, revise, and complete each other's **reasoning(n. 推理)** and each other's
-  conceptions of **reason(n. 理性)**.
+- We **reason** together, challenge, revise, and complete each other's **reasoning** and each other's conceptions of
+  **reason**.
 - reasoning n. 推理
 - reasonable
     - adj. 合理的

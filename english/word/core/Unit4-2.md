@@ -201,15 +201,18 @@
     - == occur [əˈkɜːr]
 - raise [reɪz]
     - vt. 增加，提高；筹集；引起；抚养；饲养；举起
-    - PE
-        - v. 筹集
-        - v. 养育
     - raise my hand 举手
     - raise a question 提出问题/引起问题
     - raise a baby 抚养小孩
     - raise money 筹集
     - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
-    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow many ethical questions to be **raised** by technologies yet to come.
+    - I would **raise** prices and make it into more of a legacy product.
+    - He **raised** his hand to **raise** a question.
+    - They **raise** the money to buy the house.
+    - ...but France's digital services tax and the American response **raise** questions about what the future holds for
+      the international tax system.
+    - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow many
+      ethical questions to be **raised** by technologies yet to come.
 - arouse [əˈraʊz]
     - vt. 引起(感情、态度(主观))；唤醒
     - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒
@@ -263,7 +266,7 @@
     - vt. 提倡；主张
     - n. 倡导者；拥护者
     - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
-      谦逊的 == modest)* musician <ins>with no air of the formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的) conductor</ins>
+      谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
       about him."
 - promote
     - v. 促进; 促销; 晋升; 使…升级

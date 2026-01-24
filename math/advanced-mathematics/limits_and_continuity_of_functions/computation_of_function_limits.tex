@@ -150,15 +150,26 @@
         \begin{itemize}
             \item $\displaystyle \sin x = x - \frac{x^3}{3!} + o(x^3) \Rightarrow \text{狗} - \sin \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
             \item $\displaystyle \arcsin x = x + \frac{x^3}{6} + o(x^3) \Rightarrow \arcsin \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
-            \item $\displaystyle \arctan x = x - \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \arctan \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
-            \item $\displaystyle e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + o(x^3) \Rightarrow e^{\text{狗}} - 1 - \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
             \item $\displaystyle \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^4) \Rightarrow 1 - \cos \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
             \item $\displaystyle \tan x = x + \frac{1}{3}x^3 + o(x^3) \Rightarrow \tan \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
+            \item $\displaystyle \arctan x = x - \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \arctan \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
+            \item $\displaystyle e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + o(x^3) \Rightarrow e^{\text{狗}} - 1 - \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
             \item $\displaystyle \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \ln(1+\text{狗}) \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
             \item $\displaystyle (1+x)^a = 1 + ax + \frac{a(a-1)}{2!}x^2 + o(x^2) \Rightarrow (1+\text{狗})^a - 1 - a\text{狗} \sim \frac{a(a-1)}{2}\text{狗}^2, \quad \text{狗}\to 0$
             \item $\displaystyle \frac{1}{1+x^2} = 1 - x^2 + x^4 + o(x^4)$
         \end{itemize}
-        \item \textbf{无穷小计算}
+        \item \textbf{无穷小计算（记号运算）}：设 $m,n$ 为正整数，$x\to 0$，则
+        \begin{itemize}
+            \item $o(x^m)\pm o(x^n)=o\!\left(x^{\min\{m,n\}}\right)$
+            （对无穷小而言，次数越小，量级越大；对无穷大而言，次数越大，量级越大）
+
+            \item $o(x^m)\cdot o(x^n)=o(x^{m+n}),\quad
+            x^m\cdot o(x^n)=o(x^{m+n})$
+
+            \item $o(kx^m)=o(x^m),\quad
+            k\,o(x^m)=o(x^m),\quad k\neq 0\text{ 为常数}$
+        \end{itemize}
+
         \item \textbf{泰勒公式应用时的展开原则:}
         \begin{itemize}
             \item $\displaystyle\frac{A}{B}$型，适用"上下同阶"原则: 如果分母（或分子）是$x$的$k$次幂，则应把分子（或分母）展开到$x$的$k$次幂
@@ -183,7 +194,7 @@
     \subsection{七种未定式的计算}
 
     \begin{enumerate}
-        \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}, 0\times \infty, \infty - \infty, \infty^0, 0^0, 1^\infty$
+        \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}, 0\cdot \infty, \infty - \infty, \infty^0, 0^0, 1^\infty$
         \item 解题思路
         \begin{itemize}
             \item 化简先行
@@ -193,7 +204,7 @@
                 \item 恒等变形：提公因式、拆项、合并、分子分母同除变量的最高次幂 + 换元法（负代换、倒代换）
             \end{enumerate}
             \item 判断类型（运算类型）
-            \item 选择方法
+            \item 选择方法：泰勒公式、洛必达法则、夹逼准则
         \end{itemize}
         \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}$
         \begin{itemize}
@@ -212,8 +223,8 @@
             \]
 
             \textbf{抓大头法:} \\
-            当 $x \to \infty$，则应抓分子和分母中关于 $x$ 的最高次项即可判断极限； \\
-            当 $x \to 0$，则应抓分子和分母中关于 $x$ 的最低次项
+            当 $\color{red}{x \to \infty}$，则应抓分子和分母中关于 $x$ 的{\color{red}{最高次项}}即可判断极限； \\
+            当 $\color{red}{x \to 0}$，则应抓分子和分母中关于 $x$ 的{\color{red}{最低次项}}
             \item 脱帽法: 若$\lim\limits_{x\to 0} f(x) = A$，则$f(x) = A + \alpha(x)$，其中$\lim\limits_{x\to 0} \alpha(x) = 0$
         \end{itemize}
         \item $0\cdot \infty$: 设置分母，简单因式下放
@@ -226,9 +237,9 @@
         \item $\infty - \infty$
         \begin{itemize}
             \item 如果函数是有分母，则通分，将加减法变形为乘除法，以便使用其他计算工具（$\displaystyle\frac{0}{0}, \frac{\infty}{\infty}$）
-            \item 如果函数中没有分母，则可以通过提取公因式或者做倒代换（创造分母再通分），出现分母后，再利用通分等恒等变形的方法，将加减法变形为乘除法
+            \item 如果函数中没有分母，则可以通过{\color{red}{提取公因式}}或者做{\color{red}{倒代换}}（{\color{red}{创造分母再通分}}），出现分母后，再利用通分等恒等变形的方法，将加减法变形为乘除法
         \end{itemize}
-        \item $\infty^0, 0^0$: $\lim u^v = e^{\lim v\lim u}$
+        \item $\infty^0, 0^0$: $\lim u^v = e^{\lim v\ln u}$
         \item $1^\infty$: $\lim u^v = e^{\lim v(u - 1)}$
         \begin{analysisbox}[Example]
             \[
@@ -243,8 +254,15 @@
     \begin{enumerate}
         \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A$，且$\lim g(x) = 0$，则$\lim f(x) = 0$
         \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A \neq 0$，且$\lim f(x) = 0$，则$\lim g(x) = 0$
-        \item 当 $x \to +\infty$ 时，有$\ln^{\alpha} x \ll x^{\beta} \ll a^{x}$，其中$\alpha,\beta>0,\ a>1$
-        \item 当 $n \to \infty$ 时，有$\ln^{\alpha} n \ll n^{\beta} \ll a^{n} \ll n! \ll n^{n}$，其中$\alpha,\beta>0,\ a>1$
+        \item （连续型）当 $x\to+\infty$ 时，
+        \[
+            \ln^{\alpha} x \ll x^{\beta} \ll a^{x},\qquad \alpha,\beta>0,\ a>1
+        \]
+
+        \item （离散型）当 $n\to\infty$ 时，
+        \[
+            \ln^{\alpha} n \ll n^{\beta} \ll a^{n} \ll n! \ll n^{n},\qquad \alpha,\beta>0,\ a>1
+        \]
         \item 当 $\alpha > 0$ 时，
         \[
             \lim_{x \to 0^+} x^\alpha \ln x
@@ -284,7 +302,8 @@
         \item $f(x) = (1 + x)^{\displaystyle\frac{1}{x}}$在$x > 0$时有以下性质
         \begin{itemize}
             \item $f(x)$单调减少
-            \item $\lim\limits_{x\to 0^+} f(x) = e$
+            \item $\lim\limits_{x\to 0^+} (1 + x)^{\displaystyle\frac{1}{x}} = e$
+            \item $\lim\limits_{x\to +\infty}(1 + x)^{\displaystyle\frac{1}{x}} = 1$
             \begin{tikzpicture}
                 \begin{axis}
                     [

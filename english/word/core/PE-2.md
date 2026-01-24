@@ -1,4 +1,4 @@
-# PE-1
+# PE-2
 
 - 感情色彩正向: 🙂
 - 感情色彩负向: 😔
@@ -49,10 +49,10 @@
 - **Might** is physical strength or power.
 - We fear the military **might** of the enemy.
 - mighty
-  - adj. 强有力的，有势力的
-  - mightily
-    - adv. 非常，很大程度上；猛烈地
-    - That framework has contributed **mightily** to our broken immigration system.
+    - adj. 强有力的，有势力的
+    - mightily
+        - adv. 非常，很大程度上；猛烈地
+        - That framework has contributed **mightily** to our broken immigration system.
 
 ## model
 
@@ -72,111 +72,117 @@
 - He **shoulders** the blame for his friends.
 - Housing is seldom mentioned. Why is that? To some extent the housing sector must **shoulder** the blame.
 
-## obscure
-
-- v. 使...模糊，蒙蔽
-- adj. 昏暗的，模糊的
-- That might seem rather an obscure point...
-- These figures obscure the fact that lots of older people live in great poverty.
-- The trend in sports, though, may be obscuring an unrecognized reality：Americans have generally stopped growing.
-
-## pose
-
-- v. 引起，造成
-- n. 姿势；装模作样
-- I saw him out posing in his new sports car.
-- The coming use of autonomous vehicles, for example, pose thorny ethical questions.
-
 ## pool
 
 - v. 共享；集中资源
 - n. 水槽，游泳池
 - swimming pool 泳池
 - a pooling of ideas 集思广益
-- They entered a contract to pool any gains.
+- They entered a contract to **pool** any gains.
 - ...it was the Federal Circuit itself that introduced such patents with its 1998 decision in the so-called State
-  Street Bank case,approving a patent on a way of pooling mutual-fund assets.
+  Street Bank case, approving a patent on a way of **pooling** mutual-fund assets.
 
 ## post
 
-- v. 邮递；张贴
-- n. 邮递；邮政；职位
+- v. 张贴；邮寄
+- n. 职位；邮递；邮政
+- post office 邮局
 - == position
-- Inrecent weeks the No.2 executives at Avon and American Express quit with the explanation that they were looking
-  for a CEO post.
+- This word has many meanings, most of which are related to **jobs** and **mail**.
+- A **post** is position in a company, like manager or clerk.
+- Officials began **posting** warning notices.
+- In recent weeks the No.2 executives at Avon and American Express quit with the explanation that they were looking
+  for a CEO **post**.
 
 ## partial
 
-- adj. 局部的；片面的
-- Our feelings are partially rooted in physical reactions.
-- I might be accused of being partial.
-- impartial adj. 公正的
+- adj. 局部的；片面的，偏爱的
+- There is no such thing as failure, only **partial** success!
+- Our feelings are **partially** rooted in physical reactions.
+- I might be accused of being **partial**.
+- impartial
+    - adj. 公正的
+    - Yet, in several instances, justices acted in ways that weakened the court's reputation for being independent and
+      **impartial**.
 
 ## rear
 
 - v. 抚养，喂养
 - n. 后面
 - adj. 后方的
-- ...child rearing is anything less than a completely fulfilling, life-enriching experience.
+- The **rear** is the back end of something, like the **rear** of a school bus.
+- The verb comes from a Germanic root meaning "to **raise**", while the noun is rooted in the Latin *retro* "behind".
+- ...child **rearing** is anything less than a completely fulfilling, life-enriching experience.
     - child rearing 育儿
 
 ## run
 
-- vi./n. 奔跑，运转
+- vi. 奔跑，运转
 - v. 经营，管理
-    - You can run a campaign or a business - you make them function.
-- n. 时期
-    - in the long run/term
-    - The longest bull run in a century of art-market history ended on a dramatic note with a scale of 56 works by
-      Damien...
+- n. 时期；奔跑，运转
+- The system is now **running** well.
+- You can **run** a campaign or a business—you make them function.
+- in the long run/term 长期来看
+- McGee says leaving without a position lined up gave him time to reflect on what kind of company he wanted to
+  **run**.
+- The longest bull **run** in a century of art-market history ended on a dramatic note with a scale of 56 works by
+  Damien...
 
 ## level
 
 - v. 使...平整；破坏
 - n. 水平
 - adj. 水平的，平坦的
-- We found that women as well as men have lower levels of stress at work than at home.
-- The tornado is about to level their house.
-- Retail trade groups praised the ruling, saying It levels the playing filed for local and online businesses.
-  公平的竞争环境
+- The verb level also mean to **flatten** or **destroy**.
+- We found that women as well as men have lower **levels** of stress at work than at home.
+- The tornado is about to **level** their house.
+- Retail trade groups praised the ruling, saying it **levels** the playing filed for local and online businesses.
 
 ## rest
 
-- n./vi. 休息
-- n. 其余部分
-- v. 依赖，基于
-    - rest on
-    - That argument rests on a false assumption.
-- v. 在于，归属于
-    - rest with 归...所有
+- vi. 休息
+- v. 依赖，基于；在于，归属于
+- n. 休息；其余部分
+- For the **rest** of the decade she apparently managed both roles without attracting much criticism.
+- That argument **rests** on a false assumption.
+    - rest on 基于；取决于；依赖于
+        - == depend on == count on
+- Copyright **rested** with the journal publisher.
+    - rest with 归...所有；（责任/决定）由...承担/归...负责
+- But the idea...**rests** on an understanding of the established conventions and special responsibilities of the news
+  media.
 
 ## return
 
-- n./v. 返回，归还
-- n. 利益，利润
-    - The return on the money we invested was very low.
-    - concrete returns for gift-givers
-    - The value of knowledge and the return on the public investment in research depends,in part,upon <ins>wide
-      distribution (广泛的分布)</ins> and ready access.
+- v. 返回，归还
+- n. 利益，利润；返回，归还
+- The **return** on the money we invested was very low.
+- concrete **returns** for gift-givers
+    - concrete [ˈkɑːŋkriːt]
+        - adj. 具体的；确实的；实在的
+        - n. 混凝土
+- The value of knowledge and the **return** on the public investment in research depends, in part, upon
+  <ins>wide distribution(广泛的分布)</ins> and ready access.
 
 ## rocket
 
-- n. 火箭
 - v. 迅速增加；飞涨
-    - The reason, of course, is that <ins>costs (成本)</ins> have rocketed and ticket prices have stayed low.
+- n. 火箭
+- Unemployment levels have **rocketed** to new heights.
+- The reason, of course, is that costs have **rocketed** and ticket prices have stayed low.
 
 ## plant
 
-- n. 工厂
-- The conflict has been surfacing since 2002, when the corporation bought Vermont's only nuclear power plant,an aging
-  reactor in Vernon.
+- n. 工厂；植物
+- vt. 种植
+- The conflict has been surfacing since 2002, when the corporation bought Vermont's only nuclear power **plant**, an
+  aging reactor in Vernon.
 
 ## row
 
-- n. 行，排；划船
-    - Memorize vocabulary for 21 days <ins>in a row (连续不断的)</ins> in order to make It a true habit.
-- n. 争吵
-    - On May 31st Microsoft set off the row.
+- n. 行，排；划船；争吵
+- Memorize vocabulary for 21 days <ins>in a row(连续不断的)</ins> in order to make It a true habit.
+- On May 31st Microsoft set off the row.
 
 ## shape
 
@@ -260,3 +266,17 @@
 - n. 下划线
 - v. 划下划线；强调，突出
 - President Trump has underlined fossil fuels - especially coal - as the path to economic growth.
+
+## Words
+
+- materialistic [məˌtɪriəˈlɪstɪk]
+    - adj. 物质主义的，金钱至上的；唯物主义的
+- monotonous
+    - adj. 单调的
+- prospection [p'rəspekʃn]
+    - n. 预期; 勘探; 探矿
+
+## 词组
+
+## 句式
+

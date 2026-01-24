@@ -119,11 +119,9 @@
 
 - vt. 敦促
 - vi. 推进；用力按
-- n. 报刊；按，压
-- PE
-    - n. 印刷机
-    - n. 新闻界，报刊
-        - These men believed in journalism as a calling，and were proud to be published in the daily press.
+- n. 新闻界，报刊；按，压；印刷机
+- "The **press**", or the news media, which got the name because newspapers are printed using a **press**.
+- These men believed in journalism as a calling, and were proud to be published in the daily **press**.
 - The government is <ins>**pressing** for(敦促)</ins> an early resolution of the dispute.
 - suppress [səˈpres]
     - vt. 镇压；抑制

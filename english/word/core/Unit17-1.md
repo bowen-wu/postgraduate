@@ -122,7 +122,13 @@
     - n. 模棱两可
     - It's a work of paradox and **ambiguity**.
 - obscure [əbˈskjʊr]
-    - adj. 鲜为人知的；费解的
+    - v. 使...模糊，蒙蔽
+    - adj. 鲜为人知的；费解的；昏暗的，模糊的
+    - if something is **obscure**, it's vague and hard to see.
+    - That might seem rather an **obscure** point...
+    - These figures **obscure** the fact that lots of older people live in great poverty.
+    - The trend in sports, though, may be **obscuring** an unrecognized reality: Americans have generally stopped
+      growing.
     - The legal issues in the case are **obscure**...
 - vague [veɪɡ]
     - adj. 含糊的
