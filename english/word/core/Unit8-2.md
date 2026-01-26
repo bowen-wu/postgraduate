@@ -25,7 +25,9 @@
 - May the **force** be with you.
 - Rosenberg contends/holds/believes/maintains that peer pressure can also be a positive **force**.
 - force sb. to do sth.
-- reinforce vt. 强化；巩固
+- reinforce
+    - vt. 强化；巩固
+    - Durkheim proposed that religious beliefs functioned to **reinforce** social solidarity.
 - enforce
     - v. 执行
     - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be

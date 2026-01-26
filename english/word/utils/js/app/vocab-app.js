@@ -226,6 +226,37 @@ export class VocabApp {
     UiRenderer.showSentenceTranslation(this.ui);
   }
 
+  showCompletionScreen() {
+    UiRenderer.showCompletionScreen(this.ui);
+  }
+
+  restart() {
+    // Restore original card content
+    if (window._originalCardContent) {
+      this.ui.card.innerHTML = window._originalCardContent;
+    }
+
+    // Reset index
+    STATE.currentIndex = 0;
+
+    // Re-initialize UI elements that were replaced
+    this.ui.word = document.getElementById('displayWord');
+    this.ui.ipa = document.getElementById('displayPronunciation');
+    this.ui.badges = document.getElementById('displayBadges');
+    this.ui.list = document.getElementById('itemList');
+    this.ui.progress = document.getElementById('progressText');
+    this.ui.actionArea = document.getElementById('actionArea');
+    this.ui.btnPrev = document.getElementById('btnPrev');
+
+    // Re-render the first card
+    this.render();
+  }
+
+  clearDataAndReload() {
+    localStorage.removeItem(CONFIG.storageKey);
+    location.reload();
+  }
+
   // Confirm dialog object
   confirmDialog = {
     confirmCallback: null,

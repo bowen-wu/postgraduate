@@ -101,7 +101,7 @@ export function nextCard() {
     window.app.render();
     StateManager.updateStatsUI(window.app.ui);
   } else {
-    showCompletionScreen(window.app.ui);
+    UiRenderer.showCompletionScreen(window.app.ui);
   }
 }
 
@@ -487,6 +487,8 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
       }
     }).catch((error) => {
       console.log('有道音频失败，切换到TTS:', error);
+      setButtonLoading(false, buttonId);
+      // Retry with TTS fallback
       playWord(word, buttonId, true, showNotification);
     });
     return;
@@ -506,7 +508,7 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
       utterance.onstart = () => {
         setButtonLoading(false, buttonId);
         if (showNotification) {
-          UiRenderer.showToast(window.app.ui, '🔊 播放中');
+          UiRenderer.showToast(window.app.ui, '🔊 TTS播放中');
         }
       };
 
@@ -514,7 +516,7 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
         console.warn('Speech synthesis error:', event.error);
         setButtonLoading(false, buttonId);
         if (event.error !== 'canceled') {
-          UiRenderer.showToast(window.app.ui, '语音播放失败');
+          UiRenderer.showToast(window.app.ui, '❌ 语音播放失败');
         }
       };
 
@@ -542,11 +544,11 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
     } catch (e) {
       console.error('Speech synthesis exception:', e);
       setButtonLoading(false, buttonId);
-      UiRenderer.showToast(window.app.ui, '语音播放出错');
+      UiRenderer.showToast(window.app.ui, '❌ 语音播放出错');
     }
   } else {
     setButtonLoading(false, buttonId);
-    UiRenderer.showToast(window.app.ui, '浏览器不支持语音播放');
+    UiRenderer.showToast(window.app.ui, '❌ 浏览器不支持语音播放');
   }
 }
 
@@ -587,10 +589,18 @@ export async function playAudioUrl(url) {
     audio.src = url;
 
     let resolved = false;
+    let canPlayThrough = false;
+
+    // Check if audio can actually be played (not just started)
+    audio.oncanplaythrough = () => {
+      console.log('🎵 Audio can play through:', url);
+      canPlayThrough = true;
+    };
 
     audio.onplay = () => {
       console.log('▶️ Audio started playing:', url);
-      if (!resolved) {
+      // Only resolve if we know the audio is playable
+      if (!resolved && canPlayThrough) {
         resolved = true;
         resolve({ onplay: true, audio });
       }
@@ -598,7 +608,6 @@ export async function playAudioUrl(url) {
 
     audio.onended = () => {
       console.log('✅ Audio finished playing');
-      // If we haven't resolved yet (very short audio), resolve now
       if (!resolved) {
         resolved = true;
         resolve({ onplay: true, audio });
@@ -606,14 +615,38 @@ export async function playAudioUrl(url) {
     };
 
     audio.onerror = (e) => {
-      console.error('❌ Audio error:', e);
+      console.error('❌ Audio error:', e, 'URL:', url);
       if (!resolved) {
         resolved = true;
         reject(new Error('Audio load failed'));
       }
     };
 
-    // Start playing - this returns immediately, audio will play when buffered
+    // Add timeout to detect stuck loading
+    const timeoutId = setTimeout(() => {
+      if (!resolved && !canPlayThrough) {
+        console.warn('⏱️ Audio loading timeout:', url);
+        resolved = true;
+        reject(new Error('Audio loading timeout'));
+      }
+    }, 5000); // 5 second timeout
+
+    // Clean up timeout on resolution
+    const originalResolve = resolve;
+    const originalReject = reject;
+    const cleanup = () => clearTimeout(timeoutId);
+
+    resolve = (...args) => {
+      cleanup();
+      originalResolve(...args);
+    };
+
+    reject = (...args) => {
+      cleanup();
+      originalReject(...args);
+    };
+
+    // Start playing
     audio.play().catch((err) => {
       console.error('❌ Audio play() failed:', err);
       if (!resolved) {

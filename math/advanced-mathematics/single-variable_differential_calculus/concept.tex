@@ -326,5 +326,52 @@
             $f(x)$ 在 $x=0$ 处连续、可导，且 $f'(0)=0$
 
         \end{analysisbox}
+        \item 求导数时，当函数不具备{\color{red}{导数存在}}的条件时，往往只能用{\color{red}{导数定义}}求
+        \begin{analysisbox}[Example]
+            设
+            \[
+                f(x) = (x-a)\cdot\varphi(x),
+            \]
+            其中 $\varphi(x)$ 连续，求 $f'(a)$。
+
+            \[
+                \begin{aligned}
+                    f'(a)
+                    &= \lim_{x\to a}\frac{f(x)-f(a)}{x-a} \\
+                    &= \lim_{x\to a}\frac{(x-a)\cdot\varphi(x)-0}{x-a} \\
+                    &= \lim_{x\to a}\cdot\varphi(x) \\
+                    &= \varphi(a)
+                \end{aligned}
+            \]
+        \end{analysisbox}
+        \item \begin{theorem}
+                  证明：
+                  (1)\ 若 $F(x)$ 在 $[x_0,\,x_0+\delta)\ (\delta>0)$ 上连续，在 $(x_0,\,x_0+\delta)$ 内可导，当 $\lim\limits_{x\to x_0^+} F'(x) = A$ 存在时，有 $F'_+(x_0) = A$
+
+                  \medskip
+
+                  (2)\ 若 $F(x)$ 在 $(x_0-\delta,\,x_0]\ (\delta>0)$ 上连续，在 $(x_0-\delta,\,x_0)$ 内可导，当 $\lim\limits_{x\to x_0^-} F'(x) = A$ 存在时，有 $F'_-(x_0) = A$
+        \end{theorem}
+        \begin{analysisbox}[证明]
+        (1)\
+        \[
+            F'_+(x_0)
+            = \lim_{x \to x_0^+} \frac{F(x) - F(x_0)}{x - x_0}
+            \overset{\text{洛必达}}{=}
+            \lim_{x \to x_0^+} \frac{F'(x)}{1}
+            = A.
+        \]
+
+        (2)\
+        \[
+            F'_-(x_0)
+            = \lim_{x \to x_0^-} \frac{F(x) - F(x_0)}{x - x_0}
+            \overset{\text{洛必达}}{=}
+            \lim_{x \to x_0^-} \frac{F'(x)}{1}
+            = A.
+        \]
+        \end{analysisbox}
+
+
     \end{enumerate}
 \end{document}

@@ -13,6 +13,7 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{ulem}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -35,6 +36,14 @@
     top=4pt,
     bottom=4pt
 }
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
 
 % =========================
 % 字体设置
@@ -66,6 +75,42 @@
 
     \section{一元函数微分学的应用 - 几何应用}
 
+    \subsection{极值的定义}
+    \begin{enumerate}
+        \item 对于函数 $f(x)$，若存在点 $x_0$ 的 {\color{red}{某个邻域}}，
+        使得在该邻域内任意一点 $x$，均有
+        \[
+            f(x) \le f(x_0)\quad (\text{或 } f(x) \ge f(x_0))
+        \]
+        成立，则称点 $x_0$ 为 $f(x)$ 的
+        \textbf{极大值点}（或 \textbf{极小值点}），
+        $f(x_0)$ 为 $f(x)$ 的极大值（或极小值）。
+
+        \item 极值是一个\textbf{局部}的概念。
+
+        \item 极值要求点 $x_0$ 的左右邻域均有定义，
+        \textbf{端点处不讨论极值，间断点不可能是极值点}。
+    \end{enumerate}
+
+    \subsection{极值的定义}
+
+    \subsubsection{单调性的判别}
+    \begin{enumerate}
+        \item 设函数 $y = f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导。
+
+        \begin{circlenum}
+            \item 若在 $(a,b)$ 内有 $f'(x) \ge 0$，
+            且等号仅{\blueuline{在有限个点处成立}}，则函数 $y = f(x)$ 在 $[a,b]$ 上
+                {\color{red}{严格单调增加}}。
+
+            \item 若在 $(a,b)$ 内有 $f'(x) \le 0$，
+            且等号仅 {\blueuline{在有限个点处成立}}，则函数 $y = f(x)$ 在 $[a,b]$ 上
+                {\color{red}{严格单调减少}}
+
+            \item 导数为$0$仅能说明在某点处的函数值变化\textbf{充分小}，而不能说明没变化
+        \end{circlenum}
+    \end{enumerate}
+
     \subsection{基础概念}
 
     \begin{enumerate}
@@ -75,7 +120,6 @@
 
     \begin{enumerate}
     \end{enumerate}
-
 
     \subsection{定理}
 

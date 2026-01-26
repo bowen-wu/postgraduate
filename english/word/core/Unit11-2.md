@@ -300,7 +300,7 @@
     - ...economic co-ordination should involve all 27 members of the EU club, among whom there is a small
       majority for free-market **liberalism** and economic rigour...
         - a small majority 略占多数
-        - for: 支持；赞成 => 在政治/立法/立场语境下 for == 支持；赞成
+        - for prep. 立场，倾向，支持的一方 -> 支持；赞成（在政治/立法/立场语境下 for = 支持；赞成）
             - voters for the policy 支持该政策的选民
             - majority for independence 支持独立的多数
 

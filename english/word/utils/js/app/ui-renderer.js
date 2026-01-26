@@ -72,6 +72,8 @@ function renderWord(ui, card) {
   </button>`;
 
   ui.word.innerHTML = `<span>${card.word}</span> ${playButton}`;
+
+  // Hide IPA in header (will be shown in items list with POS)
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';
 }
@@ -129,6 +131,12 @@ function renderItems(ui, card) {
       cnHtml = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
     }
 
+    // Add IPA before POS for first item
+    let ipaHtml = '';
+    if (idx === 0 && card.ipa && card.ipa.trim() && hasPOS) {
+      ipaHtml = `<span class="pronunciation-inline">${card.ipa}</span> `;
+    }
+
     if (hasPOS || !hasCn) {
       const isPhraseItself = card.type === 'phrase' && item.en === card.word;
 
@@ -141,7 +149,7 @@ function renderItems(ui, card) {
       } else {
         li.innerHTML = `
           <span class="item-tag tag-def ${STATE.mode === 'recall' ? 'blur-target' : ''}"></span>
-          <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${cleanEn}</div>
+          <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${ipaHtml}${cleanEn}</div>
           ${cnHtml}
         `;
       }
@@ -576,41 +584,103 @@ export function showToast(ui, msg) {
  * Trigger confetti animation
  */
 export function triggerConfetti() {
-  const colors = ['#ff0', '#f0f', '#0ff', '#0f0', '#f00', '#00f'];
-  for (let i = 0; i < 50; i++) {
+  // Simple confetti effect using emojis
+  const emojis = ['🎉', '🎊', '✨', '⭐', '🌟', '💫', '🎈', '🎁'];
+
+  // Use the main workspace as container (not body, to avoid position issues)
+  const container = document.querySelector('main');
+  if (!container) return;
+
+  for (let i = 0; i < 30; i++) {
     setTimeout(() => {
-      const conf = document.createElement('div');
-      conf.className = 'confetti';
-      conf.style.cssText = `
-        position: fixed;
-        width: 10px;
-        height: 10px;
-        background: ${colors[Math.floor(Math.random() * colors.length)]};
-        left: ${Math.random() * 100}vw;
-        top: -10px;
-        opacity: ${Math.random() * 0.5 + 0.5};
-        border-radius: ${Math.random() > 0.5 ? '50%' : '0'};
-        z-index: 9999;
+      const confetti = document.createElement('div');
+      confetti.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      confetti.style.cssText = `
+        position: absolute;
+        font-size: ${Math.random() * 20 + 15}px;
+        left: ${Math.random() * 100}%;
+        top: 0px;
+        animation: fall-new ${Math.random() * 2 + 2}s linear forwards;
         pointer-events: none;
-        animation: fall ${Math.random() * 2 + 2}s linear forwards;
+        z-index: 1000;
       `;
-      document.body.appendChild(conf);
-      setTimeout(() => conf.remove(), 4000);
-    }, i * 30);
+      container.appendChild(confetti);
+
+      setTimeout(() => confetti.remove(), 4000);
+    }, i * 50);
   }
 
-  // Add fall animation if not exists
-  if (!document.getElementById('confetti-style')) {
+  // Add animation keyframes if not exists
+  if (!document.getElementById('confetti-style-fixed')) {
     const style = document.createElement('style');
-    style.id = 'confetti-style';
+    style.id = 'confetti-style-fixed';
     style.textContent = `
-      @keyframes fall {
-        to {
-          transform: translateY(100vh) rotate(720deg);
+      @keyframes fall-new {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(80vh) rotate(720deg);
           opacity: 0;
         }
       }
     `;
     document.head.appendChild(style);
   }
+}
+
+/**
+ * Show completion screen when all cards are finished
+ */
+export function showCompletionScreen(ui) {
+  // Calculate statistics
+  const totalCards = STATE.cards.length;
+  const totalErrors = Object.values(STATE.stats).reduce((sum, stat) => sum + stat.errors, 0);
+  const accuracy = totalCards > 0 ? Math.round(((totalCards - totalErrors) / totalCards) * 100) : 100;
+
+  // Store original card content to restore later
+  window._originalCardContent = ui.card.innerHTML;
+
+  // Show completion screen
+  ui.card.innerHTML = `
+    <div style="text-align: center; padding: 3rem 2rem;">
+      <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+      <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">完结撒花！</h2>
+      <p style="font-size: 1.2rem; color: var(--text-sub); margin-bottom: 2rem;">
+        恭喜你完成了所有 ${totalCards} 张卡片！
+      </p>
+      <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--primary);">${totalCards}</div>
+            <div style="font-size: 0.875rem; color: var(--text-sub);">总卡片</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--danger);">${totalErrors}</div>
+            <div style="font-size: 0.875rem; color: var(--text-sub);">错误次数</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--success);">${accuracy}%</div>
+            <div style="font-size: 0.875rem; color: var(--text-sub);">正确率</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button class="btn-primary" onclick="app.restart()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+          🔄 重新开始
+        </button>
+        <button class="btn-ghost" onclick="app.clearDataAndReload()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+          🗑️ 清除进度
+        </button>
+      </div>
+    </div>
+  `;
+
+  // Hide action area and update progress (matching review.html)
+  ui.actionArea.innerHTML = '';
+  ui.progress.textContent = `${totalCards} / ${totalCards}`;
+
+  // Trigger confetti animation
+  triggerConfetti();
 }

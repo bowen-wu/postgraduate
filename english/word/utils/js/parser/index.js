@@ -850,7 +850,9 @@ export class MarkdownParser {
       card.items.push({type: 'def', en: pos, cn: cn || ''});
     } else if (cn) {
       card.items.push({type: 'def', en: word, cn: cn});
-    } else {
+    } else if (!ipa) {
+      // Only add placeholder if there's no IPA either
+      // If there's IPA, the real definition will come from children (POS lines)
       card.items.push({type: 'def', en: word, cn: ''});
     }
 
@@ -962,11 +964,33 @@ export class MarkdownParser {
 
   /**
    * Add antonym to parent card
+   * Finds the nearest word-type ancestor card (not sentence)
    */
   addAntonymToParent(content) {
-    if (this.parentCard) {
+    // Find the nearest word-type parent card by searching backward through cards
+    let wordParentCard = null;
+
+    // First check if current parent is a word card
+    if (this.parentCard && this.parentCard.type === 'word') {
+      wordParentCard = this.parentCard;
+    } else {
+      // Search backward through cards array to find the nearest word card
+      for (let i = this.cards.length - 1; i >= 0; i--) {
+        const card = this.cards[i];
+        if (card.type === 'word' || card.type === 'phrase' || card.type === 'prefix') {
+          wordParentCard = card;
+          break;
+        }
+        // Stop at sentence cards (don't go past them)
+        if (card.type === 'sentence') {
+          break;
+        }
+      }
+    }
+
+    if (wordParentCard) {
       const antonymContent = content.replace(/^Opposite:\s*/, '').trim();
-      this.parentCard.antonyms = this.parentCard.antonyms || [];
+      wordParentCard.antonyms = wordParentCard.antonyms || [];
 
       const { word, ipa, pos, cn } = this.parseWordContent(antonymContent);
       const antonym = { word };
@@ -974,7 +998,7 @@ export class MarkdownParser {
       if (pos) antonym.pos = pos;
       if (cn) antonym.cn = cn;
 
-      this.parentCard.antonyms.push(antonym);
+      wordParentCard.antonyms.push(antonym);
     }
   }
 
