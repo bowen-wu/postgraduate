@@ -77,6 +77,13 @@ export class MarkdownParser {
             this.cards.push(card);
             this.parentCard = card;
             this.parentLevel = 0;
+          } else {
+            // 🔧 FIX: For non-vocabulary headers (like "## Words", "## 词组", "## 句式"),
+            // reset parent context so that subsequent items are processed as independent
+            // This prevents items from being incorrectly nested as children of previous section
+            this.inPhraseHeader = headerWord.includes('词组');
+            this.parentCard = null;
+            this.parentLevel = -1;
           }
           i++;
           continue;
@@ -102,8 +109,19 @@ export class MarkdownParser {
 
           // Process list item
           const lastLineIndex = this.processListItem(line, indentLevel, content, i);
-          if (lastLineIndex !== null && lastLineIndex !== undefined && lastLineIndex > i) {
-            i = lastLineIndex;  // Skip to last processed line
+          if (lastLineIndex !== null && lastLineIndex !== undefined) {
+            // sentence cards always return a line index (the last line they processed)
+            // We should skip to that line, and the next iteration will i++ to move past it
+            if (lastLineIndex >= i) {
+              // DEBUG: Log skip
+              console.log(`=== MAIN LOOP SKIP ===`);
+              console.log(`Current i: ${i}, lastLineIndex: ${lastLineIndex}, setting i = ${lastLineIndex}`);
+              console.log(`=== END MAIN LOOP SKIP ===`);
+              i = lastLineIndex;  // Skip to last processed line (which is >= i)
+            } else {
+              // Shouldn't happen, but handle gracefully
+              i++;
+            }
           } else {
             i++;
           }
@@ -112,6 +130,17 @@ export class MarkdownParser {
 
         i++;
       }
+
+      // DEBUG: Log parsing results
+      console.log('=== PARSE DEBUG INFO ===');
+      console.log('Total cards:', this.cards.length);
+      const byType = {};
+      this.cards.forEach((c, i) => {
+        byType[c.type] = (byType[c.type] || 0) + 1;
+        console.log(`[${i}] ${c.type}: "${c.word.substring(0, 50)}${c.word.length > 50 ? '...' : ''}"`);
+      });
+      console.log('By type:', byType);
+      console.log('=== END PARSE DEBUG ===');
 
       return this.cards;
     } catch (error) {
@@ -193,31 +222,64 @@ export class MarkdownParser {
    * Returns: 'word' | 'phrase' | 'sentence' | 'prefix'
    */
   determineCardType(content, indentLevel, lineIndex = null) {
+    // DEBUG: Track specific problematic cards
+    const isTarget = (
+      content === 'baseless 😔' ||
+      content === 'wrap up 结束' ||
+      content === 'embark on 从事' ||
+      content === 'quite a few 不少，相当多' ||
+      content.startsWith('it pays to do sth.') ||
+      content.startsWith('with sth. approaching')
+    );
+
+    if (isTarget) {
+      console.log(`=== DETERMINE TYPE DEBUG ===`);
+      console.log(`Content: "${content}"`);
+      console.log(`indentLevel: ${indentLevel}, lineIndex: ${lineIndex}`);
+      console.log(`parentCard:`, this.parentCard ? { type: this.parentCard.type, word: this.parentCard.word } : null);
+      console.log(`parentLevel: ${this.parentLevel}`);
+    }
+
     // 规则5: Check if it's a prefix or suffix (-xx-, -xxx, xx-)
     if (this.isPrefixOrSuffix(content, lineIndex)) {
+      if (isTarget) console.log(`-> prefix`);
       return 'prefix';
     }
 
     // Check if in phrase list (规则4: - 词组 or ## 词组)
-    if (this.inPhraseList || this.inPhraseHeader) {
+    // 🔧 FIX: Match review.html logic - items directly under "## 词组" (indentLevel 0) should NOT be phrases
+    // Only nested items (indentLevel > 0) under "- 词组" are phrases
+    if (this.inPhraseHeader && lineIndex !== null && this.firstChildHasPos(content, 0, lineIndex)) {
+      if (isTarget) console.log(`-> phrase (inPhraseHeader with children)`);
+      return 'phrase';
+    }
+    if (this.inPhraseList) {
+      if (isTarget) console.log(`-> phrase (inPhraseList)`);
       return 'phrase';
     }
 
     // Check if content has POS marker (规则3: 只要有词性，一定是单词)
     if (this.hasPosMarker(content)) {
+      if (isTarget) console.log(`-> word (hasPosMarker)`);
       return 'word';
     }
 
     // Check if content has IPA (word with pronunciation only)
     if (this.hasIpaMarker(content)) {
+      if (isTarget) console.log(`-> word (hasIpaMarker)`);
       return 'word';
     }
 
     // 规则3: 检查子级是否以词性开头
     // Only check for single words (not sentences)
     // Sentences contain spaces, multiple words, etc.
-    const isSingleWord = /^[a-zA-Z'\-]+$/.test(content);
+    // Allow for trailing emojis/annotations (e.g., "baseless 😔")
+    // 🔧 FIX: Make the regex more strict - single words should have at most ONE space
+    // This prevents sentences like "The police followed..." from being classified as single words
+    const isSingleWord = /^[a-zA-Z'\-]+(?:\s[^a-zA-Z]*)?$/.test(content);
+    if (isTarget) console.log(`isSingleWord: ${isSingleWord}`);
     if (isSingleWord && lineIndex !== null && this.firstChildHasPos(content, indentLevel, lineIndex)) {
+      if (isTarget) console.log(`-> word (firstChildHasPos)`);
       return 'word';
     }
 
@@ -225,14 +287,22 @@ export class MarkdownParser {
     // 注意：只针对"句子"的子级，不针对"单词"的子级
     const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
     const isChild = this.parentCard && this.parentLevel < indentLevel;
+    if (isTarget) {
+      console.log(`hasChinese: ${hasChinese}, isChild: ${isChild}`);
+      if (isChild && this.parentCard) {
+        console.log(`parentCard.type: ${this.parentCard.type}, parentLevel < indentLevel: ${this.parentLevel} < ${indentLevel}`);
+      }
+    }
     if (isChild && hasChinese && !this.hasPosMarker(content)) {
       // 只当父级是 sentence 时，才判断为 phrase
       if (this.parentCard.type === 'sentence') {
+        if (isTarget) console.log(`-> phrase (child of sentence with Chinese, no POS)`);
         return 'phrase';
       }
     }
 
     // Otherwise, it's a sentence
+    if (isTarget) console.log(`-> sentence (default)`);
     return 'sentence';
   }
 
@@ -242,6 +312,76 @@ export class MarkdownParser {
    */
   processSentence(content, indentLevel, lineIndex) {
     const extractedCards = [];
+
+    // 🔧 FIX: Merge continuation lines before processing
+    // Continuation lines are indented lines that don't start with a list marker
+    // Example: "..." (line 1) + "  continuation" (line 2)
+    let mergedContent = content;
+    let nextLineIndex = lineIndex + 1;
+    let mergedLines = [];  // Track merged line indices to skip in processChildren
+
+    while (nextLineIndex < this.lines.length) {
+      const nextLine = this.lines[nextLineIndex];
+      const trimmed = nextLine.trim();
+
+      // Skip empty lines
+      if (!trimmed) {
+        nextLineIndex++;
+        continue;
+      }
+
+      // Check if it's a list item
+      const indentMatch = nextLine.match(/^(\s*)-/);
+      if (indentMatch) {
+        const nextIndentLevel = indentMatch[1].length;
+
+        // If same level or less, it's not a continuation
+        if (nextIndentLevel <= indentLevel) {
+          break;
+        }
+
+        // More indented - could be child card or continuation line
+        // Check if child content looks like a separate card
+        const childContent = trimmed.substring(1).trim();
+
+        // 🔧 FIX: Check if this is a REAL child card (has special markers or starts a new thought)
+        const isRealChild =
+            this.isSynonymMarker(childContent) ||
+            this.hasAntonymMarker(childContent) ||
+            this.isPurePosLine(childContent) ||
+            this.isPureIpaLine(childContent) ||
+            (/^[a-z]+\./.test(childContent));  // Lines starting with POS markers are separate cards
+
+        if (isRealChild) {
+          // This is a genuine child card, not a continuation
+          break;
+        } else {
+          // 🔧 FIX: Lines with "-" are independent cards, NOT continuation lines!
+          // Only pure text (without "-") should be merged as continuation
+          // Break here and let it be processed as a separate card (phrase/sentence)
+          break;
+        }
+      }
+
+      // Not a list item - if it doesn't start with '-', merge it as continuation
+      if (!trimmed.startsWith('-')) {
+        // Stop at section headers (##)
+        if (trimmed.startsWith('##')) {
+          break;
+        }
+        // Any other line without '-' is part of the sentence
+        mergedContent += ' ' + trimmed;
+        mergedLines.push(nextLineIndex);
+        nextLineIndex++;
+        continue;
+      }
+
+      // Not a continuation line
+      break;
+    }
+
+    // Now process the merged content
+    content = mergedContent;
 
     // Step 1: Remove ** markers (bold)
     let clean = content.replace(/\*\*/g, '');
@@ -255,7 +395,7 @@ export class MarkdownParser {
     // Step 3: Extract <ins>phrase</ins> patterns
     clean = this.extractInsPhrases(clean, extractedCards, indentLevel);
 
-    // Step 6: Split English and Chinese
+    // Split English and Chinese
     // First, remove all (中文) patterns from the sentence for clean English text
     // This handles cases like: "... track down(追查到) kids ..." -> "... track down kids ..."
     const cleanEn = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
@@ -273,39 +413,10 @@ export class MarkdownParser {
       cn = cleanEn.substring(cnIndex).trim();
     }
 
-    // Merge continuation lines for child processing (only)
-    let mergedContent = content;
-    let nextLineIndex = lineIndex + 1;
-    let mergedLines = [];
-
-    while (nextLineIndex < this.lines.length) {
-      const nextLine = this.lines[nextLineIndex];
-      const trimmed = nextLine.trim();
-
-      if (!trimmed) {
-        nextLineIndex++;
-        continue;
-      }
-
-      const indentMatch = nextLine.match(/^(\s*)-/);
-      if (indentMatch) {
-        const nextIndentLevel = indentMatch[1].length;
-        if (nextIndentLevel <= indentLevel) {
-          break;
-        }
-        // Continuation line (more indented)
-        mergedContent += ' ' + trimmed.substring(1).trim();
-        mergedLines.push(nextLineIndex);
-        nextLineIndex++;
-        continue;
-      }
-      break;
-    }
-
     // Create sentence card (using original content, not merged)
     const sentenceCard = {
       id: `card_${this.cardCounter++}`,
-      word: clean.substring(0, 100), // First 100 chars as title
+      word: clean.substring(0, 50) + (clean.length > 50 ? '...' : ''), // First 50 chars as title
       type: 'sentence',
       fullText: clean,
       items: [{ type: 'sentence', en: en, cn: cn }]
@@ -324,26 +435,55 @@ export class MarkdownParser {
     const sentenceChildren = [];
     const promotedChildren = [];
 
-    let i = lineIndex + 1;
+    // DEBUG: Log sentence processing
+    const isTargetSentence = content.includes('NATO defense ministers') ||
+                             content.includes('Some forethought') ||
+                             content.includes("I've found quite a few") ||
+                             content.includes('In this age of generalists') ||
+                             content.includes('He is very formidable') ||
+                             content.includes('Regenerative products') ||
+                             content.includes('A good teacher knows') ||
+                             content.includes('When something is at its onset');
+
+    if (isTargetSentence) {
+      console.log(`=== PROCESS SENTENCE CHILDREN ===`);
+      console.log(`Sentence: "${content.substring(0, 50)}..."`);
+      console.log(`lineIndex: ${lineIndex}, indentLevel: ${indentLevel}`);
+      console.log(`Merged lines:`, mergedLines);
+      console.log(`Starting from line: ${nextLineIndex}`);
+    }
+
+    let i = nextLineIndex;  // Start after merged lines
+    let lastProcessedLineIndex = lineIndex;  // Track the last line we actually processed
     while (i < this.lines.length) {
+      const line = this.lines[i];
+      const trimmed = line.trim();
+
+      // Skip merged lines
       if (mergedLines.includes(i)) {
         i++;
         continue;
       }
 
-      const line = this.lines[i];
-      const trimmed = line.trim();
-
       if (!trimmed) {
+        if (isTargetSentence) console.log(`  [${i}] skip: empty line`);
         i++;
         continue;
       }
 
       const indentMatch = line.match(/^(\s*)-/);
-      if (!indentMatch) break;
+      if (!indentMatch) {
+        if (isTargetSentence) console.log(`  [${i}] break: not a list item`);
+        break;
+      }
 
       const childIndentLevel = indentMatch[1].length;
-      if (childIndentLevel <= indentLevel) break;
+      if (childIndentLevel <= indentLevel) {
+        if (isTargetSentence) console.log(`  [${i}] break: childIndentLevel (${childIndentLevel}) <= indentLevel (${indentLevel})`);
+        break;
+      }
+
+      if (isTargetSentence) console.log(`  [${i}] process child: "${trimmed.substring(1).trim()}"`);
 
       const content = trimmed.substring(1).trim();
 
@@ -351,11 +491,13 @@ export class MarkdownParser {
       if (this.isSynonymMarker(content)) {
         if (!this.pendingSynonyms) this.pendingSynonyms = [];
         this.pendingSynonyms.push(content.replace(/^===?\s+/, '').trim());
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       }
 
       if (this.isPurePosLine(content) || this.isPureIpaLine(content)) {
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       }
@@ -372,21 +514,26 @@ export class MarkdownParser {
         if (wordChildren.length > 0) {
           card.children = wordChildren;
         }
+        // 🔧 FIX: Add word card to promotedChildren so it gets added to cards array
+        promotedChildren.push(card);
         // Skip to last child
         const savedParent = this.parentCard;
         const savedLevel = this.parentLevel;
         this.parentCard = savedParent;
         this.parentLevel = savedLevel;
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       } else if (cardType === 'phrase') {
         const card = this.createPhraseCard(content, childIndentLevel);
         promotedChildren.push(card);
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       } else if (cardType === 'prefix') {
         const card = this.createPrefixCard(content, childIndentLevel, i);
         promotedChildren.push(card);
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       } else {
@@ -398,7 +545,18 @@ export class MarkdownParser {
           fullText: content,
           items: [{ type: 'sentence', en: content, cn: '' }]
         };
-        sentenceChildren.push(childSentenceCard);
+
+        // 🔧 FIX: Single-word sentences are typically phrases (like "scold sb. for sth.")
+        // These should be promoted to the main cards array, not nested as children
+        // Key: If content has NO Chinese characters, it's a word/phrase, not a sentence
+        const hasChinese = /[\u4e00-\u9fa5]/.test(content);
+        if (!hasChinese) {
+          promotedChildren.push(childSentenceCard);
+        } else {
+          sentenceChildren.push(childSentenceCard);
+        }
+
+        lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
       }
@@ -406,7 +564,15 @@ export class MarkdownParser {
       // The loop now handles all cases with explicit i++
     }
 
-    const lastLineIndex = i - 1;
+    // Use the tracked last processed line index (instead of calculating i - 1)
+    const lastLineIndex = lastProcessedLineIndex;
+
+    // DEBUG: Log line index tracking
+    if (isTargetSentence) {
+      console.log(`=== LINE INDEX TRACKING ===`);
+      console.log(`lineIndex: ${lineIndex}, i (after loop): ${i}, lastLineIndex: ${lastLineIndex}`);
+      console.log(`=== END LINE INDEX TRACKING ===`);
+    }
 
     // Restore parent context
     this.parentCard = savedParentCard;
@@ -416,17 +582,15 @@ export class MarkdownParser {
     sentenceCard.children = sentenceChildren;
 
     // Calculate the correct lastLineIndex for the main loop
-    // The main loop should skip promoted children (they will be processed separately)
-    let correctLastLineIndex = lineIndex;
-    if (promotedChildren.length > 0) {
-      // If there are promoted children, skip to the last promoted child
-      // so the main loop doesn't process them again
-      correctLastLineIndex = lastLineIndex;
-    } else if (sentenceChildren.length > 0) {
-      // If there are direct children, skip all of them (including their nested descendants)
-      correctLastLineIndex = lastLineIndex;
+    // IMPORTANT: We need to return the line index that the main loop should set i to
+    // The main loop will: i = returnedValue; continue; then next iteration: while (i < this.lines.length)
+    // So we should return lineIndex + 1 to move to the next line (or lastLineIndex + 1 to skip children)
+    let correctLastLineIndex = lineIndex + 1;  // Default: move to next line
+    if (promotedChildren.length > 0 || sentenceChildren.length > 0) {
+      // If there are children, skip them by returning lastLineIndex + 1
+      correctLastLineIndex = lastLineIndex + 1;
     }
-    // If there are no children at all, return current line index
+    // If there are no children at all, return lineIndex + 1 to move to next line
 
     // Add promoted children to extractedCards (they will be added to this.cards)
     extractedCards.push(...promotedChildren);
@@ -447,6 +611,19 @@ export class MarkdownParser {
 
     // Add sentence card to cards array
     this.cards.push(sentenceCard);
+
+    // DEBUG: Log return value
+    console.log(`=== PROCESS SENTENCE RETURN ===`);
+    console.log(`Sentence: "${sentenceCard.word.substring(0, 50)}..."`);
+    console.log(`lineIndex: ${lineIndex}, correctLastLineIndex: ${correctLastLineIndex}`);
+    console.log(`promotedChildren: ${promotedChildren.length}, sentenceChildren: ${sentenceChildren.length}`);
+    if (promotedChildren.length > 0) {
+      console.log(`Promoted:`, promotedChildren.map(c => ({ word: c.word, type: c.type })));
+    }
+    if (promotedChildren.length > 0 || sentenceChildren.length > 0) {
+      console.log(`Should skip lines ${lineIndex + 1} to ${correctLastLineIndex}`);
+    }
+    console.log(`=== END PROCESS SENTENCE RETURN ===`);
 
     return correctLastLineIndex;
   }
@@ -499,8 +676,21 @@ export class MarkdownParser {
         continue;
       }
 
-      // POS lines are now handled in the main loop, skip them here
+      // POS lines should be added to parent word card
       if (this.isPurePosLine(content)) {
+        if (actualParentCard && actualParentCard.type === 'word') {
+          const posMatch = content.match(/^([a-z]+\.)\s*(.*)/);
+          if (posMatch) {
+            const pos = posMatch[1];
+            const rest = posMatch[2];
+            const cn = rest.trim();
+            actualParentCard.items.push({
+              type: 'def',
+              en: pos,
+              cn: cn
+            });
+          }
+        }
         i++;
         continue;
       }
@@ -663,8 +853,23 @@ export class MarkdownParser {
     } else {
       card.items.push({type: 'def', en: word, cn: ''});
     }
-    this.parentCard = card;
-    this.parentLevel = indentLevel;
+
+    // 🔧 FIX: Don't set parent for simple dictionary entries
+    // Simple dictionary entries are like: "clue [kluː] n. 线索，提示"
+    // They have: word + [IPA] + pos. + Chinese definition
+    // These are "helper" words and should not become the parent for subsequent items
+    // The parent should remain the original sentence/word that contains them
+    // Check: Chinese should not contain English letters (mixed content)
+    const isSimpleDictionaryEntry =
+      ipa && pos && cn &&  // Has IPA, POS, and Chinese
+      !/[a-zA-Z]/.test(cn) &&  // Chinese doesn't contain English letters (no mixed content)
+      this.parentCard && this.parentCard.type === 'sentence';  // Parent is a sentence
+
+    if (!isSimpleDictionaryEntry) {
+      this.parentCard = card;
+      this.parentLevel = indentLevel;
+    }
+
     return card;
   }
 

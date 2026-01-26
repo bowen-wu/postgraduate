@@ -1027,6 +1027,67 @@
           i++;
         }
 
+        // ========== 生成卡片日志 ==========
+        console.log('========== GENERATED CARDS LOG ==========');
+        console.log(`Total cards generated: ${this.cards.length}`);
+        console.log('');
+
+        this.cards.forEach((card, index) => {
+          console.log(`[${index}] Card ID: ${card.id}`);
+          console.log(`    word: "${card.word}"`);
+          console.log(`    type: "${card.type}"`);
+
+          if (card.ipa) {
+            console.log(`    ipa: "${card.ipa}"`);
+          }
+
+          if (card.items && card.items.length > 0) {
+            console.log(`    items (${card.items.length}):`);
+            card.items.forEach((item, i) => {
+              console.log(`      [${i}] type: "${item.type}", en: "${item.en}", cn: "${item.cn}"`);
+            });
+          } else {
+            console.log(`    items: []`);
+          }
+
+          if (card.synonyms && card.synonyms.length > 0) {
+            console.log(`    synonyms (${card.synonyms.length}):`);
+            card.synonyms.forEach((syn, i) => {
+              let synStr = syn.word;
+              if (syn.pos) synStr += ` ${syn.pos}`;
+              if (syn.cn) synStr += ` ${syn.cn}`;
+              console.log(`      [${i}] "${synStr}"`);
+            });
+          }
+
+          if (card.antonyms && card.antonyms.length > 0) {
+            console.log(`    antonyms (${card.antonyms.length}):`);
+            card.antonyms.forEach((ant, i) => {
+              let antStr = ant.word;
+              if (ant.pos) antStr += ` ${ant.pos}`;
+              if (ant.cn) antStr += ` ${ant.cn}`;
+              console.log(`      [${i}] "${antStr}"`);
+            });
+          }
+
+          if (card.fullText) {
+            console.log(`    fullText: "${card.fullText.substring(0, 100)}${card.fullText.length > 100 ? '...' : ''}"`);
+          }
+
+          console.log('');
+        });
+
+        // 统计各类型卡片数量
+        const typeCount = {};
+        this.cards.forEach(card => {
+          typeCount[card.type] = (typeCount[card.type] || 0) + 1;
+        });
+        console.log('Card type summary:');
+        Object.entries(typeCount).forEach(([type, count]) => {
+          console.log(`  ${type}: ${count}`);
+        });
+        console.log('========== END GENERATED CARDS LOG ==========');
+        console.log('');
 
         return this.cards;
       } catch (error) {
