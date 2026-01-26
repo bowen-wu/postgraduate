@@ -33,7 +33,7 @@
 - n. 相对应的人或物（equivalent）；答案
 - Tang Xianzu, eastern world's **answer** to Shakespeare...
 - Overdressed is the fashion world's **answer** to consumer-activist bestsellers like Michael Pollan's The Omnivore's
-  Dilemma.
+  Dilemma. 《Overdressed》是时尚界对迈克尔·波伦《杂食者的两难》这类消费者行动主义畅销书的回应
 - The *press(n. 报刊)* called Ginobili as Argentina's **answer** to Michael Jordan.
 
 ## bear
@@ -125,13 +125,13 @@
 - v. 刺激；推动；煽动
 - n. 燃料
 - fossil fuel 化石燃料
-- biofuel 生物燃料
+- biofuel ['baɪoʊfjuəl] n. 生物燃料
 - A teacher assigns readings to **fuel** meaningful class discussion.
 - You'd think this might **fuel** the efficiency mind-set, but in fact, Eberle notes, such ritualistic behaviour helps
   us "step outside time's flow" into "soul time".
     - ritualistic [ˌrɪtʃuəˈlɪstɪk] adj. 仪式的，固守仪式的; 惯例的
     - the efficiency mind-set 效率至上的思维方式
-    - step outside time’s flow 跳出时间的流动/暂时脱离时间的支配
+    - step outside time's flow 跳出时间的流动/暂时脱离时间的支配
 
 ## game
 
@@ -152,7 +152,7 @@
   wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
   not red to writers who are".
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
-    - keep one’s end up 撑得住；保持水准；不掉队
+    - keep one's end up 撑得住；保持水准；不掉队
     - a term of contempt 贬损性的称呼/带蔑视意味的术语
 
 ## ground
@@ -177,41 +177,6 @@
 - His writings **fanned** the flames of *hatred([ˈheɪtrɪd] n. 仇恨，憎恶; 敌意)*.
     - fan the flames of... 煽动/火上浇油/使（情绪、冲突）升级
 - Favoritism in official access can **fan** public perceptions of corruption.
-
-## handsome
-
-- adj. 可观的，相当大的；英俊的
-- **Handsome** is always a *compliment(n. 称赞)*, an *admiring([əd'maɪərɪŋ] adj. 赞赏的，钦佩的)* way of describing
-  someone or something.
-- a handsome reward
-- a handsome number of votes
-- The report makes heavy reading for publishers who have, so far, made **handsome** profits.
-    - make heavy reading 读起来沉重、令人不快、难以接受
-
-## hit
-
-- v. 产生不良影响 😔；达到；打击，碰撞
-- n. 产生不良影响 😔；打击，碰撞
-- == reach
-- to have a bad effect on sb./sth.
-- to hit a particular level 达到某个（特定的）水平/数值/水平线
-- The tax increases will certainly **hit** the poor.
-- Italy was one of the hardest **hit** countries.
-    - hardest hit 被严重影响/遭受重创
-      == be (hard) hit
-- The euro **hit** a record low in trading today.
-- As many people **hit** middle age, they often start to notice that their memory and mental clarity are not what they
-  used to be.
-
-## interest
-
-- n. 兴趣；利息；利益，好处
-- He was a man of wide **interests** outside his work.
-- If a bank loans you $10000, you have to pay back the $10000 plus the **interest**.
-- It is in your best **interest** to cooperate.
-- That suggests it is in the broader corporate **interest** to *recruit([rɪˈkruːt] vt. 招募)* top candidates for
-  increasingly tough jobs.
-    - increasingly tough jobs 要求越来越高/越来越艰难的岗位
 
 ## Words
 

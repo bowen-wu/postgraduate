@@ -17,6 +17,41 @@
 - C: Cause
 - R: Result
 
+## handsome
+
+- adj. 可观的，相当大的；英俊的
+- **Handsome** is always a *compliment(n. 称赞)*, an *admiring([əd'maɪərɪŋ] adj. 赞赏的，钦佩的)* way of describing
+  someone or something.
+- a handsome reward
+- a handsome number of votes
+- The report makes heavy reading for publishers who have, so far, made **handsome** profits.
+    - make heavy reading 读起来沉重、令人不快、难以接受
+
+## hit
+
+- v. 产生不良影响 😔；达到；打击，碰撞
+- n. 产生不良影响 😔；打击，碰撞
+- == reach
+- to have a bad effect on sb./sth.
+- to hit a particular level 达到某个（特定的）水平/数值/水平线
+- The tax increases will certainly **hit** the poor.
+- Italy was one of the hardest **hit** countries.
+    - hardest hit 被严重影响/遭受重创
+      == be (hard) hit
+- The euro **hit** a record low in trading today.
+- As many people **hit** middle age, they often start to notice that their memory and mental clarity are not what they
+  used to be.
+
+## interest
+
+- n. 兴趣；利息；利益，好处
+- He was a man of wide **interests** outside his work.
+- If a bank loans you $10000, you have to pay back the $10000 plus the **interest**.
+- It is in your best **interest** to cooperate.
+- That suggests it is in the broader corporate **interest** to *recruit([rɪˈkruːt] vt. 招募)* top candidates for
+  increasingly tough jobs.
+    - increasingly tough jobs 要求越来越高/越来越艰难的岗位
+
 ## ladder
 
 - n. （晋升）阶梯、门路；梯子
