@@ -38,6 +38,20 @@ export class MarkdownParser {
   }
 
   /**
+   * Convert Markdown bold (**text**) to HTML (<strong>text</strong>)
+   */
+  convertBoldToHtml(text) {
+    return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  }
+
+  /**
+   * Remove Markdown bold markers (**text** -> text)
+   */
+  removeBoldMarkers(text) {
+    return text.replace(/\*\*(.*?)\*\*/g, '$1');
+  }
+
+  /**
    * Main parse method - implements the rule-based parsing logic
    * Returns array of parsed cards
    */
@@ -383,43 +397,70 @@ export class MarkdownParser {
     // Now process the merged content
     content = mergedContent;
 
-    // Step 1: Remove ** markers (bold)
-    let clean = content.replace(/\*\*/g, '');
+    // Step 1: Protect **text** patterns with placeholders before any other processing
+    const boldPlaceholders = [];
+    let protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, content) => {
+      const placeholder = `__BOLD_${boldPlaceholders.length}__`;
+      boldPlaceholders.push(content);
+      return placeholder;
+    });
 
     // Step 2: Extract *word(pos. definition)* patterns FIRST
-    clean = this.extractItalicWords(clean, extractedCards);
+    let clean = this.extractItalicWords(protectedContent, extractedCards);
 
-    // Step 2.5: Remove remaining standalone * marks (not part of *word(def)* pattern)
+    // Step 3: Remove remaining standalone * marks (not part of *word(def)* pattern)
     clean = clean.replace(/\*([a-zA-Z'-]+)\*/g, '$1');  // Remove * around single words
 
-    // Step 3: Extract <ins>phrase</ins> patterns
+    // Step 4: Extract <ins>phrase</ins> patterns
     clean = this.extractInsPhrases(clean, extractedCards, indentLevel);
 
-    // Split English and Chinese
+    // Step 5: Split English and Chinese
     // First, remove all (中文) patterns from the sentence for clean English text
     // This handles cases like: "... track down(追查到) kids ..." -> "... track down kids ..."
-    const cleanEn = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
+    const cleanEnWithPlaceholders = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
 
     // Check if there's any standalone Chinese (not in parentheses)
     // If all Chinese is in parentheses, then there's no standalone translation
-    const cnMatch = cleanEn.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
-    let en = cleanEn;  // Use the cleaned version (without parenthesized Chinese)
+    const cnMatch = cleanEnWithPlaceholders.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+    let enWithPlaceholders = cleanEnWithPlaceholders;  // With bold placeholders still present
     let cn = '';
 
     if (cnMatch) {
       // There's standalone Chinese (not in parentheses) - split at that point
-      const cnIndex = cleanEn.indexOf(cnMatch[0]);
-      en = cleanEn.substring(0, cnIndex).trim();
-      cn = cleanEn.substring(cnIndex).trim();
+      const cnIndex = cleanEnWithPlaceholders.indexOf(cnMatch[0]);
+      enWithPlaceholders = cleanEnWithPlaceholders.substring(0, cnIndex).trim();
+      cn = cleanEnWithPlaceholders.substring(cnIndex).trim();
     }
 
-    // Create sentence card (using original content, not merged)
+    // Step 6: Remove bold placeholders for clean text (word field and items[0].en)
+    const cleanEn = enWithPlaceholders.replace(/__BOLD_(\d+)__/g, (match, index) => {
+      return boldPlaceholders[index];
+    });
+
+    // Step 7: Restore bold placeholders for displayWord
+    const displayWord = enWithPlaceholders.replace(/__BOLD_(\d+)__/g, (match, index) => {
+      return `<strong>${boldPlaceholders[index]}</strong>`;
+    });
+
+    // Debug log
+    console.log('=== BOLD PROCESSING DEBUG ===');
+    console.log('Original content:', content.substring(0, 100));
+    console.log('enWithPlaceholders:', enWithPlaceholders.substring(0, 100));
+    console.log('enWithPlaceholders length:', enWithPlaceholders.length);
+    console.log('cleanEn:', cleanEn.substring(0, 100));
+    console.log('cleanEn length:', cleanEn.length);
+    console.log('displayWord:', displayWord.substring(0, 100));
+    console.log('displayWord length:', displayWord.length);
+    console.log('=== END DEBUG ===');
+
+    // Create sentence card
     const sentenceCard = {
       id: `card_${this.cardCounter++}`,
-      word: clean.substring(0, 50) + (clean.length > 50 ? '...' : ''), // First 50 chars as title
+      word: cleanEn.substring(0, 50) + (cleanEn.length > 50 ? '...' : ''), // First 50 chars as title (for stats list)
+      displayWord: displayWord, // Full text with bold formatting (NOT truncated!)
       type: 'sentence',
       fullText: clean,
-      items: [{ type: 'sentence', en: en, cn: cn }]
+      items: [{ type: 'sentence', en: cleanEn, cn: cn }]
     };
 
     // Set this sentence as the parent before processing children

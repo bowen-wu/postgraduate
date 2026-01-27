@@ -247,7 +247,8 @@ function renderSentenceItems(ui, card) {
   // Display sentence content (no blur-target for sentences, even in recall mode)
   const contentDiv = document.createElement('div');
   contentDiv.className = 'sentence-content';
-  contentDiv.innerHTML = card.items[0].en;
+  // Use displayWord for bold formatting, fallback to items[0].en for backward compatibility
+  contentDiv.innerHTML = card.displayWord || card.items[0].en;
   ui.list.appendChild(contentDiv);
 
   // Add Chinese translation if exists
