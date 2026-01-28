@@ -204,8 +204,13 @@ export class MarkdownParser {
     // 规则6: 检查是否在词组列表中且当前是词组项
     if (this.inPhraseList && indentLevel > this.phraseMarkerLevel) {
       const card = this.createPhraseCard(content, indentLevel);
+      // Process children of this phrase card
+      const { children: phraseChildren, lastLineIndex: phraseLastLine } = this.processChildren(indentLevel, lineIndex, [], card);
+      if (phraseChildren.length > 0) {
+        card.children = phraseChildren;
+      }
       this.cards.push(card);
-      return undefined;
+      return phraseLastLine;
     }
 
     // 规则7: 确定卡片类型 (最后才调用 determineCardType)
@@ -220,8 +225,13 @@ export class MarkdownParser {
       return undefined;
     } else if (cardType === 'phrase') {
       const card = this.createPhraseCard(content, indentLevel);
+      // Process children of this phrase card
+      const { children: phraseChildren, lastLineIndex: phraseLastLine } = this.processChildren(indentLevel, lineIndex, [], card);
+      if (phraseChildren.length > 0) {
+        card.children = phraseChildren;
+      }
       this.cards.push(card);
-      return undefined;
+      return phraseLastLine;
     } else if (cardType === 'prefix') {
       const card = this.createPrefixCard(content, indentLevel, lineIndex);
       this.cards.push(card);
@@ -260,11 +270,21 @@ export class MarkdownParser {
       return 'prefix';
     }
 
-    // Check if in phrase list (规则4: - 词组 or ## 词组)
-    // 🔧 FIX: Match review.html logic - items directly under "## 词组" (indentLevel 0) should NOT be phrases
-    // Only nested items (indentLevel > 0) under "- 词组" are phrases
-    if (this.inPhraseHeader && lineIndex !== null && this.firstChildHasPos(content, 0, lineIndex)) {
-      if (isTarget) console.log(`-> phrase (inPhraseHeader with children)`);
+    // SPECIAL CASE: If parent is a phrase card and this is pure Chinese (no English), it's a definition item
+    if (this.parentCard && this.parentCard.type === 'phrase') {
+      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
+      const hasEnglish = /[a-zA-Z]/.test(content);
+      const hasPosMarker = this.hasPosMarker(content);
+      if (hasChinese && !hasEnglish && !hasPosMarker) {
+        if (isTarget) console.log(`-> definition (child of phrase, pure Chinese)`);
+        return 'definition';
+      }
+    }
+
+    // Check if in phrase list (规则4: ## 词组 or - 词组)
+    // Both ## 词组 and - 词组 markers create phrase cards for their children
+    if (this.inPhraseHeader) {
+      if (isTarget) console.log(`-> phrase (inPhraseHeader)`);
       return 'phrase';
     }
     if (this.inPhraseList) {
@@ -777,7 +797,28 @@ export class MarkdownParser {
         }
       } else if (cardType === 'phrase') {
         const card = this.createPhraseCard(content, indentLevel);
+        // Process children of this phrase card
+        const { children: phraseChildren, lastLineIndex: phraseLastLine } = this.processChildren(indentLevel, i, [], card);
+        if (phraseChildren.length > 0) {
+          card.children = phraseChildren;
+        }
         children.push(card);
+        // Skip lines that were already processed by recursive call
+        if (phraseLastLine >= i) {
+          i = phraseLastLine;
+        }
+      } else if (cardType === 'definition') {
+        // Definition item for phrase card - add to parent phrase card's items
+        if (actualParentCard && actualParentCard.type === 'phrase') {
+          console.log(`[processChildren] Adding definition to phrase "${actualParentCard.word}": "${content.substring(0, 30)}..."`);
+          actualParentCard.items.push({
+            type: 'def',
+            en: actualParentCard.word,
+            cn: content
+          });
+        }
+        i++;
+        continue;
       } else if (cardType === 'prefix') {
         const card = this.createPrefixCard(content, indentLevel, lineIndex);
         children.push(card);
