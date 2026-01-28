@@ -138,5 +138,24 @@
 
   // Create and initialize the app
   window.app = new VocabApp();
+
+  // 键盘快捷键监听
+  document.addEventListener('keydown', (e) => {
+    // 只在浏览模式下响应
+    if (window.STATE.mode !== 'input') return;
+
+    switch (e.key) {
+      case 'Enter':
+      case 'ArrowRight':
+        e.preventDefault();
+        window.app.nextCard();
+        break;
+      case 'Backspace':
+      case 'ArrowLeft':
+        e.preventDefault();
+        window.app.prevCard();
+        break;
+    }
+  });
 </script>
 </html>
