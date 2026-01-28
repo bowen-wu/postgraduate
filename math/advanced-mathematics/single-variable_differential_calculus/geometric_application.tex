@@ -13,6 +13,7 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{pifont}
 \usepackage{ulem}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
@@ -36,14 +37,15 @@
     top=4pt,
     bottom=4pt
 }
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
 \newlist{circlenum}{enumerate}{1}
 \setlist[circlenum]{
     label=\ding{\numexpr171+\arabic*},
     leftmargin=2.2em,
     itemsep=0.4em
 }
-
-\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
 
 % =========================
 % 字体设置
@@ -92,7 +94,7 @@
         \textbf{端点处不讨论极值，间断点不可能是极值点}。
     \end{enumerate}
 
-    \subsection{极值的定义}
+    \subsection{单调性与极值的判别}
 
     \subsubsection{单调性的判别}
     \begin{enumerate}
@@ -110,6 +112,149 @@
             \item 导数为$0$仅能说明在某点处的函数值变化\textbf{充分小}，而不能说明没变化
         \end{circlenum}
     \end{enumerate}
+
+    \subsubsection{一阶可导点是极值点的必要条件}
+
+    \begin{enumerate}
+        \item 设$f(x)$在$x = x_0$处可导，且在点$x_0$处取得极值，则必有$f'(x_0) = 0$
+        \item 若$x = x_0$为曲线$y = f(x)$的极值点，则只有以下两种情况
+        \begin{circlenum}
+            \item 驻点: $f'(x_0) = 0$
+            \item 不可导点: $f'(x_0)$不存在。如$y = |x|$在$(0, 0)$处的情形
+        \end{circlenum}
+        \item 找极值的两种情况: 驻点 | 不可导点
+    \end{enumerate}
+
+    \subsubsection{判别极值的第一充分条件}
+    \begin{theorem}
+        设函数 $f(x)$ 在 $x=x_0$ 处连续，且在 $x_0$ 的某去心邻域
+        $U(x_0,\delta)\ (\delta>0)$ 内可导，则：
+
+        \begin{circlenum}
+            \item 若当 $x\in(x_0-\delta,x_0)$ 时，$f'(x)<0$，而当 $x\in(x_0,x_0+\delta)$ 时，$f'(x)>0$，则 $f(x)$ 在 $x=x_0$ 处取得极小值
+
+            \item 若当 $x\in(x_0-\delta,x_0)$ 时，$f'(x)>0$，而当 $x\in(x_0,x_0+\delta)$ 时，$f'(x)<0$，则 $f(x)$ 在 $x=x_0$ 处取得极大值
+
+            \item 若 $f'(x)$ 在 $(x_0-\delta,x_0)$ 与 $(x_0,x_0+\delta)$ 内不变号，则点 $x_0$ 不是极值点
+
+            \item $f(x)$在$x = x_0$处不一定可导，可能出现角点
+        \end{circlenum}
+    \end{theorem}
+
+    \subsubsection{判别极值的第二充分条件}
+
+    \begin{theorem}
+        设函数 $f(x)$ 在 $x=x_0$ 处二阶可导，且 $f'(x_0)=0$。
+        \begin{circlenum}
+            \item 若 $f''(x_0)<0$，则 $f(x)$ 在 $x=x_0$ 处取得极大值
+            \item 若 $f''(x_0)>0$，则 $f(x)$ 在 $x=x_0$ 处取得极小值
+            \item 若 $f''(x_0)=0$，则该判别法失效，需借助高阶导数或其他方法判断。如$f(x) = x^4$在$x_0 = 0$处是极小值, $f(x) = x^3$在$x_0 = 0$处是拐点，不是极值点
+        \end{circlenum}
+    \end{theorem}
+
+    \subsubsection{判别极值的第三充分条件}
+
+    \begin{theorem}
+        设函数 $f(x)$ 在 $x=x_0$ 处 $n$ 阶可导，且$f^{(m)}(x_0)=0 (m=1,2,\ldots,n-1), f^{(n)}(x_0)\neq 0 \ (n\ge 2)$，则：
+        \begin{circlenum}
+            \item 若 $n$ 为偶数且 $f^{(n)}(x_0)<0$，则 $f(x)$ 在 $x=x_0$ 处取得极大值
+            \item 若 $n$ 为偶数且 $f^{(n)}(x_0)>0$，则 $f(x)$ 在 $x=x_0$ 处取得极小值
+        \end{circlenum}
+        当 $n$ 为奇数时，点 $x_0$ 不是极值点。
+    \end{theorem}
+
+    \subsection{凹凸性与拐点的概念}
+
+    \subsubsection{凹凸性的定义}
+    \begin{enumerate}
+        \item \begin{definition}
+                  设函数 $f(x)$ 在区间 $I$ 上连续。
+                  \begin{enumerate}
+                      \item 若对 $I$ 上任意不同的两点 $x_1,x_2$，恒有
+                      \[
+                          f\!\left(\frac{x_1+x_2}{2}\right) < \frac{f(x_1)+f(x_2)}{2},
+                      \]
+                      则称函数 $y=f(x)$ 在区间 $I$ 上的图形是\textbf{凹的}（或称凹弧）
+
+                      \item 若对 $I$ 上任意不同的两点 $x_1,x_2$，恒有
+                      \[
+                          f\!\left(\frac{x_1+x_2}{2}\right) > \frac{f(x_1)+f(x_2)}{2},
+                      \]
+                      则称函数 $y=f(x)$ 在区间 $I$ 上的图形是\textbf{凸的}（或称凸弧）。
+                      \item 广义化:
+                      \[
+                          f(\lambda_1 x_1 + \lambda_2 x_2)
+                          \begin{cases}
+                              < \lambda_1 f(x_1) + \lambda_2 f(x_2), & \text{凹函数},\\
+                              > \lambda_1 f(x_1) + \lambda_2 f(x_2), & \text{凸函数},
+                          \end{cases}
+                      \]
+                      其中 $0 < \lambda_1,\lambda_2 < 1$，且 $\lambda_1+\lambda_2=1$。
+                  \end{enumerate}
+        \end{definition}
+        \item 设函数 $f(x)$ 在区间 $[a,b]$ 上连续，在 $(a,b)$ 内可导。
+
+        \begin{itemize}
+            \item 若对任意 $x_0\in(a,b)$ 及任意 $x\in(a,b)$ 且 $x\neq x_0$，恒有
+            \[
+                f(x) < f(x_0) + f'(x_0)(x - x_0),
+            \]
+            即除切点外，曲线严格位于其切线的下方，
+            则称函数 $y=f(x)$ 在 $[a,b]$ 上是\textbf{凹的}。
+
+            \item 若对任意 $x_0\in(a,b)$ 及任意 $x\in(a,b)$ 且 $x\neq x_0$，恒有
+            \[
+                f(x) > f(x_0) + f'(x_0)(x - x_0),
+            \]
+            即除切点外，曲线严格位于其切线的上方，
+            则称函数 $y=f(x)$ 在 $[a,b]$ 上是\textbf{凸的}。
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{拐点的定义}
+
+    连续曲线的凹弧与凸弧的分界点称为该曲线的\textbf{拐点}。
+
+    \begin{circlenum}
+        \item 间断点不可能为拐点，拐点处函数\textbf{必须连续}。
+
+        \item 判别拐点时，只需判断凹凸性的变化，\textbf{凹与凸不分先后}。
+
+        \item 极值点只写横坐标 $x=x_0$；而拐点应写$\bigl(x_0,\; f(x_0)\bigr)$，拐点在曲线上
+    \end{circlenum}
+
+    \subsection{凹凸性与拐点的判别}
+
+    \subsubsection{判别凹凸性}
+
+    设函数 $f(x)$ 在区间 $I$ 上二阶可导，则：
+
+    \begin{circlenum}
+        \item 若在 $I$ 上 $f''(x) > 0$，则 $f(x)$ 在 $I$ 上的图形是\textbf{凹的}（凹弧）。
+
+        \item 若在 $I$ 上 $f''(x) < 0$，则 $f(x)$ 在 $I$ 上的图形是\textbf{凸的}（凸弧）。
+    \end{circlenum}
+
+    \subsubsection{二阶可导点是拐点的必要条件}
+
+    设 $f''(x_0)$ 存在，且点 $(x_0,\,f(x_0))$ 为曲线的拐点，则必有 $f''(x_0)=0$。若点 $(x_0,\,f(x_0))$ 是曲线 $y = f(x)$ 的拐点，则只有以下两种情况
+
+    \begin{enumerate}
+        \item 二阶导数存在必为$0$: $f''(x_0)=0$。如 $y=x^3$ 在 $(0,0)$ 处的情形
+        \item 二阶导数不存在的点也有可能是拐点: $f''(x_0)$ 不存在。如 $y=\sqrt[3]{x}$ 在 $(0,0)$ 处的情形
+    \end{enumerate}
+
+    \subsubsection{判别拐点的第一充分条件}
+
+    设函数 $f(x)$ 在点 $x=x_0$ 处连续，在点 $ x = x_0$ 的某去心邻域$U(x_0,\delta)\ (\delta>0)$ 内二阶导数存在，且在 $x_0$ 的左、右邻域内$f''(x)$ 变号（无论是由正变负，还是由负变正），则点 $(x_0,f(x_0))$ 为曲线的拐点
+
+    \subsubsection{判别拐点的第二充分条件}
+
+    设函数 $f(x)$ 在 $x=x_0$ 处三阶可导，且 $f''(x_0)=0$，$f'''(x_0)\neq 0$， 则点 $(x_0,f(x_0))$ 为曲线的拐点
+
+    \subsubsection{判别拐点的第三充分条件}
+
+    设函数 $f(x)$ 在 $x=x_0$ 处 $n$ 阶可导，且 $f^{(m)}(x_0)=0\ (m=2,3,\dots,n-1)$，$f^{(n)}(x_0)\neq 0$，则当 $n$ 为奇数时，点 $(x_0,f(x_0))$ 为曲线的拐点。
 
     \subsection{基础概念}
 
@@ -147,6 +292,7 @@
     \subsection{条件转换思路}
 
     \begin{enumerate}
+        \item $f(x)\cdot f'(x)$ => $\{[f(x)]^2\}' = 2f(x) \cdot f'(x)$
 
     \end{enumerate}
 

@@ -99,7 +99,7 @@
             \item $(\arcsin x)' = \displaystyle\frac{1}{\sqrt{1-x^2}}$
             \item $(\arccos x)' = -\displaystyle\frac{1}{\sqrt{1-x^2}}$
             \item $(\arctan x)' = \displaystyle\frac{1}{1+x^2}$
-            \item $(\arccot x)' = -\displaystyle\frac{1}{1+x^2}$
+            \item $(\mathrm{arccot}\ x)' = -\displaystyle\frac{1}{1+x^2}$
         \end{itemize}
 
         \item $\bigl[\ln (x+\sqrt{x^2+1})\bigr]'
@@ -177,8 +177,47 @@
         \[
             \varphi'(y)=\frac{1}{f'(x)}.
         \]
-        \item $y = f(x), x = \varphi (y), \varphi'(y) = -\displaystyle\frac{f''(x)}{[f'(x)]^3}$
-        \item $y''_{xx} = -\displaystyle\frac{x''_{yy}}{(x'_y)^3}$
+        \item \begin{analysisbox}[Example]
+                  设 $y = \arcsin x,\ -1 < x < 1$，则其反函数为
+                  \[
+                      x = \sin y,\qquad y \in \left(-\frac{\pi}{2},\,\frac{\pi}{2}\right).
+                  \]
+                  根据反函数求导公式，
+                  \[
+                      (\arcsin x)' = \frac{1}{\dfrac{dx}{dy}}
+                      = \frac{1}{(\sin y)'}
+                      = \frac{1}{\cos y}
+                      = \frac{1}{\sqrt{1-\sin^2 y}}
+                      = \frac{1}{\sqrt{1-x^2}}
+                  \]
+                  其中 $-1<x<1$。
+        \end{analysisbox}
+        \item $y''_{xx} = -\displaystyle\frac{x''_{yy}}{(x'_y)^3}$，即$y = f(x), x = \varphi (y), \varphi''(y) = -\displaystyle\frac{f''(x)}{[f'(x)]^3}$
+        \begin{analysisbox}
+            在 $y=f(x)$ 单调且二阶可导的情况下，若 $f'(x)\neq 0$，
+            则存在反函数 $x=\varphi(y)$。
+
+            记
+            \[
+                f'(x)=y'_x,\qquad \varphi'(y)=x'_y,
+            \]
+            则有
+            \[
+                y'_x=\frac{1}{x'_y}.
+            \]
+
+            进一步，
+            \[
+                \begin{aligned}
+                    y''_{xx}
+                    &=\frac{d^2y}{dx^2} = \frac{d}{dx}\!\left(\frac{dy}{dx}\right) \\[6pt]
+                    &=\frac{d}{dx}\!\left(\frac{1}{x'_y}\right) \\[6pt]
+                    &=\frac{d}{dy}\!\left(\frac{1}{x'_y}\right)\cdot\frac{dy}{dx} \\[6pt]
+                    &=\left(-\frac{x''_{yy}}{(x'_y)^2}\right)\cdot\frac{1}{x'_y} \\[6pt]
+                    &=-\frac{x''_{yy}}{(x'_y)^3}.
+                \end{aligned}
+            \]
+        \end{analysisbox}
         \item $x''_{yy} = -\displaystyle\frac{y''_{xx}}{(y'_x)^3}$
     \end{enumerate}
 
@@ -327,8 +366,8 @@
         \item 常用的高阶导数
         \begin{itemize}
             \item $\bigl(e^{ax+b}\bigr)^{(n)} = a^{n} e^{ax+b}.$
-            \item $\bigl[\sin(ax+b)\bigr]^{(n)} = a^{n} \sin\!\left(ax+b+\frac{n\pi}{2}\right)$
-            \item $\bigl[\cos(ax+b)\bigr]^{(n)} = a^{n} \cos\!\left(ax+b+\frac{n\pi}{2}\right)$
+            \item $\bigl[\sin(ax+b)\bigr]^{(n)} = a^{n} \sin\!\left(ax+b+\displaystyle\frac{n\pi}{2}\right)$
+            \item $\bigl[\cos(ax+b)\bigr]^{(n)} = a^{n} \cos\!\left(ax+b+\displaystyle\frac{n\pi}{2}\right)$
             \item $\bigl[\ln(ax+b)\bigr]^{(n)} = (-1)^{\,n-1}a^{n}\displaystyle\frac{(n-1)!}{(ax+b)^{n}}$
             \item $\left(\displaystyle\frac{1}{ax+b}\right)^{(n)} = (-1)^{\,n}a^{n}\displaystyle\frac{n!}{(ax+b)^{n+1}} \Rightarrow (\displaystyle\frac{1}{1 + x})^{(n)} = (-1)^{\,n}\displaystyle\frac{n!}{(x+1)^{n+1}}$
         \end{itemize}
