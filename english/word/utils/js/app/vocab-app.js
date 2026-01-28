@@ -78,6 +78,8 @@ export class VocabApp {
         await EventHandlers.loadFile(STATE.currentPath, this.ui);
       } else {
         console.log('init - No saved file, showing file selection');
+        // Hide loader when showing file selection panel
+        this.ui.loader.classList.add('hidden');
         EventHandlers.toggleFiles(true, this.ui);
         await EventHandlers.loadRootFolders(false, this.ui);
       }

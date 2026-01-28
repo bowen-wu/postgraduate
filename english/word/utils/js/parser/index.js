@@ -126,8 +126,9 @@ export class MarkdownParser {
           if (lastLineIndex !== null && lastLineIndex !== undefined) {
             // sentence cards always return a line index (the last line they processed)
             // We should skip to that line, and the next iteration will i++ to move past it
-            if (lastLineIndex >= i) {
-              i = lastLineIndex;  // Skip to last processed line (which is >= i)
+            // Only skip if lastLineIndex is greater than current line (strict > to avoid infinite loop)
+            if (lastLineIndex > i) {
+              i = lastLineIndex;  // Skip to last processed line
             } else {
               // Shouldn't happen, but handle gracefully
               i++;
@@ -689,9 +690,11 @@ export class MarkdownParser {
         }
         children.push(card);
         // Skip lines that were already processed by recursive call
-        if (wordLastLine >= i) {
+        // Only skip if recursive call actually moved past current line (strict > to avoid infinite loop)
+        if (wordLastLine > i) {
           i = wordLastLine;
         }
+        // Otherwise, i++ at end will handle advancing to next line
       } else if (cardType === 'phrase') {
         const card = this.createPhraseCard(content, indentLevel);
         // Process children of this phrase card
@@ -701,9 +704,11 @@ export class MarkdownParser {
         }
         children.push(card);
         // Skip lines that were already processed by recursive call
-        if (phraseLastLine >= i) {
+        // Only skip if recursive call actually moved past current line (strict > to avoid infinite loop)
+        if (phraseLastLine > i) {
           i = phraseLastLine;
         }
+        // Otherwise, i++ at end will handle advancing to next line
       } else if (cardType === 'definition') {
         // Definition item for phrase card - add to parent phrase card's items
         if (actualParentCard && actualParentCard.type === 'phrase') {
