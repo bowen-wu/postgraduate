@@ -15,6 +15,15 @@ button {
 }
 button:hover { background: #e2e8f0; }
 button:active { transform: scale(0.96); }
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+button:disabled:hover {
+    background: transparent;
+    transform: none;
+}
 
 .btn-primary { background: var(--primary); color: white; }
 .btn-primary:hover { background: var(--primary-hover); }
@@ -402,7 +411,7 @@ body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
     background: var(--card-bg);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
-    max-width: 400px;
+    max-width: 600px;
     width: 90%;
     padding: 2rem;
     transform: scale(0.95);
@@ -434,4 +443,47 @@ body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
     display: flex;
     gap: 0.75rem;
     justify-content: flex-end;
+}
+
+/* --- Shortcuts Dialog --- */
+.shortcuts-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.shortcut-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.shortcut-keys {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.shortcut-keys kbd {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.shortcut-desc {
+    font-weight: 500;
+    color: var(--text-main);
 }

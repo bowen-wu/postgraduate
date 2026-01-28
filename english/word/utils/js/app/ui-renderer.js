@@ -56,6 +56,9 @@ export function render(ui) {
       window.app.playWord(card.word, 'play-btn-main', false, false);
     }, 300);
   }
+
+  // Update prev button disabled state
+  ui.btnPrev.disabled = STATE.currentIndex === 0;
 }
 
 /**

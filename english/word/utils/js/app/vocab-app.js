@@ -190,6 +190,10 @@ export class VocabApp {
     EventHandlers.toggleStats();
   }
 
+  toggleShortcuts() {
+    EventHandlers.toggleShortcuts();
+  }
+
   loadRootFolders(forceRefresh = false) {
     return EventHandlers.loadRootFolders(forceRefresh);
   }

@@ -24,17 +24,27 @@
         <span id="currentFileDisplay" class="current-file-display"></span>
     </div>
     <div class="header-controls">
+        <button class="btn-ghost" onclick="app.toggleShortcuts()" title="快捷键">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="9" y2="9"></line>
+                <line x1="15" y1="9" x2="15" y2="9"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+        </button>
         <div class="toggle-switch">
             <button id="btnModeInput" class="active" onclick="app.setMode('input')">浏览</button>
             <button id="btnModeRecall" onclick="app.setMode('recall')">遮挡</button>
         </div>
 
         <button id="btnAutoPlay" class="btn-icon-toggle" onclick="app.toggleAutoPlay()" title="自动播放">
-            <svg id="iconAutoPlayOff" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg id="iconAutoPlayOff" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
                 <line x1="1" y1="1" x2="23" y2="23"></line>
             </svg>
-            <svg id="iconAutoPlayOn" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg id="iconAutoPlayOn" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
             </svg>
         </button>
@@ -126,9 +136,127 @@
         </div>
     </div>
 </div>
+
+<!-- Shortcuts Dialog -->
+<div id="shortcutsDialog" class="dialog-overlay">
+    <div class="dialog">
+        <div class="dialog-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="12" x2="8" y2="12"></line>
+                <line x1="12" y1="12" x2="12" y2="12"></line>
+                <line x1="16" y1="12" x2="16" y2="12"></line>
+            </svg>
+            <span>键盘快捷键</span>
+        </div>
+        <div class="dialog-message">
+            <div class="shortcuts-list">
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Backspace</kbd>
+                        <kbd>←</kbd>
+                    </div>
+                    <span class="shortcut-desc">上一个</span>
+                </div>
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Enter</kbd>
+                        <kbd>→</kbd>
+                    </div>
+                    <span class="shortcut-desc">下一个</span>
+                </div>
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Space</kbd>
+                    </div>
+                    <span class="shortcut-desc">播放单词音频</span>
+                </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>S</kbd>
+                    </div>
+                    <span class="shortcut-desc">播放同义词音频</span>
+                </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>A</kbd>
+                    </div>
+                    <span class="shortcut-desc">播放反义词音频</span>
+                </div>
+
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Esc</kbd>
+                    </div>
+                    <span class="shortcut-desc">关闭弹窗</span>
+                </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Home</kbd>
+                    </div>
+                    <span class="shortcut-desc">第一张</span>
+                </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>End</kbd>
+                    </div>
+                    <span class="shortcut-desc">最后一张</span>
+                </div>
+
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>L</kbd>
+                    </div>
+                    <span class="shortcut-desc">学习列表</span>
+                </div>
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>P</kbd>
+                    </div>
+                    <span class="shortcut-desc">自动播放开关</span>
+                </div>
+
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>M</kbd>
+                    </div>
+                    <span class="shortcut-desc">切换模式</span>
+                </div>
+
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>?</kbd>
+                    </div>
+                    <span class="shortcut-desc">快捷键帮助</span>
+                </div>
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>F</kbd>
+                    </div>
+                    <span class="shortcut-desc">选择文件</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="dialog-actions">
+            <button class="btn-primary" onclick="app.toggleShortcuts()">关闭</button>
+        </div>
+    </div>
+</div>
+
 <!-- Load VocabMaster App Module -->
 <script type="module">
-  import { VocabApp, CONFIG, STATE, GitHubApi, MarkdownParser } from './js/app/vocab-app.js';
+  import {VocabApp, CONFIG, STATE, GitHubApi, MarkdownParser} from './js/app/vocab-app.js';
 
   // Export to global scope for backward compatibility with inline event handlers
   window.CONFIG = CONFIG;
@@ -144,6 +272,17 @@
     // 只在浏览模式下响应
     if (window.STATE.mode !== 'input') return;
 
+    // 如果焦点在输入框中，不响应快捷键
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const currentCard = window.STATE.cards[window.STATE.currentIndex];
+    if (!currentCard) return;
+
+    // 防抖：记录上次播放时间（500ms内不重复播放）
+    const now = Date.now();
+    if (!window._lastPlayTime) window._lastPlayTime = {};
+    const debounceKey = e.key.toLowerCase();
+
     switch (e.key) {
       case 'Enter':
       case 'ArrowRight':
@@ -154,6 +293,108 @@
       case 'ArrowLeft':
         e.preventDefault();
         window.app.prevCard();
+        break;
+      case ' ':
+        e.preventDefault();
+        // 防抖检查
+        if (window._lastPlayTime['space'] && now - window._lastPlayTime['space'] < 500) {
+          return;
+        }
+        window._lastPlayTime['space'] = now;
+        // 根据卡片类型确定按钮ID
+        const playBtnId = currentCard.type === 'phrase' ? 'play-btn-phrase' : 'play-btn-main';
+        window.app.playWord(currentCard.word, playBtnId, false, false);
+        break;
+      case 's':
+      case 'S':
+        e.preventDefault();
+        // 防抖检查
+        if (window._lastPlayTime['s'] && now - window._lastPlayTime['s'] < 500) {
+          return;
+        }
+        window._lastPlayTime['s'] = now;
+        if (currentCard.synonyms && currentCard.synonyms.length > 0) {
+          const synWord = currentCard.synonyms[0].word;
+          const synBtnId = `play-btn-syn-${synWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          window.app.playWord(synWord, synBtnId, false, false);
+        }
+        break;
+      case 'a':
+      case 'A':
+        e.preventDefault();
+        // 防抖检查
+        if (window._lastPlayTime['a'] && now - window._lastPlayTime['a'] < 500) {
+          return;
+        }
+        window._lastPlayTime['a'] = now;
+        if (currentCard.antonyms && currentCard.antonyms.length > 0) {
+          const antWord = currentCard.antonyms[0].word;
+          const antBtnId = `play-btn-ant-${antWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          window.app.playWord(antWord, antBtnId, false, false);
+        }
+        break;
+      case 'Escape':
+        e.preventDefault();
+        // 优先级：快捷键弹窗 > 文件面板 > 学习列表
+        const shortcutsDialog = document.getElementById('shortcutsDialog');
+        if (shortcutsDialog.classList.contains('show')) {
+          window.app.toggleShortcuts();
+          return;
+        }
+        if (document.getElementById('filePanel').classList.contains('open')) {
+          window.app.toggleFiles();
+          return;
+        }
+        if (document.getElementById('statsPanel').classList.contains('open')) {
+          window.app.toggleStats();
+          return;
+        }
+        break;
+      case '?':
+        e.preventDefault();
+        window.app.toggleShortcuts();
+        break;
+      case 'm':
+      case 'M':
+        e.preventDefault();
+        const newMode = window.STATE.mode === 'input' ? 'recall' : 'input';
+        window.app.setMode(newMode);
+        break;
+      case 'p':
+      case 'P':
+        e.preventDefault();
+        window.app.toggleAutoPlay();
+        break;
+      case 'l':
+      case 'L':
+        e.preventDefault();
+        window.app.toggleStats();
+        break;
+      case 'f':
+      case 'F':
+        e.preventDefault();
+        window.app.toggleFiles();
+        break;
+      case 'Home':
+        e.preventDefault();
+        if (window.STATE.currentIndex !== 0) {
+          window.STATE.currentIndex = 0;
+          window.STATE.saveState();
+          window.app.render();
+          window.app.updateStatsUI();
+          window.app.showToast('已跳转到第一张');
+        }
+        break;
+      case 'End':
+        e.preventDefault();
+        const lastIndex = window.STATE.cards.length - 1;
+        if (window.STATE.currentIndex !== lastIndex) {
+          window.STATE.currentIndex = lastIndex;
+          window.STATE.saveState();
+          window.app.render();
+          window.app.updateStatsUI();
+          window.app.showToast('已跳转到最后一张');
+        }
         break;
     }
   });

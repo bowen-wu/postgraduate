@@ -114,6 +114,8 @@ export function prevCard() {
     StateManager.saveState();
     window.app.render();
     StateManager.updateStatsUI(window.app.ui);
+  } else {
+    UiRenderer.showToast(window.app.ui, '已经是第一个卡片了');
   }
 }
 
@@ -161,6 +163,18 @@ export async function toggleFiles(forceOpen = null, ui = null) {
 export function toggleStats(ui = null) {
   if (!ui) ui = window.app.ui;
   ui.statsPanel.classList.toggle('open');
+}
+
+/**
+ * Toggle shortcuts dialog
+ */
+export function toggleShortcuts() {
+  const dialog = document.getElementById('shortcutsDialog');
+  if (dialog.classList.contains('show')) {
+    dialog.classList.remove('show');
+  } else {
+    dialog.classList.add('show');
+  }
 }
 
 /**
