@@ -34,6 +34,10 @@
 - Tang Xianzu, eastern world's **answer** to Shakespeare...
 - Overdressed is the fashion world's **answer** to consumer-activist bestsellers like Michael Pollan's The Omnivore's
   Dilemma. 《Overdressed》是时尚界对迈克尔·波伦《杂食者的两难》这类消费者行动主义畅销书的回应
+    - X is Y’s answer to Z X 是 Y 对 Z 的回应/对应之作
+    - the fashion world 时尚界
+    - consumer-activist 消费者行动主义者
+    - consumer-activist bestsellers 消费者行动主义畅销书
 - The *press(n. 报刊)* called Ginobili as Argentina's **answer** to Michael Jordan.
 
 ## bear
@@ -181,8 +185,8 @@
 ## Words
 
 - cascade [kæˈskeɪd]
-    - n. 倾泻; 小瀑布，瀑布状物; 串联
     - vi. 流注; 大量落下
+    - n. 倾泻; 小瀑布，瀑布状物; 串联
 - principal [ˈprɪnsəpl]
     - n. 校长，院长
     - adj. 最重要的

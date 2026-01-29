@@ -23,6 +23,10 @@ export class MarkdownParser {
     this.parentLevel = -1;  // Indent level of parent card
     this.cardCounter = 0;  // For generating unique IDs
     this.pendingSynonyms = [];  // Store synonyms for current sentence
+    this.pendingSynonymCard = null;  // Temporary card for synonym with child items (e.g., == curb followed by POS lines)
+    this.pendingSynonymLevel = -1;  // Indent level of the pending synonym marker
+    this.pendingSynonymOriginalParent = null;  // Original parent card before redirecting to synonym
+    this.pendingSynonymOriginalLevel = -1;  // Original parent level before redirecting to synonym
     this.debug = false;  // Set to true for debugging
 
     // Assign imported pure functions as class methods
@@ -142,6 +146,12 @@ export class MarkdownParser {
         i++;
       }
 
+      // Finalize any pending synonym card at the end of parsing
+      if (this.pendingSynonymCard) {
+        // Use indentLevel 0 to force finalization (end of file means we've exited any scope)
+        this.finalizePendingSynonymIfNeeded(0);
+      }
+
       return this.cards;
     } catch (error) {
       console.error('Error parsing markdown:', error);
@@ -156,10 +166,13 @@ export class MarkdownParser {
    * - Returns undefined: normal processing, continue to next line
    */
   processListItem(line, indentLevel, content, lineIndex) {
+    // Finalize pending synonym card if we've exited its child scope
+    // This should be checked BEFORE processing any new item
+    this.finalizePendingSynonymIfNeeded(indentLevel);
+
     // 规则1: 同义词标记检查 (== word or === word)
     if (this.isSynonymMarker(content)) {
-      this.addSynonymToParent(content);
-      return undefined;
+      return this.addSynonymToParent(content, indentLevel);
     }
 
     // 规则2: 反义词标记检查 (规则9: Opposite: word)
@@ -384,7 +397,7 @@ export class MarkdownParser {
     clean = clean.replace(/\*([a-zA-Z'-]+)\*/g, '$1');  // Remove * around single words
 
     // Step 4: Extract <ins>phrase</ins> patterns
-    clean = this.extractInsPhrases(clean, extractedCards, indentLevel);
+    clean = this.extractInsPhrases(clean, extractedCards, indentLevel, boldPlaceholders);
 
     // Step 5: Split English and Chinese
     // First, remove all (中文) patterns from the sentence for clean English text
@@ -616,33 +629,111 @@ export class MarkdownParser {
       }
 
       const indentMatch = line.match(/^(\s*)-/);
-      if (!indentMatch) break;
+      if (!indentMatch) {
+        // Finalize any pending synonym card before breaking
+        this.finalizePendingSynonymIfNeeded(0);
+        break;
+      }
       const indentLevel = indentMatch[1].length;
 
-      if (indentLevel <= parentIndentLevel) break;
+      // Finalize pending synonym card if we've exited its child scope
+      this.finalizePendingSynonymIfNeeded(indentLevel);
+
+      if (indentLevel <= parentIndentLevel) {
+        // Finalize any pending synonym card before exiting
+        this.finalizePendingSynonymIfNeeded(0);
+        break;
+      }
 
       const content = trimmed.substring(1).trim();
 
       // Handle special markers first
       if (this.isSynonymMarker(content)) {
-        // Add to parent sentence's synonyms
-        const synonymWord = content.replace(/^===?\s+/, '').trim();
-        if (!this.pendingSynonyms) {
-          this.pendingSynonyms = [];
+        // Check if the current parent is a word card (like dampen within a sentence)
+        // If so, add the synonym to that word card, not to the sentence
+        if (actualParentCard && actualParentCard.type === 'word') {
+          // This synonym belongs to the nested word card
+          const synonymContent = content.replace(/^===?\s+/, '').trim();
+          actualParentCard.synonyms = actualParentCard.synonyms || [];
+
+          const { word, ipa, pos, cn } = this.parseWordContent(synonymContent);
+
+          // Check if this synonym has definition on the same line
+          if (pos && cn) {
+            // Simple case: add directly
+            const synonym = { word };
+            if (ipa) synonym.ipa = ipa;
+            if (pos) synonym.pos = pos;
+            if (cn) synonym.cn = cn;
+            actualParentCard.synonyms.push(synonym);
+          } else {
+            // Complex case: synonym has children (POS lines following)
+            // Create a temporary synonym card
+            this.pendingSynonymCard = {
+              word: word,
+              items: []
+            };
+            if (ipa) this.pendingSynonymCard.ipa = ipa;
+            this.pendingSynonymLevel = indentLevel;
+            this.pendingSynonymOriginalParent = actualParentCard;
+
+            // Redirect parentCard to temporary card so POS lines go to it
+            this.parentCard = this.pendingSynonymCard;
+            this.parentLevel = indentLevel;
+          }
+        } else {
+          // Add to parent sentence's synonyms
+          const synonymWord = content.replace(/^===?\s+/, '').trim();
+          if (!this.pendingSynonyms) {
+            this.pendingSynonyms = [];
+          }
+          this.pendingSynonyms.push(synonymWord);
         }
-        this.pendingSynonyms.push(synonymWord);
         i++;
         continue;
       }
 
       // POS lines should be added to parent word card
       if (this.isPurePosLine(content)) {
-        if (actualParentCard && actualParentCard.type === 'word') {
+        // Check if we're currently processing a pending synonym card
+        if (this.pendingSynonymCard) {
+          // Add POS to the pending synonym card
           const posMatch = content.match(/^([a-z]+\.)\s*(.*)/);
           if (posMatch) {
             const pos = posMatch[1];
             const rest = posMatch[2];
             const cn = rest.trim();
+
+            // Remove placeholder if exists
+            const placeholderIndex = this.pendingSynonymCard.items.findIndex(
+              item => item.en === this.pendingSynonymCard.word && item.cn === ''
+            );
+            if (placeholderIndex !== -1) {
+              this.pendingSynonymCard.items.splice(placeholderIndex, 1);
+            }
+
+            this.pendingSynonymCard.items.push({
+              type: 'def',
+              en: pos,
+              cn: cn
+            });
+          }
+        } else if (actualParentCard && actualParentCard.type === 'word') {
+          // Add POS to the actual parent word card
+          const posMatch = content.match(/^([a-z]+\.)\s*(.*)/);
+          if (posMatch) {
+            const pos = posMatch[1];
+            const rest = posMatch[2];
+            const cn = rest.trim();
+
+            // Remove placeholder if exists
+            const placeholderIndex = actualParentCard.items.findIndex(
+              item => item.en === actualParentCard.word && item.cn === ''
+            );
+            if (placeholderIndex !== -1) {
+              actualParentCard.items.splice(placeholderIndex, 1);
+            }
+
             actualParentCard.items.push({
               type: 'def',
               en: pos,
@@ -740,6 +831,9 @@ export class MarkdownParser {
     // Restore parent context
     this.parentCard = savedParentCard;
     this.parentLevel = savedParentLevel;
+
+    // Finalize any pending synonym card before returning
+    this.finalizePendingSynonymIfNeeded(0);
 
     return { children, lastLineIndex: i - 1 };
   }
@@ -839,18 +933,15 @@ export class MarkdownParser {
       card.items.push({type: 'def', en: word, cn: ''});
     }
 
-    // 🔧 FIX: Don't set parent for simple dictionary entries
-    // Simple dictionary entries are like: "clue [kluː] n. 线索，提示"
-    // They have: word + [IPA] + pos. + Chinese definition
-    // These are "helper" words and should not become the parent for subsequent items
-    // The parent should remain the original sentence/word that contains them
-    // Check: Chinese should not contain English letters (mixed content)
-    const isSimpleDictionaryEntry =
-      ipa && pos && cn &&  // Has IPA, POS, and Chinese
-      !/[a-zA-Z]/.test(cn) &&  // Chinese doesn't contain English letters (no mixed content)
-      this.parentCard && this.parentCard.type === 'sentence';  // Parent is a sentence
+    // 🔧 FIX: Don't set parent for nested words within sentences
+    // Words that are children of sentences should not become the global parent
+    // because their sub-items (POS lines, synonyms) should be added to the word card itself
+    // through processChildren, not through the global parentCard
+    const isNestedWordInSentence =
+      this.parentCard && this.parentCard.type === 'sentence' &&  // Parent is a sentence
+      ipa;  // Has IPA (indicates it's a real word with pronunciation)
 
-    if (!isSimpleDictionaryEntry) {
+    if (!isNestedWordInSentence) {
       this.parentCard = card;
       this.parentLevel = indentLevel;
     }
@@ -911,9 +1002,16 @@ export class MarkdownParser {
   /**
    * Extract <ins>phrase</ins> patterns from sentence
    */
-  extractInsPhrases(text, extractedCards, indentLevel) {
+  extractInsPhrases(text, extractedCards, indentLevel, boldPlaceholders = []) {
     return text.replace(/<ins>(.*?)<\/ins>/g, (match, phrase) => {
-      const cleanPhrase = phrase.replace(/\*/g, '').trim();
+      let cleanPhrase = phrase.replace(/\*/g, '').trim();
+
+      // 🔧 FIX: Restore bold placeholders in phrase
+      // For phrase cards, we want plain text (e.g., "air", not "<strong>air</strong>")
+      cleanPhrase = cleanPhrase.replace(/__BOLD_(\d+)__/g, (match, index) => {
+        return boldPlaceholders[index] || match;
+      });
+
       const card = this.createPhraseCard(cleanPhrase, indentLevel);
       extractedCards.push(card);
       return cleanPhrase;
@@ -922,27 +1020,61 @@ export class MarkdownParser {
 
   /**
    * Add synonym to parent card
+   * Returns: undefined (normal processing)
    */
-  addSynonymToParent(content) {
-    if (this.parentCard) {
-      let synonymContent = content.replace(/^===?\s+/, '').trim();
-      this.parentCard.synonyms = this.parentCard.synonyms || [];
+  addSynonymToParent(content, indentLevel) {
+    if (!this.parentCard) {
+      return undefined;
+    }
 
-      const multipleSynonyms = synonymContent.split(/\s+==\s+/);
+    // First, finalize any pending synonym card if exists
+    this.finalizePendingSynonymIfNeeded(indentLevel);
 
-      for (const syn of multipleSynonyms) {
-        const trimmed = syn.trim();
-        if (!trimmed) continue;
+    let synonymContent = content.replace(/^===?\s+/, '').trim();
+    this.parentCard.synonyms = this.parentCard.synonyms || [];
 
-        const { word, ipa, pos, cn } = this.parseWordContent(trimmed);
+    const multipleSynonyms = synonymContent.split(/\s+==\s+/);
+
+    for (const syn of multipleSynonyms) {
+      const trimmed = syn.trim();
+      if (!trimmed) continue;
+
+      const { word, ipa, pos, cn } = this.parseWordContent(trimmed);
+
+      // Check if this synonym has definition on the same line (simple case)
+      // Example: == restrain vt. 抑制
+      if (pos && cn) {
+        // Simple case: add directly to synonyms
         const synonym = { word };
         if (ipa) synonym.ipa = ipa;
         if (pos) synonym.pos = pos;
         if (cn) synonym.cn = cn;
-
         this.parentCard.synonyms.push(synonym);
+      } else {
+        // Complex case: == curb (definition items follow in child lines)
+        // Create a temporary card to collect child items
+        // Save the original parent context
+        this.pendingSynonymOriginalParent = this.parentCard;
+        this.pendingSynonymOriginalLevel = this.parentLevel;
+
+        // Create temporary card for this synonym
+        this.pendingSynonymCard = {
+          word: word,
+          items: []
+        };
+        if (ipa) this.pendingSynonymCard.ipa = ipa;
+
+        // Track the indent level of this synonym marker
+        this.pendingSynonymLevel = indentLevel;
+
+        // Redirect parentCard to the temporary card
+        // This ensures subsequent POS lines are added to the synonym, not the original parent
+        this.parentCard = this.pendingSynonymCard;
+        this.parentLevel = indentLevel;
       }
     }
+
+    return undefined;
   }
 
   /**
@@ -987,6 +1119,7 @@ export class MarkdownParser {
 
   /**
    * Add POS definition to parent card
+   * Supports both regular parent cards and pending synonym cards
    */
   addPosToParent(content) {
     if (this.parentCard) {
@@ -1019,6 +1152,46 @@ export class MarkdownParser {
   addIpaToParent(content) {
     if (this.parentCard && !this.parentCard.ipa) {
       this.parentCard.ipa = content.trim();
+    }
+  }
+
+  /**
+   * Finalize pending synonym card if we've exited its child scope
+   * This should be called when we encounter an item at the same or higher level
+   * @param {number} currentIndentLevel - The indent level of the current item
+   */
+  finalizePendingSynonymIfNeeded(currentIndentLevel) {
+    if (this.pendingSynonymCard && currentIndentLevel <= this.pendingSynonymLevel) {
+      // Convert pendingSynonymCard to a synonym object
+      const synonym = {
+        word: this.pendingSynonymCard.word
+      };
+
+      if (this.pendingSynonymCard.ipa) {
+        synonym.ipa = this.pendingSynonymCard.ipa;
+      }
+
+      // Add items if present
+      if (this.pendingSynonymCard.items && this.pendingSynonymCard.items.length > 0) {
+        synonym.items = this.pendingSynonymCard.items;
+      }
+
+      // Add to original parent's synonyms array
+      if (this.pendingSynonymOriginalParent) {
+        this.pendingSynonymOriginalParent.synonyms =
+          this.pendingSynonymOriginalParent.synonyms || [];
+        this.pendingSynonymOriginalParent.synonyms.push(synonym);
+      }
+
+      // Restore parent context
+      this.parentCard = this.pendingSynonymOriginalParent;
+      this.parentLevel = this.pendingSynonymOriginalLevel;
+
+      // Clear pending synonym state
+      this.pendingSynonymCard = null;
+      this.pendingSynonymLevel = -1;
+      this.pendingSynonymOriginalParent = null;
+      this.pendingSynonymOriginalLevel = -1;
     }
   }
 }

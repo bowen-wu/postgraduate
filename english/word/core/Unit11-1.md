@@ -46,7 +46,7 @@
 - == neglect == overlook
 - ignorant [ˈɪɡnərənt] adj. 无知的
 - neglect [nɪˈɡlekt]
-    - vt. 疏于照顾；不予重视；
+    - vt. 疏于照顾；不予重视
     - n. 忽视
     - Which part of jobs picture was **neglected**?
         - picture
