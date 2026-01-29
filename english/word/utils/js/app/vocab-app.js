@@ -57,7 +57,6 @@ export class VocabApp {
     }
 
     // Clear cache on init
-    console.log('🗑️ Clearing all file cache to fix format issues');
     const cacheKeys = Object.keys(localStorage);
     cacheKeys.forEach(key => {
       if (key.startsWith(CONFIG.cacheKey)) {
@@ -66,7 +65,6 @@ export class VocabApp {
     });
 
     StateManager.loadState();
-    console.log('init - STATE.cards.length:', STATE.cards.length, 'currentPath:', STATE.currentPath);
 
     UiRenderer.updateAutoPlayButton(this.ui);
     UiRenderer.updateModeButtons(this.ui);
@@ -74,17 +72,14 @@ export class VocabApp {
 
     if (STATE.cards.length === 0) {
       if (STATE.currentPath) {
-        console.log('init - Loading saved file:', STATE.currentPath);
         await EventHandlers.loadFile(STATE.currentPath, this.ui);
       } else {
-        console.log('init - No saved file, showing file selection');
         // Hide loader when showing file selection panel
         this.ui.loader.classList.add('hidden');
         EventHandlers.toggleFiles(true, this.ui);
         await EventHandlers.loadRootFolders(false, this.ui);
       }
     } else {
-      console.log('init - Rendering existing cards');
       if (STATE.currentPath) {
         UiRenderer.updateCurrentFileDisplay(this.ui, STATE.currentPath);
       }
@@ -268,7 +263,6 @@ export class VocabApp {
     confirmCallback: null,
 
     show(message, onConfirm, title = '切换文件') {
-      console.log('🔲 confirmDialog.show called');
       const overlay = window.app.ui.confirmDialog;
       const msgEl = window.app.ui.dialogMessage;
       const confirmBtn = window.app.ui.dialogConfirmBtn;
@@ -277,12 +271,9 @@ export class VocabApp {
       msgEl.innerHTML = message;
       if (titleEl) titleEl.textContent = title;
       this.confirmCallback = onConfirm;
-      console.log('🔲 Callback set:', typeof onConfirm);
 
       confirmBtn.onclick = () => {
-        console.log('✅ Confirm button clicked!');
         if (this.confirmCallback) {
-          console.log('🔲 Executing callback...');
           const callback = this.confirmCallback;
           this.confirmCallback = null;
           callback();
@@ -303,5 +294,3 @@ export class VocabApp {
     }
   };
 }
-
-console.log('VocabMaster app module loaded successfully');

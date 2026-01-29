@@ -24,7 +24,6 @@ export function loadStatsForFile(path) {
       // Only load stats, not cards (cards are loaded from file)
       STATE.stats = parsed.stats || {};
       STATE.currentIndex = parsed.currentIndex || 0;
-      console.log('📊 Loaded stats for:', path, 'stats:', STATE.stats);
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
@@ -68,7 +67,6 @@ export function loadState() {
       const lastPath = localStorage.getItem(`${CONFIG.storageKey}_lastPath`);
       if (lastPath) {
         STATE.currentPath = lastPath;
-        console.log('📊 Last used path loaded:', lastPath);
       }
     }
 
@@ -81,7 +79,6 @@ export function loadState() {
       const parsed = JSON.parse(saved);
       STATE.stats = parsed.stats || {};
       STATE.currentIndex = parsed.currentIndex || 0;
-      console.log('📊 State loaded from local storage');
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
@@ -122,8 +119,6 @@ export function resetData() {
   STATE.stats = {};
   STATE.currentPath = null;
   STATE.currentFile = null;
-
-  console.log('🗑️ All data has been cleared');
 }
 
 /**

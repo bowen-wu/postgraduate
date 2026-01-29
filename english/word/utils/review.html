@@ -179,15 +179,14 @@
                     <div class="shortcut-keys">
                         <kbd>S</kbd>
                     </div>
-                    <span class="shortcut-desc">播放同义词音频</span>
+                    <span class="shortcut-desc">播放同义词音频（循环）</span>
                 </div>
                 <div class="shortcut-item">
                     <div class="shortcut-keys">
                         <kbd>A</kbd>
                     </div>
-                    <span class="shortcut-desc">播放反义词音频</span>
+                    <span class="shortcut-desc">播放反义词音频（循环）</span>
                 </div>
-
 
                 <div class="shortcut-item">
                     <div class="shortcut-keys">
@@ -231,7 +230,6 @@
                     <span class="shortcut-desc">切换模式</span>
                 </div>
 
-
                 <div class="shortcut-item">
                     <div class="shortcut-keys">
                         <kbd>?</kbd>
@@ -244,6 +242,22 @@
                         <kbd>F</kbd>
                     </div>
                     <span class="shortcut-desc">选择文件</span>
+                </div>
+
+
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>Y</kbd>
+                        <kbd>1</kbd>
+                    </div>
+                    <span class="shortcut-desc">记得 / 确认掌握</span>
+                </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>N</kbd>
+                        <kbd>2</kbd>
+                    </div>
+                    <span class="shortcut-desc">不记得 / 其实不会</span>
                 </div>
 
             </div>
@@ -269,9 +283,6 @@
 
   // 键盘快捷键监听
   document.addEventListener('keydown', (e) => {
-    // 只在浏览模式下响应
-    if (window.STATE.mode !== 'input') return;
-
     // 如果焦点在输入框中，不响应快捷键
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
@@ -283,16 +294,26 @@
     if (!window._lastPlayTime) window._lastPlayTime = {};
     const debounceKey = e.key.toLowerCase();
 
+    const isRecallMode = window.STATE.mode === 'recall';
+
     switch (e.key) {
       case 'Enter':
       case 'ArrowRight':
         e.preventDefault();
         window.app.nextCard();
+        // 重置状态
+        window._synonymPlayIndex = 0;
+        window._antonymPlayIndex = 0;
+        window._isConfirming = false;
         break;
       case 'Backspace':
       case 'ArrowLeft':
         e.preventDefault();
         window.app.prevCard();
+        // 重置状态
+        window._synonymPlayIndex = 0;
+        window._antonymPlayIndex = 0;
+        window._isConfirming = false;
         break;
       case ' ':
         e.preventDefault();
@@ -301,7 +322,8 @@
           return;
         }
         window._lastPlayTime['space'] = now;
-        // 根据卡片类型确定按钮ID
+
+        // 播放单词音频（两种模式下都一样）
         const playBtnId = currentCard.type === 'phrase' ? 'play-btn-phrase' : 'play-btn-main';
         window.app.playWord(currentCard.word, playBtnId, false, false);
         break;
@@ -314,9 +336,16 @@
         }
         window._lastPlayTime['s'] = now;
         if (currentCard.synonyms && currentCard.synonyms.length > 0) {
-          const synWord = currentCard.synonyms[0].word;
+          // 初始化或获取当前同义词播放索引
+          if (!window._synonymPlayIndex) window._synonymPlayIndex = 0;
+
+          const syn = currentCard.synonyms[window._synonymPlayIndex];
+          const synWord = syn.word;
           const synBtnId = `play-btn-syn-${synWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
           window.app.playWord(synWord, synBtnId, false, false);
+
+          // 循环到下一个同义词
+          window._synonymPlayIndex = (window._synonymPlayIndex + 1) % currentCard.synonyms.length;
         }
         break;
       case 'a':
@@ -328,9 +357,49 @@
         }
         window._lastPlayTime['a'] = now;
         if (currentCard.antonyms && currentCard.antonyms.length > 0) {
-          const antWord = currentCard.antonyms[0].word;
+          // 初始化或获取当前反义词播放索引
+          if (!window._antonymPlayIndex) window._antonymPlayIndex = 0;
+
+          const ant = currentCard.antonyms[window._antonymPlayIndex];
+          const antWord = ant.word;
           const antBtnId = `play-btn-ant-${antWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
           window.app.playWord(antWord, antBtnId, false, false);
+
+          // 循环到下一个反义词
+          window._antonymPlayIndex = (window._antonymPlayIndex + 1) % currentCard.antonyms.length;
+        }
+        break;
+      // 遮挡模式专用快捷键
+      case 'y':
+      case 'Y':
+      case '1':
+        if (isRecallMode) {
+          e.preventDefault();
+          // 如果在确认阶段，Y = 确认掌握
+          if (window._isConfirming) {
+            window.app.confirmRecall(true);
+            window._isConfirming = false;
+          } else {
+            // 否则 Y = 记得
+            window.app.handleRecall(true);
+            // 设置确认状态标志
+            window._isConfirming = true;
+          }
+        }
+        break;
+      case 'n':
+      case 'N':
+      case '2':
+        if (isRecallMode) {
+          e.preventDefault();
+          // 如果在确认阶段，N = 其实不会
+          if (window._isConfirming) {
+            window.app.confirmRecall(false);
+            window._isConfirming = false;
+          } else {
+            // 否则 N = 不记得
+            window.app.handleRecall(false);
+          }
         }
         break;
       case 'Escape':
@@ -372,8 +441,12 @@
         break;
       case 'f':
       case 'F':
-        e.preventDefault();
-        window.app.toggleFiles();
+        // Only trigger if no modifier key (Command/Ctrl) is pressed
+        // This allows Command+F for browser's Find function
+        if (!e.metaKey && !e.ctrlKey) {
+          e.preventDefault();
+          window.app.toggleFiles();
+        }
         break;
       case 'Home':
         e.preventDefault();

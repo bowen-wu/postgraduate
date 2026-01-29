@@ -12,10 +12,6 @@ export function render(ui) {
   if (STATE.cards.length === 0) return;
   const card = STATE.cards[STATE.currentIndex];
 
-  console.log(`[render] ========== Rendering card ${STATE.currentIndex} ==========`);
-  console.log(`[render] card.word="${card.word}", card.type="${card.type}"`);
-  console.log(`[render] STATE.mode="${STATE.mode}"`);
-
   // Ensure card has required fields (for backward compatibility)
   if (!card.items) card.items = [];
   if (!card.synonyms) card.synonyms = [];
@@ -295,34 +291,133 @@ function renderSynonymsAndAntonyms(ui, card) {
     synList.className = 'synonyms-list';
 
     card.synonyms.forEach(syn => {
-      const synItem = document.createElement('span');
-      synItem.className = 'synonym-item';
+      // Check if synonym has items (multiple definitions like == curb)
+      if (syn.items && syn.items.length > 0) {
+        // Create container for the whole synonym with items
+        const synContainer = document.createElement('div');
+        synContainer.className = 'synonym-with-items';
 
-      const playBtn = document.createElement('button');
-      playBtn.className = 'synonym-play-btn audio-play-btn';
-      const synWordEscaped = syn.word.replace(/'/g, '\\\'');
-      const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
-      playBtn.id = synBtnId;
-      playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-      </svg><span class="btn-spinner"></span>`;
-      playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+        // Create main synonym item (word only)
+        const synMainItem = document.createElement('div');
+        synMainItem.className = 'synonym-main';
 
-      const synWord = document.createElement('span');
-      synWord.className = 'synonym-word';
+        const playBtn = document.createElement('button');
+        playBtn.className = 'synonym-play-btn audio-play-btn';
+        const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+        const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+        playBtn.id = synBtnId;
+        playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg><span class="btn-spinner"></span>`;
+        playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
 
-      let synDisplay = syn.word;
-      if (syn.pos && syn.pos.trim() !== '') {
-        synDisplay += ` ${syn.pos}`;
+        const synWord = document.createElement('span');
+        synWord.className = 'synonym-word';
+        synWord.textContent = syn.word;
+
+        synMainItem.appendChild(playBtn);
+        synMainItem.appendChild(synWord);
+        synContainer.appendChild(synMainItem);
+
+        // Create sub-items for each definition (indented)
+        const synSubList = document.createElement('div');
+        synSubList.className = 'synonym-sub-items';
+
+        syn.items.forEach(item => {
+          const subItem = document.createElement('div');
+          subItem.className = 'synonym-sub-item';
+
+          let subText = '';
+          if (item.en && item.en.trim() !== '') {
+            subText += item.en;
+          }
+          if (item.cn && item.cn.trim() !== '') {
+            if (subText) subText += ' ';
+            subText += item.cn;
+          }
+
+          subItem.textContent = subText;
+          synSubList.appendChild(subItem);
+        });
+
+        synContainer.appendChild(synSubList);
+        synList.appendChild(synContainer);
+      } else {
+        // Simple synonym - check if it has any definition
+        const hasDefinition = (syn.pos && syn.pos.trim() !== '') || (syn.cn && syn.cn.trim() !== '');
+
+        if (hasDefinition) {
+          // Has definition - use multi-line structure with divider and dots
+          const synContainer = document.createElement('div');
+          synContainer.className = 'synonym-with-items';
+
+          // Create main synonym item (word only)
+          const synMainItem = document.createElement('div');
+          synMainItem.className = 'synonym-main';
+
+          const playBtn = document.createElement('button');
+          playBtn.className = 'synonym-play-btn audio-play-btn';
+          const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+          const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          playBtn.id = synBtnId;
+          playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg><span class="btn-spinner"></span>`;
+          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+
+          const synWord = document.createElement('span');
+          synWord.className = 'synonym-word';
+          synWord.textContent = syn.word;
+
+          synMainItem.appendChild(playBtn);
+          synMainItem.appendChild(synWord);
+          synContainer.appendChild(synMainItem);
+
+          // Create sub-items with single definition
+          const synSubList = document.createElement('div');
+          synSubList.className = 'synonym-sub-items';
+
+          const subItem = document.createElement('div');
+          subItem.className = 'synonym-sub-item';
+
+          let subText = '';
+          if (syn.pos && syn.pos.trim() !== '') {
+            subText += syn.pos;
+          }
+          if (syn.cn && syn.cn.trim() !== '') {
+            if (subText) subText += ' ';
+            subText += syn.cn;
+          }
+
+          subItem.textContent = subText;
+          synSubList.appendChild(subItem);
+
+          synContainer.appendChild(synSubList);
+          synList.appendChild(synContainer);
+        } else {
+          // No definition - single line with word only, no divider or dots
+          const synItem = document.createElement('span');
+          synItem.className = 'synonym-item';
+
+          const playBtn = document.createElement('button');
+          playBtn.className = 'synonym-play-btn audio-play-btn';
+          const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+          const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          playBtn.id = synBtnId;
+          playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg><span class="btn-spinner"></span>`;
+          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+
+          const synWord = document.createElement('span');
+          synWord.className = 'synonym-word';
+          synWord.textContent = syn.word;
+
+          synItem.appendChild(playBtn);
+          synItem.appendChild(synWord);
+          synList.appendChild(synItem);
+        }
       }
-      if (syn.cn && syn.cn.trim() !== '') {
-        synDisplay += ` ${syn.cn}`;
-      }
-
-      synWord.textContent = synDisplay;
-      synItem.appendChild(playBtn);
-      synItem.appendChild(synWord);
-      synList.appendChild(synItem);
     });
 
     synSection.appendChild(synList);
@@ -526,7 +621,6 @@ export function updateCurrentFileDisplay(ui, path) {
   const directory = pathParts.length > 0 ? pathParts[0].charAt(0).toUpperCase() + pathParts[0].slice(1) : '';
   const displayText = directory ? `${directory} / ${fileName}` : fileName;
 
-  console.log('📝 Updating file display:', {path, displayText, element: ui.currentFileDisplay});
   ui.currentFileDisplay.textContent = displayText;
 
   const fileTitleText = document.getElementById('fileTitleText');

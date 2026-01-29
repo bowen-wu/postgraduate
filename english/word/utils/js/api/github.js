@@ -22,7 +22,6 @@ export class GitHubApi {
 
       // Check if cache is still valid
       if (now - parsed.timestamp < CONFIG.cacheDuration) {
-        console.log(`✅ Using cached data for: ${path || 'root'}`);
         return parsed.data;  // Return the wrapped data
       } else {
         // Cache expired
@@ -44,7 +43,6 @@ export class GitHubApi {
         timestamp: Date.now()
       };
       localStorage.setItem(cacheKey, JSON.stringify(cacheData));
-      console.log(`💾 Cached data for: ${path || 'root'}`);
     } catch (e) {
       console.warn('Cache write error:', e);
     }
@@ -57,7 +55,6 @@ export class GitHubApi {
         localStorage.removeItem(key);
       }
     });
-    console.log('🗑️ All cache cleared');
   }
 
   static async fetchContents(path = '', forceRefresh = false) {
@@ -86,7 +83,6 @@ export class GitHubApi {
     if (!res.ok) throw new Error(`GitHub API Error: ${res.status} ${res.statusText}`);
 
     const data = await res.json();
-    console.log('GitHub API Response:', data);
 
     // GitHub API returns array for directories, single object for files
     // Ensure we always work with an array
@@ -100,7 +96,6 @@ export class GitHubApi {
 
   static async fetchFileContent(path) {
     const url = `${CONFIG.baseRawUrl}/${path}`;
-    console.log('📥 Fetching file content from URL:', url);
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Fetch Error: ${res.status}`);
     return await res.text();

@@ -151,7 +151,6 @@ export async function toggleFiles(forceOpen = null, ui = null) {
         currentContent.includes('加载中') ||
         currentContent.includes('加载文件夹') ||
         currentContent.includes('正在加载文件列表')) {
-      console.log('File panel opened but empty, loading root folders...');
       await loadRootFolders(false, ui);
     }
   }
@@ -318,8 +317,6 @@ export function selectFile(path, name) {
 export async function confirmSwitchFile(path, ui = null) {
   if (!ui) ui = window.app.ui;
   try {
-    console.log('📁 confirmSwitchFile called with path:', path);
-
     ui.filePanel.classList.remove('open');
 
     ui.loader.classList.remove('hidden');
@@ -356,8 +353,6 @@ export async function confirmSwitchFile(path, ui = null) {
 export async function loadFile(path, ui = null) {
   if (!ui) ui = window.app.ui;
   try {
-    console.log('开始加载文件:', path);
-
     ui.loader.classList.remove('hidden');
     ui.loader.innerHTML = `
       <div class="spinner"></div>
@@ -366,10 +361,7 @@ export async function loadFile(path, ui = null) {
     ui.card.classList.add('hidden');
 
     const relativePath = path.startsWith('english/word/') ? path.substring('english/word/'.length) : path;
-    console.log('📍 Relative path for fetch:', relativePath);
-
     const text = await GitHubApi.fetchFileContent(relativePath);
-    console.log('文件加载完成，长度:', text.length);
 
     if (!text || text.trim().length === 0) {
       throw new Error('数据为空');
@@ -382,7 +374,6 @@ export async function loadFile(path, ui = null) {
 
     const parser = new MarkdownParser(text);
     STATE.cards = parser.parse();
-    console.log('解析完成，卡片数量:', STATE.cards.length);
 
     if (STATE.cards.length === 0) {
       throw new Error('解析后没有生成任何卡片，请检查数据格式');
@@ -500,7 +491,6 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
         }
       }
     }).catch((error) => {
-      console.log('有道音频失败，切换到TTS:', error);
       setButtonLoading(false, buttonId);
       // Retry with TTS fallback
       playWord(word, buttonId, true, showNotification);
@@ -535,7 +525,6 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
       };
 
       utterance.onend = () => {
-        console.log('✅ [TTS] Finished playing:', word);
         setButtonLoading(false, buttonId);
       };
 
@@ -551,7 +540,6 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
 
       if (usVoice) {
         utterance.voice = usVoice;
-        console.log('🎤 [TTS] Using voice:', usVoice.name);
       }
 
       window.speechSynthesis.speak(utterance);
@@ -582,7 +570,6 @@ export async function playCambridgeAudio(word) {
         const result = await playAudioUrl(url);
         return result;
       } catch (err) {
-        console.log(`Failed to load audio from ${url}:`, err);
         continue;
       }
     }
@@ -607,12 +594,10 @@ export async function playAudioUrl(url) {
 
     // Check if audio can actually be played (not just started)
     audio.oncanplaythrough = () => {
-      console.log('🎵 Audio can play through:', url);
       canPlayThrough = true;
     };
 
     audio.onplay = () => {
-      console.log('▶️ Audio started playing:', url);
       // Only resolve if we know the audio is playable
       if (!resolved && canPlayThrough) {
         resolved = true;
@@ -621,7 +606,6 @@ export async function playAudioUrl(url) {
     };
 
     audio.onended = () => {
-      console.log('✅ Audio finished playing');
       if (!resolved) {
         resolved = true;
         resolve({ onplay: true, audio });
@@ -629,7 +613,6 @@ export async function playAudioUrl(url) {
     };
 
     audio.onerror = (e) => {
-      console.error('❌ Audio error:', e, 'URL:', url);
       if (!resolved) {
         resolved = true;
         reject(new Error('Audio load failed'));
@@ -639,7 +622,6 @@ export async function playAudioUrl(url) {
     // Add timeout to detect stuck loading
     const timeoutId = setTimeout(() => {
       if (!resolved && !canPlayThrough) {
-        console.warn('⏱️ Audio loading timeout:', url);
         resolved = true;
         reject(new Error('Audio loading timeout'));
       }
@@ -662,7 +644,6 @@ export async function playAudioUrl(url) {
 
     // Start playing
     audio.play().catch((err) => {
-      console.error('❌ Audio play() failed:', err);
       if (!resolved) {
         resolved = true;
         reject(err);
@@ -688,7 +669,6 @@ export function prewarmSpeechSynthesis() {
     const utterance = new SpeechSynthesisUtterance('');
     utterance.volume = 0;
     window.speechSynthesis.speak(utterance);
-    console.log('🔊 Speech synthesis pre-warmed');
   } catch (e) {
     console.warn('Failed to pre-warm speech synthesis:', e);
   }
