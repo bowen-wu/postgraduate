@@ -42,8 +42,9 @@
             - House of representatives [reprɪ'zentətɪvz] 众议院
 - embody [ɪmˈbɑːdi]
     - v. 具体表现(具体 -> 抽象)
-    - When public opinion is particularly *polarized(['poʊləraɪzd] 两极分化的、对立的)*...*monarchs([ˈmɔnəks] n.
-      君主)* <ins>can rise(超越、不受...影响)</ins> above "mere" politics and "**embody**" a spirit of national unity.
+    - When public opinion is particularly *polarized(['poʊləraɪzd] 两极分化的、对立的)*...
+      *monarchs([ˈmɔnəks] n. 君主)* <ins>can rise(超越、不受...影响)</ins> above "mere" politics and "**embody**" a
+      spirit of national unity.
       当公众舆论特别两极分化时，君主可以超越“单纯的政治”，体现民族团结的精神
     - Many exhibits in the museum **embody** *the spirit of the craftsmanship*.
     - embodiment

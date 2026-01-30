@@ -24,6 +24,10 @@ export function loadStatsForFile(path) {
       // Only load stats, not cards (cards are loaded from file)
       STATE.stats = parsed.stats || {};
       STATE.currentIndex = parsed.currentIndex || 0;
+      // If file was completed, reset to beginning for a fresh start
+      if (STATE.cards.length > 0 && STATE.currentIndex >= STATE.cards.length - 1) {
+        STATE.currentIndex = 0;
+      }
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
