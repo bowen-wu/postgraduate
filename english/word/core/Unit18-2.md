@@ -149,13 +149,14 @@
 - spark
     - n. 火花
     - v. 发出火花；点燃
-    - vt. 引发
-    - PE
-        - v. 导致
-        - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
-          passive consumption and active creation.
+    - vt. 引发，导致
+    - The incident **sparked** a controversy.
+    - This is because the networked computer has **sparked** a secret war between downloading and uploading-between
+      passive consumption and active creation.
     - ...it is sure to **spark** intense opposition from the far larger number of motorists who will then be affected.
-    - sparkling 闪耀
+    - sparkling
+        - adj. 发火花的，闪亮的; 灿烂的，活泼的; 闪闪发光的，闪烁的; 起泡沫的
+        - This night is **sparkling**, don't you let it go.
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者

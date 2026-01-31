@@ -9,6 +9,7 @@
 \usepackage{xcolor}         % 颜色
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{ctex}           % 中文（强烈建议）
 \usepackage{tcolorbox}
 \usepackage{xstring}
 \usepackage{pgfplots}
@@ -17,6 +18,19 @@
 \usepackage{ulem}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\tikzstyle{startstop} = [rectangle, rounded corners,
+minimum width=2.5cm, minimum height=0.9cm, draw=black]
+
+\tikzstyle{process} = [rectangle,
+minimum width=3.6cm, minimum height=1cm, draw=black]
+
+\tikzstyle{decision} = [diamond, aspect=2,
+minimum width=4cm, minimum height=1.5cm, draw=black]
+
+\tikzstyle{arrow} = [->, thick]
+
 
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
@@ -256,14 +270,339 @@
 
     设函数 $f(x)$ 在 $x=x_0$ 处 $n$ 阶可导，且 $f^{(m)}(x_0)=0\ (m=2,3,\dots,n-1)$，$f^{(n)}(x_0)\neq 0$，则当 $n$ 为奇数时，点 $(x_0,f(x_0))$ 为曲线的拐点。
 
-    \subsection{基础概念}
+    \subsection{极值点与拐点的重要结论}
+
+    \begin{circlenum}
+        \item 曲线的可导点{\blueuline{不可同时为极值点和拐点}}；曲线的不可导点可{\blueuline{同时为极值点和拐点}}
+        \item 设多项式函数$f(x) = (x-a)^{n}g(x)(n>1)$，且$g(a) \neq 0$，则当$n$为{\color{red}{偶数}}时，$x=a$是$f(x)$的{\color{red}{极值点}}；当$n$为{\color{red}{奇数}}时，$x=a$是$f(x)$的{\color{red}{拐点}}
+        \item 设多项式函数 $f(x)= (x-a_1)^{n_1}(x-a_2)^{n_2}\cdots(x-a_k)^{n_k}$，其中 $n_i$ 为正整数，$a_i$ 为实数，且 $a_i\ (i=1,2,\dots,k)$ 两两不等。记$k_1$为 $n_i=1$ 的个数，$k_2$ 为满足 $n_i>1$ 且 $n_i$ 为偶数的个数，$k_3$ 为满足 $n_i>1$ 且 $n_i$ 为奇数的个数。则 $f(x)$ 的{\color{red}{极值点}}个数为$\color{red}{k_1 + 2k_2 + k_3 - 1}$，{\color{blue}{拐点}}个数为$\color{blue}{k_1 + 2k_2 + 3k_3 - 2}$
+    \end{circlenum}
+
+    \subsection{渐近线}
+
+    当曲线上的点{\color{red}{远离原点}}时，曲线与某直线充分靠近，则称该直线为曲线的渐近线
+
+    \subsubsection{铅直渐近线}
+
+    若$\lim\limits_{x\to x_0^{+}} f(x) = \infty$（或$\lim\limits_{x\to x_0^{-}} f(x) = \infty$），则$x=x_0$为一条铅直渐近线。$x_0$的可能情况为：
+    \begin{enumerate}
+        \item 函数的无定义点。
+        \emph{e.g.}：函数 $y=\tan x$ 在 $x=\dfrac{\pi}{2}$ 处无定义。
+
+        \item 函数定义区间的端点。
+        \emph{e.g.}：函数 $y=\ln x\ (x>0)$ 在 $x\to 0^+$ 处。
+
+        \item 分段函数的分段点。
+        \emph{e.g.}：
+        \[
+            f(x)=
+            \begin{cases}
+                1, & x \ge 0,\\[4pt]
+                \dfrac{1}{x}, & x < 0,
+            \end{cases}
+        \]
+        在 $x=0$ 处为分段点。
+    \end{enumerate}
+
+    \subsubsection{水平渐近线}
 
     \begin{enumerate}
+        \item 若 $\lim\limits_{x\to +\infty} f(x)=y_1$，则 $y=y_1$ 为函数 $y=f(x)$ 的一条水平渐近线；
+        \item 若 $\lim\limits_{x\to -\infty} f(x)=y_2$，则 $y=y_2$ 为函数 $y=f(x)$ 的一条水平渐近线；
+        \item 若 $\lim\limits_{x\to +\infty} f(x) = \lim\limits_{x\to -\infty} f(x) = y_0$，则 $y=y_0$ 为函数 $y=f(x)$ 的一条水平渐近线
     \end{enumerate}
+
+    \subsubsection{斜渐近线}
+
+    \begin{enumerate}
+        \item 若 $\lim\limits_{x\to +\infty}\dfrac{f(x)}{x}=a_1\,(a_1\neq 0)$，
+        且 $\lim\limits_{x\to +\infty}\bigl[f(x)-a_1x\bigr]=b_1$，
+        则直线 $y=a_1x+b_1$ 是曲线 $y=f(x)$ 的一条斜渐近线。
+
+        \item 若 $\lim\limits_{x\to -\infty}\dfrac{f(x)}{x}=a_2\,(a_2\neq 0)$，
+        且 $\lim\limits_{x\to -\infty}\bigl[f(x)-a_2x\bigr]=b_2$，
+        则直线 $y=a_2x+b_2$ 是曲线 $y=f(x)$ 的一条斜渐近线。
+
+        \item 若 $\lim\limits_{x\to +\infty}\dfrac{f(x)}{x}
+        =\lim\limits_{x\to -\infty}\dfrac{f(x)}{x}=a\,(a\neq 0)$，
+        且 $\lim\limits_{x\to +\infty}\bigl[f(x)-ax\bigr]
+        =\lim\limits_{x\to -\infty}\bigl[f(x)-ax\bigr]=b$，
+        则直线 $y=ax+b$ 是曲线 $y=f(x)$ 的一条斜渐近线。
+    \end{enumerate}
+
+    \subsubsection{方法总结}
+
+    \begin{enumerate}
+        \item 寻找渐近线顺序：铅直渐近线、水平渐近线、斜渐近线
+        \item 求斜渐近线时，$a$与$b$均应求出来才可能，仅求出$a$不能确定有斜渐近线
+        \item $\color{red}{\bigstar}$ 曲线与渐近线可能会有交点。\emph{e.g.} $y = \frac{\sin x}{x}$
+    \end{enumerate}
+
+    \begin{center}
+        \begin{tikzpicture}
+            [
+            scale=0.75,
+            transform shape,
+            node distance=1.6cm,
+            every node/.style={font=\footnotesize},
+            startstop/.style={
+                rectangle, rounded corners,
+                draw, align=center,
+                minimum width=2.6cm, minimum height=0.7cm
+            },
+            process/.style={
+                rectangle,
+                draw, align=center,
+                minimum width=3.6cm, minimum height=0.8cm
+            },
+            decision/.style={
+                diamond,
+                draw, align=center,
+                aspect=2.2,
+                inner sep=1pt
+            },
+            arrow/.style={->, thick}
+            ]
+
+            \node (f) [startstop] {$y=f(x)$};
+
+            \node (find) [process, below=of f]
+            {找无定义点、端点、分段点 $x_0$};
+
+            \node (vertcheck) [decision, below=of find]
+            {$\lim\limits_{x\to x_0} f(x)=\pm\infty$};
+
+            \node (vertyes) [process, below=of vertcheck]
+            {铅直渐近线 $x=x_0$};
+
+            \node (vertno) [process, left=2.2cm of vertcheck]
+            {无铅直渐近线};
+
+            \node (horizcheck) [decision, right=2.2cm of f]
+            {$\lim\limits_{x\to\infty} f(x)=A$};
+
+            \node (horizyes) [process, right=2.2cm of horizcheck]
+            {水平渐近线 $y=A$};
+
+            \node (slopecheck) [decision, below=of horizcheck]
+            {$\lim\limits_{x\to\infty}\dfrac{f(x)}{x}=a\ (a\neq0)$};
+
+            \node (slopeno) [process, right=2.2cm of slopecheck]
+            {无斜渐近线};
+
+            \node (bcheck) [process, below=of slopecheck]
+            {$b=\lim\limits_{x\to\infty}[f(x)-ax]$};
+
+            \node (bno) [process, right=2.2cm of bcheck]
+            {无斜渐近线};
+
+            \node (byes) [process, below=of bcheck]
+            {斜渐近线 $y=ax+b$};
+
+            \draw [arrow] (f) -- node[ left=3pt, draw=red, circle, text=red, inner sep=1.2pt, font=\small ]{1} (find);
+            \draw [arrow] (find) -- (vertcheck);
+            \draw [arrow] (vertcheck) -- node[right]{是} (vertyes);
+            \draw [arrow] (vertcheck) -- node[above]{否} (vertno);
+
+            \draw [arrow] (f) -- node[ above=3pt, draw=red, circle, text=red, inner sep=1.2pt, font=\small ]{2} (horizcheck);
+            \draw [arrow] (horizcheck) -- node[above]{是} (horizyes);
+            \draw [arrow] (horizcheck) --
+            node[right]{否}
+            node[right=16pt,
+            draw=red, circle, text=red,
+            inner sep=1.2pt, font=\small]{3}
+            node[right=28pt]{\color{red}{A = $\infty$}}
+            (slopecheck);
+
+            \draw [arrow] (slopecheck) -- node[above]{否} (slopeno);
+            \draw [arrow] (slopecheck) -- node[right]{是} (bcheck);
+
+            \draw [arrow] (bcheck) -- node[above]{不存在} (bno);
+            \draw [arrow] (bcheck) -- node[right]{存在} (byes);
+
+        \end{tikzpicture}
+    \end{center}
+
+    \subsection{最值或取值范围}
+
+    \subsubsection{最值的定义}
+
+    设 $x_0$ 为函数 $f(x)$ 定义域内的一点。若对于 $f(x)$ 的定义域内任意一点 $x$，均有
+    \[
+        f(x) \leq f(x_0)\quad (\text{或 } f(x) \geq f(x_0))
+    \]
+    成立，则称 $f(x_0)$ 为函数 $f(x)$ 的最大值（或最小值）。
+
+    \subsubsection{求区间$[a, b]$上连续函数$f(x)$的最大值$M$和最小值$m$}
+
+    \begin{circlenum}
+        \item 求出函数 $f(x)$ 在 $(a,b)$ 内的可疑点——驻点与不可导点，并求出这些可疑点处的函数值；
+        \item 求出端点处的函数值 $f(a)$ 和 $f(b)$；
+        \item 比较以上所求得的所有函数值，其中最大者为 $f(x)$ 在 $[a,b]$ 上的最大值 $M$，最小者为 $f(x)$ 在 $[a,b]$ 上的最小值 $m$
+    \end{circlenum}
+
+    \subsubsection{求区间$(a, b)$内连续函数$f(x)$的最值或取值范围}
+
+    \begin{circlenum}
+        \item 求出函数 $f(x)$ 在 $(a,b)$ 内的可疑点——驻点与不可导点，并求出这些可疑点处的函数值；
+        \item 求区间 $(a,b)$ 两端的单侧极限：若 $a,b$ 为有限常数，则求 $\lim_{x\to a^+} f(x)$ 与 $\lim_{x\to b^-} f(x)$；若 $a=-\infty$，则求 $\lim_{x\to -\infty} f(x)$；若 $b=+\infty$，则求 $\lim_{x\to +\infty} f(x)$，记以上所求左端极限为 $A$，右端极限为 $B$；
+        \item 比较前两步所得结果，确定函数的最值或取值范围。
+    \end{circlenum}
+
+    \subsection{作函数图像}
+
+    \subsubsection{给出函数 $f(x)$，作图的一般步骤}
+
+    \begin{circlenum}
+        \item 确定定义域，考查函数是否具有奇偶性、周期性，并合理利用图像变换；
+        \item 利用导数工具：一阶导数确定函数的单调区间与极值点，二阶导数确定曲线的凹凸区间与拐点；
+        \item 考查函数的渐近线；
+        \item 作出函数图像
+    \end{circlenum}
+
+    \subsubsection{常用平面图像}
+
+    \begin{enumerate}
+        \item 心形线
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis equal,
+                axis lines=middle,
+                xmin=-2.5, xmax=2.5,
+                ymin=-2.5, ymax=2.5,
+                samples=600,
+                xtick=\empty, ytick=\empty, % 去掉坐标刻度
+                legend style={
+                    at={(0.02,0.98)},
+                    anchor=north west,
+                    xshift=120pt,
+                    yshift=0pt,
+                    draw=none
+                }
+            ]
+                % r = 1 - cos θ
+                \addplot[thick,domain=0:6.283]
+                ({(1 - cos(deg(x)))*cos(deg(x))}, {(1 - cos(deg(x)))*sin(deg(x))});
+                \addlegendentry{ $r = 1 - \cos\theta$ }
+            \end{axis}
+        \end{tikzpicture}
+
+        \item 心形线
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis equal,
+                axis lines=middle,
+                xmin=-2.5, xmax=2.5,
+                ymin=-2.5, ymax=2.5,
+                samples=600,
+                xtick=\empty, ytick=\empty,
+                legend style={
+                    at={(0.02,0.98)},
+                    anchor=north west,
+                    xshift=120pt,
+                    yshift=0pt,
+                    draw=none
+                }
+            ]
+                % r = 1 + cos θ
+                \addplot[thick,domain=0:6.283]
+                ({(1 + cos(deg(x)))*cos(deg(x))}, {(1 + cos(deg(x)))*sin(deg(x))});
+                \addlegendentry{ $r = 1 + \cos\theta$ }
+            \end{axis}
+        \end{tikzpicture}
+
+        \item 心形线
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis equal,
+                axis lines=middle,
+                xmin=-2.5, xmax=2.5,
+                ymin=-2.5, ymax=2.5,
+                samples=600,
+                xtick=\empty, ytick=\empty,
+                legend style={
+                    at={(0.02,0.98)},
+                    anchor=north west,
+                    xshift=120pt,
+                    yshift=0pt,
+                    draw=none
+                }
+            ]
+                % r = 1 - sin θ
+                \addplot[thick,domain=0:6.283]
+                ({(1 - sin(deg(x)))*cos(deg(x))}, {(1 - sin(deg(x)))*sin(deg(x))});
+                \addlegendentry{ $r = 1 - \sin\theta$ }
+            \end{axis}
+        \end{tikzpicture}
+
+        \item 心形线
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis equal,
+                axis lines=middle,
+                xmin=-2.5, xmax=2.5,
+                ymin=-2.5, ymax=2.5,
+                samples=600,
+                xtick=\empty, ytick=\empty,
+                legend style={
+                    at={(0.02,0.98)},
+                    anchor=north west,
+                    xshift=120pt,
+                    yshift=0pt,
+                    draw=none
+                }
+            ]
+                % r = 1 + sin θ
+                \addplot[thick,domain=0:6.283]
+                ({(1 + sin(deg(x)))*cos(deg(x))}, {(1 + sin(deg(x)))*sin(deg(x))});
+                \addlegendentry{ $r = 1 + \sin\theta$ }
+            \end{axis}
+        \end{tikzpicture}
+        \item 摆线（平摆线）TODO
+        \begin{tikzpicture}
+            \begin{axis}
+                [
+                axis equal,
+                axis lines=middle,
+                samples=400,
+                xlabel={$x$},
+                ylabel={$y$}
+                ]
+                \addplot[thick,domain=0:6.28]
+                ({x - sin(deg(x))},{1 - cos(deg(x))});
+            \end{axis}
+        \end{tikzpicture}
+
+        \item 星形线
+    \end{enumerate}
+
+    \subsubsection{直角坐标系的观点画极坐标的图}
+
+    \begin{enumerate}
+        \item 直角坐标系的观点下，视$\theta$为$x$，$\gamma$为$y$，即可画出图像
+        \item 用{\color{red}{描点法（看变化趋势）}}可画出其在极坐标下的图像
+    \end{enumerate}
+
+    \subsection{曲率及曲率半径}
+
+    设函数 $y(x)$ 二阶可导，则曲线 $y=y(x)$ 在点 $(x,\,y(x))$ 处的{\blueuline{曲率（表示曲线弯曲程度）}}公式为
+    \[
+        k=\frac{|y''|}{\left[1+\bigl(y'\bigr)^2\right]^{\tfrac{3}{2}}}.
+    \]
+
+    曲率半径的计算公式为
+    \[
+        R=\frac{1}{k}
+        =\frac{\left[1+\bigl(y'\bigr)^2\right]^{\tfrac{3}{2}}}{|y''|}. \; y'' \neq 0
+    \]
+
+        {\color{blue}{弯曲程度越大，曲率越大，曲率圆的半径越小}}
 
     \subsection{结论}
 
     \begin{enumerate}
+        \item 如$\alpha$是$f(x) = 0$的$m(\geq 1)$重根，则$\alpha$是$f'(x)$的$m-1$重根
+        \item 如果 $f(x)$ 在区间$I$上有最值点 $x_0$，并且此最值点 $x_0$ 不是区间 $I$ 的端点而是$I$内部的点，那么此 $x_0$必是$f(x)$的一个极值点
     \end{enumerate}
 
     \subsection{定理}
@@ -286,7 +625,6 @@
     \subsection{方法总结}
 
     \begin{enumerate}
-
     \end{enumerate}
 
     \subsection{条件转换思路}

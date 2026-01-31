@@ -19,6 +19,10 @@
 
 - n. 同情；（情感上）支持，赞同
 - == compassion [kəmˈpæʃn] n. 怜悯，同情
+- Feeling **sympathy** means you feel sorry for someone's situation.
+- Our heartfelt **sympathy** goes out to the victims of the war.
+- I'm sure she will be in **sympathy** with your proposal.
+    - in sympathy with sb/sth 同情；支持；赞同；与...立场一致
 - **Sympathy** is a feeling of *pity([ˈpɪti] n. 同情)* or sense of **compassion**—it's when you feel bad for someone
   else who's going through something hard.
 - Your humor must be relevant to the audience and should help to show them that you are one of them or that you

@@ -201,15 +201,12 @@
     - v. 从...衍生出；起源于
     - *Elegance(n. 优雅)*, he believed, did not **derive from** abundance.
 - stem [stem]
-    - vi. 起源于
-    - The researchers' argument **stems from** a simple observation about social influence.
-    - PE
-        - n. 干；茎
-        - v. 起源于；阻止；遏制
-        - Confidence and fear stem from our beliefs and attitudes.
-        - stem form == originate from == derive from == come from
-        - The researcher's argument stems from a simple observation about social influence...
-        - The government had failed to stem the tide of factory closures.
+    - vi. 起源于；阻止；遏制
+    - n. 干；茎
+    - STEM == Science Technology Engineering Mathematics
+    - The researchers' argument **stems** from a simple observation about social influence.
+    - Confidence and fear **stem** from our beliefs and attitudes.
+    - The government had failed to **stem** the tide of factory closures.
 
 ## perceive
 

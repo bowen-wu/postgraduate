@@ -57,13 +57,17 @@
 - [ˈdwelɪŋ]
 - n. 住宅；住所
 - dwell [dwel]
-    - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
-    - Don't <ins>**dwell** on</ins> the past.
-    - PE
-        - v. 细想某事
-        - It was specifically to provided city dwellers with spaces for leisure where They could experience " a
-          refreshing air."
-- dweller n. 居住者
+    - v. 沉湎于，唠叨（尤指令人不快的事），细想某事；居住，栖身
+    - To **dwell** in a home is to live in it.
+    - Don't **dwell** on the past.
+        - dwell on 反复想着；过分关注；揪着不放
+    - To **dwell** on something—usually something bad, like a failed romance or terrible service in a restaurant—is to
+      think or speak about it at great length.
+    - So you made a mistake, but there's no need to **dwell** on it
+- dweller
+    - n. 居住者
+    - It was specifically to provided city **dwellers** with spaces for leisure where they could experience "a
+      refreshing air".
 - resident
     - n. 居民；住户
     - == dweller

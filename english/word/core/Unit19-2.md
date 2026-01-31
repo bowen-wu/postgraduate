@@ -93,11 +93,14 @@
 - Chinese tea culture is both extensive and **profound**.
 - profoundly adv. 深刻地
 - sweeping [ˈswipɪŋ]
-    - adj. 一概而论的；范围广的；影响大的
+    - adj. 一概而论的；范围广的；影响大的；彻底的
     - Something that's **sweeping** is **wide-ranging or through**.
     - A political candidate might campaign on promises to bring **sweeping** change to a country.
+    - California has asked the justices to refrain from a **sweeping** ruling...
     - sweep
-        - v. 打扫，清除；扫视；席卷
+        - v. 扫视；席卷，迅速蔓延；打扫，清除
+        - He was **sweeping** his floor when she walked in.
+        - This fashion is **sweeping** the country.
         - Memories came **sweeping** back.
         - Football *mania([ˈmeɪniə] n. 狂热)* is **sweeping** the country.
 

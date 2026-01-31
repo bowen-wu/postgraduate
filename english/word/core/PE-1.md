@@ -146,42 +146,6 @@
   on "worthless" species.
     - prey on 捕食；掠夺
 
-## gift
-
-- n. 礼物
-- n. 天赋
-- Yesterday is history, tomorrow is a mystery, but today is a **gift**, that is why it's called present.
-- He has a **gift** for languages.
-- "So few authors have brains enough or literary **gift** enough to keep their own end up in journalism", Newman
-  wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
-  not red to writers who are".
-    - be tempted to do sth. 很想做某事/经不住诱惑想做某事
-    - keep one's end up 撑得住；保持水准；不掉队
-    - a term of contempt 贬损性的称呼/带蔑视意味的术语
-
-## ground
-
-- n. 根据，理由；地面；范围
-- If you are too formal, people won't be at ease around you. Act too *casual([ˈkæʒuəl] adj. 随意的)* and people may not
-  take you seriously. Aim for the middle **ground**!
-    - be at ease (around sb.) 感到放松、自在、不拘束
-    - take sb. seriously 认真对待某人/认为某人值得重视
-    - aim for 以...为目标/力求达到
-    - the middle ground 中间立场/折中方案/平衡点
-- But there are few places where clients have more **grounds** for complaint than America
-- groundless
-    - adj. 无理由的，无根据的
-    - Worries about automation are in fact **groundless**.
-
-## fan
-
-- v. 给...扇风；煽动，激起
-- n. 风扇；粉丝
-- She would have to wait in the truck, **fanning** herself with a piece of cardboard.
-- His writings **fanned** the flames of *hatred([ˈheɪtrɪd] n. 仇恨，憎恶; 敌意)*.
-    - fan the flames of... 煽动/火上浇油/使（情绪、冲突）升级
-- Favoritism in official access can **fan** public perceptions of corruption.
-
 ## Words
 
 - cascade [kæˈskeɪd]

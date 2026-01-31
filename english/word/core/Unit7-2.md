@@ -26,8 +26,9 @@
 - == declare == assert == announce
 - We cannot overstate our debt to the past, but the moment has the supreme **claim**.
     - We cannot overstate X 我们再怎么强调 X 都不为过
-- **acclaim**
-    - vt./n. 称赞 🙂
+- acclaim 🙂
+    - vt. 称赞
+    - n. 称赞
     - axx- 表示强调
         - a**c** + **c**laim => a**cc**laim
         - a**f** + **f**irm => a**ff**irm
