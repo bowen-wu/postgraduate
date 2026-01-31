@@ -105,7 +105,7 @@
 - [stres]
 - vt. 强调
 - n. 压力
-    - == pressure
+- == pressure
 - Such bodily reaction might help moderate([ˈmɑːdəreɪt] vt. 使和缓) the effects(n. 影响) of psychological **stress**.
 - The crash **stresses** the urgency to strengthen security worldwide. 这次坠机事件强调了在全球范围内加强安全措施的紧迫性
 - stressful adj. 有压力的

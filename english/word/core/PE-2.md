@@ -17,6 +17,41 @@
 - C: Cause
 - R: Result
 
+## gift
+
+- n. 礼物；天赋
+- Yesterday is history, tomorrow is a mystery, but today is a **gift**, that is why it's called present.
+- He has a **gift** for languages.
+- "So few authors have brains enough or literary **gift** enough to keep their own end up in journalism", Newman
+  wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
+  not red to writers who are".
+    - be tempted to do sth. 很想做某事/经不住诱惑想做某事
+    - keep one's end up 撑得住；保持水准；不掉队
+    - a term of contempt 贬损性的称呼/带蔑视意味的术语
+
+## ground
+
+- n. 根据，理由；地面；范围
+- If you are too formal, people won't be at ease around you. Act too *casual([ˈkæʒuəl] adj. 随意的)* and people may not
+  take you seriously. Aim for the middle **ground**!
+    - be at ease (around sb.) 感到放松、自在、不拘束
+    - take sb. seriously 认真对待某人/认为某人值得重视
+    - aim for 以...为目标/力求达到
+    - the middle ground 中间立场/折中方案/平衡点
+- But there are few places where clients have more **grounds** for complaint than America
+- groundless
+    - adj. 无理由的，无根据的
+    - Worries about automation are in fact **groundless**.
+
+## fan
+
+- v. 给...扇风；煽动，激起
+- n. 风扇；粉丝
+- She would have to wait in the truck, **fanning** herself with a piece of cardboard.
+- His writings **fanned** the flames of *hatred([ˈheɪtrɪd] n. 仇恨，憎恶; 敌意)*.
+    - fan the flames of... 煽动/火上浇油/使（情绪、冲突）升级
+- Favoritism in official access can **fan** public perceptions of corruption.
+
 ## handsome
 
 - adj. 可观的，相当大的；英俊的
@@ -139,168 +174,6 @@
     - adj. 公正的
     - Yet, in several instances, justices acted in ways that weakened the court's reputation for being independent and
       **impartial**.
-
-## rear
-
-- v. 抚养，喂养
-- n. 后面
-- adj. 后方的
-- The **rear** is the back end of something, like the **rear** of a school bus.
-- The verb comes from a Germanic root meaning "to **raise**", while the noun is rooted in the Latin *retro* "behind".
-- ...child **rearing** is anything less than a completely fulfilling, life-enriching experience.
-    - child rearing 育儿
-
-## run
-
-- vi. 奔跑，运转
-- v. 经营，管理
-- n. 时期；奔跑，运转
-- The system is now **running** well.
-- You can **run** a campaign or a business—you make them function.
-- in the long run/term 长期来看
-- McGee says leaving without a position lined up gave him time to reflect on what kind of company he wanted to
-  **run**.
-- The longest bull **run** in a century of art-market history ended on a dramatic note with a scale of 56 works by
-  Damien...
-
-## level
-
-- v. 使...平整；破坏
-- n. 水平
-- adj. 水平的，平坦的
-- The verb level also mean to **flatten** or **destroy**.
-- We found that women as well as men have lower **levels** of stress at work than at home.
-- The tornado is about to **level** their house.
-- Retail trade groups praised the ruling, saying it **levels** the playing filed for local and online businesses.
-
-## rest
-
-- vi. 休息
-- v. 依赖，基于；在于，归属于
-- n. 休息；其余部分
-- For the **rest** of the decade she apparently managed both roles without attracting much criticism.
-- That argument **rests** on a false assumption.
-    - rest on 基于；取决于；依赖于
-        - == depend on == count on
-- Copyright **rested** with the journal publisher.
-    - rest with 归...所有；（责任/决定）由...承担/归...负责
-- But the idea...**rests** on an understanding of the established conventions and special responsibilities of the news
-  media.
-
-## return
-
-- v. 返回，归还
-- n. 利益，利润；返回，归还
-- The **return** on the money we invested was very low.
-- concrete **returns** for gift-givers
-    - concrete [ˈkɑːŋkriːt]
-        - adj. 具体的；确实的；实在的
-        - n. 混凝土
-- The value of knowledge and the **return** on the public investment in research depends, in part, upon
-  <ins>wide distribution(广泛的分布)</ins> and ready access.
-
-## rocket
-
-- v. 迅速增加；飞涨
-- n. 火箭
-- Unemployment levels have **rocketed** to new heights.
-- The reason, of course, is that costs have **rocketed** and ticket prices have stayed low.
-
-## plant
-
-- n. 工厂；植物
-- vt. 种植
-- The conflict has been surfacing since 2002, when the corporation bought Vermont's only nuclear power **plant**, an
-  aging reactor in Vernon.
-
-## row
-
-- n. 行，排；划船；争吵
-- Memorize vocabulary for 21 days <ins>in a row(连续不断的)</ins> in order to make It a true habit.
-- On May 31st Microsoft set off the row.
-
-## shape
-
-- n. 形状，样子
-- v. 塑造，影响
-    - And ultimately, It is likely to reshape our politics, our culture, and the character of our society for years.
-
-## sentence
-
-- n. 句子
-- n./v. 宣判，判决
-    - be under sentence of death 处以死刑
-    - For example, he theorised that a judge (fearful of appaering too soft on crime)might be more likely to send
-      someone
-      to prison/if he had already sentemced five or six other defendants only to forced community service on that day.
-      例如，他从理论上推测，如果一位担心对犯罪行为表现得太过仁慈的法官在一天当中已经对五六名被告只判处了强制性社区服务，那么他更有可能会将接下来的被告送进监狱。
-
-## shield
-
-- n. 盾牌
-- v. 保护，庇护
-    - Shielded by third-party payers from the cost of our care, we demand everything that can possibly be done for
-      us, even If it's useless.
-
-## sit
-
-- v. 坐
-- v. 任职，在职
-    - She sat on a number of committees.
-- sitting adj. 在职的，任职的
-    - Says Korn senior partner Dennis Carey："I can't think of a single search I've done where a board has not instructed
-      me to look at sitting CEOs first."
-
-## sound
-
-- n. 声音
-- v. 听起来
-- adj. 合理的，可靠的
-- adj. 良好的
-- They finally return to the homeland safe and sound.
-- The court's ruiling is legally sound in defining a kind of favoritism that is not criminal.
-
-## surface
-
-- v. 浮出水面，显现
-- n. 表面
-- The conflict has been surfacing since 2002，When the corporation bought Vermont's only nuclear power plant,an aging
-  reactor in Cernon.
-
-## sweep
-
-- v. 打扫，清理；席卷，迅速蔓延
-- This fashion is sweeping the country.
-- sweeping
-    - adj. 范围广泛的
-    - California hasasked the justices to refrain from a sweeping ruling...
-
-## temper
-
-- v. 缓和
-- n. 脾气，性情
-- == restrain
-- good-tempered 脾气好的
-- lose one's temper 发脾气
-- If you have a nasty temper，you might try tempering your temper by counting to ten.
-- From car delarships to Gap outlets，sales have been lagging for months as shoppers temper their spending.
-
-## traffic
-
-- n./v. 非法买卖
-- n. 交通；通信量，流量
-- traffic jam 交通堵塞
-- celebrity with large traffic amount
-- == celebrity with huge followings（devoted fan bases）
-- to traffic in stolen cultural relics
-- We define such media as owned media whose traffic is so strong that other organizations place their content or
-  e-commerce engines within that environment.
-
-## underline
-
-- n. 下划线
-- v. 划下划线；强调，突出
-- President Trump has underlined fossil fuels - especially coal - as the path to economic growth.
 
 ## Words
 

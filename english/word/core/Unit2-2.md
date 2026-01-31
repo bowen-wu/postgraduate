@@ -19,17 +19,17 @@
 
 ## rule
 
-- PE v. 判决；统治
-    - v. 作出裁决
-    - The deal may be ruled illegal.
-    - ruling= verdict n. 裁决
-        - The court's ruling is a step forward in the struggle against both corruption and official favoritism.
+- v. 判决；统治；作出裁决
 - n. 规则；统治；惯例
+- The deal may be **ruled** illegal.
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
 - Rain falls from above, and people who reign <ins>**rule** from<ins> a position above others.
-- rule out 排除；不予考虑
-    - ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
+- ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
+    - rule out 排除；不予考虑
+- ruling n. 裁决
+    - == verdict n. （陪审团的）裁定
+    - The court's **ruling** is a step forward in the struggle against both corruption and official favoritism.
 - overrule
     - vt. 否决；统治
     - == rule against
@@ -214,14 +214,15 @@
 - In scotland, for example, wind turbines provide enough electricity to **power** 95 percent of homes.
 - powerful adj. 强有力的；有影响力的
 - strength [streŋθ]
-    - n. 力量；实力；优势
-    - PE
-        - n. 优点，长处
+    - n. 力量；实力；优势，优点，长处
+    - 词组
+        - the relative strength 优势
+        - Strength in Numbers 众志成城
         - strength and weakness 优缺点
-        - At first this might seem like a strength that grants the ability to make judgements which are unbiased by
-          external factors.
-    - the relative strength 优势
-    - Strength in Numbers 众志成城
+    - She didn't have the **strength** to walk any further.
+    - His **strength** was his obsessive single-mindedness.
+    - At first glance this might seem like a **strength** that grants the ability to make judgements which are unbiased
+      by external factors.
     - strengthen [ˈstreŋθn]
         - v. 加强
         - The crash stresses the urgency to **strengthen** security worldwide.

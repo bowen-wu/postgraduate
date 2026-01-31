@@ -204,10 +204,8 @@
 - I **suggest** him that he (should) **ask** some specific questions about her past.
     - suggest/demand/require sb. (should) do 虚拟
 - I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的
-- PE
-    - v. 表面，暗示
-    - Are you suggesting that I'm rejected?
-    - A new study suggests that contrary to most surveys,people are actually more stressed at home than at work.
+- Are you **suggesting** that I'm rejected?
+- A new study **suggests** that contrary to most surveys, people are actually more stressed at home than at work.
 - suggestion n. 建议
 - indicate
     - vt. 表明；暗示；指出

@@ -107,15 +107,13 @@
 
 ## upset
 
-- vt. 使烦恼
+- vt. 使烦恼；打乱，扰乱
 - adj. 失望的
-- PE
-    - v. 打乱，扰乱
-    - But on the more important matter of the Constitution，the decision was an 8-0 defeat for the Administration's
-      effort to upset the balance of power between the federal government and the states.
+- This decision is likely to **upset** a lot of people.
+- He arrived an hour late and **upset** all our arrangements.
 - Fishing will **upset** the ecological balance. 😔
-- The decision was an 8-0 defeat for the Administration's effort to
-  <ins>**upset** the balance of power(打破权利平衡)</ins> between the federal government and the states.
+- But on the more important matter of the Constitution, the decision was an 8-0 defeat for the Administration's effort
+  to <ins>**upset** the balance of power(打破权利平衡)</ins> between the federal government and the states.
 - anxiety [æŋˈzaɪəti]
     - n. 焦虑
     - anxious [ˈæŋkʃəs] adj. 忧虑的；渴望的
