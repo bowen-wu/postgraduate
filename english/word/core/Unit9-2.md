@@ -129,7 +129,7 @@
 - necessarily adv. 必然地
 - necessity [nəˈsesəti] n. 必要
 - entail
-    - vt. 需要；牵涉
+    - vt. 需要；牵涉；意味着
     - v. 使必要，需要
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要

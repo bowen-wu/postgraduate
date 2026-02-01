@@ -6,16 +6,18 @@
 import { POS_MARKERS, IPA_SYMBOLS } from './validators.js';
 
 /**
- * Parse word content to extract word, IPA, POS, and Chinese definition
+ * Parse word content to extract word, IPA, POS, Chinese definition, and synonyms
  * Supports formats:
  * - word ipa pos. cn
  * - word （notes）cn
+ * - word pos. cn == synonym (extract synonym)
  */
 export function parseWordContent(content) {
   let word = content;
   let ipa = '';
   let pos = '';
   let cn = '';
+  let synonyms = [];  // New: support extracting synonyms from == pattern
 
   // Extract IPA first (remove it from content)
   // Check for [ipa] format - must contain IPA symbols (规则8)
@@ -92,7 +94,23 @@ export function parseWordContent(content) {
     }
   }
 
-  return { word, ipa, pos, cn };
+  // Extract synonyms from cn (支持 "cn == synonym" 或 "cn == synonym1 == synonym2" 格式)
+  if (cn && cn.includes('==')) {
+    const parts = cn.split(/\s*==\s*/);
+    if (parts.length > 1) {
+      cn = parts[0].trim();  // First part is the Chinese definition
+      // Remaining parts are synonyms (if they look like English words)
+      for (let i = 1; i < parts.length; i++) {
+        const syn = parts[i].trim();
+        // Only treat as synonym if it's mainly English (not Chinese)
+        if (syn && /^[a-zA-Z][a-zA-Z'\-]*$/.test(syn)) {
+          synonyms.push({ word: syn });
+        }
+      }
+    }
+  }
+
+  return { word, ipa, pos, cn, synonyms };
 }
 
 /**

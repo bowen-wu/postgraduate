@@ -915,7 +915,7 @@ export class MarkdownParser {
    * Create a word card
    */
   createWordCard(content, indentLevel) {
-    const {word, ipa, pos, cn} = this.parseWordContent(content);
+    const {word, ipa, pos, cn, synonyms} = this.parseWordContent(content);
     const card = {
       id: `card_${this.cardCounter++}`,
       word: word,
@@ -931,6 +931,11 @@ export class MarkdownParser {
       // Only add placeholder if there's no IPA either
       // If there's IPA, the real definition will come from children (POS lines)
       card.items.push({type: 'def', en: word, cn: ''});
+    }
+
+    // Add synonyms extracted from == pattern (e.g., "unpretentious(adj. 谦逊的 == modest)")
+    if (synonyms && synonyms.length > 0) {
+      card.synonyms = synonyms;
     }
 
     // 🔧 FIX: Don't set parent for nested words within sentences

@@ -92,10 +92,10 @@
         \begin{itemize}
             \item $(\sin x)' = \cos x$
             \item $(\cos x)' = -\sin x$
-            \item $(\tan x)' = \sec^2 x$
-            \item $(\cot x)' = -\csc^2 x$
-            \item $(\sec x)' = \sec x \tan x$
-            \item $(\csc x)' = -\csc x \cot x$
+            \item $(\tan x)' = \sec^2 x = \frac{1}{\cos^2 x}$
+            \item $(\cot x)' = -\csc^2 x = -\frac{1}{\sin^2 x}$
+            \item $(\sec x)' = \sec x \tan x = \frac{\sin x}{\cos^2 x}$
+            \item $(\csc x)' = -\csc x \cot x = -\frac{\cos x}{\sin^2 x}$
             \item $(\arcsin x)' = \displaystyle\frac{1}{\sqrt{1-x^2}}$
             \item $(\arccos x)' = -\displaystyle\frac{1}{\sqrt{1-x^2}}$
             \item $(\arctan x)' = \displaystyle\frac{1}{1+x^2}$
@@ -312,13 +312,14 @@
                 \frac{f^{(n)}(0)}{n!}x^n.
             \]
 
-            \item 具体展开：当题目给出具体的无穷阶可导函数 $y=f(x)$ 时，
-            可利用已知基本函数的展开式，将其展开为幂级数。
+            \item 具体展开：当题目给出具体的无穷阶可导函数 $y=f(x)$ 时，可利用已知基本函数的展开式，将其展开为幂级数（{\color{red}{此处使用$m$}}）。
 
-            \item 函数泰勒展开式的唯一性：无论 $f(x)$ 通过何种方法展开，
-            其泰勒展开式具有唯一性。
-            因此可通过比较\ding{202}、\ding{203}中幂级数的系数，
-            求出 $f^{(n)}(x_0)$ 或 $f^{(n)}(0)$。
+            \item 函数泰勒展开式的唯一性：无论 $f(x)$ 通过何种方法展开，其泰勒展开式具有唯一性。因此可通过比较\ding{202}、\ding{203}中幂级数的系数，求出 $f^{(n)}(x_0)$ 或 $f^{(n)}(0)$
+            \begin{enumerate}
+                \item $x$的幂数相等，得到$m$和$n$的关系式
+                \item $x^n$的系数相等，得到 $f^{(n)}(x_0)$ 或 $f^{(n)}(0)$
+                \item 消去$m$
+            \end{enumerate}
         \end{circlenum}
         \[
             \begin{aligned}
@@ -360,7 +361,8 @@
     \subsection{公式}
 
     \begin{enumerate}
-        \item $[\ln(x + \sqrt {x^2 + a^2})]' = \displaystyle\frac{1}{\sqrt {x^2 + a^2}}$
+        \item $\bigl[\ln\bigl(x+\sqrt{x^2+a^2}\bigr)\bigr]' = \displaystyle\frac{1}{\sqrt{x^2+a^2}}$
+        \item $\bigl[\ln\bigl(x+\sqrt{x^2-a^2}\bigr)\bigr]' = \displaystyle\frac{1}{\sqrt{x^2-a^2}}, \qquad x^2-a^2>0$
         \item $(x\ln x)' = \ln x + 1$
         \item $(\displaystyle\frac{1}{x} \ln x)' = -\displaystyle\frac{1}{x^2} \ln x + \frac{1}{x^2}$
         \item 常用的高阶导数

@@ -58,6 +58,11 @@
         padding: 0.35rem 0.5rem;
     }
 
+    /* Hide shortcuts button on mobile */
+    .header-controls button.btn-shortcuts {
+        display: none;
+    }
+
     .header-controls button.btn-ghost svg {
         width: 16px;
         height: 16px;
