@@ -339,6 +339,12 @@ body.mode-recall .item-list.revealed {
 .audio-play-btn.loading .btn-spinner {
     display: block;
 }
+/* 🔧 FIX: Match spinner size to synonym/antonym button SVG (14px) */
+.synonym-play-btn .btn-spinner,
+.antonym-play-btn .btn-spinner {
+    width: 14px;
+    height: 14px;
+}
 
 /* Synonyms in recall mode */
 body.mode-recall .synonyms-section {
@@ -424,6 +430,9 @@ body.mode-recall .cn-text:hover { filter: blur(6px); opacity: 0; }
 body.mode-recall .cn-text.revealed { filter: none; opacity: 1; transform: translateX(0); border-left-color: var(--primary); cursor: default; }
 body.mode-recall .en-text { filter: blur(8px); opacity: 0; }
 body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
+/* Generic blur-target for any element (e.g., pronunciation in header) */
+body.mode-recall .blur-target { filter: blur(8px); opacity: 0; user-select: none; }
+body.mode-recall .blur-target.revealed { filter: none; opacity: 1; }
 
 .card-footer {
     padding: 1.25rem 2rem;
@@ -437,13 +446,13 @@ body.mode-recall .en-text.revealed { filter: none; opacity: 1; }
 .action-area { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end; }
 
 /* --- Toast --- */
-.toast {
+#toast {
     position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px);
     background: #1e293b; color: white; padding: 0.75rem 1.5rem; border-radius: 50px;
     font-size: 0.9rem; font-weight: 500; opacity: 0; transition: 0.3s; pointer-events: none;
     z-index: 100; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-.toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+#toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
 /* --- Loader --- */
 .loader {

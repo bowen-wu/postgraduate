@@ -149,3 +149,91 @@ export function updateStatsUI(ui) {
   const active = ui.statsList.querySelector('.active');
   if (active) active.scrollIntoView({block: 'center'});
 }
+
+/**
+ * Start a new study session
+ */
+export function startSession() {
+  STATE.sessionStartTime = Date.now();
+  STATE.sessionEndTime = null;
+  STATE.sessionCardsStudied = new Set();
+}
+
+/**
+ * Record that a card was studied in this session
+ */
+export function recordCardStudied(cardId) {
+  if (STATE.sessionCardsStudied) {
+    STATE.sessionCardsStudied.add(cardId);
+  }
+}
+
+/**
+ * End the current study session
+ */
+export function endSession() {
+  STATE.sessionEndTime = Date.now();
+}
+
+/**
+ * Calculate session duration in milliseconds
+ */
+export function getSessionDuration() {
+  if (!STATE.sessionStartTime) return 0;
+  const endTime = STATE.sessionEndTime || Date.now();
+  return endTime - STATE.sessionStartTime;
+}
+
+/**
+ * Format duration as human-readable string
+ */
+export function formatDuration(ms) {
+  if (ms < 1000) return '< 1 分钟';
+  const seconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+
+  if (hours > 0) {
+    return `${hours} 小时 ${minutes % 60} 分钟`;
+  } else if (minutes > 0) {
+    return `${minutes} 分钟`;
+  } else {
+    return `${seconds} 秒`;
+  }
+}
+
+/**
+ * Get session statistics for completion screen
+ */
+export function getSessionStats() {
+  const totalCards = STATE.cards.length;
+  const totalErrors = Object.values(STATE.stats).reduce((sum, stat) => sum + (stat.errors || 0), 0);
+  const accuracy = totalCards > 0 ? Math.round(((totalCards - Math.min(totalErrors, totalCards)) / totalCards) * 100) : 100;
+
+  // Count cards with errors (need review)
+  const cardsNeedingReview = Object.values(STATE.stats).filter(s => s.errors > 0).length;
+
+  // Count cards without errors (mastered)
+  const cardsMastered = totalCards - cardsNeedingReview;
+
+  // Cards studied in this session
+  const cardsStudied = STATE.sessionCardsStudied ? STATE.sessionCardsStudied.size : totalCards;
+
+  // Duration
+  const duration = getSessionDuration();
+  const avgTimePerCard = cardsStudied > 0 ? duration / cardsStudied : 0;
+
+  return {
+    totalCards,
+    totalErrors,
+    accuracy,
+    cardsNeedingReview,
+    cardsMastered,
+    cardsStudied,
+    duration,
+    avgTimePerCard,
+    startTime: STATE.sessionStartTime,
+    endTime: STATE.sessionEndTime
+  };
+}
+

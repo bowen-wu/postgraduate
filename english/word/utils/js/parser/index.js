@@ -518,14 +518,30 @@ export class MarkdownParser {
         continue;
       } else if (cardType === 'phrase') {
         const card = this.createPhraseCard(content, childIndentLevel);
+        // 🔧 FIX: Process children of this phrase card (e.g., synonyms)
+        const { children: phraseChildren, lastLineIndex: phraseLastLine } = this.processChildren(childIndentLevel, i, [], card);
+        if (phraseChildren.length > 0) {
+          card.children = phraseChildren;
+        }
         promotedChildren.push(card);
-        lastProcessedLineIndex = i;  // Track this line as processed
+        // Update lastProcessedLineIndex to skip processed children
+        if (phraseLastLine > lastProcessedLineIndex) {
+          lastProcessedLineIndex = phraseLastLine;
+        }
         i++;
         continue;
       } else if (cardType === 'prefix') {
         const card = this.createPrefixCard(content, childIndentLevel, i);
+        // 🔧 FIX: Process children of this prefix card
+        const { children: prefixChildren, lastLineIndex: prefixLastLine } = this.processChildren(childIndentLevel, i, [], card);
+        if (prefixChildren.length > 0) {
+          card.children = prefixChildren;
+        }
         promotedChildren.push(card);
-        lastProcessedLineIndex = i;  // Track this line as processed
+        // Update lastProcessedLineIndex to skip processed children
+        if (prefixLastLine > lastProcessedLineIndex) {
+          lastProcessedLineIndex = prefixLastLine;
+        }
         i++;
         continue;
       } else {
@@ -649,10 +665,10 @@ export class MarkdownParser {
 
       // Handle special markers first
       if (this.isSynonymMarker(content)) {
-        // Check if the current parent is a word card (like dampen within a sentence)
-        // If so, add the synonym to that word card, not to the sentence
-        if (actualParentCard && actualParentCard.type === 'word') {
-          // This synonym belongs to the nested word card
+        // Check if the current parent is a word or phrase card
+        // If so, add the synonym to that card, not to the sentence
+        if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase')) {
+          // This synonym belongs to the nested word/phrase card
           const synonymContent = content.replace(/^===?\s+/, '').trim();
           actualParentCard.synonyms = actualParentCard.synonyms || [];
 

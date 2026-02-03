@@ -25,5 +25,9 @@ export const STATE = {
   stats: {},
   currentPath: null,  // e.g., "core/Unit10-1.md"
   currentFile: null,  // Current file info from GitHub API
-  autoPlay: false     // Auto-play pronunciation for words
+  autoPlay: false,    // Auto-play pronunciation for words
+  // Session tracking
+  sessionStartTime: null,    // When the current study session started
+  sessionEndTime: null,      // When the current study session ended
+  sessionCardsStudied: null   // Set of card IDs actually studied in this session
 };

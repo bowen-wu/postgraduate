@@ -51,12 +51,11 @@ export function handleRecall(claimedKnown) {
 export function confirmRecall(actuallyCorrect) {
   if (actuallyCorrect) {
     UiRenderer.showToast(window.app.ui, '正确！');
-    nextCard();
   } else {
     recordError();
     UiRenderer.showToast(window.app.ui, '已记录错误');
-    UiRenderer.renderNextAction(window.app.ui);
   }
+  nextCard();
 }
 
 /**
@@ -95,6 +94,11 @@ export function handleSentenceRecall(understood) {
  * Go to next card
  */
 export function nextCard() {
+  // Record current card as studied
+  if (STATE.cards[STATE.currentIndex]) {
+    StateManager.recordCardStudied(STATE.cards[STATE.currentIndex].id);
+  }
+
   if (STATE.currentIndex < STATE.cards.length - 1) {
     STATE.currentIndex++;
     StateManager.saveState();
@@ -381,6 +385,8 @@ export async function loadFile(path, ui = null) {
 
     STATE.currentPath = relativePath;
     StateManager.loadStatsForFile(relativePath);
+    // 🔧 FIX: Start a new study session when loading a file
+    StateManager.startSession();
     StateManager.saveState();
     ui.loader.classList.add('hidden');
     ui.card.classList.remove('hidden');
@@ -446,6 +452,8 @@ export function showCompletionScreen(ui) {
  */
 export function restart() {
   STATE.currentIndex = 0;
+  // 🔧 FIX: Start a new session when restarting
+  StateManager.startSession();
   StateManager.saveState();
   window.app.render();
 }

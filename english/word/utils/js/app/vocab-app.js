@@ -83,6 +83,8 @@ export class VocabApp {
       if (STATE.currentPath) {
         UiRenderer.updateCurrentFileDisplay(this.ui, STATE.currentPath);
       }
+      // 🔧 FIX: Start a new session when restoring from saved state
+      StateManager.startSession();
       this.render();
     }
     StateManager.updateStatsUI(this.ui);
@@ -237,8 +239,9 @@ export class VocabApp {
       this.ui.card.innerHTML = window._originalCardContent;
     }
 
-    // Reset index
+    // Reset index and start new session
     STATE.currentIndex = 0;
+    StateManager.startSession();
 
     // Re-initialize UI elements that were replaced
     this.ui.word = document.getElementById('displayWord');

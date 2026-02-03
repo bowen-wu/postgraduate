@@ -4,6 +4,7 @@
  */
 
 import { STATE } from '../config.js';
+import * as StateManager from './state-manager.js';
 
 /**
  * Main render function - renders the current card
@@ -70,9 +71,14 @@ function renderWord(ui, card) {
     <span class="btn-spinner"></span>
   </button>`;
 
-  ui.word.innerHTML = `<span>${card.word}</span> ${playButton}`;
+  // Add IPA after the play button with blur-target class for recall mode
+  const ipaHtml = (card.ipa && card.ipa.trim())
+    ? `<span class="pronunciation-inline ${STATE.mode === 'recall' ? 'blur-target' : ''}" style="margin: 0;padding: 0;">${card.ipa}</span>`
+    : '';
 
-  // Hide IPA in header (will be shown in items list with POS)
+  ui.word.innerHTML = `<span>${card.word}</span> ${playButton} ${ipaHtml}`;
+
+  // Hide IPA in header (it's now shown inline with the word)
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';
 }
@@ -110,9 +116,24 @@ function renderItems(ui, card) {
 
   // Normal rendering for word cards
   const items = card.items;
+
   items.forEach((item, idx) => {
     const li = document.createElement('li');
     li.className = 'item';
+
+    // Skip if no en field (only Chinese definition)
+    if (!item.en) {
+      if (item.cn && item.cn.trim && item.cn.trim() !== '') {
+        let cnDisplay = item.cn;
+        if (idx === 0 && card.emoji) {
+          cnDisplay = card.emoji + ' ' + cnDisplay;
+        }
+        li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
+        ui.list.appendChild(li);
+      }
+      return;
+    }
+
     const cleanEn = item.en
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*/g, '');
@@ -130,12 +151,6 @@ function renderItems(ui, card) {
       cnHtml = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
     }
 
-    // Add IPA before POS for first item
-    let ipaHtml = '';
-    if (idx === 0 && card.ipa && card.ipa.trim() && hasPOS) {
-      ipaHtml = `<span class="pronunciation-inline">${card.ipa}</span> `;
-    }
-
     if (hasPOS || !hasCn) {
       const isPhraseItself = card.type === 'phrase' && item.en === card.word;
 
@@ -148,7 +163,7 @@ function renderItems(ui, card) {
       } else {
         li.innerHTML = `
           <span class="item-tag tag-def ${STATE.mode === 'recall' ? 'blur-target' : ''}"></span>
-          <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${ipaHtml}${cleanEn}</div>
+          <div class="en-text ${STATE.mode === 'recall' ? 'blur-target' : ''}">${cleanEn}</div>
           ${cnHtml}
         `;
       }
@@ -213,6 +228,9 @@ function renderPhraseItems(ui, card) {
     }
     ui.list.appendChild(li);
   });
+
+  // 🔧 FIX: Render synonyms and antonyms for phrase cards
+  renderSynonymsAndAntonyms(ui, card);
 }
 
 /**
@@ -580,7 +598,7 @@ export function reveal(el) {
  * Reveal all Chinese texts
  */
 export function revealAll() {
-  document.querySelectorAll('.cn-text, .en-text').forEach(el => el.classList.add('revealed'));
+  document.querySelectorAll('.cn-text, .en-text, .blur-target').forEach(el => el.classList.add('revealed'));
   const synonymsSection = document.querySelector('.synonyms-section');
   if (synonymsSection) {
     synonymsSection.classList.add('revealed');
@@ -673,6 +691,10 @@ export function updateBodyModeClass() {
  */
 export function showToast(ui, msg) {
   const t = document.getElementById('toast');
+  if (!t) {
+    console.warn('Toast element not found, skipping toast notification');
+    return;
+  }
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2000);
@@ -732,43 +754,148 @@ export function triggerConfetti() {
  * Show completion screen when all cards are finished
  */
 export function showCompletionScreen(ui) {
-  // Calculate statistics
-  const totalCards = STATE.cards.length;
-  const totalErrors = Object.values(STATE.stats).reduce((sum, stat) => sum + stat.errors, 0);
-  const accuracy = totalCards > 0 ? Math.round(((totalCards - totalErrors) / totalCards) * 100) : 100;
+  // End session and get statistics
+  StateManager.endSession();
+  const stats = StateManager.getSessionStats();
+
+  // Format time
+  const formatTime = (timestamp) => {
+    if (!timestamp) return '--';
+    const date = new Date(timestamp);
+    return date.toLocaleString('zh-CN', {
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  };
 
   // Store original card content to restore later
   window._originalCardContent = ui.card.innerHTML;
 
-  // Show completion screen
+  // Add mobile responsive CSS if not exists
+  if (!document.getElementById('completion-mobile-style')) {
+    const style = document.createElement('style');
+    style.id = 'completion-mobile-style';
+    style.textContent = `
+      @media (max-width: 480px) {
+        .completion-container {
+          padding: 1rem !important;
+        }
+        .completion-emoji {
+          font-size: 2.5rem !important;
+        }
+        .completion-title {
+          font-size: 1.25rem !important;
+        }
+        .completion-stats-grid {
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 0.5rem !important;
+        }
+        .completion-stats-value {
+          font-size: 1.25rem !important;
+        }
+        .completion-stats-label {
+          font-size: 0.7rem !important;
+        }
+        .completion-progress-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 0.75rem !important;
+        }
+        .completion-progress-value {
+          font-size: 1.1rem !important;
+        }
+        .completion-time-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 0.75rem !important;
+        }
+        .completion-time-value {
+          font-size: 1.1rem !important;
+        }
+        .completion-time-detail {
+          font-size: 0.65rem !important;
+          flex-direction: column !important;
+          gap: 0.25rem !important;
+        }
+        .completion-buttons {
+          flex-direction: column !important;
+          width: 100% !important;
+        }
+        .completion-buttons button {
+          width: 100% !important;
+          padding: 0.75rem !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Show completion screen with enhanced stats - using scrollable container with CSS classes
   ui.card.innerHTML = `
-    <div style="text-align: center; padding: 3rem 2rem;">
-      <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
-      <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">完结撒花！</h2>
-      <p style="font-size: 1.2rem; color: var(--text-sub); margin-bottom: 2rem;">
-        恭喜你完成了所有 ${totalCards} 张卡片！
-      </p>
-      <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;">
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
-          <div>
-            <div style="font-size: 2rem; font-weight: 700; color: var(--primary);">${totalCards}</div>
-            <div style="font-size: 0.875rem; color: var(--text-sub);">总卡片</div>
+    <div class="completion-container" style="height: 100%; overflow-y: auto; padding: 1.5rem;">
+      <div style="text-align: center; padding-bottom: 1rem;">
+        <div class="completion-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
+        <h2 class="completion-title" style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;">完结撒花！</h2>
+        <p style="font-size: 1rem; color: var(--text-sub); margin-bottom: 1.5rem;">
+          恭喜你完成了本单元学习！
+        </p>
+      </div>
+
+      <!-- Main Stats Grid -->
+      <div style="background: var(--card-bg); padding: 1rem; border-radius: 12px; margin-bottom: 1rem;">
+        <div class="completion-stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
+          <div style="text-align: center;">
+            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">${stats.totalCards}</div>
+            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">总卡片</div>
           </div>
-          <div>
-            <div style="font-size: 2rem; font-weight: 700; color: var(--danger);">${totalErrors}</div>
-            <div style="font-size: 0.875rem; color: var(--text-sub);">错误次数</div>
+          <div style="text-align: center;">
+            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--danger);">${stats.totalErrors}</div>
+            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">错误次数</div>
           </div>
-          <div>
-            <div style="font-size: 2rem; font-weight: 700; color: var(--success);">${accuracy}%</div>
-            <div style="font-size: 0.875rem; color: var(--text-sub);">正确率</div>
+          <div style="text-align: center;">
+            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--success);">${stats.accuracy}%</div>
+            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">正确率</div>
           </div>
         </div>
       </div>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <button class="btn-primary" onclick="app.restart()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+
+      <!-- Learning Progress Stats -->
+      <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1rem; border: 1px solid #bbf7d0;">
+        <div class="completion-progress-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="text-align: left;">
+            <div style="font-size: 0.75rem; color: #166534; margin-bottom: 0.25rem; font-weight: 600;">✅ 一次掌握</div>
+            <div class="completion-progress-value" style="font-size: 1.25rem; font-weight: 700; color: #16a34a;">${stats.cardsMastered}</div>
+          </div>
+          <div style="text-align: left;">
+            <div style="font-size: 0.75rem; color: #991b1b; margin-bottom: 0.25rem; font-weight: 600;">🔄 需复习</div>
+            <div class="completion-progress-value" style="font-size: 1.25rem; font-weight: 700; color: #dc2626;">${stats.cardsNeedingReview}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time Stats -->
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1rem; border: 1px solid #fcd34d;">
+        <div class="completion-time-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="text-align: left;">
+            <div style="font-size: 0.75rem; color: #92400e; margin-bottom: 0.25rem; font-weight: 600;">⏱️ 学习时长</div>
+            <div class="completion-time-value" style="font-size: 1.25rem; font-weight: 700; color: #d97706;">${StateManager.formatDuration(stats.duration)}</div>
+          </div>
+          <div style="text-align: left;">
+            <div style="font-size: 0.75rem; color: #92400e; margin-bottom: 0.25rem; font-weight: 600;">📊 平均每卡</div>
+            <div class="completion-time-value" style="font-size: 1.25rem; font-weight: 700; color: #d97706;">${StateManager.formatDuration(stats.avgTimePerCard)}</div>
+          </div>
+        </div>
+        <div class="completion-time-detail" style="margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px dashed #fbbf24; font-size: 0.7rem; color: #78350f; display: flex; justify-content: space-between;">
+          <span>🕐 ${formatTime(stats.startTime)}</span>
+          <span>🏁 ${formatTime(stats.endTime)}</span>
+        </div>
+      </div>
+
+      <div class="completion-buttons" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; padding-top: 0.5rem;">
+        <button class="btn-primary" onclick="app.restart()" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
           🔄 重新开始
         </button>
-        <button class="btn-ghost" onclick="app.clearDataAndReload()" style="font-size: 1.1rem; padding: 0.75rem 2rem;">
+        <button class="btn-ghost" onclick="app.clearDataAndReload()" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
           🗑️ 清除进度
         </button>
       </div>
@@ -777,7 +904,7 @@ export function showCompletionScreen(ui) {
 
   // Hide action area and update progress (matching review.html)
   ui.actionArea.innerHTML = '';
-  ui.progress.textContent = `${totalCards} / ${totalCards}`;
+  ui.progress.textContent = `${stats.totalCards} / ${stats.totalCards}`;
 
   // Trigger confetti animation
   triggerConfetti();
