@@ -13,6 +13,8 @@
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -35,6 +37,15 @@
     top=4pt,
     bottom=4pt
 }
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.4em
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
 
 % =========================
 % 字体设置
@@ -66,6 +77,164 @@
 
     \section{一元函数微分学的应用 - 中值定理}
 
+    \subsection{涉及函数的中值定理}
+
+    \subsubsection{有界与最值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，则 $m \leq f(x) \leq M$，其中$m, M$分别为$f(x)$在$[a, b]$上的最小值和最大值
+
+    \subsubsection{介值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$m \leq \mu \leq M$时，存在$\xi \in [a, b]$，使得$f(\xi) = \mu$
+
+    \subsubsection{平均值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$a < x_1 < x_2 < \cdots < x_n < b$时，在$[x_1, x_n]$内至少存在一点$\xi$，使得
+    \[
+        f(\xi) = \frac{f(x_1) + f(x_2) + \cdots + f(x_n)}{n}
+    \]
+
+    \subsubsection{零点定理（介质定理的特例）}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$f(a)\cdot f(b) < 0$时，存在$\xi \in (a, b)$，使得$f(\xi) = 0$
+    \begin{itemize}
+        \item 推广的零点定理: 若$f(x)$在$(a, b)$内连续，$\lim\limits_{x \to a^+} f(x) = \alpha, \lim\limits_{x \to b^-} f(x) = \beta$，且$\alpha \cdot \beta < 0$，则$f(x) = 0$在$(a, b)$内至少存在一个根
+    \end{itemize}
+
+    \subsection{涉及导数（微分）的中值定理}
+
+    \subsubsection{费马定理}
+
+    设函数 $f(x)$ 在点 $x_0$ 处满足
+    \[
+        \begin{cases}
+            \text{(1) 可导（左右导数存在且相等）},\\
+            \text{(2) 取极值 },
+        \end{cases}
+    \]
+    则
+    \[
+        f'(x_0)=0.
+    \]
+
+    \subsubsection{导数零点定理}
+
+    $f(x)$在$[a, b]$上可导，当$f'_{+}(a) \cdot f'_{-}(b) < 0$时，存在$\xi \in (a, b)$，使得$f'(\xi) = 0$
+
+    \subsubsection{罗尔定理}
+
+    设$f(x)$满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导},\\
+            \text{(3) }f(a) = f(b),
+        \end{cases}
+    \]
+    则存在 $\xi \in (a, b)$，使得$f'(\xi) = 0$
+    \begin{itemize}
+        \item 推广的罗尔定理: 设$f(x)$在$(a, b)$内可导，$\lim\limits_{x \to a^+} f(x) = \lim\limits_{x \to b^-} f(x) = A$，则在$(a, b)$内至少存在一点$\xi$，使得$f'(\xi) = 0$
+        \item 罗尔定理的使用需要构造辅助函数，其方法总结如下: //TODO
+    \end{itemize}
+
+    \subsubsection{拉格朗日中值定理}
+
+    设函数 $f(x)$ 满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导}
+        \end{cases}
+    \]
+    则存在$\xi \in (a, b)$，使得
+    \[
+        f(b) - f(a) = f'(\xi)(b - a)
+    \]
+    或者写成
+    \[
+        f'(\xi) = \frac{f(b) - f(a)}{b - a}
+    \]
+
+    \begin{enumerate}
+        \item 见到$f(a) - f(b)$与$f$与$f'$的关系，一般想到用拉格朗日中值
+        \item 拉格朗日中值的作用是{\color{red}{用导函数的值来控制函数值的增减}}
+    \end{enumerate}
+
+    \subsubsection{柯西中值定理}
+
+    设函数 $f(x), g(x)$ 满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导},\\
+            \text{(3) } g'(x) \neq 0 \\
+        \end{cases}
+    \]
+    则存在$\xi \in (a, b)$，使得
+    \[
+        \frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(\xi)}{g'(\xi)}
+    \]
+
+    \begin{enumerate}
+        \item $f(x), g(x)$往往考察一个具体函数，一个抽象函数
+    \end{enumerate}
+
+    \subsubsection{泰勒公式（微分中值定理）}
+
+    \begin{enumerate}
+        \item 带拉格朗日余项的 $n$ 阶泰勒公式：设函数 $f(x)$ 在{\blueuline{点 $x_0$ 的某邻域内 $n+1$ 阶导数存在}}，则对该邻域内任意点 $x$，有
+        \[
+            f(x)
+            = f(x_0) + f'(x_0)(x-x_0)
+            + \frac{f''(x_0)}{2!}(x-x_0)^2
+            + \cdots
+            + \frac{1}{n!}f^{(n)}(x_0)(x-x_0)^n
+            + R_n(x),
+        \]
+        其中拉格朗日余项
+        \[
+            R_n(x)
+            = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1},
+            \quad \xi \in (x_0, x).
+        \]
+
+        \item 带佩亚诺余项的 $n$ 阶泰勒公式：设函数 $f(x)$ 在{\blueuline{点 $x_0$ 处 $n$ 阶可导}}，则存在$x_0$的一个邻域，对于该邻域内的任意点 $x$，有
+        \[
+            f(x)
+            = f(x_0) + f'(x_0)(x-x_0)
+            + \frac{f''(x_0)}{2!}(x-x_0)^2
+            + \cdots
+            + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+            + o\!\left((x-x_0)^n\right).
+        \]
+        \item 当 $x_0 = 0$时泰勒公式称为\textbf{麦克劳林公式}
+        \begin{circlenum}
+            \item \[
+                      f(x)
+                      = f(0)
+                      + \frac{f'(0)}{1!}x
+                      + \frac{f''(0)}{2!}x^2
+                      + \cdots
+                      + \frac{f^{(n)}(0)}{n!}x^n
+                      + \frac{f^{(n+1)}(\xi)}{(n+1)!}x^{\,n+1}, \quad \xi \in (0, x)
+            \]
+            \item \[
+                      f(x)
+                      = f(0)
+                      + \frac{f'(0)}{1!}x
+                      + \frac{f''(0)}{2!}x^2
+                      + \cdots
+                      + \frac{f^{(n)}(0)}{n!}x^n
+                      + o(x^n).
+            \]
+        \end{circlenum}
+        \item \noindent \textbf{说明：}
+        \begin{circlenum}
+            \item 带拉格朗日余项的 $n$ 阶泰勒公式{\color[rgb]{0.2, 0.6, 0.3}{适用于}}区间$[a, b]$，常在证明题中使用。如证不等式、中值等式等
+            \item 带佩亚诺余项的 $n$ 阶泰勒公式{\color[rgb]{0.2, 0.6, 0.3}{适用于}}点$x = x_0$及其邻域，常用于研究点$x = x_0$处的某些结论。如求极限、判定无穷小的阶数、判定极值等
+        \end{circlenum}
+    \end{enumerate}
+
     \subsection{基础概念}
 
     \begin{enumerate}
@@ -75,7 +244,6 @@
 
     \begin{enumerate}
     \end{enumerate}
-
 
     \subsection{定理}
 
@@ -97,7 +265,19 @@
     \subsection{方法总结}
 
     \begin{enumerate}
-
+        \item 解题方法
+        \begin{circlenum}
+            \item 找定义式、关系式、约束式
+            \item $\color{red}{\bigstar}$做一至两步逆运算
+            \item 联想{\color{red}{经典}}形式
+            \item 恒等变形
+            \begin{itemize}
+                \item $a = a - 0$
+                \item $a = a + b - b$
+                \item $e - 1 = e^1 - e^0$
+            \end{itemize}
+            \item 翻译数学名词
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{条件转换思路}
