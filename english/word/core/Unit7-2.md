@@ -22,8 +22,9 @@
 - [kleɪm]
 - vt. 声称
 - n. 声明；所有权
-- claim- == to shout 叫喊
 - == declare == assert == announce
+- claim- 叫喊
+    - == to shout
 - We cannot overstate our debt to the past, but the moment has the supreme **claim**.
     - We cannot overstate X 我们再怎么强调 X 都不为过
 - acclaim 🙂

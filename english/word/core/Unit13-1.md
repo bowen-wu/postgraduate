@@ -77,7 +77,10 @@
         - == be faced with (中性)
         - 面对...（困难、问题、情况）
     - Opposite: avoid vt. 避免；躲避
-- encounter vt. 遭遇（尤指令人不快或困难的事）
+- encounter
+    - vt. 遭遇（尤指令人不快或困难的事）
+    - After a bruising **encounter** with Congress, America's Financial Accounting Standards Board rushed through rule
+      changes. 在于过会激烈交锋之后，美国财务会计准则委员会（FASB)匆匆通过了规则变更
 
 ## slave
 

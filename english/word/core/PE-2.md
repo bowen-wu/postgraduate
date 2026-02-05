@@ -92,7 +92,7 @@
 - Parking lot 停车场
 - She tried to accept her marriage as her **lot** in life but could not. 她试图把这段婚姻当作自己的人生命运来接受，但做不到
     - one's lot in life 某人一生中的命运/处境
-- But we are now knowledgeable enough to reduce many of the risks that threatened the existence of earlier humans，and
+- But we are now knowledgeable enough to reduce many of the risks that threatened the existence of earlier humans, and
   to improve the **lot** of those to come.
     - threaten [ˈθretn] v. 恐吓; 对...构成威胁
     - the lot of sb 某一群人的生活处境/命运
@@ -183,6 +183,7 @@
     - adj. 公正的
     - Yet, in several instances, justices acted in ways that weakened the court's reputation for being independent and
       **impartial**. 然而，在若干情况下，一些大法官的行为削弱了法院作为一个独立且公正机构的声誉
+        - weaken v. 减弱，削弱
         - acted in ways that... 以某种方式行事
 
 ## Words
