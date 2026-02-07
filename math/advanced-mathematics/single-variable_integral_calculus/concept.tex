@@ -1,0 +1,201 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{一元函数积分学的概念与性质}
+
+    \subsection{不定积分}
+
+    \subsubsection{原函数与不定积分}
+
+    设函数$f(x)$定义在某区间$I$上，若存在可导函数$F(x)$，对于该区间上任意一点都有$F'(x) = f(x)$成立，则称$F(x)$是$f(x)$在区间$I$上的一个\textbf{原函数}。称$\int f(x)\mathrm{d}x = F(x) + C$为$f(x)$在区间$I$上的\textbf{不定积分（全体原函数）}
+
+    \medskip
+    \noindent\textbf{注：}
+    \begin{enumerate}
+        \item $F'(x) = f(x)$。由$f(x)$处处有定义得$F(x)${\color{red}{处处可导}}，即$F(x)${\color{red}{处处连续}}
+    \end{enumerate}
+
+    \subsubsection{原函数（不定积分）存在定理}
+
+    \begin{enumerate}
+        \item 连续函数$f(x)$必有原函数$F(x)$
+        \[
+                {\color{red}{\bigstar}}f(x)\text{连续} \Rightarrow
+            \begin{cases}
+                \int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C, \\
+                [\int_a^x f(t)\,\mathrm{d}t]' = f(x)
+            \end{cases}
+        \]
+        \item 含有第一类间断点和无穷间断点的函数$f(x)$在包含该间断点的区间内必没有原函数$F(x)$
+    \end{enumerate}
+
+    \subsection{定积分}
+
+    \subsubsection{定义}
+
+    \subsubsection{存在定理}
+
+    \subsubsection{性质（假设以下积分均存在）}
+
+    \subsection{变限积分}
+
+    \subsubsection{概念}
+
+    \subsubsection{性质}
+
+    \subsection{反常积分}
+
+    \subsubsection{概念}
+
+    \subsubsection{敛散性的判别法}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item 积分中值定理：若函数$f(x)$在区间$[a, b]$上连续，则至少存在一点$\xi \in [a, b]$，使$\int_a^b f(x)\,\mathrm{d}x = f(\xi)(b - a)$
+        \item 介值定理：
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法总结}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+        \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}$
+        \begin{analysisbox}[证]
+            若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则
+            \[
+                \begin{aligned}
+                    \Delta F
+                    &= F(x+\Delta x)-F(x) \\
+                    &= \int_a^{x+\Delta x} f(t)\,\mathrm{d}t - \int_a^{x} f(t)\,\mathrm{d}t \\
+                    &= \int_a^{x} f(t)\,\mathrm{d}t + \int_x^{x+\Delta x} f(t)\,\mathrm{d}t - \int_a^{x} f(t)\,\mathrm{d}t \\
+                    &= \int_x^{x+\Delta x} f(t)\,\mathrm{d}t
+                \end{aligned}
+            \]
+
+            由积分中值定理，有$\int_x^{x + \Delta x} f(t)\,\mathrm{d}t = f(\xi)\Delta x$，其中 $\xi$ 介于 $x$ 与 $x+\Delta x$ 之间，当$\Delta x\to 0$时，$\xi \to x$，故
+            \[
+                F'(x) = \lim_{\Delta x\to 0}\frac{\Delta F}{\Delta x}  = \lim_{\Delta x\to 0} f(\xi) = \lim_{\xi\to x} f(\xi) = f(x)
+            \]
+
+            当 $x=a$ 时，取 $\Delta x>0$，同理可证 $F'(a)=f(a)$；
+            当 $x=b$ 时，取 $\Delta x<0$，同理可证 $F'(b)=f(b)$。
+
+            综上，$F(x)$ 在 $[a,b]$ 上可导，且 $F'(x)=f(x)$。
+        \end{analysisbox}
+        \item $\int f(x)\,\mathrm{d}x$称为不定积分，表示全体原函数
+        \item $\int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
+        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
+    \end{enumerate}
+
+\end{document}

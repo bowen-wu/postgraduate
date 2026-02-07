@@ -1,0 +1,496 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{一元函数微分学的应用 - 中值定理}
+
+    \subsection{涉及函数的中值定理}
+
+    \subsubsection{有界与最值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，则 $m \leq f(x) \leq M$，其中$m, M$分别为$f(x)$在$[a, b]$上的最小值和最大值
+
+    \subsubsection{介值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$m \leq \mu \leq M$时，存在$\xi \in [a, b]$，使得$f(\xi) = \mu$
+
+    \subsubsection{平均值定理}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$a < x_1 < x_2 < \cdots < x_n < b$时，在$[x_1, x_n]$内至少存在一点$\xi$，使得
+    \[
+        f(\xi) = \frac{f(x_1) + f(x_2) + \cdots + f(x_n)}{n}
+    \]
+
+    \subsubsection{零点定理（介质定理的特例）}
+
+    设 $f(x)$ 在 $[a, b]$上连续，当$f(a)\cdot f(b) < 0$时，存在$\xi \in (a, b)$，使得$f(\xi) = 0$
+    \begin{itemize}
+        \item 推广的零点定理: 若$f(x)$在$(a, b)$内连续，$\lim\limits_{x \to a^+} f(x) = \alpha, \lim\limits_{x \to b^-} f(x) = \beta$，且$\alpha \cdot \beta < 0$，则$f(x) = 0$在$(a, b)$内至少存在一个根
+    \end{itemize}
+
+    \subsection{涉及导数（微分）的中值定理}
+
+    \subsubsection{费马定理}
+
+    设函数 $f(x)$ 在点 $x_0$ 处满足
+    \[
+        \begin{cases}
+            \text{(1) 可导（左右导数存在且相等）},\\
+            \text{(2) 取极值 },
+        \end{cases}
+    \]
+    则
+    \[
+        f'(x_0)=0.
+    \]
+
+    \subsubsection{导数零点定理}
+
+    $f(x)$在$[a, b]$上可导，当$f'_{+}(a) \cdot f'_{-}(b) < 0$时，存在$\xi \in (a, b)$，使得$f'(\xi) = 0$
+    \\
+
+    \subsubsection{罗尔定理}
+
+    设$f(x)$满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导},\\
+            \text{(3) }f(a) = f(b),
+        \end{cases}
+    \]
+    则存在 $\xi \in (a, b)$，使得$f'(\xi) = 0$
+    \begin{enumerate}
+        \item 推广的罗尔定理: 设$f(x)$在$(a, b)$内可导，$\lim\limits_{x \to a^+} f(x) = \lim\limits_{x \to b^-} f(x) = A$，则在$(a, b)$内至少存在一点$\xi$，使得$f'(\xi) = 0$
+        \item 罗尔定理的使用需要构造{\color{red}{辅助函数}}，其方法总结如下:
+        \begin{itemize}
+            \item 乘积求导公式 $(uv)' = u'v + uv'$ 的逆用
+            \begin{circlenum}
+                \item $2f(x)\cdot f'(x) = [f^2(x)]' = [f(x)f(x)]' = F'(x)$
+                \item $[f'(x)]^2 + f(x)f''(x) = [f(x)\cdot f'(x)]' = F'(x)$
+                \item {\setlength{\baselineskip}{1.4\baselineskip} $[f'(x) + f(x)\varphi'(x)]e^{\varphi(x)} = f'(x)e^{\varphi(x)} + f(x)e^{\varphi(x)}\cdot \varphi'(x) = [f(x)e^{\varphi(x)}]'$ $\Rightarrow$见到$f'(x) + f(x)\varphi'(x)$，令$F(x) = f(x)e^{\varphi(x)}$。如：
+                \begin{enumerate}
+                    \item $\varphi(x) = x \Rightarrow$ 见到$f'(x) + f(x)$，令$F(x) = f(x)e^x$
+                    \item $\varphi(x) = -x \Rightarrow$ 见到$f'(x) - f(x)$，令$F(x) = f(x)e^{-x}$
+                    \item $\varphi(x) = kx \Rightarrow$ 见到$f'(x) + kf(x)$，令$F(x) = f(x)e^{kx}$
+                \end{enumerate}
+                \item $(uv)'' = u''v + 2u'v' + uv''$
+            \end{circlenum}
+            \item 商的求导公式$(\displaystyle\frac{u}{v})' = \displaystyle\frac{u'v - uv'}{v^2}$
+            \begin{circlenum}
+                \item $\displaystyle\frac{f'(x)x - f(x)}{x^2} = [\displaystyle\frac{f(x)}{x}]'$ \\ $\Rightarrow$见到$f'(x)x - f(x), x \neq 0$，令$F(x) = \displaystyle\frac{f(x)}{x}$
+                \item $\displaystyle\frac{f''(x)f(x) - [f'(x)]^2}{f^{2}(x)} = [\displaystyle\frac{f'(x)}{f(x)}]'$ \\ $\Rightarrow$见到$f''(x)f(x) - [f'(x)]^2, f(x) \neq 0$，令$F(x) = \displaystyle\frac{f'(x)}{f(x)}$
+                \item $\displaystyle\frac{f'(x)}{f(x)} = [\ln f(x)]'$
+                \item {\setlength{\baselineskip}{1.4\baselineskip} $\displaystyle\frac{f''(x)f(x) - [f'(x)]^2}{f^2(x)} = [\displaystyle\frac{f'(x)}{f(x)}]' = [\ln f(x)]''$ \\ $\Rightarrow$见到 $f''(x)f(x) - [f'(x)]^2, f(x) > 0$，可考虑令$F(x) = \ln f(x)$
+            \end{circlenum}
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{拉格朗日中值定理}
+
+    设函数 $f(x)$ 满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导}
+        \end{cases}
+    \]
+    则存在$\xi \in (a, b)$，使得
+    \[
+        f(b) - f(a) = f'(\xi)(b - a)
+    \]
+    或者写成
+    \[
+        f'(\xi) = \frac{f(b) - f(a)}{b - a}
+    \]
+
+    \begin{enumerate}
+        \item 见到$f(a) - f(b)$与$f$与$f'$的关系，一般想到用拉格朗日中值
+        \item 拉格朗日中值定理的作用是{\color{red}{用导函数的值来控制函数值的增减}}
+    \end{enumerate}
+
+    \subsubsection{柯西中值定理}
+
+    设函数 $f(x), g(x)$ 满足
+    \[
+        \begin{cases}
+            \text{(1) 在} [a, b] \text{上连续},\\
+            \text{(2) 在} (a, b) \text{内可导},\\
+            \text{(3) } g'(x) \neq 0 \\
+        \end{cases}
+    \]
+    则存在$\xi \in (a, b)$，使得
+    \[
+        \frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(\xi)}{g'(\xi)}
+    \]
+
+    \begin{enumerate}
+        \item $f(x), g(x)$往往考察一个具体函数，一个抽象函数
+    \end{enumerate}
+
+    \subsubsection{泰勒公式（微分中值定理）}
+
+    \begin{enumerate}
+        \item 带拉格朗日余项的 $n$ 阶泰勒公式：设函数 $f(x)$ 在{\blueuline{点 $x_0$ 的某邻域内 $n+1$ 阶导数存在}}，则对该邻域内任意点 $x$，有
+        \[
+            f(x)
+            = f(x_0) + f'(x_0)(x-x_0)
+            + \frac{f''(x_0)}{2!}(x-x_0)^2
+            + \cdots
+            + \frac{1}{n!}f^{(n)}(x_0)(x-x_0)^n
+            + R_n(x),
+        \]
+        其中拉格朗日余项
+        \[
+            R_n(x)
+            = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1},
+            \quad \color{red}{\xi \in (x_0, x)}.
+        \]
+
+        \item 带佩亚诺余项的 $n$ 阶泰勒公式：设函数 $f(x)$ 在{\blueuline{点 $x_0$ 处 $n$ 阶可导}}，则存在$x_0$的一个邻域，对于该邻域内的任意点 $x$，有
+        \[
+            f(x)
+            = f(x_0) + f'(x_0)(x-x_0)
+            + \frac{f''(x_0)}{2!}(x-x_0)^2
+            + \cdots
+            + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+            + o\!\left((x-x_0)^n\right).
+        \]
+        \item 当 $x_0 = 0$时泰勒公式称为\textbf{麦克劳林公式}
+        \begin{enumerate}
+            \item \[
+                      f(x)
+                      = f(0)
+                      + \frac{f'(0)}{1!}x
+                      + \frac{f''(0)}{2!}x^2
+                      + \cdots
+                      + \frac{f^{(n)}(0)}{n!}x^n
+                      + \frac{f^{(n+1)}(\xi)}{(n+1)!}x^{\,n+1}, \quad \xi \in (0, x)
+            \]
+            \item \[
+                      f(x)
+                      = f(0)
+                      + \frac{f'(0)}{1!}x
+                      + \frac{f''(0)}{2!}x^2
+                      + \cdots
+                      + \frac{f^{(n)}(0)}{n!}x^n
+                      + o(x^n).
+            \]
+            \item 重要函数的麦克劳林展开式
+            \begin{circlenum}
+                \item 指数函数
+                \[
+                    e^x
+                    = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + o(x^n)
+                \]
+
+                \item 正弦函数
+                \[
+                    \sin x
+                    = x - \frac{x^3}{3!} + \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+                    + o\!\left(x^{2n+1}\right)
+                \]
+
+                \item 余弦函数$== \sin' x$
+                \[
+                    \cos x
+                    = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \cdots + (-1)^n \frac{x^{2n}}{(2n)!}
+                    + o\!\left(x^{2n}\right)
+                \]
+
+                \item 几何级数（一）
+                \[
+                    \frac{1}{1 - x}
+                    = 1 + x + x^2 + \cdots + x^n + o(x^n)
+                \]
+
+                \item 几何级数（二）$== [\ln (1+x)]'$
+                \[
+                    \frac{1}{1 + x}
+                    = 1 - x + x^2 - \cdots + (-1)^n x^n + o(x^n)
+                \]
+
+                \item 对数函数
+                \[
+                    \ln(1 + x)
+                    = x - \frac{x^2}{2} + \frac{x^3}{3}
+                    - \cdots + (-1)^{n-1} \frac{x^n}{n}
+                    + o(x^n)
+                \]
+
+                \item 二项式展开
+                \[
+                    (1 + x)^a
+                    = 1 + ax + \frac{a(a-1)}{2!}x^2
+                    + \cdots +
+                    \frac{a(a-1)\cdots(a-n+1)}{n!}x^n
+                    + o(x^n)
+                \]
+            \end{circlenum}
+        \end{enumerate}
+        \item \noindent \textbf{说明：}
+        \begin{circlenum}
+            \item 带拉格朗日余项的 $n$ 阶泰勒公式{\color[rgb]{0.2, 0.6, 0.3}{适用于}}区间$[a, b]$，常在证明题中使用。如证不等式、中值等式等
+            \item 带佩亚诺余项的 $n$ 阶泰勒公式{\color[rgb]{0.2, 0.6, 0.3}{适用于}}点$x = x_0$及其邻域，常用于研究点$x = x_0$处的某些结论。如求极限、判定无穷小的阶数、判定极值等
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item 若$f(x)$在$(a, b)$内可导且$f'(x)$有界，则$f(x)$在$(a, b)$内有界
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法总结}
+
+    \begin{enumerate}
+        \item 解题方法
+        \begin{circlenum}
+            \item 找定义式、关系式、约束式
+            \item $\color{red}{\bigstar}$做一至两步逆运算
+            \item 联想{\color{red}{经典}}形式
+            \item 恒等变形
+            \begin{itemize}
+                \item $a = a - 0$
+                \item $a = a + b - b$
+                \item $e - 1 = e^1 - e^0$
+            \end{itemize}
+            \item 翻译数学名词
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+        \item 函数$f(x)$，过点$A(0, f(0))$与点$B(1, f(1))$的直线与曲线$y = f(x)$相交于点$C(c, f(c)) \Rightarrow$ 构造辅助函数 $F(x) = f(x) - \ell(x), \ell(x)$ 是$A, B, C$ 三点的直线
+        \item 若证$f^{(n)}(\xi) = 0$用罗尔定理可能性大
+        \item 若证$f^{(n)}(\xi) \neq 0$（不等式）用泰勒公式可能性大
+        \item 遇到$f$与$f^{(n)}(n \geq 2)$的关系，考虑泰勒公式
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+        \item $f(x)$ 在 $x_0$ 处连续：
+        \[
+            \begin{aligned}
+                &\lim_{x \to x_0} f(x) = f(x_0)
+                &&\Rightarrow f(x) - f(x_0) = o(1) \\
+                &&&\Rightarrow f(x) = f(x_0) + o(1)
+            \end{aligned}
+        \]
+
+        \item $f(x)$ 在 $x_0$ 处可导：
+        \[
+            \begin{aligned}
+                &f'(x_0)
+                = \lim_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0}
+                &&\Rightarrow
+                \frac{f(x)-f(x_0)}{x-x_0}
+                = f'(x_0) + o(1) \\
+                &&&\Rightarrow
+                f(x) = f(x_0) + f'(x_0)(x-x_0) + o(x-x_0)
+            \end{aligned}
+        \]
+
+        \item $f(x)$ 在 $x_0$ 处 $n$ 阶可导：
+        \[
+            \begin{aligned}
+                \Rightarrow
+                f(x)
+                = f(x_0) + f'(x_0)(x - x_0) + \displaystyle\frac{f''(x_0)}{2!}(x - x_0) + \cdots + \displaystyle\frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n} + o((x - x_0)^n)
+            \end{aligned}
+        \]
+    \end{enumerate}
+
+
+    \section{一元函数微分学的应用 - 微分等式}
+
+    方程$f(x) = 0$的根就是函数$f(x)$的零点。从几何上讲，方程的根作为两条曲线的交点。基于此，为讨论方程的根，有时可改为讨论曲线的交点。方法步骤如下
+
+    \begin{enumerate}
+        \item 讨论{\color{red}{存在性}}
+        \begin{itemize}
+            \item 观察，带入特殊值(0, 1, 端点)，判断$f(x)$正负
+            \item 使用零点定理: 若 $f(x)$ 在 $[a, b]$上连续，且$f(a)\cdot f(b) < 0$，则$f(x) = 0$在 $(a, b)$内至少有一个根
+            \item $\color{red}{\bigstar}$实系数奇次方程至少有一个实根
+        \end{itemize}
+        \item 讨论{\color{red}{唯一性}}
+        \begin{itemize}
+            \item 单调性: 若$f(x)$在$(a, b)$内单调，则$f(x) = 0$在$(a, b)$内至多有一个根
+            \item 罗尔定理的推论: 若$f^{(n)}(x) = 0$至多有$k$个根，则$f(x) = 0$至多有$k + n$个根
+        \end{itemize}
+    \end{enumerate}
+
+
+    \section{一元函数微分学的应用 - 微分不等式}
+
+    \subsection{用函数性态（包括单调性、凹凸性和最值等）证明不等式}
+
+    \begin{enumerate}
+        \item 若 $f'(x)\ge 0,\; a<x<b$，则$f(a)\leq f(x)\leq f(b)$
+        \item 若有$f''(x) \geq 0, a < x < b$，则有$f'(a) \leq f'(x) \leq f'(b)$
+        \begin{circlenum}
+            \item 当$f'(a) > 0$时，$f'(x) > 0$，则$f(x)$单调增加
+            \item 当$f'(b) < 0$时，$f'(x) < 0$，则$f(x)$单调减少
+        \end{circlenum}
+        \item 设函数 $f(x)$ 在区间 $I$ 内连续，且在 $I$ 内只有一个极值点 $x_0$，则
+        \[
+            \begin{cases}
+                \text{当 } x_0 \text{ 为极大值点时，即为 } I \text{ 内的最大值点 } (f(x_0)=M), \\
+                \qquad f(x_0)\ge f(x), \quad x\in I; \\[6pt]
+                \text{当 } x_0 \text{ 为极小值点时，即为 } I \text{ 内的最小值点 } (f(x_0)=m), \\
+                \qquad f(x_0)\le f(x), \quad x\in I.
+            \end{cases}
+        \]
+        \item 若有$f''(x) > 0(\text{凹}), a < x < b, f(a) = f(b) = 0$，则有$f(x) < 0$
+        \item 若有$f''(x) < 0(\text{凸}), a < x < b, f(a) = f(b) = 0$，则有$f(x) > 0$
+    \end{enumerate}
+
+    \subsection{用常数变量化证明不等式}
+
+    如果欲证的不等式中都是常数（常数不可直接求导），则可以将其中一个或者几个{\color{red}{常数变量化}}，再利用上面所述的导数工具去证明
+
+    \begin{analysisbox}[Example]
+        证明
+        \[
+            \frac{\ln b - \ln a}{\,b - a\,}
+            <
+            \frac{1}{\sqrt{ab}}.
+        \]
+
+        令
+        \[
+            f(x)
+            = \ln x - \ln a - \frac{x-a}{\sqrt{ax}}.
+        \]
+    \end{analysisbox}
+
+    \subsection{用中值定理证明不等式}
+
+    主要用拉格朗日中值定理或者泰勒公式
+
+    \begin{analysisbox}[Example]
+        证明
+        \[
+            \frac{2a}{a^2+b^2}
+            <
+            \frac{\ln b-\ln a}{\,b-a\,}.
+        \]
+
+        令 $f(x)=\ln x$，
+        由拉格朗日中值定理，
+        至少存在一点 $\xi\in(a,b)$，
+        使得
+        \[
+            \frac{\ln b-\ln a}{b-a}
+            = f'(\xi).
+        \]
+    \end{analysisbox}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item 当$0 < x < \displaystyle\frac{\pi}{2}$时，$\displaystyle\frac{2x}{\pi} < \sin x < x$
+    \end{enumerate}
+
+
+\end{document}

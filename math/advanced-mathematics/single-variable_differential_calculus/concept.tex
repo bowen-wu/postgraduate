@@ -41,7 +41,10 @@
 \setlist[circlenum]{
     label=\ding{\numexpr171+\arabic*},
     leftmargin=2.2em,
-    itemsep=0.4em
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
 }
 
 % =========================
@@ -212,6 +215,44 @@
             \end{enumerate}
         \end{itemize}
         \item $f^{(n)}(x_0)$存在 $\Rightarrow f^{(n - 1)}(x)$在$x_0$附近有定义且在$x_0$处连续
+        \item 函数 $f(x)$ 存在与 $f'(x)$ 存在的区别
+        \begin{enumerate}
+            \item 函数 $f(x)$ 在 $x=x_0$ 处的极限存在，不能推出 $f(x)$ 在 $x=x_0$ 处连续。例如，$x_0$ 可以是 $f(x)$ 的可去间断点
+            \item 若 $f(x)$ 在 $x_0$ 处可导，且
+            \[
+                \lim_{x\to x_0} f'(x)=a,
+            \]
+            则 $f'(x)$ 在 $x_0$ 处连续。即
+            \[
+                \lim_{x\to x_0} f'(x)=a,\quad f'(x_0)=b
+                \;\Longrightarrow\;
+                \lim_{x\to x_0} f'(x)=f'(x_0)=a=b.
+            \]
+            \item $f(x)$存在不能得出$f(x)$有介值性。因为“存在”不等于“连续”，而只有连续函数才具有介值性
+            \item $f'(x)$存在，可得$f'(x)$有介值性
+
+            \medskip
+            \noindent
+            \textbf{达布定理：}
+            若函数 $f(x)$ 在 $[a,b]$ 上可导，且 $f'_+(a)\neq f'_-(b)$，则对于任意介于 $f'_+(a)$ 与 $f'_-(b)$ 之间的数 $u$，存在 $\xi\in(a,b)$，使得
+            \[
+                f'(\xi)=u.
+            \]
+            \item $f'(x)$存在且$\neq 0$，则$f'(x)$必保号（恒正或恒负）
+            \begin{analysisbox}[证]
+                用反证法。
+                若存在 $a,b$ 使
+                \[
+                    f'(a)<0,\quad f'(b)>0,
+                \]
+                则由达布定理，存在 $\xi\in(a,b)$，使得
+                \[
+                    f'(\xi)=0,
+                \]
+                这与 $f'(x)\neq0$ 的假设矛盾
+            \end{analysisbox}
+            \item 若 $f'(x)$ 在 $[a,b]$ 上存在，则 $f'(x)$ 在该区间内\textbf{不存在第一类间断点}。
+        \end{enumerate}
     \end{enumerate}
 
     \subsection{定理}
@@ -353,25 +394,25 @@
                   (2)\ 若 $F(x)$ 在 $(x_0-\delta,\,x_0]\ (\delta>0)$ 上连续，在 $(x_0-\delta,\,x_0)$ 内可导，当 $\lim\limits_{x\to x_0^-} F'(x) = A$ 存在时，有 $F'_-(x_0) = A$
         \end{theorem}
         \begin{analysisbox}[证明]
-        (1)\
-        \[
-            F'_+(x_0)
-            = \lim_{x \to x_0^+} \frac{F(x) - F(x_0)}{x - x_0}
-            \overset{\text{洛必达}}{=}
-            \lim_{x \to x_0^+} \frac{F'(x)}{1}
-            = A.
-        \]
+        (1)
+            \
+            \[
+                F'_+(x_0)
+                = \lim_{x \to x_0^+} \frac{F(x) - F(x_0)}{x - x_0}
+                \overset{\text{洛必达}}{=}
+                \lim_{x \to x_0^+} \frac{F'(x)}{1}
+                = A.
+            \]
 
-        (2)\
-        \[
-            F'_-(x_0)
-            = \lim_{x \to x_0^-} \frac{F(x) - F(x_0)}{x - x_0}
-            \overset{\text{洛必达}}{=}
-            \lim_{x \to x_0^-} \frac{F'(x)}{1}
-            = A.
-        \]
+            (2)\
+            \[
+                F'_-(x_0)
+                = \lim_{x \to x_0^-} \frac{F(x) - F(x_0)}{x - x_0}
+                \overset{\text{洛必达}}{=}
+                \lim_{x \to x_0^-} \frac{F'(x)}{1}
+                = A.
+            \]
         \end{analysisbox}
-
 
     \end{enumerate}
 \end{document}

@@ -42,7 +42,10 @@
 \setlist[circlenum]{
     label=\ding{\numexpr171+\arabic*},
     leftmargin=2.2em,
-    itemsep=0.4em
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
 }
 
 \newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
