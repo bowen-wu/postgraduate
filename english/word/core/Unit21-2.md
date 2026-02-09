@@ -22,7 +22,7 @@
 - [ˈmɑːrvl]
 - vi. 感到惊奇
 - n. 令人惊异的人（或事）
-- marvel at sth.
+- marvel at sth. 对...感到惊叹/赞叹/啧啧称奇
 - astonish [əˈstɑːnɪʃ]
     - vt. 使吃惊，使十分惊讶
     - astonishing [əˈstɑːnɪʃɪŋ] adj. 令人十分惊讶的
@@ -68,6 +68,8 @@
     - n. 居住者
     - It was specifically to provided city **dwellers** with spaces for leisure where they could experience "a
       refreshing air".
+        - specifically adv. 明确地
+        - leisure [ˈliːʒər] n. 空闲时间；悠闲
 - resident
     - n. 居民；住户
     - == dweller
@@ -78,6 +80,7 @@
 - adj. 动荡的
 - A **turbulent** business environment also has senior managers cautious of letting vague pronouncements cloud their
   reputations.
+    - cautious adj. 谨慎的
 - turbulence n. 动荡；湍流
 
 ## coordinate
@@ -103,8 +106,13 @@
 - [ˈkʌnɪŋ]
 - n. 狡猾
 - conning personality
-- Since the dawn of human ingenuity, people have devised ever more **cunning** tools to cope with work that is
-  dangerous, boring, burdensome, or just plain nasty.
+- Since the dawn of human *ingenuity([ˌɪndʒəˈnuːəti] n. 足智多谋，心灵手巧; 独创性)*, people have devised ever more
+  **cunning** tools to cope with work that is dangerous, boring, burdensome, or just plain *nasty([ˈnæsti] adj.
+  令人讨厌的)*.
+    - dawn [dɔːn]
+        - n. 黎明，拂晓；开端，开始
+        - v. 破晓；开始；出现
+    - the dawn of ...的黎明/开端
 - tricky [ˈtrɪki] adj. 棘手的；狡猾的；诡计多端的（人）
 
 ## wander
@@ -169,10 +177,12 @@
     - surpassed adj. 可超过的
     - unsurpassed
         - adj. 不可超越的
-        - Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins>
-          <ins>the bulk of(...的大部分)</ins> our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where
-          conditions allow telescopes to obtain images of **unsurpassed** clarity.
+        - Rested in the Pacific Ocean, Mauua Kea's peak rises above the bulk of our *planet(n. 行星)*'s
+          <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to obtain images of **unsurpassed**
+          clarity.
           坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
+            - rises above 高于、超出
+            - the bulk of ...的大部分
 
 ## autonomous
 
@@ -205,9 +215,9 @@
     - vi. 同时发生
     - coincident [koʊˈɪnsɪdənt]
         - adj. 同时发生的
-        - be coincident with 与...相吻合
-        - Shakespeare's lifetime <ins>was **coincident** with</ins> a period of extraordinary activity and achievement
+        - Shakespeare's lifetime was **coincident** with a period of extraordinary activity and achievement
           in the drama.
+            - be coincident with 与...相吻合
         - Their aims are **coincident** with ours.
     - coincidence [koʊˈɪnsɪdəns]
         - n. 巧合

@@ -4,6 +4,49 @@
  * This module preserves the original parsing logic from review.html
  */
 
+/**
+ * REFACTORED MARKDOWN PARSER (V6 - Simplified Rules)
+ *
+ * === PARSE RULES (用户规则) ===
+ *
+ * 规则1: 从第一个 ## 开始解析
+ *   - 忽略第一个 ## 之前的所有内容
+ *
+ * 规则2: 所有的 - 都是一个 Card，如果是词性则跟父级
+ *   - 纯词性行（如 "n. 中文"）添加到父卡片的 items
+ *
+ * 规则3: 只要有词性，一定是单词
+ *   - 检测到 pos. (adj., n., v., adv. 等) → word 类型
+ *   - 使用 hasPosMarker() 检测: /\s+(?!sb\.|sth\.)([a-z]+\.)/
+ *
+ * 规则4: 如果是 "- 词组" 或 "## 词组" 的子级，那么一定是词组
+ *   - 标记 "- 词组" 和 "## 词组" 本身忽略（不创建卡片）
+ *   - 子级卡片类型为 phrase
+ *
+ * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀，前缀后缀会有中文释义，要注意前缀和连字符的区分
+ *
+ * 规则6: 句子解析规则
+ *   a) 先删除 **xx** 标记中的 ** 符号
+ *   b) *word(pos. def)* 包裹的：
+ *      - 如果括号内有词性 → 提取为单词卡片
+ *      - 其他情况 → 忽略
+ *   c) <ins>phrase</ins> 包裹的 → 提取为词组卡片
+ *   d) 句子的子级（缩进）：
+ *      - 有词性的 → 单词卡片
+ *      - 前缀后缀格式 (-xx-, xx-) → 前缀后缀卡片
+ *      - 其他所有情况 → 词组卡片（不再有句子子级）
+ *
+ * 规则7: == 标记的是同义词
+ *   - == word 或 === word → 添加到父卡片的 synonyms
+ *
+ * 规则8: [] 包裹的内容必须包含音标符号才被认为是音标（否则为语法说明）
+ *   - 音标符号: əɪɛæʌɑɔʊʃʒθðŋˈˌ
+ *   - 示例: [əˈfɜːmər] 是音标，[现在分词短语] 不是
+ *
+ * 规则9: 以 - Opposite: 开头的后面的是反义词，添加到单词的反义词中
+ *
+ */
+
 import { POS_MARKERS, IPA_SYMBOLS, isSynonymMarker, hasAntonymMarker,
          isPurePosLine, isPureIpaLine, hasPosMarker, hasIpaMarker, isValidWordHeader } from './validators.js';
 import { parseWordContent, parsePhraseContent } from './content-parser.js';
@@ -60,7 +103,7 @@ export class MarkdownParser {
    */
   parse() {
     try {
-      // Rule: Start from the first ##, ignore everything before
+      // 规则1: 从第一个 ## 开始解析，忽略之前的所有内容
       let startIndex = 0;
       for (let i = 0; i < this.lines.length; i++) {
         if (this.lines[i].trim().startsWith('##')) {
@@ -161,6 +204,12 @@ export class MarkdownParser {
 
   /**
    * Process a list item and determine its type
+   * 按顺序检查以下规则：
+   * 规则7: == 标记的是同义词
+   * 规则9: - Opposite: 开头的是反义词
+   * 规则2: 纯词性行添加到父卡片
+   * 规则8: 纯音标行添加到父卡片
+   * 规则4: "- 词组" 标记处理
    * CRITICAL: Returns number | undefined (NOT an object!)
    * - Returns number: the last line index processed (for sentence cards)
    * - Returns undefined: normal processing, continue to next line
@@ -170,37 +219,37 @@ export class MarkdownParser {
     // This should be checked BEFORE processing any new item
     this.finalizePendingSynonymIfNeeded(indentLevel);
 
-    // 规则1: 同义词标记检查 (== word or === word)
+    // 规则7: == 标记的是同义词 (== word or === word)
     if (this.isSynonymMarker(content)) {
       return this.addSynonymToParent(content, indentLevel);
     }
 
-    // 规则2: 反义词标记检查 (规则9: Opposite: word)
+    // 规则9: 以 - Opposite: 开头的是反义词 (Opposite: word)
     if (this.hasAntonymMarker(content)) {
       this.addAntonymToParent(content);
       return undefined;
     }
 
-    // 规则3: 纯词性行检查 (n. 中文) - should be added to parent
+    // 规则2: 纯词性行添加到父卡片的 items (n. 中文)
     if (this.isPurePosLine(content)) {
       this.addPosToParent(content);
       return undefined;
     }
 
-    // 规则4: 纯音标行检查 ([音标]) - should be added to parent
+    // 规则8: 纯音标行添加到父卡片 ([音标] 包含音标符号)
     if (this.isPureIpaLine(content)) {
       this.addIpaToParent(content);
       return undefined;
     }
 
-    // 规则5: "- 词组"标记检查
+    // 规则4: "- 词组" 标记本身不创建卡片，子级为词组卡片
     if (content === '词组') {
       this.inPhraseList = true;
       this.phraseMarkerLevel = indentLevel;  // Record the indent level
       return undefined;
     }
 
-    // 规则6: 检查是否在词组列表中且当前是词组项
+    // 规则4: 检查是否在词组列表中且当前是词组项
     if (this.inPhraseList && indentLevel > this.phraseMarkerLevel) {
       const card = this.createPhraseCard(content, indentLevel);
       // Process children of this phrase card
@@ -212,7 +261,7 @@ export class MarkdownParser {
       return phraseLastLine;
     }
 
-    // 规则7: 确定卡片类型 (最后才调用 determineCardType)
+    // 确定卡片类型 (调用 determineCardType)
     const cardType = this.determineCardType(content, indentLevel, lineIndex);
 
     // 创建卡片 based on type
@@ -242,6 +291,10 @@ export class MarkdownParser {
 
   /**
    * Determine the card type based on content and context
+   * 规则3: 只要有词性，一定是单词
+   * 规则4: 如果是 "- 词组" 或 "## 词组" 的子级，那么一定是词组
+   * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀
+   * 规则6d: 句子的子级（缩进）：有词性的 → 单词卡片；其余 → 词组卡片（不再有句子子级）
    * Returns: 'word' | 'phrase' | 'sentence' | 'prefix'
    */
   determineCardType(content, indentLevel, lineIndex = null) {
@@ -290,13 +343,13 @@ export class MarkdownParser {
       return 'word';
     }
 
-    // 规则5d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
+    // 规则6d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
     // 注意：只针对"句子"的子级，不针对"单词"的子级
     const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
     const isChild = this.parentCard && this.parentLevel < indentLevel;
-    if (isChild && hasChinese && !this.hasPosMarker(content)) {
-      // 只当父级是 sentence 时，才判断为 phrase
-      if (this.parentCard.type === 'sentence') {
+    if (isChild && this.parentCard.type === 'sentence') {
+      // 句子的子级都是 phrase 类型（不管是否有中文）
+      if (!this.hasPosMarker(content)) {
         return 'phrase';
       }
     }
@@ -307,6 +360,14 @@ export class MarkdownParser {
 
   /**
    * Process sentence - extract words/phrases and create sentence card
+   * 规则6: 句子解析规则
+   *   a) 先删除 **xx** 标记中的 ** 符号
+   *   b) *word(pos. def)* 包裹的：如果括号内有词性 → 提取为单词卡片
+   *   c) <ins>phrase</ins> 包裹的 → 提取为词组卡片
+   *   d) 句子的子级（缩进）：
+   *      - 有词性的 → 单词卡片 (word)
+   *      - 前缀后缀格式 (-xx-, xx-) → 前缀后缀卡片 (prefix)
+   *      - 其他所有情况 → 词组卡片 (phrase)，不再有句子子级
    * Returns: lastLineIndex (number) - the last line index processed
    */
   processSentence(content, indentLevel, lineIndex) {
@@ -545,26 +606,19 @@ export class MarkdownParser {
         i++;
         continue;
       } else {
-        // Sentence card
-        const childSentenceCard = {
-          id: `card_${this.cardCounter++}`,
-          word: content,
-          type: 'sentence',
-          fullText: content,
-          items: [{ type: 'sentence', en: content, cn: '' }]
-        };
-
-        // 🔧 FIX: Single-word sentences are typically phrases (like "scold sb. for sth.")
-        // These should be promoted to the main cards array, not nested as children
-        // Key: If content has NO Chinese characters, it's a word/phrase, not a sentence
-        const hasChinese = /[\u4e00-\u9fa5]/.test(content);
-        if (!hasChinese) {
-          promotedChildren.push(childSentenceCard);
-        } else {
-          sentenceChildren.push(childSentenceCard);
+        // Fallback: 如果走到这里，说明 determineCardType 返回了 'sentence'
+        // 但句子的子级不应该是句子类型，所以作为 phrase 处理
+        const card = this.createPhraseCard(content, childIndentLevel);
+        // Process children of this phrase card
+        const { children: phraseChildren, lastLineIndex: phraseLastLine } = this.processChildren(childIndentLevel, i, [], card);
+        if (phraseChildren.length > 0) {
+          card.children = phraseChildren;
         }
-
-        lastProcessedLineIndex = i;  // Track this line as processed
+        promotedChildren.push(card);
+        // Update lastProcessedLineIndex to skip processed children
+        if (phraseLastLine > lastProcessedLineIndex) {
+          lastProcessedLineIndex = phraseLastLine;
+        }
         i++;
         continue;
       }
@@ -855,7 +909,8 @@ export class MarkdownParser {
   }
 
   /**
-   * Check if it's a prefix/suffix (规则5)
+   * Check if it's a prefix/suffix
+   * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀
    * Depends on this.hasPosMarker
    */
   isPrefixOrSuffix(content, lineIndex = null) {
@@ -1008,6 +1063,7 @@ export class MarkdownParser {
 
   /**
    * Extract *word(pos. definition)* patterns from sentence
+   * 规则6b: *word(pos. def)* 包裹的，如果括号内有词性 → 提取为单词卡片
    */
   extractItalicWords(text, extractedCards) {
     return text.replace(/\*([a-zA-Z'-]+)\(([^*]*?)\)\*/g, (match, word, def) => {
@@ -1022,6 +1078,7 @@ export class MarkdownParser {
 
   /**
    * Extract <ins>phrase</ins> patterns from sentence
+   * 规则6c: <ins>phrase</ins> 包裹的 → 提取为词组卡片
    */
   extractInsPhrases(text, extractedCards, indentLevel, boldPlaceholders = []) {
     return text.replace(/<ins>(.*?)<\/ins>/g, (match, phrase) => {
@@ -1041,6 +1098,7 @@ export class MarkdownParser {
 
   /**
    * Add synonym to parent card
+   * 规则7: == 标记的是同义词，添加到父卡片的 synonyms
    * Returns: undefined (normal processing)
    */
   addSynonymToParent(content, indentLevel) {
@@ -1108,6 +1166,7 @@ export class MarkdownParser {
 
   /**
    * Add antonym to parent card
+   * 规则9: 以 - Opposite: 开头的是反义词，添加到单词的反义词中
    * Finds the nearest word-type ancestor card (not sentence)
    */
   addAntonymToParent(content) {
@@ -1148,6 +1207,7 @@ export class MarkdownParser {
 
   /**
    * Add POS definition to parent card
+   * 规则2: 纯词性行（如 "n. 中文"）添加到父卡片的 items
    * Supports both regular parent cards and pending synonym cards
    */
   addPosToParent(content) {
@@ -1177,6 +1237,7 @@ export class MarkdownParser {
 
   /**
    * Add IPA to parent card
+   * 规则8: [] 包裹的内容必须包含音标符号才被认为是音标
    */
   addIpaToParent(content) {
     if (this.parentCard && !this.parentCard.ipa) {
