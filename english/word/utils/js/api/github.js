@@ -29,7 +29,6 @@ export class GitHubApi {
         return null;
       }
     } catch (e) {
-      console.warn('Cache read error:', e);
       return null;
     }
   }
@@ -44,7 +43,6 @@ export class GitHubApi {
       };
       localStorage.setItem(cacheKey, JSON.stringify(cacheData));
     } catch (e) {
-      console.warn('Cache write error:', e);
     }
   }
 
@@ -103,7 +101,6 @@ export class GitHubApi {
 
   static filterMdFiles(items) {
     if (!Array.isArray(items)) {
-      console.error('filterMdFiles - items is not an array:', items);
       return [];
     }
     return items.filter(item =>
@@ -116,7 +113,6 @@ export class GitHubApi {
 
   static filterFolders(items) {
     if (!Array.isArray(items)) {
-      console.error('filterFolders - items is not an array:', items);
       return [];
     }
     return items.filter(item => item.type === 'dir');

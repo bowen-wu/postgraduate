@@ -33,7 +33,6 @@ export function loadStatsForFile(path) {
       STATE.currentIndex = 0;
     }
   } catch (e) {
-    console.warn('Failed to load stats:', e);
     STATE.stats = {};
     STATE.currentIndex = 0;
   }
@@ -57,7 +56,6 @@ export function saveState() {
     // Also save the last used path globally
     localStorage.setItem(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
   } catch (e) {
-    console.warn('Failed to save state:', e);
   }
 }
 
@@ -88,7 +86,6 @@ export function loadState() {
       STATE.currentIndex = 0;
     }
   } catch (e) {
-    console.warn('Failed to load state:', e);
     STATE.stats = {};
     STATE.currentIndex = 0;
   }

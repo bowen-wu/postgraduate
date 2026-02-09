@@ -214,7 +214,6 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
 
     ui.fileListContainer.innerHTML = html;
   } catch (e) {
-    console.error('加载根目录失败:', e);
     ui.fileListContainer.innerHTML = `
       <div style="padding: 1rem; text-align: center; color: var(--danger);">
         <p>加载失败: ${e.message}</p>
@@ -287,7 +286,6 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
 
     ui.fileListContainer.innerHTML = html;
   } catch (e) {
-    console.error('加载文件夹失败:', e);
     ui.fileListContainer.innerHTML = `
       <div style="padding: 1rem; text-align: center; color: var(--danger);">
         <p>加载失败: ${e.message}</p>
@@ -345,7 +343,6 @@ export async function confirmSwitchFile(path, ui = null) {
       `;
     }
   } catch (e) {
-    console.error('切换文件失败:', e);
     UiRenderer.showToast(ui, '切换文件失败: ' + e.message);
     ui.filePanel.classList.add('open');
   }
@@ -379,6 +376,15 @@ export async function loadFile(path, ui = null) {
     const parser = new MarkdownParser(text);
     STATE.cards = parser.parse();
 
+    // Debug: 打印生成的每一个 Card
+    console.log('=== 生成的 Cards ===');
+    console.log(`共 ${STATE.cards.length} 张卡片`);
+    STATE.cards.forEach((card, index) => {
+      console.log(`\n--- Card ${index + 1} ---`);
+      console.log(JSON.stringify(card, null, 2));
+    });
+    console.log('=== Cards 打印结束 ===');
+
     if (STATE.cards.length === 0) {
       throw new Error('解析后没有生成任何卡片，请检查数据格式');
     }
@@ -404,7 +410,6 @@ export async function loadFile(path, ui = null) {
     StateManager.updateStatsUI(ui);
     UiRenderer.showToast(ui, `解析完成：${STATE.cards.length} 张卡片`);
   } catch (e) {
-    console.error('加载失败:', e);
     let errorMsg = e.message;
     if (e.name === 'AbortError') {
       errorMsg = '请求超时，请检查网络连接';
@@ -434,7 +439,6 @@ export async function refreshFileList() {
     }
     UiRenderer.showToast(window.app.ui, '✅ 列表已刷新');
   } catch (e) {
-    console.error('刷新列表失败:', e);
     UiRenderer.showToast(window.app.ui, '❌ 刷新失败: ' + e.message);
   }
 }
@@ -527,7 +531,6 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
       };
 
       utterance.onerror = (event) => {
-        console.warn('Speech synthesis error:', event.error);
         setButtonLoading(false, buttonId);
         if (event.error !== 'canceled') {
           UiRenderer.showToast(window.app.ui, '❌ 语音播放失败');
@@ -554,7 +557,6 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
 
       window.speechSynthesis.speak(utterance);
     } catch (e) {
-      console.error('Speech synthesis exception:', e);
       setButtonLoading(false, buttonId);
       UiRenderer.showToast(window.app.ui, '❌ 语音播放出错');
     }
@@ -586,7 +588,6 @@ export async function playCambridgeAudio(word) {
 
     throw new Error('No Youdao audio available for this word');
   } catch (error) {
-    console.error('Youdao audio error:', error);
     throw error;
   }
 }
@@ -694,6 +695,5 @@ export function prewarmSpeechSynthesis() {
     utterance.volume = 0;
     window.speechSynthesis.speak(utterance);
   } catch (e) {
-    console.warn('Failed to pre-warm speech synthesis:', e);
   }
 }

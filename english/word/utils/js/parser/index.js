@@ -129,6 +129,10 @@ export class MarkdownParser {
         // Handle headers (## word)
         if (trimmed.startsWith('##')) {
           const headerWord = trimmed.substring(2).trim();
+
+          // Finalize any pending synonym before processing ## header (## acts like a new list item)
+          this.finalizePendingSynonymIfNeeded(0);
+
           if (this.isValidWordHeader(headerWord)) {
             // Check if this is a phrase header (规则4: ## 词组)
             this.inPhraseHeader = headerWord.includes('词组');
@@ -197,7 +201,6 @@ export class MarkdownParser {
 
       return this.cards;
     } catch (error) {
-      console.error('Error parsing markdown:', error);
       throw error;
     }
   }
@@ -327,11 +330,6 @@ export class MarkdownParser {
       return 'word';
     }
 
-    // Check if content has IPA (word with pronunciation only)
-    if (this.hasIpaMarker(content)) {
-      return 'word';
-    }
-
     // 规则3: 检查子级是否以词性开头
     // Only check for single words (not sentences)
     // Sentences contain spaces, multiple words, etc.
@@ -444,18 +442,22 @@ export class MarkdownParser {
     content = mergedContent;
 
     // Step 1: Protect **text** patterns with placeholders before any other processing
+    // Use {{BOLD:x}} format to avoid conflict with Markdown * and _ syntax
     const boldPlaceholders = [];
     let protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, content) => {
-      const placeholder = `__BOLD_${boldPlaceholders.length}__`;
+      const placeholder = `{{BOLD:${boldPlaceholders.length}}}`;
       boldPlaceholders.push(content);
       return placeholder;
     });
 
-    // Step 2: Extract *word(pos. definition)* patterns FIRST
+    // Step 2: Extract *word(pos. definition)* and _word(pos. definition)_ patterns FIRST
     let clean = this.extractItalicWords(protectedContent, extractedCards);
 
-    // Step 3: Remove remaining standalone * marks (not part of *word(def)* pattern)
-    clean = clean.replace(/\*([a-zA-Z'-]+)\*/g, '$1');  // Remove * around single words
+    // Step 3: Remove remaining standalone * or _ marks
+    // First: remove * or _ around single words (e.g., *word* or _word_)
+    clean = clean.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
+    // Second: remove _ around phrases with spaces (e.g., _phrase with spaces_)
+    clean = clean.replace(/_([^_]+?)_/g, '$1');
 
     // Step 4: Extract <ins>phrase</ins> patterns
     clean = this.extractInsPhrases(clean, extractedCards, indentLevel, boldPlaceholders);
@@ -479,12 +481,12 @@ export class MarkdownParser {
     }
 
     // Step 6: Remove bold placeholders for clean text (word field and items[0].en)
-    const cleanEn = enWithPlaceholders.replace(/__BOLD_(\d+)__/g, (match, index) => {
+    const cleanEn = enWithPlaceholders.replace(/\{\{BOLD:(\d+)\}\}/g, (match, index) => {
       return boldPlaceholders[index];
     });
 
     // Step 7: Restore bold placeholders for displayWord
-    const displayWord = enWithPlaceholders.replace(/__BOLD_(\d+)__/g, (match, index) => {
+    const displayWord = enWithPlaceholders.replace(/\{\{BOLD:(\d+)\}\}/g, (match, index) => {
       return `<strong>${boldPlaceholders[index]}</strong>`;
     });
 
@@ -1075,11 +1077,12 @@ export class MarkdownParser {
   }
 
   /**
-   * Extract *word(pos. definition)* patterns from sentence
-   * 规则6b: *word(pos. def)* 包裹的，如果括号内有词性 → 提取为单词卡片
+   * Extract *word(pos. definition)* and _word(pos. definition)_ patterns from sentence
+   * 规则6b: *word(pos. def)* 或 _word(pos. def)_ 包裹的，如果括号内有词性 → 提取为单词卡片
    */
   extractItalicWords(text, extractedCards) {
-    return text.replace(/\*([a-zA-Z'-]+)\(([^*]*?)\)\*/g, (match, word, def) => {
+    // Match both *word(def)* and _word(def)_ patterns
+    return text.replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, (match, word, def) => {
       if (this.hasPosMarker(def)) {
         const card = this.createWordCard(`${word} ${def}`, 0);
         extractedCards.push(card);
@@ -1097,9 +1100,9 @@ export class MarkdownParser {
     return text.replace(/<ins>(.*?)<\/ins>/g, (match, phrase) => {
       let cleanPhrase = phrase.replace(/\*/g, '').trim();
 
-      // 🔧 FIX: Restore bold placeholders in phrase
+      // Restore bold placeholders in phrase
       // For phrase cards, we want plain text (e.g., "air", not "<strong>air</strong>")
-      cleanPhrase = cleanPhrase.replace(/__BOLD_(\d+)__/g, (match, index) => {
+      cleanPhrase = cleanPhrase.replace(/\{\{BOLD:(\d+)\}\}/g, (match, index) => {
         return boldPlaceholders[index] || match;
       });
 
@@ -1160,9 +1163,19 @@ export class MarkdownParser {
         if (!isDuplicate) {
           this.parentCard.synonyms.push(synonym);
         }
+      } else if (!pos && !cn && !ipa) {
+        // 🔧 FIX: Simple synonym without any definition - add directly
+        // This handles cases like "== direct == clear == express"
+        const isDuplicate = this.parentCard.synonyms.some(
+          existingSyn => existingSyn.word === word
+        );
+
+        if (!isDuplicate) {
+          this.parentCard.synonyms.push({ word });
+        }
       } else {
         // Complex case: == curb (definition items follow in child lines)
-        // Create a temporary card to collect child items
+        // Only when synonym has ipa but no pos/cn, indicating it might have child definitions
         // Save the original parent context
         this.pendingSynonymOriginalParent = this.parentCard;
         this.pendingSynonymOriginalLevel = this.parentLevel;

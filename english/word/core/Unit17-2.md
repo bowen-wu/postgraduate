@@ -20,13 +20,13 @@
 - vt. 进口（或输入）
 - n. （常pl. ）输入的产品（或劳务）
 - importation n. 进口（或输入）
-- export （常pl. ）出口产品
+- export v. （常pl. ）出口产品
 
 ## inherent
 
 - [ɪnˈhɪərənt]
 - adj. 国有的，内在的
-- inherent in sth 某物中固有的、密不可分的、不可避免的
+- inherent in sth. 某物中固有的、密不可分的、不可避免的
 - Commitment is **inherent** in any *genuinely([ˈdʒɛnjʊɪnlɪ] adv. 真正地、诚挚地)* loving relationship.
 - inherently adv. 固有地，内在地
 - inherit [ɪnˈherɪt]
@@ -69,8 +69,8 @@
 - [ˈmɑːdɪst]
 - adj. 适度的；谦虚的；普通的；较少的
 - He lives on a **modest** income.
-    - live on + 名词 靠...生活/以...为生
-- Politicians have repeatedly "backloaded" *public-sector pay deals*, keeping the pay increase
+    - live on + noun 靠...生活/以...为生
+- Politicians have repeatedly "backloaded" public-sector pay deals, keeping the pay increase
   **modest** but adding to holidays and especially pensions that are already generous.
     - public-sector pay deals 公共部门薪酬协议
 - moderate
@@ -82,7 +82,9 @@
 ## proportion
 
 - n. 部分；比例
-- The **proportion** of Spring Festival gifts *accounted for/occupy([ˈɑːkjupaɪ])* 40 percent.
+- The **proportion** of Spring Festival gifts **accounted for/occupy** 40 percent.
+    - account for
+        - == occupy [ˈɑːkjupaɪ] vt. 占据（空间、面积、时间等）
 - disproportionately [ˌdɪsprə'pɔʃənətlɪ]
     - adv. 不成比例地；不匀称，不相称
     - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
@@ -111,7 +113,8 @@
     - == stress
 - strained
     - adj. 紧张的；不和谐的；恶化的；勉强维持的
-    - their <ins>**strained** relations(紧张的关系/不和谐的关系)</ins> with the boards.
+    - their **strained** relations with the boards.
+        - strained relations 紧张的关系/不和谐的关系
 - constrain
     - vt. 限制
     - constraint
@@ -185,8 +188,8 @@
 ## imitate
 
 - vt. 模仿
-- First you **imitate**, then you innovate([ˈɪnəveɪt]).
-- These epochal figures represented lives hard to **imitate**...
+- First you **imitate**, then you *innovate([ˈɪnəveɪt] v. 改革；创新)*.
+- These *epochal(['epəkəl] adj. 划时代的)* figures represented lives hard to **imitate**...
 - What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues
   to evade scientists.
 - imitation n. 模仿
@@ -206,12 +209,14 @@
         - Weighing yourself regularly is a wonderful way to stay aware of any significant weight **fluctuations**.
 - afloat [əˈfloʊt]
     - adj. 能维持下去
-    - stay afloat 勉强存活
-        - == survive
+    - 词组
+        - stay afloat 勉强存活
+            - == survive
     - keep the Postal Service **afloat**
 - circulation [ˌsɜːrkjəˈleɪʃn]
     - n. 流通；（报刊）发行量
-    - It was to ruin lives <ins>in the quest for</ins> **circulation** and impact.
+    - It was to ruin lives in the quest for **circulation** and impact.
+      - in the quest for 在追求...的过程中
     - factors promoting artwork **circulation**
 
 ## Words

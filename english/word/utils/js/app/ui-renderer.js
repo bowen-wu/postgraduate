@@ -718,7 +718,6 @@ export function updateBodyModeClass() {
 export function showToast(ui, msg) {
   const t = document.getElementById('toast');
   if (!t) {
-    console.warn('Toast element not found, skipping toast notification');
     return;
   }
   t.textContent = msg;

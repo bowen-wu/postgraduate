@@ -244,9 +244,10 @@
     - If I was poor and **desperate**, I might <ins>commit crimes(犯罪)</ins> to feed my family.
 - thrive [θraɪv]
     - vi. 繁荣，兴旺
-    - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
     - In fact, these commutes were reportedly more enjoyable compared with those without communication, which makes
-      absolute sense, since human beings <ins>**thrive** off of</ins> social connections.
+      absolute sense, since human beings **thrive** off of social connections.
+        - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
+        - makes absolute sense 完全说得通/非常合理
 - flourish [ˈflɜːrɪʃ] vi. 繁荣，兴旺；茁壮成长
 - boom
     - n. （贸易和经济活动的）激增；（某种体育活动、音乐等）突然风靡的时期

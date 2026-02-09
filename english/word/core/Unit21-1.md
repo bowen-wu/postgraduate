@@ -217,6 +217,17 @@
         - adj. 新颖的
             - == new
 
+## marvel
+
+- [ˈmɑːrvl]
+- vi. 感到惊奇
+- n. 令人惊异的人（或事）
+- marvel at sth. 对...感到惊叹/赞叹/啧啧称奇
+- astonish [əˈstɑːnɪʃ]
+    - vt. 使吃惊，使十分惊讶
+    - astonishing [əˈstɑːnɪʃɪŋ] adj. 令人十分惊讶的
+    - astonished adj. 惊讶的
+
 ## Words
 
 - makeshift [ˈmeɪkʃɪft]

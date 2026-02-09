@@ -110,7 +110,8 @@ export function parseWordContent(content) {
     }
   }
 
-  return { word, ipa, pos, cn, synonyms };
+  const result = { word, ipa, pos, cn, synonyms };
+  return result;
 }
 
 /**
