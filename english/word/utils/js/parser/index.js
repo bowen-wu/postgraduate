@@ -27,7 +27,6 @@ export class MarkdownParser {
     this.pendingSynonymLevel = -1;  // Indent level of the pending synonym marker
     this.pendingSynonymOriginalParent = null;  // Original parent card before redirecting to synonym
     this.pendingSynonymOriginalLevel = -1;  // Original parent level before redirecting to synonym
-    this.debug = false;  // Set to true for debugging
 
     // Assign imported pure functions as class methods
     this.isSynonymMarker = isSynonymMarker;
@@ -114,7 +113,8 @@ export class MarkdownParser {
             i++;
             continue;
           }
-          if (/^[\[\d／→]/.test(content) && content.length < 20) {
+          // Skip special patterns, but NOT pure IPA lines ([音标])
+          if (/^[\[\d／→]/.test(content) && content.length < 20 && !this.isPureIpaLine(content)) {
             i++;
             continue;
           }
@@ -1070,7 +1070,15 @@ export class MarkdownParser {
         if (ipa) synonym.ipa = ipa;
         if (pos) synonym.pos = pos;
         if (cn) synonym.cn = cn;
-        this.parentCard.synonyms.push(synonym);
+
+        // Prevent duplicate synonyms: check if a synonym with the same word already exists
+        const isDuplicate = this.parentCard.synonyms.some(
+          existingSyn => existingSyn.word === word
+        );
+
+        if (!isDuplicate) {
+          this.parentCard.synonyms.push(synonym);
+        }
       } else {
         // Complex case: == curb (definition items follow in child lines)
         // Create a temporary card to collect child items
@@ -1201,7 +1209,15 @@ export class MarkdownParser {
       if (this.pendingSynonymOriginalParent) {
         this.pendingSynonymOriginalParent.synonyms =
           this.pendingSynonymOriginalParent.synonyms || [];
-        this.pendingSynonymOriginalParent.synonyms.push(synonym);
+
+        // Prevent duplicate synonyms: check if a synonym with the same word already exists
+        const isDuplicate = this.pendingSynonymOriginalParent.synonyms.some(
+          existingSyn => existingSyn.word === synonym.word
+        );
+
+        if (!isDuplicate) {
+          this.pendingSynonymOriginalParent.synonyms.push(synonym);
+        }
       }
 
       // Restore parent context

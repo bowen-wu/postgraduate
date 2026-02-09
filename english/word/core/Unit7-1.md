@@ -216,8 +216,10 @@
 - We should **spare(v. 留出) no efforts to/make great efforts to(不遗余力)** protect the environment.
 - endeavor [ɪnˈdɛvər]
     - vi. 努力
-    - endeavor to do
-        - ...endeavor to live a joyful life
+    - 词组
+        - endeavor to do
+            - == make efforts to
+    - ...endeavor to live a joyful life
     - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the *density([ˈdensəti] n. 密度)* of some
       of its forests.
 - strive [straɪv]

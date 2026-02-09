@@ -21,24 +21,25 @@
 
 - n. 习俗；[pl.] 海关；关税
 - The **custom** of lighting the Olympic *flame(n. 火焰)* goes back centuries.
-    - the custom of doing sth 做某事的传统/习俗
+    - the custom of doing sth. 做某事的传统/习俗
     - go back (some time) 追溯到（某个久远的时间）
 - The ship was boarded by **customs** officials.
     - board a ship/plane/aircraft 登上（船 / 飞机）进行检查或执法
-    - be boarded by sb 被某人登上并检查（执法语境）
+    - be boarded by sb. 被某人登上并检查（执法语境）
 - customer n. 顾客
 - accustom [əˈkʌstəm]
     - vt. 使习惯于
     - accustomed
         - adj. 习惯的
-        - be accustomed to doing sth. 习惯于做某事
-            - == be used to doing sth.
+        - 词组
+            - be accustomed to doing sth. 习惯于做某事
+                - == be used to doing sth.
         - She was a person **accustomed** to having eight hours' sleep a night.
 
 ## decorate
 
 - vt. 装饰
-- be decorated with sth.
+- be decorated with sth. 被...装饰/点缀
 - decoration n. 装饰
 
 ## distant
@@ -65,8 +66,12 @@
 - density
     - n. 密度
     - lower the density
-    - California's Forest Carbon Plan <ins>endeavors to/make efforts to</ins> reduce the **density** of some of its
+    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the **density** of some of its
       forests.
+        - endeavor [ɪnˈdɛvər] vi. 努力
+        - 词组
+            - endeavors to do
+                - == make efforts to do
 
 ## deliberate
 
@@ -75,7 +80,7 @@
 - adj. 故意的
 - deliberate practice
 - deliberation [dɪˌlɪbəˈreʃən]
-    - n. 仔细考虑；**深思熟虑**
+    - n. 深思熟虑；仔细考虑
     - The process of **carefully considering what to do** is called **deliberation**, like your **deliberation** before
       making one of the most important decisions in your life.
     - **Deliberation** focused them on vivid but misleading cues. 反复思考反而让他们把注意力集中在生动却具有误导性的线索上
@@ -111,7 +116,7 @@
     - intervene in sth. 介入某事
 - intervention [ˌɪntərˈvenʃn]
     - n. 介入
-    - == interference
+    - == interference n. 干涉
 - interfere
     - vi. 干涉，介入；妨碍；干扰
     - interference [ˌɪntərˈfɪrəns]
@@ -143,18 +148,19 @@
 - **Loom** has two distinct meanings, Fist, a **loom** is a **tool** for weaving. Second, to **loom** is to **appear**
   or stand over someone in a **threatening** way.
 - The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized **looms**.
-    - didn't go so well for sb 对某人来说结果不太好（委婉表达）
-    - go well for sb 对某人有利
-    - go badly/not go well for sb 对某人不利
+    - didn't go so well for sb. 对某人来说结果不太好（委婉表达）
+    - go well for sb. 对某人有利
+    - go badly/not go well for sb. 对某人不利
+    - mechanized looms 机械化织机
 - Don't **loom** over the person you're teaching to *weave([wiːv] v. 编，织)*! You'll just make her nervous.
-    - loom over sb 居高临下地站在某人旁边、逼近式地注视
+    - loom over sb. 居高临下地站在某人旁边、逼近式地注视
 - Anything that **looms** is coming into view slowly and isn't something you want to see.
 - If a deadline **looms**, better get to work.
 - looming
     - adj. （不希望或不愉快的事情）迫近的，逼近的
     - A **looming** threat to business-method patents.
     - Meanwhile, as the recession is **looming** large, people are getting *anxious([ˈæŋkʃəs])*.
-        - loom large (over sb/sth) 显得迫在眉睫/阴影笼罩/变得非常重要
+        - loom large (over sb./sth.) 显得迫在眉睫/阴影笼罩/变得非常重要
 - upcoming adj. 即将发生（或来临）的
 
 ## musical
@@ -162,7 +168,7 @@
 - adj. 音乐的
 - musician n. 音乐家
 - orchestra [ˈɔːrkɪstrə] n. 管弦乐队
-- philharmonic [ˌfɪlərˈmɑnɪk] n. (pl.)爱乐乐团；交响旅团
+- philharmonic [ˌfɪlərˈmɑnɪk] n. (pl.)爱乐乐团；交响乐团
 
 ## precede
 
@@ -212,7 +218,7 @@
     - drastically adv. 大幅度地；剧烈地
 - dramatic
     - adj. 戏剧的
-    - dramatically adv. 急剧的；剧烈地
+    - dramatically adv. 急剧地；剧烈地
 - steep [stiːp] adj. 陡峭的；急剧的
 - stiff [stɪf]
     - adj. 激烈的

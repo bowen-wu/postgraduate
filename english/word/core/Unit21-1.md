@@ -66,14 +66,15 @@
 
 - [ˈkjʊriəs]
 - adj. 难以理解的；好奇的
-- It is **curious** that Stephen Koziatek feels almost *as though/as if(好像)* he has to justify his efforts to give his
+- It is **curious** that Stephen Koziatek feels almost <ins>as though/as if(好像)</ins> he has to justify his efforts to
+  give his
   students a better future.
 - curiosity [ˌkjʊriˈɑːsəti]
     - n. 好奇心
     - Your **curiosity** is your growth point. Always.
     - Having asserted your position (as a position, not as a fact), demonstrate equal **curiosity** about other views.
         - assert one's position 明确表明某人的立场
-        - curiosity about sth
+        - curiosity about sth.
     - Mere **curiosity** adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力
 
 ## feasible
@@ -90,8 +91,8 @@
 - [reɪdʒ]
 - n. 愤怒；盛行
 - Do not go gentle into that good night, Old age should burn and rave at close of day; **Rage**, **rage** against the
-  dying of the light. — 狄兰·托马斯（Dylan Thomas）《Do not go gentle into that good night》
-  不要温顺地走向死亡。人在生命将尽之时，仍应燃烧、呐喊，而非安静接受。愤怒吧，愤怒地反抗生命之光的消逝。
+  dying of the light. — Dylan Thomas《Do not go gentle into that good night》
+  狄兰·托马斯 — 不要温顺地走向死亡。人在生命将尽之时，仍应燃烧、呐喊，而非安静接受。愤怒吧，愤怒地反抗生命之光的消逝。
 - outraged adj. 震怒的
 - indignation [ˌɪndɪɡˈneɪʃn]
     - n. 愤怒
@@ -155,7 +156,7 @@
 - corruption
     - n. 贿赂
     - Favoritism in official access can *fan(vt. 煽动，扇)* public *perceptions([pərˈsepʃn] 看法)* of **corruption**.
-        - fan public perceptions of sth 煽动、助长公众对某事的看法
+        - fan public perceptions of sth. 煽动、助长公众对某事的看法
     - In a *rare([rer] adj. 稀少的，罕见的)* *unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的)* ruling, the
       U.S. Supreme Court has overturned the **corruption** conviction of a former Virginia governor, Robert MacDonnell.
 - disruption n. 扰乱

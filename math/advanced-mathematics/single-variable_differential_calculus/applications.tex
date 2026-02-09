@@ -135,12 +135,12 @@
             \text{(3) }f(a) = f(b),
         \end{cases}
     \]
-    则存在 $\xi \in (a, b)$，使得$f'(\xi) = 0$
+    则存在 $\xi \in (a, b)$，使得$f'(\xi) = 0$(驻点)
     \begin{enumerate}
         \item 推广的罗尔定理: 设$f(x)$在$(a, b)$内可导，$\lim\limits_{x \to a^+} f(x) = \lim\limits_{x \to b^-} f(x) = A$，则在$(a, b)$内至少存在一点$\xi$，使得$f'(\xi) = 0$
         \item 罗尔定理的使用需要构造{\color{red}{辅助函数}}，其方法总结如下:
         \begin{itemize}
-            \item 乘积求导公式 $(uv)' = u'v + uv'$ 的逆用
+            \item 乘积求导公式 $u'v + uv' = (uv)'$ 的逆用
             \begin{circlenum}
                 \item $2f(x)\cdot f'(x) = [f^2(x)]' = [f(x)f(x)]' = F'(x)$
                 \item $[f'(x)]^2 + f(x)f''(x) = [f(x)\cdot f'(x)]' = F'(x)$
@@ -150,11 +150,11 @@
                     \item $\varphi(x) = -x \Rightarrow$ 见到$f'(x) - f(x)$，令$F(x) = f(x)e^{-x}$
                     \item $\varphi(x) = kx \Rightarrow$ 见到$f'(x) + kf(x)$，令$F(x) = f(x)e^{kx}$
                 \end{enumerate}
-                \item $(uv)'' = u''v + 2u'v' + uv''$
+                \item $u''v + 2u'v' + uv'' = (uv)''$
             \end{circlenum}
-            \item 商的求导公式$(\displaystyle\frac{u}{v})' = \displaystyle\frac{u'v - uv'}{v^2}$
+            \item 商的求导公式$\displaystyle\frac{u'v - uv'}{v^2} = (\displaystyle\frac{u}{v})'$
             \begin{circlenum}
-                \item $\displaystyle\frac{f'(x)x - f(x)}{x^2} = [\displaystyle\frac{f(x)}{x}]'$ \\ $\Rightarrow$见到$f'(x)x - f(x), x \neq 0$，令$F(x) = \displaystyle\frac{f(x)}{x}$
+                \item $\displaystyle\frac{xf'(x) - f(x)}{x^2} = [\displaystyle\frac{f(x)}{x}]'$ \\ $\Rightarrow$见到$xf'(x) - f(x), x \neq 0$，令$F(x) = \displaystyle\frac{f(x)}{x}$
                 \item $\displaystyle\frac{f''(x)f(x) - [f'(x)]^2}{f^{2}(x)} = [\displaystyle\frac{f'(x)}{f(x)}]'$ \\ $\Rightarrow$见到$f''(x)f(x) - [f'(x)]^2, f(x) \neq 0$，令$F(x) = \displaystyle\frac{f'(x)}{f(x)}$
                 \item $\displaystyle\frac{f'(x)}{f(x)} = [\ln f(x)]'$
                 \item {\setlength{\baselineskip}{1.4\baselineskip} $\displaystyle\frac{f''(x)f(x) - [f'(x)]^2}{f^2(x)} = [\displaystyle\frac{f'(x)}{f(x)}]' = [\ln f(x)]''$ \\ $\Rightarrow$见到 $f''(x)f(x) - [f'(x)]^2, f(x) > 0$，可考虑令$F(x) = \ln f(x)$
@@ -404,7 +404,7 @@
 
     \section{一元函数微分学的应用 - 微分等式}
 
-    方程$f(x) = 0$的根就是函数$f(x)$的零点。从几何上讲，方程的根作为两条曲线的交点。基于此，为讨论方程的根，有时可改为讨论曲线的交点。方法步骤如下
+    方程$f(x) = 0$的根就是函数$f(x)$的零点。从几何上讲，方程的根作为两条曲线的交点。基于此，讨论方程的根 $==$ 讨论曲线的交点。方法步骤如下
 
     \begin{enumerate}
         \item 讨论{\color{red}{存在性}}

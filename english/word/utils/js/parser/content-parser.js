@@ -136,9 +136,18 @@ export function parsePhraseContent(content) {
   const cnMatch = content.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
   if (cnMatch) {
     const cnStart = content.indexOf(cnMatch[0]);
+    let cn = content.substring(cnStart).trim();
+
+    // Remove synonym markers (== ...) from cn to avoid duplication
+    // Synonyms will be processed separately as child items
+    const synonymIndex = cn.indexOf('==');
+    if (synonymIndex !== -1) {
+      cn = cn.substring(0, synonymIndex).trim();
+    }
+
     const result = {
       word: content.substring(0, cnStart).trim(),
-      cn: content.substring(cnStart).trim()
+      cn: cn
     };
     return result;
   }

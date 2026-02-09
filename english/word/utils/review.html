@@ -321,9 +321,14 @@
         }
         window._lastPlayTime['space'] = now;
 
-        // 播放单词音频（两种模式下都一样）
+        // 播放单词音频
+        // 对于句子类型，使用 items[0].en（纯英文，无中文）
+        // 对于其他类型，使用 word
         const playBtnId = currentCard.type === 'phrase' ? 'play-btn-phrase' : 'play-btn-main';
-        window.app.playWord(currentCard.word, playBtnId, false, false);
+        const audioText = currentCard.type === 'sentence' && currentCard.items?.[0]?.en
+          ? currentCard.items[0].en
+          : currentCard.word;
+        window.app.playWord(audioText, playBtnId, false, false);
         break;
       case 's':
       case 'S':

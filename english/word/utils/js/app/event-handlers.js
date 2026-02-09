@@ -474,6 +474,11 @@ export function clearDataAndReload() {
 export async function playWord(word, buttonId = null, useTTSFallback = false, showNotification = true) {
   if (!word) return;
 
+  // 替换缩写为完整单词，用于 TTS 和有道 API
+  const audioText = word
+    .replace(/sth\./g, 'something')
+    .replace(/sb\./g, 'somebody');
+
   const setButtonLoading = (isLoading, btnId) => {
     if (!btnId) return;
     const btn = document.getElementById(btnId);
@@ -491,7 +496,7 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
   setButtonLoading(true, buttonId);
 
   if (!useTTSFallback) {
-    playCambridgeAudio(word).then((result) => {
+    playCambridgeAudio(audioText).then((result) => {
       if (result && result.onplay) {
         setButtonLoading(false, buttonId);
         if (showNotification) {
@@ -511,7 +516,7 @@ export async function playWord(word, buttonId = null, useTTSFallback = false, sh
       window.speechSynthesis.cancel();
       await new Promise(resolve => setTimeout(resolve, 50));
 
-      const utterance = new SpeechSynthesisUtterance(word);
+      const utterance = new SpeechSynthesisUtterance(audioText);
       utterance.lang = 'en-US';
       utterance.rate = 0.9;
       utterance.pitch = 1;
