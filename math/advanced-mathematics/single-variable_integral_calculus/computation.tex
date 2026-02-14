@@ -1,0 +1,319 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{extarrows}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{一元函数积分学的计算}
+
+    \subsection{基本积分公式}
+
+    \begin{enumerate}
+        \item $\int x^k\,\mathrm{d}x = \displaystyle\frac{1}{k+1}x^{k+1} + C, k \neq -1$
+        \item $\int \displaystyle\frac{1}{x}\,\mathrm{d}x = \ln |x| + C$
+        \item 指数函数的积分
+        \begin{itemize}
+            \item $\int e^x\,\mathrm{d}x = e^x + C$
+            \item $\int a^x\,\mathrm{d}x = \displaystyle\frac{a^x}{\ln a} + C, \,a > 0 \text{且} a \neq 1$
+        \end{itemize}
+        \item 三角函数的积分
+        \begin{itemize}
+            \item $\int \sin x\,\mathrm{d}x = -\cos x + C$
+            \item $\int \cos x\,\mathrm{d}x = \sin x + C$
+            \item $\int \tan x\,\mathrm{d}x = -\ln |\cos x| + C$
+            \item $\int \cot x\,\mathrm{d}x = \ln |\sin x| + C$
+            \item ${\color{red}{\bigstar}}\int \displaystyle\frac{1}{\cos x}\,\mathrm{d}x = \int \sec x\,\mathrm{d}x = \ln |\sec x + \tan x| + C$
+            \item $\int \displaystyle\frac{1}{\sin x}\,\mathrm{d}x = \int \csc x\,\mathrm{d}x = \ln |\csc x - \cot x| + C$
+            \item $\int \sec^2 x\,\mathrm{d}x = \tan x + C$
+            \item $\int \csc^2 x\,\mathrm{d}x = -\cot x + C$
+            \item $\int \sec x \tan x\,\mathrm{d}x = \sec x + C$
+            \item $\int \csc x \cot x\,\mathrm{d}x = -\csc x + C$
+        \end{itemize}
+        \item $\int \displaystyle\frac{1}{a^2 + x^2}\,\mathrm{d}x = \displaystyle\frac{1}{a}\arctan \displaystyle\frac{x}{a} + C, a > 0$
+        \begin{itemize}
+            \item $\int \displaystyle\frac{1}{1 + x^2}\,\mathrm{d}x = \arctan x + C$
+        \end{itemize}
+        \item $\int \displaystyle\frac{1}{\sqrt {a^2 - x^2}}\,\mathrm{d}x = \arcsin \displaystyle\frac{x}{a} + C, a > 0$
+        \begin{itemize}
+            \item $\int \displaystyle\frac{1}{\sqrt {1 - x^2}}\,\mathrm{d}x = \arcsin x + C$
+        \end{itemize}
+        \item 对数型（二次根式型）
+        \begin{itemize}
+            \item $\int \displaystyle\frac{1}{\sqrt {x^2 + a^2}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + a^2}) + C$
+            \begin{circlenum}
+                \item ${\color{red}{\bigstar}}\int \displaystyle\frac{1}{\sqrt {x^2 + 1}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + 1}) + C$
+            \end{circlenum}
+            \item $\int \displaystyle\frac{1}{\sqrt {x^2 - a^2}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - a^2}| + C, |x| > |a|$
+            \begin{circlenum}
+                \item $\int \displaystyle\frac{1}{\sqrt {x^2 - 1}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - 1}| + C, |x| > |a|$
+            \end{circlenum}
+        \end{itemize}
+        \item 部分分式分解型
+        \begin{itemize}
+            \item $\int \displaystyle\frac{1}{x^2 - a^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x-a}{x+a}\right| + C$
+            \item $\int \displaystyle\frac{1}{a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x+a}{x-a}\right| + C$
+        \end{itemize}
+        \item ${\color{red}{\bigstar}}\int \sqrt {a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{a^2}{2} \arcsin \displaystyle\frac{x}{a} + \displaystyle\frac{x}{2}\sqrt {a^2 - x^2} + C, a > |x| \geq 0$
+        \begin{itemize}
+            \item $\int \sqrt {1 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2} \arcsin x + \displaystyle\frac{x}{2}\sqrt {1 - x^2} + C$
+        \end{itemize}
+        \item 三角函数降幂公式型
+        \begin{itemize}
+            \item $\int \sin^2 x\,\mathrm{d}x = \displaystyle\frac{x}{2} - \displaystyle\frac{\sin 2x}{4} + C, \,\sin^2 x = \displaystyle\frac{1-\cos 2x}{2}$
+            \item $\int \cos^2 x\,\mathrm{d}x = \displaystyle\frac{x}{2} + \displaystyle\frac{\sin 2x}{4} + C, \,\cos^2 x = \displaystyle\frac{1+\cos 2x}{2}$
+            \item $\int \tan^2 x\,\mathrm{d}x = \tan x - x + C, \,\tan^2 x = \sec^2 x - 1$
+            \item $\int \cot^2 x\,\mathrm{d}x = -\cot x - x + C, \,\cot^2 x = \csc^2 x - 1$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{不定积分的积分法}
+
+    \subsubsection{凑微分法}
+
+    \[
+        \int f[g(x)]g'(x)\,\mathrm{d}x = \int f[g(x)]\,\mathrm{d}[g(x)] = \int f(u)\,\mathrm{d}u
+    \]
+
+    常用的凑微分公式
+    \begin{enumerate}
+        \item 由于 $x\,\mathrm{d}x = \dfrac{1}{2}\mathrm{d}(x^2)$，
+        因此
+        \[
+            \int x f(x^2)\,\mathrm{d}x
+            = \frac{1}{2}\int f(x^2)\,\mathrm{d}(x^2)
+            = \frac{1}{2}\int f(u)\,\mathrm{d}u
+        \]
+
+        \item 由于 $\sqrt{x}\,\mathrm{d}x = \dfrac{2}{3}\mathrm{d}(x^{\frac{3}{2}})$，
+        因此
+        \[
+            \int \sqrt{x}\, f(x^{\frac{3}{2}})\,\mathrm{d}x
+            = \frac{2}{3}\int f(x^{\frac{3}{2}})\,\mathrm{d}(x^{\frac{3}{2}})
+            = \frac{2}{3}\int f(u)\,\mathrm{d}u
+        \]
+
+        \item 由于 $\dfrac{\mathrm{d}x}{\sqrt{x}} = 2\,\mathrm{d}(\sqrt{x})$，故
+        \[
+            \int \frac{f(\sqrt{x})}{\sqrt{x}}\,\mathrm{d}x
+            = 2\int f(\sqrt{x})\,\mathrm{d}(\sqrt{x})
+            = 2\int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\dfrac{\mathrm{d}x}{x^2} = \mathrm{d}\!\left(-\dfrac{1}{x}\right)$，故
+        \[
+            \int \frac{f\!\left(-\dfrac{1}{x}\right)}{x^2}\,\mathrm{d}x
+            = \int f\!\left(-\dfrac{1}{x}\right)\,\mathrm{d}\!\left(-\dfrac{1}{x}\right)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 当 $x>0$ 时，$\dfrac{1}{x}\,\mathrm{d}x = \mathrm{d}(\ln x)$，故
+        \[
+            \int \frac{f(\ln x)}{x}\,\mathrm{d}x
+            = \int f(\ln x)\,\mathrm{d}(\ln x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\mathrm{e}^x\,\mathrm{d}x = \mathrm{d}(\mathrm{e}^x)$，故
+        \[
+            \int \mathrm{e}^x f(\mathrm{e}^x)\,\mathrm{d}x
+            = \int f(\mathrm{e}^x)\,\mathrm{d}(\mathrm{e}^x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $a^x\,\mathrm{d}x = \dfrac{1}{\ln a}\,\mathrm{d}(a^x)$，
+        $a>0,\; a\ne1$，故
+        \[
+            \int a^x f(a^x)\,\mathrm{d}x
+            = \frac{1}{\ln a}\int f(a^x)\,\mathrm{d}(a^x)
+            = \frac{1}{\ln a}\int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\sin x\,\mathrm{d}x = \mathrm{d}(-\cos x)$，故
+        \[
+            \int \sin x\,f(-\cos x)\,\mathrm{d}x
+            = \int f(-\cos x)\,\mathrm{d}(-\cos x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\cos x\,\mathrm{d}x = \mathrm{d}(\sin x)$，故
+        \[
+            \int \cos x\,f(\sin x)\,\mathrm{d}x
+            = \int f(\sin x)\,\mathrm{d}(\sin x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\displaystyle\frac{\mathrm{d}x}{\cos^2 x} = \sec^2 x\,\mathrm{d}x = \mathrm{d}(\tan x)$，故
+        \[
+            \int \frac{f(\tan x)}{\cos^2 x}\,\mathrm{d}x
+            = \int f(\tan x)\,\mathrm{d}(\tan x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\csc^2 x\,\mathrm{d}x = \mathrm{d}(-\cot x)$，故
+        \[
+            \int \frac{f(-\cot x)}{\sin^2 x}\,\mathrm{d}x
+            = \int f(-\cot x)\,\mathrm{d}(-\cot x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\dfrac{1}{1+x^2}\,\mathrm{d}x = \mathrm{d}(\arctan x)$，故
+        \[
+            \int \frac{f(\arctan x)}{1+x^2}\,\mathrm{d}x
+            = \int f(\arctan x)\,\mathrm{d}(\arctan x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+        \item 由于 $\dfrac{1}{\sqrt{1-x^2}}\,\mathrm{d}x = \mathrm{d}(\arcsin x)$，故
+        \[
+            \int \frac{f(\arcsin x)}{\sqrt{1-x^2}}\,\mathrm{d}x
+            = \int f(\arcsin x)\,\mathrm{d}(\arcsin x)
+            = \int f(u)\,\mathrm{d}u.
+        \]
+
+    \end{enumerate}
+
+    \subsubsection{换元法}
+
+    \[
+        \int f(x)\,\mathrm{d}x \xlongequal{x = g(x)} \int f[g(u)]\,\mathrm{d}[g(u)] = \int f[g(u)]g'(u)\,\mathrm{d}u
+    \]
+
+
+
+    \subsubsection{分部积分法}
+
+    \subsubsection{有理函数的积分}
+
+    \subsection{定积分的计算}
+
+    \subsection{变限积分的计算}
+
+    \subsubsection{求导公式}
+
+    \subsubsection{重要结论}
+
+    \subsection{反常积分的计算}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{方法总结}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+\end{document}

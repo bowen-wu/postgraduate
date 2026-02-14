@@ -115,12 +115,12 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
 
     \subsubsection{单调性的判别}
     \begin{enumerate}
-        \item 设函数 $y = f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导。
+        \item 设函数 $y = f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导
 
         \begin{circlenum}
             \item 若在 $(a,b)$ 内有 $f'(x) \ge 0$，
             且等号仅{\blueuline{在有限个点处成立}}，则函数 $y = f(x)$ 在 $[a,b]$ 上
-                {\color{red}{严格单调增加}}。
+                {\color{red}{严格单调增加}}
 
             \item 若在 $(a,b)$ 内有 $f'(x) \le 0$，
             且等号仅 {\blueuline{在有限个点处成立}}，则函数 $y = f(x)$ 在 $[a,b]$ 上
@@ -185,7 +185,7 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
     \subsubsection{凹凸性的定义}
     \begin{enumerate}
         \item \begin{definition}
-                  设函数 $f(x)$ 在区间 $I$ 上连续。
+                  设函数 $f(x)$ 在区间 $I$ 上连续
                   \begin{enumerate}
                       \item 若对 $I$ 上任意不同的两点 $x_1,x_2$，恒有
                       \[
@@ -214,14 +214,14 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
         \begin{itemize}
             \item 若对任意 $x_0\in(a,b)$ 及任意 $x\in(a,b)$ 且 $x\neq x_0$，恒有
             \[
-                f(x) < f(x_0) + f'(x_0)(x - x_0),
+                f(x) > f(x_0) + f'(x_0)(x - x_0),
             \]
             即除切点外，曲线严格位于其切线的下方，
             则称函数 $y=f(x)$ 在 $[a,b]$ 上是\textbf{凹的}。
 
             \item 若对任意 $x_0\in(a,b)$ 及任意 $x\in(a,b)$ 且 $x\neq x_0$，恒有
             \[
-                f(x) > f(x_0) + f'(x_0)(x - x_0),
+                f(x) < f(x_0) + f'(x_0)(x - x_0),
             \]
             即除切点外，曲线严格位于其切线的上方，
             则称函数 $y=f(x)$ 在 $[a,b]$ 上是\textbf{凸的}。
@@ -277,7 +277,7 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
 
     \begin{circlenum}
         \item 曲线的可导点{\blueuline{不可同时为极值点和拐点}}；曲线的不可导点可{\blueuline{同时为极值点和拐点}}
-        \item 设多项式函数$f(x) = (x-a)^{n}g(x)(n>1)$，且$g(a) \neq 0$，则当$n$为{\color{red}{偶数}}时，$x=a$是$f(x)$的{\color{red}{极值点}}；当$n$为{\color{red}{奇数}}时，$x=a$是$f(x)$的{\color{red}{拐点}}
+        \item 设多项式函数$f(x) = (x-a)^{n}g(x)(n>1)$，且$g(a) \neq 0$，则当$n$为{\color{red}{偶数}}时，$x=a$是$f(x)$的{\color{red}{极值点}}；当$n$为{\color{red}{奇数}}时，点$(a, 0)$是$f(x)$的{\color{red}{拐点}}
         \item 设多项式函数 $f(x)= (x-a_1)^{n_1}(x-a_2)^{n_2}\cdots(x-a_k)^{n_k}$，其中 $n_i$ 为正整数，$a_i$ 为实数，且 $a_i\ (i=1,2,\dots,k)$ 两两不等。记$k_1$为 $n_i=1$ 的个数，$k_2$ 为满足 $n_i>1$ 且 $n_i$ 为偶数的个数，$k_3$ 为满足 $n_i>1$ 且 $n_i$ 为奇数的个数。则 $f(x)$ 的{\color{red}{极值点}}个数为$\color{red}{k_1 + 2k_2 + k_3 - 1}$，{\color{blue}{拐点}}个数为$\color{blue}{k_1 + 2k_2 + 3k_3 - 2}$
     \end{circlenum}
 
@@ -287,7 +287,7 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
 
     \subsubsection{铅直渐近线}
 
-    若$\lim\limits_{x\to x_0^{+}} f(x) = \infty$（或$\lim\limits_{x\to x_0^{-}} f(x) = \infty$），则$x=x_0$为一条铅直渐近线。$x_0$的可能情况为：
+    若$\lim\limits_{{\color{red}{x\to x_0^{+}}}} f(x) = \infty$（或$\lim\limits_{{\color{red}{x\to x_0^{-}}}} f(x) = \infty$），则$x=x_0$为一条铅直渐近线。$x_0$的可能情况为：
     \begin{enumerate}
         \item 函数的无定义点。
         \emph{e.g.}：函数 $y=\tan x$ 在 $x=\dfrac{\pi}{2}$ 处无定义。
@@ -310,9 +310,9 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
     \subsubsection{水平渐近线}
 
     \begin{enumerate}
-        \item 若 $\lim\limits_{x\to +\infty} f(x)=y_1$，则 $y=y_1$ 为函数 $y=f(x)$ 的一条水平渐近线；
-        \item 若 $\lim\limits_{x\to -\infty} f(x)=y_2$，则 $y=y_2$ 为函数 $y=f(x)$ 的一条水平渐近线；
-        \item 若 $\lim\limits_{x\to +\infty} f(x) = \lim\limits_{x\to -\infty} f(x) = y_0$，则 $y=y_0$ 为函数 $y=f(x)$ 的一条水平渐近线
+        \item 若 $\lim\limits_{\color{red}{x\to +\infty}} f(x)=y_1$，则 $y=y_1$ 为函数 $y=f(x)$ 的一条水平渐近线；
+        \item 若 $\lim\limits_{\color{red}{x\to -\infty}} f(x)=y_2$，则 $y=y_2$ 为函数 $y=f(x)$ 的一条水平渐近线；
+        \item 若 $\lim\limits_{\color{red}{x\to +\infty}} f(x) = \lim\limits_{{\color{red}{x\to x_0^{+}}}} f(x) = y_0$，则 $y=y_0$ 为函数 $y=f(x)$ 的一条水平渐近线
     \end{enumerate}
 
     \subsubsection{斜渐近线}
@@ -338,7 +338,29 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
     \begin{enumerate}
         \item 寻找渐近线顺序：铅直渐近线、水平渐近线、斜渐近线
         \item 求斜渐近线时，$a$与$b$均应求出来才可能，仅求出$a$不能确定有斜渐近线
-        \item $\color{red}{\bigstar}$ 曲线与渐近线可能会有交点。\emph{e.g.} $y = \frac{\sin x}{x}$
+        \item $\color{red}{\bigstar}$ 曲线与渐近线可能会有交点。\emph{e.g.} $y = \displaystyle\frac{\sin x}{x}$
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                axis lines = middle,
+                domain = -80:80,
+                samples = 800,
+                xmin = -85, xmax = 84,      % 右侧留白
+                ymin = -0.3, ymax = 1.1,    % 上方留白
+                width = 17cm,
+                height = 5.5cm,
+                xtick = \empty,
+                ytick = \empty,
+                enlargelimits = false,
+                axis line style = {->},
+                ]
+                \addplot[
+                    thick,
+                    blue,
+                ] {x==0 ? 1 : sin(deg(x))/x};
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
     \end{enumerate}
 
     \begin{center}
@@ -448,7 +470,7 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
 
     \begin{circlenum}
         \item 求出函数 $f(x)$ 在 $(a,b)$ 内的可疑点——驻点与不可导点，并求出这些可疑点处的函数值；
-        \item 求区间 $(a,b)$ 两端的单侧极限：若 $a,b$ 为有限常数，则求 $\lim_{x\to a^+} f(x)$ 与 $\lim_{x\to b^-} f(x)$；若 $a=-\infty$，则求 $\lim_{x\to -\infty} f(x)$；若 $b=+\infty$，则求 $\lim_{x\to +\infty} f(x)$，记以上所求左端极限为 $A$，右端极限为 $B$；
+        \item 求区间 $(a,b)$ 两端的单侧极限若 $a,b$ 为有限常数，则求 $\lim\limits_{x\to a^+} f(x)$ 与 $\lim\limits_{x\to b^-} f(x)$；若 $a=-\infty$，则求 $\lim\limits_{x\to -\infty} f(x)$；若 $b=+\infty$，则求 $\lim\limits_{x\to +\infty} f(x)$，记以上所求左端极限为 $A$，右端极限为 $B$；
         \item 比较前两步所得结果，确定函数的最值或取值范围。
     \end{circlenum}
 
@@ -596,7 +618,7 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
     曲率半径的计算公式为
     \[
         R=\frac{1}{k}
-        =\frac{\left[1+\bigl(y'\bigr)^2\right]^{\tfrac{3}{2}}}{|y''|}. \; y'' \neq 0
+        =\frac{\left[1+\bigl(y'\bigr)^2\right]^{\tfrac{3}{2}}}{|y''|}, \; y'' \neq 0
     \]
 
         {\color{blue}{弯曲程度越大，曲率越大，曲率圆的半径越小}}
