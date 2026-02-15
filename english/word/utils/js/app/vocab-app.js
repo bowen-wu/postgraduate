@@ -209,39 +209,43 @@ export class VocabApp {
     return EventHandlers.refreshFileList();
   }
 
+  /**
+   * Restart from beginning - restore card structure if needed and show first card
+   */
   restart() {
-    EventHandlers.restart();
-  }
-
-  clearDataAndReload() {
-    EventHandlers.clearDataAndReload();
-  }
-
-  playWord(word, buttonId = null, useTTSFallback = false, showNotification = true) {
-    return EventHandlers.playWord(word, buttonId, useTTSFallback, showNotification);
-  }
-
-  reveal(el) {
-    UiRenderer.reveal(el);
-  }
-
-  showSentenceTranslation() {
-    UiRenderer.showSentenceTranslation(this.ui);
-  }
-
-  showCompletionScreen() {
-    UiRenderer.showCompletionScreen(this.ui);
-  }
-
-  restart() {
-    // Restore original card content
+    // Restore original card content if available, otherwise rebuild the structure
     if (window._originalCardContent) {
       this.ui.card.innerHTML = window._originalCardContent;
+    } else if (!document.getElementById('displayWord')) {
+      // Card structure was replaced (e.g., by completion screen) - rebuild it
+      this.ui.card.innerHTML = `
+        <header class="card-header">
+          <div class="word-title-group">
+            <span class="main-word" id="displayWord">Loading...</span>
+            <span class="pronunciation" id="displayPronunciation"></span>
+          </div>
+          <div class="badges" id="displayBadges"></div>
+        </header>
+        <div class="card-body">
+          <ul class="item-list" id="itemList"></ul>
+        </div>
+        <footer class="card-footer">
+          <button class="btn-ghost" onclick="app.prevCard()" id="btnPrev">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            上一个
+          </button>
+          <span class="progress-indicator" id="progressText">0 / 0</span>
+          <div class="action-area" id="actionArea"></div>
+        </footer>
+      `;
     }
 
     // Reset index and start new session
     STATE.currentIndex = 0;
     StateManager.startSession();
+    StateManager.saveState();
 
     // Re-initialize UI elements that were replaced
     this.ui.word = document.getElementById('displayWord');
@@ -257,8 +261,11 @@ export class VocabApp {
   }
 
   clearDataAndReload() {
-    localStorage.removeItem(CONFIG.storageKey);
-    location.reload();
+    EventHandlers.clearDataAndReload();
+  }
+
+  playWord(word, buttonId = null, useTTSFallback = false, showNotification = true) {
+    return EventHandlers.playWord(word, buttonId, useTTSFallback, showNotification);
   }
 
   // Confirm dialog object

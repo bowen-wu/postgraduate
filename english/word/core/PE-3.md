@@ -26,6 +26,7 @@
 - The verb comes from a Germanic root meaning "to **raise**", while the noun is rooted in the Latin *retro* "behind".
 - ...child **rearing** is anything less than a completely fulfilling, life-enriching experience.
     - child rearing 育儿
+    - anything less than... 远非/绝不是/不完全是
 
 ## run
 
@@ -39,6 +40,7 @@
   **run**.
 - The longest bull **run** in a century of art-market history ended on a dramatic note with a scale of 56 works by
   Damien...
+    - end on a...note 以某种基调结束
 
 ## level
 
@@ -47,8 +49,13 @@
 - adj. 水平的，平坦的
 - The verb level also mean to **flatten** or **destroy**.
 - We found that women as well as men have lower **levels** of stress at work than at home.
-- The tornado is about to **level** their house.
+- The *tornado([tɔːrˈneɪdoʊ] n. 龙卷风)* is about to **level** their house.
+- level something to the ground 把某物夷为平地
 - Retail trade groups praised the ruling, saying it **levels** the playing filed for local and online businesses.
+    - praise [preɪz]
+        - n. 赞美，称赞
+        - vt. 赞美，称赞
+    - level the playing field (for...) 让竞争更加公平/消除不公平优势
 
 ## rest
 
@@ -56,9 +63,12 @@
 - v. 依赖，基于；在于，归属于
 - n. 休息；其余部分
 - For the **rest** of the decade she apparently managed both roles without attracting much criticism.
+    - apparently adv. 显然地
+    - attract [əˈtrækt] v. 吸引；引起（反应）
 - That argument **rests** on a false assumption.
     - rest on 基于；取决于；依赖于
         - == depend on == count on
+    - assumption [əˈsʌmpʃn] n. 假设，设想
 - Copyright **rested** with the journal publisher.
     - rest with 归...所有；（责任/决定）由...承担/归...负责
 - But the idea...**rests** on an understanding of the established conventions and special responsibilities of the news
