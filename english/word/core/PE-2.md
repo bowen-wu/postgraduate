@@ -17,15 +17,6 @@
 - C: Cause
 - R: Result
 
-## fan
-
-- v. 给...扇风；煽动，激起
-- n. 风扇；粉丝
-- She would have to wait in the truck, **fanning** herself with a piece of cardboard.
-- His writings **fanned** the flames of *hatred([ˈheɪtrɪd] n. 仇恨，憎恶; 敌意)*.
-    - fan the flames of... 煽动/火上浇油/使（情绪、冲突）升级
-- Favoritism in official access can **fan** public perceptions of corruption.
-
 ## handsome
 
 - adj. 可观的，相当大的；英俊的
@@ -185,6 +176,25 @@
       **impartial**. 然而，在若干情况下，一些大法官的行为削弱了法院作为一个独立且公正机构的声誉
         - weaken v. 减弱，削弱
         - acted in ways that... 以某种方式行事
+
+## rear
+
+- v. 抚养，喂养
+- n. 后面
+- adj. 后方的
+- The **rear** is the back end of something, like the **rear** of a school bus.
+- The verb comes from a Germanic root meaning "to **raise**", while the noun is rooted in the Latin *retro* "behind".
+- ...child **rearing** is anything less than a completely fulfilling, life-enriching experience.
+    - child rearing 育儿
+    - anything less than... 远非/绝不是/不完全是
+
+## rocket
+
+- [ˈrɑːkɪt]
+- v. 迅速增加；飞涨
+- n. 火箭
+- Unemployment levels have **rocketed** to new heights.
+- The reason, of course, is that costs have **rocketed** and ticket prices have stayed low.
 
 ## Words
 

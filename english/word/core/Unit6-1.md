@@ -86,7 +86,7 @@
 ## form
 
 - v. 组成；产生
-- n. 形式；种类
+- n. 形式；种类；外形
 - in the form of 以...的形式
 - formal [ˈfɔːrml]
     - adj. 正式的；正规的

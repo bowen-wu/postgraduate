@@ -391,8 +391,16 @@ export async function loadFile(path, ui = null) {
     ui.loader.classList.add('hidden');
     ui.card.classList.remove('hidden');
 
-    UiRenderer.updateCurrentFileDisplay(ui, relativePath);
-    window.app.render();
+    // 🔧 FIX: If currentIndex was reset to 0 (file was completed before),
+    // use restart() logic to restore card structure and show first card
+    if (STATE.currentIndex === 0 && !document.getElementById('displayWord')) {
+      UiRenderer.updateCurrentFileDisplay(ui, relativePath);
+      window.app.restart();
+    } else {
+      UiRenderer.updateCurrentFileDisplay(ui, relativePath);
+      window.app.render();
+    }
+
     StateManager.updateStatsUI(ui);
     UiRenderer.showToast(ui, `解析完成：${STATE.cards.length} 张卡片`);
   } catch (e) {
@@ -445,17 +453,6 @@ export function showCompletionScreen(ui) {
       </div>
     </div>
   `;
-}
-
-/**
- * Restart from beginning
- */
-export function restart() {
-  STATE.currentIndex = 0;
-  // 🔧 FIX: Start a new session when restarting
-  StateManager.startSession();
-  StateManager.saveState();
-  window.app.render();
 }
 
 /**

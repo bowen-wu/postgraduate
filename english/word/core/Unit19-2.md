@@ -122,6 +122,7 @@
     - n. 凝视
 - glare [ɡler]
     - vi. 怒目而视
+    - n. 强光
     - glare at
 - glance [ɡlæns]
     - n. 一瞥
