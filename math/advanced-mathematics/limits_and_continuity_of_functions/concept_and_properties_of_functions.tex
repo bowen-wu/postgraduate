@@ -15,6 +15,25 @@
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 经典
+\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
+\newtcbox{\classic}{
+    on line,
+    colback=classicgreen!10,
+    colframe=classicgreen,
+    boxrule=0.8pt,
+    arc=3pt,
+    boxsep=1pt,
+    left=4pt,
+    right=4pt,
+    top=2pt,
+    bottom=2pt
+}
+
+
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
 \newcommand{\analysisBackColor}{white}
@@ -129,6 +148,15 @@
         \begin{itemize}
             \item $f(x) + f(-x)$必是偶函数
             \item $f(x) - f(-x)$必是奇函数
+            \item 基本代数规则
+            \begin{circlenum}
+                \item 偶 + 偶 = 偶
+                \item 奇 + 奇 = 奇
+                \item 偶 + 奇 = 不知道
+                \item 偶 $\cdot$ 偶 = 偶
+                \item 奇 $\cdot$ 奇 = 偶
+                \item 偶 $\cdot$ 奇 = 奇
+            \end{circlenum}
             \item 任意定义在关于原点对称区间上的函数，都可以表示为一个奇函数与一个偶函数之和。对任一函数 $f(x)$，定义
             \[
                 u(x) = \frac{1}{2}\bigl[f(x) + f(-x)\bigr], \qquad
@@ -143,6 +171,7 @@
             \]
             \item $f[\varphi(x)]$内偶则偶，内奇同外
             \item $\color{red}{\bigstar}$求导一次，奇偶性互换
+            \item $f(x)$奇$\Rightarrow \int_0^x f(t)\,\mathrm{d}t$偶
             \item 设对任意的$x, y$，都有$f(x + y) = f(x) + f(y)$，则$f(x)$是奇函数
             \item 常见的奇函数
             \begin{enumerate}

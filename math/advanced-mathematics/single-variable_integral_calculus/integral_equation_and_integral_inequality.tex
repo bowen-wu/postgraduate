@@ -11,6 +11,14 @@
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
 \usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{extarrows}
+\pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 \definecolor{customgreen}{rgb}{0.2,0.6,0.3}
@@ -31,7 +39,6 @@
     bottom=2pt
 }
 
-
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
 \newcommand{\analysisBackColor}{white}
@@ -51,6 +58,18 @@
     top=4pt,
     bottom=4pt
 }
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
 
 % =========================
 % 字体设置
@@ -80,9 +99,32 @@
 
 % =========================
 
-    \section{title}
+    \section{一元函数积分学的应用 - 积分等式与积分不等式}
+
+    \subsection{积分等式}
+
+    \begin{enumerate}
+        \item 用中值定理
+        \item 用夹逼准则
+        \item 用积分法
+    \end{enumerate}
+
+    \subsection{积分不等式}
+
+    \begin{enumerate}
+        \item 用函数的单调性：首先将某一积分限（通常取上限）变量化，然后移项构造辅助函数，由辅助函数的单调性来证明不等式，此方法多用于所给条件为\textbf{\blueuline{$f(x)$在$[a, b]$上连续}}的情形
+        \item 用拉格朗日中值定理：此方法多用于所给条件为\textbf{\blueuline{$f(x)$一阶可导}}且某一端点值比较简单（甚至为$0$）的题目
+        \item 用泰勒公式：此方法多用于所给条件为\textbf{\blueuline{$f(x)$二阶可导}}且题中有简单函数值（甚至为$0$）的题目
+        \item 用积分法
+        \item 用牛顿-莱布尼茨公式
+    \end{enumerate}
 
     \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
 
     \begin{enumerate}
     \end{enumerate}
@@ -104,7 +146,7 @@
 
     \end{enumerate}
 
-    \subsection{方法步骤}
+    \subsection{方法总结}
 
     \begin{enumerate}
 

@@ -56,7 +56,8 @@
     - attract [əˈtrækt] v. 吸引；引起（反应）
 - That argument **rests** on a false assumption.
     - rest on 基于；取决于；依赖于
-        - == depend on == count on
+        - == depend on
+        - == count on
     - assumption [əˈsʌmpʃn] n. 假设，设想
 - Copyright **rested** with the journal publisher.
     - rest with 归...所有；（责任/决定）由...承担/归...负责
@@ -139,7 +140,8 @@
 - v. 坐；任职，在职
 - She **sat** on a number of committees.
     - a number of 若干个 / 好几个
-        - == several == many
+        - == several
+        - == many
 - sitting
     - adj. 在职的，任职的
     - I can't think of a single search I've done where a board has not instructed me to look at **sitting** CEOs first.
@@ -157,7 +159,7 @@
 - They finally return to the homeland safe and **sound**.
     - safe and sound 安然无恙
 - The court's ruling is legally **sound** in defining a kind of favoritism that is not criminal.
-  院的裁决在法律上是站得住脚的，因为它界定了一种不构成犯罪的偏袒行为
+  法院的裁决在法律上是站得住脚的，因为它界定了一种不构成犯罪的偏袒行为
     - be sound in doing something 在...方面是合理的
     - a kind of 一种...
 
@@ -215,6 +217,7 @@
 - The same dramatic technological changes that have provided marketers with more (and more diverse) communications
   choices have also increased the risk that passionate consumers will **voice** their opinions in quicker, more visible,
   and much more damaging ways. 同样带来更多（且更加多样化）传播选择的这些重大技术变革，也增加了一个风险：热情的消费者会以更迅速、更公开、也更具破坏性的方式表达他们的意见。
+    - diverse [daɪˈvɜːrs] adj. 多种多样的
     - voice one's opinion 发表某人的意见
 
 ## Words

@@ -161,6 +161,14 @@ export class VocabApp {
     UiRenderer.revealAll();
   }
 
+  reveal(el) {
+    UiRenderer.reveal(el);
+  }
+
+  showSentenceTranslation() {
+    UiRenderer.showSentenceTranslation(this.ui);
+  }
+
   recordError() {
     EventHandlers.recordError();
   }

@@ -22,6 +22,24 @@
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 经典
+\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
+\newtcbox{\classic}{
+    on line,
+    colback=classicgreen!10,
+    colframe=classicgreen,
+    boxrule=0.8pt,
+    arc=3pt,
+    boxsep=1pt,
+    left=4pt,
+    right=4pt,
+    top=2pt,
+    bottom=2pt
+}
+
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
 \newcommand{\analysisBackColor}{white}
@@ -146,6 +164,15 @@
 
     \subsection{不定积分的积分法}
 
+    \begin{enumerate}
+        \item 基本积分公式
+        \item 化简（恒等变形）
+        \item 凑微分法
+        \item 换元法
+        \item 分部积分法
+        \item 有理函数的积分
+    \end{enumerate}
+
     \subsubsection{凑微分法}
 
     \[
@@ -256,25 +283,578 @@
         \int f(x)\,\mathrm{d}x \xlongequal{x = g(x)} \int f[g(u)]\,\mathrm{d}[g(u)] = \int f[g(u)]g'(u)\,\mathrm{d}u
     \]
 
+    $x = g(u)$须是单调可导函数
 
+    \begin{enumerate}
+        \item 三角函数代换：当被积函数含有如下根式时，可作三角函数代换，这里$a > 0$
+        \begin{itemize}
+            \item $\sqrt {a^2 - x^2} \Rightarrow$ 令$x = a\sin t, |t| < \displaystyle\frac{\pi}{2}$
+            \begin{center}
+                \begin{tikzpicture}[scale=0.8]
+
+                    % 定义点
+                    \coordinate (O) at (0,0);
+                    \coordinate (A) at (4,0);
+                    \coordinate (B) at (4,2.5);
+
+                    % 画三角形
+                    \draw (O) -- (A) -- (B) -- cycle;
+
+                    % 直角符号
+                    \draw (3.7,0) -- (3.7,0.3) -- (4,0.3);
+
+                    % 标注边
+                    \node at (2, -0.6) {$\gmath{\sqrt{a^2 - x^2}}$};
+                    \node at (4.3, 1.25) {$x$};
+                    \node at (2, 1.5) {$a$};
+
+                    % 标注角 t
+                    \draw (0.8,0) arc (0:32:0.8);
+                    \node at (1,0.3) {$t$};
+                \end{tikzpicture}
+            \end{center}
+            \item $\sqrt {a^2 + x^2} \Rightarrow$ 令$x = a\tan t, |t| < \displaystyle\frac{\pi}{2}$
+            \begin{center}
+                \begin{tikzpicture}[scale=0.8]
+
+                    % 定义点
+                    \coordinate (O) at (0,0);
+                    \coordinate (A) at (3,0);
+                    \coordinate (B) at (3,2);
+
+                    % 画三角形
+                    \draw (O) -- (A) -- (B) -- cycle;
+
+                    % 直角符号
+                    \draw (2.7,0) -- (2.7,0.25) -- (3,0.25);
+
+                    % 标注边
+                    \node at (1.5,-0.25) {$a$};
+                    \node at (3.3,1) {$x$};
+                    \node[above] at (0.6,1.1) {$\gmath{\sqrt{a^2 + x^2}}$};
+
+                    % 标注角 t
+                    \draw (0.6,0) arc (0:34:0.6);
+                    \node at (0.85,0.25) {$t$};
+
+                \end{tikzpicture}
+            \end{center}
+            \item $\sqrt {x^2 - a^2} \Rightarrow$ 令$x = a\sec t$
+            \[
+                \begin{cases}
+                    x > 0 \;\Longrightarrow\; 0 < t < \dfrac{\pi}{2}, \\[6pt]
+                    x < 0 \;\Longrightarrow\; \dfrac{\pi}{2} < t < \pi.
+                \end{cases}
+            \]
+            \item 恒等变形后作三角函数代换：当被积函数含有根式$\sqrt {ax^2 + bx + c}$时，可先化为$\sqrt {\varphi^2(x) + k^2}$、$\sqrt {\varphi^2(x) - k^2}$或$\sqrt {k^2 - \varphi^2(x)}$，再作三角函数代换
+            \item ${\color{red}{\bigstar}}$根式代换：当被积函数含有根式$\sqrt[n]{ax + b}, \sqrt {\displaystyle\frac{ax + b}{cx + d}}, \sqrt {ae^{bx} + c}$时，一般令根式$\sqrt {*} = t$。对既含有$\sqrt[n]{ax + b}$，也含有$\sqrt[m]{ax + b}$的函数，一般取$m, n$的最小公倍数$l$，令$\sqrt[l]{ax + b} = t$
+            \item 倒代换：当被积函数分母的幂次比分子高两次及两次以上时，作倒代换，令$t = \displaystyle\frac{1}{t}$
+            \item 复杂函数的直接代换：当被积函数中含有$a^x, e^x, \ln x, \arcsin x, \arctan x$等时，可考虑直接令复杂函数等于$t$
+        \end{itemize}
+    \end{enumerate}
 
     \subsubsection{分部积分法}
 
+    \begin{enumerate}
+        \item $\int u\,\mathrm{d}v = uv - \int v\,\mathrm{d}u$(反对幂指三)
+        \item 设函数$u = u(x)$与$v = v(x)$具有直到第$n+1$阶的连续导数，并根据分部积分公式$\int u\,\mathrm{d}v = uv - \int v\,\mathrm{d}u$则有
+        \[
+            \int uv^{(n+1)}\,\mathrm{d}x = uv^{(n)} - u'v^{(n-1)} + u''v^{(n-2)}- \cdots + (-1)^{n}u^{(n)}v + (-1)^{n+1}\int u^{(n+1)}v\,\mathrm{d}x
+        \]
+
+        \begin{center}
+            \begin{tabular}{c|c|c|c|c|c}
+                \hline
+                $u$的各阶导数       & $u$     & $u'$    & $u''$ & $u^{(3)}$ & $u^{(4)}$ \\
+                \hline
+                $v^{(4)}$的各阶导数 & v^{(4)} & v^{(3)} & $v''$ & $v'$      & $v$       \\
+                \hline
+            \end{tabular}
+        \end{center}
+
+        计算方法：以$u$作起点左上、右下错位相乘，各项符号 $+,-,$ 相间，最后一项为$\int u^{(4)}v\,\mathrm{d}x$
+        \item 分部积分法可能的结果
+        \begin{itemize}
+            \item 方程: $I = \square - I$
+            \item 抵消: $I = \square - I_1 + I_1$
+            \item 递推式: $I_n = F(I_{n-1}, I_{n-2})$
+        \end{itemize}
+
+    \end{enumerate}
+
     \subsubsection{有理函数的积分}
 
+    \begin{enumerate}
+        \item 定义：形如$\int \displaystyle\frac{P_n(x)}{Q_m(x)}\,\mathrm{d}x(n < m)$的积分称为\textbf{有理函数的积分}，其中$P_n(x), Q_m(x)$分别是$x$的$n$次多项式和$m$次多项式
+        \item 思想：若$Q_m(x)$在实数域内可因式分解，则因式分解后再把$\displaystyle\frac{P_n(x)}{Q_m(x)}$拆成若干项最简有理分式之和。有理式$=$\textbf{最简有理分式之和}，其中最简有理式分为
+        \begin{circlenum}
+            \item $\displaystyle\frac{A}{ax + b}$
+            \item $\displaystyle\frac{A_k}{(ax + b)^k}, k=2,3,\cdots$
+            \item $\displaystyle\frac{Ax + B}{px^2 + qx + r}$
+            \item $\displaystyle\frac{A_{k}x + B_k}{(px^2 + qx + r)^k}, k=2,3,\cdots$
+        \end{circlenum}
+        \item 方法（如何拆）
+        \begin{circlenum}
+            \item $Q_m(x)$的一次单因式产生一项$\displaystyle\frac{A}{ax + b}$
+            \begin{analysisbox}[Example]
+                \[
+                    \int \frac{1}{x + 1}\,\mathrm{d}x = \ln |x+1| + C
+                \]
+            \end{analysisbox}
+            \item $Q_m(x)$的$k$重一次因式$(ax + b)^k$产生$k$项，分别为$\displaystyle\frac{A_1}{ax + b}, \displaystyle\frac{A_2}{(ax + b)^2}, \cdots, \displaystyle\frac{A_k}{(ax + b)^k}, k = 2,3,\cdots$
+            \begin{analysisbox}[Example]
+                \[
+                    \int \frac{2}{(2x-1)^2}\,\mathrm{d}x = \int \frac{2}{(2x-1)^2}\,\mathrm{d}(2x-1) = -\frac{1}{2x-1} + C
+                \]
+            \end{analysisbox}
+            \item $Q_m(x)$的二次单因式$px^2 + qx + r$产生一项$\displaystyle\frac{Ax + B}{px^2 + qx + r}$。须$\Delta = q^2 - 4pr < 0$
+            \begin{analysisbox}[Example]
+                \[
+                    \int \frac{x-1}{x^2 + 1}\,\mathrm{d}x = \int \frac{1}{x}\frac{2x}{x^2 + 1}\,\mathrm{d}x - \int \frac{1}{x^2 + 1}\,\mathrm{d}x = \frac{1}{x}\ln (x^2 + 1) - \arctan x + C
+                \]
+            \end{analysisbox}
+            \item $Q_m(x)$的$k$重二次因式$(px^2 + qx + r)^k$产生$k$项，分别为$\displaystyle\frac{A_{1}x + B_1}{px^2 + qx + r}$，$\displaystyle\frac{A_{2}x + B_2}{(px^2 + qx + r)^2}$，$\cdots, \displaystyle\frac{A_{k}x + B_k}{(px^2 + qx + r)^k}$
+            \begin{analysisbox}[Example]
+                求
+                \[
+                    I_2 = \int \frac{\mathrm{d}x}{(1+x^2)^2}.
+                \]
+
+                \textbf{思路：}
+                若分母为 $1+x^2$，则原函数为 $\arctan x$，
+                因此考虑将 $(1+x^2)^2$ 降阶处理。
+
+                \textbf{解：}
+                设
+                \[
+                    I_1 = \int \frac{1}{1+x^2}\,\mathrm{d}x = \arctan x.
+                \]
+
+                利用分部积分法，
+                \[
+                    I_1
+                    = \int \frac{1}{1+x^2}\,\mathrm{d}x
+                    = \frac{x}{1+x^2}
+                    + \int x \cdot \frac{2x}{(1+x^2)^2}\,\mathrm{d}x.
+                \]
+
+                整理被积式：
+                \[
+                    \begin{aligned}
+                        I_1
+                        &= \frac{x}{1+x^2}
+                        + 2 \int \frac{x^2}{(1+x^2)^2}\,\mathrm{d}x \\
+                        &= \frac{x}{1+x^2}
+                        + 2 \int \frac{(1+x^2)-1}{(1+x^2)^2}\,\mathrm{d}x \\
+                        &= \frac{x}{1+x^2}
+                        + 2 \int \frac{1}{1+x^2}\,\mathrm{d}x
+                        - 2 \int \frac{1}{(1+x^2)^2}\,\mathrm{d}x.
+                    \end{aligned}
+                \]
+
+                即
+                \[
+                    I_1
+                    = \frac{x}{1+x^2}
+                    + 2I_1
+                    - 2I_2.
+                \]
+
+                解得
+                \[
+                    I_2
+                    =
+                    \frac{x}{2(1+x^2)}
+                    +
+                    \frac{1}{2}\arctan x
+                    + C.
+                \]
+            \end{analysisbox}
+            \item \begin{analysisbox}[Example]
+
+                      \[
+                          \frac{4x^2 - 6x - 1}{(x+1)(2x-1)^2}
+                          =
+                          \frac{A}{x+1}
+                          +
+                          \frac{B}{2x-1}
+                          +
+                          \frac{C}{(2x-1)^2}
+                      \]
+
+                      解恒等式：
+                      \[
+                          A(2x-1)^2
+                          +
+                          B(x+1)(2x-1)
+                          +
+                          C(x+1)
+                          =
+                          4x^2 - 6x - 1
+                      \]
+
+                      在恒等式中，对变量 $x$ 取任意值，等式两边应恒相等，
+                      因此可代入特殊值求系数。
+
+                      令
+                      \[
+                          x = -1,
+                          \quad
+                          x = \frac{1}{2},
+                          \quad
+                          x = 0
+                      \]
+                      即可求得 $A, B, C$
+            \end{analysisbox}
+        \end{circlenum}
+    \end{enumerate}
+
     \subsection{定积分的计算}
+
+    \subsubsection{牛顿-莱布尼茨公式}
+    设函数$F(x)$是连续函数$f(x)$在$[a, b]$上的一个原函数，则
+    \[
+        \int_a^b f(x)\,\mathrm{d}x = F(x)\Big|_{a}^{b} = F(b) - F(a)
+    \]
+
+    \subsubsection{牛顿–莱布尼茨公式的推广}
+
+    设 $f(x)$ 在 $[a,b]$ 上分段存在原函数。
+    若在 $[a,c)$ 上存在原函数 $F_1(x)$，
+    在 $(c,b]$ 上存在原函数 $F_2(x)$，
+    则
+
+    \[
+        \int_a^b f(x)\,\mathrm{d}x
+        =
+        \int_a^c f(x)\,\mathrm{d}x
+        +
+        \int_c^b f(x)\,\mathrm{d}x.
+    \]
+
+    若极限存在，则
+
+    \[
+        \int_a^b f(x)\,\mathrm{d}x
+        =
+        \lim_{x \to c^-} F_1(x) - F_1(a)
+        +
+        F_2(b) - \lim_{x \to c^+} F_2(x).
+    \]
+
+    \medskip
+
+    \textbf{收敛性判定：}
+
+    \begin{itemize}
+        \item 若 $\displaystyle \lim_{x \to c^-} F_1(x)$ 与
+        $\displaystyle \lim_{x \to c^+} F_2(x)$ 均存在，
+        则 $\displaystyle \int_a^b f(x)\,\mathrm{d}x$ 收敛；
+
+        \item 若上述两个极限中至少有一个不存在，
+        则 $\displaystyle \int_a^b f(x)\,\mathrm{d}x$ 发散。
+    \end{itemize}
+
+    \subsubsection{定积分的换元积分法}
+
+    设$f(x)$在$[a, b]$上连续，函数$x = \varphi(x)$满足\ding{172}$\varphi(\alpha) = a, \varphi(\beta) = b$; \ding{173}$x = \varphi(t)$在$[\alpha, \beta]$（或$[\beta, \alpha]$）上有连续的导数，且其值域为$R_\varphi = [a, b]$，则有
+    \[
+        \int_a^b f(x)\,\mathrm{d}x = \int_{\alpha}^{\beta} f[\varphi(t)]\varphi'(t)\,\mathrm{d}t
+    \]
+
+    换元要三换
+    \begin{circlenum}
+        \item 被积函数要换: $f(x) \rightarrow f[\varphi(x)]$
+        \item 积分变量要换: $\mathrm{d}x \rightarrow \varphi'(t)\,\mathrm{d}t$
+        \item 上下限要换: $\int_{a}^b \rightarrow \int_{\alpha}^{\beta}$
+    \end{circlenum}
+
+    \subsubsection{定积分的分部积分法}
+
+    \[
+        \int_a^b u(x)v'(x)\,\mathrm{d}x = u(x)v(x)\Big|_a^b - \int_a^b v(x)u'(x)\,\mathrm{d}x
+    \]
+    这里要求$u'(x), v'(x)$在$[a, b]$上连续
+
+    \subsubsection{结论}
+
+    \begin{enumerate}
+        \item 设$f(x)$为连续的偶函数，则$\int_{-a}^{a} f(x)\,\mathrm{d}x = 2\int_{0}^{a} f(x)\,\mathrm{d}x$
+        \item 设$f(x)$为连续的奇函数，则$\int_{-a}^{a} f(x)\,\mathrm{d}x = 0$
+        \item 设$f(x)$是以$T$为周期的连续函数，则$\int_{a}^{a + T} f(x)\,\mathrm{d}x = \int_{0}^{T} f(x)\,\mathrm{d}x$
+        \item 区间再现公式：设$f(x)$为连续函数，则$\int_{a}^{b} f(x)\,\mathrm{d}x = \int_{a}^{b} f(a + b - x)\,\mathrm{d}x$
+        \begin{enumerate}
+            \item 若$f(x)$复杂，$f(x) + f(a + b - x)$简单，则考虑
+            \[
+                \int_a^b f(x)\,\mathrm{d}x = \int_a^b \frac{f(x) + f(a + b - x)}{2}\,\mathrm{d}x
+            \]
+            \item \classic{经典}
+            \[
+                \begin{aligned}
+                    \int_0^{\frac{\pi}{4}} \ln(1+\tan x)\,\mathrm{d}x
+                    &= \int_0^{\frac{\pi}{4}}
+                    \ln\!\left[1+\tan\!\left(\frac{\pi}{4}-x\right)\right]
+                    \,\mathrm{d}x \\[6pt]
+                    &= \int_0^{\frac{\pi}{4}}
+                    \ln\!\left(\frac{2}{1+\tan x}\right)
+                    \,\mathrm{d}x \\[6pt]
+                    &= \int_0^{\frac{\pi}{4}}
+                    \frac{
+                        \ln\!\left(\frac{2}{1+\tan x}\right)
+                        +
+                        \ln(1+\tan x)
+                    }{2}
+                    \,\mathrm{d}x \\[8pt]
+                    &= \frac{\pi}{8}\ln 2
+                \end{aligned}
+            \]
+            \item $\displaystyle\int_0^{\pi} xf(\sin x)\,\mathrm{d}x = \frac{\pi}{2}\int_0^{\pi} f(\sin x)\,\mathrm{d}x$
+        \end{enumerate}
+        \item 华里士公式
+        \begin{itemize}
+            \item \[
+                      \int_{0}^{\frac{\pi}{2}} \sin^{n} x \,\mathrm{d}x
+                      =
+                      \int_{0}^{\frac{\pi}{2}} \cos^{n} x \,\mathrm{d}x
+                      =
+                      \begin{cases}
+                          \displaystyle
+                          \frac{n-1}{n}
+                          \cdot
+                          \frac{n-3}{n-2}
+                          \cdot
+                          \cdots
+                          \cdot
+                          \frac{2}{3}
+                          \cdot
+                          1,
+                          & n \text{为大于 1 的奇数}, \\[1.2em]
+
+                          \displaystyle
+                          \frac{n-1}{n}
+                          \cdot
+                          \frac{n-3}{n-2}
+                          \cdot
+                          \cdots
+                          \cdot
+                          \frac{1}{2}
+                          \cdot
+                          \frac{\pi}{2},
+                          & n \text{为正偶数}.
+                      \end{cases}
+            \]
+
+            \item
+            \[
+                \int_{0}^{\pi} \sin^{n} x \,\mathrm{d}x
+                =
+                \begin{cases}
+                    \displaystyle
+                    2
+                    \cdot
+                    \frac{n-1}{n}
+                    \cdot
+                    \frac{n-3}{n-2}
+                    \cdot
+                    \cdots
+                    \cdot
+                    \frac{2}{3}
+                    \cdot
+                    1,
+                    & n \text{为大于 1 的奇数}, \\[1.2em]
+
+                    \displaystyle
+                    2
+                    \cdot
+                    \frac{n-1}{n}
+                    \cdot
+                    \frac{n-3}{n-2}
+                    \cdot
+                    \cdots
+                    \cdot
+                    \frac{1}{2}
+                    \cdot
+                    \frac{\pi}{2},
+                    & n \text{为正偶数}.
+                \end{cases}
+            \]
+
+            \[
+                \int_{0}^{\pi} \cos^{n} x \,\mathrm{d}x
+                =
+                \begin{cases}
+                    0,
+                    & n \text{为正奇数}, \\[0.8em]
+
+                    \displaystyle
+                    2
+                    \cdot
+                    \frac{n-1}{n}
+                    \cdot
+                    \frac{n-3}{n-2}
+                    \cdot
+                    \cdots
+                    \cdot
+                    \frac{1}{2}
+                    \cdot
+                    \frac{\pi}{2},
+                    & n \text{为正偶数}.
+                \end{cases}
+            \]
+
+            \item
+            \[
+                \int_{0}^{2\pi} \sin^{n} x \,\mathrm{d}x
+                =
+                \int_{0}^{2\pi} \cos^{n} x \,\mathrm{d}x
+                =
+                \begin{cases}
+                    0,
+                    & n \text{为正奇数}, \\[0.8em]
+
+                    \displaystyle
+                    4
+                    \cdot
+                    \frac{n-1}{n}
+                    \cdot
+                    \frac{n-3}{n-2}
+                    \cdot
+                    \cdots
+                    \cdot
+                    \frac{1}{2}
+                    \cdot
+                    \frac{\pi}{2},
+                    & n \text{为正偶数}.
+                \end{cases}
+            \]
+        \end{itemize}
+        \item
+    \end{enumerate}
 
     \subsection{变限积分的计算}
 
     \subsubsection{求导公式}
 
+    设$F(x) = \int_{\varphi_1(x)}^{\varphi_2(x)} {\color{red}{f(t)}}\,\mathrm{d}t$，其中$f(x)$在$[a, b]$上连续，可导函数$\varphi_1(x)$和$\varphi_2(x)$的值域在$[a, b]$上，则在函数$\varphi_1(x)$和$\varphi_2(x)$的公共定义域上，有
+    \[
+        F'(x) = \frac{\mathrm{d}}{\mathrm{d}x}\left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(t)\,\mathrm{d}t\right] = f[\varphi_2(x)]\varphi_2'(x) - f[\varphi_1(x)]\varphi_1'(x)
+    \]
+
+    上面公式中的$x$为\textbf{求导变量}，$t$为\textbf{积分变量}。当被积函数中只含\textbf{积分变量}$t$时，才能使用求导公式，若被积函数中有\textbf{求导变量}$x$，则必须通过恒等变形（比如变量代换等）将其移出被积函数，才能使用变限积分求导公式
+
     \subsubsection{重要结论}
 
+    只需要被积函数可积，即可有变限积分的相关性质，只有被积函数连续时，才能谈原函数的相关性质
+
+    \begin{enumerate}
+
+        \item ${\color{red}{\bigstar}}$\; $f(x)$ 为可积（\textbf{有可能有跳跃间断点、可去间断点}）的奇函数 $\Rightarrow \int_{a}^{x} f(t)\,\mathrm{d}t,\ \forall a$ 为偶函数
+
+        \item 若 $f(x)$ 为连续的奇函数，则 $\int_{a}^{x} f(t)\,\mathrm{d}t + C$ 也是偶函数，故 $f(x)$ 的全体原函数均为偶函数
+
+        \item ${\color{red}{\bigstar}}$\; $f(x)$ 为可积的偶函数 $\Rightarrow$
+        \[
+            \begin{cases}
+                \int_{0}^{x} f(t)\,\mathrm{d}t \text{ 为奇函数}, \\[6pt]
+                \int_{a}^{x} f(t)\,\mathrm{d}t \ (a \neq 0)
+                \begin{cases}
+                    \text{若 } \int_{a}^{x} f(t)\,\mathrm{d}t
+                    =
+                    \int_{0}^{x} f(t)\,\mathrm{d}t, \text{ 为奇函数}, \\[6pt]
+                    \text{若 } \int_{a}^{x} f(t)\,\mathrm{d}t
+                    \neq
+                    \int_{0}^{x} f(t)\,\mathrm{d}t, \text{ 为非奇非偶函数}.
+                \end{cases}
+            \end{cases}
+        \]
+        \begin{analysisbox}[Example]
+
+            判断函数
+            \[
+                f(x)=\int_0^{\sin x} \cos t^2\,\mathrm{d}t
+            \]
+            的奇偶性。
+
+            令
+            \[
+                h(x)=\int_0^{x} \cos t^2\,\mathrm{d}t,
+            \]
+            则
+            \[
+                f(x)=h(\sin x)=h\bigl(g(x)\bigr),
+                \quad g(x)=\sin x.
+            \]
+
+            由于 $\cos t^2$ 为偶函数，
+            故 $h(x)$ 为奇函数；
+
+            又 $g(x)=\sin x$ 为奇函数，
+
+            因此
+            \[
+                f(x)=h(g(x))
+            \]
+            为奇函数。
+
+        \end{analysisbox}
+
+        \item 若 $f(x)$ 为连续的偶函数，则 $f(x)$ 的全体原函数中，只有 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 是奇函数
+
+        \item $f(x)$ 是可积且以 $T$ 为周期的周期函数，则 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 是以 $T$ 为周期的周期函数 $\Leftrightarrow \int_{0}^{T} f(x)\,\mathrm{d}x = 0$
+
+        \item $\int_{a}^{x} f(t)\,\mathrm{d}t = \int_{a}^{0} f(t)\,\mathrm{d}t + \int_{0}^{x} f(t)\,\mathrm{d}t$ 亦是以 $T$ 为周期的周期函数 $(a \neq 0)$
+
+    \end{enumerate}
+
     \subsection{反常积分的计算}
+
+    \begin{enumerate}
+        \item 在计算反常积分时，注意识别奇点（端点、{\color{red}{内部}}）(瑕点，$\pm \infty$)
+        \item 反常积分在收敛的情况下，通过换元可能实现反常积分与定积分的相互转化
+    \end{enumerate}
 
     \subsection{基础概念}
 
     \begin{enumerate}
+        \item \textbf{$\Gamma$函数}
+
+        \textbf{定义：}
+        \[
+            \begin{aligned}
+                \Gamma(\alpha)
+                &= \int_{0}^{+\infty} x^{\alpha-1} e^{-x}\,\mathrm{d}x
+                &\xlongequal{\;x=t^2\;} \, 2\int_{0}^{+\infty} t^{2\alpha-1} e^{-t^2}\,\mathrm{d}t (\alpha, t > 0).
+            \end{aligned}
+        \]
+
+        \textbf{递推公式：}
+
+        \[
+            \begin{aligned}
+                \Gamma(\alpha+1)
+                &= \int_{0}^{+\infty} x^{\alpha} e^{-x}\,\mathrm{d}x \\
+                &= -\int_{0}^{+\infty} x^{\alpha}\,\mathrm{d}(e^{-x}) \\
+                &= -x^{\alpha} e^{-x}\Big|_{0}^{+\infty}
+                + \int_{0}^{+\infty} e^{-x}\alpha x^{\alpha-1}\,\mathrm{d}x \\
+                &= \alpha \Gamma(\alpha).
+            \end{aligned}
+        \]
+
+        \textbf{特殊值：}
+
+        \[
+            \Gamma(1)=1,
+            \qquad
+            \Gamma\!\left(\frac{1}{2}\right)=\sqrt{\pi}.
+        \]
+
+        因此
+        \begin{gather*}
+            \Gamma(n+1)=n! \\
+            \Gamma\!\left(\frac{5}{2}\right)
+            = \frac{3}{2}\cdot\frac{1}{2}\cdot\Gamma\!\left(\frac{1}{2}\right)
+            = \frac34\sqrt{\pi}.\\
+        \end{gather*}
     \end{enumerate}
 
     \subsection{结论}
@@ -291,17 +871,99 @@
 
     \begin{enumerate}
 
+        \item
+        \[
+            \begin{aligned}
+                \int \frac{1}{1+e^x}\,\mathrm{d}x
+                &=
+                \int \left(1 - \frac{e^x}{1+e^x}\right)\,\mathrm{d}x
+            \end{aligned}
+        \]
+
+        \item
+        \[
+            \begin{aligned}
+                \int_0^1 \arcsin \sqrt{1 - x^2}\,\mathrm{d}x
+                &=
+                \int_0^1 \frac{x}{\sqrt{1 - x^2}}\,\mathrm{d}x  \\[6pt]
+                &=
+                -\sqrt{1 - x^2}\Big|_0^1  \\[6pt]
+                &=
+                1
+            \end{aligned}
+        \]
+        \item
+        \[
+            \begin{aligned}
+                \int \cos^{3} t \,\mathrm{d}t
+                &= \int (1 - \sin^2 t)\cos t \,\mathrm{d}t \\[6pt]
+                &= \int (1-\sin^2 t)\,\mathrm{d}(\sin t) \\[6pt]
+                &= \sin t - \frac{\sin^3 t}{3} + C.
+            \end{aligned}
+        \]
+
     \end{enumerate}
 
     \subsection{公式}
 
     \begin{enumerate}
+        \item
+        \[
+            \begin{aligned}
+                \int e^{ax} \sin bx \,\mathrm{d}x
+                &=
+                \frac{
+                    \begin{vmatrix}
+                    (e^{ax})
+                        '      & \sin bx \\
+                        e^{ax} & \sin bx
+                    \end{vmatrix}
+                }{a^2 + b^2}
+                + C  \\[6pt]
+                &=
+                \frac{a e^{ax} \sin bx - b e^{ax} \cos bx}{a^2 + b^2}
+                + C
+            \end{aligned}
+        \]
+
+        \item
+        \[
+            \begin{aligned}
+                \int e^{ax} \cos bx \,\mathrm{d}x
+                &=
+                \frac{
+                    \begin{vmatrix}
+                    (e^{ax})
+                        '      & \cos bx \\
+                        e^{ax} & \cos bx
+                    \end{vmatrix}
+                }{a^2 + b^2}
+                + C \\[6pt]
+                &=
+                \frac{a e^{ax} \cos bx + b e^{ax} \sin bx}{a^2 + b^2}
+                + C
+            \end{aligned}
+        \]
+        \item $I_n = \displaystyle\int_0^{+\infty} x^ne^{-x}\,\mathrm{d}x = n!(n\text{为非负整数})$
 
     \end{enumerate}
 
     \subsection{方法总结}
 
     \begin{enumerate}
+        \item 若不是常用的凑微分公式，则可对被积函数的复杂部分$g(x)$求导，若$g'(x) = f(x)$，即$d[g(x)] = f(x)dx$，则$\int f(x)g(x)\,\mathrm{d}x = \int g(x)\,\mathrm{d}[g(x)]$，凑微分成功
+        \item $\int \triangle\,\mathrm{d}x$一般不好求，可将其转化成$\int \nabla\,\mathrm{d}x$
+        \item 形如$R(\sin x, \cos x)$的有理式称为三角函数有理式
+        \begin{enumerate}
+            \item 令$t = \tan \displaystyle\frac{x}{2},\, \sin x = \displaystyle\frac{2t}{1 + t^2},\, \cos x = \displaystyle\frac{1-t^2}{1+t^2}$
+            \item 凑微分
+            \begin{itemize}
+                \item 若$R(\sin x, \cos x) = -R(-\sin x, \cos x)$，令$\cos x = t$。$\sin$是奇数次方，\emph{e.g.} $\displaystyle\frac{\sin^5 x}{\cos^4 x} = -\displaystyle\frac{-\sin^5 x}{\cos^4 x}$
+                \item 若$R(\sin x, \cos x) = -R(\sin x, -\cos x)$，令$\sin x = t$。$\cos$是奇数次方
+                \item 若$R(\sin x, \cos x) = R(-\sin x, -\cos x)$，令$\tan x = t$
+            \end{itemize}
+        \end{enumerate}
+        \item 定积分计算时考虑{\color{customgreen}{奇偶性}}和{\color{customgreen}{周期性}}，做{\color{customgreen}{平移代换}}。\emph{e.g.}\,$\int_0^1 \Rightarrow? \int_{-\frac{1}{2}}^{\frac{1}{2}}$
 
     \end{enumerate}
 

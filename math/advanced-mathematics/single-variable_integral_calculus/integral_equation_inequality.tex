@@ -11,6 +11,14 @@
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
 \usepackage{tcolorbox}
 \usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{extarrows}
+\pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
 \definecolor{customgreen}{rgb}{0.2,0.6,0.3}
@@ -31,7 +39,6 @@
     bottom=2pt
 }
 
-
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
 \newcommand{\analysisBackColor}{white}
@@ -51,6 +58,18 @@
     top=4pt,
     bottom=4pt
 }
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
 
 % =========================
 % 字体设置
@@ -80,9 +99,14 @@
 
 % =========================
 
-    \section{title}
+    \section{积分等式与积分不等式}
 
     \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
 
     \begin{enumerate}
     \end{enumerate}
@@ -104,10 +128,19 @@
 
     \end{enumerate}
 
-    \subsection{方法步骤}
+    \subsection{方法总结}
 
     \begin{enumerate}
-
+        \item $\int_a^b f(x)\,\mathrm{d}x = F(b) - F(a)$
+        \item $\int_a^b f(x)\,\mathrm{d}x = f(\xi)(b - a)$
+        \item $\int_a^x f'(t)\,\mathrm{d}t = f(x) - f(a)$
+        \item $f'(\xi)(x - a) = f(x) - f(a)$
+        \item $f(x + 2) - f(x) = (\int_x^{x + 2} f'(t)\,\mathrm{d}t)'$
+        \item $f(x) = f(0) + f'(0)x + \displaystyle\frac{f''(\xi)}{2}x^2$，若$f''(\xi) < 0$，则$f(x) \leq f(0) + f'(0)x$
+        \item $|f(x)| = |f(0)| + |f'(0)x| + \left|\displaystyle\frac{f''(\xi)}{2}x^2\right|$
+        \item 若$f(x) \leq g(x)$，则$\int_a^b f(x)\,\mathrm{d}x \leq \int_a^b g(x)\,\mathrm{d}x$
+        \item $|\int u\,\mathrm{d}v| = |uv - \int v\,\mathrm{d}u| \leq |uv| - \int |v|\,\mathrm{d}u$
+        \item $|\int_a^b| = |\int_a^c + \int_c^b| \leq |\int_a^c| + |\int_c^b|$
     \end{enumerate}
 
     \subsection{条件转换思路}

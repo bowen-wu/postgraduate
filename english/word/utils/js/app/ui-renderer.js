@@ -261,12 +261,38 @@ function renderSentenceItems(ui, card) {
     ui.list.appendChild(patternsDiv);
   }
 
+  // Create sentence content wrapper with play button
+  const sentenceWrapper = document.createElement('div');
+  sentenceWrapper.className = 'sentence-content-wrapper';
+  sentenceWrapper.style.cssText = 'display: flex; align-items: flex-start; gap: 0.5rem;';
+
+  // Add play button for sentence (plays pure English sentence)
+  const sentenceText = card.items[0]?.en || card.displayWord || '';
+  const sentenceTextEscaped = sentenceText.replace(/'/g, '\\\'');
+  const playButtonId = 'play-btn-sentence';
+  const playButton = document.createElement('button');
+  playButton.id = playButtonId;
+  playButton.className = 'btn-ghost audio-play-btn';
+  playButton.style.cssText = 'padding: 0.25rem 0.5rem; font-size: 0.8rem; flex-shrink: 0;';
+  playButton.title = '播放句子';
+  playButton.innerHTML = `
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+    </svg>
+    <span class="btn-spinner"></span>
+  `;
+  playButton.onclick = () => window.app.playWord(sentenceTextEscaped, playButtonId, false, false);
+  sentenceWrapper.appendChild(playButton);
+
   // Display sentence content (no blur-target for sentences, even in recall mode)
   const contentDiv = document.createElement('div');
   contentDiv.className = 'sentence-content';
+  contentDiv.style.cssText = 'flex: 1;';
   // Use displayWord for bold formatting, fallback to items[0].en for backward compatibility
   contentDiv.innerHTML = card.displayWord || card.items[0].en;
-  ui.list.appendChild(contentDiv);
+  sentenceWrapper.appendChild(contentDiv);
+
+  ui.list.appendChild(sentenceWrapper);
 
   // Add Chinese translation if exists
   const item = card.items[0];

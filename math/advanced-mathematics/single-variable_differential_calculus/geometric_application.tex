@@ -18,6 +18,25 @@
 \usepackage{ulem}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 经典
+\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
+\newtcbox{\classic}{
+    on line,
+    colback=classicgreen!10,
+    colframe=classicgreen,
+    boxrule=0.8pt,
+    arc=3pt,
+    boxsep=1pt,
+    left=4pt,
+    right=4pt,
+    top=2pt,
+    bottom=2pt
+}
+
 \usetikzlibrary{arrows.meta, positioning, shapes.geometric}
 
 \tikzstyle{startstop} = [rectangle, rounded corners,
