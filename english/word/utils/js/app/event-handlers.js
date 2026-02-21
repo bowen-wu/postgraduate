@@ -602,6 +602,20 @@ export async function playAudioUrl(url) {
     let resolved = false;
     let canPlayThrough = false;
 
+    const doReject = (msg) => {
+      if (!resolved) {
+        resolved = true;
+        reject(new Error(msg));
+      }
+    };
+
+    const doResolve = (result) => {
+      if (!resolved) {
+        resolved = true;
+        resolve(result);
+      }
+    };
+
     // Check if audio can actually be played (not just started)
     audio.oncanplaythrough = () => {
       canPlayThrough = true;
@@ -609,38 +623,41 @@ export async function playAudioUrl(url) {
 
     audio.onplay = () => {
       // Only resolve if we know the audio is playable
-      if (!resolved && canPlayThrough) {
-        resolved = true;
-        resolve({ onplay: true, audio });
+      if (canPlayThrough) {
+        doResolve({ onplay: true, audio });
       }
     };
 
     audio.onended = () => {
-      if (!resolved) {
-        resolved = true;
-        resolve({ onplay: true, audio });
-      }
+      doResolve({ onplay: true, audio });
     };
 
     audio.onerror = (e) => {
-      if (!resolved) {
-        resolved = true;
-        reject(new Error('Audio load failed'));
-      }
+      doReject('Audio load failed');
     };
 
-    // Add timeout to detect stuck loading
+    // Handle stalled/suspend events (common on mobile for failed loads)
+    audio.onstalled = () => {
+      // Give it a bit more time before rejecting
+      setTimeout(() => {
+        if (!resolved && !canPlayThrough) {
+          doReject('Audio stalled');
+        }
+      }, 2000);
+    };
+
+    // Add timeout to detect stuck loading (reduced for mobile responsiveness)
     const timeoutId = setTimeout(() => {
       if (!resolved && !canPlayThrough) {
-        resolved = true;
-        reject(new Error('Audio loading timeout'));
+        doReject('Audio loading timeout');
       }
-    }, 5000); // 5 second timeout
+    }, 4000); // 4 second timeout
 
     // Clean up timeout on resolution
+    const cleanup = () => clearTimeout(timeoutId);
+
     const originalResolve = resolve;
     const originalReject = reject;
-    const cleanup = () => clearTimeout(timeoutId);
 
     resolve = (...args) => {
       cleanup();
@@ -654,10 +671,7 @@ export async function playAudioUrl(url) {
 
     // Start playing
     audio.play().catch((err) => {
-      if (!resolved) {
-        resolved = true;
-        reject(err);
-      }
+      doReject(err.message || 'Audio play failed');
     });
   });
 }

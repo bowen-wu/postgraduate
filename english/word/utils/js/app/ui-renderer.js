@@ -64,7 +64,7 @@ export function render(ui) {
 function renderWord(ui, card) {
   const wordEscaped = card.word.replace(/'/g, '\\\'');
   const playButtonId = `play-btn-main`;
-  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}', false, false)" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
@@ -184,7 +184,7 @@ function renderPhraseItems(ui, card) {
   const wordEscaped = card.word.replace(/'/g, '\\\'');
   // Use a different ID for phrase cards to avoid conflict with header button
   const playButtonId = `play-btn-phrase`;
-  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}', false, false)" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
@@ -240,10 +240,36 @@ function renderSentenceItems(ui, card) {
   const li = document.createElement('li');
   li.className = 'item';
 
+  // Add play button for sentence (plays pure English sentence)
+  const sentenceText = card.items[0]?.en || card.displayWord || '';
+  const sentenceTextEscaped = sentenceText.replace(/'/g, '\\\'');
+  const playButtonId = 'play-btn-sentence';
+
+  // Create label wrapper with text and play button
+  const labelWrapper = document.createElement('div');
+  labelWrapper.className = 'sentence-label-wrapper';
+  labelWrapper.style.cssText = 'display: flex; align-items: center; gap: 0.5rem;';
+
   const labelDiv = document.createElement('div');
   labelDiv.className = 'sentence-label';
   labelDiv.textContent = 'Example Sentence';
-  ui.list.appendChild(labelDiv);
+  labelWrapper.appendChild(labelDiv);
+
+  const playButton = document.createElement('button');
+  playButton.id = playButtonId;
+  playButton.className = 'btn-ghost audio-play-btn';
+  playButton.style.cssText = 'padding: 0.15rem 0.4rem; font-size: 0.75rem;';
+  playButton.title = '播放句子';
+  playButton.innerHTML = `
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+    </svg>
+    <span class="btn-spinner"></span>
+  `;
+  playButton.onclick = () => window.app.playWord(sentenceTextEscaped, playButtonId, false, false);
+  labelWrapper.appendChild(playButton);
+
+  ui.list.appendChild(labelWrapper);
 
   // Display sentence patterns
   if (card.patterns && card.patterns.length > 0) {
@@ -261,38 +287,12 @@ function renderSentenceItems(ui, card) {
     ui.list.appendChild(patternsDiv);
   }
 
-  // Create sentence content wrapper with play button
-  const sentenceWrapper = document.createElement('div');
-  sentenceWrapper.className = 'sentence-content-wrapper';
-  sentenceWrapper.style.cssText = 'display: flex; align-items: flex-start; gap: 0.5rem;';
-
-  // Add play button for sentence (plays pure English sentence)
-  const sentenceText = card.items[0]?.en || card.displayWord || '';
-  const sentenceTextEscaped = sentenceText.replace(/'/g, '\\\'');
-  const playButtonId = 'play-btn-sentence';
-  const playButton = document.createElement('button');
-  playButton.id = playButtonId;
-  playButton.className = 'btn-ghost audio-play-btn';
-  playButton.style.cssText = 'padding: 0.25rem 0.5rem; font-size: 0.8rem; flex-shrink: 0;';
-  playButton.title = '播放句子';
-  playButton.innerHTML = `
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <polygon points="5 3 19 12 5 21 5 3"></polygon>
-    </svg>
-    <span class="btn-spinner"></span>
-  `;
-  playButton.onclick = () => window.app.playWord(sentenceTextEscaped, playButtonId, false, false);
-  sentenceWrapper.appendChild(playButton);
-
   // Display sentence content (no blur-target for sentences, even in recall mode)
   const contentDiv = document.createElement('div');
   contentDiv.className = 'sentence-content';
-  contentDiv.style.cssText = 'flex: 1;';
   // Use displayWord for bold formatting, fallback to items[0].en for backward compatibility
   contentDiv.innerHTML = card.displayWord || card.items[0].en;
-  sentenceWrapper.appendChild(contentDiv);
-
-  ui.list.appendChild(sentenceWrapper);
+  ui.list.appendChild(contentDiv);
 
   // Add Chinese translation if exists
   const item = card.items[0];
@@ -353,7 +353,7 @@ function renderSynonymsAndAntonyms(ui, card) {
         playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg><span class="btn-spinner"></span>`;
-        playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+        playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
         const synWord = document.createElement('span');
         synWord.className = 'synonym-word';
@@ -407,7 +407,7 @@ function renderSynonymsAndAntonyms(ui, card) {
           playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg><span class="btn-spinner"></span>`;
-          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
           const synWord = document.createElement('span');
           synWord.className = 'synonym-word';
@@ -451,7 +451,7 @@ function renderSynonymsAndAntonyms(ui, card) {
           playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg><span class="btn-spinner"></span>`;
-          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId);
+          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
           const synWord = document.createElement('span');
           synWord.className = 'synonym-word';
@@ -493,7 +493,7 @@ function renderSynonymsAndAntonyms(ui, card) {
       playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polygon points="5 3 19 12 5 21 5 3"></polygon>
       </svg><span class="btn-spinner"></span>`;
-      playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId);
+      playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
 
       const antWord = document.createElement('span');
       antWord.className = 'antonym-word';
@@ -840,16 +840,18 @@ export function showCompletionScreen(ui) {
         }
         .completion-time-detail {
           font-size: 0.65rem !important;
-          flex-direction: column !important;
-          gap: 0.25rem !important;
+          flex-direction: row !important;
+          justify-content: space-between !important;
+          gap: 0.5rem !important;
         }
         .completion-buttons {
           flex-direction: column !important;
-          width: 100% !important;
+          align-items: center !important;
         }
         .completion-buttons button {
-          width: 100% !important;
-          padding: 0.75rem !important;
+          width: auto !important;
+          min-width: 140px !important;
+          padding: 0.6rem 1.5rem !important;
         }
       }
     `;
@@ -859,7 +861,7 @@ export function showCompletionScreen(ui) {
   // Show completion screen with enhanced stats - using scrollable container with CSS classes
   ui.card.innerHTML = `
     <div class="completion-container" style="height: 100%; overflow-y: auto; padding: 1.5rem;">
-      <div style="text-align: center; padding-bottom: 1rem;">
+      <div class="completion-header" style="text-align: center; padding-bottom: 1rem;">
         <div class="completion-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
         <h2 class="completion-title" style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;">完结撒花！</h2>
         <p style="font-size: 1rem; color: var(--text-sub); margin-bottom: 1.5rem;">

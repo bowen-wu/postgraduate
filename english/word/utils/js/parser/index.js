@@ -543,7 +543,11 @@ export class MarkdownParser {
       // Skip special markers
       if (this.isSynonymMarker(content)) {
         if (!this.pendingSynonyms) this.pendingSynonyms = [];
-        this.pendingSynonyms.push(content.replace(/^===?\s+/, '').trim());
+        // 🔧 FIX: Support multiple synonyms separated by ==
+        // e.g., "== ruling == decision" -> ["ruling", "decision"]
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
+        const multipleSynonyms = synonymContent.split(/\s*==\s*/).map(s => s.trim()).filter(s => s);
+        multipleSynonyms.forEach(syn => this.pendingSynonyms.push(syn));
         lastProcessedLineIndex = i;  // Track this line as processed
         i++;
         continue;
@@ -726,30 +730,39 @@ export class MarkdownParser {
           const synonymContent = content.replace(/^===?\s+/, '').trim();
           actualParentCard.synonyms = actualParentCard.synonyms || [];
 
-          const { word, ipa, pos, cn } = this.parseWordContent(synonymContent);
+          // 🔧 FIX: Support multiple synonyms separated by ==
+          const multipleSynonyms = synonymContent.split(/\s*==\s*/).map(s => s.trim()).filter(s => s);
 
-          // Check if this synonym has definition on the same line
-          if (pos && cn) {
-            // Simple case: add directly
-            const synonym = { word };
-            if (ipa) synonym.ipa = ipa;
-            if (pos) synonym.pos = pos;
-            if (cn) synonym.cn = cn;
-            actualParentCard.synonyms.push(synonym);
-          } else {
-            // Complex case: synonym has children (POS lines following)
-            // Create a temporary synonym card
-            this.pendingSynonymCard = {
-              word: word,
-              items: []
-            };
-            if (ipa) this.pendingSynonymCard.ipa = ipa;
-            this.pendingSynonymLevel = indentLevel;
-            this.pendingSynonymOriginalParent = actualParentCard;
+          for (const syn of multipleSynonyms) {
+            const { word, ipa, pos, cn } = this.parseWordContent(syn);
 
-            // Redirect parentCard to temporary card so POS lines go to it
-            this.parentCard = this.pendingSynonymCard;
-            this.parentLevel = indentLevel;
+            // Check if this synonym has definition on the same line
+            if (pos && cn) {
+              // Simple case: add directly with definition
+              const synonym = { word };
+              if (ipa) synonym.ipa = ipa;
+              if (pos) synonym.pos = pos;
+              if (cn) synonym.cn = cn;
+              actualParentCard.synonyms.push(synonym);
+            } else if (!pos && !cn && !ipa) {
+              // 🔧 FIX: Simple synonym without any definition - add directly
+              actualParentCard.synonyms.push({ word });
+            } else {
+              // Complex case: synonym has children (POS lines following)
+              // Only the LAST synonym in the list can have children
+              // Create a temporary synonym card
+              this.pendingSynonymCard = {
+                word: word,
+                items: []
+              };
+              if (ipa) this.pendingSynonymCard.ipa = ipa;
+              this.pendingSynonymLevel = indentLevel;
+              this.pendingSynonymOriginalParent = actualParentCard;
+
+              // Redirect parentCard to temporary card so POS lines go to it
+              this.parentCard = this.pendingSynonymCard;
+              this.parentLevel = indentLevel;
+            }
           }
         } else {
           // Add to parent sentence's synonyms
@@ -1110,11 +1123,21 @@ export class MarkdownParser {
     this.finalizePendingSynonymIfNeeded(indentLevel);
 
     let synonymContent = content.replace(/^===?\s+/, '').trim();
+
     this.parentCard.synonyms = this.parentCard.synonyms || [];
 
-    const multipleSynonyms = synonymContent.split(/\s+==\s+/);
+    // 🔧 FIX: Use \s* instead of \s+ to handle cases with no spaces around ==
+    const multipleSynonyms = synonymContent.split(/\s*==\s*/).map(s => s.trim()).filter(s => s);
+
+    // 🔧 FIX: 保存原始父卡片引用，确保每个同义词都添加到正确的父卡片
+    const originalParentCard = this.parentCard;
+    const originalParentLevel = this.parentLevel;
 
     for (const syn of multipleSynonyms) {
+      // 🔧 FIX: 每次迭代开始时恢复原始父卡片
+      this.parentCard = originalParentCard;
+      this.parentLevel = originalParentLevel;
+
       const trimmed = syn.trim();
       if (!trimmed) continue;
 

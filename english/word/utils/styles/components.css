@@ -372,8 +372,7 @@ body.mode-recall .antonyms-section.revealed {
     text-transform: uppercase;
     color: var(--secondary);
     letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }

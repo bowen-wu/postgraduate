@@ -89,7 +89,10 @@
 
     .action-area { justify-content: space-between; }
 
-    .main-word { font-size: 1.8rem; }
+    .main-word { font-size: 1.8rem; flex-wrap: wrap; }
+
+    /* Prevent badges from shrinking on mobile */
+    .badge { flex-shrink: 0; }
 
     /* Phrase card mobile adjustments */
     .phrase-title {
@@ -107,4 +110,10 @@
     }
 
     aside { width: 85%; }
+
+    /* Completion page mobile adjustments */
+    .completion-header { padding-bottom: 0; }
+
+    /* Badges alignment on mobile */
+    .badges { margin-top: 0; }
 }
