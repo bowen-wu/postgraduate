@@ -113,6 +113,10 @@
         \[
             S = \frac{1}{2}\int_{\alpha}^{\beta} |r_1^2(\theta) - r_2^2(\theta)|\,\mathrm{d}\theta
         \]
+        \item 参数方程下面积公式的本质：直接坐标系下的面积公式的\textbf{\blueuline{换元法形式}}
+        \[
+            S = \int_a^b f(x)\,\mathrm{d}x  \xlongequal{x = x(t)} \int_{x^{-1}(a)}^{x^{-1}(b)} f[x(t)]d[x(t)] = \int_{x^{-1}(a)}^{x^{-1}(b)} y(t)x'(t)\,\mathrm{d}t
+        \]
     \end{enumerate}
 
     \subsection{用定积分表达和计算旋转体的体积}
@@ -120,7 +124,7 @@
     \begin{enumerate}
         \item 曲线$y = y(x)$与$x = a, x = b(a < b)$及$x$轴围成的曲边梯形绕$x$轴旋转一周所得到的的旋转体的体积
         \[
-            V_x = \int_a^b \piy^2(x)\,\mathrm{d}x
+            V_x = \int_a^b \pi y^2(x)\,\mathrm{d}x
         \]
         \item 曲线$y = y(x)$与$x = a, x = b(0 \leq a < b)$及$x$轴围成的曲边梯形绕$y$轴旋转一周所得到的的旋转体的体积
         \[

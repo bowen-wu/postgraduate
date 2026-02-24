@@ -360,23 +360,24 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
         \item $\color{red}{\bigstar}$ 曲线与渐近线可能会有交点。\emph{e.g.} $y = \displaystyle\frac{\sin x}{x}$
         \begin{center}
             \begin{tikzpicture}
-                \begin{axis}[
-                axis lines = middle,
-                domain = -80:80,
-                samples = 800,
-                xmin = -85, xmax = 84,      % 右侧留白
-                ymin = -0.3, ymax = 1.1,    % 上方留白
-                width = 17cm,
-                height = 5.5cm,
-                xtick = \empty,
-                ytick = \empty,
-                enlargelimits = false,
-                axis line style = {->},
-                ]
-                \addplot[
-                    thick,
-                    blue,
-                ] {x==0 ? 1 : sin(deg(x))/x};
+                \begin{axis}
+                    [
+                    axis lines = middle,
+                    domain = -80:80,
+                    samples = 800,
+                    xmin = -85, xmax = 84,      % 右侧留白
+                    ymin = -0.3, ymax = 1.1,    % 上方留白
+                    width = 17cm,
+                    height = 5.5cm,
+                    xtick = \empty,
+                    ytick = \empty,
+                    enlargelimits = false,
+                    axis line style = {->},
+                    ]
+                    \addplot[
+                        thick,
+                        blue,
+                    ] {x==0 ? 1 : sin(deg(x))/x};
                 \end{axis}
             \end{tikzpicture}
         \end{center}
@@ -508,116 +509,267 @@ minimum width=4cm, minimum height=1.5cm, draw=black]
 
     \begin{enumerate}
         \item 心形线
-        \begin{tikzpicture}
-            \begin{axis}[
-                axis equal,
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-2.5, ymax=2.5,
-                samples=600,
-                xtick=\empty, ytick=\empty, % 去掉坐标刻度
-                legend style={
-                    at={(0.02,0.98)},
-                    anchor=north west,
-                    xshift=120pt,
-                    yshift=0pt,
-                    draw=none
-                }
-            ]
-                % r = 1 - cos θ
-                \addplot[thick,domain=0:6.283]
-                ({(1 - cos(deg(x)))*cos(deg(x))}, {(1 - cos(deg(x)))*sin(deg(x))});
-                \addlegendentry{ $r = 1 - \cos\theta$ }
-            \end{axis}
-        \end{tikzpicture}
 
-        \item 心形线
-        \begin{tikzpicture}
-            \begin{axis}[
-                axis equal,
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-2.5, ymax=2.5,
-                samples=600,
-                xtick=\empty, ytick=\empty,
-                legend style={
-                    at={(0.02,0.98)},
-                    anchor=north west,
-                    xshift=120pt,
-                    yshift=0pt,
-                    draw=none
-                }
-            ]
-                % r = 1 + cos θ
-                \addplot[thick,domain=0:6.283]
-                ({(1 + cos(deg(x)))*cos(deg(x))}, {(1 + cos(deg(x)))*sin(deg(x))});
-                \addlegendentry{ $r = 1 + \cos\theta$ }
-            \end{axis}
-        \end{tikzpicture}
-
-        \item 心形线
-        \begin{tikzpicture}
-            \begin{axis}[
-                axis equal,
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-2.5, ymax=2.5,
-                samples=600,
-                xtick=\empty, ytick=\empty,
-                legend style={
-                    at={(0.02,0.98)},
-                    anchor=north west,
-                    xshift=120pt,
-                    yshift=0pt,
-                    draw=none
-                }
-            ]
-                % r = 1 - sin θ
-                \addplot[thick,domain=0:6.283]
-                ({(1 - sin(deg(x)))*cos(deg(x))}, {(1 - sin(deg(x)))*sin(deg(x))});
-                \addlegendentry{ $r = 1 - \sin\theta$ }
-            \end{axis}
-        \end{tikzpicture}
-
-        \item 心形线
-        \begin{tikzpicture}
-            \begin{axis}[
-                axis equal,
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-2.5, ymax=2.5,
-                samples=600,
-                xtick=\empty, ytick=\empty,
-                legend style={
-                    at={(0.02,0.98)},
-                    anchor=north west,
-                    xshift=120pt,
-                    yshift=0pt,
-                    draw=none
-                }
-            ]
-                % r = 1 + sin θ
-                \addplot[thick,domain=0:6.283]
-                ({(1 + sin(deg(x)))*cos(deg(x))}, {(1 + sin(deg(x)))*sin(deg(x))});
-                \addlegendentry{ $r = 1 + \sin\theta$ }
-            \end{axis}
-        \end{tikzpicture}
-        \item 摆线（平摆线）TODO
-        \begin{tikzpicture}
-            \begin{axis}
-                [
-                axis equal,
-                axis lines=middle,
-                samples=400,
-                xlabel={$x$},
-                ylabel={$y$}
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis equal,
+                    axis lines=middle,
+                    enlarge x limits=0.3,
+                    enlarge y limits=0.3,
+                    samples=600,
+                    xtick=\empty, ytick=\empty, % 去掉坐标刻度
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
                 ]
-                \addplot[thick,domain=0:6.28]
-                ({x - sin(deg(x))},{1 - cos(deg(x))});
-            \end{axis}
-        \end{tikzpicture}
+                    % r = 1 - cos θ
+                    \addplot[thick,domain=0:6.283]
+                    ({(1 - cos(deg(x)))*cos(deg(x))}, {(1 - cos(deg(x)))*sin(deg(x))});
+                    \addlegendentry{ $r = 1 - \cos\theta$ }
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
 
+        \item 心形线
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis equal,
+                    axis lines=middle,
+                    enlarge x limits=0.3,
+                    enlarge y limits=0.3,
+                    samples=600,
+                    xtick=\empty, ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                ]
+                    % r = 1 + cos θ
+                    \addplot[thick,domain=0:6.283]
+                    ({(1 + cos(deg(x)))*cos(deg(x))}, {(1 + cos(deg(x)))*sin(deg(x))});
+                    \addlegendentry{ $r = 1 + \cos\theta$ }
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+
+        \item 心形线
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis equal,
+                    axis lines=middle,
+                    enlarge x limits=0.3,
+                    enlarge y limits=0.3,
+                    samples=600,
+                    xtick=\empty, ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                ]
+                    % r = 1 - sin θ
+                    \addplot[thick,domain=0:6.283]
+                    ({(1 - sin(deg(x)))*cos(deg(x))}, {(1 - sin(deg(x)))*sin(deg(x))});
+                    \addlegendentry{ $r = 1 - \sin\theta$ }
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+
+        \item 心形线
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis equal,
+                    axis lines=middle,
+                    enlarge x limits=0.3,
+                    enlarge y limits=0.3,
+                    samples=600,
+                    xtick=\empty, ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                ]
+                    % r = 1 + sin θ
+                    \addplot[thick,domain=0:6.283]
+                    ({(1 + sin(deg(x)))*cos(deg(x))}, {(1 + sin(deg(x)))*sin(deg(x))});
+                    \addlegendentry{ $r = 1 + \sin\theta$ }
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+
+        \item 伯努利双纽线
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    axis equal,
+                    axis lines=middle,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    enlarge x limits=0.3,
+                    domain=-45:45,
+                    samples=400,
+                    xtick=\empty,
+                    ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                    ]
+                    \addplot[
+                        blue,
+                        thick
+                    ]
+                    ({cos(x)*sqrt(cos(2*x))},
+                        {sin(x)*sqrt(cos(2*x))});
+
+                    \addplot[
+                        blue,
+                        thick
+                    ]
+                    ({-cos(x)*sqrt(cos(2*x))},
+                        {-sin(x)*sqrt(cos(2*x))});
+
+                    \addlegendentry{$r^2 = a^2 \cos(2\theta)$}
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+
+        \item 摆线（平摆线）
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    axis equal,
+                    axis lines=middle,
+                    xmin=-1, xmax=7.5,
+                    ymin=-0.5, ymax=3,
+                    samples=400,
+                    domain=-2.0472:8.33038,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    xtick=\empty,
+                    ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                    ]
+
+% 摆线 (a=1)
+                    \addplot[
+                        thick,
+                        blue
+                    ]
+                    ({x - sin(deg(x))},
+                        {1 - cos(deg(x))});
+
+                    \addlegendentry{
+                        $\begin{cases}
+                             x=a(t-\sin t)\\
+                             y=a(1-\cos t)
+                        \end{cases}$
+                    }
+
+% x轴交点
+                    \addplot[only marks] coordinates {(0,0)};
+                    \addplot[only marks] coordinates {(6.28318,0)};
+
+                    \node at (axis cs:0.2,-0.3) {$0$};
+                    \node[below] at (axis cs:6.28318,0) {$2\pi a$};
+
+% 最高点
+                    \addplot[only marks] coordinates {(3.14159,2)};
+                    \node[above] at (axis cs:3.14159,2)
+                        {$(\pi a,\,2a)$};
+
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
         \item 星形线
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    axis equal,
+                    axis lines=middle,
+                    xmin=-1.6, xmax=1.6,
+                    ymin=-1.6, ymax=1.6,
+                    samples=500,
+                    domain=0:2*pi,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    xtick=\empty,
+                    ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                    ]
+
+% 星形线 (a=1)
+                    \addplot[
+                        thick,
+                        blue
+                    ]
+                    ({cos(deg(x))^3},
+                        {sin(deg(x))^3});
+
+                    \addlegendentry{
+                        $\begin{cases}
+                             x=a\cos^3 t\\
+                             y=a\sin^3 t
+                        \end{cases}$
+                    }
+
+% 外接圆 (虚线)
+                    \addplot[
+                        domain=0:2*pi,
+                        samples=400,
+                        dashed,
+                        gray
+                    ]
+                    ({cos(deg(x))},
+                        {sin(deg(x))});
+
+% x轴交点 (a,0)
+                    \addplot[only marks] coordinates {(1,0)};
+                    \node[below right] at (axis cs:1,0) {$a$};
+
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
     \end{enumerate}
 
     \subsubsection{直角坐标系的观点画极坐标的图}
