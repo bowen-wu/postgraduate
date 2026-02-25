@@ -65,7 +65,7 @@
       option to internet browsers...
 - hint
     - v. 暗示
-    - hint at
+    - hint at 暗示
 - cue [kjuː]
     - n. 提示；暗示
     - Deliberation focused them on vivid but misleading **cues**.
@@ -79,8 +79,8 @@
     - social processing 社会信息加工/社会信息处理
 - intuition [ˌɪntuˈɪʃn]
     - n. 直觉
-    - **Intuition**'s special powers are *unleashed([ʌnˈliːʃ] vt. 释放)* only in certain circumstances.
     - == instinct [ˈɪnstɪŋkt] n. 本能；直觉
+    - **Intuition**'s special powers are *unleashed([ʌnˈliːʃ] vt. 释放)* only in certain circumstances.
 - illusion [ɪˈluːʒn]
     - n. 错觉
     - illusory [ɪˈlusəri] adj. 虚幻的
@@ -97,7 +97,7 @@
     - vt. 违背；流露
     - When I tell someone I will not **betray** confidence I keep my word.
         - betray confidence 辜负信任/泄露他人托付的秘密
-        - keep one’s word 信守诺言
+        - keep one's word 信守诺言
     - She studied his face, but it **betrayed** nothing. 她端详着他的神情，却看不出任何端倪
 
 ## summit
