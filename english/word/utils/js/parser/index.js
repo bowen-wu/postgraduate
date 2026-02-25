@@ -330,6 +330,11 @@ export class MarkdownParser {
       return 'word';
     }
 
+    // Check if content has IPA (word with pronunciation only)
+    if (this.hasIpaMarker(content)) {
+      return 'word';
+    }
+
     // 规则3: 检查子级是否以词性开头
     // Only check for single words (not sentences)
     // Sentences contain spaces, multiple words, etc.
@@ -1024,15 +1029,18 @@ export class MarkdownParser {
       card.synonyms = synonyms;
     }
 
-    // 🔧 FIX: Don't set parent for nested words within sentences
-    // Words that are children of sentences should not become the global parent
-    // because their sub-items (POS lines, synonyms) should be added to the word card itself
-    // through processChildren, not through the global parentCard
-    const isNestedWordInSentence =
-      this.parentCard && this.parentCard.type === 'sentence' &&  // Parent is a sentence
-      ipa;  // Has IPA (indicates it's a real word with pronunciation)
+    // 🔧 FIX: Don't set parent for simple dictionary entries
+    // Simple dictionary entries are like: "clue [kluː] n. 线索，提示"
+    // They have: word + [IPA] + pos. + Chinese definition
+    // These are "helper" words and should not become the parent for subsequent items
+    // The parent should remain the original sentence/word that contains them
+    // Check: Chinese should not contain English letters (mixed content)
+    const isSimpleDictionaryEntry =
+      ipa && pos && cn &&  // Has IPA, POS, and Chinese
+      !/[a-zA-Z]/.test(cn) &&  // Chinese doesn't contain English letters (no mixed content)
+      this.parentCard && this.parentCard.type === 'sentence';  // Parent is a sentence
 
-    if (!isNestedWordInSentence) {
+    if (!isSimpleDictionaryEntry) {
       this.parentCard = card;
       this.parentLevel = indentLevel;
     }
