@@ -21,6 +21,25 @@ export function setMode(newMode) {
 }
 
 /**
+ * Set order mode (sequential, randomByType, randomAll)
+ */
+export function setOrderMode(mode) {
+  if (mode === STATE.orderMode) return;
+
+  StateManager.setOrderMode(mode);
+  UiRenderer.updateOrderModeSelect(window.app.ui);
+  window.app.render();
+  StateManager.updateStatsUI(window.app.ui);
+
+  const modeNames = {
+    'sequential': '顺序',
+    'randomByType': '随机(按类型)',
+    'randomAll': '完全随机'
+  };
+  UiRenderer.showToast(window.app.ui, `顺序模式: ${modeNames[mode]}`);
+}
+
+/**
  * Toggle auto-play
  */
 export function toggleAutoPlay() {
@@ -62,13 +81,14 @@ export function confirmRecall(actuallyCorrect) {
  * Record error for current card
  */
 export function recordError() {
-  const id = STATE.cards[STATE.currentIndex].id;
-  if (!STATE.stats[id]) STATE.stats[id] = {errors: 0};
-  STATE.stats[id].errors++;
+  const card = StateManager.getCurrentCard();
+  if (!card) return;
+
+  if (!STATE.stats[card.id]) STATE.stats[card.id] = {errors: 0};
+  STATE.stats[card.id].errors++;
   StateManager.saveState();
   StateManager.updateStatsUI(window.app.ui);
 
-  const card = STATE.cards[STATE.currentIndex];
   const stats = STATE.stats[card.id] || {errors: 0};
   let bHtml = document.getElementById('displayBadges').innerHTML;
   if (!bHtml.includes('错')) {
@@ -95,11 +115,12 @@ export function handleSentenceRecall(understood) {
  */
 export function nextCard() {
   // Record current card as studied
-  if (STATE.cards[STATE.currentIndex]) {
-    StateManager.recordCardStudied(STATE.cards[STATE.currentIndex].id);
+  const currentCard = StateManager.getCurrentCard();
+  if (currentCard) {
+    StateManager.recordCardStudied(currentCard.id);
   }
 
-  if (STATE.currentIndex < STATE.cards.length - 1) {
+  if (STATE.currentIndex < STATE.displayOrder.length - 1) {
     STATE.currentIndex++;
     StateManager.saveState();
     window.app.render();
@@ -124,12 +145,29 @@ export function prevCard() {
 }
 
 /**
- * Jump to specific card
+ * Jump to specific card by display index
  */
 export function jumpTo(idx) {
-  STATE.currentIndex = idx;
-  window.app.render();
-  toggleStats(window.app.ui);
+  if (idx >= 0 && idx < STATE.displayOrder.length) {
+    STATE.currentIndex = idx;
+    StateManager.saveState();
+    window.app.render();
+    toggleStats(window.app.ui);
+  }
+}
+
+/**
+ * Jump to specific card by original index (for learning list clicks)
+ */
+export function jumpToOriginal(originalIdx) {
+  // Find the position of this card in the display order
+  const displayIdx = STATE.displayOrder.indexOf(originalIdx);
+  if (displayIdx !== -1) {
+    STATE.currentIndex = displayIdx;
+    StateManager.saveState();
+    window.app.render();
+    toggleStats(window.app.ui);
+  }
 }
 
 /**
@@ -394,6 +432,7 @@ export async function loadFile(path, ui = null) {
     // 🔧 FIX: Start a new study session when loading a file
     StateManager.startSession();
     StateManager.saveState();
+    UiRenderer.updateOrderModeSelect(ui);
     ui.loader.classList.add('hidden');
     ui.card.classList.remove('hidden');
 

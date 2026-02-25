@@ -10,8 +10,11 @@ import * as StateManager from './state-manager.js';
  * Main render function - renders the current card
  */
 export function render(ui) {
-  if (STATE.cards.length === 0) return;
-  const card = STATE.cards[STATE.currentIndex];
+  if (STATE.cards.length === 0 || STATE.displayOrder.length === 0) return;
+
+  // Get current card using display order
+  const card = StateManager.getCurrentCard();
+  if (!card) return;
 
   // Ensure card has required fields (for backward compatibility)
   if (!card.items) card.items = [];
@@ -29,7 +32,7 @@ export function render(ui) {
   }
 
   // Update progress text
-  ui.progress.textContent = `${STATE.currentIndex + 1} / ${STATE.cards.length}`;
+  ui.progress.textContent = `${STATE.currentIndex + 1} / ${STATE.displayOrder.length}`;
 
   // Render word/phrase with play button
   renderWord(ui, card);
@@ -220,16 +223,17 @@ function renderPhraseItems(ui, card) {
   // Render definitions
   const items = card.items;
   items.forEach((item) => {
-    const li = document.createElement('li');
-    li.className = 'item';
     const hasCn = item.cn && item.cn.trim && item.cn.trim() !== '';
+    // Only render if has Chinese content
     if (hasCn) {
+      const li = document.createElement('li');
+      li.className = 'item';
       li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${item.cn}</div>`;
+      ui.list.appendChild(li);
     }
-    ui.list.appendChild(li);
   });
 
-  // 🔧 FIX: Render synonyms and antonyms for phrase cards
+  // Render synonyms and antonyms for phrase cards
   renderSynonymsAndAntonyms(ui, card);
 }
 
@@ -521,7 +525,8 @@ function renderSynonymsAndAntonyms(ui, card) {
  * Render action buttons for input mode
  */
 export function renderInputActions(ui) {
-  const card = STATE.cards[STATE.currentIndex];
+  const card = StateManager.getCurrentCard();
+  if (!card) return;
 
   // For sentence cards with Chinese translation
   if (card.type === 'sentence') {
@@ -550,7 +555,8 @@ export function renderInputActions(ui) {
  * Render action buttons for recall mode
  */
 export function renderRecallActions(ui) {
-  const card = STATE.cards[STATE.currentIndex];
+  const card = StateManager.getCurrentCard();
+  if (!card) return;
 
   // For sentence cards with Chinese translation
   if (card.type === 'sentence') {
@@ -646,8 +652,8 @@ export function showSentenceTranslation(ui) {
     cnDiv.classList.add('revealed');
   }
 
-  const card = STATE.cards[STATE.currentIndex];
-  if (card.type === 'sentence') {
+  const card = StateManager.getCurrentCard();
+  if (card && card.type === 'sentence') {
     if (STATE.mode === 'input') {
       renderInputActions(ui);
     } else {
@@ -709,6 +715,16 @@ export function updateBodyModeClass() {
     document.body.classList.add('mode-recall');
   } else {
     document.body.classList.remove('mode-recall');
+  }
+}
+
+/**
+ * Update order mode select dropdown
+ */
+export function updateOrderModeSelect(ui) {
+  // Use global function from review.html if available
+  if (window.updateOrderModeSelect) {
+    window.updateOrderModeSelect(STATE.orderMode);
   }
 }
 

@@ -6,6 +6,47 @@
 import { CONFIG, STATE } from '../config.js';
 
 /**
+ * Fisher-Yates shuffle algorithm
+ */
+function shuffle(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * Generate display order based on order mode
+ */
+export function generateDisplayOrder(cards, orderMode) {
+  const indices = cards.map((_, i) => i);
+
+  switch (orderMode) {
+    case 'sequential':
+      return indices;
+
+    case 'randomByType':
+      // Group cards by type: prefix → word → phrase → sentence
+      const byType = { prefix: [], word: [], phrase: [], sentence: [] };
+      cards.forEach((card, i) => {
+        if (byType[card.type]) {
+          byType[card.type].push(i);
+        }
+      });
+      // Shuffle each group and concatenate in order: prefix → word → phrase → sentence
+      return [...shuffle(byType.prefix), ...shuffle(byType.word), ...shuffle(byType.phrase), ...shuffle(byType.sentence)];
+
+    case 'randomAll':
+      return shuffle(indices);
+
+    default:
+      return indices;
+  }
+}
+
+/**
  * Get storage key for a specific file
  */
 export function getStorageKey(path) {
@@ -23,18 +64,50 @@ export function loadStatsForFile(path) {
       const parsed = JSON.parse(saved);
       // Only load stats, not cards (cards are loaded from file)
       STATE.stats = parsed.stats || {};
-      STATE.currentIndex = parsed.currentIndex || 0;
-      // If file was completed, reset to beginning for a fresh start
-      if (STATE.cards.length > 0 && STATE.currentIndex >= STATE.cards.length - 1) {
+      STATE.orderMode = parsed.orderMode || 'sequential';
+
+      // Generate display order based on order mode
+      // For random modes, generate new order (refresh = re-randomize)
+      STATE.displayOrder = generateDisplayOrder(STATE.cards, STATE.orderMode);
+
+      // Reset to first card for random modes (refresh = re-randomize = start fresh)
+      if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+        STATE.currentIndex = 0;
+        STATE.currentCardId = null;
+      } else {
+        // For sequential mode, try to restore position from card ID
+        STATE.currentCardId = parsed.currentCardId || null;
+        if (STATE.currentCardId) {
+          // Find the card index by ID
+          const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
+          if (cardIndex !== -1) {
+            STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
+            if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+          } else {
+            STATE.currentIndex = parsed.currentIndex || 0;
+          }
+        } else {
+          STATE.currentIndex = parsed.currentIndex || 0;
+        }
+      }
+
+      // Ensure currentIndex is within bounds
+      if (STATE.currentIndex >= STATE.displayOrder.length) {
         STATE.currentIndex = 0;
       }
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
+      STATE.orderMode = 'sequential';
+      STATE.currentCardId = null;
+      STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
     }
   } catch (e) {
     STATE.stats = {};
     STATE.currentIndex = 0;
+    STATE.orderMode = 'sequential';
+    STATE.currentCardId = null;
+    STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
   }
 }
 
@@ -44,10 +117,18 @@ export function loadStatsForFile(path) {
 export function saveState() {
   if (!STATE.currentPath) return;
 
+  // Get current card ID for progress tracking
+  const currentCard = getCurrentCard();
+  if (currentCard) {
+    STATE.currentCardId = currentCard.id;
+  }
+
   const key = getStorageKey(STATE.currentPath);
   const data = {
     stats: STATE.stats,
     currentIndex: STATE.currentIndex,
+    currentCardId: STATE.currentCardId,
+    orderMode: STATE.orderMode,
     timestamp: Date.now()
   };
 
@@ -57,6 +138,15 @@ export function saveState() {
     localStorage.setItem(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
   } catch (e) {
   }
+}
+
+/**
+ * Get current card based on display order
+ */
+export function getCurrentCard() {
+  if (STATE.cards.length === 0 || STATE.displayOrder.length === 0) return null;
+  const cardIndex = STATE.displayOrder[STATE.currentIndex];
+  return STATE.cards[cardIndex];
 }
 
 /**
@@ -80,14 +170,48 @@ export function loadState() {
     if (saved) {
       const parsed = JSON.parse(saved);
       STATE.stats = parsed.stats || {};
-      STATE.currentIndex = parsed.currentIndex || 0;
+      STATE.orderMode = parsed.orderMode || 'sequential';
+      STATE.currentCardId = parsed.currentCardId || null;
+
+      // Generate display order
+      STATE.displayOrder = generateDisplayOrder(STATE.cards, STATE.orderMode);
+
+      // For random modes, reset to first card
+      if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+        STATE.currentIndex = 0;
+        STATE.currentCardId = null;
+      } else {
+        // For sequential mode, try to restore position
+        if (STATE.currentCardId) {
+          const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
+          if (cardIndex !== -1) {
+            STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
+            if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+          } else {
+            STATE.currentIndex = parsed.currentIndex || 0;
+          }
+        } else {
+          STATE.currentIndex = parsed.currentIndex || 0;
+        }
+      }
+
+      // Ensure currentIndex is within bounds
+      if (STATE.currentIndex >= STATE.displayOrder.length) {
+        STATE.currentIndex = 0;
+      }
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
+      STATE.orderMode = 'sequential';
+      STATE.currentCardId = null;
+      STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
     }
   } catch (e) {
     STATE.stats = {};
     STATE.currentIndex = 0;
+    STATE.orderMode = 'sequential';
+    STATE.currentCardId = null;
+    STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
   }
 }
 
@@ -117,6 +241,9 @@ export function resetData() {
   // Reset state
   STATE.cards = [];
   STATE.currentIndex = 0;
+  STATE.displayOrder = [];
+  STATE.currentCardId = null;
+  STATE.orderMode = 'sequential';
   STATE.stats = {};
   STATE.currentPath = null;
   STATE.currentFile = null;
@@ -124,19 +251,24 @@ export function resetData() {
 
 /**
  * Update statistics UI
+ * Learning list always shows original order, but highlights current card
  * @param {Object} ui - UI elements object
  */
 export function updateStatsUI(ui) {
+  // Get current card's actual index in the original array
+  const currentCardIndex = STATE.displayOrder[STATE.currentIndex];
+
   let html = '';
   STATE.cards.forEach((c, idx) => {
     const s = STATE.stats[c.id];
-    const isActive = idx === STATE.currentIndex;
+    // Highlight the card that's currently being displayed (not by position, but by card)
+    const isActive = idx === currentCardIndex;
     const err = s && s.errors ? `(${s.errors})` : '';
     let icon = '📝';  // 'word' type
     if (c.type === 'phrase') icon = '🔗';
     if (c.type === 'sentence') icon = '💬';
     html += `
-      <div class="stat-row ${isActive ? 'active' : ''}" onclick="app.jumpTo(${idx})">
+      <div class="stat-row ${isActive ? 'active' : ''}" onclick="app.jumpToOriginal(${idx})">
         <span class="stat-word"><span class="tag-pill">${icon}</span>${c.word.substring(0, 18)}${c.word.length > 18 ? '...' : ''}</span>
         <span class="stat-val" style="color:${s && s.errors ? 'var(--danger)' : 'inherit'}">${err}</span>
       </div>
@@ -145,6 +277,17 @@ export function updateStatsUI(ui) {
   ui.statsList.innerHTML = html;
   const active = ui.statsList.querySelector('.active');
   if (active) active.scrollIntoView({block: 'center'});
+}
+
+/**
+ * Set order mode and regenerate display order
+ */
+export function setOrderMode(mode) {
+  STATE.orderMode = mode;
+  STATE.displayOrder = generateDisplayOrder(STATE.cards, mode);
+  STATE.currentIndex = 0;
+  STATE.currentCardId = null;
+  saveState();
 }
 
 /**

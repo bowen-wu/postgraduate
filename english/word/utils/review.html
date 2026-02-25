@@ -37,6 +37,20 @@
             <button id="btnModeRecall" onclick="app.setMode('recall')">遮挡</button>
         </div>
 
+        <div class="custom-select" id="orderModeSelect" tabindex="0" role="listbox" aria-label="顺序模式">
+            <button class="custom-select-trigger" type="button">
+                <span id="orderModeLabel">顺序</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div class="custom-select-dropdown" role="listbox">
+                <div class="custom-select-option selected" data-value="sequential" role="option">顺序</div>
+                <div class="custom-select-option" data-value="randomByType" role="option">随机(按类型)</div>
+                <div class="custom-select-option" data-value="randomAll" role="option">完全随机</div>
+            </div>
+        </div>
+
         <button id="btnAutoPlay" class="btn-icon-toggle" onclick="app.toggleAutoPlay()" title="自动播放">
             <svg id="iconAutoPlayOff" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="2">
@@ -463,7 +477,7 @@
         break;
       case 'End':
         e.preventDefault();
-        const lastIndex = window.STATE.cards.length - 1;
+        const lastIndex = window.STATE.displayOrder.length - 1;
         if (window.STATE.currentIndex !== lastIndex) {
           window.STATE.currentIndex = lastIndex;
           window.STATE.saveState();
@@ -474,6 +488,66 @@
         break;
     }
   });
+
+  // Custom Select Dropdown
+  const customSelect = document.getElementById('orderModeSelect');
+  const trigger = customSelect.querySelector('.custom-select-trigger');
+  const label = document.getElementById('orderModeLabel');
+  const options = customSelect.querySelectorAll('.custom-select-option');
+
+  // Toggle dropdown
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    customSelect.classList.toggle('open');
+  });
+
+  // Select option
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const value = option.dataset.value;
+      const text = option.textContent;
+
+      // Update label
+      label.textContent = text;
+
+      // Update selected state
+      options.forEach(opt => opt.classList.remove('selected'));
+      option.classList.add('selected');
+
+      // Close dropdown
+      customSelect.classList.remove('open');
+
+      // Trigger change
+      if (window.app && window.app.setOrderMode) {
+        window.app.setOrderMode(value);
+      }
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', () => {
+    customSelect.classList.remove('open');
+  });
+
+  // Keyboard support
+  customSelect.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      customSelect.classList.toggle('open');
+    } else if (e.key === 'Escape') {
+      customSelect.classList.remove('open');
+    }
+  });
+
+  // Global function to update custom select from outside
+  window.updateOrderModeSelect = function(value) {
+    const option = customSelect.querySelector(`[data-value="${value}"]`);
+    if (option) {
+      label.textContent = option.textContent;
+      options.forEach(opt => opt.classList.remove('selected'));
+      option.classList.add('selected');
+    }
+  };
 </script>
 
 <!-- Toast Notification -->

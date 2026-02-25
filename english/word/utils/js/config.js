@@ -22,6 +22,9 @@ export const STATE = {
   cards: [],
   currentIndex: 0,
   mode: 'input',
+  orderMode: 'sequential',   // 'sequential' | 'randomByType' | 'randomAll'
+  displayOrder: [],          // Array of card indices for display order
+  currentCardId: null,       // Current card ID for progress tracking
   stats: {},
   currentPath: null,  // e.g., "core/Unit10-1.md"
   currentFile: null,  // Current file info from GitHub API

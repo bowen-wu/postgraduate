@@ -66,9 +66,15 @@ export class VocabApp {
 
     StateManager.loadState();
 
+    // Initialize displayOrder if empty
+    if (STATE.cards.length > 0 && STATE.displayOrder.length === 0) {
+      STATE.displayOrder = StateManager.generateDisplayOrder(STATE.cards, STATE.orderMode);
+    }
+
     UiRenderer.updateAutoPlayButton(this.ui);
     UiRenderer.updateModeButtons(this.ui);
     UiRenderer.updateBodyModeClass();
+    UiRenderer.updateOrderModeSelect(this.ui);
 
     if (STATE.cards.length === 0) {
       if (STATE.currentPath) {
@@ -187,6 +193,14 @@ export class VocabApp {
 
   jumpTo(idx) {
     EventHandlers.jumpTo(idx);
+  }
+
+  jumpToOriginal(originalIdx) {
+    EventHandlers.jumpToOriginal(originalIdx);
+  }
+
+  setOrderMode(mode) {
+    EventHandlers.setOrderMode(mode);
   }
 
   toggleFiles(forceOpen = null) {

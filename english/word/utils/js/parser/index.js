@@ -350,6 +350,7 @@ export class MarkdownParser {
     // 注意：只针对"句子"的子级，不针对"单词"的子级
     const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
     const isChild = this.parentCard && this.parentLevel < indentLevel;
+
     if (isChild && this.parentCard.type === 'sentence') {
       // 句子的子级都是 phrase 类型（不管是否有中文）
       if (!this.hasPosMarker(content)) {
