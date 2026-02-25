@@ -19,6 +19,7 @@
 \usepackage{dsfont}
 \usepackage{extarrows}
 \usepackage{amssymb}
+\usepgfplotslibrary{fillbetween}
 \pgfplotsset{compat=1.18}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
 
@@ -136,7 +137,7 @@
 
         定直线$L_0: Ax + By + C = 0$，且过$L_0$的任一条垂线与$L${\blueuline{至多有一个交点}}，则$L$绕$L_0$旋转一周所得旋转体的体积
         \[
-                {\color{red}{\bigstar}}V = \frac{\pi}{(A^2 + B^2)^{\frac{3}{2}}}\int_a^b [Ax + Bf(x) + C]^2|Af'(x) - B|\,\mathrm{d}x
+                {\color{red}{\bigstar}}V = \frac{\pi}{(A^2 + B^2)^{\frac{3}{2}}}\int_a^b [Ax + Bf(x) + C]^{\color{red}{2}}|Af'(x) - B|\,\mathrm{d}x
         \]
     \end{enumerate}
 
@@ -209,6 +210,104 @@
     \subsection{结论}
 
     \begin{enumerate}
+        \item 摆线（平摆线）\begin{cases}
+                              x = a(t - \sin t), \\
+                              y = a(1 - \cos t)
+        \end{cases}$(a > 0)$的一拱与$x$轴所围平面图形的面积是$3a^2\pi$
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    axis equal,
+                    axis lines=middle,
+                    xmin=-1, xmax=7.5,
+                    ymin=-0.5, ymax=3,
+                    samples=400,
+                    domain=-2.0472:8.33038,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    xtick=\empty,
+                    ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                    ]
+
+% 摆线 (a=1)
+                    \addplot[
+                        thick,
+                        blue
+                    ]
+                    ({x - sin(deg(x))},
+                        {1 - cos(deg(x))});
+
+                    \addlegendentry{
+                        $\begin{cases}
+                             x=a(t-\sin t)\\
+                             y=a(1-\cos t)
+                        \end{cases}$
+                    }
+
+% x轴交点
+                    \addplot[only marks] coordinates {(0,0)};
+                    \addplot[only marks] coordinates {(6.28318,0)};
+
+                    \node at (axis cs:0.2,-0.3) {$0$};
+                    \node[below] at (axis cs:6.28318,0) {$2\pi a$};
+
+% 最高点
+                    \addplot[only marks] coordinates {(3.14159,2)};
+                    \node[above] at (axis cs:3.14159,2)
+                        {$(\pi a,\,2a)$};
+
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+        \item 伯努利双纽线$r^2 = a^2\cos 2\theta$围成的图形的面积是$a^2$
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    axis equal,
+                    axis lines=middle,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    enlarge x limits=0.3,
+                    domain=-45:45,
+                    samples=400,
+                    xtick=\empty,
+                    ytick=\empty,
+                    legend style={
+                        at={(0.02,0.98)},
+                        anchor=north west,
+                        xshift=120pt,
+                        yshift=0pt,
+                        draw=none
+                    }
+                    ]
+                    \addplot[
+                        blue,
+                        thick
+                    ]
+                    ({cos(x)*sqrt(cos(2*x))},
+                        {sin(x)*sqrt(cos(2*x))});
+
+                    \addplot[
+                        blue,
+                        thick
+                    ]
+                    ({-cos(x)*sqrt(cos(2*x))},
+                        {-sin(x)*sqrt(cos(2*x))});
+
+                    \addlegendentry{$r^2 = a^2 \cos(2\theta)$}
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
     \end{enumerate}
 
     \subsection{定理}
@@ -226,11 +325,13 @@
 
     \begin{enumerate}
 
+        \item 等比公式前$n$项和: $S_n = \displaystyle\frac{a(1-r^n)}{1-r} = \displaystyle\frac{ar^n - a}{r - 1}, \quad r \ne 1 $
     \end{enumerate}
 
     \subsection{方法总结}
 
     \begin{enumerate}
+        \item 注意自变量$x$的取值范围。\emph{e.g.} $y = e^{-\frac{x}{2}}\sqrt {\sin x}$在$[0, 2\pi]$部分$\Rightarrow \sqrt {\sin x} \Rightarrow \sin x \geq 0 \Rightarrow x \in [0, \pi]$
 
     \end{enumerate}
 

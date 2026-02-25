@@ -557,7 +557,7 @@
 
     \subsubsection{定积分的换元积分法}
 
-    设$f(x)$在$[a, b]$上连续，函数$x = \varphi(x)$满足\ding{172}$\varphi(\alpha) = a, \varphi(\beta) = b$; \ding{173}$x = \varphi(t)$在$[\alpha, \beta]$（或$[\beta, \alpha]$）上有连续的导数，且其值域为$R_\varphi = [a, b]$，则有
+    设$f(x)$在$[a, b]$上连续，函数$x = \varphi(t)$满足\ding{172}$\varphi(\alpha) = a, \varphi(\beta) = b$; \ding{173}$x = \varphi(t)$在$[\alpha, \beta]$（或$[\beta, \alpha]$）上有连续的导数，且其值域为$R_\varphi = [a, b]$，则有
     \[
         \int_a^b f(x)\,\mathrm{d}x = \int_{\alpha}^{\beta} f[\varphi(t)]\varphi'(t)\,\mathrm{d}t
     \]
@@ -728,7 +728,6 @@
                 \end{cases}
             \]
         \end{itemize}
-        \item
     \end{enumerate}
 
     \subsection{变限积分的计算}
@@ -800,9 +799,7 @@
 
         \item 若 $f(x)$ 为连续的偶函数，则 $f(x)$ 的全体原函数中，只有 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 是奇函数
 
-        \item $f(x)$ 是可积且以 $T$ 为周期的周期函数，则 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 是以 $T$ 为周期的周期函数 $\Leftrightarrow \int_{0}^{T} f(x)\,\mathrm{d}x = 0$
-
-        \item $\int_{a}^{x} f(t)\,\mathrm{d}t = \int_{a}^{0} f(t)\,\mathrm{d}t + \int_{0}^{x} f(t)\,\mathrm{d}t$ 亦是以 $T$ 为周期的周期函数 $(a \neq 0)$
+        \item $f(x)$ 是可积且以 $T$ 为周期的周期函数，则 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 是以 $T$ 为周期的周期函数 $\Leftrightarrow \int_{0}^{T} f(x)\,\mathrm{d}x = 0 \Leftrightarrow \int_{a}^{x} f(t)\,\mathrm{d}t = \int_{a}^{0} f(t)\,\mathrm{d}t + \int_{0}^{x} f(t)\,\mathrm{d}t$ 亦是以 $T$ 为周期的周期函数 $(a \neq 0)$
 
     \end{enumerate}
 
@@ -885,6 +882,8 @@
             \begin{aligned}
                 \int_0^1 \arcsin \sqrt{1 - x^2}\,\mathrm{d}x
                 &=
+                x \arcsin \sqrt {1 - x^2}\Big|_0^1 - \int_0^1 x\,\mathrm{d}(\arcsin \sqrt{1 - x^2}) \\[6pt]
+                &=
                 \int_0^1 \frac{x}{\sqrt{1 - x^2}}\,\mathrm{d}x  \\[6pt]
                 &=
                 -\sqrt{1 - x^2}\Big|_0^1  \\[6pt]
@@ -945,6 +944,7 @@
             \end{aligned}
         \]
         \item $I_n = \displaystyle\int_0^{+\infty} x^ne^{-x}\,\mathrm{d}x = n!(n\text{为非负整数})$
+        \item $\tan (\displaystyle\frac{\pi}{4} - \alpha) = \displaystyle\frac{1 - \tan \alpha}{1 + \tan \alpha}$
 
     \end{enumerate}
 
