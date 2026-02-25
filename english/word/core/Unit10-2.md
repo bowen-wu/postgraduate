@@ -142,10 +142,10 @@
 - The court was contemptuous of McDonnell's **conduct**.
 - conductor
     - n. （交响乐、合唱团的）指挥
-    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
-      modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* **conductor**</ins> about
-      him."
-        - with + (no/an/some) air of + 名词 + about sb. 某人身上带有（或没有）...的气质/神态/架子
+    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an
+      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
+      conductor about him."
+        - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
             - with an air of mystery about him 他身上带着一股神秘感
             - with no air of confidence about him 他显得没有自信
 - behave

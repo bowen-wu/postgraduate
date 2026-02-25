@@ -70,6 +70,11 @@ export class MarkdownParser {
     this.pendingSynonymLevel = -1;  // Indent level of the pending synonym marker
     this.pendingSynonymOriginalParent = null;  // Original parent card before redirecting to synonym
     this.pendingSynonymOriginalLevel = -1;  // Original parent level before redirecting to synonym
+    // Pending antonym state (similar to pending synonym)
+    this.pendingAntonymCard = null;
+    this.pendingAntonymLevel = -1;
+    this.pendingAntonymOriginalParent = null;
+    this.pendingAntonymOriginalLevel = -1;
 
     // Assign imported pure functions as class methods
     this.isSynonymMarker = isSynonymMarker;
@@ -130,8 +135,9 @@ export class MarkdownParser {
         if (trimmed.startsWith('##')) {
           const headerWord = trimmed.substring(2).trim();
 
-          // Finalize any pending synonym before processing ## header (## acts like a new list item)
+          // Finalize any pending synonym/antonym before processing ## header (## acts like a new list item)
           this.finalizePendingSynonymIfNeeded(0);
+          this.finalizePendingAntonymIfNeeded(0);
 
           if (this.isValidWordHeader(headerWord)) {
             // Check if this is a phrase header (规则4: ## 词组)
@@ -199,6 +205,11 @@ export class MarkdownParser {
         this.finalizePendingSynonymIfNeeded(0);
       }
 
+      // Finalize any pending antonym card at the end of parsing
+      if (this.pendingAntonymCard) {
+        this.finalizePendingAntonymIfNeeded(0);
+      }
+
       return this.cards;
     } catch (error) {
       throw error;
@@ -222,6 +233,9 @@ export class MarkdownParser {
     // This should be checked BEFORE processing any new item
     this.finalizePendingSynonymIfNeeded(indentLevel);
 
+    // Finalize pending antonym card if we've exited its child scope
+    this.finalizePendingAntonymIfNeeded(indentLevel);
+
     // 规则7: == 标记的是同义词 (== word or === word)
     if (this.isSynonymMarker(content)) {
       return this.addSynonymToParent(content, indentLevel);
@@ -229,7 +243,7 @@ export class MarkdownParser {
 
     // 规则9: 以 - Opposite: 开头的是反义词 (Opposite: word)
     if (this.hasAntonymMarker(content)) {
-      this.addAntonymToParent(content);
+      this.addAntonymToParent(content, indentLevel);
       return undefined;
     }
 
@@ -712,18 +726,21 @@ export class MarkdownParser {
 
       const indentMatch = line.match(/^(\s*)-/);
       if (!indentMatch) {
-        // Finalize any pending synonym card before breaking
+        // Finalize any pending synonym/antonym card before breaking
         this.finalizePendingSynonymIfNeeded(0);
+        this.finalizePendingAntonymIfNeeded(0);
         break;
       }
       const indentLevel = indentMatch[1].length;
 
-      // Finalize pending synonym card if we've exited its child scope
+      // Finalize pending synonym/antonym card if we've exited its child scope
       this.finalizePendingSynonymIfNeeded(indentLevel);
+      this.finalizePendingAntonymIfNeeded(indentLevel);
 
       if (indentLevel <= parentIndentLevel) {
-        // Finalize any pending synonym card before exiting
+        // Finalize any pending synonym/antonym card before exiting
         this.finalizePendingSynonymIfNeeded(0);
+        this.finalizePendingAntonymIfNeeded(0);
         break;
       }
 
@@ -923,8 +940,9 @@ export class MarkdownParser {
     this.parentCard = savedParentCard;
     this.parentLevel = savedParentLevel;
 
-    // Finalize any pending synonym card before returning
+    // Finalize any pending synonym/antonym card before returning
     this.finalizePendingSynonymIfNeeded(0);
+    this.finalizePendingAntonymIfNeeded(0);
 
     return { children, lastLineIndex: i - 1 };
   }
@@ -1172,19 +1190,11 @@ export class MarkdownParser {
         if (!isDuplicate) {
           this.parentCard.synonyms.push(synonym);
         }
-      } else if (!pos && !cn && !ipa) {
-        // 🔧 FIX: Simple synonym without any definition - add directly
-        // This handles cases like "== direct == clear == express"
-        const isDuplicate = this.parentCard.synonyms.some(
-          existingSyn => existingSyn.word === word
-        );
-
-        if (!isDuplicate) {
-          this.parentCard.synonyms.push({ word });
-        }
       } else {
-        // Complex case: == curb (definition items follow in child lines)
-        // Only when synonym has ipa but no pos/cn, indicating it might have child definitions
+        // No complete inline definition (pos && cn) - create pending synonym for potential child items
+        // This handles cases like:
+        // - == curb (has child items)
+        // - == word [ipa] (might have child items)
         // Save the original parent context
         this.pendingSynonymOriginalParent = this.parentCard;
         this.pendingSynonymOriginalLevel = this.parentLevel;
@@ -1213,8 +1223,9 @@ export class MarkdownParser {
    * Add antonym to parent card
    * 规则9: 以 - Opposite: 开头的是反义词，添加到单词的反义词中
    * Finds the nearest word-type ancestor card (not sentence)
+   * Creates pending antonym for child items if no inline definition
    */
-  addAntonymToParent(content) {
+  addAntonymToParent(content, indentLevel) {
     // Find the nearest word-type parent card by searching backward through cards
     let wordParentCard = null;
 
@@ -1246,7 +1257,29 @@ export class MarkdownParser {
       if (pos) antonym.pos = pos;
       if (cn) antonym.cn = cn;
 
-      wordParentCard.antonyms.push(antonym);
+      // If no inline definition (pos or cn), create pending antonym for child items
+      if (!pos && !cn) {
+        this.pendingAntonymCard = {
+          word: word,
+          items: []
+        };
+        if (ipa) this.pendingAntonymCard.ipa = ipa;
+
+        // Track the indent level of this antonym marker
+        this.pendingAntonymLevel = indentLevel;
+
+        // Save original parent context
+        this.pendingAntonymOriginalParent = wordParentCard;
+        this.pendingAntonymOriginalLevel = this.parentLevel;
+
+        // Redirect parentCard to the pending antonym
+        // This ensures subsequent POS lines are added to the antonym, not the original parent
+        this.parentCard = this.pendingAntonymCard;
+        this.parentLevel = indentLevel;
+      } else {
+        // Has inline definition, just add it
+        wordParentCard.antonyms.push(antonym);
+      }
     }
   }
 
@@ -1335,6 +1368,54 @@ export class MarkdownParser {
       this.pendingSynonymLevel = -1;
       this.pendingSynonymOriginalParent = null;
       this.pendingSynonymOriginalLevel = -1;
+    }
+  }
+
+  /**
+   * Finalize pending antonym card if we've exited its child scope
+   * Similar to finalizePendingSynonymIfNeeded
+   * @param {number} currentIndentLevel - The indent level of the current item
+   */
+  finalizePendingAntonymIfNeeded(currentIndentLevel) {
+    if (this.pendingAntonymCard && currentIndentLevel <= this.pendingAntonymLevel) {
+      // Convert pendingAntonymCard to an antonym object
+      const antonym = {
+        word: this.pendingAntonymCard.word
+      };
+
+      if (this.pendingAntonymCard.ipa) {
+        antonym.ipa = this.pendingAntonymCard.ipa;
+      }
+
+      // Add items if present
+      if (this.pendingAntonymCard.items && this.pendingAntonymCard.items.length > 0) {
+        antonym.items = this.pendingAntonymCard.items;
+      }
+
+      // Add to original parent's antonyms array
+      if (this.pendingAntonymOriginalParent) {
+        this.pendingAntonymOriginalParent.antonyms =
+          this.pendingAntonymOriginalParent.antonyms || [];
+
+        // Prevent duplicate antonyms
+        const isDuplicate = this.pendingAntonymOriginalParent.antonyms.some(
+          existingAnt => existingAnt.word === antonym.word
+        );
+
+        if (!isDuplicate) {
+          this.pendingAntonymOriginalParent.antonyms.push(antonym);
+        }
+      }
+
+      // Restore parent context
+      this.parentCard = this.pendingAntonymOriginalParent;
+      this.parentLevel = this.pendingAntonymOriginalLevel;
+
+      // Clear pending antonym state
+      this.pendingAntonymCard = null;
+      this.pendingAntonymLevel = -1;
+      this.pendingAntonymOriginalParent = null;
+      this.pendingAntonymOriginalLevel = -1;
     }
   }
 }

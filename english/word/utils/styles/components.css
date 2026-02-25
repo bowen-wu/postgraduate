@@ -419,6 +419,49 @@ body.mode-recall .item-list.revealed {
     opacity: 1;
 }
 
+/* Antonym with items (like synonym-with-items) */
+.antonym-with-items {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: #ffedd5;
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+}
+.antonym-main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.antonym-main .antonym-word {
+    font-weight: 600;
+    color: #ea580c;
+}
+.antonym-main .antonym-play-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+}
+.antonym-main .antonym-play-btn:hover {
+    opacity: 1;
+}
+.antonym-sub-items {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    border-left: 2px dashed #fdba74;
+    margin-left: 0.25rem;
+}
+.antonym-sub-item {
+    font-size: 0.85rem;
+    color: #9a3412;
+    padding: 0.25rem 0;
+    line-height: 1.4;
+}
+
 /* Audio play button loading state */
 .audio-play-btn {
     transition: all 0.2s;

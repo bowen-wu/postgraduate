@@ -192,6 +192,44 @@
     - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would boost the farming industry,
       political **sovereignty** and even the nation's health.
 
+## monitor
+
+- vt. 监控；监听
+- surveillance [sɜːrˈveɪləns]
+  - n. 监视
+  - survey vt. 调查
+
+## operate
+
+- v. 经营
+- operation n. （工商业）活动
+- operational
+  - adj. 运营的；操作的
+  - operational costs 运营成本
+- operative adj. （系统、服务）起作用的
+- operator n. 经营者
+
+## sponsor
+
+- [ˈspɑːnsər]
+- vt. 发起；赞助
+- n. 倡议者
+- sponsorship
+  - n. 赞助
+  - limit **sponsorship** of sports events
+
+## mere
+
+- adj. 仅仅的
+- **Mere** curiosity adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力
+- merely adv. 仅仅
+- bare [ber]
+  - adj. 刚刚够的
+  - barely
+    - adv. 几乎不
+    - We **barely** talk.
+    - ...there was so many people in a much worse state, with **barely** any money to spend on food...
+
 ## Words
 
 - remembrance [rɪˈmɛmbrəns]

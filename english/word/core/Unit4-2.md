@@ -265,9 +265,12 @@
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者
-    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an *unpretentious(adj.
-      谦逊的 == modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* conductor</ins>
-      about him."
+    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
+      modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* **conductor**</ins> about
+      him."
+        - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
+            - with an air of mystery about him 他身上带着一股神秘感
+            - with no air of confidence about him 他显得没有自信
 - promote
     - v. 促进; 促销; 晋升; 使…升级
 - announce [əˈnaʊns]

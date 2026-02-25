@@ -486,34 +486,95 @@ function renderSynonymsAndAntonyms(ui, card) {
     antList.className = 'antonyms-list';
 
     card.antonyms.forEach(ant => {
-      const antItem = document.createElement('span');
-      antItem.className = 'antonym-item';
+      // Check if antonym has items (multiple definitions)
+      if (ant.items && ant.items.length > 0) {
+        // Create container for the whole antonym with items
+        const antContainer = document.createElement('div');
+        antContainer.className = 'antonym-with-items';
 
-      const playBtn = document.createElement('button');
-      playBtn.className = 'antonym-play-btn audio-play-btn';
-      const antWordEscaped = ant.word.replace(/'/g, '\\\'');
-      const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
-      playBtn.id = antBtnId;
-      playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-      </svg><span class="btn-spinner"></span>`;
-      playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
+        // Create main antonym item (word only)
+        const antMainItem = document.createElement('div');
+        antMainItem.className = 'antonym-main';
 
-      const antWord = document.createElement('span');
-      antWord.className = 'antonym-word';
+        const playBtn = document.createElement('button');
+        playBtn.className = 'antonym-play-btn audio-play-btn';
+        const antWordEscaped = ant.word.replace(/'/g, '\\\'');
+        const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+        playBtn.id = antBtnId;
+        playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg><span class="btn-spinner"></span>`;
+        playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
 
-      let antDisplay = ant.word;
-      if (ant.pos && ant.pos.trim() !== '') {
-        antDisplay += ` ${ant.pos}`;
+        const antWord = document.createElement('span');
+        antWord.className = 'antonym-word';
+        if (ant.ipa) {
+          antWord.textContent = `${ant.word} ${ant.ipa}`;
+        } else {
+          antWord.textContent = ant.word;
+        }
+
+        antMainItem.appendChild(playBtn);
+        antMainItem.appendChild(antWord);
+        antContainer.appendChild(antMainItem);
+
+        // Create sub-items for each definition (indented)
+        const antSubList = document.createElement('div');
+        antSubList.className = 'antonym-sub-items';
+
+        ant.items.forEach(item => {
+          const subItem = document.createElement('div');
+          subItem.className = 'antonym-sub-item';
+
+          let subText = '';
+          if (item.en && item.en.trim() !== '') {
+            subText += item.en;
+          }
+          if (item.cn && item.cn.trim() !== '') {
+            if (subText) subText += ' ';
+            subText += item.cn;
+          }
+
+          subItem.textContent = subText;
+          antSubList.appendChild(subItem);
+        });
+
+        antContainer.appendChild(antSubList);
+        antList.appendChild(antContainer);
+      } else {
+        // Simple antonym - single line
+        const antItem = document.createElement('span');
+        antItem.className = 'antonym-item';
+
+        const playBtn = document.createElement('button');
+        playBtn.className = 'antonym-play-btn audio-play-btn';
+        const antWordEscaped = ant.word.replace(/'/g, '\\\'');
+        const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+        playBtn.id = antBtnId;
+        playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg><span class="btn-spinner"></span>`;
+        playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
+
+        const antWord = document.createElement('span');
+        antWord.className = 'antonym-word';
+
+        let antDisplay = ant.word;
+        if (ant.ipa && ant.ipa.trim() !== '') {
+          antDisplay += ` ${ant.ipa}`;
+        }
+        if (ant.pos && ant.pos.trim() !== '') {
+          antDisplay += ` ${ant.pos}`;
+        }
+        if (ant.cn && ant.cn.trim() !== '') {
+          antDisplay += ` ${ant.cn}`;
+        }
+
+        antWord.textContent = antDisplay;
+        antItem.appendChild(playBtn);
+        antItem.appendChild(antWord);
+        antList.appendChild(antItem);
       }
-      if (ant.cn && ant.cn.trim() !== '') {
-        antDisplay += ` ${ant.cn}`;
-      }
-
-      antWord.textContent = antDisplay;
-      antItem.appendChild(playBtn);
-      antItem.appendChild(antWord);
-      antList.appendChild(antItem);
     });
 
     antSection.appendChild(antList);
