@@ -26,14 +26,14 @@
 - The new teaching method may **work** best with Shakespeare.
 - Gates chooses nonfiction titles because they explain how the world **works**.
 - The new **work** emphasizes that *adolescence([ˌædəˈlesns] n. 青春（期）)* is a time of opportunity as well as risk.
-- A number of priceless **works of art** were stolen from the gallery([ˈɡæləri] n. 美术馆).
+- A number of priceless **works of art** were stolen from the *gallery([ˈɡæləri] n. 美术馆)*.
 - 词组
     - work against 起反作用，对...不利 😔
-        - Your age can **work against** you in this job.
     - work on 从事于
     - work out 锻炼身体；实施，实现
-        - What if this doesn't **work out**? 如果这不起作用怎么办
     - at work 起作用；在工作
+- Your age can **work against** you in this job.
+- What if this doesn't **work out**? 如果这不起作用怎么办
 - coworker n. 同事
 - workforce n. 劳动力；全体员工
 - workplace n. 工作场所

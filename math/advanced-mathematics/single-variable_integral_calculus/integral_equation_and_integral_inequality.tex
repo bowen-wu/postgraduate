@@ -132,6 +132,10 @@
     \subsection{定理}
 
     \begin{enumerate}
+        \item 推广的积分中值定理: 设$f(x), g(x)$在$[a, b]$上连续，且$g(x)$在$[a, b]$上不变化，则存在$\xi \in (a, b)$，使得
+        \[
+            \int_a^b f(x)g(x)\,\mathrm{d}x = f(\xi)\int_a^b g(x)\,\mathrm{d}x
+        \]
     \end{enumerate}
 
     \subsection{运算}
@@ -161,6 +165,67 @@
     \subsection{理解}
 
     \begin{enumerate}
+        \item 设 $f(x)$ 在 $[1,2]$ 上连续，计算
+        \[
+            \lim_{n\to\infty}\int_{1}^{2} f(x)e^{-x^{n}}\,\mathrm{d}x.
+        \]
+
+        \begin{analysisbox}[Example]
+
+            由于 $f(x)$ 在 $[1,2]$ 上连续，且 $e^{-x^n}$ 在 $[1,2]$ 上非负，
+            由积分中值定理可知，存在 $\xi_n \in (1,2)$，使得
+            \[
+                \int_{1}^{2} f(x)e^{-x^n}\,\mathrm{d}x
+                =
+                f(\xi_n)\int_{1}^{2} e^{-x^n}\,\mathrm{d}x.
+            \]
+
+            因为 $f(x)$ 在 $[1,2]$ 上连续，
+            故 $f(\xi_n)$ 有界。
+
+            当 $x\in(1,2]$ 时，有
+            \[
+                e^{x^n} > x^n + 1 > 0,
+            \]
+            即
+            \[
+                \frac{1}{e^{x^n}} < \frac{1}{x^n + 1} < \frac{1}{x^n}
+            \]
+
+            于是得到
+            \[
+                0
+                <
+                \int_{1}^{2} e^{-x^n}\,\mathrm{d}x
+                <
+                \int_{1}^{2} x^{-n}\,\mathrm{d}x =
+                \left.
+                \frac{x^{1-n}}{1-n}
+                \right|_{1}^{2}
+                =
+                \frac{1}{1-n}\left(2^{\,1-n}-1\right).
+            \]
+
+            又
+            \[
+                \lim_{n\to\infty} \frac{1}{1-n}\left(2^{\,1-n}-1\right) = 0
+            \]
+
+            由夹逼准则可得
+            \[
+                \lim_{n\to\infty}\int_{1}^{2} e^{-x^n}\,\mathrm{d}x = 0.
+            \]
+
+            又因 $f(\xi_n)$ 有界，
+            故
+            \[
+                \lim_{n\to\infty}
+                \int_{1}^{2} f(x)e^{-x^n}\,\mathrm{d}x
+                =
+                0.
+            \]
+
+        \end{analysisbox}
     \end{enumerate}
 
 \end{document}

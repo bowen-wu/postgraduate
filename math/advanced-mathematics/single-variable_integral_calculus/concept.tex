@@ -116,11 +116,18 @@
     \begin{enumerate}
         \item 连续函数$f(x)$必有原函数$F(x)$
         \[
-                {\color{red}{\bigstar}}f(x)\text{连续} \Rightarrow
-            \begin{cases}
-                \int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C, \\
-                [\int_a^x f(t)\,\mathrm{d}t]' = f(x)
-            \end{cases}
+                {\color{red}{\bigstar}}\, f(x)\text{ 连续}
+            \Rightarrow
+            \left\{
+            \begin{aligned}
+                &{\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}},\\[6pt]
+                &\left[\int_a^x f(t)\,\mathrm{d}t\right]' = f(x)
+            \end{aligned}
+            \right\}
+            \Rightarrow
+            F(x)
+            =
+            \int_a^x f(t)\,\mathrm{d}t
         \]
         \item 含有第一类间断点和无穷间断点的函数$f(x)$在包含该间断点的区间内必没有原函数$F(x)$
         \item 可导函数$F(x)$求导后的函数$F'(x) = f(x)$不一定是连续函数，也可能有震荡间断点
