@@ -880,6 +880,20 @@ export class MarkdownParser {
         }
       }
 
+      // 🔧 FIX: If parent is a phrase card and this item is at the same indent level,
+      // it's a sibling phrase, not a child. Break and let the main loop handle it.
+      // This fixes the case where multiple phrases under "词组" are incorrectly nested.
+      if (actualParentCard && actualParentCard.type === 'phrase') {
+        const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
+        const hasPosMarker = this.hasPosMarker(content);
+        const isSpecialMarker = this.isSynonymMarker(content) || this.isPurePosLine(content) || this.isPureIpaLine(content);
+        // If it looks like a phrase (has Chinese, no POS, not a special marker) at same or less indent, it's a sibling
+        if (hasChinese && !hasPosMarker && !isSpecialMarker) {
+          // This is a sibling phrase - break and let main loop handle it
+          break;
+        }
+      }
+
       if (cardType === 'word') {
         const card = this.createWordCard(content, indentLevel);
         // Process children of this word card (pass the word card as explicit parent)
@@ -950,17 +964,28 @@ export class MarkdownParser {
   /**
    * Check if it's a prefix/suffix
    * 规则5: 如果是 -xx-、-xxx、xx- 代表的是前缀后缀
+   * IMPORTANT: Prefix/suffix MUST contain a hyphen (-) to distinguish from regular words
+   * Examples of valid prefixes/suffixes: un-, -tion, -able, pre-, -ly
+   * Examples of invalid (regular words): say, get, take, make
    * Depends on this.hasPosMarker
    */
   isPrefixOrSuffix(content, lineIndex = null) {
     const trimmed = content.trim();
     const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
     const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
-    const prefixSuffixPattern = /^-?[a-z]{1,5}-?$/;
-    const patternMatch = prefixSuffixPattern.test(englishPart);
+
+    // 🔧 FIX: Prefix/suffix MUST contain a hyphen (-) to be valid
+    // This prevents regular short words like "say", "get", "take" from being classified as prefixes
+    // Valid patterns: -xx, xx-, -xx-
+    // Invalid patterns: xx (no hyphen)
+    const hasHyphen = /^-?[a-z]{1,5}-?$/.test(englishPart) && englishPart.includes('-');
+    if (!hasHyphen) {
+      return false;
+    }
+
     const hasPos = this.hasPosMarker(content);
     const hasChineseOnSameLine = /[\u4e00-\u9fa5]/.test(content);
-    return patternMatch && !hasPos && hasChineseOnSameLine;
+    return !hasPos && hasChineseOnSameLine;
   }
 
   /**

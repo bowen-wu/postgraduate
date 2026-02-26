@@ -53,9 +53,20 @@ export function hasAntonymMarker(content) {
  */
 export function isPurePosLine(content) {
   const trimmed = content.trim();
-  // Match: n./v./adj./adv./vt./vi. + anything + Chinese
+  // Match: valid POS marker (n./v./adj./adv./vt./vi./etc.) + anything + Chinese
   // Examples: "n. 心态", "vi. （正式文件）到期"
-  return /^[a-z]+\.\s*(?=[\s\S]*[\u4e00-\u9fa5])/.test(trimmed);
+  // 🔧 FIX: Only match VALID POS markers from the whitelist, not any word followed by a dot
+  // This prevents "bear...out 证实" from being incorrectly matched as a POS line
+  const posMatch = trimmed.match(/^([a-z]+\.)\s*/);
+  if (!posMatch) return false;
+
+  // Check if the matched POS marker is in our valid POS markers set
+  if (!POS_MARKERS.has(posMatch[1].toLowerCase())) {
+    return false;
+  }
+
+  // Check that the line contains Chinese characters
+  return /[\u4e00-\u9fa5]/.test(trimmed);
 }
 
 /**

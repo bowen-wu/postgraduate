@@ -34,9 +34,9 @@
 ## commit
 
 - vt. 进行（自杀）；承诺
-- commit suicide([ˈsuːɪsaɪd] n. 自杀) 自杀/结束自己的生命
-- commit oneself (to sth/to doing sth) 明确表态/作出承诺/投入其中/让自己承担责任
-- They are <ins>sitting on the fence</ins> and refusing to **commit** themselves.
+- commit *suicide([ˈsuːɪsaɪd] n. 自杀)* 自杀/结束自己的生命
+- commit oneself (to sth./to doing sth.) 明确表态/作出承诺/投入其中/让自己承担责任
+- They are sitting on the fence and refusing to **commit** themselves.
     - sit on the fence 保持中立/不站队/不作决定
 - If I was poor and *desperate([ˈdespərət] adj. 绝望的)*, I might <ins>**commit** crimes(犯罪)</ins> to feed my family.
 - commitment
@@ -61,11 +61,11 @@
     - n. 补偿金；补偿；薪酬
     - But by the end of 2009 Ms. Simmons was under fire for having sat on Goldman's
       <ins>**compensation** committee(薪酬委员会)</ins>...
-        - be under fire (for sth) 因某事而受到猛烈抨击/质疑/批评
+        - be under fire (for sth.) 因某事而受到猛烈抨击/质疑/批评
         - sit on a committee/board/panel 担任...的委员/董事/成员
     - Within companies, the right **compensation** design can provide incentives for executives to think beyond their
       own time at the company and on behalf of all stakeholders.
-        - provide incentives for sb to do sth 为某人提供做某事的激励
+        - provide incentives for sb. to do sth. 为某人提供做某事的激励
         - think beyond 超越...来思考/不局限于...
 
 ## comply
@@ -76,7 +76,7 @@
 - comply **with** the rules
 - compliance [kəmˈplaɪəns]
     - n. 遵守
-    - bring sth into compliance (with sth) 使某事符合（法规/标准/要求）；让某事达到合规状态
+    - bring sth. into compliance (with sth.) 使某事符合（法规/标准/要求）；让某事达到合规状态
 - compliant adj. 顺从的
 - obey [əˈbeɪ] v. 遵守
 - violate
@@ -141,7 +141,7 @@
       over what to wear. Instead, use it as an opportunity to reduce <ins>decision **fatigue**(决策疲劳)</ins>.
         - The point of X isn’t to A (or B). Instead/It’s to C. X 的目的不是 A（或 B），而是 C。
         - A, instead, B B是重点
-        - fuss over sth 为...过度操心/瞎折腾/小题大做
+        - fuss over sth. 为...过度操心/瞎折腾/小题大做
 
 ## philosophy
 
@@ -174,7 +174,7 @@
 
 - vt. 撤回；取（银行账户中的款）
 - Entergy will **withdraw** its Plymouth application.
-- the **withdrawal([wɪðˈdrɔːəl] n. 撤回)** of bank support
+- the *withdrawal([wɪðˈdrɔːəl] n. 撤回)* of bank support
 - deposit [dɪˈpɑːzɪt] n. 押金；存款
 - retreat [rɪˈtriːt]
     - n. 躲避；僻静处；退却；衰退
@@ -191,7 +191,7 @@
       <ins>fussing over</ins> what to wear. Instead, use it as an opportunity to reduce
       <ins>decision fatigue(决策疲劳)</ins>.
         - The point of X isn’t to A (or B). Instead/It’s to C. X 的目的不是 A（或 B），而是 C。
-        - fuss over sth 为...过度操心/瞎折腾/小题大做
+        - fuss over sth. 为...过度操心/瞎折腾/小题大做
 - stylist [ˈstaɪlɪst] n. 造型设计师；文体家
 - fashionable
     - adj. 流行的

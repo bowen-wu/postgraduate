@@ -70,36 +70,47 @@ export function loadStatsForFile(path) {
       // For random modes, generate new order (refresh = re-randomize)
       STATE.displayOrder = generateDisplayOrder(STATE.cards, STATE.orderMode);
 
-      // Reset to first card for random modes (refresh = re-randomize = start fresh)
-      if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+      // Check if file was completed in previous session
+      // If completed, reset to first card for a fresh start
+      if (parsed.completed) {
         STATE.currentIndex = 0;
         STATE.currentCardId = null;
+        STATE.completed = false;
+        // Save the reset state
+        saveState();
       } else {
-        // For sequential mode, try to restore position from card ID
-        STATE.currentCardId = parsed.currentCardId || null;
-        if (STATE.currentCardId) {
-          // Find the card index by ID
-          const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
-          if (cardIndex !== -1) {
-            STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
-            if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+        // Reset to first card for random modes (refresh = re-randomize = start fresh)
+        if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+          STATE.currentIndex = 0;
+          STATE.currentCardId = null;
+        } else {
+          // For sequential mode, try to restore position from card ID
+          STATE.currentCardId = parsed.currentCardId || null;
+          if (STATE.currentCardId) {
+            // Find the card index by ID
+            const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
+            if (cardIndex !== -1) {
+              STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
+              if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+            } else {
+              STATE.currentIndex = parsed.currentIndex || 0;
+            }
           } else {
             STATE.currentIndex = parsed.currentIndex || 0;
           }
-        } else {
-          STATE.currentIndex = parsed.currentIndex || 0;
         }
-      }
 
-      // Ensure currentIndex is within bounds
-      if (STATE.currentIndex >= STATE.displayOrder.length) {
-        STATE.currentIndex = 0;
+        // Ensure currentIndex is within bounds
+        if (STATE.currentIndex >= STATE.displayOrder.length) {
+          STATE.currentIndex = 0;
+        }
       }
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
       STATE.orderMode = 'sequential';
       STATE.currentCardId = null;
+      STATE.completed = false;
       STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
     }
   } catch (e) {
@@ -107,6 +118,7 @@ export function loadStatsForFile(path) {
     STATE.currentIndex = 0;
     STATE.orderMode = 'sequential';
     STATE.currentCardId = null;
+    STATE.completed = false;
     STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
   }
 }
@@ -129,6 +141,7 @@ export function saveState() {
     currentIndex: STATE.currentIndex,
     currentCardId: STATE.currentCardId,
     orderMode: STATE.orderMode,
+    completed: STATE.completed || false,
     timestamp: Date.now()
   };
 
@@ -176,34 +189,43 @@ export function loadState() {
       // Generate display order
       STATE.displayOrder = generateDisplayOrder(STATE.cards, STATE.orderMode);
 
-      // For random modes, reset to first card
-      if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+      // Check if file was completed in previous session
+      // If completed, reset to first card for a fresh start
+      if (parsed.completed) {
         STATE.currentIndex = 0;
         STATE.currentCardId = null;
+        STATE.completed = false;
       } else {
-        // For sequential mode, try to restore position
-        if (STATE.currentCardId) {
-          const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
-          if (cardIndex !== -1) {
-            STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
-            if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+        // For random modes, reset to first card
+        if (STATE.orderMode === 'randomByType' || STATE.orderMode === 'randomAll') {
+          STATE.currentIndex = 0;
+          STATE.currentCardId = null;
+        } else {
+          // For sequential mode, try to restore position
+          if (STATE.currentCardId) {
+            const cardIndex = STATE.cards.findIndex(c => c.id === STATE.currentCardId);
+            if (cardIndex !== -1) {
+              STATE.currentIndex = STATE.displayOrder.indexOf(cardIndex);
+              if (STATE.currentIndex === -1) STATE.currentIndex = 0;
+            } else {
+              STATE.currentIndex = parsed.currentIndex || 0;
+            }
           } else {
             STATE.currentIndex = parsed.currentIndex || 0;
           }
-        } else {
-          STATE.currentIndex = parsed.currentIndex || 0;
         }
-      }
 
-      // Ensure currentIndex is within bounds
-      if (STATE.currentIndex >= STATE.displayOrder.length) {
-        STATE.currentIndex = 0;
+        // Ensure currentIndex is within bounds
+        if (STATE.currentIndex >= STATE.displayOrder.length) {
+          STATE.currentIndex = 0;
+        }
       }
     } else {
       STATE.stats = {};
       STATE.currentIndex = 0;
       STATE.orderMode = 'sequential';
       STATE.currentCardId = null;
+      STATE.completed = false;
       STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
     }
   } catch (e) {
@@ -211,6 +233,7 @@ export function loadState() {
     STATE.currentIndex = 0;
     STATE.orderMode = 'sequential';
     STATE.currentCardId = null;
+    STATE.completed = false;
     STATE.displayOrder = generateDisplayOrder(STATE.cards, 'sequential');
   }
 }
@@ -247,6 +270,7 @@ export function resetData() {
   STATE.stats = {};
   STATE.currentPath = null;
   STATE.currentFile = null;
+  STATE.completed = false;
 }
 
 /**

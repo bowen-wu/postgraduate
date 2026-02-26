@@ -264,8 +264,9 @@ export class VocabApp {
       `;
     }
 
-    // Reset index and start new session
+    // Reset index, clear completed flag, and start new session
     STATE.currentIndex = 0;
+    STATE.completed = false;
     StateManager.startSession();
     StateManager.saveState();
 

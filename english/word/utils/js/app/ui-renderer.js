@@ -856,6 +856,10 @@ export function triggerConfetti() {
  * Show completion screen when all cards are finished
  */
 export function showCompletionScreen(ui) {
+  // Mark as completed and save state
+  STATE.completed = true;
+  StateManager.saveState();
+
   // End session and get statistics
   StateManager.endSession();
   const stats = StateManager.getSessionStats();
