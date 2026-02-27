@@ -96,7 +96,7 @@
 - A turbulent business environment also has senior managers *cautious(adj. 谨慎的)* of letting vague pronouncements
   **cloud** their reputations.
     - turbulent adj. 动荡的
-    - has sb cautious of doing sth 使某人对做某事保持谨慎
+    - has sb. cautious of doing sth. 使某人对做某事保持谨慎
 
 ## fashion
 

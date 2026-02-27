@@ -234,8 +234,19 @@ button:disabled:hover {
 .item-list { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
 
 /* Hide definition items in recall mode until user clicks "记得" */
+/* But keep phrase header and sentence content visible */
 body.mode-recall .item-list {
+    display: flex;
+}
+body.mode-recall .item-list > .item,
+body.mode-recall .item-list > .synonyms-section,
+body.mode-recall .item-list > .antonyms-section {
     display: none;
+}
+body.mode-recall .item-list.revealed > .item,
+body.mode-recall .item-list.revealed > .synonyms-section,
+body.mode-recall .item-list.revealed > .antonyms-section {
+    display: block;
 }
 body.mode-recall .item-list.revealed {
     display: flex;
@@ -367,7 +378,7 @@ body.mode-recall .item-list.revealed {
 
 /* Antonyms Styles */
 .antonyms-section {
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
     padding-top: 1rem;
     border-top: 1px solid #fed7aa;
 }

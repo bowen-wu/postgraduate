@@ -66,9 +66,6 @@
 
     .main-word { font-size: 1.8rem; flex-wrap: wrap; }
 
-    /* Prevent badges from shrinking on mobile */
-    .badge { flex-shrink: 0; }
-
     /* Phrase card mobile adjustments */
     .phrase-title {
         font-size: 1.3rem;
@@ -92,5 +89,6 @@
     .completion-header { padding-bottom: 0; }
 
     /* Badges alignment on mobile */
-    .badges { margin-top: 0; }
+    /* Prevent badges from shrinking on mobile */
+    .badges { margin-top: 0; flex-shrink: 0; flex-wrap: nowrap; }
 }

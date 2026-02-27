@@ -880,15 +880,20 @@ export class MarkdownParser {
         }
       }
 
-      // 🔧 FIX: If parent is a phrase card and this item is at the same indent level,
+      // 🔧 FIX: If parent is a phrase card and this item is at the same or less indent level,
       // it's a sibling phrase, not a child. Break and let the main loop handle it.
       // This fixes the case where multiple phrases under "词组" are incorrectly nested.
+      // IMPORTANT: Chinese definition has GREATER indent (is a child), so it should NOT break.
       if (actualParentCard && actualParentCard.type === 'phrase') {
         const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
+        const hasEnglish = /[a-zA-Z]/.test(content);
         const hasPosMarker = this.hasPosMarker(content);
         const isSpecialMarker = this.isSynonymMarker(content) || this.isPurePosLine(content) || this.isPureIpaLine(content);
-        // If it looks like a phrase (has Chinese, no POS, not a special marker) at same or less indent, it's a sibling
-        if (hasChinese && !hasPosMarker && !isSpecialMarker) {
+        const isSameOrLessIndent = indentLevel <= parentIndentLevel;
+
+        // If it looks like a phrase (has Chinese AND English, no POS, not a special marker) at same or less indent, it's a sibling
+        // Pure Chinese (no English) with greater indent is a definition, not a sibling
+        if (hasChinese && hasEnglish && !hasPosMarker && !isSpecialMarker && isSameOrLessIndent) {
           // This is a sibling phrase - break and let main loop handle it
           break;
         }

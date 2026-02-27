@@ -59,7 +59,7 @@
 - discard
     - vt. 丢弃；摒弃
     - They should start by **discarding** California's lame argument that...😔
-        - start by doing sth 做某事的第一步
+        - start by doing sth. 做某事的第一步
         - lame adj. 跛的，瘸的，站不住脚的，蹩脚的
 - dismiss
     - v. 解散；解雇
@@ -97,6 +97,9 @@
     - Something that's **sweeping** is **wide-ranging or through**.
     - A political candidate might campaign on promises to bring **sweeping** change to a country.
     - California has asked the justices to refrain from a **sweeping** ruling...
+        - refrain [rɪˈfreɪn]
+            - vi. 避免；克制；制止
+            - n. 经常重复的评价（或抱怨）；老话，陈词滥调
     - sweep
         - v. 扫视；席卷，迅速蔓延；打扫，清除
         - He was **sweeping** his floor when she walked in.
@@ -130,7 +133,7 @@
 - glimpse [ɡlɪmps]
     - n. 一瞥
     - He caught a **glimpse** of her in the crowd.
-        - catch a glimpse of sb/sth 在短暂、受限的情况下偶然看到一眼
+        - catch a glimpse of sb./sth. 在短暂、受限的情况下偶然看到一眼
 
 ## automate
 
@@ -139,6 +142,9 @@
 - automation [ˌɔːtəˈmeɪʃn]
     - n. 自动化
     - Jobs that were once thought to be immune from **automation** suddenly become threatened.
+        - immune [ɪˈmjuːn]
+            - adj. 不受影响的(PE)；有免疫力的；免除的；豁免的；免疫（系统）的
+        - be immune from 免于...
     - man versus machine 人机对抗
     - Artificial Intelligence(AI) 人工智能
     - big data 大数据
@@ -180,7 +186,10 @@
     - car crash 车祸
     - The **crash** of EgyptAir Flight 804, which terrorists may have downed over the Mediterranean Sea, provides
       another *tragic([ˈtrædʒɪk] adj. 悲惨的)* reminder of why.
-    - The **crash** *stresses(vt. 强调)* the urgency to strengthen security worldwide.
+    - The **crash** stresses the urgency to strengthen security worldwide.
+        - stress [stres]
+            - vt. 强调
+            - n. 压力
 
 ## leak
 
@@ -215,7 +224,7 @@
 - The first published **sketch**, "A Dinner at Poplar Walk" brought tears to Dickens's eyes when he discovered it in the
   pages of the Monthly Magazine.
     - bring tears to one's eyes 使人感动得热泪盈眶
-    - discover sth in the pages of... 在某刊物上读到、看到
+    - discover sth. in the pages of... 在某刊物上读到、看到
 - profile [ˈproʊfaɪl]
     - n. 简介
     - high-profile adj. 引人注目的
@@ -229,11 +238,11 @@
   it.
 - What keeps life **fascinating** is the constant creativity of the soul. 让生命始终保持迷人之处的，是心灵持续不断的创造力
 - fantasy [ˈfæntəsi]
-    - n. 幻想；虚幻的
+    - n. 幻想；虚幻
     - On display here are various **fantasy** elements whose reference, at some basic level, seems to be the natural
       world.
         - at some basic level 在最基础的意义层面上
-- fantastic(al) adj. 极好的
+- fantastic adj. 极好的
 - mysterious [mɪˈstɪriəs] adj. 神秘的
 
 ## Words
