@@ -508,216 +508,209 @@ export function clearDataAndReload() {
   }
 }
 
+// ============================================================
+// Audio Sources Configuration (函数式 + 责任链模式)
+// 增加新音源只需在数组中添加配置项，无需修改其他代码
+// ============================================================
+
 /**
- * Play word pronunciation
+ * 音频源配置
+ * @typedef {Object} AudioSource
+ * @property {string} name - 音源名称 (用于 Toast 提示)
+ * @property {Function} play - 播放函数，返回 Promise
+ * @property {number} timeout - 超时时间 (ms)，0 表示无超时
  */
-export async function playWord(word, buttonId = null, useTTSFallback = false, showNotification = true) {
+const audioSources = [
+  { name: '有道', play: playYoudaoAudio, timeout: 3000 },
+  // 以下音源在国内可能不可用，如需启用请取消注释
+  // { name: 'Google', play: playGoogleTTS, timeout: 3000 },
+  // { name: '搜狗', play: playSogouTTS, timeout: 3000 },
+  // { name: 'Azure', play: playAzureTTS, timeout: 3000 },
+];
+
+// ============================================================
+// 音频播放器实现
+// ============================================================
+
+/**
+ * Play word pronunciation (入口函数)
+ * Priority: 按 audioSources 数组顺序依次尝试
+ */
+export async function playWord(word, buttonId = null, showNotification = true) {
   if (!word) return;
 
-  // 替换缩写为完整单词，用于 TTS 和有道 API
   const audioText = word
     .replace(/sth\./g, 'something')
     .replace(/sb\./g, 'somebody');
 
-  const setButtonLoading = (isLoading, btnId) => {
-    if (!btnId) return;
-    const btn = document.getElementById(btnId);
-    if (btn) {
-      if (isLoading) {
-        btn.classList.add('loading');
-        btn.disabled = true;
-      } else {
-        btn.classList.remove('loading');
-        btn.disabled = false;
-      }
-    }
-  };
-
   setButtonLoading(true, buttonId);
 
-  if (!useTTSFallback) {
-    playCambridgeAudio(audioText).then((result) => {
-      if (result && result.onplay) {
-        setButtonLoading(false, buttonId);
-        if (showNotification) {
-          UiRenderer.showToast(window.app.ui, '🔊 播放中');
-        }
-      }
-    }).catch((error) => {
-      setButtonLoading(false, buttonId);
-      // Retry with TTS fallback
-      playWord(word, buttonId, true, showNotification);
-    });
-    return;
-  }
-
-  if ('speechSynthesis' in window) {
-    try {
-      window.speechSynthesis.cancel();
-      await new Promise(resolve => setTimeout(resolve, 50));
-
-      const utterance = new SpeechSynthesisUtterance(audioText);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.9;
-      utterance.pitch = 1;
-      utterance.volume = 1;
-
-      utterance.onstart = () => {
-        setButtonLoading(false, buttonId);
-        if (showNotification) {
-          UiRenderer.showToast(window.app.ui, '🔊 TTS播放中');
-        }
-      };
-
-      utterance.onerror = (event) => {
-        setButtonLoading(false, buttonId);
-        if (event.error !== 'canceled') {
-          UiRenderer.showToast(window.app.ui, '❌ 语音播放失败');
-        }
-      };
-
-      utterance.onend = () => {
-        setButtonLoading(false, buttonId);
-      };
-
-      const voices = window.speechSynthesis.getVoices();
-      if (voices.length === 0) {
-        window.speechSynthesis.getVoices();
-      }
-
-      const usVoice = voices.find(voice => voice.lang === 'en-US') ||
-                      voices.find(voice => voice.lang.startsWith('en-US')) ||
-                      voices.find(voice => voice.lang.startsWith('en') && voice.localService) ||
-                      voices.find(voice => voice.lang.startsWith('en'));
-
-      if (usVoice) {
-        utterance.voice = usVoice;
-      }
-
-      window.speechSynthesis.speak(utterance);
-    } catch (e) {
-      setButtonLoading(false, buttonId);
-      UiRenderer.showToast(window.app.ui, '❌ 语音播放出错');
-    }
-  } else {
-    setButtonLoading(false, buttonId);
-    UiRenderer.showToast(window.app.ui, '❌ 浏览器不支持语音播放');
-  }
-}
-
-/**
- * Play Cambridge audio
- */
-export async function playCambridgeAudio(word) {
   try {
-    const cleanWord = removeEmoji(word);
-    const urlPatterns = [
-      `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanWord)}`,
-      `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanWord)}`
-    ];
-
-    for (const url of urlPatterns) {
-      try {
-        const result = await playAudioUrl(url);
-        return result;
-      } catch (err) {
-        continue;
-      }
+    const result = await tryAudioChain(audioText, audioSources, 0);
+    setButtonLoading(false, buttonId);
+    if (showNotification && result.sourceName) {
+      UiRenderer.showToast(window.app.ui, `🔊 ${result.sourceName}`);
     }
-
-    throw new Error('No Youdao audio available for this word');
   } catch (error) {
-    throw error;
+    // 所有音源都失败，尝试 Web Speech API 作为最后回退
+    console.log('All audio sources failed, trying Web Speech API:', error.message);
+    try {
+      await playWebSpeech(audioText);
+      setButtonLoading(false, buttonId);
+      if (showNotification) {
+        UiRenderer.showToast(window.app.ui, '🔊 TTS播放中');
+      }
+    } catch (ttsError) {
+      setButtonLoading(false, buttonId);
+      UiRenderer.showToast(window.app.ui, '❌ 语音播放失败');
+    }
   }
 }
 
 /**
- * Play audio from URL
+ * 责任链核心：递归尝试音源
+ * @param {string} text - 要播放的文本
+ * @param {AudioSource[]} sources - 音源数组
+ * @param {number} index - 当前索引
+ * @returns {Promise<{sourceName: string}>}
  */
-export async function playAudioUrl(url) {
+async function tryAudioChain(text, sources, index) {
+  if (index >= sources.length) {
+    throw new Error('All audio sources failed');
+  }
+
+  const source = sources[index];
+  try {
+    await source.play(text);
+    return { sourceName: source.name };
+  } catch (error) {
+    console.log(`${source.name} failed:`, error.message);
+    return tryAudioChain(text, sources, index + 1);
+  }
+}
+
+/**
+ * 设置按钮加载状态
+ */
+function setButtonLoading(isLoading, btnId) {
+  if (!btnId) return;
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.classList.toggle('loading', isLoading);
+  btn.disabled = isLoading;
+}
+
+// ============================================================
+// 音源实现函数
+// ============================================================
+
+/**
+ * 有道词典音频
+ */
+export async function playYoudaoAudio(text) {
+  const cleanText = removeEmoji(text);
+  const urls = [
+    `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`, // 美音
+    `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanText)}`, // 英音
+  ];
+
+  for (const url of urls) {
+    try {
+      return await playAudioUrl(url, 3000);
+    } catch {
+      continue;
+    }
+  }
+  throw new Error('Youdao audio not available');
+}
+
+/**
+ * Google Translate TTS
+ */
+export async function playGoogleTTS(text) {
+  const cleanText = removeEmoji(text);
+  const url = `https://translate.google.com/translate_tts?tl=en&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
+  return playAudioUrl(url, 3000);
+}
+
+/**
+ * 搜狗 TTS
+ */
+export async function playSogouTTS(text) {
+  const cleanText = removeEmoji(text);
+  const url = `https://fanyi.sogou.com/reventondc/synthesis?text=${encodeURIComponent(cleanText)}&speed=1&lang=en-US`;
+  return playAudioUrl(url, 3000);
+}
+
+/**
+ * Web Speech API (浏览器内置 TTS)
+ */
+export async function playWebSpeech(text) {
   return new Promise((resolve, reject) => {
-    const audio = new Audio();
-    audio.src = url;
+    if (!('speechSynthesis' in window)) {
+      reject(new Error('Web Speech API not supported'));
+      return;
+    }
 
-    let resolved = false;
-    let canPlayThrough = false;
+    window.speechSynthesis.cancel();
 
-    const doReject = (msg) => {
-      if (!resolved) {
-        resolved = true;
-        reject(new Error(msg));
-      }
-    };
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    utterance.volume = 1;
 
-    const doResolve = (result) => {
-      if (!resolved) {
-        resolved = true;
-        resolve(result);
-      }
-    };
+    utterance.onstart = () => resolve();
+    utterance.onerror = (e) => e.error !== 'canceled' && reject(e);
+    utterance.onend = () => resolve();
 
-    // Check if audio can actually be played (not just started)
-    audio.oncanplaythrough = () => {
-      canPlayThrough = true;
-    };
+    // 选择美音
+    const voices = window.speechSynthesis.getVoices();
+    const usVoice = voices.find(v => v.lang === 'en-US') ||
+                    voices.find(v => v.lang.startsWith('en'));
+    if (usVoice) utterance.voice = usVoice;
 
-    audio.onplay = () => {
-      // Only resolve if we know the audio is playable
-      if (canPlayThrough) {
-        doResolve({ onplay: true, audio });
-      }
-    };
-
-    audio.onended = () => {
-      doResolve({ onplay: true, audio });
-    };
-
-    audio.onerror = (e) => {
-      doReject('Audio load failed');
-    };
-
-    // Handle stalled/suspend events (common on mobile for failed loads)
-    audio.onstalled = () => {
-      // Give it a bit more time before rejecting
-      setTimeout(() => {
-        if (!resolved && !canPlayThrough) {
-          doReject('Audio stalled');
-        }
-      }, 2000);
-    };
-
-    // Add timeout to detect stuck loading (reduced for mobile responsiveness)
-    const timeoutId = setTimeout(() => {
-      if (!resolved && !canPlayThrough) {
-        doReject('Audio loading timeout');
-      }
-    }, 4000); // 4 second timeout
-
-    // Clean up timeout on resolution
-    const cleanup = () => clearTimeout(timeoutId);
-
-    const originalResolve = resolve;
-    const originalReject = reject;
-
-    resolve = (...args) => {
-      cleanup();
-      originalResolve(...args);
-    };
-
-    reject = (...args) => {
-      cleanup();
-      originalReject(...args);
-    };
-
-    // Start playing
-    audio.play().catch((err) => {
-      doReject(err.message || 'Audio play failed');
-    });
+    window.speechSynthesis.speak(utterance);
   });
 }
 
 /**
- * Remove emoji from text
+ * 播放音频 URL
+ */
+export async function playAudioUrl(url, timeout = 3000) {
+  return new Promise((resolve, reject) => {
+    const audio = new Audio(url);
+    let resolved = false;
+    let canPlay = false;
+
+    const done = (fn, ...args) => {
+      if (!resolved) {
+        resolved = true;
+        fn(...args);
+      }
+    };
+
+    audio.oncanplaythrough = () => canPlay = true;
+    audio.onplay = () => canPlay && done(resolve, { onplay: true });
+    audio.onended = () => done(resolve, { onplay: true });
+    audio.onerror = () => done(reject, new Error('Audio load failed'));
+    audio.onstalled = () => setTimeout(() => {
+      if (!resolved && !canPlay) done(reject, new Error('Audio stalled'));
+    }, 1500);
+
+    // 超时检测
+    if (timeout > 0) {
+      setTimeout(() => {
+        if (!resolved && !canPlay) done(reject, new Error('Audio timeout'));
+      }, timeout);
+    }
+
+    audio.play().catch(err => done(reject, err));
+  });
+}
+
+/**
+ * 移除文本中的 emoji
  */
 export function removeEmoji(text) {
   if (!text) return '';
@@ -725,14 +718,13 @@ export function removeEmoji(text) {
 }
 
 /**
- * Prewarm speech synthesis
+ * 预热 Web Speech API
  */
 export function prewarmSpeechSynthesis() {
   try {
-    const voices = window.speechSynthesis.getVoices();
+    if (!('speechSynthesis' in window)) return;
     const utterance = new SpeechSynthesisUtterance('');
     utterance.volume = 0;
     window.speechSynthesis.speak(utterance);
-  } catch (e) {
-  }
+  } catch {}
 }
