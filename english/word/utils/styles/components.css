@@ -491,6 +491,11 @@ body.mode-recall .item-list.revealed {
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
 }
+/* Sentence button uses smaller SVG (14px) */
+.sentence-label-wrapper .audio-play-btn .btn-spinner {
+    width: 14px;
+    height: 14px;
+}
 .audio-play-btn.loading svg {
     display: none;
 }
