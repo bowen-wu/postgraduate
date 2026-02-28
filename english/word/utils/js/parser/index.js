@@ -757,9 +757,12 @@ export class MarkdownParser {
 
           // 🔧 FIX: Support multiple synonyms separated by ==
           const multipleSynonyms = synonymContent.split(/\s*==\s*/).map(s => s.trim()).filter(s => s);
+          console.log('DEBUG: synonymContent:', synonymContent);
+          console.log('DEBUG: multipleSynonyms:', multipleSynonyms);
 
           for (const syn of multipleSynonyms) {
             const { word, ipa, pos, cn } = this.parseWordContent(syn);
+            console.log('DEBUG: parseWordContent result:', { syn, word, ipa, pos, cn });
 
             // Check if this synonym has definition on the same line
             if (pos && cn) {
