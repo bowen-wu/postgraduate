@@ -616,6 +616,7 @@ function setButtonLoading(isLoading, btnId) {
     console.warn(`Button not found: ${btnId}`);
     return;
   }
+  console.log(`setButtonLoading: ${btnId}, loading=${isLoading}, classes=${btn.className}`);
   btn.classList.toggle('loading', isLoading);
   btn.disabled = isLoading;
 }
