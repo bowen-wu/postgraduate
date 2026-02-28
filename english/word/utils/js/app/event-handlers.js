@@ -616,7 +616,7 @@ export async function playYoudaoAudio(text) {
 
   for (const url of urls) {
     try {
-      return await playAudioUrl(url, 1500); // 1.5秒超时，快速失败
+      return await playAudioUrl(url, 800); // 0.8秒超时，快速失败
     } catch {
       continue;
     }
