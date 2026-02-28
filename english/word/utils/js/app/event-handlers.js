@@ -8,7 +8,6 @@ import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
-import { API_KEYS } from '../config/secrets.js';
 
 /**
  * Set application mode
@@ -649,8 +648,8 @@ export async function playSogouTTS(text) {
  */
 export async function playAzureTTS(text) {
   const cleanText = removeEmoji(text);
-  const apiKey = API_KEYS.AZURE_SPEECH;
-  const region = API_KEYS.AZURE_REGION;
+  const apiKey = 'AA5SY7nuamSffX7uAkrQNBgrPNDIOzrsp8XkT4Obt8fjUxL6xVFcJQQJ99CBAC3pKaRXJ3w3AAAYACOGrV0Y';
+  const region = 'eastasia';
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
 
   // SSML format for Azure TTS
@@ -689,7 +688,7 @@ export async function playAzureTTS(text) {
  */
 export async function playGoogleCloudTTS(text) {
   const cleanText = removeEmoji(text);
-  const apiKey = API_KEYS.GOOGLE_CLOUD_TTS;
+  const apiKey = 'AIzaSyDzqlegQHUmyHDOJNRkxvHZlz4ueMOunVw';
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
 
   const response = await fetch(url, {
