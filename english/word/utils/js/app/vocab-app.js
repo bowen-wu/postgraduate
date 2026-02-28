@@ -291,6 +291,14 @@ export class VocabApp {
     return EventHandlers.playWord(word, buttonId, useTTSFallback, showNotification);
   }
 
+  translatePhrase() {
+    return EventHandlers.translatePhrase();
+  }
+
+  translateSentence() {
+    return EventHandlers.translateSentence();
+  }
+
   // Confirm dialog object
   confirmDialog = {
     confirmCallback: null,

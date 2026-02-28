@@ -220,6 +220,30 @@ function renderPhraseItems(ui, card) {
 
   ui.list.appendChild(wrapper);
 
+  // Check if phrase has any Chinese translation
+  const hasAnyChinese = card.items && card.items.some(item =>
+    item.cn && item.cn.trim && item.cn.trim() !== ''
+  );
+
+  // If no Chinese translation, add translate button
+  if (!hasAnyChinese) {
+    const translateDiv = document.createElement('div');
+    translateDiv.className = 'translate-section';
+    translateDiv.style.cssText = 'margin-top: 0.5rem; margin-bottom: 1rem;';
+    translateDiv.innerHTML = `
+      <button id="translate-btn-phrase" class="btn-ghost translate-btn" onclick="app.translatePhrase()" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        翻译
+        <span class="btn-spinner"></span>
+      </button>
+    `;
+    ui.list.appendChild(translateDiv);
+  }
+
   // Render definitions
   const items = card.items;
   items.forEach((item) => {
@@ -311,6 +335,23 @@ function renderSentenceItems(ui, card) {
     // User must click "查看译文" button to reveal it
     cnDiv.style.display = 'none';
     ui.list.appendChild(cnDiv);
+  } else {
+    // No Chinese translation - add translate button
+    const translateDiv = document.createElement('div');
+    translateDiv.className = 'translate-section';
+    translateDiv.style.cssText = 'margin-top: 1rem;';
+    translateDiv.innerHTML = `
+      <button id="translate-btn-sentence" class="btn-ghost translate-btn" onclick="app.translateSentence()" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        翻译
+        <span class="btn-spinner"></span>
+      </button>
+    `;
+    ui.list.appendChild(translateDiv);
   }
 
   ui.list.appendChild(li);
@@ -606,6 +647,44 @@ export function renderInputActions(ui) {
       }
       return;
     }
+
+    // No Chinese - show translate and next buttons
+    ui.actionArea.innerHTML = `
+      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" onclick="app.translateSentence()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        翻译
+        <span class="btn-spinner"></span>
+      </button>
+      <button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    `;
+    return;
+  }
+
+  // For phrase cards without Chinese
+  if (card.type === 'phrase') {
+    const hasAnyChinese = card.items && card.items.some(item =>
+      item.cn && item.cn.trim && item.cn.trim() !== ''
+    );
+
+    if (!hasAnyChinese) {
+      ui.actionArea.innerHTML = `
+        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" onclick="app.translatePhrase()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          翻译
+          <span class="btn-spinner"></span>
+        </button>
+        <button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      `;
+      return;
+    }
   }
 
   // Browse mode: show next button for all card types
@@ -624,7 +703,19 @@ export function renderRecallActions(ui) {
     const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
 
     if (!hasChinese) {
-      renderNextAction(ui);
+      // No Chinese - show translate and next buttons
+      ui.actionArea.innerHTML = `
+        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" onclick="app.translateSentence()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          翻译
+          <span class="btn-spinner"></span>
+        </button>
+        <button class="btn-primary" onclick="app.nextCard()">下一个</button>
+      `;
       return;
     }
 
@@ -645,7 +736,30 @@ export function renderRecallActions(ui) {
     return;
   }
 
-  // For word cards or phrases
+  // For phrase cards without Chinese
+  if (card.type === 'phrase') {
+    const hasAnyChinese = card.items && card.items.some(item =>
+      item.cn && item.cn.trim && item.cn.trim() !== ''
+    );
+
+    if (!hasAnyChinese) {
+      ui.actionArea.innerHTML = `
+        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" onclick="app.translatePhrase()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          翻译
+          <span class="btn-spinner"></span>
+        </button>
+        <button class="btn-primary" onclick="app.nextCard()">下一个</button>
+      `;
+      return;
+    }
+  }
+
+  // For word cards or phrases with Chinese
   const hasChinese = card.items && card.items.some(item =>
     item.cn && item.cn.trim && item.cn.trim() !== ''
   );

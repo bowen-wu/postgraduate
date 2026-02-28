@@ -199,6 +199,12 @@
                     </div>
                     <span class="shortcut-desc">播放反义词音频（循环）</span>
                 </div>
+                <div class="shortcut-item">
+                    <div class="shortcut-keys">
+                        <kbd>T</kbd>
+                    </div>
+                    <span class="shortcut-desc">翻译词组/句子</span>
+                </div>
 
                 <div class="shortcut-item">
                     <div class="shortcut-keys">
@@ -386,6 +392,21 @@
 
           // 循环到下一个反义词
           window._antonymPlayIndex = (window._antonymPlayIndex + 1) % currentCard.antonyms.length;
+        }
+        break;
+      case 't':
+      case 'T':
+        e.preventDefault();
+        // 防抖检查
+        if (window._lastPlayTime['t'] && now - window._lastPlayTime['t'] < 1000) {
+          return;
+        }
+        window._lastPlayTime['t'] = now;
+        // 根据卡片类型调用对应的翻译函数
+        if (currentCard.type === 'phrase') {
+          window.app.translatePhrase();
+        } else if (currentCard.type === 'sentence') {
+          window.app.translateSentence();
         }
         break;
       // 遮挡模式专用快捷键

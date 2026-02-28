@@ -724,3 +724,33 @@ body.mode-recall .blur-target.revealed { filter: none; opacity: 1; }
     font-weight: 500;
     color: var(--text-main);
 }
+
+/* --- Translate Button --- */
+.translate-btn {
+    color: var(--primary);
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+.translate-btn:hover {
+    background: rgba(79, 70, 229, 0.1);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+.translate-btn.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+.translate-btn.loading svg {
+    display: none;
+}
+.translate-btn.loading .btn-spinner {
+    display: block;
+}
+.translate-btn .btn-spinner {
+    display: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #e2e8f0;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}

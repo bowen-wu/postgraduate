@@ -665,9 +665,9 @@ export async function playSogouTTS(text, timeout = 1200) {
  */
 export async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
-  const apiKey = 'AA5SY7nuamSffX7uAkrQNBgrPNDIOzrsp8XkT4Obt8fjUxL6xVFcJQQJ99CBAC3pKaRXJ3w3AAAYACOGrV0Y';
-  const region = options.region || 'eastasia';
-  const voice = options.voice || 'en-US-JennyNeural';
+  const apiKey = CONFIG.apiKeys.azureSpeech.key;
+  const region = options.region || CONFIG.apiKeys.azureSpeech.region;
+  const voice = options.voice || CONFIG.audio.defaultVoice;
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
 
   // SSML format for Azure TTS
@@ -706,7 +706,7 @@ export async function playAzureTTS(text, timeout = 1200, options = {}) {
  */
 export async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
-  const apiKey = 'AIzaSyDzqlegQHUmyHDOJNRkxvHZlz4ueMOunVw';
+  const apiKey = CONFIG.apiKeys.googleCloud.tts;
   const voice = options.voice || 'en-US-Neural2-C';
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
 
@@ -825,4 +825,258 @@ export function prewarmSpeechSynthesis() {
     utterance.volume = 0;
     window.speechSynthesis.speak(utterance);
   } catch {}
+}
+
+// ============================================================
+// Translation Services Configuration (函数式 + 责任链模式)
+// 增加新翻译源只需在数组中添加配置项，无需修改其他代码
+// ============================================================
+
+/**
+ * 翻译服务配置
+ * @typedef {Object} TranslationSource
+ * @property {string} name - 翻译服务名称 (用于 Toast 提示)
+ * @property {Function} translate - 翻译函数，返回 Promise<string>
+ * @property {number} timeout - 超时时间 (ms)
+ * @property {Object} options - 其他配置项
+ */
+const translationSources = [
+  {
+    name: 'Google',
+    translate: translateWithGoogle,
+    timeout: CONFIG.translation.defaultTimeout,
+    options: {}
+  },
+  {
+    name: 'Azure',
+    translate: translateWithAzure,
+    timeout: CONFIG.translation.defaultTimeout,
+    options: { region: CONFIG.apiKeys.azureTranslator.region }
+  }
+];
+
+/**
+ * 责任链核心：递归尝试翻译服务
+ * @param {string} text - 要翻译的文本
+ * @param {TranslationSource[]} sources - 翻译服务数组
+ * @param {number} index - 当前索引
+ * @returns {Promise<{translation: string, sourceName: string}>}
+ */
+async function tryTranslationChain(text, sources, index) {
+  if (index >= sources.length) {
+    throw new Error('All translation services failed');
+  }
+
+  const source = sources[index];
+  try {
+    const translation = await source.translate(text, source.timeout, source.options);
+    return { translation, sourceName: source.name };
+  } catch (error) {
+    console.log(`${source.name} translation failed:`, error.message);
+    return tryTranslationChain(text, sources, index + 1);
+  }
+}
+
+/**
+ * Azure Translator API
+ * Docs: https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/v3-0-translate
+ */
+async function translateWithAzure(text, timeout, options = {}) {
+  const apiKey = CONFIG.apiKeys.azureTranslator.key;
+  const region = options.region || CONFIG.apiKeys.azureTranslator.region;
+  const targetLang = CONFIG.translation.targetLanguage;
+  const url = `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=${targetLang}`;
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Ocp-Apim-Subscription-Key': apiKey,
+        'Ocp-Apim-Subscription-Region': region,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify([{ Text: text }]),
+      signal: controller.signal
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      throw new Error(`Azure Translator error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (!data || !data[0] || !data[0].translations || !data[0].translations[0]) {
+      throw new Error('Invalid Azure response format');
+    }
+
+    return data[0].translations[0].text;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    throw error;
+  }
+}
+
+/**
+ * Google Translate API
+ * Docs: https://cloud.google.com/translate/docs/reference/rest/v2/translate
+ */
+async function translateWithGoogle(text, timeout, options = {}) {
+  const apiKey = CONFIG.apiKeys.googleCloud.translation;
+  const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        q: text,
+        source: 'en',
+        target: 'zh-CN',
+        format: 'text'
+      }),
+      signal: controller.signal
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      throw new Error(`Google Translate error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (!data || !data.data || !data.data.translations || !data.data.translations[0]) {
+      throw new Error('Invalid Google response format');
+    }
+
+    return data.data.translations[0].translatedText;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    throw error;
+  }
+}
+
+/**
+ * 主入口函数：翻译文本
+ * @param {string} text - 要翻译的文本
+ * @param {string} buttonId - 可选的按钮ID，用于显示加载状态
+ * @returns {Promise<{translation: string, sourceName: string}>}
+ */
+export async function translateText(text, buttonId = null) {
+  if (!text || !text.trim()) {
+    throw new Error('No text to translate');
+  }
+
+  // 预处理文本（和语音播放一致）
+  const cleanText = removeEmoji(text)
+    .replace(/sth\./gi, 'something')
+    .replace(/sb\./gi, 'somebody')
+    .trim();
+
+  if (!cleanText) {
+    throw new Error('No text to translate after cleaning');
+  }
+
+  setButtonLoading(true, buttonId);
+
+  try {
+    const result = await tryTranslationChain(cleanText, translationSources, 0);
+    setButtonLoading(false, buttonId);
+    return result;
+  } catch (error) {
+    setButtonLoading(false, buttonId);
+    throw error;
+  }
+}
+
+/**
+ * 翻译当前 Phrase 卡片
+ */
+export async function translatePhrase() {
+  const card = StateManager.getCurrentCard();
+  if (!card || card.type !== 'phrase') return;
+
+  // Try both button IDs (content area and action area)
+  const buttonIds = ['translate-btn-phrase', 'translate-btn-phrase-action'];
+
+  try {
+    // Set loading state for all possible buttons
+    buttonIds.forEach(id => setButtonLoading(true, id));
+
+    UiRenderer.showToast(window.app.ui, '正在翻译...');
+    const result = await translateText(card.word);
+
+    // 更新卡片数据
+    if (!card.items[0]) {
+      card.items[0] = { en: card.word, cn: '' };
+    }
+    card.items[0].cn = result.translation;
+
+    // Clear loading state for all possible buttons
+    buttonIds.forEach(id => setButtonLoading(false, id));
+
+    // 保存状态并重新渲染
+    StateManager.saveState();
+    window.app.render();
+
+    // 更新 action area 为"下一个"按钮
+    UiRenderer.renderNextAction(window.app.ui);
+    UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+  } catch (error) {
+    buttonIds.forEach(id => setButtonLoading(false, id));
+    UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
+  }
+}
+
+/**
+ * 翻译当前 Sentence 卡片
+ */
+export async function translateSentence() {
+  const card = StateManager.getCurrentCard();
+  if (!card || card.type !== 'sentence') return;
+
+  const sentenceText = card.items[0]?.en || card.displayWord || card.word;
+  // Try both button IDs (content area and action area)
+  const buttonIds = ['translate-btn-sentence', 'translate-btn-sentence-action'];
+
+  try {
+    // Set loading state for all possible buttons
+    buttonIds.forEach(id => setButtonLoading(true, id));
+
+    UiRenderer.showToast(window.app.ui, '正在翻译...');
+    const result = await translateText(sentenceText);
+
+    // 更新卡片数据
+    if (!card.items[0]) {
+      card.items[0] = { en: sentenceText, cn: '' };
+    }
+    card.items[0].cn = result.translation;
+
+    // Clear loading state for all possible buttons
+    buttonIds.forEach(id => setButtonLoading(false, id));
+
+    // 保存状态并重新渲染
+    StateManager.saveState();
+    window.app.render();
+
+    // 直接显示中文译文
+    const cnDiv = document.getElementById('sentenceCn');
+    if (cnDiv) {
+      cnDiv.style.display = 'block';
+      cnDiv.classList.add('revealed');
+    }
+
+    // 更新 action area 为"下一个"按钮
+    UiRenderer.renderNextAction(window.app.ui);
+    UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+  } catch (error) {
+    buttonIds.forEach(id => setButtonLoading(false, id));
+    UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
+  }
 }
