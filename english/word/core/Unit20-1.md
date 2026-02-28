@@ -70,10 +70,10 @@
 - "So few authors have brains enough or literary gift enough to keep their own end up in journalism", Newman wrote,
   "that I am **tempted** to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
   not red to writers who are".
-    - keep one’s end up 撑得住；保持水准；不掉队
+    - keep one's end up 撑得住；保持水准；不掉队
     - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - You might even be **tempted** to assume that humanity has little future to look forward to.
-    - have + little/much/nothing(程度) + to look forward to 对未来几乎没有期待/有很多期待
+    - have + little/much/nothing + to look forward to 对未来几乎没有期待/有很多期待
 - temptation n. 诱惑
 - lure [lʊr] vt. 引诱 😔
 - coax [koʊks]
@@ -111,8 +111,8 @@
     - These terms are also intended to infuse work with *meaning(n. 意义)*—and, as Rakesh Khurana, another professor,
       points out, increase **allegiance** to the firm.
         - be intended to do sth. 被设计/被用来做某事
-        - infuse A with B 向A中注入B，使其具有某种抽象特质
         - infuse vt. 灌输，加入（一种特性）; 使充满; 浸渍; 鼓舞，激发
+        - infuse A with B 向A中注入B，使其具有某种抽象特质
 
 ## arrest
 

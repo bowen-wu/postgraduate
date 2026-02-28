@@ -757,12 +757,9 @@ export class MarkdownParser {
 
           // 🔧 FIX: Support multiple synonyms separated by ==
           const multipleSynonyms = synonymContent.split(/\s*==\s*/).map(s => s.trim()).filter(s => s);
-          console.log('DEBUG: synonymContent:', synonymContent);
-          console.log('DEBUG: multipleSynonyms:', multipleSynonyms);
 
           for (const syn of multipleSynonyms) {
             const { word, ipa, pos, cn } = this.parseWordContent(syn);
-            console.log('DEBUG: parseWordContent result:', { syn, word, ipa, pos, cn });
 
             // Check if this synonym has definition on the same line
             if (pos && cn) {
@@ -1224,28 +1221,23 @@ export class MarkdownParser {
           this.parentCard.synonyms.push(synonym);
         }
       } else {
-        // No complete inline definition (pos && cn) - create pending synonym for potential child items
-        // This handles cases like:
-        // - == curb (has child items)
-        // - == word [ipa] (might have child items)
-        // Save the original parent context
-        this.pendingSynonymOriginalParent = this.parentCard;
-        this.pendingSynonymOriginalLevel = this.parentLevel;
+        // 🔧 FIX: For synonyms without inline definitions, add them directly as simple word objects
+        // This handles cases like: == ruling == decision
+        // The pendingSynonymCard mechanism is for cases with actual child items like:
+        //   == curb
+        //   - n. 抑制
+        // But for simple word-only synonyms, we should add them directly
+        const synonym = { word };
+        if (ipa) synonym.ipa = ipa;
 
-        // Create temporary card for this synonym
-        this.pendingSynonymCard = {
-          word: word,
-          items: []
-        };
-        if (ipa) this.pendingSynonymCard.ipa = ipa;
+        // Prevent duplicate synonyms
+        const isDuplicate = this.parentCard.synonyms.some(
+          existingSyn => existingSyn.word === word
+        );
 
-        // Track the indent level of this synonym marker
-        this.pendingSynonymLevel = indentLevel;
-
-        // Redirect parentCard to the temporary card
-        // This ensures subsequent POS lines are added to the synonym, not the original parent
-        this.parentCard = this.pendingSynonymCard;
-        this.parentLevel = indentLevel;
+        if (!isDuplicate) {
+          this.parentCard.synonyms.push(synonym);
+        }
       }
     }
 
