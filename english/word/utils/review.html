@@ -338,7 +338,9 @@
         // 播放单词音频
         // 对于句子类型，使用 items[0].en（纯英文，无中文）
         // 对于其他类型，使用 word
-        const playBtnId = currentCard.type === 'phrase' ? 'play-btn-phrase' : 'play-btn-main';
+        let playBtnId = 'play-btn-main';
+        if (currentCard.type === 'phrase') playBtnId = 'play-btn-phrase';
+        else if (currentCard.type === 'sentence') playBtnId = 'play-btn-sentence';
         const audioText = currentCard.type === 'sentence' && currentCard.items?.[0]?.en
           ? currentCard.items[0].en
           : currentCard.word;
