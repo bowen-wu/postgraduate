@@ -49,10 +49,10 @@
 - labor/labour
     - vi. 努力做（困难的事）
     - n. 劳动；劳工；英国工党(Labour)
-    - labor to do sth.
-    - Conservatives 保守党 vs 工党 Labour
+    - Conservatives vs Labour 保守党 vs 工党
     - The second half of the 20th century saw a collection of geniuses, warriors, entrepreneurs and visionaries
-      <ins>**labor** to create</ins> a fabulous machine...
+      **labor** to create a fabulous machine...
+        - labor to do sth.
     - laborer/laborer n. 体力劳动者
 - career
     - n. 职业，职业生涯
@@ -64,19 +64,16 @@
 - strike
     - v. 使突然想到
     - n. 罢工；撞，碰
-    - sth. strikes sb. 让某人突然想到/意识到/觉得
-        - It strikes me that we've met before.
+    - It strikes me that we've met before.
+        - sth. strikes sb. 让某人突然想到/意识到/觉得
     - The lion crouched ready to **strike**.
-    - strike someone as something(strike + 人 + as + 形容词/名词) 给人...印象/让某人觉得...
-        - One day, <ins>in retrospect</ins>, the years of struggle will <ins>**strike** you **as** the most
-          beautiful<ins>.
+    - One day, <ins>in retrospect</ins>, the years of struggle will **strike** you **as** the most beautiful.
+        - strike someone as something(strike + sb. + as + adjective/noun) 给人...印象/让某人觉得...
     - 词组
-        - strike a balance
-            - 找到折中办法
-            - <ins>At times like(在这种时候/在那种情况下)</ins> that you have to **strike a balance** between sleep and
-              homework.
-        - strike up sth. (with sb.)
-            - （和某人）开始来往
+        - strike a balance 找到折中办法
+        - strike up sth. (with sb.) （和某人）开始来往
+    - <ins>At times like(在这种时候/在那种情况下)</ins> that you have to **strike a balance** between sleep and
+      homework.
     - striking
         - adj. 显著的，引人注目的
         - strikingly adv. 显然地
@@ -87,8 +84,9 @@
 - n. 使用；利用
 - used
     - adj. 习惯于
-    - be used to doing sth. 习惯于
-    - sb. used to do sth. 过去常常做
+    - 词组
+        - be used to doing sth. 习惯于
+        - sb. used to do sth. 过去常常做
     - A recent study suggests that what we **are used to doing** is not that good.
     - I **used to do** weight training years ago.
 - useful adj. 有用于
@@ -98,7 +96,7 @@
     - vt. 误用；滥用
     - n. 误用；滥用
     - == abuse [əˈbjuːs]
-    - Relying on ethical persuasion rather than law to *address/solve* the **misuse** of body ideals may be the best
+    - Relying on ethical persuasion rather than law to **address/solve** the **misuse** of body ideals may be the best
       step. 依靠道德劝说而不是法律来解决对“理想身材”的滥用，或许是最合适的做法
 
 ## change
@@ -108,7 +106,8 @@
 - The only thing that never **changes** is that everything **changes**.
 - exchange
     - v. 交换
-    - ex- == exit 外
+    - ex- 外
+        - == exit
     - 词组
         - in exchange for 作为...的交换
         - exchange A for B 把A换成B
@@ -134,18 +133,19 @@
 - n. 州；状态；国家；政府
 - adj. 州的
 - Youth is not a time of life, it is <ins>**state** of mind(心境)</ins>.
-- They were comfortable in describing different emotional **states** <ins>and part of _what you_ ***do*** _in drama_
-  **is** *put yourself in different shoes(设身处地的，将心比心的)*</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
-- They set new standards for ventilation([ˌvɛntəˈleɪʃən] n. 通风设备), energy efficiency and heating, and **state** that
-  new residential([ˌrezɪˈdenʃl] adj. 住宅的) buildings must have charging points for <ins>electric vehicles(电动汽车
-  EV)</ins>.
+- They were comfortable in describing different emotional **states** and part of what you do in drama is
+  <ins>put yourself in different shoes(设身处地的，将心比心的)</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
+- They set new standards for *ventilation([ˌvɛntəˈleɪʃən] n. 通风设备)*, energy efficiency and heating, and **state**
+  that new *residential([ˌrezɪˈdenʃl] adj. 住宅的)* buildings must have charging points for
+  <ins>electric vehicles(电动汽车 EV)</ins>.
 - statement n. 声明；说法
 - restate vt. 重申
 - overstate
     - vt. 夸大
-    - We cannot **overstate** our debt([det] n. 恩情) to the past, but the moment has the
-      <ins>supreme([suːˈpriːm] adj. 最高的) claim(至高权利/至高优先权)</ins>.
+    - We cannot **overstate** our *debt([det] n. 恩情)* to the past, but the moment has the
+      *supreme([suːˈpriːm] adj. 最高的)* claim.
         - We cannot overstate X 我们再怎么强调 X 都不为过
+        - supreme claim 至高权利/至高优先权
 - estate [ɪˈsteɪt]
     - n. 地产
     - real estate 房地产
@@ -153,7 +153,8 @@
 - statute [ˈstætʃuːt]
     - n. 法规
     - == rule
-    - -stat == -stit 站
+    - -stat 站
+        - == -stit
     - A **statute** is a formal law or rule.
     - A **statute** is a written law.
 - statue [ˈstætʃuː]
@@ -161,12 +162,12 @@
     - A **statue** is a *figure([ˈfɪɡjər])* of a person, animal, or object that is carved or cast from some material.
 - stake [steɪk]
     - v. 立界标以表明（所有权）；以...打赌
-    - n. **重大利害关系**；*桩子*；股份
+    - n. 重大利害关系；桩子；股份
     - 词组
         - stake out 清楚地界定自认为属于自己的东西
         - at stake 处于危险中
     - And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands
-      protections and see for themselves the enormous(adj. 巨大的) **stake** *involved(v. 包含，涉及)*.
+      protections and see for themselves the *enormous(adj. 巨大的)* **stake** *involved(v. 包含，涉及)*.
       因此，我们会呼吁从里士满到奥尔巴尼的州立立法者，考虑审查各自的湿地保护法规，并亲自了解所涉及的巨大利益。
         - see for oneself/see for themselves 亲自确认、自己验证
         - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
@@ -178,48 +179,6 @@
         - Many young Americans <ins>cast doubts on(对...产生疑问)</ins> the **administration**'s ability to handle
           information.
     - administrative adj. 管理的；行政的
-
-## take
-
-- v. 采取（措施）；需要...时间；持有...看法；举例
-- n. 看法
-- <ins>At issue(讨论或争论中的)</ins> before the U.S. Court of Appeals for the District of Columbia Circuit was <ins>the
-  latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
-  在哥伦比亚特区巡回上诉法院审理的争议是 FCC 关于网络中立的最新立场
-    - [主表倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md#%E4%B8%BB%E8%A1%A8%E5%80%92%E8%A3%85)
-- 词组
-    - take a(n)...approach([əˈproʊtʃ]) 采取...方法
-    - take a(n)...stand/stance([stæns]) 采取...立场
-    - take a broader look 从更广泛的角度来看
-    - take a long-term view 从长远来看
-    - take in hit 受到影响
-    - take a toll on 给...造成重大损失
-    - take a tough line on 对...采取强硬措施
-    - take action 采取行动
-    - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
-    - take care of 照顾
-    - take effect 起作用
-    - take...for granted 认为...理所当然
-    - take into consideration/account 考虑
-    - take over 接管
-    - take place 发生
-    - take responsibility 承担责任
-    - take risks 冒险
-    - take steps/measures to do sth. 采取措施做某事
-    - take sth. (as sth.) 把...理解为...
-    - take the lead 带头，领先
-    - take the initiative([ɪˈnɪʃətɪv] n. 主动性) 采取主动
-    - take turns 轮流
-    - take up 开始从事；接受（建议或挑战）
-- intake n. 摄取量；纳入的人数；吸取
-- retake vt. 重修，重学
-- takeaway
-    - n. 外卖
-    - == takeout
-    - == to go please （口语）外带
-- mistake
-    - n. 错误
-    - == blunder [ˈblʌndər] n. 愚蠢（或粗心）的错误
 
 ## social
 
@@ -239,51 +198,8 @@
 - sociologist [ˌsoʊsiˈɑːlədʒɪst] n. 社会学家
 - society n. 社会；社团；
 
-## accord
+## Words
 
-- [əˈkɔːrd]
-- vi. 与...一致（或相符）
-- 词组
-    - accord with 与...一致；同...相符合
-- <ins>**Since** desire and *will(n. 意志)* **are damaged** by the presence of thoughts ***that*** _do not_ **accord
-  with** _desire_</ins>, <ins>Allen **concluded**</ins>: "We do not **attract** <ins>**what** we want</ins>, but
-  <ins>**what** we **are**"</ins>. 因为那些与我们欲望不一致的思想会损害我们的欲望和意志，艾伦得出结论说：“我们吸引来的不是我们想要的东西，而是与我们本质一致的东西。”
-- according to 依据；根据
-- accordingly adv. 相应地；因此
+## 词组
 
-## company
-
-- n. 同伴；陪伴；公司；剧团
-- I enjoy his **company**.
-- Misery loves **company**. 祸不单行
-- As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic
-  medium, following the pamphlet and the book and in the **company** of the journal.
-- accompany
-    - vt. 陪伴；伴随；为...伴奏
-    - Little reward **accompanies** duplication and confirmation of what is already known and believed.
-      对已知和已被相信的事物进行重复和确认，很少有回报
-- companion [kəmˈpæniən]
-    - n. 同伴；伴侣
-    - Would passengers feel comfortable travelling in **companion**?
-
-## own
-
-- vt. 拥有
-- adj. 自己的；自己独有的；
-- prep. 自己的
-- 词组
-    - on one's own 独自地；独立地
-- owner
-    - n. 所有者；主人
-    - ownership
-        - n. 所有权；产权
-        - == property n. 财产；房地产
-- owe [oʊ]
-    - vt. 欠债😔； 把...归功于；感激；🙂
-    - owe A to B 把A归功于B
-    - People **owe** things when they're in *debt([det] n. 债务; 负债)* to someone.
-    - A friend can **owe** you a favor, and your employer **owes** you a *paycheck(薪水，薪资)*.
-    - I don't **owe** you anything.
-    - The reforms <ins>**owe** a great deal to(很大程度上得益于...)</ins> the resolution of one man.
-    - Its current leader, Ed Miliband, **owes** his position **to** votes from public-sector unions.
-      现任领导人埃德·米利班德（Ed Miliband）得益于公共部门工会的选票，才获得了他的职位
+## 句式
