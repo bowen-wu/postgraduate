@@ -612,11 +612,7 @@ async function tryAudioChain(text, sources, index) {
 function setButtonLoading(isLoading, btnId) {
   if (!btnId) return;
   const btn = document.getElementById(btnId);
-  if (!btn) {
-    console.warn(`Button not found: ${btnId}`);
-    return;
-  }
-  console.log(`setButtonLoading: ${btnId}, loading=${isLoading}, classes=${btn.className}`);
+  if (!btn) return;
   btn.classList.toggle('loading', isLoading);
   btn.disabled = isLoading;
 }
