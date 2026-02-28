@@ -8,6 +8,7 @@ import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
+import { API_KEYS } from '../config/secrets.js';
 
 /**
  * Set application mode
@@ -522,10 +523,10 @@ export function clearDataAndReload() {
  */
 const audioSources = [
   { name: '有道', play: playYoudaoAudio, timeout: 3000 },
+  { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3000 },
+  { name: 'Azure', play: playAzureTTS, timeout: 3000 },
   // 以下音源在国内可能不可用，如需启用请取消注释
-  // { name: 'Google', play: playGoogleTTS, timeout: 3000 },
   // { name: '搜狗', play: playSogouTTS, timeout: 3000 },
-  // { name: 'Azure', play: playAzureTTS, timeout: 3000 },
 ];
 
 // ============================================================
@@ -640,6 +641,87 @@ export async function playSogouTTS(text) {
   const cleanText = removeEmoji(text);
   const url = `https://fanyi.sogou.com/reventondc/synthesis?text=${encodeURIComponent(cleanText)}&speed=1&lang=en-US`;
   return playAudioUrl(url, 3000);
+}
+
+/**
+ * Azure Speech TTS
+ * Docs: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech
+ */
+export async function playAzureTTS(text) {
+  const cleanText = removeEmoji(text);
+  const apiKey = API_KEYS.AZURE_SPEECH;
+  const region = API_KEYS.AZURE_REGION;
+  const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
+
+  // SSML format for Azure TTS
+  const ssml = `
+    <speak version='1.0' xml:lang='en-US'>
+      <voice xml:lang='en-US' name='en-US-JennyNeural'>
+        ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
+      </voice>
+    </speak>
+  `.trim();
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Ocp-Apim-Subscription-Key': apiKey,
+      'Content-Type': 'application/ssml+xml',
+      'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3'
+    },
+    body: ssml
+  });
+
+  if (!response.ok) {
+    throw new Error(`Azure TTS error: ${response.status}`);
+  }
+
+  // Response is audio binary
+  const arrayBuffer = await response.arrayBuffer();
+  const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+  const audioUrl = URL.createObjectURL(blob);
+  return playAudioUrl(audioUrl, 10000);
+}
+
+/**
+ * Google Cloud Text-to-Speech API
+ * Docs: https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize
+ */
+export async function playGoogleCloudTTS(text) {
+  const cleanText = removeEmoji(text);
+  const apiKey = API_KEYS.GOOGLE_CLOUD_TTS;
+  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      input: { text: cleanText },
+      voice: { languageCode: 'en-US', name: 'en-US-Neural2-C' },
+      audioConfig: { audioEncoding: 'MP3' }
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error(`Google Cloud TTS error: ${response.status}`);
+  }
+
+  const data = await response.json();
+  if (!data.audioContent) {
+    throw new Error('No audio content in response');
+  }
+
+  // Decode base64 and play
+  const audioData = atob(data.audioContent);
+  const arrayBuffer = new ArrayBuffer(audioData.length);
+  const view = new Uint8Array(arrayBuffer);
+  for (let i = 0; i < audioData.length; i++) {
+    view[i] = audioData.charCodeAt(i);
+  }
+
+  const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
+  const audioUrl = URL.createObjectURL(blob);
+  return playAudioUrl(audioUrl, 10000);
 }
 
 /**
