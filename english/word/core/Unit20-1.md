@@ -61,7 +61,8 @@
 
 ## tempt
 
-- vt. 引诱；吸引(== attract)
+- vt. 引诱；吸引
+- == attract
 - 词组
     - be tempted into... 被吸引到...
     - tempt sb. to do sth. 诱使/引诱某人去做某事
@@ -77,7 +78,7 @@
 - lure [lʊr] vt. 引诱 😔
 - coax [koʊks]
     - vt. 哄劝
-    - coax sb/sth into doing sth 用耐心、劝说、哄诱的方式让某人/某物去做某事
+    - coax sb./sth. into doing sth. 用耐心、劝说、哄诱的方式让某人/某物去做某事
     - ...how to **coax/persuade** the machine into producing what they want.
 
 ## mutual
@@ -109,7 +110,7 @@
     - n. 忠诚
     - These terms are also intended to infuse work with *meaning(n. 意义)*—and, as Rakesh Khurana, another professor,
       points out, increase **allegiance** to the firm.
-        - be intended to do sth 被设计/被用来做某事
+        - be intended to do sth. 被设计/被用来做某事
         - infuse A with B 向A中注入B，使其具有某种抽象特质
         - infuse vt. 灌输，加入（一种特性）; 使充满; 浸渍; 鼓舞，激发
 
@@ -200,7 +201,7 @@
   "that I am tempted to define journalism as a term of **contempt** applied by writers who are not red to writers
   who are".
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
-    - keep one’s end up 撑得住；保持水准；不掉队
+    - keep one's end up 撑得住；保持水准；不掉队
     - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - contemptuous [kənˈtemptʃuəs]
     - adj. 鄙视的

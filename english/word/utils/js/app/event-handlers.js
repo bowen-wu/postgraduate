@@ -518,14 +518,31 @@ export function clearDataAndReload() {
  * @typedef {Object} AudioSource
  * @property {string} name - 音源名称 (用于 Toast 提示)
  * @property {Function} play - 播放函数，返回 Promise
- * @property {number} timeout - 超时时间 (ms)，0 表示无超时
+ * @property {number} timeout - 超时时间 (ms)
+ * @property {Object} options - 其他配置项
  */
 const audioSources = [
-  { name: '有道', play: playYoudaoAudio, timeout: 3000 },
-  { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3000 },
-  { name: 'Azure', play: playAzureTTS, timeout: 3000 },
+  {
+    name: '有道',
+    play: playYoudaoAudio,
+    timeout: 1200,
+    options: { urls: ['us', 'uk'] } // 美音、英音
+  },
+  {
+    name: 'Azure',
+    play: playAzureTTS,
+    timeout: 1200,
+    options: { voice: 'en-US-JennyNeural', region: 'eastasia' }
+  },
+  {
+    name: 'Google Cloud',
+    play: playGoogleCloudTTS,
+    timeout: 1200,
+    options: { voice: 'en-US-Neural2-C' }
+  },
+
   // 以下音源在国内可能不可用，如需启用请取消注释
-  // { name: '搜狗', play: playSogouTTS, timeout: 3000 },
+  // { name: '搜狗', play: playSogouTTS, timeout: 1200 },
 ];
 
 // ============================================================
@@ -581,7 +598,7 @@ async function tryAudioChain(text, sources, index) {
 
   const source = sources[index];
   try {
-    await source.play(text);
+    await source.play(text, source.timeout, source.options);
     return { sourceName: source.name };
   } catch (error) {
     console.log(`${source.name} failed:`, error.message);
@@ -607,7 +624,7 @@ function setButtonLoading(isLoading, btnId) {
 /**
  * 有道词典音频
  */
-export async function playYoudaoAudio(text) {
+export async function playYoudaoAudio(text, timeout = 1200) {
   const cleanText = removeEmoji(text);
   const urls = [
     `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`, // 美音
@@ -616,7 +633,7 @@ export async function playYoudaoAudio(text) {
 
   for (const url of urls) {
     try {
-      return await playAudioUrl(url, 800); // 0.8秒超时，快速失败
+      return await playAudioUrl(url, timeout);
     } catch {
       continue;
     }
@@ -627,35 +644,36 @@ export async function playYoudaoAudio(text) {
 /**
  * Google Translate TTS
  */
-export async function playGoogleTTS(text) {
+export async function playGoogleTTS(text, timeout = 1200) {
   const cleanText = removeEmoji(text);
   const url = `https://translate.google.com/translate_tts?tl=en&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
-  return playAudioUrl(url, 3000);
+  return playAudioUrl(url, timeout);
 }
 
 /**
  * 搜狗 TTS
  */
-export async function playSogouTTS(text) {
+export async function playSogouTTS(text, timeout = 1200) {
   const cleanText = removeEmoji(text);
   const url = `https://fanyi.sogou.com/reventondc/synthesis?text=${encodeURIComponent(cleanText)}&speed=1&lang=en-US`;
-  return playAudioUrl(url, 3000);
+  return playAudioUrl(url, timeout);
 }
 
 /**
  * Azure Speech TTS
  * Docs: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech
  */
-export async function playAzureTTS(text) {
+export async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const apiKey = 'AA5SY7nuamSffX7uAkrQNBgrPNDIOzrsp8XkT4Obt8fjUxL6xVFcJQQJ99CBAC3pKaRXJ3w3AAAYACOGrV0Y';
-  const region = 'eastasia';
+  const region = options.region || 'eastasia';
+  const voice = options.voice || 'en-US-JennyNeural';
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
 
   // SSML format for Azure TTS
   const ssml = `
     <speak version='1.0' xml:lang='en-US'>
-      <voice xml:lang='en-US' name='en-US-JennyNeural'>
+      <voice xml:lang='en-US' name='${voice}'>
         ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
       </voice>
     </speak>
@@ -679,16 +697,17 @@ export async function playAzureTTS(text) {
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   const audioUrl = URL.createObjectURL(blob);
-  return playAudioUrl(audioUrl, 10000);
+  return playAudioUrl(audioUrl, timeout);
 }
 
 /**
  * Google Cloud Text-to-Speech API
  * Docs: https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize
  */
-export async function playGoogleCloudTTS(text) {
+export async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const apiKey = 'AIzaSyDzqlegQHUmyHDOJNRkxvHZlz4ueMOunVw';
+  const voice = options.voice || 'en-US-Neural2-C';
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
 
   const response = await fetch(url, {
@@ -696,7 +715,7 @@ export async function playGoogleCloudTTS(text) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       input: { text: cleanText },
-      voice: { languageCode: 'en-US', name: 'en-US-Neural2-C' },
+      voice: { languageCode: 'en-US', name: voice },
       audioConfig: { audioEncoding: 'MP3' }
     })
   });
@@ -720,7 +739,7 @@ export async function playGoogleCloudTTS(text) {
 
   const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
   const audioUrl = URL.createObjectURL(blob);
-  return playAudioUrl(audioUrl, 10000);
+  return playAudioUrl(audioUrl, timeout);
 }
 
 /**
