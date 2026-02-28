@@ -775,9 +775,7 @@ export async function playAudioUrl(url, timeout = 3000) {
     audio.onplay = () => canPlay && done(resolve, { onplay: true });
     audio.onended = () => done(resolve, { onplay: true });
     audio.onerror = () => done(reject, new Error('Audio load failed'));
-    audio.onstalled = () => setTimeout(() => {
-      if (!resolved && !canPlay) done(reject, new Error('Audio stalled'));
-    }, 1500);
+    // 移除 stalled 等待，让超时机制处理
 
     // 超时检测
     if (timeout > 0) {
