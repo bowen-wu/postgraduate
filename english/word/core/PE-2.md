@@ -86,7 +86,7 @@
 - But we are now knowledgeable enough to reduce many of the risks that threatened the existence of earlier humans, and
   to improve the **lot** of those to come.
     - threaten [ˈθretn] v. 恐吓; 对...构成威胁
-    - the lot of sb 某一群人的生活处境/命运
+    - the lot of sb. 某一群人的生活处境/命运
     - improve the lot of sb. 改善某人的生活条件/命运
     - those to come 后来者/后代/未来的人
 
@@ -136,7 +136,7 @@
 - swimming pool 泳池
 - a pooling of ideas 集思广益
 - They entered a contract to **pool** any gains. 他们签订了一份合同，约定将任何收益都集中（合并）起来
-    - enter a contract to do sth 签合同，目的是做某事
+    - enter a contract to do sth. 签合同，目的是做某事
 - ...**it was** the Federal Circuit itself **that** introduced such patents with its 1998 decision in the so-called
   State Street Bank case, approving a patent on a way of **pooling** mutual-fund assets.
   正是联邦巡回上诉法院本身，在所谓的 State Street Bank 案中，通过其 1998 年的裁决引入了这种专利，批准了一项关于共同基金资产集中运作方式的专利
@@ -175,7 +175,6 @@
     - Yet, in several instances, justices acted in ways that weakened the court's reputation for being independent and
       **impartial**. 然而，在若干情况下，一些大法官的行为削弱了法院作为一个独立且公正机构的声誉
         - weaken v. 减弱，削弱
-        - acted in ways that... 以某种方式行事
 
 ## rear
 
