@@ -45,7 +45,19 @@ export const CONFIG = {
   // ============================================================
   audio: {
     defaultVoice: 'en-US-JennyNeural',
-    defaultTimeout: 1200
+    defaultTimeout: 1200,
+    // Cache configuration
+    cache: {
+      enabled: true,
+      maxSize: 8 * 1024 * 1024,  // 8MB
+      sources: ['azure', 'google']  // Only cache these sources (not youdao)
+    },
+    // Debounce configuration (in milliseconds)
+    debounce: {
+      word: 500,        // For word cards
+      sentence: 800,   // For sentence cards
+      phrase: 500       // For phrase cards
+    }
   },
 
   // ============================================================

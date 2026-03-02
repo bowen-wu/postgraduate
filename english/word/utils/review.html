@@ -335,14 +335,15 @@
         break;
       case ' ':
         e.preventDefault();
-        // 防抖检查
-        if (window._lastPlayTime['space'] && now - window._lastPlayTime['space'] < 500) {
+        // 智能防抖： 根据卡片类型动态调整防抖时间
+        const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
+        if (window._lastPlayTime['space'] && now - window._lastPlayTime['space'] < debounceTime) {
           return;
         }
         window._lastPlayTime['space'] = now;
 
         // 播放单词音频
-        // 对于句子类型，使用 items[0].en（纯英文，无中文）
+        // 对于句子类型，使用 items[0].en（纯英文，无中文)
         // 对于其他类型，使用 word
         let playBtnId = 'play-btn-main';
         if (currentCard.type === 'phrase') playBtnId = 'play-btn-phrase';
@@ -355,8 +356,9 @@
       case 's':
       case 'S':
         e.preventDefault();
-        // 防抖检查
-        if (window._lastPlayTime['s'] && now - window._lastPlayTime['s'] < 500) {
+        // 智能防抖： 同义词使用 word 的防抖时间
+        const debounceTime = window.CONFIG?.audio?.debounce?.word || 500;
+        if (window._lastPlayTime['s'] && now - window._lastPlayTime['s'] < debounceTime) {
           return;
         }
         window._lastPlayTime['s'] = now;
@@ -377,7 +379,8 @@
       case 'A':
         e.preventDefault();
         // 防抖检查
-        if (window._lastPlayTime['a'] && now - window._lastPlayTime['a'] < 500) {
+        const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
+        if (window._lastPlayTime['a'] && now - window._lastPlayTime['a'] < debounceTime) {
           return;
         }
         window._lastPlayTime['a'] = now;

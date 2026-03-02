@@ -8,6 +8,7 @@ import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
+import * as AudioCache from '../utils/audio-cache.js';
 
 /**
  * Set application mode
@@ -622,10 +623,10 @@ function setButtonLoading(isLoading, btnId) {
 // ============================================================
 
 /**
- * 有道词典音频
- */
+ * 有道词典音频 (不缓存，有道响应速度快， */
 export async function playYoudaoAudio(text, timeout = 1200) {
   const cleanText = removeEmoji(text);
+
   const urls = [
     `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`, // 美音
     `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanText)}`, // 英音
@@ -665,9 +666,18 @@ export async function playSogouTTS(text, timeout = 1200) {
  */
 export async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
+  const source = 'azure';
+  const voice = options.voice || CONFIG.audio.defaultVoice;
+
+  // Check cache first
+  const cached = await AudioCache.getAudio(cleanText, source);
+  if (cached) {
+    const url = URL.createObjectURL(cached);
+    return playAudioUrl(url, 0);
+  }
+
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
   const region = options.region || CONFIG.apiKeys.azureSpeech.region;
-  const voice = options.voice || CONFIG.audio.defaultVoice;
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
 
   // SSML format for Azure TTS
@@ -696,6 +706,10 @@ export async function playAzureTTS(text, timeout = 1200, options = {}) {
   // Response is audio binary
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+
+  // Cache the audio
+  await AudioCache.setAudio(cleanText, source, blob);
+
   const audioUrl = URL.createObjectURL(blob);
   return playAudioUrl(audioUrl, timeout);
 }
@@ -706,8 +720,17 @@ export async function playAzureTTS(text, timeout = 1200, options = {}) {
  */
 export async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
-  const apiKey = CONFIG.apiKeys.googleCloud.tts;
+  const source = 'google';
   const voice = options.voice || 'en-US-Neural2-C';
+
+  // Check cache first
+  const cached = await AudioCache.getAudio(cleanText, source);
+  if (cached) {
+    const url = URL.createObjectURL(cached);
+    return playAudioUrl(url, 0); // No timeout needed for cached audio
+  }
+
+  const apiKey = CONFIG.apiKeys.googleCloud.tts;
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
 
   const response = await fetch(url, {
@@ -738,6 +761,10 @@ export async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   }
 
   const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
+
+  // Cache the audio
+  await AudioCache.setAudio(cleanText, source, blob);
+
   const audioUrl = URL.createObjectURL(blob);
   return playAudioUrl(audioUrl, timeout);
 }
