@@ -103,11 +103,89 @@
 
     \subsection{变力沿直线做功}
 
+    设方向沿$x$轴正向的力函数为$y = F(x)(a \leq x \leq b)$，则物体沿$x$轴从点$a$移动到点$b$时，变力$F(x)$所做的功为
+    \[
+        W = \int_a^b F(x)\,\mathrm{d}x
+    \]
+    功的微元$dW = F(x)\,\mathrm{d}x$
+
     \subsection{抽水做功}
 
-    \subsection{静水压力}
+    \begin{center}
+        \begin{minipage}{0.58\textwidth}
+            如图所示，将容器中的水全部抽出所做的功为
+            \[
+                W = \rho g\int_a^b xA(x)\,\mathrm{d}x
+            \]
+            其中$\rho$为水的密度，$g$为重力加速度。 \\
+
+            功的微元$dW = \rho gA(x)\,\mathrm{d}x \cdot x = \rho gA(x)\cdot x\,\mathrm{d}x$为位于$x$处厚度为$\mathrm{d}x$，水平截面面积为$A(x)$的一层水被抽出（路程为$x$）所做的功
+
+            \medskip
+            \textbf{物理公式}
+            \begin{enumerate}
+                \item 功：$W = F\cdot s$
+            \end{enumerate}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.38\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{math/advanced-mathematics/pic12-2.png}
+        \end{minipage}
+    \end{center}
+
+    \subsection{静水压力（水压力）}
+
+    \begin{center}
+        \begin{minipage}{0.58\textwidth}
+            如图所示，垂直浸没在水中的平板$ABCD$的一侧受到的水压力为
+            \[
+                P = \rho g\int_a^b x[f(x) - g(x)]\,\mathrm{d}x
+            \]
+            其中$\rho$为水的密度，$g$为重力加速度。\\
+
+            压力微元$dP = \rho gx[f(x) - g(x)]\,\mathrm{d}x$，即图中矩形条所收到的压力，$x$表示水深，$[f(x) - g(x)]$表示矩形条的宽度，$\mathrm{d}x$是矩形条的高度
+
+            \medskip
+            \textbf{物理公式}
+            \begin{enumerate}
+                \item 静水压强公式: $p = \rho gh$
+                \item 压力公式: $F = p \cdot S$
+            \end{enumerate}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.38\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{math/advanced-mathematics/pic12-4.png}
+        \end{minipage}
+    \end{center}
 
     \subsection{引力}
+
+    \begin{center}
+        \begin{minipage}{0.58\textwidth}
+            如图所示，设有一长度为$l$、线密度为常数$\mu$的细棒，在与细棒右端的距离为$a$处有以质量为$m$的质点$M$，已知引力常量为$G$，则质点$M$与细棒之间的引力的大小为
+            \[
+                F = \int_{-l}^0 \frac{Gm\mu}{(a - x)^2}\,\mathrm{d}x
+            \]
+            \medskip
+            \textbf{物理公式}
+            \begin{enumerate}
+                \item 万有引力定律：$F = \displaystyle\frac{G m_1 m_2}{r^2}$
+                \item 线密度定义：
+                \[
+                    \mu = \frac{\mathrm{d}m}{\mathrm{d}x}
+                    \quad \Longrightarrow \quad
+                    \mathrm{d}m = \mu\,\mathrm{d}x
+                \]
+            \end{enumerate}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.38\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{math/advanced-mathematics/pic12-6.png}
+        \end{minipage}
+    \end{center}
 
     \subsection{古鲁金第一定理}
 

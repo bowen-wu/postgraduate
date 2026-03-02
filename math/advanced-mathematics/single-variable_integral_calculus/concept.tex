@@ -221,7 +221,7 @@
             \lim_{n \to \infty}
             \sum_{i=1}^{n}
             f\!\left(\frac{2i - 1}{2n}\right)
-            \frac{1}{n}
+            \frac{1}{n}, \quad\text{中点：}\frac{\displaystyle\frac{i - 1}{n} + \frac{i}{n}}{2}
         \]
         \item 定积分的值与字母无关：定积分的值只与被积函数及积分区间有关，而与积分变量的记法无关
         \[
@@ -427,11 +427,11 @@
 
     \begin{enumerate}
         \item $f(x)$可导 $\Rightarrow$ 连续 $\Rightarrow$ 可积 $\Rightarrow$ 有界
-        \item $\sin x$和$\cos x$ 一拱面积为2
+        \item $\sin x$和$\cos x$ 一拱面积($(\int_0^{2\pi} \sin x\,\mathrm{d}x$)为2
         \item $\int_0^{\frac{\pi}{2}} f(\sin x)\,\mathrm{d}x == \int_0^{\frac{\pi}{2}} f(\cos x)\,\mathrm{d}x$
         \item 当$f(x)$是偶函数且$\int_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\int_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 2\int_0^{+\infty} f(x)\,\mathrm{d}x$
         \item 当$f(x)$是奇函数且$\int_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\int_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 0$
-        \item 设$f(x)$连续，且$\int_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛，则$\int_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛
+        \item 设$f(x)$连续，且$\int_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛，则$\int_a^{+\infty} f(x)\,\mathrm{d}x$收敛
         \begin{analysisbox}[证:]
             因为
             \[
@@ -532,6 +532,9 @@
     \subsection{理解}
 
     \begin{enumerate}
+        \item $\int f(x)\,\mathrm{d}x$称为不定积分，表示全体原函数
+        \item $\int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
+        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积 \\\\\\\\\\\\\\\\
         \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}$
         \begin{analysisbox}[证]
             若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则
@@ -555,9 +558,37 @@
 
             综上，$F(x)$ 在 $[a,b]$ 上可导，且 $F'(x)=f(x)$。
         \end{analysisbox}
-        \item $\int f(x)\,\mathrm{d}x$称为不定积分，表示全体原函数
-        \item $\int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
-        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
+        \item 设$f(x)$是$[a, b]$上{\color{red}{非负}}的连续函数，且$f(x)${\color{red}{不恒等于零}}，证明必有$\int_a^b f(x)\,\mathrm{d}x > 0$
+        \begin{analysisbox}[证]
+            因函数 $f(x)$ 在 $[a,b]$ 上不恒等于零，且 $f(x)\ge 0$，
+            故至少存在一点 $x_0\in(a,b)$，使得
+            \[
+                f(x_0)>0.
+            \]
+
+            由连续函数的局部保号性知，
+            存在 $\delta>0$ 与 $\eta>0$，
+            使得当
+            \[
+                x\in[x_0-\delta,\;x_0+\delta]\subset[a,b]
+            \]
+            时，恒有
+            \[
+                f(x)\ge \eta>0.
+            \]
+
+            根据定积分的不等式性质，有
+            \[
+                \int_a^b f(x)\,dx
+                \ge
+                \int_{x_0-\delta}^{x_0+\delta} f(x)\,dx
+                \ge
+                \int_{x_0-\delta}^{x_0+\delta} \eta\,dx
+                =
+                2\delta\eta
+                >0.
+            \]
+        \end{analysisbox}
         \item 证明：函数$f(x)$在$I$上\textbf{可积}，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$I$上连续（$F(x)$若存在，则其一定连续。与$f(x)$作区分：$f(x)$存在但其不一定连续)
         \begin{analysisbox}[证]
             对任意 $x$，若 $x+\Delta x \in I$，有
@@ -599,87 +630,6 @@
             \]
             只要它存在，就必然是连续的
         \end{analysisbox}
-        \item 证明：函数$f(x)$在$I$上\textbf{连续}，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$I$上可导且$F'(x) = f(x)$
-        \begin{analysisbox}[证]
-            对任意的 $x$，若 $x+\Delta x \in I$，
-            由于函数 $f(x)$ 在区间 $I$ 上连续，因此
-            \[
-                \begin{aligned}
-                    \lim_{\Delta x \to 0}\frac{F(x+\Delta x)-F(x)}{\Delta x}
-                    &= \lim_{\Delta x \to 0}
-                    \frac{\left(
-                        \displaystyle\int_a^{x+\Delta x} f(t)\,\mathrm{d}t
-                        -
-                        \displaystyle\int_a^{x} f(t)\,\mathrm{d}t
-                        \right)}{\Delta x} \\
-                    &= \lim_{\Delta x \to 0}
-                    \frac{\displaystyle\int_x^{x+\Delta x} f(t)\,\mathrm{d}t}{\Delta x}
-                \end{aligned}
-            \]
-
-            由积分中值定理，存在
-            \[
-                \xi \in (x,\,x+\Delta x),
-            \]
-            使得
-            \[
-                \int_x^{x+\Delta x} f(t)\,\mathrm{d}t
-                =
-                f(\xi)\,\Delta x.
-            \]
-            因此，
-            \[
-                \lim_{\Delta x \to 0}
-                \frac{F(x+\Delta x)-F(x)}{\Delta x}
-                =
-                \lim_{\Delta x \to 0} f(\xi).
-            \]
-
-            由于 $\xi \to x$ 且 $f(x)$ 连续，故
-            \[
-                \lim_{\Delta x \to 0} f(\xi) = f(x).
-            \]
-
-            由此可见，如果函数 $f(x)$ 在区间 $I$ 上连续，
-            则
-            \[
-                F(x)=\int_a^x f(t)\,\mathrm{d}t
-            \]
-            是 $f(x)$ 在区间 $I$ 上的一个原函数。
-
-        \end{analysisbox}
-        \item 设$f(x)$是$[a, b]$上非负的连续函数，且$f(x)${\color{red}{不恒等于零}}，证明必有$\int_a^b f(x)\,\mathrm{d}x > 0$
-        \begin{analysisbox}[证]
-            因函数 $f(x)$ 在 $[a,b]$ 上不恒等于零，且 $f(x)\ge 0$，
-            故至少存在一点 $x_0\in(a,b)$，使得
-            \[
-                f(x_0)>0.
-            \]
-
-            由连续函数的局部保号性知，
-            存在 $\delta>0$ 与 $\eta>0$，
-            使得当
-            \[
-                x\in[x_0-\delta,\;x_0+\delta]\subset[a,b]
-            \]
-            时，恒有
-            \[
-                f(x)\ge \eta>0.
-            \]
-
-            根据定积分的不等式性质，有
-            \[
-                \int_a^b f(x)\,dx
-                \ge
-                \int_{x_0-\delta}^{x_0+\delta} f(x)\,dx
-                \ge
-                \int_{x_0-\delta}^{x_0+\delta} \eta\,dx
-                =
-                2\delta\eta
-                >0.
-            \]
-        \end{analysisbox}
-
     \end{enumerate}
 
 \end{document}

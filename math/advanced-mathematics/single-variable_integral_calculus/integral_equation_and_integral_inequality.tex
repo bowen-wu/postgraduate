@@ -106,7 +106,7 @@
     \begin{enumerate}
         \item 用中值定理
         \item 用夹逼准则
-        \item 用积分法
+        \item 用积分法: 恒等变形、换元法、分部积分法
     \end{enumerate}
 
     \subsection{积分不等式}
@@ -114,8 +114,11 @@
     \begin{enumerate}
         \item 用函数的单调性：首先将某一积分限（通常取上限）变量化，然后移项构造辅助函数，由辅助函数的单调性来证明不等式，此方法多用于所给条件为\textbf{\blueuline{$f(x)$在$[a, b]$上连续}}的情形
         \item 用拉格朗日中值定理：此方法多用于所给条件为\textbf{\blueuline{$f(x)$一阶可导}}且某一端点值比较简单（甚至为$0$）的题目
-        \item 用泰勒公式：此方法多用于所给条件为\textbf{\blueuline{$f(x)$二阶可导}}且题中有简单函数值（甚至为$0$）的题目
-        \item 用积分法
+        \begin{itemize}
+            \item 若区间$[a, b]$没有$x$，可将区间拆分为$[a, x]$和$[x, b]$，在两个区间上分别应用拉格朗日中值定理
+        \end{itemize}
+        \item 用泰勒公式：此方法多用于所给条件为\textbf{\blueuline{$f(x)$二阶可导}}且题中有简单函数值（甚至为$0$）的题目。用泰勒公式将被积函数$f(x)$展开成多项式再做
+        \item 用积分法：被积函数是两项相乘的形式，可采用分部积分法
         \item 用牛顿-莱布尼茨公式
     \end{enumerate}
 
@@ -127,6 +130,8 @@
     \subsection{结论}
 
     \begin{enumerate}
+        \item $\lim\limits_{t\to 0^+} t^a\ln t = 0(a > 0)$
+        \item 设$f(x)$在$[0, 1]$上连续，则$\lim\limits_{n\to \infty} \displaystyle\int_0^1 x^{n}f(x)\,\mathrm{d}x = 0$
     \end{enumerate}
 
     \subsection{定理}
@@ -141,7 +146,30 @@
     \subsection{运算}
 
     \begin{enumerate}
+        \item $\lim\limits_{n\to\infty} \displaystyle\int_0^1 \frac{x^{n+1}}{1+x}$
+        \begin{analysisbox}[夹逼准则（放缩法）]
+            由于在 $x\in[0,1]$ 上，
+            \[
+                0 \le \frac{x^{n+1}}{1+x} \le x^{n+1},
+            \]
+            因此有
+            \[
+                0 \le \int_0^1 \frac{x^{n+1}}{1+x}\,\mathrm{d}x
+                \le \int_0^1 x^{n+1}\,\mathrm{d}x
+                = \frac{1}{n+2}.
+            \]
 
+            当 $n\to\infty$ 时，
+            \[
+                \frac{1}{n+2} \to 0.
+            \]
+
+            由夹逼准则可得
+            \[
+                \lim_{n\to\infty}\int_0^1 \frac{x^{n+1}}{1+x}\,\mathrm{d}x
+                = 0.
+            \]
+        \end{analysisbox}
     \end{enumerate}
 
     \subsection{公式}
@@ -159,7 +187,11 @@
     \subsection{条件转换思路}
 
     \begin{enumerate}
-
+        \item 设$f'(x)$在$[a, b]$上连续，且$f(a) = f(b) = 0$，证明：$|f(x)| \leq \displaystyle\frac{1}{2}\int_a^b |f'(x)|\,\mathrm{d}x$
+        \begin{itemize}
+            \item 逆运算: $|f(x)| \leq \displaystyle\frac{1}{2}\int_a^b |f'(x)|\,\mathrm{d}x \Rightarrow |f(x)| + |f(x)| \leq \displaystyle\int_a^b |f'(x)|\,\mathrm{d}x$
+            \item 恒等变形: $|f(x)| = |f(x) - 0| = |f(x) - f(a)| = |f(x) - f(b)|$
+        \end{itemize}
     \end{enumerate}
 
     \subsection{理解}
