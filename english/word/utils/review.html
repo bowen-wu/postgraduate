@@ -333,7 +333,7 @@
         window._antonymPlayIndex = 0;
         window._isConfirming = false;
         break;
-      case ' ':
+      case ' ': {
         e.preventDefault();
         // 智能防抖： 根据卡片类型动态调整防抖时间
         const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
@@ -343,7 +343,7 @@
         window._lastPlayTime['space'] = now;
 
         // 播放单词音频
-        // 对于句子类型，使用 items[0].en（纯英文，无中文)
+        // 对于句子类型，使用 items[0].en（纯英文，无中文）
         // 对于其他类型，使用 word
         let playBtnId = 'play-btn-main';
         if (currentCard.type === 'phrase') playBtnId = 'play-btn-phrase';
@@ -353,10 +353,11 @@
           : currentCard.word;
         window.app.playWord(audioText, playBtnId, false, false);
         break;
+      }
       case 's':
-      case 'S':
+      case 'S': {
         e.preventDefault();
-        // 智能防抖： 同义词使用 word 的防抖时间
+        // 智能防抖: 同义词使用 word 的防抖时间
         const debounceTime = window.CONFIG?.audio?.debounce?.word || 500;
         if (window._lastPlayTime['s'] && now - window._lastPlayTime['s'] < debounceTime) {
           return;
@@ -375,10 +376,11 @@
           window._synonymPlayIndex = (window._synonymPlayIndex + 1) % currentCard.synonyms.length;
         }
         break;
+      }
       case 'a':
-      case 'A':
+      case 'A': {
         e.preventDefault();
-        // 防抖检查
+        // 智能防抖: 反义词使用当前卡片类型的防抖时间
         const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
         if (window._lastPlayTime['a'] && now - window._lastPlayTime['a'] < debounceTime) {
           return;
@@ -397,6 +399,7 @@
           window._antonymPlayIndex = (window._antonymPlayIndex + 1) % currentCard.antonyms.length;
         }
         break;
+      }
       case 't':
       case 'T':
         e.preventDefault();
