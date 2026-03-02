@@ -69,9 +69,8 @@
     - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the **density** of some of its
       forests.
         - endeavor [ɪnˈdɛvər] vi. 努力
-        - 词组
-            - endeavors to do
-                - == make efforts to do
+        - endeavor to do
+            - == make effort to do
 
 ## deliberate
 

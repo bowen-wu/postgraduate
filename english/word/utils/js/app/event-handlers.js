@@ -1027,7 +1027,7 @@ export async function translatePhrase() {
 
     // 更新 action area 为"下一个"按钮
     UiRenderer.renderNextAction(window.app.ui);
-    UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+    // UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
   } catch (error) {
     buttonIds.forEach(id => setButtonLoading(false, id));
     UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
@@ -1074,7 +1074,7 @@ export async function translateSentence() {
 
     // 更新 action area 为"下一个"按钮
     UiRenderer.renderNextAction(window.app.ui);
-    UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+    // UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
   } catch (error) {
     buttonIds.forEach(id => setButtonLoading(false, id));
     UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
