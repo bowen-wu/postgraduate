@@ -33,10 +33,10 @@
     - vt. 使蒙羞；不遵守
     - n. 丢脸
     - disgrace [dɪsˈɡreɪs] n. 耻辱；丢脸的人（或事）
-    - dishonor a commitment 违背承诺
-        - == break a promise
     - ...provoked justified *outrage(n. 愤怒)* in Vermont last week when it announced it was **dishonoring** a
       longstanding commitment.
+        - dishonor a commitment 违背承诺
+            - == break a promise
 - honorably ['ɒnərəblɪ] adv. 值得尊敬地
 - glory [ˈɡlɔːri] n. 荣誉；辉煌
 
@@ -112,9 +112,9 @@
 - feeble adj. 虚弱的
 - vulnerable [ˈvʌlnərəbl]
     - adj. 脆弱的；易受伤害的
-    - be vulnerable to sth. 容易受到...的伤害/影响/攻击
-        - be susceptible to (doing) sth. 遭受；承受
     - Large animals were **vulnerable** to the changing environment.
+        - be vulnerable to sth. 容易受到...的伤害/影响/攻击
+        - be susceptible to (doing) sth. 遭受；承受
 
 ## anonymity
 
@@ -181,7 +181,7 @@
     - n. 理解
     - == understanding
     - Neither **comprehension** nor learning can take place in an atmosphere of anxiety.
-        - neither A nor B A和B都不...
+        - neither A nor B
         - take place 发生/进行
     - Vocabulary **comprehension** needs *creativity([ˌkriːeɪˈtɪvəti] n. 创造力)*.
 - comprehensive adj. 全面的

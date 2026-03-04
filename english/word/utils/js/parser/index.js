@@ -769,24 +769,31 @@ export class MarkdownParser {
               if (pos) synonym.pos = pos;
               if (cn) synonym.cn = cn;
               actualParentCard.synonyms.push(synonym);
-            } else if (!pos && !cn && !ipa) {
-              // 🔧 FIX: Simple synonym without any definition - add directly
-              actualParentCard.synonyms.push({ word });
             } else {
-              // Complex case: synonym has children (POS lines following)
-              // Only the LAST synonym in the list can have children
-              // Create a temporary synonym card
-              this.pendingSynonymCard = {
-                word: word,
-                items: []
-              };
-              if (ipa) this.pendingSynonymCard.ipa = ipa;
-              this.pendingSynonymLevel = indentLevel;
-              this.pendingSynonymOriginalParent = actualParentCard;
+              // Synonym without inline definition - may have child items
+              // Check if this is the LAST synonym (only last one can have children)
+              const isLastSynonym = multipleSynonyms.indexOf(syn) === multipleSynonyms.length - 1;
 
-              // Redirect parentCard to temporary card so POS lines go to it
-              this.parentCard = this.pendingSynonymCard;
-              this.parentLevel = indentLevel;
+              if (isLastSynonym) {
+                // Create pending synonym card to receive potential child items
+                this.pendingSynonymCard = {
+                  word: word,
+                  items: []
+                };
+                if (ipa) this.pendingSynonymCard.ipa = ipa;
+                this.pendingSynonymLevel = indentLevel;
+                this.pendingSynonymOriginalParent = actualParentCard;
+                this.pendingSynonymOriginalLevel = this.parentLevel;
+
+                // Redirect parentCard to temporary card so POS lines go to it
+                this.parentCard = this.pendingSynonymCard;
+                this.parentLevel = indentLevel;
+              } else {
+                // Not the last synonym - add as simple word object
+                const synonym = { word };
+                if (ipa) synonym.ipa = ipa;
+                actualParentCard.synonyms.push(synonym);
+              }
             }
           }
         } else {
@@ -1221,22 +1228,42 @@ export class MarkdownParser {
           this.parentCard.synonyms.push(synonym);
         }
       } else {
-        // 🔧 FIX: For synonyms without inline definitions, add them directly as simple word objects
-        // This handles cases like: == ruling == decision
-        // The pendingSynonymCard mechanism is for cases with actual child items like:
-        //   == curb
-        //   - n. 抑制
-        // But for simple word-only synonyms, we should add them directly
-        const synonym = { word };
-        if (ipa) synonym.ipa = ipa;
+        // Synonym without inline definition - may have child items
+        // Check if this is the LAST synonym in the list (only last one can have children)
+        const isLastSynonym = multipleSynonyms.indexOf(syn) === multipleSynonyms.length - 1;
 
-        // Prevent duplicate synonyms
-        const isDuplicate = this.parentCard.synonyms.some(
-          existingSyn => existingSyn.word === word
-        );
+        if (isLastSynonym) {
+          // Create pending synonym card to receive potential child items
+          // Example:
+          //   == curb
+          //     - vt. 抑制，控制
+          //     - n. 限制，控制
+          this.pendingSynonymCard = {
+            word: word,
+            items: []
+          };
+          if (ipa) this.pendingSynonymCard.ipa = ipa;
+          this.pendingSynonymLevel = indentLevel;
+          this.pendingSynonymOriginalParent = this.parentCard;
+          this.pendingSynonymOriginalLevel = this.parentLevel;
 
-        if (!isDuplicate) {
-          this.parentCard.synonyms.push(synonym);
+          // Redirect parentCard so subsequent POS lines go to the pending synonym
+          this.parentCard = this.pendingSynonymCard;
+          this.parentLevel = indentLevel;
+        } else {
+          // Not the last synonym - add as simple word object
+          // Example: == ruling == decision (both added directly, no children expected)
+          const synonym = { word };
+          if (ipa) synonym.ipa = ipa;
+
+          // Prevent duplicate synonyms
+          const isDuplicate = this.parentCard.synonyms.some(
+            existingSyn => existingSyn.word === word
+          );
+
+          if (!isDuplicate) {
+            this.parentCard.synonyms.push(synonym);
+          }
         }
       }
     }
