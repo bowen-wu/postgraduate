@@ -1,0 +1,202 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{extarrows}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 经典
+\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
+\newtcbox{\classic}{
+    on line,
+    colback=classicgreen!10,
+    colframe=classicgreen,
+    boxrule=0.8pt,
+    arc=3pt,
+    boxsep=1pt,
+    left=4pt,
+    right=4pt,
+    top=2pt,
+    bottom=2pt
+}
+
+
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{重要公式}
+
+    \subsection{三角函数}
+
+    \subsubsection{诱导公式}
+
+    奇变偶不变，符号看象限（\textbf{\underline{等式左边的角所在象限的正负}}）
+
+    \begin{enumerate}
+        \item $\sin (\displaystyle\frac{\pi}{2} \pm \alpha) = \cos \alpha$
+        \item $\sin (\pi \pm \alpha) = \mp \sin \alpha$
+        \item $\cos (\displaystyle\frac{\pi}{2} \pm \alpha) = \mp \sin \alpha$
+        \item $\cos (\pi \pm \alpha) = \mp \cos \alpha$
+    \end{enumerate}
+
+    \subsubsection{和差公式}
+
+    \begin{enumerate}
+        \item $\sin (\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta$
+        \item $\cos (\alpha \pm \beta) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta$
+        \item $\tan (\alpha \pm \beta) = \displaystyle\frac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta}$
+        \begin{itemize}
+            \item $\tan (\displaystyle\frac{\pi}{4} - \alpha) = \displaystyle\frac{1 - \tan \alpha}{1 + \tan \alpha}$
+        \end{itemize}
+        \item $\cot (\alpha \pm \beta) = \displaystyle\frac{\cot \alpha \cot \beta \mp 1}{\cot \alpha \pm \cot \beta}$
+    \end{enumerate}
+
+    \subsubsection{倍角公式}
+
+    \begin{enumerate}
+        \item $\sin 2\alpha = 2\sin \alpha \cos \alpha$
+        \item $\cos 2\alpha = \cos^2 \alpha - \sin^2 \alpha = 1 - 2\sin^2 \alpha = 2\cos^2 \alpha - 1$
+        \item $\sin 3\alpha = -4\sin^3 \alpha + 3\sin \alpha$
+        \item $\cos 3\alpha = 4\cos^3 \alpha - 3\cos \alpha$
+    \end{enumerate}
+
+    \subsubsection{半角公式}
+
+    \begin{enumerate}
+        \item $\sin^2 \displaystyle\frac{\alpha}{2} = \displaystyle\frac{1}{2}(1 - \cos \alpha)$
+        \item $\cos^2 \displaystyle\frac{\alpha}{2} = \displaystyle\frac{1}{2}(1 + \cos \alpha)$
+    \end{enumerate}
+
+    \subsection{一元二次方程}
+
+    一元二次方程 $ax^2 + bx + c = 0(a \neq 0)$
+
+    \begin{enumerate}
+        \item 判别式$\Delta = b^2 - 4ac$
+        \begin{itemize}
+            \item $\Delta \geq 0$，方程有两个实根$x_{1, 2} = \displaystyle\frac{-b \pm \sqrt {b^2 - 4ac}}{2a}$
+            \item $\Delta < 0$，方程有两个共轭的复根$x_{1, 2} = \displaystyle\frac{-b \pm \sqrt {4ac - b^2 i}}{2a}$
+        \end{itemize}
+        \item 根与系数的关系（韦达定理）
+        \begin{itemize}
+            \item $x_1 + x_2 = -\displaystyle\frac{b}{a}$
+            \item $x_{1}x_2 = \displaystyle\frac{c}{a}$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{因式分解}
+
+    \begin{enumerate}
+        \item $(a + b)^2 = a^2 + 2ab + b^2$
+        \item $(a - b)^2 = a^2 - 2ab + b^2$
+        \item $(a + b)^3 = a^3 + 3a^{2}b + 3ab^2 + b^3$
+        \item $(a - b)^3 = a^3 - 3a^{2}b + 3ab^2 - b^3$
+        \item $a^2 - b^2 = (a + b)(a - b)$
+        \item $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$
+        \item $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$
+        \item 二项式定理
+        \[
+            \begin{aligned}
+            (a+b)
+                ^n
+                &= \sum_{k=0}^{n} C_n^k a^{\,n-k} b^{\,k} \\
+                &= a^n
+                + n a^{n-1} b
+                + \frac{n(n-1)}{2!} a^{n-2} b^2 \\
+                &\quad + \cdots
+                + \frac{n(n-1)\cdots(n-k+1)}{k!} a^{n-k} b^k \\
+                &\quad + \cdots
+                + n a b^{n-1}
+                + b^n
+            \end{aligned}
+        \]
+    \end{enumerate}
+
+    \subsection{阶乘与双阶乘}
+
+    \begin{enumerate}
+        \item $n! = 1\cdot 2\cdot 3\cdots \cdot n$，规定$0! = 1$
+        \item $(2n)!! = 2\cdot 4\cdot 6\cdots \cdot 2n = 2^n\cdot n! $
+        \item $(2n - 1)!! = 1\cdot 3\cdot 5\cdots \cdot (2n - 1) $
+    \end{enumerate}
+
+\end{document}

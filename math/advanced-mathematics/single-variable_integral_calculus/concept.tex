@@ -270,7 +270,10 @@
         \[
             \int_a^b m\,\mathrm{d}x = mL \leq \int_a^b f(x)\,\mathrm{d}x \leq ML = \int_a^b M\,\mathrm{d}x
         \]
-        \item $\color{red}{\bigstar}$积分中值定理：若函数$f(x)$在区间$[a, b]$上连续，则至少存在一点$\xi \in [a, b]$，使$\int_a^b f(x)\,\mathrm{d}x = f(\xi)(b - a)$
+        \item $\color{red}{\bigstar}$积分中值定理：若函数$f(x)$在区间$[a, b]$上连续，则至少存在一点$\xi \in [a, b]$，使
+        \[
+            \int_a^b f(x)\,\mathrm{d}x = f(\xi)(b - a)
+        \]
     \end{enumerate}
 
     \subsection{变限积分}
@@ -526,7 +529,10 @@
     \begin{enumerate}
         \item $f(x) = 2x\sin \displaystyle\frac{1}{x^2} - \displaystyle\frac{2}{x}\cos \displaystyle\frac{1}{x^2}$，$x = 0$是其震荡间断点，$\lim\limits_{x\to 0} f(x)$是\textbf{无界震荡}，其原函数是$F(x) = x^2 \sin \displaystyle\frac{1}{x^2}$
         \item $f(x) = 2x\cos \displaystyle\frac{1}{x} + \sin \displaystyle\frac{1}{x}$，$x = 0$是其震荡间断点，$\lim\limits_{x\to 0} f(x)$是\textbf{有界震荡}，其原函数是$F(x) = x^2\cos \displaystyle\frac{1}{x}$
-        \item $\int_0^1 \ln x\,\mathrm{d}x$ 是收敛的（$\color{red}{\lim\limits_{x\to 0^+} x^{\epsilon}\ln x = 0, \epsilon > 0}$）
+        \item $\int_0^1 \ln x\,\mathrm{d}x$和$\int_{-\infty}^0 e^x\,\mathrm{d}x$ 是收敛的（$\color{red}{\lim\limits_{x\to 0^+} x^{\epsilon}\ln x = 0, \epsilon > 0}$），且
+        \[
+            \int_0^1 \ln x\,\mathrm{d}x = -\int_{-\infty}^0 e^x\,\mathrm{d}x = -1
+        \]
     \end{enumerate}
 
     \subsection{理解}
@@ -534,7 +540,7 @@
     \begin{enumerate}
         \item $\int f(x)\,\mathrm{d}x$称为不定积分，表示全体原函数
         \item $\int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
-        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积 \\\\\\\\\\\\\\\\
+        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
         \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}$
         \begin{analysisbox}[证]
             若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则
