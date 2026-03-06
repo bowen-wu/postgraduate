@@ -7,6 +7,12 @@ function commitSessionPatch(nextState) {
 }
 
 export function createUseCases(app) {
+  const uiPort = app.uiPort || {
+    isShortcutsOpen: () => false,
+    isFilesOpen: () => false,
+    isStatsOpen: () => false
+  };
+
   return {
     toggleMode() {
       const nextMode = STATE.mode === 'input' ? 'recall' : 'input';
@@ -36,20 +42,17 @@ export function createUseCases(app) {
     },
 
     closeOverlaysByPriority() {
-      const shortcutsDialog = document.getElementById('shortcutsDialog');
-      if (shortcutsDialog?.classList.contains('show')) {
+      if (uiPort.isShortcutsOpen()) {
         app.toggleShortcuts();
         return true;
       }
 
-      const filePanel = document.getElementById('filePanel');
-      if (filePanel?.classList.contains('open')) {
+      if (uiPort.isFilesOpen()) {
         app.toggleFiles();
         return true;
       }
 
-      const statsPanel = document.getElementById('statsPanel');
-      if (statsPanel?.classList.contains('open')) {
+      if (uiPort.isStatsOpen()) {
         app.toggleStats();
         return true;
       }

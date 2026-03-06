@@ -19,7 +19,12 @@ function createMockApp() {
     showToast(msg) { this.toasts.push(msg); },
     toggleShortcuts() { this.toggled.push('shortcuts'); },
     toggleFiles() { this.toggled.push('files'); },
-    toggleStats() { this.toggled.push('stats'); }
+    toggleStats() { this.toggled.push('stats'); },
+    uiPort: {
+      isShortcutsOpen: () => false,
+      isFilesOpen: () => false,
+      isStatsOpen: () => false
+    }
   };
 }
 
@@ -64,22 +69,21 @@ test('jumpToLast updates index to final position', () => {
 test('closeOverlaysByPriority closes shortcuts first', () => {
   const app = createMockApp();
   const useCases = createUseCases(app);
-  const originalDocument = globalThis.document;
+  app.uiPort.isShortcutsOpen = () => true;
 
-  globalThis.document = {
-    getElementById(id) {
-      if (id === 'shortcutsDialog') {
-        return { classList: { contains: (name) => name === 'show' } };
-      }
-      return { classList: { contains: () => false } };
-    }
-  };
+  const handled = useCases.closeOverlaysByPriority();
+  assert.equal(handled, true);
+  assert.deepEqual(app.toggled, ['shortcuts']);
+});
 
-  try {
-    const handled = useCases.closeOverlaysByPriority();
-    assert.equal(handled, true);
-    assert.deepEqual(app.toggled, ['shortcuts']);
-  } finally {
-    globalThis.document = originalDocument;
-  }
+test('closeOverlaysByPriority closes files when shortcuts is closed', () => {
+  const app = createMockApp();
+  const useCases = createUseCases(app);
+  app.uiPort.isShortcutsOpen = () => false;
+  app.uiPort.isFilesOpen = () => true;
+  app.uiPort.isStatsOpen = () => true;
+
+  const handled = useCases.closeOverlaysByPriority();
+  assert.equal(handled, true);
+  assert.deepEqual(app.toggled, ['files']);
 });

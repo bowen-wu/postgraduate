@@ -6,8 +6,14 @@ import { setAppContext } from './event-handlers.js';
 import { getCurrentCardFromState } from '../domain/selectors.js';
 
 const app = new VocabApp();
-window.app = app;
 setAppContext(app);
+
+app.uiPort = {
+  isShortcutsOpen: () => app.ui.shortcutsDialog?.classList.contains('show') || false,
+  isFilesOpen: () => app.ui.filePanel?.classList.contains('open') || false,
+  isStatsOpen: () => app.ui.statsPanel?.classList.contains('open') || false
+};
+
 const useCases = createUseCases(app);
 
 const keyboardState = {

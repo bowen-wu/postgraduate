@@ -5,7 +5,8 @@ export function createTranslationUseCases(deps) {
     getUi,
     render,
     translateText,
-    setButtonLoading
+    setButtonLoading,
+    revealSentenceTranslation = () => {}
   } = deps;
 
   async function translatePhrase() {
@@ -54,12 +55,7 @@ export function createTranslationUseCases(deps) {
       buttonIds.forEach((id) => setButtonLoading(false, id));
       stateManager.saveState();
       render();
-
-      const cnDiv = document.getElementById('sentenceCn');
-      if (cnDiv) {
-        cnDiv.style.display = 'block';
-        cnDiv.classList.add('revealed');
-      }
+      revealSentenceTranslation();
 
       uiRenderer.renderNextAction(getUi());
     } catch (error) {

@@ -20,10 +20,15 @@ let translationUseCases = null;
 
 export function setAppContext(app) {
   appContext = app;
+  studyUseCases = null;
+  translationUseCases = null;
 }
 
 function getApp() {
-  return appContext || window.app;
+  if (!appContext) {
+    throw new Error('App context is not initialized');
+  }
+  return appContext;
 }
 
 function getUi(ui = null) {
@@ -52,7 +57,8 @@ function getTranslationUseCases() {
       getUi: () => getApp().ui,
       render: () => getApp().render(),
       translateText: translateTextWithFallback,
-      setButtonLoading
+      setButtonLoading,
+      revealSentenceTranslation: () => UiRenderer.showSentenceTranslation(getApp().ui)
     });
   }
   return translationUseCases;

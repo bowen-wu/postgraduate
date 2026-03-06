@@ -139,3 +139,36 @@ If tests fail:
 2. Run `npm test` again
 3. Inspect first failing test only, fix root cause, rerun
 4. For parser failures, inspect fixture diff before code changes
+
+## 11. Refactor 1-4 Regression Checklist
+
+Constraints:
+1. Do not edit any CSS file
+2. Keep DOM semantic compatibility (`class`/`id` unchanged)
+
+Step 1 (UI renderer modularization):
+1. Open file list, choose one word/phrase/sentence file
+2. Verify card, badges, synonyms/antonyms and action buttons render correctly
+3. Verify keyboard shortcuts still work (`space`, `Enter`, `Backspace`, `m`, `p`)
+4. Capture screenshot or record manual pass for:
+   - file panel
+   - normal card
+   - completion screen
+
+Step 2 (application layer DOM decoupling):
+1. Verify `Esc` closes overlays in order:
+   - shortcuts
+   - file panel
+   - stats panel
+2. Verify sentence/phrase translation still updates card and action area
+3. Run `npm test` and ensure translation/use-case tests are green
+
+Step 3 (global entry cleanup):
+1. Verify app boots without relying on `window.app`
+2. Verify delegated click actions still dispatch correctly
+3. Verify no console errors during load and first file switch
+
+Step 4 (test and regression hardening):
+1. `npm test` must be all green
+2. New or changed workflows must have corresponding tests
+3. Attach screenshot evidence or checklist result in the task record

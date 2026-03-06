@@ -40,6 +40,7 @@ export class VocabApp {
       iconAutoPlayOff: document.getElementById('iconAutoPlayOff'),
       iconAutoPlayOn: document.getElementById('iconAutoPlayOn'),
       btnPrev: document.getElementById('btnPrev'),
+      shortcutsDialog: document.getElementById('shortcutsDialog'),
       confirmDialog: document.getElementById('confirmDialog'),
       dialogMessage: document.getElementById('dialogMessage'),
       dialogConfirmBtn: document.getElementById('dialogConfirmBtn'),
