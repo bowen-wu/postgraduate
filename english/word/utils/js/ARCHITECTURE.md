@@ -56,8 +56,14 @@ Dependency direction (must keep):
   - API adapters
 
 ### `parser/`
-- Markdown parsing logic and fixtures
-- Parsing rules treated as contract; changes require fixtures update
+- `index.js`: parser entry and object assembly only
+- `parse-loop.js`: top-level markdown traversal and list-item dispatch
+- `sentence-processor.js`: sentence extraction and promoted child handling
+- `children-processor.js`: nested list traversal
+- `pending-relations.js`: synonym/antonym/POS/IPA pending-state handling
+- `context.js` + `line-utils.js`: parser state and line helpers
+- `content-parser.js` + `validators.js` + `rule-engine.js` + `card-builders.js`: pure rule helpers
+- Parsing output is a contract; changes require fixture or golden baseline review
 
 ## 4. Current Entry Points
 
@@ -68,6 +74,10 @@ Primary UI entry:
 Parser entry points:
 - `MarkdownParser` class
 - `parseMarkdownToCards(text)` for tests/automation
+
+Parser regression assets:
+- `parser/__tests__/fixtures/`: focused rule fixtures
+- `parser/__tests__/golden/`: selected sample snapshots + full corpus hash baselines
 
 ## 5. Global State Policy
 
@@ -118,6 +128,6 @@ Before merge, verify:
 
 ## 10. Roadmap (Next Refactor Targets)
 
-1. Parser decomposition (context/walker/rule handlers) while preserving parse output contract
-2. Parser fixture expansion for ambiguous edge cases and conflict patterns
+1. Expand parser fixtures for ambiguous edge cases and conflict patterns
+2. Convert remaining parser rule branches into smaller named rule modules only when coverage justifies it
 3. Optional infra retry/backoff policy if API reliability degrades in production

@@ -1,0 +1,1194 @@
+[
+  {
+    "id": "card_0",
+    "word": "discernible",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "可辨别的"
+      }
+    ],
+    "ipa": "[dɪˈsɜːrnəbl]",
+    "synonyms": [
+      {
+        "word": "observable",
+        "pos": "adj.",
+        "cn": "能观察到的"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "barely",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "几乎不"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "His face was barely discernible in the gloom.",
+    "displayWord": "His face was barely <strong>discernible</strong> in the gloom.",
+    "type": "sentence",
+    "fullText": "His face was barely {{BOLD:0}} in the gloom.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "His face was barely discernible in the gloom.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_3",
+    "word": "discern",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "察觉出，了解; 分辨出"
+      }
+    ]
+  },
+  {
+    "id": "card_4",
+    "word": "traceable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "可追踪的"
+      }
+    ],
+    "ipa": "[ˈtreɪsəbl]"
+  },
+  {
+    "id": "card_5",
+    "word": "imperative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "重要紧急的事；当务之急"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "重要紧急的"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "important"
+      }
+    ]
+  },
+  {
+    "id": "card_6",
+    "word": "It is absolutely imperative that we finish by next...",
+    "displayWord": "It is absolutely <strong>imperative</strong> that we finish by next week.",
+    "type": "sentence",
+    "fullText": "It is absolutely {{BOLD:0}} that we finish by next week.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "It is absolutely imperative that we finish by next week.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_7",
+    "word": "anchor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "节目主持人"
+      }
+    ],
+    "ipa": "[ˈæŋkər]"
+  },
+  {
+    "id": "card_8",
+    "word": "unthinkingly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "不假思索地"
+      }
+    ]
+  },
+  {
+    "id": "card_9",
+    "word": "bidder",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "投标者"
+      }
+    ]
+  },
+  {
+    "id": "card_10",
+    "word": "bitter",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "苦的"
+      }
+    ]
+  },
+  {
+    "id": "card_11",
+    "word": "Bad times can make you bitter or better.",
+    "displayWord": "Bad times can make you <strong>bitter</strong> or better.",
+    "type": "sentence",
+    "fullText": "Bad times can make you {{BOLD:0}} or better.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Bad times can make you bitter or better.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_12",
+    "word": "directive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "指示的"
+      }
+    ]
+  },
+  {
+    "id": "card_13",
+    "word": "repel",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使厌恶；驱逐"
+      }
+    ],
+    "ipa": "[rɪˈpel]"
+  },
+  {
+    "id": "card_14",
+    "word": "moan  😔",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "抱怨"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "抱怨"
+      }
+    ],
+    "ipa": "[moʊn]"
+  },
+  {
+    "id": "card_15",
+    "word": "mutually",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "相互地"
+      }
+    ]
+  },
+  {
+    "id": "card_16",
+    "word": "mutually understanding",
+    "displayWord": "mutually understanding",
+    "type": "sentence",
+    "fullText": "mutually understanding 相互理解",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "mutually understanding",
+        "cn": "相互理解"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_17",
+    "word": "insensitivity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "不灵敏"
+      }
+    ]
+  },
+  {
+    "id": "card_18",
+    "word": "affirmation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "肯定"
+      }
+    ],
+    "ipa": "[ˌæfɚˈmeʃən]"
+  },
+  {
+    "id": "card_19",
+    "word": "affirm",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "肯定属实；申明"
+      }
+    ],
+    "ipa": "[əˈfɜːrm]"
+  },
+  {
+    "id": "card_20",
+    "word": "reaffirm",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "重申"
+      }
+    ],
+    "ipa": "[ˌriəˈfɜrm]",
+    "synonyms": [
+      {
+        "word": "restate"
+      }
+    ]
+  },
+  {
+    "id": "card_21",
+    "word": "skepticism",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "怀疑主义；怀疑态度 😔"
+      }
+    ],
+    "ipa": "[ˈskɛptɪˌsɪzəm]"
+  },
+  {
+    "id": "card_22",
+    "word": "neurology",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "神经病学，神经学"
+      }
+    ],
+    "ipa": "[nʊˈrɑlədʒi]"
+  },
+  {
+    "id": "card_23",
+    "word": "neuroligist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "神经病学家，神经学家"
+      }
+    ]
+  },
+  {
+    "id": "card_24",
+    "word": "neurological",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "神经系统的"
+      }
+    ]
+  },
+  {
+    "id": "card_25",
+    "word": "unaffected",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "未受影响的"
+      }
+    ]
+  },
+  {
+    "id": "card_26",
+    "word": "empower",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "授权；使能够"
+      }
+    ]
+  },
+  {
+    "id": "card_27",
+    "word": "empower your life",
+    "displayWord": "empower your life",
+    "type": "sentence",
+    "fullText": "empower your life",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "empower your life",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_28",
+    "word": "empowerment",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "授权"
+      }
+    ]
+  },
+  {
+    "id": "card_29",
+    "word": "intentional",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "故意的"
+      }
+    ]
+  },
+  {
+    "id": "card_30",
+    "word": "prominence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "出名；重要"
+      }
+    ],
+    "ipa": "[ˈprɑːmɪnəns]",
+    "synonyms": [
+      {
+        "word": "importance",
+        "pos": "n.",
+        "cn": "重要性"
+      }
+    ]
+  },
+  {
+    "id": "card_31",
+    "word": "communist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "共产主义的"
+      }
+    ],
+    "ipa": "[ˈkɑːmjənɪst]"
+  },
+  {
+    "id": "card_32",
+    "word": "class struggles",
+    "displayWord": "class struggles",
+    "type": "sentence",
+    "fullText": "class struggles 阶级斗争",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "class struggles",
+        "cn": "阶级斗争"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_33",
+    "word": "Communist Party of China",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "Communist Party of China",
+        "cn": ""
+      }
+    ]
+  },
+  {
+    "id": "card_34",
+    "word": "The site of the First National Congress of the Com...",
+    "displayWord": "The site of the First National Congress of the Communist Party of China is located at No.76, Xingye Rode in Shanghai, a typical Shanghai-style residence built in the autumn of 1920.",
+    "type": "sentence",
+    "fullText": "The site of the First National Congress of the Communist Party of China is located at No.76, Xingye Rode in Shanghai, a typical Shanghai-style residence built in the autumn of 1920. 中国共产党第一次全国代表大会会址位于上海兴业路76号，是一栋典型的上海式住宅，建于1920年秋。",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The site of the First National Congress of the Communist Party of China is located at No.76, Xingye Rode in Shanghai, a typical Shanghai-style residence built in the autumn of 1920.",
+        "cn": "中国共产党第一次全国代表大会会址位于上海兴业路76号，是一栋典型的上海式住宅，建于1920年秋。"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_35",
+    "word": "logicality",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "逻辑性"
+      }
+    ],
+    "ipa": "[ˌlɒdʒɪ'kælətɪ]"
+  },
+  {
+    "id": "card_36",
+    "word": "logician",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "逻辑学家"
+      }
+    ],
+    "ipa": "[loˈdʒɪʃən]"
+  },
+  {
+    "id": "card_37",
+    "word": "noneconomic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "非经济的"
+      }
+    ]
+  },
+  {
+    "id": "card_38",
+    "word": "associative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "联想的"
+      }
+    ]
+  },
+  {
+    "id": "card_39",
+    "word": "dilute",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "稀释"
+      }
+    ],
+    "ipa": "[daɪˈluːt]"
+  },
+  {
+    "id": "card_40",
+    "word": "miserably",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "贫困地"
+      }
+    ],
+    "ipa": "[ˈmɪzərəblɪ]"
+  },
+  {
+    "id": "card_41",
+    "word": "miserable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "痛苦的；令人不快的"
+      }
+    ]
+  },
+  {
+    "id": "card_42",
+    "word": "outrage",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "愤怒"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "愤怒"
+      }
+    ]
+  },
+  {
+    "id": "card_43",
+    "word": "...provoked justified outrage in Vermont last week...",
+    "displayWord": "...provoked justified <strong>outrage</strong> in Vermont last week when it announced it was dishonoring a longstanding commitment.",
+    "type": "sentence",
+    "fullText": "...provoked justified {{BOLD:0}} in Vermont last week when it announced it was dishonoring a longstanding commitment.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...provoked justified outrage in Vermont last week when it announced it was dishonoring a longstanding commitment.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_44",
+    "word": "Do not go gentle into that good night, Old age sho...",
+    "displayWord": "Do not go gentle into that good night, Old age should burn and rave at close of day; <strong>Rage</strong>, <strong>rage</strong> against the dying of the light. — Dylan Thomas《Do not go gentle into that good night》",
+    "type": "sentence",
+    "fullText": "Do not go gentle into that good night, Old age should burn and rave at close of day; {{BOLD:0}}, {{BOLD:1}} against the dying of the light. — Dylan Thomas《Do not go gentle into that good night》 不要温顺地走向死亡。人在生命将尽之时，仍应燃烧、呐喊，而非安静接受。愤怒吧，愤怒地反抗生命之光的消逝 - 狄兰·托马斯",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light. — Dylan Thomas《Do not go gentle into that good night》",
+        "cn": "不要温顺地走向死亡。人在生命将尽之时，仍应燃烧、呐喊，而非安静接受。愤怒吧，愤怒地反抗生命之光的消逝 - 狄兰·托马斯"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_45",
+    "word": "compose",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "撰写"
+      }
+    ]
+  },
+  {
+    "id": "card_46",
+    "word": "composite",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "合成物"
+      }
+    ],
+    "ipa": "[kəmˈpɑːzət]"
+  },
+  {
+    "id": "card_47",
+    "word": "donation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "捐赠物"
+      }
+    ],
+    "ipa": "[doʊˈneɪʃn]"
+  },
+  {
+    "id": "card_48",
+    "word": "commonplaceness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "平常的事"
+      }
+    ]
+  },
+  {
+    "id": "card_49",
+    "word": "endurance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "忍耐力"
+      }
+    ]
+  },
+  {
+    "id": "card_50",
+    "word": "postmodern",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "后现代的"
+      }
+    ]
+  },
+  {
+    "id": "card_51",
+    "word": "terrifying",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "令人恐惧的"
+      }
+    ],
+    "ipa": "[ˈterɪfaɪɪŋ]"
+  },
+  {
+    "id": "card_52",
+    "word": "respondent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（尤指）调查对象"
+      }
+    ]
+  },
+  {
+    "id": "card_53",
+    "word": "displace",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "取代"
+      }
+    ]
+  },
+  {
+    "id": "card_54",
+    "word": "coexistence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "共存"
+      }
+    ]
+  },
+  {
+    "id": "card_55",
+    "word": "cooperation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "合作"
+      }
+    ]
+  },
+  {
+    "id": "card_56",
+    "word": "ideological",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "思想上的"
+      }
+    ],
+    "ipa": "[ˌaɪdiəˈlɑdʒɪkəl]"
+  },
+  {
+    "id": "card_57",
+    "word": "infrequent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不经常发生的"
+      }
+    ]
+  },
+  {
+    "id": "card_58",
+    "word": "substance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "物质"
+      }
+    ]
+  },
+  {
+    "id": "card_59",
+    "word": "hurriedly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "匆忙地"
+      }
+    ],
+    "ipa": "[ˈhɜridlɪ]"
+  },
+  {
+    "id": "card_60",
+    "word": "blossom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "成功发展"
+      }
+    ],
+    "ipa": "[ˈblɑːsəm]",
+    "synonyms": [
+      {
+        "word": "flourish",
+        "ipa": "[ˈflɜːrɪʃ]",
+        "pos": "vi.",
+        "cn": "繁荣，兴旺；茁壮成长"
+      }
+    ]
+  },
+  {
+    "id": "card_61",
+    "word": "imaginable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "可想象的"
+      }
+    ],
+    "ipa": "[ɪˈmædʒənəbəl]"
+  },
+  {
+    "id": "card_62",
+    "word": "advancement",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "发展"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "development",
+        "pos": "n.",
+        "cn": "发展；开发"
+      }
+    ]
+  },
+  {
+    "id": "card_63",
+    "word": "with the advancement/development of",
+    "displayWord": "with the advancement/development of",
+    "type": "sentence",
+    "fullText": "with the advancement/development of",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "with the advancement/development of",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_64",
+    "word": "numerous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "许多的"
+      }
+    ],
+    "ipa": "[ˈnuːmərəs]",
+    "synonyms": [
+      {
+        "word": "many"
+      }
+    ]
+  },
+  {
+    "id": "card_65",
+    "word": "preferably",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "最好是"
+      }
+    ],
+    "ipa": "[ˈprɛfərəblɪ]"
+  },
+  {
+    "id": "card_66",
+    "word": "crystallize",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使明确"
+      }
+    ],
+    "ipa": "[ˈkrɪstəˌlaɪz]"
+  },
+  {
+    "id": "card_67",
+    "word": "crystal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "结晶，晶体; 水晶（玻璃）；钻石"
+      }
+    ],
+    "ipa": "[ˈkrɪstl]"
+  },
+  {
+    "id": "card_68",
+    "word": "It is clear/crystal-clear that...",
+    "displayWord": "It is clear/crystal-clear that...",
+    "type": "sentence",
+    "fullText": "It is clear/crystal-clear that... 如钻石般清晰",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "It is clear/crystal-clear that...",
+        "cn": "如钻石般清晰"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_69",
+    "word": "harden",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使坚固"
+      }
+    ]
+  },
+  {
+    "id": "card_70",
+    "word": "incorporate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "将...包括在内"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "include"
+      }
+    ]
+  },
+  {
+    "id": "card_71",
+    "word": "incorporate sth. into sth.",
+    "displayWord": "incorporate sth. into sth.",
+    "type": "sentence",
+    "fullText": "incorporate sth. into sth.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "incorporate sth. into sth.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_72",
+    "word": "commemorate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "纪念"
+      }
+    ],
+    "ipa": "[kəˈmeməreɪt]"
+  },
+  {
+    "id": "card_73",
+    "word": "nutrient",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "养分"
+      }
+    ],
+    "ipa": "[ˈnuːtriənt]"
+  },
+  {
+    "id": "card_74",
+    "word": "breathe",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "呼吸"
+      }
+    ],
+    "ipa": "[briːð]"
+  },
+  {
+    "id": "card_75",
+    "word": "breath",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "呼吸"
+      }
+    ],
+    "ipa": "[breθ]"
+  },
+  {
+    "id": "card_76",
+    "word": "take a deep breath",
+    "displayWord": "take a deep breath",
+    "type": "sentence",
+    "fullText": "take a deep breath 深呼吸",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "take a deep breath",
+        "cn": "深呼吸"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_77",
+    "word": "sew",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "缝"
+      }
+    ],
+    "ipa": "[soʊ]"
+  },
+  {
+    "id": "card_78",
+    "word": "reproductive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "生殖的"
+      }
+    ],
+    "ipa": "[ˌriprəˈdʌktɪv]"
+  },
+  {
+    "id": "card_79",
+    "word": "intrinsically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "本质的"
+      }
+    ],
+    "ipa": "[ɪnˈtrɪnsɪklɪ]"
+  },
+  {
+    "id": "card_80",
+    "word": "mobilize",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "鼓动"
+      }
+    ],
+    "ipa": "[ˈmoʊbəlaɪz]"
+  },
+  {
+    "id": "card_81",
+    "word": "disposable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "一次性的"
+      }
+    ],
+    "ipa": "[dɪˈspoʊzəbl]"
+  },
+  {
+    "id": "card_82",
+    "word": "despise",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "鄙视"
+      }
+    ],
+    "ipa": "[dɪˈspaɪz]"
+  },
+  {
+    "id": "card_83",
+    "word": "reserve",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "保留；预定"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "...保护区；...储备量"
+      }
+    ]
+  },
+  {
+    "id": "card_84",
+    "word": "rescale",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "重新调节"
+      }
+    ],
+    "ipa": "[ri'skeɪl]"
+  },
+  {
+    "id": "card_85",
+    "word": "hindrance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "阻碍，妨碍; 障碍物"
+      }
+    ],
+    "ipa": "[ˈhɪndrəns]"
+  },
+  {
+    "id": "card_86",
+    "word": "resemblance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "相似，形似; 外表，外观"
+      }
+    ],
+    "ipa": "[rɪˈzembləns]"
+  }
+]

@@ -1,0 +1,1786 @@
+[
+  {
+    "id": "card_0",
+    "word": "biological",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "与生命过程有关的"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "biologically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "在生物学上"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "biology",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "生物学"
+      }
+    ],
+    "ipa": "[baɪˈɑːlədʒi]"
+  },
+  {
+    "id": "card_3",
+    "word": "biologist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "生物学家"
+      }
+    ]
+  },
+  {
+    "id": "card_4",
+    "word": "biotic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "生物的"
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "biotic community",
+    "displayWord": "biotic community",
+    "type": "sentence",
+    "fullText": "biotic community 生物群落",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "biotic community",
+        "cn": "生物群落"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_6",
+    "word": "subtle",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "微妙的；巧妙的"
+      }
+    ],
+    "ipa": "[ˈsʌtl]"
+  },
+  {
+    "id": "card_7",
+    "word": "subtle feeling",
+    "displayWord": "subtle feeling",
+    "type": "sentence",
+    "fullText": "subtle feeling",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "subtle feeling",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_8",
+    "word": "delicate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "需要谨慎处理的；微妙的；脆弱的"
+      }
+    ],
+    "ipa": "[ˈdelɪkət]"
+  },
+  {
+    "id": "card_9",
+    "word": "fragile",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "脆弱的"
+      }
+    ],
+    "ipa": "[ˈfrædʒl]"
+  },
+  {
+    "id": "card_10",
+    "word": "Delicate things, like a flower, a necklace, or som...",
+    "displayWord": "<strong>Delicate</strong> things, like a flower, a necklace, or someone's feelings are fragile, easily broken, and often quite beautiful.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} things, like a flower, a necklace, or someone's feelings are fragile, easily broken, and often quite beautiful.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Delicate things, like a flower, a necklace, or someone's feelings are fragile, easily broken, and often quite beautiful.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_11",
+    "word": "In its early days the U.S. was confronted with del...",
+    "displayWord": "In its early days the U.S. was confronted with <strong>delicate</strong> situations.",
+    "type": "sentence",
+    "fullText": "In its early days the U.S. was confronted with {{BOLD:0}} situations.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "In its early days the U.S. was confronted with delicate situations.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_12",
+    "word": "vulnerable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "脆弱的；易受伤害的"
+      }
+    ],
+    "ipa": "[ˈvʌlnərəbl]"
+  },
+  {
+    "id": "card_13",
+    "word": "master",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "掌握，精通"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "大师"
+      }
+    ]
+  },
+  {
+    "id": "card_14",
+    "word": "master's degree",
+    "displayWord": "master's degree",
+    "type": "sentence",
+    "fullText": "master's degree 硕士学位",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "master's degree",
+        "cn": "硕士学位"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_15",
+    "word": "masterpiece",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "杰作"
+      }
+    ],
+    "ipa": "[ˈmæstərpiːs]"
+  },
+  {
+    "id": "card_16",
+    "word": "bachelor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "学士"
+      }
+    ]
+  },
+  {
+    "id": "card_17",
+    "word": "bachelor's degree",
+    "displayWord": "bachelor's degree",
+    "type": "sentence",
+    "fullText": "bachelor's degree 学士学位",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "bachelor's degree",
+        "cn": "学士学位"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_18",
+    "word": "doctoral",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "博士（学位）的"
+      }
+    ],
+    "ipa": "[ˈdɑktərəl]"
+  },
+  {
+    "id": "card_19",
+    "word": "doctoral degree",
+    "displayWord": "doctoral degree",
+    "type": "sentence",
+    "fullText": "doctoral degree 博士学位",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "doctoral degree",
+        "cn": "博士学位"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_20",
+    "word": "sum",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "总结"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "金额"
+      }
+    ],
+    "ipa": "[sʌm]"
+  },
+  {
+    "id": "card_21",
+    "word": "to sum up",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "to sum up",
+        "cn": "总之"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "in summary"
+      }
+    ]
+  },
+  {
+    "id": "card_22",
+    "word": "sum up",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "sum up",
+        "cn": "总结，概括"
+      }
+    ]
+  },
+  {
+    "id": "card_23",
+    "word": "lotteries",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "彩票"
+      }
+    ],
+    "ipa": "[ˈlɑːtəri]"
+  },
+  {
+    "id": "card_24",
+    "word": "This text mainly discusses how to spend <ins>large...",
+    "displayWord": "This text mainly discusses how to spend <ins>large <strong>sums</strong> of money<ins> won in lotteries.",
+    "type": "sentence",
+    "fullText": "This text mainly discusses how to spend <ins>large {{BOLD:0}} of money(大量金钱)<ins> won in lotteries.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "This text mainly discusses how to spend <ins>large sums of money<ins> won in lotteries.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_25",
+    "word": "summarize",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "总结；概述"
+      }
+    ],
+    "ipa": "[ˈsʌməraɪz]"
+  },
+  {
+    "id": "card_26",
+    "word": "convert",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "转变"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "change"
+      }
+    ]
+  },
+  {
+    "id": "card_27",
+    "word": "-vert- == -verse-",
+    "displayWord": "-vert- == -verse-",
+    "type": "sentence",
+    "fullText": "-vert- == -verse- 转",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "-vert- == -verse-",
+        "cn": "转"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_28",
+    "word": "conversion",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "转变，变换"
+      }
+    ]
+  },
+  {
+    "id": "card_29",
+    "word": "divert",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "改变（资金、材料等）的用途；使转向；转移（注意力）"
+      }
+    ],
+    "ipa": "[daɪˈvɜːrt]"
+  },
+  {
+    "id": "card_30",
+    "word": "divert your attention",
+    "displayWord": "divert your attention",
+    "type": "sentence",
+    "fullText": "divert your attention 转移注意力",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "divert your attention",
+        "cn": "转移注意力"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_31",
+    "word": "diversion",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "转向，转移；转移注意力的事物"
+      }
+    ],
+    "ipa": "[daɪˈvɜːrʒn]"
+  },
+  {
+    "id": "card_32",
+    "word": "invert",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使颠倒，倒置"
+      }
+    ]
+  },
+  {
+    "id": "card_33",
+    "word": "possess",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "拥有"
+      }
+    ],
+    "ipa": "[pəˈzes]"
+  },
+  {
+    "id": "card_34",
+    "word": "Fashion you can buy, but style you possess.",
+    "displayWord": "Fashion you can buy, but style you <strong>possess</strong>.",
+    "type": "sentence",
+    "fullText": "Fashion you can buy, but style you {{BOLD:0}}. 时尚可以购买，风格却属于你自己",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Fashion you can buy, but style you possess.",
+        "cn": "时尚可以购买，风格却属于你自己"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_35",
+    "word": "To possess something is to have or own it. You can...",
+    "displayWord": "To <strong>possess</strong> something is to <strong>have or own</strong> it. You can <strong>possess</strong> a physical object, you can <strong>possess</strong> a particular quality or skill, or you can <strong>possess</strong> control or influence over someone.",
+    "type": "sentence",
+    "fullText": "To {{BOLD:0}} something is to {{BOLD:1}} it. You can {{BOLD:2}} a physical object, you can {{BOLD:3}} a particular quality or skill, or you can {{BOLD:4}} control or influence over someone.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "To possess something is to have or own it. You can possess a physical object, you can possess a particular quality or skill, or you can possess control or influence over someone.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_37",
+    "word": "confronting us",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "confronting us",
+        "cn": "是[现在分词短语，作后置定语](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md#%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BF%AE%E9%A5%B0%E5%90%8D%E8%AF%8D%E4%BD%9C%E5%AE%9A%E8%AF%AD)，修饰 problems"
+      }
+    ]
+  },
+  {
+    "id": "card_36",
+    "word": "We must possess a positive attitude towards the pr...",
+    "displayWord": "We must <strong>possess</strong> a positive attitude towards the problems confronting us.",
+    "type": "sentence",
+    "fullText": "We must {{BOLD:0}} a positive attitude towards the problems confronting us.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "We must possess a positive attitude towards the problems confronting us.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_38",
+    "word": "possession",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "拥有；财物"
+      }
+    ],
+    "ipa": "[pəˈzeʃn]"
+  },
+  {
+    "id": "card_39",
+    "word": "fortune",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "大笔的钱（可数）"
+      }
+    ]
+  },
+  {
+    "id": "card_41",
+    "word": "It is a truth universally acknowledged",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "It is a truth universally acknowledged",
+        "cn": "众所周知"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "as we all know"
+      }
+    ]
+  },
+  {
+    "id": "card_40",
+    "word": "It is a truth universally acknowledged, that a sin...",
+    "displayWord": "It is a truth universally acknowledged, that a single manin <strong>possession</strong> of a good fortune, must be in want of a wife.",
+    "type": "sentence",
+    "fullText": "It is a truth universally acknowledged, that a single manin {{BOLD:0}} of a good fortune, must be in want of a wife.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "It is a truth universally acknowledged, that a single manin possession of a good fortune, must be in want of a wife.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "as we all know"
+      }
+    ]
+  },
+  {
+    "id": "card_42",
+    "word": "pursue",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "追求"
+      }
+    ],
+    "ipa": "[pərˈsuː]"
+  },
+  {
+    "id": "card_43",
+    "word": "pursue your dream",
+    "displayWord": "pursue your dream",
+    "type": "sentence",
+    "fullText": "pursue your dream 追求梦想",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "pursue your dream",
+        "cn": "追求梦想"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_44",
+    "word": "pursuit",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "追求"
+      }
+    ],
+    "ipa": "[pərˈsuːt]"
+  },
+  {
+    "id": "card_45",
+    "word": "in pursuit of sth.",
+    "displayWord": "in pursuit of sth.",
+    "type": "sentence",
+    "fullText": "in pursuit of sth. 为了追求某物；追寻；谋求",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "in pursuit of sth.",
+        "cn": "为了追求某物；追寻；谋求"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_46",
+    "word": "quest",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "探索，追求"
+      }
+    ]
+  },
+  {
+    "id": "card_47",
+    "word": "quest for sth.",
+    "displayWord": "quest for sth.",
+    "type": "sentence",
+    "fullText": "quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "quest for sth.",
+        "cn": "对某物的探索/追求/寻找（通常更宏大、艰难、长期）"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_48",
+    "word": "commonalities",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "共性"
+      }
+    ],
+    "ipa": "[ˌkɑməˈnælɪti]"
+  },
+  {
+    "id": "card_49",
+    "word": "In some ways, this quest for commonalities defines...",
+    "displayWord": "In some ways, this <strong>quest</strong> for commonalities defines science.",
+    "type": "sentence",
+    "fullText": "In some ways, this {{BOLD:0}} for commonalities defines science.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "In some ways, this quest for commonalities defines science.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_51",
+    "word": "in the quest for",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "in the quest for",
+        "cn": "在追求...的过程中/为了...而努力/为了寻求..."
+      }
+    ]
+  },
+  {
+    "id": "card_50",
+    "word": "It was to ruin lives in the quest for circulation ...",
+    "displayWord": "It was to ruin lives in the <strong>quest</strong> for circulation and impact.",
+    "type": "sentence",
+    "fullText": "It was to ruin lives in the {{BOLD:0}} for circulation and impact.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "It was to ruin lives in the quest for circulation and impact.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_52",
+    "word": "appreciate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "欣赏；感激；理解"
+      }
+    ]
+  },
+  {
+    "id": "card_53",
+    "word": "I appreciate the efforts you will make to help me ...",
+    "displayWord": "I <strong>appreciate</strong> the efforts you will make to help me find the ideal candidate and I look forward to hearing form you as soon as possible.",
+    "type": "sentence",
+    "fullText": "I {{BOLD:0}} the efforts you will make to help me find the ideal candidate and I look forward to hearing form you as soon as possible.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I appreciate the efforts you will make to help me find the ideal candidate and I look forward to hearing form you as soon as possible.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_54",
+    "word": "appreciation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "欣赏；理解"
+      }
+    ]
+  },
+  {
+    "id": "card_55",
+    "word": "appreciative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "欣赏的"
+      }
+    ]
+  },
+  {
+    "id": "card_56",
+    "word": "gratitude",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "感激"
+      }
+    ]
+  },
+  {
+    "id": "card_57",
+    "word": "initial",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "最初的"
+      }
+    ]
+  },
+  {
+    "id": "card_58",
+    "word": "drift",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "漂泊; 流动; 慢慢变化"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "漂移，偏移; 趋势; 要点"
+      }
+    ],
+    "ipa": "[drɪft]"
+  },
+  {
+    "id": "card_59",
+    "word": "academic drift",
+    "displayWord": "academic drift",
+    "type": "sentence",
+    "fullText": "academic drift 学海漂泊",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "academic drift",
+        "cn": "学海漂泊"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_60",
+    "word": "initially",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "开始，最初"
+      }
+    ]
+  },
+  {
+    "id": "card_61",
+    "word": "initiate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "发起"
+      }
+    ],
+    "ipa": "[ɪˈnɪʃieɪt]"
+  },
+  {
+    "id": "card_62",
+    "word": "initiation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（常包含特殊仪式的）入会"
+      }
+    ]
+  },
+  {
+    "id": "card_63",
+    "word": "initiative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "倡议；新方案；主动性；主动权；积极性；计划"
+      }
+    ],
+    "ipa": "[ɪˈnɪʃətɪv]",
+    "synonyms": [
+      {
+        "word": "plan("
+      },
+      {
+        "word": "willingness(抽象)",
+        "pos": "n.",
+        "cn": "愿意; 乐意"
+      }
+    ]
+  },
+  {
+    "id": "card_65",
+    "word": "is all about",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "is all about",
+        "cn": "本质就是.../说到底就是..."
+      }
+    ]
+  },
+  {
+    "id": "card_66",
+    "word": "taking charge",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "taking charge",
+        "cn": "负责；掌控局面；主动承担责任"
+      }
+    ]
+  },
+  {
+    "id": "card_64",
+    "word": "Initiative is all about taking charge.",
+    "displayWord": "<strong>Initiative</strong> is all about taking charge.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} is all about taking charge.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Initiative is all about taking charge.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_67",
+    "word": "An initiative is the first in the series of action...",
+    "displayWord": "An <strong>initiative</strong> is the <strong>first</strong> in the series of actions.",
+    "type": "sentence",
+    "fullText": "An {{BOLD:0}} is the {{BOLD:1}} in the series of actions.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "An initiative is the first in the series of actions.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_68",
+    "word": "Initiative can also mean a personal quality that s...",
+    "displayWord": "<strong>Initiative</strong> can also mean <strong>a personal quality</strong> that show a <strong>willingness</strong> to get things done and take responsibility.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} can also mean {{BOLD:1}} that show a {{BOLD:2}} to get things done and take responsibility.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Initiative can also mean a personal quality that show a willingness to get things done and take responsibility.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_69",
+    "word": "preliminary",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "初步的"
+      }
+    ],
+    "ipa": "[prɪˈlɪmɪneri]"
+  },
+  {
+    "id": "card_70",
+    "word": "Its lawmakers gave preliminary approval last week ...",
+    "displayWord": "Its lawmakers gave <strong>preliminary</strong> approval last week to a law.",
+    "type": "sentence",
+    "fullText": "Its lawmakers gave {{BOLD:0}} approval last week to a law.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Its lawmakers gave preliminary approval last week to a law.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_71",
+    "word": "innocent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "天真无邪的；无罪的；无恶意的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "无辜者"
+      }
+    ],
+    "ipa": "[ˈɪnəsnt]"
+  },
+  {
+    "id": "card_72",
+    "word": "He insisted that he was innocent.",
+    "displayWord": "He insisted that he was <strong>innocent</strong>.",
+    "type": "sentence",
+    "fullText": "He insisted that he was {{BOLD:0}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "He insisted that he was innocent.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_73",
+    "word": "innocence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "天真"
+      }
+    ]
+  },
+  {
+    "id": "card_74",
+    "word": "forgiveness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "宽恕"
+      }
+    ]
+  },
+  {
+    "id": "card_75",
+    "word": "punishment",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "惩罚"
+      }
+    ],
+    "ipa": "[ˈpʌnɪʃmənt]"
+  },
+  {
+    "id": "card_76",
+    "word": "penalty",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "惩罚；刑罚"
+      }
+    ],
+    "ipa": "[ˈpenəlti]"
+  },
+  {
+    "id": "card_77",
+    "word": "imprisonment",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "关押，监禁"
+      }
+    ],
+    "ipa": "[ɪmˈprɪznmənt]"
+  },
+  {
+    "id": "card_78",
+    "word": "integrate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使融入"
+      }
+    ],
+    "ipa": "[ˈɪntɪɡreɪt]"
+  },
+  {
+    "id": "card_79",
+    "word": "disintegrate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "瓦解"
+      }
+    ]
+  },
+  {
+    "id": "card_80",
+    "word": "perish",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "死亡"
+      }
+    ],
+    "ipa": "[ˈperɪʃ]"
+  },
+  {
+    "id": "card_81",
+    "word": "Death is normal; we are genetically programmed to ...",
+    "displayWord": "Death is normal; we are genetically programmed to <strong>disintegrate</strong> and perish, even under ideal conditions.",
+    "type": "sentence",
+    "fullText": "Death is normal; we are genetically programmed to {{BOLD:0}} and perish, even under ideal conditions.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Death is normal; we are genetically programmed to disintegrate and perish, even under ideal conditions.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_82",
+    "word": "disintegration",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "瓦解；解体"
+      }
+    ]
+  },
+  {
+    "id": "card_83",
+    "word": "stuck",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "动不了的"
+      }
+    ],
+    "ipa": "[stʌk]"
+  },
+  {
+    "id": "card_85",
+    "word": "save A from B",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "save A from B",
+        "cn": "使A免于B/拯救A不至于B"
+      }
+    ]
+  },
+  {
+    "id": "card_84",
+    "word": "Yet the debate about how to save Europe's single c...",
+    "displayWord": "Yet the debate about how to save Europe's single currency from <strong>disintegration</strong> is stuck.",
+    "type": "sentence",
+    "fullText": "Yet the debate about how to save Europe's single currency from {{BOLD:0}} is stuck.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Yet the debate about how to save Europe's single currency from disintegration is stuck.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_86",
+    "word": "integrity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "完整；正直；诚实"
+      }
+    ],
+    "ipa": "[ɪnˈteɡrəti]",
+    "synonyms": [
+      {
+        "word": "righteousness",
+        "ipa": "['raɪtʃəsnəs]",
+        "pos": "n.",
+        "cn": "正直; 正当; 正义"
+      }
+    ]
+  },
+  {
+    "id": "card_87",
+    "word": "upright",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "笔直的；立式的"
+      }
+    ]
+  },
+  {
+    "id": "card_88",
+    "word": "monarch",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "君主"
+      }
+    ],
+    "ipa": "[ˈmɑːnərk]"
+  },
+  {
+    "id": "card_89",
+    "word": "monarchy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "君主政体"
+      }
+    ],
+    "ipa": "[ˈmɑːnərki]"
+  },
+  {
+    "id": "card_90",
+    "word": "reign",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "统治"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "君主统治时期"
+      }
+    ],
+    "ipa": "[reɪn]"
+  },
+  {
+    "id": "card_92",
+    "word": "rule from/rule over",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "rule from/rule over",
+        "cn": "统治某个地方/人民"
+      }
+    ]
+  },
+  {
+    "id": "card_91",
+    "word": "Rain falls from above, and people who reign rule f...",
+    "displayWord": "Rain falls from above, and people who <strong>reign</strong> rule from a position above others.",
+    "type": "sentence",
+    "fullText": "Rain falls from above, and people who {{BOLD:0}} rule from a position above others.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Rain falls from above, and people who reign rule from a position above others.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_93",
+    "word": "He used to reign over popular music, always toppin...",
+    "displayWord": "He used to <strong>reign</strong> over popular music, always topping the charts.",
+    "type": "sentence",
+    "fullText": "He used to {{BOLD:0}} over popular music, always topping the charts.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "He used to reign over popular music, always topping the charts.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_94",
+    "word": "astronomers",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "天文学家"
+      }
+    ],
+    "ipa": "[əˈstrɑːnəmər]"
+  },
+  {
+    "id": "card_95",
+    "word": "reigning monarch",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "reigning monarch",
+        "cn": "统治地位的君主"
+      }
+    ]
+  },
+  {
+    "id": "card_96",
+    "word": "\"The ancient Hawaiians were astronomers\", wrote Qu...",
+    "displayWord": "\"The ancient Hawaiians were astronomers\", wrote Queen Liliuokalani, Hawaii's last reigning monarch, in 1987.",
+    "type": "sentence",
+    "fullText": "\"The ancient Hawaiians were astronomers\", wrote Queen Liliuokalani, Hawaii's last reigning monarch(统治地位的君主), in 1987.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "\"The ancient Hawaiians were astronomers\", wrote Queen Liliuokalani, Hawaii's last reigning monarch, in 1987.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_97",
+    "word": "throne",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "王座"
+      }
+    ],
+    "ipa": "[θroʊn]"
+  },
+  {
+    "id": "card_98",
+    "word": "sovereign",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "有主权的"
+      }
+    ],
+    "ipa": "[ˈsɑːvrɪn]"
+  },
+  {
+    "id": "card_99",
+    "word": "...a painful reminder of the occupation of what wa...",
+    "displayWord": "...a painful reminder of the occupation of what was once a <strong>sovereign</strong> nation. ...",
+    "type": "sentence",
+    "fullText": "...a painful reminder of the occupation of what was once a {{BOLD:0}} nation. ...这是对那个曾经主权独立的国家如今遭受占领的惨痛提醒",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...a painful reminder of the occupation of what was once a sovereign nation. ...",
+        "cn": "这是对那个曾经主权独立的国家如今遭受占领的惨痛提醒"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_100",
+    "word": "the argument goes",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "the argument goes",
+        "cn": "有说法认为"
+      }
+    ]
+  },
+  {
+    "id": "card_101",
+    "word": "A move back to self-sufficiency, the argument goes...",
+    "displayWord": "A move back to self-sufficiency, the argument goes, would boost the farming industry, political <strong>sovereignty</strong> and even the nation's health.",
+    "type": "sentence",
+    "fullText": "A move back to self-sufficiency, the argument goes(有说法认为), would boost the farming industry, political {{BOLD:0}} and even the nation's health.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "A move back to self-sufficiency, the argument goes, would boost the farming industry, political sovereignty and even the nation's health.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_102",
+    "word": "monitor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "监控；监听"
+      }
+    ]
+  },
+  {
+    "id": "card_103",
+    "word": "surveillance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "监视"
+      }
+    ],
+    "ipa": "[sɜːrˈveɪləns]"
+  },
+  {
+    "id": "card_104",
+    "word": "survey",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "调查"
+      }
+    ]
+  },
+  {
+    "id": "card_105",
+    "word": "operate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "经营"
+      }
+    ]
+  },
+  {
+    "id": "card_106",
+    "word": "operation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（工商业）活动"
+      }
+    ]
+  },
+  {
+    "id": "card_107",
+    "word": "operational",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "运营的；操作的"
+      }
+    ]
+  },
+  {
+    "id": "card_108",
+    "word": "operational costs",
+    "displayWord": "operational costs",
+    "type": "sentence",
+    "fullText": "operational costs 运营成本",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "operational costs",
+        "cn": "运营成本"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_109",
+    "word": "operative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（系统、服务）起作用的"
+      }
+    ]
+  },
+  {
+    "id": "card_110",
+    "word": "operator",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "经营者"
+      }
+    ]
+  },
+  {
+    "id": "card_111",
+    "word": "sponsor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "发起；赞助"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "倡议者"
+      }
+    ],
+    "ipa": "[ˈspɑːnsər]"
+  },
+  {
+    "id": "card_112",
+    "word": "sponsorship",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "赞助"
+      }
+    ]
+  },
+  {
+    "id": "card_113",
+    "word": "limit sponsorship of sports events",
+    "displayWord": "limit <strong>sponsorship</strong> of sports events",
+    "type": "sentence",
+    "fullText": "limit {{BOLD:0}} of sports events",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "limit sponsorship of sports events",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_114",
+    "word": "mere",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "仅仅的"
+      }
+    ]
+  },
+  {
+    "id": "card_115",
+    "word": "Mere curiosity adds wings to every step.",
+    "displayWord": "<strong>Mere</strong> curiosity adds wings to every step.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} curiosity adds wings to every step. 单纯的好奇心，会让每一步都变得轻快有力",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Mere curiosity adds wings to every step.",
+        "cn": "单纯的好奇心，会让每一步都变得轻快有力"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_116",
+    "word": "merely",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "仅仅"
+      }
+    ]
+  },
+  {
+    "id": "card_117",
+    "word": "bare",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "刚刚够的"
+      }
+    ],
+    "ipa": "[ber]"
+  },
+  {
+    "id": "card_118",
+    "word": "barely",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "几乎不"
+      }
+    ]
+  },
+  {
+    "id": "card_119",
+    "word": "We barely talk.",
+    "displayWord": "We <strong>barely</strong> talk.",
+    "type": "sentence",
+    "fullText": "We {{BOLD:0}} talk.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "We barely talk.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_120",
+    "word": "...there was so many people in a much worse state,...",
+    "displayWord": "...there was so many people in a much worse state, with <strong>barely</strong> any money to spend on food...",
+    "type": "sentence",
+    "fullText": "...there was so many people in a much worse state, with {{BOLD:0}} any money to spend on food...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...there was so many people in a much worse state, with barely any money to spend on food...",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_121",
+    "word": "remembrance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "回想，回忆; 纪念品; 记忆，记忆力"
+      }
+    ],
+    "ipa": "[rɪˈmɛmbrəns]"
+  },
+  {
+    "id": "card_122",
+    "word": "imprisonment",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "关押，监禁"
+      }
+    ],
+    "ipa": "[ɪmˈprɪznmənt]"
+  },
+  {
+    "id": "card_123",
+    "word": "postponement",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "延期，推迟; 延期的事"
+      }
+    ],
+    "ipa": "[pə'spoʊnmənt]"
+  },
+  {
+    "id": "card_124",
+    "word": "promotion",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "晋升；促销"
+      }
+    ],
+    "ipa": "[prəˈmoʊʃn]"
+  },
+  {
+    "id": "card_125",
+    "word": "complication",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "使复杂化的难题（或困难）; 〈医〉并发症"
+      }
+    ],
+    "ipa": "[ˌkɑːmplɪˈkeɪʃn]"
+  },
+  {
+    "id": "card_126",
+    "word": "diligent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "勤奋的，勤勉的"
+      }
+    ],
+    "ipa": "[ˈdɪlɪdʒənt]"
+  },
+  {
+    "id": "card_127",
+    "word": "inappropriateness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "不相称; 不适合"
+      }
+    ],
+    "ipa": "[ˌɪnəproʊpriətnəs]",
+    "synonyms": [
+      {
+        "word": "improper",
+        "ipa": "[ɪmˈprɑpə(r)]",
+        "pos": "adj.",
+        "cn": "不合适的，非正常的; 不正确的; 不正派的，不合礼仪的; 不道德的"
+      }
+    ]
+  },
+  {
+    "id": "card_128",
+    "word": "equivalence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "相等，对等"
+      }
+    ],
+    "ipa": "[ɪˈkwɪvələns]"
+  }
+]

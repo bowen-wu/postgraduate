@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "card_0",
+    "word": "misapply",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "误用"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "insincere",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不诚恳的"
+      }
+    ],
+    "ipa": "[ˌɪnsɪnˈsɪr]"
+  },
+  {
+    "id": "card_2",
+    "word": "suspension",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "暂停"
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "admirable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "令人钦佩的"
+      }
+    ],
+    "ipa": "[ˈædmərəbl]"
+  },
+  {
+    "id": "card_4",
+    "word": "admiration",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "钦佩"
+      }
+    ],
+    "ipa": "[ˌædməˈreɪʃn]"
+  },
+  {
+    "id": "card_6",
+    "word": "ignorance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "无知，愚昧"
+      }
+    ],
+    "ipa": "[ˈɪɡnərəns]"
+  },
+  {
+    "id": "card_5",
+    "word": "Ignorance is the mother of admiration.",
+    "displayWord": "Ignorance is the mother of <strong>admiration</strong>.",
+    "type": "sentence",
+    "fullText": "Ignorance is the mother of {{BOLD:0}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Ignorance is the mother of admiration.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_7",
+    "word": "outsize",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "较大的"
+      }
+    ]
+  },
+  {
+    "id": "card_8",
+    "word": "oversize",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "特别大的"
+      }
+    ]
+  },
+  {
+    "id": "card_9",
+    "word": "coder",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "编程人员"
+      }
+    ]
+  },
+  {
+    "id": "card_10",
+    "word": "wasteful",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "挥霍的"
+      }
+    ]
+  },
+  {
+    "id": "card_11",
+    "word": "rigorous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "严格的"
+      }
+    ],
+    "ipa": "[ˈrɪɡərəs]"
+  },
+  {
+    "id": "card_12",
+    "word": "strict",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "严格的"
+      }
+    ],
+    "ipa": "[strɪkt]"
+  },
+  {
+    "id": "card_13",
+    "word": "contrive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "谋划"
+      }
+    ],
+    "ipa": "[kənˈtraɪv]",
+    "synonyms": [
+      {
+        "word": "plan",
+        "items": [
+          {
+            "type": "def",
+            "en": "v.",
+            "cn": "计划"
+          },
+          {
+            "type": "def",
+            "en": "n.",
+            "cn": "计划"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_14",
+    "word": "contrive to do sth.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "contrive to do sth.",
+        "cn": ""
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "plan to do sth."
+      }
+    ]
+  },
+  {
+    "id": "card_15",
+    "word": "I decided to contrive a meeting between the two of...",
+    "displayWord": "I decided to <strong>contrive</strong> a meeting between the two of them.",
+    "type": "sentence",
+    "fullText": "I decided to {{BOLD:0}} a meeting between the two of them.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I decided to contrive a meeting between the two of them.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_16",
+    "word": "fabulous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "极好的"
+      }
+    ],
+    "ipa": "[ˈfæbjələs]"
+  },
+  {
+    "id": "card_17",
+    "word": "cable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "有线电视"
+      }
+    ]
+  },
+  {
+    "id": "card_18",
+    "word": "bruising",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "艰难的"
+      }
+    ],
+    "ipa": "[ˈbruːzɪŋ]"
+  },
+  {
+    "id": "card_20",
+    "word": "encounter",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "遭遇（尤指令人不快或困难的事）"
+      }
+    ]
+  },
+  {
+    "id": "card_21",
+    "word": "rushed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "匆忙的，贸然的"
+      }
+    ],
+    "ipa": "[rʌʃt]"
+  },
+  {
+    "id": "card_19",
+    "word": "After a bruising encounter with Congress, America'...",
+    "displayWord": "After a <strong>bruising</strong> encounter with Congress, America's Financial Accounting Standards Board rushed through rule changes.",
+    "type": "sentence",
+    "fullText": "After a {{BOLD:0}} encounter with Congress, America's Financial Accounting Standards Board rushed through rule changes. 在与国会激烈交锋之后，美国财务会计准则委员会（FASB）匆匆通过了规则变更",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "After a bruising encounter with Congress, America's Financial Accounting Standards Board rushed through rule changes.",
+        "cn": "在与国会激烈交锋之后，美国财务会计准则委员会（FASB）匆匆通过了规则变更"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_22",
+    "word": "understandably",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "可以理解地"
+      }
+    ]
+  },
+  {
+    "id": "card_23",
+    "word": "absurd",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "荒唐的"
+      }
+    ],
+    "ipa": "[əbˈsɜːrd]"
+  },
+  {
+    "id": "card_24",
+    "word": "numerical",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "数字的"
+      }
+    ],
+    "ipa": "[nuːˈmerɪkl]"
+  },
+  {
+    "id": "card_25",
+    "word": "deliciously",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "非常地"
+      }
+    ],
+    "ipa": "[dɪ'lɪʃəslɪ]"
+  },
+  {
+    "id": "card_26",
+    "word": "inhale",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "吸入（空气，烟雾或气体等）"
+      }
+    ],
+    "ipa": "[ɪnˈheɪl]"
+  },
+  {
+    "id": "card_27",
+    "word": "exhale",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "发散出; 放出，放射; 使蒸发"
+      },
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "呼气; 放出; 发散"
+      }
+    ]
+  },
+  {
+    "id": "card_28",
+    "word": "illegally",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "非法地"
+      }
+    ],
+    "ipa": "[ɪˈliɡəlɪ]"
+  },
+  {
+    "id": "card_29",
+    "word": "preclude  😔",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "阻止"
+      }
+    ],
+    "ipa": "[prɪˈkluːd]"
+  },
+  {
+    "id": "card_30",
+    "word": "preclude sb from doing sth.",
+    "displayWord": "preclude sb from doing sth.",
+    "type": "sentence",
+    "fullText": "preclude sb from doing sth.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "preclude sb from doing sth.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_31",
+    "word": "include",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "包括"
+      }
+    ]
+  },
+  {
+    "id": "card_32",
+    "word": "exclude",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "把...排斥在外；不包括；排除（...的可能性）"
+      }
+    ],
+    "ipa": "[ɪkˈskluːd]"
+  },
+  {
+    "id": "card_33",
+    "word": "ethically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "伦理地，道德地"
+      }
+    ],
+    "ipa": "['eθɪklɪ]"
+  },
+  {
+    "id": "card_34",
+    "word": "ethical crisis",
+    "displayWord": "ethical crisis",
+    "type": "sentence",
+    "fullText": "ethical crisis 伦理危机",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "ethical crisis",
+        "cn": "伦理危机"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_35",
+    "word": "suburban",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "郊区的"
+      }
+    ],
+    "ipa": "[səˈbɜːrbən]"
+  },
+  {
+    "id": "card_36",
+    "word": "urban",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "城市的"
+      }
+    ]
+  },
+  {
+    "id": "card_37",
+    "word": "rural",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "农村的"
+      }
+    ],
+    "ipa": "[ˈrʊrəl]"
+  },
+  {
+    "id": "card_38",
+    "word": "conform",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "遵守"
+      }
+    ]
+  },
+  {
+    "id": "card_39",
+    "word": "conform to/with",
+    "displayWord": "conform to/with",
+    "type": "sentence",
+    "fullText": "conform to/with 遵守",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "conform to/with",
+        "cn": "遵守"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_40",
+    "word": "conformity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "遵守；随大流"
+      }
+    ]
+  },
+  {
+    "id": "card_41",
+    "word": "in conformity with",
+    "displayWord": "in conformity with",
+    "type": "sentence",
+    "fullText": "in conformity with 符合/遵照/与...一致",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "in conformity with",
+        "cn": "符合/遵照/与...一致"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_42",
+    "word": "notify",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "通知"
+      }
+    ]
+  },
+  {
+    "id": "card_43",
+    "word": "aggregation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "整合"
+      }
+    ],
+    "ipa": "[ˌæɡrɪˈɡeʃən]"
+  },
+  {
+    "id": "card_44",
+    "word": "data aggregation",
+    "displayWord": "data aggregation",
+    "type": "sentence",
+    "fullText": "data aggregation 数据整合",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "data aggregation",
+        "cn": "数据整合"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_45",
+    "word": "mediate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "调解"
+      }
+    ],
+    "ipa": "[ˈmiːdieɪt]"
+  },
+  {
+    "id": "card_46",
+    "word": "stance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "立场"
+      }
+    ]
+  },
+  {
+    "id": "card_47",
+    "word": "take a stance (on/toward sth.)",
+    "displayWord": "take a stance (on/toward sth.)",
+    "type": "sentence",
+    "fullText": "take a stance (on/toward sth.) 对...采取立场/表明态度",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "take a stance (on/toward sth.)",
+        "cn": "对...采取立场/表明态度"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_48",
+    "word": "What is the newspaper's stance on the war?",
+    "displayWord": "What is the newspaper's <strong>stance</strong> on the war?",
+    "type": "sentence",
+    "fullText": "What is the newspaper's {{BOLD:0}} on the war?",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "What is the newspaper's stance on the war?",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_49",
+    "word": "unbearable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "无法忍受的"
+      }
+    ],
+    "ipa": "[ʌnˈberəbl]"
+  },
+  {
+    "id": "card_50",
+    "word": "bear",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "忍受，承担"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "熊；体型笨重的人；（股票）卖空者"
+      }
+    ]
+  },
+  {
+    "id": "card_51",
+    "word": "The waiting became almost unbearable.",
+    "displayWord": "The waiting became almost <strong>unbearable</strong>.",
+    "type": "sentence",
+    "fullText": "The waiting became almost {{BOLD:0}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The waiting became almost unbearable.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_52",
+    "word": "implementation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "实践，实施"
+      }
+    ]
+  },
+  {
+    "id": "card_53",
+    "word": "implement",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "实施"
+      }
+    ]
+  },
+  {
+    "id": "card_54",
+    "word": "punch",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "打击"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "重拳击打"
+      }
+    ],
+    "ipa": "[pʌntʃ]"
+  },
+  {
+    "id": "card_55",
+    "word": "unwittingly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "不知情地"
+      }
+    ],
+    "ipa": "[ˌʌnˈwɪtɪŋlɪ]"
+  },
+  {
+    "id": "card_56",
+    "word": "gateway",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "门；方法；通道；途径"
+      }
+    ]
+  },
+  {
+    "id": "card_57",
+    "word": "brutal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "残酷的"
+      }
+    ],
+    "ipa": "[ˈbruːtl]"
+  },
+  {
+    "id": "card_58",
+    "word": "obstruct",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "阻挠"
+      }
+    ],
+    "ipa": "[əbˈstrʌkt]"
+  },
+  {
+    "id": "card_59",
+    "word": "obstruct efforts to",
+    "displayWord": "obstruct efforts to",
+    "type": "sentence",
+    "fullText": "obstruct efforts to 阻碍做...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "obstruct efforts to",
+        "cn": "阻碍做..."
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_60",
+    "word": "unanimous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "一致同意的"
+      }
+    ],
+    "ipa": "[juˈnænɪməs]"
+  },
+  {
+    "id": "card_62",
+    "word": "in a rare unanimous ruling",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "in a rare unanimous ruling",
+        "cn": "在罕见的一致的裁决中"
+      }
+    ]
+  },
+  {
+    "id": "card_63",
+    "word": "verdict",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "裁决"
+      }
+    ],
+    "ipa": "[ˈvɜːrdɪkt]",
+    "synonyms": [
+      {
+        "word": "ruling"
+      },
+      {
+        "word": "decision"
+      }
+    ]
+  },
+  {
+    "id": "card_64",
+    "word": "former",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "以前的；（两者中）前者的；前任的"
+      },
+      {
+        "type": "def",
+        "en": "pron.",
+        "cn": "（两者中的）前者"
+      }
+    ],
+    "ipa": "[ˈfɔːrmər]"
+  },
+  {
+    "id": "card_61",
+    "word": "In a rare unanimous ruling, the US Supreme Court h...",
+    "displayWord": "In a rare <strong>unanimous</strong> ruling, the US Supreme Court has <strong>overturned</strong> the corruption conviction of former Virginia governor, Robert McDonnell.",
+    "type": "sentence",
+    "fullText": "In a rare {{BOLD:0}} ruling, the US Supreme Court has {{BOLD:1}} the corruption conviction of former Virginia governor, Robert McDonnell.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "In a rare unanimous ruling, the US Supreme Court has overturned the corruption conviction of former Virginia governor, Robert McDonnell.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "ruling"
+      },
+      {
+        "word": "decision"
+      }
+    ]
+  },
+  {
+    "id": "card_65",
+    "word": "anonymous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "匿名的"
+      }
+    ],
+    "ipa": "[əˈnɑːnɪməs]"
+  },
+  {
+    "id": "card_66",
+    "word": "The vote was ?anonymous/?unanimous",
+    "displayWord": "The vote was ?anonymous/?unanimous",
+    "type": "sentence",
+    "fullText": "The vote was ?anonymous/?unanimous",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The vote was ?anonymous/?unanimous",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_67",
+    "word": "You can remain ?anonymous/?unanimous if you wish.",
+    "displayWord": "You can remain ?anonymous/?unanimous if you wish.",
+    "type": "sentence",
+    "fullText": "You can remain ?anonymous/?unanimous if you wish.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "You can remain ?anonymous/?unanimous if you wish.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_68",
+    "word": "accessibility",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "可获得性"
+      }
+    ],
+    "ipa": "[əkˌsesə'bɪlətɪ]"
+  },
+  {
+    "id": "card_69",
+    "word": "access",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "访问，存取（计算机信息）; 到达，进入，使用"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "入口，通道; （使用或见到的）机会/权利"
+      }
+    ],
+    "ipa": "[ˈækses]"
+  },
+  {
+    "id": "card_70",
+    "word": "propagate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "传播"
+      }
+    ],
+    "ipa": "[ˈprɑːpəɡeɪt]",
+    "synonyms": [
+      {
+        "word": "spread",
+        "ipa": "[spred]",
+        "items": [
+          {
+            "type": "def",
+            "en": "v.",
+            "cn": "传播；使分布"
+          },
+          {
+            "type": "def",
+            "en": "n.",
+            "cn": "传播"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_71",
+    "word": "propagation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "传播"
+      }
+    ]
+  },
+  {
+    "id": "card_72",
+    "word": "forgery",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "伪造品"
+      }
+    ],
+    "ipa": "[ˈfɔrdʒəri]"
+  },
+  {
+    "id": "card_73",
+    "word": "fake",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "假的"
+      }
+    ]
+  },
+  {
+    "id": "card_74",
+    "word": "controversialist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "好争论者"
+      }
+    ],
+    "ipa": "[ˌkɒntrə'vɜʃəlɪst]"
+  },
+  {
+    "id": "card_75",
+    "word": "controversial",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "引起争论的 😔"
+      }
+    ],
+    "ipa": "[ˌkɑːntrəˈvɜːrʃl]"
+  },
+  {
+    "id": "card_76",
+    "word": "hyperactivity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "极度活跃"
+      }
+    ],
+    "ipa": "[ˌhaɪpəræk'tɪvətɪ]"
+  },
+  {
+    "id": "card_77",
+    "word": "prosperous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "繁荣的"
+      }
+    ],
+    "ipa": "[ˈprɑːspərəs]"
+  },
+  {
+    "id": "card_78",
+    "word": "prosperity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "繁荣，兴旺"
+      }
+    ]
+  },
+  {
+    "id": "card_79",
+    "word": "plaster",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "熟石灰"
+      }
+    ],
+    "ipa": "[ˈplæstər]"
+  },
+  {
+    "id": "card_80",
+    "word": "orderly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "整洁的"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "tidy",
+        "items": [
+          {
+            "type": "def",
+            "en": "v.",
+            "cn": "收拾，整理"
+          },
+          {
+            "type": "def",
+            "en": "adj.",
+            "cn": "整洁的，有条理的; 爱整洁的; 一大笔（钱）的"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_81",
+    "word": "indication",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "迹象"
+      }
+    ],
+    "ipa": "[ˌɪndɪˈkeɪʃn]"
+  },
+  {
+    "id": "card_82",
+    "word": "impairment 😔",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（身体或智力方面的）缺陷，障碍"
+      }
+    ],
+    "ipa": "[ɪmˈpermənt]"
+  },
+  {
+    "id": "card_83",
+    "word": "unauthorized",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "未经许可（或批准的）"
+      }
+    ]
+  },
+  {
+    "id": "card_84",
+    "word": "irritability",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "易怒"
+      }
+    ],
+    "ipa": "[ˌɪrɪtəˈbɪlɪti]"
+  },
+  {
+    "id": "card_85",
+    "word": "irritate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "激怒，惹怒"
+      }
+    ],
+    "ipa": "[ˈɪrɪteɪt]"
+  },
+  {
+    "id": "card_86",
+    "word": "reclaim",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "回收；要回；开垦"
+      }
+    ],
+    "ipa": "[rɪˈkleɪm]"
+  },
+  {
+    "id": "card_87",
+    "word": "sensor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（探测光，热，压力等的）传感器，探测设备"
+      }
+    ],
+    "ipa": "[ˈsensər]"
+  },
+  {
+    "id": "card_88",
+    "word": "sense",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "理智"
+      }
+    ]
+  },
+  {
+    "id": "card_89",
+    "word": "proverb",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "谚语"
+      }
+    ],
+    "ipa": "[ˈprɑːvɜːrb]"
+  },
+  {
+    "id": "card_90",
+    "word": "quote a proverb",
+    "displayWord": "quote a proverb",
+    "type": "sentence",
+    "fullText": "quote a proverb 引用一句谚语",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "quote a proverb",
+        "cn": "引用一句谚语"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_91",
+    "word": "pronouncement",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "声明"
+      }
+    ]
+  },
+  {
+    "id": "card_92",
+    "word": "remedy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "改进；改正"
+      }
+    ],
+    "ipa": "[ˈremədi]"
+  },
+  {
+    "id": "card_93",
+    "word": "need to be remedied",
+    "displayWord": "need to be remedied",
+    "type": "sentence",
+    "fullText": "need to be remedied 需要被纠正/需要得到补救/需要解决",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "need to be remedied",
+        "cn": "需要被纠正/需要得到补救/需要解决"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_94",
+    "word": "dismissal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "解雇"
+      }
+    ],
+    "ipa": "[dɪsˈmɪsəl]"
+  },
+  {
+    "id": "card_96",
+    "word": "pink slip",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "pink slip",
+        "cn": "解雇通知单"
+      }
+    ]
+  },
+  {
+    "id": "card_97",
+    "word": "diagnosis",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "诊断"
+      }
+    ],
+    "ipa": "[ˌdaɪəɡˈnoʊsɪs]"
+  },
+  {
+    "id": "card_98",
+    "word": "spouse",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "配偶"
+      }
+    ],
+    "ipa": "[spaʊs]"
+  },
+  {
+    "id": "card_99",
+    "word": "solidly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "坚固地；结实的"
+      }
+    ],
+    "ipa": "[ˈsɑːlɪdli]"
+  },
+  {
+    "id": "card_100",
+    "word": "reduce",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "减少 -> 沦落到（ 使沦为（不好境地）)"
+      }
+    ],
+    "ipa": "[rɪˈduːs]"
+  },
+  {
+    "id": "card_95",
+    "word": "Now a pink slip, a bad diagnosis, or a disappearin...",
+    "displayWord": "Now a pink slip, a bad diagnosis, or a disappearing spouse can <strong>reduce</strong> a family from solidly middle class to newly poor in a few months.",
+    "type": "sentence",
+    "fullText": "Now a pink slip, a bad diagnosis, or a disappearing spouse can {{BOLD:0}} a family from solidly middle class to newly poor in a few months.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Now a pink slip, a bad diagnosis, or a disappearing spouse can reduce a family from solidly middle class to newly poor in a few months.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_101",
+    "word": "stagnation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "停滞"
+      }
+    ],
+    "ipa": "[stæɡˈneʃən]"
+  },
+  {
+    "id": "card_102",
+    "word": "economic stagnation/recession/depression/slow down",
+    "displayWord": "economic stagnation/recession/depression/slow down",
+    "type": "sentence",
+    "fullText": "economic stagnation/recession/depression/slow down",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "economic stagnation/recession/depression/slow down",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_103",
+    "word": "deepen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "（使）变深"
+      }
+    ]
+  },
+  {
+    "id": "card_104",
+    "word": "abruptly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "突然地"
+      }
+    ],
+    "ipa": "[əˈbrʌptli]"
+  },
+  {
+    "id": "card_105",
+    "word": "imprison",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "监禁；禁锢"
+      }
+    ],
+    "ipa": "[ɪmˈprɪzn]"
+  },
+  {
+    "id": "card_106",
+    "word": "edgy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "锋利的，泼辣的，尖锐的; 神经紧张的，易激动的，急躁的; （画）轮廓过于分明的"
+      }
+    ],
+    "ipa": "[ˈɛdʒi]"
+  },
+  {
+    "id": "card_107",
+    "word": "cozy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（感到）温暖舒适的; 愉快的，亲切的; 轻易得到的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（茶壶）保暖罩"
+      }
+    ],
+    "ipa": "[ˈkoʊzi]",
+    "synonyms": [
+      {
+        "word": "comfortable"
+      }
+    ]
+  }
+]

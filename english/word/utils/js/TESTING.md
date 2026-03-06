@@ -70,6 +70,24 @@ Rules:
    - `*.expected.json`
 2. Keep fixture names task-oriented and readable
 
+### D. Parser golden regression tests
+Target:
+- selected real markdown samples
+- full corpus output stability
+
+Rules:
+1. Golden samples live under `parser/__tests__/golden/`
+2. Sample snapshots protect representative files:
+   - `Unit18-1`
+   - `Unit20-2`
+   - `Unit21-2` (hash-only when source differs)
+   - `019-024`
+   - `073-078`
+   - `103-108`
+   - `109-114`
+3. Full corpus test compares output hashes for all markdown files under `english/word/`
+4. If a source markdown file changes, the matching golden check may skip based on source hash; parser changes must not rely on that skip
+
 ## 5. Bug-Driven Workflow (Mandatory)
 
 For every bug:
@@ -107,7 +125,10 @@ When parser logic intentionally changes:
 2. Regenerate expected output using:
    - `/Users/mozhenghong/bowen/user/postgraduate/postgraduate/english/word/utils/js/parser/__tests__/update-fixtures.mjs`
 3. Review diff in expected JSON manually
-4. Run `npm test`
+4. Regenerate golden baselines when the parser contract intentionally changes:
+   - `/Users/mozhenghong/bowen/user/postgraduate/postgraduate/english/word/utils/js/parser/__tests__/update-golden-baselines.mjs`
+5. Review sample snapshot diff and corpus hash changes manually
+6. Run `npm test`
 
 ## 8. Quality Gates for Merge
 
@@ -139,6 +160,7 @@ When extending `app/`:
 When extending `parser/`:
 1. Add fixture tests first
 2. Keep rule changes explicit and documented
+3. Prefer validating with both fixture tests and golden sample/corpus tests
 
 ## 10. Fast Troubleshooting
 
@@ -146,7 +168,7 @@ If tests fail:
 1. Verify current working directory is `.../english/word/utils/js`
 2. Run `npm test` again
 3. Inspect first failing test only, fix root cause, rerun
-4. For parser failures, inspect fixture diff before code changes
+4. For parser failures, inspect fixture diff or golden sample mismatch before code changes
 
 ## 11. Refactor 1-4 Regression Checklist
 

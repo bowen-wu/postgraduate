@@ -1,0 +1,1824 @@
+[
+  {
+    "id": "card_0",
+    "word": "custom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "习俗；[pl.] 海关；关税"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "flame",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "火焰"
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "the custom of doing sth.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "the custom of doing sth.",
+        "cn": "做某事的传统/习俗"
+      }
+    ]
+  },
+  {
+    "id": "card_4",
+    "word": "go back (some time)",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "go back (some time)",
+        "cn": "追溯到（某个久远的时间）"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "The custom of lighting the Olympic flame goes back...",
+    "displayWord": "The <strong>custom</strong> of lighting the Olympic flame goes back centuries.",
+    "type": "sentence",
+    "fullText": "The {{BOLD:0}} of lighting the Olympic flame goes back centuries.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The custom of lighting the Olympic flame goes back centuries.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_6",
+    "word": "board a ship/plane/aircraft",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "board a ship/plane/aircraft",
+        "cn": "登上（船 / 飞机）进行检查或执法"
+      }
+    ]
+  },
+  {
+    "id": "card_7",
+    "word": "be boarded by sb.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "be boarded by sb.",
+        "cn": "被某人登上并检查（执法语境）"
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "The ship was boarded by customs officials.",
+    "displayWord": "The ship was boarded by <strong>customs</strong> officials.",
+    "type": "sentence",
+    "fullText": "The ship was boarded by {{BOLD:0}} officials.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The ship was boarded by customs officials.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_8",
+    "word": "customer",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "顾客"
+      }
+    ]
+  },
+  {
+    "id": "card_9",
+    "word": "accustom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使习惯于"
+      }
+    ],
+    "ipa": "[əˈkʌstəm]"
+  },
+  {
+    "id": "card_10",
+    "word": "accustomed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "习惯的"
+      }
+    ]
+  },
+  {
+    "id": "card_11",
+    "word": "be accustomed to doing sth.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "be accustomed to doing sth.",
+        "cn": "习惯于做某事"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "be used to doing sth."
+      }
+    ]
+  },
+  {
+    "id": "card_12",
+    "word": "She was a person accustomed to having eight hours'...",
+    "displayWord": "She was a person <strong>accustomed</strong> to having eight hours' sleep a night.",
+    "type": "sentence",
+    "fullText": "She was a person {{BOLD:0}} to having eight hours' sleep a night.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "She was a person accustomed to having eight hours' sleep a night.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_13",
+    "word": "decorate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "装饰"
+      }
+    ]
+  },
+  {
+    "id": "card_14",
+    "word": "be decorated with sth.",
+    "displayWord": "be decorated with sth.",
+    "type": "sentence",
+    "fullText": "be decorated with sth. 被...装饰/点缀",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "be decorated with sth.",
+        "cn": "被...装饰/点缀"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_15",
+    "word": "decoration",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "装饰"
+      }
+    ]
+  },
+  {
+    "id": "card_16",
+    "word": "distant",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（时间或空间上）遥远的"
+      }
+    ]
+  },
+  {
+    "id": "card_17",
+    "word": "distance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "距离"
+      }
+    ]
+  },
+  {
+    "id": "card_18",
+    "word": "remote",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "微小的；偏远的；远程的"
+      }
+    ]
+  },
+  {
+    "id": "card_19",
+    "word": "enroll",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使加入"
+      },
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "注册"
+      }
+    ],
+    "ipa": "[ɪnˈroʊl]"
+  },
+  {
+    "id": "card_20",
+    "word": "Before you enroll in online classes, take a few mi...",
+    "displayWord": "Before you <strong>enroll</strong> in online classes, take a few minutes to interview the school of your choice.",
+    "type": "sentence",
+    "fullText": "Before you {{BOLD:0}} in online classes, take a few minutes to interview the school of your choice.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Before you enroll in online classes, take a few minutes to interview the school of your choice.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_21",
+    "word": "enrollment",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "注册"
+      }
+    ]
+  },
+  {
+    "id": "card_22",
+    "word": "register",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "注册；记录"
+      }
+    ]
+  },
+  {
+    "id": "card_23",
+    "word": "lower the costs of registered providers",
+    "displayWord": "lower the costs of <strong>registered</strong> providers",
+    "type": "sentence",
+    "fullText": "lower the costs of {{BOLD:0}} providers",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "lower the costs of registered providers",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_24",
+    "word": "dense",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "稠密的；（烟雾等）浓重的"
+      }
+    ]
+  },
+  {
+    "id": "card_25",
+    "word": "dense fog",
+    "displayWord": "dense fog",
+    "type": "sentence",
+    "fullText": "dense fog",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "dense fog",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_26",
+    "word": "density",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "密度"
+      }
+    ]
+  },
+  {
+    "id": "card_27",
+    "word": "lower the density",
+    "displayWord": "lower the density",
+    "type": "sentence",
+    "fullText": "lower the density",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "lower the density",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_29",
+    "word": "endeavor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "努力"
+      }
+    ],
+    "ipa": "[ɪnˈdɛvər]"
+  },
+  {
+    "id": "card_30",
+    "word": "endeavor to do",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "endeavor to do",
+        "cn": ""
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "make effort to do"
+      }
+    ]
+  },
+  {
+    "id": "card_28",
+    "word": "California's Forest Carbon Plan endeavors to/make ...",
+    "displayWord": "California's Forest Carbon Plan <strong>endeavors to/make efforts to</strong> reduce the <strong>density</strong> of some of its forests.",
+    "type": "sentence",
+    "fullText": "California's Forest Carbon Plan {{BOLD:0}} reduce the {{BOLD:1}} of some of its forests.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "California's Forest Carbon Plan endeavors to/make efforts to reduce the density of some of its forests.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "make effort to do"
+      }
+    ]
+  },
+  {
+    "id": "card_31",
+    "word": "deliberate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "仔细考虑"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "故意的"
+      }
+    ],
+    "ipa": "[dɪˈlɪbəreɪt]"
+  },
+  {
+    "id": "card_32",
+    "word": "deliberate practice",
+    "displayWord": "deliberate practice",
+    "type": "sentence",
+    "fullText": "deliberate practice",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "deliberate practice",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_33",
+    "word": "deliberation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "深思熟虑；仔细考虑"
+      }
+    ],
+    "ipa": "[dɪˌlɪbəˈreʃən]",
+    "synonyms": [
+      {
+        "word": "thoughtfulness",
+        "ipa": "[ˈθɔtfəlnɪs]",
+        "pos": "n.",
+        "cn": "深思; 熟虑; 体贴; 亲切"
+      }
+    ]
+  },
+  {
+    "id": "card_34",
+    "word": "The process of carefully considering what to do is...",
+    "displayWord": "The process of <strong>carefully considering what to do</strong> is called <strong>deliberation</strong>, like your <strong>deliberation</strong> before making one of the most important decisions in your life.",
+    "type": "sentence",
+    "fullText": "The process of {{BOLD:0}} is called {{BOLD:1}}, like your {{BOLD:2}} before making one of the most important decisions in your life.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The process of carefully considering what to do is called deliberation, like your deliberation before making one of the most important decisions in your life.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_35",
+    "word": "Deliberation focused them on vivid but misleading ...",
+    "displayWord": "<strong>Deliberation</strong> focused them on vivid but misleading cues.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} focused them on vivid but misleading cues. 反复思考反而让他们把注意力集中在生动却具有误导性的线索上",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Deliberation focused them on vivid but misleading cues.",
+        "cn": "反复思考反而让他们把注意力集中在生动却具有误导性的线索上"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_36",
+    "word": "deliberately",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "故意；从容谨慎地"
+      }
+    ],
+    "ipa": "[dɪˈlɪbərətli]"
+  },
+  {
+    "id": "card_37",
+    "word": "flexible",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "灵活的"
+      }
+    ]
+  },
+  {
+    "id": "card_38",
+    "word": "flexibility",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "灵活性"
+      }
+    ]
+  },
+  {
+    "id": "card_39",
+    "word": "inflexible",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "僵化的；固守己见的"
+      }
+    ]
+  },
+  {
+    "id": "card_40",
+    "word": "inflexible policy",
+    "displayWord": "inflexible policy",
+    "type": "sentence",
+    "fullText": "inflexible policy",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "inflexible policy",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_41",
+    "word": "intense",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "十分强烈的；激烈的"
+      }
+    ]
+  },
+  {
+    "id": "card_42",
+    "word": "intense feelings for sb./sth.",
+    "displayWord": "intense feelings for sb./sth.",
+    "type": "sentence",
+    "fullText": "intense feelings for sb./sth. 对某人或某事怀有强烈而深刻的情感",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "intense feelings for sb./sth.",
+        "cn": "对某人或某事怀有强烈而深刻的情感"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_43",
+    "word": "...it is sure to spark intense opposition from the...",
+    "displayWord": "...it is sure to spark <strong>intense</strong> opposition from the far large number of motorists who will then be affected.",
+    "type": "sentence",
+    "fullText": "...it is sure to spark {{BOLD:0}} opposition from the far large number of motorists who will then be affected.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...it is sure to spark intense opposition from the far large number of motorists who will then be affected.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_44",
+    "word": "intensify",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使加强"
+      }
+    ]
+  },
+  {
+    "id": "card_45",
+    "word": "intensity",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "强度"
+      }
+    ]
+  },
+  {
+    "id": "card_46",
+    "word": "intensive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "密集的"
+      }
+    ]
+  },
+  {
+    "id": "card_47",
+    "word": "consolidate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "巩固；加强；合并"
+      }
+    ],
+    "ipa": "[kənˈsɑːlɪdeɪt]"
+  },
+  {
+    "id": "card_48",
+    "word": "solid",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "固体的；可靠的"
+      }
+    ]
+  },
+  {
+    "id": "card_49",
+    "word": "lay a solid foundation for sth.",
+    "displayWord": "lay a <strong>solid</strong> foundation for sth.",
+    "type": "sentence",
+    "fullText": "lay a {{BOLD:0}} foundation for sth. 为...打下坚实基础",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "lay a solid foundation for sth.",
+        "cn": "为...打下坚实基础"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_50",
+    "word": "intervene",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "介入"
+      }
+    ],
+    "ipa": "[ˌɪntərˈviːn]"
+  },
+  {
+    "id": "card_51",
+    "word": "intervene in sth.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "intervene in sth.",
+        "cn": "介入某事"
+      }
+    ]
+  },
+  {
+    "id": "card_52",
+    "word": "intervention",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "介入"
+      }
+    ],
+    "ipa": "[ˌɪntərˈvenʃn]",
+    "synonyms": [
+      {
+        "word": "interference",
+        "pos": "n.",
+        "cn": "干涉"
+      }
+    ]
+  },
+  {
+    "id": "card_53",
+    "word": "interfere",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "干涉，介入；妨碍；干扰"
+      }
+    ]
+  },
+  {
+    "id": "card_54",
+    "word": "interference",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "干涉"
+      }
+    ],
+    "ipa": "[ˌɪntərˈfɪrəns]"
+  },
+  {
+    "id": "card_55",
+    "word": "The number of women on corporate boards has been s...",
+    "displayWord": "The number of women on corporate boards has been steadily increasing without government <strong>interference</strong>.",
+    "type": "sentence",
+    "fullText": "The number of women on corporate boards has been steadily increasing without government {{BOLD:0}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The number of women on corporate boards has been steadily increasing without government interference.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_56",
+    "word": "intimate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "紧密的"
+      }
+    ],
+    "ipa": "[ˈɪntɪmeɪt]"
+  },
+  {
+    "id": "card_57",
+    "word": "intimate relationship",
+    "displayWord": "intimate relationship",
+    "type": "sentence",
+    "fullText": "intimate relationship 亲密关系",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "intimate relationship",
+        "cn": "亲密关系"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_58",
+    "word": "intimately",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "紧密地"
+      }
+    ]
+  },
+  {
+    "id": "card_60",
+    "word": "experience",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "经历; 感受"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "经验; 经历; 往事"
+      }
+    ],
+    "ipa": "[ɪkˈspɪriəns]"
+  },
+  {
+    "id": "card_61",
+    "word": "express",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "表达"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "快递服务"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "明确的；特快的"
+      }
+    ],
+    "ipa": "[ɪkˈspres]"
+  },
+  {
+    "id": "card_59",
+    "word": "Social media allows users to experience news event...",
+    "displayWord": "Social media allows users to experience news events more <strong>intimately</strong> and immediately...",
+    "type": "sentence",
+    "fullText": "Social media allows users to experience news events more {{BOLD:0}} and immediately...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Social media allows users to experience news events more intimately and immediately...",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_62",
+    "word": "loom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "（问题或困难）逐渐逼近，迫近；（常以可怕的方式）赫然出现 😔"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "织布机；若隐若现"
+      }
+    ]
+  },
+  {
+    "id": "card_63",
+    "word": "boom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（贸易和经济活动的）激增；（某种体育活动、音乐等）突然风靡的时期"
+      }
+    ]
+  },
+  {
+    "id": "card_64",
+    "word": "doom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "厄运"
+      }
+    ]
+  },
+  {
+    "id": "card_65",
+    "word": "Loom has two distinct meanings, Fist, a loom is a ...",
+    "displayWord": "<strong>Loom</strong> has two distinct meanings, Fist, a <strong>loom</strong> is a <strong>tool</strong> for weaving. Second, to <strong>loom</strong> is to <strong>appear</strong> or stand over someone in a <strong>threatening</strong> way.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} has two distinct meanings, Fist, a {{BOLD:1}} is a {{BOLD:2}} for weaving. Second, to {{BOLD:3}} is to {{BOLD:4}} or stand over someone in a {{BOLD:5}} way.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Loom has two distinct meanings, Fist, a loom is a tool for weaving. Second, to loom is to appear or stand over someone in a threatening way.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_67",
+    "word": "didn't go so well for sb.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "didn't go so well for sb.",
+        "cn": "对某人来说结果不太好（委婉表达）"
+      }
+    ]
+  },
+  {
+    "id": "card_68",
+    "word": "go well for sb.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "go well for sb.",
+        "cn": "对某人有利"
+      }
+    ]
+  },
+  {
+    "id": "card_69",
+    "word": "go badly/not go well for sb.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "go badly/not go well for sb.",
+        "cn": "对某人不利"
+      }
+    ]
+  },
+  {
+    "id": "card_70",
+    "word": "mechanized looms",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "mechanized looms",
+        "cn": "机械化织机"
+      }
+    ]
+  },
+  {
+    "id": "card_66",
+    "word": "The Industrial Revolution didn't go so well for Lu...",
+    "displayWord": "The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized <strong>looms</strong>.",
+    "type": "sentence",
+    "fullText": "The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized {{BOLD:0}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized looms.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_71",
+    "word": "weave",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "编，织"
+      }
+    ],
+    "ipa": "[wiːv]"
+  },
+  {
+    "id": "card_73",
+    "word": "loom over sb.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "loom over sb.",
+        "cn": "居高临下地站在某人旁边、逼近式地注视"
+      }
+    ]
+  },
+  {
+    "id": "card_72",
+    "word": "Don't loom over the person you're teaching to weav...",
+    "displayWord": "Don't <strong>loom</strong> over the person you're teaching to weave! You'll just make her nervous.",
+    "type": "sentence",
+    "fullText": "Don't {{BOLD:0}} over the person you're teaching to weave! You'll just make her nervous.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Don't loom over the person you're teaching to weave! You'll just make her nervous.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_74",
+    "word": "Anything that looms is coming into view slowly and...",
+    "displayWord": "Anything that <strong>looms</strong> is coming into view slowly and isn't something you want to see.",
+    "type": "sentence",
+    "fullText": "Anything that {{BOLD:0}} is coming into view slowly and isn't something you want to see.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Anything that looms is coming into view slowly and isn't something you want to see.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_75",
+    "word": "If a deadline looms, better get to work.",
+    "displayWord": "If a deadline <strong>looms</strong>, better get to work.",
+    "type": "sentence",
+    "fullText": "If a deadline {{BOLD:0}}, better get to work.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "If a deadline looms, better get to work.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_76",
+    "word": "looming",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（不希望或不愉快的事情）迫近的，逼近的"
+      }
+    ]
+  },
+  {
+    "id": "card_77",
+    "word": "A looming threat to business-method patents.",
+    "displayWord": "A <strong>looming</strong> threat to business-method patents.",
+    "type": "sentence",
+    "fullText": "A {{BOLD:0}} threat to business-method patents.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "A looming threat to business-method patents.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_79",
+    "word": "loom large (over sb./sth.)",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "loom large (over sb./sth.)",
+        "cn": "显得迫在眉睫/阴影笼罩/变得非常重要"
+      }
+    ]
+  },
+  {
+    "id": "card_78",
+    "word": "Meanwhile, as the recession is looming large, peop...",
+    "displayWord": "Meanwhile, as the recession is <strong>looming</strong> large, people are getting anxious.",
+    "type": "sentence",
+    "fullText": "Meanwhile, as the recession is {{BOLD:0}} large, people are getting anxious.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Meanwhile, as the recession is looming large, people are getting anxious.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_80",
+    "word": "upcoming",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "即将发生（或来临）的"
+      }
+    ]
+  },
+  {
+    "id": "card_81",
+    "word": "musical",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "音乐的"
+      }
+    ]
+  },
+  {
+    "id": "card_82",
+    "word": "musician",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "音乐家"
+      }
+    ]
+  },
+  {
+    "id": "card_83",
+    "word": "orchestra",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "管弦乐队"
+      }
+    ],
+    "ipa": "[ˈɔːrkɪstrə]"
+  },
+  {
+    "id": "card_84",
+    "word": "philharmonic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "(pl.)爱乐乐团；交响乐团"
+      }
+    ],
+    "ipa": "[ˌfɪlərˈmɑnɪk]"
+  },
+  {
+    "id": "card_85",
+    "word": "precede",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "在...之前发生或存在"
+      }
+    ]
+  },
+  {
+    "id": "card_86",
+    "word": "A precede B",
+    "displayWord": "A precede B",
+    "type": "sentence",
+    "fullText": "A precede B",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "A precede B",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_87",
+    "word": "pre-",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "pre-",
+        "cn": "在前"
+      }
+    ]
+  },
+  {
+    "id": "card_88",
+    "word": "pro-",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "pro-",
+        "cn": "向前"
+      }
+    ]
+  },
+  {
+    "id": "card_89",
+    "word": "proceed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "继续做（或从事、进行）；行进"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "[pl.] 收入，收益"
+      }
+    ],
+    "ipa": "[proʊˈsiːd]"
+  },
+  {
+    "id": "card_90",
+    "word": "predecessor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "前任"
+      }
+    ],
+    "ipa": "[ˈpredəsesər]"
+  },
+  {
+    "id": "card_91",
+    "word": "successor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "继承者；继任者"
+      }
+    ],
+    "ipa": "[səkˈsesər]"
+  },
+  {
+    "id": "card_92",
+    "word": "unprecedented",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "前所未有的"
+      }
+    ],
+    "ipa": "[ʌnˈpresɪdentɪd]"
+  },
+  {
+    "id": "card_93",
+    "word": "...exhausted unprecedented management efforts",
+    "displayWord": "...exhausted <strong>unprecedented</strong> management efforts",
+    "type": "sentence",
+    "fullText": "...exhausted {{BOLD:0}} management efforts",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...exhausted unprecedented management efforts",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_94",
+    "word": "renew",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "更新"
+      }
+    ]
+  },
+  {
+    "id": "card_95",
+    "word": "renewal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "更新"
+      }
+    ],
+    "ipa": "[rɪˈnuːəl]"
+  },
+  {
+    "id": "card_96",
+    "word": "renewable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "可再生的"
+      }
+    ],
+    "ipa": "[rɪˈnuːəbl]"
+  },
+  {
+    "id": "card_97",
+    "word": "renewable energy",
+    "displayWord": "renewable energy",
+    "type": "sentence",
+    "fullText": "renewable energy 可再生能源",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "renewable energy",
+        "cn": "可再生能源"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_98",
+    "word": "refresh",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使更新"
+      }
+    ]
+  },
+  {
+    "id": "card_99",
+    "word": "restore",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "恢复"
+      }
+    ],
+    "ipa": "[rɪˈstɔːr]"
+  },
+  {
+    "id": "card_100",
+    "word": "sharp",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "强烈的；急剧的；尖锐的；严厉的；锋利的"
+      }
+    ],
+    "ipa": "[ʃɑːrp]"
+  },
+  {
+    "id": "card_101",
+    "word": "sharpen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使变锋利"
+      },
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "加强"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "improve"
+      }
+    ]
+  },
+  {
+    "id": "card_102",
+    "word": "sharpen the pencil",
+    "displayWord": "sharpen the pencil",
+    "type": "sentence",
+    "fullText": "sharpen the pencil",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "sharpen the pencil",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_103",
+    "word": "sharpen the skills",
+    "displayWord": "sharpen the skills",
+    "type": "sentence",
+    "fullText": "sharpen the skills",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "sharpen the skills",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_104",
+    "word": "We had to sharpen our thinking and not live in the...",
+    "displayWord": "We had to <strong>sharpen</strong> our thinking and not live in the past, he says.",
+    "type": "sentence",
+    "fullText": "We had to {{BOLD:0}} our thinking and not live in the past, he says.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "We had to sharpen our thinking and not live in the past, he says.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_105",
+    "word": "...people may be starting to sharpen their media l...",
+    "displayWord": "...people may be starting to <strong>sharpen</strong> their media literacy skills.",
+    "type": "sentence",
+    "fullText": "...people may be starting to {{BOLD:0}} their media literacy skills.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...people may be starting to sharpen their media literacy skills.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_106",
+    "word": "acute",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "敏锐的；严重的"
+      }
+    ],
+    "ipa": "[əˈkjuːt]"
+  },
+  {
+    "id": "card_107",
+    "word": "drastic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "剧烈的；极端的"
+      }
+    ],
+    "ipa": "[ˈdræstɪk]"
+  },
+  {
+    "id": "card_108",
+    "word": "Something that is drastic is violent, forceful, an...",
+    "displayWord": "Something that is <strong>drastic</strong> is <strong>violent</strong>, <strong>forceful</strong>, and <strong>extreme</strong>.",
+    "type": "sentence",
+    "fullText": "Something that is {{BOLD:0}} is {{BOLD:1}}, {{BOLD:2}}, and {{BOLD:3}}.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Something that is drastic is violent, forceful, and extreme.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_109",
+    "word": "If you are saving for a car and you only have $50,...",
+    "displayWord": "If you are saving for a car and you only have $50, you need to make a <strong>drastic</strong> change to your money accumulation scheme.",
+    "type": "sentence",
+    "fullText": "If you are saving for a car and you only have $50, you need to make a {{BOLD:0}} change to your money accumulation scheme.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "If you are saving for a car and you only have $50, you need to make a drastic change to your money accumulation scheme.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_110",
+    "word": "In previous eras of drastic technological change, ...",
+    "displayWord": "In previous eras of <strong>drastic</strong> technological change, entrepreneurs...",
+    "type": "sentence",
+    "fullText": "In previous eras of {{BOLD:0}} technological change, entrepreneurs...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "In previous eras of drastic technological change, entrepreneurs...",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_111",
+    "word": "drastically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "大幅度地；剧烈地"
+      }
+    ]
+  },
+  {
+    "id": "card_112",
+    "word": "dramatic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "戏剧的"
+      }
+    ]
+  },
+  {
+    "id": "card_113",
+    "word": "dramatically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "急剧地；剧烈地"
+      }
+    ]
+  },
+  {
+    "id": "card_114",
+    "word": "steep",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "陡峭的；急剧的"
+      }
+    ],
+    "ipa": "[stiːp]"
+  },
+  {
+    "id": "card_115",
+    "word": "stiff",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "激烈的"
+      }
+    ],
+    "ipa": "[stɪf]"
+  },
+  {
+    "id": "card_116",
+    "word": "stiffly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "僵硬地"
+      }
+    ]
+  },
+  {
+    "id": "card_117",
+    "word": "overly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "过度地"
+      }
+    ]
+  },
+  {
+    "id": "card_118",
+    "word": "overwhelm",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使不知所措"
+      }
+    ],
+    "ipa": "[ˌoʊvərˈwelm]"
+  },
+  {
+    "id": "card_120",
+    "word": "be overwhelmed by",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "be overwhelmed by",
+        "cn": "面对...完全不知所措；精神/能力上招架不住"
+      }
+    ]
+  },
+  {
+    "id": "card_119",
+    "word": "...students should be able to name the 13th presid...",
+    "displayWord": "...students should be able to name the 13th president of the United States but be utterly <strong>overwhelmed</strong> by a broken bike chain?",
+    "type": "sentence",
+    "fullText": "...students should be able to name the 13th president of the United States but be utterly {{BOLD:0}} by a broken bike chain? 学生理应能说出美国第 13 任总统的名字，却会被一根断掉的自行车链条弄得完全不知所措吗？",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "...students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?",
+        "cn": "学生理应能说出美国第 13 任总统的名字，却会被一根断掉的自行车链条弄得完全不知所措吗？"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_121",
+    "word": "overwhelming",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（数量上）压倒性的"
+      }
+    ]
+  },
+  {
+    "id": "card_122",
+    "word": "overwhelmingly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "压倒性地；不可抵抗地"
+      }
+    ]
+  },
+  {
+    "id": "card_123",
+    "word": "Europe's top corporate-governance positions remain...",
+    "displayWord": "Europe's top corporate-governance positions remain <strong>overwhelmingly</strong> male.",
+    "type": "sentence",
+    "fullText": "Europe's top corporate-governance positions remain {{BOLD:0}} male.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Europe's top corporate-governance positions remain overwhelmingly male.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_124",
+    "word": "constitute",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "组成；构成"
+      }
+    ]
+  },
+  {
+    "id": "card_125",
+    "word": "Constitution",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "宪法"
+      }
+    ]
+  },
+  {
+    "id": "card_126",
+    "word": "component",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "组成部分；成分"
+      }
+    ]
+  },
+  {
+    "id": "card_127",
+    "word": "compound",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使恶化"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "混合物；化合物"
+      }
+    ],
+    "ipa": "[ˈkɑːmpaʊnd]"
+  },
+  {
+    "id": "card_128",
+    "word": "composition",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "作品；作曲；成分；构成"
+      }
+    ]
+  },
+  {
+    "id": "card_129",
+    "word": "element",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "组成部分；要素"
+      }
+    ]
+  },
+  {
+    "id": "card_130",
+    "word": "venture",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（尤指有风险的）企业；风险投资"
+      }
+    ],
+    "ipa": "[ˈventʃər]"
+  },
+  {
+    "id": "card_131",
+    "word": "weaken",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使虚弱；减弱"
+      }
+    ]
+  },
+  {
+    "id": "card_132",
+    "word": "sensuous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "感觉（上）的; 感官的; （引起）美感的"
+      }
+    ],
+    "ipa": "[ˈsenʃuəs]"
+  }
+]

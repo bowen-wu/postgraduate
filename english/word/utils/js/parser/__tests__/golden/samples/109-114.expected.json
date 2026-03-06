@@ -1,0 +1,1610 @@
+[
+  {
+    "id": "card_0",
+    "word": "stalk",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "偷偷接近"
+      }
+    ],
+    "ipa": "[stɔːk]"
+  },
+  {
+    "id": "card_1",
+    "word": "remodel",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "改变...的形状（或结构）"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "mortal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "平民百姓"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "终有一死的"
+      }
+    ],
+    "ipa": "[ˈmɔːrtl]"
+  },
+  {
+    "id": "card_3",
+    "word": "I learned that every mortal will taste death, but ...",
+    "displayWord": "I learned that every <strong>mortal</strong> will taste death, but only some will taste life.",
+    "type": "sentence",
+    "fullText": "I learned that every {{BOLD:0}} will taste death, but only some will taste life.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I learned that every mortal will taste death, but only some will taste life.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_4",
+    "word": "intermittently",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "间歇地"
+      }
+    ],
+    "ipa": "[ˌɪntə'mɪtəntlɪ]"
+  },
+  {
+    "id": "card_5",
+    "word": "inhibit",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "阻止，妨碍"
+      }
+    ]
+  },
+  {
+    "id": "card_6",
+    "word": "preclude  😔",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "阻止"
+      }
+    ],
+    "ipa": "[prɪˈkluːd]"
+  },
+  {
+    "id": "card_7",
+    "word": "curb",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "抑制，控制"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "限制，控制；路源；勒马绳"
+      }
+    ]
+  },
+  {
+    "id": "card_8",
+    "word": "dampen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "抑制"
+      }
+    ],
+    "ipa": "[ˈdæmpən]"
+  },
+  {
+    "id": "card_9",
+    "word": "sculpture",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "雕塑"
+      }
+    ],
+    "ipa": "[ˈskʌlptʃər]"
+  },
+  {
+    "id": "card_10",
+    "word": "faint",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "轻微的"
+      }
+    ],
+    "ipa": "[feɪnt]"
+  },
+  {
+    "id": "card_11",
+    "word": "defendable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "可防御的"
+      }
+    ],
+    "ipa": "[dɪ'fendəbl]"
+  },
+  {
+    "id": "card_12",
+    "word": "defense",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "辩护；防御（物）；保护；（Defense）国防机构"
+      }
+    ]
+  },
+  {
+    "id": "card_13",
+    "word": "defensible",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（想法，行为等）合理的"
+      }
+    ]
+  },
+  {
+    "id": "card_14",
+    "word": "defendant",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "被告"
+      }
+    ]
+  },
+  {
+    "id": "card_15",
+    "word": "renovate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "修复"
+      }
+    ],
+    "ipa": "[ˈrenəveɪt]"
+  },
+  {
+    "id": "card_16",
+    "word": "innovate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "改革；创新"
+      }
+    ],
+    "ipa": "[ˈɪnəveɪt]"
+  },
+  {
+    "id": "card_17",
+    "word": "spiritual",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "精神的"
+      }
+    ],
+    "ipa": "[ˈspɪrɪtʃuəl]"
+  },
+  {
+    "id": "card_18",
+    "word": "interim",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "临时的"
+      }
+    ],
+    "ipa": "[ˈɪntərɪm]"
+  },
+  {
+    "id": "card_19",
+    "word": "retention",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "保留"
+      }
+    ],
+    "ipa": "[rɪˈtenʃn]"
+  },
+  {
+    "id": "card_20",
+    "word": "advocacy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "游说（组织）；提倡"
+      }
+    ],
+    "ipa": "[ˈædvəkəsi]"
+  },
+  {
+    "id": "card_21",
+    "word": "advocate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "提倡；主张"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "倡导者；拥护者"
+      }
+    ],
+    "ipa": "[ˈædvəkeɪt]"
+  },
+  {
+    "id": "card_22",
+    "word": "scrape",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "用程序从网上下载（数据）"
+      }
+    ],
+    "ipa": "[skreɪp]"
+  },
+  {
+    "id": "card_23",
+    "word": "humility",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "谦逊"
+      }
+    ],
+    "ipa": "[hjuˈmɪlɪti]"
+  },
+  {
+    "id": "card_25",
+    "word": "deny",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "否认；拒绝"
+      }
+    ],
+    "ipa": "[dɪˈnaɪ]"
+  },
+  {
+    "id": "card_26",
+    "word": "weakness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "弱点"
+      }
+    ]
+  },
+  {
+    "id": "card_24",
+    "word": "Humility is not denying your strengths, humility i...",
+    "displayWord": "<strong>Humility</strong> is not denying your strengths, <strong>humility</strong> is being honest about your weaknesses.",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} is not denying your strengths, {{BOLD:1}} is being honest about your weaknesses. 谦逊不是否认自己的长处，谦逊是对自己的弱点保持诚实",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Humility is not denying your strengths, humility is being honest about your weaknesses.",
+        "cn": "谦逊不是否认自己的长处，谦逊是对自己的弱点保持诚实"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_27",
+    "word": "newlywed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "新婚夫妇"
+      }
+    ],
+    "ipa": "[ˈnuliˌwɛd]"
+  },
+  {
+    "id": "card_28",
+    "word": "wedding",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "婚礼"
+      }
+    ]
+  },
+  {
+    "id": "card_29",
+    "word": "shatter",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使粉碎"
+      }
+    ],
+    "ipa": "[ˈʃætər]"
+  },
+  {
+    "id": "card_30",
+    "word": "temperament",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "脾气"
+      }
+    ],
+    "ipa": "[ˈtemprəmənt]"
+  },
+  {
+    "id": "card_31",
+    "word": "representational",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "具象派的"
+      }
+    ],
+    "ipa": "[ˌreprɪzenˈteɪʃənl]"
+  },
+  {
+    "id": "card_32",
+    "word": "representative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "代表，代理人"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "典型的，有代表性的；代议制的"
+      }
+    ],
+    "ipa": "[ˌreprɪˈzentətɪv]"
+  },
+  {
+    "id": "card_33",
+    "word": "biomedical",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "生物医学的"
+      }
+    ],
+    "ipa": "[ˌbaɪoʊˈmedɪkl]"
+  },
+  {
+    "id": "card_34",
+    "word": "wholeheartedly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "全心全意地"
+      }
+    ],
+    "ipa": "[ˌhoʊl'hɑtɪdlɪ]"
+  },
+  {
+    "id": "card_35",
+    "word": "diagnosis",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "诊断"
+      }
+    ],
+    "ipa": "[ˌdaɪəɡˈnoʊsɪs]"
+  },
+  {
+    "id": "card_36",
+    "word": "diagnostic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "诊断的"
+      }
+    ],
+    "ipa": "[ˌdaɪəgˈnɑstɪk]"
+  },
+  {
+    "id": "card_37",
+    "word": "deference",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "尊敬"
+      }
+    ],
+    "ipa": "[ˈdefərəns]"
+  },
+  {
+    "id": "card_39",
+    "word": "absence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "缺乏"
+      }
+    ],
+    "ipa": "[ˈæbsəns]"
+  },
+  {
+    "id": "card_38",
+    "word": "absence of deference",
+    "displayWord": "absence of deference",
+    "type": "sentence",
+    "fullText": "absence of deference 缺乏尊重",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "absence of deference",
+        "cn": "缺乏尊重"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_40",
+    "word": "defer",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "推迟；延期；听从，遵从，尊敬"
+      }
+    ],
+    "ipa": "[dɪˈfɜːr]"
+  },
+  {
+    "id": "card_41",
+    "word": "deferential",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "恭敬的"
+      }
+    ],
+    "ipa": "[ˌdefəˈrenʃl]"
+  },
+  {
+    "id": "card_42",
+    "word": "racial",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "种族的"
+      }
+    ]
+  },
+  {
+    "id": "card_43",
+    "word": "racial discrimination",
+    "displayWord": "racial discrimination",
+    "type": "sentence",
+    "fullText": "racial discrimination 种族歧视",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "racial discrimination",
+        "cn": "种族歧视"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_44",
+    "word": "overfish",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "过度捕捞"
+      }
+    ]
+  },
+  {
+    "id": "card_45",
+    "word": "celebration",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "庆祝"
+      }
+    ]
+  },
+  {
+    "id": "card_46",
+    "word": "constitutionality",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "符合宪法"
+      }
+    ]
+  },
+  {
+    "id": "card_47",
+    "word": "constitution",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "宪法"
+      }
+    ]
+  },
+  {
+    "id": "card_48",
+    "word": "unconstitutionality",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "违反宪法"
+      }
+    ]
+  },
+  {
+    "id": "card_49",
+    "word": "assimilate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "透彻理解"
+      },
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "（使）同化；融入"
+      }
+    ],
+    "ipa": "[əˈsɪməleɪt]"
+  },
+  {
+    "id": "card_50",
+    "word": "assimilative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "同化的"
+      }
+    ],
+    "ipa": "[ə'sɪmɪlətɪv]"
+  },
+  {
+    "id": "card_51",
+    "word": "rifle",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "迅速翻找"
+      }
+    ],
+    "ipa": "[ˈraɪfl]"
+  },
+  {
+    "id": "card_52",
+    "word": "rifle through",
+    "displayWord": "rifle through",
+    "type": "sentence",
+    "fullText": "rifle through 匆忙、粗暴地翻找（为了找某样东西）",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "rifle through",
+        "cn": "匆忙、粗暴地翻找（为了找某样东西）"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_53",
+    "word": "saturate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使充满"
+      }
+    ],
+    "ipa": "[ˈsætʃəreɪt]"
+  },
+  {
+    "id": "card_54",
+    "word": "indefinite",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不确定的；无限期的"
+      }
+    ],
+    "ipa": "[ɪnˈdefɪnət]",
+    "synonyms": [
+      {
+        "word": "uncertain",
+        "pos": "adj.",
+        "cn": "犹豫; 多变的; 不确定的; 未知的; 迟疑的"
+      },
+      {
+        "word": "tentative",
+        "pos": "adj.",
+        "cn": "不确定的；犹豫的"
+      }
+    ]
+  },
+  {
+    "id": "card_55",
+    "word": "define",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "定义"
+      }
+    ]
+  },
+  {
+    "id": "card_56",
+    "word": "definite",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不会改变的; 明确的; (证据或信息)确凿的"
+      }
+    ],
+    "ipa": "[ˈdefɪnət]"
+  },
+  {
+    "id": "card_57",
+    "word": "quotation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "引文"
+      }
+    ]
+  },
+  {
+    "id": "card_58",
+    "word": "publicise",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "宣传"
+      }
+    ],
+    "ipa": "[ˈpʌblɪˌsaɪz]"
+  },
+  {
+    "id": "card_59",
+    "word": "stall",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "[pl.] （剧场的）正厅前座区"
+      }
+    ],
+    "ipa": "[stɔːl]"
+  },
+  {
+    "id": "card_60",
+    "word": "adverse 😔",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不利的"
+      }
+    ],
+    "ipa": "[ədˈvɜːrs]"
+  },
+  {
+    "id": "card_61",
+    "word": "Don't let adverse facts stand in the way of a good...",
+    "displayWord": "Don't let <strong>adverse</strong> facts stand in the way of a good decision.",
+    "type": "sentence",
+    "fullText": "Don't let {{BOLD:0}} facts stand in the way of a good decision.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Don't let adverse facts stand in the way of a good decision.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_63",
+    "word": "transient",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "短暂的"
+      }
+    ],
+    "ipa": "[ˈtrænʃnt]"
+  },
+  {
+    "id": "card_62",
+    "word": "It is argued that the influence of transient inves...",
+    "displayWord": "It is argued that the influence of transient investment on public companies can be <strong>adverse</strong>.",
+    "type": "sentence",
+    "fullText": "It is argued that the influence of transient investment on public companies can be {{BOLD:0}}. 有人认为，短期投资对上市公司的影响可能是不利的",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "It is argued that the influence of transient investment on public companies can be adverse.",
+        "cn": "有人认为，短期投资对上市公司的影响可能是不利的"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_64",
+    "word": "transformative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "有改革能力的"
+      }
+    ],
+    "ipa": "[ˌtræns'fɔmətɪv]"
+  },
+  {
+    "id": "card_65",
+    "word": "shortfall",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "不足"
+      }
+    ]
+  },
+  {
+    "id": "card_66",
+    "word": "make up for that shortfall",
+    "displayWord": "make up for that shortfall",
+    "type": "sentence",
+    "fullText": "make up for that shortfall 弥补不足",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "make up for that shortfall",
+        "cn": "弥补不足"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_67",
+    "word": "roadblock",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "障碍物"
+      }
+    ]
+  },
+  {
+    "id": "card_68",
+    "word": "precision",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "精准性"
+      }
+    ],
+    "ipa": "[prɪˈsɪʒn]"
+  },
+  {
+    "id": "card_69",
+    "word": "precise",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "精确的"
+      }
+    ],
+    "ipa": "[prɪˈsaɪs]",
+    "synonyms": [
+      {
+        "word": "exact",
+        "ipa": "[ɪɡˈzækt]",
+        "pos": "adj.",
+        "cn": "精确的，准确的"
+      }
+    ]
+  },
+  {
+    "id": "card_70",
+    "word": "serially",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "连载地"
+      }
+    ],
+    "ipa": "['sɪərɪrlɪ]"
+  },
+  {
+    "id": "card_71",
+    "word": "forefront",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "(运动、活动的)前沿"
+      }
+    ],
+    "ipa": "[ˈfɔrfrʌnt]"
+  },
+  {
+    "id": "card_72",
+    "word": "at/in/to the forefront of",
+    "displayWord": "at/in/to the forefront of",
+    "type": "sentence",
+    "fullText": "at/in/to the forefront of 在...的最前沿",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "at/in/to the forefront of",
+        "cn": "在...的最前沿"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_73",
+    "word": "combative",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "好斗的"
+      }
+    ],
+    "ipa": "[kəmˈbætɪv]"
+  },
+  {
+    "id": "card_74",
+    "word": "combat",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "与...战斗；防止"
+      }
+    ],
+    "ipa": "[ˈkɑːmbæt]"
+  },
+  {
+    "id": "card_75",
+    "word": "crude",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "简陋的"
+      }
+    ],
+    "ipa": "[kruːd]"
+  },
+  {
+    "id": "card_76",
+    "word": "interface",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "界面（尤指屏幕布局和菜单）；接口"
+      }
+    ]
+  },
+  {
+    "id": "card_77",
+    "word": "the user interface",
+    "displayWord": "the user interface",
+    "type": "sentence",
+    "fullText": "the user interface 用户界面",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "the user interface",
+        "cn": "用户界面"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_78",
+    "word": "resolute",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "坚定的"
+      }
+    ]
+  },
+  {
+    "id": "card_80",
+    "word": "truest",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "真的，确实的"
+      }
+    ],
+    "ipa": "[truɪst]"
+  },
+  {
+    "id": "card_81",
+    "word": "wisdom",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "智慧; 明智; (社会或文化长期积累的)知识; 普遍看法"
+      }
+    ],
+    "ipa": "[ˈwɪzdəm]"
+  },
+  {
+    "id": "card_79",
+    "word": "The truest wisdom is a resolute determination.",
+    "displayWord": "The truest wisdom is a <strong>resolute</strong> determination.",
+    "type": "sentence",
+    "fullText": "The truest wisdom is a {{BOLD:0}} determination. 最真实的智慧，是一种坚定不移的决心",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The truest wisdom is a resolute determination.",
+        "cn": "最真实的智慧，是一种坚定不移的决心"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_83",
+    "word": "perceive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "感知；注意到；将...理解为"
+      }
+    ],
+    "ipa": "[pərˈsiːv]"
+  },
+  {
+    "id": "card_84",
+    "word": "decisive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "决定性的; 明确的; 决断的"
+      }
+    ]
+  },
+  {
+    "id": "card_82",
+    "word": "Voters perceive him as a decisive and resolute int...",
+    "displayWord": "Voters perceive him as a decisive and <strong>resolute</strong> international leader.",
+    "type": "sentence",
+    "fullText": "Voters perceive him as a decisive and {{BOLD:0}} international leader.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Voters perceive him as a decisive and resolute international leader.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_85",
+    "word": "monotonous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "单调的"
+      }
+    ],
+    "ipa": "[məˈnɑːtənəs]"
+  },
+  {
+    "id": "card_86",
+    "word": "the same monotonous beats",
+    "displayWord": "the same monotonous beats",
+    "type": "sentence",
+    "fullText": "the same monotonous beats 同样单调的节拍",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "the same monotonous beats",
+        "cn": "同样单调的节拍"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_87",
+    "word": "in monotonous and tiresome situations",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "in monotonous and tiresome situations",
+        "cn": "无聊疲乏的状态"
+      }
+    ]
+  },
+  {
+    "id": "card_88",
+    "word": "When I was young, I was often in monotonous and ti...",
+    "displayWord": "When I was young, I was often in monotonous and tiresome situations.",
+    "type": "sentence",
+    "fullText": "When I was young, I was often in monotonous and tiresome situations(无聊疲乏的状态).",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "When I was young, I was often in monotonous and tiresome situations.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_89",
+    "word": "mono-",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "mono-",
+        "cn": "单个，一个"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "single"
+      }
+    ]
+  },
+  {
+    "id": "card_90",
+    "word": "monologue",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "独白"
+      }
+    ],
+    "ipa": "[ˈmɑːnəlɔːɡ]"
+  },
+  {
+    "id": "card_91",
+    "word": "dialogue",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "对话"
+      }
+    ]
+  },
+  {
+    "id": "card_92",
+    "word": "enclose",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "围住"
+      }
+    ]
+  },
+  {
+    "id": "card_93",
+    "word": "enclosure",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "圈用地；（信中）附件"
+      }
+    ],
+    "ipa": "[ɪnˈkloʊʒər]"
+  },
+  {
+    "id": "card_94",
+    "word": "en-",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "en-",
+        "cn": "使动"
+      }
+    ]
+  },
+  {
+    "id": "card_95",
+    "word": "surge",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "汹涌；激增"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "汹涌澎湃"
+      }
+    ],
+    "ipa": "[sɜːrdʒ]"
+  },
+  {
+    "id": "card_96",
+    "word": "transcend",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "超出，超越"
+      }
+    ],
+    "ipa": "[trænˈsend]"
+  },
+  {
+    "id": "card_97",
+    "word": "transcendence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "超越"
+      }
+    ],
+    "ipa": "[trænˈsɛndəns]"
+  },
+  {
+    "id": "card_98",
+    "word": "stroll",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "散步"
+      }
+    ],
+    "ipa": "[stroʊl]"
+  },
+  {
+    "id": "card_99",
+    "word": "take a stroll down +",
+    "displayWord": "take a stroll down +",
+    "type": "sentence",
+    "fullText": "take a stroll down + 地点 沿着某处悠闲地走",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "take a stroll down +",
+        "cn": "地点 沿着某处悠闲地走"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_100",
+    "word": "take a stroll",
+    "displayWord": "take a stroll",
+    "type": "sentence",
+    "fullText": "take a stroll 悠闲地散步",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "take a stroll",
+        "cn": "悠闲地散步"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_101",
+    "word": "take a stroll down memory lane",
+    "displayWord": "take a stroll down memory lane",
+    "type": "sentence",
+    "fullText": "take a stroll down memory lane 回忆往事",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "take a stroll down memory lane",
+        "cn": "回忆往事"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_102",
+    "word": "treaty",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "条约"
+      }
+    ],
+    "ipa": "[ˈtriːti]"
+  },
+  {
+    "id": "card_103",
+    "word": "ascribe",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "认为...具有；把...归因于"
+      }
+    ],
+    "ipa": "[əˈskraɪb]"
+  },
+  {
+    "id": "card_104",
+    "word": "ascribe A to B",
+    "displayWord": "ascribe A to B",
+    "type": "sentence",
+    "fullText": "ascribe A to B 把 A 归因于 B/认为 A 是由 B 造成的",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "ascribe A to B",
+        "cn": "把 A 归因于 B/认为 A 是由 B 造成的"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_105",
+    "word": "ascribe meanings to texts",
+    "displayWord": "ascribe meanings to texts",
+    "type": "sentence",
+    "fullText": "ascribe meanings to texts 赋予文本含义",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "ascribe meanings to texts",
+        "cn": "赋予文本含义"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_107",
+    "word": "ascribe/attach great importance to",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "ascribe/attach great importance to",
+        "cn": "重视"
+      }
+    ]
+  },
+  {
+    "id": "card_106",
+    "word": "We ascribe great importance to these policies.",
+    "displayWord": "We <strong>ascribe</strong> great importance to these policies.",
+    "type": "sentence",
+    "fullText": "We {{BOLD:0}} great importance to these policies.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "We ascribe great importance to these policies.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_108",
+    "word": "Scholars ascribe the trend to many causes.",
+    "displayWord": "Scholars <strong>ascribe</strong> the trend to many causes.",
+    "type": "sentence",
+    "fullText": "Scholars {{BOLD:0}} the trend to many causes.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Scholars ascribe the trend to many causes.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_109",
+    "word": "breach",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "攻破"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "破坏"
+      }
+    ],
+    "ipa": "[briːtʃ]"
+  },
+  {
+    "id": "card_110",
+    "word": "certify",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "证明"
+      }
+    ],
+    "ipa": "[ˈsɜːrtɪfaɪ]"
+  },
+  {
+    "id": "card_111",
+    "word": "chunk",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（语言）话语组成部分"
+      }
+    ],
+    "ipa": "[tʃʌŋk]"
+  },
+  {
+    "id": "card_113",
+    "word": "poetry",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "诗歌，诗集"
+      }
+    ],
+    "ipa": "[ˈpoʊətri]"
+  },
+  {
+    "id": "card_112",
+    "word": "chunks of memorized poetry",
+    "displayWord": "chunks of memorized poetry",
+    "type": "sentence",
+    "fullText": "chunks of memorized poetry 大量背诵下来的诗歌",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "chunks of memorized poetry",
+        "cn": "大量背诵下来的诗歌"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_114",
+    "word": "cozy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "（感到）温暖舒适的; 愉快的，亲切的; 轻易得到的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（茶壶）保暖罩"
+      }
+    ],
+    "ipa": "[ˈkoʊzi]",
+    "synonyms": [
+      {
+        "word": "comfortable"
+      }
+    ]
+  },
+  {
+    "id": "card_115",
+    "word": "propel",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "推进; 推动; 驱动; 驱使"
+      }
+    ],
+    "ipa": "[prəˈpel]"
+  },
+  {
+    "id": "card_116",
+    "word": "gorgeous",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "华丽的，艳丽的; 极好的，称心的; 美丽动人的，光彩夺目的; 令人愉快的，令人享受的"
+      }
+    ],
+    "ipa": "[ˈɡɔːrdʒəs]"
+  }
+]

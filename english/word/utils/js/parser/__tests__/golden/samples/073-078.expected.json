@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "card_0",
+    "word": "deed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "行为"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "do good deeds",
+    "displayWord": "do good deeds",
+    "type": "sentence",
+    "fullText": "do good deeds 做好事",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "do good deeds",
+        "cn": "做好事"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_2",
+    "word": "absolutely",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "绝对地"
+      }
+    ],
+    "ipa": "[ˈæbsəluːtli]"
+  },
+  {
+    "id": "card_3",
+    "word": "absolutist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "专制的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "专制主义者"
+      }
+    ],
+    "ipa": "['æbsəlutɪst]"
+  },
+  {
+    "id": "card_4",
+    "word": "lameness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "软弱无力"
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "Her critique of lameness of many public-health cam...",
+    "displayWord": "Her critique of <strong>lameness</strong> of many public-health campaigns is spot-on...",
+    "type": "sentence",
+    "fullText": "Her critique of {{BOLD:0}} of many public-health campaigns is spot-on... 她对许多公共卫生运动的不足之处的批评是正确的",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Her critique of lameness of many public-health campaigns is spot-on...",
+        "cn": "她对许多公共卫生运动的不足之处的批评是正确的"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_6",
+    "word": "lame",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "跛脚的，蹩脚的观点"
+      }
+    ]
+  },
+  {
+    "id": "card_7",
+    "word": "unknowable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "无法知道的"
+      }
+    ]
+  },
+  {
+    "id": "card_8",
+    "word": "processor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（计算机的）处理器"
+      }
+    ]
+  },
+  {
+    "id": "card_9",
+    "word": "process",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "加工；处理（数据）"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "过程；流程"
+      }
+    ],
+    "ipa": "[prəˈses]"
+  },
+  {
+    "id": "card_10",
+    "word": "fondness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "喜欢"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "like"
+      }
+    ]
+  },
+  {
+    "id": "card_11",
+    "word": "be fond of",
+    "displayWord": "be fond of",
+    "type": "sentence",
+    "fullText": "be fond of 喜欢",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "be fond of",
+        "cn": "喜欢"
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "like"
+      }
+    ]
+  },
+  {
+    "id": "card_12",
+    "word": "I've always had a fondness for chocolate cake.",
+    "displayWord": "I've always had a <strong>fondness</strong> for chocolate cake.",
+    "type": "sentence",
+    "fullText": "I've always had a {{BOLD:0}} for chocolate cake.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I've always had a fondness for chocolate cake.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_13",
+    "word": "determination",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "决心"
+      }
+    ]
+  },
+  {
+    "id": "card_14",
+    "word": "instill",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "逐渐灌输"
+      }
+    ]
+  },
+  {
+    "id": "card_15",
+    "word": "I aim to instill in them the pleasure of giving.",
+    "displayWord": "I aim to <strong>instill</strong> in them the pleasure of giving.",
+    "type": "sentence",
+    "fullText": "I aim to {{BOLD:0}} in them the pleasure of giving.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I aim to instill in them the pleasure of giving.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_16",
+    "word": "reputable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "声望好的"
+      }
+    ]
+  },
+  {
+    "id": "card_17",
+    "word": "reputation 🙂",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "名誉；名声"
+      }
+    ]
+  },
+  {
+    "id": "card_18",
+    "word": "certificate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "证书"
+      }
+    ],
+    "ipa": "[sərˈtɪfɪkeɪt]"
+  },
+  {
+    "id": "card_19",
+    "word": "precondition",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "先决条件"
+      }
+    ]
+  },
+  {
+    "id": "card_20",
+    "word": "precondition of/for",
+    "displayWord": "precondition of/for",
+    "type": "sentence",
+    "fullText": "precondition of/for",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "precondition of/for",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_21",
+    "word": "inaccessible",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "难以达到的"
+      }
+    ]
+  },
+  {
+    "id": "card_22",
+    "word": "arrogance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "傲慢"
+      }
+    ],
+    "ipa": "[ˈærəɡəns]"
+  },
+  {
+    "id": "card_23",
+    "word": "arrogant",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "傲慢的"
+      }
+    ]
+  },
+  {
+    "id": "card_24",
+    "word": "hasten",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "促进"
+      }
+    ],
+    "ipa": "[ˈheɪsn]"
+  },
+  {
+    "id": "card_25",
+    "word": "haste",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "匆忙，急忙; 急速，紧迫; 轻率"
+      }
+    ],
+    "ipa": "[heɪst]"
+  },
+  {
+    "id": "card_26",
+    "word": "More haste, less speed",
+    "displayWord": "More <strong>haste</strong>, less speed",
+    "type": "sentence",
+    "fullText": "More {{BOLD:0}}, less speed 欲速则不达",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "More haste, less speed",
+        "cn": "欲速则不达"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_27",
+    "word": "reconstruct",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "重建"
+      }
+    ]
+  },
+  {
+    "id": "card_28",
+    "word": "mount",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vi.",
+        "cn": "增加"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "山峰"
+      }
+    ]
+  },
+  {
+    "id": "card_29",
+    "word": "mount to",
+    "displayWord": "mount to",
+    "type": "sentence",
+    "fullText": "mount to 升级到",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "mount to",
+        "cn": "升级到"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_31",
+    "word": "people in mounting numbers",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "people in mounting numbers",
+        "cn": "越来越多的人"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "an increasing number of people"
+      },
+      {
+        "word": "a rising number of people"
+      }
+    ]
+  },
+  {
+    "id": "card_30",
+    "word": "Hence, people in mounting numbers put great emphas...",
+    "displayWord": "Hence, people in <strong>mounting</strong> numbers put great emphasis on teamwork.",
+    "type": "sentence",
+    "fullText": "Hence, people in {{BOLD:0}} numbers put great emphasis on teamwork.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Hence, people in mounting numbers put great emphasis on teamwork.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "an increasing number of people"
+      },
+      {
+        "word": "a rising number of people"
+      }
+    ]
+  },
+  {
+    "id": "card_32",
+    "word": "Mount Everest",
+    "displayWord": "Mount Everest",
+    "type": "sentence",
+    "fullText": "Mount Everest 珠穆朗玛峰",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Mount Everest",
+        "cn": "珠穆朗玛峰"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_33",
+    "word": "startling",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "让人震惊的"
+      }
+    ],
+    "ipa": "[ˈstɑːrtlɪŋ]"
+  },
+  {
+    "id": "card_34",
+    "word": "overhead",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "[pl.] 管理费；运营费用"
+      },
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "头顶上的"
+      },
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "在空中"
+      }
+    ]
+  },
+  {
+    "id": "card_35",
+    "word": "Overhead may be high and circulation lower...",
+    "displayWord": "<strong>Overhead</strong> may be high and circulation lower...",
+    "type": "sentence",
+    "fullText": "{{BOLD:0}} may be high and circulation lower...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Overhead may be high and circulation lower...",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_36",
+    "word": "bombing",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "轰炸"
+      }
+    ],
+    "ipa": "[ˈbɑmɪŋ]"
+  },
+  {
+    "id": "card_37",
+    "word": "ruthless",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "无情的"
+      }
+    ],
+    "ipa": "[ˈruːθləs]"
+  },
+  {
+    "id": "card_38",
+    "word": "muscular",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "肌肉的"
+      }
+    ],
+    "ipa": "[ˈmʌskjələr]"
+  },
+  {
+    "id": "card_39",
+    "word": "promptly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "及时地"
+      }
+    ]
+  },
+  {
+    "id": "card_40",
+    "word": "worship",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "敬奉"
+      }
+    ],
+    "ipa": "[ˈwɜːrʃɪp]"
+  },
+  {
+    "id": "card_41",
+    "word": "money worship",
+    "displayWord": "money worship",
+    "type": "sentence",
+    "fullText": "money worship 拜金主义",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "money worship",
+        "cn": "拜金主义"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_42",
+    "word": "idol worship",
+    "displayWord": "idol worship",
+    "type": "sentence",
+    "fullText": "idol worship 偶像崇拜",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "idol worship",
+        "cn": "偶像崇拜"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_43",
+    "word": "worshipper",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "崇拜上帝（或神）的人"
+      }
+    ]
+  },
+  {
+    "id": "card_44",
+    "word": "contributor",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "因素"
+      }
+    ]
+  },
+  {
+    "id": "card_45",
+    "word": "contributory",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "促成的"
+      }
+    ]
+  },
+  {
+    "id": "card_46",
+    "word": "contribute",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "贡献；有助于；是...的原因之一；捐献"
+      }
+    ]
+  },
+  {
+    "id": "card_47",
+    "word": "contribute to",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "contribute to",
+        "cn": "导致；贡献"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "lead to"
+      },
+      {
+        "word": "cause"
+      }
+    ]
+  },
+  {
+    "id": "card_48",
+    "word": "terminator",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "终止"
+      }
+    ],
+    "ipa": "['tɜməˌneɪtə]"
+  },
+  {
+    "id": "card_49",
+    "word": "exclaim",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "（因惊讶或兴奋）呼喊"
+      }
+    ],
+    "ipa": "[ɪkˈskleɪm]"
+  },
+  {
+    "id": "card_50",
+    "word": "exclamation",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "惊叫; 感叹（词）"
+      }
+    ],
+    "ipa": "[ˌɛkskləˈmeʃən]"
+  },
+  {
+    "id": "card_51",
+    "word": "invalid",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "无效的"
+      }
+    ]
+  },
+  {
+    "id": "card_52",
+    "word": "deported",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "驱逐出境"
+      }
+    ],
+    "ipa": "[dɪˈpɔːrt]"
+  },
+  {
+    "id": "card_53",
+    "word": "People with invalid papers are deported to another...",
+    "displayWord": "People with <strong>invalid</strong> papers are deported to another country.",
+    "type": "sentence",
+    "fullText": "People with {{BOLD:0}} papers are deported to another country.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "People with invalid papers are deported to another country.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_54",
+    "word": "breed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "养育"
+      }
+    ]
+  },
+  {
+    "id": "card_55",
+    "word": "emptiness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "空虚"
+      }
+    ]
+  },
+  {
+    "id": "card_56",
+    "word": "arbitrary",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "武断的"
+      }
+    ],
+    "ipa": "[ˈɑːrbɪtreri]"
+  },
+  {
+    "id": "card_57",
+    "word": "He makes unpredictable, arbitrary decisions.",
+    "displayWord": "He makes unpredictable, <strong>arbitrary</strong> decisions.",
+    "type": "sentence",
+    "fullText": "He makes unpredictable, {{BOLD:0}} decisions.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "He makes unpredictable, arbitrary decisions.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_58",
+    "word": "marginal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不重要的"
+      }
+    ],
+    "ipa": "[ˈmɑːrdʒɪnl]"
+  },
+  {
+    "id": "card_59",
+    "word": "rebalance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "再平衡"
+      }
+    ]
+  },
+  {
+    "id": "card_60",
+    "word": "sharply",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "急剧地"
+      }
+    ],
+    "ipa": "[ˈʃɑrpli]"
+  },
+  {
+    "id": "card_61",
+    "word": "sharpness",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "锐利度"
+      }
+    ]
+  },
+  {
+    "id": "card_62",
+    "word": "sharpen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "使变锋利"
+      },
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "加强"
+      }
+    ],
+    "ipa": "[ˈʃɑːrpən]",
+    "synonyms": [
+      {
+        "word": "improve"
+      }
+    ]
+  },
+  {
+    "id": "card_63",
+    "word": "sharpen the skill",
+    "displayWord": "sharpen the skill",
+    "type": "sentence",
+    "fullText": "sharpen the skill",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "sharpen the skill",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_64",
+    "word": "diffusionist",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "（文化）传播论者"
+      }
+    ],
+    "ipa": "[dɪ'fjuʒənɪst]"
+  },
+  {
+    "id": "card_65",
+    "word": "propaganda",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "宣传"
+      }
+    ],
+    "ipa": "[ˌprɑːpəˈɡændə]"
+  },
+  {
+    "id": "card_66",
+    "word": "gear",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "使适合于"
+      }
+    ],
+    "ipa": "[ɡɪr]"
+  },
+  {
+    "id": "card_67",
+    "word": "The high-schoolers get the same curriculum, but \"w...",
+    "displayWord": "The high-schoolers get the same curriculum, but \"we try to <strong>gear</strong> lessons toward thing they're interested in...\"",
+    "type": "sentence",
+    "fullText": "The high-schoolers get the same curriculum, but \"we try to {{BOLD:0}} lessons toward thing they're interested in...\"",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The high-schoolers get the same curriculum, but \"we try to gear lessons toward thing they're interested in...\"",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_68",
+    "word": "overjoyed",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "极为高兴的"
+      }
+    ],
+    "ipa": "[ˌoʊvərˈdʒɔɪd]"
+  },
+  {
+    "id": "card_69",
+    "word": "mercy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "仁慈"
+      }
+    ],
+    "ipa": "[ˈmɜːrsi]"
+  },
+  {
+    "id": "card_70",
+    "word": "show mercy to sb.",
+    "displayWord": "show mercy to sb.",
+    "type": "sentence",
+    "fullText": "show mercy to sb. 对某人仁慈/手下留情",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "show mercy to sb.",
+        "cn": "对某人仁慈/手下留情"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_71",
+    "word": "show no mercy to sb.",
+    "displayWord": "show no mercy to sb.",
+    "type": "sentence",
+    "fullText": "show no mercy to sb. 毫不留情/冷酷无情",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "show no mercy to sb.",
+        "cn": "毫不留情/冷酷无情"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_72",
+    "word": "mercilessly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "残忍地"
+      }
+    ],
+    "ipa": "[ˈməsɪlɪslɪ]"
+  },
+  {
+    "id": "card_73",
+    "word": "unmercifully",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "冷酷无情地"
+      }
+    ]
+  },
+  {
+    "id": "card_74",
+    "word": "Catholic",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "天主教的"
+      }
+    ],
+    "ipa": "[ˈkæθlɪk]"
+  },
+  {
+    "id": "card_75",
+    "word": "captive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "被关押的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "囚徒"
+      }
+    ],
+    "ipa": "[ˈkæptɪv]"
+  },
+  {
+    "id": "card_76",
+    "word": "in captivity",
+    "displayWord": "in captivity",
+    "type": "sentence",
+    "fullText": "in captivity 被囚禁的/被圈养的",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "in captivity",
+        "cn": "被囚禁的/被圈养的"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_77",
+    "word": "transcendence",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "超越"
+      }
+    ],
+    "ipa": "[trænˈsɛndəns]"
+  },
+  {
+    "id": "card_78",
+    "word": "hazard",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "危险"
+      }
+    ],
+    "ipa": "[ˈhæzərd]"
+  },
+  {
+    "id": "card_79",
+    "word": "advent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "出现"
+      }
+    ],
+    "ipa": "[ˈædvent]"
+  },
+  {
+    "id": "card_81",
+    "word": "even after...",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "even after...",
+        "cn": "即使在...之后，仍然..."
+      }
+    ]
+  },
+  {
+    "id": "card_82",
+    "word": "the advent of + noun ...",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "the advent of + noun ...",
+        "cn": "的出现/问世/到来（通常指重大、具有时代意义的事物）"
+      }
+    ]
+  },
+  {
+    "id": "card_83",
+    "word": "pyramid",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "呈金字塔形的组织或系统"
+      }
+    ],
+    "ipa": "[ˈpɪrəmɪd]"
+  },
+  {
+    "id": "card_80",
+    "word": "Even after the advent of widespread social media, ...",
+    "displayWord": "Even after the <strong>advent</strong> of widespread social media, a pyramid of production remains...",
+    "type": "sentence",
+    "fullText": "Even after the {{BOLD:0}} of widespread social media, a pyramid of production remains...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Even after the advent of widespread social media, a pyramid of production remains...",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_84",
+    "word": "benign  🙂",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "良性的"
+      }
+    ],
+    "ipa": "[bɪˈnaɪn]"
+  },
+  {
+    "id": "card_85",
+    "word": "perpetual",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "无限的"
+      }
+    ],
+    "ipa": "[pərˈpetʃuəl]",
+    "synonyms": [
+      {
+        "word": "continuous",
+        "ipa": "[kənˈtɪnjuəs]",
+        "pos": "adj.",
+        "cn": "持续的"
+      }
+    ]
+  },
+  {
+    "id": "card_87",
+    "word": "dampen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "抑制"
+      }
+    ],
+    "ipa": "[ˈdæmpən]",
+    "synonyms": [
+      {
+        "word": "restrain",
+        "pos": "vt.",
+        "cn": "抑制"
+      },
+      {
+        "word": "curb",
+        "items": [
+          {
+            "type": "def",
+            "en": "vt.",
+            "cn": "抑制，控制"
+          },
+          {
+            "type": "def",
+            "en": "n.",
+            "cn": "限制，控制；路源；勒马绳"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_86",
+    "word": "Nothing seems to dampen his perpetual enthusiasm.",
+    "displayWord": "Nothing seems to dampen his <strong>perpetual</strong> enthusiasm.",
+    "type": "sentence",
+    "fullText": "Nothing seems to dampen his {{BOLD:0}} enthusiasm.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "Nothing seems to dampen his perpetual enthusiasm.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "synonyms": [
+      {
+        "word": "restrain vt. 抑制"
+      },
+      {
+        "word": "curb"
+      }
+    ]
+  },
+  {
+    "id": "card_88",
+    "word": "discontent",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "不满意"
+      }
+    ]
+  },
+  {
+    "id": "card_89",
+    "word": "content",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "满意的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "内容"
+      }
+    ]
+  },
+  {
+    "id": "card_90",
+    "word": "jointly",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "共同地"
+      }
+    ]
+  },
+  {
+    "id": "card_91",
+    "word": "pharmaceutical",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "制药的"
+      }
+    ],
+    "ipa": "[ˌfɑːrməˈsuːtɪkl]"
+  },
+  {
+    "id": "card_92",
+    "word": "resemblance",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "相似"
+      }
+    ],
+    "ipa": "[rɪˈzembləns]"
+  },
+  {
+    "id": "card_93",
+    "word": "There was a remarkable resemblance between his and...",
+    "displayWord": "There was a remarkable <strong>resemblance</strong> between his and Pete.",
+    "type": "sentence",
+    "fullText": "There was a remarkable {{BOLD:0}} between his and Pete.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "There was a remarkable resemblance between his and Pete.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_94",
+    "word": "resemble",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "像"
+      }
+    ],
+    "ipa": "[rɪˈzembl]",
+    "synonyms": [
+      {
+        "word": "(be) similar to"
+      }
+    ]
+  },
+  {
+    "id": "card_95",
+    "word": "A resemble B",
+    "displayWord": "A resemble B",
+    "type": "sentence",
+    "fullText": "A resemble B",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "A resemble B",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_96",
+    "word": "intimacy",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "亲密"
+      }
+    ],
+    "ipa": "[ˈɪntɪməsi]"
+  },
+  {
+    "id": "card_97",
+    "word": "intimate",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "紧密的"
+      }
+    ],
+    "ipa": "[ˈɪntɪmeɪt]"
+  },
+  {
+    "id": "card_98",
+    "word": "frequency",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "频率"
+      }
+    ]
+  },
+  {
+    "id": "card_99",
+    "word": "enlarge",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "扩大"
+      }
+    ]
+  },
+  {
+    "id": "card_100",
+    "word": "abdomen",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "腹部"
+      }
+    ],
+    "ipa": "[ˈæbdəmən]"
+  }
+]

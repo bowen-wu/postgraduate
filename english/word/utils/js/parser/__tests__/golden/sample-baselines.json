@@ -1,0 +1,57 @@
+[
+  {
+    "key": "unit18-1",
+    "source": "english/word/core/Unit18-1.md",
+    "mode": "snapshot",
+    "sourceHash": "6226f143ff1d3c138e0510f8dcf79f4bb8ee5e6439b304a925fa86fd097a55f0",
+    "outputHash": "215b9e6e649babf9a38249a40adefab24ca62fc4ba885ba212b97f80888b3c15",
+    "expectedFile": "golden/samples/unit18-1.expected.json"
+  },
+  {
+    "key": "unit20-2",
+    "source": "english/word/core/Unit20-2.md",
+    "mode": "snapshot",
+    "sourceHash": "392645156528957d7ab898b38600691d2ac2b1ded038d73bfdca17ba366822a0",
+    "outputHash": "577ee10e83f8ce3b82e40a1ab963f568f48c0244cc73474a6906b6af2d3393f9",
+    "expectedFile": "golden/samples/unit20-2.expected.json"
+  },
+  {
+    "key": "unit21-2",
+    "source": "english/word/core/Unit21-2.md",
+    "mode": "hash",
+    "sourceHash": "d861a20175b65b8cde415ae0749201e5d015cc542f3cbdf8dfb837f85a9e2f5f",
+    "outputHash": "8f882e0cf132a8c16b3fc2e28a969323882d2a9d5140e94c06ece1f71371bd65"
+  },
+  {
+    "key": "019-024",
+    "source": "english/word/low-frequency/019-024.md",
+    "mode": "snapshot",
+    "sourceHash": "edebcdef969aa1f91c283c3f611fa5a52bc0d01cff802d30153e9374ef318d58",
+    "outputHash": "031daf5d994d3df7beab9e6159d5a6409cfa31ae8412682f151f03f7ac705c96",
+    "expectedFile": "golden/samples/019-024.expected.json"
+  },
+  {
+    "key": "073-078",
+    "source": "english/word/low-frequency/073-078.md",
+    "mode": "snapshot",
+    "sourceHash": "e6826f5e825e7591a7ca175f67be6d154e16cee0d868ab6ecb2b1ded650b1ceb",
+    "outputHash": "dd688b82586d02e1dadcf8d8547ef3a60c62bc7118b795f03428918525daeea3",
+    "expectedFile": "golden/samples/073-078.expected.json"
+  },
+  {
+    "key": "103-108",
+    "source": "english/word/low-frequency/103-108.md",
+    "mode": "snapshot",
+    "sourceHash": "4b11f2e0b862218e8f7cb84480a0f2fda7262d54c7b30d35d937f685a3e779b6",
+    "outputHash": "c49780ff3307ca651e745bd1a12e6f6988a1de22f37ae8553589b76ff5683f0c",
+    "expectedFile": "golden/samples/103-108.expected.json"
+  },
+  {
+    "key": "109-114",
+    "source": "english/word/low-frequency/109-114.md",
+    "mode": "snapshot",
+    "sourceHash": "bf54aa91db82d53b2e38a7db3aa1518daa4edf7d22065d41a7478851333e9812",
+    "outputHash": "d2a84b933a862c77ab216b2995e1ecdfc5081b71a95c7cf5dffe6d2f2a66e374",
+    "expectedFile": "golden/samples/109-114.expected.json"
+  }
+]
