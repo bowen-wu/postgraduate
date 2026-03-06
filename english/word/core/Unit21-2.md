@@ -50,7 +50,7 @@
 - symbolise ['sɪmbəlaɪz] vt. 象征
 - symbol [ˈsɪmbl]
     - n. 象征
-    - A is a symbol of B A是B的象征
+    - A is a symbol of B
 
 ## dwelling
 
@@ -96,10 +96,10 @@
 - overlap v. 使部分重叠
 - overshadow
     - vt. 使蒙上阴影
-    - A overshadow B A笼罩着B，A给B蒙上阴影
+    - A overshadow B
     - foreshadow [fɔrˈʃædoʊ]
         - vt. 预示
-        - A foreshadow B A预示着B
+        - A foreshadow B
 
 ## cunning
 
@@ -268,7 +268,7 @@
 - n. 公共集会
 - About three thousand people held a **rally** to mark international human rights day.
 - Her colleagues have continued to **rally** to her support.
-    - rally to sb's support 集结力量、团结一致去支持某人
+    - rally to somebody's support 集结力量、团结一致去支持某人
 - rallying [ˈræliɪŋ] n. 鼓舞士气的集体活动
 
 ## Words
