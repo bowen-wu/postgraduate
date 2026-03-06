@@ -17,6 +17,69 @@
 - C: Cause
 - R: Result
 
+## suggest
+
+- vt. 表明；暗示；建议
+- I **suggest** him that he (should) **ask** some specific questions about her past.
+    - suggest/demand/require sb. (should) do 虚拟
+- I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的
+- Are you **suggesting** that I'm rejected?
+- A new study **suggests** that contrary to most surveys, people are actually more stressed at home than at work.
+- suggestion n. 建议
+- indicate
+    - vt. 表明；暗示；指出
+    - == suggest
+    - By pointing out our identity as "citizens," the author **indicates** that...
+    - indicator
+        - n. 指示物；标志；指示器
+        - key indicators 关键指标
+
+## science
+
+- n. 科学；科学研究
+- scientific adj. 科学的；严谨的
+- scientist n. 科学家
+- neuroscientist ['njʊəroʊsaɪəntɪst] n. 神经系统科学家
+- conscience [ˈkɑːnʃəns]
+    - n. 良知；内疚
+    - Mental health has commonly been called **conscience**, *instinct([ˈɪnstɪŋkt])*, *wisdom([ˈwɪzdəm])*, common sense,
+      or the inner voice.
+    - ...verdicts should represent the **conscience** of the community and <ins>not just(不仅仅)</ins> the *letter* of
+      the law.
+        - verdict [ˈvɜːrdɪkt]
+            - n. 裁决
+            - == ruling == decision
+
+## through
+
+- prep. 一直到；通过，凭借；穿过；贯穿；自始至终
+- adv. 通过；自始至终
+- 词组
+    - think through 充分考虑
+    - go through 检查；经历（尤为艰难时期 hardships）
+    - live through 度过；经受过
+        - == survive
+    - carry through 贯彻
+    - work through 通过反复思考来解决问题
+    - break through 突破
+        - == breakthrough n. 突破
+- go through the motions 走过场；做做样子；敷衍了事
+- Be *relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的)* and then you'll **break through**.
+- Don't just **go through** it; grow **through** it.
+- However, Obamacare has allowed more than 12 million people to either get *insurance([ɪnˈʃʊrəns] n. 保险)* **through**
+  Medicaid or the exchanges.
+- throughout
+    - prep. 自始至终；遍及
+    - adv. 自始至终；各处
+    - == always == everywhere
+- cross [krɔːs]
+    - v. 穿越；交叉；
+    - adj. 交叉的
+    - finger cross 好运
+    - cross- 交叉
+        - They _**cross**-check(交叉检查)_ sources and prefer news from different *perspectives([pərˈspektɪv] n. 视角)*.
+        - One _**cross**-generation(跨代)_ mark of a successful life is having a family with children.
+
 ## rule
 
 - v. 判决；统治；作出裁决
@@ -24,7 +87,7 @@
 - The deal may be **ruled** illegal.
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
-- Rain falls from above, and people who reign <ins>**rule** from<ins> a position above others.
+- Rain falls from above, and people who reign <ins>**rule** from</ins> a position above others.
 - ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
     - rule out 排除；不予考虑
 - ruling n. 裁决
@@ -41,7 +104,7 @@
     - regulator n. 监管者
     - regulatory
         - adj. 监管的
-        - ...the <ins>Supreme Court(最高法院)</ins> has *ruled that* states **do** have some **regulatory authority**
+        - ...the <ins>Supreme Court(最高法院)</ins> has ruled that states **do** have some **regulatory authority**
           over nuclear power.
         - ...a **regulatory** *structure(n. 结构)* that *denies([diˈnaiz] v. 拒绝)* management the flexibility to adjust
           its operations to the new reality.
@@ -50,9 +113,8 @@
     - constitutional
         - adj. 有关宪法的
         - <ins>The **Constitutional** principles</ins> ***that** Washington alone has the power to "establish a uniform
-          Rule of Naturalization"* and ***that** <ins>federal laws precede state laws</ins>* <ins>**are**
-          noncontroversial</ins>.
-            - A precede B A领先B/A优先于B
+          Rule of Naturalization" and **that** federal laws precede state laws **are** noncontroversial.
+            - A precede B
     - unconstitutional adj. 违反宪法的
 - charter n. 章程
 
@@ -258,6 +320,16 @@
 
 ## Words
 
+- process [prəˈses]
+    - v. 加工; 处理; 冲印; 审核; 列队行进
+    - n. 过程; 变化过程; 做事方法
+- possess [pəˈzes]
+    - v. 拥有; 具备; 控制; 使言行失常
+- proceed [proʊˈsiːd]
+    - vi. 进行; 前进; （沿特定路线）行进; （尤指打断后）继续说
+- precede [prɪˈsiːd]
+    - vt.& vi. 在...之前发生或出现，先于; 在...之上，优于
+    - A precede B
 - nuisance [ˈnuːsns]
     - n. 麻烦事，讨厌的人或事
 - knock out
