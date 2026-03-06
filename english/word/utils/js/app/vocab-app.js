@@ -10,6 +10,8 @@ import { StorageRepo } from '../infrastructure/storage-repo.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
 import * as EventHandlers from './event-handlers.js';
+import { createConfirmDialog } from './services/confirm-dialog.js';
+import { hasCardShell, buildCardShellHtml, refreshCardUiRefs } from './services/card-shell.js';
 
 // Export for global scope access
 export { CONFIG, STATE, GitHubApi, MarkdownParser };
@@ -43,6 +45,7 @@ export class VocabApp {
       dialogConfirmBtn: document.getElementById('dialogConfirmBtn'),
       currentFileDisplay: document.getElementById('currentFileDisplay')
     };
+    this.confirmDialog = createConfirmDialog(this.ui);
     this.init();
   }
 
@@ -236,30 +239,9 @@ export class VocabApp {
    * Restart from beginning - restore card structure if needed and show first card
    */
   restart() {
-    if (!document.getElementById('displayWord')) {
+    if (!hasCardShell()) {
       // Card structure was replaced (e.g., by completion screen) - rebuild it
-      this.ui.card.innerHTML = `
-        <header class="card-header">
-          <div class="word-title-group">
-            <span class="main-word" id="displayWord">Loading...</span>
-            <span class="pronunciation" id="displayPronunciation"></span>
-          </div>
-          <div class="badges" id="displayBadges"></div>
-        </header>
-        <div class="card-body">
-          <ul class="item-list" id="itemList"></ul>
-        </div>
-        <footer class="card-footer">
-          <button class="btn-ghost" data-action="prev-card" id="btnPrev">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-            上一个
-          </button>
-          <span class="progress-indicator" id="progressText">0 / 0</span>
-          <div class="action-area" id="actionArea"></div>
-        </footer>
-      `;
+      this.ui.card.innerHTML = buildCardShellHtml();
     }
 
     // Reset index, clear completed flag, and start new session
@@ -269,13 +251,7 @@ export class VocabApp {
     StateManager.saveState();
 
     // Re-initialize UI elements that were replaced
-    this.ui.word = document.getElementById('displayWord');
-    this.ui.ipa = document.getElementById('displayPronunciation');
-    this.ui.badges = document.getElementById('displayBadges');
-    this.ui.list = document.getElementById('itemList');
-    this.ui.progress = document.getElementById('progressText');
-    this.ui.actionArea = document.getElementById('actionArea');
-    this.ui.btnPrev = document.getElementById('btnPrev');
+    refreshCardUiRefs(this.ui);
 
     // Re-render the first card
     this.render();
@@ -297,39 +273,4 @@ export class VocabApp {
     return EventHandlers.translateSentence();
   }
 
-  // Confirm dialog object
-  confirmDialog = {
-    confirmCallback: null,
-
-    show: (message, onConfirm, title = '切换文件') => {
-      const overlay = this.ui.confirmDialog;
-      const msgEl = this.ui.dialogMessage;
-      const confirmBtn = this.ui.dialogConfirmBtn;
-      const titleEl = overlay.querySelector('.dialog-title span');
-
-      msgEl.innerHTML = message;
-      if (titleEl) titleEl.textContent = title;
-      this.confirmDialog.confirmCallback = onConfirm;
-
-      confirmBtn.onclick = () => {
-        if (this.confirmDialog.confirmCallback) {
-          const callback = this.confirmDialog.confirmCallback;
-          this.confirmDialog.confirmCallback = null;
-          callback();
-        }
-        this.confirmDialog.hide();
-      };
-
-      overlay.classList.add('show');
-    },
-
-    hide: () => {
-      this.ui.confirmDialog.classList.remove('show');
-      this.confirmDialog.confirmCallback = null;
-    },
-
-    cancel: () => {
-      this.confirmDialog.hide();
-    }
-  };
 }

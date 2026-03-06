@@ -7,13 +7,16 @@ import { CONFIG, STATE } from '../config.js';
 import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
 import { createStudyUseCases } from '../application/study-use-cases.js';
+import { createTranslationUseCases } from '../application/translation-use-cases.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
 import { playWordWithFallback, prewarmSpeechSynthesis as prewarmSpeechSynthesisService } from '../infrastructure/audio-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
+import { renderRootFileList, renderFolderFileList, renderFileListError } from './presenters/file-list-presenter.js';
 
 let appContext = null;
 let studyUseCases = null;
+let translationUseCases = null;
 
 export function setAppContext(app) {
   appContext = app;
@@ -39,6 +42,20 @@ function getStudyUseCases() {
     });
   }
   return studyUseCases;
+}
+
+function getTranslationUseCases() {
+  if (!translationUseCases) {
+    translationUseCases = createTranslationUseCases({
+      stateManager: StateManager,
+      uiRenderer: UiRenderer,
+      getUi: () => getApp().ui,
+      render: () => getApp().render(),
+      translateText: translateTextWithFallback,
+      setButtonLoading
+    });
+  }
+  return translationUseCases;
 }
 
 /**
@@ -200,35 +217,9 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
 
     const {folders, files} = await GitHubApi.fetchFolderContents('', forceRefresh);
 
-    let html = '<div style="padding: 0.5rem;"><strong>📚 选择文件夹:</strong></div>';
-
-    if (folders.length > 0) {
-      html += folders.map(folder => `
-        <div class="file-item" data-action="load-folder" data-path="${folder.name}">
-          <span class="file-icon">📁</span>
-          <span class="file-name">${folder.name}</span>
-        </div>
-      `).join('');
-    }
-
-    if (files.length > 0) {
-      html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
-      html += files.map(file => `
-        <div class="file-item" data-action="select-file" data-path="${file.name}" data-name="${file.name}">
-          <span class="file-icon">📄</span>
-          <span class="file-name">${file.name}</span>
-        </div>
-      `).join('');
-    }
-
-    ui.fileListContainer.innerHTML = html;
+    ui.fileListContainer.innerHTML = renderRootFileList({ folders, files });
   } catch (e) {
-    ui.fileListContainer.innerHTML = `
-      <div style="padding: 1rem; text-align: center; color: var(--danger);">
-        <p>加载失败: ${e.message}</p>
-        <button class="btn-primary" data-action="load-root-folders" style="margin-top: 1rem;">重试</button>
-      </div>
-    `;
+    ui.fileListContainer.innerHTML = renderFileListError(e.message, '重试');
   }
 }
 
@@ -243,64 +234,9 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
 
     const {folders, files} = await GitHubApi.fetchFolderContents(path, forceRefresh);
 
-    let html = '';
-
-    // Add back button
-    html += `
-      <div class="file-item" data-action="load-root-folders" style="color: var(--primary);">
-        <span class="file-icon">⬅️</span>
-        <span class="file-name">返回根目录</span>
-      </div>
-    `;
-
-    // Add parent folder button if not in root
-    if (path.includes('/')) {
-      const parentPath = path.split('/').slice(0, -1).join('/');
-      html += `
-        <div class="file-item" data-action="load-folder" data-path="${parentPath}" style="color: var(--primary);">
-          <span class="file-icon">⬆️</span>
-          <span class="file-name">上级目录</span>
-        </div>
-      `;
-    }
-
-    html += `<div style="padding: 0.5rem;"><strong>📁 ${path}</strong></div>`;
-
-    if (folders.length > 0) {
-      html += folders.map(folder => `
-        <div class="file-item" data-action="load-folder" data-path="${path}/${folder.name}">
-          <span class="file-icon">📁</span>
-          <span class="file-name">${folder.name}</span>
-        </div>
-      `).join('');
-    }
-
-    if (files.length > 0) {
-      html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
-      html += files.map(file => `
-        <div class="file-item" data-action="select-file" data-path="${path}/${file.name}" data-name="${file.name}">
-          <span class="file-icon">📄</span>
-          <span class="file-name">${file.name}</span>
-        </div>
-      `).join('');
-    }
-
-    if (folders.length === 0 && files.length === 0) {
-      html += `
-        <div style="padding: 1rem; text-align: center; color: var(--secondary);">
-          此文件夹为空
-        </div>
-      `;
-    }
-
-    ui.fileListContainer.innerHTML = html;
+    ui.fileListContainer.innerHTML = renderFolderFileList({ path, folders, files });
   } catch (e) {
-    ui.fileListContainer.innerHTML = `
-      <div style="padding: 1rem; text-align: center; color: var(--danger);">
-        <p>加载失败: ${e.message}</p>
-        <button class="btn-primary" data-action="load-root-folders" style="margin-top: 1rem;">返回根目录</button>
-      </div>
-    `;
+    ui.fileListContainer.innerHTML = renderFileListError(e.message, '返回根目录');
   }
 }
 
@@ -513,84 +449,12 @@ export async function translateText(text, buttonId = null) {
  * 翻译当前 Phrase 卡片
  */
 export async function translatePhrase() {
-  const card = StateManager.getCurrentCard();
-  if (!card || card.type !== 'phrase') return;
-
-  // Try both button IDs (content area and action area)
-  const buttonIds = ['translate-btn-phrase', 'translate-btn-phrase-action'];
-
-  try {
-    // Set loading state for all possible buttons
-    buttonIds.forEach(id => setButtonLoading(true, id));
-
-    UiRenderer.showToast(getApp().ui, '正在翻译...');
-    const result = await translateText(card.word);
-
-    // 更新卡片数据
-    if (!card.items[0]) {
-      card.items[0] = { en: card.word, cn: '' };
-    }
-    card.items[0].cn = result.translation;
-
-    // Clear loading state for all possible buttons
-    buttonIds.forEach(id => setButtonLoading(false, id));
-
-    // 保存状态并重新渲染
-    StateManager.saveState();
-    getApp().render();
-
-    // 更新 action area 为"下一个"按钮
-    UiRenderer.renderNextAction(getApp().ui);
-    // UiRenderer.showToast(getApp().ui, `✅ 翻译完成 (${result.sourceName})`);
-  } catch (error) {
-    buttonIds.forEach(id => setButtonLoading(false, id));
-    UiRenderer.showToast(getApp().ui, '❌ 翻译失败: ' + error.message);
-  }
+  return getTranslationUseCases().translatePhrase();
 }
 
 /**
  * 翻译当前 Sentence 卡片
  */
 export async function translateSentence() {
-  const card = StateManager.getCurrentCard();
-  if (!card || card.type !== 'sentence') return;
-
-  const sentenceText = card.items[0]?.en || card.displayWord || card.word;
-  // Try both button IDs (content area and action area)
-  const buttonIds = ['translate-btn-sentence', 'translate-btn-sentence-action'];
-
-  try {
-    // Set loading state for all possible buttons
-    buttonIds.forEach(id => setButtonLoading(true, id));
-
-    UiRenderer.showToast(getApp().ui, '正在翻译...');
-    const result = await translateText(sentenceText);
-
-    // 更新卡片数据
-    if (!card.items[0]) {
-      card.items[0] = { en: sentenceText, cn: '' };
-    }
-    card.items[0].cn = result.translation;
-
-    // Clear loading state for all possible buttons
-    buttonIds.forEach(id => setButtonLoading(false, id));
-
-    // 保存状态并重新渲染
-    StateManager.saveState();
-    getApp().render();
-
-    // 直接显示中文译文
-    const cnDiv = document.getElementById('sentenceCn');
-    if (cnDiv) {
-      cnDiv.style.display = 'block';
-      cnDiv.classList.add('revealed');
-    }
-
-    // 更新 action area 为"下一个"按钮
-    UiRenderer.renderNextAction(getApp().ui);
-    // UiRenderer.showToast(getApp().ui, `✅ 翻译完成 (${result.sourceName})`);
-  } catch (error) {
-    buttonIds.forEach(id => setButtonLoading(false, id));
-    UiRenderer.showToast(getApp().ui, '❌ 翻译失败: ' + error.message);
-  }
+  return getTranslationUseCases().translateSentence();
 }

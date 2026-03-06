@@ -1,6 +1,7 @@
 import { CONFIG, STATE } from '../config.js';
 import { VocabApp } from './vocab-app.js';
 import { createUseCases } from '../application/use-cases.js';
+import { dispatchAction } from '../application/action-dispatcher.js';
 import { setAppContext } from './event-handlers.js';
 import { getCurrentCardFromState } from '../domain/selectors.js';
 
@@ -22,107 +23,11 @@ function resetCardLocalState() {
   keyboardState.isConfirming = false;
 }
 
-function handleAction(actionEl) {
-  const action = actionEl.dataset.action;
-  switch (action) {
-    case 'toggle-files':
-      app.toggleFiles();
-      break;
-    case 'toggle-shortcuts':
-      app.toggleShortcuts();
-      break;
-    case 'set-mode':
-      if (actionEl.dataset.mode) {
-        app.setMode(actionEl.dataset.mode);
-      }
-      break;
-    case 'toggle-autoplay':
-      app.toggleAutoPlay();
-      break;
-    case 'toggle-stats':
-      app.toggleStats();
-      break;
-    case 'refresh-file-list':
-      app.refreshFileList();
-      break;
-    case 'reset-data':
-      app.resetData();
-      break;
-    case 'prev-card':
-      app.prevCard();
-      resetCardLocalState();
-      break;
-    case 'next-card':
-      app.nextCard();
-      resetCardLocalState();
-      break;
-    case 'cancel-dialog':
-      app.confirmDialog.cancel();
-      break;
-    case 'load-root-folders':
-      app.loadRootFolders();
-      break;
-    case 'load-folder':
-      if (actionEl.dataset.path) {
-        app.loadFolder(actionEl.dataset.path);
-      }
-      break;
-    case 'select-file':
-      if (actionEl.dataset.path && actionEl.dataset.name) {
-        app.selectFile(actionEl.dataset.path, actionEl.dataset.name);
-      }
-      break;
-    case 'jump-to-original':
-      if (actionEl.dataset.index) {
-        app.jumpToOriginal(Number(actionEl.dataset.index));
-      }
-      break;
-    case 'restart':
-      app.restart();
-      break;
-    case 'clear-data-reload':
-      app.clearDataAndReload();
-      break;
-    case 'reload-page':
-      location.reload();
-      break;
-    case 'show-sentence-translation':
-      app.showSentenceTranslation();
-      break;
-    case 'translate-phrase':
-      app.translatePhrase();
-      break;
-    case 'translate-sentence':
-      app.translateSentence();
-      break;
-    case 'handle-sentence-recall':
-      app.handleSentenceRecall(actionEl.dataset.understood === 'true');
-      break;
-    case 'handle-recall':
-      app.handleRecall(actionEl.dataset.claimedKnown === 'true');
-      break;
-    case 'confirm-recall':
-      app.confirmRecall(actionEl.dataset.actuallyCorrect === 'true');
-      break;
-    case 'reveal':
-      app.reveal(actionEl);
-      break;
-    case 'play-word':
-      if (actionEl.dataset.wordEncoded) {
-        const word = decodeURIComponent(actionEl.dataset.wordEncoded);
-        app.playWord(word, actionEl.dataset.buttonId || null, false, false);
-      }
-      break;
-    default:
-      break;
-  }
-}
-
 function setupDomActions() {
   document.addEventListener('click', (e) => {
     const actionEl = e.target.closest('[data-action]');
     if (!actionEl) return;
-    handleAction(actionEl);
+    dispatchAction(actionEl, { app, resetCardLocalState });
   });
 
   document.addEventListener('app:play-word', (e) => {

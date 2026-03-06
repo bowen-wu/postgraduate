@@ -5,6 +5,13 @@
 
 import { STATE } from '../config.js';
 import * as StateManager from './state-manager.js';
+import {
+  renderInputActions as renderInputActionsModule,
+  renderRecallActions as renderRecallActionsModule,
+  renderConfirmationActions as renderConfirmationActionsModule,
+  renderNextAction as renderNextActionModule
+} from './renderers/action-renderer.js';
+import { renderCompletionScreen } from './renderers/completion-renderer.js';
 
 /**
  * Main render function - renders the current card
@@ -641,169 +648,28 @@ function renderSynonymsAndAntonyms(ui, card) {
  * Render action buttons for input mode
  */
 export function renderInputActions(ui) {
-  const card = StateManager.getCurrentCard();
-  if (!card) return;
-
-  // For sentence cards with Chinese translation
-  if (card.type === 'sentence') {
-    const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
-
-    if (hasChinese) {
-      const cnDiv = document.getElementById('sentenceCn');
-      const isCnVisible = cnDiv && cnDiv.style.display !== 'none';
-
-      if (!isCnVisible) {
-        ui.actionArea.innerHTML = `
-          <button class="btn-primary" data-action="show-sentence-translation">查看译文 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-        `;
-      } else {
-        ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
-      }
-      return;
-    }
-
-    // No Chinese - show translate and next buttons
-    ui.actionArea.innerHTML = `
-      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        翻译
-        <span class="btn-spinner"></span>
-      </button>
-      <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-    `;
-    return;
-  }
-
-  // For phrase cards without Chinese
-  if (card.type === 'phrase') {
-    const hasAnyChinese = card.items && card.items.some(item =>
-      item.cn && item.cn.trim && item.cn.trim() !== ''
-    );
-
-    if (!hasAnyChinese) {
-      ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" data-action="translate-phrase">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          翻译
-          <span class="btn-spinner"></span>
-        </button>
-        <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-      `;
-      return;
-    }
-  }
-
-  // Browse mode: show next button for all card types
-  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+  renderInputActionsModule(ui);
 }
 
 /**
  * Render action buttons for recall mode
  */
 export function renderRecallActions(ui) {
-  const card = StateManager.getCurrentCard();
-  if (!card) return;
-
-  // For sentence cards with Chinese translation
-  if (card.type === 'sentence') {
-    const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
-
-    if (!hasChinese) {
-      // No Chinese - show translate and next buttons
-      ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          翻译
-          <span class="btn-spinner"></span>
-        </button>
-        <button class="btn-primary" data-action="next-card">下一个</button>
-      `;
-      return;
-    }
-
-    const cnDiv = document.getElementById('sentenceCn');
-    const isCnVisible = cnDiv && cnDiv.style.display !== 'none';
-
-    if (!isCnVisible) {
-      ui.actionArea.innerHTML = `
-        <button class="btn-ghost" data-action="next-card">跳过</button>
-        <button class="btn-primary" data-action="show-sentence-translation">查看译文</button>
-      `;
-    } else {
-      ui.actionArea.innerHTML = `
-        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">理解错误</button>
-        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">理解正确</button>
-      `;
-    }
-    return;
-  }
-
-  // For phrase cards without Chinese
-  if (card.type === 'phrase') {
-    const hasAnyChinese = card.items && card.items.some(item =>
-      item.cn && item.cn.trim && item.cn.trim() !== ''
-    );
-
-    if (!hasAnyChinese) {
-      ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" data-action="translate-phrase">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          翻译
-          <span class="btn-spinner"></span>
-        </button>
-        <button class="btn-primary" data-action="next-card">下一个</button>
-      `;
-      return;
-    }
-  }
-
-  // For word cards or phrases with Chinese
-  const hasChinese = card.items && card.items.some(item =>
-    item.cn && item.cn.trim && item.cn.trim() !== ''
-  );
-
-  if (!hasChinese) {
-    renderNextAction(ui);
-    return;
-  }
-
-  ui.actionArea.innerHTML = `
-    <button class="btn-success" data-action="handle-recall" data-claimed-known="true">记得</button>
-    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">不记得</button>
-  `;
+  renderRecallActionsModule(ui);
 }
 
 /**
  * Render confirmation actions
  */
 export function renderConfirmationActions(ui) {
-  ui.actionArea.innerHTML = `
-    <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">其实不会</button>
-    <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">确认掌握</button>
-  `;
+  renderConfirmationActionsModule(ui);
 }
 
 /**
  * Render next action button
  */
 export function renderNextAction(ui) {
-  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个</button>`;
+  renderNextActionModule(ui);
 }
 
 /**
@@ -991,161 +857,9 @@ export function triggerConfetti() {
  * Show completion screen when all cards are finished
  */
 export function showCompletionScreen(ui) {
-  // Mark as completed and save state
-  STATE.completed = true;
-  StateManager.saveState();
-
-  // End session and get statistics
-  StateManager.endSession();
-  const stats = StateManager.getSessionStats();
-
-  // Format time
-  const formatTime = (timestamp) => {
-    if (!timestamp) return '--';
-    const date = new Date(timestamp);
-    return date.toLocaleString('zh-CN', {
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-  };
-
-  // Add mobile responsive CSS if not exists
-  if (!document.getElementById('completion-mobile-style')) {
-    const style = document.createElement('style');
-    style.id = 'completion-mobile-style';
-    style.textContent = `
-      @media (max-width: 480px) {
-        .completion-container {
-          padding: 1rem !important;
-        }
-        .completion-emoji {
-          font-size: 2.5rem !important;
-        }
-        .completion-title {
-          font-size: 1.25rem !important;
-        }
-        .completion-stats-grid {
-          grid-template-columns: repeat(3, 1fr) !important;
-          gap: 0.5rem !important;
-        }
-        .completion-stats-value {
-          font-size: 1.25rem !important;
-        }
-        .completion-stats-label {
-          font-size: 0.7rem !important;
-        }
-        .completion-progress-grid {
-          grid-template-columns: repeat(2, 1fr) !important;
-          gap: 0.75rem !important;
-        }
-        .completion-progress-value {
-          font-size: 1.1rem !important;
-        }
-        .completion-time-grid {
-          grid-template-columns: repeat(2, 1fr) !important;
-          gap: 0.75rem !important;
-        }
-        .completion-time-value {
-          font-size: 1.1rem !important;
-        }
-        .completion-time-detail {
-          font-size: 0.65rem !important;
-          flex-direction: row !important;
-          justify-content: space-between !important;
-          gap: 0.5rem !important;
-        }
-        .completion-buttons {
-          flex-direction: column !important;
-          align-items: center !important;
-        }
-        .completion-buttons button {
-          width: auto !important;
-          min-width: 140px !important;
-          padding: 0.6rem 1.5rem !important;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
-  // Show completion screen with enhanced stats - using scrollable container with CSS classes
-  ui.card.innerHTML = `
-    <div class="completion-container" style="height: 100%; overflow-y: auto; padding: 1.5rem;">
-      <div class="completion-header" style="text-align: center; padding-bottom: 1rem;">
-        <div class="completion-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
-        <h2 class="completion-title" style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;">完结撒花！</h2>
-        <p style="font-size: 1rem; color: var(--text-sub); margin-bottom: 1.5rem;">
-          恭喜你完成了本单元学习！
-        </p>
-      </div>
-
-      <!-- Main Stats Grid -->
-      <div style="background: var(--card-bg); padding: 1rem; border-radius: 12px; margin-bottom: 1rem;">
-        <div class="completion-stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
-          <div style="text-align: center;">
-            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">${stats.totalCards}</div>
-            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">总卡片</div>
-          </div>
-          <div style="text-align: center;">
-            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--danger);">${stats.totalErrors}</div>
-            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">错误次数</div>
-          </div>
-          <div style="text-align: center;">
-            <div class="completion-stats-value" style="font-size: 1.5rem; font-weight: 700; color: var(--success);">${stats.accuracy}%</div>
-            <div class="completion-stats-label" style="font-size: 0.75rem; color: var(--text-sub);">正确率</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Learning Progress Stats -->
-      <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1rem; border: 1px solid #bbf7d0;">
-        <div class="completion-progress-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-          <div style="text-align: left;">
-            <div style="font-size: 0.75rem; color: #166534; margin-bottom: 0.25rem; font-weight: 600;">✅ 一次掌握</div>
-            <div class="completion-progress-value" style="font-size: 1.25rem; font-weight: 700; color: #16a34a;">${stats.cardsMastered}</div>
-          </div>
-          <div style="text-align: left;">
-            <div style="font-size: 0.75rem; color: #991b1b; margin-bottom: 0.25rem; font-weight: 600;">🔄 需复习</div>
-            <div class="completion-progress-value" style="font-size: 1.25rem; font-weight: 700; color: #dc2626;">${stats.cardsNeedingReview}</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Time Stats -->
-      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 1rem 1.25rem; border-radius: 12px; margin-bottom: 1rem; border: 1px solid #fcd34d;">
-        <div class="completion-time-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-          <div style="text-align: left;">
-            <div style="font-size: 0.75rem; color: #92400e; margin-bottom: 0.25rem; font-weight: 600;">⏱️ 学习时长</div>
-            <div class="completion-time-value" style="font-size: 1.25rem; font-weight: 700; color: #d97706;">${StateManager.formatDuration(stats.duration)}</div>
-          </div>
-          <div style="text-align: left;">
-            <div style="font-size: 0.75rem; color: #92400e; margin-bottom: 0.25rem; font-weight: 600;">📊 平均每卡</div>
-            <div class="completion-time-value" style="font-size: 1.25rem; font-weight: 700; color: #d97706;">${StateManager.formatDuration(stats.avgTimePerCard)}</div>
-          </div>
-        </div>
-        <div class="completion-time-detail" style="margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px dashed #fbbf24; font-size: 0.7rem; color: #78350f; display: flex; justify-content: space-between;">
-          <span>🕐 ${formatTime(stats.startTime)}</span>
-          <span>🏁 ${formatTime(stats.endTime)}</span>
-        </div>
-      </div>
-
-      <div class="completion-buttons" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; padding-top: 0.5rem;">
-        <button class="btn-primary" data-action="restart" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
-          🔄 重新开始
-        </button>
-        <button class="btn-ghost" data-action="clear-data-reload" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
-          🗑️ 清除进度
-        </button>
-      </div>
-    </div>
-  `;
-
-  // Hide action area and update progress (matching review.html)
-  ui.actionArea.innerHTML = '';
-  ui.progress.textContent = `${stats.totalCards} / ${stats.totalCards}`;
-
-  // Trigger confetti animation
-  triggerConfetti();
+  renderCompletionScreen(ui, {
+    state: STATE,
+    stateManager: StateManager,
+    triggerConfetti
+  });
 }

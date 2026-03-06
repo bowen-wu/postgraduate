@@ -4,7 +4,7 @@
  */
 
 import { CONFIG, STATE } from '../config.js';
-import { StorageRepo } from '../infrastructure/storage-repo.js';
+import { StateRepo } from '../infrastructure/state-repo.js';
 
 /**
  * Fisher-Yates shuffle algorithm
@@ -60,7 +60,7 @@ export function getStorageKey(path) {
 export function loadStatsForFile(path) {
   const key = getStorageKey(path);
   try {
-    const saved = StorageRepo.getItem(key);
+    const saved = StateRepo.getByKey(key);
     if (saved) {
       const parsed = JSON.parse(saved);
       // Only load stats, not cards (cards are loaded from file)
@@ -147,9 +147,9 @@ export function saveState() {
   };
 
   try {
-    StorageRepo.setJson(key, data);
+    StateRepo.setJsonByKey(key, data);
     // Also save the last used path globally
-    StorageRepo.setItem(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
+    StateRepo.setByKey(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
   } catch (e) {
   }
 }
@@ -170,7 +170,7 @@ export function loadState() {
   try {
     // First, try to load the last used path
     if (!STATE.currentPath) {
-      const lastPath = StorageRepo.getItem(`${CONFIG.storageKey}_lastPath`);
+      const lastPath = StateRepo.getByKey(`${CONFIG.storageKey}_lastPath`);
       if (lastPath) {
         STATE.currentPath = lastPath;
       }
@@ -180,7 +180,7 @@ export function loadState() {
 
     // Now load stats for the current path
     const key = getStorageKey(STATE.currentPath);
-    const saved = StorageRepo.getItem(key);
+    const saved = StateRepo.getByKey(key);
     if (saved) {
       const parsed = JSON.parse(saved);
       STATE.stats = parsed.stats || {};
@@ -255,10 +255,10 @@ export function getCurrentFolderPath() {
  */
 export function resetData() {
   // Clear all VocabMaster related data from storage repo
-  const keys = StorageRepo.keys();
+  const keys = StateRepo.keys();
   keys.forEach(key => {
     if (key.startsWith(CONFIG.storageKey) || key.startsWith(CONFIG.cacheKey)) {
-      StorageRepo.removeItem(key);
+      StateRepo.removeByKey(key);
     }
   });
 
