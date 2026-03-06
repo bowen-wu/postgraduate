@@ -68,6 +68,16 @@ export function createFileUseCases(deps) {
 
       const parser = new ParserClass(text);
       state.cards = parser.parse();
+
+      // Debug: 打印生成的每一个 Card
+      console.log('=== 生成的 Cards ===');
+      console.log(`共 ${state.cards.length} 张卡片`);
+      state.cards.forEach((card, index) => {
+        console.log(`\n--- Card ${index + 1} ---`);
+        console.log(JSON.stringify(card, null, 2));
+      });
+      console.log('=== Cards 打印结束 ===');
+
       if (state.cards.length === 0) throw new Error('解析后没有生成任何卡片，请检查数据格式');
 
       state.currentPath = relativePath;
