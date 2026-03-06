@@ -98,15 +98,11 @@ export class VocabApp {
       StateManager.startSession();
       this.render();
     }
-    StateManager.updateStatsUI(this.ui);
+    UiRenderer.updateStatsUI(this.ui);
   }
 
   render() {
     UiRenderer.render(this.ui);
-  }
-
-  loadStatsForFile(path) {
-    StateManager.loadStatsForFile(path);
   }
 
   saveState() {
@@ -117,19 +113,11 @@ export class VocabApp {
     StateManager.resetData();
   }
 
-  getCurrentFolderPath() {
-    return StateManager.getCurrentFolderPath();
-  }
-
   updateStatsUI() {
-    StateManager.updateStatsUI(this.ui);
+    UiRenderer.updateStatsUI(this.ui);
   }
 
   // UI rendering methods
-  updateAutoPlayButton() {
-    UiRenderer.updateAutoPlayButton(this.ui);
-  }
-
   showToast(msg) {
     UiRenderer.showToast(this.ui, msg);
   }

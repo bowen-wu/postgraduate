@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test \"app/__tests__/**/*.test.mjs\" \"infrastructure/__tests__/**/*.test.mjs\" \"parser/__tests__/*.test.mjs\""
+    "lint": "node --check config.js api/github.js app/*.js app/presenters/*.js app/renderers/*.js app/services/*.js app/state/*.js application/*.js domain/*.js infrastructure/*.js parser/*.js",
+    "test": "node --test \"app/__tests__/**/*.test.mjs\" \"infrastructure/__tests__/**/*.test.mjs\" \"parser/__tests__/*.test.mjs\"",
+    "verify": "npm run lint && npm test"
   }
 }

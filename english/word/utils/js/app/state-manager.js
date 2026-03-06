@@ -141,36 +141,6 @@ export function resetData() {
 }
 
 /**
- * Update statistics UI
- * Learning list always shows original order, but highlights current card
- * @param {Object} ui - UI elements object
- */
-export function updateStatsUI(ui) {
-  // Get current card's actual index in the original array
-  const currentCardIndex = STATE.displayOrder[STATE.currentIndex];
-
-  let html = '';
-  STATE.cards.forEach((c, idx) => {
-    const s = STATE.stats[c.id];
-    // Highlight the card that's currently being displayed (not by position, but by card)
-    const isActive = idx === currentCardIndex;
-    const err = s && s.errors ? `(${s.errors})` : '';
-    let icon = '📝';  // 'word' type
-    if (c.type === 'phrase') icon = '🔗';
-    if (c.type === 'sentence') icon = '💬';
-    html += `
-      <div class="stat-row ${isActive ? 'active' : ''}" data-action="jump-to-original" data-index="${idx}">
-        <span class="stat-word"><span class="tag-pill">${icon}</span>${c.word.substring(0, 18)}${c.word.length > 18 ? '...' : ''}</span>
-        <span class="stat-val" style="color:${s && s.errors ? 'var(--danger)' : 'inherit'}">${err}</span>
-      </div>
-    `;
-  });
-  ui.statsList.innerHTML = html;
-  const active = ui.statsList.querySelector('.active');
-  if (active) active.scrollIntoView({block: 'center'});
-}
-
-/**
  * Set order mode and regenerate display order
  */
 export function setOrderMode(mode) {

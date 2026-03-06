@@ -26,8 +26,16 @@ Command:
 npm test
 ```
 
+Full quality gate:
+```bash
+npm run verify
+```
+
 Current script:
 - `node --test "app/__tests__/**/*.test.mjs" "infrastructure/__tests__/**/*.test.mjs" "parser/__tests__/*.test.mjs"`
+
+Lint script:
+- `node --check config.js api/github.js app/*.js app/presenters/*.js app/renderers/*.js app/services/*.js app/state/*.js application/*.js domain/*.js infrastructure/*.js parser/*.js`
 
 ## 4. Test Strategy
 

@@ -6,6 +6,7 @@
 // Import CONFIG from config.js
 import { CONFIG } from '../config.js';
 import { StorageRepo } from '../infrastructure/storage-repo.js';
+import { toServiceError } from '../infrastructure/service-error.js';
 
 export class GitHubApi {
   static getCacheKey(path) {
@@ -69,12 +70,13 @@ export class GitHubApi {
       const resetDate = resetTime ? new Date(parseInt(resetTime) * 1000) : null;
       const timeRemaining = resetDate ? Math.ceil((resetDate - Date.now()) / 60000) : 60;
 
-      throw new Error(
+      throw toServiceError(
+        'GITHUB_RATE_LIMIT',
         `GitHub API 速率限制已达到。请等待 ${timeRemaining} 分钟后重试，或点击"刷新列表"按钮。`
       );
     }
 
-    if (!res.ok) throw new Error(`GitHub API Error: ${res.status} ${res.statusText}`);
+    if (!res.ok) throw toServiceError('GITHUB_API_HTTP', `GitHub API Error: ${res.status} ${res.statusText}`);
 
     const data = await res.json();
 
@@ -91,7 +93,7 @@ export class GitHubApi {
   static async fetchFileContent(path) {
     const url = `${CONFIG.baseRawUrl}/${path}`;
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Fetch Error: ${res.status}`);
+    if (!res.ok) throw toServiceError('GITHUB_RAW_HTTP', `Fetch Error: ${res.status}`);
     return await res.text();
   }
 

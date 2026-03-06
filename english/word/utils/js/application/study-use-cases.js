@@ -15,7 +15,7 @@ export function createStudyUseCases(deps) {
     if (!state.stats[card.id]) state.stats[card.id] = { errors: 0 };
     state.stats[card.id].errors += 1;
     stateManager.saveState();
-    stateManager.updateStatsUI(getUi());
+    uiRenderer.updateStatsUI(getUi());
 
     const badgesEl = getBadgesElement ? getBadgesElement() : null;
     if (badgesEl) {
@@ -40,7 +40,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex += 1;
       stateManager.saveState();
       render();
-      stateManager.updateStatsUI(getUi());
+      uiRenderer.updateStatsUI(getUi());
       return true;
     }
 
@@ -53,7 +53,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex -= 1;
       stateManager.saveState();
       render();
-      stateManager.updateStatsUI(getUi());
+      uiRenderer.updateStatsUI(getUi());
       return true;
     }
 

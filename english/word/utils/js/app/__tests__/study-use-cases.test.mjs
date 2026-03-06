@@ -25,14 +25,14 @@ function createDeps(initialState) {
       return state.cards?.[idx] || null;
     },
     recordCardStudied() {},
-    saveState() { calls.saveState += 1; },
-    updateStatsUI() { calls.updateStatsUI += 1; }
+    saveState() { calls.saveState += 1; }
   };
 
   const uiRenderer = {
     revealAll() {},
     renderNextAction() {},
     renderConfirmationActions() {},
+    updateStatsUI() { calls.updateStatsUI += 1; },
     showToast(_ui, msg) { calls.toasts.push(msg); },
     showCompletionScreen() { calls.completion += 1; }
   };

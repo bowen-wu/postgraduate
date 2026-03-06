@@ -1,5 +1,6 @@
 import { CONFIG } from '../config.js';
 import { runFallbackChain } from './fallback-chain.js';
+import { toServiceError } from './service-error.js';
 
 const translationSources = [
   { name: 'Google', translate: translateWithGoogle, timeout: CONFIG.translation.defaultTimeout, options: {} },
@@ -8,12 +9,12 @@ const translationSources = [
 
 export async function translateTextWithFallback(text) {
   if (!text || !text.trim()) {
-    throw new Error('No text to translate');
+    throw toServiceError('TRANSLATION_INPUT_EMPTY', 'No text to translate');
   }
 
   const cleanText = normalizeText(text);
   if (!cleanText) {
-    throw new Error('No text to translate after cleaning');
+    throw toServiceError('TRANSLATION_INPUT_EMPTY_AFTER_NORMALIZE', 'No text to translate after cleaning');
   }
 
   const result = await runFallbackChain(
@@ -52,16 +53,16 @@ async function translateWithAzure(text, timeout, options = {}) {
       signal: controller.signal
     });
     clearTimeout(timeoutId);
-    if (!response.ok) throw new Error(`Azure Translator error: ${response.status}`);
+    if (!response.ok) throw toServiceError('AZURE_TRANSLATOR_HTTP', `Azure Translator error: ${response.status}`);
 
     const data = await response.json();
     if (!data || !data[0] || !data[0].translations || !data[0].translations[0]) {
-      throw new Error('Invalid Azure response format');
+      throw toServiceError('AZURE_TRANSLATOR_FORMAT', 'Invalid Azure response format');
     }
     return data[0].translations[0].text;
   } catch (error) {
     clearTimeout(timeoutId);
-    throw error;
+    throw toServiceError('AZURE_TRANSLATOR_FAILED', error.message, error);
   }
 }
 
@@ -84,15 +85,15 @@ async function translateWithGoogle(text, timeout) {
       signal: controller.signal
     });
     clearTimeout(timeoutId);
-    if (!response.ok) throw new Error(`Google Translate error: ${response.status}`);
+    if (!response.ok) throw toServiceError('GOOGLE_TRANSLATOR_HTTP', `Google Translate error: ${response.status}`);
 
     const data = await response.json();
     if (!data || !data.data || !data.data.translations || !data.data.translations[0]) {
-      throw new Error('Invalid Google response format');
+      throw toServiceError('GOOGLE_TRANSLATOR_FORMAT', 'Invalid Google response format');
     }
     return data.data.translations[0].translatedText;
   } catch (error) {
     clearTimeout(timeoutId);
-    throw error;
+    throw toServiceError('GOOGLE_TRANSLATOR_FAILED', error.message, error);
   }
 }

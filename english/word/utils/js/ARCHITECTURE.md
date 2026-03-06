@@ -31,14 +31,17 @@ Dependency direction (must keep):
 ### `app/`
 - `bootstrap.js`: app startup, event delegation, keyboard bindings
 - `vocab-app.js`: application facade and wiring
-- `event-handlers.js`: thin orchestration wrapper (avoid heavy business logic)
-- `ui-renderer.js`: rendering only
-- `state-manager.js`: state persistence + state-related helpers
+- `event-handlers.js`: UI event bridge only (delegate workflows to use-cases)
+- `ui-renderer.js`: rendering orchestration only
+- `state-manager.js`: state persistence + state/session helpers (no DOM rendering)
+- `presenters/`: HTML string builders for list/panel rendering
+- `renderers/`: DOM rendering modules per UI slice
 
 ### `application/`
 - Use-case orchestration
 - Coordinates multiple modules
 - Contains workflow decisions (not DOM-specific)
+- `file-use-cases.js`: file browsing/loading/switching workflow
 
 ### `domain/`
 - Pure business rules
@@ -115,6 +118,6 @@ Before merge, verify:
 
 ## 10. Roadmap (Next Refactor Targets)
 
-1. Further thin down `event-handlers.js` by moving remaining workflow logic into `application/`
-2. Add integration tests for keyboard + navigation + file switching
-3. Extract completion-screen rendering into dedicated UI component module
+1. Parser decomposition (context/walker/rule handlers) while preserving parse output contract
+2. Parser fixture expansion for ambiguous edge cases and conflict patterns
+3. Optional infra retry/backoff policy if API reliability degrades in production

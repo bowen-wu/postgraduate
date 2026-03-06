@@ -13,6 +13,7 @@ import {
 } from './renderers/action-renderer.js';
 import { renderCompletionScreen } from './renderers/completion-renderer.js';
 import { renderCardContent } from './renderers/card-content-renderer.js';
+import { buildStatsRows, renderStatsRows } from './presenters/stats-list-presenter.js';
 import {
   updateCurrentFileDisplay as updateCurrentFileDisplayModule,
   updateAutoPlayButton as updateAutoPlayButtonModule,
@@ -129,4 +130,16 @@ export function showCompletionScreen(ui) {
     stateManager: StateManager,
     triggerConfetti
   });
+}
+
+export function updateStatsUI(ui) {
+  const rows = buildStatsRows({
+    cards: STATE.cards,
+    displayOrder: STATE.displayOrder,
+    currentIndex: STATE.currentIndex,
+    stats: STATE.stats
+  });
+  ui.statsList.innerHTML = renderStatsRows(rows);
+  const active = ui.statsList.querySelector('.active');
+  if (active) active.scrollIntoView({ block: 'center' });
 }

@@ -1,6 +1,7 @@
 import { CONFIG } from '../config.js';
 import * as AudioCache from '../utils/audio-cache.js';
 import { runFallbackChain } from './fallback-chain.js';
+import { toServiceError } from './service-error.js';
 
 const audioSources = [
   { name: '有道', play: playYoudaoAudio, timeout: 1200, options: { urls: ['us', 'uk'] } },
@@ -9,7 +10,7 @@ const audioSources = [
 ];
 
 export async function playWordWithFallback(word) {
-  if (!word) throw new Error('word is required');
+  if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
 
   const audioText = normalizeText(word);
   try {
@@ -43,7 +44,7 @@ async function playYoudaoAudio(text, timeout = 1200) {
       continue;
     }
   }
-  throw new Error('Youdao audio not available');
+  throw toServiceError('YOUDAO_AUDIO_UNAVAILABLE', 'Youdao audio not available');
 }
 
 async function playAzureTTS(text, timeout = 1200, options = {}) {
@@ -76,7 +77,7 @@ async function playAzureTTS(text, timeout = 1200, options = {}) {
     },
     body: ssml
   });
-  if (!response.ok) throw new Error(`Azure TTS error: ${response.status}`);
+  if (!response.ok) throw toServiceError('AZURE_TTS_HTTP', `Azure TTS error: ${response.status}`);
 
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
@@ -105,10 +106,10 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
       audioConfig: { audioEncoding: 'MP3' }
     })
   });
-  if (!response.ok) throw new Error(`Google Cloud TTS error: ${response.status}`);
+  if (!response.ok) throw toServiceError('GOOGLE_TTS_HTTP', `Google Cloud TTS error: ${response.status}`);
 
   const data = await response.json();
-  if (!data.audioContent) throw new Error('No audio content in response');
+  if (!data.audioContent) throw toServiceError('GOOGLE_TTS_FORMAT', 'No audio content in response');
 
   const audioData = atob(data.audioContent);
   const arrayBuffer = new ArrayBuffer(audioData.length);
@@ -136,11 +137,11 @@ async function playAudioUrl(url, timeout = 3000) {
     audio.oncanplaythrough = () => { canPlay = true; };
     audio.onplay = () => canPlay && done(resolve, { onplay: true });
     audio.onended = () => done(resolve, { onplay: true });
-    audio.onerror = () => done(reject, new Error('Audio load failed'));
+    audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
 
     if (timeout > 0) {
       setTimeout(() => {
-        if (!resolved && !canPlay) done(reject, new Error('Audio timeout'));
+        if (!resolved && !canPlay) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio timeout'));
       }, timeout);
     }
 
