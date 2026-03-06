@@ -27,7 +27,7 @@ npm test
 ```
 
 Current script:
-- `node --test "app/__tests__/**/*.test.mjs" "parser/__tests__/*.test.mjs"`
+- `node --test "app/__tests__/**/*.test.mjs" "infrastructure/__tests__/**/*.test.mjs" "parser/__tests__/*.test.mjs"`
 
 ## 4. Test Strategy
 

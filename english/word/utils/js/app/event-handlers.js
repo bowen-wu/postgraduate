@@ -119,13 +119,6 @@ export function confirmRecall(actuallyCorrect) {
 }
 
 /**
- * Record error for current card
- */
-export function recordError() {
-  getStudyUseCases().recordError();
-}
-
-/**
  * Handle sentence recall
  */
 export function handleSentenceRecall(understood) {
@@ -387,22 +380,6 @@ export async function refreshFileList() {
 }
 
 /**
- * Show completion screen
- */
-export function showCompletionScreen(ui) {
-  ui.card.innerHTML = `
-    <div class="completion-screen">
-      <h2>🎉 恭喜完成！</h2>
-      <p>你已经学习了 ${STATE.cards.length} 张卡片</p>
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
-        <button class="btn-primary" data-action="restart">重新开始</button>
-        <button class="btn-ghost" data-action="clear-data-reload">清除数据</button>
-      </div>
-    </div>
-  `;
-}
-
-/**
  * Clear data and reload
  */
 export function clearDataAndReload() {
@@ -437,18 +414,6 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
 
 export function prewarmSpeechSynthesis() {
   prewarmSpeechSynthesisService();
-}
-
-export async function translateText(text, buttonId = null) {
-  setButtonLoading(true, buttonId);
-  try {
-    const result = await translateTextWithFallback(text);
-    setButtonLoading(false, buttonId);
-    return result;
-  } catch (error) {
-    setButtonLoading(false, buttonId);
-    throw error;
-  }
 }
 
 /**

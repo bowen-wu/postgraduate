@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test \"app/__tests__/**/*.test.mjs\" \"parser/__tests__/*.test.mjs\""
+    "test": "node --test \"app/__tests__/**/*.test.mjs\" \"infrastructure/__tests__/**/*.test.mjs\" \"parser/__tests__/*.test.mjs\""
   }
 }

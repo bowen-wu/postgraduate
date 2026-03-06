@@ -50,6 +50,8 @@
 import { POS_MARKERS, IPA_SYMBOLS, isSynonymMarker, hasAntonymMarker,
          isPurePosLine, isPureIpaLine, hasPosMarker, hasIpaMarker, isValidWordHeader } from './validators.js';
 import { parseWordContent, parsePhraseContent } from './content-parser.js';
+import { determineCardTypeRule, isPrefixOrSuffixRule, firstChildHasPosRule } from './rule-engine.js';
+import { buildBaseCard, buildWordCard, buildPhraseCard, buildPrefixCard } from './card-builders.js';
 
 export class MarkdownParser {
   // Re-export constants for backward compatibility
@@ -315,65 +317,22 @@ export class MarkdownParser {
    * Returns: 'word' | 'phrase' | 'sentence' | 'prefix'
    */
   determineCardType(content, indentLevel, lineIndex = null) {
-    // 规则5: Check if it's a prefix or suffix (-xx-, -xxx, xx-)
-    if (this.isPrefixOrSuffix(content, lineIndex)) {
-      return 'prefix';
-    }
-
-    // SPECIAL CASE: If parent is a phrase card and this is pure Chinese (no English), it's a definition item
-    if (this.parentCard && this.parentCard.type === 'phrase') {
-      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
-      const hasEnglish = /[a-zA-Z]/.test(content);
-      const hasPosMarker = this.hasPosMarker(content);
-      if (hasChinese && !hasEnglish && !hasPosMarker) {
-        return 'definition';
-      }
-    }
-
-    // Check if in phrase list (规则4: ## 词组 or - 词组)
-    // Both ## 词组 and - 词组 markers create phrase cards for their children
-    if (this.inPhraseHeader) {
-      return 'phrase';
-    }
-    if (this.inPhraseList) {
-      return 'phrase';
-    }
-
-    // Check if content has POS marker (规则3: 只要有词性，一定是单词)
-    if (this.hasPosMarker(content)) {
-      return 'word';
-    }
-
-    // Check if content has IPA (word with pronunciation only)
-    if (this.hasIpaMarker(content)) {
-      return 'word';
-    }
-
-    // 规则3: 检查子级是否以词性开头
-    // Only check for single words (not sentences)
-    // Sentences contain spaces, multiple words, etc.
-    // Allow for trailing emojis/annotations (e.g., "baseless 😔")
-    // 🔧 FIX: Make the regex more strict - single words should have at most ONE space
-    // This prevents sentences like "The police followed..." from being classified as single words
-    const isSingleWord = /^[a-zA-Z'\-]+(?:\s[^a-zA-Z]*)?$/.test(content);
-    if (isSingleWord && lineIndex !== null && this.firstChildHasPos(content, indentLevel, lineIndex)) {
-      return 'word';
-    }
-
-    // 规则6d: 句子的子级（缩进）有词性的 → 单词卡片；其余 → 词组卡片
-    // 注意：只针对"句子"的子级，不针对"单词"的子级
-    const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
-    const isChild = this.parentCard && this.parentLevel < indentLevel;
-
-    if (isChild && this.parentCard.type === 'sentence') {
-      // 句子的子级都是 phrase 类型（不管是否有中文）
-      if (!this.hasPosMarker(content)) {
-        return 'phrase';
-      }
-    }
-
-    // Otherwise, it's a sentence
-    return 'sentence';
+    return determineCardTypeRule({
+      content,
+      indentLevel,
+      lineIndex,
+      context: {
+        parentCard: this.parentCard,
+        parentLevel: this.parentLevel,
+        inPhraseHeader: this.inPhraseHeader,
+        inPhraseList: this.inPhraseList
+      },
+      hasPosMarker: this.hasPosMarker,
+      hasIpaMarker: this.hasIpaMarker,
+      isPrefixOrSuffix: (innerContent, innerLineIndex = null) => this.isPrefixOrSuffix(innerContent, innerLineIndex),
+      firstChildHasPos: (innerContent, innerIndentLevel, innerParentLineIndex = null) =>
+        this.firstChildHasPos(innerContent, innerIndentLevel, innerParentLineIndex)
+    });
   }
 
   /**
@@ -982,22 +941,7 @@ export class MarkdownParser {
    * Depends on this.hasPosMarker
    */
   isPrefixOrSuffix(content, lineIndex = null) {
-    const trimmed = content.trim();
-    const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
-    const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
-
-    // 🔧 FIX: Prefix/suffix MUST contain a hyphen (-) to be valid
-    // This prevents regular short words like "say", "get", "take" from being classified as prefixes
-    // Valid patterns: -xx, xx-, -xx-
-    // Invalid patterns: xx (no hyphen)
-    const hasHyphen = /^-?[a-z]{1,5}-?$/.test(englishPart) && englishPart.includes('-');
-    if (!hasHyphen) {
-      return false;
-    }
-
-    const hasPos = this.hasPosMarker(content);
-    const hasChineseOnSameLine = /[\u4e00-\u9fa5]/.test(content);
-    return !hasPos && hasChineseOnSameLine;
+    return isPrefixOrSuffixRule(content, this.hasPosMarker);
   }
 
   /**
@@ -1008,99 +952,31 @@ export class MarkdownParser {
    * Depends on this.lines
    */
   firstChildHasPos(content, indentLevel, parentLineIndex = null) {
-    // Find the parent line starting from parentLineIndex (or from beginning if not provided)
-    let searchStartIndex = parentLineIndex !== null ? parentLineIndex : 0;
-    const lineIndex = this.lines.findIndex((line, idx) => {
-      if (idx < searchStartIndex) return false;
-      const trimmed = line.trim();
-      if (!trimmed.startsWith('-')) return false;
-      const lineIndent = line.match(/^(\s*)-/);
-      const lineIndentLevel = lineIndent ? lineIndent[1].length : 0;
-      return lineIndentLevel === indentLevel && trimmed.substring(1).trim() === content;
-    });
-
-    if (lineIndex === -1) return false;
-
-    // Look for first child of this line and check if it has POS
-    for (let i = lineIndex + 1; i < this.lines.length; i++) {
-      const trimmed = this.lines[i].trim();
-      if (!trimmed) continue;
-
-      const indentMatch = this.lines[i].match(/^(\s*)-/);
-      if (!indentMatch) return false;
-
-      const childIndentLevel = indentMatch[1].length;
-      const childContent = trimmed.substring(1).trim();
-
-      if (childIndentLevel <= indentLevel) return false;
-
-      if (this.hasPosMarker(childContent)) {
-        return true;
-      }
-
-      if (childIndentLevel === indentLevel + 1) {
-        return false;
-      }
-    }
-    return false;
+    return firstChildHasPosRule(this.lines, content, indentLevel, parentLineIndex, this.hasPosMarker);
   }
 
   /**
    * Create a base card
    */
   createCard(word, type) {
-    const card = {
-      id: `card_${this.cardCounter++}`,
-      word: word,
-      type: type,
-      items: []
-    };
-    return card;
+    return buildBaseCard(`card_${this.cardCounter++}`, word, type);
   }
 
   /**
    * Create a word card
    */
   createWordCard(content, indentLevel) {
-    const {word, ipa, pos, cn, synonyms} = this.parseWordContent(content);
-    const card = {
+    const { card, shouldSetAsParent } = buildWordCard({
       id: `card_${this.cardCounter++}`,
-      word: word,
-      type: 'word',
-      items: []
-    };
-    if (ipa) card.ipa = ipa;
-    if (pos) {
-      card.items.push({type: 'def', en: pos, cn: cn || ''});
-    } else if (cn) {
-      card.items.push({type: 'def', en: word, cn: cn});
-    } else if (!ipa) {
-      // Only add placeholder if there's no IPA either
-      // If there's IPA, the real definition will come from children (POS lines)
-      card.items.push({type: 'def', en: word, cn: ''});
-    }
+      content,
+      parseWordContent: this.parseWordContent,
+      parentCard: this.parentCard
+    });
 
-    // Add synonyms extracted from == pattern (e.g., "unpretentious(adj. 谦逊的 == modest)")
-    if (synonyms && synonyms.length > 0) {
-      card.synonyms = synonyms;
-    }
-
-    // 🔧 FIX: Don't set parent for simple dictionary entries
-    // Simple dictionary entries are like: "clue [kluː] n. 线索，提示"
-    // They have: word + [IPA] + pos. + Chinese definition
-    // These are "helper" words and should not become the parent for subsequent items
-    // The parent should remain the original sentence/word that contains them
-    // Check: Chinese should not contain English letters (mixed content)
-    const isSimpleDictionaryEntry =
-      ipa && pos && cn &&  // Has IPA, POS, and Chinese
-      !/[a-zA-Z]/.test(cn) &&  // Chinese doesn't contain English letters (no mixed content)
-      this.parentCard && this.parentCard.type === 'sentence';  // Parent is a sentence
-
-    if (!isSimpleDictionaryEntry) {
+    if (shouldSetAsParent) {
       this.parentCard = card;
       this.parentLevel = indentLevel;
     }
-
     return card;
   }
 
@@ -1108,13 +984,7 @@ export class MarkdownParser {
    * Create a phrase card
    */
   createPhraseCard(content, indentLevel) {
-    const {word, cn} = this.parsePhraseContent(content);
-    const card = {
-      id: `card_${this.cardCounter++}`,
-      word: word,
-      type: 'phrase',
-      items: [{type: 'def', en: word, cn: cn || ''}]
-    };
+    const card = buildPhraseCard(`card_${this.cardCounter++}`, content, this.parsePhraseContent);
     this.parentCard = card;
     this.parentLevel = indentLevel;
     return card;
@@ -1124,17 +994,7 @@ export class MarkdownParser {
    * Create a prefix/suffix card
    */
   createPrefixCard(content, indentLevel, lineIndex = null) {
-    const trimmed = content.trim();
-    const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
-    const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
-    const chinesePart = cnMatch ? trimmed.substring(trimmed.indexOf(cnMatch[0])).trim() : '';
-
-    const card = {
-      id: `card_${this.cardCounter++}`,
-      word: englishPart,
-      type: 'prefix',
-      items: [{type: 'def', en: englishPart, cn: chinesePart}]
-    };
+    const card = buildPrefixCard(`card_${this.cardCounter++}`, content);
     this.parentCard = card;
     this.parentLevel = indentLevel;
     return card;

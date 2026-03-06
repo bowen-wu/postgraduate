@@ -1,5 +1,6 @@
 import { CONFIG } from '../config.js';
 import * as AudioCache from '../utils/audio-cache.js';
+import { runFallbackChain } from './fallback-chain.js';
 
 const audioSources = [
   { name: '有道', play: playYoudaoAudio, timeout: 1200, options: { urls: ['us', 'uk'] } },
@@ -12,7 +13,11 @@ export async function playWordWithFallback(word) {
 
   const audioText = normalizeText(word);
   try {
-    const result = await tryAudioChain(audioText, audioSources, 0);
+    const result = await runFallbackChain(
+      audioSources,
+      (source) => source.play(audioText, source.timeout, source.options),
+      'All audio sources failed'
+    );
     return { sourceName: result.sourceName };
   } catch (error) {
     await playWebSpeech(audioText);
@@ -22,20 +27,6 @@ export async function playWordWithFallback(word) {
 
 function normalizeText(text) {
   return text.replace(/sth\./g, 'something').replace(/sb\./g, 'somebody');
-}
-
-async function tryAudioChain(text, sources, index) {
-  if (index >= sources.length) {
-    throw new Error('All audio sources failed');
-  }
-
-  const source = sources[index];
-  try {
-    await source.play(text, source.timeout, source.options);
-    return { sourceName: source.name };
-  } catch (_error) {
-    return tryAudioChain(text, sources, index + 1);
-  }
 }
 
 async function playYoudaoAudio(text, timeout = 1200) {

@@ -1,4 +1,5 @@
 import { CONFIG } from '../config.js';
+import { runFallbackChain } from './fallback-chain.js';
 
 const translationSources = [
   { name: 'Google', translate: translateWithGoogle, timeout: CONFIG.translation.defaultTimeout, options: {} },
@@ -15,7 +16,12 @@ export async function translateTextWithFallback(text) {
     throw new Error('No text to translate after cleaning');
   }
 
-  return tryTranslationChain(cleanText, translationSources, 0);
+  const result = await runFallbackChain(
+    translationSources,
+    (source) => source.translate(cleanText, source.timeout, source.options),
+    'All translation services failed'
+  );
+  return { translation: result.value, sourceName: result.sourceName };
 }
 
 function normalizeText(text) {
@@ -24,20 +30,6 @@ function normalizeText(text) {
     .replace(/sth\./gi, 'something')
     .replace(/sb\./gi, 'somebody')
     .trim();
-}
-
-async function tryTranslationChain(text, sources, index) {
-  if (index >= sources.length) {
-    throw new Error('All translation services failed');
-  }
-
-  const source = sources[index];
-  try {
-    const translation = await source.translate(text, source.timeout, source.options);
-    return { translation, sourceName: source.name };
-  } catch (_error) {
-    return tryTranslationChain(text, sources, index + 1);
-  }
 }
 
 async function translateWithAzure(text, timeout, options = {}) {

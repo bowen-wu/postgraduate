@@ -105,21 +105,12 @@ export class VocabApp {
     UiRenderer.render(this.ui);
   }
 
-  // State management methods
-  getStorageKey(path) {
-    return StateManager.getStorageKey(path);
-  }
-
   loadStatsForFile(path) {
     StateManager.loadStatsForFile(path);
   }
 
   saveState() {
     StateManager.saveState();
-  }
-
-  loadState() {
-    StateManager.loadState();
   }
 
   resetData() {
@@ -135,20 +126,12 @@ export class VocabApp {
   }
 
   // UI rendering methods
-  updateCurrentFileDisplay(path) {
-    UiRenderer.updateCurrentFileDisplay(this.ui, path);
-  }
-
   updateAutoPlayButton() {
     UiRenderer.updateAutoPlayButton(this.ui);
   }
 
   showToast(msg) {
     UiRenderer.showToast(this.ui, msg);
-  }
-
-  triggerConfetti() {
-    UiRenderer.triggerConfetti();
   }
 
   // Event handler methods
@@ -178,10 +161,6 @@ export class VocabApp {
 
   showSentenceTranslation() {
     UiRenderer.showSentenceTranslation(this.ui);
-  }
-
-  recordError() {
-    EventHandlers.recordError();
   }
 
   handleSentenceRecall(understood) {
