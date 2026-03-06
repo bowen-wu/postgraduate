@@ -1,0 +1,27 @@
+[
+  {
+    "id": "card_0",
+    "word": "enforce",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "强制"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "compel",
+        "ipa": "[kəmˈpel]",
+        "items": [
+          {
+            "type": "def",
+            "en": "v.",
+            "cn": "强迫"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -5,6 +5,7 @@
 
 // Import CONFIG from config.js
 import { CONFIG } from '../config.js';
+import { StorageRepo } from '../infrastructure/storage-repo.js';
 
 export class GitHubApi {
   static getCacheKey(path) {
@@ -14,7 +15,7 @@ export class GitHubApi {
   static getCachedData(path) {
     try {
       const cacheKey = this.getCacheKey(path);
-      const cached = localStorage.getItem(cacheKey);
+      const cached = StorageRepo.getItem(cacheKey);
       if (!cached) return null;
 
       const parsed = JSON.parse(cached);
@@ -25,7 +26,7 @@ export class GitHubApi {
         return parsed.data;  // Return the wrapped data
       } else {
         // Cache expired
-        localStorage.removeItem(cacheKey);
+        StorageRepo.removeItem(cacheKey);
         return null;
       }
     } catch (e) {
@@ -41,18 +42,13 @@ export class GitHubApi {
         data: data,  // Wrap data properly
         timestamp: Date.now()
       };
-      localStorage.setItem(cacheKey, JSON.stringify(cacheData));
+      StorageRepo.setJson(cacheKey, cacheData);
     } catch (e) {
     }
   }
 
   static clearCache() {
-    const keys = Object.keys(localStorage);
-    keys.forEach(key => {
-      if (key.startsWith(CONFIG.cacheKey)) {
-        localStorage.removeItem(key);
-      }
-    });
+    StorageRepo.removeByPrefix(CONFIG.cacheKey);
   }
 
   static async fetchContents(path = '', forceRefresh = false) {

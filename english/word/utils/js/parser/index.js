@@ -1471,3 +1471,17 @@ export class MarkdownParser {
     }
   }
 }
+
+/**
+ * Phase 1 testable entrypoint.
+ * Keep parser behavior unchanged while exposing a pure function boundary.
+ * @param {string} text markdown content
+ * @returns {Array<Object>} parsed cards
+ */
+export function parseMarkdownToCards(text) {
+  if (typeof text !== 'string') {
+    throw new TypeError('parseMarkdownToCards(text) expects a string');
+  }
+  const parser = new MarkdownParser(text);
+  return parser.parse();
+}

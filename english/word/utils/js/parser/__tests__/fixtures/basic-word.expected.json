@@ -1,0 +1,33 @@
+[
+  {
+    "id": "card_0",
+    "word": "affirm",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "断言"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "确认"
+      }
+    ],
+    "ipa": "[əˈfɜːm]",
+    "synonyms": [
+      {
+        "word": "assert"
+      },
+      {
+        "word": "verify"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "deny"
+      }
+    ]
+  }
+]

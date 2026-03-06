@@ -1,0 +1,8 @@
+{
+  "name": "vocabmaster-utils-js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"app/__tests__/**/*.test.mjs\" \"parser/__tests__/*.test.mjs\""
+  }
+}

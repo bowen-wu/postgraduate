@@ -4,6 +4,7 @@
  */
 
 import { CONFIG, STATE } from '../config.js';
+import { StorageRepo } from '../infrastructure/storage-repo.js';
 
 /**
  * Fisher-Yates shuffle algorithm
@@ -59,7 +60,7 @@ export function getStorageKey(path) {
 export function loadStatsForFile(path) {
   const key = getStorageKey(path);
   try {
-    const saved = localStorage.getItem(key);
+    const saved = StorageRepo.getItem(key);
     if (saved) {
       const parsed = JSON.parse(saved);
       // Only load stats, not cards (cards are loaded from file)
@@ -124,7 +125,7 @@ export function loadStatsForFile(path) {
 }
 
 /**
- * Save current state to localStorage
+ * Save current state to storage repo
  */
 export function saveState() {
   if (!STATE.currentPath) return;
@@ -146,9 +147,9 @@ export function saveState() {
   };
 
   try {
-    localStorage.setItem(key, JSON.stringify(data));
+    StorageRepo.setJson(key, data);
     // Also save the last used path globally
-    localStorage.setItem(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
+    StorageRepo.setItem(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
   } catch (e) {
   }
 }
@@ -163,13 +164,13 @@ export function getCurrentCard() {
 }
 
 /**
- * Load state from localStorage
+ * Load state from storage repo
  */
 export function loadState() {
   try {
     // First, try to load the last used path
     if (!STATE.currentPath) {
-      const lastPath = localStorage.getItem(`${CONFIG.storageKey}_lastPath`);
+      const lastPath = StorageRepo.getItem(`${CONFIG.storageKey}_lastPath`);
       if (lastPath) {
         STATE.currentPath = lastPath;
       }
@@ -179,7 +180,7 @@ export function loadState() {
 
     // Now load stats for the current path
     const key = getStorageKey(STATE.currentPath);
-    const saved = localStorage.getItem(key);
+    const saved = StorageRepo.getItem(key);
     if (saved) {
       const parsed = JSON.parse(saved);
       STATE.stats = parsed.stats || {};
@@ -250,14 +251,14 @@ export function getCurrentFolderPath() {
 }
 
 /**
- * Reset all data and clear localStorage
+ * Reset all data and clear storage repo
  */
 export function resetData() {
-  // Clear all VocabMaster related data from localStorage
-  const keys = Object.keys(localStorage);
+  // Clear all VocabMaster related data from storage repo
+  const keys = StorageRepo.keys();
   keys.forEach(key => {
     if (key.startsWith(CONFIG.storageKey) || key.startsWith(CONFIG.cacheKey)) {
-      localStorage.removeItem(key);
+      StorageRepo.removeItem(key);
     }
   });
 
@@ -292,7 +293,7 @@ export function updateStatsUI(ui) {
     if (c.type === 'phrase') icon = '🔗';
     if (c.type === 'sentence') icon = '💬';
     html += `
-      <div class="stat-row ${isActive ? 'active' : ''}" onclick="app.jumpToOriginal(${idx})">
+      <div class="stat-row ${isActive ? 'active' : ''}" data-action="jump-to-original" data-index="${idx}">
         <span class="stat-word"><span class="tag-pill">${icon}</span>${c.word.substring(0, 18)}${c.word.length > 18 ? '...' : ''}</span>
         <span class="stat-val" style="color:${s && s.errors ? 'var(--danger)' : 'inherit'}">${err}</span>
       </div>
@@ -400,4 +401,3 @@ export function getSessionStats() {
     endTime: STATE.sessionEndTime
   };
 }
-

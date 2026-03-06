@@ -14,7 +14,7 @@
 <body>
 <header>
     <div class="brand">
-        <button class="btn-ghost" onclick="app.toggleFiles()" title="选择文件">
+        <button id="btnToggleFiles" class="btn-ghost" data-action="toggle-files" title="选择文件">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 3h18v18H3z"></path>
                 <path d="M9 3v18"></path>
@@ -24,7 +24,7 @@
         <span id="currentFileDisplay" class="current-file-display"></span>
     </div>
     <div class="header-controls">
-        <button class="btn-shortcuts btn-ghost" onclick="app.toggleShortcuts()" title="快捷键">
+        <button id="btnToggleShortcuts" class="btn-shortcuts btn-ghost" data-action="toggle-shortcuts" title="快捷键">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 <line x1="9" y1="9" x2="9" y2="9"></line>
@@ -33,8 +33,8 @@
             </svg>
         </button>
         <div class="toggle-switch">
-            <button id="btnModeInput" class="active" onclick="app.setMode('input')">浏览</button>
-            <button id="btnModeRecall" onclick="app.setMode('recall')">遮挡</button>
+            <button id="btnModeInput" class="active" data-action="set-mode" data-mode="input">浏览</button>
+            <button id="btnModeRecall" data-action="set-mode" data-mode="recall">遮挡</button>
         </div>
 
         <div class="custom-select" id="orderModeSelect" tabindex="0" role="listbox" aria-label="顺序模式">
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <button id="btnAutoPlay" class="btn-icon-toggle" onclick="app.toggleAutoPlay()" title="自动播放">
+        <button id="btnAutoPlay" class="btn-icon-toggle" data-action="toggle-autoplay" title="自动播放">
             <svg id="iconAutoPlayOff" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -63,7 +63,7 @@
             </svg>
         </button>
 
-        <button class="btn-ghost" onclick="app.toggleStats()">
+        <button id="btnToggleStats" class="btn-ghost" data-action="toggle-stats">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="20" x2="18" y2="10"></line>
                 <line x1="12" y1="20" x2="12" y2="4"></line>
@@ -76,11 +76,11 @@
     <div class="aside-header">
         <span>选择文件</span>
         <div style="display: flex; gap: 0.5rem;">
-            <button class="btn-ghost" onclick="app.refreshFileList()" title="刷新列表"
+            <button id="btnRefreshFileList" class="btn-ghost" data-action="refresh-file-list" title="刷新列表"
                     style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">
                 🔄
             </button>
-            <button class="btn-ghost" onclick="app.toggleFiles()">✕</button>
+            <button class="btn-ghost" data-action="toggle-files">✕</button>
         </div>
     </div>
     <div class="stats-list" id="fileListContainer">
@@ -94,11 +94,11 @@
 <aside id="statsPanel">
     <div class="aside-header">
         <span>学习列表</span>
-        <button class="btn-ghost" onclick="app.toggleStats()">✕</button>
+        <button class="btn-ghost" data-action="toggle-stats">✕</button>
     </div>
     <div class="stats-list" id="wordListContainer"></div>
     <div style="padding: 1rem; border-top: 1px solid #f1f5f9;">
-        <button class="btn-danger" style="width: 100%; justify-content: center;" onclick="app.resetData()">重置进度
+        <button class="btn-danger" style="width: 100%; justify-content: center;" data-action="reset-data">重置进度
         </button>
     </div>
 </aside>
@@ -120,7 +120,7 @@
                 <ul class="item-list" id="itemList"></ul>
             </div>
             <footer class="card-footer">
-                <button class="btn-ghost" onclick="app.prevCard()" id="btnPrev">
+                <button class="btn-ghost" data-action="prev-card" id="btnPrev">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
@@ -143,7 +143,7 @@
         </div>
         <div class="dialog-message" id="dialogMessage"></div>
         <div class="dialog-actions">
-            <button class="btn-ghost" onclick="app.confirmDialog.cancel()">取消</button>
+            <button id="btnDialogCancel" class="btn-ghost" data-action="cancel-dialog">取消</button>
             <button class="btn-primary" id="dialogConfirmBtn">确定</button>
         </div>
     </div>
@@ -281,303 +281,12 @@
             </div>
         </div>
         <div class="dialog-actions">
-            <button class="btn-primary" onclick="app.toggleShortcuts()">关闭</button>
+            <button class="btn-primary" data-action="toggle-shortcuts">关闭</button>
         </div>
     </div>
 </div>
 
-<!-- Load VocabMaster App Module -->
-<script type="module">
-  import {VocabApp, CONFIG, STATE, GitHubApi, MarkdownParser} from './js/app/vocab-app.js';
-
-  // Export to global scope for backward compatibility with inline event handlers
-  window.CONFIG = CONFIG;
-  window.STATE = STATE;
-  window.GitHubApi = GitHubApi;
-  window.MarkdownParser = MarkdownParser;
-
-  // Create and initialize the app
-  window.app = new VocabApp();
-
-  // 键盘快捷键监听
-  document.addEventListener('keydown', (e) => {
-    // 如果焦点在输入框中，不响应快捷键
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-
-    const currentCard = window.STATE.cards[window.STATE.currentIndex];
-    if (!currentCard) return;
-
-    // 防抖：记录上次播放时间（500ms内不重复播放）
-    const now = Date.now();
-    if (!window._lastPlayTime) window._lastPlayTime = {};
-    const debounceKey = e.key.toLowerCase();
-
-    const isRecallMode = window.STATE.mode === 'recall';
-
-    switch (e.key) {
-      case 'Enter':
-      case 'ArrowRight':
-        e.preventDefault();
-        window.app.nextCard();
-        // 重置状态
-        window._synonymPlayIndex = 0;
-        window._antonymPlayIndex = 0;
-        window._isConfirming = false;
-        break;
-      case 'Backspace':
-      case 'ArrowLeft':
-        e.preventDefault();
-        window.app.prevCard();
-        // 重置状态
-        window._synonymPlayIndex = 0;
-        window._antonymPlayIndex = 0;
-        window._isConfirming = false;
-        break;
-      case ' ': {
-        e.preventDefault();
-        // 智能防抖： 根据卡片类型动态调整防抖时间
-        const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
-        if (window._lastPlayTime['space'] && now - window._lastPlayTime['space'] < debounceTime) {
-          return;
-        }
-        window._lastPlayTime['space'] = now;
-
-        // 播放单词音频
-        // 对于句子类型，使用 items[0].en（纯英文，无中文）
-        // 对于其他类型，使用 word
-        let playBtnId = 'play-btn-main';
-        if (currentCard.type === 'phrase') playBtnId = 'play-btn-phrase';
-        else if (currentCard.type === 'sentence') playBtnId = 'play-btn-sentence';
-        const audioText = currentCard.type === 'sentence' && currentCard.items?.[0]?.en
-          ? currentCard.items[0].en
-          : currentCard.word;
-        window.app.playWord(audioText, playBtnId, false, false);
-        break;
-      }
-      case 's':
-      case 'S': {
-        e.preventDefault();
-        // 智能防抖: 同义词使用 word 的防抖时间
-        const debounceTime = window.CONFIG?.audio?.debounce?.word || 500;
-        if (window._lastPlayTime['s'] && now - window._lastPlayTime['s'] < debounceTime) {
-          return;
-        }
-        window._lastPlayTime['s'] = now;
-        if (currentCard.synonyms && currentCard.synonyms.length > 0) {
-          // 初始化或获取当前同义词播放索引
-          if (!window._synonymPlayIndex) window._synonymPlayIndex = 0;
-
-          const syn = currentCard.synonyms[window._synonymPlayIndex];
-          const synWord = syn.word;
-          const synBtnId = `play-btn-syn-${synWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
-          window.app.playWord(synWord, synBtnId, false, false);
-
-          // 循环到下一个同义词
-          window._synonymPlayIndex = (window._synonymPlayIndex + 1) % currentCard.synonyms.length;
-        }
-        break;
-      }
-      case 'a':
-      case 'A': {
-        e.preventDefault();
-        // 智能防抖: 反义词使用当前卡片类型的防抖时间
-        const debounceTime = window.CONFIG?.audio?.debounce?.[currentCard.type] || 500;
-        if (window._lastPlayTime['a'] && now - window._lastPlayTime['a'] < debounceTime) {
-          return;
-        }
-        window._lastPlayTime['a'] = now;
-        if (currentCard.antonyms && currentCard.antonyms.length > 0) {
-          // 初始化或获取当前反义词播放索引
-          if (!window._antonymPlayIndex) window._antonymPlayIndex = 0;
-
-          const ant = currentCard.antonyms[window._antonymPlayIndex];
-          const antWord = ant.word;
-          const antBtnId = `play-btn-ant-${antWord.replace(/[^a-zA-Z0-9]/g, '-')}`;
-          window.app.playWord(antWord, antBtnId, false, false);
-
-          // 循环到下一个反义词
-          window._antonymPlayIndex = (window._antonymPlayIndex + 1) % currentCard.antonyms.length;
-        }
-        break;
-      }
-      case 't':
-      case 'T':
-        e.preventDefault();
-        // 防抖检查
-        if (window._lastPlayTime['t'] && now - window._lastPlayTime['t'] < 1000) {
-          return;
-        }
-        window._lastPlayTime['t'] = now;
-        // 根据卡片类型调用对应的翻译函数
-        if (currentCard.type === 'phrase') {
-          window.app.translatePhrase();
-        } else if (currentCard.type === 'sentence') {
-          window.app.translateSentence();
-        }
-        break;
-      // 遮挡模式专用快捷键
-      case 'y':
-      case 'Y':
-      case '1':
-        if (isRecallMode) {
-          e.preventDefault();
-          // 如果在确认阶段，Y = 确认掌握
-          if (window._isConfirming) {
-            window.app.confirmRecall(true);
-            window._isConfirming = false;
-          } else {
-            // 否则 Y = 记得
-            window.app.handleRecall(true);
-            // 设置确认状态标志
-            window._isConfirming = true;
-          }
-        }
-        break;
-      case 'n':
-      case 'N':
-      case '2':
-        if (isRecallMode) {
-          e.preventDefault();
-          // 如果在确认阶段，N = 其实不会
-          if (window._isConfirming) {
-            window.app.confirmRecall(false);
-            window._isConfirming = false;
-          } else {
-            // 否则 N = 不记得
-            window.app.handleRecall(false);
-          }
-        }
-        break;
-      case 'Escape':
-        e.preventDefault();
-        // 优先级：快捷键弹窗 > 文件面板 > 学习列表
-        const shortcutsDialog = document.getElementById('shortcutsDialog');
-        if (shortcutsDialog.classList.contains('show')) {
-          window.app.toggleShortcuts();
-          return;
-        }
-        if (document.getElementById('filePanel').classList.contains('open')) {
-          window.app.toggleFiles();
-          return;
-        }
-        if (document.getElementById('statsPanel').classList.contains('open')) {
-          window.app.toggleStats();
-          return;
-        }
-        break;
-      case '?':
-        e.preventDefault();
-        window.app.toggleShortcuts();
-        break;
-      case 'm':
-      case 'M':
-        e.preventDefault();
-        const newMode = window.STATE.mode === 'input' ? 'recall' : 'input';
-        window.app.setMode(newMode);
-        break;
-      case 'p':
-      case 'P':
-        e.preventDefault();
-        window.app.toggleAutoPlay();
-        break;
-      case 'l':
-      case 'L':
-        e.preventDefault();
-        window.app.toggleStats();
-        break;
-      case 'f':
-      case 'F':
-        // Only trigger if no modifier key (Command/Ctrl) is pressed
-        // This allows Command+F for browser's Find function
-        if (!e.metaKey && !e.ctrlKey) {
-          e.preventDefault();
-          window.app.toggleFiles();
-        }
-        break;
-      case 'Home':
-        e.preventDefault();
-        if (window.STATE.currentIndex !== 0) {
-          window.STATE.currentIndex = 0;
-          window.STATE.saveState();
-          window.app.render();
-          window.app.updateStatsUI();
-          window.app.showToast('已跳转到第一张');
-        }
-        break;
-      case 'End':
-        e.preventDefault();
-        const lastIndex = window.STATE.displayOrder.length - 1;
-        if (window.STATE.currentIndex !== lastIndex) {
-          window.STATE.currentIndex = lastIndex;
-          window.STATE.saveState();
-          window.app.render();
-          window.app.updateStatsUI();
-          window.app.showToast('已跳转到最后一张');
-        }
-        break;
-    }
-  });
-
-  // Custom Select Dropdown
-  const customSelect = document.getElementById('orderModeSelect');
-  const trigger = customSelect.querySelector('.custom-select-trigger');
-  const label = document.getElementById('orderModeLabel');
-  const options = customSelect.querySelectorAll('.custom-select-option');
-
-  // Toggle dropdown
-  trigger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    customSelect.classList.toggle('open');
-  });
-
-  // Select option
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      const value = option.dataset.value;
-      const text = option.textContent;
-
-      // Update label
-      label.textContent = text;
-
-      // Update selected state
-      options.forEach(opt => opt.classList.remove('selected'));
-      option.classList.add('selected');
-
-      // Close dropdown
-      customSelect.classList.remove('open');
-
-      // Trigger change
-      if (window.app && window.app.setOrderMode) {
-        window.app.setOrderMode(value);
-      }
-    });
-  });
-
-  // Close on outside click
-  document.addEventListener('click', () => {
-    customSelect.classList.remove('open');
-  });
-
-  // Keyboard support
-  customSelect.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      customSelect.classList.toggle('open');
-    } else if (e.key === 'Escape') {
-      customSelect.classList.remove('open');
-    }
-  });
-
-  // Global function to update custom select from outside
-  window.updateOrderModeSelect = function(value) {
-    const option = customSelect.querySelector(`[data-value="${value}"]`);
-    if (option) {
-      label.textContent = option.textContent;
-      options.forEach(opt => opt.classList.remove('selected'));
-      option.classList.add('selected');
-    }
-  };
-</script>
+<script type="module" src="./js/app/bootstrap.js"></script>
 
 <!-- Toast Notification -->
 <div id="toast"></div>

@@ -6,19 +6,50 @@
 import { CONFIG, STATE } from '../config.js';
 import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
+import { createStudyUseCases } from '../application/study-use-cases.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
-import * as AudioCache from '../utils/audio-cache.js';
+import { playWordWithFallback, prewarmSpeechSynthesis as prewarmSpeechSynthesisService } from '../infrastructure/audio-service.js';
+import { translateTextWithFallback } from '../infrastructure/translation-service.js';
+
+let appContext = null;
+let studyUseCases = null;
+
+export function setAppContext(app) {
+  appContext = app;
+}
+
+function getApp() {
+  return appContext || window.app;
+}
+
+function getUi(ui = null) {
+  return ui || getApp().ui;
+}
+
+function getStudyUseCases() {
+  if (!studyUseCases) {
+    studyUseCases = createStudyUseCases({
+      state: STATE,
+      stateManager: StateManager,
+      uiRenderer: UiRenderer,
+      getUi: () => getApp().ui,
+      render: () => getApp().render(),
+      getBadgesElement: () => document.getElementById('displayBadges')
+    });
+  }
+  return studyUseCases;
+}
 
 /**
  * Set application mode
  */
 export function setMode(newMode) {
   STATE.mode = newMode;
-  UiRenderer.updateModeButtons(window.app.ui);
+  UiRenderer.updateModeButtons(getApp().ui);
   UiRenderer.updateBodyModeClass();
   StateManager.saveState();
-  window.app.render();
+  getApp().render();
 }
 
 /**
@@ -28,16 +59,16 @@ export function setOrderMode(mode) {
   if (mode === STATE.orderMode) return;
 
   StateManager.setOrderMode(mode);
-  UiRenderer.updateOrderModeSelect(window.app.ui);
-  window.app.render();
-  StateManager.updateStatsUI(window.app.ui);
+  UiRenderer.updateOrderModeSelect(getApp().ui);
+  getApp().render();
+  StateManager.updateStatsUI(getApp().ui);
 
   const modeNames = {
     'sequential': '顺序',
     'randomByType': '随机(按类型)',
     'randomAll': '完全随机'
   };
-  UiRenderer.showToast(window.app.ui, `顺序模式: ${modeNames[mode]}`);
+  UiRenderer.showToast(getApp().ui, `顺序模式: ${modeNames[mode]}`);
 }
 
 /**
@@ -45,115 +76,59 @@ export function setOrderMode(mode) {
  */
 export function toggleAutoPlay() {
   STATE.autoPlay = !STATE.autoPlay;
-  UiRenderer.updateAutoPlayButton(window.app.ui);
+  UiRenderer.updateAutoPlayButton(getApp().ui);
   StateManager.saveState();
-  UiRenderer.showToast(window.app.ui, STATE.autoPlay ? '自动播放已开启' : '自动播放已关闭');
+  UiRenderer.showToast(getApp().ui, STATE.autoPlay ? '自动播放已开启' : '自动播放已关闭');
 }
 
 /**
  * Handle recall in recall mode
  */
 export function handleRecall(claimedKnown) {
-  // Always reveal definitions first
-  UiRenderer.revealAll();
-  if (!claimedKnown) {
-    recordError();
-    UiRenderer.showToast(window.app.ui, '已记录不记得');
-    UiRenderer.renderNextAction(window.app.ui);
-  } else {
-    UiRenderer.renderConfirmationActions(window.app.ui);
-  }
+  getStudyUseCases().handleRecall(claimedKnown);
 }
 
 /**
  * Confirm recall result
  */
 export function confirmRecall(actuallyCorrect) {
-  if (actuallyCorrect) {
-    UiRenderer.showToast(window.app.ui, '正确！');
-  } else {
-    recordError();
-    UiRenderer.showToast(window.app.ui, '已记录错误');
-  }
-  nextCard();
+  getStudyUseCases().confirmRecall(actuallyCorrect);
 }
 
 /**
  * Record error for current card
  */
 export function recordError() {
-  const card = StateManager.getCurrentCard();
-  if (!card) return;
-
-  if (!STATE.stats[card.id]) STATE.stats[card.id] = {errors: 0};
-  STATE.stats[card.id].errors++;
-  StateManager.saveState();
-  StateManager.updateStatsUI(window.app.ui);
-
-  const stats = STATE.stats[card.id] || {errors: 0};
-  let bHtml = document.getElementById('displayBadges').innerHTML;
-  if (!bHtml.includes('错')) {
-    bHtml += `<span class="badge badge-err">错 ${stats.errors}</span>`;
-    document.getElementById('displayBadges').innerHTML = bHtml;
-  }
+  getStudyUseCases().recordError();
 }
 
 /**
  * Handle sentence recall
  */
 export function handleSentenceRecall(understood) {
-  if (!understood) {
-    recordError();
-    UiRenderer.showToast(window.app.ui, '已记录不理解');
-  } else {
-    UiRenderer.showToast(window.app.ui, '已确认理解');
-  }
-  nextCard();
+  getStudyUseCases().handleSentenceRecall(understood);
 }
 
 /**
  * Go to next card
  */
 export function nextCard() {
-  // Record current card as studied
-  const currentCard = StateManager.getCurrentCard();
-  if (currentCard) {
-    StateManager.recordCardStudied(currentCard.id);
-  }
-
-  if (STATE.currentIndex < STATE.displayOrder.length - 1) {
-    STATE.currentIndex++;
-    StateManager.saveState();
-    window.app.render();
-    StateManager.updateStatsUI(window.app.ui);
-  } else {
-    UiRenderer.showCompletionScreen(window.app.ui);
-  }
+  getStudyUseCases().nextCard();
 }
 
 /**
  * Go to previous card
  */
 export function prevCard() {
-  if (STATE.currentIndex > 0) {
-    STATE.currentIndex--;
-    StateManager.saveState();
-    window.app.render();
-    StateManager.updateStatsUI(window.app.ui);
-  } else {
-    UiRenderer.showToast(window.app.ui, '已经是第一个卡片了');
-  }
+  getStudyUseCases().prevCard();
 }
 
 /**
  * Jump to specific card by display index
  */
 export function jumpTo(idx) {
-  if (idx >= 0 && idx < STATE.displayOrder.length) {
-    STATE.currentIndex = idx;
-    StateManager.saveState();
-    window.app.render();
-    toggleStats(window.app.ui);
+  if (getStudyUseCases().jumpTo(idx)) {
+    toggleStats(getApp().ui);
   }
 }
 
@@ -161,13 +136,8 @@ export function jumpTo(idx) {
  * Jump to specific card by original index (for learning list clicks)
  */
 export function jumpToOriginal(originalIdx) {
-  // Find the position of this card in the display order
-  const displayIdx = STATE.displayOrder.indexOf(originalIdx);
-  if (displayIdx !== -1) {
-    STATE.currentIndex = displayIdx;
-    StateManager.saveState();
-    window.app.render();
-    toggleStats(window.app.ui);
+  if (getStudyUseCases().jumpToOriginal(originalIdx)) {
+    toggleStats(getApp().ui);
   }
 }
 
@@ -175,7 +145,7 @@ export function jumpToOriginal(originalIdx) {
  * Toggle file panel
  */
 export async function toggleFiles(forceOpen = null, ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   const isOpening = forceOpen === true || (forceOpen === null && !ui.filePanel.classList.contains('open'));
 
   if (forceOpen === true) {
@@ -203,7 +173,7 @@ export async function toggleFiles(forceOpen = null, ui = null) {
  * Toggle stats panel
  */
 export function toggleStats(ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   ui.statsPanel.classList.toggle('open');
 }
 
@@ -223,7 +193,7 @@ export function toggleShortcuts() {
  * Load root folders
  */
 export async function loadRootFolders(forceRefresh = false, ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   try {
     // Show loading state in file list container
     ui.fileListContainer.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--secondary);">正在加载文件列表...</div>';
@@ -234,7 +204,7 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
 
     if (folders.length > 0) {
       html += folders.map(folder => `
-        <div class="file-item" onclick="app.loadFolder('${folder.name}')">
+        <div class="file-item" data-action="load-folder" data-path="${folder.name}">
           <span class="file-icon">📁</span>
           <span class="file-name">${folder.name}</span>
         </div>
@@ -244,7 +214,7 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
     if (files.length > 0) {
       html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
       html += files.map(file => `
-        <div class="file-item" onclick="app.selectFile('${file.name}', '${file.name}')">
+        <div class="file-item" data-action="select-file" data-path="${file.name}" data-name="${file.name}">
           <span class="file-icon">📄</span>
           <span class="file-name">${file.name}</span>
         </div>
@@ -256,7 +226,7 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
     ui.fileListContainer.innerHTML = `
       <div style="padding: 1rem; text-align: center; color: var(--danger);">
         <p>加载失败: ${e.message}</p>
-        <button class="btn-primary" onclick="app.loadRootFolders()" style="margin-top: 1rem;">重试</button>
+        <button class="btn-primary" data-action="load-root-folders" style="margin-top: 1rem;">重试</button>
       </div>
     `;
   }
@@ -266,7 +236,7 @@ export async function loadRootFolders(forceRefresh = false, ui = null) {
  * Load folder contents
  */
 export async function loadFolder(path, forceRefresh = false, ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   try {
     // Show loading state in file list container
     ui.fileListContainer.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--secondary);">正在加载文件列表...</div>';
@@ -277,7 +247,7 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
 
     // Add back button
     html += `
-      <div class="file-item" onclick="app.loadRootFolders()" style="color: var(--primary);">
+      <div class="file-item" data-action="load-root-folders" style="color: var(--primary);">
         <span class="file-icon">⬅️</span>
         <span class="file-name">返回根目录</span>
       </div>
@@ -287,7 +257,7 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
     if (path.includes('/')) {
       const parentPath = path.split('/').slice(0, -1).join('/');
       html += `
-        <div class="file-item" onclick="app.loadFolder('${parentPath}')" style="color: var(--primary);">
+        <div class="file-item" data-action="load-folder" data-path="${parentPath}" style="color: var(--primary);">
           <span class="file-icon">⬆️</span>
           <span class="file-name">上级目录</span>
         </div>
@@ -298,7 +268,7 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
 
     if (folders.length > 0) {
       html += folders.map(folder => `
-        <div class="file-item" onclick="app.loadFolder('${path}/${folder.name}')">
+        <div class="file-item" data-action="load-folder" data-path="${path}/${folder.name}">
           <span class="file-icon">📁</span>
           <span class="file-name">${folder.name}</span>
         </div>
@@ -308,7 +278,7 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
     if (files.length > 0) {
       html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
       html += files.map(file => `
-        <div class="file-item" onclick="app.selectFile('${path}/${file.name}', '${file.name}')">
+        <div class="file-item" data-action="select-file" data-path="${path}/${file.name}" data-name="${file.name}">
           <span class="file-icon">📄</span>
           <span class="file-name">${file.name}</span>
         </div>
@@ -328,7 +298,7 @@ export async function loadFolder(path, forceRefresh = false, ui = null) {
     ui.fileListContainer.innerHTML = `
       <div style="padding: 1rem; text-align: center; color: var(--danger);">
         <p>加载失败: ${e.message}</p>
-        <button class="btn-primary" onclick="app.loadRootFolders()" style="margin-top: 1rem;">返回根目录</button>
+        <button class="btn-primary" data-action="load-root-folders" style="margin-top: 1rem;">返回根目录</button>
       </div>
     `;
   }
@@ -349,14 +319,14 @@ export function selectFile(path, name) {
     message += `<br><br>当前文件的学习进度将被保存。`;
   }
 
-  window.app.confirmDialog.show(message, () => confirmSwitchFile(path));
+  getApp().confirmDialog.show(message, () => confirmSwitchFile(path));
 }
 
 /**
  * Confirm and switch file
  */
 export async function confirmSwitchFile(path, ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   try {
     ui.filePanel.classList.remove('open');
 
@@ -391,7 +361,7 @@ export async function confirmSwitchFile(path, ui = null) {
  * Load file content
  */
 export async function loadFile(path, ui = null) {
-  if (!ui) ui = window.app.ui;
+  ui = getUi(ui);
   try {
     ui.loader.classList.remove('hidden');
     ui.loader.innerHTML = `
@@ -415,15 +385,6 @@ export async function loadFile(path, ui = null) {
     const parser = new MarkdownParser(text);
     STATE.cards = parser.parse();
 
-    // Debug: 打印生成的每一个 Card
-    console.log('=== 生成的 Cards ===');
-    console.log(`共 ${STATE.cards.length} 张卡片`);
-    STATE.cards.forEach((card, index) => {
-      console.log(`\n--- Card ${index + 1} ---`);
-      console.log(JSON.stringify(card, null, 2));
-    });
-    console.log('=== Cards 打印结束 ===');
-
     if (STATE.cards.length === 0) {
       throw new Error('解析后没有生成任何卡片，请检查数据格式');
     }
@@ -441,10 +402,10 @@ export async function loadFile(path, ui = null) {
     // use restart() logic to restore card structure and show first card
     if (STATE.currentIndex === 0 && !document.getElementById('displayWord')) {
       UiRenderer.updateCurrentFileDisplay(ui, relativePath);
-      window.app.restart();
+      getApp().restart();
     } else {
       UiRenderer.updateCurrentFileDisplay(ui, relativePath);
-      window.app.render();
+      getApp().render();
     }
 
     StateManager.updateStatsUI(ui);
@@ -459,7 +420,7 @@ export async function loadFile(path, ui = null) {
         <p style="color:red; font-size: 1.1rem; margin-bottom: 1rem;">加载失败: ${errorMsg}</p>
         <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">请检查网络连接或数据源</p>
         <p style="color: #999; font-size: 0.8rem; margin-bottom: 1rem;">路径: ${path}</p>
-        <button class="btn-primary" onclick="location.reload()" style="margin-top: 1rem;">重新加载</button>
+        <button class="btn-primary" data-action="reload-page" style="margin-top: 1rem;">重新加载</button>
       </div>
     `;
   }
@@ -477,9 +438,9 @@ export async function refreshFileList() {
     } else {
       await loadFolder(currentPath, true);
     }
-    UiRenderer.showToast(window.app.ui, '✅ 列表已刷新');
+    UiRenderer.showToast(getApp().ui, '✅ 列表已刷新');
   } catch (e) {
-    UiRenderer.showToast(window.app.ui, '❌ 刷新失败: ' + e.message);
+    UiRenderer.showToast(getApp().ui, '❌ 刷新失败: ' + e.message);
   }
 }
 
@@ -492,8 +453,8 @@ export function showCompletionScreen(ui) {
       <h2>🎉 恭喜完成！</h2>
       <p>你已经学习了 ${STATE.cards.length} 张卡片</p>
       <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
-        <button class="btn-primary" onclick="app.restart()">重新开始</button>
-        <button class="btn-ghost" onclick="app.clearDataAndReload()">清除数据</button>
+        <button class="btn-primary" data-action="restart">重新开始</button>
+        <button class="btn-ghost" data-action="clear-data-reload">清除数据</button>
       </div>
     </div>
   `;
@@ -509,107 +470,6 @@ export function clearDataAndReload() {
   }
 }
 
-// ============================================================
-// Audio Sources Configuration (函数式 + 责任链模式)
-// 增加新音源只需在数组中添加配置项，无需修改其他代码
-// ============================================================
-
-/**
- * 音频源配置
- * @typedef {Object} AudioSource
- * @property {string} name - 音源名称 (用于 Toast 提示)
- * @property {Function} play - 播放函数，返回 Promise
- * @property {number} timeout - 超时时间 (ms)
- * @property {Object} options - 其他配置项
- */
-const audioSources = [
-  {
-    name: '有道',
-    play: playYoudaoAudio,
-    timeout: 1200,
-    options: { urls: ['us', 'uk'] } // 美音、英音
-  },
-  {
-    name: 'Azure',
-    play: playAzureTTS,
-    timeout: 1200,
-    options: { voice: 'en-US-JennyNeural', region: 'eastasia' }
-  },
-  {
-    name: 'Google Cloud',
-    play: playGoogleCloudTTS,
-    timeout: 1200,
-    options: { voice: 'en-US-Neural2-C' }
-  },
-
-  // 以下音源在国内可能不可用，如需启用请取消注释
-  // { name: '搜狗', play: playSogouTTS, timeout: 1200 },
-];
-
-// ============================================================
-// 音频播放器实现
-// ============================================================
-
-/**
- * Play word pronunciation (入口函数)
- * Priority: 按 audioSources 数组顺序依次尝试
- */
-export async function playWord(word, buttonId = null, showNotification = true) {
-  if (!word) return;
-
-  const audioText = word
-    .replace(/sth\./g, 'something')
-    .replace(/sb\./g, 'somebody');
-
-  setButtonLoading(true, buttonId);
-
-  try {
-    const result = await tryAudioChain(audioText, audioSources, 0);
-    setButtonLoading(false, buttonId);
-    if (showNotification && result.sourceName) {
-      UiRenderer.showToast(window.app.ui, `🔊 ${result.sourceName}`);
-    }
-  } catch (error) {
-    // 所有音源都失败，尝试 Web Speech API 作为最后回退
-    console.log('All audio sources failed, trying Web Speech API:', error.message);
-    try {
-      await playWebSpeech(audioText);
-      setButtonLoading(false, buttonId);
-      if (showNotification) {
-        UiRenderer.showToast(window.app.ui, '🔊 TTS播放中');
-      }
-    } catch (ttsError) {
-      setButtonLoading(false, buttonId);
-      UiRenderer.showToast(window.app.ui, '❌ 语音播放失败');
-    }
-  }
-}
-
-/**
- * 责任链核心：递归尝试音源
- * @param {string} text - 要播放的文本
- * @param {AudioSource[]} sources - 音源数组
- * @param {number} index - 当前索引
- * @returns {Promise<{sourceName: string}>}
- */
-async function tryAudioChain(text, sources, index) {
-  if (index >= sources.length) {
-    throw new Error('All audio sources failed');
-  }
-
-  const source = sources[index];
-  try {
-    await source.play(text, source.timeout, source.options);
-    return { sourceName: source.name };
-  } catch (error) {
-    console.log(`${source.name} failed:`, error.message);
-    return tryAudioChain(text, sources, index + 1);
-  }
-}
-
-/**
- * 设置按钮加载状态
- */
 function setButtonLoading(isLoading, btnId) {
   if (!btnId) return;
   const btn = document.getElementById(btnId);
@@ -618,402 +478,29 @@ function setButtonLoading(isLoading, btnId) {
   btn.disabled = isLoading;
 }
 
-// ============================================================
-// 音源实现函数
-// ============================================================
-
-/**
- * 有道词典音频 (不缓存，有道响应速度快， */
-export async function playYoudaoAudio(text, timeout = 1200) {
-  const cleanText = removeEmoji(text);
-
-  const urls = [
-    `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`, // 美音
-    `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanText)}`, // 英音
-  ];
-
-  for (const url of urls) {
-    try {
-      return await playAudioUrl(url, timeout);
-    } catch {
-      continue;
-    }
-  }
-  throw new Error('Youdao audio not available');
-}
-
-/**
- * Google Translate TTS
- */
-export async function playGoogleTTS(text, timeout = 1200) {
-  const cleanText = removeEmoji(text);
-  const url = `https://translate.google.com/translate_tts?tl=en&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
-  return playAudioUrl(url, timeout);
-}
-
-/**
- * 搜狗 TTS
- */
-export async function playSogouTTS(text, timeout = 1200) {
-  const cleanText = removeEmoji(text);
-  const url = `https://fanyi.sogou.com/reventondc/synthesis?text=${encodeURIComponent(cleanText)}&speed=1&lang=en-US`;
-  return playAudioUrl(url, timeout);
-}
-
-/**
- * Azure Speech TTS
- * Docs: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech
- */
-export async function playAzureTTS(text, timeout = 1200, options = {}) {
-  const cleanText = removeEmoji(text);
-  const source = 'azure';
-  const voice = options.voice || CONFIG.audio.defaultVoice;
-
-  // Check cache first
-  const cached = await AudioCache.getAudio(cleanText, source);
-  if (cached) {
-    const url = URL.createObjectURL(cached);
-    return playAudioUrl(url, 0);
-  }
-
-  const apiKey = CONFIG.apiKeys.azureSpeech.key;
-  const region = options.region || CONFIG.apiKeys.azureSpeech.region;
-  const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
-
-  // SSML format for Azure TTS
-  const ssml = `
-    <speak version='1.0' xml:lang='en-US'>
-      <voice xml:lang='en-US' name='${voice}'>
-        ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
-      </voice>
-    </speak>
-  `.trim();
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Ocp-Apim-Subscription-Key': apiKey,
-      'Content-Type': 'application/ssml+xml',
-      'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3'
-    },
-    body: ssml
-  });
-
-  if (!response.ok) {
-    throw new Error(`Azure TTS error: ${response.status}`);
-  }
-
-  // Response is audio binary
-  const arrayBuffer = await response.arrayBuffer();
-  const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
-
-  // Cache the audio
-  await AudioCache.setAudio(cleanText, source, blob);
-
-  const audioUrl = URL.createObjectURL(blob);
-  return playAudioUrl(audioUrl, timeout);
-}
-
-/**
- * Google Cloud Text-to-Speech API
- * Docs: https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize
- */
-export async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
-  const cleanText = removeEmoji(text);
-  const source = 'google';
-  const voice = options.voice || 'en-US-Neural2-C';
-
-  // Check cache first
-  const cached = await AudioCache.getAudio(cleanText, source);
-  if (cached) {
-    const url = URL.createObjectURL(cached);
-    return playAudioUrl(url, 0); // No timeout needed for cached audio
-  }
-
-  const apiKey = CONFIG.apiKeys.googleCloud.tts;
-  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      input: { text: cleanText },
-      voice: { languageCode: 'en-US', name: voice },
-      audioConfig: { audioEncoding: 'MP3' }
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error(`Google Cloud TTS error: ${response.status}`);
-  }
-
-  const data = await response.json();
-  if (!data.audioContent) {
-    throw new Error('No audio content in response');
-  }
-
-  // Decode base64 and play
-  const audioData = atob(data.audioContent);
-  const arrayBuffer = new ArrayBuffer(audioData.length);
-  const view = new Uint8Array(arrayBuffer);
-  for (let i = 0; i < audioData.length; i++) {
-    view[i] = audioData.charCodeAt(i);
-  }
-
-  const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
-
-  // Cache the audio
-  await AudioCache.setAudio(cleanText, source, blob);
-
-  const audioUrl = URL.createObjectURL(blob);
-  return playAudioUrl(audioUrl, timeout);
-}
-
-/**
- * Web Speech API (浏览器内置 TTS)
- */
-export async function playWebSpeech(text) {
-  return new Promise((resolve, reject) => {
-    if (!('speechSynthesis' in window)) {
-      reject(new Error('Web Speech API not supported'));
-      return;
-    }
-
-    window.speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    utterance.pitch = 1;
-    utterance.volume = 1;
-
-    utterance.onstart = () => resolve();
-    utterance.onerror = (e) => e.error !== 'canceled' && reject(e);
-    utterance.onend = () => resolve();
-
-    // 选择美音
-    const voices = window.speechSynthesis.getVoices();
-    const usVoice = voices.find(v => v.lang === 'en-US') ||
-                    voices.find(v => v.lang.startsWith('en'));
-    if (usVoice) utterance.voice = usVoice;
-
-    window.speechSynthesis.speak(utterance);
-  });
-}
-
-/**
- * 播放音频 URL
- */
-export async function playAudioUrl(url, timeout = 3000) {
-  return new Promise((resolve, reject) => {
-    const audio = new Audio(url);
-    let resolved = false;
-    let canPlay = false;
-
-    const done = (fn, ...args) => {
-      if (!resolved) {
-        resolved = true;
-        fn(...args);
-      }
-    };
-
-    audio.oncanplaythrough = () => canPlay = true;
-    audio.onplay = () => canPlay && done(resolve, { onplay: true });
-    audio.onended = () => done(resolve, { onplay: true });
-    audio.onerror = () => done(reject, new Error('Audio load failed'));
-    // 移除 stalled 等待，让超时机制处理
-
-    // 超时检测
-    if (timeout > 0) {
-      setTimeout(() => {
-        if (!resolved && !canPlay) done(reject, new Error('Audio timeout'));
-      }, timeout);
-    }
-
-    audio.play().catch(err => done(reject, err));
-  });
-}
-
-/**
- * 移除文本中的 emoji
- */
-export function removeEmoji(text) {
-  if (!text) return '';
-  return text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
-}
-
-/**
- * 预热 Web Speech API
- */
-export function prewarmSpeechSynthesis() {
-  try {
-    if (!('speechSynthesis' in window)) return;
-    const utterance = new SpeechSynthesisUtterance('');
-    utterance.volume = 0;
-    window.speechSynthesis.speak(utterance);
-  } catch {}
-}
-
-// ============================================================
-// Translation Services Configuration (函数式 + 责任链模式)
-// 增加新翻译源只需在数组中添加配置项，无需修改其他代码
-// ============================================================
-
-/**
- * 翻译服务配置
- * @typedef {Object} TranslationSource
- * @property {string} name - 翻译服务名称 (用于 Toast 提示)
- * @property {Function} translate - 翻译函数，返回 Promise<string>
- * @property {number} timeout - 超时时间 (ms)
- * @property {Object} options - 其他配置项
- */
-const translationSources = [
-  {
-    name: 'Google',
-    translate: translateWithGoogle,
-    timeout: CONFIG.translation.defaultTimeout,
-    options: {}
-  },
-  {
-    name: 'Azure',
-    translate: translateWithAzure,
-    timeout: CONFIG.translation.defaultTimeout,
-    options: { region: CONFIG.apiKeys.azureTranslator.region }
-  }
-];
-
-/**
- * 责任链核心：递归尝试翻译服务
- * @param {string} text - 要翻译的文本
- * @param {TranslationSource[]} sources - 翻译服务数组
- * @param {number} index - 当前索引
- * @returns {Promise<{translation: string, sourceName: string}>}
- */
-async function tryTranslationChain(text, sources, index) {
-  if (index >= sources.length) {
-    throw new Error('All translation services failed');
-  }
-
-  const source = sources[index];
-  try {
-    const translation = await source.translate(text, source.timeout, source.options);
-    return { translation, sourceName: source.name };
-  } catch (error) {
-    console.log(`${source.name} translation failed:`, error.message);
-    return tryTranslationChain(text, sources, index + 1);
-  }
-}
-
-/**
- * Azure Translator API
- * Docs: https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/v3-0-translate
- */
-async function translateWithAzure(text, timeout, options = {}) {
-  const apiKey = CONFIG.apiKeys.azureTranslator.key;
-  const region = options.region || CONFIG.apiKeys.azureTranslator.region;
-  const targetLang = CONFIG.translation.targetLanguage;
-  const url = `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=${targetLang}`;
-
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeout);
-
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Ocp-Apim-Subscription-Key': apiKey,
-        'Ocp-Apim-Subscription-Region': region,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify([{ Text: text }]),
-      signal: controller.signal
-    });
-
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      throw new Error(`Azure Translator error: ${response.status}`);
-    }
-
-    const data = await response.json();
-    if (!data || !data[0] || !data[0].translations || !data[0].translations[0]) {
-      throw new Error('Invalid Azure response format');
-    }
-
-    return data[0].translations[0].text;
-  } catch (error) {
-    clearTimeout(timeoutId);
-    throw error;
-  }
-}
-
-/**
- * Google Translate API
- * Docs: https://cloud.google.com/translate/docs/reference/rest/v2/translate
- */
-async function translateWithGoogle(text, timeout, options = {}) {
-  const apiKey = CONFIG.apiKeys.googleCloud.translation;
-  const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
-
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeout);
-
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        q: text,
-        source: 'en',
-        target: 'zh-CN',
-        format: 'text'
-      }),
-      signal: controller.signal
-    });
-
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      throw new Error(`Google Translate error: ${response.status}`);
-    }
-
-    const data = await response.json();
-    if (!data || !data.data || !data.data.translations || !data.data.translations[0]) {
-      throw new Error('Invalid Google response format');
-    }
-
-    return data.data.translations[0].translatedText;
-  } catch (error) {
-    clearTimeout(timeoutId);
-    throw error;
-  }
-}
-
-/**
- * 主入口函数：翻译文本
- * @param {string} text - 要翻译的文本
- * @param {string} buttonId - 可选的按钮ID，用于显示加载状态
- * @returns {Promise<{translation: string, sourceName: string}>}
- */
-export async function translateText(text, buttonId = null) {
-  if (!text || !text.trim()) {
-    throw new Error('No text to translate');
-  }
-
-  // 预处理文本（和语音播放一致）
-  const cleanText = removeEmoji(text)
-    .replace(/sth\./gi, 'something')
-    .replace(/sb\./gi, 'somebody')
-    .trim();
-
-  if (!cleanText) {
-    throw new Error('No text to translate after cleaning');
-  }
-
+export async function playWord(word, buttonId = null, _useTTSFallback = false, showNotification = true) {
+  if (!word) return;
   setButtonLoading(true, buttonId);
-
   try {
-    const result = await tryTranslationChain(cleanText, translationSources, 0);
+    const result = await playWordWithFallback(word);
+    setButtonLoading(false, buttonId);
+    if (showNotification && result.sourceName) {
+      UiRenderer.showToast(getApp().ui, `🔊 ${result.sourceName}`);
+    }
+  } catch (_error) {
+    setButtonLoading(false, buttonId);
+    UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
+  }
+}
+
+export function prewarmSpeechSynthesis() {
+  prewarmSpeechSynthesisService();
+}
+
+export async function translateText(text, buttonId = null) {
+  setButtonLoading(true, buttonId);
+  try {
+    const result = await translateTextWithFallback(text);
     setButtonLoading(false, buttonId);
     return result;
   } catch (error) {
@@ -1036,7 +523,7 @@ export async function translatePhrase() {
     // Set loading state for all possible buttons
     buttonIds.forEach(id => setButtonLoading(true, id));
 
-    UiRenderer.showToast(window.app.ui, '正在翻译...');
+    UiRenderer.showToast(getApp().ui, '正在翻译...');
     const result = await translateText(card.word);
 
     // 更新卡片数据
@@ -1050,14 +537,14 @@ export async function translatePhrase() {
 
     // 保存状态并重新渲染
     StateManager.saveState();
-    window.app.render();
+    getApp().render();
 
     // 更新 action area 为"下一个"按钮
-    UiRenderer.renderNextAction(window.app.ui);
-    // UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+    UiRenderer.renderNextAction(getApp().ui);
+    // UiRenderer.showToast(getApp().ui, `✅ 翻译完成 (${result.sourceName})`);
   } catch (error) {
     buttonIds.forEach(id => setButtonLoading(false, id));
-    UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
+    UiRenderer.showToast(getApp().ui, '❌ 翻译失败: ' + error.message);
   }
 }
 
@@ -1076,7 +563,7 @@ export async function translateSentence() {
     // Set loading state for all possible buttons
     buttonIds.forEach(id => setButtonLoading(true, id));
 
-    UiRenderer.showToast(window.app.ui, '正在翻译...');
+    UiRenderer.showToast(getApp().ui, '正在翻译...');
     const result = await translateText(sentenceText);
 
     // 更新卡片数据
@@ -1090,7 +577,7 @@ export async function translateSentence() {
 
     // 保存状态并重新渲染
     StateManager.saveState();
-    window.app.render();
+    getApp().render();
 
     // 直接显示中文译文
     const cnDiv = document.getElementById('sentenceCn');
@@ -1100,10 +587,10 @@ export async function translateSentence() {
     }
 
     // 更新 action area 为"下一个"按钮
-    UiRenderer.renderNextAction(window.app.ui);
-    // UiRenderer.showToast(window.app.ui, `✅ 翻译完成 (${result.sourceName})`);
+    UiRenderer.renderNextAction(getApp().ui);
+    // UiRenderer.showToast(getApp().ui, `✅ 翻译完成 (${result.sourceName})`);
   } catch (error) {
     buttonIds.forEach(id => setButtonLoading(false, id));
-    UiRenderer.showToast(window.app.ui, '❌ 翻译失败: ' + error.message);
+    UiRenderer.showToast(getApp().ui, '❌ 翻译失败: ' + error.message);
   }
 }

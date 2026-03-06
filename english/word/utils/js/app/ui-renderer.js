@@ -53,7 +53,9 @@ export function render(ui) {
   // Auto-play pronunciation if enabled and card is a word
   if (STATE.autoPlay && STATE.mode === 'input' && card.type === 'word') {
     setTimeout(() => {
-      window.app.playWord(card.word, 'play-btn-main', false, false);
+      document.dispatchEvent(new CustomEvent('app:play-word', {
+        detail: { word: card.word, buttonId: 'play-btn-main' }
+      }));
     }, 300);
   }
 
@@ -65,9 +67,9 @@ export function render(ui) {
  * Render word/phrase with play button
  */
 function renderWord(ui, card) {
-  const wordEscaped = card.word.replace(/'/g, '\\\'');
+  const encodedWord = encodeURIComponent(card.word);
   const playButtonId = `play-btn-main`;
-  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}', false, false)" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
@@ -131,7 +133,7 @@ function renderItems(ui, card) {
         if (idx === 0 && card.emoji) {
           cnDisplay = card.emoji + ' ' + cnDisplay;
         }
-        li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
+        li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
         ui.list.appendChild(li);
       }
       return;
@@ -151,7 +153,7 @@ function renderItems(ui, card) {
       if (idx === 0 && card.emoji) {
         cnDisplay = card.emoji + ' ' + cnDisplay;
       }
-      cnHtml = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
+      cnHtml = `<div class="cn-text" data-action="reveal" data-has-cn="true">${cnDisplay}</div>`;
     }
 
     if (hasPOS || !hasCn) {
@@ -162,7 +164,7 @@ function renderItems(ui, card) {
       }
 
       if (isPhraseItself && hasCn) {
-        li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${cnDisplay}</div>`;
+        li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true">${cnDisplay}</div>`;
       } else {
         li.innerHTML = `
           <span class="item-tag tag-def ${STATE.mode === 'recall' ? 'blur-target' : ''}"></span>
@@ -171,7 +173,7 @@ function renderItems(ui, card) {
         `;
       }
     } else {
-      li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
+      li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
     }
     ui.list.appendChild(li);
   });
@@ -184,10 +186,10 @@ function renderItems(ui, card) {
  * Render phrase items
  */
 function renderPhraseItems(ui, card) {
-  const wordEscaped = card.word.replace(/'/g, '\\\'');
+  const encodedWord = encodeURIComponent(card.word);
   // Use a different ID for phrase cards to avoid conflict with header button
   const playButtonId = `play-btn-phrase`;
-  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" onclick="app.playWord('${wordEscaped}', '${playButtonId}', false, false)" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
@@ -231,7 +233,7 @@ function renderPhraseItems(ui, card) {
     translateDiv.className = 'translate-section';
     translateDiv.style.cssText = 'margin-top: 0.5rem; margin-bottom: 1rem;';
     translateDiv.innerHTML = `
-      <button id="translate-btn-phrase" class="btn-ghost translate-btn" onclick="app.translatePhrase()" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+      <button id="translate-btn-phrase" class="btn-ghost translate-btn" data-action="translate-phrase" style="display: inline-flex; align-items: center; gap: 0.4rem;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"></circle>
           <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -252,7 +254,7 @@ function renderPhraseItems(ui, card) {
     if (hasCn) {
       const li = document.createElement('li');
       li.className = 'item';
-      li.innerHTML = `<div class="cn-text" onclick="app.reveal(this)" data-has-cn="true">${item.cn}</div>`;
+      li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true">${item.cn}</div>`;
       ui.list.appendChild(li);
     }
   });
@@ -270,7 +272,7 @@ function renderSentenceItems(ui, card) {
 
   // Add play button for sentence (plays pure English sentence)
   const sentenceText = card.items[0]?.en || card.displayWord || '';
-  const sentenceTextEscaped = sentenceText.replace(/'/g, '\\\'');
+  const sentenceTextEncoded = encodeURIComponent(sentenceText);
   const playButtonId = 'play-btn-sentence';
 
   // Create label wrapper with text and play button
@@ -288,13 +290,15 @@ function renderSentenceItems(ui, card) {
   playButton.className = 'btn-ghost audio-play-btn';
   playButton.style.cssText = 'padding: 0.15rem 0.4rem; font-size: 0.75rem;';
   playButton.title = '播放句子';
+  playButton.dataset.action = 'play-word';
+  playButton.dataset.wordEncoded = sentenceTextEncoded;
+  playButton.dataset.buttonId = playButtonId;
   playButton.innerHTML = `
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
     <span class="btn-spinner"></span>
   `;
-  playButton.onclick = () => window.app.playWord(sentenceTextEscaped, playButtonId, false, false);
   labelWrapper.appendChild(playButton);
 
   ui.list.appendChild(labelWrapper);
@@ -341,7 +345,7 @@ function renderSentenceItems(ui, card) {
     translateDiv.className = 'translate-section';
     translateDiv.style.cssText = 'margin-top: 1rem;';
     translateDiv.innerHTML = `
-      <button id="translate-btn-sentence" class="btn-ghost translate-btn" onclick="app.translateSentence()" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+      <button id="translate-btn-sentence" class="btn-ghost translate-btn" data-action="translate-sentence" style="display: inline-flex; align-items: center; gap: 0.4rem;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"></circle>
           <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -392,13 +396,15 @@ function renderSynonymsAndAntonyms(ui, card) {
 
         const playBtn = document.createElement('button');
         playBtn.className = 'synonym-play-btn audio-play-btn';
-        const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+        const synWordEncoded = encodeURIComponent(syn.word);
         const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
         playBtn.id = synBtnId;
+        playBtn.dataset.action = 'play-word';
+        playBtn.dataset.wordEncoded = synWordEncoded;
+        playBtn.dataset.buttonId = synBtnId;
         playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg><span class="btn-spinner"></span>`;
-        playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
         const synWord = document.createElement('span');
         synWord.className = 'synonym-word';
@@ -446,13 +452,15 @@ function renderSynonymsAndAntonyms(ui, card) {
 
           const playBtn = document.createElement('button');
           playBtn.className = 'synonym-play-btn audio-play-btn';
-          const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+          const synWordEncoded = encodeURIComponent(syn.word);
           const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
           playBtn.id = synBtnId;
+          playBtn.dataset.action = 'play-word';
+          playBtn.dataset.wordEncoded = synWordEncoded;
+          playBtn.dataset.buttonId = synBtnId;
           playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg><span class="btn-spinner"></span>`;
-          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
           const synWord = document.createElement('span');
           synWord.className = 'synonym-word';
@@ -490,13 +498,15 @@ function renderSynonymsAndAntonyms(ui, card) {
 
           const playBtn = document.createElement('button');
           playBtn.className = 'synonym-play-btn audio-play-btn';
-          const synWordEscaped = syn.word.replace(/'/g, '\\\'');
+          const synWordEncoded = encodeURIComponent(syn.word);
           const synBtnId = `play-btn-syn-${syn.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
           playBtn.id = synBtnId;
+          playBtn.dataset.action = 'play-word';
+          playBtn.dataset.wordEncoded = synWordEncoded;
+          playBtn.dataset.buttonId = synBtnId;
           playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg><span class="btn-spinner"></span>`;
-          playBtn.onclick = () => window.app.playWord(synWordEscaped, synBtnId, false, false);
 
           const synWord = document.createElement('span');
           synWord.className = 'synonym-word';
@@ -539,13 +549,15 @@ function renderSynonymsAndAntonyms(ui, card) {
 
         const playBtn = document.createElement('button');
         playBtn.className = 'antonym-play-btn audio-play-btn';
-        const antWordEscaped = ant.word.replace(/'/g, '\\\'');
+        const antWordEncoded = encodeURIComponent(ant.word);
         const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
         playBtn.id = antBtnId;
+        playBtn.dataset.action = 'play-word';
+        playBtn.dataset.wordEncoded = antWordEncoded;
+        playBtn.dataset.buttonId = antBtnId;
         playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg><span class="btn-spinner"></span>`;
-        playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
 
         const antWord = document.createElement('span');
         antWord.className = 'antonym-word';
@@ -589,13 +601,15 @@ function renderSynonymsAndAntonyms(ui, card) {
 
         const playBtn = document.createElement('button');
         playBtn.className = 'antonym-play-btn audio-play-btn';
-        const antWordEscaped = ant.word.replace(/'/g, '\\\'');
+        const antWordEncoded = encodeURIComponent(ant.word);
         const antBtnId = `play-btn-ant-${ant.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
         playBtn.id = antBtnId;
+        playBtn.dataset.action = 'play-word';
+        playBtn.dataset.wordEncoded = antWordEncoded;
+        playBtn.dataset.buttonId = antBtnId;
         playBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg><span class="btn-spinner"></span>`;
-        playBtn.onclick = () => window.app.playWord(antWordEscaped, antBtnId, false, false);
 
         const antWord = document.createElement('span');
         antWord.className = 'antonym-word';
@@ -640,17 +654,17 @@ export function renderInputActions(ui) {
 
       if (!isCnVisible) {
         ui.actionArea.innerHTML = `
-          <button class="btn-primary" onclick="app.showSentenceTranslation()">查看译文 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+          <button class="btn-primary" data-action="show-sentence-translation">查看译文 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
         `;
       } else {
-        ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+        ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
       }
       return;
     }
 
     // No Chinese - show translate and next buttons
     ui.actionArea.innerHTML = `
-      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" onclick="app.translateSentence()">
+      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"></circle>
           <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -659,7 +673,7 @@ export function renderInputActions(ui) {
         翻译
         <span class="btn-spinner"></span>
       </button>
-      <button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
     `;
     return;
   }
@@ -672,7 +686,7 @@ export function renderInputActions(ui) {
 
     if (!hasAnyChinese) {
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" onclick="app.translatePhrase()">
+        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" data-action="translate-phrase">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -681,14 +695,14 @@ export function renderInputActions(ui) {
           翻译
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
       `;
       return;
     }
   }
 
   // Browse mode: show next button for all card types
-  ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
 }
 
 /**
@@ -705,7 +719,7 @@ export function renderRecallActions(ui) {
     if (!hasChinese) {
       // No Chinese - show translate and next buttons
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" onclick="app.translateSentence()">
+        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -714,7 +728,7 @@ export function renderRecallActions(ui) {
           翻译
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" onclick="app.nextCard()">下一个</button>
+        <button class="btn-primary" data-action="next-card">下一个</button>
       `;
       return;
     }
@@ -724,13 +738,13 @@ export function renderRecallActions(ui) {
 
     if (!isCnVisible) {
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost" onclick="app.nextCard()">跳过</button>
-        <button class="btn-primary" onclick="app.showSentenceTranslation()">查看译文</button>
+        <button class="btn-ghost" data-action="next-card">跳过</button>
+        <button class="btn-primary" data-action="show-sentence-translation">查看译文</button>
       `;
     } else {
       ui.actionArea.innerHTML = `
-        <button class="btn-danger" onclick="app.handleSentenceRecall(false)">理解错误</button>
-        <button class="btn-success" onclick="app.handleSentenceRecall(true)">理解正确</button>
+        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">理解错误</button>
+        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">理解正确</button>
       `;
     }
     return;
@@ -744,7 +758,7 @@ export function renderRecallActions(ui) {
 
     if (!hasAnyChinese) {
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" onclick="app.translatePhrase()">
+        <button class="btn-ghost translate-btn" id="translate-btn-phrase-action" data-action="translate-phrase">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -753,7 +767,7 @@ export function renderRecallActions(ui) {
           翻译
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" onclick="app.nextCard()">下一个</button>
+        <button class="btn-primary" data-action="next-card">下一个</button>
       `;
       return;
     }
@@ -770,8 +784,8 @@ export function renderRecallActions(ui) {
   }
 
   ui.actionArea.innerHTML = `
-    <button class="btn-success" onclick="app.handleRecall(true)">记得</button>
-    <button class="btn-danger" onclick="app.handleRecall(false)">不记得</button>
+    <button class="btn-success" data-action="handle-recall" data-claimed-known="true">记得</button>
+    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">不记得</button>
   `;
 }
 
@@ -780,8 +794,8 @@ export function renderRecallActions(ui) {
  */
 export function renderConfirmationActions(ui) {
   ui.actionArea.innerHTML = `
-    <button class="btn-danger" onclick="app.confirmRecall(false)">其实不会</button>
-    <button class="btn-success" onclick="app.confirmRecall(true)">确认掌握</button>
+    <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">其实不会</button>
+    <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">确认掌握</button>
   `;
 }
 
@@ -789,7 +803,7 @@ export function renderConfirmationActions(ui) {
  * Render next action button
  */
 export function renderNextAction(ui) {
-  ui.actionArea.innerHTML = `<button class="btn-primary" onclick="app.nextCard()">下一个</button>`;
+  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个</button>`;
 }
 
 /**
@@ -897,10 +911,17 @@ export function updateBodyModeClass() {
  * Update order mode select dropdown
  */
 export function updateOrderModeSelect(ui) {
-  // Use global function from review.html if available
-  if (window.updateOrderModeSelect) {
-    window.updateOrderModeSelect(STATE.orderMode);
-  }
+  const select = document.getElementById('orderModeSelect');
+  const label = document.getElementById('orderModeLabel');
+  if (!select || !label) return;
+
+  const options = select.querySelectorAll('.custom-select-option');
+  const activeOption = select.querySelector(`[data-value="${STATE.orderMode}"]`);
+  if (!activeOption) return;
+
+  label.textContent = activeOption.textContent;
+  options.forEach((opt) => opt.classList.remove('selected'));
+  activeOption.classList.add('selected');
 }
 
 /**
@@ -989,9 +1010,6 @@ export function showCompletionScreen(ui) {
       minute: '2-digit'
     });
   };
-
-  // Store original card content to restore later
-  window._originalCardContent = ui.card.innerHTML;
 
   // Add mobile responsive CSS if not exists
   if (!document.getElementById('completion-mobile-style')) {
@@ -1114,10 +1132,10 @@ export function showCompletionScreen(ui) {
       </div>
 
       <div class="completion-buttons" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; padding-top: 0.5rem;">
-        <button class="btn-primary" onclick="app.restart()" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
+        <button class="btn-primary" data-action="restart" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
           🔄 重新开始
         </button>
-        <button class="btn-ghost" onclick="app.clearDataAndReload()" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
+        <button class="btn-ghost" data-action="clear-data-reload" style="font-size: 1rem; padding: 0.6rem 1.5rem;">
           🗑️ 清除进度
         </button>
       </div>

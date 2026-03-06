@@ -1,0 +1,26 @@
+[
+  {
+    "id": "card_0",
+    "word": "in charge of",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "in charge of",
+        "cn": "负责"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "on behalf of",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "on behalf of",
+        "cn": "代表"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "card_0",
+    "word": "Sentences",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "vaccine",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "疫苗"
+      }
+    ],
+    "ipa": "[vækˈsiːn]"
+  },
+  {
+    "id": "card_2",
+    "word": "available",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "available",
+        "cn": "可获得的"
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "The vaccine is available.",
+    "displayWord": "The vaccine is available.",
+    "type": "sentence",
+    "fullText": "The vaccine is available(可获得的). 疫苗可获得。",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The vaccine is available.",
+        "cn": "疫苗可获得。"
+      }
+    ],
+    "children": []
+  }
+]
