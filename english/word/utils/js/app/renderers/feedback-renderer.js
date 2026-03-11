@@ -12,6 +12,15 @@ export function revealAll() {
   if (synonymsSection) synonymsSection.classList.add('revealed');
   const itemList = document.querySelector('.item-list');
   if (itemList) itemList.classList.add('revealed');
+  revealSentenceTranslationNode();
+}
+
+export function revealSentenceTranslationNode(doc = document) {
+  const cnDiv = doc.getElementById('sentenceCn');
+  if (!cnDiv) return false;
+  cnDiv.style.display = 'block';
+  cnDiv.classList.add('revealed');
+  return true;
 }
 
 export function showSentenceTranslation(ui, mode, rerenderActions) {
