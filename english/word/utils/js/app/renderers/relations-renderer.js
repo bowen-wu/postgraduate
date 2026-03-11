@@ -1,3 +1,11 @@
+import { STATE } from '../../config.js';
+
+export function withRecallBlur(className, mode = STATE.mode) {
+  if (mode !== 'recall') return className;
+  if (className.includes('blur-target')) return className;
+  return `${className} blur-target`;
+}
+
 export function renderSynonymsAndAntonyms(ui, card) {
   const hasSynonyms = card.synonyms && card.synonyms.length > 0;
   const hasAntonyms = card.antonyms && card.antonyms.length > 0;
@@ -7,7 +15,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
     const synSection = document.createElement('div');
     synSection.className = 'synonyms-section';
     const synLabel = document.createElement('div');
-    synLabel.className = 'synonyms-label';
+    synLabel.className = withRecallBlur('synonyms-label');
     synLabel.textContent = 'Synonyms';
     synSection.appendChild(synLabel);
 
@@ -18,7 +26,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
         const synContainer = document.createElement('div');
         synContainer.className = 'synonym-with-items';
         const synMainItem = document.createElement('div');
-        synMainItem.className = 'synonym-main';
+        synMainItem.className = withRecallBlur('synonym-main');
 
         const playBtn = document.createElement('button');
         playBtn.className = 'synonym-play-btn audio-play-btn';
@@ -38,10 +46,10 @@ export function renderSynonymsAndAntonyms(ui, card) {
         synContainer.appendChild(synMainItem);
 
         const synSubList = document.createElement('div');
-        synSubList.className = 'synonym-sub-items';
+        synSubList.className = withRecallBlur('synonym-sub-items');
         syn.items.forEach((item) => {
           const subItem = document.createElement('div');
-          subItem.className = 'synonym-sub-item';
+          subItem.className = withRecallBlur('synonym-sub-item');
           let subText = '';
           if (item.en && item.en.trim() !== '') subText += item.en;
           if (item.cn && item.cn.trim() !== '') subText += subText ? ` ${item.cn}` : item.cn;
@@ -56,7 +64,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
           const synContainer = document.createElement('div');
           synContainer.className = 'synonym-with-items';
           const synMainItem = document.createElement('div');
-          synMainItem.className = 'synonym-main';
+          synMainItem.className = withRecallBlur('synonym-main');
 
           const playBtn = document.createElement('button');
           playBtn.className = 'synonym-play-btn audio-play-btn';
@@ -76,9 +84,9 @@ export function renderSynonymsAndAntonyms(ui, card) {
           synContainer.appendChild(synMainItem);
 
           const synSubList = document.createElement('div');
-          synSubList.className = 'synonym-sub-items';
+          synSubList.className = withRecallBlur('synonym-sub-items');
           const subItem = document.createElement('div');
-          subItem.className = 'synonym-sub-item';
+          subItem.className = withRecallBlur('synonym-sub-item');
           let subText = '';
           if (syn.pos && syn.pos.trim() !== '') subText += syn.pos;
           if (syn.cn && syn.cn.trim() !== '') subText += subText ? ` ${syn.cn}` : syn.cn;
@@ -88,7 +96,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
           synList.appendChild(synContainer);
         } else {
           const synItem = document.createElement('span');
-          synItem.className = 'synonym-item';
+          synItem.className = withRecallBlur('synonym-item');
           const playBtn = document.createElement('button');
           playBtn.className = 'synonym-play-btn audio-play-btn';
           const synWordEncoded = encodeURIComponent(syn.word);
@@ -115,7 +123,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
     const antSection = document.createElement('div');
     antSection.className = 'antonyms-section';
     const antLabel = document.createElement('div');
-    antLabel.className = 'antonyms-label';
+    antLabel.className = withRecallBlur('antonyms-label');
     antLabel.textContent = 'Antonyms';
     antSection.appendChild(antLabel);
 
@@ -126,7 +134,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
         const antContainer = document.createElement('div');
         antContainer.className = 'antonym-with-items';
         const antMainItem = document.createElement('div');
-        antMainItem.className = 'antonym-main';
+        antMainItem.className = withRecallBlur('antonym-main');
 
         const playBtn = document.createElement('button');
         playBtn.className = 'antonym-play-btn audio-play-btn';
@@ -146,10 +154,10 @@ export function renderSynonymsAndAntonyms(ui, card) {
         antContainer.appendChild(antMainItem);
 
         const antSubList = document.createElement('div');
-        antSubList.className = 'antonym-sub-items';
+        antSubList.className = withRecallBlur('antonym-sub-items');
         ant.items.forEach((item) => {
           const subItem = document.createElement('div');
-          subItem.className = 'antonym-sub-item';
+          subItem.className = withRecallBlur('antonym-sub-item');
           let subText = '';
           if (item.en && item.en.trim() !== '') subText += item.en;
           if (item.cn && item.cn.trim() !== '') subText += subText ? ` ${item.cn}` : item.cn;
@@ -160,7 +168,7 @@ export function renderSynonymsAndAntonyms(ui, card) {
         antList.appendChild(antContainer);
       } else {
         const antItem = document.createElement('span');
-        antItem.className = 'antonym-item';
+        antItem.className = withRecallBlur('antonym-item');
         const playBtn = document.createElement('button');
         playBtn.className = 'antonym-play-btn audio-play-btn';
         const antWordEncoded = encodeURIComponent(ant.word);
