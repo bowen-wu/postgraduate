@@ -29,6 +29,13 @@ import {
   triggerConfetti as triggerConfettiModule
 } from './renderers/feedback-renderer.js';
 
+export function shouldAutoPlayCard(card, state = STATE) {
+  if (!card) return false;
+  if (!state.autoPlay) return false;
+  if (card.type !== 'word') return false;
+  return state.mode === 'input' || state.mode === 'recall';
+}
+
 export function render(ui) {
   if (STATE.cards.length === 0 || STATE.displayOrder.length === 0) return;
 
@@ -51,7 +58,7 @@ export function render(ui) {
   if (STATE.mode === 'input') renderInputActions(ui);
   else renderRecallActions(ui);
 
-  if (STATE.autoPlay && STATE.mode === 'input' && card.type === 'word') {
+  if (shouldAutoPlayCard(card, STATE)) {
     setTimeout(() => {
       document.dispatchEvent(new CustomEvent('app:play-word', {
         detail: { word: card.word, buttonId: 'play-btn-main' }
