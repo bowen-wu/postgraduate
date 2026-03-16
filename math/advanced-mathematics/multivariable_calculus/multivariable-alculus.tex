@@ -144,7 +144,7 @@
                 \item 找两条不同路径，使极限值不同
                 \item 某一路径使极限不存在
             \end{circlenum}
-            \item 除洛必达法则和单调有界准则外，二重极限保持了一元极限的唯一性、局部有界性、局部保号性、运算规则、脱帽法和夹逼准则
+            \item 除{\color{red}{\sout{洛必达法则}}}和{\color{red}{\sout{单调有界准则}}}外，二重极限保持了一元极限的唯一性、局部有界性、局部保号性、运算规则、脱帽法和{\color{red}{夹逼准则}}
         \end{itemize}
 
         \item \textbf{常用极限}：
@@ -180,11 +180,11 @@
         \]
         即
         \[
-            f'_x(x_0, y_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x, y_0) - f(x_0, y_0)}{\Delta x}
+            f'_x(x_0, y_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x, y_0) - f(x_0, y_0)}{\Delta x} = \lim\limits_{x\to x_0} \frac{f(x, y_0) - f(x_0, y_0)}{x - x_0}
         \]
         类似地，函数 $z = f(x,y)$ 在点 $(x_0,y_0)$ 处对 $y$ 的\textbf{偏导数}定义为
         \[
-            f'_y(x_0, y_0) = \lim_{\Delta y \to 0} \frac{f(x_0, y_0 + \Delta y) - f(x_0, y_0)}{\Delta y}
+            f'_y(x_0, y_0) = \lim_{\Delta y \to 0} \frac{f(x_0, y_0 + \Delta y) - f(x_0, y_0)}{\Delta y} = \lim\limits_{y\to y_0} \frac{f(x_0, y) - f(x_0, y_0)}{y - y_0}
         \]
         \item 如果$z = f(x, y)$在区域$D$上的每一点$(x , y)$处都有偏导数，一般来说，它们仍是$x, y$的函数，则称为$f(x, y)$的偏导函数，简称偏导数，记作
         \[
@@ -243,7 +243,7 @@
             \item 可导 $\Rightarrow$ 可微：若 $f'(x)$ 存在，即$\displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = A \Rightarrow \frac{\Delta y}{\Delta x} = A + \alpha \Rightarrow \Delta y = A\Delta x + o(\Delta x) $，故 $f$ 在 $x$ 处可微
         \end{itemize}
 
-        \textbf{多元函数不可逆的原因}：偏导数只反映沿坐标轴方向的变化率，不能保证沿任意方向都能用线性函数近似。
+        \textbf{多元函数不可逆的原因}：偏导数只反映沿坐标轴方向的变化率，不能保证{\color{red}{沿任意方向}}都能用线性函数近似。
 
         \item \textbf{可微的充分条件}：若函数 $z = f(x,y)$ 在点 $(x, y)$ 的偏导数 $\dfrac{\partial z}{\partial x}$、$\dfrac{\partial z}{\partial y}$ 存在且{\blueuline{连续}}，则函数在点 $(x, y)$ 处可微
         \begin{enumerate}
@@ -260,7 +260,7 @@
         \item \textbf{可微的判别步骤}：
         \begin{circlenum}
             \item 写出全增量$\Delta z = f(x_0 + \Delta x, y_0 + \Delta y) - f(x_0, y_0)$
-            \item 写出线性增量$A\Delta x + B\Delta y$，其中$A = f'_x(x_0, y_0), B = f'_y(x_0, y_0)$
+            \item 写出线性增量$A\Delta x + B\Delta y$，其中$A = f'_x(x_0, y_0) = \displaystyle\frac{\partial f}{\partial x}\bigg|_{\substack{x=x_0 \\ y=y_0}}, B = f'_y(x_0, y_0) = \displaystyle\frac{\partial f}{\partial y}\bigg|_{\substack{x=x_0 \\ y=y_0}}$。偏导数不好求时，可以用导数概念求$A, B$
             \item 做极限
             \[
                 \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z - [A\Delta x + B\Delta y]}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
@@ -325,6 +325,40 @@
                 \end{tikzpicture}
             \end{minipage}
         \end{center}
+        \item $\color{red}{\bigstar}$\textbf{结构不变性}：无论$z$对哪个变量求导，也无论$z$已经求了几阶导，求导后的新函数仍然具有与原函数完全相同的复合结构
+
+        \textbf{理解}：设 $z = f(u,v)$，其中 $u = \varphi(x,y)$，$v = \psi(x,y)$。
+
+        根据链式法则，$\dfrac{\partial z}{\partial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}$。
+
+        这里 $\dfrac{\partial f}{\partial u}$ 和 $\dfrac{\partial f}{\partial v}$ \textbf{仍然是 $u, v$ 的函数}，而 $u, v$ 仍然是 $x, y$ 的函数。因此 $\dfrac{\partial z}{\partial x}$ 依然通过 $u, v$ 与 $x, y$ 相关联——这就是"复合结构不变"。
+
+        \textbf{意义}：求高阶偏导时，每次都要继续用链式法则处理中间变量的依赖关系。
+
+        \begin{analysisbox}[Example]
+            设 $z = f(u,v)$，其中 $u = \varphi(x,y)$，$v = \psi(x,y)$，求 $\dfrac{\partial^2 z}{\partial x^2}$。
+
+            \textbf{一阶偏导}：
+            \[
+                \frac{\partial z}{\partial x} = f'_u \cdot \varphi'_x + f'_v \cdot \psi'_x
+            \]
+
+            注意：$f'_u$ 和 $f'_v$ \textbf{仍是 $u, v$ 的函数}，复合结构未变。
+
+            \textbf{二阶偏导}：对 $f'_u \cdot \varphi'_x + f'_v \cdot \psi'_x$ 再求 $\dfrac{\partial}{\partial x}$ 时，\textbf{仍需用链式法则}：
+            \begin{align*}
+                \frac{\partial^2 z}{\partial x^2} &= \frac{\partial}{\partial x}(f'_u \cdot \varphi'_x) + \frac{\partial}{\partial x}(f'_v \cdot \psi'_x) \\
+                &= \left(f''_{uu} \cdot \varphi'_x + f''_{uv} \cdot \psi'_x\right)\varphi'_x + f'_u \cdot \varphi''_{xx} \\
+                &\quad + \left(f''_{vu} \cdot \varphi'_x + f''_{vv} \cdot \psi'_x\right)\psi'_x + f'_v \cdot \psi''_{xx}
+            \end{align*}
+
+            \textbf{关键}：求 $\dfrac{\partial}{\partial x}(f'_u)$ 时，$f'_u$ 仍要通过 $u, v$ 对 $x$ 求导。
+        \end{analysisbox}
+        \item 记号
+        \begin{itemize}
+            \item $f'_1 == f'_x$ 表示对第一个位置求导
+            \item $f'_2 == f'_y$ 表示对第二个位置求导
+        \end{itemize}
 
         \item 全导数与偏导数的区别
         \begin{circlenum}
@@ -333,7 +367,7 @@
         \end{circlenum}
     \end{enumerate}
 
-    \textbf{记忆方法}：画出变量之间的依赖关系树形图，从 $z$ 到最终变量的每条路径上的偏导数相乘，所有路径的结果相加。
+    % \textbf{记忆方法}：画出变量之间的依赖关系树形图，从 $z$ 到最终变量的每条路径上的偏导数相乘，所有路径的结果相加。
 
     \subsubsection{全微分形式不变性}
 
@@ -345,33 +379,43 @@
     \textbf{应用}：求偏导数时，可以先求全微分，再比较系数。这种方法可以避免复杂的链式求导，减少出错。
 
     \begin{analysisbox}[Example]
-        设 $z = u^2 v$，其中 $u = xy$，$v = x + y$，求 $\dfrac{\partial z}{\partial x}$ 和 $\dfrac{\partial z}{\partial y}$。
+        设 $z = e^{u}\sin v$，其中 $u = x^2 y$，$v = x + y^2$，求 $\dfrac{\partial z}{\partial x}$ 和 $\dfrac{\partial z}{\partial y}$。
 
-        \textbf{解}：利用全微分形式不变性
+        \textbf{方法一}：链式法则
         \begin{align*}
-            \mathrm{d}z &= \frac{\partial z}{\partial u}\mathrm{d}u + \frac{\partial z}{\partial v}\mathrm{d}v = 2uv\,\mathrm{d}u + u^2\,\mathrm{d}v \\
-            &= 2uv(y\mathrm{d}x + x\mathrm{d}y) + u^2(\mathrm{d}x + \mathrm{d}y) \\
-            &= (2uvy + u^2)\mathrm{d}x + (2uvx + u^2)\mathrm{d}y
+            \frac{\partial z}{\partial x} &= \frac{\partial z}{\partial u}\frac{\partial u}{\partial x} + \frac{\partial z}{\partial v}\frac{\partial v}{\partial x} = e^{u}\sin v \cdot 2xy + e^{u}\cos v \cdot 1 \\
+            &= e^{x^2 y}(2xy\sin(x+y^2) + \cos(x+y^2))\\[1em]
+            \frac{\partial z}{\partial y} &= \frac{\partial z}{\partial u}\frac{\partial u}{\partial y} + \frac{\partial z}{\partial v}\frac{\partial v}{\partial y} = e^{u}\sin v \cdot x^2 + e^{u}\cos v \cdot 2y \\
+            &= e^{x^2 y}(x^2\sin(x+y^2) + 2y\cos(x+y^2))
         \end{align*}
-        比较 $\mathrm{d}z = \dfrac{\partial z}{\partial x}\mathrm{d}x + \dfrac{\partial z}{\partial y}\mathrm{d}y$ 的系数，得
+
+        \textbf{方法二}：全微分形式不变性
+        \begin{align*}
+            \mathrm{d}z &= e^{u}\sin v\,\mathrm{d}u + e^{u}\cos v\,\mathrm{d}v \\
+            &= e^{u}\sin v(2xy\,\mathrm{d}x + x^2\,\mathrm{d}y) + e^{u}\cos v(\mathrm{d}x + 2y\,\mathrm{d}y) \\
+            &= e^{u}\big[\sin v \cdot 2xy + \cos v\big]\mathrm{d}x + e^{u}\big[\sin v \cdot x^2 + \cos v \cdot 2y\big]\mathrm{d}y
+        \end{align*}
+        \textbf{一次得到两个结果}：
         \[
-            \frac{\partial z}{\partial x} = 2uvy + u^2, \quad \frac{\partial z}{\partial y} = 2uvx + u^2
+            \frac{\partial z}{\partial x} = e^{x^2 y}(2xy\sin(x+y^2) + \cos(x+y^2)), \quad \frac{\partial z}{\partial y} = e^{x^2 y}(x^2\sin(x+y^2) + 2y\cos(x+y^2))
         \]
+
+        \textbf{优势}：全微分形式不变性一次运算同时得到 $\dfrac{\partial z}{\partial x}$ 和 $\dfrac{\partial z}{\partial y}$，且避免了重复计算 $\dfrac{\partial z}{\partial u}$ 和 $\dfrac{\partial z}{\partial v}$
     \end{analysisbox}
 
     \subsubsection{隐函数存在定理（公式法）}
 
     \begin{enumerate}
-        \item \textbf{隐函数存在定理1}（一个方程，两个变量）：对于由方程$F(x, y) = 0$确定的隐函数$y = f(x)$，当$F_y(x_0, y_0) \neq 0$时，则有
+        \item \textbf{隐函数存在定理1}（一个方程，两个变量）：对于由方程$F(x, y) = 0$确定的隐函数$y = f(x)$，当$\color{red}{F_y(x_0, y_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
         \[
             \frac{\mathrm{d}y}{\mathrm{d}x} = {\color{red}{-}}\frac{F'_x(x, y)}{F'_y(x, y)}
         \]
 
-        \item \textbf{隐函数存在定理2}（一个方程，三个变量）：对于由方程$F(x, y, z) = 0$确定的隐函数$z = f(x, y)$，当$F_z(x_0, y_0, z_0) \neq 0$时，则有
+        \item \textbf{隐函数存在定理2}（一个方程，三个变量）：对于由方程$F(x, y, z) = 0$确定的隐函数$z = f(x, y)$，当$\color{red}{F_z(x_0, y_0, z_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
         \[
             \frac{\partial z}{\partial x} = {\color{red}{-}}\frac{F'_x(x, y, z)}{F'_z(x, y, z)}, \quad \frac{\partial z}{\partial y} = {\color{red}{-}}\frac{F'_y(x, y, z)}{F'_z(x, y, z)}
         \]
-        \item \textbf{隐函数存在定理}：设 $F(x,y)$ 在点 $(x_0, y_0)$ 的某一邻域内具有连续的偏导数，且 $F(x_0, y_0) = 0$，则 $F'_y(x_0, y_0) \neq 0$ 是方程 $F(x, y) = 0$ 在点 $(x_0, y_0)$ 的某一邻域内能确定一个连续函数 $y = y(x)$，且满足 $y_0 = y(x_0)$，并有连续导数的\textbf{充分非必要条件}。
+        \item \textbf{隐函数存在定理（理解）}：设 $F(x,y)$ 在点 $(x_0, y_0)$ 的某一邻域内具有连续的偏导数，且 $F(x_0, y_0) = 0$，则 $F'_y(x_0, y_0) \neq 0$ 是方程 $F(x, y) = 0$ 在点 $(x_0, y_0)$ 的某一邻域内能确定一个连续函数 $y = y(x)$，且满足 $y_0 = y(x_0)$，并有连续导数的\textbf{充分非必要条件}。
     \end{enumerate}
 
     \subsubsection{二元函数的拉格朗日定理}
@@ -420,6 +464,18 @@
         \[
             f'_x(x_0, y_0) = 0, \quad f'_y(x_0, y_0) = 0
         \]
+        若$f(x,y)$ 在 $(x_0, y_0)$ 的某邻域内具有二阶连续偏导数，则
+        \[
+            \begin{cases}
+                \text{极大值} \;\Rightarrow\;
+                f_{xx}(x_0, y_0) \le 0,\quad
+                f_{yy}(x_0, y_0) \le 0, \\[6pt]
+                \text{极小值} \;\Rightarrow\;
+                f_{xx}(x_0, y_0) \ge 0,\quad
+                f_{yy}(x_0, y_0) \ge 0.
+            \end{cases}
+        \]
+
         \begin{itemize}
             \item 该必要条件同样适用于三元即三元以上函数
             \item 偏导数不存在的点也可能是极值点
@@ -447,10 +503,10 @@
         \begin{analysisbox}[判别法记忆口诀]
             \begin{center}
                 开不开心少年团 $\begin{cases}
-                                    \text{大鼻子爷爷} & \Delta = 0 \Rightarrow \text{方法失效} \\
-                                    \text{小哑巴猪} & \Delta < 0 \Rightarrow \text{非极值} \\
                                     \text{开心} & \Delta > 0, A > 0 \Rightarrow \text{极小值} \\
-                                    \text{不开心} & \Delta > 0, A < 0 \Rightarrow \text{极大值}
+                                    \text{不开心} & \Delta > 0, A < 0 \Rightarrow \text{极大值} \\
+                                    \text{大鼻子爷爷} & \Delta = 0 \Rightarrow \text{方法失效} \\
+                                    \text{小哑巴猪} & \Delta < 0 \Rightarrow \text{非极值}
                 \end{cases}$
             \end{center}
         \end{analysisbox}
@@ -462,7 +518,7 @@
     求目标函数$u = f(x, y, z)$在约束条件\begin{cases}
                                             \varphi(x, y, z) = 0, \\
                                             \psi(x, y, z) = 0
-    \end{cases}下的最值，则
+    \end{cases}下的最值，则(在满足约束方程的那些点里，找极值)
     \begin{circlenum}
         \item 构造拉格朗日函数 $F(x,y,z,\lambda,\mu) = f(x,y,z) + \lambda\varphi(x,y,z) + \mu\psi(x,y,z)$
         \item 求解方程组：
@@ -477,15 +533,18 @@
         \]
         \item 解上述方程组得备选点$P_i, i=1,2,3,\cdots,n$，并求出$f(P_i)$，取其最大值为$u_{max}$，最小值为$u_{min}$
         \item 根据实际问题，必存在最值，所得即为所求
+        \item 注意：
+        \begin{itemize}
+            \item \textbf{拉格朗日法的求解对象}：拉格朗日法求的是约束条件上的驻点（极值候选点），上述驻点为约束曲线（或曲面）上的\textbf{非端点点}。若约束不封闭或存在端点，还需\textbf{比较端点处函数值}。
+            \item 若目标函数的约束条件为$\varphi(x, y, z) = 0$，易解出$z = z(x, y)$，则将其代入$f(x, y, z)$，的$f[x, y, z(x, y)]$，即转化为无条件最值问题
+        \end{itemize}
     \end{circlenum}
-
-    若目标函数的约束条件为$\varphi(x, y, z) = 0$，易解出$z = z(x, y)$，则将其代入$f(x, y, z)$，的$f[x, y, z(x, y)]$，即转化为无条件最值问题
 
     \subsubsection{最远（近）点的垂线原理}
 
     \begin{enumerate}
         \item \begin{minipage}{0.8\textwidth}
-            如果 $\Gamma$ 是光滑闭曲线，点 $Q$ 是 $\Gamma$ 外的一个点，点$P_1, P_2$ 分别是 $\Gamma$ 上与点 $Q$ 的最远点、最近点，则直线 $P_{1}Q, P_{2}Q$分别在点$P_1$处，$P_2$处与 $\Gamma$ 垂直，即{\blueuline{$P_{1}Q, P_{2}Q$分别与点 $P_1, P_2$的切线垂直}}
+                  如果 $\Gamma$ 是光滑闭曲线，点 $Q$ 是 $\Gamma$ 外的一个点，点$P_1, P_2$ 分别是 $\Gamma$ 上与点 $Q$ 的最远点、最近点，则直线 $P_{1}Q, P_{2}Q$分别在点$P_1$处，$P_2$处与 $\Gamma$ 垂直，即{\blueuline{$P_{1}Q, P_{2}Q$分别与点 $P_1, P_2$的切线垂直}}
         \end{minipage}%
         \hfill
         \begin{minipage}{0.15\textwidth}
@@ -494,7 +553,7 @@
         \end{minipage}
 
         \item \begin{minipage}{0.8\textwidth}
-            若光滑闭曲线 $\Gamma_1, \Gamma_2$ 不相交，点 $P_1, P_2$ 分别是它们之间最远（近）点，则直线 $P_{1}P_2$是 $\Gamma_1, \Gamma_2$ 的公垂线，即{\blueuline{$P_{1}P_2$同时垂直于 $\Gamma_1, \Gamma_2$ 在这两个点处的切线}}
+                  若光滑闭曲线 $\Gamma_1, \Gamma_2$ 不相交，点 $P_1, P_2$ 分别是它们之间最远（近）点，则直线 $P_{1}P_2$是 $\Gamma_1, \Gamma_2$ 的公垂线，即{\blueuline{$P_{1}P_2$同时垂直于 $\Gamma_1, \Gamma_2$ 在这两个点处的切线}}
         \end{minipage}%
         \hfill
         \begin{minipage}{0.15\textwidth}
@@ -509,8 +568,8 @@
         \item 理论依据 —— \textbf{最大值与最小值定理}：有界闭区域$D$上的多元连续函数，在区域$D$上一定有最大值和最小值
         \item \textbf{求解步骤}：
         \begin{circlenum}
-            \item 根据$f'_x(x, y), f'_y(x, y)$为$0$或不存在，求出区域$D$内部的所有可疑点
-            \item 用拉格朗日乘数法或代入法求出区域$D$边界上的所有可疑点
+            \item 根据$f'_x(x, y), f'_y(x, y)$为$0$或不存在，求出{\color{red}{区域$D$内部}}的所有可疑点
+            \item 用拉格朗日乘数法或代入法求出{\color{red}{区域$D$边界上}}的所有可疑点
             \item 比较以上所有可疑点的函数值大小，取其最小者为最小值，最大者为最大值
         \end{circlenum}
     \end{enumerate}
@@ -518,40 +577,127 @@
     \subsection{结论}
 
     \begin{enumerate}
-    \end{enumerate}
+        \item \begin{cases}
+                  $\varphi'(x) = \varphi(x) \Rightarrow \varphi(x) = Ce^x$, \\
+                  $\varphi'(x) = -\varphi(x) \Rightarrow \varphi(x) = Ce^{-x}$
+        \end{cases}，$C$为任意常数
+        \item $\displaystyle\int_0^{+\infty} e^{-x}\,\mathrm{d}x = 1$
+        \item \begin{minipage}{0.55\textwidth}
+                  $\displaystyle\int_0^{+\infty} e^{-x^2}\,\mathrm{d}x = \frac{\sqrt {\pi}}{2}$
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.4\textwidth}
+            \centering
+            \begin{tikzpicture}
+                \begin{axis}
+                    [
+                    width=7cm,
+                    height=4.5cm,
+                    axis lines=middle,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    xmin=-4, xmax=4,
+                    ymin=-0.1, ymax=1.5,
+                    xtick = \empty,
+                    ytick = \empty,
+                    samples=100,
+                    domain=-3:3,
+                    every axis x label/.style={at={(ticklabel* cs:1)}, anchor=west},
+                    every axis y label/.style={at={(ticklabel* cs:1)}, anchor=south},
+                    ]
+                    % 阴影区域：x >= 0 部分
+                    \addplot[
+                        fill=customgreen!30,
+                        draw=none,
+                        domain=0:3,
+                        samples=100
+                    ] {exp(-x^2)} \closedcycle;
 
-    \subsection{定理}
+                    % 高斯曲线
+                    \addplot[
+                        thick,
+                        customgreen,
+                        domain=-3:3,
+                        samples=100
+                    ] {exp(-x^2)};
 
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-
+                    % 标注曲线函数
+                    \node at (axis cs:1.8,0.75) {$y=e^{-x^2}$};
+                \end{axis}
+            \end{tikzpicture}
+        \end{minipage}
     \end{enumerate}
 
     \subsection{方法总结}
 
     \begin{enumerate}
-
+        \item 偏导求法
+        \begin{itemize}
+            \item 一点处的偏导 $\Rightarrow$ 定义法
+            \item 某区域$D$的偏导 $\Rightarrow$ 公式法
+        \end{itemize}
+        \item $f'_x(x_0, y_0)$ = \begin{cases}
+                                     f'_x(x, y_0)\Big|_{x=x_0}, \text{先代值再求导} \\
+                                     f'_x(x, y)\Big|_{x = x_0, y = y_0} \text{先求导再代值}
+        \end{cases}
+        \item $\displaystyle\int_a^b |x| \mathrm{d}x = \dfrac{1}{2}(a \leq 0, b \geq 0)$，由于绝对值函数在 $x=0$ 处不可导，计算定积分时需按分段函数处理$\displaystyle\int_a^b |x| \mathrm{d}x = \int_a^0 -x \mathrm{d}x + \int_0^b x \mathrm{d}x$
     \end{enumerate}
 
-    \subsection{条件转换思路}
+    \subsection{方法步骤}
 
     \begin{enumerate}
+        \item 反问题：已知$f'_x, f'_y$，求$f(x, y)$
+        \begin{analysisbox}[Example]
+            已知
+            \[
+                \frac{\partial f}{\partial y}=e^{-x}\cos y
+            \]
 
-    \end{enumerate}
+            对 $y$ 积分得
+            \[
+                f(x,y)=\int e^{-x}\cos y\,dy
+                =e^{-x}\sin y+\varphi(x),
+            \]
 
-    \subsection{理解}
+            其中 $\varphi(x)$ 为关于 $x$ 的任意函数（关于$y$的常数），因为$\dfrac{\partial}{\partial y}\varphi(x)=0.$
+        \end{analysisbox}
+        \item 设曲线由方程$x^2 + 4y^2 = 4$确定，求 $\dfrac{\mathrm{d}y}{\mathrm{d}x}$。
 
-    \begin{enumerate}
+        \begin{analysisbox}
+
+            \textbf{方法一：直接对 $x$ 求导}
+
+            对等式两边关于 $x$ 求导：
+            \[
+                2x + 8y \cdot y' = 0
+            \]
+
+            解得：
+            \[
+                y' = -\frac{2x}{8y} = -\frac{x}{4y}.
+            \]
+
+            \medskip
+
+            \textbf{方法二：隐函数求导公式}
+
+            设 $F(x,y)=x^2+4y^2-4=0$，则
+            \[
+                F_x = 2x,\quad F_y = 8y
+            \]
+
+            由公式：
+            \[
+                \frac{\mathrm{d}y}{\mathrm{d}x}
+                = -\frac{F_x}{F_y}
+            \]
+
+            得：
+            \[
+                y' = -\frac{2x}{8y} = -\frac{x}{4y}.
+            \]
+
+        \end{analysisbox}
     \end{enumerate}
 
 \end{document}

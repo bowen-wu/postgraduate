@@ -1,0 +1,569 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{xeCJK}          % 中文支持
+\usepackage{fontspec}       % 英文/数学字体
+\usepackage{amsmath, amssymb} % 数学公式
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 目录超链接
+\usepackage{geometry}       % 页面布局
+\usepackage{bm}             % 粗体
+\usepackage{xcolor}         % 颜色
+\usepackage{tabularx}       % 表格环境
+\usepackage{tikz}           % TikZ 绘制主对角线斜线
+\usepackage{tcolorbox}
+\usepackage{xstring}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{extarrows}
+\pgfplotsset{compat=1.18}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+
+% 经典
+\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
+\newtcbox{\classic}{
+    on line,
+    colback=classicgreen!10,
+    colframe=classicgreen,
+    boxrule=0.8pt,
+    arc=3pt,
+    boxsep=1pt,
+    left=4pt,
+    right=4pt,
+    top=2pt,
+    bottom=2pt
+}
+
+
+\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
+\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
+
+% 抽离颜色和尺寸参数
+\newcommand{\analysisTitleColor}{green!50!black}
+\newcommand{\analysisBackColor}{white}
+\newcommand{\analysisBoxRule}{0.8pt}
+\newcommand{\analysisArc}{3pt}
+\newcommand{\analysisPadding}{6pt}
+
+% 定义 tcolorbox
+\newtcolorbox{analysisbox}[1][]{
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    colback=\analysisBackColor,
+    colframe=\analysisTitleColor,
+    boxrule=\analysisBoxRule,
+    arc=\analysisArc,
+    left=\analysisPadding,
+    right=\analysisPadding,
+    top=4pt,
+    bottom=4pt
+}
+
+\newlist{circlenum}{enumerate}{1}
+\setlist[circlenum]{
+    label=\ding{\numexpr171+\arabic*},
+    leftmargin=2.2em,
+    itemsep=0.6em,      % item 之间的距离（主要）
+    topsep=0.6em,       % 列表与上下正文的距离
+    parsep=0.3em,       % item 内段落的间距
+    partopsep=0.3em     % 列表前后额外间距
+}
+
+\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
+
+% =========================
+% 字体设置
+% =========================
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{PingFang SC}
+
+% =========================
+% 图形路径（可调整）
+% =========================
+\graphicspath{{./assets/}}
+
+% =========================
+% 文档开始
+% =========================
+\begin{document}
+
+%    \title{Template}
+%    \author{Bowen}
+%    \date{\today}
+%    \maketitle
+%    \tableofcontents
+%    \newpage
+
+
+% =========================
+
+    \section{微分方程}
+
+    \subsection{微分方程的概念}
+
+    \subsubsection{微分方程及其阶}
+
+    含有未知函数、未知函数的导数（或微分）与自变量之间关系的方程，称为\textbf{微分方程}，一般写成
+    \[
+        F[x, y, y',\cdots, y^{(n)}] = 0 \quad \text{或} \quad y^{(n)} = f[x, y, y',\cdots, y^{(n-1)}]
+    \]
+
+    \textbf{微分方程的阶}：微分方程中出现的未知函数的最高阶导数的阶数，称为该微分方程的\textbf{阶}
+
+    \subsubsection{常微分方程}
+
+    未知函数是一元函数（即只有一个自变量）的微分方程，称为\textbf{常微分方程}（Ordinary Differential Equation, ODE）
+
+    \subsubsection{线性微分方程}
+
+    如果微分方程中，未知函数 $y$ 及其各阶导数 $y', y'', \ldots, y^{(n)}$ 都是一次的（即它们的幂次都是 $1$），且不含这些函数的乘积或复合，则称为\textbf{线性微分方程}。
+
+    \begin{enumerate}
+        \item \textbf{$n$ 阶线性微分方程}：
+
+        一般形式：
+        \[
+            a_n(x)y^{(n)} + a_{n-1}(x)y^{(n-1)} + \cdots + a_1(x)y' + a_0(x)y = f(x)
+        \]
+
+        其中系数 $a_n(x), a_{n-1}(x), \ldots, a_0(x)$ 和 $f(x)$ 都是 $x$ 的已知函数，且 $a_n(x) \neq 0$。
+
+        \item \textbf{$n$ 阶常系数线性微分方程}：
+
+        若上述方程中所有系数 $a_n, a_{n-1}, \ldots, a_0$ 都是常数（与 $x$ 无关），则称为\textbf{常系数}线性微分方程。一般形式：
+        \[
+            a_ny^{(n)} + a_{n-1}y^{(n-1)} + \cdots + a_1y' + a_0y = f(x)
+        \]
+
+        通常可化为 $a_n = 1$ 的标准形式：
+        \[
+            y^{(n)} + p_{n-1}y^{(n-1)} + \cdots + p_1y' + p_0y = g(x)
+        \]
+
+        \item \textbf{$n$ 阶齐次线性微分方程}：
+
+        若 $f(x) \equiv 0$（即右端自由项为零），则称为\textbf{齐次}线性微分方程。一般形式：
+        \[
+            a_n(x)y^{(n)} + a_{n-1}(x)y^{(n-1)} + \cdots + a_1(x)y' + a_0(x)y = 0
+        \]
+
+        \item \textbf{$n$ 阶非齐次线性微分方程}：
+
+        若 $f(x) \not\equiv 0$（即右端自由项不为零），则称为\textbf{非齐次}线性微分方程。一般形式：
+        \[
+            a_n(x)y^{(n)} + a_{n-1}(x)y^{(n-1)} + \cdots + a_1(x)y' + a_0(x)y = f(x)
+        \]
+    \end{enumerate}
+
+    \begin{analysisbox}[分类举例]
+        \begin{itemize}
+            \item $y'' + 3y' + 2y = 0$：二阶常系数齐次线性微分方程
+            \item $y'' + 3y' + 2y = e^x$：二阶常系数非齐次线性微分方程
+            \item $y'' + xy' + y = 0$：二阶变系数齐次线性微分方程
+            \item $y'' + xy' + y = \sin x$：二阶变系数非齐次线性微分方程
+        \end{itemize}
+    \end{analysisbox}
+
+    \subsubsection{微分方程的解}
+
+    代入微分方程能使方程成为恒等式的函数，称为该微分方程的\textbf{解}。微分方程解的图形称为\textbf{积分曲线}
+
+    \subsubsection{微分方程的通解}
+
+    如果微分方程的解中含有的\textbf{独立常数的个数等于微分方程的阶数}，则称此解为该微分方程的\textbf{通解}。
+
+    \subsubsection{初始条件与特解}
+
+    \begin{enumerate}
+        \item \textbf{初始条件}：用来确定通解中任意常数的附加条件
+        \item \textbf{特解}：由初始条件确定了通解中任意常数后得到的解
+    \end{enumerate}
+
+    \subsection{一阶微分方程的求解}
+
+    \subsubsection{可分离变量型微分方程}
+
+    \begin{enumerate}
+        \item \textbf{直接可分离}
+        \begin{itemize}
+            \item \textbf{标准形式}：$\dfrac{\mathrm{d}y}{\mathrm{d}x} = f(x)g(y)$
+            \item \textbf{特征}：方程可分解为只含 $x$ 的函数与只含 $y$ 的函数的乘积。
+            \item \textbf{解法}：分离变量后两边积分
+            \[
+                \int \frac{1}{g(y)}\,\mathrm{d}y = \int f(x)\,\mathrm{d}x + C
+            \]
+        \end{itemize}
+
+
+        \item \textbf{换元后可分离}
+        \begin{itemize}
+            \item \textbf{标准形式}：$\dfrac{\mathrm{d}y}{\mathrm{d}x} = f(ax + by + c) \quad (a, b \text{ 不全为零})$
+            \item \textbf{特征}：方程右端是 $ax + by + c$ 的函数。
+            \item \textbf{解法}：令 $u = ax + by + c$，则
+            \[
+                \frac{\mathrm{d}u}{\mathrm{d}x} = a + b\frac{\mathrm{d}y}{\mathrm{d}x} = a + bf(u)
+            \]
+            分离变量得 $\displaystyle\frac{\mathrm{d}u}{a + bf(u)} = \mathrm{d}x$，积分后回代即可。
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{齐次型微分方程}
+
+    \begin{itemize}
+        \item \textbf{标准形式}：$\displaystyle\frac{\mathrm{d}y}{\mathrm{d}x} = \varphi\left(\frac{y}{x}\right)$
+        \item \textbf{特征}：方程中 $x$ 和 $y$ 的地位对称，右端是 $\dfrac{y}{x}$ 的函数
+        \item \textbf{解法}：令 $u = \dfrac{y}{x}$（即 $y = xu$），则 $\dfrac{\mathrm{d}y}{\mathrm{d}x} = u + x\dfrac{\mathrm{d}u}{\mathrm{d}x}$，代入后得到关于 $u$ 的可分离变量方程：
+        \[
+            x\frac{\mathrm{d}u}{\mathrm{d}x} = \varphi(u) - u \implies \frac{\mathrm{d}u}{\varphi(u)-u} = \frac{\mathrm{d}x}{x}
+        \]
+    \end{itemize}
+
+    \subsubsection{一阶线性微分方程}
+
+    \begin{itemize}
+        \item \textbf{标准形式}：$y' + p(x)y = q(x)$ 或 $x' + p(y)x = q(y)$
+        \item \textbf{特征}：$y$ 和 $y'$ 都是一次的（线性），系数 $p(x)$、$q(x)$ 仅与 $x$ 有关
+        \item \textbf{通解公式}：
+        \[
+            y = e^{-\int p(x)\,\mathrm{d}x}\left[\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x + C\right]
+        \]
+        \item \textbf{定积分形式}：
+        \[
+            y(x) = e^{-\int_{x_0}^{x} p(t)\,\mathrm{d}t}\left[\int_{x_0}^{x} q(t)e^{\int_{x_0}^{t} p(s)\,\mathrm{d}s}\,\mathrm{d}t + C\right]
+        \]
+    \end{itemize}
+
+    \begin{analysisbox}[推导——一阶线性微分方程通解（积分因子法）]
+        \textbf{分析}：构造积分因子 $\mu(x)$，把左端整理成一个乘积的导数，从而可直接积分。
+
+        \textbf{解}：设积分因子
+        \[
+            \mu(x)=e^{\int p(x)\,\mathrm{d}x}
+        \]
+        则 $\mu'(x)=p(x)\mu(x)$。原方程
+        \[
+            y' + p(x)y = q(x)
+        \]
+        两边同乘 $\mu(x)$，得
+        \[
+            \mu(x)y' + \mu(x)p(x)y = \mu(x)q(x)
+        \]
+        由 $\mu'=p\mu$，左端可写为
+        \[
+            (\mu y)'=\mu q
+        \]
+
+        两边积分
+        \[
+            \mu y=\int \mu q\,\mathrm{d}x + C
+        \]
+        解出 $y$：
+        \[
+            y=e^{-\int p(x)\,\mathrm{d}x}\left[\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x+C\right]
+        \]
+    \end{analysisbox}
+
+    \subsubsection{伯努利方程}
+
+    \begin{itemize}
+        \item \textbf{标准形式}：$\displaystyle\frac{\mathrm{d}y}{\mathrm{d}x} + p(x)y = q(x)y^n$ 或 $\displaystyle\frac{\mathrm{d}x}{\mathrm{d}y} + p(y)x = q(y)x^n \quad (n \neq 0, 1)$
+        \item \textbf{解法}：
+        \begin{circlenum}
+            \item 恒等变形：方程两边除以 $y^n$，得 $y^{-n}\dfrac{\mathrm{d}y}{\mathrm{d}x} + p(x)y^{1-n} = q(x)$
+            \item 令 $z = y^{1-n}$，得 $\dfrac{\mathrm{d}z}{\mathrm{d}x} = (1-n)y^{-n}\dfrac{\mathrm{d}y}{\mathrm{d}x}$，则 $\dfrac{1}{1-n}\dfrac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
+            \item 代入得一阶线性方程：$\dfrac{\mathrm{d}z}{\mathrm{d}x} + (1-n)p(x)z = (1-n)q(x)$
+        \end{circlenum}
+    \end{itemize}
+
+    \subsubsection{二阶可降阶微分方程（用换元法化为一阶方程）}
+
+    \begin{enumerate}
+        \item $y'' = f(x, y')$型（方程中不显含 $y$） \textbf{解法}
+        \begin{circlenum}
+            \item 令 $p = y' = p(x)$，则 $y'' = p' = \dfrac{dp}{dx}$，则原方程变为一阶方程 $\displaystyle\frac{dp}{dx} = f(x, p)$
+            \item 若求得其通解为 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$，则原方程的通解为 $y = \int \varphi(x, C_1)\mathrm{d}x + C_2$
+        \end{circlenum}
+        \item $y'' = f(y, y')$型（方程中不显含自变量 $x$） \textbf{解法}
+        \begin{circlenum}
+            \item 令 $p = y' = p(y)$，则 $y'' = \dfrac{dp}{dx} = \dfrac{dp}{dy} \cdot \dfrac{dy}{dx} = p\dfrac{dp}{dy}$，则原方程变为一阶方程 $\displaystyle p\frac{dp}{dy} = f(y, p)$
+            \item 若求得其通解为 $p = \varphi(y, C_1)$，即 $y' = \varphi(y, C_1)$，则分离变量积分得 $\dfrac{dy}{\varphi(y, C_1)} = dx$
+            \item 两边积分得 $\displaystyle\int \dfrac{dy}{\varphi(y, C_1)} = x + C_2$，即可求得原方程的通解
+        \end{circlenum}
+        \item $y'' = f(y')$型 \textbf{解法}
+        \begin{circlenum}
+            \item 令 $p = y'$，则 $y'' = p' = \dfrac{dp}{dx}$，原方程变为 $\dfrac{dp}{dx} = f(p)$
+            \item 分离变量：$\dfrac{dp}{f(p)} = dx$，积分得 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$
+            \item 再积分得原方程通解：$y = \int \varphi(x, C_1)\mathrm{d}x + C_2$
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsection{高阶线性微分方程的求解}
+
+    \subsubsection{二阶常系数齐次线性微分方程}
+
+    \begin{enumerate}
+        \item \textbf{标准形式}：$y'' + py' + qy = 0$（$p, q$ 为常数）
+        \item \textbf{解的结构}：若 $y_1(x), y_2(x)$ 是方程 $y'' + py' + qy = 0$ 的两个解，且 $\dfrac{y_1}{y_2} \neq$ 常数，则称它们为线性无关解，且 $y = C_1y_1 + C_2y_2$ 是方程的通解
+        \item $\color{red}{\bigstar}$\textbf{通解}（特征方程法）：
+        \begin{circlenum}
+            \item 写出特征方程：$r^2 + pr + q = 0$
+            \item 根据特征根的情况写出通解：
+            \begin{itemize}
+                \item $p^2 - 4q > 0$，设 $r_1, r_2$ 是特征方程的\textbf{两个不等实根}，即 $r_1 \neq r_2$，可得其通解为：
+                \[
+                    y = C_1e^{r_1x} + C_2e^{r_2x}
+                \]
+                \item $p^2 - 4q = 0$，设 $r$ 是特征方程的\textbf{二重实根}，即 $r_1 = r_2 = r$，可得其通解为：
+                \[
+                    y = (C_1 + C_2x)e^{rx}
+                \]
+                \item $p^2 - 4q < 0$，设 $\alpha \pm i\beta$ 是特征方程的\textbf{一对共轭复根}，可得其通解为：
+                \[
+                    y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)
+                \]
+            \end{itemize}
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsubsection{二阶常系数非齐次线性微分方程}
+
+    \begin{enumerate}
+        \item \textbf{标准形式}：$y'' + py' + qy = f(x) \quad (p, q \text{ 为常数}, f(x) \neq 0)$，$f(x)$ 称为自由项
+        \item \textbf{解的结构}
+        \begin{itemize}
+            \item \textbf{叠加原理}：若 $f(x) = f_1(x) + f_2(x)$，且 $y_1^*$ 是 $y'' + py' + qy = f_1(x)$ 的解，$y_2^*$ 是 $y'' + py' + qy = f_2(x)$ 的解，则 $y_1^* + y_2^*$ 是原方程的解
+            \item 若 $y_1^*, y_2^*$ 是同一非齐次方程的两个特解，则 $y_1^* - y_2^*$ 是对应齐次方程的解
+        \end{itemize}
+
+        \item \textbf{通解}
+        \[
+            y = Y + y^*
+        \]
+        其中 $Y$ 是对应齐次方程的通解，$y^*$ 是非齐次方程的特解。
+
+        \item \textbf{特解的设定}
+        \begin{itemize}
+            \item \textbf{待定系数法}
+
+            设 $P_n(x), P_m(x)$ 为 $x$ 的 $n$ 次多项式
+
+            \begin{enumerate}
+                \item 当自由项 $f(x) = P_n(x)e^{\alpha x}$，特解设为 $y^* = e^{\alpha x} Q_n(x)x^k$，其中
+                \[
+                    \begin{cases}
+                        e^{\alpha x} \text{照抄} \\[6pt]
+                        Q_n(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \text{与 } P_n(x) \text{ 同次多项式，系数待定} \\
+                        \emph{e.g.} \text{ 若} P_1(x) = 2x, \text{ 则} Q_1(x) = ax + b  \\[6pt]
+                        k = \begin{cases}
+                                0, & \alpha \text{ 不是特征根，} \alpha \neq r_{1,2} \\
+                                1, & \alpha \text{ 是单特征根，} \alpha = r_1 \text{或 } \alpha = r_{2}(r_1 \neq r_2)   \\
+                                2, & \alpha \text{ 是二重特征根，} \alpha = r_1 = r_2
+                        \end{cases}
+                    \end{cases}
+                \]
+
+                \item 当自由项 $f(x) = e^{\alpha x}[P_m(x)\cos\beta x + P_n(x)\sin\beta x]$，特解设为
+                \[
+                    y^* = e^{\alpha x}[Q_l^{(1)}(x)\cos\beta x + Q_l^{(2)}(x)\sin\beta x]x^k
+                \]
+                其中
+                \[
+                    \begin{cases}
+                        e^{\alpha x} \text{照抄} \\[6pt]
+                        l = \max\{m, n\} Q_l^{(1)}(x), Q_l^{(2)}(x) \text{ 都是 } m \text{ 次多项式，系数待定} \\[6pt]
+                        k = \begin{cases}
+                                0, & \alpha + \beta i \text{ 不是特征根，} \alpha + \beta i \neq r_{1, 2} \\
+                                1, & \alpha + \beta i \text{ 是特征根，} \alpha + \beta i = r_{1, 2}
+                        \end{cases}
+                    \end{cases}
+                \]
+            \end{enumerate}
+
+            \item \textbf{微分算子法}
+            \begin{enumerate}
+                \item \textbf{基本思想}：引入微分算子 $D = \dfrac{d}{dx}$，将微分方程转化为代数运算。
+                \item \textbf{算子定义}：
+                \begin{enumerate}
+                    \item $D = \displaystyle\frac{d}{dx}, Dy = y', D^2 = \displaystyle\frac{d^2}{dx^2}, D^2y = y''$，$D^ny = y^{(n)}$
+                    \item 方程 $y'' + py' + qy = f(x)$ 可写成 $(D^2 + pD + q)y = f(x)$
+                    \item 记 $F(D) = D^2 + pD + q$，则 $F(D)y = f(x)$，即 $y^* = \dfrac{1}{F(D)}f(x)$
+                    \item $D$表示求导的条件下，$\displaystyle\frac{1}{D}$表示积分
+                \end{enumerate}
+                \item \textbf{算子法常见类型}：
+
+                \begin{enumerate}
+                    \item $\dfrac{1}{F(D)}e^{\alpha x} $型
+
+                    \begin{circlenum}
+                        \item 若 $F(\alpha) \neq 0$，有 $y^* = \dfrac{e^{\alpha x}}{F(\alpha)}$
+                        \item 若 $F(\alpha) = 0$，$\alpha$ 是 $k$ 重特征根，有 $y^* = \dfrac{x^ke^{\alpha x}}{F^{(k)}(\alpha)}$
+                    \end{circlenum}
+
+                    \item $\dfrac{1}{D^2 + q}\cos \beta x$ 或 $\dfrac{1}{D^2 + q}\sin \beta x$ 型
+
+                    \begin{circlenum}
+                        \item 若 $(D^2 + q)\Big |_{D = \beta i} \neq 0$，有
+                        \[
+                            y^* = \dfrac{1}{q-\beta^2}\cos\beta x \quad \text{或} \quad y^* = \dfrac{1}{q-\beta^2}\sin\beta x
+                        \]
+                        \item 若 $(D^2 + q)\Big |_{D = \beta i} = 0$（即 $q = \beta^2$），有
+                        \[
+                            y^* = \dfrac{x}{2\beta}\sin\beta x \quad \text{或} \quad y^* = -\dfrac{x}{2\beta}\cos\beta x
+                        \]
+                    \end{circlenum}
+
+                    \item $\dfrac{1}{F(D)}\cos \beta x$ 或 $\dfrac{1}{F(D)}\sin \beta x$ 型
+
+                    若 $F(D) = D^2 + pD + q$，则取 $F(D)\Big |_{D^2 = (\beta i)^2} = pD + q - \beta^2$
+                    \begin{circlenum}
+                        \item
+                        \[
+                            y^* = \dfrac{1}{F(D)}\cos \beta x = \dfrac{(q-\beta^2)\cos \beta x + p\beta\sin \beta x}{(q-\beta^2)^2 + p^2\beta^2}
+                        \]
+                        \item
+                        \[
+                            y^* = \dfrac{1}{F(D)}\sin \beta x = \dfrac{(q-\beta^2)\sin \beta x - p\beta\cos \beta x}{(q-\beta^2)^2 + p^2\beta^2}
+                        \]
+                    \end{circlenum}
+
+                    \item $\dfrac{1}{F(D)}(x^k + a_1x^{k-1}+\cdots+a_{k-1}x + a_k)$ 型
+
+                    将 $\dfrac{1}{F(D)}$ 按 $D$ 的升幂级数展开：
+                    \[
+                        y^* = \dfrac{1}{F(D)}(x^k + a_1x^{k-1}+\cdots+a_{k-1}x + a_k) = Q_k(D)(x^k + a_1x^{k-1}+\cdots+a_{k-1}x + a_k)
+                    \]
+                    其中 $Q_k(D)$ 是将 $\dfrac{1}{F(D)}$ 展开并截断到 $D^k$ 项，即 $b_0 + b_1D + b_2D^2 + \cdots + b_kD^k$
+
+                    \item $\dfrac{1}{F(D)}e^{\alpha x}v(x)$ 型（移位定理）
+
+                    \textbf{移位定理}：$\dfrac{1}{F(D)}[e^{\alpha x}v(x)] = e^{\alpha x}\dfrac{1}{F(D+\alpha)}v(x)$
+
+                    \[
+                        y^* = e^{\alpha x}\dfrac{1}{F(D+\alpha)}v(x)
+                    \]
+                    将问题转化为 $\dfrac{1}{F(D+\alpha)}v(x)$，再用前述方法求解。
+                \end{enumerate}
+            \end{enumerate}
+
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{n（n>2）阶常系数齐次线性微分方程}
+
+    \begin{enumerate}
+        \item \textbf{标准形式}：$y^{(n)} + a_1y^{(n-1)} + \cdots + a_{n-1}y' + a_ny = 0$（$a_1, \ldots, a_n$ 为常数）
+        \item \textbf{通解}（特征方程法）：
+        \begin{itemize}
+            \item 写出特征方程：$r^n + a_1r^{n-1} + \cdots + a_{n-1}r + a_n = 0$
+            \item 根据特征根的情况写出通解：
+            \begin{circlenum}
+                \item 若 $r$ 为单实根：对应项 $Ce^{rx}$
+                \item 若 $r$ 为 $k$ 重实根：对应项 $(C_1 + C_2x + \cdots + C_kx^{k-1})e^{rx}$
+                \item 若 $r$ 为单复根 $\alpha \pm \beta i$：对应项 $e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)$
+                \item 若 $r$ 为二重复根 $\alpha \pm \beta i$：对应项 $e^{\alpha x}[(C_1 + C_2x)\cos\beta x + (C_3 + C_4x)\sin\beta x]$
+            \end{circlenum}
+        \end{itemize}
+        \item 反求方程的理论基础
+        \begin{circlenum}
+            \item 如果解中含特解 $\bm{e^{rx}}$，则 $r$ 至少为单实根；如二重根 $(C_1 + C_2x)e^{rx}$，令 $C_1 = 1$，$C_2 = 0$
+            \item 如果解中含特解 $\bm{x^{k-1}e^{rx}}$，则 $r$ 至少为 $k$ 重实根
+            \item 如果解中含特解 $\bm{e^{\alpha x}\cos\beta x}$ 或 $\bm{e^{\alpha x}\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为单复根
+            \item 如果解中含特解 $\bm{e^{\alpha x}x\cos\beta x}$ 或 $\bm{e^{\alpha x}x\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为二重复根
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsubsection{欧拉方程}
+
+    \begin{enumerate}
+        \item \textbf{标准形式}：$x^2y'' + pxy' + qy = f(x)$
+        \item \textbf{特征}：各项中 $x$ 的幂次与 $y$ 的导数阶数相同
+        \item \textbf{解法}
+        \begin{circlenum}
+            \item 当 $x > 0$ 时，令 $x = e^t$，则 $t = \ln x$，$\dfrac{dt}{dx} = \dfrac{1}{x}$，于是
+            \[
+                \frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx} = \frac{1}{x}\frac{dy}{dt}
+            \]
+            \[
+                \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{1}{x}\frac{dy}{dt}\right) = -\frac{1}{x^2}\frac{dy}{dt} + \frac{1}{x}\frac{d^2y}{dt^2}\frac{dt}{dx} = \frac{1}{x^2}\left(\frac{d^2y}{dt^2} - \frac{dy}{dt}\right)
+            \]
+            方程化为关于 $t$ 的常系数线性方程
+            \item 当 $x < 0$ 时，令 $x = -e^t$，则 $t = \ln(-x)$，变换公式相同
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsection{微分方程的几何应用}
+
+    \textbf{核心思路}：利用导数的几何意义建立微分方程，常见类型包括：
+
+    \begin{enumerate}
+        \item \textbf{追踪问题}
+        \begin{itemize}
+            \item \textbf{基本特征}：追踪者的速度方向始终指向被追踪者（目标）。
+            \item \textbf{追逐曲线}：追踪者运动的轨迹称为追逐曲线
+
+            \item \textbf{建模方法}：
+            \begin{circlenum}
+                \item 设追踪者在点 $(x, y)$，被追踪者在点 $(X, Y)$
+                \item 追踪者的速度方向指向目标：$\dfrac{dy}{dx} = \dfrac{Y - y}{X - x}$
+                \item 结合速度关系建立微分方程
+            \end{circlenum}
+        \end{itemize}
+        \item 解题步骤
+        \begin{circlenum}
+            \item 设所求曲线为 $y = y(x)$
+            \item 根据几何条件，利用导数的几何意义建立微分方程
+            \item 解微分方程，求出 $y = y(x, C)$
+            \item 根据初始条件或边界条件确定常数 $C$
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsection{微分方程的物理应用}
+
+    \textbf{核心思路}：根据物理定律建立微分方程，常见类型包括：
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{方法总结}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{条件转换思路}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+    \end{enumerate}
+
+\end{document}
