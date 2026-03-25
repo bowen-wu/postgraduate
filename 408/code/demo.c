@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define InitSize 10
+typedef struct
+{
+    int *data;
+    int MaxSize;
+    int length;
+} SqList;
+
+void InitList(SqList **L)
+{
+    (*L)->data = (int *)malloc(InitSize * sizeof(int));
+    (*L)->MaxSize = InitSize;
+    (*L)->length = 0;
+}
+
+void IncreaseSize(SqList *L, int len)
+{
+    int *p = L->data;
+    L->data = (int *)malloc((L->MaxSize + len) * sizeof(int));
+    for (int i = 0; i < L->length; i++)
+    {
+        L->data[i] = p[i];
+    }
+    L->MaxSize += len;
+    free(p);
+}
+
+int main()
+{
+    SqList *L = (SqList *)malloc(sizeof(SqList));
+    InitList(&L);
+    for (int i = 0; i < L->length; i++)
+    {
+        printf("%d ", L->data[i]);
+    }
+    free(L->data);
+    free(L);
+    return 0;
+}
