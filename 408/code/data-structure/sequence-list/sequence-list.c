@@ -1,65 +1,78 @@
 #include <stdio.h>
 
 #define MaxSize 10
-typedef struct {
+typedef struct
+{
   int data[MaxSize];
   int length;
-}SqList;
+} SqList;
 
-bool ListInsert(SqList &L, int i, int e) {
-  if (i < 1 || i > L.length + 1) {
-    return false;
+int ListInsert(SqList **L, int i, int e)
+{
+  if (i < 1 || i > (*L)->length + 1)
+  {
+    return 0;
   }
 
-  if (L.length >= MaxSize) {
-    return false;
+  if ((*L)->length >= MaxSize)
+  {
+    return 0;
   }
 
-  for (int j = L.length; j >= i; j--) {
-    L.data[j] = L.data[j - 1];
+  for (int j = (*L)->length; j >= i; j--)
+  {
+    (**L).data[j] = (**L).data[j - 1];
   }
 
-  L.data[i-1] = e;
-  L.length++;
-  return true;
+  (**L).data[i - 1] = e;
+  (**L).length++;
+  return 1;
 }
 
-bool ListDelete(SqList &L, int i, int &e) {
-  if (i < 1 || i >= L.length + 1) {
-    return false;
+int ListDelete(SqList **L, int i, int *e)
+{
+  if (i < 1 || i >= (*L)->length + 1)
+  {
+    return 0;
   }
 
-  e = L.data[i - 1];
+  e = (**L).data[i - 1];
 
-  for (int j = i; j < L.length; j++) {
-    L.data[j - 1] = L.data[j];
+  for (int j = i; j < (*L)->length; j++)
+  {
+    (**L).data[j - 1] = (**L).data[j];
   }
-  L.data[L.length - 1] = 0;
+  (**L).data[(**L).length - 1] = 0;
 
-  L.length--;
-  return true;
+  (**L).length--;
+  return 1;
 }
 
-bool GetElem(const SqList &L, int i, int &e) {
-  if (i < 1 || i > L.length) {
-    return false;
+int GetElem(const SqList **L, int i, int *e)
+{
+  if (i < 1 || i > (*L)->length)
+  {
+    return 0;
   }
-  e = L.data[i - 1];
+  e = (**L).data[i - 1];
 
-  return true;
+  return 1;
 }
 
-bool LocalteElem(const SqList &L, int e, int &i) {
-  for (int j = 0; j < L.length; j++) {
-    if (L.data[j] == e) {
+int LocalteElem(const SqList **L, int e, int *i)
+{
+  for (int j = 0; j < (*L)->length; j++)
+  {
+    if ((**L).data[j] == e)
+    {
       i = j + 1;
-      return true;
+      return 1;
     }
   }
 
   i = -1;
 
-  return false;
+  return 0;
 }
 
 int main()

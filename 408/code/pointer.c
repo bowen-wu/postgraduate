@@ -48,6 +48,7 @@ void createStruct()
   // 创建节点
   LNode *p = (LNode *)malloc(sizeof(LNode)); // p 指针变量
   p->data = 10;
+  (*p).data = 20;
   p->next = NULL;
 }
 
