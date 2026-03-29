@@ -187,8 +187,8 @@
             \item \textbf{特征}：方程中不显含 $y$
             \item \textbf{解法（{\color{red}{赶尽杀绝$y$}}）}
             \begin{circlenum}
-                \item 令 $p = y' = p(x)$，则 $y'' = p' = \dfrac{dp}{dx}$，则原方程变为一阶方程 $\displaystyle\frac{dp}{dx} = f(x, p)$
-                \item 若求得其通解为 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$，则原方程的通解为 $\displaystyle y = \int \varphi(x, C_1)\mathrm{d}x + C_2$
+                \item 令 $p = y' = p(x)$，则 $y'' = p' = \dfrac{\mathrm{d}p}{\mathrm{d}x}$，则原方程变为一阶方程 $\displaystyle\frac{\mathrm{d}p}{\mathrm{d}x} = f(x, p)$
+                \item 若求得其通解为 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$，则原方程的通解为 $\displaystyle y = \int \varphi(x, C_1)\,\mathrm{d}x + C_2$
             \end{circlenum}
         \end{itemize}
         \item $y'' = f(y, y')$型
@@ -196,9 +196,9 @@
             \item \textbf{特征}：方程中不显含自变量 $x$
             \item \textbf{解法（{\color{red}{斩草除根$x$}}）}
             \begin{circlenum}
-                \item 令 $p = y' = p(y)$，则 ${\color{red}{y'' = \dfrac{dp}{dx}}} = \dfrac{dp}{dy} \cdot \dfrac{dy}{dx} = p\dfrac{dp}{dy}$，则原方程变为一阶方程 $\displaystyle p\frac{dp}{dy} = f(y, p)$
-                \item 若求得其通解为 $p = \varphi(y, C_1)$，即 $y' = \varphi(y, C_1)$，则{\color{red}{分离变量积分}}得 $\dfrac{dy}{\varphi(y, C_1)} = dx$
-                \item 两边积分得 $\displaystyle\int \dfrac{dy}{\varphi(y, C_1)} = x + C_2$，即可求得原方程的通解
+                \item 令 $p = y' = p(y)$，则 ${\color{red}{y'' = \dfrac{\mathrm{d}p}{\mathrm{d}x}}} = \dfrac{\mathrm{d}p}{\mathrm{d}y} \cdot \dfrac{\mathrm{d}y}{\mathrm{d}x} = p\dfrac{\mathrm{d}p}{\mathrm{d}y}$，则原方程变为一阶方程 $\displaystyle p\frac{\mathrm{d}p}{\mathrm{d}y} = f(y, p)$
+                \item 若求得其通解为 $p = \varphi(y, C_1)$，即 $y' = \varphi(y, C_1)$，则{\color{red}{分离变量积分}}得 $\dfrac{\mathrm{d}y}{\varphi(y, C_1)} = \mathrm{d}x$
+                \item 两边积分得 $\displaystyle\int \dfrac{\mathrm{d}y}{\varphi(y, C_1)} = x + C_2$，即可求得原方程的通解
             \end{circlenum}
         \end{itemize}
         \item $y'' = f(y')$型
@@ -206,9 +206,9 @@
             \item \textbf{特征}：方程中不显含 $y$
             \item \textbf{解法（{\color{red}{赶尽杀绝$y$}}）}
             \begin{circlenum}
-                \item 令 $p = y'$，则 $y'' = p' = \dfrac{dp}{dx}$，原方程变为 $\dfrac{dp}{dx} = f(p)$
-                \item 分离变量：$\dfrac{dp}{f(p)} = dx$，积分得 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$
-                \item 再积分得原方程通解：$\displaystyle y = \int \varphi(x, C_1)\mathrm{d}x + C_2$
+                \item 令 $p = y'$，则 $y'' = p' = \dfrac{\mathrm{d}p}{\mathrm{d}x}$，原方程变为 $\dfrac{\mathrm{d}p}{\mathrm{d}x} = f(p)$
+                \item 分离变量：$\dfrac{\mathrm{d}p}{f(p)} = \mathrm{d}x$，积分得 $p = \varphi(x, C_1)$，即 $y' = \varphi(x, C_1)$
+                \item 再积分得原方程通解：$\displaystyle y = \int \varphi(x, C_1)\,\mathrm{d}x + C_2$
             \end{circlenum}
         \end{itemize}
     \end{enumerate}
@@ -301,10 +301,10 @@
 
             \item \textbf{微分算子法}
             \begin{enumerate}
-                \item \textbf{基本思想}：引入微分算子 $D = \dfrac{d}{dx}$，将微分方程转化为代数运算。
+                \item \textbf{基本思想}：引入微分算子 $D = \dfrac{\mathrm{d}}{\mathrm{d}x}$，将微分方程转化为代数运算。
                 \item \textbf{算子定义}：
                 \begin{enumerate}
-                    \item $D = \displaystyle\frac{d}{dx}, Dy = y', D^2 = \displaystyle\frac{d^2}{dx^2}, D^2y = y''$，$D^ny = y^{(n)}$
+                    \item $D = \displaystyle\frac{\mathrm{d}}{\mathrm{d}x}, Dy = y', D^2 = \displaystyle\frac{\mathrm{d}^2}{\mathrm{d}x^2}, D^2y = y''$，$D^ny = y^{(n)}$
                     \item 方程 $y'' + py' + qy = f(x)$ 可写成 $(D^2 + pD + q)y = f(x)$
                     \item 记 $F(D) = D^2 + pD + q$，则 $F(D)y = f(x)$，此时它的一个特解为 $y^* = \dfrac{1}{F(D)}f(x)$
                     \item $D$表示求导的条件下，$\displaystyle\frac{1}{D}$表示积分。如$D\sin x = \cos x, \dfrac{1}{D}\sin x = -\cos x$
@@ -430,12 +430,12 @@
         \item \textbf{特征}：各项中 $x$ 的幂次与 $y$ 的导数阶数相同
         \item \textbf{解法}
         \begin{circlenum}
-            \item 当 $x > 0$ 时，令 $x = e^t$，则 $t = \ln x$，$\dfrac{dt}{dx} = \dfrac{1}{x}$，于是
+            \item 当 $x > 0$ 时，令 $x = e^t$，则 $t = \ln x$，$\dfrac{\mathrm{d}t}{\mathrm{d}x} = \dfrac{1}{x}$，于是
             \[
-                \frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx} = \frac{1}{x}\frac{dy}{dt}
+                \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} = \frac{1}{x}\frac{\mathrm{d}y}{\mathrm{d}t}
             \]
             \[
-                \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{1}{x}\frac{dy}{dt}\right) = -\frac{1}{x^2}\frac{dy}{dt} + \frac{1}{x}{\color{red}{\frac{d^2y}{dt^2}\frac{dt}{dx}}} = \frac{1}{x^2}\left(\frac{d^2y}{dt^2} - \frac{dy}{dt}\right)
+                \frac{\mathrm{d}^2y}{\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{1}{x}\frac{\mathrm{d}y}{\mathrm{d}t}\right) = -\frac{1}{x^2}\frac{\mathrm{d}y}{\mathrm{d}t} + \frac{1}{x}{\color{red}{\frac{\mathrm{d}^2y}{\mathrm{d}t^2}\frac{\mathrm{d}t}{\mathrm{d}x}}} = \frac{1}{x^2}\left(\frac{\mathrm{d}^2y}{\mathrm{d}t^2} - \frac{\mathrm{d}y}{\mathrm{d}t}\right)
             \]
             方程化为关于 $t$ 的常系数线性方程
             \item 当 $x < 0$ 时，令 $x = -e^t$，则 $t = \ln(-x)$，变换公式相同
@@ -455,7 +455,7 @@
             \item \textbf{建模方法}：
             \begin{circlenum}
                 \item 设追踪者在点 $(x, y)$，被追踪者在点 $(X, Y)$
-                \item 追踪者的速度方向指向目标：$\dfrac{dy}{dx} = \dfrac{Y - y}{X - x}$
+                \item 追踪者的速度方向指向目标：$\dfrac{\mathrm{d}y}{\mathrm{d}x} = \dfrac{Y - y}{X - x}$
                 \item 结合速度关系建立微分方程
             \end{circlenum}
         \end{itemize}
