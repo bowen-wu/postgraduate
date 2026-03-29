@@ -1,106 +1,6 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\usepackage{xstring}
-\usepackage{pgfplots}
-\usepackage{enumitem}
-\usepackage{pifont}
-\usepackage{ulem}
-\usepackage{mathtools}
-\usepackage{dsfont}
-\usepackage{extarrows}
-\pgfplotsset{compat=1.18}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\documentclass[../book.tex]{subfiles}
 
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-\newlist{circlenum}{enumerate}{1}
-\setlist[circlenum]{
-    label=\ding{\numexpr171+\arabic*},
-    leftmargin=2.2em,
-    itemsep=0.6em,      % item 之间的距离（主要）
-    topsep=0.6em,       % 列表与上下正文的距离
-    parsep=0.3em,       % item 内段落的间距
-    partopsep=0.3em     % 列表前后额外间距
-}
-
-\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
 \begin{document}
-
-%    \title{Template}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-%    \tableofcontents
-%    \newpage
-
-
-% =========================
 
     \section{多元函数微分学}
 
@@ -254,7 +154,7 @@
                 \item 用公式法求 $f'_x(x, y)$ 和 $f'_y(x, y)$
                 \item 检验 $\displaystyle\lim_{(x,y) \to (x_0, y_0)} f'_x(x, y) = f'_x(x_0, y_0)$ 和 $\displaystyle\lim_{(x,y) \to (x_0, y_0)} f'_y(x, y) = f'_y(x_0, y_0)$ 是否成立。若成立，则$z = f(x, y)$在点 $(x_0, y_0)$ 处的偏导数是连续的
             \end{circlenum}
-            \item \includegraphics[width=\linewidth]{math/advanced-mathematics/pic13-6.png}
+            \item \includegraphics[width=\linewidth]{\subfix{../../../assets/math/advanced-mathematics/pic13-6.png}}
         \end{enumerate}
 
         \item \textbf{可微的判别步骤}：
@@ -549,7 +449,7 @@
         \hfill
         \begin{minipage}{0.15\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{math/advanced-mathematics/P1P2Q.png}
+            \includegraphics[width=\linewidth]{\subfix{../../../assets/math/advanced-mathematics/P1P2Q.png}}
         \end{minipage}
 
         \item \begin{minipage}{0.8\textwidth}
@@ -558,7 +458,7 @@
         \hfill
         \begin{minipage}{0.15\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{math/advanced-mathematics/P1P2.png}
+            \includegraphics[width=\linewidth]{\subfix{../../../assets/math/advanced-mathematics/P1P2.png}}
         \end{minipage}
     \end{enumerate}
 

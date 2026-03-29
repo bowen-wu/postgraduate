@@ -1,0 +1,316 @@
+\documentclass[../book.tex]{subfiles}
+\begin{document}
+
+    \section{一元函数微分学的概念}
+
+    \subsection{导数}
+
+    \begin{enumerate}
+        \item 设\( y = f(x) \)定义在区间\( I \)上，让自变量在\( x = x_0 \)处加一个增量\( \Delta x \)（可正可负），其中\( x_0 \in I, x_0 + \Delta x \in I \)，则可得函数的增量\( \Delta y = f(x_0 + \Delta x) - f(x_0) \)。若函数增量\( \Delta y \)与自变量增量\( \Delta x \)的比值在\( \Delta x \to 0 \)时的极限存在，即\( \lim\limits_{\Delta x \to 0} \displaystyle\frac{\Delta y}{\Delta x} \)存在，则称函数\( y = f(x) \)在点\( x_0 \)处可导，并称这个{\color{red}{极限}}为\( y = f(x) \)在点\( x_0 \)处的{\color{red}{导数（变化率）}}，记作\( f'(x_0) \)，即
+        \[
+            \frac{dy}{dx}\bigg|_{x=x_0} = f'(x_0) = \lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim\limits_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.
+            \tag{*}
+        \]
+        广义化
+        \[
+            \lim_{\text{狗} \to 0} \frac{f(x_0 + \text{狗}) - f(x_0)}{\text{狗}}.
+            \tag{**}
+        \]
+        令 $x_0 + \Delta x = x$，从而得到
+        \[
+            \text{函数式:\quad} f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0},
+            \tag{***}
+        \]
+        \item 下面这三种提法是等价的:
+        \begin{itemize}
+            \item $y = f(x)$在点$x_0$处可导；
+            \item $y = f(x)$在点$x_0$处导数存在；
+            \item $f'(x_0) = A$（$A$为有限数）。
+        \end{itemize}
+        \item $\color{red}{\bigstar}$ 函数在一点可导的充要条件: $f'(x_0)$存在 $\Leftrightarrow$ 其左导数$f'_-(x_0)$与右导数$f'_+(x_0)$均存在且相等
+        \item 函数在一点可导的必要条件: \textbf{若$f(x)$在一点可导 $\Rightarrow$ $f(x)$在该点连续}，反之未必
+        \item 导数的性质
+        \begin{itemize}
+            \item $\color{red}{\bigstar}$求导一次，奇偶性互换（导数定义）
+            \item 若$f(x)$是可导的周期为$T$的周期函数，则$f'(x)$也是以$T$为周期的周期函数（导数定义）
+            \item 若$f'(x) > 0$，$f(x)$单调递增；若$f'(x) < 0$，则$f(x)$单调递减
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{导数的几何意义}
+
+    \begin{enumerate}
+        \item 函数 $y=f(x)$ 在点 $x_0$ 处的导数值 $f'(x_0)$，就是曲线 $y=f(x)$ 在点 $(x_0,\,y_0)$处切线的斜率 $k$，即 $k = f'(x_0)$，因此，曲线 $y=f(x)$ 在点 $(x_0,\,y_0)$ 处的切线方程为
+        \[
+            y - y_0 = f'(x_0)\,(x - x_0).
+        \]
+
+        该点处的法线方程为
+        \[
+            y - y_0 = -\frac{1}{f'(x_0)}\,(x - x_0) \; (f'(x_0) \neq 0)
+        \]
+        \item 切线存在不代表导数存在，但{\color{red}{导数存在切线一定存在}}
+        \begin{itemize}
+            \item $f'_+(x_0) \neq f'_-(x_0)$，出现角点（尖点），则$f(x)$在$x_0$处不可导，没有切线。\emph{e.g.} $f(x) = |x|$在$x = 0$处
+            \item $f(x)$在点$x_0$的导数是无穷导数时，在该点有切线但无导数。\emph{e.g.} $f(x) = x^\frac{1}{3}$在$x = 0$处
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{微分的概念}
+
+    \begin{enumerate}
+        \item 设函数$y = f(x)$在点$x_0$的某邻域内有定义，且$x_0 + \Delta x$在该邻域内，对于增量函数
+
+        \noindent
+        \begin{minipage}{0.54\textwidth}
+            \[
+                \color{red}{\Delta y = f(x_0 + \Delta x) - f(x_0)}
+            \]
+
+            若存在与$\Delta x$无关的常数$A$，使得
+            \[
+                \color{red}{
+                    \Delta y = A\,\Delta x + o(\Delta x)
+                    = dy + o(\Delta x)
+                }
+            \]
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.44\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{\subfix{../../../assets/math/advanced-mathematics/pic3-15.png}}
+        \end{minipage}
+
+        其中$o(\Delta x)$是在$\Delta x \to 0$时比$\Delta x$更高阶的无穷小，则称$f(x)$在点$x_0$处\textbf{可微}，并把增量的主要部分$A\Delta x$称为线性主部，也叫做$f(x)$在点$x_0$处的微分，记
+        \[
+            \color{red}{
+                \left. dy \right|_{x=x_0} = A\Delta x = f'(x_0)\,dx
+            }
+        \]
+        \item 可微的判别
+        \begin{itemize}
+            \item 一元函数可微 $\Leftrightarrow$ 可导
+            \item 做极限
+            \begin{circlenum}
+                \item 写增量 $\Delta y = f(x_0 + \Delta x) - f(x_0)$
+                \item 写线性增量 $A\Delta x = f'(x_0)\Delta x$
+                \item 做极限
+                \[
+                    \lim_{\Delta x \to 0}
+                    \frac{\Delta y - A\Delta x}{\Delta x}
+                    \Leftrightarrow
+                    \Delta y = A\Delta x + o(\Delta x)
+                \]
+                \item 若该极限等于 $0$，则 $y=f(x)$ 在点 $x_0$ 处可微，否则不可微
+            \end{circlenum}
+        \end{itemize}
+        \item 可微的含义：用形式简单的“线性增量 $A\Delta x$”去代替形式复杂的“增量 $\Delta y$”，且其误差“$\Delta y - A\Delta x$”是 $o(\Delta x)$，即用“简单的量”代替了“复杂的量”，且产生的误差又可以忽略不计
+        \item 可微的几何意义：若$f(x)$在点$x_0$处可微，则在点$(x_0, y_0)$附近可以用切线段近似代替曲线段
+    \end{enumerate}
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item \textbf{达布定理：} 若函数 $f(x)$ 在 $[a,b]$ 上可导，且 $f'_+(a)\neq f'_-(b)$，则对于任意介于 $f'_+(a)$ 与 $f'_-(b)$ 之间的数 $u$，存在 $\xi\in(a,b)$，使得
+        \[
+            f'(\xi)=u.
+        \]
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item 若函数 $\varphi(x)$ 在 $x=x_0$ 处连续，则函数$f(x)=|x-x_0|\,\varphi(x)$在 $x=x_0$ 处可导的充要条件是 $\varphi(x_0)=0$
+        \item 函数 $f(x)$ 与 $|f(x)|$ 的连续性与可导性关系总结：
+        \begin{itemize}
+            \item 若 $f(x)$ 在 $x_0$ 处连续，则 $|f(x)|$ 在 $x_0$ 处连续； 反之不成立。
+            \item 若 $f(x)$ 在 $x_0$ 处可导，则：
+            \begin{enumerate}[label=(\alph*)]
+                \item 若 $f(x_0) \neq 0$，则 $|f(x)|$ 在 $x_0$ 处{\color{red}{可导}}，且
+                \[
+                    \left.(|f(x)|)'\right|_{x=x_0}
+                    =
+                    \begin{cases}
+                        f'(x_0), & f(x_0) > 0, \\[0.3em]
+                        -f'(x_0), & f(x_0) < 0.
+                    \end{cases}
+                \]
+
+                \item 若 $f(x_0) = 0$，则：
+                \[
+                    \begin{cases}
+                        f'(x_0) = 0
+                        \;\Rightarrow\;
+                        |f(x)| \text{ 在 } x_0 \text{ 处可导，且 }
+                        \left.(|f(x)|)'\right\Big|_{x=x_0} = 0, \\[0.5em]
+                        f'(x_0) \neq 0
+                        \;\Rightarrow\;
+                        |f(x)| \text{ 在 } x_0 \text{ 处{\color{red}{不可导}}}.
+                    \end{cases}
+                \]
+                \item 总结不可导即:
+                \[
+                    \left.
+                    \begin{aligned}
+                        & f(x) \text{ 在 } x_0 \text{ 处可导} \\
+                        & f(x_0) = 0 \\
+                        & f'(x_0) \neq 0
+                    \end{aligned}
+                    \right\}
+                    \;\Longrightarrow\;
+                    |f(x)| \text{ 在 } x_0 \text{ 处 {\color{red}{不可导}}}
+                \]
+            \end{enumerate}
+        \end{itemize}
+        \item $f^{(n)}(x_0)$存在 $\Rightarrow f^{(n - 1)}(x)$在$x_0$附近有定义且在$x_0$处连续
+    \end{enumerate}
+
+    \subsection{理解}
+
+    \begin{enumerate}
+        \item 函数 $f(x)$ 存在与 $f'(x)$ 存在的区别
+        \begin{enumerate}
+            \item 函数 $f(x)$ 在 $x=x_0$ 处的极限存在，不能推出 $f(x)$ 在 $x=x_0$ 处连续。例如，$x_0$ 可以是 $f(x)$ 的可去间断点
+            \item 若 $f(x)$ 在 $x_0$ 处可导，且$\lim\limits_{x\to x_0} f'(x)=a$，则 $f'(x)$ 在 $x_0$ 处连续。即
+            \[
+                \lim_{x\to x_0} f'(x)=a,\quad f'(x_0)=b
+                \;\Longrightarrow\;
+                \lim_{x\to x_0} f'(x)=f'(x_0)=a=b.
+            \]
+            \item $f(x)$存在不能得出$f(x)$有介值性。因为“存在”不等于“连续”，而只有连续函数才具有介值性
+            \item $f'(x)$存在，可得$f'(x)$有介值性
+            \item $f'(x)$存在且$\neq 0$，则$f'(x)$必保号（恒正或恒负）
+            \begin{analysisbox}[证]
+                用反证法。
+                若存在 $a,b$ 使
+                \[
+                    f'(a)<0,\quad f'(b)>0,
+                \]
+                则由达布定理，存在 $\xi\in(a,b)$，使得
+                \[
+                    f'(\xi)=0,
+                \]
+                这与 $f'(x)\neq0$ 的假设矛盾
+            \end{analysisbox}
+            \item 若 $f'(x)$ 在 $[a,b]$ 上存在，则 $f'(x)$ 在该区间内\textbf{不存在第一类间断点}
+        \end{enumerate}
+        \item 对于连续或可导函数，只要$f(x) > 0$（或$f(x) < 0$），无论$f(x_0)$与$0$的距离有多小，它旁边相依相偎的$f(x)$一定$> 0$（或$< 0$）
+
+        \item 求导数时，当函数不具备{\color{red}{导数存在}}的条件时，往往只能用{\color{red}{导数定义}}求
+        \begin{analysisbox}[Example]
+            设$f(x) = (x-a)\cdot\varphi(x)$，其中 $\varphi(x)$ 连续，求 $f'(a)$。
+
+            \[
+                \begin{aligned}
+                    f'(a)
+                    &= \lim_{x\to a}\frac{f(x)-f(a)}{x-a} \\
+                    &= \lim_{x\to a}\frac{(x-a)\cdot\varphi(x)-0}{x-a} \\
+                    &= \lim_{x\to a}\cdot\varphi(x) \\
+                    &= \varphi(a)
+                \end{aligned}
+            \]
+        \end{analysisbox}
+
+        \item \begin{theorem}
+                  证明：
+                  (1)\ 若 $F(x)$ 在 $[x_0,\,x_0+\delta)\ (\delta>0)$ 上连续，在 $(x_0,\,x_0+\delta)$ 内可导，当 $\lim\limits_{x\to x_0^+} F'(x) = A$ 存在时，有 $F'_+(x_0) = A$
+
+                  \medskip
+
+                  (2)\ 若 $F(x)$ 在 $(x_0-\delta,\,x_0]\ (\delta>0)$ 上连续，在 $(x_0-\delta,\,x_0)$ 内可导，当 $\lim\limits_{x\to x_0^-} F'(x) = A$ 存在时，有 $F'_-(x_0) = A$
+        \end{theorem}
+        \begin{analysisbox}[证明]
+            \[
+                \begin{aligned}
+                    \text{(1)\quad} F'_+(x_0)
+                    &= \lim_{x \to x_0^+} \frac{F(x) - F(x_0)}{x - x_0}
+                    \overset{\text{洛必达法则}}{=} \lim_{x \to x_0^+} \frac{F'(x)}{1} = A,\\[0.5em]
+                    \text{(2)\quad} F'_-(x_0)
+                    &= \lim_{x \to x_0^-} \frac{F(x) - F(x_0)}{x - x_0}
+                    \overset{\text{洛必达法则}}{=} \lim_{x \to x_0^-} \frac{F'(x)}{1} = A.
+                \end{aligned}
+            \]
+        \end{analysisbox}
+
+        \item 设 $f(x)$ 在 $x=0$ 的某邻域内有定义，且 $|f(x)| \le 1-\cos x$，证明 $f(x)$ 在 $x=0$ 处连续、可导且 $f'(0)=0$
+        \begin{analysisbox}[经典]
+            \textbf{证明：} 分三个层次完成。
+
+            \medskip
+            \textcolor{analysisTitleColor}{\textbf{（1）求函数极限}}
+
+            由
+            \[
+                0 \le |f(x)| \le 1-\cos x,
+                \qquad
+                \lim_{x\to 0}(1-\cos x)=0,
+            \]
+            根据夹逼准则，有
+            \[
+                \lim_{x\to 0}|f(x)| = 0
+                \quad\Rightarrow\quad
+                \lim_{x\to 0}f(x) = 0.
+            \]
+
+            \medskip
+            \textcolor{analysisTitleColor}{\textbf{（2）求函数值，验证连续性}}
+
+            在原不等式中令 $x=0$，得
+            \[
+                |f(0)| \le 1-\cos 0 = 0,
+            \]
+            故 $f(0)=0$。
+
+            因此
+            \[
+                \lim_{x\to 0}f(x) = f(0),
+            \]
+            即 $f(x)$ 在 $x=0$ 处连续，并且有
+            \[
+                |f(x)-f(0)| = |f(x)| \le 1-\cos x.
+            \]
+
+            \medskip
+            \textcolor{analysisTitleColor}{\textbf{（3）求导数（按定义）}}
+
+            由上述不等式可得
+            \[
+                0 \le
+                \left|
+                \frac{f(x)-f(0)}{x-0}
+                \right|
+                \le
+                \frac{1-\cos x}{|x|}.
+            \]
+
+            又因为
+            \[
+                \lim_{x\to 0}\frac{1-\cos x}{|x|}
+                =
+                \lim_{x\to 0}\frac{\frac{1}{2}x^2}{|x|}
+                =0,
+            \]
+            再次由夹逼准则，
+            \[
+                \lim_{x\to 0}
+                \left|
+                \frac{f(x)-f(0)}{x-0}
+                \right|
+                =0,
+            \]
+            即
+            \[
+                \lim_{x\to 0}
+                \frac{f(x)-f(0)}{x-0}
+                =0,
+            \]
+            从而 $f'(0)=0$。
+
+            \medskip
+            \textbf{综上，}
+            $f(x)$ 在 $x=0$ 处连续、可导，且 $f'(0)=0$
+
+        \end{analysisbox}
+
+    \end{enumerate}
+\end{document}

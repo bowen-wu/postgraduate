@@ -1,106 +1,6 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\usepackage{xstring}
-\usepackage{pgfplots}
-\usepackage{enumitem}
-\usepackage{pifont}
-\usepackage{ulem}
-\usepackage{mathtools}
-\usepackage{dsfont}
-\usepackage{extarrows}
-\pgfplotsset{compat=1.18}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\documentclass[../book.tex]{subfiles}
 
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-\newlist{circlenum}{enumerate}{1}
-\setlist[circlenum]{
-    label=\ding{\numexpr171+\arabic*},
-    leftmargin=2.2em,
-    itemsep=0.6em,      % item 之间的距离（主要）
-    topsep=0.6em,       % 列表与上下正文的距离
-    parsep=0.3em,       % item 内段落的间距
-    partopsep=0.3em     % 列表前后额外间距
-}
-
-\newcommand{\blueuline}[1]{{\color{blue}\uline{\color{black}{#1}}}}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
 \begin{document}
-
-%    \title{Template}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-%    \tableofcontents
-%    \newpage
-
-
-% =========================
 
     \section{二重积分}
 
@@ -116,7 +16,7 @@
     \[
         \iint\limits_D f(x,y) \mathrm{d}\sigma = \lim_{\lambda \to 0} \sum_{i=1}^{n} f(\xi_i, \eta_i) \Delta\sigma_i
     \]
-    其中 $f(x,y)$ 叫做\textbf{被积函数}，$f(x,y)\mathrm{d}\sigma$ 叫做\textbf{被积表达式}，$\mathrm{d}\sigma$ 叫做\textbf{面积元素}，$x$ 与 $y$ 叫做\textbf{积分变量}，$D$ 叫做\textbf{积分区域}，$\sum_{i=1}^{n} f(\xi_i, \eta_i) \Delta\sigma_i$叫做\textbf{积分和}
+    其中 $f(x,y)$ 叫做\textbf{被积函数}，$f(x,y)\mathrm{d}\sigma$ 叫做\textbf{被积表达式}，$\mathrm{d}\sigma$ 叫做\textbf{面积元素}，$x$ 与 $y$ 叫做\textbf{积分变量}，$D$ 叫做\textbf{积分区域}，$\sum\limits_{i=1}^{n} f(\xi_i, \eta_i) \Delta\sigma_i$叫做\textbf{积分和}
 
     \begin{enumerate}
         \item 几何意义：如果 $f(x,y) \geq 0$，则二重积分 $\displaystyle\iint\limits_D f(x,y) \mathrm{d}\sigma$ 表示以 $D$ 为底、以曲面 $z = f(x,y)$ 为顶的曲顶柱体的体积
@@ -240,7 +140,7 @@
         \[
             \iint\limits_D f(x,y) \mathrm{d}x\mathrm{d}y = \int_c^d \mathrm{d}y \int_{\psi_1(y)}^{\psi_2(y)} f(x,y) \mathrm{d}x
         \]
-        \item 此处的下限都必须小于等于上限
+        \item $\color{red}{\bigstar}$此处的下限都必须小于等于上限
         \item 计算二重积分的{\color{red}{关键}}是确定积分限，为此，要画好积分区域$D$的边界图形，当$D$的边界图形不易画出时，要写出$D$的不等式表达式，从而确定上下限
     \end{enumerate}
 
@@ -341,45 +241,221 @@
         \iint\limits_{D_{xy}} f(x,y) \mathrm{d}x\mathrm{d}y = \iint\limits_{D_{uv}} f[x(u,v), y(u,v)] |J| \mathrm{d}u\mathrm{d}v
     \]
 
-    \subsection{基础概念}
-
+    二重积分换元法中的{\color{red}{三换}}:
     \begin{enumerate}
+        \item 换积分区域
+        \item 换被积函数
+        \item 换积分变量
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
-    \end{enumerate}
+        \item \textbf{椭圆}
 
-    \subsection{定理}
+        \begin{circlenum}
+            \item \textbf{标准方程}：
+            \begin{itemize}
+                \item 圆心在原点：$\displaystyle\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$）
+                \item 圆心在 $(h, k)$：$\displaystyle\frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1$
+            \end{itemize}
+            其中 $a$ 为长半轴，$b$ 为短半轴
 
-    \begin{enumerate}
-    \end{enumerate}
+            \item \textbf{面积}：$S = \pi ab$
+        \end{circlenum}
+        \item 当$x \to 0^+$时，$f(x) \sim g(x)$，则$\displaystyle\int_0^x f(x)\mathrm{d}t \sim \int_0^x g(x)\mathrm{d}t$
+        \item \textbf{高斯积分}（概率积分）
 
-    \subsection{运算}
+        \begin{circlenum}
+            \item \textbf{标准形式}：
+            \[
+                \int_{-\infty}^{+\infty} e^{-x^2} \mathrm{d}x = \sqrt{\pi}
+            \]
 
-    \begin{enumerate}
+            等价形式：
+            \[
+                \int_{0}^{+\infty} e^{-x^2} \mathrm{d}x = \frac{\sqrt{\pi}}{2}
+            \]
 
+            \item $\color{red}{\bigstar}$\textbf{计算方法}（利用二重积分与极坐标）：
+
+            设 $I = \displaystyle\int_{0}^{+\infty} e^{-x^2} \mathrm{d}x$，则
+            \[
+                I^2 = \int_{0}^{+\infty} e^{-x^2} \mathrm{d}x \cdot \int_{0}^{+\infty} e^{-y^2} \mathrm{d}y = \int_{0}^{+\infty}\int_{0}^{+\infty} e^{-(x^2+y^2)} \mathrm{d}x\mathrm{d}y
+            \]
+
+            转化为极坐标，区域为第一象限：$0 \leq \theta \leq \frac{\pi}{2}$，$0 \leq r < +\infty$，则
+            \[
+                I^2 = \int_{0}^{\frac{\pi}{2}} \mathrm{d}\theta \int_{0}^{+\infty} e^{-r^2} \cdot r\,\mathrm{d}r = \frac{\pi}{2} \cdot \left[-\frac{1}{2}e^{-r^2}\right]_{0}^{+\infty} = \frac{\pi}{4}
+            \]
+
+            因此 $I = \dfrac{\sqrt{\pi}}{2}$
+
+            \item \textbf{一般形式}：
+            \[
+                \int_{0}^{+\infty} e^{-a x^2} \mathrm{d}x = \frac{1}{2}\sqrt{\frac{\pi}{a}} \quad (a > 0)
+            \]
+
+            \item \textbf{含 $x$ 的推广形式}：
+            \begin{align*}
+                \int_{0}^{+\infty} x e^{-a x^2} \mathrm{d}x &= \frac{1}{2a} \quad (a > 0) \\
+                \int_{0}^{+\infty} x^2 e^{-a x^2} \mathrm{d}x &= \frac{1}{4}\sqrt{\frac{\pi}{a^3}} \quad (a > 0) \\
+                \int_{-\infty}^{+\infty} x^2 e^{-a x^2} \mathrm{d}x &= \frac{1}{2a}\sqrt{\frac{\pi}{a}} \quad (a > 0)
+            \end{align*}
+
+            \item \textbf{应用}：高斯积分是概率统计中正态分布（高斯分布）的基础，在物理学、工程学等领域有广泛应用
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{公式}
 
     \begin{enumerate}
-
+        \item $\displaystyle\int_0^x \sin \frac{y}{t}\,\mathrm{d}y = \int_0^x t\cos \frac{y}{t}\,\mathrm{d}y$
+        \item $\displaystyle\int_0^1 \arcsin \sqrt {1-x^2}\mathrm{d}x = 1$
+        \item $\displaystyle\int_0^1 x\arcsin \sqrt {4-4x^2}\mathrm{d}x = \frac{1}{2}$
+        \item $\displaystyle\int \frac{1}{3\cos^2 \theta + \sin^2 \theta} = \int \frac{\mathrm{d}(\tan \theta)}{3 + \tan^2 \theta} = \frac{1}{\sqrt {3}}\arctan\frac{\tan \theta}{\sqrt {3}} + C$
+        \item $\displaystyle\int e^{-x}\mathrm{d}x = -e^{-x} + C$
+        \item $\Gamma$函数：
+        \[
+            \begin{aligned}
+                &\Gamma(\alpha) = \int_{0}^{+\infty} x^{\alpha-1} e^{-x}\,\mathrm{d}x = 2\int_{0}^{+\infty} t^{2\alpha-1} e^{-t^2}\,\mathrm{d}t (\alpha, t > 0) \\
+                &\Gamma(\alpha+1) = \alpha \Gamma(\alpha) \\
+                &\Gamma(1) = 1 \quad \Gamma\!\left(\frac{1}{2}\right) = \sqrt{\pi}
+            \end{aligned}
+        \]
+        \item $\displaystyle(\frac{\sin \theta}{\cos \theta + \sin \theta})' = \frac{1}{(\cos \theta + \sin \theta)^2}$
     \end{enumerate}
 
     \subsection{方法总结}
 
-    \paragraph{三换}（数学核心方法论）
+    \begin{enumerate}
+        \item 寻找二重积分最大值的区域，即是寻找被积函数大于等于零的区域
+        \item 研究某一点处的导数，需使用导数的定义
+        \item 当 \begin{cases}
+                     \text{被积函数被命制成具体函数，但}\iint\limits_D f(x,y) \mathrm{d}\sigma\text{难计算 } \\
+                     \text{被积函数被命制成抽象函数}
+        \end{cases}时，可以利用二重积分的中值定理来处理
+        \item 遇到二重积分的题目，首先考虑对称性，看能否化简
+        \item 当题目是累次积分时，通常考虑换积分顺序或者坐标系
+        \item 交换积分顺序的题目，应先确定积分区域（注意{\color{red}{上下限大小}}），然后交换积分顺序写成相应的累次积分
+        \[
+            \begin{aligned}
+                &\int_{\frac{\pi}{2}}^{\pi} \mathrm{d}x \int_{1}^{\sin x} f(x, y)\,\mathrm{d}y \quad \text{由于 } \sin x < 1,\ \text{该式不是标准的二重积分，仅为累次积分形式} \\
+                &= - \int_{\frac{\pi}{2}}^{\pi} \mathrm{d}x \int_{\sin x}^{1} f(x, y)\,\mathrm{d}y \quad \text{此时为对应区域上的二重积分}
+            \end{aligned}
+        \]
+        \item $\displaystyle \frac{\sin x}{x}, \frac{\cos x}{x}, \frac{\ln (1 + x)}{x}, \frac{1}{\ln x}, \sin x^2, \cos x^2, \sin \frac{1}{x}, \cos \frac{1}{x}, \frac{\tan x}{x}, \frac{e^x}{x}, \tan x^2, e^{ax^2 + bx + c}(a \neq 0) $均没有初等函数形式的原函数，见到它们，一般都要{\color{red}{交换积分次序}}，避免先对$x$求积分
+        \item 积分与字母用谁无关
+        \begin{itemize}
+            \item $\displaystyle\iint_{D_{xy}} f(x, y)\,\mathrm{d}x\mathrm{d}y = \iint_{D_{yx}} f(y, x)\,\mathrm{d}y\mathrm{d}x$
+        \end{itemize}
+        \item 当分母$\to 0$时，若分式的极限不为$0$，则可知分子$\to 0$
+        \item 思考：$\displaystyle\lim\limits_{x\to +\infty} e^{x^2}(\int_0^x t^2e^{-t^2}\,\mathrm{d}t + a) = \infty$
+    \end{enumerate}
 
+    \subsection{理解}
+
+    \begin{enumerate}
+        \item 设平面区域$D = \{(x, y)|0\leq x \leq 1-y, 0 \leq y \leq 1\}$，计算二重积分$\displaystyle\iint_D e^{\frac{y}{x+y}}\,\mathrm{d}\sigma$
+        \begin{analysisbox}
+            \textbf{分析：}
+            区域 $D$ 由 $x\ge 0,\ y\ge 0,\ x+y\le 1$ 给出，是第一象限内三角形。按
+            \[
+                u=x+y,\qquad v=y
+            \]
+            换元后，被积函数化为 $e^{v/u}$，区域变为 $0\le v\le u\le 1$，积分可直接计算。
+
+            \textbf{解：}令\begin{cases}
+                              x + y = u, \\
+                              y = v
+            \end{cases} 则 \begin{cases}
+                               x = u - v, \\
+                               y = v
+            \end{cases}
+            \[
+                J=\frac{\partial(x,y)}{\partial(u,v)}
+                =\begin{vmatrix}
+                     1 & -1 \\
+                     0 & 1
+                \end{vmatrix}
+                =1.
+            \]
+            由区域条件 $x\ge0,\ y\ge0,\ x+y\le1$ 可得$0\le v\le1,\qquad v\le u\le1$，因而
+            \[
+                \begin{aligned}
+                    \iint\limits_D e^{\frac{y}{x+y}}\,\mathrm{d}\sigma
+                    &= \iint\limits_{D_{uv}} e^{\frac{v}{u}} |J|\,\mathrm{d}v\,\mathrm{d}u
+                    = \int_0^1 \mathrm{d}u \int_0^u e^{\frac{v}{u}} \,\mathrm{d}v \\
+                    &= \int_0^1 \left. e^{\frac{v}{u}} \right|_{v=0}^{v=u} \mathrm{d}u
+                    = \int_0^1 u(e-1)\,\mathrm{d}u
+                    = \frac{1}{2}(e-1)
+                \end{aligned}
+            \]
+        \end{analysisbox}
+        \item 已知$\lim\limits_{x\to +\infty}\displaystyle\frac{\int_0^x t^2e^{x^2 -t^2}\,\mathrm{d}t + ae^{x^2}}{x^b} = -\frac{1}{2}$，求$a, b$的值
+        \begin{analysisbox}
+            \textbf{分析：}
+            将分子提取公因子 $e^{x^2}$，先判断常数项是否会导致指数爆炸；若要极限为有限常数，必须先消去主导项。随后把差值改写为尾积分 $\int_x^{+\infty} t^2e^{-t^2}\,\mathrm{d}t$，再做渐近估计确定幂次 $b$。
+
+            \textbf{解：}
+            设
+            \[
+                I(x)=\int_0^x t^2e^{-t^2}\,\mathrm{d}t,\qquad I_\infty=\int_0^{+\infty} t^2e^{-t^2}\,\mathrm{d}t.
+            \]
+            原式可写为
+            \[
+                \frac{\int_0^x t^2e^{x^2-t^2}\,\mathrm{d}t+ae^{x^2}}{x^b}
+                =\frac{e^{x^2}\bigl(I(x)+a\bigr)}{x^b}.
+            \]
+            当 $x\to+\infty$ 时，$I(x)\to I_\infty$，且
+            \[
+                I_\infty=\int_0^{+\infty} t^2e^{-t^2}\,\mathrm{d}t
+                =\frac{\sqrt{\pi}}{4}.
+            \]
+            若 $a+I_\infty\neq0$，则分子与 $e^{x^2}$ 同阶，除以任意 $x^b$ 都不可能收敛到有限常数，矛盾。
+            故必须有
+            \[
+                a=-I_\infty=-\frac{\sqrt{\pi}}{4}.
+            \]
+            此时
+            \[
+                e^{x^2}\bigl(I(x)+a\bigr)
+                =e^{x^2}\bigl(I(x)-I_\infty\bigr)
+                =-e^{x^2}\int_x^{+\infty} t^2e^{-t^2}\,\mathrm{d}t.
+            \]
+            对尾积分分部积分：
+            \[
+                \int_x^{+\infty} t^2e^{-t^2}\,\mathrm{d}t
+                =\frac{x}{2}e^{-x^2}+\frac12\int_x^{+\infty}e^{-t^2}\,\mathrm{d}t
+                =\frac{x}{2}e^{-x^2}+o\!\bigl(e^{-x^2}x\bigr).
+            \]
+            因而
+            \[
+                e^{x^2}\bigl(I(x)+a\bigr)
+                =-\frac{x}{2}+o(x).
+            \]
+            所以原极限为
+            \[
+                \lim_{x\to+\infty}\frac{-\frac{x}{2}+o(x)}{x^b}=-\frac12.
+            \]
+            由此只能取 $b=1$。
+
+            综上，
+            \[
+                \boxed{a=-\frac{\sqrt{\pi}}{4},\quad b=1.}
+            \]
+        \end{analysisbox}
+    \end{enumerate}
+
+    \subsection{三换（数学核心方法论）}
     数学问题的本质往往不变，但表现形式可以转换。「三换」是指通过{\color{red}{改变问题的表达形式}}来简化求解过程的三种基本策略。
 
     \begin{circlenum}
         \item \textbf{换序}：交换运算次序
 
-        {\color{blue}核心思想}：当一种运算次序难以进行时，尝试交换次序
+            {\color{blue}核心思想}：当一种运算次序难以进行时，尝试交换次序
 
-        {\color{blue}典型应用}：
+            {\color{blue}典型应用}：
         \begin{itemize}
             \item 积分换序：$\displaystyle\int\mathrm{d}x\int\mathrm{d}y \leftrightarrow \int\mathrm{d}y\int\mathrm{d}x$
             \item 求和与极限交换：$\displaystyle\lim_{n\to\infty}\sum_{k=1}^{n} \leftrightarrow \sum_{k=1}^{\infty}\lim_{n\to\infty}$
@@ -388,9 +464,9 @@
 
         \item \textbf{换系}：转换坐标系/表达系统
 
-        {\color{blue}核心思想}：同一数学对象在不同系统中有不同表达，选择最简形式
+            {\color{blue}核心思想}：同一数学对象在不同系统中有不同表达，选择最简形式
 
-        {\color{blue}典型应用}：
+            {\color{blue}典型应用}：
         \begin{itemize}
             \item 坐标系变换：直角坐标 $\leftrightarrow$ 极坐标 $\leftrightarrow$ 球坐标
             \item 域变换：时域 $\xleftrightarrow{\text{傅里叶}}$ 频域
@@ -399,9 +475,9 @@
 
         \item \textbf{换元}：变量替换
 
-        {\color{blue}核心思想}：用新变量替代原变量，将复杂形式化为简单形式
+            {\color{blue}核心思想}：用新变量替代原变量，将复杂形式化为简单形式
 
-        {\color{blue}典型应用}：
+            {\color{blue}典型应用}：
         \begin{itemize}
             \item 不定积分换元：$\displaystyle\int f[\varphi(x)]\varphi'(x)\mathrm{d}x = \int f(u)\mathrm{d}u$
             \item 二重积分换元：雅可比行列式变换
@@ -411,17 +487,5 @@
 
     \vspace{0.5em}
     {\color{red}$\bigstar$} \textbf{三换的本质}：问题本身不变，改变的是我们{\color{red}{观察问题的角度}}和{\color{red}{处理问题的工具}}。选择合适的形式，往往能让困难问题迎刃而解。
-
-    \subsection{条件转换思路}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{理解}
-
-    \begin{enumerate}
-
-    \end{enumerate}
 
 \end{document}

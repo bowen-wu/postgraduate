@@ -18,9 +18,13 @@ if [ ${#clean_files[@]} -eq 0 ]; then
 else
     for texfile in "${clean_files[@]}"; do
         texdir=$(dirname "$texfile")
+        texbase=$(basename "$texfile")
         mkdir -p "$texdir/pdf"
         echo "Compiling $texfile ..."
-        xelatex -interaction=nonstopmode -output-directory="$texdir/pdf" "$texfile" &
+        (
+            cd "$texdir" || exit 1
+            xelatex -interaction=nonstopmode -output-directory="pdf" "$texbase"
+        ) &
     done
 
     wait

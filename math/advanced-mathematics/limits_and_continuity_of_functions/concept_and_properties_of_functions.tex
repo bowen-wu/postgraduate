@@ -1,86 +1,5 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\usepackage{xstring}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
-
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
+\documentclass[../book.tex]{subfiles}
 \begin{document}
-
-%    \title{Template}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-%    \tableofcontents
-%    \newpage
-
-
-% =========================
 
     \section{函数的概念与特性}
 
@@ -275,7 +194,9 @@
         \item \textbf{与积分的关系}：
         \begin{itemize}
             \item 若 $f(x)$ 为奇函数，则 $\int_0^x f(t)\,dt$ 为偶函数
-            \item $\int_{-a}^{a} f(x)\,dx = \begin{cases} 0, & f(x) \text{ 为奇函数} \\ 2\int_0^a f(x)\,dx, & f(x) \text{ 为偶函数} \end{cases}$
+            \item $\int_{-a}^{a} f(x)\,dx = \begin{cases}
+                                                0, & f(x) \text{ 为奇函数} \\ 2\int_0^a f(x)\,dx, & f(x) \text{ 为偶函数}
+            \end{cases}$
         \end{itemize}
 
         \item \textbf{重要性质}：
@@ -334,7 +255,9 @@
         \item \textbf{特殊周期函数}：
         \begin{itemize}
             \item $f(x) = x - [x]$（取整函数的小数部分）：周期 $1$
-            \item 狄利克雷函数 $D(x) = \begin{cases} 1, & x \in \mathbb{Q} \\ 0, & x \notin \mathbb{Q} \end{cases}$：任意非零有理数都是其周期（无最小正周期）
+            \item 狄利克雷函数 $D(x) = \begin{cases}
+                                           1, & x \in \mathbb{Q} \\ 0, & x \notin \mathbb{Q}
+            \end{cases}$：任意非零有理数都是其周期（无最小正周期）
         \end{itemize}
     \end{enumerate}
 
@@ -574,4 +497,11 @@
 
     \begin{enumerate}
     \end{enumerate}
+
+
+    \section{函数的图像}
+
+    \subsection{基本初等函数与初等函数}
+
+    \subsection{分段函数}
 \end{document}
