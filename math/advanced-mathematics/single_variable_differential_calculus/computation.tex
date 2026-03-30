@@ -13,30 +13,30 @@
 
         \item $(e^x)' = e^x$
 
-        \item $(\log_a x)' = \displaystyle\frac{1}{x\ln a}
+        \item $(\log_a x)' = \dfrac{1}{x\ln a}
         \,(a>0,\ a\neq1)$
 
-        \item $(\ln |x|)' = \displaystyle\frac{1}{x}$
+        \item $(\ln |x|)' = \dfrac{1}{x}$
 
         \item 三角函数求导
         \begin{itemize}
             \item $(\sin x)' = \cos x$
             \item $(\cos x)' = -\sin x$
-            \item $(\tan x)' = \sec^2 x = \frac{1}{\cos^2 x}$
-            \item $(\cot x)' = -\csc^2 x = -\frac{1}{\sin^2 x}$
-            \item $(\sec x)' = \sec x \tan x = \frac{\sin x}{\cos^2 x}$
-            \item $(\csc x)' = -\csc x \cot x = -\frac{\cos x}{\sin^2 x}$
-            \item $(\arcsin x)' = \displaystyle\frac{1}{\sqrt{1-x^2}}$
-            \item $(\arccos x)' = -\displaystyle\frac{1}{\sqrt{1-x^2}}$
-            \item $(\arctan x)' = \displaystyle\frac{1}{1+x^2}$
-            \item $(\mathrm{arccot}\ x)' = -\displaystyle\frac{1}{1+x^2}$
+            \item $(\tan x)' = \sec^2 x = \dfrac{1}{\cos^2 x}$
+            \item $(\cot x)' = -\csc^2 x = -\dfrac{1}{\sin^2 x}$
+            \item $(\sec x)' = \sec x \tan x = \dfrac{\sin x}{\cos^2 x}$
+            \item $(\csc x)' = -\csc x \cot x = -\dfrac{\cos x}{\sin^2 x}$
+            \item $(\arcsin x)' = \dfrac{1}{\sqrt{1-x^2}}$
+            \item $(\arccos x)' = -\dfrac{1}{\sqrt{1-x^2}}$
+            \item $(\arctan x)' = \dfrac{1}{1+x^2}$
+            \item $(\mathrm{arccot}\ x)' = -\dfrac{1}{1+x^2}$
         \end{itemize}
 
         \item $\bigl[\ln (x+\sqrt{x^2+1})\bigr]'
-        = \displaystyle\frac{1}{\sqrt{x^2+1}}$
+        = \dfrac{1}{\sqrt{x^2+1}}$
 
         \item $\bigl[\ln (x+\sqrt{x^2-1})\bigr]'
-        = \displaystyle\frac{1}{\sqrt{x^2-1}}$
+        = \dfrac{1}{\sqrt{x^2-1}}$
     \end{enumerate}
 
     \subsection{四则运算}
@@ -122,7 +122,7 @@
                   \]
                   其中 $-1<x<1$。
         \end{analysisbox}
-        \item $y''_{xx} = -\displaystyle\frac{x''_{yy}}{(x'_y)^3}$，即$y = f(x), x = \varphi (y), \varphi''(y) = -\displaystyle\frac{f''(x)}{[f'(x)]^3}$
+        \item $y''_{xx} = -\dfrac{x''_{yy}}{(x'_y)^3}$，即$y = f(x), x = \varphi (y), \varphi''(y) = -\dfrac{f''(x)}{[f'(x)]^3}$
         \begin{analysisbox}
             在 $y=f(x)$ 单调且二阶可导的情况下，若 $f'(x)\neq 0$，
             则存在反函数 $x=\varphi(y)$。
@@ -148,7 +148,7 @@
                 \end{aligned}
             \]
         \end{analysisbox}
-        \item $x''_{yy} = -\displaystyle\frac{y''_{xx}}{(y'_x)^3}$
+        \item $x''_{yy} = -\dfrac{y''_{xx}}{(y'_x)^3}$
     \end{enumerate}
 
     \subsection{隐函数求导法}
@@ -213,7 +213,7 @@
         \begin{itemize}
             \item $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$
             \item ${\color{red}{\bigstar}}(uv)^{(n)} = \displaystyle\sum_{k=0}^{n}C_n^k\,u^{(k)}\,v^{(n-k)}$
-            \item $C_n^k = \displaystyle\frac{n!}{k!(n-k)!}$
+            \item $C_n^k = \dfrac{n!}{k!(n-k)!}$
             \item \[
                       \begin{array}{ccccccccc}
                           & & & & 1 \\
@@ -254,11 +254,11 @@
         \[
             \begin{aligned}
                 e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots, & -\infty < x < +\infty \\
-                \frac{1}{1-x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, & |x| < 1 \\
-                \frac{1}{1+x} &= \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, & |x| < 1 \\
-                \ln(1+x) &= \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, & |x| < 1 \\
                 \sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots, & -\infty < x < +\infty \\
                 \cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots, & -\infty < x < +\infty \\
+                \frac{1}{1-x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, & |x| < 1 \\
+                \frac{1}{1+x} &= \frac{1}{1 - (-x)} = \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, & |x| < 1 \\
+                \ln(1+x) &= \int \frac{1}{1+x}\,\mathrm{d}x = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, & |x| < 1 \\
                 (1+x)^a &= \sum_{n=0}^{\infty} \binom{a}{n} x^n = 1 + ax + \frac{a(a-1)}{2!} x^2 + \cdots, & |x| < 1 \\
                 \tan x &= x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots, & |x| < \frac{\pi}{2} \\
                 \arcsin x &= \sum_{n=0}^{\infty} \frac{(2n)!}{4^n (n!)^2 (2n+1)} x^{2n+1} = x + \frac{x^3}{6} + \frac{3x^5}{40} + \cdots, & |x| \le 1 \\
@@ -270,17 +270,17 @@
     \subsection{公式}
 
     \begin{enumerate}
-        \item $\bigl[\ln\bigl(x+\sqrt{x^2+a^2}\bigr)\bigr]' = \displaystyle\frac{1}{\sqrt{x^2+a^2}}$
-        \item $\bigl[\ln\bigl(x+\sqrt{x^2-a^2}\bigr)\bigr]' = \displaystyle\frac{1}{\sqrt{x^2-a^2}}, \qquad x^2-a^2>0$
+        \item $\bigl[\ln\bigl(x+\sqrt{x^2+a^2}\bigr)\bigr]' = \dfrac{1}{\sqrt{x^2+a^2}}$
+        \item $\bigl[\ln\bigl(x+\sqrt{x^2-a^2}\bigr)\bigr]' = \dfrac{1}{\sqrt{x^2-a^2}}, \qquad x^2-a^2>0$
         \item $(x\ln x)' = \ln x + 1$
-        \item $(\displaystyle\frac{1}{x} \ln x)' = -\displaystyle\frac{1}{x^2} \ln x + \frac{1}{x^2}$
+        \item $(\dfrac{1}{x} \ln x)' = -\dfrac{1}{x^2} \ln x + \dfrac{1}{x^2}$
         \item 常用的高阶导数
         \begin{itemize}
             \item $\bigl(e^{ax+b}\bigr)^{(n)} = a^{n} e^{ax+b}.$
-            \item $\bigl[\sin(ax+b)\bigr]^{(n)} = a^{n} \sin\!\left(ax+b+\displaystyle\frac{n\pi}{2}\right)$
-            \item $\bigl[\cos(ax+b)\bigr]^{(n)} = a^{n} \cos\!\left(ax+b+\displaystyle\frac{n\pi}{2}\right)$
-            \item $\bigl[\ln(ax+b)\bigr]^{(n)} = (-1)^{\,n-1}a^{n}\displaystyle\frac{(n-1)!}{(ax+b)^{n}}$
-            \item $\left(\displaystyle\frac{1}{ax+b}\right)^{(n)} = (-1)^{\,n}a^{n}\displaystyle\frac{n!}{(ax+b)^{n+1}} \Rightarrow (\displaystyle\frac{1}{1 + x})^{(n)} = (-1)^{\,n}\displaystyle\frac{n!}{(x+1)^{n+1}}$
+            \item $\bigl[\sin(ax+b)\bigr]^{(n)} = a^{n} \sin\!\left(ax+b+\dfrac{n\pi}{2}\right)$
+            \item $\bigl[\cos(ax+b)\bigr]^{(n)} = a^{n} \cos\!\left(ax+b+\dfrac{n\pi}{2}\right)$
+            \item $\bigl[\ln(ax+b)\bigr]^{(n)} = (-1)^{\,n-1}a^{n}\dfrac{(n-1)!}{(ax+b)^{n}}$
+            \item $\left(\dfrac{1}{ax+b}\right)^{(n)} = (-1)^{\,n}a^{n}\dfrac{n!}{(ax+b)^{n+1}} \Rightarrow (\dfrac{1}{1 + x})^{(n)} = (-1)^{\,n}\dfrac{n!}{(x+1)^{n+1}}$
         \end{itemize}
     \end{enumerate}
 

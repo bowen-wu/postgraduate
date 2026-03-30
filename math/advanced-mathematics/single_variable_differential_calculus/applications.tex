@@ -1,36 +1,37 @@
 \documentclass[../book.tex]{subfiles}
 
 \begin{document}
+    \section{一元函数微分学的应用 - 中值定理、微分等式与微分不等式}
 
-    \section{中值定理}
+    \subsection{中值定理}
 
-    \subsection{涉及函数的中值定理}
+    \subsubsection{涉及函数的中值定理}
 
-    \subsubsection{有界与最值定理}
+    \paragraph{有界与最值定理}
 
     设 $f(x)$ 在 $[a, b]$上连续，则 $m \leq f(x) \leq M$，其中$m, M$分别为$f(x)$在$[a, b]$上的最小值和最大值
 
-    \subsubsection{介值定理}
+    \paragraph{介值定理}
 
     设 $f(x)$ 在 $[a, b]$上连续，当$m \leq \mu \leq M$时，存在$\xi \in [a, b]$，使得$f(\xi) = \mu$
 
-    \subsubsection{平均值定理}
+    \paragraph{平均值定理}
 
     设 $f(x)$ 在 $[a, b]$上连续，当$a < x_1 < x_2 < \cdots < x_n < b$时，在$[x_1, x_n]$内至少存在一点$\xi$，使得
     \[
         f(\xi) = \frac{f(x_1) + f(x_2) + \cdots + f(x_n)}{n}
     \]
 
-    \subsubsection{零点定理（介值定理的特例）}
+    \paragraph{零点定理（介值定理的特例）}
 
     设 $f(x)$ 在 $[a, b]$上连续，当$f(a)\cdot f(b) < 0$时，存在$\xi \in (a, b)$，使得$f(\xi) = 0$
     \begin{itemize}
         \item 推广的零点定理: 若$f(x)$在$(a, b)$内连续，$\lim\limits_{x \to a^+} f(x) = \alpha, \lim\limits_{x \to b^-} f(x) = \beta$，且$\alpha \cdot \beta < 0$，则$f(x) = 0$在$(a, b)$内至少存在一个根
     \end{itemize}
 
-    \subsection{涉及导数（微分）的中值定理}
+    \subsubsection{涉及导数（微分）的中值定理}
 
-    \subsubsection{费马定理}
+    \paragraph{费马定理}
 
     设函数 $f(x)$ 在点 $x_0$ 处满足
     \[
@@ -44,12 +45,12 @@
         f'(x_0)=0.
     \]
 
-    \subsubsection{导数零点定理}
+    \paragraph{导数零点定理}
 
     $f(x)$在$[a, b]$上可导，当$f'_{+}(a) \cdot f'_{-}(b) < 0$时，存在$\xi \in (a, b)$，使得$f'(\xi) = 0$
     \\
 
-    \subsubsection{罗尔定理}
+    \paragraph{罗尔定理}
 
     设$f(x)$满足
     \[
@@ -86,7 +87,7 @@
         \end{itemize}
     \end{enumerate}
 
-    \subsubsection{拉格朗日中值定理}
+    \paragraph{拉格朗日中值定理}
 
     设函数 $f(x)$ 满足
     \[
@@ -109,7 +110,7 @@
         \item 拉格朗日中值定理的作用是{\color{red}{用导函数的值来控制函数值的增减}}
     \end{enumerate}
 
-    \subsubsection{柯西中值定理}
+    \paragraph{柯西中值定理}
 
     设函数 $f(x), g(x)$ 满足
     \[
@@ -128,7 +129,7 @@
         \item $f(x), g(x)$往往考察一个具体函数，一个抽象函数
     \end{enumerate}
 
-    \subsubsection{泰勒公式（微分中值定理）}
+    \paragraph{泰勒公式（微分中值定理）}
 
     \begin{enumerate}
         \item 带拉格朗日余项的 $n$ 阶泰勒公式：设函数 $f(x)$ 在{\blueuline{点 $x_0$ 的某邻域内 $n+1$ 阶导数存在}}，则对该邻域内任意点 $x$，有
@@ -235,13 +236,13 @@
         \end{circlenum}
     \end{enumerate}
 
-    \subsection{结论}
+    \subsubsection{结论}
 
     \begin{enumerate}
         \item 若$f(x)$在$(a, b)$内可导且$f'(x)$有界，则$f(x)$在$(a, b)$内有界
     \end{enumerate}
 
-    \subsection{方法总结}
+    \subsubsection{方法总结}
 
     \begin{enumerate}
         \item 解题方法
@@ -259,7 +260,7 @@
         \end{circlenum}
     \end{enumerate}
 
-    \subsection{条件转换思路}
+    \subsubsection{条件转换思路}
 
     \begin{enumerate}
         \item 函数$f(x)$，过点$A(0, f(0))$与点$B(1, f(1))$的直线与曲线$y = f(x)$相交于点$C(c, f(c)) \Rightarrow$ 构造辅助函数 $F(x) = f(x) - \ell(x), \ell(x)$ 是$A, B, C$ 三点的直线
@@ -268,7 +269,7 @@
         \item 遇到$f$与$f^{(n)}(n \geq 2)$的关系，考虑泰勒公式
     \end{enumerate}
 
-    \subsection{理解}
+    \subsubsection{理解}
 
     \begin{enumerate}
         \item $f(x)$ 在 $x_0$ 处连续：
@@ -304,7 +305,7 @@
     \end{enumerate}
 
 
-    \section{微分等式}
+    \subsection{微分等式}
 
     方程$f(x) = 0$的根就是函数$f(x)$的零点。从几何上讲，方程的根作为两条曲线的交点。基于此，讨论方程的根 $==$ 讨论曲线的交点。方法步骤如下
 
@@ -323,9 +324,9 @@
     \end{enumerate}
 
 
-    \section{微分不等式}
+    \subsection{微分不等式}
 
-    \subsection{用函数性态（包括单调性、凹凸性和最值等）证明不等式}
+    \subsubsection{用函数性态（包括单调性、凹凸性和最值等）证明不等式}
 
     \begin{enumerate}
         \item 若 $f'(x)\ge 0,\; a<x<b$，则$f(a)\leq f(x)\leq f(b)$
@@ -347,7 +348,7 @@
         \item 若有$f''(x) < 0(\text{凸}), a < x < b, f(a) = f(b) = 0$，则有$f(x) > 0$
     \end{enumerate}
 
-    \subsection{用常数变量化证明不等式}
+    \subsubsection{用常数变量化证明不等式}
 
     如果欲证的不等式中都是常数（常数不可直接求导），则可以将其中一个或者几个{\color{red}{常数变量化}}，再利用上面所述的导数工具去证明
 
@@ -366,7 +367,7 @@
         \]
     \end{analysisbox}
 
-    \subsection{用中值定理证明不等式}
+    \subsubsection{用中值定理证明不等式}
 
     主要用拉格朗日中值定理或者泰勒公式
 
@@ -388,11 +389,10 @@
         \]
     \end{analysisbox}
 
-    \subsection{结论}
+    \subsubsection{结论}
 
     \begin{enumerate}
         \item 当$0 < x < \displaystyle\frac{\pi}{2}$时，$\displaystyle\frac{2x}{\pi} < \sin x < x < \tan x$
     \end{enumerate}
-
 
 \end{document}

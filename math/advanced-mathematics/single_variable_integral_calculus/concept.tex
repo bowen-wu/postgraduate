@@ -443,9 +443,11 @@
     \subsection{理解}
 
     \begin{enumerate}
-        \item $\int f(x)\,\mathrm{d}x$称为不定积分，表示全体原函数
-        \item $\int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
-        \item $F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
+        \item $\displaystyle \int f(x)\,\mathrm{d}x$称为不定积分，表示{\color{red}{全体原函数}}
+        \item $\color{red}{\bigstar}\color{red}{\bigstar}$不定积分对应一族原函数，而变限积分给出了其中一个唯一确定的原函数。当需要研究函数的性态（如极限、导数、单调性等）时，必须将不定积分转化为变限积分
+        \item 变限积分的作用不是“换一种写法”，而是“选定一个原函数”
+        \item $\displaystyle \int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
+        \item $\displaystyle F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
         \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}$
         \begin{analysisbox}[证]
             若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则
