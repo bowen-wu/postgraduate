@@ -67,14 +67,13 @@ int Pop(SqStack *stack, int *ele)
   return 1;
 }
 
-int GetTop(const SqStack *stack, int *ele)
+int GetTop(const SqStack *stack)
 {
   if (StackEmpty(stack)) {
-    return 0;
+    return NULL;
   }
 
-  *ele = stack->data[stack->top];
-  return 1;
+  return stack->data[stack->top];
 }
 
 

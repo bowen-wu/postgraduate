@@ -107,13 +107,29 @@
     \subsection{基础概念}
 
     \begin{enumerate}
-      \item 数据结构三要素
-      \begin{itemize}
-        \item 逻辑结构
-        \item 数据的运算
-        \item 存储结构（物理结构）
-      \end{itemize}
-      \item 动态分配内存的数据结构需要返回地址，静态区分配返回 Struct 即可
+        \item 数据结构三要素
+        \begin{itemize}
+            \item 逻辑结构
+            \item 数据的运算
+            \item 存储结构（物理结构）
+        \end{itemize}
+        \item 动态分配内存的数据结构需要返回地址，静态区分配返回 Struct 即可
+        \begin{itemize}
+            \item 静态分配（栈区）：大小固定、已知
+            \item 动态分配（堆区）：大小运行时才确定，或生命周期需要跨函数
+            \item 需要动态分配的场景
+            \begin{circlenum}
+                \item 大小由用户输入决定
+                \item 节点数量不确定（链表、树等）
+                \item 生命周期需要超出函数栈帧
+            \end{circlenum}
+        \end{itemize}
+        \item 栈混洗问题
+        \begin{itemize}
+            \item 模拟法
+            \item 禁止模式：一个排列不合法，当且仅当存在三个元素按出现顺序是"{\color{red}{大、小、中}}"，即三个数 a, b, c 在输出中按顺序出现，且 a > c > b
+            \item 合法的排列个数是卡特兰数：$C(n) = \dfrac{(2n)!}{(n+1)! \cdot n!}$
+        \end{itemize}
     \end{enumerate}
 
 \end{document}
