@@ -245,12 +245,6 @@
 
     \begin{enumerate}
         \item \textbf{标准形式}：$y'' + py' + qy = f(x) \quad (p, q \text{ 为常数}, f(x) \neq 0)$，$f(x)$ 称为自由项
-        \item \textbf{解的结构}
-        \begin{itemize}
-            \item \textbf{叠加原理}：若 $f(x) = f_1(x) + f_2(x)$，且 $y_1^*$ 是 $y'' + py' + qy = f_1(x)$ 的解，$y_2^*$ 是 $y'' + py' + qy = f_2(x)$ 的解，则 $y_1^* + y_2^*$ 是原方程的解
-            \item 若 $y_1^*, y_2^*$ 是同一非齐次方程的两个特解，则 $y_1^* - y_2^*$ 是对应齐次方程的解
-        \end{itemize}
-
         \item \textbf{通解}
         \[
             y = Y + y^*
@@ -397,6 +391,28 @@
             \end{enumerate}
 
         \end{itemize}
+        \item \textbf{解的结构}
+        \begin{itemize}
+            \item \textbf{叠加原理}：若 $f(x) = f_1(x) + f_2(x)$，且 $y_1^*$ 是 $y'' + py' + qy = f_1(x)$ 的解，$y_2^*$ 是 $y'' + py' + qy = f_2(x)$ 的解，则 $y_1^* + y_2^*$ 是原方程的解
+            \item 若 $y_1^*, y_2^*$ 是同一非齐次方程的两个特解，则 $y_1^* - y_2^*$ 是对应齐次方程的解
+            \item \textbf{特解不唯一}：若 $y^*$ 是非齐次方程的特解，$\tilde{y}$ 是对应齐次方程的解，则 $y^* + \tilde{y}$ 仍是该非齐次方程的特解
+            \item \textbf{线性无关的判定}：若 $\dfrac{y_1}{y_2} \not\equiv$ 常数，则 $y_1, y_2$ 线性无关；等价地，朗斯基行列式
+            \[
+                W(y_1, y_2) = \begin{vmatrix}
+                                  y_1 & y_2 \\ y_1' & y_2'
+                \end{vmatrix} = y_1 y_2' - y_1' y_2 \neq 0
+            \]
+            \item \textbf{反推方程的思路}（已知解的结构，反求方程）：
+
+            \begin{circlenum}
+                \item {\color{red}{剥离齐次解}}：所给特解中，指数 $\beta \neq \alpha$ 的 $e^{\beta x}$ 型项{\color{red}{一定}}不属于标准特解，必为齐次解，其指数 $\beta$ 即为特征根
+                \item {\color{red}{判断 $\alpha$ 是否为特征根}}：对所给特解中指数等于 $\alpha$ 的项，检查是否含 $x^k$ 因子。含则{\color{red}{一定是}}特征根（$k$ 重）；不含则{\color{red}{不一定}}——可能是标准特解（$\alpha$ 非特征根），也可能是混入的齐次解（$\alpha$ 是特征根），需进入下一步假设判定
+                \item {\color{red}{假设判定}}（仅在不含 $x^k$ 时）：分别假设 $\alpha$ 是/不是特征根，结合第一步已确定的特征根，各自推出特征方程，将特解代入验证，与已知条件矛盾则排除该假设
+                \item 由最终确定的全部特征根写出特征方程 $\Rightarrow$ 确定 $p, q$
+                \item 剥离齐次解后剩余部分即为标准特解，代入方程定出 $f(x)$
+            \end{circlenum}
+        \end{itemize}
+
     \end{enumerate}
 
     \subsubsection{n（n>2）阶常系数齐次线性微分方程}
@@ -472,11 +488,6 @@
 
     \textbf{核心思路}：根据物理定律建立微分方程
 
-    \subsection{基础概念}
-
-    \begin{enumerate}
-    \end{enumerate}
-
     \subsection{结论}
 
     \begin{enumerate}
@@ -488,36 +499,44 @@
         \item 初始条件不仅可以求独立常数$C$，还可以确定解的符号
         \item 对于一个不定积分求极限，需要将不定积分转化为变限积分，之后查看是否能用洛必达法则
         \item 对于无法直接计算的微分方程$y' = f(x, y)$，重点在于通过什么形式的{\color{red}{换元（简单化）}}将其化成常见的形式
-    \end{enumerate}
-
-    \subsection{定理}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{方法总结}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{条件转换思路}
-
-    \begin{enumerate}
+        \item 分情况讨论时，要注意
+        \begin{circlenum}
+            \item 如何分
+            \item 场景全
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{理解}
 
     \begin{enumerate}
-    \end{enumerate}
+        \item 设二阶常系数线性微分方程 $y'' + \alpha y' + \beta y = \gamma e^x$ 的一个特解为 $y^* = e^{2x} + (1+x)e^x$，确定常数 $\alpha, \beta, \gamma$，并求该方程的通解
+        \begin{analysisbox}[解]
+            由 $y^* = e^{2x} + (1+x)e^x$，得
+            \[
+                y^{*'} = 2e^{2x} + (2+x)e^x, \quad y^{*''} = 4e^{2x} + (3+x)e^x
+            \]
+            代入 $y'' + \alpha y' + \beta y = \gamma e^x$：
+            \[
+                [4e^{2x} + (3+x)e^x] + \alpha[2e^{2x} + (2+x)e^x] + \beta[e^{2x} + (1+x)e^x] = \gamma e^x
+            \]
+            整理得
+            \[
+                \underbrace{(4 + 2\alpha + \beta)}_{} e^{2x} + \underbrace{(3 + 2\alpha + \beta)}^{\text{常数项}} e^x + \underbrace{(1 + \alpha + \beta)}_{\text{系数}} x e^x = \gamma e^x
+            \]
+            比较同类项系数：
+            \[
+                \begin{cases}
+                    4 + 2\alpha + \beta = 0 \quad (e^{2x}\text{ 的系数}) \\
+                    1 + \alpha + \beta = 0 \quad (xe^x\text{ 的系数}) \\
+                    3 + 2\alpha + \beta = \gamma \quad (e^x\text{ 的系数})
+                \end{cases}
+            \]
+            由前两式解得 $\alpha = -3$，$\beta = 2$，代入第三式得 $\gamma = -1$。
 
+            特征方程 $r^2 - 3r + 2 = 0$ 的根为 $r_1 = 1$，$r_2 = 2$，齐次方程通解 $Y = C_1 e^x + C_2 e^{2x}$，取特解 $y^* = xe^x$，故通解为
+            \[
+                \boxed{y = C_1 e^x + C_2 e^{2x} + xe^x}
+            \]
+        \end{analysisbox}
+    \end{enumerate}
 \end{document}
