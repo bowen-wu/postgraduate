@@ -21,13 +21,13 @@
 typedef struct
 {
   int data[MaxSize];
-  int top
+  int top;
 } SqStack;
 
-SqStack InitStack()
+SqStack* InitStack()
 {
-  SqStack stack;
-  stack.top = -1;
+  SqStack *stack;
+  stack->top = -1;
   return stack;
 }
 
