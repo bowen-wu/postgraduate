@@ -40,20 +40,20 @@
 - workout
     - n. 训练，锻炼
     - The only bad **workout** is the one that didn't happen.
-    - Although it can be a **workout** on its own(虽然它本身就可以算是一种锻炼), if your goal is to get back to Zumba
-      classes, tennis, cycling, or any other activity, walking is also a great first step.
+    - Although it can be a **workout** on its own, if your goal is to get back to Zumba classes, tennis, cycling, or any
+      other activity, walking is also a great first step.
 - patchwork
     - adj. 拼凑的
     - n. 拼凑之物
     - Certainly, there are valid concerns about the **patchwork** regulations...
-- labor/labour
+- labor
     - vi. 努力做（困难的事）
     - n. 劳动；劳工；英国工党(Labour)
     - Conservatives vs Labour 保守党 vs 工党
     - The second half of the 20th century saw a collection of geniuses, warriors, entrepreneurs and visionaries
       **labor** to create a fabulous machine...
         - labor to do sth.
-    - laborer/laborer n. 体力劳动者
+    - laborer n. 体力劳动者
 - career
     - n. 职业，职业生涯
     - The difference between a **job** and a **career** is the difference between forty and sixty hours a week.
@@ -91,7 +91,10 @@
     - I **used to do** weight training years ago.
 - useful adj. 有用于
 - useless adj. 无用的
-- underused adj. 未充分利用的
+- underused
+    - adj. 未充分利用的
+    - over- 做得多
+    - under- 做的不够
 - misuse
     - vt. 误用；滥用
     - n. 误用；滥用
@@ -132,7 +135,7 @@
 - vt. 陈述；规定
 - n. 州；状态；国家；政府
 - adj. 州的
-- Youth is not a time of life, it is <ins>**state** of mind(心境)</ins>.
+- Youth is not a time of life, it is <ins>a **state** of mind(心境)</ins>.
 - They were comfortable in describing different emotional **states** and part of what you do in drama is
   <ins>put yourself in different shoes(设身处地的，将心比心的)</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
 - They set new standards for *ventilation([ˌvɛntəˈleɪʃən] n. 通风设备)*, energy efficiency and heating, and **state**
@@ -146,10 +149,15 @@
       *supreme([suːˈpriːm] adj. 最高的)* claim.
         - We cannot overstate X 我们再怎么强调 X 都不为过
         - supreme claim 至高权利/至高优先权
+    - overstatement n. 大话
 - estate [ɪˈsteɪt]
     - n. 地产
     - real estate 房地产
-- status n. 地位；状况
+- status
+    - n. 地位；状况
+    - His father was a clerk in the British Navy pay office—a respectable position, but with little social **status**.
+    - Embrace change. Envision what could be, challenge the <ins>**status quo**(现状)</ins> and drive creative
+      destruction.
 - statute [ˈstætʃuːt]
     - n. 法规
     - == rule
@@ -175,7 +183,7 @@
 - administer
     - vt. 管理；施行
     - administration
-        - n. 管理，管理部分；（美国）政府
+        - n. 管理，管理部分；政府
         - Many young Americans <ins>cast doubts on(对...产生疑问)</ins> the **administration**'s ability to handle
           information.
     - administrative adj. 管理的；行政的
@@ -183,6 +191,7 @@
 ## social
 
 - adj. 社会的；社交的
+- soc- 联合
 - And capacity in <ins>**social** care(社会关怀)</ins> needs to be greater, to support the growing number of people
   living with <ins>long-term conditions(长期疾病)</ins>.
 - At the same time AI can also be used to generate content for <ins>**social** media</ins> *posts(帖子)* and chat sites.
@@ -190,6 +199,7 @@
 - socialise/socialize
     - vi. 和他人交往
     - vt. 使适应社会
+    - -ise/-ize 使...化
 - asocial
     - adj. 缺乏社交性的
     - a- 表示强调/表示否定
@@ -197,6 +207,12 @@
     - They housed eight adult rats with two types of robotic rat—one social and one **asocial** for 5 our days.
 - sociologist [ˌsoʊsiˈɑːlədʒɪst] n. 社会学家
 - society n. 社会；社团；
+- associate
+    - v. 联想，联系; 使与（某个组织、事业或观点）有关系; 公开支持; 与…交往
+    - n. 同事，伙伴; 合伙人
+    - adj. （表示头衔）副的，准的; 有关联的
+    - be associated with 与...有关
+    - association n. 协会，联盟; 关系; 联系，联想; 因果关系
 
 ## Words
 
