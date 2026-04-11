@@ -122,10 +122,11 @@ export function parseWordContent(content) {
  * - phrase        -> word: phrase, cn: ''
  */
 export function parsePhraseContent(content) {
-  // First, check if there's a Chinese(中文) pattern with parentheses
-  // Match: anything + ( + Chinese + )
-  const parenMatch = content.match(/^(.*?)\(([\u4e00-\u9fa5\uff08-\uff9e\s]+)\)$/);
-  if (parenMatch) {
+  // First, check if there's a trailing parenthesized note.
+  // Allow mixed content inside parentheses, but only treat it as CN note
+  // when it contains at least one Chinese character.
+  const parenMatch = content.match(/^(.*?)\(([^()]*)\)$/);
+  if (parenMatch && /[\u4e00-\u9fa5\uff08-\uff9e]/.test(parenMatch[2])) {
     const result = {
       word: parenMatch[1].trim(),
       cn: parenMatch[2].trim()

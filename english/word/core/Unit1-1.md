@@ -146,7 +146,7 @@
 - restate vt. 重申
 - overstate
     - vt. 夸大
-    - We cannot **overstate** our *debt([det] n. 恩情)* to the past, but the moment has the
+    - We cannot **overstate** our *debt([det] n. 债务；负债情况)* to the past, but the moment has the
       *supreme([suːˈpriːm] adj. 最高的)* claim.
         - We cannot overstate X 我们再怎么强调 X 都不为过
         - supreme claim 至高权利/至高优先权
@@ -175,7 +175,7 @@
     - 词组
         - stake out 清楚地界定自认为属于自己的东西
         - at stake 处于危险中
-    - And so we would *call on* state lawmakers from Richmond to Albany to consider reviewing their own wetlands
+    - And so we would **call on** state lawmakers from Richmond to Albany to consider reviewing their own wetlands
       protections and see for themselves the *enormous(adj. 巨大的)* **stake** *involved(v. 包含，涉及)*.
       因此，我们会呼吁从里士满到奥尔巴尼的州立立法者，考虑审查各自的湿地保护法规，并亲自了解所涉及的巨大利益。
         - see for oneself/see for themselves 亲自确认、自己验证

@@ -22,5 +22,17 @@
         "cn": "代表"
       }
     ]
+  },
+  {
+    "id": "card_2",
+    "word": "electric vehicles",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "electric vehicles",
+        "cn": "电动汽车 EV"
+      }
+    ]
   }
 ]
