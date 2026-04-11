@@ -40,7 +40,10 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   }
 
   if (parser.inPhraseList && indentLevel > parser.phraseMarkerLevel) {
-    const card = parser.createPhraseCard(content, indentLevel);
+    const isAffix = parser.isPrefixOrSuffix(content, lineIndex);
+    const card = isAffix
+      ? parser.createPrefixCard(content, indentLevel, lineIndex)
+      : parser.createPhraseCard(content, indentLevel);
     const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, indentLevel, lineIndex, [], card);
     if (phraseChildren.length > 0) {
       card.children = phraseChildren;

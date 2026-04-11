@@ -34,5 +34,17 @@
         "cn": "电动汽车 EV"
       }
     ]
+  },
+  {
+    "id": "card_3",
+    "word": "-ise/-ize",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "-ise/-ize",
+        "cn": "使...化"
+      }
+    ]
   }
 ]

@@ -2,8 +2,9 @@ export function isPrefixOrSuffixRule(content, hasPosMarker) {
   const trimmed = content.trim();
   const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
   const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
-  const hasHyphen = /^-?[a-z]{1,5}-?$/.test(englishPart) && englishPart.includes('-');
-  if (!hasHyphen) return false;
+  const compact = englishPart.replace(/\s+/g, '');
+  const looksLikeAffixToken = /^-?[a-z]{1,10}(?:\/-?[a-z]{1,10})*-?$/i.test(compact) && compact.includes('-');
+  if (!looksLikeAffixToken) return false;
 
   const hasPos = hasPosMarker(content);
   const hasChineseOnSameLine = /[\u4e00-\u9fa5]/.test(content);
