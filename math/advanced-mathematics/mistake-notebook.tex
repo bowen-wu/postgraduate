@@ -1,0 +1,189 @@
+\documentclass[./book.tex]{subfiles}
+\begin{document}
+
+    \section{错题}
+
+    \subsection{一元函数微分学的概念}
+
+    \begin{enumerate}
+        \item 设$F(x) = g(x)\varphi(x)$，$\varphi(x)$在$x = a$处连续但不可导，$g(x)$在$x = a$处可导，$F(x)$在$x = a$处可导，则一定有
+        \begin{analysisbox}
+            \textbf{结论：}$g(a) = 0$，且 $F'(a) = g'(a)\varphi(a)$。
+
+            \medskip
+
+            \textbf{证明：}由导数定义，
+            \[
+                F'(a) = \lim_{x\to a} \frac{F(x) - F(a)}{x - a}
+                = \lim_{x\to a} \frac{g(x)\varphi(x) - g(a)\varphi(a)}{x - a}
+            \]
+            添加并减去 $g(a)\varphi(x)$：
+            \[
+                \begin{aligned}
+                    F'(a)
+                    &= \lim_{x\to a} \left[ \varphi(x) \cdot \frac{g(x) - g(a)}{x - a} + g(a) \cdot \frac{\varphi(x) - \varphi(a)}{x - a} \right] \\[0.5em]
+                    &= \varphi(a) \cdot g'(a) + g(a) \cdot \underbrace{\lim_{x\to a} \frac{\varphi(x) - \varphi(a)}{x - a}}_{\text{不存在}}
+                \end{aligned}
+            \]
+            由于 $\varphi(x)$ 在 $x=a$ 处不可导，上式中画线部分极限不存在。而已知 $F'(a)$ 存在，因此必须 $g(a) = 0$。
+
+            \medskip
+
+            此时 $F'(a) = g'(a)\varphi(a)$。
+        \end{analysisbox}
+        \item 设可导函数$f(x) > 0$，求$\lim\limits_{n\to \infty} n\ln\dfrac{f(\dfrac{1}{n})}{f(0)}$
+        \begin{analysisbox}[解]
+            令 $x = \dfrac{1}{n}$，当 $n \to \infty$ 时 $x \to 0^+$。
+            \[
+                \begin{aligned}
+                    \lim_{n\to\infty} n\ln\frac{f\!\left(\dfrac{1}{n}\right)}{f(0)}
+                    &= \lim_{x\to 0^+} \frac{1}{x} \ln\frac{f(x)}{f(0)} \\[0.5em]
+                    &= \lim_{x\to 0^+} \frac{\ln f(x) - \ln f(0)}{x - 0} \\[0.5em]
+                    &= \left.[\ln f(x)]'\right|_{x=0} = \frac{f'(0)}{f(0)}
+                \end{aligned}
+            \]
+
+                {\color{red}{注}}：$\ln \dfrac{b}{a} = \ln b - \ln a$
+        \end{analysisbox}
+        \item 设$f(x) = \begin{cases}
+                            x^3 \sin \dfrac{1}{x}, x > 0\\
+                            x^2, x \leq 0
+        \end{cases}$，则$f(x)$在$x = 0$处
+        \begin{analysisbox}
+            \textbf{（1）连续性}
+            \[
+                f(0) = 0^2 = 0, \quad
+                \lim_{x\to 0^+} f(x) = \lim_{x\to 0^+} x^3\sin\dfrac{1}{x} = 0, \quad
+                \lim_{x\to 0^-} f(x) = \lim_{x\to 0^-} x^2 = 0,
+            \]
+            故 $\lim\limits_{x\to 0} f(x) = 0 = f(0)$，$f(x)$ 在 $x=0$ 处{\color{red}{连续}}。
+
+            \textbf{（2）可导性}
+
+            \[
+                f'_+(0) = \lim_{x\to 0^+} \dfrac{x^3\sin\dfrac{1}{x} - 0}{x - 0}
+                = \lim_{x\to 0^+} x^2\sin\dfrac{1}{x} = 0,
+            \]
+            \[
+                f'_-(0) = \lim_{x\to 0^-} \dfrac{x^2 - 0}{x - 0}
+                = \lim_{x\to 0^-} x = 0,
+            \]
+            $f'_+(0) = f'_-(0) = 0$，故 $f(x)$ 在 $x=0$ 处{\color{red}{可导}}，且 $f'(0) = 0$。
+
+            \textbf{（3）导函数连续性}
+
+            当 $x > 0$ 时，$f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}$；当 $x < 0$ 时，$f'(x) = 2x$。
+            \[
+                \lim_{x\to 0^+} f'(x) = \lim_{x\to 0^+}\left(3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}\right) = 0,
+            \]
+            \[
+                \lim_{x\to 0^-} f'(x) = \lim_{x\to 0^-} 2x = 0,
+            \]
+            故 $\lim\limits_{x\to 0} f'(x) = 0 = f'(0)$，$f'(x)$ 在 $x=0$ 处{\color{red}{连续}}。
+
+            \textbf{（4）二阶可导性}
+
+            当 $x > 0$ 时，
+            \[
+                f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x},
+            \]
+            \[
+                \begin{aligned}
+                    f''_+(0) &= \lim_{x\to 0^+} \dfrac{f'(x) - f'(0)}{x - 0} \\[0.5em]
+                    &= \lim_{x\to 0^+} \dfrac{3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}}{x} \\[0.5em]
+                    &= \lim_{x\to 0^+}\left(3x\sin\dfrac{1}{x} - \cos\dfrac{1}{x}\right),
+                \end{aligned}
+            \]
+            其中 $3x\sin\dfrac{1}{x} \to 0$，但 $\cos\dfrac{1}{x}$ 振荡无极限，故 $f''_+(0)$ {\color{red}{不存在}}。
+
+            \medskip
+
+            \textbf{综上，}$f(x)$ 在 $x=0$ 处连续、可导，且导函数连续，但{\color{red}{不可二次可导}}。
+        \end{analysisbox}
+        \item 设$f(x) = \lim\limits_{n\to \infty}\dfrac{x^2 e^{n(x-1)} + ax + b}{5 + e^{n(x-1)}}$，求$f(x)$并讨论$f(x)$的连续性及可导性与$a, b$的关系
+        \begin{analysisbox}[解]
+            \textbf{第一步：求 $f(x)$}
+
+            关键在于 $e^{n(x-1)}$ 当 $n \to \infty$ 时的行为：
+            \begin{itemize}
+                \item $x > 1$ 时，$e^{n(x-1)} \to +\infty$；
+                \item $x = 1$ 时，$e^{n(x-1)} = 1$；
+                \item $x < 1$ 时，$e^{n(x-1)} \to 0$。
+            \end{itemize}
+
+            \medskip
+
+            \textbf{当 $x > 1$}：分子分母同除以 $e^{n(x-1)}$，
+            \[
+                f(x) = \lim_{n\to\infty} \frac{x^2 + \dfrac{ax+b}{e^{n(x-1)}}}{\dfrac{5}{e^{n(x-1)}} + 1} = \frac{x^2 + 0}{0 + 1} = x^2
+            \]
+
+            \textbf{当 $x = 1$}：
+            \[
+                f(1) = \frac{1 + a + b}{5 + 1} = \frac{1 + a + b}{6}
+            \]
+
+            \textbf{当 $x < 1$}：
+            \[
+                f(x) = \lim_{n\to\infty} \frac{0 + ax + b}{5 + 0} = \frac{ax + b}{5}
+            \]
+
+            综上，
+            \[
+                f(x) = \begin{cases}
+                    x^2, & x > 1 \\[0.3em]
+                    \dfrac{1+a+b}{6}, & x = 1 \\[0.3em]
+                    \dfrac{ax+b}{5}, & x < 1
+                \end{cases}
+            \]
+
+            \medskip
+
+            \textbf{第二步：连续性}
+
+            $x \neq 1$ 时 $f(x)$ 显然连续，只需考察 $x = 1$ 处：
+            \[
+                \lim_{x\to 1^-} f(x) = \frac{a+b}{5}, \quad
+                \lim_{x\to 1^+} f(x) = 1, \quad
+                f(1) = \frac{1+a+b}{6}
+            \]
+
+            连续的充要条件是三者相等，即
+            \[
+                \frac{a+b}{5} = 1 \quad\Longrightarrow\quad a + b = 5
+            \]
+
+            验证：$a+b=5$ 时 $f(1) = \dfrac{1+5}{6} = 1$，三者一致。
+
+            \medskip
+
+            {\color{red}{结论：}}当 $a + b = 5$ 时 $f(x)$ 在 $\mathbb{R}$ 上连续；当 $a + b \neq 5$ 时 $f(x)$ 在 $x=1$ 处不连续。
+
+            \medskip
+
+            \textbf{第三步：可导性}
+
+            $x \neq 1$ 时 $f(x)$ 显然可导。当 $a+b=5$（连续条件下），考察 $x=1$ 处的可导性：
+
+            \[
+                f'_-(1) = \lim_{x\to 1^-} \frac{ax+b}{5}\bigg|' = \frac{a}{5}, \quad
+                f'_+(1) = \lim_{x\to 1^+} (x^2)' = 2
+            \]
+
+            可导的充要条件是 $f'_-(1) = f'_+(1)$，即
+            \[
+                \frac{a}{5} = 2 \quad\Longrightarrow\quad a = 10, \quad b = 5 - 10 = -5
+            \]
+
+            \medskip
+
+            {\color{red}{综上：}}
+            \begin{itemize}
+                \item 当 $a + b \neq 5$ 时，$f(x)$ 在 $x=1$ 处{\color{red}{不连续}}，自然不可导；
+                \item 当 $a + b = 5$ 但 $a \neq 10$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续但不可导}}；
+                \item 当 $a = 10$，$b = -5$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续且可导}}。
+            \end{itemize}
+        \end{analysisbox}
+    \end{enumerate}
+
+\end{document}

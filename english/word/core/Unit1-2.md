@@ -47,6 +47,8 @@
     - take the lead 带头，领先
     - take turns 轮流
     - take up 开始从事；接受（建议或挑战）
+- I thank you all fot this amazing award tonight. Let us not take this planet for granted. I do not take tonight for
+  granted.
 - initiative [ɪˈnɪʃətɪv]
     - n. 主动性
     - 词组
@@ -54,7 +56,7 @@
 - intake n. 摄取量；纳入的人数；吸取
 - retake vt. 重修，重学
 - takeaway
-    - n. 外卖
+    - n. 外卖；收获
     - == takeout
     - == to go please （口语）外带
 - mistake
@@ -65,10 +67,11 @@
 
 - [əˈkɔːrd]
 - vi. 与...一致（或相符）
+- axx- 强调；使...
 - 词组
     - accord with 与...一致；同...相符合
     - according to 依据；根据
-- **Since** desire and *will(n. 意志)* **are damaged** by the presence of thoughts ***that*** _do not_ **accord
+- **Since** desire and *will(n. 意志)* **are damaged** by the presence of thoughts **that** _do not_ **accord
   with** _desire_, Allen **concluded**: "We do not **attract** **what** we want, but **what** we **are**".
   因为那些与我们欲望不一致的思想会损害我们的欲望和意志，艾伦得出结论说：“我们吸引来的不是我们想要的东西，而是与我们本质一致的东西。”
 - accordingly adv. 相应地；因此
@@ -76,6 +79,7 @@
 ## company
 
 - n. 同伴；陪伴；公司；剧团
+- com- 聚集；共同
 - I enjoy his **company**.
 - Misery loves **company**. 祸不单行
 - As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic
@@ -87,6 +91,8 @@
 - companion [kəmˈpæniən]
     - n. 同伴；伴侣
     - Would passengers feel comfortable travelling in **companion**?
+    - -ship 抽象名词后缀
+    - companionship n. 友谊
 
 ## own
 
@@ -99,14 +105,17 @@
     - n. 所有者；主人
     - ownership
         - n. 所有权；产权
-        - == property n. 财产；房地产
+        - == property
+            - n. 财产；房地产
+            - intellectual property 知识产权(IP)
 - owe [oʊ]
     - vt. 欠债😔； 把...归功于；感激；🙂
     - owe A to B 把A归功于B
     - People **owe** things when they're in *debt([det] n. 债务; 负债)* to someone.
     - A friend can **owe** you a favor, and your employer **owes** you a *paycheck(薪水，薪资)*.
     - I don't **owe** you anything.
-    - The reforms <ins>**owe** a great deal to(很大程度上得益于...)</ins> the resolution of one man.
+    - The reforms **owe** a great deal to the resolution of one man.
+        - owe a great deal to 很大程度上得益于...
     - Its current leader, Ed Miliband, **owes** his position **to** votes from public-sector unions.
       现任领导人埃德·米利班德（Ed Miliband）得益于公共部门工会的选票，才获得了他的职位
 
@@ -114,7 +123,7 @@
 
 - vt. 意味着；意思是；打算
 - adj. 吝啬的；不友好的 😔
-    - == ungenerous [ʌnˈdʒɛnərəs]
+- == ungenerous [ʌnˈdʒɛnərəs]
 - Destiny is what's **meant** to be.
 - 词组
     - be meant to do sth. 注定做某事；应该做某事
@@ -157,10 +166,12 @@
     - selective adj. 选择性的；仔细挑选的
 - opt [ɑːpt]
     - v. 选择
-    - With more than 6.8 million on waitlists, healthcare is becoming *increasingly* inaccessible([ˌɪnækˈsesəbl]) for
-      those who cannot **opt** to pay for private *treatment([ˈtriːtmənt] n 治疗)*.
+    - With more than 6.8 million on waitlists, healthcare is becoming *increasingly* inaccessible for those who cannot
+      **opt** to pay for private *treatment([ˈtriːtmənt] n 治疗)*.
       等待名单上有超过 680 万人，对于那些无法选择支付私人治疗费用的人来说，医疗保健变得越来越难以获得
-    - option n. 选择
+    - option
+        - n. 选择
+        - optional adj. 可以任选的
 
 ## business
 
@@ -178,6 +189,7 @@
         - n. 广告
         - lack commercial value 缺乏商业价值
         - television commercials 电视广告
+        - INDUSTRIAL AND COMMERCIAL BANK OF CHINA 中国工商银行(ICBC)
 - enterprise
     - n. 事业；企业；冒险精神
     - **Enterprise** describes a readiness to act *boldly(['boʊldlɪ] adv. 大胆地)* to get something started.
@@ -186,7 +198,7 @@
       人们会说，你表现出了非凡的进取心，因为你愿意承担这样一个具有挑战性的项目，也就是说，你有主动性和干劲
     - enterprise initiative 主观能动性
     - Thinking is the capital. **Enterprise** is the way. Hard work is the solution.
-    - Since the days of Aristotle, a search for *universal principles* has characterized the scientific **enterprise**.
+    - Since the days of Aristotle, a search for **universal principles** has characterized the scientific **enterprise**.
     - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
 - trade n. 贸易；生意
 - transaction [trænˈzækʃn] n. 交易
@@ -194,7 +206,11 @@
     - n. 销售；拍卖；销售额
     - 词组
         - for sale 代售；出售
-    - wholesale n. 批发
+    - wholesale
+        - n. 批发
+        - retail
+            - v. 零售；详说，述说
+            - n. 零售
 - commodity [kəˈmɑːdəti] n. 商品
 - bargain [ˈbɑːrɡən]
     - vi. 讨价还价

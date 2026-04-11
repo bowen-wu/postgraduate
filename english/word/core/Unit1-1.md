@@ -67,13 +67,14 @@
     - It strikes me that we've met before.
         - sth. strikes sb. 让某人突然想到/意识到/觉得
     - The lion crouched ready to **strike**.
-    - One day, <ins>in retrospect</ins>, the years of struggle will **strike** you **as** the most beautiful.
-        - strike someone as something(strike + sb. + as + adjective/noun) 给人...印象/让某人觉得...
+    - One day, in retrospect, the years of struggle will **strike** you **as** the most beautiful.
+        - in retrospect 回首
+        - strike sb. as adjective/noun 给人...印象/让某人觉得...
     - 词组
         - strike a balance 找到折中办法
         - strike up sth. (with sb.) （和某人）开始来往
-    - <ins>At times like(在这种时候/在那种情况下)</ins> that you have to **strike a balance** between sleep and
-      homework.
+    - At times like that you have to **strike a balance** between sleep and homework.
+        - at times like 在这种时候/在那种情况下
     - striking
         - adj. 显著的，引人注目的
         - strikingly adv. 显然地

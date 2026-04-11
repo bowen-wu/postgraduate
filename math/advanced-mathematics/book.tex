@@ -10,7 +10,7 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{tikz}
-\usepackage{tcolorbox}
+\usepackage[skins,breakable]{tcolorbox}
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
@@ -53,7 +53,9 @@
 
 % 定义 tcolorbox
 \newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    enhanced jigsaw,
+    breakable,
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用"解析"
     colback=\analysisBackColor,
     colframe=\analysisTitleColor,
     boxrule=\analysisBoxRule,
@@ -118,8 +120,9 @@
     \subfile{double_integral/double_integral.tex}
     \subfile{differential_equation/differential_equation}
 
-
     \subfile{foundations/formulas}
     \subfile{foundations/inequality}
+
+    \subfile{mistake-notebook.tex}
 
 \end{document}

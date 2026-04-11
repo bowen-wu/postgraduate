@@ -9,7 +9,7 @@
 \usepackage{xcolor}         % 颜色
 \usepackage{tabularx}       % 表格环境
 \usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
+\usepackage[skins,breakable]{tcolorbox}                                                                                              
 \usepackage{xstring}
 \usepackage{pgfplots}
 \usepackage{enumitem}
@@ -51,7 +51,9 @@
 
 % 定义 tcolorbox
 \newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
+    enhanced jigsaw,
+    breakable,
+    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用"解析"
     colback=\analysisBackColor,
     colframe=\analysisTitleColor,
     boxrule=\analysisBoxRule,
