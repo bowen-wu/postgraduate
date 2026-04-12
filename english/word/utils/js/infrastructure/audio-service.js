@@ -13,15 +13,16 @@ export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
 
   const audioText = normalizeText(word);
+  const sourceTimeout = getSourceTimeoutForText(audioText);
   try {
     const result = await runFallbackChain(
       audioSources,
-      (source) => source.play(audioText, source.timeout, source.options, hooks),
+      (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooks),
       'All audio sources failed'
     );
     return { sourceName: result.sourceName };
   } catch (error) {
-    const ttsTimeout = Math.max(CONFIG.audio?.defaultTimeout || 1200, 4000);
+    const ttsTimeout = Math.max(sourceTimeout || 0, CONFIG.audio?.defaultTimeout || 1200, 4000);
     await playWebSpeech(audioText, ttsTimeout, hooks);
     return { sourceName: 'TTS' };
   }
@@ -29,6 +30,19 @@ export async function playWordWithFallback(word, hooks = {}) {
 
 function normalizeText(text) {
   return text.replace(/sth\./g, 'something').replace(/sb\./g, 'somebody');
+}
+
+function getSourceTimeoutForText(text) {
+  const normalized = String(text || '').trim();
+  if (!normalized) return null;
+
+  const wordCount = normalized.split(/\s+/).filter(Boolean).length;
+  const hasSentencePunctuation = /[.!?;:,"]/u.test(normalized);
+  const isLikelySentence = wordCount >= 8 || hasSentencePunctuation;
+  if (!isLikelySentence) return null;
+
+  // Sentence playback on mobile typically needs a wider timeout window.
+  return 9000;
 }
 
 async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) {
