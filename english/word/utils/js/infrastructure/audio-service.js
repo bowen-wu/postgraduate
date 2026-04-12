@@ -21,7 +21,8 @@ export async function playWordWithFallback(word) {
     );
     return { sourceName: result.sourceName };
   } catch (error) {
-    await playWebSpeech(audioText);
+    const ttsTimeout = Math.max(CONFIG.audio?.defaultTimeout || 1200, 1500);
+    await playWebSpeech(audioText, ttsTimeout);
     return { sourceName: 'TTS' };
   }
 }
@@ -50,11 +51,12 @@ async function playYoudaoAudio(text, timeout = 1200) {
 async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const source = 'azure';
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200);
   const voice = options.voice || CONFIG.audio.defaultVoice;
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), 0);
+    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout);
   }
 
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
@@ -68,44 +70,61 @@ async function playAzureTTS(text, timeout = 1200, options = {}) {
     </speak>
   `.trim();
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Ocp-Apim-Subscription-Key': apiKey,
-      'Content-Type': 'application/ssml+xml',
-      'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3'
-    },
-    body: ssml
-  });
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Ocp-Apim-Subscription-Key': apiKey,
+        'Content-Type': 'application/ssml+xml',
+        'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3'
+      },
+      body: ssml,
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeoutId);
+  }
   if (!response.ok) throw toServiceError('AZURE_TTS_HTTP', `Azure TTS error: ${response.status}`);
 
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), timeout);
+  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout);
 }
 
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const source = 'google';
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200);
   const voice = options.voice || 'en-US-Neural2-C';
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), 0);
+    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout);
   }
 
   const apiKey = CONFIG.apiKeys.googleCloud.tts;
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      input: { text: cleanText },
-      voice: { languageCode: 'en-US', name: voice },
-      audioConfig: { audioEncoding: 'MP3' }
-    })
-  });
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: { text: cleanText },
+        voice: { languageCode: 'en-US', name: voice },
+        audioConfig: { audioEncoding: 'MP3' }
+      }),
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeoutId);
+  }
   if (!response.ok) throw toServiceError('GOOGLE_TTS_HTTP', `Google Cloud TTS error: ${response.status}`);
 
   const data = await response.json();
@@ -119,7 +138,7 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   }
   const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), timeout);
+  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout);
 }
 
 async function playAudioUrl(url, timeout = 3000) {
@@ -155,7 +174,7 @@ function removeEmoji(text) {
   return text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
 }
 
-export async function playWebSpeech(text) {
+export async function playWebSpeech(text, timeout = 2000) {
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('Web Speech API not supported'));
@@ -164,17 +183,32 @@ export async function playWebSpeech(text) {
 
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
+    let settled = false;
+    let timeoutId = null;
+    const done = (fn, value) => {
+      if (settled) return;
+      settled = true;
+      if (timeoutId) clearTimeout(timeoutId);
+      fn(value);
+    };
+
     utterance.lang = 'en-US';
     utterance.rate = 0.9;
     utterance.pitch = 1;
     utterance.volume = 1;
-    utterance.onstart = () => resolve();
-    utterance.onerror = (e) => e.error !== 'canceled' && reject(e);
-    utterance.onend = () => resolve();
+    utterance.onstart = () => done(resolve);
+    utterance.onerror = (e) => {
+      if (e.error !== 'canceled') done(reject, e);
+    };
+    utterance.onend = () => done(resolve);
 
     const voices = window.speechSynthesis.getVoices();
     const usVoice = voices.find((v) => v.lang === 'en-US') || voices.find((v) => v.lang.startsWith('en'));
     if (usVoice) utterance.voice = usVoice;
+    timeoutId = setTimeout(() => {
+      done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech timeout'));
+    }, Math.max(timeout, 800));
+
     window.speechSynthesis.speak(utterance);
   });
 }
