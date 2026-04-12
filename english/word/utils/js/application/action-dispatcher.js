@@ -46,5 +46,10 @@ export function dispatchAction(actionEl, deps) {
   const handler = handlers[action];
   if (handler) {
     handler();
+    // On mobile browsers, keep buttons from staying in a pressed/focused visual state
+    // after card navigation and action area re-render.
+    if (typeof actionEl.blur === 'function') {
+      actionEl.blur();
+    }
   }
 }

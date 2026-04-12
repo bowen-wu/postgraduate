@@ -12,6 +12,8 @@ button {
     display: inline-flex; align-items: center; gap: 0.4rem;
     background: #f1f5f9; color: var(--text-sub);
     white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 button:hover { background: #e2e8f0; }
 button:active { transform: scale(0.96); }
@@ -29,8 +31,56 @@ button:disabled:hover {
 .btn-primary:hover { background: var(--primary-hover); }
 .btn-success { background: var(--success); color: white; }
 .btn-danger { background: var(--danger); color: white; }
+.btn-success:hover,
+.btn-success:active {
+    background: var(--success);
+}
+.btn-danger:hover,
+.btn-danger:active {
+    background: var(--danger);
+}
 .btn-ghost { background: transparent; color: var(--secondary); }
 .btn-ghost:hover { background: rgba(0, 0, 0, 0.05); }
+
+/* Touch devices can keep a sticky hover state after tap. Stabilize footer action buttons. */
+@media (hover: none) {
+    .action-area button:focus,
+    .action-area button:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .action-area .btn-primary:hover,
+    .action-area .btn-primary:active,
+    .action-area .btn-primary:focus-visible {
+        background: var(--primary);
+    }
+
+    .action-area .btn-success:hover,
+    .action-area .btn-success:active,
+    .action-area .btn-success:focus-visible {
+        background: var(--success);
+    }
+
+    .action-area .btn-danger:hover,
+    .action-area .btn-danger:active,
+    .action-area .btn-danger:focus-visible {
+        background: var(--danger);
+    }
+
+    .action-area .btn-ghost:hover,
+    .action-area .btn-ghost:active,
+    .action-area .btn-ghost:focus-visible {
+        background: transparent;
+    }
+
+    .action-area .translate-btn:hover,
+    .action-area .translate-btn:active,
+    .action-area .translate-btn:focus-visible {
+        background: transparent;
+        border-color: transparent;
+    }
+}
 
 .btn-icon-toggle {
     background: transparent;
