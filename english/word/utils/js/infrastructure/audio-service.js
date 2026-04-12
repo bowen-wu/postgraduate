@@ -150,14 +150,22 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
   for (let i = 0; i < audioData.length; i++) {
     view[i] = audioData.charCodeAt(i);
   }
-  const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
+  const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
+
+  try {
+    return await playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
+  } catch {
+    // Some mobile browsers are strict about blob playback for synthesized MP3.
+    const dataUrl = `data:audio/mpeg;base64,${data.audioContent}`;
+    return playAudioUrl(dataUrl, sourceTimeout, hooks);
+  }
 }
 
 async function playAudioUrl(url, timeout = 3000, hooks = {}) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(url);
+    audio.preload = 'auto';
     let resolved = false;
     let started = false;
     const startupTimeoutMs = timeout > 0 ? timeout : (CONFIG.audio?.defaultTimeout || 3000);
