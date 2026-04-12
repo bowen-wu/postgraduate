@@ -188,6 +188,7 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
       }, maxPlaybackTimeoutMs);
     };
 
+    audio.onplay = markStarted;
     audio.onplaying = markStarted;
     audio.onended = () => done(resolve, { onplay: true });
     audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
