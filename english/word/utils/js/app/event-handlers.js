@@ -270,13 +270,13 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
   setButtonLoading(true, buttonId);
   try {
     const result = await playWordWithFallback(word);
-    setButtonLoading(false, buttonId);
     if (showNotification && result.sourceName) {
       UiRenderer.showToast(getApp().ui, `🔊 ${result.sourceName}`);
     }
   } catch (_error) {
-    setButtonLoading(false, buttonId);
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
+  } finally {
+    setButtonLoading(false, buttonId);
   }
 }
 

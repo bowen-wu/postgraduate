@@ -126,24 +126,25 @@ async function playAudioUrl(url, timeout = 3000) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(url);
     let resolved = false;
-    let canPlay = false;
+    const effectiveTimeout = timeout > 0 ? timeout : (CONFIG.audio?.defaultTimeout || 3000);
+    let timeoutId = null;
+
     const done = (fn, ...args) => {
       if (!resolved) {
         resolved = true;
+        if (timeoutId) clearTimeout(timeoutId);
         fn(...args);
       }
     };
 
-    audio.oncanplaythrough = () => { canPlay = true; };
-    audio.onplay = () => canPlay && done(resolve, { onplay: true });
+    audio.onplay = () => done(resolve, { onplay: true });
+    audio.onplaying = () => done(resolve, { onplay: true });
     audio.onended = () => done(resolve, { onplay: true });
     audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
 
-    if (timeout > 0) {
-      setTimeout(() => {
-        if (!resolved && !canPlay) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio timeout'));
-      }, timeout);
-    }
+    timeoutId = setTimeout(() => {
+      if (!resolved) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio timeout'));
+    }, effectiveTimeout);
 
     audio.play().catch((err) => done(reject, err));
   });
