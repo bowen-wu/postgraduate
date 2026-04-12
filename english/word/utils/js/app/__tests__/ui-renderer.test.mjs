@@ -21,8 +21,8 @@ test('should not autoplay when autoPlay is disabled', () => {
   assert.equal(shouldAutoPlayCard(card, state), false);
 });
 
-test('should not autoplay non-word cards', () => {
+test('should autoplay non-word cards when autoPlay is enabled', () => {
   const card = { type: 'phrase', word: 'on time' };
   const state = { autoPlay: true, mode: 'recall' };
-  assert.equal(shouldAutoPlayCard(card, state), false);
+  assert.equal(shouldAutoPlayCard(card, state), true);
 });

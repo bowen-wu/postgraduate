@@ -32,8 +32,20 @@ import {
 export function shouldAutoPlayCard(card, state = STATE) {
   if (!card) return false;
   if (!state.autoPlay) return false;
-  if (card.type !== 'word') return false;
   return state.mode === 'input' || state.mode === 'recall';
+}
+
+function getAutoPlayPayload(card) {
+  if (card.type === 'sentence') {
+    const sentenceText = card.items?.[0]?.en || card.word;
+    return { word: sentenceText, buttonId: 'play-btn-sentence' };
+  }
+
+  if (card.type === 'phrase') {
+    return { word: card.word, buttonId: 'play-btn-phrase' };
+  }
+
+  return { word: card.word, buttonId: 'play-btn-main' };
 }
 
 export function render(ui) {
@@ -60,8 +72,9 @@ export function render(ui) {
 
   if (shouldAutoPlayCard(card, STATE)) {
     setTimeout(() => {
+      const payload = getAutoPlayPayload(card);
       document.dispatchEvent(new CustomEvent('app:play-word', {
-        detail: { word: card.word, buttonId: 'play-btn-main' }
+        detail: payload
       }));
     }, 300);
   }
