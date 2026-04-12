@@ -145,25 +145,39 @@ async function playAudioUrl(url, timeout = 3000) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(url);
     let resolved = false;
-    const effectiveTimeout = timeout > 0 ? timeout : (CONFIG.audio?.defaultTimeout || 3000);
-    let timeoutId = null;
+    let started = false;
+    const startupTimeoutMs = timeout > 0 ? timeout : (CONFIG.audio?.defaultTimeout || 3000);
+    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 6, 15000);
+    let startupTimeoutId = null;
+    let maxPlaybackTimeoutId = null;
 
     const done = (fn, ...args) => {
       if (!resolved) {
         resolved = true;
-        if (timeoutId) clearTimeout(timeoutId);
+        if (startupTimeoutId) clearTimeout(startupTimeoutId);
+        if (maxPlaybackTimeoutId) clearTimeout(maxPlaybackTimeoutId);
         fn(...args);
       }
     };
 
-    audio.onplay = () => done(resolve, { onplay: true });
-    audio.onplaying = () => done(resolve, { onplay: true });
+    const markStarted = () => {
+      if (started) return;
+      started = true;
+      if (startupTimeoutId) clearTimeout(startupTimeoutId);
+      maxPlaybackTimeoutId = setTimeout(() => {
+        try { audio.pause(); } catch {}
+        done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio playback timeout'));
+      }, maxPlaybackTimeoutMs);
+    };
+
+    audio.onplay = markStarted;
+    audio.onplaying = markStarted;
     audio.onended = () => done(resolve, { onplay: true });
     audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
 
-    timeoutId = setTimeout(() => {
-      if (!resolved) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio timeout'));
-    }, effectiveTimeout);
+    startupTimeoutId = setTimeout(() => {
+      if (!resolved && !started) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio startup timeout'));
+    }, startupTimeoutMs);
 
     audio.play().catch((err) => done(reject, err));
   });
@@ -184,11 +198,16 @@ export async function playWebSpeech(text, timeout = 4000) {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     let settled = false;
-    let timeoutId = null;
+    let started = false;
+    const startupTimeoutMs = Math.max(timeout, 2000);
+    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 6, 15000);
+    let startupTimeoutId = null;
+    let maxPlaybackTimeoutId = null;
     const done = (fn, value) => {
       if (settled) return;
       settled = true;
-      if (timeoutId) clearTimeout(timeoutId);
+      if (startupTimeoutId) clearTimeout(startupTimeoutId);
+      if (maxPlaybackTimeoutId) clearTimeout(maxPlaybackTimeoutId);
       fn(value);
     };
 
@@ -196,7 +215,14 @@ export async function playWebSpeech(text, timeout = 4000) {
     utterance.rate = 0.9;
     utterance.pitch = 1;
     utterance.volume = 1;
-    utterance.onstart = () => done(resolve);
+    utterance.onstart = () => {
+      started = true;
+      if (startupTimeoutId) clearTimeout(startupTimeoutId);
+      maxPlaybackTimeoutId = setTimeout(() => {
+        try { window.speechSynthesis.cancel(); } catch {}
+        done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech playback timeout'));
+      }, maxPlaybackTimeoutMs);
+    };
     utterance.onerror = (e) => {
       if (e.error !== 'canceled') done(reject, e);
     };
@@ -205,9 +231,9 @@ export async function playWebSpeech(text, timeout = 4000) {
     const voices = window.speechSynthesis.getVoices();
     const usVoice = voices.find((v) => v.lang === 'en-US') || voices.find((v) => v.lang.startsWith('en'));
     if (usVoice) utterance.voice = usVoice;
-    timeoutId = setTimeout(() => {
-      done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech timeout'));
-    }, Math.max(timeout, 2000));
+    startupTimeoutId = setTimeout(() => {
+      if (!started) done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech startup timeout'));
+    }, startupTimeoutMs);
 
     window.speechSynthesis.speak(utterance);
   });
