@@ -1,0 +1,234 @@
+\documentclass[../book.tex]{subfiles}
+\begin{document}
+    \subsection{函数的图像}
+
+    \subsubsection{基本初等函数与初等函数}
+
+    基本初等函数：常数函数、幂函数、指数函数、对数函数、三角函数、反三角函数
+
+    \paragraph{常函数}
+    \begin{enumerate}
+        \item $y = c$（$c$为常数），定义域$(-\infty, +\infty)$，值域$\{c\}$
+        \item 图像为平行于$x$轴的直线
+        \item 偶函数，无周期性
+    \end{enumerate}
+
+    \paragraph{幂函数}
+    \begin{enumerate}
+        \item $y = x^\alpha$（$\alpha$为常数），定义域取决于$\alpha$的取值
+        \item 常用的幂函数
+        \begin{circlenum}
+            \item $\alpha = 1$：$y = x$，定义域$(-\infty, +\infty)$，奇函数，单调递增
+            \item $\alpha = 2$：$y = x^2$，定义域$(-\infty, +\infty)$，偶函数，$(-\infty, 0]$单调递减，$[0, +\infty)$单调递增
+            \item $\alpha = 3$：$y = x^3$，定义域$(-\infty, +\infty)$，奇函数，单调递增
+            \item $\alpha = \dfrac{1}{2}$：$y = \sqrt{x}$，定义域$[0, +\infty)$，单调递增
+            \item $\alpha = \dfrac{1}{3}$：$y = \sqrt[3]{x}$，定义域$(-\infty, +\infty)$，奇函数，单调递增
+            \item $\alpha = -1$：$y = \dfrac{1}{x}$，定义域$(-\infty, 0) \cup (0, +\infty)$，奇函数，$(-\infty, 0)$和$(0, +\infty)$分别单调递减
+        \end{circlenum}
+        \item 所有幂函数的图像都经过点$(1, 1)$
+        \item 当$x > 0$时，$y = x$与$y = \sqrt{x}, y = \sqrt[3]{x}, y = \ln x$具有相同的单调性（单调递增），与$y = \dfrac{1}{x}$具有相反的单调性（单调递减），故
+        \begin{itemize}
+            \item $x > 1$时：$x > \sqrt{x} > \sqrt[3]{x} > \ln x > \dfrac{1}{x}$（增长速度从快到慢）
+            \item $0 < x < 1$时：$\sqrt[3]{x} > \sqrt{x} > x > \dfrac{1}{x}$
+        \end{itemize}
+    \end{enumerate}
+
+    \paragraph{指数函数}
+    \begin{enumerate}
+        \item $y = a^x$（$a > 0, a \neq 1$），定义域$(-\infty, +\infty)$，值域$(0, +\infty)$
+        \item 图像恒过点$(0, 1)$
+        \item 单调性
+        \begin{circlenum}
+            \item 当$a > 1$时，$y = a^x$单调递增
+            \item 当$0 < a < 1$时，$y = a^x$单调递减
+        \end{circlenum}
+        \item 常用的指数函数：$y = e^x$（单调递增），$y = \left(\dfrac{1}{e}\right)^x = e^{-x}$（单调递减）
+        \item 极限
+        \begin{itemize}
+            \item 当$a > 1$时：$\lim\limits_{x \to -\infty} a^x = 0$，$\lim\limits_{x \to +\infty} a^x = +\infty$
+            \item 当$0 < a < 1$时：$\lim\limits_{x \to -\infty} a^x = +\infty$，$\lim\limits_{x \to +\infty} a^x = 0$
+        \end{itemize}
+        \item 特殊函数值
+        \begin{circlenum}
+            \item $a^0 = 1$
+            \item $a^1 = a$
+        \end{circlenum}
+        \item 指数运算法则
+        \begin{itemize}
+            \item $a^m \cdot a^n = a^{m+n}$
+            \item $\dfrac{a^m}{a^n} = a^{m-n}$
+            \item $(a^m)^n = a^{mn}$
+            \item $(ab)^n = a^n b^n$
+            \item $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$
+            \item $a^{-n} = \dfrac{1}{a^n}$
+            \item $a^{\frac{m}{n}} = \sqrt[n]{a^m}$
+        \end{itemize}
+    \end{enumerate}
+
+    \paragraph{对数函数}
+    \begin{enumerate}
+        \item $y = \log_a x$（$a > 0, a \neq 1$），定义域$(0, +\infty)$，值域$(-\infty, +\infty)$
+        \item 图像恒过点$(1, 0)$
+        \item 单调性
+        \begin{circlenum}
+            \item 当$a > 1$时，$y = \log_a x$单调递增
+            \item 当$0 < a < 1$时，$y = \log_a x$单调递减
+        \end{circlenum}
+        \item 常用的对数函数
+        \begin{circlenum}
+            \item 自然对数：$y = \ln x$（以$e$为底），单调递增
+            \item 常用对数：$y = \lg x$（以$10$为底），单调递增
+        \end{circlenum}
+        \item 特殊函数值
+        \begin{circlenum}
+            \item $\log_a 1 = 0$
+            \item $\log_a a = 1$
+            \item $\ln e = 1$，$\ln 1 = 0$
+        \end{circlenum}
+        \item 极限
+        \begin{itemize}
+            \item 当$a > 1$时：$\lim\limits_{x \to 0^+} \log_a x = -\infty$，$\lim\limits_{x \to +\infty} \log_a x = +\infty$
+            \item 当$0 < a < 1$时：$\lim\limits_{x \to 0^+} \log_a x = +\infty$，$\lim\limits_{x \to +\infty} \log_a x = -\infty$
+        \end{itemize}
+        \item 常用公式
+        \begin{circlenum}
+            \item 换底公式：$\log_a b = \dfrac{\ln b}{\ln a} = \dfrac{\lg b}{\lg a}$
+            \item 推论：$\log_a b \cdot \log_b a = 1$
+            \item $\log_a b^n = n\log_a b$
+            \item $a^{\log_a b} = b$，$e^{\ln b} = b$
+        \end{circlenum}
+        \item 对数运算法则（$M, N > 0$）
+        \begin{itemize}
+            \item $\log_a (MN) = \log_a M + \log_a N$
+            \item $\log_a \dfrac{M}{N} = \log_a M - \log_a N$
+            \item $\log_a M^n = n\log_a M$
+            \item $\log_a \sqrt[n]{M} = \dfrac{1}{n}\log_a M$
+        \end{itemize}
+    \end{enumerate}
+
+    \paragraph{三角函数}
+    \begin{enumerate}
+        \item 正弦函数$y = \sin x$与余弦函数$y = \cos x$
+        \begin{itemize}
+            \item 定义域：$(-\infty, +\infty)$
+            \item 奇偶性：$\sin x$为奇函数，$\cos x$为偶函数
+            \item 周期性：周期$2\pi$
+            \item 有界性：$|\sin x| \leq 1$，$|\cos x| \leq 1$
+            \item 特殊函数值
+            \begin{circlenum}
+                \item $\sin 0 = 0$，$\sin \dfrac{\pi}{6} = \dfrac{1}{2}$，$\sin \dfrac{\pi}{4} = \dfrac{\sqrt{2}}{2}$，$\sin \dfrac{\pi}{3} = \dfrac{\sqrt{3}}{2}$，$\sin \dfrac{\pi}{2} = 1$
+                \item $\cos 0 = 1$，$\cos \dfrac{\pi}{6} = \dfrac{\sqrt{3}}{2}$，$\cos \dfrac{\pi}{4} = \dfrac{\sqrt{2}}{2}$，$\cos \dfrac{\pi}{3} = \dfrac{1}{2}$，$\cos \dfrac{\pi}{2} = 0$
+            \end{circlenum}
+            \item $\sin^2 \alpha + \cos^2 \alpha = 1$
+        \end{itemize}
+        \item 正切函数$y = \tan x$与余切函数$y = \cot x$
+        \begin{itemize}
+            \item 定义域：$\tan x$的定义域为$\{x \mid x \neq \dfrac{\pi}{2} + k\pi, k \in \mathbb{Z}\}$；$\cot x$的定义域为$\{x \mid x \neq k\pi, k \in \mathbb{Z}\}$
+            \item 值域：$(-\infty, +\infty)$
+            \item 奇偶性：均为奇函数
+            \item 周期性：周期$\pi$
+            \item 特殊函数值
+            \begin{circlenum}
+                \item $\tan 0 = 0$，$\tan \dfrac{\pi}{6} = \dfrac{\sqrt{3}}{3}$，$\tan \dfrac{\pi}{4} = 1$，$\tan \dfrac{\pi}{3} = \sqrt{3}$
+                \item $\cot \dfrac{\pi}{6} = \sqrt{3}$，$\cot \dfrac{\pi}{4} = 1$，$\cot \dfrac{\pi}{3} = \dfrac{\sqrt{3}}{3}$
+            \end{circlenum}
+            \item 关系：$\tan x = \dfrac{\sin x}{\cos x}$，$\cot x = \dfrac{\cos x}{\sin x}$，$\tan x \cdot \cot x = 1$
+        \end{itemize}
+        \item 正割函数$y = \sec x$与余割函数$y = \csc x$
+        \begin{itemize}
+            \item 定义域：$\sec x$的定义域为$\{x \mid x \neq \dfrac{\pi}{2} + k\pi, k \in \mathbb{Z}\}$；$\csc x$的定义域为$\{x \mid x \neq k\pi, k \in \mathbb{Z}\}$
+            \item 值域：$(-\infty, -1] \cup [1, +\infty)$
+            \item 奇偶性：$\sec x$为偶函数，$\csc x$为奇函数
+            \item 周期性：周期$2\pi$
+            \item 关系：$\sec x = \dfrac{1}{\cos x}$，$\csc x = \dfrac{1}{\sin x}$
+            \item $\color{red}{\bigstar}$ $1 + \tan^2 \alpha = \sec^2 \alpha$
+            \item $\color{red}{\bigstar}$ $1 + \cot^2 \alpha = \csc^2 \alpha$
+        \end{itemize}
+    \end{enumerate}
+
+    \paragraph{反三角函数}
+    \begin{enumerate}
+        \item 反正弦函数$y = \arcsin x$与反余弦函数$y = \arccos x$
+        \begin{itemize}
+            \item 定义域：$[-1, 1]$
+            \item 主值区间：$\arcsin x \in \left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$，$\arccos x \in [0, \pi]$
+            \item 单调性：$\arcsin x$单调递增，$\arccos x$单调递减
+            \item 奇偶性：$\arcsin x$为奇函数，即$\arcsin(-x) = -\arcsin x$
+            \item 反三角函数的恒等式
+            \begin{circlenum}
+                \item $\arcsin x + \arccos x = \dfrac{\pi}{2}$
+                \item $\arcsin(\sin x) = x$（$x \in \left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$）
+                \item $\arccos(\cos x) = x$（$x \in [0, \pi]$）
+            \end{circlenum}
+            \item 特殊函数值
+            \begin{circlenum}
+                \item $\arcsin 0 = 0$，$\arcsin \dfrac{1}{2} = \dfrac{\pi}{6}$，$\arcsin \dfrac{\sqrt{2}}{2} = \dfrac{\pi}{4}$，$\arcsin \dfrac{\sqrt{3}}{2} = \dfrac{\pi}{3}$，$\arcsin 1 = \dfrac{\pi}{2}$
+                \item $\arccos 1 = 0$，$\arccos \dfrac{\sqrt{3}}{2} = \dfrac{\pi}{6}$，$\arccos \dfrac{\sqrt{2}}{2} = \dfrac{\pi}{4}$，$\arccos \dfrac{1}{2} = \dfrac{\pi}{3}$，$\arccos 0 = \dfrac{\pi}{2}$
+            \end{circlenum}
+        \end{itemize}
+        \item 反正切函数$y = \arctan x$与反余切函数$y = \mathrm{arccot}\, x$
+        \begin{itemize}
+            \item 定义域：$(-\infty, +\infty)$
+            \item 值域：$\arctan x \in \left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$，$\mathrm{arccot}\, x \in (0, \pi)$
+            \item 单调性：$\arctan x$单调递增，$\mathrm{arccot}\, x$单调递减
+            \item 奇偶性：$\arctan x$为奇函数，即$\arctan(-x) = -\arctan x$
+            \item 有界性：$|\arctan x| < \dfrac{\pi}{2}$
+            \item 性质
+            \begin{circlenum}
+                \item $\arctan x + \mathrm{arccot}\, x = \dfrac{\pi}{2}$
+                \item $\arctan(\tan x) = x$（$x \in \left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$）
+            \end{circlenum}
+            \item 特殊函数值
+            \begin{circlenum}
+                \item $\arctan 0 = 0$，$\arctan 1 = \dfrac{\pi}{4}$，$\arctan \sqrt{3} = \dfrac{\pi}{3}$
+            \end{circlenum}
+            \item 极限
+            \begin{circlenum}
+                \item $\lim\limits_{x \to +\infty} \arctan x = \dfrac{\pi}{2}$，$\lim\limits_{x \to -\infty} \arctan x = -\dfrac{\pi}{2}$
+                \item $\lim\limits_{x \to +\infty} \mathrm{arccot}\, x = 0$，$\lim\limits_{x \to -\infty} \mathrm{arccot}\, x = \pi$
+            \end{circlenum}
+        \end{itemize}
+    \end{enumerate}
+
+    \paragraph{初等函数}
+    \begin{enumerate}
+        \item 由基本初等函数经过有限次四则运算和复合运算所得到的函数，统称为\textbf{初等函数}
+        \item 初等函数在其定义域内连续
+    \end{enumerate}
+
+    \subsubsection{分段函数}
+
+    \begin{enumerate}
+        \item 绝对值函数
+        \[
+            y = |x| = \begin{cases} x, & x \geq 0 \\ -x, & x < 0 \end{cases}
+        \]
+        \begin{itemize}
+            \item 定义域$(-\infty, +\infty)$，值域$[0, +\infty)$
+            \item 偶函数
+            \item 在$(-\infty, 0)$单调递减，$(0, +\infty)$单调递增
+            \item 在$x = 0$处连续但不可导
+        \end{itemize}
+
+        \item 符号函数
+        \[
+            y = \mathrm{sgn}(x) = \begin{cases} 1, & x > 0 \\ 0, & x = 0 \\ -1, & x < 0 \end{cases}
+        \]
+        \begin{itemize}
+            \item 定义域$(-\infty, +\infty)$，值域$\{-1, 0, 1\}$
+            \item 奇函数
+            \item $x = |x| \cdot \mathrm{sgn}(x)$
+        \end{itemize}
+
+        \item 取整函数（高斯函数）
+        \[
+            y = [x] \quad \text{（不超过$x$的最大整数）}
+        \]
+        \begin{itemize}
+            \item 定义域$(-\infty, +\infty)$，值域$\mathbb{Z}$
+            \item $x - 1 < [x] \leq x$，$[x + n] = [x] + n$（$n \in \mathbb{Z}$）
+            \item 在整数点处不连续（跳跃间断点），跳跃值为$1$
+            \item $f(x) = x - [x]$是$x$的小数部分，以$1$为周期
+        \end{itemize}
+    \end{enumerate}
+\end{document}

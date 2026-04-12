@@ -2,84 +2,86 @@
 
 \begin{document}
 
-    \section{函数极限的计算}
+    \subsection{函数极限的计算}
 
-    \subsection{方法}
+    \subsubsection{方法}
 
     \begin{enumerate}
         \item \textbf{极限四则运算规则}: 当$f(x)$和$g(x)$极限都存在时，函数的加减乘除的极限分别等于极限的加减乘除（除要求分母的极限不为零）
-        \item \textbf{洛必达法则一（$\color{red}{\dfrac{0}{0}}$ 型）}
+        \item \textbf{洛必达法则}
+        \begin{itemize}
+            \item \textbf{洛必达法则一（$\color{red}{\dfrac{0}{0}}$ 型）}
 
-        设当
-        \[
-            x \to a \quad \text{或} \quad x \to \infty
-        \]
-        时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{0}}，即
-        \[
-            \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = 0
-            \quad \text{或} \quad
-            \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = 0.
-        \]
+            设当
+            \[
+                x \to a \quad \text{或} \quad x \to \infty
+            \]
+            时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{0}}，即
+            \[
+                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = 0
+                \quad \text{或} \quad
+                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = 0.
+            \]
 
-        若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
-        $f'(x)$ 与 $F'(x)$ 存在，且
-        \[
-            F'(x) \neq 0,
-        \]
-        并且极限
-        \[
-            \lim_{x\to a} \frac{f'(x)}{F'(x)}
-            \quad \text{或} \quad
-            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
-        \]
-        存在或为无穷大，
+            若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
+            $f'(x)$ 与 $F'(x)$ 存在，且
+            \[
+                F'(x) \neq 0,
+            \]
+            并且极限
+            \[
+                \lim_{x\to a} \frac{f'(x)}{F'(x)}
+                \quad \text{或} \quad
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+            \]
+            存在或为无穷大，
 
-        则有
-        \[
-            \lim_{x\to a} \frac{f(x)}{F(x)}
-            =
-            \lim_{x\to a} \frac{f'(x)}{F'(x)},
-            \qquad
-            \lim_{x\to \infty} \frac{f(x)}{F(x)}
-            =
-            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
-        \]
-        \item \textbf{洛必达法则二（$\color{red}{\dfrac{\infty}{\infty}}$ 型）}
-        设当
-        \[
-            x \to a \quad \text{或} \quad x \to \infty
-        \]
-        时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{无穷大}}，即
-        \[
-            \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = \infty
-            \quad \text{或} \quad
-            \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = \infty.
-        \]
+            则有
+            \[
+                \lim_{x\to a} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to a} \frac{f'(x)}{F'(x)},
+                \qquad
+                \lim_{x\to \infty} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+            \]
+            \item \textbf{洛必达法则二（$\color{red}{\dfrac{\infty}{\infty}}$ 型）}
+            设当
+            \[
+                x \to a \quad \text{或} \quad x \to \infty
+            \]
+            时，函数 $f(x)$ 与 $F(x)$ 都趋于 {\color{red}{无穷大}}，即
+            \[
+                \lim_{x\to a} f(x) = \lim_{x\to a} F(x) = \infty
+                \quad \text{或} \quad
+                \lim_{x\to \infty} f(x) = \lim_{x\to \infty} F(x) = \infty.
+            \]
 
-        若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
-        $f'(x)$ 与 $F'(x)$ 存在，且
-        \[
-            F'(x) \neq 0,
-        \]
-        并且极限
-        \[
-            \lim_{x\to a} \frac{f'(x)}{F'(x)}
-            \quad \text{或} \quad
-            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
-        \]
-        存在或为无穷大，
+            若在点 $a$ 的某去心邻域内（或当 $|x|>X$，其中 $X$ 为充分大的正数时），
+            $f'(x)$ 与 $F'(x)$ 存在，且
+            \[
+                F'(x) \neq 0,
+            \]
+            并且极限
+            \[
+                \lim_{x\to a} \frac{f'(x)}{F'(x)}
+                \quad \text{或} \quad
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}
+            \]
+            存在或为无穷大，
 
-        则有
-        \[
-            \lim_{x\to a} \frac{f(x)}{F(x)}
-            =
-            \lim_{x\to a} \frac{f'(x)}{F'(x)},
-            \qquad
-            \lim_{x\to \infty} \frac{f(x)}{F(x)}
-            =
-            \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
-        \]
-
+            则有
+            \[
+                \lim_{x\to a} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to a} \frac{f'(x)}{F'(x)},
+                \qquad
+                \lim_{x\to \infty} \frac{f(x)}{F(x)}
+                =
+                \lim_{x\to \infty} \frac{f'(x)}{F'(x)}.
+            \]
+        \end{itemize}
         \item \textbf{泰勒公式}: 设$f(x)$在点$x = a$处$n$阶可导，则存在$x = a$的一个邻域，对于该邻域内的任一点$x$，有
         \[
             f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2
@@ -130,18 +132,18 @@
         则 $\displaystyle \lim f(x)$ 存在，且 $\displaystyle \lim f(x) = A$
     \end{enumerate}
 
-    \subsection{七种未定式的计算}
+    \subsubsection{七种未定式的计算}
 
     \begin{enumerate}
         \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}, 0\cdot \infty, \infty - \infty, \infty^0, 0^0, 1^\infty$
         \item 解题思路
         \begin{itemize}
             \item 化简先行
-            \begin{enumerate}
+            \begin{circlenum}
                 \item 提出极限不为$0$的因式
                 \item 等价无穷小替换
                 \item 恒等变形：提公因式、拆项、合并、分子分母同除变量的最高次幂 + 换元法（负代换、倒代换）
-            \end{enumerate}
+            \end{circlenum}
             \item 判断类型（运算类型）
             \item 选择方法：泰勒公式、洛必达法则、夹逼准则
         \end{itemize}
@@ -149,19 +151,19 @@
         \begin{itemize}
             \item 泰勒公式
             \item 洛必达法则
-            \item \[
-                      \lim_{x \to \infty}
-                      \frac{a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0}
-                      {b_mx^m + b_{m-1}x^{m-1} + \dots + b_1x + b_0}
-                      =
-                      \begin{cases}
-                          \dfrac{a_n}{b_m}, & n = m,\\[1.5mm]
-                          \infty, & n > m,\\[1mm]
-                          0, & n < m.
-                      \end{cases}
+            \item \textbf{抓大头法}
+            \[
+                \lim_{x \to \infty}
+                \frac{a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0}
+                {b_mx^m + b_{m-1}x^{m-1} + \dots + b_1x + b_0}
+                =
+                \begin{cases}
+                    \dfrac{a_n}{b_m}, & n = m,\\[1.5mm]
+                    \infty, & n > m,\\[1mm]
+                    0, & n < m.
+                \end{cases}
             \]
 
-            \textbf{抓大头法:} \\
             当 $\color{red}{x \to \infty}$，则应抓分子和分母中关于 $x$ 的{\color{red}{最高次项}}即可判断极限； \\
             当 $\color{red}{x \to 0}$，则应抓分子和分母中关于 $x$ 的{\color{red}{最低次项}}
             \item 脱帽法: 若$\lim\limits_{x\to 0} f(x) = A$，则$f(x) = A + \alpha(x)$，其中$\lim\limits_{x\to 0} \alpha(x) = 0$
@@ -188,7 +190,7 @@
         \item 泰勒公式
     \end{enumerate}
 
-    \subsection{结论}
+    \subsubsection{结论}
 
     \begin{enumerate}
         \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A$，且$\lim g(x) = 0$，则$\lim f(x) = 0$
@@ -227,7 +229,7 @@
         \item $\text{狗} - 1 < [\text{狗}] \leq \text{狗}$
     \end{enumerate}
 
-    \subsection{方法总结}
+    \subsubsection{方法总结}
 
     \begin{enumerate}
         \item 遇到幂指函数，用$e$括起来，$u(x)^{v(x)} = e^{v(x)\ln u(x)}$
@@ -285,7 +287,7 @@
         \end{itemize}
     \end{enumerate}
 
-    \subsection{理解}
+    \subsubsection{理解}
 
     \begin{enumerate}
         \item 对于
