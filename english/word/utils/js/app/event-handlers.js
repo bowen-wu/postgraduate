@@ -268,6 +268,8 @@ function setButtonLoading(isLoading, btnId) {
 
 export async function playWord(word, buttonId = null, _useTTSFallback = false, showNotification = true) {
   if (!word) return;
+  const loadingStartedAt = Date.now();
+  const minLoadingVisibleMs = 180;
   setButtonLoading(true, buttonId);
   try {
     const result = await playWordWithFallback(word);
@@ -277,6 +279,10 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
   } catch (_error) {
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
   } finally {
+    const elapsed = Date.now() - loadingStartedAt;
+    if (elapsed < minLoadingVisibleMs) {
+      await new Promise((resolve) => setTimeout(resolve, minLoadingVisibleMs - elapsed));
+    }
     setButtonLoading(false, buttonId);
   }
 }
