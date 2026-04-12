@@ -4,9 +4,9 @@ import { runFallbackChain } from './fallback-chain.js';
 import { toServiceError } from './service-error.js';
 
 const audioSources = [
-  { name: '有道', play: playYoudaoAudio, timeout: 1200, options: { urls: ['us', 'uk'] } },
-  { name: 'Azure', play: playAzureTTS, timeout: 1200, options: { voice: 'en-US-JennyNeural', region: 'eastasia' } },
-  { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 1200, options: { voice: 'en-US-Neural2-C' } }
+  { name: '有道', play: playYoudaoAudio, timeout: 3500, options: { urls: ['us', 'uk'] } },
+  { name: 'Azure', play: playAzureTTS, timeout: 3500, options: { voice: 'en-US-JennyNeural', region: 'eastasia' } },
+  { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
 ];
 
 export async function playWordWithFallback(word) {
@@ -21,7 +21,7 @@ export async function playWordWithFallback(word) {
     );
     return { sourceName: result.sourceName };
   } catch (error) {
-    const ttsTimeout = Math.max(CONFIG.audio?.defaultTimeout || 1200, 1500);
+    const ttsTimeout = Math.max(CONFIG.audio?.defaultTimeout || 1200, 4000);
     await playWebSpeech(audioText, ttsTimeout);
     return { sourceName: 'TTS' };
   }
@@ -51,7 +51,7 @@ async function playYoudaoAudio(text, timeout = 1200) {
 async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const source = 'azure';
-  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200);
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
   const voice = options.voice || CONFIG.audio.defaultVoice;
   const cached = await AudioCache.getAudio(cleanText, source);
 
@@ -98,7 +98,7 @@ async function playAzureTTS(text, timeout = 1200, options = {}) {
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
   const source = 'google';
-  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200);
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
   const voice = options.voice || 'en-US-Neural2-C';
   const cached = await AudioCache.getAudio(cleanText, source);
 
@@ -174,7 +174,7 @@ function removeEmoji(text) {
   return text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
 }
 
-export async function playWebSpeech(text, timeout = 2000) {
+export async function playWebSpeech(text, timeout = 4000) {
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('Web Speech API not supported'));
@@ -207,7 +207,7 @@ export async function playWebSpeech(text, timeout = 2000) {
     if (usVoice) utterance.voice = usVoice;
     timeoutId = setTimeout(() => {
       done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech timeout'));
-    }, Math.max(timeout, 800));
+    }, Math.max(timeout, 2000));
 
     window.speechSynthesis.speak(utterance);
   });

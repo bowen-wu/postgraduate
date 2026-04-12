@@ -39,7 +39,8 @@ export function dispatchAction(actionEl, deps) {
     reveal: () => app.reveal(actionEl),
     'play-word': () => {
       if (!actionEl.dataset.wordEncoded) return;
-      app.playWord(decodeURIComponent(actionEl.dataset.wordEncoded), actionEl.dataset.buttonId || null, false, false);
+      const buttonId = actionEl.dataset.buttonId || actionEl.id || null;
+      app.playWord(decodeURIComponent(actionEl.dataset.wordEncoded), buttonId, false, false);
     }
   };
 
