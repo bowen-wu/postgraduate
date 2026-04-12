@@ -9,20 +9,20 @@ const audioSources = [
   { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
 ];
 
-export async function playWordWithFallback(word) {
+export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
 
   const audioText = normalizeText(word);
   try {
     const result = await runFallbackChain(
       audioSources,
-      (source) => source.play(audioText, source.timeout, source.options),
+      (source) => source.play(audioText, source.timeout, source.options, hooks),
       'All audio sources failed'
     );
     return { sourceName: result.sourceName };
   } catch (error) {
     const ttsTimeout = Math.max(CONFIG.audio?.defaultTimeout || 1200, 4000);
-    await playWebSpeech(audioText, ttsTimeout);
+    await playWebSpeech(audioText, ttsTimeout, hooks);
     return { sourceName: 'TTS' };
   }
 }
@@ -31,7 +31,7 @@ function normalizeText(text) {
   return text.replace(/sth\./g, 'something').replace(/sb\./g, 'somebody');
 }
 
-async function playYoudaoAudio(text, timeout = 1200) {
+async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const urls = [
     `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`,
@@ -40,7 +40,7 @@ async function playYoudaoAudio(text, timeout = 1200) {
 
   for (const url of urls) {
     try {
-      return await playAudioUrl(url, timeout);
+      return await playAudioUrl(url, timeout, hooks);
     } catch {
       continue;
     }
@@ -48,7 +48,7 @@ async function playYoudaoAudio(text, timeout = 1200) {
   throw toServiceError('YOUDAO_AUDIO_UNAVAILABLE', 'Youdao audio not available');
 }
 
-async function playAzureTTS(text, timeout = 1200, options = {}) {
+async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const source = 'azure';
   const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
@@ -56,7 +56,7 @@ async function playAzureTTS(text, timeout = 1200, options = {}) {
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout);
+    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
   }
 
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
@@ -92,10 +92,10 @@ async function playAzureTTS(text, timeout = 1200, options = {}) {
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout);
+  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
 }
 
-async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
+async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const source = 'google';
   const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
@@ -103,7 +103,7 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout);
+    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
   }
 
   const apiKey = CONFIG.apiKeys.googleCloud.tts;
@@ -138,10 +138,10 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}) {
   }
   const blob = new Blob([arrayBuffer], { type: 'audio/mp3' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout);
+  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
 }
 
-async function playAudioUrl(url, timeout = 3000) {
+async function playAudioUrl(url, timeout = 3000, hooks = {}) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(url);
     let resolved = false;
@@ -163,6 +163,9 @@ async function playAudioUrl(url, timeout = 3000) {
     const markStarted = () => {
       if (started) return;
       started = true;
+      if (typeof hooks.onPlaybackStart === 'function') {
+        hooks.onPlaybackStart();
+      }
       if (startupTimeoutId) clearTimeout(startupTimeoutId);
       maxPlaybackTimeoutId = setTimeout(() => {
         try { audio.pause(); } catch {}
@@ -188,7 +191,7 @@ function removeEmoji(text) {
   return text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
 }
 
-export async function playWebSpeech(text, timeout = 4000) {
+export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('Web Speech API not supported'));
@@ -217,6 +220,9 @@ export async function playWebSpeech(text, timeout = 4000) {
     utterance.volume = 1;
     utterance.onstart = () => {
       started = true;
+      if (typeof hooks.onPlaybackStart === 'function') {
+        hooks.onPlaybackStart();
+      }
       if (startupTimeoutId) clearTimeout(startupTimeoutId);
       maxPlaybackTimeoutId = setTimeout(() => {
         try { window.speechSynthesis.cancel(); } catch {}

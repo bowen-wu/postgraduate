@@ -552,6 +552,16 @@ body.mode-recall .item-list.revealed {
 .audio-play-btn.loading .btn-spinner {
     display: block;
 }
+.audio-play-btn.playing svg,
+.audio-play-btn.playing .btn-spinner {
+    display: none;
+}
+.audio-play-btn.playing::after {
+    content: '▮▮';
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
 /* 🔧 FIX: Match spinner size to synonym/antonym button SVG (14px) */
 .synonym-play-btn .btn-spinner,
 .antonym-play-btn .btn-spinner {

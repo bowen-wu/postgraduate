@@ -263,7 +263,23 @@ function setButtonLoading(isLoading, btnId) {
   const btn = document.getElementById(btnId);
   if (!btn) return;
   btn.classList.toggle('loading', isLoading);
+  if (isLoading) {
+    btn.classList.remove('playing');
+  }
   btn.disabled = isLoading;
+}
+
+function setButtonPlaying(isPlaying, btnId) {
+  if (!btnId) return;
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.classList.toggle('playing', isPlaying);
+  if (isPlaying) {
+    btn.classList.remove('loading');
+    btn.disabled = true;
+  } else {
+    btn.disabled = false;
+  }
 }
 
 export async function playWord(word, buttonId = null, _useTTSFallback = false, showNotification = true) {
@@ -272,7 +288,11 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
   const minLoadingVisibleMs = 180;
   setButtonLoading(true, buttonId);
   try {
-    const result = await playWordWithFallback(word);
+    const result = await playWordWithFallback(word, {
+      onPlaybackStart: () => {
+        setButtonPlaying(true, buttonId);
+      }
+    });
     if (showNotification && result.sourceName) {
       UiRenderer.showToast(getApp().ui, `🔊 ${result.sourceName}`);
     }
@@ -283,6 +303,7 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
     if (elapsed < minLoadingVisibleMs) {
       await new Promise((resolve) => setTimeout(resolve, minLoadingVisibleMs - elapsed));
     }
+    setButtonPlaying(false, buttonId);
     setButtonLoading(false, buttonId);
   }
 }
