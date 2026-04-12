@@ -4,6 +4,7 @@ export function createTranslationUseCases(deps) {
     uiRenderer,
     getUi,
     render,
+    getMode = () => 'input',
     translateText,
     setButtonLoading,
     revealSentenceTranslation = () => {}
@@ -28,7 +29,14 @@ export function createTranslationUseCases(deps) {
       buttonIds.forEach((id) => setButtonLoading(false, id));
       stateManager.saveState();
       render();
-      uiRenderer.renderNextAction(getUi());
+
+      if (getMode() === 'recall') {
+        if (typeof uiRenderer.revealAll === 'function') {
+          uiRenderer.revealAll();
+        }
+      } else {
+        uiRenderer.renderNextAction(getUi());
+      }
     } catch (error) {
       buttonIds.forEach((id) => setButtonLoading(false, id));
       uiRenderer.showToast(getUi(), '❌ 翻译失败: ' + error.message);
@@ -55,9 +63,11 @@ export function createTranslationUseCases(deps) {
       buttonIds.forEach((id) => setButtonLoading(false, id));
       stateManager.saveState();
       render();
-      revealSentenceTranslation();
-
-      uiRenderer.renderNextAction(getUi());
+      if (getMode() === 'recall') {
+        revealSentenceTranslation();
+      } else {
+        uiRenderer.renderNextAction(getUi());
+      }
     } catch (error) {
       buttonIds.forEach((id) => setButtonLoading(false, id));
       uiRenderer.showToast(getUi(), '❌ 翻译失败: ' + error.message);

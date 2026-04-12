@@ -58,6 +58,7 @@ function getTranslationUseCases() {
       stateManager: StateManager,
       uiRenderer: UiRenderer,
       getUi: () => getApp().ui,
+      getMode: () => STATE.mode,
       render: () => getApp().render(),
       translateText: translateTextWithFallback,
       setButtonLoading,

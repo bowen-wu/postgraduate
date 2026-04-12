@@ -30,7 +30,7 @@ test('translatePhrase writes translation and triggers render pipeline', async ()
 
 test('translateSentence reveals translation through injected ui port', async () => {
   const card = { type: 'sentence', word: 'hello', displayWord: 'Hello', items: [{ en: 'Hello', cn: '' }] };
-  const calls = { save: 0, render: 0, reveal: 0 };
+  const calls = { save: 0, render: 0, reveal: 0, nextAction: 0 };
   const useCases = createTranslationUseCases({
     stateManager: {
       getCurrentCard: () => card,
@@ -38,9 +38,10 @@ test('translateSentence reveals translation through injected ui port', async () 
     },
     uiRenderer: {
       showToast: () => {},
-      renderNextAction: () => {}
+      renderNextAction: () => { calls.nextAction += 1; }
     },
     getUi: () => ({}),
+    getMode: () => 'recall',
     render: () => { calls.render += 1; },
     translateText: async () => ({ translation: '你好', sourceName: 'Mock' }),
     setButtonLoading: () => {},
@@ -53,4 +54,34 @@ test('translateSentence reveals translation through injected ui port', async () 
   assert.equal(calls.save, 1);
   assert.equal(calls.render, 1);
   assert.equal(calls.reveal, 1);
+  assert.equal(calls.nextAction, 0);
+});
+
+test('translatePhrase reveals content in recall mode', async () => {
+  const card = { type: 'phrase', word: 'take off', items: [{ en: 'take off', cn: '' }] };
+  const calls = { save: 0, render: 0, revealAll: 0, nextAction: 0 };
+  const useCases = createTranslationUseCases({
+    stateManager: {
+      getCurrentCard: () => card,
+      saveState: () => { calls.save += 1; }
+    },
+    uiRenderer: {
+      showToast: () => {},
+      revealAll: () => { calls.revealAll += 1; },
+      renderNextAction: () => { calls.nextAction += 1; }
+    },
+    getUi: () => ({}),
+    getMode: () => 'recall',
+    render: () => { calls.render += 1; },
+    translateText: async () => ({ translation: '起飞', sourceName: 'Mock' }),
+    setButtonLoading: () => {}
+  });
+
+  await useCases.translatePhrase();
+
+  assert.equal(card.items[0].cn, '起飞');
+  assert.equal(calls.save, 1);
+  assert.equal(calls.render, 1);
+  assert.equal(calls.revealAll, 1);
+  assert.equal(calls.nextAction, 0);
 });
