@@ -147,7 +147,7 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
     let resolved = false;
     let started = false;
     const startupTimeoutMs = timeout > 0 ? timeout : (CONFIG.audio?.defaultTimeout || 3000);
-    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 6, 15000);
+    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 12, 120000);
     let startupTimeoutId = null;
     let maxPlaybackTimeoutId = null;
 
@@ -168,12 +168,12 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
       }
       if (startupTimeoutId) clearTimeout(startupTimeoutId);
       maxPlaybackTimeoutId = setTimeout(() => {
-        try { audio.pause(); } catch {}
-        done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio playback timeout'));
+        // If playback has started but no end event arrives (common on some mobile browsers),
+        // avoid surfacing a false failure to users.
+        done(resolve, { onplay: true, timeout: true });
       }, maxPlaybackTimeoutMs);
     };
 
-    audio.onplay = markStarted;
     audio.onplaying = markStarted;
     audio.onended = () => done(resolve, { onplay: true });
     audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
@@ -203,7 +203,7 @@ export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
     let settled = false;
     let started = false;
     const startupTimeoutMs = Math.max(timeout, 2000);
-    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 6, 15000);
+    const maxPlaybackTimeoutMs = Math.max(startupTimeoutMs * 12, 120000);
     let startupTimeoutId = null;
     let maxPlaybackTimeoutId = null;
     const done = (fn, value) => {

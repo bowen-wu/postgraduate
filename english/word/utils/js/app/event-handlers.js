@@ -286,11 +286,17 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
   if (!word) return;
   const loadingStartedAt = Date.now();
   const minLoadingVisibleMs = 180;
+  let finished = false;
   setButtonLoading(true, buttonId);
   try {
     const result = await playWordWithFallback(word, {
       onPlaybackStart: () => {
-        setButtonPlaying(true, buttonId);
+        const elapsed = Date.now() - loadingStartedAt;
+        const delay = Math.max(0, minLoadingVisibleMs - elapsed);
+        setTimeout(() => {
+          if (finished) return;
+          setButtonPlaying(true, buttonId);
+        }, delay);
       }
     });
     if (showNotification && result.sourceName) {
@@ -299,6 +305,7 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
   } catch (_error) {
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
   } finally {
+    finished = true;
     const elapsed = Date.now() - loadingStartedAt;
     if (elapsed < minLoadingVisibleMs) {
       await new Promise((resolve) => setTimeout(resolve, minLoadingVisibleMs - elapsed));
