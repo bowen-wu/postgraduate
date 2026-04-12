@@ -38,9 +38,13 @@ export function dispatchAction(actionEl, deps) {
     'confirm-recall': () => app.confirmRecall(actionEl.dataset.actuallyCorrect === 'true'),
     reveal: () => app.reveal(actionEl),
     'play-word': () => {
-      if (!actionEl.dataset.wordEncoded) return;
+      const encoded = actionEl.dataset.wordEncoded || '';
+      const decoded = encoded ? decodeURIComponent(encoded) : '';
+      const fallbackWord = (actionEl.dataset.word || '').trim();
+      const targetWord = (decoded || fallbackWord).trim();
+      if (!targetWord) return;
       const buttonId = actionEl.dataset.buttonId || actionEl.id || null;
-      app.playWord(decodeURIComponent(actionEl.dataset.wordEncoded), buttonId, false, false);
+      app.playWord(targetWord, buttonId, false, false);
     }
   };
 

@@ -36,8 +36,15 @@ export function shouldAutoPlayCard(card, state = STATE) {
 }
 
 function getAutoPlayPayload(card) {
+  const stripHtml = (text) => String(text || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
   if (card.type === 'sentence') {
-    const sentenceText = card.items?.[0]?.en || card.word;
+    const sentenceText = (
+      card.items?.[0]?.en ||
+      stripHtml(card.displayWord) ||
+      card.word ||
+      ''
+    ).trim();
     return { word: sentenceText, buttonId: 'play-btn-sentence' };
   }
 

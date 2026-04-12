@@ -2,7 +2,13 @@ export function renderSentenceItems(ui, card) {
   const li = document.createElement('li');
   li.className = 'item';
 
-  const sentenceText = card.items[0]?.en || card.displayWord || '';
+  const stripHtml = (text) => String(text || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const sentenceText = (
+    card.items?.[0]?.en ||
+    stripHtml(card.displayWord) ||
+    card.word ||
+    ''
+  ).trim();
   const sentenceTextEncoded = encodeURIComponent(sentenceText);
   const playButtonId = 'play-btn-sentence';
 
@@ -22,6 +28,7 @@ export function renderSentenceItems(ui, card) {
   playButton.title = '播放句子';
   playButton.dataset.action = 'play-word';
   playButton.dataset.wordEncoded = sentenceTextEncoded;
+  playButton.dataset.word = sentenceText;
   playButton.dataset.buttonId = playButtonId;
   playButton.innerHTML = `
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
