@@ -527,24 +527,27 @@ body.mode-recall .item-list.revealed {
 .audio-play-btn {
     transition: all 0.2s;
     position: relative;
+    --audio-icon-size: 14px;
 }
 .audio-play-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+.audio-play-btn > svg {
+    width: var(--audio-icon-size);
+    height: var(--audio-icon-size);
+    flex: 0 0 var(--audio-icon-size);
+}
 .audio-play-btn .btn-spinner {
     display: none;
-    width: 16px;
-    height: 16px;
+    width: var(--audio-icon-size);
+    height: var(--audio-icon-size);
     border: 2px solid #e2e8f0;
     border-top-color: currentColor;
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
-}
-/* Sentence button uses smaller SVG (14px) */
-.sentence-label-wrapper .audio-play-btn .btn-spinner {
-    width: 14px;
-    height: 14px;
+    box-sizing: border-box;
+    flex: 0 0 var(--audio-icon-size);
 }
 .audio-play-btn.loading svg {
     display: none;
@@ -557,16 +560,20 @@ body.mode-recall .item-list.revealed {
     display: none;
 }
 .audio-play-btn.playing::after {
-    content: '▮▮';
-    font-size: 11px;
-    line-height: 1;
-    letter-spacing: 1px;
-}
-/* 🔧 FIX: Match spinner size to synonym/antonym button SVG (14px) */
-.synonym-play-btn .btn-spinner,
-.antonym-play-btn .btn-spinner {
-    width: 14px;
-    height: 14px;
+    content: '';
+    width: var(--audio-icon-size);
+    height: var(--audio-icon-size);
+    flex: 0 0 var(--audio-icon-size);
+    display: block;
+    background:
+      linear-gradient(
+        to right,
+        currentColor 0 32%,
+        transparent 32% 58%,
+        currentColor 58% 90%,
+        transparent 90% 100%
+      );
+    border-radius: 1px;
 }
 
 /* Synonyms in recall mode */
