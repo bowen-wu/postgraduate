@@ -5,9 +5,21 @@
 
     \subsection{一元函数微分学的概念}
 
+    \subsubsection{题目}
     \begin{enumerate}
         \item 设$F(x) = g(x)\varphi(x)$，$\varphi(x)$在$x = a$处连续但不可导，$g(x)$在$x = a$处可导，$F(x)$在$x = a$处可导，则一定有
-        \begin{analysisbox}
+        \item 设可导函数$f(x) > 0$，求$\lim\limits_{n\to \infty} n\ln\dfrac{f(\dfrac{1}{n})}{f(0)}$
+        \item 设$f(x) = \begin{cases}
+                            x^3 \sin \dfrac{1}{x}, x > 0\\
+                            x^2, x \leq 0
+        \end{cases}$，则$f(x)$在$x = 0$处
+        \item 设$f(x) = \lim\limits_{n\to \infty}\dfrac{x^2 e^{n(x-1)} + ax + b}{5 + e^{n(x-1)}}$，求$f(x)$并讨论$f(x)$的连续性及可导性与$a, b$的关系
+    \end{enumerate}
+
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
             \textbf{结论：}$g(a) = 0$，且 $F'(a) = g'(a)\varphi(a)$。
 
             \medskip
@@ -30,9 +42,10 @@
             \medskip
 
             此时 $F'(a) = g'(a)\varphi(a)$。
-        \end{analysisbox}
-        \item 设可导函数$f(x) > 0$，求$\lim\limits_{n\to \infty} n\ln\dfrac{f(\dfrac{1}{n})}{f(0)}$
-        \begin{analysisbox}[解]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}[解]
             令 $x = \dfrac{1}{n}$，当 $n \to \infty$ 时 $x \to 0^+$。
             \[
                 \begin{aligned}
@@ -44,12 +57,10 @@
             \]
 
                 {\color{red}{注}}：$\ln \dfrac{b}{a} = \ln b - \ln a$
-        \end{analysisbox}
-        \item 设$f(x) = \begin{cases}
-                            x^3 \sin \dfrac{1}{x}, x > 0\\
-                            x^2, x \leq 0
-        \end{cases}$，则$f(x)$在$x = 0$处
-        \begin{analysisbox}
+    \end{analysisbox}
+
+    \subsubsection*{第3题解答}
+    \begin{analysisbox}
             \textbf{（1）连续性}
             \[
                 f(0) = 0^2 = 0, \quad
@@ -99,9 +110,10 @@
             \medskip
 
             \textbf{综上，}$f(x)$ 在 $x=0$ 处连续、可导，且导函数连续，但{\color{red}{不可二次可导}}。
-        \end{analysisbox}
-        \item 设$f(x) = \lim\limits_{n\to \infty}\dfrac{x^2 e^{n(x-1)} + ax + b}{5 + e^{n(x-1)}}$，求$f(x)$并讨论$f(x)$的连续性及可导性与$a, b$的关系
-        \begin{analysisbox}[解]
+    \end{analysisbox}
+
+    \subsubsection*{第4题解答}
+    \begin{analysisbox}[解]
             \textbf{第一步：求 $f(x)$}
 
             关键在于 $e^{n(x-1)}$ 当 $n \to \infty$ 时的行为：
@@ -131,9 +143,9 @@
             综上，
             \[
                 f(x) = \begin{cases}
-                    x^2, & x > 1 \\[0.3em]
-                    \dfrac{1+a+b}{6}, & x = 1 \\[0.3em]
-                    \dfrac{ax+b}{5}, & x < 1
+                           x^2, & x > 1 \\[0.3em]
+                           \dfrac{1+a+b}{6}, & x = 1 \\[0.3em]
+                           \dfrac{ax+b}{5}, & x < 1
                 \end{cases}
             \]
 
@@ -183,7 +195,129 @@
                 \item 当 $a + b = 5$ 但 $a \neq 10$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续但不可导}}；
                 \item 当 $a = 10$，$b = -5$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续且可导}}。
             \end{itemize}
-        \end{analysisbox}
+    \end{analysisbox}
+
+    \subsection{一元函数微分学的应用 - 几何应用}
+
+    \begin{enumerate}
+        \item 曲线$\tan(x + y + \dfrac{\pi}{4}) = e^y$在点$(0, 0)$处的切线方程为
+        \item 曲线$y = (2x - 1)e^\dfrac{1}{x}$的斜渐近线方程为
+        \item 设函数$y = y(x)$由方程
+        \[
+            2y^3 - 2y^2 + 2xy - x^2 = 1
+        \]
+        所确定，试求$y = y(x)$的驻点，并判别它是否为极值点
     \end{enumerate}
 
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+            由
+            \[
+                \tan\!\left(x+y+\frac{\pi}{4}\right)=e^y
+            \]
+            两边对$x$求导，得
+            \[
+                \sec^2\!\left(x+y+\frac{\pi}{4}\right)(1+y')=e^y\,y'.
+            \]
+            在点$(0,0)$处，
+            \[
+                \sec^2\!\left(\frac{\pi}{4}\right)=2,\quad e^0=1,
+            \]
+            故
+            \[
+                2(1+y')=y' \Longrightarrow y'=-2.
+            \]
+            因而切线方程为
+            \[
+                y-0=-2(x-0),
+            \]
+            即
+            \[
+                \boxed{y=-2x}.
+            \]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}
+            设斜渐近线为$y=kx+b$，其中
+            \[
+                k=\lim_{x\to\infty}\frac{y}{x}
+                =\lim_{x\to\infty}\frac{(2x-1)e^{1/x}}{x}
+                =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{1/x}=2.
+            \]
+            再求
+            \[
+                b=\lim_{x\to\infty}(y-kx)
+                =\lim_{x\to\infty}\left[(2x-1)e^{1/x}-2x\right].
+            \]
+            利用展开式$e^{1/x}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
+            \[
+                (2x-1)e^{1/x}
+                =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
+                =2x+1+o(1),
+            \]
+            从而$b=1$。
+            因此斜渐近线为
+            \[
+                \boxed{y=2x+1}.
+            \]
+    \end{analysisbox}
+
+    \subsubsection*{第3题解答}
+    \begin{analysisbox}
+            由
+            \[
+                2y^3-2y^2+2xy-x^2=1
+            \]
+            对$x$求导，得
+            \[
+                6y^2y'-4yy'+2y+2xy'-2x=0.
+            \]
+            整理得
+            \[
+                (6y^2-4y+2x)y'+(2y-2x)=0,
+            \]
+            \[
+                y'=\frac{2x-2y}{6y^2-4y+2x}
+                =\frac{x-y}{3y^2-2y+x}.
+            \]
+
+            驻点满足$y'=0$，故$x=y$。代回原方程：
+            \[
+                2y^3-2y^2+2y^2-y^2=1
+                \Longrightarrow 2y^3-y^2-1=0
+                \Longrightarrow (y-1)(2y^2+y+1)=0.
+            \]
+            因$2y^2+y+1>0$，得唯一实根$y=1$，故$x=1$。
+            所以驻点为
+            \[
+                \boxed{(1,1)}.
+            \]
+
+            下面判别极值。设
+            \[
+                F(x,y)=2y^3-2y^2+2xy-x^2-1=0.
+            \]
+            由$F_x+F_yy'=0$再求导：
+            \[
+                F_{xx}+2F_{xy}y'+F_{yy}(y')^2+F_yy''=0.
+            \]
+            在驻点处$y'=0$，故
+            \[
+                y''=-\frac{F_{xx}}{F_y}.
+            \]
+            计算
+            \[
+                F_{xx}=-2,\quad F_y=6y^2-4y+2x,\quad F_y(1,1)=4,
+            \]
+            \[
+                y''(1)= -\frac{-2}{4}=\frac{1}{2}>0.
+            \]
+            因此$(1,1)$为极小值点。
+
+            \medskip
+            结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
+    \end{analysisbox}
 \end{document}

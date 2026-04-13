@@ -222,7 +222,7 @@
     \begin{enumerate}
         \item 若 $\lim\limits_{\color{red}{x\to +\infty}} f(x)=y_1$，则 $y=y_1$ 为函数 $y=f(x)$ 的一条水平渐近线；
         \item 若 $\lim\limits_{\color{red}{x\to -\infty}} f(x)=y_2$，则 $y=y_2$ 为函数 $y=f(x)$ 的一条水平渐近线；
-        \item 若 $\lim\limits_{\color{red}{x\to +\infty}} f(x) = \lim\limits_{{\color{red}{x\to x_0^{+}}}} f(x) = y_0$，则 $y=y_0$ 为函数 $y=f(x)$ 的一条水平渐近线
+        \item 若 $\lim\limits_{\color{red}{x\to +\infty}} f(x) = \lim\limits_{{\color{red}{x\to -\infty}}} f(x) = y_0$，则 $y=y_0$ 为函数 $y=f(x)$ 的一条水平渐近线
     \end{enumerate}
 
     \subsubsection{斜渐近线}
@@ -701,5 +701,17 @@
         \item 如$\alpha$是$f(x) = 0$的$m(\geq 1)$重根，则$\alpha$是$f'(x)$的$m-1$重根
         \item 如果 $f(x)$ 在区间$I$上有最值点 $x_0$，并且此最值点 $x_0$ 不是区间 $I$ 的端点而是$I$内部的点，那么此 $x_0$必是$f(x)$的一个极值点
         \item $f(x)\cdot f'(x)$ => $\{[f(x)]^2\}' = 2f(x) \cdot f'(x)$
+        \item 设$f(x)$在$[a, b]$上可导，则$f(x)$在$[a, b]$上必存在最大（小）值，且
+        \begin{itemize}
+            \item 若$f(x)$在$x = a$处取$[a, b]$上的最大（小）值，则$f'_+(a) \leq 0(\geq 0)$
+            \item 若$f(x)$在$x = b$处取$[a, b]$上的最大（小）值，则$f'_-(b) \geq 0(\leq 0)$
+            \item 若$F(x) = \int_a^x f(t)\,\mathrm{d}t, x \in [a, b]$
+            \begin{circlenum}
+                \item 若$f(x)$在$[a, b]$上可导，且当$f(x)$在$x = a$处取得最大（小）值，有$F''_+(a) \leq 0(\geq 0)$
+                \item 若$f(x)$在$[a, b]$上可导，且当$f(x)$在$x = b$处取得最大（小）值，有$F''_-(b) \geq 0(\leq 0)$
+                \item 若$f(x)$在$[a, b]$上可导，且当$f(x)$在$x = c \in (a, b)$处取得最大值或最小值是，有$F''(c) = 0$
+            \end{circlenum}
+        \end{itemize}
     \end{enumerate}
+
 \end{document}
