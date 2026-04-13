@@ -300,7 +300,10 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
       }
     });
     if (showNotification && result.sourceName) {
-      UiRenderer.showToast(getApp().ui, `🔊 ${result.sourceName}`);
+      const sourceLabel = result.sourceName === 'TTS'
+        ? 'WebSpeech（机器人音色）'
+        : result.sourceName;
+      UiRenderer.showToast(getApp().ui, `🔊 ${sourceLabel}`);
     }
   } catch (_error) {
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
