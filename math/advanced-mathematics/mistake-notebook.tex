@@ -244,17 +244,17 @@
             设斜渐近线为$y=kx+b$，其中
             \[
                 k=\lim_{x\to\infty}\frac{y}{x}
-                =\lim_{x\to\infty}\frac{(2x-1)e^{1/x}}{x}
-                =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{1/x}=2.
+                =\lim_{x\to\infty}\frac{(2x-1)e^{\dfrac{1}{x}}}{x}
+                =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{\dfrac{1}{x}}=2.
             \]
             再求
             \[
                 b=\lim_{x\to\infty}(y-kx)
-                =\lim_{x\to\infty}\left[(2x-1)e^{1/x}-2x\right].
+                =\lim_{x\to\infty}\left[(2x-1)e^{\dfrac{1}{x}}-2x\right].
             \]
-            利用展开式$e^{1/x}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
+            利用展开式$e^{\dfrac{1}{x}}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
             \[
-                (2x-1)e^{1/x}
+                (2x-1)e^{\dfrac{1}{x}}
                 =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
                 =2x+1+o(1),
             \]
@@ -275,16 +275,11 @@
             \[
                 6y^2y'-4yy'+2y+2xy'-2x=0.
             \]
-            整理得
+            驻点满足$y'=0$，代入上式立得
             \[
-                (6y^2-4y+2x)y'+(2y-2x)=0,
+                2y-2x=0 \Longrightarrow x=y.
             \]
-            \[
-                y'=\frac{2x-2y}{6y^2-4y+2x}
-                =\frac{x-y}{3y^2-2y+x}.
-            \]
-
-            驻点满足$y'=0$，故$x=y$。代回原方程：
+            再代回原方程
             \[
                 2y^3-2y^2+2y^2-y^2=1
                 \Longrightarrow 2y^3-y^2-1=0
@@ -296,28 +291,22 @@
                 \boxed{(1,1)}.
             \]
 
-            下面判别极值。设
+            再对
             \[
-                F(x,y)=2y^3-2y^2+2xy-x^2-1=0.
+                6y^2y'-4yy'+2y+2xy'-2x=0
             \]
-            由$F_x+F_yy'=0$再求导：
+            两边对$x$求导，得
             \[
-                F_{xx}+2F_{xy}y'+F_{yy}(y')^2+F_yy''=0.
+                (12y-4)(y')^2+(6y^2-4y+2x)y''+4y'-2=0.
             \]
-            在驻点处$y'=0$，故
+            将$x=1,\ y=1,\ y'=0$代入：
             \[
-                y''=-\frac{F_{xx}}{F_y}.
-            \]
-            计算
-            \[
-                F_{xx}=-2,\quad F_y=6y^2-4y+2x,\quad F_y(1,1)=4,
-            \]
-            \[
-                y''(1)= -\frac{-2}{4}=\frac{1}{2}>0.
+                4y''-2=0 \Longrightarrow y''=\frac12>0.
             \]
             因此$(1,1)$为极小值点。
 
             \medskip
             结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
     \end{analysisbox}
+
 \end{document}

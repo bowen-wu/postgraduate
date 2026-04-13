@@ -1,317 +1,321 @@
-\contentsline {section}{\numberline {1}函数极限与连续}{8}{section.1}%
-\contentsline {subsection}{\numberline {1.1}函数极限的概念与性质}{8}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}邻域}{8}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}函数极限的定义}{8}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}超实数及其在极限中的应用}{9}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}函数极限的性质}{10}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}无穷小的定义}{11}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}无穷小的性质}{11}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}无穷小的比阶}{12}{subsubsection.1.1.7}%
-\contentsline {subsubsection}{\numberline {1.1.8}常用的等价无穷小}{12}{subsubsection.1.1.8}%
-\contentsline {subsubsection}{\numberline {1.1.9}无穷大的定义}{13}{subsubsection.1.1.9}%
-\contentsline {subsubsection}{\numberline {1.1.10}公式}{13}{subsubsection.1.1.10}%
-\contentsline {subsubsection}{\numberline {1.1.11}方法总结}{13}{subsubsection.1.1.11}%
-\contentsline {subsubsection}{\numberline {1.1.12}理解}{13}{subsubsection.1.1.12}%
-\contentsline {subsection}{\numberline {1.2}函数的图像}{13}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}基本初等函数与初等函数}{13}{subsubsection.1.2.1}%
-\contentsline {paragraph}{常函数}{13}{section*.2}%
-\contentsline {paragraph}{幂函数}{14}{section*.3}%
-\contentsline {paragraph}{指数函数}{14}{section*.4}%
-\contentsline {paragraph}{对数函数}{15}{section*.5}%
-\contentsline {paragraph}{三角函数}{16}{section*.6}%
-\contentsline {paragraph}{反三角函数}{17}{section*.7}%
-\contentsline {paragraph}{初等函数}{18}{section*.8}%
-\contentsline {subsubsection}{\numberline {1.2.2}分段函数}{18}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}函数极限的计算}{19}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}方法}{19}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}七种未定式的计算}{21}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}结论}{22}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}方法总结}{23}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}理解}{23}{subsubsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.4}函数的概念与特性}{24}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}函数$y = f(x)$}{24}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}反函数$y = f^{-1}(x)$}{24}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}复合函数$y = f[g(x)]$}{25}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}隐函数}{25}{subsubsection.1.4.4}%
-\contentsline {subsubsection}{\numberline {1.4.5}四种特性}{25}{subsubsection.1.4.5}%
-\contentsline {paragraph}{有界性}{25}{section*.9}%
-\contentsline {paragraph}{单调性}{26}{section*.10}%
-\contentsline {paragraph}{奇偶性}{26}{section*.11}%
-\contentsline {paragraph}{周期性}{27}{section*.12}%
-\contentsline {subsubsection}{\numberline {1.4.6}基础概念}{28}{subsubsection.1.4.6}%
-\contentsline {subsubsection}{\numberline {1.4.7}结论}{31}{subsubsection.1.4.7}%
-\contentsline {subsubsection}{\numberline {1.4.8}定理}{31}{subsubsection.1.4.8}%
-\contentsline {subsubsection}{\numberline {1.4.9}运算}{31}{subsubsection.1.4.9}%
-\contentsline {subsubsection}{\numberline {1.4.10}公式}{31}{subsubsection.1.4.10}%
-\contentsline {subsubsection}{\numberline {1.4.11}方法总结}{31}{subsubsection.1.4.11}%
-\contentsline {subsubsection}{\numberline {1.4.12}条件转换思路}{31}{subsubsection.1.4.12}%
-\contentsline {subsubsection}{\numberline {1.4.13}理解}{31}{subsubsection.1.4.13}%
-\contentsline {subsubsection}{\numberline {1.4.14}函数的连续与间断}{31}{subsubsection.1.4.14}%
-\contentsline {paragraph}{连续点的定义}{31}{section*.13}%
-\contentsline {paragraph}{间断点的定义与分类}{32}{section*.14}%
-\contentsline {section}{\numberline {2}数列极限}{32}{section.2}%
-\contentsline {subsection}{\numberline {2.1}数列的概念}{32}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}数列极限的定义}{33}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}收敛数列的性质}{34}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}极限四则运算规则}{35}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}海涅定理（归结原则）}{35}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}夹逼准则}{36}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}放缩常用方法}{36}{subsubsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.7}单调有界准则}{39}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}证明数列$\{x_n\}$单调性的常用方法}{39}{subsubsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.8}${x_n}$收敛于$a$的速度问题}{40}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}狄利克雷函数}{41}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}结论}{42}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}方法步骤}{42}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}条件转换思路}{42}{subsection.2.12}%
-\contentsline {section}{\numberline {3}一元函数微分学的概念}{43}{section.3}%
-\contentsline {subsection}{\numberline {3.1}导数}{43}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}导数的几何意义}{43}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}微分的概念}{44}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}定理}{44}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}结论}{45}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}理解}{45}{subsection.3.6}%
-\contentsline {section}{\numberline {4}一元函数微分学的计算}{48}{section.4}%
-\contentsline {subsection}{\numberline {4.1}基本求导公式}{48}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}四则运算}{48}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}复合函数的导数与微分形式不变性}{49}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}分段函数的导数}{49}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}反函数的导数}{49}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}隐函数求导法}{50}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}参数方程所确定的函数的导数}{51}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}对数求导法}{51}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}幂指函数求导法}{51}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}\textcolor {red}{$\bigstar $} 高阶导数}{51}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}公式}{53}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}方法总结}{54}{subsection.4.12}%
-\contentsline {section}{\numberline {5}一元函数微分学的应用 - 几何应用}{54}{section.5}%
-\contentsline {subsection}{\numberline {5.1}极值的定义}{54}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}单调性与极值的判别}{54}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}单调性的判别}{54}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}一阶可导点是极值点的必要条件}{54}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}判别极值的第一充分条件}{55}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}判别极值的第二充分条件}{55}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}判别极值的第三充分条件}{55}{subsubsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.3}凹凸性与拐点的概念}{55}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}凹凸性的定义}{55}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}拐点的定义}{56}{subsubsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.4}凹凸性与拐点的判别}{56}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}判别凹凸性}{56}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}二阶可导点是拐点的必要条件}{56}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}判别拐点的第一充分条件}{57}{subsubsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.4}判别拐点的第二充分条件}{57}{subsubsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.5}判别拐点的第三充分条件}{57}{subsubsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.5}极值点与拐点的重要结论}{57}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}渐近线}{57}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}铅直渐近线}{57}{subsubsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {5.6.2}水平渐近线}{58}{subsubsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {5.6.3}斜渐近线}{58}{subsubsection.5.6.3}%
-\contentsline {subsubsection}{\numberline {5.6.4}方法总结}{58}{subsubsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.7}最值或取值范围}{59}{subsection.5.7}%
-\contentsline {subsubsection}{\numberline {5.7.1}最值的定义}{59}{subsubsection.5.7.1}%
-\contentsline {subsubsection}{\numberline {5.7.2}求区间$[a, b]$上连续函数$f(x)$的最大值$M$和最小值$m$}{59}{subsubsection.5.7.2}%
-\contentsline {subsubsection}{\numberline {5.7.3}求区间$(a, b)$内连续函数$f(x)$的最值或取值范围}{60}{subsubsection.5.7.3}%
-\contentsline {subsection}{\numberline {5.8}作函数图像}{60}{subsection.5.8}%
-\contentsline {subsubsection}{\numberline {5.8.1}给出函数 $f(x)$，作图的一般步骤}{60}{subsubsection.5.8.1}%
-\contentsline {subsubsection}{\numberline {5.8.2}常用平面图像}{60}{subsubsection.5.8.2}%
-\contentsline {subsubsection}{\numberline {5.8.3}直角坐标系的观点画极坐标的图}{63}{subsubsection.5.8.3}%
-\contentsline {subsection}{\numberline {5.9}曲率及曲率半径}{63}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}结论}{63}{subsection.5.10}%
-\contentsline {section}{\numberline {6}一元函数微分学的应用 - 中值定理、微分等式与微分不等式}{63}{section.6}%
-\contentsline {subsection}{\numberline {6.1}中值定理}{63}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}涉及函数的中值定理}{63}{subsubsection.6.1.1}%
-\contentsline {paragraph}{有界与最值定理}{63}{section*.18}%
-\contentsline {paragraph}{介值定理}{64}{section*.19}%
-\contentsline {paragraph}{平均值定理}{64}{section*.20}%
-\contentsline {paragraph}{零点定理（介值定理的特例）}{64}{section*.21}%
-\contentsline {subsubsection}{\numberline {6.1.2}涉及导数（微分）的中值定理}{64}{subsubsection.6.1.2}%
-\contentsline {paragraph}{费马定理}{64}{section*.22}%
-\contentsline {paragraph}{导数零点定理}{64}{section*.23}%
-\contentsline {paragraph}{罗尔定理}{64}{section*.24}%
-\contentsline {paragraph}{拉格朗日中值定理}{65}{section*.25}%
-\contentsline {paragraph}{柯西中值定理}{65}{section*.26}%
-\contentsline {paragraph}{泰勒公式（微分中值定理）}{66}{section*.27}%
-\contentsline {subsubsection}{\numberline {6.1.3}结论}{67}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}方法总结}{67}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.5}条件转换思路}{68}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}理解}{68}{subsubsection.6.1.6}%
-\contentsline {subsection}{\numberline {6.2}微分等式}{68}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}微分不等式}{69}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}用函数性态（包括单调性、凹凸性和最值等）证明不等式}{69}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}用常数变量化证明不等式}{69}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}用中值定理证明不等式}{69}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}结论}{70}{subsubsection.6.3.4}%
-\contentsline {section}{\numberline {7}一元函数微分学的应用 - 物理应用与经济应用}{70}{section.7}%
-\contentsline {subsection}{\numberline {7.1}物理应用}{70}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}相关变化率}{70}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}方法总结}{71}{subsection.7.3}%
-\contentsline {section}{\numberline {8}一元函数积分学的概念与性质}{71}{section.8}%
-\contentsline {subsection}{\numberline {8.1}不定积分}{71}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}原函数与不定积分}{71}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}原函数（不定积分）存在定理}{71}{subsubsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.2}定积分}{72}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}定义}{72}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}存在定理}{73}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}性质（假设以下积分均存在）}{73}{subsubsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.3}变限积分}{74}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}概念}{74}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}性质}{74}{subsubsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.4}反常积分}{75}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}概念}{75}{subsubsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.2}敛散性的判别法}{76}{subsubsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.5}基础概念}{77}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}结论}{77}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}定理}{78}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}运算}{78}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}公式}{78}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}方法总结}{78}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}条件转换思路}{78}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}经典}{79}{subsection.8.12}%
-\contentsline {subsection}{\numberline {8.13}理解}{79}{subsection.8.13}%
-\contentsline {section}{\numberline {9}一元函数积分学的计算}{81}{section.9}%
-\contentsline {subsection}{\numberline {9.1}基本积分公式}{81}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}不定积分的积分法}{82}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}凑微分法}{82}{subsubsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.2}换元法}{84}{subsubsection.9.2.2}%
-\contentsline {subsubsection}{\numberline {9.2.3}分部积分法}{85}{subsubsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.4}有理函数的积分}{85}{subsubsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.3}定积分的计算}{87}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}牛顿-莱布尼茨公式}{87}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}牛顿–莱布尼茨公式的推广}{87}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}定积分的换元积分法}{88}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9.3.4}定积分的分部积分法}{88}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9.3.5}结论}{88}{subsubsection.9.3.5}%
-\contentsline {subsection}{\numberline {9.4}变限积分的计算}{89}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}求导公式}{89}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}重要结论}{90}{subsubsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.5}反常积分的计算}{90}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}基础概念}{91}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}结论}{91}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}定理}{91}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}运算}{91}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}公式}{92}{subsection.9.10}%
-\contentsline {subsection}{\numberline {9.11}方法总结}{93}{subsection.9.11}%
-\contentsline {subsection}{\numberline {9.12}条件转换思路}{93}{subsection.9.12}%
-\contentsline {subsection}{\numberline {9.13}理解}{93}{subsection.9.13}%
-\contentsline {section}{\numberline {10}一元函数积分学的应用 - 几何应用}{93}{section.10}%
-\contentsline {subsection}{\numberline {10.1}用定积分表达和计算平面图形的面积}{93}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}用定积分表达和计算旋转体的体积}{94}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}用定积分表达和计算函数的平均值}{94}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}平面上的曲边梯形的形心坐标公式}{94}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}平面曲线的弧长}{94}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}旋转曲面的面积（侧面积）}{95}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}平行截面面积为已知的立体体积}{95}{subsection.10.7}%
-\contentsline {subsection}{\numberline {10.8}基础概念}{95}{subsection.10.8}%
-\contentsline {subsection}{\numberline {10.9}结论}{95}{subsection.10.9}%
-\contentsline {subsection}{\numberline {10.10}定理}{96}{subsection.10.10}%
-\contentsline {subsection}{\numberline {10.11}运算}{96}{subsection.10.11}%
-\contentsline {subsection}{\numberline {10.12}公式}{96}{subsection.10.12}%
-\contentsline {subsection}{\numberline {10.13}方法总结}{96}{subsection.10.13}%
-\contentsline {subsection}{\numberline {10.14}条件转换思路}{96}{subsection.10.14}%
-\contentsline {subsection}{\numberline {10.15}理解}{96}{subsection.10.15}%
-\contentsline {section}{\numberline {11}一元函数积分学的应用 - 积分等式与积分不等式}{96}{section.11}%
-\contentsline {subsection}{\numberline {11.1}积分等式}{96}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}积分不等式}{97}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}基础概念}{97}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}结论}{97}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}定理}{97}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}运算}{97}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}公式}{98}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}方法总结}{98}{subsection.11.8}%
-\contentsline {subsection}{\numberline {11.9}条件转换思路}{98}{subsection.11.9}%
-\contentsline {subsection}{\numberline {11.10}理解}{98}{subsection.11.10}%
-\contentsline {section}{\numberline {12}一元函数积分学的应用 - 物理应用}{99}{section.12}%
-\contentsline {subsection}{\numberline {12.1}变力沿直线做功}{99}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}抽水做功}{100}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}静水压力（水压力）}{100}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}引力}{101}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}古鲁金第一定理}{101}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}古鲁金第二定理}{101}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}基础概念}{101}{subsection.12.7}%
-\contentsline {subsection}{\numberline {12.8}结论}{101}{subsection.12.8}%
-\contentsline {subsection}{\numberline {12.9}定理}{101}{subsection.12.9}%
-\contentsline {subsection}{\numberline {12.10}运算}{101}{subsection.12.10}%
-\contentsline {subsection}{\numberline {12.11}公式}{101}{subsection.12.11}%
-\contentsline {subsection}{\numberline {12.12}方法总结}{101}{subsection.12.12}%
-\contentsline {subsection}{\numberline {12.13}条件转换思路}{101}{subsection.12.13}%
-\contentsline {subsection}{\numberline {12.14}理解}{101}{subsection.12.14}%
-\contentsline {section}{\numberline {13}多元函数微分学}{101}{section.13}%
-\contentsline {subsection}{\numberline {13.1}基本概念}{101}{subsection.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.1}邻域}{101}{subsubsection.13.1.1}%
-\contentsline {subsubsection}{\numberline {13.1.2}极限}{102}{subsubsection.13.1.2}%
-\contentsline {subsubsection}{\numberline {13.1.3}连续}{103}{subsubsection.13.1.3}%
-\contentsline {subsubsection}{\numberline {13.1.4}偏导数}{103}{subsubsection.13.1.4}%
-\contentsline {subsubsection}{\numberline {13.1.5}可微}{104}{subsubsection.13.1.5}%
-\contentsline {subsection}{\numberline {13.2}多元函数微分法则}{105}{subsection.13.2}%
-\contentsline {subsubsection}{\numberline {13.2.1}链式求导规则}{105}{subsubsection.13.2.1}%
-\contentsline {subsubsection}{\numberline {13.2.2}全微分形式不变性}{107}{subsubsection.13.2.2}%
-\contentsline {subsubsection}{\numberline {13.2.3}隐函数存在定理（公式法）}{107}{subsubsection.13.2.3}%
-\contentsline {subsubsection}{\numberline {13.2.4}二元函数的拉格朗日定理}{108}{subsubsection.13.2.4}%
-\contentsline {subsection}{\numberline {13.3}多元函数的极值与最值}{108}{subsection.13.3}%
-\contentsline {subsubsection}{\numberline {13.3.1}概念}{108}{subsubsection.13.3.1}%
-\contentsline {subsubsection}{\numberline {13.3.2}无条件极值}{108}{subsubsection.13.3.2}%
-\contentsline {subsubsection}{\numberline {13.3.3}条件最值与拉格朗日乘数法}{109}{subsubsection.13.3.3}%
-\contentsline {subsubsection}{\numberline {13.3.4}最远（近）点的垂线原理}{110}{subsubsection.13.3.4}%
-\contentsline {subsubsection}{\numberline {13.3.5}有界闭区域上连续函数的最值问题}{110}{subsubsection.13.3.5}%
-\contentsline {subsection}{\numberline {13.4}结论}{110}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}方法总结}{111}{subsection.13.5}%
-\contentsline {subsection}{\numberline {13.6}方法步骤}{111}{subsection.13.6}%
-\contentsline {section}{\numberline {14}二重积分}{112}{section.14}%
-\contentsline {subsection}{\numberline {14.1}概念、性质与对称性}{112}{subsection.14.1}%
-\contentsline {subsubsection}{\numberline {14.1.1}概念}{112}{subsubsection.14.1.1}%
-\contentsline {subsubsection}{\numberline {14.1.2}性质}{112}{subsubsection.14.1.2}%
-\contentsline {subsubsection}{\numberline {14.1.3}对称性}{113}{subsubsection.14.1.3}%
-\contentsline {subsection}{\numberline {14.2}计算}{114}{subsection.14.2}%
-\contentsline {subsubsection}{\numberline {14.2.1}直角坐标系下的计算方法}{114}{subsubsection.14.2.1}%
-\contentsline {subsubsection}{\numberline {14.2.2}极坐标系下的计算方法}{115}{subsubsection.14.2.2}%
-\contentsline {paragraph}{基本原理}{115}{section*.28}%
-\contentsline {paragraph}{坐标变换公式}{115}{section*.29}%
-\contentsline {paragraph}{$\color {red}{\bigstar }$ 定限口诀}{115}{section*.30}%
-\contentsline {paragraph}{三种情形}{115}{section*.31}%
-\contentsline {subsubsection}{\numberline {14.2.3}极坐标系与直角坐标系选择的一般原则}{115}{subsubsection.14.2.3}%
-\contentsline {paragraph}{优先选用极坐标的情形}{115}{section*.32}%
-\contentsline {subsubsection}{\numberline {14.2.4}极坐标系与直角坐标系的互相转化}{116}{subsubsection.14.2.4}%
-\contentsline {subsubsection}{\numberline {14.2.5}换元法}{116}{subsubsection.14.2.5}%
-\contentsline {subsection}{\numberline {14.3}结论}{116}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}公式}{117}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5}方法总结}{118}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6}理解}{119}{subsection.14.6}%
-\contentsline {subsection}{\numberline {14.7}三换（数学核心方法论）}{120}{subsection.14.7}%
-\contentsline {section}{\numberline {15}微分方程}{121}{section.15}%
-\contentsline {subsection}{\numberline {15.1}微分方程的概念}{121}{subsection.15.1}%
-\contentsline {subsubsection}{\numberline {15.1.1}微分方程及其阶}{121}{subsubsection.15.1.1}%
-\contentsline {subsubsection}{\numberline {15.1.2}常微分方程}{121}{subsubsection.15.1.2}%
-\contentsline {subsubsection}{\numberline {15.1.3}线性微分方程}{121}{subsubsection.15.1.3}%
-\contentsline {subsubsection}{\numberline {15.1.4}微分方程的解}{122}{subsubsection.15.1.4}%
-\contentsline {subsubsection}{\numberline {15.1.5}微分方程的通解}{122}{subsubsection.15.1.5}%
-\contentsline {subsubsection}{\numberline {15.1.6}初始条件与特解}{122}{subsubsection.15.1.6}%
-\contentsline {subsection}{\numberline {15.2}一阶微分方程的求解}{122}{subsection.15.2}%
-\contentsline {subsubsection}{\numberline {15.2.1}可分离变量型微分方程}{122}{subsubsection.15.2.1}%
-\contentsline {subsubsection}{\numberline {15.2.2}齐次型微分方程}{123}{subsubsection.15.2.2}%
-\contentsline {subsubsection}{\numberline {15.2.3}一阶线性微分方程}{123}{subsubsection.15.2.3}%
-\contentsline {subsubsection}{\numberline {15.2.4}伯努利方程}{124}{subsubsection.15.2.4}%
-\contentsline {subsubsection}{\numberline {15.2.5}二阶可降阶微分方程（用换元法化为一阶方程）}{124}{subsubsection.15.2.5}%
-\contentsline {subsection}{\numberline {15.3}高阶线性微分方程的求解}{125}{subsection.15.3}%
-\contentsline {subsubsection}{\numberline {15.3.1}二阶常系数齐次线性微分方程}{125}{subsubsection.15.3.1}%
-\contentsline {subsubsection}{\numberline {15.3.2}二阶常系数非齐次线性微分方程}{125}{subsubsection.15.3.2}%
-\contentsline {subsubsection}{\numberline {15.3.3}n（n>2）阶常系数齐次线性微分方程}{129}{subsubsection.15.3.3}%
-\contentsline {subsubsection}{\numberline {15.3.4}欧拉方程}{129}{subsubsection.15.3.4}%
-\contentsline {subsection}{\numberline {15.4}微分方程的几何应用}{130}{subsection.15.4}%
-\contentsline {subsection}{\numberline {15.5}微分方程的物理应用}{130}{subsection.15.5}%
-\contentsline {subsection}{\numberline {15.6}结论}{130}{subsection.15.6}%
-\contentsline {subsection}{\numberline {15.7}理解}{131}{subsection.15.7}%
-\contentsline {section}{\numberline {16}重要公式}{132}{section.16}%
-\contentsline {subsection}{\numberline {16.1}三角函数}{132}{subsection.16.1}%
-\contentsline {subsubsection}{\numberline {16.1.1}诱导公式}{132}{subsubsection.16.1.1}%
-\contentsline {subsubsection}{\numberline {16.1.2}和差公式}{132}{subsubsection.16.1.2}%
-\contentsline {subsubsection}{\numberline {16.1.3}倍角公式}{132}{subsubsection.16.1.3}%
-\contentsline {subsubsection}{\numberline {16.1.4}半角公式}{132}{subsubsection.16.1.4}%
-\contentsline {subsection}{\numberline {16.2}一元二次方程}{133}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}因式分解}{133}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}阶乘与双阶乘}{133}{subsection.16.4}%
-\contentsline {section}{\numberline {17}不等式}{134}{section.17}%
-\contentsline {subsection}{\numberline {17.1}公式}{134}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}方法步骤}{135}{subsection.17.2}%
-\contentsline {subsection}{\numberline {17.3}条件转换思路}{135}{subsection.17.3}%
-\contentsline {section}{\numberline {18}错题}{135}{section.18}%
-\contentsline {subsection}{\numberline {18.1}一元函数微分学的概念}{135}{subsection.18.1}%
+\contentsline {section}{\numberline {1}函数极限与连续}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}函数极限的概念与性质}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}邻域}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}函数极限的定义}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}超实数及其在极限中的应用}{3}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}函数极限的性质}{4}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}无穷小的定义}{5}{subsubsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}无穷小的性质}{6}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}无穷小的比阶}{6}{subsubsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.8}常用的等价无穷小}{6}{subsubsection.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.9}无穷大的定义}{7}{subsubsection.1.1.9}%
+\contentsline {subsubsection}{\numberline {1.1.10}公式}{7}{subsubsection.1.1.10}%
+\contentsline {subsubsection}{\numberline {1.1.11}方法总结}{7}{subsubsection.1.1.11}%
+\contentsline {subsubsection}{\numberline {1.1.12}理解}{7}{subsubsection.1.1.12}%
+\contentsline {subsection}{\numberline {1.2}函数的图像}{8}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}基本初等函数与初等函数}{8}{subsubsection.1.2.1}%
+\contentsline {paragraph}{常函数}{8}{section*.2}%
+\contentsline {paragraph}{幂函数}{8}{section*.3}%
+\contentsline {paragraph}{指数函数}{9}{section*.4}%
+\contentsline {paragraph}{对数函数}{9}{section*.5}%
+\contentsline {paragraph}{三角函数}{10}{section*.6}%
+\contentsline {paragraph}{反三角函数}{11}{section*.7}%
+\contentsline {paragraph}{初等函数}{13}{section*.8}%
+\contentsline {subsubsection}{\numberline {1.2.2}分段函数}{13}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}函数极限的计算}{13}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}方法}{13}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}七种未定式的计算}{16}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}结论}{17}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}方法总结}{18}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}理解}{18}{subsubsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.4}函数的概念与特性}{18}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}函数$y = f(x)$}{18}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}反函数$y = f^{-1}(x)$}{19}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}复合函数$y = f[g(x)]$}{19}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}隐函数}{20}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}四种特性}{20}{subsubsection.1.4.5}%
+\contentsline {paragraph}{有界性}{20}{section*.9}%
+\contentsline {paragraph}{单调性}{21}{section*.10}%
+\contentsline {paragraph}{奇偶性}{21}{section*.11}%
+\contentsline {paragraph}{周期性}{22}{section*.12}%
+\contentsline {subsubsection}{\numberline {1.4.6}基础概念}{23}{subsubsection.1.4.6}%
+\contentsline {subsubsection}{\numberline {1.4.7}结论}{26}{subsubsection.1.4.7}%
+\contentsline {subsubsection}{\numberline {1.4.8}定理}{26}{subsubsection.1.4.8}%
+\contentsline {subsubsection}{\numberline {1.4.9}运算}{26}{subsubsection.1.4.9}%
+\contentsline {subsubsection}{\numberline {1.4.10}公式}{26}{subsubsection.1.4.10}%
+\contentsline {subsubsection}{\numberline {1.4.11}方法总结}{27}{subsubsection.1.4.11}%
+\contentsline {subsubsection}{\numberline {1.4.12}条件转换思路}{27}{subsubsection.1.4.12}%
+\contentsline {subsubsection}{\numberline {1.4.13}理解}{27}{subsubsection.1.4.13}%
+\contentsline {subsubsection}{\numberline {1.4.14}函数的连续与间断}{27}{subsubsection.1.4.14}%
+\contentsline {paragraph}{连续点的定义}{27}{section*.13}%
+\contentsline {paragraph}{间断点的定义与分类}{27}{section*.14}%
+\contentsline {section}{\numberline {2}数列极限}{28}{section.2}%
+\contentsline {subsection}{\numberline {2.1}数列的概念}{28}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}数列极限的定义}{29}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}收敛数列的性质}{30}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}极限四则运算规则}{30}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}海涅定理（归结原则）}{31}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}夹逼准则}{31}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}放缩常用方法}{32}{subsubsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.7}单调有界准则}{34}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}证明数列$\{x_n\}$单调性的常用方法}{35}{subsubsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.8}${x_n}$收敛于$a$的速度问题}{35}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}狄利克雷函数}{37}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}结论}{38}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}方法步骤}{38}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}条件转换思路}{39}{subsection.2.12}%
+\contentsline {section}{\numberline {3}一元函数微分学的概念}{39}{section.3}%
+\contentsline {subsection}{\numberline {3.1}导数}{39}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}导数的几何意义}{40}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}微分的概念}{40}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}定理}{41}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}结论}{41}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}理解}{42}{subsection.3.6}%
+\contentsline {section}{\numberline {4}一元函数微分学的计算}{44}{section.4}%
+\contentsline {subsection}{\numberline {4.1}基本求导公式}{44}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}四则运算}{45}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}复合函数的导数与微分形式不变性}{45}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}分段函数的导数}{45}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}反函数的导数}{46}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}隐函数求导法}{47}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}参数方程所确定的函数的导数}{47}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}对数求导法}{47}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}幂指函数求导法}{48}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}\textcolor {red}{$\bigstar $} 高阶导数}{48}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}公式}{49}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}方法总结}{50}{subsection.4.12}%
+\contentsline {section}{\numberline {5}一元函数微分学的应用 - 几何应用}{50}{section.5}%
+\contentsline {subsection}{\numberline {5.1}极值的定义}{50}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}单调性与极值的判别}{50}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}单调性的判别}{50}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}一阶可导点是极值点的必要条件}{51}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}判别极值的第一充分条件}{51}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}判别极值的第二充分条件}{51}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}判别极值的第三充分条件}{51}{subsubsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.3}凹凸性与拐点的概念}{51}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}凹凸性的定义}{51}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}拐点的定义}{52}{subsubsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.4}凹凸性与拐点的判别}{52}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}判别凹凸性}{52}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}二阶可导点是拐点的必要条件}{53}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}判别拐点的第一充分条件}{53}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}判别拐点的第二充分条件}{53}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}判别拐点的第三充分条件}{53}{subsubsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.5}极值点与拐点的重要结论}{53}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}渐近线}{53}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}铅直渐近线}{53}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}水平渐近线}{54}{subsubsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.3}斜渐近线}{54}{subsubsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.4}方法总结}{54}{subsubsection.5.6.4}%
+\contentsline {subsection}{\numberline {5.7}最值或取值范围}{55}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}最值的定义}{55}{subsubsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.2}求区间$[a, b]$上连续函数$f(x)$的最大值$M$和最小值$m$}{55}{subsubsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.3}求区间$(a, b)$内连续函数$f(x)$的最值或取值范围}{55}{subsubsection.5.7.3}%
+\contentsline {subsection}{\numberline {5.8}作函数图像}{56}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}给出函数 $f(x)$，作图的一般步骤}{56}{subsubsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.2}常用平面图像}{56}{subsubsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.3}直角坐标系的观点画极坐标的图}{58}{subsubsection.5.8.3}%
+\contentsline {subsection}{\numberline {5.9}曲率及曲率半径}{58}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}结论}{59}{subsection.5.10}%
+\contentsline {section}{\numberline {6}一元函数微分学的应用 - 中值定理、微分等式与微分不等式}{59}{section.6}%
+\contentsline {subsection}{\numberline {6.1}中值定理}{59}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}涉及函数的中值定理}{59}{subsubsection.6.1.1}%
+\contentsline {paragraph}{有界与最值定理}{59}{section*.18}%
+\contentsline {paragraph}{介值定理}{59}{section*.19}%
+\contentsline {paragraph}{平均值定理}{59}{section*.20}%
+\contentsline {paragraph}{零点定理（介值定理的特例）}{60}{section*.21}%
+\contentsline {subsubsection}{\numberline {6.1.2}涉及导数（微分）的中值定理}{60}{subsubsection.6.1.2}%
+\contentsline {paragraph}{费马定理}{60}{section*.22}%
+\contentsline {paragraph}{导数零点定理}{60}{section*.23}%
+\contentsline {paragraph}{罗尔定理}{60}{section*.24}%
+\contentsline {paragraph}{拉格朗日中值定理}{61}{section*.25}%
+\contentsline {paragraph}{柯西中值定理}{61}{section*.26}%
+\contentsline {paragraph}{泰勒公式（微分中值定理）}{62}{section*.27}%
+\contentsline {subsubsection}{\numberline {6.1.3}结论}{63}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}方法总结}{63}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.5}条件转换思路}{63}{subsubsection.6.1.5}%
+\contentsline {subsubsection}{\numberline {6.1.6}理解}{64}{subsubsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.2}微分等式}{64}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}微分不等式}{64}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}用函数性态（包括单调性、凹凸性和最值等）证明不等式}{64}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}用常数变量化证明不等式}{65}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}用中值定理证明不等式}{65}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}结论}{65}{subsubsection.6.3.4}%
+\contentsline {section}{\numberline {7}一元函数微分学的应用 - 物理应用与经济应用}{65}{section.7}%
+\contentsline {subsection}{\numberline {7.1}物理应用}{65}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}相关变化率}{66}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}方法总结}{67}{subsection.7.3}%
+\contentsline {section}{\numberline {8}一元函数积分学的概念与性质}{67}{section.8}%
+\contentsline {subsection}{\numberline {8.1}不定积分}{67}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}原函数与不定积分}{67}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}原函数（不定积分）存在定理}{67}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.2}定积分}{68}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}定义}{68}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}存在定理}{69}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}性质（假设以下积分均存在）}{69}{subsubsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.3}变限积分}{70}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}概念}{70}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}性质}{70}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}反常积分}{71}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}概念}{71}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}敛散性的判别法}{72}{subsubsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.5}基础概念}{74}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}结论}{74}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}定理}{75}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}运算}{75}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}公式}{75}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}方法总结}{75}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}条件转换思路}{75}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}经典}{75}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}理解}{76}{subsection.8.13}%
+\contentsline {section}{\numberline {9}一元函数积分学的计算}{77}{section.9}%
+\contentsline {subsection}{\numberline {9.1}基本积分公式}{77}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}不定积分的积分法}{79}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}凑微分法}{79}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}换元法}{81}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}分部积分法}{82}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}有理函数的积分}{82}{subsubsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.3}定积分的计算}{84}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}牛顿-莱布尼茨公式}{84}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}牛顿–莱布尼茨公式的推广}{84}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}定积分的换元积分法}{85}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}定积分的分部积分法}{85}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}结论}{85}{subsubsection.9.3.5}%
+\contentsline {subsection}{\numberline {9.4}变限积分的计算}{86}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}求导公式}{86}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}重要结论}{87}{subsubsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.5}反常积分的计算}{88}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}基础概念}{88}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}结论}{88}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}定理}{88}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}运算}{88}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}公式}{89}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}方法总结}{90}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}条件转换思路}{90}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}理解}{90}{subsection.9.13}%
+\contentsline {section}{\numberline {10}一元函数积分学的应用 - 几何应用}{90}{section.10}%
+\contentsline {subsection}{\numberline {10.1}用定积分表达和计算平面图形的面积}{90}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}用定积分表达和计算旋转体的体积}{91}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}用定积分表达和计算函数的平均值}{91}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}平面上的曲边梯形的形心坐标公式}{91}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}平面曲线的弧长}{91}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}旋转曲面的面积（侧面积）}{92}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}平行截面面积为已知的立体体积}{92}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}基础概念}{92}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}结论}{92}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}定理}{93}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}运算}{93}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}公式}{93}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}方法总结}{93}{subsection.10.13}%
+\contentsline {subsection}{\numberline {10.14}条件转换思路}{94}{subsection.10.14}%
+\contentsline {subsection}{\numberline {10.15}理解}{94}{subsection.10.15}%
+\contentsline {section}{\numberline {11}一元函数积分学的应用 - 积分等式与积分不等式}{94}{section.11}%
+\contentsline {subsection}{\numberline {11.1}积分等式}{94}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}积分不等式}{94}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}基础概念}{94}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}结论}{94}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}定理}{94}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}运算}{95}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}公式}{95}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}方法总结}{95}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}条件转换思路}{96}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}理解}{96}{subsection.11.10}%
+\contentsline {section}{\numberline {12}一元函数积分学的应用 - 物理应用}{97}{section.12}%
+\contentsline {subsection}{\numberline {12.1}变力沿直线做功}{97}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}抽水做功}{97}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}静水压力（水压力）}{97}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}引力}{98}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}古鲁金第一定理}{98}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}古鲁金第二定理}{98}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}基础概念}{98}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}结论}{98}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}定理}{98}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}运算}{98}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}公式}{98}{subsection.12.11}%
+\contentsline {subsection}{\numberline {12.12}方法总结}{98}{subsection.12.12}%
+\contentsline {subsection}{\numberline {12.13}条件转换思路}{98}{subsection.12.13}%
+\contentsline {subsection}{\numberline {12.14}理解}{98}{subsection.12.14}%
+\contentsline {section}{\numberline {13}多元函数微分学}{98}{section.13}%
+\contentsline {subsection}{\numberline {13.1}基本概念}{98}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}邻域}{98}{subsubsection.13.1.1}%
+\contentsline {subsubsection}{\numberline {13.1.2}极限}{99}{subsubsection.13.1.2}%
+\contentsline {subsubsection}{\numberline {13.1.3}连续}{100}{subsubsection.13.1.3}%
+\contentsline {subsubsection}{\numberline {13.1.4}偏导数}{100}{subsubsection.13.1.4}%
+\contentsline {subsubsection}{\numberline {13.1.5}可微}{101}{subsubsection.13.1.5}%
+\contentsline {subsection}{\numberline {13.2}多元函数微分法则}{103}{subsection.13.2}%
+\contentsline {subsubsection}{\numberline {13.2.1}链式求导规则}{103}{subsubsection.13.2.1}%
+\contentsline {subsubsection}{\numberline {13.2.2}全微分形式不变性}{104}{subsubsection.13.2.2}%
+\contentsline {subsubsection}{\numberline {13.2.3}隐函数存在定理（公式法）}{105}{subsubsection.13.2.3}%
+\contentsline {subsubsection}{\numberline {13.2.4}二元函数的拉格朗日定理}{105}{subsubsection.13.2.4}%
+\contentsline {subsection}{\numberline {13.3}多元函数的极值与最值}{105}{subsection.13.3}%
+\contentsline {subsubsection}{\numberline {13.3.1}概念}{105}{subsubsection.13.3.1}%
+\contentsline {subsubsection}{\numberline {13.3.2}无条件极值}{106}{subsubsection.13.3.2}%
+\contentsline {subsubsection}{\numberline {13.3.3}条件最值与拉格朗日乘数法}{106}{subsubsection.13.3.3}%
+\contentsline {subsubsection}{\numberline {13.3.4}最远（近）点的垂线原理}{107}{subsubsection.13.3.4}%
+\contentsline {subsubsection}{\numberline {13.3.5}有界闭区域上连续函数的最值问题}{107}{subsubsection.13.3.5}%
+\contentsline {subsection}{\numberline {13.4}结论}{108}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}方法总结}{108}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}方法步骤}{108}{subsection.13.6}%
+\contentsline {section}{\numberline {14}二重积分}{109}{section.14}%
+\contentsline {subsection}{\numberline {14.1}概念、性质与对称性}{109}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}概念}{109}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}性质}{110}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}对称性}{111}{subsubsection.14.1.3}%
+\contentsline {subsection}{\numberline {14.2}计算}{112}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}直角坐标系下的计算方法}{112}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}极坐标系下的计算方法}{112}{subsubsection.14.2.2}%
+\contentsline {paragraph}{基本原理}{112}{section*.28}%
+\contentsline {paragraph}{坐标变换公式}{112}{section*.29}%
+\contentsline {paragraph}{$\color {red}{\bigstar }$ 定限口诀}{112}{section*.30}%
+\contentsline {paragraph}{三种情形}{112}{section*.31}%
+\contentsline {subsubsection}{\numberline {14.2.3}极坐标系与直角坐标系选择的一般原则}{113}{subsubsection.14.2.3}%
+\contentsline {paragraph}{优先选用极坐标的情形}{113}{section*.32}%
+\contentsline {subsubsection}{\numberline {14.2.4}极坐标系与直角坐标系的互相转化}{113}{subsubsection.14.2.4}%
+\contentsline {subsubsection}{\numberline {14.2.5}换元法}{113}{subsubsection.14.2.5}%
+\contentsline {subsection}{\numberline {14.3}结论}{114}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}公式}{115}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}方法总结}{116}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}理解}{116}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7}三换（数学核心方法论）}{118}{subsection.14.7}%
+\contentsline {section}{\numberline {15}微分方程}{119}{section.15}%
+\contentsline {subsection}{\numberline {15.1}微分方程的概念}{119}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}微分方程及其阶}{119}{subsubsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.2}常微分方程}{119}{subsubsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.3}线性微分方程}{119}{subsubsection.15.1.3}%
+\contentsline {subsubsection}{\numberline {15.1.4}微分方程的解}{120}{subsubsection.15.1.4}%
+\contentsline {subsubsection}{\numberline {15.1.5}微分方程的通解}{120}{subsubsection.15.1.5}%
+\contentsline {subsubsection}{\numberline {15.1.6}初始条件与特解}{120}{subsubsection.15.1.6}%
+\contentsline {subsection}{\numberline {15.2}一阶微分方程的求解}{120}{subsection.15.2}%
+\contentsline {subsubsection}{\numberline {15.2.1}可分离变量型微分方程}{120}{subsubsection.15.2.1}%
+\contentsline {subsubsection}{\numberline {15.2.2}齐次型微分方程}{121}{subsubsection.15.2.2}%
+\contentsline {subsubsection}{\numberline {15.2.3}一阶线性微分方程}{121}{subsubsection.15.2.3}%
+\contentsline {subsubsection}{\numberline {15.2.4}伯努利方程}{122}{subsubsection.15.2.4}%
+\contentsline {subsubsection}{\numberline {15.2.5}二阶可降阶微分方程（用换元法化为一阶方程）}{122}{subsubsection.15.2.5}%
+\contentsline {subsection}{\numberline {15.3}高阶线性微分方程的求解}{123}{subsection.15.3}%
+\contentsline {subsubsection}{\numberline {15.3.1}二阶常系数齐次线性微分方程}{123}{subsubsection.15.3.1}%
+\contentsline {subsubsection}{\numberline {15.3.2}二阶常系数非齐次线性微分方程}{123}{subsubsection.15.3.2}%
+\contentsline {subsubsection}{\numberline {15.3.3}n（n>2）阶常系数齐次线性微分方程}{127}{subsubsection.15.3.3}%
+\contentsline {subsubsection}{\numberline {15.3.4}欧拉方程}{127}{subsubsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.4}微分方程的几何应用}{128}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5}微分方程的物理应用}{128}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6}结论}{128}{subsection.15.6}%
+\contentsline {subsection}{\numberline {15.7}理解}{129}{subsection.15.7}%
+\contentsline {section}{\numberline {16}重要公式}{130}{section.16}%
+\contentsline {subsection}{\numberline {16.1}三角函数}{130}{subsection.16.1}%
+\contentsline {subsubsection}{\numberline {16.1.1}诱导公式}{130}{subsubsection.16.1.1}%
+\contentsline {subsubsection}{\numberline {16.1.2}和差公式}{130}{subsubsection.16.1.2}%
+\contentsline {subsubsection}{\numberline {16.1.3}倍角公式}{130}{subsubsection.16.1.3}%
+\contentsline {subsubsection}{\numberline {16.1.4}半角公式}{131}{subsubsection.16.1.4}%
+\contentsline {subsection}{\numberline {16.2}一元二次方程}{131}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}因式分解}{131}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}阶乘与双阶乘}{132}{subsection.16.4}%
+\contentsline {section}{\numberline {17}不等式}{132}{section.17}%
+\contentsline {subsection}{\numberline {17.1}公式}{132}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}方法步骤}{133}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}条件转换思路}{133}{subsection.17.3}%
+\contentsline {section}{\numberline {18}错题}{134}{section.18}%
+\contentsline {subsection}{\numberline {18.1}一元函数微分学的概念}{134}{subsection.18.1}%
+\contentsline {subsubsection}{\numberline {18.1.1}题目}{134}{subsubsection.18.1.1}%
+\contentsline {subsubsection}{\numberline {18.1.2}解答}{134}{subsubsection.18.1.2}%
+\contentsline {subsection}{\numberline {18.2}一元函数微分学的应用 - 几何应用}{137}{subsection.18.2}%
+\contentsline {subsubsection}{\numberline {18.2.1}解答}{138}{subsubsection.18.2.1}%
