@@ -26,6 +26,15 @@
             \item $(\cot x)' = -\csc^2 x = -\dfrac{1}{\sin^2 x}$
             \item $(\sec x)' = \sec x \tan x = \dfrac{\sin x}{\cos^2 x}$
             \item $(\csc x)' = -\csc x \cot x = -\dfrac{\cos x}{\sin^2 x}$
+        \end{itemize}
+        \item 反函数的导数
+        \[
+            \begin{aligned}
+                y & = f(x),        & x & = \varphi(y),        & \varphi'(y) & = \frac{1}{f'(x)},        & f'(x) & = \frac{1}{\varphi'(y)} \\[4pt]
+                y & = \arctan x,   & x & = \tan y,            & (\tan y)'   & = \frac{1}{(\arctan x)'}, & (\arctan x)' & = \frac{1}{(\tan y)'}
+            \end{aligned}
+        \]
+        \begin{itemize}
             \item $(\arcsin x)' = \dfrac{1}{\sqrt{1-x^2}}$
             \item $(\arccos x)' = -\dfrac{1}{\sqrt{1-x^2}}$
             \item $(\arctan x)' = \dfrac{1}{1+x^2}$
@@ -213,16 +222,23 @@
         \begin{itemize}
             \item $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$
             \item ${\color{red}{\bigstar}}(uv)^{(n)} = \displaystyle\sum_{k=0}^{n}C_n^k\,u^{(k)}\,v^{(n-k)}$
-            \item $C_n^k = \dfrac{n!}{k!(n-k)!}$
-            \item \[
-                      \begin{array}{ccccccccc}
-                          & & & & 1 \\
-                          & & & 1 & & 1 \\
-                          & & 1 & & 2 & & 1 \\
-                          & 1 & & 3 & & 3 & & 1 \\
-                          1 & & 4 & & 6 & & 4 & & 1
-                      \end{array}
-            \]
+            \begin{circlenum}
+                \item $C_n^k = \dfrac{n!}{k!(n-k)!}$
+                \item \[
+                          \begin{array}{ccccccccc}
+                              & & & & 1 \\
+                              & & & 1 & & 1 \\
+                              & & 1 & & 2 & & 1 \\
+                              & 1 & & 3 & & 3 & & 1 \\
+                              1 & & 4 & & 6 & & 4 & & 1
+                          \end{array}
+                \]
+            \end{circlenum}
+            \item 适用场景
+            \begin{itemize}
+                \item 求两个函数乘积的高阶导数
+                \item 当一个函数求高阶导数较困难时，若能转化成两个函数的乘积形式，使用莱布尼茨公式
+            \end{itemize}
         \end{itemize}
         \item 泰勒展开式
         \begin{circlenum}
@@ -253,16 +269,16 @@
         \end{circlenum}
         \[
             \begin{aligned}
-                e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots, & -\infty < x < +\infty \\
-                \sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots, & -\infty < x < +\infty \\
-                \cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots, & -\infty < x < +\infty \\
-                \frac{1}{1-x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, & |x| < 1 \\
-                \frac{1}{1+x} &= \frac{1}{1 - (-x)} = \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, & |x| < 1 \\
-                \ln(1+x) &= \int \frac{1}{1+x}\,\mathrm{d}x = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, & |x| < 1 \\
-                (1+x)^a &= \sum_{n=0}^{\infty} \binom{a}{n} x^n = 1 + ax + \frac{a(a-1)}{2!} x^2 + \cdots, & |x| < 1 \\
-                \tan x &= x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots, & |x| < \frac{\pi}{2} \\
-                \arcsin x &= \sum_{n=0}^{\infty} \frac{(2n)!}{4^n (n!)^2 (2n+1)} x^{2n+1} = x + \frac{x^3}{6} + \frac{3x^5}{40} + \cdots, & |x| \le 1 \\
-                \arctan x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots, & |x| \le 1
+                e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots, \quad -\infty < x < +\infty \\
+                \sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots, \quad -\infty < x < +\infty \\
+                \cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots, \quad -\infty < x < +\infty \\
+                \frac{1}{1-x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, \quad |x| < 1 \\
+                \frac{1}{1+x} &= \frac{1}{1 - (-x)} = \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, \quad |x| < 1 \\
+                \ln(1+x) &= \int \frac{1}{1+x}\,\mathrm{d}x = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, \quad |x| < 1 \\
+                (1+x)^a &= \sum_{n=0}^{\infty} \binom{a}{n} x^n = 1 + ax + \frac{a(a-1)}{2!} x^2 + \cdots, \quad |x| < 1 \\
+                \tan x &= x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots, \quad |x| < \frac{\pi}{2} \\
+                \arcsin x &= \sum_{n=0}^{\infty} \frac{(2n)!}{4^n (n!)^2 (2n+1)} x^{2n+1} = x + \frac{x^3}{6} + \frac{3x^5}{40} + \cdots, \quad |x| \le 1 \\
+                \arctan x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots, \quad |x| \le 1
             \end{aligned}
         \]
     \end{enumerate}
@@ -288,5 +304,6 @@
 
     \begin{enumerate}
         \item 对于$g(x) = x^k f(x)$型，可以考虑用泰勒公式求$g^{(n)}(0)$
+        \item $|u| = \sqrt {u^2}$
     \end{enumerate}
 \end{document}

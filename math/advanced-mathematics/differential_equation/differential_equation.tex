@@ -175,7 +175,7 @@
         \begin{circlenum}
             \item 恒等变形：方程两边除以 $y^n$，得 $y^{-n}\dfrac{\mathrm{d}y}{\mathrm{d}x} + p(x)y^{1-n} = q(x)$
             \item 令 $z = y^{1-n}$，得 $\dfrac{\mathrm{d}z}{\mathrm{d}x} = (1-n)y^{-n}\dfrac{\mathrm{d}y}{\mathrm{d}x}$，则 $\dfrac{1}{1-n}\dfrac{\mathrm{d}z}{\mathrm{d}x} + p(x)z = q(x)$
-            \item 代入得{\color{red}{一阶线性方程}}：$\dfrac{\mathrm{d}z}{\mathrm{d}x} + (1-n)p(x)z = (1-n)q(x)$
+            \item 代入得{\color{red}{一阶线性微分方程}}：$\dfrac{\mathrm{d}z}{\mathrm{d}x} + (1-n)p(x)z = (1-n)q(x)$
         \end{circlenum}
     \end{itemize}
 
@@ -219,7 +219,7 @@
 
     \begin{enumerate}
         \item \textbf{标准形式}：$y'' + py' + qy = 0$（$p, q$ 为常数）
-        \item \textbf{解的结构}：若 $y_1(x), y_2(x)$ 是方程 $y'' + py' + qy = 0$ 的两个解，且 $\dfrac{y_1}{y_2} \neq$ 常数，则称它们为线性无关解，且 $y = C_1y_1 + C_2y_2$ 是方程的通解
+        \item \textbf{解的结构}：若 $y_1(x), y_2(x)$ 是方程 $y'' + py' + qy = 0$ 的两个解，且 $\dfrac{y_1}{y_2} \neq$ 常数，则称它们为{\textbf{线性无关解}}，且 $y = C_1y_1 + C_2y_2$ 是方程的通解
         \item $\color{red}{\bigstar}$\textbf{通解}（特征方程法）：
         \begin{circlenum}
             \item 写出特征方程：$r^2 + pr + q = 0$
@@ -286,8 +286,8 @@
                         e^{\alpha x} \text{照抄} \\[6pt]
                         l = \max\{m, n\} Q_l^{(1)}(x), Q_l^{(2)}(x) \text{ 都是 } m \text{ 次多项式，系数待定} \\[6pt]
                         k = \begin{cases}
-                                0, &  \alpha + \beta i \neq r_{1, 2} \\
-                                1, &  \alpha + \beta i = r_{1, 2}
+                                0, &  \alpha \pm \beta i \neq r_{1, 2} \\
+                                1, &  \alpha \pm \beta i = r_{1, 2}
                         \end{cases}
                     \end{cases}
                 \]

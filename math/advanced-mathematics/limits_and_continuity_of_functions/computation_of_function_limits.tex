@@ -89,14 +89,18 @@
             + \frac{f^{(n)}(a)}{n!}(x-a)^n + o(x^n)
         \]
         \begin{itemize}
-            \item $\displaystyle \sin x = x - \frac{x^3}{6} + o(x^3) \Rightarrow \text{狗} - \sin \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
-            \item $\displaystyle \arcsin x = x + \frac{x^3}{6} + o(x^3) \Rightarrow \arcsin \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
-            \item $\displaystyle \cos x = 1 - \frac{x^2}{2} + \frac{x^4}{4!} + o(x^4) \Rightarrow 1 - \cos \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
-            \item $\displaystyle \tan x = x + \frac{1}{3}x^3 + o(x^3) \Rightarrow \tan \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
-            \item $\displaystyle \arctan x = x - \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \arctan \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
             \item $\displaystyle e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + o(x^3) \Rightarrow e^{\text{狗}} - 1 - \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
+            \item $\displaystyle \sin x = x - \frac{x^3}{6} + o(x^3) \Rightarrow \text{狗} - \sin \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
+            \item $\displaystyle \cos x = 1 - \frac{x^2}{2} + \frac{x^4}{4!} + o(x^4) \Rightarrow 1 - \cos \text{狗} \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
+            \item $\dfrac{1}{1-x} = 1 + x + x^2 + \cdots + x^n + \cdots$
+            \item $\dfrac{1}{1+x} = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots$
+
             \item $\displaystyle \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \ln(1+\text{狗}) \sim \frac{\text{狗}^2}{2}, \quad \text{狗}\to 0$
             \item $\displaystyle (1+x)^a = 1 + ax + \frac{a(a-1)}{2}x^2 + o(x^2) \Rightarrow (1+\text{狗})^a - 1 - a\text{狗} \sim \frac{a(a-1)}{2}\text{狗}^2, \quad \text{狗}\to 0$
+
+            \item $\displaystyle \tan x = x + \frac{x^3}{3} + o(x^3) \Rightarrow \tan \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
+            \item $\displaystyle \arcsin x = x + \frac{x^3}{6} + o(x^3) \Rightarrow \arcsin \text{狗} - \text{狗} \sim \frac{\text{狗}^3}{6}, \quad \text{狗}\to 0$
+            \item $\displaystyle \arctan x = x - \frac{x^3}{3} + o(x^3) \Rightarrow \text{狗} - \arctan \text{狗} \sim \frac{\text{狗}^3}{3}, \quad \text{狗}\to 0$
             \item $\displaystyle \frac{1}{1+x^2} = 1 - x^2 + x^4 + o(x^4)$
         \end{itemize}
         \item \textbf{无穷小计算（记号运算）}：设 $m,n$ 为正整数，$x\to 0$，则
@@ -113,8 +117,8 @@
 
         \item \textbf{泰勒公式应用时的展开原则:}
         \begin{itemize}
-            \item $\displaystyle\frac{A}{B}$型，适用"上下同阶"原则: 如果分母（或分子）是$x$的$k$次幂，则应把分子（或分母）展开到$x$的$k$次幂
-            \item $A - B$型，适用"幂次最低"原则: 将$A, B$分别展开到他们的系数不相等的$x$的最低次幂为止
+            \item $\dfrac{A}{B}$型，适用{\blueuline{上下同阶}}原则: 如果分母（或分子）是$x$的$k$次幂，则应把分子（或分母）展开到$x$的$k$次幂
+            \item $A - B$型，适用{\blueuline{幂次最低}}原则: 将$A, B$分别展开到他们的系数不相等的$x$的最低次幂为止
         \end{itemize}
         \item \textbf{两个重要极限:}
         \begin{itemize}
@@ -170,8 +174,8 @@
         \end{itemize}
         \item $0\cdot \infty$: 设置分母，简单因式下放
         \begin{itemize}
-            \item $\displaystyle \frac{0}{\displaystyle\frac{1}{\infty}} = \frac{0}{0}$
-            \item $\displaystyle \frac{\infty}{\displaystyle\frac{1}{0}} = \frac{\infty}{\infty}$
+            \item $\dfrac{0}{\frac{1}{\infty}} = \dfrac{0}{0}$
+            \item $\dfrac{\infty}{\frac{1}{0}} = \dfrac{\infty}{\infty}$
             \item 简单因式: $x^\alpha, e^{\betax}, \sin rx$
             \item 复杂因式: $\arctan x, \arcsin x, \ln x$
         \end{itemize}
@@ -187,7 +191,7 @@
                 \lim u^v = \lim \{[1 + (u - 1)]^{\frac{1}{u-1}}\}^{(u-1)v} = e^{\lim(u - 1)v}
             \]
         \end{analysisbox}
-        \item 泰勒公式
+        \item 泰勒公式：在处理$\dfrac{0}{0}$型未定式时，很好用
     \end{enumerate}
 
     \subsubsection{结论}
@@ -216,16 +220,26 @@
         \]
         \item 当 $\alpha > 0$ 时，
         \[
-            \lim_{x \to 0^+} x^\alpha \ln x
-            = \lim_{x \to 0^+} \frac{\ln x}{x^{-\alpha}}
-            \overset{\text{洛必达求导}}{=}
-            \lim_{x \to 0^+}
-            \frac{\dfrac{1}{x}}{-\alpha x^{-\alpha-1}}
-            = -\frac{1}{\alpha}
-            \lim_{x \to 0^+} x^\alpha
-            = 0.
+            \lim_{x \to 0^+} x^\alpha \ln x = \lim_{x \to 0^+} \frac{\ln x}{x^{-\alpha}} \xlongequal{\text{洛必达法则}} \lim_{x \to 0^+} \frac{\dfrac{1}{x}}{-\alpha x^{-\alpha-1}} = -\frac{1}{\alpha} \lim_{x \to 0^+} x^\alpha = 0
         \]
-        一般形式: $\lim\limits_{x\to 0^+} x^\alpha\ln^\beta x = 0$，其中$\alpha, \beta > 0$。{\color{red}{思考}}：当$x\to +\infty$
+
+        \textbf{推广：}
+        \[
+            \lim_{x \to 0^+} x^\alpha \ln^\beta x = 0,
+            \quad (\alpha > 0,\ \beta > 0).
+        \]
+
+        \textbf{当 $x \to +\infty$ 时}
+
+        \[
+            \lim_{x \to +\infty} x^\alpha \ln^\beta x
+            =
+            \begin{cases}
+                +\infty, & \alpha > 0, \\[4pt]
+                0, & \alpha < 0, \\[4pt]
+                +\infty, & \alpha = 0,\ \beta > 0.
+            \end{cases}
+        \]
         \item $\text{狗} - 1 < [\text{狗}] \leq \text{狗}$
     \end{enumerate}
 
@@ -233,58 +247,59 @@
 
     \begin{enumerate}
         \item 遇到幂指函数，用$e$括起来，$u(x)^{v(x)} = e^{v(x)\ln u(x)}$
-        \item $f(x) = (1 + x)^{\displaystyle\frac{1}{x}}$在$x > 0$时有以下性质
-        \begin{itemize}
-            \item $f(x)$单调减少
-            \item $\lim\limits_{x\to 0^+} (1 + x)^{\displaystyle\frac{1}{x}} = e$
-            \item $\lim\limits_{x\to +\infty}(1 + x)^{\displaystyle\frac{1}{x}} = 1$
+        \item $f(x) = (1 + x)^{\frac{1}{x}}$ 在 $x > 0$ 时有以下性质
+
+        \noindent
+        \begin{minipage}[t]{0.52\linewidth}
+            \vspace{0pt}
+            \begin{itemize}
+                \item $f(x)$ 单调减少
+                \item $\lim\limits_{x\to 0^+} (1 + x)^{\frac{1}{x}} = e$
+                \item $\lim\limits_{x\to +\infty}(1 + x)^{\frac{1}{x}} = 1$
+                \item 当 $x\to 0^+$ 时，$(1+x)^{\frac{1}{x}} - e \sim -\dfrac{e}{2}x$
+
+            \end{itemize}
+        \end{minipage}\hfill%
+        \begin{minipage}[t]{0.42\linewidth}
+            \vspace{0pt}
             \begin{tikzpicture}
                 \begin{axis}
                     [
-                    xshift=-1.8cm,
                     axis lines=middle,
                     xlabel={$x$},
                     ylabel={$y$},
-                    domain=-3:3,
-                    samples=200,
-                    width=11cm,
-                    height=9cm,
+                    width=\linewidth,
+                    height=7cm,
                     xtick=\empty,
                     ytick=\empty,
                     xmin=-1, xmax=25,
-                    ymin=-0.5, ymax=4,      % y 轴范围，保证 y=1 和 y=e 在视野内
+                    ymin=-0.5, ymax=4,
                     legend style={
-                        at={(0.02,0.98)},
+                        at={(1.1,1)},
                         anchor=north west,
-                        xshift=240pt,
-                        yshift=-56pt,
                         draw=none
                     }
                     ]
 
-                    % 红色曲线: (1+x)^(1/x), x>0
-                    \addplot[red, thick, domain=0.01:20, samples=5000] {(1 + x)^(1/x)};
-                    \addlegendentry{$y=(1+x)^{\displaystyle\frac{1}{x}}$}
+                    \addplot[red, thick, domain=0.01:50, samples=500] {(1 + x)^(1/x)};
+                    \addlegendentry{$y=(1+x)^{\frac{1}{x}}$}
 
-                    % 红色空心圆表示未定义，不加入图例
                     \addplot[red, mark=o, only marks, forget plot] coordinates {(0,2.71828)};
 
-                    % 绿色曲线: (1+1/x)^x, x>0
-                    \addplot[green, thick, domain=0.001:20, samples=5000] {(1 + 1/x)^x};
-                    \addlegendentry{$y=(1+\displaystyle\frac{1}{x})^x$}
+                    \addplot[green, thick, domain=0.01:50, samples=500] {(1 + 1/x)^x};
+                    \addlegendentry{$y=(1+\frac{1}{x})^x$}
 
-                    % 绿色空心圆表示未定义，不加入图例
                     \addplot[green, mark=o, only marks, forget plot] coordinates {(0,1)};
 
-                    % 虚线 y=1 和 y=e
-                    \addplot[dashed, black, domain=0:20] {1};
+                    \addplot[dashed, black, domain=0:50, samples=500] {1};
                     \addlegendentry{$y=1$}
 
-                    \addplot[dashed, black, domain=0:20] {exp(1)};
+                    \addplot[dashed, grey, domain=0:50, samples=500] {exp(1)};
                     \addlegendentry{$y=e$}
+
                 \end{axis}
             \end{tikzpicture}
-        \end{itemize}
+        \end{minipage}
     \end{enumerate}
 
     \subsubsection{理解}
@@ -296,6 +311,97 @@
             =
             \lim_{x\to a} \frac{f'(x)}{F'(x)},
         \]
-        \textbf{右极限存在，则左极限存在；但左极限存在，并不意味着右极限一定存在。} \emph{e.g.} $\lim\limits_{x\to 0} \displaystyle\frac{x^2 \sin \displaystyle\frac{1}{x}}{x}$
+        \textbf{右极限存在，则左极限存在；但左极限存在，并不意味着右极限一定存在。}
+        \begin{analysisbox}
+            \[
+                \lim_{x \to 0} \frac{x^2 \sin \frac{1}{x}}{x} = \lim_{x \to 0} x \sin \frac{1}{x} = 0,
+            \]
+            但
+            \[
+                \lim_{x \to 0} \frac{f'(x)}{F'(x)} = 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x},
+            \]
+            在 $x \to 0$ 时振荡，不存在极限
+        \end{analysisbox}
+    \end{enumerate}
+
+    \subsubsection{重要函数极限}
+
+    \begin{enumerate}
+        \item \textbf{$x\sin\dfrac{1}{x}$}（无穷小量 $\times$ 有界量）
+        \[
+            \lim_{x \to 0} x\sin\frac{1}{x} = 0, \qquad
+            \lim_{x \to \infty} x\sin\frac{1}{x} = 1.
+        \]
+        注意：$\displaystyle\lim_{x \to 0} \sin\frac{1}{x}$ {\color{red}不存在}（振荡），但乘以无穷小量 $x$ 后极限为 $0$。
+
+        \item \textbf{$\dfrac{1}{x}\sin\dfrac{1}{x}$}（振荡无极限）
+        \[
+            \lim_{x \to 0} \frac{1}{x}\sin\frac{1}{x} \text{ 不存在} \quad (\text{振荡且振幅趋于 } \infty).
+        \]
+
+        \item \textbf{$\ln(x + \sqrt{x^2 + 1})$}（反双曲正弦 $\operatorname{arsinh}x$）
+        \[
+            \lim_{x \to 0} \frac{\ln(x + \sqrt{x^2 + 1})}{x} = 1 \quad (\text{即 } \operatorname{arsinh}x \sim x).
+        \]
+
+        \item \textbf{$e^{-\frac{1}{x^2}}$}（在 $x=0$ 处比任何幂函数都高阶的无穷小）
+        \[
+            \lim_{x \to 0} \frac{e^{-1/x^2}}{x^k} = 0, \quad \forall\, k > 0.
+        \]
+        该函数在 $x=0$ 处任意阶导数均为 $0$，其 Taylor 展式恒为 $0$，但函数本身不恒为 $0$。
+
+        \item \textbf{$e^{\frac{1}{x}}$}（左右极限不同）
+        \[
+            \lim_{x \to 0^-} e^{\frac{1}{x}} = 0, \qquad
+            \lim_{x \to 0^+} e^{\frac{1}{x}} = +\infty.
+        \]
+        由此可推出：
+        \[
+            \lim_{x \to 0^-} \frac{1}{1 + e^{1/x}} = 1, \qquad
+            \lim_{x \to 0^+} \frac{1}{1 + e^{1/x}} = 0.
+        \]
+
+        \item \textbf{$\arctan\dfrac{1}{x}$}（左右极限不同）
+        \[
+            \lim_{x \to 0^-} \arctan\frac{1}{x} = -\frac{\pi}{2}, \qquad
+            \lim_{x \to 0^+} \arctan\frac{1}{x} = \frac{\pi}{2}.
+        \]
+
+        \item \textbf{$x^x$}
+        \[
+            \lim_{x \to 0^+} x^x = e^{\lim_{x \to 0^+} x\ln x} = e^0 = 1.
+        \]
+
+        \item \textbf{$\dfrac{|x|}{x}$}（符号函数型）
+        \[
+            \lim_{x \to 0^-} \frac{|x|}{x} = -1, \qquad
+            \lim_{x \to 0^+} \frac{|x|}{x} = 1.
+        \]
+
+        \item \textbf{$\dfrac{x^2\sin\dfrac{1}{x}}{x}$}（洛必达法则失效的经典反例）
+        \[
+            \lim_{x \to 0} \frac{x^2\sin\frac{1}{x}}{x} = \lim_{x \to 0} x\sin\frac{1}{x} = 0.
+        \]
+        但使用洛必达法则后，$\dfrac{f'(x)}{F'(x)} = 2x\sin\dfrac{1}{x} - \cos\dfrac{1}{x}$ 在 $x \to 0$ 时{\color{red}振荡无极限}，故洛必达法则不适用。
+
+        \item \textbf{$\dfrac{\sin x}{x}$} 当 $x \to \infty$
+        \[
+            \lim_{x \to \infty} \frac{\sin x}{x} = 0 \quad (\text{无穷小} \times \text{有界量}).
+        \]
+        注意：$\displaystyle\lim_{x \to \infty} \sin x$ 不存在，但 $\dfrac{\sin x}{x} \to 0$。
+
+        \item \textbf{$[x]$}（取整函数）
+        \[
+            \lim_{x \to n^-} [x] = n - 1, \qquad
+            \lim_{x \to n^+} [x] = n, \quad (n \in \mathbb{Z}).
+        \]
+        常见用法：$x - 1 < [x] \leq x$，可用于夹逼准则。
+        \item \textbf{趋于无穷的极限}
+        \begin{itemize}
+            \item $\displaystyle \lim_{x \to +\infty} \frac{\ln x}{x^\beta} = 0 \quad (\beta > 0)$ \quad （对数函数 $\ll$ 幂函数）
+            \item $\displaystyle \lim_{x \to +\infty} \frac{x^\beta}{a^x} = 0 \quad (\beta > 0, \; a > 1)$ \quad （幂函数 $\ll$ 指数函数）
+            \item $\displaystyle \lim_{x \to 0^+} x^\alpha \ln x = 0 \quad (\alpha > 0)$ \quad （幂函数 $\gg$ 对数函数）
+            \item $\displaystyle \lim_{x \to +\infty} x^\alpha a^{-x} = 0 \quad (\alpha \in \mathbb{R}, \; a > 1)$
+        \end{itemize}
     \end{enumerate}
 \end{document}

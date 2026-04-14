@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// 十字链表
+// 有向图：十字链表
 // <A, B>, <A, C>, <C, A>, <C, D>, <D, B>, <D, A>, <D, C>
 
 typedef struct ArcNode {

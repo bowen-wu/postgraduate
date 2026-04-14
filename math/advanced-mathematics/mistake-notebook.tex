@@ -20,181 +20,181 @@
 
     \subsubsection*{第1题解答}
     \begin{analysisbox}
-            \textbf{结论：}$g(a) = 0$，且 $F'(a) = g'(a)\varphi(a)$。
+        \textbf{结论：}$g(a) = 0$，且 $F'(a) = g'(a)\varphi(a)$。
 
-            \medskip
+        \medskip
 
-            \textbf{证明：}由导数定义，
-            \[
-                F'(a) = \lim_{x\to a} \frac{F(x) - F(a)}{x - a}
-                = \lim_{x\to a} \frac{g(x)\varphi(x) - g(a)\varphi(a)}{x - a}
-            \]
-            添加并减去 $g(a)\varphi(x)$：
-            \[
-                \begin{aligned}
-                    F'(a)
-                    &= \lim_{x\to a} \left[ \varphi(x) \cdot \frac{g(x) - g(a)}{x - a} + g(a) \cdot \frac{\varphi(x) - \varphi(a)}{x - a} \right] \\[0.5em]
-                    &= \varphi(a) \cdot g'(a) + g(a) \cdot \underbrace{\lim_{x\to a} \frac{\varphi(x) - \varphi(a)}{x - a}}_{\text{不存在}}
-                \end{aligned}
-            \]
-            由于 $\varphi(x)$ 在 $x=a$ 处不可导，上式中画线部分极限不存在。而已知 $F'(a)$ 存在，因此必须 $g(a) = 0$。
+        \textbf{证明：}由导数定义，
+        \[
+            F'(a) = \lim_{x\to a} \frac{F(x) - F(a)}{x - a}
+            = \lim_{x\to a} \frac{g(x)\varphi(x) - g(a)\varphi(a)}{x - a}
+        \]
+        添加并减去 $g(a)\varphi(x)$：
+        \[
+            \begin{aligned}
+                F'(a)
+                &= \lim_{x\to a} \left[ \varphi(x) \cdot \frac{g(x) - g(a)}{x - a} + g(a) \cdot \frac{\varphi(x) - \varphi(a)}{x - a} \right] \\[0.5em]
+                &= \varphi(a) \cdot g'(a) + g(a) \cdot \underbrace{\lim_{x\to a} \frac{\varphi(x) - \varphi(a)}{x - a}}_{\text{不存在}}
+            \end{aligned}
+        \]
+        由于 $\varphi(x)$ 在 $x=a$ 处不可导，上式中画线部分极限不存在。而已知 $F'(a)$ 存在，因此必须 $g(a) = 0$。
 
-            \medskip
+        \medskip
 
-            此时 $F'(a) = g'(a)\varphi(a)$。
+        此时 $F'(a) = g'(a)\varphi(a)$。
     \end{analysisbox}
 
     \subsubsection*{第2题解答}
     \begin{analysisbox}[解]
-            令 $x = \dfrac{1}{n}$，当 $n \to \infty$ 时 $x \to 0^+$。
-            \[
-                \begin{aligned}
-                    \lim_{n\to\infty} n\ln\frac{f\!\left(\dfrac{1}{n}\right)}{f(0)}
-                    &= \lim_{x\to 0^+} \frac{1}{x} \ln\frac{f(x)}{f(0)} \\[0.5em]
-                    &= \lim_{x\to 0^+} \frac{\ln f(x) - \ln f(0)}{x - 0} \\[0.5em]
-                    &= \left.[\ln f(x)]'\right|_{x=0} = \frac{f'(0)}{f(0)}
-                \end{aligned}
-            \]
+        令 $x = \dfrac{1}{n}$，当 $n \to \infty$ 时 $x \to 0^+$。
+        \[
+            \begin{aligned}
+                \lim_{n\to\infty} n\ln\frac{f\!\left(\dfrac{1}{n}\right)}{f(0)}
+                &= \lim_{x\to 0^+} \frac{1}{x} \ln\frac{f(x)}{f(0)} \\[0.5em]
+                &= \lim_{x\to 0^+} \frac{\ln f(x) - \ln f(0)}{x - 0} \\[0.5em]
+                &= \left.[\ln f(x)]'\right|_{x=0} = \frac{f'(0)}{f(0)}
+            \end{aligned}
+        \]
 
-                {\color{red}{注}}：$\ln \dfrac{b}{a} = \ln b - \ln a$
+            {\color{red}{注}}：$\ln \dfrac{b}{a} = \ln b - \ln a$
     \end{analysisbox}
 
     \subsubsection*{第3题解答}
     \begin{analysisbox}
-            \textbf{（1）连续性}
-            \[
-                f(0) = 0^2 = 0, \quad
-                \lim_{x\to 0^+} f(x) = \lim_{x\to 0^+} x^3\sin\dfrac{1}{x} = 0, \quad
-                \lim_{x\to 0^-} f(x) = \lim_{x\to 0^-} x^2 = 0,
-            \]
-            故 $\lim\limits_{x\to 0} f(x) = 0 = f(0)$，$f(x)$ 在 $x=0$ 处{\color{red}{连续}}。
+        \textbf{（1）连续性}
+        \[
+            f(0) = 0^2 = 0, \quad
+            \lim_{x\to 0^+} f(x) = \lim_{x\to 0^+} x^3\sin\dfrac{1}{x} = 0, \quad
+            \lim_{x\to 0^-} f(x) = \lim_{x\to 0^-} x^2 = 0,
+        \]
+        故 $\lim\limits_{x\to 0} f(x) = 0 = f(0)$，$f(x)$ 在 $x=0$ 处{\color{red}{连续}}。
 
-            \textbf{（2）可导性}
+        \textbf{（2）可导性}
 
-            \[
-                f'_+(0) = \lim_{x\to 0^+} \dfrac{x^3\sin\dfrac{1}{x} - 0}{x - 0}
-                = \lim_{x\to 0^+} x^2\sin\dfrac{1}{x} = 0,
-            \]
-            \[
-                f'_-(0) = \lim_{x\to 0^-} \dfrac{x^2 - 0}{x - 0}
-                = \lim_{x\to 0^-} x = 0,
-            \]
-            $f'_+(0) = f'_-(0) = 0$，故 $f(x)$ 在 $x=0$ 处{\color{red}{可导}}，且 $f'(0) = 0$。
+        \[
+            f'_+(0) = \lim_{x\to 0^+} \dfrac{x^3\sin\dfrac{1}{x} - 0}{x - 0}
+            = \lim_{x\to 0^+} x^2\sin\dfrac{1}{x} = 0,
+        \]
+        \[
+            f'_-(0) = \lim_{x\to 0^-} \dfrac{x^2 - 0}{x - 0}
+            = \lim_{x\to 0^-} x = 0,
+        \]
+        $f'_+(0) = f'_-(0) = 0$，故 $f(x)$ 在 $x=0$ 处{\color{red}{可导}}，且 $f'(0) = 0$。
 
-            \textbf{（3）导函数连续性}
+        \textbf{（3）导函数连续性}
 
-            当 $x > 0$ 时，$f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}$；当 $x < 0$ 时，$f'(x) = 2x$。
-            \[
-                \lim_{x\to 0^+} f'(x) = \lim_{x\to 0^+}\left(3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}\right) = 0,
-            \]
-            \[
-                \lim_{x\to 0^-} f'(x) = \lim_{x\to 0^-} 2x = 0,
-            \]
-            故 $\lim\limits_{x\to 0} f'(x) = 0 = f'(0)$，$f'(x)$ 在 $x=0$ 处{\color{red}{连续}}。
+        当 $x > 0$ 时，$f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}$；当 $x < 0$ 时，$f'(x) = 2x$。
+        \[
+            \lim_{x\to 0^+} f'(x) = \lim_{x\to 0^+}\left(3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}\right) = 0,
+        \]
+        \[
+            \lim_{x\to 0^-} f'(x) = \lim_{x\to 0^-} 2x = 0,
+        \]
+        故 $\lim\limits_{x\to 0} f'(x) = 0 = f'(0)$，$f'(x)$ 在 $x=0$ 处{\color{red}{连续}}。
 
-            \textbf{（4）二阶可导性}
+        \textbf{（4）二阶可导性}
 
-            当 $x > 0$ 时，
-            \[
-                f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x},
-            \]
-            \[
-                \begin{aligned}
-                    f''_+(0) &= \lim_{x\to 0^+} \dfrac{f'(x) - f'(0)}{x - 0} \\[0.5em]
-                    &= \lim_{x\to 0^+} \dfrac{3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}}{x} \\[0.5em]
-                    &= \lim_{x\to 0^+}\left(3x\sin\dfrac{1}{x} - \cos\dfrac{1}{x}\right),
-                \end{aligned}
-            \]
-            其中 $3x\sin\dfrac{1}{x} \to 0$，但 $\cos\dfrac{1}{x}$ 振荡无极限，故 $f''_+(0)$ {\color{red}{不存在}}。
+        当 $x > 0$ 时，
+        \[
+            f'(x) = 3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x},
+        \]
+        \[
+            \begin{aligned}
+                f''_+(0) &= \lim_{x\to 0^+} \dfrac{f'(x) - f'(0)}{x - 0} \\[0.5em]
+                &= \lim_{x\to 0^+} \dfrac{3x^2\sin\dfrac{1}{x} - x\cos\dfrac{1}{x}}{x} \\[0.5em]
+                &= \lim_{x\to 0^+}\left(3x\sin\dfrac{1}{x} - \cos\dfrac{1}{x}\right),
+            \end{aligned}
+        \]
+        其中 $3x\sin\dfrac{1}{x} \to 0$，但 $\cos\dfrac{1}{x}$ 振荡无极限，故 $f''_+(0)$ {\color{red}{不存在}}。
 
-            \medskip
+        \medskip
 
-            \textbf{综上，}$f(x)$ 在 $x=0$ 处连续、可导，且导函数连续，但{\color{red}{不可二次可导}}。
+        \textbf{综上，}$f(x)$ 在 $x=0$ 处连续、可导，且导函数连续，但{\color{red}{不可二次可导}}。
     \end{analysisbox}
 
     \subsubsection*{第4题解答}
     \begin{analysisbox}[解]
-            \textbf{第一步：求 $f(x)$}
+        \textbf{第一步：求 $f(x)$}
 
-            关键在于 $e^{n(x-1)}$ 当 $n \to \infty$ 时的行为：
-            \begin{itemize}
-                \item $x > 1$ 时，$e^{n(x-1)} \to +\infty$；
-                \item $x = 1$ 时，$e^{n(x-1)} = 1$；
-                \item $x < 1$ 时，$e^{n(x-1)} \to 0$。
-            \end{itemize}
+        关键在于 $e^{n(x-1)}$ 当 $n \to \infty$ 时的行为：
+        \begin{itemize}
+            \item $x > 1$ 时，$e^{n(x-1)} \to +\infty$；
+            \item $x = 1$ 时，$e^{n(x-1)} = 1$；
+            \item $x < 1$ 时，$e^{n(x-1)} \to 0$。
+        \end{itemize}
 
-            \medskip
+        \medskip
 
-            \textbf{当 $x > 1$}：分子分母同除以 $e^{n(x-1)}$，
-            \[
-                f(x) = \lim_{n\to\infty} \frac{x^2 + \dfrac{ax+b}{e^{n(x-1)}}}{\dfrac{5}{e^{n(x-1)}} + 1} = \frac{x^2 + 0}{0 + 1} = x^2
-            \]
+        \textbf{当 $x > 1$}：分子分母同除以 $e^{n(x-1)}$，
+        \[
+            f(x) = \lim_{n\to\infty} \frac{x^2 + \dfrac{ax+b}{e^{n(x-1)}}}{\dfrac{5}{e^{n(x-1)}} + 1} = \frac{x^2 + 0}{0 + 1} = x^2
+        \]
 
-            \textbf{当 $x = 1$}：
-            \[
-                f(1) = \frac{1 + a + b}{5 + 1} = \frac{1 + a + b}{6}
-            \]
+        \textbf{当 $x = 1$}：
+        \[
+            f(1) = \frac{1 + a + b}{5 + 1} = \frac{1 + a + b}{6}
+        \]
 
-            \textbf{当 $x < 1$}：
-            \[
-                f(x) = \lim_{n\to\infty} \frac{0 + ax + b}{5 + 0} = \frac{ax + b}{5}
-            \]
+        \textbf{当 $x < 1$}：
+        \[
+            f(x) = \lim_{n\to\infty} \frac{0 + ax + b}{5 + 0} = \frac{ax + b}{5}
+        \]
 
-            综上，
-            \[
-                f(x) = \begin{cases}
-                           x^2, & x > 1 \\[0.3em]
-                           \dfrac{1+a+b}{6}, & x = 1 \\[0.3em]
-                           \dfrac{ax+b}{5}, & x < 1
-                \end{cases}
-            \]
+        综上，
+        \[
+            f(x) = \begin{cases}
+                       x^2, & x > 1 \\[0.3em]
+                       \dfrac{1+a+b}{6}, & x = 1 \\[0.3em]
+                       \dfrac{ax+b}{5}, & x < 1
+            \end{cases}
+        \]
 
-            \medskip
+        \medskip
 
-            \textbf{第二步：连续性}
+        \textbf{第二步：连续性}
 
-            $x \neq 1$ 时 $f(x)$ 显然连续，只需考察 $x = 1$ 处：
-            \[
-                \lim_{x\to 1^-} f(x) = \frac{a+b}{5}, \quad
-                \lim_{x\to 1^+} f(x) = 1, \quad
-                f(1) = \frac{1+a+b}{6}
-            \]
+        $x \neq 1$ 时 $f(x)$ 显然连续，只需考察 $x = 1$ 处：
+        \[
+            \lim_{x\to 1^-} f(x) = \frac{a+b}{5}, \quad
+            \lim_{x\to 1^+} f(x) = 1, \quad
+            f(1) = \frac{1+a+b}{6}
+        \]
 
-            连续的充要条件是三者相等，即
-            \[
-                \frac{a+b}{5} = 1 \quad\Longrightarrow\quad a + b = 5
-            \]
+        连续的充要条件是三者相等，即
+        \[
+            \frac{a+b}{5} = 1 \quad\Longrightarrow\quad a + b = 5
+        \]
 
-            验证：$a+b=5$ 时 $f(1) = \dfrac{1+5}{6} = 1$，三者一致。
+        验证：$a+b=5$ 时 $f(1) = \dfrac{1+5}{6} = 1$，三者一致。
 
-            \medskip
+        \medskip
 
-            {\color{red}{结论：}}当 $a + b = 5$ 时 $f(x)$ 在 $\mathbb{R}$ 上连续；当 $a + b \neq 5$ 时 $f(x)$ 在 $x=1$ 处不连续。
+        {\color{red}{结论：}}当 $a + b = 5$ 时 $f(x)$ 在 $\mathbb{R}$ 上连续；当 $a + b \neq 5$ 时 $f(x)$ 在 $x=1$ 处不连续。
 
-            \medskip
+        \medskip
 
-            \textbf{第三步：可导性}
+        \textbf{第三步：可导性}
 
-            $x \neq 1$ 时 $f(x)$ 显然可导。当 $a+b=5$（连续条件下），考察 $x=1$ 处的可导性：
+        $x \neq 1$ 时 $f(x)$ 显然可导。当 $a+b=5$（连续条件下），考察 $x=1$ 处的可导性：
 
-            \[
-                f'_-(1) = \lim_{x\to 1^-} \frac{ax+b}{5}\bigg|' = \frac{a}{5}, \quad
-                f'_+(1) = \lim_{x\to 1^+} (x^2)' = 2
-            \]
+        \[
+            f'_-(1) = \lim_{x\to 1^-} \frac{ax+b}{5}\bigg|' = \frac{a}{5}, \quad
+            f'_+(1) = \lim_{x\to 1^+} (x^2)' = 2
+        \]
 
-            可导的充要条件是 $f'_-(1) = f'_+(1)$，即
-            \[
-                \frac{a}{5} = 2 \quad\Longrightarrow\quad a = 10, \quad b = 5 - 10 = -5
-            \]
+        可导的充要条件是 $f'_-(1) = f'_+(1)$，即
+        \[
+            \frac{a}{5} = 2 \quad\Longrightarrow\quad a = 10, \quad b = 5 - 10 = -5
+        \]
 
-            \medskip
+        \medskip
 
-            {\color{red}{综上：}}
-            \begin{itemize}
-                \item 当 $a + b \neq 5$ 时，$f(x)$ 在 $x=1$ 处{\color{red}{不连续}}，自然不可导；
-                \item 当 $a + b = 5$ 但 $a \neq 10$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续但不可导}}；
-                \item 当 $a = 10$，$b = -5$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续且可导}}。
-            \end{itemize}
+        {\color{red}{综上：}}
+        \begin{itemize}
+            \item 当 $a + b \neq 5$ 时，$f(x)$ 在 $x=1$ 处{\color{red}{不连续}}，自然不可导；
+            \item 当 $a + b = 5$ 但 $a \neq 10$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续但不可导}}；
+            \item 当 $a = 10$，$b = -5$ 时，$f(x)$ 在 $\mathbb{R}$ 上{\color{red}{连续且可导}}。
+        \end{itemize}
     \end{analysisbox}
 
     \subsection{一元函数微分学的应用 - 几何应用}
@@ -213,100 +213,447 @@
 
     \subsubsection*{第1题解答}
     \begin{analysisbox}
-            由
-            \[
-                \tan\!\left(x+y+\frac{\pi}{4}\right)=e^y
-            \]
-            两边对$x$求导，得
-            \[
-                \sec^2\!\left(x+y+\frac{\pi}{4}\right)(1+y')=e^y\,y'.
-            \]
-            在点$(0,0)$处，
-            \[
-                \sec^2\!\left(\frac{\pi}{4}\right)=2,\quad e^0=1,
-            \]
-            故
-            \[
-                2(1+y')=y' \Longrightarrow y'=-2.
-            \]
-            因而切线方程为
-            \[
-                y-0=-2(x-0),
-            \]
-            即
-            \[
-                \boxed{y=-2x}.
-            \]
+        由
+        \[
+            \tan\!\left(x+y+\frac{\pi}{4}\right)=e^y
+        \]
+        两边对$x$求导，得
+        \[
+            \sec^2\!\left(x+y+\frac{\pi}{4}\right)(1+y')=e^y\,y'.
+        \]
+        在点$(0,0)$处，
+        \[
+            \sec^2\!\left(\frac{\pi}{4}\right)=2,\quad e^0=1,
+        \]
+        故
+        \[
+            2(1+y')=y' \Longrightarrow y'=-2.
+        \]
+        因而切线方程为
+        \[
+            y-0=-2(x-0),
+        \]
+        即
+        \[
+            \boxed{y=-2x}.
+        \]
     \end{analysisbox}
 
     \subsubsection*{第2题解答}
     \begin{analysisbox}
-            设斜渐近线为$y=kx+b$，其中
-            \[
-                k=\lim_{x\to\infty}\frac{y}{x}
-                =\lim_{x\to\infty}\frac{(2x-1)e^{\dfrac{1}{x}}}{x}
-                =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{\dfrac{1}{x}}=2.
-            \]
-            再求
-            \[
-                b=\lim_{x\to\infty}(y-kx)
-                =\lim_{x\to\infty}\left[(2x-1)e^{\dfrac{1}{x}}-2x\right].
-            \]
-            利用展开式$e^{\dfrac{1}{x}}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
-            \[
-                (2x-1)e^{\dfrac{1}{x}}
-                =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
-                =2x+1+o(1),
-            \]
-            从而$b=1$。
-            因此斜渐近线为
-            \[
-                \boxed{y=2x+1}.
-            \]
+        设斜渐近线为$y=kx+b$，其中
+        \[
+            k=\lim_{x\to\infty}\frac{y}{x}
+            =\lim_{x\to\infty}\frac{(2x-1)e^{\dfrac{1}{x}}}{x}
+            =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{\dfrac{1}{x}}=2.
+        \]
+        再求
+        \[
+            b=\lim_{x\to\infty}(y-kx)
+            =\lim_{x\to\infty}\left[(2x-1)e^{\dfrac{1}{x}}-2x\right].
+        \]
+        利用展开式$e^{\dfrac{1}{x}}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
+        \[
+            (2x-1)e^{\dfrac{1}{x}}
+            =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
+            =2x+1+o(1),
+        \]
+        从而$b=1$。
+        因此斜渐近线为
+        \[
+            \boxed{y=2x+1}.
+        \]
     \end{analysisbox}
 
     \subsubsection*{第3题解答}
     \begin{analysisbox}
-            由
-            \[
-                2y^3-2y^2+2xy-x^2=1
-            \]
-            对$x$求导，得
-            \[
-                6y^2y'-4yy'+2y+2xy'-2x=0.
-            \]
-            驻点满足$y'=0$，代入上式立得
-            \[
-                2y-2x=0 \Longrightarrow x=y.
-            \]
-            再代回原方程
-            \[
-                2y^3-2y^2+2y^2-y^2=1
-                \Longrightarrow 2y^3-y^2-1=0
-                \Longrightarrow (y-1)(2y^2+y+1)=0.
-            \]
-            因$2y^2+y+1>0$，得唯一实根$y=1$，故$x=1$。
-            所以驻点为
-            \[
-                \boxed{(1,1)}.
-            \]
+        由
+        \[
+            2y^3-2y^2+2xy-x^2=1
+        \]
+        对$x$求导，得
+        \[
+            6y^2y'-4yy'+2y+2xy'-2x=0.
+        \]
+        驻点满足$y'=0$，代入上式立得
+        \[
+            2y-2x=0 \Longrightarrow x=y.
+        \]
+        再代回原方程
+        \[
+            2y^3-2y^2+2y^2-y^2=1
+            \Longrightarrow 2y^3-y^2-1=0
+            \Longrightarrow (y-1)(2y^2+y+1)=0.
+        \]
+        因$2y^2+y+1>0$，得唯一实根$y=1$，故$x=1$。
+        所以驻点为
+        \[
+            \boxed{(1,1)}.
+        \]
 
-            再对
-            \[
-                6y^2y'-4yy'+2y+2xy'-2x=0
-            \]
-            两边对$x$求导，得
-            \[
-                (12y-4)(y')^2+(6y^2-4y+2x)y''+4y'-2=0.
-            \]
-            将$x=1,\ y=1,\ y'=0$代入：
-            \[
-                4y''-2=0 \Longrightarrow y''=\frac12>0.
-            \]
-            因此$(1,1)$为极小值点。
+        再对
+        \[
+            6y^2y'-4yy'+2y+2xy'-2x=0
+        \]
+        两边对$x$求导，得
+        \[
+            (12y-4)(y')^2+(6y^2-4y+2x)y''+4y'-2=0.
+        \]
+        将$x=1,\ y=1,\ y'=0$代入：
+        \[
+            4y''-2=0 \Longrightarrow y''=\frac12>0.
+        \]
+        因此$(1,1)$为极小值点。
 
-            \medskip
-            结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
+        \medskip
+        结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
     \end{analysisbox}
 
+    \subsection{一元函数微分学的计算}
+
+    \begin{enumerate}
+        \item 设函数$f(x)$可导，$f(0) = -1, f'(0) = 1$，若$y(x) = |f(x-1)|$，则$y'(1) = $
+        \item 设$y = \ln \sqrt{\dfrac{1-x}{1+x^2}}$，则$y'\big|_{x=0} = $
+        \item 设函数$y = f(x)$由$\begin{cases}
+                                     x = 2t + |t| \\
+                                     y = |t|\tan t
+        \end{cases}$所确定，则在$(-\dfrac{\pi}{2}, \dfrac{\pi}{2})$内
+        \begin{itemize}
+            \item A. $f(x)$连续，$f'(0)$不存在
+            \item B. $f'(0)$存在，$f'(x)$在$x = 0$处不连续
+            \item C. $f'(x)$连续，$f''(0)$不存在
+            \item D. $f''(0)$存在，$f''(x)$在$x = 0$处不连续
+        \end{itemize}
+        \item 已知函数$f(x) = x^2\ln(1-x)$，则当$n \geq 3$时，$f^{(n)}(0) = $
+        \item 设$f(t) = \lim\limits_{n\to \infty} \cos t\cdot (\dfrac{n + t}{n - t})^n$，则$f'(0) = $
+        \item 设$f(x) = \lim\limits_{t\to \infty} (1 + \dfrac{1}{t})^{t\sin t}$，则$f'(x) = $
+        \item 设$f(x) = \max {x, x^2}, 0 < x < 2$，则$f'(x) = $
+        \item 已知函数$f(x) = x^2(e^x + 5)$，则$f^{(5)}(1) = $
+        \item 设$f(x) = (x-1)^{10}\sin x$，则$f^{(11)}(1) = $
+    \end{enumerate}
+
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+        将绝对值写成根式：
+        \[
+            y(x)=|f(x-1)|=\sqrt{[f(x-1)]^2}.
+        \]
+        因$f$可导，故$f$连续；又$f(0)=-1\neq 0$，所以当$x$充分接近$1$时，$f(x-1)\neq 0$，上式可求导。
+
+        由链式法则
+        \[
+            \begin{aligned}
+                y'(x)
+                &=\frac{1}{2}\,[f(x-1)^2]^{-1/2}\cdot 2f(x-1)\cdot f'(x-1)\\
+                &=\frac{f(x-1)f'(x-1)}{\sqrt{[f(x-1)]^2}}.
+            \end{aligned}
+        \]
+        代入$x=1$：
+        \[
+            y'(1)=\frac{f(0)f'(0)}{|f(0)|}
+            =\frac{(-1)\cdot 1}{1}
+            =-1.
+        \]
+        故答案为
+        \[
+            \boxed{y'(1)=-1}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}
+        先化简：
+        \[
+            y=\ln\sqrt{\frac{1-x}{1+x^2}}
+            =\frac12\Bigl[\ln(1-x)-\ln(1+x^2)\Bigr].
+        \]
+        对$x$求导：
+        \[
+            y'
+            =\frac12\left(\frac{(1-x)'}{1-x}-\frac{(1+x^2)'}{1+x^2}\right)
+            =\frac12\left(-\frac1{1-x}-\frac{2x}{1+x^2}\right).
+        \]
+        代入$x=0$：
+        \[
+            y'(0)=\frac12\left(-1-0\right)=-\frac12.
+        \]
+        故答案为
+        \[
+            \boxed{-\frac12}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第3题解答}
+    \begin{analysisbox}
+        参数方程为
+        \[
+            x=2t+|t|,\quad y=|t|\tan t,
+        \]
+        分$t$的符号讨论。
+
+        \textbf{(1) 写成显函数}
+
+        当$t<0$时，$|t|=-t$，故
+        \[
+            x=t,\quad y=-t\tan t.
+        \]
+        由$x=t$得
+        \[
+            f(x)=-x\tan x,\quad x<0.
+        \]
+
+        当$t\ge 0$时，$|t|=t$，故
+        \[
+            x=3t,\quad y=t\tan t.
+        \]
+        由$t=\dfrac x3$得
+        \[
+            f(x)=\frac x3\tan\frac x3,\quad x\ge 0.
+        \]
+        因而
+        \[
+            f(x)=
+            \begin{cases}
+                -x\tan x, & x<0,\\[0.3em]
+                \dfrac x3\tan\dfrac x3, & x\ge 0.
+            \end{cases}
+        \]
+
+        \textbf{(2) 连续性与一阶导数}
+
+        \[
+            \lim_{x\to 0^-}(-x\tan x)=0,\qquad
+            \lim_{x\to 0^+}\frac x3\tan\frac x3=0,
+        \]
+        且$f(0)=0$，故$f$在$0$处连续。
+
+        对分段函数求导：
+        \[
+            x<0:\ f'(x)=-(\tan x+x\sec^2x),
+        \]
+        \[
+            x>0:\ f'(x)=\frac13\tan\frac x3+\frac x9\sec^2\frac x3.
+        \]
+        于是
+        \[
+            f'_-(0)=\lim_{x\to 0^-}f'(x)=0,\qquad
+            f'_+(0)=\lim_{x\to 0^+}f'(x)=0.
+        \]
+        故$f'(0)$存在且$f'(0)=0$，并且$f'(x)$在$0$处连续。
+
+        \textbf{(3) 二阶导数}
+
+        再对上式求导：
+        \[
+            x<0:\ f''(x)=-(2\sec^2x+2x\sec^2x\tan x),
+        \]
+        \[
+            x>0:\ f''(x)=\frac{2}{9}\sec^2\frac x3+\frac{2x}{27}\sec^2\frac x3\tan\frac x3.
+        \]
+        故
+        \[
+            f''_-(0)=-2,\qquad f''_+(0)=\frac29,
+        \]
+        左右不等，故$f''(0)$不存在。
+
+        因此正确选项为
+        \[
+            \boxed{\text{C}}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第4题解答}
+    \begin{analysisbox}
+        在$|x|<1$内，
+        \[
+            \ln(1-x)=-\sum_{k=1}^{\infty}\frac{x^k}{k}.
+        \]
+        故
+        \[
+            f(x)=x^2\ln(1-x)
+            =-\sum_{k=1}^{\infty}\frac{x^{k+2}}{k}
+            =-\sum_{n=3}^{\infty}\frac{x^n}{n-2}\quad(n=k+2).
+        \]
+        由幂级数系数与导数关系：若
+        \[
+            f(x)=\sum_{n=0}^{\infty}a_nx^n,
+        \]
+        则
+        \[
+            f^{(n)}(0)=n!a_n.
+        \]
+        这里$n\ge 3$时
+        \[
+            a_n=-\frac1{n-2},
+        \]
+        所以
+        \[
+            f^{(n)}(0)=n!\left(-\frac1{n-2}\right)=-\frac{n!}{n-2}.
+        \]
+        故答案为
+        \[
+            \boxed{f^{(n)}(0)=-\frac{n!}{n-2}\ (n\ge 3)}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第5题解答}
+    \begin{analysisbox}
+        对于固定$t$，
+        \[
+            f(t)=\lim_{n\to\infty}\cos t\left(\frac{n+t}{n-t}\right)^n
+            =\cos t\cdot\exp\!\left(\lim_{n\to\infty}n\ln\frac{1+t/n}{1-t/n}\right).
+        \]
+        令
+        \[
+            L_n=n\left[\ln\!\left(1+\frac tn\right)-\ln\!\left(1-\frac tn\right)\right].
+        \]
+        由$\ln(1+u)=u+o(u)$，$\ln(1-u)=-u+o(u)$（$u\to0$）得
+        \[
+            L_n
+            =n\left[\frac tn+o\!\left(\frac1n\right)-\left(-\frac tn+o\!\left(\frac1n\right)\right)\right]
+            =2t+o(1)\to 2t.
+        \]
+        因而
+        \[
+            f(t)=e^{2t}\cos t.
+        \]
+        求导：
+        \[
+            f'(t)=e^{2t}(2\cos t-\sin t).
+        \]
+        代入$t=0$：
+        \[
+            f'(0)=2.
+        \]
+        故答案为
+        \[
+            \boxed{2}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第6题解答}
+    \begin{analysisbox}
+        先说明：题面写成
+        \[
+            f(x)=\lim_{t\to\infty}\left(1+\frac1t\right)^{t\sin t}
+        \]
+        时，右端与$x$无关，且该极限本身不存在（因$\sin t$振荡），故“$f'(x)$”无从谈起。
+
+        该类题的常见正确形式为
+        \[
+            f(x)=\lim_{t\to\infty}\left(1+\frac{x}{t}\right)^{t\sin x}.
+        \]
+        下面按该标准题型求解。取对数：
+        \[
+            \ln f(x)=\lim_{t\to\infty}t\sin x\cdot \ln\left(1+\frac xt\right)
+            =\sin x\cdot \lim_{t\to\infty}t\ln\left(1+\frac xt\right).
+        \]
+        由极限
+        \[
+            \lim_{t\to\infty}t\ln\left(1+\frac xt\right)=x
+        \]
+        得
+        \[
+            \ln f(x)=x\sin x.
+        \]
+        故
+        \[
+            f(x)=e^{x\sin x},
+        \]
+        进而
+        \[
+            f'(x)=e^{x\sin x}\cdot (x\sin x)'=e^{x\sin x}(\sin x+x\cos x).
+        \]
+        故（按标准题型）答案为
+        \[
+            \boxed{f'(x)=e^{x\sin x}(\sin x+x\cos x)}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第7题解答}
+    \begin{analysisbox}
+        因
+        \[
+            x^2-x=x(x-1),
+        \]
+        在$0<x<1$时$x^2-x<0$，即$x>x^2$；在$1<x<2$时$x^2-x>0$，即$x^2>x$。
+        故
+        \[
+            f(x)=
+            \begin{cases}
+                x, & 0<x\le 1,\\[0.3em]
+                x^2, & 1\le x<2.
+            \end{cases}
+        \]
+        从而
+        \[
+            f'(x)=
+            \begin{cases}
+                1, & 0<x<1,\\
+                2x, & 1<x<2,
+            \end{cases}
+        \]
+        且
+        \[
+            f'_-(1)=1,\qquad f'_+(1)=2,
+        \]
+        左右导数不等，故$f'(1)$不存在。
+    \end{analysisbox}
+
+    \subsubsection*{第8题解答}
+    \begin{analysisbox}
+        \[
+            f(x)=x^2(e^x+5)=x^2e^x+5x^2.
+        \]
+        因$5x^2$的5阶导为$0$，故仅需计算$(x^2e^x)^{(5)}$。
+
+        设$g(x)=x^2e^x=e^x\cdot x^2$。用公式
+        \[
+            \frac{d^n}{dx^n}\bigl(e^x p(x)\bigr)=e^x\sum_{k=0}^n\binom{n}{k}p^{(k)}(x),
+        \]
+        取$p(x)=x^2,\ n=5$，并用
+        \[
+            p'(x)=2x,\quad p''(x)=2,\quad p^{(k)}(x)=0\ (k\ge 3),
+        \]
+        得
+        \[
+            g^{(5)}(x)=e^x\left[\binom50x^2+\binom51(2x)+\binom52(2)\right]
+            =e^x(x^2+10x+20).
+        \]
+        故
+        \[
+            f^{(5)}(1)=g^{(5)}(1)=e(1+10+20)=31e.
+        \]
+        所以答案为
+        \[
+            \boxed{31e}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第9题解答}
+    \begin{analysisbox}
+        \[
+            f(x)=(x-1)^{10}\sin x.
+        \]
+        用Leibniz公式：
+        \[
+            f^{(11)}(x)=\sum_{k=0}^{11}\binom{11}{k}\bigl[(x-1)^{10}\bigr]^{(k)}(\sin x)^{(11-k)}.
+        \]
+        注意
+        \[
+            \bigl[(x-1)^{10}\bigr]^{(k)}\Big|_{x=1}=0\quad (k<10),\qquad
+            \bigl[(x-1)^{10}\bigr]^{(11)}\equiv 0.
+        \]
+        因而仅$k=10$项保留：
+        \[
+            f^{(11)}(1)=\binom{11}{10}\cdot 10!\cdot (\sin x)'_{x=1}
+            =11\cdot 10!\cos 1.
+        \]
+        所以答案为
+        \[
+            \boxed{11\cdot 10!\cos 1}.
+        \]
+    \end{analysisbox}
 \end{document}
