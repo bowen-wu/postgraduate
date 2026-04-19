@@ -197,118 +197,6 @@
         \end{itemize}
     \end{analysisbox}
 
-    \subsection{一元函数微分学的应用 - 几何应用}
-
-    \begin{enumerate}
-        \item 曲线$\tan(x + y + \dfrac{\pi}{4}) = e^y$在点$(0, 0)$处的切线方程为
-        \item 曲线$y = (2x - 1)e^\dfrac{1}{x}$的斜渐近线方程为
-        \item 设函数$y = y(x)$由方程
-        \[
-            2y^3 - 2y^2 + 2xy - x^2 = 1
-        \]
-        所确定，试求$y = y(x)$的驻点，并判别它是否为极值点
-    \end{enumerate}
-
-    \subsubsection{解答}
-
-    \subsubsection*{第1题解答}
-    \begin{analysisbox}
-        由
-        \[
-            \tan\!\left(x+y+\frac{\pi}{4}\right)=e^y
-        \]
-        两边对$x$求导，得
-        \[
-            \sec^2\!\left(x+y+\frac{\pi}{4}\right)(1+y')=e^y\,y'.
-        \]
-        在点$(0,0)$处，
-        \[
-            \sec^2\!\left(\frac{\pi}{4}\right)=2,\quad e^0=1,
-        \]
-        故
-        \[
-            2(1+y')=y' \Longrightarrow y'=-2.
-        \]
-        因而切线方程为
-        \[
-            y-0=-2(x-0),
-        \]
-        即
-        \[
-            \boxed{y=-2x}.
-        \]
-    \end{analysisbox}
-
-    \subsubsection*{第2题解答}
-    \begin{analysisbox}
-        设斜渐近线为$y=kx+b$，其中
-        \[
-            k=\lim_{x\to\infty}\frac{y}{x}
-            =\lim_{x\to\infty}\frac{(2x-1)e^{\dfrac{1}{x}}}{x}
-            =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{\dfrac{1}{x}}=2.
-        \]
-        再求
-        \[
-            b=\lim_{x\to\infty}(y-kx)
-            =\lim_{x\to\infty}\left[(2x-1)e^{\dfrac{1}{x}}-2x\right].
-        \]
-        利用展开式$e^{\dfrac{1}{x}}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
-        \[
-            (2x-1)e^{\dfrac{1}{x}}
-            =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
-            =2x+1+o(1),
-        \]
-        从而$b=1$。
-        因此斜渐近线为
-        \[
-            \boxed{y=2x+1}.
-        \]
-    \end{analysisbox}
-
-    \subsubsection*{第3题解答}
-    \begin{analysisbox}
-        由
-        \[
-            2y^3-2y^2+2xy-x^2=1
-        \]
-        对$x$求导，得
-        \[
-            6y^2y'-4yy'+2y+2xy'-2x=0.
-        \]
-        驻点满足$y'=0$，代入上式立得
-        \[
-            2y-2x=0 \Longrightarrow x=y.
-        \]
-        再代回原方程
-        \[
-            2y^3-2y^2+2y^2-y^2=1
-            \Longrightarrow 2y^3-y^2-1=0
-            \Longrightarrow (y-1)(2y^2+y+1)=0.
-        \]
-        因$2y^2+y+1>0$，得唯一实根$y=1$，故$x=1$。
-        所以驻点为
-        \[
-            \boxed{(1,1)}.
-        \]
-
-        再对
-        \[
-            6y^2y'-4yy'+2y+2xy'-2x=0
-        \]
-        两边对$x$求导，得
-        \[
-            (12y-4)(y')^2+(6y^2-4y+2x)y''+4y'-2=0.
-        \]
-        将$x=1,\ y=1,\ y'=0$代入：
-        \[
-            4y''-2=0 \Longrightarrow y''=\frac12>0.
-        \]
-        因此$(1,1)$为极小值点。
-
-        \medskip
-        结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
-    \end{analysisbox}
-
     \subsection{一元函数微分学的计算}
 
     \begin{enumerate}
@@ -654,6 +542,425 @@
         所以答案为
         \[
             \boxed{11\cdot 10!\cos 1}.
+        \]
+    \end{analysisbox}
+
+    \subsection{一元函数微分学的应用 - 几何应用}
+
+    \begin{enumerate}
+        \item 曲线$\tan(x + y + \dfrac{\pi}{4}) = e^y$在点$(0, 0)$处的切线方程为
+        \item 曲线$y = (2x - 1)e^\dfrac{1}{x}$的斜渐近线方程为
+        \item 设函数$y = y(x)$由方程
+        \[
+            2y^3 - 2y^2 + 2xy - x^2 = 1
+        \]
+        所确定，试求$y = y(x)$的驻点，并判别它是否为极值点
+    \end{enumerate}
+
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+        由
+        \[
+            \tan\!\left(x+y+\frac{\pi}{4}\right)=e^y
+        \]
+        两边对$x$求导，得
+        \[
+            \sec^2\!\left(x+y+\frac{\pi}{4}\right)(1+y')=e^y\,y'.
+        \]
+        在点$(0,0)$处，
+        \[
+            \sec^2\!\left(\frac{\pi}{4}\right)=2,\quad e^0=1,
+        \]
+        故
+        \[
+            2(1+y')=y' \Longrightarrow y'=-2.
+        \]
+        因而切线方程为
+        \[
+            y-0=-2(x-0),
+        \]
+        即
+        \[
+            \boxed{y=-2x}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}
+        设斜渐近线为$y=kx+b$，其中
+        \[
+            k=\lim_{x\to\infty}\frac{y}{x}
+            =\lim_{x\to\infty}\frac{(2x-1)e^{\dfrac{1}{x}}}{x}
+            =\lim_{x\to\infty}\left(2-\frac{1}{x}\right)e^{\dfrac{1}{x}}=2.
+        \]
+        再求
+        \[
+            b=\lim_{x\to\infty}(y-kx)
+            =\lim_{x\to\infty}\left[(2x-1)e^{\dfrac{1}{x}}-2x\right].
+        \]
+        利用展开式$e^{\dfrac{1}{x}}=1+\dfrac{1}{x}+o\!\left(\dfrac{1}{x}\right)$，有
+        \[
+            (2x-1)e^{\dfrac{1}{x}}
+            =(2x-1)\left(1+\frac{1}{x}+o\!\left(\frac{1}{x}\right)\right)
+            =2x+1+o(1),
+        \]
+        从而$b=1$。
+        因此斜渐近线为
+        \[
+            \boxed{y=2x+1}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第3题解答}
+    \begin{analysisbox}
+        由
+        \[
+            2y^3-2y^2+2xy-x^2=1
+        \]
+        对$x$求导，得
+        \[
+            6y^2y'-4yy'+2y+2xy'-2x=0.
+        \]
+        驻点满足$y'=0$，代入上式立得
+        \[
+            2y-2x=0 \Longrightarrow x=y.
+        \]
+        再代回原方程
+        \[
+            2y^3-2y^2+2y^2-y^2=1
+            \Longrightarrow 2y^3-y^2-1=0
+            \Longrightarrow (y-1)(2y^2+y+1)=0.
+        \]
+        因$2y^2+y+1>0$，得唯一实根$y=1$，故$x=1$。
+        所以驻点为
+        \[
+            \boxed{(1,1)}.
+        \]
+
+        再对
+        \[
+            6y^2y'-4yy'+2y+2xy'-2x=0
+        \]
+        两边对$x$求导，得
+        \[
+            (12y-4)(y')^2+(6y^2-4y+2x)y''+4y'-2=0.
+        \]
+        将$x=1,\ y=1,\ y'=0$代入：
+        \[
+            4y''-2=0 \Longrightarrow y''=\frac12>0.
+        \]
+        因此$(1,1)$为极小值点。
+
+        \medskip
+        结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
+    \end{analysisbox}
+
+    \subsection{一元函数微分学的应用 - 中值定理、微分等式与微分不等式}
+
+    \begin{enumerate}
+        \item 若函数$f(x) = \dfrac{1}{xe^{-1} - a}$在$(-\infty, +\infty)$内处处连续，则常数$a$的取值范围为
+        \item 设实数$a_0, a_1, a_2, \cdots, a_n$满足$a_0 + \dfrac{a_1}{2} + \cdots + \dfrac{a_n}{n+1} = 0$，证明：方程$a_0 + a_{1}x + a_{2}x^2 + \cdots + a_{n}a^n = 0$在$(0, 1)$内至少有一个根
+        \item 已知$f(x)$在$[0, 1]$上连续，在$(0, 1)$内可导，且$f(0) = 0, f(1) = 1$。证明：
+        \begin{itemize}
+            \item 存在$\varepsilon \in (0, 1)$，使得$f(\varepsilon) = 1 - \varepsilon$
+            \item 存在$\eta, \tau \in (0, 1)$，使得$f'(\eta)f'(\tau) = 1$
+        \end{itemize}
+        \item 设函数$f(x)$在$[a, b]$上连续$(0 < a < b)$，在$(a, b)$内可导，且$f(a) \neq f(b)$。证明：存在$\varepsilon, \eta \in (a, b)$，使得$\dfrac{f'(\varepsilon)}{2\varepsilon} = \dfrac{f'(\eta)}{b + a}$
+        \item 设$f(x)$在$[0, 1]$上具有二阶导数，且满足条件$|f(x)| \leq a, |f''(x)| \leq b$，其中$a, b$都是非负常数，$c$是$(0, 1)$内任意一点
+        \begin{itemize}
+            \item 写出$f(x)$在点$x = c$处带拉格朗日型余项的一阶泰勒公式
+            \item 证明$|f'(x)| \leq 2a + \dfrac{b}{2}$
+        \end{itemize}
+        \item 证明$0 < x < \dfrac{\pi}{4}$时，有$\tan x < \dfrac{4}{\pi}x$
+        \item 设$p, q$是大于$1$的常数，并且$\dfrac{1}{p} + \dfrac{1}{q} = 1$。证明：对于任意的$x > 0$，有$\dfrac{1}{p}x^p + \dfrac{1}{q} \geq x$
+    \end{enumerate}
+
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+        \[
+            f(x)=\frac{1}{xe^{-x}-a}.
+        \]
+        要使$f(x)$在$\mathbb R$上处处连续，必须且只需
+        \[
+            xe^{-x}-a\neq 0\quad(\forall x\in\mathbb R),
+        \]
+        即$a$不属于函数$\varphi(x)=xe^{-x}$的值域。
+
+        求$\varphi$值域：
+        \[
+            \varphi'(x)=e^{-x}(1-x).
+        \]
+        故$\varphi$在$(-\infty,1)$单调增、在$(1,+\infty)$单调减，且
+        \[
+            \varphi(1)=\frac1e,\quad
+            \lim_{x\to-\infty}xe^{-x}=-\infty,\quad
+            \lim_{x\to+\infty}xe^{-x}=0.
+        \]
+        因而
+        \[
+            \mathrm{Range}(\varphi)=(-\infty,\tfrac1e].
+        \]
+        为使分母恒不为零，须有
+        \[
+            a\notin(-\infty,\tfrac1e]\Longleftrightarrow a>\frac1e.
+        \]
+
+        \[
+            \boxed{a>\frac1e}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}
+        设辅助函数
+        \[
+            F(x)=a_0x+\frac{a_1}{2}x^2+\cdots+\frac{a_n}{n+1}x^{n+1},\quad x\in[0,1].
+        \]
+        则$F$在$[0,1]$连续、在$(0,1)$可导，且由题设
+        \[
+            F(1)-F(0)=a_0+\frac{a_1}{2}+\cdots+\frac{a_n}{n+1}=0.
+        \]
+        故$F(1)=F(0)$，由罗尔定理，存在$\xi\in(0,1)$使
+        \[
+            F'(\xi)=0.
+        \]
+        又
+        \[
+            F'(x)=a_0+a_1x+\cdots+a_nx^n.
+        \]
+        所以
+        \[
+            a_0+a_1\xi+\cdots+a_n\xi^n=0,
+        \]
+        即方程
+        \[
+            a_0+a_1x+\cdots+a_nx^n=0
+        \]
+        在$(0,1)$内至少有一根。
+    \end{analysisbox}
+
+    \subsubsection*{第3题解答}
+    \begin{analysisbox}
+        \textbf{(1) 证存在$\varepsilon\in(0,1)$使$f(\varepsilon)=1-\varepsilon$}
+
+        令
+        \[
+            \phi(x)=f(x)+x-1.
+        \]
+        则$\phi$在$[0,1]$上连续，且
+        \[
+            \phi(0)=f(0)-1=-1<0,\qquad
+            \phi(1)=f(1)+1-1=1>0.
+        \]
+        由介值定理，存在$\varepsilon\in(0,1)$使$\phi(\varepsilon)=0$，即
+        \[
+            f(\varepsilon)=1-\varepsilon.
+        \]
+
+        \textbf{(2) 证存在$\eta,\tau\in(0,1)$使$f'(\eta)f'(\tau)=1$}
+
+        由上一步$\varepsilon\in(0,1)$，在区间$[0,\varepsilon]$上应用拉格朗日中值定理，存在$\eta\in(0,\varepsilon)$使
+        \[
+            f'(\eta)=\frac{f(\varepsilon)-f(0)}{\varepsilon-0}
+            =\frac{1-\varepsilon}{\varepsilon}.
+        \]
+        在区间$[\varepsilon,1]$上应用拉格朗日中值定理，存在$\tau\in(\varepsilon,1)$使
+        \[
+            f'(\tau)=\frac{f(1)-f(\varepsilon)}{1-\varepsilon}
+            =\frac{1-(1-\varepsilon)}{1-\varepsilon}
+            =\frac{\varepsilon}{1-\varepsilon}.
+        \]
+        因而
+        \[
+            f'(\eta)f'(\tau)
+            =\frac{1-\varepsilon}{\varepsilon}\cdot\frac{\varepsilon}{1-\varepsilon}
+            =1.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第4题解答}
+    \begin{analysisbox}
+        由拉格朗日中值定理，存在$\eta\in(a,b)$使
+        \[
+            f'(\eta)=\frac{f(b)-f(a)}{b-a}.
+        \]
+        再在$[a,b]$上对函数$f(x)$与$g(x)=x^2$应用柯西中值定理，存在$\varepsilon\in(a,b)$使
+        \[
+            \frac{f'(\varepsilon)}{g'(\varepsilon)}
+            =\frac{f(b)-f(a)}{g(b)-g(a)}
+            =\frac{f(b)-f(a)}{b^2-a^2}.
+        \]
+        即
+        \[
+            \frac{f'(\varepsilon)}{2\varepsilon}
+            =\frac{f(b)-f(a)}{(b-a)(a+b)}
+            =\frac{f'(\eta)}{a+b}.
+        \]
+        因此存在$\varepsilon,\eta\in(a,b)$使
+        \[
+            \boxed{\frac{f'(\varepsilon)}{2\varepsilon}=\frac{f'(\eta)}{a+b}}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第5题解答}
+    \begin{analysisbox}
+        \textbf{(1)} 对任意$x\in[0,1]$，存在$\xi_x$介于$x$与$c$之间，使
+        \[
+            f(x)=f(c)+f'(c)(x-c)+\frac{f''(\xi_x)}{2}(x-c)^2.
+        \]
+
+        \textbf{(2)} 分别令$x=0,1$，得存在$\xi_1\in(0,c),\xi_2\in(c,1)$使
+        \[
+            f(0)=f(c)-cf'(c)+\frac{f''(\xi_1)}{2}c^2,
+        \]
+        \[
+            f(1)=f(c)+(1-c)f'(c)+\frac{f''(\xi_2)}{2}(1-c)^2.
+        \]
+        两式相减：
+        \[
+            f'(c)=f(1)-f(0)-\frac{f''(\xi_2)}{2}(1-c)^2+\frac{f''(\xi_1)}{2}c^2.
+        \]
+        取绝对值并利用$\lvert f(x)\rvert\le a,\lvert f''(x)\rvert\le b$：
+        \[
+            \begin{aligned}
+                |f'(c)|
+                &\le |f(1)|+|f(0)|+\frac{|f''(\xi_2)|}{2}(1-c)^2+\frac{|f''(\xi_1)|}{2}c^2\\
+                &\le 2a+\frac b2\bigl[(1-c)^2+c^2\bigr]
+            \end{aligned}
+        \]
+        又因$c \in (0, 1)$，有$(1-c)^2+c^2 \leq 1$，故
+        \[
+            |f'(c)| \leq 2a + \frac{b}{2}.
+        \]
+        又
+        \[
+            f(0) = f(1) + f'(1)(0-1) + \dfrac{f''(\varepsilon_3)}{2!}(0-1)^2, 0 < \varepsilon_3 < 1
+        \]
+        \[
+            f(1) = f(0) + f'(0)(1-0) + \dfrac{f''(\varepsilon_4)}{2!}(1-0)^2, 0 < \varepsilon_4 < 1
+        \]
+        故
+        \[
+            f'(1) = f(1)-f(0)+\frac{f''(\varepsilon_3)}{2},
+            \quad
+            f'(0) = f(1)-f(0)-\frac{f''(\varepsilon_4)}{2},
+        \]
+        \[
+            |f'(0)| \le |f(1)|+|f(0)|+\frac{|f''(\varepsilon_4)|}{2}\le 2a+\frac b2,
+        \]
+        \[
+            |f'(1)| \le |f(1)|+|f(0)|+\frac{|f''(\varepsilon_3)|}{2}\le 2a+\frac b2.
+        \]
+
+        综上所述
+        \[
+            \boxed{|f'(x)|\le 2a+\frac b2,\ \forall x\in[0,1].}
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第6题解答}
+    \begin{analysisbox}
+        设辅助函数
+        \[
+            \Phi(x)=\tan x-\frac4\pi x,\qquad x\in\left[0,\frac\pi4\right].
+        \]
+        有
+        \[
+            \Phi(0)=0,\qquad \Phi\!\left(\frac\pi4\right)=1-1=0.
+        \]
+        再求二阶导数：
+        \[
+            \Phi''(x)=2\sec^2x\tan x>0,\quad 0<x<\frac\pi4.
+        \]
+        故$\Phi$在$\left[0,\dfrac\pi4\right]$上严格凸。由凸函数性质，对任意$0<t<1$，
+        \[
+            \Phi\!\left(t\cdot 0+(1-t)\frac\pi4\right)
+            <t\Phi(0)+(1-t)\Phi\!\left(\frac\pi4\right)=0.
+        \]
+        即对$0<x<\dfrac\pi4$有$\Phi(x)<0$，从而
+        \[
+            \tan x-\frac4\pi x<0
+            \Longrightarrow
+            \boxed{\tan x<\frac4\pi x,\quad 0<x<\frac\pi4}.
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第7题解答}
+    \begin{analysisbox}
+        设
+        \[
+            \Phi(x)=\frac1p x^p+\frac1q-x,\qquad x>0.
+        \]
+        由$\dfrac1p+\dfrac1q=1$，且$p>1$，可得
+        \[
+            \Phi'(x)=x^{p-1}-1,\qquad
+            \Phi''(x)=(p-1)x^{p-2}>0.
+        \]
+        故$\Phi$为严格凸函数，驻点由$\Phi'(x)=0$得$x=1$，且该点为全局最小点。
+
+        计算最小值：
+        \[
+            \Phi(1)=\frac1p+\frac1q-1=0.
+        \]
+        因此对任意$x>0$有
+        \[
+            \Phi(x)\ge 0,
+        \]
+        即
+        \[
+            \boxed{\frac1p x^p+\frac1q\ge x}.
+        \]
+    \end{analysisbox}
+
+    \subsection{一元函数微分学的应用 - 物理应用与经济应用}
+
+    \begin{enumerate}
+        \item 质点$P$沿抛物线$x = y^2(y > 0)$移动，$P$的横坐标$x$对时间的变化率为$5\text{ cm/s}$，当$x = 9$时，点$P$到原点$O$的距离对时间的变化率为
+        \item 甲车以$24km/h$的速度向北行驶，同时正东$10km$处乙车以$20km/h$的速度向东行驶，从这一时刻起经过$1$小时后，求两车间的距离对时间的变化率
+    \end{enumerate}
+
+    \subsubsection{解答}
+
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+        设点$P(x,y)$到原点距离为
+        \[
+            r=\sqrt{x^2+y^2}.
+        \]
+        两边对$t$求导得
+        \[
+            \frac{dr}{dt}=\frac{d}{dt}\sqrt{x^2 + y^2} = \frac{d}{dx}\sqrt{x^2 + x} \cdot \frac{dx}{dt} = \frac{5(2x + 1)}{2\sqrt{x^2 + x}}
+        \]
+        当$x=9$时
+        \[
+            \frac{dr}{dt}\Big|_{x=9}
+            =\frac{5(2x + 1)}{2\sqrt{x^2 + x}}\Big|_{x=9} = \boxed{\frac{95}{6\sqrt{10}}\ \text{cm/s}}
+        \]
+    \end{analysisbox}
+
+    \subsubsection*{第2题解答}
+    \begin{analysisbox}
+        设两车在$t$小时后的南北向距离为$y$，东西向距离为$x$，两车间距离为$s(t)$，则
+        \[
+            s(t)=\sqrt{x^2+y^2}.
+        \]
+        由题意可得
+        \[
+            x=10+20t,\quad y=24t,\quad \frac{dx}{dt}=20,\quad \frac{dy}{dt}=24.
+        \]
+        两边对$t$求导：
+        \[
+            \frac{ds}{dt} = \frac{d}{dt}\sqrt{x^2 + y^2} = \frac{x\dfrac{dx}{dt} + y\dfrac{dy}{dt}}{\sqrt{x^2 + y^2}}
+        \]
+        当$t=1$时，$x = 30,\ y = 24$
+        \[
+            \frac{ds}{dt}\Big|_{t=1}
+            =\frac{30\cdot 20+24\cdot 24}{\sqrt{30^2+24^2}}
+            =\boxed{\frac{196}{\sqrt{41}}\ \text{km/h}}.
         \]
     \end{analysisbox}
 \end{document}
