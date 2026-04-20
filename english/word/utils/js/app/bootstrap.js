@@ -4,6 +4,8 @@ import { dispatchAction } from '../application/action-dispatcher.js';
 import { setAppContext } from './event-handlers.js';
 import { setupOrderModeSelect } from './order-mode-select.js';
 import { createKeyboardShortcutHandler } from './keyboard-shortcuts.js';
+import { warmUpAudioContext } from '../infrastructure/audio-service.js';
+import { setAutoPlayFn } from './ui-renderer.js';
 
 const app = new VocabApp();
 setAppContext(app);
@@ -56,3 +58,17 @@ function handleKeyboardShortcuts() {
 setupDomActions();
 setupOrderModeSelect();
 handleKeyboardShortcuts();
+
+// Use direct function call for autoplay instead of CustomEvent (preserves gesture context better)
+setAutoPlayFn((payload) => {
+  return app.playWord(payload.word, payload.buttonId || null, false, true);
+});
+
+// Pre-warm AudioContext on the first user gesture (required by iOS Safari)
+const warmUpOnce = () => {
+  warmUpAudioContext();
+  document.removeEventListener('click', warmUpOnce);
+  document.removeEventListener('touchstart', warmUpOnce);
+};
+document.addEventListener('click', warmUpOnce);
+document.addEventListener('touchstart', warmUpOnce);

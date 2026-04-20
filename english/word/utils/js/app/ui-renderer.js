@@ -4,6 +4,12 @@
  */
 
 import { STATE } from '../config.js';
+
+let _autoPlayFn = null;
+
+export function setAutoPlayFn(fn) {
+  _autoPlayFn = fn;
+}
 import * as StateManager from './state-manager.js';
 import {
   renderInputActions as renderInputActionsModule,
@@ -80,9 +86,13 @@ export function render(ui) {
   if (shouldAutoPlayCard(card, STATE)) {
     setTimeout(() => {
       const payload = getAutoPlayPayload(card);
-      document.dispatchEvent(new CustomEvent('app:play-word', {
-        detail: payload
-      }));
+      if (typeof _autoPlayFn === 'function') {
+        _autoPlayFn(payload).catch(() => {});
+      } else {
+        document.dispatchEvent(new CustomEvent('app:play-word', {
+          detail: payload
+        }));
+      }
     }, 300);
   }
 

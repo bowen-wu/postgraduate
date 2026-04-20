@@ -9,14 +9,28 @@ const audioSources = [
   { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
 ];
 
+const sentenceAudioSources = [
+  { name: 'Azure', play: playAzureTTS, timeout: 3500, options: { voice: 'en-US-JennyNeural', region: 'eastasia' } },
+  { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
+];
+
+function isSentenceLike(text) {
+  const normalized = String(text || '').trim();
+  if (!normalized) return false;
+  const wordCount = normalized.split(/\s+/).filter(Boolean).length;
+  return wordCount >= 8 || /[.!?;:,"]/u.test(normalized);
+}
+
 export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
 
   const audioText = normalizeText(word);
+  const isSentence = isSentenceLike(audioText);
+  const sources = isSentence ? sentenceAudioSources : audioSources;
   const sourceTimeout = getSourceTimeoutForText(audioText);
   try {
     const result = await runFallbackChain(
-      audioSources,
+      sources,
       (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooks),
       'All audio sources failed'
     );
@@ -45,8 +59,13 @@ function getSourceTimeoutForText(text) {
   return 9000;
 }
 
+function getYoudaoTimeoutForText(text) {
+  return isSentenceLike(text) ? 2000 : 3500;
+}
+
 async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
+  const youdaoTimeout = isSentenceLike(cleanText) ? Math.min(timeout, 2000) : timeout;
   const urls = [
     `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`,
     `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanText)}`
@@ -54,7 +73,7 @@ async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) 
 
   for (const url of urls) {
     try {
-      return await playAudioUrl(url, timeout, hooks);
+      return await playAudioUrl(url, youdaoTimeout, hooks);
     } catch {
       continue;
     }
@@ -70,7 +89,14 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
+    try {
+      return await playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
+    } catch {
+      // Cached blob URL may fail on iOS Safari; convert to data URL
+      const base64 = await blobToBase64(cached);
+      const dataUrl = `data:audio/mpeg;base64,${base64}`;
+      return playAudioUrl(dataUrl, sourceTimeout, hooks);
+    }
   }
 
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
@@ -106,7 +132,15 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-  return playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
+
+  try {
+    return await playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
+  } catch {
+    // Some mobile browsers are strict about blob playback; fall back to data URL
+    const base64 = arrayBufferToBase64(arrayBuffer);
+    const dataUrl = `data:audio/mpeg;base64,${base64}`;
+    return playAudioUrl(dataUrl, sourceTimeout, hooks);
+  }
 }
 
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}) {
@@ -162,6 +196,42 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
   }
 }
 
+let _audioContext = null;
+let _audioContextWarmed = false;
+
+export function warmUpAudioContext() {
+  if (_audioContextWarmed) return;
+  try {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    _audioContext = new AC();
+    if (_audioContext.state === 'suspended') {
+      _audioContext.resume();
+    }
+    _audioContextWarmed = true;
+  } catch {}
+}
+
+function ensureAudioContextResumed() {
+  if (_audioContext && _audioContext.state === 'suspended') {
+    _audioContext.resume().catch(() => {});
+  }
+}
+
+function arrayBufferToBase64(buffer) {
+  const bytes = new Uint8Array(buffer);
+  let binary = '';
+  for (let i = 0; i < bytes.byteLength; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
+}
+
+async function blobToBase64(blob) {
+  const buffer = await blob.arrayBuffer();
+  return arrayBufferToBase64(buffer);
+}
+
 async function playAudioUrl(url, timeout = 3000, hooks = {}) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(url);
@@ -205,6 +275,7 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
       if (!resolved && !started) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio startup timeout'));
     }, startupTimeoutMs);
 
+    ensureAudioContextResumed();
     audio.play().catch((err) => done(reject, err));
   });
 }
