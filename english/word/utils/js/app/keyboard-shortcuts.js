@@ -103,6 +103,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
     y: (e) => {
       if (!isRecallMode) return;
       e.preventDefault();
+      if (currentCard.type === 'sentence') {
+        app.handleSentenceRecall(true);
+        keyboardState.isConfirming = false;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(true);
         keyboardState.isConfirming = false;
@@ -114,6 +119,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
     '1': (e) => {
       if (!isRecallMode) return;
       e.preventDefault();
+      if (currentCard.type === 'sentence') {
+        app.handleSentenceRecall(true);
+        keyboardState.isConfirming = false;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(true);
         keyboardState.isConfirming = false;
@@ -125,6 +135,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
     n: (e) => {
       if (!isRecallMode) return;
       e.preventDefault();
+      if (currentCard.type === 'sentence') {
+        app.handleSentenceRecall(false);
+        keyboardState.isConfirming = false;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(false);
         keyboardState.isConfirming = false;
@@ -135,6 +150,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
     '2': (e) => {
       if (!isRecallMode) return;
       e.preventDefault();
+      if (currentCard.type === 'sentence') {
+        app.handleSentenceRecall(false);
+        keyboardState.isConfirming = false;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(false);
         keyboardState.isConfirming = false;

@@ -23,7 +23,8 @@ function createDeps() {
     prev: 0,
     toggleMode: 0,
     handleRecall: [],
-    confirmRecall: []
+    confirmRecall: [],
+    handleSentenceRecall: []
   };
 
   const app = {
@@ -34,6 +35,7 @@ function createDeps() {
     translateSentence: () => {},
     confirmRecall: (v) => { calls.confirmRecall.push(v); },
     handleRecall: (v) => { calls.handleRecall.push(v); },
+    handleSentenceRecall: (v) => { calls.handleSentenceRecall.push(v); },
     toggleShortcuts: () => {},
     toggleAutoPlay: () => {},
     toggleStats: () => {},
@@ -105,4 +107,20 @@ test('y only works in recall mode', () => {
   STATE.mode = 'recall';
   deps.handler(createEvent('y'));
   assert.deepEqual(deps.calls.handleRecall, [true]);
+});
+
+test('sentence in recall mode uses single-step recall (no confirm state)', () => {
+  STATE.cards = [{ id: '1', type: 'sentence', word: 'hello', items: [{ en: 'hello', cn: '你好' }] }];
+  STATE.displayOrder = [0];
+  STATE.currentIndex = 0;
+  STATE.mode = 'recall';
+
+  const deps = createDeps();
+  deps.handler(createEvent('y'));
+  assert.deepEqual(deps.calls.handleSentenceRecall, [true]);
+  assert.deepEqual(deps.calls.handleRecall, []);
+  assert.deepEqual(deps.calls.confirmRecall, []);
+
+  deps.handler(createEvent('n'));
+  assert.deepEqual(deps.calls.handleSentenceRecall, [true, false]);
 });
