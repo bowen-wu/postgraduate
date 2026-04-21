@@ -3,6 +3,17 @@ import assert from 'node:assert/strict';
 
 import { dispatchAction } from '../../application/action-dispatcher.js';
 
+function setMobileEnv({ coarse = false, touchPoints = 0 } = {}) {
+  Object.defineProperty(globalThis, 'window', {
+    value: { matchMedia: (q) => ({ matches: coarse && q === '(pointer: coarse)' }) },
+    configurable: true
+  });
+  Object.defineProperty(globalThis, 'navigator', {
+    value: { maxTouchPoints: touchPoints },
+    configurable: true
+  });
+}
+
 function createMockApp() {
   const calls = [];
   return {
@@ -12,7 +23,7 @@ function createMockApp() {
     loadFolder: (path) => calls.push(`loadFolder:${path}`),
     selectFile: (path, name) => calls.push(`selectFile:${path}:${name}`),
     handleRecall: (v) => calls.push(`handleRecall:${v}`),
-    playWord: (word, btn) => calls.push(`playWord:${word}:${btn}`),
+    playWord: (word, btn, _useFallback, showNotification) => calls.push(`playWord:${word}:${btn}:${showNotification}`),
     confirmDialog: { cancel: () => calls.push('cancelDialog') }
   };
 }
@@ -41,6 +52,7 @@ test('dispatchAction routes folder and file actions', () => {
 test('dispatchAction routes recall and play-word', () => {
   const app = createMockApp();
   const noop = () => {};
+  setMobileEnv({ coarse: false, touchPoints: 0 });
   dispatchAction({ dataset: { action: 'handle-recall', claimedKnown: 'true' } }, { app, resetCardLocalState: noop });
   dispatchAction({
     dataset: {
@@ -50,5 +62,21 @@ test('dispatchAction routes recall and play-word', () => {
     }
   }, { app, resetCardLocalState: noop });
 
-  assert.deepEqual(app.calls, ['handleRecall:true', 'playWord:hello world:play-btn-main']);
+  assert.deepEqual(app.calls, ['handleRecall:true', 'playWord:hello world:play-btn-main:false']);
+});
+
+test('dispatchAction shows source toast for manual play on mobile-like environment', () => {
+  const app = createMockApp();
+  const noop = () => {};
+  setMobileEnv({ coarse: true, touchPoints: 1 });
+
+  dispatchAction({
+    dataset: {
+      action: 'play-word',
+      wordEncoded: encodeURIComponent('mobile play'),
+      buttonId: 'play-btn-main'
+    }
+  }, { app, resetCardLocalState: noop });
+
+  assert.deepEqual(app.calls, ['playWord:mobile play:play-btn-main:true']);
 });

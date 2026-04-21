@@ -1,3 +1,13 @@
+function shouldShowAudioSourceToastOnManualPlay() {
+  if (typeof window === 'undefined') return false;
+  const coarsePointer = typeof window.matchMedia === 'function' && (
+    window.matchMedia('(pointer: coarse)').matches ||
+    window.matchMedia('(hover: none)').matches
+  );
+  const touchCapable = typeof navigator !== 'undefined' && Number(navigator.maxTouchPoints || 0) > 0;
+  return coarsePointer || touchCapable;
+}
+
 export function dispatchAction(actionEl, deps) {
   const { app, resetCardLocalState } = deps;
   const action = actionEl.dataset.action;
@@ -44,7 +54,7 @@ export function dispatchAction(actionEl, deps) {
       const targetWord = (decoded || fallbackWord).trim();
       if (!targetWord) return;
       const buttonId = actionEl.dataset.buttonId || actionEl.id || null;
-      app.playWord(targetWord, buttonId, false, false);
+      app.playWord(targetWord, buttonId, false, shouldShowAudioSourceToastOnManualPlay());
     }
   };
 
