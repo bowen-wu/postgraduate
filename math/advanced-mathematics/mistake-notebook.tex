@@ -1,6 +1,14 @@
 \documentclass[./book.tex]{subfiles}
 \begin{document}
 
+    \title{错题本}
+    \author{Bowen}
+    \date{\today}
+    \maketitle
+    \renewcommand{\contentsname}{}
+    \tableofcontents
+    \newpage
+
     \section{错题}
 
     \subsection{一元函数微分学的概念}
@@ -555,6 +563,44 @@
             2y^3 - 2y^2 + 2xy - x^2 = 1
         \]
         所确定，试求$y = y(x)$的驻点，并判别它是否为极值点
+        \item 函数 $y = e^x + \dfrac{e^{-x}}{2}$ 的最小值为
+        \item 设函数$f(x) = \begin{cases}
+                                \cos|x| - 1, \quad x \geq 0, \\
+                                x\ln x, \quad x > 0
+        \end{cases}$ 则$x = 0$是$f(x)$的
+        \begin{itemize}
+            \item A. 可导点，极值点
+            \item B. 不可导点，极值点
+            \item C. 可导点，非极值点
+            \item D. 不可导点，非极值点
+        \end{itemize}
+        \item 已知$x^2 + ax^{-3} \geq \dfrac{10}{3}(x > 0)$恒成立，则$a$的取值范围
+        \item 设函数$f(x) > 0$且二阶可导，曲线$y = \sqrt{f(x)}$有拐点$(1, \sqrt{2}), f'(1) = 1$，则$f''(1) = $
+        \item 曲线$y(x) = \ln|e^{2x} - 1|$的斜渐近线为
+        \item 已知曲线$y = f(x)$在其点$(0, 1)$处的曲率圆方程为$(x - 1)^2 + y^2 = 2$，且当$x\to 0$是，二阶可导函数$f(x)$与$a + bx + cx^2$的差为$o(x^2)$，则$a, b, c$的值为
+        \item 设在$(-\infty, +\infty)$内，$f''(x) < 0, f(0) \geq 0$，则函数$\dfrac{f(x)}{x}$的单调性
+        \item 设$f(x)$连续，且$\lim\limits_{x\to 0}\dfrac{f(x)}{x^2} = k(k < 0)$，则$f(x)$在点$x = 0$处
+        \begin{itemize}
+            \item A. 导数不存在
+            \item B. 导数存在，且$f'(0) \neq 0$
+            \item C. 取得极小值
+            \item D. 取得极大值
+        \end{itemize}
+        \item 设$M = \max{1, \sqrt{2}, \sqrt[3]{3}, \cdots, \sqrt[n]{n}}(n > 4)$，则$M = $
+        \item 曲线$y = x + \dfrac{|\ln x|}{x}$
+        \begin{itemize}
+            \item A. 有铅直渐近线，也有斜渐近线
+            \item B. 有水平渐近线，也有斜渐近线
+            \item C. 有且仅有铅直渐近线
+            \item D. 有且仅有水平渐近线
+        \end{itemize}
+        \item 设函数$f(x)$在$[0, 1]$上可导，$f(0) = 0, f'(x)$严格单调递增，则对任意$x\in (0, 1)$，有
+        \begin{itemize}
+            \item A. $f(x) > f'(0)x > f(1)x$
+            \item B. $f'(0)x > f(x) > f(1)x$
+            \item C. $f(1)x > f'(0)x > f(x)$
+            \item D. $f(1)x > f(x) > f'(0)x$
+        \end{itemize}
     \end{enumerate}
 
     \subsubsection{解答}
@@ -655,6 +701,56 @@
 
         \medskip
         结论：函数$y=y(x)$仅有一个驻点$\boxed{(1,1)}$，且该点是$\boxed{\text{极小值点}}$。
+    \end{analysisbox}
+
+    \subsubsection*{第4题解答}
+    \begin{analysisbox}
+       利用 $a + b \geq 2\sqrt{ab}$
+    \end{analysisbox}
+
+    \subsubsection*{第5题解答}
+    \begin{analysisbox}
+        \textbf{思路：}
+        \begin{enumerate}
+            \item 判断可导：左右导数存在且相等
+            \item 判断极值：判别极值第一、第二、第三充分条件
+        \end{enumerate}
+    \end{analysisbox}
+
+    \subsubsection*{第6题解答}
+    \begin{analysisbox}
+        \textbf{思路：}恒等变形，做出$a$的不等式
+    \end{analysisbox}
+
+    \subsubsection*{第7题解答}
+    \begin{analysisbox}
+    \end{analysisbox}
+
+    \subsubsection*{第8题解答}
+    \begin{analysisbox}
+        不会做$b$的极限
+    \end{analysisbox}
+
+    \subsubsection*{第9题解答}
+    \begin{analysisbox}
+        \textbf{分析：}从$o(x^2)$可知，需要使用泰勒公式：$f(x) = f(0) + f'(0)x + \dfrac{f''(0)}{2}x^2 + o(x^2)$，故需要求得$f(0), f'(0), f''(0)$，可对曲率圆进行求导
+    \end{analysisbox}
+
+    \subsubsection*{第10题解答}
+    \begin{analysisbox}
+    \end{analysisbox}
+
+    \subsubsection*{第11题解答}
+    \begin{analysisbox}
+    \end{analysisbox}
+
+    \subsubsection*{第14题解答}
+    \begin{analysisbox}
+        \textbf{思路：}
+        \begin{enumerate}
+            \item $f'(x)$严格单调递增，$f(x)$凹函数，利用凹函数的概念：$f(\lambda_1 x_1 + \lambda_2 x_2) < \lambda_1 f(x_1) + \lambda_2 f(x_2)$构造$f(0), f(1)x$
+            \item $f'(x)$严格单调递增，则$f'(x) - f'(0) > 0$，逆推设置$g'(x) = f'(x) - f'(0)$
+        \end{enumerate}
     \end{analysisbox}
 
     \subsection{一元函数微分学的应用 - 中值定理、微分等式与微分不等式}

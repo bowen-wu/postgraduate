@@ -109,7 +109,7 @@
             \item $\displaystyle\frac{\partial}{\partial y}\left(\frac{\partial z}{\partial y}\right) = \frac{\partial^2 z}{\partial y^2} = f'_{yy}(x,y)$
         \end{itemize}
 
-        \item \textbf{混合偏导数相等的充分条件}：如果 $z = f(x,y)$ 的两个二阶混合偏导数 $\dfrac{\partial^2 z}{\partial x \partial y}$ 和 $\dfrac{\partial^2 z}{\partial y \partial x}$ 在区域 $D$ 内{\blueuline{连续}}，那么在该区域内这两个二阶混合偏导数必相等。即二阶混合偏导数在连续的条件下与求导的次序无关
+        \item \textbf{混合偏导数相等的充分条件}：如果 $z = f(x,y)$ 的两个二阶混合偏导数 $\dfrac{\partial^2 z}{\partial x \partial y}$ 和 $\dfrac{\partial^2 z}{\partial y \partial x}$ 在区域 $D$ 内{\color{red}{连续}}，那么在该区域内这两个二阶混合偏导数必相等。即二阶混合偏导数在连续的条件下与求导的次序无关
     \end{enumerate}
 
     \subsubsection{可微}
@@ -231,7 +231,7 @@
 
         根据链式法则，$\dfrac{\partial z}{\partial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}$。
 
-        这里 $\dfrac{\partial f}{\partial u}$ 和 $\dfrac{\partial f}{\partial v}$ \textbf{仍然是 $u, v$ 的函数}，而 $u, v$ 仍然是 $x, y$ 的函数。因此 $\dfrac{\partial z}{\partial x}$ 依然通过 $u, v$ 与 $x, y$ 相关联——这就是"复合结构不变"。
+        这里 $\dfrac{\partial f}{\partial u}$ 和 $\dfrac{\partial f}{\partial v}$ \textbf{仍然是 $u, v$ 的函数}，而 $u, v$ 仍然是 $x, y$ 的函数。因此 $\dfrac{\partial z}{\partial x}$ 依然通过 $u, v$ 与 $x, y$ 相关联——这就是{\blueuline{复合结构不变}}。
 
         \textbf{意义}：求高阶偏导时，每次都要继续用链式法则处理中间变量的依赖关系。
 
@@ -305,18 +305,20 @@
 
     \subsubsection{隐函数存在定理（公式法）}
 
-    \begin{enumerate}
-        \item \textbf{隐函数存在定理1}（一个方程，两个变量）：对于由方程$F(x, y) = 0$确定的隐函数$y = f(x)$，当$\color{red}{F_y(x_0, y_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
-        \[
-            \frac{\mathrm{d}y}{\mathrm{d}x} = {\color{red}{-}}\frac{F'_x(x, y)}{F'_y(x, y)}
-        \]
+    {\linespread{1.15}\selectfont
+        \begin{enumerate}
+            \item \textbf{隐函数存在定理1}（一个方程，两个变量）：对于由方程$F(x, y) = 0$确定的隐函数$y = f(x)$，当$\color{red}{F_y(x_0, y_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
+            \[
+                \frac{\mathrm{d}y}{\mathrm{d}x} = {\color{red}{-}}\frac{F'_x(x, y)}{F'_y(x, y)}
+            \]
 
-        \item \textbf{隐函数存在定理2}（一个方程，三个变量）：对于由方程$F(x, y, z) = 0$确定的隐函数$z = f(x, y)$，当$\color{red}{F_z(x_0, y_0, z_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
-        \[
-            \frac{\partial z}{\partial x} = {\color{red}{-}}\frac{F'_x(x, y, z)}{F'_z(x, y, z)}, \quad \frac{\partial z}{\partial y} = {\color{red}{-}}\frac{F'_y(x, y, z)}{F'_z(x, y, z)}
-        \]
-        \item \textbf{隐函数存在定理（理解）}：设 $F(x,y)$ 在点 $(x_0, y_0)$ 的某一邻域内具有连续的偏导数，且 $F(x_0, y_0) = 0$，则 $F'_y(x_0, y_0) \neq 0$ 是方程 $F(x, y) = 0$ 在点 $(x_0, y_0)$ 的某一邻域内能确定一个连续函数 $y = y(x)$，且满足 $y_0 = y(x_0)$，并有连续导数的\textbf{充分非必要条件}。
-    \end{enumerate}
+            \item \textbf{隐函数存在定理2}（一个方程，三个变量）：对于由方程$F(x, y, z) = 0$确定的隐函数$z = f(x, y)$，当$\color{red}{F_z(x_0, y_0, z_0) \neq 0 \text{（隐函数存在条件）}}$时，则有
+            \[
+                \frac{\partial z}{\partial x} = {\color{red}{-}}\frac{F'_x(x, y, z)}{F'_z(x, y, z)}, \quad \frac{\partial z}{\partial y} = {\color{red}{-}}\frac{F'_y(x, y, z)}{F'_z(x, y, z)}
+            \]
+            \item \textbf{隐函数存在定理（理解）}：设 $F(x,y)$ 在点 $(x_0, y_0)$ 的某一邻域内具有连续的偏导数，且 $F(x_0, y_0) = 0$，则 $F'_y(x_0, y_0) \neq 0$ 是方程 $F(x, y) = 0$ 在点 $(x_0, y_0)$ 的某一邻域内能确定一个连续函数 $y = y(x)$，且满足 $y_0 = y(x_0)$，并有连续导数的\textbf{充分非必要条件}。
+        \end{enumerate}
+    }
 
     \subsubsection{二元函数的拉格朗日定理}
 
@@ -368,29 +370,29 @@
         \[
             \begin{cases}
                 \text{极大值} \;\Rightarrow\;
-                f_{xx}(x_0, y_0) \le 0,\quad
-                f_{yy}(x_0, y_0) \le 0, \\[6pt]
+                f''_{xx}(x_0, y_0) \le 0,\quad
+                f''_{yy}(x_0, y_0) \le 0, \\[6pt]
                 \text{极小值} \;\Rightarrow\;
-                f_{xx}(x_0, y_0) \ge 0,\quad
-                f_{yy}(x_0, y_0) \ge 0.
+                f''_{xx}(x_0, y_0) \ge 0,\quad
+                f''_{yy}(x_0, y_0) \ge 0.
             \end{cases}
         \]
 
         \begin{itemize}
             \item 该必要条件同样适用于三元即三元以上函数
             \item 偏导数不存在的点也可能是极值点
-            \item 找可疑点\begin{cases}
-                              f'_x(x_0, y_0) = 0, \quad f'_y(x_0, y_0) = 0\text{的点} \\
-                              \text{偏导数不存在的点}
+            \item 找{\color{red}{可疑点}}\begin{cases}
+                                             f'_x(x_0, y_0) = 0, \quad f'_y(x_0, y_0) = 0\text{的点} \\
+                                             \text{偏导数不存在的点}
             \end{cases}
         \end{itemize}
 
         \item \textbf{二元函数取极值的充分条件}：设函数 $z = f(x,y)$ 在点 $(x_0, y_0)$ 的某邻域内连续且有一阶及二阶连续偏导数，又 $f'_x(x_0, y_0) = 0$，$f'_y(x_0, y_0) = 0$
         \[
             \begin{cases}
-                A = f'_{xx}(x_0, y_0) \\
-                B = f'_{xy}(x_0, y_0) \\
-                C = f'_{yy}(x_0, y_0)
+                A = f''_{xx}(x_0, y_0) \\
+                B = f''_{xy}(x_0, y_0) \\
+                C = f''_{yy}(x_0, y_0)
             \end{cases} \text{则}\Delta = AC - B^2 \begin{cases}
                                                        > 0 \Rightarrow \begin{cases}
                                                                            A < 0 \Rightarrow \text{极大值} \\
@@ -468,8 +470,12 @@
         \item 理论依据 —— \textbf{最大值与最小值定理}：有界闭区域$D$上的多元连续函数，在区域$D$上一定有最大值和最小值
         \item \textbf{求解步骤}：
         \begin{circlenum}
-            \item 根据$f'_x(x, y), f'_y(x, y)$为$0$或不存在，求出{\color{red}{区域$D$内部}}的所有可疑点
-            \item 用拉格朗日乘数法或代入法求出{\color{red}{区域$D$边界上}}的所有可疑点
+            \item 内部（无约束极值）：根据$f'_x(x, y), f'_y(x, y)$为$0$或不存在，求出{\color{red}{区域$D$内部}}的所有可疑点
+            \item 边界（有约束极值）：用拉格朗日乘数法或代入法求出{\color{red}{区域$D$边界上}}的所有可疑点
+            \begin{itemize}
+                \item 若约束不封闭或存在端点，还需\textbf{比较端点处函数值}
+                \item 拉格朗日的约束 == 边界方程
+            \end{itemize}
             \item 比较以上所有可疑点的函数值大小，取其最小者为最小值，最大者为最大值
         \end{circlenum}
     \end{enumerate}
