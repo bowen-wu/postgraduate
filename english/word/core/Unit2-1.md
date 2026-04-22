@@ -96,6 +96,7 @@
 - overpay
     - v. 付款过多；多付报酬
     - CEOs are not overpaid.
+    - underpay vt. 付给（雇员等）报酬过低
 - mortgage [ˈmɔːrɡɪdʒ]
     - vt. 抵押
     - n. 房屋抵押贷款
@@ -119,7 +120,7 @@
 
 ## law
 
-- n. 法律；（针对某项罪行、协议等的一条）法规；定律
+- n. （针对某项罪行、协议等的一条）法规；定律；法律
 - bill
     - n. 法案，议案（不具有法律效力）；账单，票据
     - act n. 法令（确定的）
@@ -142,18 +143,20 @@
 - legitimate [lɪˈdʒɪtɪmət]
     - adj. 合法的；正当合理的
     - legitimacy [lə'dʒɪtəməsi] n. 合法性
+- legislate
+    - v. 立法，制定法律
     - legislation [ˌledʒɪsˈleɪʃn]
         - n. 立法
         - **Legislation** is the act or process of making or enacting laws.
         - The European Union is now considering **legislation** to *compel([kəmˈpel] v. 强迫)* corporate boards to
           maintain a certain proportion of women.
-        - legislative [ˈledʒɪsleɪtɪv]
-            - adj. 立法的
-            - legislative power
-            - Congress 国会
-            - the supreme court 最高法院
-        - legislator n. 立法者
-        - legislature [ˈlɛdʒɪˌsletʃɚ] n. 立法机构
+    - legislative [ˈledʒɪsleɪtɪv]
+        - adj. 立法的
+        - legislative power
+        - Congress 国会
+        - the supreme court 最高法院
+    - legislator n. 立法者
+    - legislature [ˈlɛdʒɪˌsletʃɚ] n. 立法机构
 - proceedings n. 公报
 - enact
     - vt. 颁布；推行；实施
@@ -192,7 +195,7 @@
       the significant *role(n. 诉讼; 角色; 地位; 作用)* of good habits.
         - so as to do 为了...；以便...
 - demonstrate
-    - vt. 证明；表现；
+    - vt. 证明；表现
     - vi. 游行
     - be demonstrated by 被...所证明/被...所展示
 - exhibit [ɪɡˈzɪbɪt]

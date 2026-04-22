@@ -1,0 +1,19 @@
+[
+  {
+    "id": "card_0",
+    "word": "A rather than B",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "A rather than B",
+        "cn": ""
+      },
+      {
+        "type": "def",
+        "en": "A rather than B",
+        "cn": "是A而不是B"
+      }
+    ]
+  }
+]

@@ -59,7 +59,9 @@ export function determineCardTypeRule(args) {
     const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
     const hasEnglish = /[a-zA-Z]/.test(content);
     const hasPos = hasPosMarker(content);
-    if (hasChinese && !hasEnglish && !hasPos) return 'definition';
+    const startsWithChinese = /^[\u4e00-\u9fa5\uff08-\uff9e]/.test(content.trim());
+    // Phrase child lines like "是A而不是B" are definitions even though they contain A/B.
+    if (hasChinese && !hasPos && (!hasEnglish || startsWithChinese)) return 'definition';
   }
 
   if (context.inPhraseHeader || context.inPhraseList) return 'phrase';

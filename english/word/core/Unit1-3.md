@@ -36,7 +36,7 @@
 - vt. 标志着；给...确定性质
 - n. 标志；痕迹
 - A mark B
-- Last year **marked** *the third year in a row* that Indonesia's
+- Last year **marked** the third year in a row that Indonesia's
   <ins>bleak rate of deforestation(令人沮丧的砍伐速度/严峻的砍伐率)</ins> has *slowed* in *pace(n. 速度)*. 🙂
 - This year **marks** exactly two centuries since the publication of Frankenstein; or, The modern Prometheus, by Mary
   Shelley.
@@ -91,9 +91,8 @@
     - n. 问题；议题
     - 词组
         - at issue 讨论或争论中的
-    - <ins>At **issue**</ins> before the U.S. Court of Appeals for the District of Columbia Circuit was 
-      <ins>the latest **take**</ins> of the Federal Communications Commission(FCC) on net
-      neutrality. [主表倒装](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/complex-sentence/special-sentence-structures/inversion.md#%E4%B8%BB%E8%A1%A8%E5%80%92%E8%A3%85)
+    - At **issue** before the U.S. Court of Appeals for the District of Columbia Circuit was
+      <ins>the latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
     - **issue** a report 发布报告
     - The Administration is *dominant([ˈdɑːmɪnənt] adj. 首要的；统治的；有支配力的；占优势的)* over immigration **issues**.
         - dominant over 对...占据主导地位/控制权
@@ -111,6 +110,7 @@
 - affair
     - n. 事情（大，正式）；[pl.]事务；风流韵事
     - == matter
+    - Similar: afraid adj. 害怕的; 担心的; 顾忌的
     - Another way **affair** **is** frequently used **is** to mean a love affair, particularly if the
       relationship is brief and intense.
 
