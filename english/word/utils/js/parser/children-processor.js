@@ -2,6 +2,7 @@ import { restoreParentContext, saveParentContext, setParentContext } from './con
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import {
   finalizePendingAntonymIfNeeded,
+  finalizePendingSimilarIfNeeded,
   finalizePendingSynonymIfNeeded
 } from './pending-relations.js';
 
@@ -29,16 +30,19 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     if (!indentMatch) {
       finalizePendingSynonymIfNeeded(parser, 0);
       finalizePendingAntonymIfNeeded(parser, 0);
+      finalizePendingSimilarIfNeeded(parser, 0);
       break;
     }
 
     const indentLevel = indentMatch[1].length;
     finalizePendingSynonymIfNeeded(parser, indentLevel);
     finalizePendingAntonymIfNeeded(parser, indentLevel);
+    finalizePendingSimilarIfNeeded(parser, indentLevel);
 
     if (indentLevel <= parentIndentLevel) {
       finalizePendingSynonymIfNeeded(parser, 0);
       finalizePendingAntonymIfNeeded(parser, 0);
+      finalizePendingSimilarIfNeeded(parser, 0);
       break;
     }
 
@@ -87,6 +91,50 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
           parser.pendingSynonyms = [];
         }
         parser.pendingSynonyms.push(synonymWord);
+      }
+      i++;
+      continue;
+    }
+
+    if (parser.hasSimilarMarker(content)) {
+      if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'sentence')) {
+        const similarContent = content.replace(/^(Similar:|形近词:)\s*/, '').trim();
+        actualParentCard.similars = actualParentCard.similars || [];
+        const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+
+        for (const sim of multipleSimilars) {
+          const { word, ipa, pos, cn } = parser.parseWordContent(sim);
+          if (!word) continue;
+
+          if (pos && cn) {
+            const similar = { word };
+            if (ipa) similar.ipa = ipa;
+            if (pos) similar.pos = pos;
+            if (cn) similar.cn = cn;
+            actualParentCard.similars.push(similar);
+            continue;
+          }
+
+          const isLastSimilar = multipleSimilars.indexOf(sim) === multipleSimilars.length - 1;
+          if (isLastSimilar) {
+            parser.pendingSimilarCard = {
+              word,
+              items: []
+            };
+            if (ipa) {
+              parser.pendingSimilarCard.ipa = ipa;
+            }
+            parser.pendingSimilarLevel = indentLevel;
+            parser.pendingSimilarOriginalParent = actualParentCard;
+            parser.pendingSimilarOriginalLevel = parser.parentLevel;
+            parser.parentCard = parser.pendingSimilarCard;
+            parser.parentLevel = indentLevel;
+          } else {
+            const similar = { word };
+            if (ipa) similar.ipa = ipa;
+            actualParentCard.similars.push(similar);
+          }
+        }
       }
       i++;
       continue;
@@ -212,6 +260,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
   restoreParentContext(parser, savedParentContext);
   finalizePendingSynonymIfNeeded(parser, 0);
   finalizePendingAntonymIfNeeded(parser, 0);
+  finalizePendingSimilarIfNeeded(parser, 0);
 
   return { children, lastLineIndex: i - 1 };
 }

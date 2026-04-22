@@ -8,8 +8,8 @@ export function reveal(el) {
 
 export function revealAll() {
   document.querySelectorAll('.cn-text, .en-text, .blur-target').forEach((el) => el.classList.add('revealed'));
-  const synonymsSection = document.querySelector('.synonyms-section');
-  if (synonymsSection) synonymsSection.classList.add('revealed');
+  document.querySelectorAll('.synonyms-section, .antonyms-section, .similars-section')
+    .forEach((section) => section.classList.add('revealed'));
   const itemList = document.querySelector('.item-list');
   if (itemList) itemList.classList.add('revealed');
   revealSentenceTranslationNode();

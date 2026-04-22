@@ -9,7 +9,8 @@ export function withRecallBlur(className, mode = STATE.mode) {
 export function renderSynonymsAndAntonyms(ui, card) {
   const hasSynonyms = card.synonyms && card.synonyms.length > 0;
   const hasAntonyms = card.antonyms && card.antonyms.length > 0;
-  if (!hasSynonyms && !hasAntonyms) return;
+  const hasSimilars = card.similars && card.similars.length > 0;
+  if (!hasSynonyms && !hasAntonyms && !hasSimilars) return;
 
   if (hasSynonyms) {
     const synSection = document.createElement('div');
@@ -193,5 +194,113 @@ export function renderSynonymsAndAntonyms(ui, card) {
     });
     antSection.appendChild(antList);
     ui.list.appendChild(antSection);
+  }
+
+  if (hasSimilars) {
+    const simSection = document.createElement('div');
+    simSection.className = 'similars-section';
+    const simLabel = document.createElement('div');
+    simLabel.className = withRecallBlur('similars-label');
+    simLabel.textContent = 'Similar Words';
+    simSection.appendChild(simLabel);
+
+    const simList = document.createElement('div');
+    simList.className = 'synonyms-list';
+    card.similars.forEach((sim) => {
+      if (sim.items && sim.items.length > 0) {
+        const simContainer = document.createElement('div');
+        simContainer.className = 'synonym-with-items';
+        const simMainItem = document.createElement('div');
+        simMainItem.className = withRecallBlur('synonym-main');
+
+        const playBtn = document.createElement('button');
+        playBtn.className = 'synonym-play-btn audio-play-btn';
+        const simWordEncoded = encodeURIComponent(sim.word);
+        const simBtnId = `play-btn-sim-${sim.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+        playBtn.id = simBtnId;
+        playBtn.dataset.action = 'play-word';
+        playBtn.dataset.wordEncoded = simWordEncoded;
+        playBtn.dataset.buttonId = simBtnId;
+        playBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg><span class="btn-spinner"></span>';
+
+        const simWord = document.createElement('span');
+        simWord.className = 'synonym-word';
+        simWord.textContent = sim.word;
+        simMainItem.appendChild(playBtn);
+        simMainItem.appendChild(simWord);
+        simContainer.appendChild(simMainItem);
+
+        const simSubList = document.createElement('div');
+        simSubList.className = withRecallBlur('synonym-sub-items');
+        sim.items.forEach((item) => {
+          const subItem = document.createElement('div');
+          subItem.className = withRecallBlur('synonym-sub-item');
+          let subText = '';
+          if (item.en && item.en.trim() !== '') subText += item.en;
+          if (item.cn && item.cn.trim() !== '') subText += subText ? ` ${item.cn}` : item.cn;
+          subItem.textContent = subText;
+          simSubList.appendChild(subItem);
+        });
+        simContainer.appendChild(simSubList);
+        simList.appendChild(simContainer);
+      } else {
+        const hasDefinition = (sim.pos && sim.pos.trim() !== '') || (sim.cn && sim.cn.trim() !== '');
+        if (hasDefinition) {
+          const simContainer = document.createElement('div');
+          simContainer.className = 'synonym-with-items';
+          const simMainItem = document.createElement('div');
+          simMainItem.className = withRecallBlur('synonym-main');
+
+          const playBtn = document.createElement('button');
+          playBtn.className = 'synonym-play-btn audio-play-btn';
+          const simWordEncoded = encodeURIComponent(sim.word);
+          const simBtnId = `play-btn-sim-${sim.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          playBtn.id = simBtnId;
+          playBtn.dataset.action = 'play-word';
+          playBtn.dataset.wordEncoded = simWordEncoded;
+          playBtn.dataset.buttonId = simBtnId;
+          playBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg><span class="btn-spinner"></span>';
+
+          const simWord = document.createElement('span');
+          simWord.className = 'synonym-word';
+          simWord.textContent = sim.word;
+          simMainItem.appendChild(playBtn);
+          simMainItem.appendChild(simWord);
+          simContainer.appendChild(simMainItem);
+
+          const simSubList = document.createElement('div');
+          simSubList.className = withRecallBlur('synonym-sub-items');
+          const subItem = document.createElement('div');
+          subItem.className = withRecallBlur('synonym-sub-item');
+          let subText = '';
+          if (sim.pos && sim.pos.trim() !== '') subText += sim.pos;
+          if (sim.cn && sim.cn.trim() !== '') subText += subText ? ` ${sim.cn}` : sim.cn;
+          subItem.textContent = subText;
+          simSubList.appendChild(subItem);
+          simContainer.appendChild(simSubList);
+          simList.appendChild(simContainer);
+        } else {
+          const simItem = document.createElement('span');
+          simItem.className = withRecallBlur('synonym-item');
+          const playBtn = document.createElement('button');
+          playBtn.className = 'synonym-play-btn audio-play-btn';
+          const simWordEncoded = encodeURIComponent(sim.word);
+          const simBtnId = `play-btn-sim-${sim.word.replace(/[^a-zA-Z0-9]/g, '-')}`;
+          playBtn.id = simBtnId;
+          playBtn.dataset.action = 'play-word';
+          playBtn.dataset.wordEncoded = simWordEncoded;
+          playBtn.dataset.buttonId = simBtnId;
+          playBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg><span class="btn-spinner"></span>';
+          const simWord = document.createElement('span');
+          simWord.className = 'synonym-word';
+          simWord.textContent = sim.word;
+          simItem.appendChild(playBtn);
+          simItem.appendChild(simWord);
+          simList.appendChild(simItem);
+        }
+      }
+    });
+    simSection.appendChild(simList);
+    ui.list.appendChild(simSection);
   }
 }

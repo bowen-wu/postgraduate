@@ -47,6 +47,15 @@ export function hasAntonymMarker(content) {
 }
 
 /**
+ * Check if content has similar-word marker (Similar: / 形近词:)
+ * @param {string} content - The content to check
+ * @returns {boolean}
+ */
+export function hasSimilarMarker(content) {
+  return /^(Similar:|形近词:)\s*/.test(content);
+}
+
+/**
  * Check if it's a pure POS line (n. 中文)
  * @param {string} content - The content to check
  * @returns {boolean}

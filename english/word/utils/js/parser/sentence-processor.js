@@ -121,6 +121,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   setParentContext(parser, sentenceCard, indentLevel);
 
   parser.pendingSynonyms = [];
+  parser.pendingSimilars = [];
   const sentenceChildren = [];
   const promotedChildren = [];
 
@@ -159,6 +160,18 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       const synonymContent = childContent.replace(/^===?\s+/, '').trim();
       const multipleSynonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
       multipleSynonyms.forEach((synonym) => parser.pendingSynonyms.push(synonym));
+      lastProcessedLineIndex = i;
+      i++;
+      continue;
+    }
+
+    if (parser.hasSimilarMarker(childContent)) {
+      if (!parser.pendingSimilars) {
+        parser.pendingSimilars = [];
+      }
+      const similarContent = childContent.replace(/^(Similar:|形近词:)\s*/, '').trim();
+      const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+      multipleSimilars.forEach((similar) => parser.pendingSimilars.push(similar));
       lastProcessedLineIndex = i;
       i++;
       continue;
@@ -240,6 +253,9 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
   if (parser.pendingSynonyms && parser.pendingSynonyms.length > 0) {
     sentenceCard.synonyms = parser.pendingSynonyms.map((word) => ({ word }));
+  }
+  if (parser.pendingSimilars && parser.pendingSimilars.length > 0) {
+    sentenceCard.similars = parser.pendingSimilars.map((word) => ({ word }));
   }
 
   restoreParentContext(parser, savedParentContext);

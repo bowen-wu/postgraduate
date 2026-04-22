@@ -290,12 +290,14 @@ body.mode-recall .item-list {
 }
 body.mode-recall .item-list > .item,
 body.mode-recall .item-list > .synonyms-section,
-body.mode-recall .item-list > .antonyms-section {
+body.mode-recall .item-list > .antonyms-section,
+body.mode-recall .item-list > .similars-section {
     display: none;
 }
 body.mode-recall .item-list.revealed > .item,
 body.mode-recall .item-list.revealed > .synonyms-section,
-body.mode-recall .item-list.revealed > .antonyms-section {
+body.mode-recall .item-list.revealed > .antonyms-section,
+body.mode-recall .item-list.revealed > .similars-section {
     display: block;
 }
 body.mode-recall .item-list.revealed {
@@ -523,6 +525,26 @@ body.mode-recall .item-list.revealed {
     line-height: 1.4;
 }
 
+/* Similar words */
+.similars-section {
+    padding-top: 1rem;
+    border-top: 1px solid #bfdbfe;
+}
+.similars-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.similars-label::before {
+    content: "🔎";
+    font-size: 1rem;
+}
+
 /* Audio play button loading state */
 .audio-play-btn {
     transition: all 0.2s;
@@ -589,6 +611,12 @@ body.mode-recall .antonyms-section {
     display: none;
 }
 body.mode-recall .antonyms-section.revealed {
+    display: block;
+}
+body.mode-recall .similars-section {
+    display: none;
+}
+body.mode-recall .similars-section.revealed {
     display: block;
 }
 

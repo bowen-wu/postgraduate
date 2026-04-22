@@ -1,0 +1,43 @@
+[
+  {
+    "id": "card_0",
+    "word": "adapt",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "适应"
+      }
+    ],
+    "ipa": "[əˈdæpt]",
+    "similars": [
+      {
+        "word": "adopt"
+      },
+      {
+        "word": "adept"
+      },
+      {
+        "word": "affect",
+        "pos": "v.",
+        "cn": "影响"
+      },
+      {
+        "word": "allot",
+        "items": [
+          {
+            "type": "def",
+            "en": "v.",
+            "cn": "分配"
+          }
+        ]
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "resist"
+      }
+    ]
+  }
+]

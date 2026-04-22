@@ -3,6 +3,7 @@ import {
   IPA_SYMBOLS,
   isSynonymMarker,
   hasAntonymMarker,
+  hasSimilarMarker,
   isPurePosLine,
   isPureIpaLine,
   hasPosMarker,
@@ -24,6 +25,7 @@ export class MarkdownParser {
     Object.assign(this, {
       isSynonymMarker,
       hasAntonymMarker,
+      hasSimilarMarker,
       isPurePosLine,
       isPureIpaLine,
       hasPosMarker,

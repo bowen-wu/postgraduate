@@ -2,6 +2,11 @@ function hasDuplicateRelation(collection, word) {
   return collection.some((entry) => entry.word === word);
 }
 
+function parseMultipleRelationItems(content, markerRegex) {
+  const relationContent = content.replace(markerRegex, '').trim();
+  return relationContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+}
+
 export function addSynonymToParent(parser, content, indentLevel) {
   if (!parser.parentCard) {
     return undefined;
@@ -59,6 +64,61 @@ export function addSynonymToParent(parser, content, indentLevel) {
 
     if (!hasDuplicateRelation(parser.parentCard.synonyms, word)) {
       parser.parentCard.synonyms.push(synonym);
+    }
+  }
+
+  return undefined;
+}
+
+export function addSimilarToParent(parser, content, indentLevel) {
+  if (!parser.parentCard) {
+    return undefined;
+  }
+
+  finalizePendingSimilarIfNeeded(parser, indentLevel);
+
+  parser.parentCard.similars = parser.parentCard.similars || [];
+  const multipleSimilars = parseMultipleRelationItems(content, /^(Similar:|形近词:)\s*/);
+  const originalParentCard = parser.parentCard;
+  const originalParentLevel = parser.parentLevel;
+
+  for (const candidate of multipleSimilars) {
+    parser.parentCard = originalParentCard;
+    parser.parentLevel = originalParentLevel;
+
+    const { word, ipa, pos, cn } = parser.parseWordContent(candidate);
+    if (!word) continue;
+
+    if (pos && cn) {
+      const similar = { word };
+      if (ipa) similar.ipa = ipa;
+      if (pos) similar.pos = pos;
+      if (cn) similar.cn = cn;
+      if (!hasDuplicateRelation(parser.parentCard.similars, word)) {
+        parser.parentCard.similars.push(similar);
+      }
+      continue;
+    }
+
+    const isLast = multipleSimilars.indexOf(candidate) === multipleSimilars.length - 1;
+    if (isLast) {
+      parser.pendingSimilarCard = {
+        word,
+        items: []
+      };
+      if (ipa) parser.pendingSimilarCard.ipa = ipa;
+      parser.pendingSimilarLevel = indentLevel;
+      parser.pendingSimilarOriginalParent = parser.parentCard;
+      parser.pendingSimilarOriginalLevel = parser.parentLevel;
+      parser.parentCard = parser.pendingSimilarCard;
+      parser.parentLevel = indentLevel;
+      continue;
+    }
+
+    const similar = { word };
+    if (ipa) similar.ipa = ipa;
+    if (!hasDuplicateRelation(parser.parentCard.similars, word)) {
+      parser.parentCard.similars.push(similar);
     }
   }
 
@@ -210,4 +270,36 @@ export function finalizePendingAntonymIfNeeded(parser, currentIndentLevel) {
   parser.pendingAntonymLevel = -1;
   parser.pendingAntonymOriginalParent = null;
   parser.pendingAntonymOriginalLevel = -1;
+}
+
+export function finalizePendingSimilarIfNeeded(parser, currentIndentLevel) {
+  if (!parser.pendingSimilarCard || currentIndentLevel > parser.pendingSimilarLevel) {
+    return;
+  }
+
+  const similar = {
+    word: parser.pendingSimilarCard.word
+  };
+
+  if (parser.pendingSimilarCard.ipa) {
+    similar.ipa = parser.pendingSimilarCard.ipa;
+  }
+
+  if (parser.pendingSimilarCard.items && parser.pendingSimilarCard.items.length > 0) {
+    similar.items = parser.pendingSimilarCard.items;
+  }
+
+  if (parser.pendingSimilarOriginalParent) {
+    parser.pendingSimilarOriginalParent.similars = parser.pendingSimilarOriginalParent.similars || [];
+    if (!hasDuplicateRelation(parser.pendingSimilarOriginalParent.similars, similar.word)) {
+      parser.pendingSimilarOriginalParent.similars.push(similar);
+    }
+  }
+
+  parser.parentCard = parser.pendingSimilarOriginalParent;
+  parser.parentLevel = parser.pendingSimilarOriginalLevel;
+  parser.pendingSimilarCard = null;
+  parser.pendingSimilarLevel = -1;
+  parser.pendingSimilarOriginalParent = null;
+  parser.pendingSimilarOriginalLevel = -1;
 }

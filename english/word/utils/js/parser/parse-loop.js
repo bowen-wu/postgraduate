@@ -5,14 +5,17 @@ import {
   addAntonymToParent,
   addIpaToParent,
   addPosToParent,
+  addSimilarToParent,
   addSynonymToParent,
   finalizePendingAntonymIfNeeded,
+  finalizePendingSimilarIfNeeded,
   finalizePendingSynonymIfNeeded
 } from './pending-relations.js';
 
 export function processListItem(parser, line, indentLevel, content, lineIndex) {
   finalizePendingSynonymIfNeeded(parser, indentLevel);
   finalizePendingAntonymIfNeeded(parser, indentLevel);
+  finalizePendingSimilarIfNeeded(parser, indentLevel);
 
   if (parser.isSynonymMarker(content)) {
     return addSynonymToParent(parser, content, indentLevel);
@@ -20,6 +23,11 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
 
   if (parser.hasAntonymMarker(content)) {
     addAntonymToParent(parser, content, indentLevel);
+    return undefined;
+  }
+
+  if (parser.hasSimilarMarker(content)) {
+    addSimilarToParent(parser, content, indentLevel);
     return undefined;
   }
 
@@ -105,6 +113,7 @@ export function parseLines(parser) {
       const headerWord = trimmed.substring(2).trim();
       finalizePendingSynonymIfNeeded(parser, 0);
       finalizePendingAntonymIfNeeded(parser, 0);
+      finalizePendingSimilarIfNeeded(parser, 0);
 
       if (parser.isValidWordHeader(headerWord)) {
         parser.inPhraseHeader = headerWord.includes('词组');
@@ -154,5 +163,6 @@ export function parseLines(parser) {
 
   finalizePendingSynonymIfNeeded(parser, 0);
   finalizePendingAntonymIfNeeded(parser, 0);
+  finalizePendingSimilarIfNeeded(parser, 0);
   return parser.cards;
 }

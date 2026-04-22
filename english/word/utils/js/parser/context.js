@@ -16,7 +16,12 @@ export function createParserState(text) {
     pendingAntonymCard: null,
     pendingAntonymLevel: -1,
     pendingAntonymOriginalParent: null,
-    pendingAntonymOriginalLevel: -1
+    pendingAntonymOriginalLevel: -1,
+    pendingSimilarCard: null,
+    pendingSimilarLevel: -1,
+    pendingSimilarOriginalParent: null,
+    pendingSimilarOriginalLevel: -1,
+    pendingSimilars: []
   };
 }
 
