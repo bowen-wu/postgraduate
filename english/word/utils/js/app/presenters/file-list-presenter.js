@@ -1,4 +1,4 @@
-export function renderRootFileList({ folders, files }) {
+export function renderRootFileList({ folders, files, currentPath = '' }) {
   let html = '<div style="padding: 0.5rem;"><strong>📚 选择文件夹:</strong></div>';
 
   if (folders.length > 0) {
@@ -13,7 +13,7 @@ export function renderRootFileList({ folders, files }) {
   if (files.length > 0) {
     html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
     html += files.map((file) => `
-      <div class="file-item" data-action="select-file" data-path="${file.name}" data-name="${file.name}">
+      <div class="file-item${currentPath === file.name ? ' active' : ''}" data-action="select-file" data-path="${file.name}" data-name="${file.name}">
         <span class="file-icon">📄</span>
         <span class="file-name">${file.name}</span>
       </div>
@@ -23,7 +23,7 @@ export function renderRootFileList({ folders, files }) {
   return html;
 }
 
-export function renderFolderFileList({ path, folders, files }) {
+export function renderFolderFileList({ path, folders, files, currentPath = '' }) {
   let html = `
     <div class="file-item" data-action="load-root-folders" style="color: var(--primary);">
       <span class="file-icon">⬅️</span>
@@ -55,7 +55,7 @@ export function renderFolderFileList({ path, folders, files }) {
   if (files.length > 0) {
     html += '<div style="padding: 0.5rem; margin-top: 0.5rem; border-top: 1px solid #e2e8f0;"><strong>📄 文件:</strong></div>';
     html += files.map((file) => `
-      <div class="file-item" data-action="select-file" data-path="${path}/${file.name}" data-name="${file.name}">
+      <div class="file-item${currentPath === `${path}/${file.name}` ? ' active' : ''}" data-action="select-file" data-path="${path}/${file.name}" data-name="${file.name}">
         <span class="file-icon">📄</span>
         <span class="file-name">${file.name}</span>
       </div>

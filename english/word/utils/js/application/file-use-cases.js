@@ -17,7 +17,11 @@ export function createFileUseCases(deps) {
     try {
       targetUi.fileListContainer.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--secondary);">正在加载文件列表...</div>';
       const { folders, files } = await gitHubApi.fetchFolderContents('', forceRefresh);
-      targetUi.fileListContainer.innerHTML = renderRootFileList({ folders, files });
+      targetUi.fileListContainer.innerHTML = renderRootFileList({
+        folders,
+        files,
+        currentPath: state.currentPath || ''
+      });
     } catch (e) {
       targetUi.fileListContainer.innerHTML = renderFileListError(e.message, '重试');
     }
@@ -28,7 +32,12 @@ export function createFileUseCases(deps) {
     try {
       targetUi.fileListContainer.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--secondary);">正在加载文件列表...</div>';
       const { folders, files } = await gitHubApi.fetchFolderContents(path, forceRefresh);
-      targetUi.fileListContainer.innerHTML = renderFolderFileList({ path, folders, files });
+      targetUi.fileListContainer.innerHTML = renderFolderFileList({
+        path,
+        folders,
+        files,
+        currentPath: state.currentPath || ''
+      });
     } catch (e) {
       targetUi.fileListContainer.innerHTML = renderFileListError(e.message, '返回根目录');
     }

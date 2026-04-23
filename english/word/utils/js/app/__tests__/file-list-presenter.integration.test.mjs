@@ -23,6 +23,16 @@ test('renderFolderFileList includes back navigation and path actions', () => {
   assert.match(html, /data-path="core\/unit\/u2.md"/);
 });
 
+test('renderFolderFileList highlights current file item', () => {
+  const html = renderFolderFileList({
+    path: 'core/unit',
+    folders: [],
+    files: [{ name: 'u2.md' }],
+    currentPath: 'core/unit/u2.md'
+  });
+  assert.match(html, /class="file-item active"/);
+});
+
 test('renderFileListError keeps retry action', () => {
   const html = renderFileListError('boom', '重试');
   assert.match(html, /data-action="load-root-folders"/);
