@@ -140,6 +140,20 @@
 
     \begin{enumerate}
         \item $\displaystyle\frac{0}{0}, \frac{\infty}{\infty}, 0\cdot \infty, \infty - \infty, \infty^0, 0^0, 1^\infty$
+        \item 题型
+        \begin{itemize}
+            \item 直接计算
+            \item 反求参数：在表达式中，有一些未知参数，已知这些超实数的极限值，来求这些未知参数
+            \item 已知某一极限求另一极限：已知一个超实数的极限值，给出另一个超实数，另外一个超实数跟这个超实数有联系，有区别，需要找到它们的联系和区别，从而用已知来求解未知
+            \begin{enumerate}
+                \item 建立已知与未知的联系:
+                \begin{circlenum}
+                    \item 脱帽法：已知极限，用脱帽法可解出$f(x)$。若$\lim\limits_{x\to 0}f(x) = A$，则$f(x) = A + \alpha(x)(\lim\limits_{x\to 0}) \alpha(x) = 0$
+                    \item 泰勒展开
+                \end{circlenum}
+            \end{enumerate}
+            \item $\color{red}{\bigstar\bigstar}$无穷小的比阶：优先考虑泰勒公式
+        \end{itemize}
         \item 解题思路
         \begin{itemize}
             \item 化简先行
@@ -147,6 +161,8 @@
                 \item 提出极限不为$0$的因式
                 \item 等价无穷小替换
                 \item 恒等变形：提公因式、拆项、合并、分子分母同除变量的最高次幂 + 换元法（负代换、倒代换）
+                \item 遇到{\color{red}{幂指函数}}，用$e$括起来，$u(x)^{v(x)} = e^{v(x)\ln u(x)}$
+                \item 遇到根号相加减，分子或分母有理化
             \end{circlenum}
             \item 判断类型（运算类型）
             \item 选择方法：泰勒公式、洛必达法则、夹逼准则
@@ -183,6 +199,7 @@
         \begin{itemize}
             \item 如果函数是有分母，则通分，将加减法变形为乘除法，以便使用其他计算工具（$\displaystyle\frac{0}{0}, \frac{\infty}{\infty}$）
             \item 如果函数中没有分母，则可以通过{\color{red}{提取公因式}}或者做{\color{red}{倒代换}}（{\color{red}{创造分母再通分}}），出现分母后，再利用通分等恒等变形的方法，将加减法变形为乘除法
+            \item 若分子、分母求导比较烦琐，可换元
         \end{itemize}
         \item $\infty^0, 0^0$: $\lim u^v = e^{\lim v\ln u}$
         \item $1^\infty$: $\lim u^v = e^{\lim v(u - 1)}$
@@ -197,6 +214,7 @@
     \subsubsection{结论}
 
     \begin{enumerate}
+        \item $\lim\limits_{n\to \inf} n \cdot 0 = 0$，第一个$0$是真的$0$，不是无穷小
         \item 若$\lim \displaystyle\frac{f(x)}{g(x)} = A$，且$\lim g(x) = 0$，则$\lim f(x) = 0$
         \begin{analysisbox}[Example]
             \[
@@ -223,7 +241,7 @@
             \lim_{x \to 0^+} x^\alpha \ln x = \lim_{x \to 0^+} \frac{\ln x}{x^{-\alpha}} \xlongequal{\text{洛必达法则}} \lim_{x \to 0^+} \frac{\dfrac{1}{x}}{-\alpha x^{-\alpha-1}} = -\frac{1}{\alpha} \lim_{x \to 0^+} x^\alpha = 0
         \]
 
-        \textbf{推广：}
+        $\color{red}{\bigstar}$\textbf{推广：}
         \[
             \lim_{x \to 0^+} x^\alpha \ln^\beta x = 0,
             \quad (\alpha > 0,\ \beta > 0).
@@ -246,7 +264,6 @@
     \subsubsection{方法总结}
 
     \begin{enumerate}
-        \item 遇到幂指函数，用$e$括起来，$u(x)^{v(x)} = e^{v(x)\ln u(x)}$
         \item $f(x) = (1 + x)^{\frac{1}{x}}$ 在 $x > 0$ 时有以下性质
 
         \noindent

@@ -15,7 +15,11 @@
 1. 名清动浊
     - use vt. [ju:z]
     - use n. [ju:s]
-2.
+    - prove v. [pruːv]
+    - proof n. [pruːf]
+2. 名前动后
+   - contest [ˈkɑːntest]
+   - contest [kənˈtest]
 
 ## Suffix
 

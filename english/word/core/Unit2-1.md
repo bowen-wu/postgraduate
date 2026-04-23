@@ -206,19 +206,6 @@
 
 ## Words
 
-- intelligent
-    - adj. 聪慧的; 有才智的; 智能的
-- attain [əˈteɪn]
-    - v. 获得; 达到
-    - == gain [ɡeɪn]
-- burden
-    - v. 烦扰; （使）担负
-    - n. 负担; 重负
-    - burdensome adj. 繁重的，烦累的，难以承担的; 累赘
-
 ## 词组
-
-- peer pressure
-    - 同辈压力
 
 ## 句式

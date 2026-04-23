@@ -1,53 +1,48 @@
 \contentsline {section}{\numberline {1}函数极限与连续}{8}{section.1}%
-\contentsline {subsection}{\numberline {1.1}函数极限的概念与性质}{8}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}邻域}{8}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}函数极限的定义}{8}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}超实数及其在极限中的应用}{9}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}函数极限的性质}{10}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}无穷小的定义}{11}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}无穷小的性质}{12}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}无穷小的比阶}{12}{subsubsection.1.1.7}%
-\contentsline {subsubsection}{\numberline {1.1.8}常用的等价无穷小}{12}{subsubsection.1.1.8}%
-\contentsline {subsubsection}{\numberline {1.1.9}无穷大的定义}{13}{subsubsection.1.1.9}%
-\contentsline {subsubsection}{\numberline {1.1.10}公式}{13}{subsubsection.1.1.10}%
-\contentsline {subsubsection}{\numberline {1.1.11}方法总结}{13}{subsubsection.1.1.11}%
-\contentsline {subsubsection}{\numberline {1.1.12}理解}{13}{subsubsection.1.1.12}%
-\contentsline {subsection}{\numberline {1.2}函数的图像}{14}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}基本初等函数与初等函数}{14}{subsubsection.1.2.1}%
-\contentsline {paragraph}{常函数}{14}{section*.2}%
-\contentsline {paragraph}{幂函数}{14}{section*.3}%
-\contentsline {paragraph}{指数函数}{15}{section*.4}%
-\contentsline {paragraph}{对数函数}{15}{section*.5}%
-\contentsline {paragraph}{三角函数}{16}{section*.6}%
-\contentsline {paragraph}{反三角函数}{17}{section*.7}%
-\contentsline {paragraph}{初等函数}{19}{section*.8}%
-\contentsline {subsubsection}{\numberline {1.2.2}分段函数}{19}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}函数极限的计算}{19}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}方法}{19}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}七种未定式的计算}{22}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}结论}{23}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}方法总结}{24}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}理解}{24}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {1.3.6}重要函数极限}{25}{subsubsection.1.3.6}%
-\contentsline {subsection}{\numberline {1.4}函数的概念与特性}{26}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}函数$y = f(x)$}{26}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}反函数$y = f^{-1}(x)$}{27}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}复合函数$y = f[g(x)]$}{28}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}隐函数}{28}{subsubsection.1.4.4}%
-\contentsline {subsubsection}{\numberline {1.4.5}四种特性}{28}{subsubsection.1.4.5}%
-\contentsline {paragraph}{有界性}{28}{section*.9}%
-\contentsline {paragraph}{单调性}{29}{section*.10}%
-\contentsline {paragraph}{奇偶性}{29}{section*.11}%
-\contentsline {paragraph}{周期性}{31}{section*.12}%
-\contentsline {subsubsection}{\numberline {1.4.6}基础概念}{31}{subsubsection.1.4.6}%
-\contentsline {subsubsection}{\numberline {1.4.7}结论}{34}{subsubsection.1.4.7}%
-\contentsline {subsubsection}{\numberline {1.4.8}定理}{34}{subsubsection.1.4.8}%
-\contentsline {subsubsection}{\numberline {1.4.9}运算}{34}{subsubsection.1.4.9}%
-\contentsline {subsubsection}{\numberline {1.4.10}公式}{34}{subsubsection.1.4.10}%
-\contentsline {subsubsection}{\numberline {1.4.11}方法总结}{35}{subsubsection.1.4.11}%
-\contentsline {subsubsection}{\numberline {1.4.12}条件转换思路}{35}{subsubsection.1.4.12}%
-\contentsline {subsubsection}{\numberline {1.4.13}理解}{35}{subsubsection.1.4.13}%
-\contentsline {subsubsection}{\numberline {1.4.14}函数的连续与间断}{35}{subsubsection.1.4.14}%
+\contentsline {subsection}{\numberline {1.1}函数的概念与特性}{8}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}函数$y = f(x)$}{8}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}反函数$y = f^{-1}(x)$}{8}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}复合函数$y = f[g(x)]$}{9}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}隐函数}{9}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}四种特性}{9}{subsubsection.1.1.5}%
+\contentsline {paragraph}{有界性}{9}{section*.2}%
+\contentsline {paragraph}{单调性}{10}{section*.3}%
+\contentsline {paragraph}{奇偶性}{11}{section*.4}%
+\contentsline {paragraph}{周期性}{12}{section*.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}基础概念}{13}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}结论}{15}{subsubsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.8}公式}{15}{subsubsection.1.1.8}%
+\contentsline {subsection}{\numberline {1.2}函数的图像}{16}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}基本初等函数与初等函数}{16}{subsubsection.1.2.1}%
+\contentsline {paragraph}{常函数}{16}{section*.6}%
+\contentsline {paragraph}{幂函数}{16}{section*.7}%
+\contentsline {paragraph}{指数函数}{17}{section*.8}%
+\contentsline {paragraph}{对数函数}{17}{section*.9}%
+\contentsline {paragraph}{三角函数}{18}{section*.10}%
+\contentsline {paragraph}{反三角函数}{19}{section*.11}%
+\contentsline {paragraph}{初等函数}{21}{section*.12}%
+\contentsline {subsubsection}{\numberline {1.2.2}分段函数}{21}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}函数极限的概念与性质}{21}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}邻域}{21}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}函数极限的定义}{22}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}超实数及其在极限中的应用}{23}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}函数极限的性质}{24}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}无穷小的定义}{25}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}无穷小的性质}{25}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}无穷小的比阶}{26}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.8}$\color {red}{\bigstar \bigstar }$常用的等价无穷小}{26}{subsubsection.1.3.8}%
+\contentsline {subsubsection}{\numberline {1.3.9}无穷大的定义}{27}{subsubsection.1.3.9}%
+\contentsline {subsubsection}{\numberline {1.3.10}公式}{27}{subsubsection.1.3.10}%
+\contentsline {subsubsection}{\numberline {1.3.11}方法总结}{27}{subsubsection.1.3.11}%
+\contentsline {subsubsection}{\numberline {1.3.12}理解}{27}{subsubsection.1.3.12}%
+\contentsline {subsection}{\numberline {1.4}函数极限的计算}{27}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}方法}{27}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}七种未定式的计算}{30}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}结论}{32}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}方法总结}{32}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}理解}{33}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.6}重要函数极限}{33}{subsubsection.1.4.6}%
+\contentsline {subsubsection}{\numberline {1.4.7}函数的连续与间断}{35}{subsubsection.1.4.7}%
 \contentsline {paragraph}{连续点的定义}{35}{section*.13}%
 \contentsline {paragraph}{间断点的定义与分类}{35}{section*.14}%
 \contentsline {section}{\numberline {2}数列极限}{36}{section.2}%
