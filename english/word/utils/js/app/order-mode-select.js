@@ -1,6 +1,6 @@
 export function setupOrderModeSelect(app) {
   const customSelect = document.getElementById('orderModeSelect');
-  if (!customSelect) return;
+  if (!customSelect || !app || typeof app.setOrderMode !== 'function') return;
 
   const trigger = customSelect.querySelector('.custom-select-trigger');
   const label = document.getElementById('orderModeLabel');

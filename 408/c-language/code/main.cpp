@@ -12,7 +12,7 @@
             scanf %c 读取一个 char，不会忽略前面的空白字符。getchar() 等价于 scanf %c
     stdout 标准输出缓冲区 -> printf/puts => 将程序内存中的数据放到标准输出缓冲区
         性质：stdout是一种行缓冲，当数据中有换行符的时候，就会刷到屏幕上
-        占位符：%c %d %o（八进制整数） %x（十六进制整数） %f %u（无符号整数） %lld %ld %s（字符串）
+        占位符：%c %d %o（八进制整数） %x（十六进制整数） %f(float) %lf(double) %u（无符号整数） %lld %ld %s（字符串）
         puts(str) 等价于 printf("%s\n", str);
     C语言中需要是用字符数组来存储字符串
  */

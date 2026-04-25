@@ -56,7 +56,7 @@ function handleKeyboardShortcuts() {
 }
 
 setupDomActions();
-setupOrderModeSelect();
+setupOrderModeSelect(app);
 handleKeyboardShortcuts();
 
 // Use direct function call for autoplay instead of CustomEvent (preserves gesture context better)

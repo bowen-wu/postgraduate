@@ -112,7 +112,7 @@
     - n. 宪法
     - constitutional
         - adj. 有关宪法的
-        - <ins>The **Constitutional** principles</ins> ***that** Washington alone has the power to "establish a uniform
+        - <ins>The **Constitutional** principles</ins> **that** Washington alone has the power to "establish a uniform
           Rule of Naturalization" and **that** federal laws precede state laws **are** noncontroversial.
             - A precede B
     - unconstitutional adj. 违反宪法的
@@ -141,7 +141,7 @@
 ## system
 
 - n. 系统；体制
-- build a new **system** of *financial regulation*.
+- build a new **system** of financial regulation.
 - You have to manage a **system**. The **system** doesn't manage itself.
 - systematic
     - adj. 系统的；有计划的
@@ -164,10 +164,11 @@
 - determine
     - vt. 确定；决定；
     - vi. 决心
+    - 词组
+        - be determined to do sth. 决定做某事
+            - == decide to do sth.
     - If circumstances always **determined** <ins>the life and prospect of people</ins>, then humanity would never have
       progressed.
-    - be determined to do sth. 决定做某事
-        - == decide to do sth.
     - determination n. 决心
 - resolution
     - n. 决议；决心
@@ -188,8 +189,5 @@
     - burdensome adj. 繁重的，烦累的，难以承担的; 累赘
 
 ## 词组
-
-- the letter of the law
-    - 法律条文
 
 ## 句式
