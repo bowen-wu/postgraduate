@@ -11,7 +11,11 @@ import { createTranslationUseCases } from '../application/translation-use-cases.
 import { createFileUseCases } from '../application/file-use-cases.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
-import { playWordWithFallback, prewarmSpeechSynthesis as prewarmSpeechSynthesisService } from '../infrastructure/audio-service.js';
+import {
+  playWordWithFallback,
+  prewarmSpeechSynthesis as prewarmSpeechSynthesisService,
+  isAudioPlaybackInProgress
+} from '../infrastructure/audio-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
 import { renderRootFileList, renderFolderFileList, renderFileListError } from './presenters/file-list-presenter.js';
 
@@ -284,6 +288,7 @@ function setButtonPlaying(isPlaying, btnId) {
 
 export async function playWord(word, buttonId = null, _useTTSFallback = false, showNotification = true) {
   if (!word) return;
+  if (isAudioPlaybackInProgress()) return;
   const loadingStartedAt = Date.now();
   const minLoadingVisibleMs = 180;
   let finished = false;
@@ -305,7 +310,8 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
         : result.sourceName;
       UiRenderer.showToast(getApp().ui, `🔊 ${sourceLabel}`);
     }
-  } catch (_error) {
+  } catch (error) {
+    if (error?.code === 'AUDIO_PLAYBACK_BUSY') return;
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
   } finally {
     finished = true;

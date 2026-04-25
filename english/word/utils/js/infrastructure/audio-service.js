@@ -3,6 +3,12 @@ import * as AudioCache from '../utils/audio-cache.js';
 import { runFallbackChain } from './fallback-chain.js';
 import { toServiceError } from './service-error.js';
 
+let _playbackInProgress = false;
+
+export function isAudioPlaybackInProgress() {
+  return _playbackInProgress;
+}
+
 const audioSources = [
   { name: '有道', play: playYoudaoAudio, timeout: 3500, options: { urls: ['us', 'uk'] } },
   { name: 'Azure', play: playAzureTTS, timeout: 3500, options: { voice: 'en-US-JennyNeural', region: 'eastasia' } },
@@ -23,22 +29,30 @@ function isSentenceLike(text) {
 
 export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
+  if (_playbackInProgress) {
+    throw toServiceError('AUDIO_PLAYBACK_BUSY', 'Audio is currently playing');
+  }
 
-  const audioText = normalizeText(word);
-  const isSentence = isSentenceLike(audioText);
-  const sources = isSentence ? sentenceAudioSources : audioSources;
-  const sourceTimeout = getSourceTimeoutForText(audioText);
+  _playbackInProgress = true;
   try {
-    const result = await runFallbackChain(
-      sources,
-      (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooks),
-      'All audio sources failed'
-    );
-    return { sourceName: result.sourceName };
-  } catch (error) {
-    const ttsTimeout = Math.max(sourceTimeout || 0, CONFIG.audio?.defaultTimeout || 1200, 4000);
-    await playWebSpeech(audioText, ttsTimeout, hooks);
-    return { sourceName: 'TTS' };
+    const audioText = normalizeText(word);
+    const isSentence = isSentenceLike(audioText);
+    const sources = isSentence ? sentenceAudioSources : audioSources;
+    const sourceTimeout = getSourceTimeoutForText(audioText);
+    try {
+      const result = await runFallbackChain(
+        sources,
+        (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooks),
+        'All audio sources failed'
+      );
+      return { sourceName: result.sourceName };
+    } catch (error) {
+      const ttsTimeout = Math.max(sourceTimeout || 0, CONFIG.audio?.defaultTimeout || 1200, 4000);
+      await playWebSpeech(audioText, ttsTimeout, hooks);
+      return { sourceName: 'TTS' };
+    }
+  } finally {
+    _playbackInProgress = false;
   }
 }
 
