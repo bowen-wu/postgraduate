@@ -4,9 +4,47 @@ import { runFallbackChain } from './fallback-chain.js';
 import { toServiceError } from './service-error.js';
 
 let _playbackInProgress = false;
+let _playbackToken = 0;
+let _activePlaybackAbort = null;
 
 export function isAudioPlaybackInProgress() {
   return _playbackInProgress;
+}
+
+function isPlaybackTokenActive(token) {
+  return token === _playbackToken;
+}
+
+function ensurePlaybackTokenActive(token) {
+  if (!isPlaybackTokenActive(token)) {
+    throw toServiceError('AUDIO_PLAYBACK_STOPPED', 'Audio playback stopped');
+  }
+}
+
+function setActivePlaybackAbort(abortFn) {
+  _activePlaybackAbort = abortFn;
+}
+
+function clearActivePlaybackAbort(abortFn) {
+  if (_activePlaybackAbort === abortFn) {
+    _activePlaybackAbort = null;
+  }
+}
+
+export function stopCurrentAudioPlayback() {
+  if (_activePlaybackAbort) {
+    try {
+      _activePlaybackAbort();
+    } catch {}
+    _activePlaybackAbort = null;
+  }
+  if ('speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch {}
+  }
+  _playbackToken += 1;
+  _playbackInProgress = false;
 }
 
 const audioSources = [
@@ -33,26 +71,35 @@ export async function playWordWithFallback(word, hooks = {}) {
     throw toServiceError('AUDIO_PLAYBACK_BUSY', 'Audio is currently playing');
   }
 
+  const playbackToken = _playbackToken + 1;
+  _playbackToken = playbackToken;
   _playbackInProgress = true;
   try {
     const audioText = normalizeText(word);
     const isSentence = isSentenceLike(audioText);
     const sources = isSentence ? sentenceAudioSources : audioSources;
     const sourceTimeout = getSourceTimeoutForText(audioText);
+    const hooksWithToken = { ...hooks, playbackToken };
+    ensurePlaybackTokenActive(playbackToken);
     try {
       const result = await runFallbackChain(
         sources,
-        (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooks),
+        (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooksWithToken),
         'All audio sources failed'
       );
+      ensurePlaybackTokenActive(playbackToken);
       return { sourceName: result.sourceName };
     } catch (error) {
+      ensurePlaybackTokenActive(playbackToken);
       const ttsTimeout = Math.max(sourceTimeout || 0, CONFIG.audio?.defaultTimeout || 1200, 4000);
-      await playWebSpeech(audioText, ttsTimeout, hooks);
+      await playWebSpeech(audioText, ttsTimeout, hooksWithToken);
+      ensurePlaybackTokenActive(playbackToken);
       return { sourceName: 'TTS' };
     }
   } finally {
-    _playbackInProgress = false;
+    if (isPlaybackTokenActive(playbackToken)) {
+      _playbackInProgress = false;
+    }
   }
 }
 
@@ -247,7 +294,10 @@ async function blobToBase64(blob) {
 }
 
 async function playAudioUrl(url, timeout = 3000, hooks = {}) {
+  const playbackToken = Number.isInteger(hooks.playbackToken) ? hooks.playbackToken : _playbackToken;
+  ensurePlaybackTokenActive(playbackToken);
   return new Promise((resolve, reject) => {
+    ensurePlaybackTokenActive(playbackToken);
     const audio = new Audio(url);
     audio.preload = 'auto';
     let resolved = false;
@@ -262,12 +312,25 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
         resolved = true;
         if (startupTimeoutId) clearTimeout(startupTimeoutId);
         if (maxPlaybackTimeoutId) clearTimeout(maxPlaybackTimeoutId);
+        clearActivePlaybackAbort(abortPlayback);
         fn(...args);
       }
     };
 
+    const abortPlayback = () => {
+      try {
+        audio.pause();
+        audio.currentTime = 0;
+      } catch {}
+      done(reject, toServiceError('AUDIO_PLAYBACK_STOPPED', 'Audio playback stopped'));
+    };
+
     const markStarted = () => {
       if (started) return;
+      if (!isPlaybackTokenActive(playbackToken)) {
+        abortPlayback();
+        return;
+      }
       started = true;
       if (typeof hooks.onPlaybackStart === 'function') {
         hooks.onPlaybackStart();
@@ -290,6 +353,11 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
     }, startupTimeoutMs);
 
     ensureAudioContextResumed();
+    setActivePlaybackAbort(abortPlayback);
+    if (!isPlaybackTokenActive(playbackToken)) {
+      abortPlayback();
+      return;
+    }
     audio.play().catch((err) => done(reject, err));
   });
 }
@@ -300,6 +368,8 @@ function removeEmoji(text) {
 }
 
 export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
+  const playbackToken = Number.isInteger(hooks.playbackToken) ? hooks.playbackToken : _playbackToken;
+  ensurePlaybackTokenActive(playbackToken);
   return new Promise((resolve, reject) => {
     if (!('speechSynthesis' in window)) {
       reject(new Error('Web Speech API not supported'));
@@ -319,7 +389,15 @@ export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
       settled = true;
       if (startupTimeoutId) clearTimeout(startupTimeoutId);
       if (maxPlaybackTimeoutId) clearTimeout(maxPlaybackTimeoutId);
+      clearActivePlaybackAbort(abortPlayback);
       fn(value);
+    };
+
+    const abortPlayback = () => {
+      try {
+        window.speechSynthesis.cancel();
+      } catch {}
+      done(reject, toServiceError('AUDIO_PLAYBACK_STOPPED', 'Audio playback stopped'));
     };
 
     utterance.lang = 'en-US';
@@ -327,6 +405,10 @@ export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
     utterance.pitch = 1;
     utterance.volume = 1;
     utterance.onstart = () => {
+      if (!isPlaybackTokenActive(playbackToken)) {
+        abortPlayback();
+        return;
+      }
       started = true;
       if (typeof hooks.onPlaybackStart === 'function') {
         hooks.onPlaybackStart();
@@ -349,6 +431,11 @@ export async function playWebSpeech(text, timeout = 4000, hooks = {}) {
       if (!started) done(reject, toServiceError('WEB_SPEECH_TIMEOUT', 'Web speech startup timeout'));
     }, startupTimeoutMs);
 
+    setActivePlaybackAbort(abortPlayback);
+    if (!isPlaybackTokenActive(playbackToken)) {
+      abortPlayback();
+      return;
+    }
     window.speechSynthesis.speak(utterance);
   });
 }
