@@ -5,7 +5,8 @@ export function createStudyUseCases(deps) {
     uiRenderer,
     getUi,
     render,
-    getBadgesElement
+    getBadgesElement,
+    stopAudioPlayback = () => {}
   } = deps;
 
   function recordError() {
@@ -37,6 +38,7 @@ export function createStudyUseCases(deps) {
     }
 
     if (state.currentIndex < state.displayOrder.length - 1) {
+      stopAudioPlayback();
       state.currentIndex += 1;
       stateManager.saveState();
       render();
@@ -50,6 +52,7 @@ export function createStudyUseCases(deps) {
 
   function prevCard() {
     if (state.currentIndex > 0) {
+      stopAudioPlayback();
       state.currentIndex -= 1;
       stateManager.saveState();
       render();
@@ -93,7 +96,8 @@ export function createStudyUseCases(deps) {
   }
 
   function jumpTo(idx) {
-    if (idx >= 0 && idx < state.displayOrder.length) {
+    if (idx >= 0 && idx < state.displayOrder.length && idx !== state.currentIndex) {
+      stopAudioPlayback();
       state.currentIndex = idx;
       stateManager.saveState();
       render();
@@ -104,7 +108,8 @@ export function createStudyUseCases(deps) {
 
   function jumpToOriginal(originalIdx) {
     const displayIdx = state.displayOrder.indexOf(originalIdx);
-    if (displayIdx !== -1) {
+    if (displayIdx !== -1 && displayIdx !== state.currentIndex) {
+      stopAudioPlayback();
       state.currentIndex = displayIdx;
       stateManager.saveState();
       render();

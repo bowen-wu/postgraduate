@@ -1,6 +1,7 @@
 import { STATE } from '../config.js';
 import { reduceSession } from '../domain/session-reducer.js';
 import { getLastDisplayIndex } from '../domain/selectors.js';
+import { stopCurrentAudioPlayback } from '../infrastructure/audio-service.js';
 
 function commitSessionPatch(nextState) {
   Object.assign(STATE, nextState);
@@ -22,6 +23,7 @@ export function createUseCases(app) {
 
     jumpToFirst() {
       if (STATE.currentIndex === 0) return false;
+      stopCurrentAudioPlayback();
       commitSessionPatch(reduceSession(STATE, { type: 'SET_CURRENT_INDEX', payload: 0 }));
       app.saveState();
       app.render();
@@ -33,6 +35,7 @@ export function createUseCases(app) {
     jumpToLast() {
       const lastIndex = getLastDisplayIndex(STATE);
       if (lastIndex < 0 || STATE.currentIndex === lastIndex) return false;
+      stopCurrentAudioPlayback();
       commitSessionPatch(reduceSession(STATE, { type: 'SET_CURRENT_INDEX', payload: lastIndex }));
       app.saveState();
       app.render();

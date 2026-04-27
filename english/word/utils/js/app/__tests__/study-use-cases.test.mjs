@@ -16,7 +16,8 @@ function createDeps(initialState) {
     updateStatsUI: 0,
     render: 0,
     toasts: [],
-    completion: 0
+    completion: 0,
+    stopAudioPlayback: 0
   };
 
   const stateManager = {
@@ -43,7 +44,8 @@ function createDeps(initialState) {
     uiRenderer,
     getUi: () => ({}),
     render: () => { calls.render += 1; },
-    getBadgesElement: () => null
+    getBadgesElement: () => null,
+    stopAudioPlayback: () => { calls.stopAudioPlayback += 1; }
   });
 
   return { state, calls, useCases };
@@ -63,6 +65,7 @@ test('nextCard increments index and renders', () => {
   assert.equal(calls.saveState, 1);
   assert.equal(calls.render, 1);
   assert.equal(calls.updateStatsUI, 1);
+  assert.equal(calls.stopAudioPlayback, 1);
 });
 
 test('nextCard shows completion at end', () => {
@@ -77,6 +80,20 @@ test('nextCard shows completion at end', () => {
   assert.equal(changed, false);
   assert.equal(state.currentIndex, 1);
   assert.equal(calls.completion, 1);
+  assert.equal(calls.stopAudioPlayback, 0);
+});
+
+test('handleSentenceRecall triggers stop playback before internal nextCard', () => {
+  const { state, calls, useCases } = createDeps({
+    currentIndex: 0,
+    displayOrder: [0, 1],
+    cards: [{ id: 'a' }, { id: 'b' }]
+  });
+
+  useCases.handleSentenceRecall(true);
+
+  assert.equal(state.currentIndex, 1);
+  assert.equal(calls.stopAudioPlayback, 1);
 });
 
 test('handleRecall false records error and shows toast', () => {

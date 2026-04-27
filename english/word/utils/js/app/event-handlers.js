@@ -51,7 +51,8 @@ function getStudyUseCases() {
       uiRenderer: UiRenderer,
       getUi: () => getApp().ui,
       render: () => getApp().render(),
-      getBadgesElement: () => document.getElementById('displayBadges')
+      getBadgesElement: () => document.getElementById('displayBadges'),
+      stopAudioPlayback: stopCurrentAudioPlayback
     });
   }
   return studyUseCases;
@@ -156,7 +157,6 @@ export function handleSentenceRecall(understood) {
  * Go to next card
  */
 export function nextCard() {
-  stopCurrentAudioPlayback();
   getStudyUseCases().nextCard();
 }
 
@@ -164,7 +164,6 @@ export function nextCard() {
  * Go to previous card
  */
 export function prevCard() {
-  stopCurrentAudioPlayback();
   getStudyUseCases().prevCard();
 }
 
@@ -172,7 +171,6 @@ export function prevCard() {
  * Jump to specific card by display index
  */
 export function jumpTo(idx) {
-  stopCurrentAudioPlayback();
   if (getStudyUseCases().jumpTo(idx)) {
     toggleStats(getApp().ui);
   }
@@ -182,7 +180,6 @@ export function jumpTo(idx) {
  * Jump to specific card by original index (for learning list clicks)
  */
 export function jumpToOriginal(originalIdx) {
-  stopCurrentAudioPlayback();
   if (getStudyUseCases().jumpToOriginal(originalIdx)) {
     toggleStats(getApp().ui);
   }

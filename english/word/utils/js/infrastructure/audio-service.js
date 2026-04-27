@@ -38,7 +38,7 @@ export function stopCurrentAudioPlayback() {
     } catch {}
     _activePlaybackAbort = null;
   }
-  if ('speechSynthesis' in window) {
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     try {
       window.speechSynthesis.cancel();
     } catch {}
