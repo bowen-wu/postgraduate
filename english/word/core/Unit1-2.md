@@ -43,7 +43,7 @@
     - take responsibility 承担责任
     - take risks 冒险
     - take steps/measures to do sth. 采取措施做某事
-    - take sth. (as sth.) 把...理解为...
+    - take sth. as sth. 把...理解为...
     - take the lead 带头，领先
     - take turns 轮流
     - take up 开始从事；接受（建议或挑战）
@@ -84,6 +84,7 @@
 - Misery loves **company**. 祸不单行
 - As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic
   medium, following the pamphlet and the book and in the **company** of the journal.
+    - in the company of 与...一起/同时存在/伴随出现
 - accompany
     - vt. 陪伴；伴随；为...伴奏
     - Little reward **accompanies** duplication and confirmation of what is already known and believed.
@@ -198,7 +199,8 @@
       人们会说，你表现出了非凡的进取心，因为你愿意承担这样一个具有挑战性的项目，也就是说，你有主动性和干劲
     - enterprise initiative 主观能动性
     - Thinking is the capital. **Enterprise** is the way. Hard work is the solution.
-    - Since the days of Aristotle, a search for **universal principles** has characterized the scientific **enterprise**.
+    - Since the days of Aristotle, a search for **universal principles** has characterized the scientific **enterprise
+      **.
     - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
 - trade n. 贸易；生意
 - transaction [trænˈzækʃn] n. 交易

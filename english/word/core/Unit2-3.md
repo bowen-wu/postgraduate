@@ -23,7 +23,7 @@
 - n. 测试
 - testify
     - v. 证实；作证
-    - testify == prove == verify == confirm
+    - == prove == verify == confirm
     - Anyone who has toiled through SAT will **testify** that test-taking skill also matters, whether it's knowing when
       to guess or what questions to skip.
 - contest
@@ -81,11 +81,13 @@
     - at the end of 在...结束时
     - end up 最终成为；最后处于
     - end up with 以...结束或告终
-- ...it means that many people will be having a very hard time <ins>**making ends meet/surviving the day(维持生计)
-  **</ins>
+- ...it means that many people will be having a very hard time
+  <ins>**making ends meet/surviving the day(维持生计)**</ins>
 - endless adj. 无止境的
 - deadline n. 截止日期
-- infinite adj. 无限的，无穷尽的
+- infinite
+    - adj. 无限的，无穷尽的
+    - TWO THINKS ARE INFINITE: THE UNIVERSE AND HUMAN STUPIDITY. AND I'M NOT SURE ABOUT THE UNIVERSE.
 
 ## different
 
@@ -155,17 +157,18 @@
 - It is very important to cultivate children's interest in <ins>traditional Chinese **culture**(中国传统文化)</ins> from
   an early age.
 - cultural [ˈkʌltʃərəl] adj. 与文化/艺术有关的
+- cultivate vt. 种植；获得（支持）；逐渐形成（某种态度、谈话或举止方式等）
 - civil [ˈsɪvl]
     - adj. 公民的；政府的
     - civil rights 公民权利
     - civilian [səˈvɪliən] n. 平民
-    - civilisation [ˌsɪvəlɪˈzeɪʃən] n. 文明
-    - civilised [ˈsɪvəˌlaɪzd]
+    - civilization [ˌsɪvəlɪˈzeɪʃən] n. 文明
+    - civilize v. 教化，使有教养
+    - civilized [ˈsɪvəˌlaɪzd]
         - adj. 文明的；有礼貌的
         - civility [sɪˈvɪlɪti] n. 礼貌
     - Both men emphasized the dirt and exhaustion of war <ins>the fragments of **civilization**(文明的碎片)</ins> that
-      the soldiers
-      shared with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
+      the soldiers shared with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
 
 ## Words
 

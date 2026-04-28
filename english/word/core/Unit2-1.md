@@ -81,8 +81,8 @@
     - pay attention to 注意
     - pay for 为...而付款
 - check
-    - n. 支票；核对，核查
     - v. 核对，核查；抑制
+    - n. 支票；核对，核查
     - I lived <ins>from paycheck to paycheck(月光)</ins>.
     - Alvarez paid *practically([ˈpræktɪkli] adv. 几乎)* everything by **check**.
     - One of the most common is "to inspect or verify."
@@ -123,7 +123,7 @@
 - n. （针对某项罪行、协议等的一条）法规；定律；法律
 - bill
     - n. 法案，议案（不具有法律效力）；账单，票据
-    - act n. 法令（确定的）
+    - act n. 法令（确定的）；行为，行动
     - a statute in draft before it becomes law
     - pose a bill 提出一项议案
     - ...but nothing would be more important than passing some kind of **G.I.Bill** for the 21st century that ensures
@@ -169,9 +169,10 @@
 - bar
     - v. 阻止，阻碍
     - n. 律师职业，法律界
+    - 词组
+        - bar sb. from doing sth. 禁止某人做某事；阻止某人做某事
     - When you **bar** something, you make it inaccessible in some way.
     - Harry moved to **bar** his way.
-    - bar sb. from doing sth. 禁止某人做某事；阻止某人做某事
     - the bar exam 律师资格考试
     - the American Bar Association 美国律师协会
     - Workers have been **barred** from the country since 1982.
