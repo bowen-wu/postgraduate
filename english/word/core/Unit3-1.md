@@ -23,20 +23,21 @@
 - n. 结果；后果
 - 词组
     - as a result 结果是
-        - As a result, that...
     - as a result of
         - 结果是；由于...的原因
         - **R(结果)** as a result of C(原因)
     - result from
         - 由...引起
-        - **R(结果)** result from C(原因)
-            - == originate([əˈrɪdʒɪneɪt]) from
-            - == spring from
-            - == derive([dɪˈraɪv] v. 从...衍生出；起源于) from
-            - == stem([stem] vi. 起源于) from
+    - **R(结果)** result from C(原因)
+        - == originate([əˈrɪdʒɪneɪt]) from
+        - == spring from
+        - == derive([dɪˈraɪv] v. 从...衍生出；起源于) from
+        - == stem([stem] vi. 起源于) from
     - result in
         - 造成...结果, 导致
-        - R result in **C(结果)** == R cause C == R lead to C
+    - R result in **C(结果)**
+        - == R cause C == R lead to C
+- As a result, that...
 - Cooperation and sharing can **result from** either *sympathy([ˈsɪmpəθi] n. 同情)* or *guilt([ɡɪlt])*.
 - consequence
     - n. 结果；后果
@@ -58,6 +59,7 @@
     - **Courtship** is somewhat vocal with a lot of displaying by the male.
 - defense
     - n. 辩护；防御（物）；保护；（Defense）国防机构
+    - defend v. v. 防御；保卫；防守；替…辩护；辩解
     - defendant [dɪˈfendənt]
         - n. 被告
         - plaintiff [ˈpleɪntɪf] n. <律>原告
@@ -71,6 +73,11 @@
     - persecute [ˈpɜːrsɪkjuːt]
         - v. **迫害**；残害
         - Weaver and his family have been **persecuted** by the authorities for their beliefs([bɪ'lifs] n. 信仰).
+- judge
+    - v. 判断
+    - n. 法官；裁判员
+    - judgement n. 判断力；评价；裁决
+- trial n. 审判；试验；比赛
 - appeal
     - v. 吸引；上诉；呼吁，恳求
     - n. 吸引；上诉；呼吁，恳求
@@ -80,7 +87,8 @@
     - <ins>Above all(最重要的是)</ins>, the dress does **appeal** to her.
     - He will **appeal** to the state for an extension of unemployment benefits.
     - Despite the **appeals** court's decision, big questions remain unanswered.
-        - decision n. 裁决 == ruling == verdict
+        - decision n. 裁决
+            - == ruling == verdict
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释
@@ -160,7 +168,9 @@
     - set sth. out 安排；摆放；（有条理地）陈述
     - set up 设立；安排
     - a set of 一组；一套
-- setback n. 挫折
+- setback
+    - n. 挫折
+    - There will be setbacks and false starts.
 - setter n. 制定者
 - settle
     - v. 结束（争论、争端等）；定居；（最终）决定
@@ -170,6 +180,7 @@
         - settle down with sb.
     - While *admitting([əd'mɪtɪŋ] v. 承认)* that *climate([ˈklaɪmət] n. 气候)* is a key element, Moritz notes that
       public debates have not **settled/solved** yet.
+    - THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO. IF YOU HAVEN'T FOUND IT YET. KEEP LOOKING. DON'T SETTLE.
     - settlement n. 定居地
     - unsettle
         - vt. 使心神不宁

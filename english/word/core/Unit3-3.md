@@ -140,6 +140,18 @@
 
 ## Words
 
+- handsome
+    - adj. 慷慨的；丰厚的；可观的；英俊的
+    - He receives a **handsome** reward.
+    - 熟词僻义：修饰人和物感情色彩一致
+- declare
+    - v. 宣称; 表明; 断言; 公布; 申报; （在击球员还未全部出局时）宣布结束赛局
+- contrast
+    - v. 对比; 显出明显的差异
+    - n. 悬殊; 形成对比
+- strike [straɪk]
+    - v. 碰撞; 打; 突击; 侵袭; 给人…印象; 罢工
+    - n. 罢工; 袭击
 - insincerity [ˌɪnsɪnˈsɛrətɪ]
     - n. 不诚实，无诚意; 伪善
 - selflessness ['selfləsnəs]

@@ -6,7 +6,6 @@
 import { CONFIG, STATE } from '../config.js';
 import { GitHubApi } from '../api/github.js';
 import { MarkdownParser } from '../parser/index.js';
-import { StorageRepo } from '../infrastructure/storage-repo.js';
 import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
 import * as EventHandlers from './event-handlers.js';
@@ -61,14 +60,6 @@ export class VocabApp {
       EventHandlers.prewarmSpeechSynthesis();
     }
 
-    // Clear cache on init
-    const cacheKeys = StorageRepo.keys();
-    cacheKeys.forEach(key => {
-      if (key.startsWith(CONFIG.cacheKey)) {
-        StorageRepo.removeItem(key);
-      }
-    });
-
     StateManager.loadState();
 
     // Initialize displayOrder if empty
@@ -87,8 +78,7 @@ export class VocabApp {
       } else {
         // Hide loader when showing file selection panel
         this.ui.loader.classList.add('hidden');
-        EventHandlers.toggleFiles(true, this.ui);
-        await EventHandlers.loadRootFolders(false, this.ui);
+        await EventHandlers.toggleFiles(true, this.ui);
       }
     } else {
       if (STATE.currentPath) {
