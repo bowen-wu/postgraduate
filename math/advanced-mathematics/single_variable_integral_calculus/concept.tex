@@ -8,7 +8,7 @@
 
     \subsubsection{原函数与不定积分}
 
-    设函数$f(x)$定义在某区间$I$上，若存在可导函数$F(x)$，对于该区间上任意一点都有$F'(x) = f(x)$成立，则称$F(x)$是$f(x)$在区间$I$上的一个\textbf{原函数}。称$\int f(x)\mathrm{d}x = F(x) + C$为$f(x)$在区间$I$上的\textbf{不定积分（全体原函数）}
+    设函数$f(x)$定义在某区间$I$上，若存在可导函数$F(x)$，对于该区间上任意一点都有$F'(x) = f(x)$成立，则称$F(x)$是$f(x)$在区间$I$上的一个\textbf{原函数}。称$\dint f(x)\mathrm{d}x = F(x) + C$为$f(x)$在区间$I$上的\textbf{不定积分（全体原函数）}
 
     \medskip
     \noindent\textbf{注：}
@@ -24,10 +24,10 @@
                 {\color{red}{\bigstar}}\, f(x)\text{ 连续}
             \Rightarrow
             \left\{
-            \begin{aligned}
-                &{\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}},\\[6pt]
-                &\left[\int_a^x f(t)\,\mathrm{d}t\right]' = f(x)
-            \end{aligned}
+                \begin{aligned}
+                    &{\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}},\\[6pt]
+                    &\left[\int_a^x f(t)\,\mathrm{d}t\right]' = f(x)
+                \end{aligned}
             \right\}
             \Rightarrow
             F(x)
@@ -139,23 +139,23 @@
     \begin{enumerate}
         \item 定积分存在的充分条件
         \begin{circlenum}
-            \item 若$f(x)$在$[a, b]$上连续，则$\int_a^b f(x)\,\mathrm{d}x$存在
-            \item 若$f(x)$在$[a, b]$上单调（{\color[rgb]{0.2, 0.6, 0.3}{$f(a), f(b)$即为函数的界，对任意$x\in (a, b)$，$f(x)$一定介于$f(a), f(b)$之间}}），则$\int_a^b f(x)\,\mathrm{d}x$存在
-            \item 若$f(x)$在$[a, b]$上有界，且只有有限个间断点（{\color[rgb]{0.2, 0.6, 0.3}{不包含无穷间断点}}），则$\int_a^b f(x)\,\mathrm{d}x$存在
-            \item 若$f(x)$在$[a, b]$上有有限个第一类间断点，则$\int_a^b f(x)\,\mathrm{d}x$存在
+            \item 若$f(x)$在$[a, b]$上连续，则$\dint_a^b f(x)\,\mathrm{d}x$存在
+            \item 若$f(x)$在$[a, b]$上单调（{\color[rgb]{0.2, 0.6, 0.3}{$f(a), f(b)$即为函数的界，对任意$x\in (a, b)$，$f(x)$一定介于$f(a), f(b)$之间}}），则$\dint_a^b f(x)\,\mathrm{d}x$存在
+            \item 若$f(x)$在$[a, b]$上有界，且只有有限个间断点（{\color[rgb]{0.2, 0.6, 0.3}{不包含无穷间断点}}），则$\dint_a^b f(x)\,\mathrm{d}x$存在
+            \item 若$f(x)$在$[a, b]$上有有限个第一类间断点，则$\dint_a^b f(x)\,\mathrm{d}x$存在
         \end{circlenum}
-        \item 定积分存在的必要条件: 可积函数必有界。即若定积分$\int_a^b f(x)\,\mathrm{d}x$存在，则$f(x)$在$[a, b]$上必有界
+        \item 定积分存在的必要条件: 可积函数必有界。即若定积分$\dint_a^b f(x)\,\mathrm{d}x$存在，则$f(x)$在$[a, b]$上必有界
     \end{enumerate}
 
     \subsubsection{性质（假设以下积分均存在）}
 
     \begin{enumerate}
-        \item 当$b = a$时，$\int_a^b f(x)\,\mathrm{d}x = 0$
-        \item 当$a > b$时，$\int_a^b f(x)\,\mathrm{d}x = -\int_b^a f(x)\,\mathrm{d}x$
-        \item 求区间长度：假设$a<b$，则$\int_a^b \mathrm{d}x = b-a = L$，其中$L$为区间$[a, b]$的长度
-        \item 积分的线性性质：设$k_1, k_2$为常数，则$\int_a^b [k_{1}f(x)\pm k_{2}g(x)]\,\mathrm{d}x = k_{1}\int_a^b f(x)\,\mathrm{d}x \pm k_{2}\int_a^b g(x)\,\mathrm{d}x$
-        \item 积分的可加（拆）性：无论$a, b, c$的大小如何，总有$\int_a^b f(x)\,\mathrm{d}x = \int_a^c f(x)\,\mathrm{d}x + \int_c^b f(x)\,\mathrm{d}x$
-        \item 积分的保号性：若在区间$[a, b]$上$f(x) \leq g(x)$，则有$\int_a^b f(x)\,\mathrm{d}x \leq \int_a^b g(x)\,\mathrm{d}x$。特殊地，有
+        \item 当$b = a$时，$\dint_a^b f(x)\,\mathrm{d}x = 0$
+        \item 当$a > b$时，$\dint_a^b f(x)\,\mathrm{d}x = -\dint_b^a f(x)\,\mathrm{d}x$
+        \item 求区间长度：假设$a<b$，则$\dint_a^b \mathrm{d}x = b-a = L$，其中$L$为区间$[a, b]$的长度
+        \item 积分的线性性质：设$k_1, k_2$为常数，则$\dint_a^b [k_{1}f(x)\pm k_{2}g(x)]\,\mathrm{d}x = k_{1}\dint_a^b f(x)\,\mathrm{d}x \pm k_{2}\dint_a^b g(x)\,\mathrm{d}x$
+        \item 积分的可加（拆）性：无论$a, b, c$的大小如何，总有$\dint_a^b f(x)\,\mathrm{d}x = \dint_a^c f(x)\,\mathrm{d}x + \dint_c^b f(x)\,\mathrm{d}x$
+        \item 积分的保号性：若在区间$[a, b]$上$f(x) \leq g(x)$，则有$\dint_a^b f(x)\,\mathrm{d}x \leq \dint_a^b g(x)\,\mathrm{d}x$。特殊地，有
         \[
             \left| \int_a^b f(x)\,\mathrm{d}x \right|
             \le
@@ -187,7 +187,7 @@
 
     \subsubsection{概念}
 
-    当 $x$ 在区间 $[a,b]$ 上变动时，对应于每一个 $x$ 值，积分$\int_a^x f(t)\,\mathrm{d}t$都有一个确定的值，因此$\int_a^x f(t)\,\mathrm{d}t$是一个关于$x$的函数，记作
+    当 $x$ 在区间 $[a,b]$ 上变动时，对应于每一个 $x$ 值，积分$\dint_a^x f(t)\,\mathrm{d}t$都有一个确定的值，因此$\dint_a^x f(t)\,\mathrm{d}t$是一个关于$x$的函数，记作
     \[
         F(x)=\int_a^x f(t)\,\mathrm{d}t \quad (a \le x \le b)
     \]
@@ -196,9 +196,49 @@
     \subsubsection{性质}
 
     \begin{enumerate}
-        \item 函数$f(x)$在$I$上\textbf{可积}，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$I$上\textbf{连续}（$F(x)$若存在，则其一定连续。与$f(x)$作区分：$f(x)$存在但其不一定连续)
-        \item $\color{red}{\bigstar}$函数$f(x)$在$I$上\textbf{连续}，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$I$上可导且$F'(x) = f(x)$
-        \item 设 $F(x)=\int_a^x f(t)\,\mathrm{d}t$，则有：
+        \item 函数$f(x)$在$I$上\textbf{可积}，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$I$上\textbf{连续}（$F(x)$若存在，则其一定连续。与$f(x)$作区分：$f(x)$存在但其不一定连续)
+        \begin{analysisbox}[证（理解）：]
+                  对任意 $x$，若 $x+\Delta x \in I$，有
+                  \[
+                      F(x+\Delta x)-F(x)
+                      =
+                      \int_x^{x+\Delta x} f(t)\,\mathrm{d}t.
+                  \]
+
+                  由可积的必要条件可知，存在 $M>0$，使得在 $I$ 上有
+                  \[
+                      |f(x)| \le M.
+                  \]
+                  因此，
+                  \[
+                      0 \le \bigl| F(x+\Delta x)-F(x) \bigr|
+                      \le
+                      M\,|\Delta x|.
+                  \]
+
+                  当 $\Delta x \to 0$ 时，
+                  \[
+                      \lim_{\Delta x \to 0}
+                      \bigl[ F(x+\Delta x)-F(x) \bigr]
+                      =
+                      0,
+                  \]
+                  即
+                  \[
+                      \lim_{\Delta x \to 0} F(x+\Delta x) = F(x).
+                  \]
+
+                  根据函数在 $x$ 点连续的充要条件，
+                  $F(x)$ 在 $x$ 点连续。
+
+                  由此可见，对于变限积分
+                  \[
+                      F(x)=\int_a^x f(t)\,\mathrm{d}t
+                  \]
+                  只要它存在，就必然是连续的
+        \end{analysisbox}
+        \item $\color{red}{\bigstar}$函数$f(x)$在$I$上\textbf{连续}，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$I$上可导且$F'(x) = f(x)$
+        \item 设 $F(x)=\dint_a^x f(t)\,\mathrm{d}t$，则有：
         \begin{itemize}
             \item 若 $x=x_0\in I$ 是 $f(x)$ {\blueuline{唯一的跳跃间断点}}，
             则函数 $F(x)$ 在 $x_0$ 处{\color[rgb]{0.2,0.6,0.3}{不可导}}，且
@@ -277,28 +317,28 @@
         \begin{itemize}
             \item 比较判别法（{\color{red}{放缩法}}）：设函数$f(x), g(x)$在区间$[a, +\infty)$上连续，并且${\color{red}{0 \leq f(x) \leq g(x)}}(a \leq x \leq +\infty)$，则
             \begin{circlenum}
-                \item 当$\int_a^{+\infty} g(x)\,\mathrm{d}x$收敛时，$\int_a^{+\infty} f(x)\,\mathrm{d}x$收敛
-                \item 当$\int_a^{+\infty} f(x)\,\mathrm{d}x$发散时，$\int_a^{+\infty} g(x)\,\mathrm{d}x$发散
+                \item 当$\dint_a^{+\infty} g(x)\,\mathrm{d}x$收敛时，$\dint_a^{+\infty} f(x)\,\mathrm{d}x$收敛
+                \item 当$\dint_a^{+\infty} f(x)\,\mathrm{d}x$发散时，$\dint_a^{+\infty} g(x)\,\mathrm{d}x$发散
             \end{circlenum}
             \item $\color{red}{\bigstar}$比较判别法的极限形式（{\color{red}{计算法$\displaystyle\frac{0}{0}$}}）：设函数$f(x), g(x)$在区间$[a, +\infty)$上连续，且$f(x) \geq 0, g(x) > 0, {\color{red}{\lim\limits_{x\to +\infty} \displaystyle\frac{f(x)}{g(x)} = \lambda}}$（有限或$\infty$）（$\displaystyle\frac{0}{0}$型），则
             \begin{circlenum}
-                \item 当$\lambda \neq 0$且$\lambda \neq \infty$时（\textbf{$f(x), g(x)$同阶无穷小}），$\int_a^{+\infty} f(x)\,\mathrm{d}x$与$\int_a^{+\infty} g(x)\,\mathrm{d}x$有相同的敛散性
-                \item 当$\lambda = 0$时（\textbf{$f(x)$趋于$0$的速度比$g(x)$更快}），若$\int_a^{+\infty} g(x)\,\mathrm{d}x$收敛，则$\int_a^{+\infty} f(x)\,\mathrm{d}x$收敛
-                \item 当$\lambda = \infty$时（\textbf{$g(x)$趋于$0$的速度比$f(x)$更快}），若$\int_a^{+\infty} g(x)\,\mathrm{d}x$发散，则$\int_a^{+\infty} f(x)\,\mathrm{d}x$发散
+                \item 当$\lambda \neq 0$且$\lambda \neq \infty$时（\textbf{$f(x), g(x)$同阶无穷小}），$\dint_a^{+\infty} f(x)\,\mathrm{d}x$与$\dint_a^{+\infty} g(x)\,\mathrm{d}x$有相同的敛散性
+                \item 当$\lambda = 0$时（\textbf{$f(x)$趋于$0$的速度比$g(x)$更快}），若$\dint_a^{+\infty} g(x)\,\mathrm{d}x$收敛，则$\dint_a^{+\infty} f(x)\,\mathrm{d}x$收敛
+                \item 当$\lambda = \infty$时（\textbf{$g(x)$趋于$0$的速度比$f(x)$更快}），若$\dint_a^{+\infty} g(x)\,\mathrm{d}x$发散，则$\dint_a^{+\infty} f(x)\,\mathrm{d}x$发散
             \end{circlenum}
         \end{itemize}
         \item 无界函数
         \begin{itemize}
             \item 比较判别法（{\color{red}{放缩法}}）：设$f(x), g(x)$在$(a, b]$上连续，瑕点同为$x = a$，并且${\color{red}{0 \leq f(x) \leq g(x)}}(a < x \leq b)$，则
             \begin{circlenum}
-                \item 当$\int_a^{b} g(x)\,\mathrm{d}x$收敛时，$\int_a^{b} f(x)\,\mathrm{d}x$收敛
-                \item 当$\int_a^{b} f(x)\,\mathrm{d}x$发散时，$\int_a^{b} g(x)\,\mathrm{d}x$发散
+                \item 当$\dint_a^{b} g(x)\,\mathrm{d}x$收敛时，$\dint_a^{b} f(x)\,\mathrm{d}x$收敛
+                \item 当$\dint_a^{b} f(x)\,\mathrm{d}x$发散时，$\dint_a^{b} g(x)\,\mathrm{d}x$发散
             \end{circlenum}
             \item 比较判别法的极限形式（{\color{red}{计算法$\displaystyle\frac{\infty}{\infty}$}}）：设$f(x), g(x)$在$(a, b]$上连续，瑕点同为$x = a$，并且$f(x) \geq 0, g(x) > 0(a < x \leq b), {\color{red}{\lim\limits_{x\to a^+} \displaystyle\frac{f(x)}{g(x)} = \lambda}}$（有限或$\infty$）（$\displaystyle\frac{\infty}{\infty}$型），则
             \begin{circlenum}
-                \item 当$\lambda \neq 0$且$\lambda \neq \infty$时（\textbf{$f(x), g(x)$同阶无穷大}），$\int_a^{b} f(x)\,\mathrm{d}x$与$\int_a^{b} g(x)\,\mathrm{d}x$有相同的敛散性
-                \item 当$\lambda = 0$时（\textbf{$g(x)$趋于$\infty$的速度比$f(x)$更快}），若$\int_a^{b} g(x)\,\mathrm{d}x$收敛，则$\int_a^{b} f(x)\,\mathrm{d}x$收敛
-                \item 当$\lambda = \infty$时（\textbf{$f(x)$趋于$\infty$的速度比$g(x)$更快}），若$\int_a^{b} g(x)\,\mathrm{d}x$发散，则$\int_a^{b} f(x)\,\mathrm{d}x$发散
+                \item 当$\lambda \neq 0$且$\lambda \neq \infty$时（\textbf{$f(x), g(x)$同阶无穷大}），$\dint_a^{b} f(x)\,\mathrm{d}x$与$\dint_a^{b} g(x)\,\mathrm{d}x$有相同的敛散性
+                \item 当$\lambda = 0$时（\textbf{$g(x)$趋于$\infty$的速度比$f(x)$更快}），若$\dint_a^{b} g(x)\,\mathrm{d}x$收敛，则$\dint_a^{b} f(x)\,\mathrm{d}x$收敛
+                \item 当$\lambda = \infty$时（\textbf{$f(x)$趋于$\infty$的速度比$g(x)$更快}），若$\dint_a^{b} g(x)\,\mathrm{d}x$发散，则$\dint_a^{b} f(x)\,\mathrm{d}x$发散
             \end{circlenum}
         \end{itemize}
         \item 两个重要结论（$p$ 型广义积分）
@@ -309,7 +349,6 @@
                                                                                                                   \text{收敛}, \qquad \color{red}{0 < p < 1}, \\
                                                                                                                   \text{发散}, \qquad p \geq 1
                 \end{cases}
-
             \]
             盯着$x\to 0^+$看
             \item 在 $[1,+\infty)$ 上，$p$越大越收敛
@@ -318,28 +357,22 @@
                                                                                                                                 \text{收敛}, \qquad \color{red}{p > 1}, \\
                                                                                                                                 \text{发散}, \qquad p \leq 1
                 \end{cases}
-
             \]
             盯着$x\to +\infty$看
-            \item 当$x\to 0^+$时，$\sin x \sim x$，即$\lim\limits_{x\to 0^+} \displaystyle\frac{\sin^p x}{x^p} = 1$，故$\int_0^1 \displaystyle\frac{1}{\sin^p x}\,\mathrm{d}x$依然满足\ding{172}
-            \item 若$f(x)\sim x^\alpha \quad (x\to 0^+ \text{ 或 } +\infty)$，则$\int \displaystyle\frac{1}{f^p(x)}\,\mathrm{d}x \sim \int \displaystyle\frac{1}{x^{\alpha p}}\,\mathrm{d}x$
+            \item 当$x\to 0^+$时，$\sin x \sim x$，即$\lim\limits_{x\to 0^+} \dfrac{\sin^p x}{x^p} = 1$，故$\dint_0^1 \dfrac{1}{\sin^p x}\,\mathrm{d}x$依然满足\ding{172}
+            \item 若$f(x)\sim x^\alpha \quad (x\to 0^+ \text{ 或 } +\infty)$，则$\dint \dfrac{1}{f^p(x)}\,\mathrm{d}x \sim \dint \dfrac{1}{x^{\alpha p}}\,\mathrm{d}x$
         \end{circlenum}
-    \end{enumerate}
-
-    \subsection{基础概念}
-
-    \begin{enumerate}
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
         \item $f(x)$可导 $\Rightarrow$ 连续 $\Rightarrow$ 可积 $\Rightarrow$ 有界
-        \item $\sin x$和$\cos x$ 一拱面积($(\int_0^{2\pi} \sin x\,\mathrm{d}x$)为2
-        \item $\int_0^{\frac{\pi}{2}} f(\sin x)\,\mathrm{d}x == \int_0^{\frac{\pi}{2}} f(\cos x)\,\mathrm{d}x$
-        \item 当$f(x)$是偶函数且$\int_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\int_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 2\int_0^{+\infty} f(x)\,\mathrm{d}x$
-        \item 当$f(x)$是奇函数且$\int_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\int_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 0$
-        \item 设$f(x)$连续，且$\int_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛，则$\int_a^{+\infty} f(x)\,\mathrm{d}x$收敛
+        \item $\sin x$和$\cos x$ 一拱面积($(\dint_0^{\pi} \sin x\,\mathrm{d}x$)为2
+        \item $\dint_0^{\frac{\pi}{2}} f(\sin x)\,\mathrm{d}x == \dint_0^{\frac{\pi}{2}} f(\cos x)\,\mathrm{d}x$。令$x = \dfrac{\pi}{2} - t$
+        \item 当$f(x)$是偶函数且$\dint_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\dint_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 2\dint_0^{+\infty} f(x)\,\mathrm{d}x$
+        \item 当$f(x)$是奇函数且$\dint_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\dint_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 0$
+        \item 设$f(x)$连续，且$\dint_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛，则$\dint_a^{+\infty} f(x)\,\mathrm{d}x$收敛
         \begin{analysisbox}[证:]
             因为
             \[
@@ -377,23 +410,6 @@
         \end{analysisbox}
     \end{enumerate}
 
-    \subsection{定理}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
     \subsection{方法总结}
 
     \begin{enumerate}
@@ -401,7 +417,7 @@
         \begin{circlenum}
             \item 先提出$\displaystyle\frac{1}{n}$
             \item 再凑出$\displaystyle\frac{i}{n}$
-            \item $\displaystyle\int_0^1 f(x)\,\mathrm{d}x
+            \item $\dint_0^1 f(x)\,\mathrm{d}x
             =
             \lim\limits_{n \to \infty}
             \displaystyle\sum_{i=1}^{n}
@@ -418,13 +434,13 @@
     \subsection{条件转换思路}
 
     \begin{enumerate}
-        \item 见到 $\int_a^b f(x)\,\mathrm{d}x$
+        \item 见到 $\dint_a^b f(x)\,\mathrm{d}x$
         \[
             \begin{cases}
                 \text{用积分中值定理：}
-                & \displaystyle \int_a^b f(x)\,\mathrm{d}x = f(\xi)(b-a), \\[6pt]
+                & \dint_a^b f(x)\,\mathrm{d}x = f(\xi)(b-a), \\[6pt]
                 \text{改成辅助函数：}
-                & \displaystyle \int_a^x f(t)\,\mathrm{d}t.
+                & \dint_a^x f(t)\,\mathrm{d}t.
             \end{cases}
         \]
     \end{enumerate}
@@ -434,7 +450,7 @@
     \begin{enumerate}
         \item $f(x) = 2x\sin \displaystyle\frac{1}{x^2} - \displaystyle\frac{2}{x}\cos \displaystyle\frac{1}{x^2}$，$x = 0$是其震荡间断点，$\lim\limits_{x\to 0} f(x)$是\textbf{无界震荡}，其原函数是$F(x) = x^2 \sin \displaystyle\frac{1}{x^2}$
         \item $f(x) = 2x\cos \displaystyle\frac{1}{x} + \sin \displaystyle\frac{1}{x}$，$x = 0$是其震荡间断点，$\lim\limits_{x\to 0} f(x)$是\textbf{有界震荡}，其原函数是$F(x) = x^2\cos \displaystyle\frac{1}{x}$
-        \item $\int_0^1 \ln x\,\mathrm{d}x$和$\int_{-\infty}^0 e^x\,\mathrm{d}x$ 是收敛的（$\color{red}{\lim\limits_{x\to 0^+} x^{\epsilon}\ln x = 0, \epsilon > 0}$），且
+        \item $\dint_0^1 \ln x\,\mathrm{d}x$和$\dint_{-\infty}^0 e^x\,\mathrm{d}x$ 是收敛的（$\color{red}{\lim\limits_{x\to 0^+} x^{\epsilon}\ln x = 0, \epsilon > 0}$），且
         \[
             \int_0^1 \ln x\,\mathrm{d}x = -\int_{-\infty}^0 e^x\,\mathrm{d}x = -1
         \]
@@ -443,12 +459,12 @@
     \subsection{理解}
 
     \begin{enumerate}
-        \item $\displaystyle \int f(x)\,\mathrm{d}x$称为不定积分，表示{\color{red}{全体原函数}}
-        \item $\color{red}{\bigstar}\color{red}{\bigstar}$不定积分对应一族原函数，而变限积分给出了其中一个唯一确定的原函数。当需要研究函数的性态（如极限、导数、单调性等）时，必须将不定积分转化为变限积分
+        \item $\dint f(x)\,\mathrm{d}x$称为不定积分，表示{\color{red}{全体原函数}}
+        \item $\color{red}{\bigstar}\color{red}{\bigstar}$不定积分对应一族原函数，而变限积分给出了其中一个唯一确定的原函数。当需要研究函数的{\color{性态}}（如极限、导数、单调性等）时，必须将不定积分转化为变限积分
         \item 变限积分的作用不是“换一种写法”，而是“选定一个原函数”
-        \item $\displaystyle \int_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
-        \item $\displaystyle F(x) = \int_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
-        \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\int f(x)\,\mathrm{d}x = \int_a^x f(t)\,\mathrm{d}t + C}$
+        \item $\dint_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
+        \item $F(x) = \dint_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
+        \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\dint f(x)\,\mathrm{d}x = \dint_a^x f(t)\,\mathrm{d}t + C}$
         \begin{analysisbox}[证]
             若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则
             \[
@@ -461,7 +477,7 @@
                 \end{aligned}
             \]
 
-            由积分中值定理，有$\int_x^{x + \Delta x} f(t)\,\mathrm{d}t = f(\xi)\Delta x$，其中 $\xi$ 介于 $x$ 与 $x+\Delta x$ 之间，当$\Delta x\to 0$时，$\xi \to x$，故
+            由积分中值定理，有$\dint_x^{x + \Delta x} f(t)\,\mathrm{d}t = f(\xi)\Delta x$，其中 $\xi$ 介于 $x$ 与 $x+\Delta x$ 之间，当$\Delta x\to 0$时，$\xi \to x$，故
             \[
                 F'(x) = \lim_{\Delta x\to 0}\frac{\Delta F}{\Delta x}  = \lim_{\Delta x\to 0} f(\xi) = \lim_{\xi\to x} f(\xi) = f(x)
             \]
@@ -471,7 +487,7 @@
 
             综上，$F(x)$ 在 $[a,b]$ 上可导，且 $F'(x)=f(x)$。
         \end{analysisbox}
-        \item 设$f(x)$是$[a, b]$上{\color{red}{非负}}的连续函数，且$f(x)${\color{red}{不恒等于零}}，证明必有$\int_a^b f(x)\,\mathrm{d}x > 0$
+        \item 设$f(x)$是$[a, b]$上{\color{red}{非负}}的连续函数，且$f(x)${\color{red}{不恒等于零}}，证明必有$\dint_a^b f(x)\,\mathrm{d}x > 0$
         \begin{analysisbox}[证]
             因函数 $f(x)$ 在 $[a,b]$ 上不恒等于零，且 $f(x)\ge 0$，
             故至少存在一点 $x_0\in(a,b)$，使得
@@ -501,47 +517,6 @@
                 2\delta\eta
                 >0.
             \]
-        \end{analysisbox}
-        \item 证明：函数$f(x)$在$I$上\textbf{可积}，则函数$F(x) = \int_a^x f(t)\,\mathrm{d}t$在$I$上连续（$F(x)$若存在，则其一定连续。与$f(x)$作区分：$f(x)$存在但其不一定连续)
-        \begin{analysisbox}[证]
-            对任意 $x$，若 $x+\Delta x \in I$，有
-            \[
-                F(x+\Delta x)-F(x)
-                =
-                \int_x^{x+\Delta x} f(t)\,\mathrm{d}t.
-            \]
-
-            由可积的必要条件可知，存在 $M>0$，使得在 $I$ 上有
-            \[
-                |f(x)| \le M.
-            \]
-            因此，
-            \[
-                0 \le \bigl| F(x+\Delta x)-F(x) \bigr|
-                \le
-                M\,|\Delta x|.
-            \]
-
-            当 $\Delta x \to 0$ 时，
-            \[
-                \lim_{\Delta x \to 0}
-                \bigl[ F(x+\Delta x)-F(x) \bigr]
-                =
-                0,
-            \]
-            即
-            \[
-                \lim_{\Delta x \to 0} F(x+\Delta x) = F(x).
-            \]
-
-            根据函数在 $x$ 点连续的充要条件，
-            $F(x)$ 在 $x$ 点连续。
-
-            由此可见，对于变限积分
-            \[
-                F(x)=\int_a^x f(t)\,\mathrm{d}t
-            \]
-            只要它存在，就必然是连续的
         \end{analysisbox}
     \end{enumerate}
 

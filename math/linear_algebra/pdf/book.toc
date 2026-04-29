@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}行列式}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}行列式的定义与性质}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}本质定义（柯西）}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}性质}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}逆序数法定义}{2}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}展开定理}{3}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}几个重要的行列式 12+1}{3}{subsubsection.1.1.5}%
+\contentsline {paragraph}{主对角线行列式}{4}{section*.2}%
+\contentsline {paragraph}{副对角线行列式}{4}{section*.3}%
+\contentsline {paragraph}{拉普拉斯展开式}{4}{section*.4}%
+\contentsline {paragraph}{范德蒙德行列式}{4}{section*.5}%
+\contentsline {subsection}{\numberline {1.2}行列式的计算}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}具体型}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}抽象型}{5}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}余子式与代数余子式的线性组合的计算}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}克拉默法则}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}基础概念}{6}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}性质}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}基础}{6}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}完全展开式}{6}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.2}余子式 \& 代数余子式}{6}{subsubsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.8}定理}{7}{subsection.1.8}%
+\contentsline {subsubsection}{\numberline {1.8.1}展开公式}{7}{subsubsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.2}乘法公式}{7}{subsubsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.9}公式}{7}{subsection.1.9}%
+\contentsline {subsubsection}{\numberline {1.9.1}上（下）三角形}{7}{subsubsection.1.9.1}%
+\contentsline {subsubsection}{\numberline {1.9.2}拉普拉斯展开式}{7}{subsubsection.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.9.3}范德蒙行列式}{8}{subsubsection.1.9.3}%
+\contentsline {subsubsection}{\numberline {1.9.4}特征多项式}{8}{subsubsection.1.9.4}%
+\contentsline {subsection}{\numberline {1.10}方阵行列式}{8}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}克拉默法则}{8}{subsection.1.11}%
+\contentsline {paragraph}{推论}{9}{section*.6}%
+\contentsline {subsection}{\numberline {1.12}方法步骤}{9}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}条件转换思路}{10}{subsection.1.13}%
+\contentsline {subsection}{\numberline {1.14}理解}{10}{subsection.1.14}%
