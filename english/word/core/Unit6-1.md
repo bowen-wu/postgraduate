@@ -38,7 +38,7 @@
     - vt.（尤指正式地或法律上）同意；（勉强）承认
     - n. （政府、机构的）拨款
     - take sth. for granted 认为...理所当然
-    - giant [ˈdʒaɪənt] adj. 巨大的；伟大的
+    - Similar: giant [ˈdʒaɪənt] adj. 巨大的；伟大的
 - bonus [ˈboʊnəs]
     - n. 奖金
     - How could she have let those enormous([ɪˈnɔːrməs] adj. 巨大的) **bonus** payouts pass unremarked?

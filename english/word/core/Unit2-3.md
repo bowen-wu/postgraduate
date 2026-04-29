@@ -108,7 +108,7 @@
     - v. 辨别
     - vt. 区分；使具有...特色
     - == separate
-    - distinguish A from B 
+    - distinguish A from B
     - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
       one.
     - Contrast: distinguish vs. differ
@@ -139,6 +139,9 @@
     - His **strength** was his obsessive single-mindedness.
     - At first glance this might seem like a **strength** that grants the ability to make judgements which are unbiased
       by external factors.
+        - unbiased 🙂 [ʌnˈbaɪəst] adj. 无偏见的；公正的
+        - at first glance 乍一看/表面上看
+        - grant the ability to do sth. 赋予...能力
     - strengthen [ˈstreŋθn]
         - v. 加强
         - The crash stresses the urgency to **strengthen** security worldwide.
@@ -151,7 +154,7 @@
     - dynamic
         - adj. 充满活力的；精力充沛的
         - == energetic
-- the relative <ins>power/strength</ins> of the English language. 英语的相对优势
+- the relative **power/strength** of the English language. 英语的相对优势
 
 ## culture
 
@@ -170,27 +173,20 @@
     - civilized [ˈsɪvəˌlaɪzd]
         - adj. 文明的；有礼貌的
         - civility [sɪˈvɪlɪti] n. 礼貌
-    - Both men emphasized the dirt and exhaustion of war <ins>the fragments of **civilization**(文明的碎片)</ins> that
-      the soldiers shared with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
+    - Both men emphasized the dirt and exhaustion of war, the fragments of **civilization** that the soldiers shared
+      with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
+        - the fragments of **civilization** 文明的碎片
 
 ## Words
 
 - process [prəˈses]
     - v. 加工; 处理; 冲印; 审核; 列队行进
     - n. 过程; 变化过程; 做事方法
-- possess [pəˈzes]
-    - v. 拥有; 具备; 控制; 使言行失常
-- proceed [proʊˈsiːd]
-    - vi. 进行; 前进; （沿特定路线）行进; （尤指打断后）继续说
-- precede [prɪˈsiːd]
-    - vt.& vi. 在...之前发生或出现，先于; 在...之上，优于
-    - A precede B
+    - Similar: proceed [proʊˈsiːd] vi. 进行; 前进; （沿特定路线）行进; （尤指打断后）继续说
+    - Similar: possess [pəˈzes] v. 拥有; 具备; 控制; 使言行失常
+    - Similar: precede [prɪˈsiːd] vt. 在...之前发生或存在
 - nuisance [ˈnuːsns]
     - n. 麻烦事，讨厌的人或事
-- knock out
-    - == overturn
-    - == overrule
-    - 推翻
 - verdict [ˈvɜːrdɪkt]
     - n. 裁决
     - == ruling == decision
@@ -211,6 +207,9 @@
 
 ## 词组
 
+- knock out 推翻
+    - == overturn
+    - == overrule
 - peer pressure
     - 同辈压力
 - mental health

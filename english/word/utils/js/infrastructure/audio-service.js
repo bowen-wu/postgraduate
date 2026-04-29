@@ -67,9 +67,7 @@ function isSentenceLike(text) {
 
 export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
-  if (_playbackInProgress) {
-    throw toServiceError('AUDIO_PLAYBACK_BUSY', 'Audio is currently playing');
-  }
+  if (_playbackInProgress) stopCurrentAudioPlayback();
 
   const playbackToken = _playbackToken + 1;
   _playbackToken = playbackToken;

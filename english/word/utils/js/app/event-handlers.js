@@ -14,7 +14,6 @@ import * as UiRenderer from './ui-renderer.js';
 import {
   playWordWithFallback,
   prewarmSpeechSynthesis as prewarmSpeechSynthesisService,
-  isAudioPlaybackInProgress,
   stopCurrentAudioPlayback
 } from '../infrastructure/audio-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
@@ -290,7 +289,6 @@ function setButtonPlaying(isPlaying, btnId) {
 
 export async function playWord(word, buttonId = null, _useTTSFallback = false, showNotification = true) {
   if (!word) return;
-  if (isAudioPlaybackInProgress()) return;
   const loadingStartedAt = Date.now();
   const minLoadingVisibleMs = 180;
   let finished = false;
@@ -313,7 +311,7 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
       UiRenderer.showToast(getApp().ui, `🔊 ${sourceLabel}`);
     }
   } catch (error) {
-    if (error?.code === 'AUDIO_PLAYBACK_BUSY') return;
+    if (error?.code === 'AUDIO_PLAYBACK_BUSY' || error?.code === 'AUDIO_PLAYBACK_STOPPED') return;
     UiRenderer.showToast(getApp().ui, '❌ 语音播放失败');
   } finally {
     finished = true;
