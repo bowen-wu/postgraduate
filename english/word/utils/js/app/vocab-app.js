@@ -241,4 +241,8 @@ export class VocabApp {
     return EventHandlers.translateSentence();
   }
 
+  selectContrastOption(targetId, encodedChoice) {
+    EventHandlers.selectContrastOption(targetId, encodedChoice);
+  }
+
 }

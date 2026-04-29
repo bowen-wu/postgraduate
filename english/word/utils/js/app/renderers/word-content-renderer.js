@@ -1,6 +1,13 @@
 import { STATE } from '../../config.js';
 
 export function renderWordHeader(ui, card) {
+  if (card.type === 'contrast') {
+    ui.word.textContent = card.word;
+    ui.ipa.textContent = '';
+    ui.ipa.style.display = 'none';
+    return;
+  }
+
   const encodedWord = encodeURIComponent(card.word);
   const playButtonId = 'play-btn-main';
   const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
@@ -23,6 +30,7 @@ export function renderBadgeHtml(card, stats) {
   let html = '';
   if (card.type === 'word') html += '<span class="badge badge-word">单词</span>';
   else if (card.type === 'phrase') html += '<span class="badge badge-rel">词组</span>';
+  else if (card.type === 'contrast') html += '<span class="badge badge-rel">对比词</span>';
   else if (card.type === 'prefix') html += '<span class="badge badge-pre">前缀/后缀</span>';
   else if (card.type === 'sentence') html += '<span class="badge badge-sent">例句</span>';
   if (stats.errors > 0) html += `<span class="badge badge-err">错 ${stats.errors}</span>`;

@@ -134,7 +134,7 @@
 - economical [ˌeːkəˈnɑːmɪkl]
     - adj. 省钱的；节约的
     - economically [ˌikəˈnɑmɪkli] adv. 在经济上；节省地
-    - economic vs. economical
+    - Contrast: economic vs. economical
         - Here's his advice for <ins>economic/economical</ins> foodies.
         - It's a sure sign of <ins>economic/economical</ins> recovery.
 

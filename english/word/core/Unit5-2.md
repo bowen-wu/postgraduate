@@ -260,8 +260,12 @@
         - bring together 使聚集、集合、汇集
     - controversial [ˌkɑːntrəˈvɜːrʃl]
         - adj. 引起争论的 😔
-        - In Arizona vs. United States, the majority overturned three of the four <ins>contested provisions(
-          有争议的法律条款)</ins> of Arizona's **controversial** plan.
+        - In Arizona vs. United States, the majority *overturned* three of the four **contested** provisions of
+          Arizona's controversial plan.
+            - provision
+                - n. 规定，条款；供应品
+                - == rule
+            - contested provisions 有争议的法律条款
 
 ## sign
 

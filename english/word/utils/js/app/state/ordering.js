@@ -14,7 +14,7 @@ export function generateDisplayOrder(cards, orderMode) {
     case 'sequential':
       return indices;
     case 'randomByType': {
-      const byType = { prefix: [], word: [], phrase: [], sentence: [] };
+      const byType = { prefix: [], word: [], phrase: [], sentence: [], contrast: [] };
       cards.forEach((card, i) => {
         if (byType[card.type]) byType[card.type].push(i);
       });
@@ -22,7 +22,8 @@ export function generateDisplayOrder(cards, orderMode) {
         ...shuffle(byType.prefix),
         ...shuffle(byType.word),
         ...shuffle(byType.phrase),
-        ...shuffle(byType.sentence)
+        ...shuffle(byType.sentence),
+        ...shuffle(byType.contrast)
       ];
     }
     case 'randomAll':

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "card_0",
+    "word": "distinguish vs. differ",
+    "type": "contrast",
+    "contrastOptions": [
+      "distinguish",
+      "differ"
+    ],
+    "items": [
+      {
+        "type": "contrast",
+        "en": "Could he <ins>distinguish/differ</ins> right from wrong?",
+        "blankOptions": [
+          "distinguish",
+          "differ"
+        ]
+      },
+      {
+        "type": "contrast",
+        "en": "The two leaders had <ins>distinguish/differ</ins> on the issue.",
+        "blankOptions": [
+          "distinguish",
+          "differ"
+        ]
+      }
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 import { processChildren } from './children-processor.js';
 import { processSentence } from './sentence-processor.js';
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
+import { parseContrastHeader, parseContrastChildren } from './contrast-parser.js';
 import {
   addAntonymToParent,
   addIpaToParent,
@@ -29,6 +30,21 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   if (parser.hasSimilarMarker(content)) {
     addSimilarToParent(parser, content, indentLevel);
     return undefined;
+  }
+
+  if (parser.hasContrastMarker && parser.hasContrastMarker(content)) {
+    const header = parseContrastHeader(content);
+    const card = {
+      id: `card_${parser.cardCounter++}`,
+      word: header.word,
+      type: 'contrast',
+      contrastOptions: header.options,
+      items: []
+    };
+    const { items, lastLineIndex } = parseContrastChildren(parser.lines, lineIndex, indentLevel, header.options);
+    card.items = items;
+    parser.cards.push(card);
+    return lastLineIndex;
   }
 
   if (parser.isPurePosLine(content)) {

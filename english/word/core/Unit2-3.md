@@ -29,11 +29,13 @@
 - contest
     - vt. 争辩；争取赢得（比赛、选举等）
     - n. 比赛；争夺
-    - In Arizona vs. United States, the majority *overturned* three of the four
-      <ins>**contested** provisions(有争议的法律条款)</ins> of Arizona's controversial plan.
+    - In Arizona vs. United States, the majority *overturned* three of the four **contested** provisions of Arizona's
+      controversial plan.
         - provision
             - n. 规定，条款；供应品
             - == rule
+        - controversial [ˌkɑːntrəˈvɜːrʃl] adj. 引起争论的 😔
+        - contested provisions 有争议的法律条款
 - protest
     - vt. 抗议
     - n. 抗议
@@ -59,10 +61,11 @@
 
 - vt. 以...为基础
 - n. 基础
-- base A on B 把A建立在B的基础上
-- be based on 以...为基础
-- the user base of... ...的用户群
-    - ...the user base of Facebook...
+- 词组
+    - base A on B 把A建立在B的基础上
+    - be based on 以...为基础
+    - the user base of... ...的用户群
+- The user base of Facebook...
 - baseline n. 基准，基础；底线
 - basic adj. 基本的
 - basis n. 基础
@@ -87,14 +90,14 @@
 - deadline n. 截止日期
 - infinite
     - adj. 无限的，无穷尽的
-    - TWO THINKS ARE INFINITE: THE UNIVERSE AND HUMAN STUPIDITY. AND I'M NOT SURE ABOUT THE UNIVERSE.
+    - TWO THINGS ARE INFINITE: THE UNIVERSE AND HUMAN STUPIDITY. AND I'M NOT SURE ABOUT THE UNIVERSE.
 
 ## different
 
 - adj. 不同的
 - differ
     - vi. 不同与；持不同看法
-    - A differ **from** B A和B不同
+    - A differ **from** B
     - Ways of reading on the train or in bed are likely to **differ** considerably **from** reading in a seminar room.
 - difference n. 差异；差额
 - differentiate [ˌdɪfəˈrenʃieɪt]
@@ -105,11 +108,11 @@
     - v. 辨别
     - vt. 区分；使具有...特色
     - == separate
-    - distinguish A from B 把 A 和 B 区分开来
+    - distinguish A from B 
     - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
       one.
-    - distinguish vs. differ
-        - Could he <ins>distinguish/differ</ins> right from wrong？
+    - Contrast: distinguish vs. differ
+        - Could he <ins>distinguish/differ</ins> right from wrong?
         - The two leaders had <ins>distinguish/differ</ins> on the issue.
 - distinction
     - n. 差别

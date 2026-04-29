@@ -38,6 +38,7 @@ import {
 export function shouldAutoPlayCard(card, state = STATE) {
   if (!card) return false;
   if (!state.autoPlay) return false;
+  if (card.type === 'contrast') return false;
   return state.mode === 'input' || state.mode === 'recall';
 }
 
@@ -73,9 +74,10 @@ export function render(ui) {
 
   const stats = STATE.stats[card.id] || { errors: 0 };
 
-  ui.card.classList.remove('is-sentence', 'is-phrase');
+  ui.card.classList.remove('is-sentence', 'is-phrase', 'is-contrast');
   if (card.type === 'sentence') ui.card.classList.add('is-sentence');
   else if (card.type === 'phrase') ui.card.classList.add('is-phrase');
+  else if (card.type === 'contrast') ui.card.classList.add('is-contrast');
 
   ui.progress.textContent = `${STATE.currentIndex + 1} / ${STATE.displayOrder.length}`;
   renderCardContent(ui, card, stats);

@@ -56,6 +56,15 @@ export function hasSimilarMarker(content) {
 }
 
 /**
+ * Check if content has contrast marker (Contrast:)
+ * @param {string} content - The content to check
+ * @returns {boolean}
+ */
+export function hasContrastMarker(content) {
+  return /^Contrast:\s*/i.test(content);
+}
+
+/**
  * Check if it's a pure POS line (n. 中文)
  * @param {string} content - The content to check
  * @returns {boolean}

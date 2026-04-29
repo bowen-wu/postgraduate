@@ -343,3 +343,13 @@ export async function translatePhrase() {
 export async function translateSentence() {
   return getTranslationUseCases().translateSentence();
 }
+
+export function selectContrastOption(targetId, encodedChoice) {
+  if (!targetId) return;
+  const blank = document.getElementById(targetId);
+  if (!blank) return;
+  const choice = decodeURIComponent(encodedChoice || '').trim();
+  if (!choice) return;
+  blank.textContent = choice;
+  blank.classList.add('revealed');
+}
