@@ -29,7 +29,7 @@ function renderItems(ui, card, stats) {
       if (item.cn && item.cn.trim && item.cn.trim() !== '') {
         let cnDisplay = item.cn;
         if (idx === 0 && card.emoji) cnDisplay = `${card.emoji} ${cnDisplay}`;
-        li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
+        li.innerHTML = `<div class="cn-text" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
         ui.list.appendChild(li);
       }
       return;
@@ -44,14 +44,14 @@ function renderItems(ui, card, stats) {
     if (hasCn) {
       cnDisplay = item.cn;
       if (idx === 0 && card.emoji) cnDisplay = `${card.emoji} ${cnDisplay}`;
-      cnHtml = `<div class="cn-text" data-action="reveal" data-has-cn="true">${cnDisplay}</div>`;
+      cnHtml = `<div class="cn-text" data-has-cn="true">${cnDisplay}</div>`;
     }
 
     if (hasPOS || !hasCn) {
       const isPhraseItself = card.type === 'phrase' && item.en === card.word;
       if (isPhraseItself && !hasCn) return;
       if (isPhraseItself && hasCn) {
-        li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true">${cnDisplay}</div>`;
+        li.innerHTML = `<div class="cn-text" data-has-cn="true">${cnDisplay}</div>`;
       } else {
         li.innerHTML = `
           <span class="item-tag tag-def ${STATE.mode === 'recall' ? 'blur-target' : ''}"></span>
@@ -60,7 +60,7 @@ function renderItems(ui, card, stats) {
         `;
       }
     } else {
-      li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
+      li.innerHTML = `<div class="cn-text" data-has-cn="true" style="border-left: none; padding-left: 0;">${cnDisplay}</div>`;
     }
     ui.list.appendChild(li);
   });

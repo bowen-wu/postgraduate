@@ -51,7 +51,7 @@ export function renderPhraseItems(ui, card, stats) {
     if (!hasCn) return;
     const li = document.createElement('li');
     li.className = 'item';
-    li.innerHTML = `<div class="cn-text" data-action="reveal" data-has-cn="true">${item.cn}</div>`;
+    li.innerHTML = `<div class="cn-text" data-has-cn="true">${item.cn}</div>`;
     ui.list.appendChild(li);
   });
 
