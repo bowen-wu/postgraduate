@@ -17,6 +17,51 @@
 - C: Cause
 - R: Result
 
+## service
+
+- vt. 为...提供服务
+- n. 服务；国家政府部门
+- serve
+    - v. 为（人、机构）服务；上（食物、饮料）；对...有用；履行义务；可用作
+    - serve as 充当...；作为...使用；担任...
+    - serve on 在...任职/担任...成员
+    - serve + abstract noun(抽象名词) 为...服务/投身于...
+    - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
+    - When you **serve** your passions, proficiency *gradually(adv. 逐渐地)* takes over and becomes
+      *habitual([həˈbɪtʃuəl] adj. 习惯性的)*.
+        - gradually takes over 慢慢地、不知不觉地占据主导地位
+- servant [ˈsɜːrvənt]
+    - n. 仆人
+    - public/civil([ˈsɪvl]) servant 公务员
+- deserve
+    - v. 值得
+    - You **deserve** it.
+    - We **deserve** things based on our actions.
+    - For example, many people believe *murderers([ˈmɜːrdərər])* **deserve** the death *penalty([ˈpenəlti] n. 刑罚)*.
+- observe
+    - vt. 观察；注意到
+    - Their capacity for tolerating stress may even be greater than men's, she **observed**.
+    - observation
+        - n. 观察；评论
+        - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
+    - observer n. 观察者
+- preserve [prɪˈzɜːrv]
+    - vt. 维护；保护
+    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
+      *creatures(['kritʃəz] n. 生物)* **preserve** the health of *game(n. 猎物)* by killing the physically weak, or that
+      they prey only on "worthless" species.
+        - prey on 捕食；掠夺
+- reserve
+    - vt. 保留；预定
+        - == book
+    - n. ...保护区；...储备量
+    - nature reserves 自然保护区
+    - massive financial reserves 庞大的财务储备
+- conservation
+    - n. 节约；保护
+    - conservative [kənˈsɜːrvətɪv]
+        - adj. 保守的；英国保守党的
+
 ## view
 
 - vt. 以...看待
@@ -114,143 +159,27 @@
       它宣布将违背此前长期承诺的内容，即遵守该州严格的核能法规
       它宣布不再履行长期以来遵守该州严格核能法规的承诺
 
-## leave
-
-- v. 离开；留下；让...处于（某种状态）；造成
-- n. 休假
-- ...*the basic mandatory([ˈmændətɔːri] adj. 强制的) high school curriculum(高中基础必修课程)* <ins>**leaves** students
-  with a poor understanding</ins> of *the vast academic possibilities(丰富学术可能性)* <ins>that await them in
-  college</ins>. 高中必修课程并不能让学生对大学里静候他们的广泛的学术可能性有足够的了解
-- leaf
-    - n. 叶子
-    - leaves leaf的复数
-    - One falling **leaf** is indicative of the coming of *autumn([ˈɔtəm])*. 一叶知秋
-    - The boundless forest <ins>sheds its **leaves**</ins> shower by shower.
-      The endless river <ins>rolls its waves</ins> hour after hour.
-- depart
-    - v. 离开；离职
-    - departure
-        - n. 离开；出发；背离
-        - a startling <ins>**departure** from(背离, 强调离开的起点)</ins> tradition. 标新立异
-        - the president's <ins>**departure** for(强调出发的目的地)</ins> New York.
-        - The modern world saw a <ins>**departure** from</ins> what it had once known. 现代社会随之告别了其过去所知的一切
-            - a departure from + 传统/过去方式/规则/旧做法/惯例 与过去不同的改变/摆脱旧有模式/偏离以往
-            - had once known 过去完成时
-                - once 曾经
-                - had known: 在过去某个时间之前就已经熟悉
-- aside
-    - adv. 到旁边
-    - 词组
-        - set aside 留，存；抽出
-        - put aside 把...暂放一边；把...留作后用
-        - aside from 除...之外
-- detach
-    - vi. 摆脱；拆卸
-    - detachment n. 客观；超然物外；冷漠，冷静; 公正
-
-## federal
-
-- adj. 联邦（政府）的
-- Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
-    - The Supreme([suːˈpriːm]) Court
-        - Judicial([dʒuˈdɪʃl]) Power 司法权
-        - Justice n. 法官
-    - Administration
-        - Executive power 行政权
-            - Federal government 联邦政府
-                - == Washington == The Administration == The White House
-            - State government 州政府
-    - Congress
-        - Legislative power
-            - Senate [ˈsenət] 参议院
-            - House of representatives [reprɪ'zentətɪvz] 众议院
-- The constitutional principle that...and that <ins>**federal** laws precede state laws</ins> are noncontroversial.
-- democratic [ˌdeməˈkrætɪk]
-    - adj. 民主的
-    - Many Americans regard the jury system as a concrete expression of crucial **democratic** values, including the
-      principles that...
-    - democrat n. 美国民主党党员
-- republican [rɪˈpʌblɪkən]
-    - adj. 共和党的
-    - n. 共和党党员
-- conservative [kənˈsɜːrvətɪv]
-    - adj. 保守的；英国保守党的
-    - Sensible ideas have been around for a long time, but the state-level bodies that govern the profession have been
-      too **conservative** to implement them.
-    - Conservative Party 保守党
-    - The Labour Party 工党
-    - Liberal([ˈlɪbərəl]) Democratic Party 自由民主党
-    - Ukip 独立党
-- chancellor [ˈtʃænsələr] n. （英国）财政大臣
-- premier [prɪˈmɪr]
-    - n. （加拿大的）省长；首相
-    - adj. 首要的
-
-## believe
-
-- vt. 相信；认为
-- I **believe** I can fly, I **believe** I can touch the sky.
-- I **believe/hold/maintain/argue([ˈɑːrɡjuː])** that 我认为...
-- belief [bɪˈliːf] n. 信念；信仰；信心
-- faith [feɪθ]
-    - n. 信心
-    - faithful
-        - adj. 忠实的; 忠诚的; 如实的
-        - loyal [ˈlɔɪəl] adj. 忠诚的
-        - faithfulness
-            - n. 忠诚
-            - **Faithfulness** refers to this quality of being <ins>**faithful and loyal**</ins>.
-            - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
-- credit [ˈkredɪt]
-    - n. 学分；信用；认可
-    - credit card
-    - credible
-        - adj. 可信任的
-        - incredible
-            - adj. 极好的；难以置信的
-            - **incredible**: <ins>extraordinarily good or great</ins>
-                - == fantastic([fænˈtæstɪk]) == wonderful == good
-                  == marvellous [ˈmɑːrvələs] adj. 不可思议的; 惊奇的; 极好的; 绝妙的
-            - **incredible**: <ins>beyond belief or understanding</ins>
-                - The book's *plot([plɑːt] n. 情节)* is simply **incredible**.
-            - Or, we can look at failure as the **incredible** learning experience that it often is.
-                - look at...as... 把...视为...
-    - credibility n. 可信性
-
-## data
-
-- n. 数据
-- big data
-- data leakage([ˈliːkɪdʒ]) 数据泄露
-- database n. 数据库
-- analyse/analyze [ˈænəlaɪz]
-    - vt. 分析
-    - analyst [ˈænəlɪst] n. 分析者
-    - analytical [ˌænəˈlɪtɪkl] adj. 分析的
-    - analysis [əˈnæləsɪs] n. 分析
-- statistical [stəˈtɪstɪkl]
-    - adj. 统计（上）的；统计学的
-    - If you can say it with numbers, then it is probably **statistical**.
-    - statistically adv. 统计学上
-    - statistician [ˌstætɪˈstɪʃən] n. 统计学家
-    - statistics [stəˈtɪstɪks] n. 统计学
-
 ## Words
 
-- insincerity [ˌɪnsɪnˈsɛrətɪ]
-    - n. 不诚实，无诚意; 伪善
-- selflessness ['selfləsnəs]
-    - n. 无私，忘我
-    - selfish adj. 自私的; 自利的
-- hopelessness
-    - n. 绝望
+- strategic [strəˈtiːdʒɪk]
+    - adj. 战略（上）的; 战略性的; 有战略意义的; 至关重要的
+- advent [ˈædvent]
+    - n. 出现，到来，问世
+- accurate [ˈækjərət]
+    - adj. 正确的，精确的; 精准的
+- handsome
+    - adj. 慷慨的；丰厚的；可观的；英俊的
+    - He receives a **handsome** reward.
+    - 熟词僻义：修饰人和物感情色彩一致
+- declare
+    - v. 宣称; 表明; 断言; 公布; 申报; （在击球员还未全部出局时）宣布结束赛局
+- contrast
+    - v. 对比; 显出明显的差异
+    - n. 悬殊; 形成对比
+- strike [straɪk]
+    - v. 碰撞; 打; 突击; 侵袭; 给人…印象; 罢工
+    - n. 罢工; 袭击
 
 ## 词组
 
-- sunny to partly cloudy
-    - 晴到多云
-
 ## 句式
-
-- A small sign can indicate a great trend. 积微见著/见微知著
-

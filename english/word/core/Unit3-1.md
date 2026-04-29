@@ -176,51 +176,6 @@
         - Something that's **unsettled** is **out of order or unstable** in some way.
         - If you've just moved and started at a new school, your whole life may feel **unsettled**.
 
-## service
-
-- vt. 为...提供服务
-- n. 服务；国家政府部门
-- serve
-    - v. 为（人、机构）服务；上（食物、饮料）；对...有用；履行义务；可用作
-    - serve as 充当...；作为...使用；担任...
-    - serve on 在...任职/担任...成员
-    - serve + abstract noun(抽象名词) 为...服务/投身于...
-    - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
-    - When you **serve** your passions, proficiency *gradually(adv. 逐渐地)* takes over and becomes
-      *habitual([həˈbɪtʃuəl] adj. 习惯性的)*.
-        - gradually takes over 慢慢地、不知不觉地占据主导地位
-- servant [ˈsɜːrvənt]
-    - n. 仆人
-    - public/civil([ˈsɪvl]) servant 公务员
-- deserve
-    - v. 值得
-    - You **deserve** it.
-    - We **deserve** things based on our actions.
-    - For example, many people believe *murderers([ˈmɜːrdərər])* **deserve** the death *penalty([ˈpenəlti] n. 刑罚)*.
-- observe
-    - vt. 观察；注意到
-    - Their capacity for tolerating stress may even be greater than men's, she **observed**.
-    - observation
-        - n. 观察；评论
-        - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
-    - observer n. 观察者
-- preserve [prɪˈzɜːrv]
-    - vt. 维护；保护
-    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
-      *creatures(['kritʃəz] n. 生物)* **preserve** the health of *game(n. 猎物)* by killing the physically weak, or that
-      they prey only on "worthless" species.
-        - prey on 捕食；掠夺
-- reserve
-    - vt. 保留；预定
-        - == book
-    - n. ...保护区；...储备量
-    - nature reserves 自然保护区
-    - massive financial reserves 庞大的财务储备
-- conservation
-    - n. 节约；保护
-    - conservative [kənˈsɜːrvətɪv]
-        - adj. 保守的；英国保守党的
-
 ## Words
 
 - A outweigh B
@@ -234,24 +189,6 @@
 - doom
     - v. 注定; 使在劫难逃
     - n. 厄运，劫数，毁灭; 悲观，沮丧
-- strategic [strəˈtiːdʒɪk]
-    - adj. 战略（上）的; 战略性的; 有战略意义的; 至关重要的
-- advent [ˈædvent]
-    - n. 出现，到来，问世
-- accurate [ˈækjərət]
-    - adj. 正确的，精确的; 精准的
-- handsome
-    - adj. 慷慨的；丰厚的；可观的；英俊的
-    - He receives a **handsome** reward.
-    - 熟词僻义：修饰人和物感情色彩一致
-- declare
-    - v. 宣称; 表明; 断言; 公布; 申报; （在击球员还未全部出局时）宣布结束赛局
-- contrast
-    - v. 对比; 显出明显的差异
-    - n. 悬殊; 形成对比
-- strike [straɪk]
-    - v. 碰撞; 打; 突击; 侵袭; 给人…印象; 罢工
-    - n. 罢工; 袭击
 
 ## 词组
 
