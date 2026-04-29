@@ -12,6 +12,21 @@ export function createFileUseCases(deps) {
     getUi
   } = deps;
 
+  function syncActiveFileInList(container, currentPath) {
+    if (!container || !currentPath) return false;
+    const activeItems = container.querySelectorAll ? container.querySelectorAll('.file-item.active') : [];
+    activeItems.forEach((el) => el.classList.remove('active'));
+
+    const exact = container.querySelector
+      ? container.querySelector(`.file-item[data-action="select-file"][data-path="${currentPath}"]`)
+      : null;
+    if (exact) {
+      exact.classList.add('active');
+      return true;
+    }
+    return false;
+  }
+
   async function loadRootFolders(forceRefresh = false, ui = null) {
     const targetUi = getUi(ui);
     try {
@@ -59,7 +74,11 @@ export function createFileUseCases(deps) {
       currentContent.includes('加载文件夹') ||
       currentContent.includes('正在加载文件列表')) {
       await loadRootFolders(false, targetUi);
+      return;
     }
+
+    // Keep the browsed folder view, but always sync active highlight to current file.
+    syncActiveFileInList(targetUi.fileListContainer, state.currentPath || '');
   }
 
   async function loadFile(path, ui = null) {

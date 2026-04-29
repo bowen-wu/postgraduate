@@ -9,6 +9,32 @@ import { StorageRepo } from '../infrastructure/storage-repo.js';
 import { toServiceError } from '../infrastructure/service-error.js';
 
 export class GitHubApi {
+  static compareUnitAwareName(a, b) {
+    const getParts = (name) => {
+      const base = String(name || '').replace(/\.md$/i, '');
+      const match = base.match(/^Unit(\d+)(?:-(\d+))?$/i);
+      if (!match) return null;
+      return {
+        unit: Number(match[1]),
+        sub: match[2] ? Number(match[2]) : null
+      };
+    };
+
+    const aParts = getParts(a);
+    const bParts = getParts(b);
+    if (aParts && bParts) {
+      if (aParts.unit !== bParts.unit) return aParts.unit - bParts.unit;
+      if (aParts.sub === null && bParts.sub !== null) return -1;
+      if (aParts.sub !== null && bParts.sub === null) return 1;
+      if (aParts.sub !== null && bParts.sub !== null && aParts.sub !== bParts.sub) {
+        return aParts.sub - bParts.sub;
+      }
+      return String(a).localeCompare(String(b), 'en');
+    }
+
+    return String(a).localeCompare(String(b), 'en', { numeric: true, sensitivity: 'base' });
+  }
+
   static getCacheKey(path) {
     return `${CONFIG.cacheKey}_${path || 'root'}`;
   }
@@ -106,14 +132,16 @@ export class GitHubApi {
       item.name.endsWith('.md') &&
       item.name !== 'template.md' &&
       item.name !== 'basic.md'
-    );
+    ).sort((a, b) => this.compareUnitAwareName(a.name, b.name));
   }
 
   static filterFolders(items) {
     if (!Array.isArray(items)) {
       return [];
     }
-    return items.filter(item => item.type === 'dir');
+    return items
+      .filter(item => item.type === 'dir')
+      .sort((a, b) => this.compareUnitAwareName(a.name, b.name));
   }
 
   static async fetchFolderContents(path, forceRefresh = false) {
