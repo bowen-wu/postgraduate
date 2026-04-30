@@ -23,19 +23,20 @@
 - n. 服务；国家政府部门
 - serve
     - v. 为（人、机构）服务；上（食物、饮料）；对...有用；履行义务；可用作
-    - serve as 充当...；作为...使用；担任...
-    - serve on 在...任职/担任...成员
-    - serve + abstract noun(抽象名词) 为...服务/投身于...
+    - 词组
+        - serve as 充当...；作为...使用；担任...
+        - serve on 在...任职/担任...成员
+        - serve + abstract-noun 为...服务/投身于...
     - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
     - When you **serve** your passions, proficiency *gradually(adv. 逐渐地)* takes over and becomes
       *habitual([həˈbɪtʃuəl] adj. 习惯性的)*.
         - gradually takes over 慢慢地、不知不觉地占据主导地位
 - servant [ˈsɜːrvənt]
     - n. 仆人
-    - public/civil([ˈsɪvl]) servant 公务员
+    - public/civil servant 公务员
 - deserve
     - v. 值得
-    - You **deserve** it.
+    - YOU **DESERVE** IT.
     - We **deserve** things based on our actions.
     - For example, many people believe *murderers([ˈmɜːrdərər])* **deserve** the death *penalty([ˈpenəlti] n. 刑罚)*.
 - observe
@@ -53,8 +54,8 @@
         - prey on 捕食；掠夺
 - reserve
     - vt. 保留；预定
-        - == book
     - n. ...保护区；...储备量
+    - == book
     - nature reserves 自然保护区
     - massive financial reserves 庞大的财务储备
 - conservation
@@ -70,8 +71,8 @@
     - in one's view 依某人的观点
     - point of view 观点
     - take a longer view 从更长远的角度来看
-- view A as B 把 A 视为 B/将 A 看作 B
-- in my view 在我看来
+    - view A as B 把A视为B/将A看作B
+    - in my view 在我看来
 - viewpoint n. 观点；角度
 - interview
     - vt. 采访
@@ -85,20 +86,21 @@
     - n. 评审；评论；回顾
     - reviewer n. 评论家
     - arts/film review
-    - revise(有修改) VS. review(无修改)
-        - revise
-            - vt. 修订; 改变; 修正; [主英国英语]复习
-            - vi. 修订，校订
+    - revise
+        - vt. 修订; 改变; 修正; [主英国英语]复习
+        - vi. 修订，校订
+    - Contrast: revise(有修改) vs. review(无修改)
         - With time he came to <ins>**revise/review**</ins> his opinion of the *profession(n. 职业)*.
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
         - A doctor might <ins>revise/review</ins> your *medical([ˈmedɪkl])* record to help diagnose your sickness.
 - perspective [pərˈspektɪv]
     - n. 观点
-    - from my perspective 从我的角度来看/在我看来/就我个人的看法
-        - == in my view
-        - == in my opinion
+    - 词组
+        - from my perspective 从我的角度来看/在我看来/就我个人的看法
+            - == in my view
+            - == in my opinion
     - They cross-check sources and prefer news from different **perspectives**.
-        - prefer A from B 从某个来源或角度来看，偏好 A
+        - prefer A from B 从某个来源或角度来看，偏好A
 - landscape n. 风景（自然）；乡村风景画
 - prospect
     - vi. 勘探
@@ -107,7 +109,9 @@
       humanity would never have progressed.
     - retrospect [ˈretrəspekt]
         - v. 回顾
-        - in retrospect == looking back 回首、回头看、回想起来
+        - 词组
+            - in retrospect
+                - == looking back 回首、回头看、回想起来
         - One day, <in>in **retrospect**</in>, the years of struggle will <ins>strike you as the most beautiful<ins>.
             - strike someone as something(strike + 人 + as + 形容词/名词) 给人...印象/让某人觉得...
     - introspect [ˌɪntrə'spekt] v. 内省，内观
@@ -115,8 +119,8 @@
 ## keep
 
 - v. 保持；继续；抑制
-- keep one’s end up 支撑自己的职责/做好自己的工作/不掉队
 - 词组
+    - keep one's end up 支撑自己的职责/做好自己的工作/不掉队
     - keep an eye on 留意，密切关注
         - == keep an eye out for
     - keep away (from) 远离；不让接近
@@ -135,8 +139,7 @@
     - vt. 保持
     - vi. 停留
     - n. 停留
-    - stay + adj.
-        - stay positive/focused/strong
+    - STAY POSITIVE/FOCUSED/STRONG 充当系动词，stay + adj.
     - 词组
         - stay away from 远离；离开
         - stay off 远离；关闭
@@ -151,16 +154,25 @@
         - remain steady 保持平稳
 - abide [əˈbaɪd]
     - v. 容忍，遵守
-    - **Abide** *by* the law
-    - **abide** means "**to be able to live with or put up with**".
+    - **ABIDE** *BY* THE LAW.
+    - **Abide** means "**to be able to live with or put up with**".
     - I can't **abide** people who can't make up their minds.
     - ...it *announced(v. 宣布)* it was *reneging([rɪˈnɪgɪŋ] v. 违约)* on a longstanding commitment to
       **abide by/follow** the state's strict nuclear regulations.
-      它宣布将违背此前长期承诺的内容，即遵守该州严格的核能法规
-      它宣布不再履行长期以来遵守该州严格核能法规的承诺
 
 ## Words
 
+- dwell [dwel]
+    - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
+    - Don't **dwell** on the past.
+- gloom [ɡluːm]
+    - n. 昏暗，阴暗; 忧郁
+    - == doom
+        - v. 注定; 使在劫难逃
+        - n. 厄运，劫数，毁灭; 悲观，沮丧
+- doom
+    - v. 注定; 使在劫难逃
+    - n. 厄运，劫数，毁灭; 悲观，沮丧
 - strategic [strəˈtiːdʒɪk]
     - adj. 战略（上）的; 战略性的; 有战略意义的; 至关重要的
 - advent [ˈædvent]
@@ -169,5 +181,7 @@
     - adj. 正确的，精确的; 精准的
 
 ## 词组
+
+- A outweigh B
 
 ## 句式

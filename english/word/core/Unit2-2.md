@@ -151,7 +151,7 @@
 
 - [dɪˈsaɪd]
 - v. 决定
-- decision n. 决定
+- decision n. 决定；裁决
 - 词组
     - decision on/about sth. 关于某事的决定
     - make/take a decision 做决定

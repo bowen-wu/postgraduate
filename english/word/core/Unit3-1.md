@@ -25,17 +25,16 @@
     - as a result 结果是
     - as a result of
         - 结果是；由于...的原因
-        - **R(结果)** as a result of C(原因)
+    - R result from C
+        - == originate from
+        - == spring from
+        - == *derive([dɪˈraɪv] v. 从...衍生出；起源于)* from
+        - == *stem([stem] vi. 起源于)* from
     - result from
         - 由...引起
-    - **R(结果)** result from C(原因)
-        - == originate([əˈrɪdʒɪneɪt]) from
-        - == spring from
-        - == derive([dɪˈraɪv] v. 从...衍生出；起源于) from
-        - == stem([stem] vi. 起源于) from
     - result in
         - 造成...结果, 导致
-    - R result in **C(结果)**
+    - C result in R
         - == R cause C == R lead to C
 - As a result, that...
 - Cooperation and sharing can **result from** either *sympathy([ˈsɪmpəθi] n. 同情)* or *guilt([ɡɪlt])*.
@@ -59,7 +58,7 @@
     - **Courtship** is somewhat vocal with a lot of displaying by the male.
 - defense
     - n. 辩护；防御（物）；保护；（Defense）国防机构
-    - defend v. v. 防御；保卫；防守；替…辩护；辩解
+    - defend v. 防御；保卫；防守；替...辩护；辩解
     - defendant [dɪˈfendənt]
         - n. 被告
         - plaintiff [ˈpleɪntɪf] n. <律>原告
@@ -71,8 +70,8 @@
     - prosecution n. 起诉；原告方
     - prosecutor n. 检察官；公诉人
     - persecute [ˈpɜːrsɪkjuːt]
-        - v. **迫害**；残害
-        - Weaver and his family have been **persecuted** by the authorities for their beliefs([bɪ'lifs] n. 信仰).
+        - v. 迫害；残害
+        - Weaver and his family have been **persecuted** by the authorities for their *beliefs([bɪ'lifs] n. 信仰)*.
 - judge
     - v. 判断
     - n. 法官；裁判员
@@ -81,24 +80,27 @@
 - appeal
     - v. 吸引；上诉；呼吁，恳求
     - n. 吸引；上诉；呼吁，恳求
+    - 词组
+        - appeal to 吸引
+        - appeal to sb. for sth. 请求/呼吁某人给予某物
     - Court Of Appeals
-    - above to 吸引
-    - appeal to sb for sth 请求/呼吁某人给予某物
     - <ins>Above all(最重要的是)</ins>, the dress does **appeal** to her.
     - He will **appeal** to the state for an extension of unemployment benefits.
     - Despite the **appeals** court's decision, big questions remain unanswered.
-        - decision n. 裁决
+        - decision n. 决定；裁决
             - == ruling == verdict
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释
-    - plead with sb. 恳求某人
-        - To **plead with** someone is to try to *convince([kənˈvɪns] v. 说服)* them to see it your way.
-        - Your kids **plead with** you to let them go on the super-huge *outrageous([aʊtˈreɪdʒəs] adj. 极限的)*
-          *roller coaster(过山车)* built in 1968, but you know better.
-    - plead for 恳求；呼吁
-        - Only Ukip, *sensing([sensɪŋ] n. 感觉)* its chance, <ins>has sided with(支持...)</ins> those **pleading for** a
-          more considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
+    - 词组
+        - plead with sb. 恳求某人
+        - plead for 恳求；呼吁
+    - To **plead with** someone is to try to *convince([kənˈvɪns] v. 说服)* them to see it your way.
+    - Your kids **plead with** you to let them go on the super-huge *outrageous([aʊtˈreɪdʒəs] adj. 极限的)* roller
+      coaster built in 1968, but you know better.
+        - roller coaster 过山车
+    - Only Ukip, *sensing([sensɪŋ] n. 感觉)* its chance, <ins>has sided with(支持...)</ins> those **pleading for** a
+      more considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
 
 ## market
 
@@ -111,8 +113,8 @@
     - adj. 价格低廉的
     - A **budget** is telling your money where to go instead of wondering where it went.
     - an unbalanced budget 不均衡的预算
-    - annual([ˈænjuəl]) budget 年度预算
-    - a tight/loose([luːs]) budget 预算紧张/宽松
+    - annual budget 年度预算
+    - a tight/loose budget 预算紧张/宽松
 - levy [ˈlevi]
     - vt. 征收；征税
     - n. 税款
@@ -141,23 +143,23 @@
     - replacement n. 替代品
 - misplaced [ˌmɪsˈpleɪst] 😔
     - adj. 不合时宜的
-    - misplaced anxiety([æŋˈzaɪəti]) 不该有的焦虑 😔
-    - But such gloominess(['ɡlumɪnəs] n. 黑暗，沮丧) is **misplaced**. 🙂
+    - misplaced anxiety 不该有的焦虑 😔
+    - But such *gloominess(['ɡlumɪnəs] n. 黑暗，沮丧)* is **misplaced**. 🙂
 - substitute [ˈsʌbstɪtuːt]
     - v. 以...代替
     - n. 替代者
     - == alternative
     - Something or someone that takes the place of another is said to be a **substitute**.
     - You may be sent into a game as a <ins>**substitute** for</ins> an *injured([ˈɪndʒərd] adj. 受伤的)* player.
-    - There is no <ins>**substitute** for</ins> hard work.
+    - There is no **substitute** for hard work.
 
 ## set
 
 - vt. 确定；使处于某种状态；创立；放
 - n. 一组
 - adj. 套；安排好的
-- You can do anything you <ins>**set** your mind to</ins>.
-- **set** your mind to sth. 下定决心去做某事/专心致志于某事/全力以赴做某事
+- You can do anything you **set** your mind to.
+    - set your mind to sth. 下定决心去做某事/专心致志于某事/全力以赴做某事
 - 词组
     - set sb./sth. apart 使与众不同，使突出
     - set sth. aside 把...放到一旁；留出（钱或时间）；暂时不考虑...
@@ -188,18 +190,6 @@
         - If you've just moved and started at a new school, your whole life may feel **unsettled**.
 
 ## Words
-
-- A outweigh B
-    - A比B重要
-- dwell [dwel]
-    - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
-    - Don't **dwell** on the past.
-- gloom [ɡluːm]
-    - == doom
-    - n. 昏暗，阴暗; 忧郁
-- doom
-    - v. 注定; 使在劫难逃
-    - n. 厄运，劫数，毁灭; 悲观，沮丧
 
 ## 词组
 

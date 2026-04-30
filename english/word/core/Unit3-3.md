@@ -141,9 +141,8 @@
 ## Words
 
 - handsome
-    - adj. 慷慨的；丰厚的；可观的；英俊的
+    - adj. 慷慨的；丰厚的；可观的；英俊的（熟词僻义：修饰人和物感情色彩一致）
     - He receives a **handsome** reward.
-    - 熟词僻义：修饰人和物感情色彩一致
 - declare
     - v. 宣称; 表明; 断言; 公布; 申报; （在击球员还未全部出局时）宣布结束赛局
 - contrast
