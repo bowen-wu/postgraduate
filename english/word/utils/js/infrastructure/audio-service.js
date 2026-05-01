@@ -102,7 +102,21 @@ export async function playWordWithFallback(word, hooks = {}) {
 }
 
 function normalizeText(text) {
-  return text.replace(/sth\./g, 'something').replace(/sb\./g, 'somebody');
+  return String(text || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<\/p>/gi, ' ')
+    .replace(/<p[^>]*>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&emsp;|&#8195;|&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/sth\./g, 'something')
+    .replace(/sb\./g, 'somebody')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function getSourceTimeoutForText(text) {
