@@ -31,3 +31,19 @@ test('generateDisplayOrder randomAll keeps all indices', () => {
   assert.deepEqual(sortedOrder, [0, 1, 2, 3]);
   assert.equal(order.length, cards.length);
 });
+
+test('generateDisplayOrder keeps writing cards at the end in all modes', () => {
+  const cards = [
+    { id: 'card_0', type: 'word' },
+    { id: 'writing_W001', type: 'sentence' },
+    { id: 'card_2', type: 'phrase' },
+    { id: 'writing_W041', type: 'sentence' }
+  ];
+
+  const modes = ['sequential', 'randomByType', 'randomAll'];
+  for (const mode of modes) {
+    const order = generateDisplayOrder(cards, mode);
+    const tail = order.slice(-2);
+    assert.deepEqual(tail, [1, 3], `writing cards should stay at end in mode ${mode}`);
+  }
+});

@@ -7,28 +7,42 @@ function shuffle(array) {
   return arr;
 }
 
+function isWritingCard(card) {
+  if (!card) return false;
+  if (typeof card.id === 'string' && card.id.startsWith('writing_')) return true;
+  return false;
+}
+
 export function generateDisplayOrder(cards, orderMode) {
   const indices = cards.map((_, i) => i);
+  const writingIndices = [];
+  const regularIndices = [];
+  indices.forEach((idx) => {
+    if (isWritingCard(cards[idx])) writingIndices.push(idx);
+    else regularIndices.push(idx);
+  });
 
   switch (orderMode) {
     case 'sequential':
-      return indices;
+      return [...regularIndices, ...writingIndices];
     case 'randomByType': {
       const byType = { prefix: [], word: [], phrase: [], sentence: [], contrast: [] };
-      cards.forEach((card, i) => {
-        if (byType[card.type]) byType[card.type].push(i);
+      regularIndices.forEach((idx) => {
+        const card = cards[idx];
+        if (byType[card.type]) byType[card.type].push(idx);
       });
       return [
         ...shuffle(byType.prefix),
         ...shuffle(byType.word),
         ...shuffle(byType.phrase),
         ...shuffle(byType.sentence),
-        ...shuffle(byType.contrast)
+        ...shuffle(byType.contrast),
+        ...writingIndices
       ];
     }
     case 'randomAll':
-      return shuffle(indices);
+      return [...shuffle(regularIndices), ...writingIndices];
     default:
-      return indices;
+      return [...regularIndices, ...writingIndices];
   }
 }
