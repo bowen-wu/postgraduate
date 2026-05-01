@@ -17,6 +17,16 @@
 - C: Cause
 - R: Result
 
+## philosophy
+
+- [fəˈlɑːsəfi]
+- n. 哲学
+- Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
+  material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous experiences—music,
+  literature, religion and **philosophy**.
+- philosopher [fəˈlɑːsəfər] n. 哲学家
+- philosophical [ˌfɪləˈsɑːfɪkl] adj. 哲学的
+
 ## worsen 😔
 
 - [ˈwɜrsn]
@@ -148,27 +158,6 @@
     - intelligence
         - n. 智力
         - Artificial Intelligence(AI) 人工智能
-
-## profound
-
-- adj. 深远的；高深的
-- Her speech made a **profound** impact on everyone.
-- Chinese tea culture is both extensive and **profound**.
-- profoundly adv. 深刻地
-- sweeping [ˈswipɪŋ]
-    - adj. 一概而论的；范围广的；影响大的；彻底的
-    - Something that's **sweeping** is **wide-ranging or through**.
-    - A political candidate might campaign on promises to bring **sweeping** change to a country.
-    - California has asked the justices to refrain from a **sweeping** ruling...
-        - refrain [rɪˈfreɪn]
-            - vi. 避免；克制；制止
-            - n. 经常重复的评价（或抱怨）；老话，陈词滥调
-    - sweep
-        - v. 扫视；席卷，迅速蔓延；打扫，清除
-        - He was **sweeping** his floor when she walked in.
-        - This fashion is **sweeping** the country.
-        - Memories came **sweeping** back.
-        - Football *mania([ˈmeɪniə] n. 狂热)* is **sweeping** the country.
 
 ## Words
 

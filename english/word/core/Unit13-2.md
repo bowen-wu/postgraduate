@@ -17,6 +17,44 @@
 - C: Cause
 - R: Result
 
+## desire
+
+- [dɪˈzaɪər]
+- vt. 渴望
+- n. 渴望
+- desire to do sth.
+- desirable
+    - adj. 令人向往的；值得拥有的
+    - ...the career office found the most **desirable** trait in a future employer was the ability to offer secure
+      employment.
+    - undesirable
+        - adj. 不受欢迎的，讨厌的; 不合需要的; 不方便的; 不良的
+        - n. 不受欢迎的人; 不良分子
+- eager [ˈiːɡər]
+    - adj. 热切的；渴望的
+    - == desirable
+    - eagerness n. 渴望
+- aspire [əˈspaɪər]
+    - v. 渴望
+    - == desire
+    - aspire to do sth 渴望/立志去做某事（正式、理想性）
+    - Americans no longer expect public figures, whether in speech or in writing, to *command(vt. 掌握)* the English
+      language with skill and gift. *Nor* do they **aspire** to such *command(n. 掌握的能力)* themselves.
+    - aspiration [ˌæspəˈreɪʃn] n. 抱负；志向
+- appetite [ˈæpɪtaɪt]
+    - n. 胃口，食欲；欲望（== desire）
+    - He has such an **appetite** for delicious food.
+    - Since technology has such an *insatiable([ɪnˈseɪʃəbl])* **appetite** for eating up human jobs, this phenomenon
+      will continue to *restructure([riˈstrʌktʃɚ])* our economy...
+- expect
+    - v. 预料；期待
+    - expect to do sth.
+    - expectation
+        - n. 期望
+        - The new *vaccine([vækˈsiːn])*, which is different from the annual flu vaccine, is available ahead of *
+          *expectations**.
+    - unexpected adj. 意外的
+
 ## direct
 
 - vt. 指导；把...对准；管理
@@ -141,39 +179,7 @@
         - n. 充裕；大量；丰富
         - *Elegance(n. 优雅)*, he believed, did not <ins>derive from</ins> **abundance**.
 
-## ideal
-
-- adj. 理想的
-- n. 理想；完美的人（或事物）；典范
-- What is your **ideal** vacation spot?
-- idealised
-    - adj. 理想化的
-    - In the **idealized** version of how science is done, facts about the world are waiting to be *observed* and
-      collected by objective researchers who use the scientific method to <ins>carry out(执行；实施；贯彻；完成)</ins>
-      their work.
-
-## perform
-
-- vt. 执行
-- vi. 表现
-- v. 表演
-- Studies from the United States and Australia show that students who *take a gap year* are generally better prepared
-  for and **perform** better in college than those who do not.
-- performance
-    - n. 表演；业绩；表现
-    - performance bonus([ˈboʊnəs]) 绩效奖金
-- performer n. 演员
-
 ## Words
-
-- turbulent [ˈtɜːrbjələnt]
-    - adj. 骚乱的，混乱的; 激流的，湍流的; 吵闹的; 强横的
-- conflicting [kənˈflɪktɪŋ]
-    - adj. 相矛盾的，冲突的
-- absent-minded [ˌæbsəntˈmaɪndɪd]
-    - adj. 心不在焉的，健忘的
-- half-hearted [ˈhæfˈhɑrtɪd]
-    - adj. 粗心的; 没精打采的，缺乏热情的; 并非真心的; 半心半意的
 
 ## 词组
 

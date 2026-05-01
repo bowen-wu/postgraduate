@@ -143,16 +143,6 @@
         - A, instead, B B是重点
         - fuss over sth. 为...过度操心/瞎折腾/小题大做
 
-## philosophy
-
-- [fəˈlɑːsəfi]
-- n. 哲学
-- Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
-  material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous experiences—music,
-  literature, religion and **philosophy**.
-- philosopher [fəˈlɑːsəfər] n. 哲学家
-- philosophical [ˌfɪləˈsɑːfɪkl] adj. 哲学的
-
 ## Words
 
 - gratitude

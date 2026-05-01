@@ -17,6 +17,52 @@
 - C: Cause
 - R: Result
 
+## permit
+
+- [pərˈmɪt]
+- v. 允许
+- n. 许可证
+- permission n. 准许
+- permissive 😔
+    - adj. 纵容的
+    - Authoritative parents are more likely than **permissive** parents to have children who as
+      *adolescents([ˌædəˈlesnt] n. 青少年)* are self-confident, high in self-esteem, and responsibly independent.
+- admission n. 准许进入
+- license
+    - vt. 批准
+    - n. 执照
+    - == permit
+
+## modest
+
+- [ˈmɑːdɪst]
+- adj. 适度的；谦虚的；普通的；较少的
+- He lives on a **modest** income.
+    - live on + noun 靠...生活/以...为生
+- Politicians have repeatedly "backloaded" public-sector pay deals, keeping the pay increase
+  **modest** but adding to holidays and especially pensions that are already generous.
+    - public-sector pay deals 公共部门薪酬协议
+- moderate
+    - v. （使）缓和
+    - adj. 适度的；合理的
+    - == modest
+    - moderation n. 适度; 自我节制; 稳定，镇定
+
+## proportion
+
+- n. 部分；比例
+- The **proportion** of Spring Festival gifts **accounted for/occupy** 40 percent.
+    - account for
+        - == occupy [ˈɑːkjupaɪ] vt. 占据（空间、面积、时间等）
+- disproportionately [ˌdɪsprə'pɔʃənətlɪ]
+    - adv. 不成比例地；不匀称，不相称
+    - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
+      middle class **disproportionately squeezed**.
+- percent
+    - n. 百分比
+    - percentage
+        - n. 百分比
+        - == proportion
 
 ## schedule
 

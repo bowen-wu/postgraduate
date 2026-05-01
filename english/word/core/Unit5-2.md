@@ -17,100 +17,6 @@
 - C: Cause
 - R: Result
 
-## provide
-
-- vt. 提供
-- 提供某物给某人
-    - provide sb. with sth.
-    - provide sth. to sb.
-- provide an adequate([ˈædɪkwət]) service 提供足够的服务
-- provide digital([ˈdɪdʒɪtl]) service
-- provider n. 提供者
-- provision
-    - n. 规定，条款；供应品
-    - == rule
-- provided/providing
-    - conj. 假如
-    - == if
-    - ***Providing that*/If** you finish your homework by this evening, you can have tomorrow off.
-- offer
-    - vt. 提出；提供（东西或机会）；报价
-    - n. 提供（物）
-    - offer sb. sth.
-    - offer sth. to sb.
-- supply
-    - vt. 提供
-    - n. 供应
-    - supple sb. with sth.
-    - supplement
-        - vt. 补充
-        - n. 补充（物）；（报纸的）增刊
-- render
-    - vt. 使变得；提供
-    - == make
-    - Render is a synonym of "**make**"-technically it means "**cause to become**".
-    - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you
-      speechless.
-    - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering(n. 痛苦; 受苦)
-      is inevitable([ɪnˈevɪtəbl] adj. 不可避免的), but the courage([ˈkɜːrɪdʒ] n. 勇气; 无畏) to fight it
-      **renders/makes** life worth living.
-      人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
-- complementary adj. 补充的
-
-## turn
-
-- v. 转身；（使）变成
-- n. （依次轮到的）机会
-- 词组
-    - in turn 反过来，转而；相应地
-    - turn to sb. 向某人求助
-    - turn back 返回
-    - turn out 结果是
-    - turn on sth. 取决于...
-    - take turns (to do sth.) 轮流（做某事）
-    - the turn of sth. （某事的）转折点
-    - turn sb./sth. (from sth.) into sth. 使...（从...）变成...
-- turnaround n. （观点、态度或方法的）彻底转变；周转期
-- turnover
-    - n. （人员的）流动率；货物周转率；营业额
-    - CEO turnover
-- downturn
-    - n. （商业经济的）衰退
-    - 经济衰退
-        - economic depression/downturn/recession/slowdown/stagnation([stæɡˈneʃən] n. 淤塞，停滞; 不景气)/decline
-    - 经济繁荣
-        - economic boom/prosperity
-- overturn
-    - vt. 推翻（法律裁决）；倾覆
-    - == knock out
-    - uphold vt. 维持（原判、裁决等）
-    - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
-      Supreme Court has **overturned** the corruption( [kəˈrʌpʃn] n. 腐败，贪污) conviction([kənˈvɪkʃn] n. 判罪) of a
-      former Virginia governor, Robert MacDonnell.
-
-## consider
-
-- v. 考虑；细想
-- vt. 认为
-- consider doing sth.
-- reconsider v. 重新考虑
-- considerable
-    - adj. 相当大（或多、重要等）的
-    - considerably adv. 相当多地
-- considerate adj. 考虑周到的; 体贴的
-- consideration
-    - n. 考虑；必须考虑的事；关心
-    - take sth. into consideration/account 把某事考虑在内
-        - Taking all these factors into consideration...
-- contemplate [ˈkɑːntəmpleɪt]
-    - vt. **深思熟虑**；考虑；沉思
-    - == consider
-    - If you **contemplate** something, you **think about it carefully**.
-    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate**
-      the <ins>pros and cons(优点和缺点)</ins> of your decision.
-        - pros == advantages（优点，好处）
-        - cons == disadvantages（缺点，坏处）
-
 ## political
 
 - [pəˈlɪtɪkl]
@@ -218,6 +124,64 @@
 - watershed [ˈwɔtərʃed]
     - n. 分水岭
     - World War II was the **watershed** event for higher education in modern Western societies.
+
+## improve
+
+- v. 改善；提高
+- == enhance == elevate
+- be improved 得到改善/被完善
+- improvement
+    - n. 改善
+    - There's always room for **improvement**.
+- enhance
+    - vt. 提高
+    - enhancement n. 提高
+    - enhancer n. 增强剂
+- elevate
+    - vt. 提升
+    - elevator n. 电梯
+    - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
+      a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
+        - Even better would be to... 更好的做法/选择是... => 倒装句
+        - help do sth./help sb. do sth. 帮助做某事
+- augment [ɔːɡˈment]
+    - vt. 增加，提高
+    - **Augmented** Reality 增强现实 AR
+- heighten [ˈhaɪtn]
+    - v. （使）增加
+    - high adj. 高的
+    - height n. 高度; 高
+
+## measure
+
+- vt. 衡量
+- n. 测量；衡量；措施
+- If you can not **measure** it, you can not improve it.
+- measurement n. 测量
+- degree
+    - n. **程度**；学位；级别
+    - college degree 大学学位
+    - bachelor's degree 学士学位
+    - master's degree 研究生学位
+    - doctoral degree 博士学位
+    - 词组
+        - to some degree 在某种程度上
+        - to a certain degree 在一定程度上
+- rate
+    - vt. 对...作评估；认为...非常好
+    - n. 率；速度；费用；比率
+    - 词组
+        - at any rate 无论如何
+    - To **rate** the instructor's overall effectiveness.
+    - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
+      depression, double the **rate** for working Americans.
+- scale
+    - vt. 缩减
+    - n. 规模；秤；等级体系
+    - 词组
+        - scale back 缩减
+        - scale up 增大，扩大（规模或数量）
+- dimension [dɪˈmenʃn] n. 维度；方面
 
 ## Words
 

@@ -15,6 +15,46 @@
 - [ə] -> 额(e)
 - 破折号: —
 
+## ambiguous
+
+- [æmˈbɪɡjuəs]
+- adj. 模棱两可的
+- == obscure == vague == dim == blur
+- ambiguity [ˌæmbɪˈɡjuːəti]
+    - n. 模棱两可
+    - It's a work of paradox and **ambiguity**.
+- obscure [əbˈskjʊr]
+    - v. 使...模糊，蒙蔽
+    - adj. 鲜为人知的；费解的；昏暗的，模糊的
+    - if something is **obscure**, it's vague and hard to see.
+    - That might seem rather an **obscure** point...
+    - These figures **obscure** the fact that lots of older people live in great poverty.
+    - The trend in sports, though, may be **obscuring** an unrecognized reality: Americans have generally stopped
+      growing.
+    - The legal issues in the case are **obscure**...
+- vague [veɪɡ]
+    - adj. 含糊的
+    - While the statement is **vague**, it represents one starting point.
+- dim [dɪm]
+    - adj. 迟钝的😔
+    - dimmed adj. 暗淡的，无效的
+- blur [blɜːr]
+    - v. （使）变得模糊不清
+    - blurring of ...的模糊化/混淆
+    - blurring of roles 角色模糊
+    - The **blurring** of working women's role refers to the fact that...
+        - refer to the fact that... 指的是...这一事实
+        - working women 职业女性
+- navigate
+    - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
+    - Many first-generation students "struggle to **navigate** the middle-class culture of higher education, learn
+      the 'rules of the game', and take advantage of college resources", they write.
+        - struggle to do sth. 努力去做某事/挣扎去做某事
+        - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
+        - navigate + 抽象事物 navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
+            - navigate + 社会环境/文化/系统/bureaucracy
+                - bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
+
 ## counter
 
 - v. 反驳
@@ -125,66 +165,7 @@
     - adj. 外部的
     - We cannot choose our **external** circumstances, but we can always choose how we respond to them.
 
-## permit
-
-- [pərˈmɪt]
-- v. 允许
-- n. 许可证
-- permission n. 准许
-- permissive 😔
-    - adj. 纵容的
-    - Authoritative parents are more likely than **permissive** parents to have children who as
-      *adolescents([ˌædəˈlesnt] n. 青少年)* are self-confident, high in self-esteem, and responsibly independent.
-- admission n. 准许进入
-- license
-    - vt. 批准
-    - n. 执照
-    - == permit
-
-## modest
-
-- [ˈmɑːdɪst]
-- adj. 适度的；谦虚的；普通的；较少的
-- He lives on a **modest** income.
-    - live on + noun 靠...生活/以...为生
-- Politicians have repeatedly "backloaded" public-sector pay deals, keeping the pay increase
-  **modest** but adding to holidays and especially pensions that are already generous.
-    - public-sector pay deals 公共部门薪酬协议
-- moderate
-    - v. （使）缓和
-    - adj. 适度的；合理的
-    - == modest
-    - moderation n. 适度; 自我节制; 稳定，镇定
-
-## proportion
-
-- n. 部分；比例
-- The **proportion** of Spring Festival gifts **accounted for/occupy** 40 percent.
-    - account for
-        - == occupy [ˈɑːkjupaɪ] vt. 占据（空间、面积、时间等）
-- disproportionately [ˌdɪsprə'pɔʃənətlɪ]
-    - adv. 不成比例地；不匀称，不相称
-    - About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the
-      middle class **disproportionately squeezed**.
-- percent
-    - n. 百分比
-    - percentage
-        - n. 百分比
-        - == proportion
-
 ## Words
-
-- inconvenience [ˌɪnkənˈviːniəns]
-    - n. 不方便; 麻烦; 为难之处; 麻烦事
-    - vt. 给...带来不便; 给...添麻烦; 打扰; 使为难
-- emotionalism [ɪ'moʊʃənəlˌɪzəm]
-    - n. 感情主义
-- explicit [ɪkˈsplɪsɪt]
-    - == direct == clear == express
-    - adj. 明确的
-    - implicit adj. 不直接言明的；内含的
-        - == unclear
-        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
 
 ## 词组
 

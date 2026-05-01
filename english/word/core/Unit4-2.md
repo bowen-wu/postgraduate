@@ -157,6 +157,43 @@
     - In developing counties, the number of mobile users increased sharply from **approximately** less than one billion
       in the year 2000 to four billion in 2008.
 
+## product
+
+- n. 产物；产品
+- I do completely agree that fears are just the **product** of our luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的) imagination.
+- produce
+    - vt. 生产；引起；培养；制作
+    - producer n. 生产商；制片人
+- production n. 生产；产量；产生；制作
+- productive adj. 多产的；富有成效的
+- productivity n. 生产力；生产效率
+- byproduct
+    - n. 副产品
+    - side effect 副作用
+- output
+    - n. 产量；产生；输出
+    - == emission
+    - hourly output 每小时的产量
+    - carbon dioxide([daɪˈɑːksaɪd]) output/emission 二氧化碳排放量
+- yield
+    - vt. 产生（收益、效益等）；出产（作物）
+    - vi. 屈服
+    - n. 产量
+    - If she hopes her new-found fortune(n. 大笔的钱) will **yield/produce lasting feeling of fulfillment**, she could
+      <ins>do worse than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
+        - do worse than do sth. 最好做某事
+- reap
+    - vt. 取得（成果）；收割（庄稼）
+    - We Reap What We Sow. 种瓜得瓜，种豆得豆；自作自受；因果报应
+    - reap the best results 取得最好的结果
+    - reap considerable gains 获得可观的收益
+        - considerate vs considerable
+            - considerate
+                - adj. 考虑周到的; 体贴的
+                - == kind
+                - It is so considerate of you
+            - considerable adj. 相当大/多的
+
 ## Words
 
 - cautious [ˈkɔːʃəs]
@@ -166,12 +203,6 @@
     - v. 瞥见; 开始领悟
 - conclusion
     - n. 结论; 结束; 末尾; 结局; 签订
-- successive [səkˈsesɪv]
-    - adj. 连续的，相继的; 继承的，接替的; 逐次
-- sarcastic [sɑːrˈkæstɪk]
-    - adj. 讥讽的，讽刺的，挖苦的
-- spoil [spɔɪl]
-    - v. 溺爱
 
 ## 词组
 

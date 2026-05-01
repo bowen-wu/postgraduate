@@ -191,36 +191,6 @@
     - One **provision** of the law was to roll back taxes to the 1975 level.
 - item n. 项目；一件商品（或物品）
 
-## technology/tech
-
-- n. 科技
-- tech giants 科技巨头
-- technological adj. 科技的
-- biotech
-    - n. 生物科技
-    - biotech industries 生物技术行业
-    - biotech companies 生物技术公司
-- technique
-    - n. 技术；技巧
-    - == skill
-    - technical adj. 技术的；技巧的
-    - technician [tekˈnɪʃn] n. 技术员
-- craft
-    - vt. 精心制作
-    - n. 技艺；技巧；小船
-    - She **crafted** the chair lovingly.
-    - As Cline is the first to note, it *took* Beaumont decades to perfect her **craft**; her example can't be
-      <ins>knocked off(抄袭，复制)</ins>.
-    - Another approach to getting more done in less time is to rethink how you prioritise your day—in particular how we
-      **craft** our to-do lists.
-    - craftsman
-        - n. 工匠; 手艺人; 名匠; 技工
-        - craftsmanship
-            - n. 技术，技艺; 工力
-            - craftsmanship spirit 工匠精神
-            - Swiss army knife embodies Swiss **craftsmanship**.
-            - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
-
 ## Words
 
 - deposit

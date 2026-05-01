@@ -17,6 +17,14 @@
 - C: Cause
 - R: Result
 
+## nuclear
+
+- adj. 核能的
+- nuclear power 核能
+- core
+    - n. 核心（团体）；（问题的）核心；
+    - adj. 核心的；核心成员的
+
 ## origin
 
 - n. 起源
@@ -168,51 +176,15 @@
     - n. 吸收；同化
     - Now, consider three indices of **assimilation**—language, home ownership and intermarriage.
 
-## aircraft
-
-- n. 飞机
-- flight n. 飞行；航班
-- aerial [ˈeriəl] adj. 航空的
-- astronomer [əˈstrɑːnəmər]
-    - n. 天文学家
-    - astronomy n. 天文学
-    - astronomical [ˌæstrəˈnɑːmɪkl] adj. 天文学的
-- atmosphere [ˈætməsfɪr]
-    - n. 气氛；大气层；空气
-    - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New England
-      an **atmosphere** of <ins>intellectual earnestness(热衷学术)</ins>.
-- space
-    - n. 空间
-    - cyberspace [ˈsaɪbərspeɪs] n. 网络空间
-
-## ancient
-
-- [ˈeɪnʃənt]
-- adj. 古代的；古老的
-- ancestor [ˈænsestər] n. 祖先
-- ancestry [ˈænsestri] n. （统称）祖先
-- descendant [dɪˈsendənt] n. 后代
-
 ## Words
 
-- judgmental
-    - adj. 审判的
-- encouraging
-    - adj. 鼓舞人心的
-- absent
-    - adj. 缺席的
-    - absent-minded adj. 心不在焉的
+- pragmatic [præɡˈmætɪk]
+    - adj. 实际的; 实用主义的; 好管闲事的; 国事的
+- actually
+    - adv. 的确，事实上
 
 ## 词组
 
-- carry forward
-    - 继续推进，使延续
-- be distracted by
-    - 被...分心/因...而注意力分散
-- be involved in
-    - 参与其中，从事
-- be demonstrated by
-    - 被...所证明/被...所展示
 
 ## 句式
 

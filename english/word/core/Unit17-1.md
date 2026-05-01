@@ -117,46 +117,6 @@
     - adj. 巨大的
     - have **gigantic** consequences 产生重大后果
 
-## ambiguous
-
-- [æmˈbɪɡjuəs]
-- adj. 模棱两可的
-- == obscure == vague == dim == blur
-- ambiguity [ˌæmbɪˈɡjuːəti]
-    - n. 模棱两可
-    - It's a work of paradox and **ambiguity**.
-- obscure [əbˈskjʊr]
-    - v. 使...模糊，蒙蔽
-    - adj. 鲜为人知的；费解的；昏暗的，模糊的
-    - if something is **obscure**, it's vague and hard to see.
-    - That might seem rather an **obscure** point...
-    - These figures **obscure** the fact that lots of older people live in great poverty.
-    - The trend in sports, though, may be **obscuring** an unrecognized reality: Americans have generally stopped
-      growing.
-    - The legal issues in the case are **obscure**...
-- vague [veɪɡ]
-    - adj. 含糊的
-    - While the statement is **vague**, it represents one starting point.
-- dim [dɪm]
-    - adj. 迟钝的😔
-    - dimmed adj. 暗淡的，无效的
-- blur [blɜːr]
-    - v. （使）变得模糊不清
-    - blurring of ...的模糊化/混淆
-    - blurring of roles 角色模糊
-    - The **blurring** of working women's role refers to the fact that...
-        - refer to the fact that... 指的是...这一事实
-        - working women 职业女性
-- navigate
-    - vt. 导航；航行；找到正确方法（对付困难、复杂的情况）；驾驭，成功应付(困难处境)
-    - Many first-generation students "struggle to **navigate** the middle-class culture of higher education, learn
-      the 'rules of the game', and take advantage of college resources", they write.
-        - struggle to do sth. 努力去做某事/挣扎去做某事
-        - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）
-        - navigate + 抽象事物 navigate 本意*航行*，引申为*应对、处理（复杂或陌生的环境/系统）*
-            - navigate + 社会环境/文化/系统/bureaucracy
-                - bureaucracy [bjʊˈrɑːkrəsi] n. 官僚制度; 官僚作风; 官僚主义
-
 ## Words
 
 - amendment
@@ -175,6 +135,17 @@
     - adj. 恶性的
 - jealous [ˈdʒeləs]
     - adj. 嫉妒的，猜忌的；唯恐失去的
+- inconvenience [ˌɪnkənˈviːniəns]
+    - n. 不方便; 麻烦; 为难之处; 麻烦事
+    - vt. 给...带来不便; 给...添麻烦; 打扰; 使为难
+- emotionalism [ɪ'moʊʃənəlˌɪzəm]
+    - n. 感情主义
+- explicit [ɪkˈsplɪsɪt]
+    - == direct == clear == express
+    - adj. 明确的
+    - implicit adj. 不直接言明的；内含的
+        - == unclear
+        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
 
 ## 词组
 

@@ -175,27 +175,7 @@
       material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous
       experiences—music, **literature**, religion and *philosophy([fəˈlɑːsəfi] n. 哲学)*.
 
-## nuclear
-
-- adj. 核能的
-- nuclear power 核能
-- core
-    - n. 核心（团体）；（问题的）核心；
-    - adj. 核心的；核心成员的
-
 ## Words
-
-- pragmatic [præɡˈmætɪk]
-    - adj. 实际的; 实用主义的; 好管闲事的; 国事的
-- actually
-    - adv. 的确，事实上
-- stubbornly [ˈstʌbɚnɪ]
-    - adv. 倔强地，顽强地，顽固地
-- delight [dɪˈlaɪt]
-    - vt. 使高兴
-    - n. 高兴；快乐；
-- conceal
-    - vt. 隐藏；隐瞒（信息）
 
 ## 词组
 

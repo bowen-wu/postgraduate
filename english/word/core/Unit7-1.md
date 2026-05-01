@@ -17,6 +17,39 @@
 - C: Cause
 - R: Result
 
+## practice
+
+- [ˈpræktɪs]
+- v. 练习
+- n. 实践；做法；练习；惯例
+- 词组
+    - in practice 在实践中；实际上
+    - common practice 惯例；习惯做法
+    - practice makes perfect 熟能生巧
+- All members of the association adhere to a strict <ins>code of **practice**(行为规范、操作准则)</ins>.
+- malpractice [ˌmælˈpræktɪs]
+    - n. 玩忽职守；不法行为
+    - mal- == 坏、恶😔
+        - malfunction [mælˈfʌŋkʃən]
+            - vi. 失灵; 发生故障
+            - n. 故障; 功能障碍; 失灵
+        - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
+        - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
+    - bene- 🙂
+        - benefit 好处
+- practical
+    - adj. 实际的；实践性的
+    - practical skills 实用性的技能
+    - impractical adj. 不切实际的
+    - practically
+        - adv. 几乎；实际地
+        - **Practically** every week features at least one celebrity mom, or mom-to-be, smiling on the newsstands.
+    - practicality [ˌpræktɪˈkælətɪ] n. 实用性
+- routine
+    - n. 常规，惯例
+    - adj. 常规的，日常的
+    - routinely adv. 例行地
+
 ## comment
 
 - [ˈkɑːment]
@@ -187,22 +220,6 @@
     - cooperation n. 合作
 
 ## Words
-
-- explicit [ɪkˈsplɪsɪt]
-    - == direct == clear == express
-    - adj. 明确的
-    - implicit adj. 不直接言明的；内含的
-        - == unclear
-        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
-- propagate [ˈprɑːpəɡeɪt]
-    - vt. 繁衍，增殖; 使遗传; 扩散; 使蔓延
-    - vi. 繁殖; 扩大; [物] 通过媒介传送
-- aggravate [ˈæɡrəveɪt]
-    - v. 加重; 使恶化; 激怒，惹恼
-    - == worsen [ˈwɜrsn]
-- cooperative
-    - adj. 合作的，协作的; 配合的
-    - n. 合作社，合作机构
 
 ## 词组
 

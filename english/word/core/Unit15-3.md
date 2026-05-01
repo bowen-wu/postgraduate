@@ -17,6 +17,31 @@
 - C: Cause
 - R: Result
 
+## aircraft
+
+- n. 飞机
+- flight n. 飞行；航班
+- aerial [ˈeriəl] adj. 航空的
+- astronomer [əˈstrɑːnəmər]
+    - n. 天文学家
+    - astronomy n. 天文学
+    - astronomical [ˌæstrəˈnɑːmɪkl] adj. 天文学的
+- atmosphere [ˈætməsfɪr]
+    - n. 气氛；大气层；空气
+    - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New England
+      an **atmosphere** of <ins>intellectual earnestness(热衷学术)</ins>.
+- space
+    - n. 空间
+    - cyberspace [ˈsaɪbərspeɪs] n. 网络空间
+
+## ancient
+
+- [ˈeɪnʃənt]
+- adj. 古代的；古老的
+- ancestor [ˈænsestər] n. 祖先
+- ancestry [ˈænsestri] n. （统称）祖先
+- descendant [dɪˈsendənt] n. 后代
+
 ## elite
 
 - [ɪˈliːt]
@@ -117,6 +142,20 @@
 
 ## Words
 
+- stubbornly [ˈstʌbɚnɪ]
+    - adv. 倔强地，顽强地，顽固地
+- delight [dɪˈlaɪt]
+    - vt. 使高兴
+    - n. 高兴；快乐；
+- conceal
+    - vt. 隐藏；隐瞒（信息）
+- judgmental
+    - adj. 审判的
+- encouraging
+    - adj. 鼓舞人心的
+- absent
+    - adj. 缺席的
+    - absent-minded adj. 心不在焉的
 - tyrannical [tɪˈrænɪkəl]
     - adj. 残暴的
 - sharpen [ˈʃɑːrpən]
@@ -124,5 +163,14 @@
     - sharpen the skills 提升技能
 
 ## 词组
+
+- carry forward
+    - 继续推进，使延续
+- be distracted by
+    - 被...分心/因...而注意力分散
+- be involved in
+    - 参与其中，从事
+- be demonstrated by
+    - 被...所证明/被...所展示
 
 ## 句式

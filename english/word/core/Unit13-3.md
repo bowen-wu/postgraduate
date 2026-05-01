@@ -17,6 +17,29 @@
 - C: Cause
 - R: Result
 
+## ideal
+
+- adj. 理想的
+- n. 理想；完美的人（或事物）；典范
+- What is your **ideal** vacation spot?
+- idealised
+    - adj. 理想化的
+    - In the **idealized** version of how science is done, facts about the world are waiting to be *observed* and
+      collected by objective researchers who use the scientific method to <ins>carry out(执行；实施；贯彻；完成)</ins>
+      their work.
+
+## perform
+
+- vt. 执行
+- vi. 表现
+- v. 表演
+- Studies from the United States and Australia show that students who *take a gap year* are generally better prepared
+  for and **perform** better in college than those who do not.
+- performance
+    - n. 表演；业绩；表现
+    - performance bonus([ˈboʊnəs]) 绩效奖金
+- performer n. 演员
+
 ## press
 
 - vt. 敦促
@@ -143,6 +166,15 @@
     - notoriously adv. [贬义]众所周知地，声名狼藉地
 
 ## Words
+
+- turbulent [ˈtɜːrbjələnt]
+    - adj. 骚乱的，混乱的; 激流的，湍流的; 吵闹的; 强横的
+- conflicting [kənˈflɪktɪŋ]
+    - adj. 相矛盾的，冲突的
+- absent-minded [ˌæbsəntˈmaɪndɪd]
+    - adj. 心不在焉的，健忘的
+- half-hearted [ˈhæfˈhɑrtɪd]
+    - adj. 粗心的; 没精打采的，缺乏热情的; 并非真心的; 半心半意的
 
 ## 词组
 

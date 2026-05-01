@@ -17,6 +17,34 @@
 - C: Cause
 - R: Result
 
+## subject
+
+- vt. 使臣服
+- n. 实验对象；主题；学科
+- adj. 服从于...的；受支配的；易遭受...的
+    - be subject to sth. 受...影响/遭受.../受制于.../服从于...
+    - be subject to doing sth. 容易遭受/可能会经历
+- White noise was played into the **subject**'s ears through headphones.
+- Prices may be **subject** to the relation of supply and demand.
+- The study is a genome([ˈdʒinoʊm] n. 基因组)-wide analysis *conducted(vt. 实施)* on 1932 *unique(adj. 独特的)*
+  **subjects** which compared pairs of unrelated friends and unrelated strangers([st'reɪndʒəz] n. 陌生人).
+    - conducted on 1932 unique **subjects** 非谓语动词短语做定语，修饰名词 analysis
+- In addition, the computer programs <ins>a company uses to estimate relationships</ins> may _be_ patented and not
+  ***subject*** _to_ peer review or outside evaluation.
+- subjective
+    - adj. 主观的
+    - objective adj. 客观的
+    - If you go see a movie about a super hero, the topic is **objective**. But whether it's a good movie or not is
+      **subjective**.
+- susceptible [səˈseptəbl]
+    - adj. 易患病的；易受...影响的
+    - be susceptible to (doing) sth. 遭受；承受
+        - == be subject to
+        - == be vulnerable to
+            - vulnerable [ˈvʌlnərəbl] adj. 脆弱的；易受伤害的
+    - Women are *particularly(adv. 特别)* **susceptible** to *developing(v. 患（病）)* depression and anxiety([æŋˈzaɪəti])
+      disorder in response to stress compared to men.
+
 ## success
 
 - [səkˈses]
