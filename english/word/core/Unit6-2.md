@@ -17,6 +17,100 @@
 - C: Cause
 - R: Result
 
+## demand
+
+- [dɪˈmænd]
+- vt. 强烈要求；需要
+- n. （顾客的）需求；（坚决的）要求；需求量
+- I strongly demand that 我强烈要求
+- 词组
+    - demand for 对...的需求；对...的要求
+    - in demand 需求量大；受欢迎
+    - on demand 一经要求
+- Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的) investors, who **demand** high <ins>quarterly profits (
+  净利润)</ins> from companies,
+  can hinder(vt.& vi. 阻碍，妨碍; 成为阻碍) a firm's efforts to invest in long-term research or to build up customer
+  loyalty([ˈlɔɪəlti] n. 忠诚，忠实; 忠心).
+    - public companies/publicly traded company 上市公司
+- supply
+    - v. 供应，提供; 补充，填充
+    - n. 提供，供应（量）; 储备; 补给品
+- command
+    - vt. 命令；博得；掌握
+    - n. （给人或动物的）命令；（给计算机的）指令；（尤指对语言的）掌握
+    - 词组
+        - in command 领导；指挥
+        - have (a) good command of... 精通...
+        - at one's command 某人可自由使用；服从某人的支配
+    - Americans no longer expect public figures, whether in speech or in writing, to **command** the English language
+      with skill and gift. *Nor* do they aspire to such **command** themselves.
+- mandate [ˈmændeɪt]
+    - n. 命令
+    - The <ins>proposed initiative([ɪˈnɪʃətɪv] 拟议倡议)</ins> would **mandate** a reduction of carbon dioxide of 40%.
+
+## mind
+
+- vt. 介意
+- n. 头脑；思想；思维方式；富有才智的人
+- 词组
+    - keep/bear..in mind 将...记在心中
+        - == remember
+    - come to mind 马上想到
+    - make up one's mind to do 做出决定；下定决心
+        - == be determined to do sth.
+    - to my mind 依我看
+        - == in my view
+    - critical mind 批判性思维
+- Life is just a series([ˈsɪriːz] n. 一系列; 连续) of trying to **make up your mind**.
+- mindset [ˈmaɪndset]
+    - n. 心态
+    - Happiness *is not* a point of future *and not* a moment from the past, *but* a **mindset** that can be designed
+      into the present. 幸福不是未来的目标，也不是过去的记忆，而是一种能**被用心融入当下**的心态
+- remind
+    - vt. 提醒；使想起
+    - remind sb. of/about sth.
+    - reminder n. 提醒人的事物
+- wise [waɪz]
+    - adj. 明智的；充满智慧的
+    - wisdom [ˈwɪzdəm]
+        - n. 智慧；明智；（社会或文化长期积累的）学问
+        - Mental health has commonly been called conscience, instinct, **wisdom**, common sense, or the inner voice.
+- ideology [ˌaɪdiˈɑːlədʒi]
+    - n. 意识；观念
+    - == belief [bɪˈliːf] n. 信念；信仰；信心
+    - oppressive([əˈprɛsɪv]) ideology 压迫性的观念
+    - upper middle-class ideology 中上层阶级的意识形态
+
+## move
+
+- v. 进展；转变；感动；移动；采取行动
+- n. 行动；措施(PE)；移动；转变
+- 词组
+    - move on 继续前往
+    - move on to sth. 开始做（别的事）；换话题
+    - move around 走来走去
+    - move in/into 搬进新居；涉足
+    - move against 行动起来反对
+    - move through 穿过
+    - move out 搬出去
+    - make a move 采取行动；动身
+- Abolishing the tax altogether would be a bold **move**.
+- In a **move** that has intellectual—property lawyers abuzz, the U.S. Court of Appeals for the Federal Circuit said
+  it would use a particular case to conduct a broad review of business—method patents.
+- remove
+    - vt. 移开；去除
+    - == get rid of
+        - rid
+            - v. （使）去掉，摆脱，消除
+            - adj. 摆脱...的
+- shift
+    - v. 移动；变换
+        - == change
+    - n. 改变；换挡
+    - a stick shift 手动挡
+    - *While* the rest of the world takes the lead, notably(adv. 尤其) China and Europe, the United States is also
+      seeing a remarkable **shift/change**. 虽然世界其他地区（尤其是中国和欧洲）已走在前列，但美国也正在经历显著的转变。
+
 ## patent
 
 - [ˈpætnt]
@@ -127,148 +221,6 @@
             - Swiss army knife embodies Swiss **craftsmanship**.
             - Many exhibits in the museum **embody** the spirit of the **craftsmanship**.
 
-## deal
-
-- n. 交易；协议；大量
-- owe a great deal to 很大程度上得益于...
-- The reforms <ins>owe a great **deal** to</ins> the resolution of one man.
-- Do we have a deal?
-    - Deal!
-- 词组
-    - deal with 解决；处理；应对
-        - == cope with
-    - a great deal of + **不可数n.** 大量的...
-    - a big deal 一件大事
-        - no big deal 小意思啦/没啥/不打紧
-    - A deal is a deal. 一言为定、言出必行
-- dealing n. [pl.] 往来
-- dealer n. 贸易商
-- cope
-    - vi. （成功地）处理
-    - 词组
-        - cope with 处理...
-- handle vt. 处理（句式、人、工作或感情）
-- tackle [ˈtækl]
-    - vt. 处理（难题或局面）
-    - What is considered a weakness of the city level measures to **tackle/address/handle/cope with/deal with** dirty
-      air?
-- address
-    - vt. 设法解决；演讲
-    - n. 地址；致辞
-    - He is about to **address** a conference on human rights.
-    - Governments have been slow to **address** the problem of global warming.
-    - I was **addressing** a small gathering in a suburban Virgina living room—a women's group that had invited men to
-      join them.
-
-## course
-
-- n. 进程，发展；课程；一道菜；航线；行动方式
-- Sometimes storms blew the vessels far off their **course**.
-- Twenty years is a blink in the long **course** of history.
-- These designers came to exert enormous influence on the **course** of American architecture.
-- Before it ends, it will likely change the life **course** and character of a *generation(n. 一代人)* of young adults.
-- discourse n. 话篇；话语
-- curriculum n. （学校等的）**全部**课程
-- discipline
-    - v. 训练; 惩罚; 自我约束
-    - n. 自制力；学科；行为准则
-    - self-discipline 自制力
-    - When you have **discipline**, you have **self-control**.
-    - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and
-      correcting them.
-- catalog/catalogue n. 目录
-
-## board
-
-- [bɔːrd]
-- v. 上船（或火车、飞机、公共汽车等）
-- n. （公司或其他机构的）董事会，委员会
-- He sits on the company's management **board**.
-- Reding invited corporations to sign up for gender balance goals of 40 percent female **board** membership.
-- billboard n. 广告牌
-- broad [brɔːd]
-    - adj. 广泛的
-    - broaden v. 变宽; 扩大...的范围
-    - abroad
-        - adv. 在国外
-        - study abroad 出国留学
-    - broadband n. 宽带连接
-- domestic [dəˈmestɪk]
-    - adj. 国内的；家用的；家务的
-    - First two hours, now three hours—this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
-      people show up to catch **domestic** flight, at least at some major U.S. airports with increasingly massive
-      security lines.
-
-## develop
-
-- v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
-- Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
-  comes in.
-- After you have clearly and adequately(['ædɪkwətlɪ] adv. 足够地) **developed** the body of your paper, pay
-  particular attention to the introductory and concluding paragraphs.
-- Women are particularly(adv. 特别) susceptible to **developing** depression and anxiety([æŋˈzaɪəti]) disorder in
-  response to stress compared to men.
-- developing adj. 发展中的
-- developed adj. 发达的
-- development
-    - n. 发展；开发
-    - == evolution
-- developmental adj. 发展的；开发中的
-
-## environment
-
-- n. 环境
-- environmental
-    - adj. 环境的
-    - environmentally adv. 环境方面地
-- forest
-    - vt. 在...造林，使长满树林，使成为森林
-    - n. 森林; 丛林; （森林似的）一丛; 一片
-    - forestation
-        - n. 造林 🙂
-        - deforestation [ˌdiːˌfɔːrɪˈsteɪʃn]
-            - n. 砍伐森林 😔
-            - Even if this program didn't reduce poverty, Ferraro says, "the value of the avoided **deforestation** just
-              for carbon dioxide emission alone is more than the program costs."
-            - Last year marked the third year in a row that Indonesia's bleak rate of **deforestation** has slowed in
-              pace.
-- ecosystem n. 生态系统
-- extinction [ɪkˈstɪŋkʃn] n. 灭绝
-
-## explain
-
-- v. 解释；说明（...的）原因
-- explanation n. 解释；原因
-- interpret
-    - v. 解释
-    - == explain
-    - interpretation n. 解释
-    - misinterpret
-        - vt. 误解
-        - misinterpretation n. 误解
-            - == misunderstanding n. 误解，误会
-            - About a third say the problem of fake news lies in "**misinterpretation** or
-              *exaggeration([ɪɡˌzædʒəˈreʃən] n. 夸张，夸大)* of actual news" via social media.
-            - Opportunities for **misinterpretation**, error, and self-deception **abound**. 误解、出错和自欺的可能性比比皆是
-                - abound [əˈbaʊnd]
-                    - vi. 大量存在
-                    - Challenges **abound**, so do opportunities. 前方有挑战，也有机遇
-- illustrate
-    - vt. （用实例、图标等）说明
-    - == demonstrate
-
-## member
-
-- n. 成员
-- membership n. 会员资格；会员人数
-- staff [stæf]
-    - n. 全体员工
-    - vt. 由...担任工作人员
-    - stuff [stʌf]
-        - vt. 填进，塞满
-        - n. 原料，材料(== thing)；
-- faculty [ˈfæklti] n. （高等院校的）院系；（高等院校中院、系的）全体教员
-
 ## Words
 
 - deposit
@@ -286,16 +238,6 @@
     - adj. 有争议的，引发争论的
 - indirect
     - adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
-- adverse [ədˈvɜːrs] 😔
-    - adj. 不利的; 有害的; 反面的
-- glamorous [ˈɡlæmərəs]
-    - adj. 富有魅力的; 迷人的; 富于刺激的; 独特的
-- cautious  [ˈkɔːʃəs]
-    - adj. 小心的，谨慎的
-- harmonious [hɑrˈmoʊniəs]
-    - adj. 和谐的，融洽的; 协调的; 音调优美的; 悦耳的
-- courageous [kəˈreɪdʒəs]
-    - adj. 勇敢的，无畏的
 
 ## 词组
 
@@ -303,10 +245,5 @@
     - 政党领导
 - a convicted([kən'vɪktɪd]) terrorist([ˈterərɪst])
     - 定罪的恐怖分子
-- public company
-    - == publicly traded company
-    - 上市公司
-- media literacy([ˈlɪtərəsi] n. 读写能力) skills
-    - 媒介素养能力；媒体识读能力
 
 ## 句式

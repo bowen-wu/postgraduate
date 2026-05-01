@@ -17,6 +17,85 @@
 - C: Cause
 - R: Result
 
+## image
+
+- [ˈɪmɪdʒ]
+- n. 图像；(个人，团体或组织的)形象
+- company image
+- imagine [ɪˈmædʒɪn] vt. 想象；猜想
+- imagination [ɪˌmædʒɪˈneɪʃn]
+    - n. 想象力
+    - I do completely agree that fears are just the product of our luxuriant **imagination**.
+- imaginative [ɪˈmædʒɪnətɪv] adj. 富于想象力的
+
+## suppose
+
+- vt. 假设
+- v. 认为
+- I **suppose** the most revolutionary act <ins>one can _engage([ɪnˈɡeɪdʒ]) in(从事于/参与（某项活动）)_<ins> is to tell
+  the truth.
+- be supposed to do sth. 应该做某事/据说/被认为/按理论理应
+    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 恰恰是)* these non-celebrity influentials <ins>*who*</ins>,
+      according to the two-step-flow theory, are **supposed** to drive social epidemics.
+- supposedly [səˈpoʊzɪdli]
+    - adv. 据说；据传；想象中的
+    - In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins>
+      <ins>persons of(具有...特征的人)</ins> **supposedly** superior intelligence, education, and
+      *moral([ˈmɔːrəl] n. 道德)* character.
+- position
+    - n. 位置；姿势；地位；观点；职位
+    - Having asserted your **position**(as a position, not as a fact), demonstrate equal curiosity about other views.
+        - assert your position 表达、阐明你的观点/立场
+        - demonstrate curiosity 表现出好奇心
+        - equal curiosity 同等程度的兴趣
+- hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
+- premise [ˈpremɪs]
+    - n. 前提，假设
+    - If connections can be bought, a basic **premise** of democratic society—that all are equal in treatment by
+      government—is undermined.
+- presumably [prɪˈzuːməbli]
+    - adj. 相反的
+    - ...they **presumably** have enough independence to disagree with the chief executive's proposals.
+- contrary adj. 相反的
+- -pose- 放
+    - expose
+        - v. 揭露；曝光；接触；面对
+        - be exposed to sth.
+            - be exposed to sunshine 晒太阳
+            - be exposed to stress 面对压力、承受压力
+        - ex- 外
+        - To **expose** means to **uncover** or **allow to be in the open air**.
+        - exposure [ɪkˈspoʊʒər] n. 暴露; 揭发; 报道
+    - impose
+        - v. 强加；施压于；征税
+        - im- 里
+        - If you want to **impose** your musical taste on your parents, play your tunes all day at top volume.
+    - oppose [əˈpoʊz]
+        - v. 反抗，阻碍
+        - opposite [ˈɑːpəzɪt]
+            - adj. 完全相反的，截然不同的
+            - ...but under high-stress conditions, IQ <ins>was negatively correlated with</ins> leadership—that is, it
+              *predicted(vt. 预测)* the **opposite**.
+        - opposition [ˌɑːpəˈzɪʃn]
+            - n. （强烈的）反对，反抗
+            - ...have met with fierce opposition
+                - meet with 遭遇，受到
+        - opponent [əˈpoʊnənt] n. 对手，竞争者；反对者
+    - propose
+        - v. 提议，建议；求婚
+        - pro- 向前
+        - proposal [prəˈpoʊzl] n. 提议，建议; 求婚
+    - pose
+        - v. 提出（问题）；造成，引起
+        - n. 姿势；装模作样
+        - == bring about
+        - I saw him out **posing** in his new sports car.
+        - Heavy traffic **poses** a problem in many old towns.
+        - Ryan Hooper remarks <ins>the significant moves(重大举措)</ins> may <ins>**pose**/bring about</ins> challenges
+          to children.
+        - The coming use of <ins>*autonomous([ɔːˈtɑːnəməs] adj. 自治的)* vehicles(自动驾驶汽车)</ins>, for example,
+          **poses** *thorny([ˈθɔrni] adj. 难以处理的, 棘手的)* ethical questions.
+
 ## force
 
 - vt. 促使；强迫
@@ -83,119 +162,16 @@
     - Women are *particularly(adv. 特别)* **susceptible** to *developing(v. 患（病）)* depression and anxiety([æŋˈzaɪəti])
       disorder in response to stress compared to men.
 
-## success
-
-- [səkˈses]
-- n. 成功；成就
-- **Success** is not about reaching the top at all.
-- successful adj. 成功的
-- succeed [səkˈsiːd]
-    - vi. 有成就；做成；继承；成功；
-    - vt. 继任
-- succession [səkˈseʃn]
-    - n. 继任，继承；一系列；连续
-    - The art market had *witnessed([ˈwitnist] v. 作证)* a **succession** of victories.
-    - successor [səkˈsesər] n. 继承者；继任者
-- successive [səkˈsesɪv]
-    - adj. 连续的，依次的；接替的
-    - But **successive** governments have *presided([priˈzaidid] v. 主持)* over selling green spaces, squeezing money
-      from local authorities and declining attention on sport in education.
-- fail
-    - vi. 失败；未能（做到）；出故障
-    - vt. 使失望
-    - failure [ˈfeɪljər] n. 失败；失败的事
-
-## union
-
-- n. 工会；联盟；协会
-- Will the European **Union** *make it/survive*?
-- unionist [ˈjunjənɪst] n. 工会会员；工会主义者
-- unify
-    - vt. 使联合; 使相同; 使一致; 统一
-    - unification [ˌjunɪfɪ'keɪʃn] n. 统一
-    - uniform n. 制服
-- alliance [əˈlaɪəns]
-    - n. 联盟，结盟
-    - A native *literary([ˈlɪtəreri] adj. 文学的)* drama had been created, its **alliance** with the public playhouses
-      established, and at least some of its great *traditions(n. 传统)* had been begun.
-- align
-    - v. 公开支持；与...一致
-    - == support
-- associate [əˈsəʊʃieɪt]
-    - v. 支持；联想，联系
-    - association n. 联系；协会；联盟；交往
-
-## carry
-
-- vt. 拿，带；带来（某种结果或后果）；销售；刊登；承担（责任、负担等）
-- deliver [dɪˈlɪvər]
-    - vt. 发表；传话；传递，传达；交付
-    - delivery n. 递送
-- vehicle [ˈviːəkl] n. 手段；车辆
-- commute
-    - vi. 上下班往返；通勤
-    - n. 上下班路程
-    - In fact, these **commutes** were reportedly more enjoyable compared with those without communication, which makes
-      absolute sense, since human beings thrive off of social connections.
-        - thrive [θraɪv]
-            - vi. 繁荣，兴旺
-            - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
-    - commuter n. （远距离）上下班往返的人
-
-## encourage
-
-- vt. 鼓励；促进
-- He lent money, made donations and **encouraged** others to do likewise.
-- courage
-    - n. 勇气
-    - courageous [kəˈreɪdʒəs] adj. 勇敢的
-    - discourage
-        - vt. 阻止；使灰心
-        - 词组
-            - discourage sb. from doing sth. 阻止某人做某事
-- encouragement n. 鼓励；鼓舞
-- inspire [ɪnˈspaɪər]
-    - vt. 鼓舞；激励；是...的灵感来源；使产生（情感）
-    - inspiration [ˌɪnspəˈreɪʃn] n. 鼓舞；灵感
-
-## global
-
-- adj. 全球的
-- globalize v. 使全球化
-- globalization n. 全球化
-- universe [ˈjuːnɪvɜːrs]
-    - n. 宇宙
-    - universal
-        - adj. 普遍的；全世界的
-        - n. 普遍原则，通用原理
-        - It is a truth **universally** acknowledged, that a single man in possession of a good fortune, must be in want
-          of a wife.
-            - It is a truth **universally** acknowledged 举世公认的真理
-                - == as we all know
-
-## graduate
-
-- vi. 毕业
-- n. （大学）毕业生
-- graduation n. 毕业
-- undergraduate n. 大学本科生
-- postgraduate n. 研究生
-- gradual [ˈɡrædʒuəl]
-    - adj. 逐渐的
-    - gradually adv. 逐渐地
-
 ## Words
 
-- quote [kwoʊt]
-    - vt.& vi. 引述，引用
-    - vt. 报价; 引述
-    - vi. 引用
-    - n. 引用; 报价; 引号
-- bright [braɪt]
-    - adj. 明亮的; 鲜艳的; 晴朗的; 欢快的; 聪明的; 有希望的
-    - adv. 明亮地
-    - the best and brightest
-        - 最优秀、最聪明的人才
+- evaluate [ɪˈvæljueɪt]
+    - v. 估计
+- fierce [fɪrs]
+    - adj. 凶猛的; 狂热的; 强烈的; 恶劣的
+    - fierce competition 残酷的竞争
+- passion
+    - n. 激情
+    - impassioned [ɪmˈpæʃnd] adj. 充满激情的; 热烈的; 感激的; 慷慨激昂
 
 ## 词组
 

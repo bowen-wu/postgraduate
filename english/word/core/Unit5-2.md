@@ -17,6 +17,183 @@
 - C: Cause
 - R: Result
 
+## provide
+
+- vt. 提供
+- 提供某物给某人
+    - provide sb. with sth.
+    - provide sth. to sb.
+- provide an adequate([ˈædɪkwət]) service 提供足够的服务
+- provide digital([ˈdɪdʒɪtl]) service
+- provider n. 提供者
+- provision
+    - n. 规定，条款；供应品
+    - == rule
+- provided/providing
+    - conj. 假如
+    - == if
+    - ***Providing that*/If** you finish your homework by this evening, you can have tomorrow off.
+- offer
+    - vt. 提出；提供（东西或机会）；报价
+    - n. 提供（物）
+    - offer sb. sth.
+    - offer sth. to sb.
+- supply
+    - vt. 提供
+    - n. 供应
+    - supple sb. with sth.
+    - supplement
+        - vt. 补充
+        - n. 补充（物）；（报纸的）增刊
+- render
+    - vt. 使变得；提供
+    - == make
+    - Render is a synonym of "**make**"-technically it means "**cause to become**".
+    - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you
+      speechless.
+    - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering(n. 痛苦; 受苦)
+      is inevitable([ɪnˈevɪtəbl] adj. 不可避免的), but the courage([ˈkɜːrɪdʒ] n. 勇气; 无畏) to fight it
+      **renders/makes** life worth living.
+      人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
+- complementary adj. 补充的
+
+## turn
+
+- v. 转身；（使）变成
+- n. （依次轮到的）机会
+- 词组
+    - in turn 反过来，转而；相应地
+    - turn to sb. 向某人求助
+    - turn back 返回
+    - turn out 结果是
+    - turn on sth. 取决于...
+    - take turns (to do sth.) 轮流（做某事）
+    - the turn of sth. （某事的）转折点
+    - turn sb./sth. (from sth.) into sth. 使...（从...）变成...
+- turnaround n. （观点、态度或方法的）彻底转变；周转期
+- turnover
+    - n. （人员的）流动率；货物周转率；营业额
+    - CEO turnover
+- downturn
+    - n. （商业经济的）衰退
+    - 经济衰退
+        - economic depression/downturn/recession/slowdown/stagnation([stæɡˈneʃən] n. 淤塞，停滞; 不景气)/decline
+    - 经济繁荣
+        - economic boom/prosperity
+- overturn
+    - vt. 推翻（法律裁决）；倾覆
+    - == knock out
+    - uphold vt. 维持（原判、裁决等）
+    - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
+      Supreme Court has **overturned** the corruption( [kəˈrʌpʃn] n. 腐败，贪污) conviction([kənˈvɪkʃn] n. 判罪) of a
+      former Virginia governor, Robert MacDonnell.
+
+## consider
+
+- v. 考虑；细想
+- vt. 认为
+- consider doing sth.
+- reconsider v. 重新考虑
+- considerable
+    - adj. 相当大（或多、重要等）的
+    - considerably adv. 相当多地
+- considerate adj. 考虑周到的; 体贴的
+- consideration
+    - n. 考虑；必须考虑的事；关心
+    - take sth. into consideration/account 把某事考虑在内
+        - Taking all these factors into consideration...
+- contemplate [ˈkɑːntəmpleɪt]
+    - vt. **深思熟虑**；考虑；沉思
+    - == consider
+    - If you **contemplate** something, you **think about it carefully**.
+    - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate**
+      the <ins>pros and cons(优点和缺点)</ins> of your decision.
+        - pros == advantages（优点，好处）
+        - cons == disadvantages（缺点，坏处）
+
+## political
+
+- [pəˈlɪtɪkl]
+- adj. 政治的
+- politician [ˌpɑːləˈtɪʃn] n. 政治家，政客
+- politics [ˈpɑːlətɪks] n. 政治；政治学
+- policy [ˈpɑːləsi] n. 政策
+- regime [reɪˈʒiːm]
+    - n. 政权，政体；社会制度
+    - == administration
+    - A **regime** is the **ruling government of a country**
+    - The amount(n. 程度) of freedom and restriction([rɪˈstrɪkʃn] n. 限制) that citizens of a country have can change
+      **from regime to regime(政权更迭)**.
+
+## focus
+
+- v. （使）集中
+- n. 兴趣（或活动的）焦点
+- be focused on sth. 专注于某事
+- unfocused
+    - adj. （感情、计划）无目标的
+    - We are even farther removed from the **unfocused** newspaper reviews published in England...
+      我们离英国那种模糊松散的报纸评论风格，已经越来越远
+- emphasis [ˈemfəsɪs]
+    - n. 重点
+    - put/place emphasis on sth. 强调某事；重视某事
+        - == attach([əˈtætʃ]) importance to sth. 重视
+        - == focus on 关注
+        - == lay stress on 重视
+        - And **placing too much emphasis on** their opinions can ruin([ˈruːɪn] v. 毁坏; 破坏) a
+          fantastic([fænˈtæstɪk] adj. 极好的;) home purchase([ˈpɜːrtʃəs] v. 购买).
+    - emphasise/emphasize ['emfəsaɪz] vt. 强调
+- highlight
+    - vt. 强调；突出显示
+    - n. 最精彩的部分
+- concentrate
+    - v. 集中（注意力）
+    - n. 浓缩物
+    - concentrate on
+    - concentration
+        - n. 集中
+        - One great cause of failure([ˈfeɪljər]) is lack of... 失败的一个重要原因是缺乏...
+            - One great cause of failure is lack of **concentration**. 导致失败的一个主要原因是缺乏专注力
+            - One great cause of life's failure is lack of **the positive attitude([ˈætɪtuːd])**
+
+## industry
+
+- n. 行业，工业
+- the fashion industry 时尚界
+- industrial
+    - adj. 工业的，行业的；工业发达的
+    - industrialist n. 实业家，工业家
+- industrious [ɪnˈdʌstriəs]
+    - adj. 勤劳的，勤奋的
+    - If you describe someone as **industrious**, you mean they **work very hard**.
+    - He was an **industrious** and willing(adj. 愿意的，乐意的; 自愿的; 积极肯干的) worker.
+- agriculture [ˈæɡrɪkʌltʃər]
+    - n. 农业
+    - agricultural [ˌæɡrɪˈkʌltʃərəl] adj. 农业的
+
+## process
+
+- [prəˈses]
+- vt. 加工；处理（数据）
+- n. 过程；流程
+- proceed [proʊˈsiːd]
+    - vi. 继续做（或从事、进行）；行进
+    - n. [pl.] 收入，收益(PE)
+    - == continue == go on == carry on
+    - == income
+    - To **proceed** means to go or continue forward.
+    - The **proceeds** of the concert went to charity.
+    - California's plan *envisions([ɛnˈvɪʒən] vt. 设想; 想象)* *treating(处理)* 35,000 acres of forest a year by
+      2020,and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
+      加州的计划设想，到 2020 年每年治理 3.5 万英亩森林，到 2030 年增加到 6 万英亩 — 资金来源于该州排放许可拍卖所得的收益。
+    - pro- == forward 前进 🙂
+        - proclaim [prəˈkleɪm] vt. 宣告，公布(正式); 表明; 赞扬，称颂
+        - prospect [ˈprɑːspekt]
+            - vi. 勘探
+            - n. 可能性；前途；前景
+
+- procedure n. 手续；（商业、法律或政治上的）程序
+
 ## important
 
 - adj. 重要的
@@ -42,247 +219,6 @@
     - n. 分水岭
     - World War II was the **watershed** event for higher education in modern Western societies.
 
-## improve
-
-- v. 改善；提高
-- == enhance == elevate
-- be improved 得到改善/被完善
-- improvement
-    - n. 改善
-    - There's always room for **improvement**.
-- enhance
-    - vt. 提高
-    - enhancement n. 提高
-    - enhancer n. 增强剂
-- elevate
-    - vt. 提升
-    - elevator n. 电梯
-    - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
-      a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
-        - Even better would be to... 更好的做法/选择是... => 倒装句
-        - help do sth./help sb. do sth. 帮助做某事
-- augment [ɔːɡˈment]
-    - vt. 增加，提高
-    - **Augmented** Reality 增强现实 AR
-- heighten [ˈhaɪtn]
-    - v. （使）增加
-    - high adj. 高的
-    - height n. 高度; 高
-
-## measure
-
-- vt. 衡量
-- n. 测量；衡量；措施
-- If you can not **measure** it, you can not improve it.
-- measurement n. 测量
-- degree
-    - n. **程度**；学位；级别
-    - college degree 大学学位
-    - bachelor's degree 学士学位
-    - master's degree 研究生学位
-    - doctoral degree 博士学位
-    - 词组
-        - to some degree 在某种程度上
-        - to a certain degree 在一定程度上
-- rate
-    - vt. 对...作评估；认为...非常好
-    - n. 率；速度；费用；比率
-    - 词组
-        - at any rate 无论如何
-    - To **rate** the instructor's overall effectiveness.
-    - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
-      depression, double the **rate** for working Americans.
-- scale
-    - vt. 缩减
-    - n. 规模；秤；等级体系
-    - 词组
-        - scale back 缩减
-        - scale up 增大，扩大（规模或数量）
-- dimension [dɪˈmenʃn] n. 维度；方面
-
-## stress
-
-- [stres]
-- vt. 强调
-- n. 压力
-- == pressure
-- Such bodily reaction might help moderate([ˈmɑːdəreɪt] vt. 使和缓) the effects(n. 影响) of psychological **stress**.
-- The crash **stresses** the urgency to strengthen security worldwide. 这次坠机事件强调了在全球范围内加强安全措施的紧迫性
-- stressful adj. 有压力的
-- pressure [ˈpreʃər]
-    - n. 压力
-    - apply pressure on sb./sth. 对某人/某事施加压力
-- burden n. 负担；重担
-- tension n. 紧张
-
-## support
-
-- vt. 支持
-- n. （钱财或物资上的）资助；支持
-- supporter n. 支持者
-- supportive adj. 给予支持的
-- favor/favour [ˈfeɪvər]
-    - vt. 赞成
-    - n. 支持；恩惠
-    - favor A over B 更偏向 A，而不是 B/更青睐 A 胜过 B
-    - favorable/favourable
-        - adj. 赞同的
-        - unfavorable/unfavourable adj. 不利的；不赞同的
-        - favorably/favourably adv. 更具优势地；赞同地
-    - favoritism/favouritism ['feɪvərɪtˌɪzəm]
-        - n. 偏袒
-        - **Favoritism** in official access can *fan(v. 扇（风）; 煽动)/affect/provoke* public perceptions(n. 看法) of
-          corruption(n. 腐败，贪污).
-        - == partiality [ˌpɑrʃiˈæləti] n. <正><贬>偏袒; 特别喜爱，酷爱; 偏心
-- prefer
-    - vt. 更喜欢
-    - prefer A to B 比起B更喜欢A
-    - prefer A from B 从某个来源或角度来看，偏好 A
-    - They cross-check sources and **prefer** news from different perspectives.
-    - preference
-        - n. 偏好；优先考虑
-        - Thinking too much can also harm our ability to form **preferences**
-        - **Preference** will be given to those experienced in international conferences or other similar activities.
-
-## benefit
-
-- vt. 使获益
-- vi. (~ from)得益于
-- n. 好处；保险金；福利费
-- A benefit from B A得益于B
-- It is as though 20 years of ever-tougher reforms of the job search and **benefit administration system** never
-  happened. 看起来就好像二十年来对求职与福利管理体系日益严格的改革从未发生过一样
-- beneficial adj. 有帮助的
-- benefactor [ˈbenɪfæktər]
-    - n. 赞助者
-    - These **benefactors** have succeeded in their chosen fields, they say, and they want to use their wealth to draw
-      attention to those who have succeeded in science.
-- profit
-    - v. （使）获利
-    - n. 利润
-    - profit **from**
-    - profitable
-        - adj. 可盈利的
-        - == handsome adj. **可观的**；帅气的
-        - == lucrative [ˈluːkrətɪv]
-            - adj. 获利丰厚的
-            - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
-              finish line" whether that the toward graduate school, medical school or a **lucrative** career.
-        - profitable/lucrative/handsome rewards/salary/income
-
-## attention
-
-- n. 注意力；关注
-- pay (adj.(close/no)) attention to sth./sb./(doing sth.) 注意.../关注...
-- draw attention to sb./sth **引起人们**对某人/某事的注意
-- attentive
-    - adj. 注意的；体贴的
-    - 体贴的
-        - == considerate == kind
-- distract
-    - vt. 分散（注意力）
-    - be distracted by 被...分心/因...而注意力分散
-    - attract v. 吸引
-    - distraction
-        - n. 使人分心的事
-        - Gal Newport recommends **building a habit(养成一个习惯/建立习惯)** of "deep work"-the ability to focus without
-          **distraction**.
-
-## fact
-
-- n. 事实
-- the fact remains that... 事实依然是.../依然不可否认的是...
-- 词组
-    - in fact 实际上
-    - the fact that （用于探讨真实事情的意义）...这一事实
-- factor n. 因素
-- factual [ˈfæktʃuəl] adj. （根据）事实的
-- virtual
-    - adj. 实际上的；（计算机）虚拟的
-    - VR: **Virtual** Reality
-    - virtually
-        - adv. 几乎
-        - == almost
-        - Plus(此外、再者), **virtually/almost** all major American companies are becoming tech companies.
-- truth [truːθ]
-    - n. 实际情况；真理
-    - truly [ˈtruːli] adv. 真正地；由衷地
-
-## personal
-
-- [ˈpɜːrsənl]
-- adj. 个人的；私人的
-- interpersonal
-    - adj. 人际（关系）的
-    - inter- == between/among
-- personality n. 性格；名人
-- private
-    - adj. 私有的；私营的；私人的
-    - n. (in ~)私下里
-    - privacy
-        - n. 隐私
-        - data leakage([ˈliːkɪdʒ]) 数据泄露
-- individual
-    - adj. 个别的；一个人的
-    - n. 个人
-    - The rights of the **individual** should be the primary object of all governments.
-
-## argue
-
-- [ˈɑːrɡjuː]
-- vt. 论证，陈述理由
-- sb. **argue/hold/maintain/believe(认为)** that + 宾语从句
-- It is **argued** that the influence of transient investment on public companies can be *adverse(adj. 不利的)*.
-- arguable
-    - adj. 可论证的；有一定理由的；有争议的
-    - arguably [ˈɑːrɡjuəbli]
-        - adv. 可论证地; 可以说; 按理说
-        - Efforts in Canada and elsewhere have been **arguably languid** at best.
-            - languid [ˈlæŋɡwɪd] adj. 疲倦的; 没精打采的，呆滞的; 萧条的; 慢吞吞
-- argument
-    - n. 观点；争论；论据
-    - Least rousing, he thinks, was rational **argument**, although his co-authors say reason might
-      <ins>play a bigger role(发挥更重要作用)</ins>.
-    - The researchers' **argument** <ins>stems from</ins> a simple observation about social influence.
-    - augment [ɔːɡˈment] vt. 增加，提高
-- dispute [dɪˈspjuːt] 😔
-    - vt. 对...表示异议（或怀疑）
-    - n. 争端；争论
-    - The government is <ins>pressing for(敦促)</ins> an early resolution of the **dispute**.
-- debate
-    - v. （尤指正式）讨论
-        - == discussion [dɪˈskʌʃn]
-    - n. 辩论；讨论
-- controversy [ˈkɑːntrəvɜːrsi] 😔
-    - n. （公开的）争论
-    - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
-      matched by few other industries. 全球艺术市场将巨额财富、强烈的自我意识、贪婪、激情与争议融汇在一起，这种混合在其他行业中几乎无可匹敌。
-        - bring together 使聚集、集合、汇集
-    - controversial [ˌkɑːntrəˈvɜːrʃl]
-        - adj. 引起争论的 😔
-        - In Arizona vs. United States, the majority *overturned* three of the four **contested** provisions of
-          Arizona's controversial plan.
-            - provision
-                - n. 规定，条款；供应品
-                - == rule
-            - contested provisions 有争议的法律条款
-
-## sign
-
-- vt. 签名
-- n. 迹象；标志（牌）；星座
-- signal
-    - vt. 示意；表明
-    - n. 信号；标志
-- assign
-    - vt. 布置（任务）
-    - assignment n. （分派的）任务
-- mission
-    - n. 使命；军事行动
-    - == assignment
-- It is a <ins>worthy/universal/virtual/authentic([ɔːˈθentɪk])</ins> truth that man is the only animal that has the
-  power to speak and reason.
-
 ## Words
 
 - bond
@@ -296,21 +232,8 @@
 - transcendent [trænˈsɛndənt]
     - == outstanding
     - adj. 卓越的，出众的
-- tearful [ˈtɪrfl]
-    - adj. 令人伤心的
-- indicative
-    - adj. 指示的，表明的
 
 ## 词组
-
-- come up with
-    - 提出，想出
-    - come up with a brilliant([ˈbrɪliənt] adj. 巧妙的) idea
-- fit in
-    - 融入
-- take a firm stand
-    - == hold one’s ground
-    - 采取坚定的立场/表明坚决的态度
 
 ## 句式
 

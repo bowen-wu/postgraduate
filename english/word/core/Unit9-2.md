@@ -17,6 +17,90 @@
 - C: Cause
 - R: Result
 
+## lack
+
+- [læk]
+- vt. 缺乏
+- n. 缺乏
+- lack + 宾语
+- be lacking in 缺乏...；在...方面不足
+- Despite his **lack** of experience, he got the job.
+- This car **lacked** the power of the American cars.
+- He said there was no **lack** of things for them to talk about.
+- shortage n. 缺少
+- absence [ˈæbsəns] n. 缺乏
+- deficiency
+    - n. 缺陷；缺少
+    - Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may
+      *compensate([ˈkɑːmpenseɪt] v. 补偿，赔偿; 弥补) for* an <ins>emotional **deficiency**</ins>.
+    - == shortage == flaw([flɔː] n. 错误; 缺点; 瑕疵)
+- flawless 🙂
+    - adj. 完美的，无瑕的
+    - == perfect
+- dearth [dɜːrθ]
+    - n. 缺乏
+    - == lack == absence
+    - Two years ago, Rupert Mudoch's daughter, Elisabeth, spoke of the "unsettling **dearth** of
+      integrity([ɪnˈteɡrəti] n. 正直，诚实) across so many of our institutions".
+
+## local
+
+- adj. 地方的，当地的
+- local special 当地特色
+- locate [ˈloʊkeɪt]
+    - vt. 找出...的准确位置；把...安置在
+    - be located in 位于.../坐落在...
+- site n. 场所；发生地；（事件发生的）现场；网站
+- spot
+    - v. 注意到
+    - n. 斑点；点； 地点，场所；污点;
+    - 词组
+        - be spot-on 准确的
+    - They stayed at *several([ˈsevrəl])* of the island's top <ins>tourist **spots**</ins>.
+    - Vicenzo failed to **spot** the error.
+
+## professor
+
+- n. 教授
+- profession
+    - n. 职业；专业
+    - Sensible ideas have been around for a long time, but the state-level bodies that govern the **profession** have
+      been too conservative to implement them.
+- professional
+    - adj. 职业的；专业的
+    - professional training 职业培训
+- professionalize [prəˈfɛʃənəˌlaɪz] vt. 使专业化
+- professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平
+- amateur [ˈæmətər]
+    - n. 业余爱好者
+    - adj. 业余的
+    - Moreover, the **amateur** tradition in music criticism has been in *headlong(adv. 快速地)* **retreat**.
+        - be in retreat 处于退却/衰退状态
+        - headlong retreat 急剧的、失控式的退却
+- expert [ˈekspɜːrt] n. 专家
+- specialist [ˈspeʃəlɪst]
+    - n. 专家
+    - adj. 专业的
+    - == expert
+    - Yet only one of his books is now in print，and his <ins>vast body of/oceans of(海量)</ins> writings on music is
+      unknown <ins>save to/except(除了)</ins> **specialists**.
+
+## quality
+
+- n. 质量；品质
+- qualify
+    - v. 取得资格，有资格
+    - vt. 使有资格
+- qualified
+    - adj. 合格的；有资格的
+    - be qualified to do sth
+- qualification n. 资格
+- eligible [ˈelɪdʒəbl]
+    - adj. 合格的；符合条件的
+    - == qualified
+    - *Only* If the jobless arrive at the job centre with a CV, register for online job search, and start looking for
+      work will they be **eligible** for <ins>benefit(补助金；津贴)</ins>.
+
 ## apply
 
 - vt. 使用；应用；涉及
@@ -102,190 +186,22 @@
     - n. 简要，简报
 - roughly [ˈrʌfli] adv. 大约
 
-## moral
-
-- [ˈmɔːrəl]
-- adj. 道德的
-- n. 寓意
-- In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins> <ins>persons of(
-  具有...特征的人)</ins> supposedly superior <ins>intelligence, education, and **moral** character</ins>.
-- ethics [ˈɛθiks]
-    - n. 道德准则；伦理学；伦理
-    - ethical
-        - adj. 道德的；伦理的；合乎情理的
-        - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow
-          many **ethical** questions to be raised by technologies yet to come.
-        - The **ethical** judgments of <ins>the Supreme Court</ins> justices have become an important issue recently.
-- virtue [ˈvɜːrtʃuː] 🙂
-    - n. 美德；优点，优势
-    - But completeness is no longer a **virtue** in the newspaper business.
-
-## necessary
-
-- adj. 必需的；必然的
-- n. 必需品
-- It is necessary to do sth.
-- unnecessary adj. 不需要的
-- necessarily adv. 必然地
-- necessity [nəˈsesəti] n. 必要
-- entail
-    - vt. 需要；牵涉；意味着
-    - v. 使必要，需要
-    - n. 限定继承
-    - == involve vt. 牵涉；使参与；需要
-    - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating
-      a task.
-
-## source
-
-- n. 来源；起源
-- resource
-    - n. 资源
-    - resourceful adj. 资源丰富的，富于机智的，有策略的; 灵活多样，善于随机应变; 诡计多端的
-- outsource
-    - vt. 将...外包
-    - The company began looking for ways to cut costs, which led to the decision to **outsource**.
-
-## current
-
-- adj. 流通的；现在的；通用的
-- n. 水流；电流
-- Some blame(n. 责任) for the **current** *controversy(n. 争论; 辩论)* belongs to astronomers.
-- currency
-    - n. 货币，通货
-    - Yet the debate about how to save Europe's single **currency** from *disintegration(n. 瓦解)* is
-      *stuck(adj. 动不了的)*.
-        - save A from B 使A免于B/拯救A不至于B
-- currently adv. 当前
-- occur [əˈkɜːr]
-    - vi. 发生，出现
-    - occurrence n. 发生的事情
-- recur [rɪˈkɜːr]
-    - vi. 再发生
-    - == occur again
-    - Have you ever had the same crazy dream night after night? If so, you know that <ins>dreams can **recur**</ins>
-      meaning they repeat, or happen again.
-- incur 😔
-    - vt. 引起；招致
-    - If you don't pay your credit card bills on time, you'll likely **incur** lots of fees and some serious debt.
-- up-to-date adj. 最新的，最近的
-
-## depend
-
-- vi. (~ on)取决于；依靠
-- **Depend** on yourself; you won't be let down. 靠自己，你就不会被辜负
-- dependency [dɪˈpendənsi] n. 依赖
-- dependent adj. 依赖的；取决于...的
-- independence [ˌɪndɪˈpendəns]
-    - n. 独立；自力
-    - independent adj. 独立的
-- rely
-    - vi. (~ on)依靠
-    - == depend
-    - rely on == depend on == count on == bank on 依赖
-    - reliance [rɪˈlaɪəns] n. 依赖
-    - reliable [rɪˈlaɪəbl]
-        - adj. 可靠的
-        - unreliable adj. 不可靠的，靠不住的; 不能信任的
-- lean
-    - vi. (~ towards)倾向于；倾斜(PE)；倚靠(PE)；依靠(PE)
-    - adj. 贫乏的；瘦且健康的
-    - lean towards 倾向于
-    - The tower is **leaning** dangerously.
-    - She walked slowly, **leaning** on her friend's arm.
-    - No shock there, considering how much work it is to raise a kid without a partner to **lean** on.
-
-## negative
-
-- adj. 负面的；否定的；阴性的
-- positive
-    - adj. 积极的
-    - positively adv. 积极地；肯定地
-- neutral [ˈnuːtrəl]
-    - adj. 中性的；中立的；不动声色的
-    - neutrality [nuˈtræləti]
-        - n. 中立（立场）；
-        - == disinterest [dɪsˈɪntərɪst] n. 无兴趣; 不关心; 冷漠; 客观
-        - net-neutrality law 网络中立法
-        - Faced with the demand for net **neutrality** rules, the FCC has issued a special resolution.
-
-## official
-
-- adj. 官方的
-- n. 官员
-- executive [ɪɡˈzekjətɪv]
-    - adj. 经营管理的；行政的；
-    - n. 管理人员，领导层
-    - Chief([tʃiːf]) Executive Officer(CEO) 首席执行官
-    - execute [ˈeksɪkjuːt] v. 处死; 实施; 完成; 制作
-- authority [əˈθɔːrəti]
-    - n. 官方机构；权力；权威；权威人士
-    - Weaver and his family have been persecuted([ˈpɜːrsɪkjuːt] v. **迫害**) by the **authorities** for their
-      beliefs([bɪ'lifs] n. 信仰).
-    - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
-- authentic [ɔːˈθentɪk]
-    - adj. 真实的；可靠的；正宗的
-    - Kids need a range of **authentic** role models.
-- authorize [ˈɔːθəraɪz]
-    - v. 批准; 授权
-    - authorization [ˌɔθərəˈzeɪʃn] n. 授权
-
-## responsibility
-
-- n. 责任
-- shoulder/assume([əˈsuːm])/take/bear responsibility 承担责任
-- 词组
-    - take responsibility for 对...负责
-- shrink the responsibility to do 逃避责任
-- responsible
-    - adj. 有责任的；有责任心的；应受责备的
-    - be responsible for
-- respond
-    - v. （口头或书面）回答；
-    - vi. 做出反应
-    - response
-        - n. （口头或书面）回答；反应
-        - 词组
-            - in response to 作为对...的回答
-    - correspond [ˌkɔːrəˈspɑːnd]
-        - vi. 相一致；通信；类似于
-        - correspond with/to
-        - correspondence n. 通信
-
-## although
-
-- conj. 虽然，尽管
-- although A, B 尽管A，但是B（B是重点）
-- unless conj. 除非
-- whereas [ˌwerˈæz] conj. （用以比较或对比两个事实）尽管；鉴于
-- despite [dɪˈspaɪt]
-    - prep. 尽管
-    - **Despite** these factors, many social scientists seem reluctant([rɪˈlʌktənt] adj. 不情愿的) to
-      *tackle/deal with/cope with/handle/address* such problems.
-- otherwise
-    - adv. 否则；在其他方面
-    - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
-      失败也能教会我们一些关于自己的事情，而这些事情若非失败，我们永远不会学到
-- nevertheless [ˌnevərðəˈles]
-    - adv. 然而
-    - **Nevertheless**, the <ins>affordable housing(经济适用房)</ins> situation is *desperate([ˈdespərət] adj. 绝望的)*.
-      Waiting lists increase all the time and we are simply not building enough new homes.
-- nonetheless [ˌnʌnðəˈles] adv. 尽管如此
-
 ## Words
 
-- distinguished
-    - adj. 卓越的; 著名的; 受人尊敬的; 显得重要的
-- cunning [ˈkʌnɪŋ]
-    - adj. 狡猾的; 巧妙的
-    - n. 狡猾，诡诈
-- ultimate
-    - adj. 最后的; 极限的; 首要的; 最大的
-    - n. 终极; 顶点; 基本原理; 基本事实
-    - == final
-- renaissance [ˈrenəsɑːns]
-    - n. (the R-)文艺复兴（时期）；复兴
+- philosopher [fəˈlɑːsəfər]
+    - n. 哲学家，思想家; 善于思考的人
+- physician [fɪˈzɪʃn]
+    - n. 医生，内科医生
+- politician [ˌpɑːləˈtɪʃn]
+    - n. 政治家; 政客
+- rumor [ˈruːmə(r)]
+    - vt. 谣传; 传说
+- unnatural
+    - adj. 不自然的，做作的; 奇异的; 不真诚的; 违背人性的，变态的
+- undeniable [ˌʌndɪˈnaɪəbl]
+    - adj. 不可否认的，无法抵赖的; 无可争辩的; 确实优秀的; 无可疵议的
+- unconventional
+    - adj. 非传统的; 非常规的; 不依惯例的; 通脱自喜
 
 ## 词组
 

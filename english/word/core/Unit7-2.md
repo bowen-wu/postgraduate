@@ -17,6 +17,106 @@
 - C: Cause
 - R: Result
 
+## define
+
+- [dɪˈfaɪn]
+- vt. 定义
+- To define is to limit. 定义即限制/每一个定义，都是一种约束
+    - To do...is to do... 做A等于做B
+- redefine [ˌriːdɪˈfaɪn] vt. 重新定义
+- definition [ˌdefɪˈnɪʃn] n. 定义
+- definite [ˈdefɪnət]
+    - adj. 不会改变的; 明确的; (证据或信息)确凿的
+    - definitely
+        - adv. 肯定
+        - indefinitely adv. 无限期地；模糊不清的
+- infinite [ˈɪnfɪnət]
+    - adj. 无限的，无穷的; 极大的，极多的
+    - infinity stone 无限宝石
+    - infinitely adv. 无限地，无穷地; 极其
+
+## effort
+
+- n. 努力；有组织的活动
+- 词组
+    - make an effort to do sth. 努力做某事
+        - == make efforts to do sth.
+        - == endeavor to do
+        - == strive to do
+    - take efforts 付出努力
+- We should **spare(v. 留出) no efforts to/make great efforts to(不遗余力)** protect the environment.
+- endeavor [ɪnˈdɛvər]
+    - vi. 努力
+    - 词组
+        - endeavor to do
+            - == make efforts to
+    - ...endeavor to live a joyful life
+    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the *density([ˈdensəti] n. 密度)* of some
+      of its forests.
+- strive [straɪv]
+    - vi. 努力
+    - strive to do
+    - The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* **strive to** abandon or hide their old
+      *aristocratic([əˌrɪstəˈkrætɪk] adj. 贵族的)* ways.
+
+## order
+
+- vt. 命令
+- n. 秩序；规定；（法院）决议，法令
+- 词组
+    - in order to 为了...
+    - in short order 立即
+- disorder 😔
+    - n. 混乱；【医】紊乱
+    - == chaos [ˈkeɪɑːs]
+        - n. 混乱，杂乱
+        - chaotic [keɪˈɑtɪk] adj. 混乱的; 乱糟糟的
+    - anxiety([æŋˈzaɪəti]) disorder 焦虑症
+    - depression n. 抑郁(症); 消沉; 萧条(期)
+- arrange [əˈreɪndʒ]
+    - v. 安排；排列
+    - arrangement n. 安排；布置
+- sequence
+    - n. 一系列，一连串
+    - == progression [prəˈɡrɛʃən] n. 发展，前进；一系列
+    - When things come **in sequence**, they come in a **specific order**.
+    - consequence n. 结果；后果
+    - subsequent
+        - adj. 随后的，后来的
+        - Prior knowledge and interests influence <ins>what we experience<ins>, <ins>what we think our experiences
+          mean<ins>, **and** <ins>the **subsequent** actions we take<ins>.
+
+## account
+
+- vi. (~ for)（数量、比例上）占；(~ for)解释
+- n. 描述；账户；解释
+- bank account
+- factual account 基于事实的叙述/事实陈述
+- account for + 百分比
+    - 占比例
+    - The *proportion([prəˈpɔːrʃn] n. 比例)* of Spring Festival gifts **accounted for/occupy([ˈɑːkjupaɪ])** 40 percent.
+- account for + 内容
+    - 解释
+    - C(原因) account for R(结果)
+    - His hard work **accounts for** his success.
+- accountable
+    - adj. 对...负有责任的
+    - == responsible
+    - The main *purpose([ˈpɜːrpəs] n. 意图)* of this "clawback" rule is to hold bankers **accountable** for harmful risk
+      taking. 这一“追回”规则的主要目的是让银行家对有害的风险承担责任
+    - accountability n. 责任
+- count
+    - vt. 认为；把...算入
+    - vi. 数数；有价值
+    - == matter
+    - It **matters/counts** a lot 这很重要
+    - 词组
+        - count backward 倒数
+        - count on 指望，依靠
+        - count in 把...计算在内
+        - count for 值...
+- algorithm [ˈælɡəˌrɪðəm] n. 算法
+
 ## claim
 
 - [kleɪm]
@@ -127,176 +227,15 @@
     - adj. 常规的，日常的
     - routinely adv. 例行地
 
-## nature
-
-- [ˈneɪtʃər]
-- n. 本质，实质；天性；自然
-- Mother Nature 大自然母亲
-- a good-natured man 脾气好的人
-- It's her duty to help them to realize the **nature** of their problems.
-- Regrettably，However，the report's failure to address the true **nature** of the crisis facing liberal education may
-  cause more harm than good.
-- 词组
-    - in nature 本质上；事实上
-- natural [ˈnætʃrəl]
-    - adj. 自然的；正常的；天赋的
-    - unnatural adj. 反常的
-- instinct [ˈɪnstɪŋkt]
-    - n. 本能；直觉
-    - == nature
-    - Mental health has commonly been called conscience, **instinct**, *wisdom([ˈwɪzdəm] n. 智慧)*, common sense, or the
-      inner voice.
-    - instinctive adj. 本能的
-    - instinctively adv. 本能地
-- viscerally [ˈvɪsərəli]
-    - adv. 发自内心地
-    - Knowing the result of Epley's study, it <ins>makes sense(有道理、说得通、可以理解)</ins> that many people hate
-      photographs of themselves **viscerally**
-
-## trust
-
-- v. 相信
-- n. 相信；信托；受托基金机构
-- 词组
-    - trust in 信任；依靠
-- distrust n. 不信任
-- entrust vt. 委托
-- trustworthy [ˈtrʌstwɜːrði]
-    - adj. 值得信赖的，可靠的; 把稳; 妥靠; 信实
-    - trustworthiness ['trʌstwɜðɪnəs]
-        - n. 可信度
-        - Most of us *mistakenly(adv. 错误地)* believe our **trustworthiness** is obvious.
-
-## approach
-
-- [əˈproʊtʃ]
-- v. 接近
-    - == around the corner == come near
-- vt. 与...接洽；处理
-- n. 方法
-    - == method == ways
-- 词组
-    - take a(n)...approach 采取...方法
-- **approaches** to gathering information
-- To **approach** is to get near something.
-- With the Spring Festival **approaching/around the corner**
-- There are a number of **approaches** to *mastering(v. 掌握)* the art of deep work.
-- Governments trend to **approach** the issue from different angles.
-- Some *applaud([əˈplɔːd] v. 赞许)* the **approach**; others are concerned.
-- Only Ukip, sensing its chance, <ins>has sided with(支持...)</ins> those <ins>pleading for</ins> a more considered
-  **approach** to using green land.
-- method n. 方法
-
-## habit
-
-- n. 习惯；习性
-- cultivate(v. 培养) a habit 培养习惯
-    - == pick up habit
-- inhabit
-    - vt. 占据；居住在；栖息于
-    - Everybody wants to know how the people who will soon **inhabit** those empty office cubicles([ˈkju:bɪkəlz]) will
-      differ from those who came before them.
-    - inhabitant [ɪnˈhæbɪtənt] n. 居民
-- habitually [həˈbɪtʃuəli] adv. 习惯地
-- habitat [ˈhæbɪtæt]
-    - n. （动植物的）生活环境；栖息地
-    - The environmental conditions of freshwater **habitats** are highly variable.
-
-## avoid
-
-- vt. 避免；躲避
-- If you **avoid** failure, you also **avoid** success.
-- evade [ɪˈveɪd]
-    - vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
-    - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
-      to **evade** scientists.
-    - inevitable [ɪnˈevɪtəbl]
-        - adj. 不可避免的
-        - One could interpret much of the work of Beethoven(贝多芬) by saying that suffering is **inevitable**, but the
-          courage to fight it renders life worth living.
-    - inevitably [ɪnˈevɪtəbli] adv. 不可避免地
-
-## compare
-
-- vt. 比较（两者相似之处）
-- 词组
-    - compare...with/to... 把...与...相比较
-    - compared with/to 与...相比
-- comparison [kəmˈpærɪsn]
-    - n. 比较
-    - analogy [əˈnælədʒi] n. 类比
-- comparable [ˈkɑːmpərəbl] adj. （数量、重要性等）相当的；类似的
-- comparatively adv. 相对地
-- contrast
-    - vt. 对比（不同）
-    - n. 差别
-    - 词组
-        - by/in contrast 相比之下
-        - in contrast to 与...截然不同
-
-## evidence
-
-- n. 证据
-- evident
-    - adj. 明显的
-    - == apparent == obvious
-- apparent adj. 显而易见的
-- obvious adj. 明显的
-- clear
-    - vt. 使通过批准；清除
-    - vi. 放晴；变清晰
-    - adj. 清楚的；明显的
-    - If it **clears** the House,... 如果它在众议院获得通过
-    - ...have to **clear** another major *hurdle([ˈhɜːrdl] n. 障碍)*.
-    - clarity [ˈklærəti]
-        - n. 清晰
-        - Conditions allow telescopes to obtain images of *unsurpassed([ˌʌnsərˈpæst] adj. 非常卓越的)* **clarity**.
-- strikingly adv. 显然地
-
-## justice
-
-- n. 正义；法官
-- just- 正义
-- **Justice** Anthony Kennedy wrote that the previous decisions were *flawed([flɔd] adj. 有缺点的; 有缺陷的)*.
-- justify
-    - vt. 替...辩护；证明...是正当的
-    - It is *curious([ˈkjʊriəs] adj. 难以理解的)* that Stephen Koziatek feels almost *as though/as if(好像)* he has to
-      **justify** his efforts to give his students a better future. 斯蒂芬·科齐亚泰克觉得他似乎不得不证明自己所做的努力是为了给他的学生们一个更好的未来，这令人感到费解
-    - justification n. 正当的理由
-- jury
-    - n. 陪审团
-    - juror [ˈdʒʊrə(r)]
-        - n. 陪审员
-        - jury system 陪审团制度
-    - jurisdiction [ˌdʒʊrɪsˈdɪkʃn] n. 司法权；管辖权
-
-## note
-
-- vt. 提到；注意到
-- n. 证明；特征，调子，气氛
-- take notes 记笔记
-    - He listens well <ins>who **takes notes**</ins>.
-        - [从句后移式的分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md#%E4%BB%8E%E5%8F%A5%E5%90%8E%E7%A7%BB%E5%BC%8F%E7%9A%84%E5%88%86%E8%A3%82%E7%BB%93%E6%9E%84)
-        - == The person who takes notes listens well.
-- The longest *bull([bʊl]) run(牛市行情)* in a century of art market history ended
-  **on a dramatic note(以戏剧性的方式/带有戏剧性意味地)** with a sale of 56 works by Damien Hirst.
-    - bear run 熊市行情
-- notably
-    - adv. 显著地；尤其
-    - == in particular(adj. 特指的；特殊的；尤其的)
-    - == especially [ɪˈspeʃəli] adv. 尤其
-- notice
-    - vt. 注意到
-    - n. 通知；注意
-    - It takes about three weeks to a month to **notice** any significant changes in your weight due to altering your
-      training program.
-
 ## Words
 
-- flawless [ˈflɔlɪs]
-    - adj. 完美的，无瑕的
-    - == perfect
-- surpassed adj. 超越的，超过的
+- disavow [ˌdɪsə'vaʊ]
+    - vt. 不承认，抵赖，拒绝对...承担责任
+- anticipate
+    - vt. 预料
+- elect [ɪˈlekt]
+    - v. 选举; 选择
+    - adj. 候任的
 
 ## 词组
 
@@ -309,12 +248,5 @@
     - 把...推出去，推出来
 - all too human
     - 人之常情
-- in emergency([iˈmɜːrdʒənsi])
-    - 紧急情况
-- in peril([ˈperəl])
-    - 处于危险之中
-    - == in danger
-- in strength([streŋθ])
-    - 人数多/力量强大
 
 ## 句式

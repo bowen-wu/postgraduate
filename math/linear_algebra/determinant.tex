@@ -2,14 +2,6 @@
 
 \begin{document}
 
-%    \title{线性代数}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-
-% =========================
-
-
     \section{行列式}
 
     \subsection{行列式的定义与性质}
@@ -80,15 +72,21 @@
     \subsubsection{几个重要的行列式 12+1}
     考研中高频“模板型”（12+1）：
     \begin{enumerate}
-        \item 二阶行列式：$\begin{vmatrix}a&b\\c&d\end{vmatrix}=ad-bc$。
+        \item 二阶行列式：$\begin{vmatrix}
+                              a&b\\c&d
+        \end{vmatrix}=ad-bc$。
         \item 三阶行列式（萨鲁斯法则，仅三阶）：主对角线方向乘积和减副对角线方向乘积和。
         \item 单位行列式：$|E_n|=1$。
         \item 对角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
         \item 上三角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
         \item 下三角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
         \item 副对角线三角行列式：$|A|=(-1)^{\frac{n(n-1)}{2}}\prod_{i=1}^n a_{i,n+1-i}$。
-        \item 分块上（下）三角行列式：$\left|\begin{matrix}A&*\\O&B\end{matrix}\right|=|A||B|$。
-        \item 分块副对角形式：$\left|\begin{matrix}*&A\\B&O\end{matrix}\right|=(-1)^{mn}|A||B|$。
+        \item 分块上（下）三角行列式：$\left|\begin{matrix}
+                                              A&*\\O&B
+        \end{matrix}\right|=|A||B|$。
+        \item 分块副对角形式：$\left|\begin{matrix}
+                                        *&A\\B&O
+        \end{matrix}\right|=(-1)^{mn}|A||B|$。
         \item 拉普拉斯按行（列）展开式：$|A|=\sum a_{ij}A_{ij}$（固定行或列）。
         \item 范德蒙德行列式：$\prod_{1\le j<i\le n}(x_i-x_j)$。
         \item 箭形（边框）行列式：优先用“倍加+按含零多的行列展开”化简（常考结构，不死记单一公式）。
@@ -126,8 +124,12 @@
     \]
     二阶分块常用结论：
     \[
-        \left|\begin{matrix}A & *\\ O & B\end{matrix}\right|=|A||B|,\qquad
-        \left|\begin{matrix}* & A\\ B & O\end{matrix}\right|=(-1)^{mn}|A||B|
+        \left|\begin{matrix}
+                  A & *\\ O & B
+        \end{matrix}\right|=|A||B|,\qquad
+        \left|\begin{matrix}
+                  * & A\\ B & O
+        \end{matrix}\right|=(-1)^{mn}|A||B|
     \]
 
     \paragraph{范德蒙德行列式}
@@ -145,26 +147,44 @@
 
     \subsection{行列式的计算}
 
+    \begin{enumerate}
+        \item 几何性质
+        \item 性质
+        \item 逆序数法 $\Rightarrow$ 某一项
+        \item 展开公示
+        \begin{itemize}
+            \item 利用性质化更多的$0$
+            \item 基本型：上下三角行列式、副对角线行列式、拉普拉斯行列式、范德蒙行列式
+            \item 找差别不大的行
+            \item 找规律
+            \begin{itemize}
+                \item 行和相等行列式
+            \end{itemize}
+            \item 递推法：建立$D_n$与$D_{n-1}$的关系式，实现递推
+            \begin{itemize}
+                \item 元素分布规律相同
+                \item $D_{n-1}$比$D_n$少一阶
+                \item 宽对角行列式
+            \end{itemize}
+            \item 归纳法、
+        \end{itemize}
+    \end{enumerate}
+
     \subsubsection{具体型}
     \begin{enumerate}
-        \item 化为基本形
-        \item 递推法
-        \item 行列式表示的函数和方程
-    \end{enumerate}
-    \begin{enumerate}
         \item 化为基本形：优先用“倍加不变、交换变号、提公因子”化成三角形。
+        \begin{itemize}
+            \item 爪型行列式 $\Rightarrow$ 上下三角行列式
+        \end{itemize}
         \item 递推法：构造$D_n$与$D_{n-1},D_{n-2}$关系，配初值求闭式。
-        \item 函数与方程：把某行（列）视为参数，利用线性性先设$f(x)$再代值定系数。
+        \item 行列式表示的函数和方程：把某行（列）视为参数，利用线性性先设$f(x)$再代值定系数。
     \end{enumerate}
 
     \subsubsection{抽象型}
 
     \begin{enumerate}
-        \item 用性质
-        \item 用公式$|AB| = |A||B|$
-    \end{enumerate}
-    \begin{enumerate}
         \item 用性质：抓“对称/反对称/两行成比例/行列和关系”快速判零或因式分解。
+        \item 用公式$|AB| = |A||B|$
         \item 用乘法公式：若$A=PBP^{-1}$，则$|A|=|B|$；若易算$AB$或$BA$，可转化后求值。
     \end{enumerate}
 

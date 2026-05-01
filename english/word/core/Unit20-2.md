@@ -17,25 +17,6 @@
 - C: Cause
 - R: Result
 
-## custom
-
-- n. 习俗；[pl.] 海关；关税
-- The **custom** of lighting the Olympic *flame(n. 火焰)* goes back centuries.
-    - the custom of doing sth. 做某事的传统/习俗
-    - go back (some time) 追溯到（某个久远的时间）
-- The ship was boarded by **customs** officials.
-    - board a ship/plane/aircraft 登上（船 / 飞机）进行检查或执法
-    - be boarded by sb. 被某人登上并检查（执法语境）
-- customer n. 顾客
-- accustom [əˈkʌstəm]
-    - vt. 使习惯于
-    - accustomed
-        - adj. 习惯的
-        - 词组
-            - be accustomed to doing sth. 习惯于做某事
-                - == be used to doing sth.
-        - She was a person **accustomed** to having eight hours' sleep a night.
-
 ## decorate
 
 - vt. 装饰

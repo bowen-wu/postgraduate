@@ -15,6 +15,83 @@
 - [ə] -> 额(e)
 - 破折号: —
 
+## counter
+
+- v. 反驳
+- n. （商店、银行等的）柜台
+- adj. 反对的
+- counteract [ˌkaʊntərˈækt] vt. 抵消
+- counterbalance vt. 平衡；抵消
+
+## extreme
+
+- n. 极端
+- adj. 极度的；异乎寻常的（或严重的）
+- go to extremes 走极端
+- extremely adv. 非常（或极其）
+- ultra [ˈʌltrə]
+    - adj. 极其...的
+    - ultra-low emission zone(ULEZ) 超低排放区
+- sheer [ʃɪr]
+    - adj. （用来强调事物的大小、程度或数量）极其...的；完全的 （表示强调）
+    - The <ins>**sheer** volume of</ins> available choice is enough to send shoppers into a state of <ins>information
+      overload(信息过载)</ins>.
+        - sheer volume of... 强调数量大或规模巨大
+        - send sb. into a state of... 让某人进入...状态
+
+## finance
+
+- [ˈfaɪnæns]
+- vt. 给...提供资金
+- n. 金融；（pl. ）财务状况
+- == fund
+- financial [faɪˈnænʃl]
+    - adj. 财政的，财务的，金融的
+    - But many middle-class occupations—trucking, **financial** advice, software engineering—have aroused their
+      interest, or soon will.
+- fiscal [ˈfɪskl]
+    - n. 财政年度
+    - adj. 政府财政的
+    - It reported a <ins>net loss(净损失)</ins> of $5.6 billion for **fiscal** 2016, the 10th straight year its expenses
+      have exceeded revenue.
+- revenue [ˈrevənuː]
+    - n. （公司、组织的）收入；（政府的）财政收入
+    - The Supreme Court's opinion Thursday overruled a pair of decades-old decisions that states said cost them billions
+      of dollars in lost **revenue** annually.
+- income n. 收入
+- margin n. 利润率；页边空白；（pl.）边缘部分
+- monetary [ˈmɑːnɪteri] adj. 钱的；（尤指一国）货币的（或金融的）
+- cashless adj. 不用现金的
+- exchequer [ɪksˈtʃɛkɚ]
+    - n. （英国）财政部
+    - *Chancellor([ˈtʃænsələr] n. （英国）财政大臣)* of the Exchequer 英国财政大臣/财政大臣
+- premium [ˈpriːmiəm]
+    - n. 保险费
+    - 词组
+        - put a premium on sth. 珍视
+
+## immune
+
+- [ɪˈmjuːn]
+- adj. 不受影响的(PE)；有免疫力的；免除的；豁免的；免疫（系统）的
+- 词组
+    - (be) immune to 对...免疫；不受...影响
+    - be immune from 免于...
+- 7 ways to boost your **immune** system
+- We are **immune** to advertising.
+- I become **immune** to criticism.
+- When there is rapid improvement in the price and performance of technology, jobs that were once thought to
+  <ins>be **immune** from</ins> automation suddenly become threatened.
+    - be thought to be... 人们认为...
+        - == It is thought that...
+- immunity n. 免疫力
+- exempt [ɪɡˈzempt]
+    - vt. 免除（或豁免）
+    - adj. 免除（责任、付款等）的
+    - <ins>Even then(即便如此)</ins> several states automatically **exempted** women from jury duty unless they
+      personally asked to have their names included on the jury list.
+        - exempt someone from something 免除某人的某种义务
+
 ## import
 
 - vt. 进口（或输入）
@@ -94,130 +171,6 @@
     - percentage
         - n. 百分比
         - == proportion
-
-## schedule
-
-- n. 日程安排
-- agenda [əˈdʒendə]
-    - n. 目的；计划
-    - == plan
-    - put sth. on the top of the agenda 把某事放在最优先处理的位置/列为首要任务
-        - attach (utmost/much) importance/significance/value/weight to sth. 认为...重要；重视...
-
-## strain
-
-- [streɪn]
-- vt. 过度使用
-    - == overused
-- n. 压力
-    - == stress
-- strained
-    - adj. 紧张的；不和谐的；恶化的；勉强维持的
-    - their **strained** relations with the boards.
-        - strained relations 紧张的关系/不和谐的关系
-- constrain
-    - vt. 限制
-    - constraint
-        - n. 约束
-        - ...online-only competitors don't have the same *set(n. 一组/一套)* of financial **constraints**.
-    - constrained adj. 不舒服的，被强迫的，拘泥的
-- restrain
-    - vt. 抑制
-    - restraint
-        - n. 克制
-        - == constraint
-- bind
-    - vt. （使）联合在一起；系
-    - ...a result seen in France and other countries with <ins>legally **binding**(法律约束)</ins> provision on placing
-      women in top business positions.
-
-## trait
-
-- [treɪt]
-- n. 特点，特征
-- == characteristic
-- ...the career office found the most desirable **trait** in a future employer was the ability to offer secure
-  employment.
-- portrait [ˈpɔːrtrət]
-    - n. 肖像
-    - portray [pɔːrˈtreɪ] vt. 描绘
-
-## furthermore
-
-- adv. 此外，而且
-- == moreover == in addition
-- further [ˈfɜːrðər]
-    - adv. （空间距离）较/更远地; (时间上)更(早或晚); 更极端地; (发展中)进一步地; 在更大程度上; 而且
-    - adj. 更多的; 附加的
-    - v. 促进; 增进
-    - future [ˈfjuːtʃər] n. 未来; 前途;
-    - feature  [ˈfiːtʃər]
-        - vt. 以...为特色
-        - vi. 起重要作用
-        - n. 特点；（报纸、电视等的）特写
-- moreover adv. 此外，而且
-
-## emission
-
-- n. 排放物
-- The new _ultra-low **emission** zone(Ulez)_ is likely to be a big issue in next year's mayoral election.
-- emit vt. 排放，散发（尤指气体、辐射物）
-- launch vt. 发起（尤指有组织的活动）；创办（企业）；发行
-
-## entitle
-
-- vt. 使享有权利；给...题名
-- be entitled to sth. 有权利享有某物/有资格获得某物
-- Everyone's **entitled** to their own opinion.
-- They are **entitled** to <ins>first class(头等舱)</ins> travel.
-    - class n. 仓位
-- The court, though, may want to allow room for police to cite situations where they **are entitled to** more freedom.
-    - allow room for 留有余地/给...保留空间
-    - more freedom 在法律语境中通常指： 行动自由/自由裁量权
-- subtitle n. 字幕；副标题
-
-## hijack
-
-- [ˈhaɪdʒæk]
-- vt. 劫持（交通工具，尤指飞机）；强行控制
-- poach [poʊtʃ]
-    - vt. 挖走（人员等）
-    - <ins>For years(多年来)</ins> executives and headhunters have adhered to the rule that the most attractive CEO
-      candidates are the ones who must be **poached**.
-
-## imitate
-
-- vt. 模仿
-- First you **imitate**, then you *innovate([ˈɪnəveɪt] v. 改革；创新)*.
-- These *epochal(['epəkəl] adj. 划时代的)* figures represented lives hard to **imitate**...
-- What is being called artificial general intelligence, machines that would **imitate** the way humans think, continues
-  to evade scientists.
-- imitation n. 模仿
-
-## inflation
-
-- [ɪnˈfleɪʃn]
-- n. 通货膨胀（率）
-- inflate v. （使）涨高
-- fluctuate [ˈflʌktʃueɪt]
-    - vi. （大小、数量、质量等）波动
-    - This time experts reckon that prices are about 40% down on their peak on average, though some have been for more
-      **fluctuate**.
-    - fluctuant ['flʌktʃʊrnt] adj. 波动的
-    - fluctuation [ˌflʌktʃʊˈeɪʃn]
-        - n. 波动，起伏
-        - Weighing yourself regularly is a wonderful way to stay aware of any significant weight **fluctuations**.
-- afloat [əˈfloʊt]
-    - adj. 能维持下去
-    - 词组
-        - stay afloat 勉强存活
-            - == survive
-    - keep the Postal Service **afloat**
-- circulation [ˌsɜːrkjəˈleɪʃn]
-    - n. 流通；（报刊）发行量
-    - It was to ruin lives in the quest for **circulation** and impact.
-      - in the quest for 在追求...的过程中
-    - factors promoting artwork **circulation**
 
 ## Words
 

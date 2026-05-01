@@ -17,6 +17,84 @@
 - C: Cause
 - R: Result
 
+
+## discuss
+
+- [dɪˈskʌs]
+- vt. 讨论
+- discussion n. 讨论
+- negotiate [nɪˈɡoʊʃieɪt]
+  - v. 协商
+  - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that *each want
+    something* out of the deal.
+    - out of 在...之外；（== form）从...中获得、因...、由...
+  - You might **negotiate** with your mom—offering to do more *chores([tʃɔːr] n. 家务活)* for a rise in your
+    allowance.
+  - Two companies debate the terms of a contract.
+  - negotiation n. 协商
+
+## propose
+
+- [prəˈpoʊz]
+- vt. 提出；提议
+- purpose [ˈpɜːrpəs] n. 目的；目标
+- proposal [prəˈpoʊzl]
+  - n. 提议
+  - ...they *presumably([prɪˈzuːməbli] adv. 大概可以认为；想必；据推测)* have enough independence to disagree with the
+    chief executive's **proposals**.
+- advise [ədˈvaɪz]
+  - v. 建议
+  - advise sb. to do sth.
+  - advice [ədˈvaɪs] n. 建议
+  - advisable adj. 明知可取的
+- recommend
+  - v. 建议；推荐
+  - recommendation n. 推荐
+
+## survive
+
+- vi. 继续存在
+- vt. 经受住
+- survival [sərˈvaɪvl] n. 幸存；生存
+- vivid
+  - adj. 生动的
+  - vividly adv. 生动地
+- revive [rɪˈvaɪv]
+  - v. 恢复
+  - revival [rɪˈvaɪvl]
+    - n. 复兴
+    - If something experiences a **revival**, that means it's once again **popular or important**.
+- outlive v. 比...活的长
+- renaissance
+  - n. (the R-)文艺复兴（时期）；复兴
+  - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* <ins>the
+    *exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的)* lives of great men(伟人的典范人生)</in>.
+  - Havaiian culture is not a *relic([ˈrelɪk] n. 遗物)* of the past; it is a living culture undergoing a
+    **renaissance** today.
+
+## connect
+
+- vt. 把...联系起来
+- disconnect vt. 使脱离
+- connection n. 联系；连接
+- combine [kəmˈbaɪn]
+  - v. （使）结合；合并
+  - be combined with
+  - combination [ˌkɑːmbɪˈneɪʃn] n. 结合
+- contact [ˈkɑːntækt]
+  - vt. 接触；联系
+  - n. 接触；联系
+  - in contact with sb. 与某人保持联系
+- constitute [ˈkɑːnstɪtuːt]
+  - v. 组成，构成；成立
+  - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**".
+  - "What **constitutes** a family?" means "What **makes up** a family?"
+  - constituent [kənˈstɪtʃuənt] n. （选区的）选民；成分
+- joint
+  - adj. 联合的
+  - That's because Congress has always *envisioned([enˈvɪʒənd] vt. 设想)* **joint** federal-state immigration
+    enforcement.
+
 ## competition
 
 - [ˌkɑːmpəˈtɪʃn]
@@ -109,133 +187,6 @@
     - equip sb. with sth. 为某人配备/提供某物（能力、工具、资源等）
     - equipment n. 设备（个人）
 
-## insist
-
-- [ɪnˈsɪst]
-- v. 坚持要求；坚称
-- -sist- 站
-- He **insisted** that he was *innocent([ˈɪnəsnt] adj. 无罪的)*.
-- He **insists** that she should come.
-- insistence n. 坚持
-- assist [əˈsɪst]
-    - v. 帮助
-    - assistance n. 帮助
-    - assistant adj. 助理的
-- consist [kənˈsɪst]
-    - vi. 由...组成
-    - con- 共同
-    - consist of 由...组成
-        - == be made up of
-    - consistent adj. 一致的
-    - inconsistent
-        - adj. 反复无常的；不一致的
-        - ...have proved to be **inconsistent**.
-        - We had a terrific start to the season, but recently we've been **inconsistent**.
-    - consistently adv. 持续地
-- persist [pərˈsɪst]
-    - vi. 持续存在
-    - persist in doing sth. 坚持做某事（尤其在困难或反对下）
-    - persistence n. 坚持
-    - persistent adj. 持续的
-- resist [rɪˈzɪst]
-    - v. 抵制
-    - re- 回
-    - resistance n. 抵制；耐力；阻力
-    - resistant adj. 耐...的；抵制的
-    - resistible adj. 可抵抗的
-    - irresistible adj. 无法抗拒的; 诱惑人的，具有非常的魅力的; 不可抗拒; 不可阻挡
-- exist
-    - vi. 存在；生存
-    - ex- 向外
-    - existence n. 存在；生活方式；实体
-    - coexist [ˌkoʊɪɡˈzɪst] v. 共存；和平共处
-
-## rural
-
-- adj. 农村的
-- aristocratic [əˌrɪstəˈkrætɪk]
-    - adj. 贵族的
-    - The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* strive to abandon or hide their old **aristocratic**
-      ways.
-    - aristocrat [əˈrɪstəkræt]
-        - n. 贵族
-        - An **aristocrat** is someone form the ruling class, usually those with **nobility**, money, or both.
-- noble [ˈnoʊbl]
-    - adj. 高贵的
-    - nobility [noʊˈbɪləti]
-        - n. 贵族
-        - the nobility
-
-## obtain
-
-- [əbˈteɪn]
-- vt. 获得
-- **Obtain** means to **get something that is not so easy to come** by such as knowledge, rights, or a large amount of
-  money.
-- You wouldn't say you **obtained** a pair of pants unless they were one of a kind.
-    - one of a kind 独一无二
-- Rested in the Pacific Ocean, Mauua Kea's peak <ins>rises above(高于、超出)</ins> <ins>the bulk of(...的大部分)</ins>
-  our *planet(n. 行星)*'s <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to **obtain**
-  images of unsurpassed clarity. 坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
-- attain [əˈteɪn] vt. 获得
-- retain [rɪˈteɪn] v. 保留
-
-## wake
-
-- v. 醒来；唤醒
-- n. 尾部的气流
-- 词组
-    - in the wake of 跟随...之后
-    - wake up 醒来；唤醒；使清醒
-- That means more battles like the one now going on between the Justice Department and California, which enacted <ins>a
-  *tough([tʌf] adj. 强硬的)* net neutrality law</ins> <ins>in the **wake** of</ins> the FCC's abdication.
-- awake
-    - adj. 醒着的
-    - asleep adj. 睡着的
-    - When you're **awake**, you'<ins>re</ins> *conscious(adj. 意识到)* and <ins>aware of</ins> your surroundings.
-        - be aware of 意识到...
-    - awaken
-        - v. （使）醒来
-        - vt. 唤起
-        - Mental health is our birthright...Mental health can't be learned, only **reawakened**.
-
-## solve
-
-- [sɑːlv]
-- v. 解决
-- solution n. 解决办法
-- resolve [rɪˈzɑːlv]
-    - v. 解决
-    - resolution
-        - n. 决心；解决
-        - The reforms <ins>owe a great deal to(很大程度上得益于...)</ins> the **resolution** of one man.
-        - The government is <ins>pressing for(敦促)</ins> an early **resolution** of the dispute.
-- deal with == cope with == handle == address == tackle [ˈtækl] 解决，处理
-
-## vote
-
-- v. 投票
-- n. 投票
-- campaign [kæmˈpeɪn]
-    - n. 战役；（有计划的）运动；竞选运动
-    - A political candidate might **campaign** on promises to bring sweeping change to a country.
-        - campaign on 以某个议题/政策/立场作为竞选或活动的核心内容
-- lobby [ˈlɑːbi]
-    - v. 游说
-    - n. 大厅，休息室；游说团体（政治）(PE)
-    - A **lobby** is a large waiting room or reception area.
-    - a hotel lobby
-    - political lobby group 政治游说团体
-    - Under **lobby** pressure, George Osborne favours rural new-build against urban renovation and renewal.
-- elect
-    - vt. 选举
-    - In a direct democracy, citizens <ins>take turns(轮流)</ins> governing themselves, rather than **electing**
-      representatives to govern for them.
-        - A rather than B 肯定A否定B
-    - election n. 选举
-    - electoral [ɪˈlektərəl] adj. 与选举有关的
-- candidate n. 候选人
-
 ## Words
 
 - cooperative
@@ -244,14 +195,6 @@
     - adj. 破坏性的
 - toddler [ˈtɑːdlər]
     - n. 蹒跚行走的人; 幼童装; 学步的幼儿
-- princess [ˈprɪnses]
-    - n. 公主
-- kitten [ˈkɪtn]
-    - n. 小猫; 小动物
-- interference [ˌɪntərˈfɪrəns]
-    - n. 干涉
-- instrument [ˈɪnstrəmənt]
-    - n. 仪器，器械，工具；乐器
 
 ## 词组
 
