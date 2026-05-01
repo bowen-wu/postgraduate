@@ -99,6 +99,7 @@ export function render(ui) {
   }
 
   ui.btnPrev.disabled = STATE.currentIndex === 0;
+  updateStatsUI(ui);
 }
 
 export function renderInputActions(ui) {
