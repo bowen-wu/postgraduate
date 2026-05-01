@@ -1,0 +1,54 @@
+[
+  {
+    "id": "card_0",
+    "word": "economical",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "省钱的；节约的"
+      }
+    ],
+    "ipa": "[ˌeːkəˈnɑːmɪkl]"
+  },
+  {
+    "id": "card_1",
+    "word": "economic vs. economical",
+    "type": "contrast",
+    "contrastOptions": [
+      "economic",
+      "economical"
+    ],
+    "items": [
+      {
+        "type": "contrast",
+        "en": "Here's his advice for <ins>economic/economical</ins> foodies.",
+        "blankOptions": [
+          "economic",
+          "economical"
+        ]
+      },
+      {
+        "type": "contrast",
+        "en": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+        "blankOptions": [
+          "economic",
+          "economical"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "system",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "系统；体制"
+      }
+    ]
+  }
+]

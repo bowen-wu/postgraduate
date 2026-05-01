@@ -29,6 +29,9 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
       continue;
     }
 
+    // Stop contrast block when reaching a new section header.
+    if (trimmed.startsWith('##')) break;
+
     const listIndent = matchListIndent(rawLine);
     if (!listIndent) {
       if (items.length > 0) {
