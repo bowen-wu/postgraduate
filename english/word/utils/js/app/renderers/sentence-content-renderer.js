@@ -1,3 +1,18 @@
+function formatSentenceCnHtml(text) {
+  let html = String(text || '');
+  html = html
+    .replace(/<br\s*\/?>/gi, '<br>')
+    .replace(/&emsp;|&#8195;/gi, '&nbsp;&nbsp;')
+    .replace(/&nbsp;/gi, '&nbsp;')
+    .replace(/<p\s+align=["']right["']\s*>/gi, '<div style="text-align:right;">')
+    .replace(/<p[^>]*>/gi, '<div>')
+    .replace(/<\/p>/gi, '</div>');
+
+  // Keep only simple line-break/paragraph formatting tags for display.
+  html = html.replace(/<(?!\/?(br|div)\b)[^>]+>/gi, '');
+  return html;
+}
+
 export function renderSentenceItems(ui, card) {
   const li = document.createElement('li');
   li.className = 'item';
@@ -63,7 +78,7 @@ export function renderSentenceItems(ui, card) {
     const cnDiv = document.createElement('div');
     cnDiv.className = 'sentence-cn';
     cnDiv.id = 'sentenceCn';
-    cnDiv.textContent = item.cn;
+    cnDiv.innerHTML = formatSentenceCnHtml(item.cn);
     cnDiv.style.display = 'none';
     ui.list.appendChild(cnDiv);
   } else {
