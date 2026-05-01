@@ -22,9 +22,11 @@
 - vt. 表明；暗示；建议
 - I **suggest** him that he (should) **ask** some specific questions about her past.
     - suggest/demand/require sb. (should) do 虚拟
-- I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的
-- Are you **suggesting** that I'm rejected?
 - A new study **suggests** that contrary to most surveys, people are actually more stressed at home than at work.
+- suggesting
+    - v. 暗示；使想起；启示
+    - I'm not **suggesting** that is what is happening. 我并不是在暗示/表示这件事正在发生 -> 我并不是说事情就是那样的
+    - Are you **suggesting** that I'm rejected?
 - suggestion n. 建议
 - indicate
     - vt. 表明；暗示；指出
@@ -64,7 +66,7 @@
     - break through 突破
         - == breakthrough n. 突破
 - go through the motions 走过场；做做样子；敷衍了事
-- Be *relentless([rɪˈlentləs] adj. 不懈的; 坚韧的，不屈不挠的)* and then you'll **break through**.
+- Be *relentless([rɪˈlentləs] adj. 不懈的；坚韧的，不屈不挠的)* and then you'll **break through**.
 - Don't just **go through** it; grow **through** it.
 - However, Obamacare has allowed more than 12 million people to either get *insurance([ɪnˈʃʊrəns] n. 保险)* **through**
   Medicaid or the exchanges.
@@ -87,7 +89,7 @@
 - The deal may be **ruled** illegal.
 - The first **rule** is not to lose. The second **rule** is not to forget the first **rule**.
 - ...courts are likely to **rule that** the law violates the constitutional guarantee of "equal protection".
-- Rain falls from above, and people who reign <ins>**rule** from</ins> a position above others.
+- Rain falls from above, and **people who reign** <ins>**rule** from</ins> a position above others.
 - ...she wants the effect to be real but cannot **rule out** some unknown confounding variable.
     - rule out 排除；不予考虑
 - ruling n. 裁决
@@ -134,7 +136,6 @@
 - economical [ˌeːkəˈnɑːmɪkl]
     - adj. 省钱的；节约的
     - economically [ˌikəˈnɑmɪkli] adv. 在经济上；节省地
-    - Contrast: economic vs. economical
         - Here's his advice for <ins>economic/economical</ins> foodies.
         - It's a sure sign of <ins>economic/economical</ins> recovery.
 
