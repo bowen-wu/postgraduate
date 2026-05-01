@@ -1,5 +1,3 @@
-import { STATE } from '../../config.js';
-
 function escapeHtml(text) {
   return String(text || '')
     .replace(/&/g, '&amp;')
@@ -16,7 +14,7 @@ function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
     ? match[1].split('/').map((item) => item.trim()).filter(Boolean)
     : fallbackOptions;
 
-  const placeholder = `<span id="${blankId}" class="blur-target" style="padding:0 0.35rem;border-bottom:1px dashed #94a3b8;color:#64748b;">[ 选择 ]</span>`;
+  const placeholder = `<span id="${blankId}" style="padding:0 0.35rem;border-bottom:1px dashed #94a3b8;color:#64748b;">[ 选择 ]</span>`;
   const sentenceHtml = match
     ? sentence.replace(/<ins>.*?<\/ins>/i, placeholder)
     : `${escapeHtml(sentence)} ${placeholder}`;
@@ -52,7 +50,7 @@ export function renderContrastItems(ui, card, stats) {
       idx
     );
     li.innerHTML = `
-      <div class="${STATE.mode === 'recall' ? 'en-text blur-target' : 'en-text'}">${sentenceHtml}</div>
+      <div class="en-text">${sentenceHtml}</div>
       <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.5rem;">
         ${optionsHtml}
       </div>
