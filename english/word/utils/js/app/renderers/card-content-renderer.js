@@ -11,6 +11,9 @@ function renderBadges(ui, card, stats) {
 
 function renderItems(ui, card, stats) {
   ui.list.innerHTML = '';
+  // Reset recall reveal state between cards so hidden sections don't leak
+  // into the next card's first screen in recall mode.
+  ui.list.classList.remove('revealed');
 
   if (card.type === 'phrase') {
     renderPhraseItems(ui, card, stats);

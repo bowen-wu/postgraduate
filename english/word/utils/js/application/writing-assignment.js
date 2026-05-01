@@ -27,7 +27,9 @@ const UNIT_FILES = [
   'core/Unit18-1.md', 'core/Unit18-2.md', 'core/Unit18-3.md',
   'core/Unit19-1.md', 'core/Unit19-2.md', 'core/Unit19-3.md',
   'core/Unit20-1.md', 'core/Unit20-2.md',
-  'core/Unit21-1.md', 'core/Unit21-2.md', 'core/Unit21-3.md'
+  'core/Unit21-1.md', 'core/Unit21-2.md', 'core/Unit21-3.md',
+  'core/PE-1.md', 'core/PE-2.md', 'core/PE-3.md',
+
 ];
 
 export const UNIT_WRITING_MAP = Object.fromEntries(
