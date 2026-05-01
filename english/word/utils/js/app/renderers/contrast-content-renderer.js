@@ -53,14 +53,6 @@ function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
 
 export function renderContrastItems(ui, card, stats) {
   const itemCount = card.items?.length || 0;
-  const optionLabel = Array.isArray(card.contrastOptions) ? card.contrastOptions.join(' vs. ') : card.word;
-
-  const wrapper = document.createElement('div');
-  wrapper.className = 'phrase-header-wrapper';
-  wrapper.innerHTML = `
-    <div class="phrase-title">Contrast: ${escapeHtml(optionLabel)}</div>
-  `;
-  ui.list.appendChild(wrapper);
 
   for (let idx = 0; idx < itemCount; idx++) {
     const item = card.items[idx];
