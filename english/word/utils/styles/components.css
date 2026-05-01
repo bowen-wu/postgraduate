@@ -303,6 +303,16 @@ body.mode-recall .item-list.revealed > .similars-section {
 body.mode-recall .item-list.revealed {
     display: flex;
 }
+/* Contrast cards should behave the same in input/recall mode:
+   keep sentence and options visible without blur. */
+body.mode-recall .card.is-contrast .item-list > .item {
+    display: block;
+}
+body.mode-recall .card.is-contrast .en-text {
+    filter: none;
+    opacity: 1;
+    user-select: text;
+}
 
 .item { position: relative; }
 .item-tag {
