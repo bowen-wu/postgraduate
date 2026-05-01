@@ -350,4 +350,14 @@ export function selectContrastOption(targetId, encodedChoice) {
   if (!choice) return;
   blank.textContent = choice;
   blank.classList.add('revealed');
+
+  const playButton = document.querySelector(`.audio-play-btn[data-target-id="${targetId}"]`);
+  if (!playButton) return;
+  const encodedTemplate = playButton.dataset.sentenceTemplate || '';
+  const template = decodeURIComponent(encodedTemplate);
+  const sentence = template.replace('__BLANK__', choice).replace(/\s+/g, ' ').trim();
+  if (!sentence) return;
+  playButton.dataset.wordEncoded = encodeURIComponent(sentence);
+  playButton.dataset.word = sentence;
+  playButton.disabled = false;
 }
