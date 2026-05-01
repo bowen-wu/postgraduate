@@ -9,7 +9,8 @@ export function createFileUseCases(deps) {
     renderFolderFileList,
     renderFileListError,
     getApp,
-    getUi
+    getUi,
+    buildWritingCardForUnit = async () => null
   } = deps;
 
   function syncActiveFileInList(container, currentPath) {
@@ -97,6 +98,12 @@ export function createFileUseCases(deps) {
       const parser = new ParserClass(text);
       state.cards = parser.parse();
 
+      // Inject one writing example card at the tail from single-source writing corpus.
+      const writingCard = await buildWritingCardForUnit(relativePath);
+      if (writingCard) {
+        state.cards.push(writingCard);
+      }
+
       // Debug: 打印生成的每一个 Card
       console.log('=== 生成的 Cards ===');
       console.log(`共 ${state.cards.length} 张卡片`);
@@ -117,7 +124,8 @@ export function createFileUseCases(deps) {
       targetUi.loader.classList.add('hidden');
       targetUi.card.classList.remove('hidden');
 
-      if (state.currentIndex === 0 && !document.getElementById('displayWord')) {
+      const hasDisplayWordNode = typeof document !== 'undefined' && document.getElementById('displayWord');
+      if (state.currentIndex === 0 && !hasDisplayWordNode) {
         uiRenderer.updateCurrentFileDisplay(targetUi, relativePath);
         getApp().restart();
       } else {

@@ -17,6 +17,7 @@ import {
   stopCurrentAudioPlayback
 } from '../infrastructure/audio-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
+import { buildWritingCardForUnit } from '../infrastructure/writing-service.js';
 import { renderRootFileList, renderFolderFileList, renderFileListError } from './presenters/file-list-presenter.js';
 
 let appContext = null;
@@ -84,6 +85,7 @@ function getFileUseCases() {
       renderRootFileList,
       renderFolderFileList,
       renderFileListError,
+      buildWritingCardForUnit,
       getApp,
       getUi
     });

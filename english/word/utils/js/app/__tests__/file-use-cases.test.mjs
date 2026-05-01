@@ -45,6 +45,7 @@ function createDeps(overrides = {}) {
     renderRootFileList: () => '<div>root</div>',
     renderFolderFileList: () => '<div>folder</div>',
     renderFileListError: () => '<div>error</div>',
+    buildWritingCardForUnit: async () => null,
     getApp: () => ({
       ui: {
         filePanel: { classList: { contains: () => false, add: () => {}, remove: () => {}, toggle: () => {} } }
@@ -84,4 +85,24 @@ test('refreshFileList loads current folder when path exists', async () => {
   await useCases.refreshFileList();
   assert.equal(calls.loadRoot, 0);
   assert.equal(calls.loadFolder, 1);
+});
+
+test('loadFile appends writing card when assignment exists', async () => {
+  const { state, useCases } = createDeps({
+    gitHubApi: {
+      fetchFolderContents: async () => ({ folders: [], files: [] }),
+      fetchFileContent: async () => '- test',
+      clearCache: () => {}
+    },
+    buildWritingCardForUnit: async () => ({
+      id: 'writing_W001',
+      word: 'Writing W001',
+      type: 'sentence',
+      items: [{ type: 'sentence', en: 'EN', cn: 'CN' }]
+    })
+  });
+
+  await useCases.loadFile('core/Unit1-1.md');
+  assert.equal(state.cards.length, 2);
+  assert.equal(state.cards[1].id, 'writing_W001');
 });
