@@ -112,8 +112,8 @@
     - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
       one.
     - Contrast: distinguish vs. differ
-        - Could he <ins>distinguish/differ</ins> right from wrong?
-        - The two leaders had <ins>distinguish/differ</ins> on the issue.
+        - Could he [[distinguish/differ]] right from wrong?
+        - The two leaders had [[distinguish/differ]] on the issue.
 - distinction
     - n. 差别
     - distinctive

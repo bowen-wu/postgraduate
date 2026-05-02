@@ -8,20 +8,23 @@ function escapeHtml(text) {
 }
 
 function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
-  const match = String(sentence || '').match(/<ins>(.*?)<\/ins>/i);
+  const text = String(sentence || '');
+  const bracketMatch = text.match(/\[\[(.*?)\]\]/);
+  const insMatch = text.match(/<ins>(.*?)<\/ins>/i);
+  const match = bracketMatch || insMatch;
   const blankId = `contrast-blank-${cardId}-${itemIndex}`;
   const playButtonId = `play-btn-contrast-${cardId}-${itemIndex}`;
   const options = match
-    ? match[1].split('/').map((item) => item.trim()).filter(Boolean)
+    ? match[1].split('/').map((item) => item.replace(/\*\*/g, '').trim()).filter(Boolean)
     : fallbackOptions;
 
   const placeholder = `<span id="${blankId}" style="padding:0 0.35rem;border-bottom:1px dashed #94a3b8;color:#64748b;">[ 选择 ]</span>`;
-  const sentenceTemplate = match
-    ? sentence.replace(/<ins>.*?<\/ins>/i, '__BLANK__')
-    : `${String(sentence || '').trim()} __BLANK__`;
-  const sentenceHtml = match
-    ? sentence.replace(/<ins>.*?<\/ins>/i, placeholder)
-    : `${escapeHtml(sentence)} ${placeholder}`;
+  const sentenceTemplate = bracketMatch
+    ? sentence.replace(/\[\[(.*?)\]\]/, '__BLANK__')
+    : (insMatch ? sentence.replace(/<ins>.*?<\/ins>/i, '__BLANK__') : `${text.trim()} __BLANK__`);
+  const sentenceHtml = bracketMatch
+    ? sentence.replace(/\[\[(.*?)\]\]/, placeholder)
+    : (insMatch ? sentence.replace(/<ins>.*?<\/ins>/i, placeholder) : `${escapeHtml(sentence)} ${placeholder}`);
 
   const optionsHtml = options.map((opt) => `
     <button class="btn-ghost" data-action="select-contrast-option" data-target-id="${blankId}" data-choice="${encodeURIComponent(opt)}" style="padding:0.15rem 0.45rem;font-size:0.8rem;">

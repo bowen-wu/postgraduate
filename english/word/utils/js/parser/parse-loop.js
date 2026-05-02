@@ -41,9 +41,41 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       contrastOptions: header.options,
       items: []
     };
-    const { items, lastLineIndex } = parseContrastChildren(parser.lines, lineIndex, indentLevel, header.options);
+    const { items, extras, lastLineIndex } = parseContrastChildren(parser.lines, lineIndex, indentLevel, header.options);
     card.items = items;
     parser.cards.push(card);
+
+    // Extract inline word cards from contrast sentences, e.g. *profession(n. 职业)*.
+    items.forEach((item) => {
+      const sentence = String(item.en || '');
+      sentence.replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, (_m, word, def) => {
+        if (parser.hasPosMarker(def)) {
+          parser.cards.push(parser.createWordCard(`${word} ${def}`, indentLevel + 2));
+        }
+        return word;
+      });
+    });
+
+    extras.forEach((extra) => {
+      const cardType = parser.determineCardType(extra.content, extra.indentLevel, extra.lineIndex);
+      if (cardType === 'word') {
+        parser.cards.push(parser.createWordCard(extra.content, extra.indentLevel));
+        return;
+      }
+      if (cardType === 'prefix') {
+        parser.cards.push(parser.createPrefixCard(extra.content, extra.indentLevel, extra.lineIndex));
+        return;
+      }
+      if (cardType === 'phrase') {
+        const phraseCard = parser.createPhraseCard(extra.content, extra.indentLevel);
+        parser.cards.push(phraseCard);
+        return;
+      }
+
+      // Fallback: treat explanatory contrast child lines as phrases.
+      parser.cards.push(parser.createPhraseCard(extra.content, extra.indentLevel));
+    });
+
     return lastLineIndex;
   }
 

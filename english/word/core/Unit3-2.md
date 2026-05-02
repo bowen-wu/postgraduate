@@ -90,9 +90,9 @@
         - vt. 修订; 改变; 修正; [主英国英语]复习
         - vi. 修订，校订
     - Contrast: revise(有修改) vs. review(无修改)
-        - With time he came to <ins>**revise/review**</ins> his opinion of the *profession(n. 职业)*.
+        - With time he came to [[revise|review]] his opinion of the *profession(n. 职业)*.
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
-        - A doctor might <ins>revise/review</ins> your *medical([ˈmedɪkl])* record to help diagnose your sickness.
+        - A doctor might [[revise|review]] your *medical([ˈmedɪkl])* record to help diagnose your sickness.
 - perspective [pərˈspektɪv]
     - n. 观点
     - 词组

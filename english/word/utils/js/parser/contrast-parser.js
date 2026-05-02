@@ -1,7 +1,11 @@
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 
 function normalizeOption(option) {
-  return String(option || '').trim().replace(/\s+/g, ' ');
+  return String(option || '')
+    .replace(/\*\*/g, '')
+    .replace(/\([^)]*\)/g, '')
+    .trim()
+    .replace(/\s+/g, ' ');
 }
 
 export function parseContrastHeader(content) {
@@ -17,9 +21,28 @@ export function parseContrastHeader(content) {
   };
 }
 
+function extractBlankOptions(sentence, fallbackOptions = []) {
+  const text = String(sentence || '');
+  const bracketMatch = text.match(/\[\[(.*?)\]\]/);
+  if (bracketMatch) {
+    return bracketMatch[1].split('/').map(normalizeOption).filter(Boolean);
+  }
+  const insMatch = text.match(/<ins>(.*?)<\/ins>/i);
+  if (insMatch) {
+    return insMatch[1].split('/').map(normalizeOption).filter(Boolean);
+  }
+  return [...fallbackOptions];
+}
+
+function hasContrastBlank(sentence) {
+  return /\[\[(.*?)\]\]/.test(String(sentence || '')) || /<ins>(.*?)<\/ins>/i.test(String(sentence || ''));
+}
+
 export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallbackOptions = []) {
   const items = [];
+  const extras = [];
   let i = lineIndex + 1;
+  let contrastItemIndent = null;
 
   while (i < lines.length) {
     const rawLine = lines[i];
@@ -34,7 +57,7 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
 
     const listIndent = matchListIndent(rawLine);
     if (!listIndent) {
-      if (items.length > 0) {
+      if (items.length > 0 && hasContrastBlank(items[items.length - 1].en)) {
         const lastItem = items[items.length - 1];
         lastItem.en = `${lastItem.en} ${trimmed}`.replace(/\s+/g, ' ').trim();
       }
@@ -46,10 +69,18 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
     if (indentLevel <= parentIndentLevel) break;
 
     const sentence = getListContentFromTrimmed(trimmed);
-    const insMatch = sentence.match(/<ins>(.*?)<\/ins>/i);
-    const blankOptions = insMatch
-      ? insMatch[1].split('/').map(normalizeOption).filter(Boolean)
-      : [...fallbackOptions];
+    const blankOptions = extractBlankOptions(sentence, fallbackOptions);
+    const isContrastSentence = hasContrastBlank(sentence);
+
+    if (contrastItemIndent === null && isContrastSentence) {
+      contrastItemIndent = indentLevel;
+    }
+
+    if (!isContrastSentence || (contrastItemIndent !== null && indentLevel > contrastItemIndent)) {
+      extras.push({ content: sentence, indentLevel, lineIndex: i });
+      i++;
+      continue;
+    }
 
     items.push({
       type: 'contrast',
@@ -59,5 +90,5 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
     i++;
   }
 
-  return { items, lastLineIndex: i - 1 };
+  return { items, extras, lastLineIndex: i - 1 };
 }
