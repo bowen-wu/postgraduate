@@ -79,8 +79,9 @@ export function renderSentenceItems(ui, card) {
     ui.list.appendChild(textareaTitle);
 
     const textarea = document.createElement('textarea');
+    textarea.id = 'complex-sentence-draft';
     textarea.className = 'complex-sentence-input';
-    textarea.placeholder = '在这里记录你的思考...';
+    textarea.placeholder = '用于断句/结构拆分的临时草稿（不会保存）';
     ui.list.appendChild(textarea);
   }
 

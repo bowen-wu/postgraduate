@@ -365,3 +365,12 @@ export function selectContrastOption(targetId, encodedChoice) {
   playButton.dataset.word = sentence;
   playButton.disabled = false;
 }
+
+export function fillComplexSentenceDraft(targetId = 'complex-sentence-draft', sentenceEncoded = '') {
+  const textarea = document.getElementById(targetId);
+  if (!textarea) return;
+  const sentence = decodeURIComponent(sentenceEncoded || '').trim();
+  if (!sentence) return;
+  textarea.value = sentence;
+  textarea.focus();
+}

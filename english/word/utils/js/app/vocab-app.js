@@ -235,4 +235,8 @@ export class VocabApp {
     EventHandlers.selectContrastOption(targetId, encodedChoice);
   }
 
+  fillComplexSentenceDraft(targetId, sentenceEncoded) {
+    EventHandlers.fillComplexSentenceDraft(targetId, sentenceEncoded);
+  }
+
 }

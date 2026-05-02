@@ -43,6 +43,7 @@ export function dispatchAction(actionEl, deps) {
     'show-sentence-translation': () => app.showSentenceTranslation(),
     'translate-phrase': () => app.translatePhrase(),
     'translate-sentence': () => app.translateSentence(),
+    'fill-complex-sentence-draft': () => app.fillComplexSentenceDraft(actionEl.dataset.targetId, actionEl.dataset.sentenceEncoded),
     'select-contrast-option': () => app.selectContrastOption(actionEl.dataset.targetId, actionEl.dataset.choice),
     'handle-sentence-recall': () => app.handleSentenceRecall(actionEl.dataset.understood === 'true'),
     'handle-recall': () => app.handleRecall(actionEl.dataset.claimedKnown === 'true'),
