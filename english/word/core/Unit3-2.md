@@ -113,7 +113,7 @@
             - in retrospect
                 - == looking back 回首、回头看、回想起来
         - One day, <in>in **retrospect**</in>, the years of struggle will <ins>strike you as the most beautiful<ins>.
-            - strike someone as something(strike + 人 + as + 形容词/名词) 给人...印象/让某人觉得...
+            - strike someone as something 给人...印象/让某人觉得...(strike + 人 + as + 形容词/名词)
     - introspect [ˌɪntrə'spekt] v. 内省，内观
 
 ## keep
@@ -139,7 +139,7 @@
     - vt. 保持
     - vi. 停留
     - n. 停留
-    - STAY POSITIVE/FOCUSED/STRONG 充当系动词，stay + adj.
+    - STAY POSITIVE/FOCUSED/STRONG 充当系动词，stay + adjective
     - 词组
         - stay away from 远离；离开
         - stay off 远离；关闭
@@ -150,12 +150,13 @@
 - remain
     - vt. 仍然是，保持；仍需去做；
     - vi. 停留
-    - remain + adj.
-        - remain steady 保持平稳
+    - remain steady 保持平稳 remain + adjective
 - abide [əˈbaɪd]
     - v. 容忍，遵守
-    - **ABIDE** *BY* THE LAW.
+    - Similar: biased adj. 有偏见的
     - **Abide** means "**to be able to live with or put up with**".
+        - put up with 忍受，容忍
+    - **ABIDE** *BY* THE LAW.
     - I can't **abide** people who can't make up their minds.
     - ...it *announced(v. 宣布)* it was *reneging([rɪˈnɪgɪŋ] v. 违约)* on a longstanding commitment to
       **abide by/follow** the state's strict nuclear regulations.
@@ -179,6 +180,7 @@
     - n. 出现，到来，问世
 - accurate [ˈækjərət]
     - adj. 正确的，精确的; 精准的
+    - Similar: accumulate v. 积累
 
 ## 词组
 

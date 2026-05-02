@@ -4,24 +4,33 @@
 
 ### 思考
 
-本旬中有几处平行结构？分别是什么与什么平行并列？
+本句中有几处平行结构？分别是什么与什么平行并列？
 
 ### 原句
 
-Your humor must be relevant to the audience and should help to show them that you are one of them or that you understand
-their situation and are in sympathy with their point of view.
+Your *humor(n. 幽默，诙谐)* must be relevant to the audience and should help to show them that you are one of them or
+that you understand their situation and are in *sympathy(n. 支持，赞同；同情)* with their point of view.
 
 ## 002
 
 ### 思考
 
-本旬断开为几件事？如何断开？
+本句断开为几件事？如何断开？
 
 ### 原句
 
-If you are part of the group which you are addressing, you will be in a position to know the experiences and problems
-which are common to all of you and it'll be appropriate for you to make a passing remark about the inedible canteen food
-or the chairman's notorious bad taste in ties.
+- If you are part of the group which you are addressing, you will be in a position to know the experiences and problems
+  which are common to all of you and it'll be appropriate for you to make a passing remark about the inedible canteen
+  food or the chairman's notorious bad taste in ties.
+    - appropriate [əˈproʊprieɪt]
+        - adj. 合适的
+        - == suitable
+    - address a group/audience 向...讲话/面对...发言
+    - be in a position to do sth. 有条件/有能力做某事
+    - be common to 为...所共有
+    - it is appropriate (for sb.) to do sth. 做某事是合适的
+    - make a remark (about) 评论/提一句
+    - passing remark 随口一说/顺带一提
 
 ## 003
 
@@ -31,9 +40,15 @@ or the chairman's notorious bad taste in ties.
 
 ### 原句
 
-And thanks to the continual miniaturization of electronics and micro-mechanics, there are already robot systems that can
-perform some kinds of brain and bone surgery with submillimeter accuracy far greater precision than highly skilled
-physicians can achieve with their hands alone.
+- And thanks to the continual miniaturization of electronics and micro-mechanics, there are already robot systems that
+  can perform some kinds of brain and bone surgery with submillimeter accuracy far greater precision than highly skilled
+  physicians can achieve with their hands alone.
+    - continual [kənˈtɪnjuəl] adj. 不间断的
+    - there are... that... 有...（...可以...）
+    - perform surgery 进行手术
+    - precision [prɪˈsɪʒn] n. 精准性
+    - far greater precision than... 比...高得多
+    - achieve... with... 用...达到...
 
 ## 004
 
@@ -43,9 +58,18 @@ physicians can achieve with their hands alone.
 
 ### 原句
 
-Despite a spell of initial optimism in the 1960s and 1970s when it appeared that transistor circuits and microprocessors
-might be able to copy the action of the human brain by the year 2010, researchers lately have begun to extend that
-forecast by decades if not centuries.
+- Despite a spell of initial *optimism(n. 乐观主义)* in the 1960s and 1970s when it appeared that transistor circuits
+  and microprocessors might be able to copy the action of the human brain by the year 2010, researchers lately have
+  begun to extend that forecast by decades if not centuries.
+    - a spell of noun 一段（时间/状态）
+    - it appears/appeared that... 似乎...
+    - extend a forecast 延长/推迟预测
+        - == push back a deadline
+        - == delay a prediction
+    - A, if not B 至少是A，甚至是B
+    - the human brain 人脑
+    - Despite A, B have begun to C by D if not E. 尽管 A，B 已经开始把 C 做到 D 的程度，甚至 E(Despite early success,
+      scientists have begun to revise the theory by years if not decades.)
 
 ## 005
 
@@ -179,7 +203,7 @@ aggressive treatment far beyond what is scientifically justified.
 
 ### 思考
 
-本旬申的三个that从句一样吗？分别是什么从句？补充修饰什么？
+本句申的三个that从句一样吗？分别是什么从句？补充修饰什么？
 
 ### 原句
 
@@ -315,7 +339,7 @@ be powerfully expressive-there exists no language or dialect in the world that c
 
 ### 思考
 
-本旬如何断开和简化？
+本句如何断开和简化？
 
 ### 原句
 
@@ -331,8 +355,8 @@ nation's assimilative power."
 
 ### 原句
 
-And there are the townsfolk who largely live off the tourists who come, not to see the plays, but to look at Anne
-Hathaway's Cottage, Shakespeare's birthplace and the other sights.
+And there are the *townsfolk(n. 镇民; 市民)* who largely <ins>live off(依靠...生活；以吃...为生)</ins> the tourists who
+come, not to see the plays, but to look at Anne Hathaway's Cottage, Shakespeare's birthplace and the other sights.
 
 ## 030
 
@@ -342,8 +366,9 @@ Hathaway's Cottage, Shakespeare's birthplace and the other sights.
 
 ### 原句
 
-It is the playgoers, the RSC contends, who bring in much of the town's revenue because they spend the night (some of
-them four or five nights) pouring cash into the hotels and restaurants.
+It is the playgoers, the RSC *contends([kənˈtend] vi. （尤指在争论中）声称，主张，认为；竞争，争夺)*, who bring in much of the
+town's revenue because they spend the night (some of them four or five nights)
+<ins>pouring cash into(投入大量资金到某个项目、产业或地方)</ins> the hotels and restaurants.
 
 ## 031
 
@@ -366,7 +391,8 @@ standing-room tickets held for the sleepers and sold to them when the box office
 ### 原句
 
 According to their latest paper published in Nature, the biomass of large predators (animals that kill and eat other
-animals) in a new fishery is reduced on average by 80% within 15 years of the start of exploitation.
+animals) in a new *fishery(n. 渔场)* is reduced on average by 80% within 15 years of the start of
+*exploitation([ˌɛksplɔɪˈteʃən] n. 剥削；开发)*.
 
 ## 033
 
@@ -489,7 +515,7 @@ vulnerabilities.
 
 ### 思考
 
-本旬中的分裂结构和平行结构，你找到了吗？
+本句中的分裂结构和平行结构，你找到了吗？
 
 ### 原句
 
@@ -1183,7 +1209,7 @@ will find themselves.
 
 ### 思考
 
-本旬中的从旬从哪里开始、到哪里结束？
+本句中的从旬从哪里开始、到哪里结束？
 
 ### 原句
 
@@ -1534,7 +1560,7 @@ about the social tape-measure they must use to determine their individual worth.
 
 ### 思考
 
-本旬中一共包含了几件事？如何断开？
+本句中一共包含了几件事？如何断开？
 
 ### 原句
 
@@ -1579,7 +1605,7 @@ officials," says one researcher.
 
 ### 思考
 
-本旬中不同的标点符号分别起什么作用？
+本句中不同的标点符号分别起什么作用？
 
 ### 原句
 
@@ -1686,7 +1712,7 @@ patterns to politics.
 
 ### 思考
 
-本旬中一共包含了几件事？从哪里断开？
+本句中一共包含了几件事？从哪里断开？
 
 ### 原句
 
@@ -1789,7 +1815,7 @@ measure, it is no longer enough.
 
 ### 思考
 
-本旬中包含了几件事？如何断开？
+本句中包含了几件事？如何断开？
 
 ### 原句
 
@@ -2135,7 +2161,7 @@ gotten a better value for their tuition dollars, which is another big concern fo
 
 ### 思考
 
-本旬中一共几句话？几句之间都是什么关系？
+本句中一共几句话？几句之间都是什么关系？
 
 ### 原句
 
@@ -2194,7 +2220,7 @@ that emotions aren't binary-feelings that may be advantageous in one context may
 
 ### 思考
 
-本旬中有几个谓语动词？包含了几件事？
+本句中有几个谓语动词？包含了几件事？
 
 ### 原句
 
@@ -2300,7 +2326,7 @@ scientific papers, set up in 2012, which now claims to offer access to every pay
 
 ### 思考
 
-本旬中包含了几件事？如何断开？
+本句中包含了几件事？如何断开？
 
 ### 原句
 

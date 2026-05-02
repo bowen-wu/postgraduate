@@ -77,6 +77,7 @@ export async function buildWritingCardForUnit(unitPath) {
   return {
     id: `writing_${writingId}`,
     word: `Writing ${writingId}`,
+    writingNo: writingId.replace(/^W/i, ''),
     type: 'sentence',
     displayWord: picked.en,
     items: [{ type: 'sentence', en: picked.en, cn: picked.cn }]

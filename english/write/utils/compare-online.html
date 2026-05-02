@@ -212,6 +212,39 @@
   let example = '';
 
   let currentMode = '';
+  let pendingQueryNo = '';
+  let pendingQueryMode = 'Writing';
+
+  function parseQueryParams() {
+    const params = new URLSearchParams(window.location.search || '');
+    pendingQueryNo = (params.get('no') || params.get('No') || '').trim();
+    const modeParam = (params.get('mode') || '').trim();
+    if (modeParam) pendingQueryMode = modeParam;
+  }
+
+  function setModeAndTrigger(mode) {
+    const target = Array.from(document.querySelectorAll('input[name="mode"]'))
+      .find((radio) => radio.value.toLowerCase() === String(mode || '').toLowerCase());
+    if (!target || target.disabled) return false;
+    target.checked = true;
+    currentMode = target.value;
+    target.dispatchEvent(new Event('change', { bubbles: true }));
+    return true;
+  }
+
+  function applyQueryDefaultsIfReady() {
+    if (!fileContent) return;
+
+    const seqInput = document.getElementById('seq');
+    if (pendingQueryNo && seqInput) {
+      seqInput.value = pendingQueryNo;
+    }
+
+    updateModeStatus();
+    if (!setModeAndTrigger(pendingQueryMode)) {
+      setModeAndTrigger('Writing');
+    }
+  }
 
   // 监听 mode 改变
   document.querySelectorAll('input[name="mode"]').forEach(radio => {
@@ -284,6 +317,7 @@
       fileContent = contents.join('\n\n');
 
       updateModeStatus(); // 文件加载后检查是否启用 Mode
+      applyQueryDefaultsIfReady();
       console.log('Remote files loaded successfully');
     } catch (error) {
       console.error('Error loading remote files:', error);
@@ -292,7 +326,12 @@
   }
 
   // 页面加载时自动获取远程文件
-  document.addEventListener('DOMContentLoaded', loadRemoteFiles);
+  document.addEventListener('DOMContentLoaded', () => {
+    parseQueryParams();
+    const seqInput = document.getElementById('seq');
+    if (seqInput && pendingQueryNo) seqInput.value = pendingQueryNo;
+    loadRemoteFiles();
+  });
 
   async function initDictionary() {
     try {

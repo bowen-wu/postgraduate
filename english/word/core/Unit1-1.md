@@ -52,7 +52,7 @@
     - Conservatives vs Labour 保守党 vs 工党
     - The second half of the 20th century saw a collection of geniuses, warriors, entrepreneurs and visionaries
       **labor** to create a fabulous machine...
-        - labor to do sth.
+        - labor to do sth. 费力地做某事/艰难地做某事
     - laborer n. 体力劳动者
 - career
     - n. 职业，职业生涯
@@ -90,7 +90,7 @@
         - sb. used to do sth. 过去常常做
     - A recent study suggests that what we **are used to doing** is not that good.
     - I **used to do** weight training years ago.
-- useful adj. 有用于
+- useful adj. 有用的
 - useless adj. 无用的
 - underused
     - adj. 未充分利用的
@@ -161,6 +161,7 @@
       destruction.
 - statute [ˈstætʃuːt]
     - n. 法规
+    - Similar: statue n. 雕像，雕塑
     - == rule
     - -stat 站
         - == -stit
@@ -168,6 +169,7 @@
     - A **statute** is a written law.
 - statue [ˈstætʃuː]
     - n. 雕像，雕塑
+    - Similar: statute n. 法规
     - A **statue** is a *figure([ˈfɪɡjər])* of a person, animal, or object that is carved or cast from some material.
 - stake [steɪk]
     - v. 立界标以表明（所有权）；以...打赌
