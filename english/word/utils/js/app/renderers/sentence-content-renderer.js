@@ -51,9 +51,7 @@ export function renderSentenceItems(ui, card) {
     </svg>
     <span class="btn-spinner"></span>
   `;
-  if (card.type !== 'complex-sentence') {
-    labelWrapper.appendChild(playButton);
-  }
+  labelWrapper.appendChild(playButton);
   ui.list.appendChild(labelWrapper);
 
   if (card.patterns && card.patterns.length > 0) {
