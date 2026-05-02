@@ -31,7 +31,8 @@ export function renderWordHeader(ui, card) {
       </button>`
     : '';
 
-  ui.word.innerHTML = `<span>${card.word}</span> ${playButton} ${fillDraftButton} ${ipaHtml}`;
+  const mainPlayButton = card.type === 'complex-sentence' ? '' : playButton;
+  ui.word.innerHTML = `<span>${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';
 }
