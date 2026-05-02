@@ -80,6 +80,21 @@ function parseDailySentenceMarkdown(markdownText) {
   return result;
 }
 
+function parseSentenceBlockWithParser(rawSentenceBlock, sentenceId) {
+  const raw = String(rawSentenceBlock || '').trim();
+  const lines = raw.split('\n');
+  const firstNonEmptyIndex = lines.findIndex((line) => line.trim() !== '');
+  if (firstNonEmptyIndex >= 0 && !/^\s*-\s+/.test(lines[firstNonEmptyIndex])) {
+    lines[firstNonEmptyIndex] = `- ${lines[firstNonEmptyIndex].trim()}`;
+  }
+  const normalizedRaw = lines.join('\n');
+  const syntheticMarkdown = `## ${sentenceId}\n${normalizedRaw}\n`;
+  const parsedCards = parseMarkdownToCards(syntheticMarkdown);
+  const sentenceCard = parsedCards.find((card) => card && card.type === 'sentence') || null;
+  const relationCards = parsedCards.filter((card) => card && (card.type === 'word' || card.type === 'phrase'));
+  return { sentenceCard, relationCards };
+}
+
 function copyCardWithNewId(card, sentenceId) {
   if (!card || !card.type || !card.word) return null;
   const prefix = card.type === 'phrase' ? 'complex_phrase' : 'complex_word';
@@ -90,11 +105,8 @@ function copyCardWithNewId(card, sentenceId) {
 }
 
 function extractExtraCardsFromRawSentenceBlock(rawSentenceBlock, sentenceId) {
-  const syntheticMarkdown = `## ${sentenceId}\n${String(rawSentenceBlock || '').trim()}\n`;
-  const parsedCards = parseMarkdownToCards(syntheticMarkdown);
-
-  return parsedCards
-    .filter((card) => card && (card.type === 'word' || card.type === 'phrase'))
+  const { relationCards } = parseSentenceBlockWithParser(rawSentenceBlock, sentenceId);
+  return relationCards
     .map((card) => copyCardWithNewId(card, sentenceId))
     .filter(Boolean);
 }
@@ -181,7 +193,8 @@ function mergeCardsByTypeAndWord(cards) {
 
 export const __testables = {
   parseDailySentenceMarkdown,
-  extractExtraCardsFromRawSentenceBlock
+  extractExtraCardsFromRawSentenceBlock,
+  parseSentenceBlockWithParser
 };
 
 export async function buildComplexSentenceCardsForUnit(unitPath) {
@@ -193,14 +206,17 @@ export async function buildComplexSentenceCardsForUnit(unitPath) {
     .map((id) => {
       const item = map[id];
       if (!item) return null;
+      const parsed = parseSentenceBlockWithParser(item.sentenceRaw, id);
+      const cleanedSentence = parsed.sentenceCard?.items?.[0]?.en || item.sentence;
+      const cleanedDisplayWord = parsed.sentenceCard?.displayWord || cleanedSentence;
       const complexCard = {
         id: `complex_sentence_${id}`,
         word: item.prompt,
         type: 'complex-sentence',
         prompt: item.prompt,
         complexSentenceLabel: `长难句 ${id}`,
-        displayWord: item.sentence,
-        items: [{ type: 'sentence', en: item.sentence, cn: '' }]
+        displayWord: cleanedDisplayWord,
+        items: [{ type: 'sentence', en: cleanedSentence, cn: '' }]
       };
       const inlineExtraCards = extractExtraCardsFromSentence(item.sentence, id);
       const rawBlockExtraCards = extractExtraCardsFromRawSentenceBlock(item.sentenceRaw, id);

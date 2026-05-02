@@ -42,3 +42,17 @@ test('extractExtraCardsFromRawSentenceBlock generates word and phrase cards usin
   assert.equal(words.includes('appropriate'), true);
   assert.equal(phrases.includes('be in a position to do sth.'), true);
 });
+
+test('parseSentenceBlockWithParser cleans inline word-definition markers for sentence text', () => {
+  const raw = `
+Your *humor(n. 幽默，诙谐)* must be relevant to the audience and should help to show them that you are one of them or that you understand their situation and are in *sympathy(n. 支持，赞同；同情)* with their point of view.
+`;
+
+  const { sentenceCard } = __testables.parseSentenceBlockWithParser(raw, '001');
+  const sentence = sentenceCard?.items?.[0]?.en || '';
+
+  assert.equal(sentence.includes('*humor('), false);
+  assert.equal(sentence.includes('*sympathy('), false);
+  assert.equal(sentence.includes('humor must be relevant'), true);
+  assert.equal(sentence.includes('in sympathy with their point of view.'), true);
+});
