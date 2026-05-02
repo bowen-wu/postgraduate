@@ -167,7 +167,7 @@ export function renderRecallActions(ui) {
 
   ui.actionArea.innerHTML = `
     <button class="btn-success" data-action="handle-recall" data-claimed-known="true">Know</button>
-    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">不Know</button>
+    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">Don't know</button>
   `;
 }
 

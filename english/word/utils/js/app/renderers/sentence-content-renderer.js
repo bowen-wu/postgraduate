@@ -40,7 +40,7 @@ export function renderSentenceItems(ui, card) {
   playButton.id = playButtonId;
   playButton.className = 'btn-ghost audio-play-btn';
   playButton.style.cssText = 'padding: 0.15rem 0.4rem; font-size: 0.75rem;';
-  playButton.title = '播放句子';
+  playButton.title = 'Play sentence audio';
   playButton.dataset.action = 'play-word';
   playButton.dataset.wordEncoded = sentenceTextEncoded;
   playButton.dataset.word = sentenceText;
@@ -81,7 +81,7 @@ export function renderSentenceItems(ui, card) {
     const textarea = document.createElement('textarea');
     textarea.id = 'complex-sentence-draft';
     textarea.className = 'complex-sentence-input';
-    textarea.placeholder = '用于断句/结构拆分的临时草稿（不会保存）';
+    textarea.placeholder = 'Temporary draft for parsing/splitting sentence (not saved)';
     ui.list.appendChild(textarea);
   }
 

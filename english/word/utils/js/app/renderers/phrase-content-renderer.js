@@ -4,7 +4,7 @@ import { renderSynonymsAndAntonyms } from './relations-renderer.js';
 export function renderPhraseItems(ui, card, stats) {
   const encodedWord = encodeURIComponent(card.word);
   const playButtonId = 'play-btn-phrase';
-  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="播放发音">
+  const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="Play audio">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
