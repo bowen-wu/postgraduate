@@ -1,4 +1,5 @@
 import { getComplexSentenceIdsForUnitPath } from '../application/writing-assignment.js';
+import { parseMarkdownToCards } from '../parser/index.js';
 
 const RAW_DAILY_SENTENCE_URL = 'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/grammar/daily-sentence.md';
 
@@ -69,18 +70,34 @@ function parseDailySentenceMarkdown(markdownText) {
     const sectionText = markdownText.slice(start, end);
 
     const prompt = normalizeTextBlock(extract(sectionText, '思考', '原句'));
-    const sentence = extractSentenceFromRawBlock(extract(sectionText, '原句'));
+    const sentenceRaw = extract(sectionText, '原句');
+    const sentence = extractSentenceFromRawBlock(sentenceRaw);
     if (!prompt || !sentence) continue;
 
-    result[id] = { id, prompt, sentence };
+    result[id] = { id, prompt, sentence, sentenceRaw };
   }
 
   return result;
 }
 
-export const __testables = {
-  parseDailySentenceMarkdown
-};
+function copyCardWithNewId(card, sentenceId) {
+  if (!card || !card.type || !card.word) return null;
+  const prefix = card.type === 'phrase' ? 'complex_phrase' : 'complex_word';
+  return {
+    ...card,
+    id: nextCardId(`${prefix}_${sentenceId}`)
+  };
+}
+
+function extractExtraCardsFromRawSentenceBlock(rawSentenceBlock, sentenceId) {
+  const syntheticMarkdown = `## ${sentenceId}\n${String(rawSentenceBlock || '').trim()}\n`;
+  const parsedCards = parseMarkdownToCards(syntheticMarkdown);
+
+  return parsedCards
+    .filter((card) => card && (card.type === 'word' || card.type === 'phrase'))
+    .map((card) => copyCardWithNewId(card, sentenceId))
+    .filter(Boolean);
+}
 
 async function loadComplexSentenceMap() {
   if (_complexSentenceMapPromise) return _complexSentenceMapPromise;
@@ -150,6 +167,23 @@ function extractExtraCardsFromSentence(sentence, sentenceId) {
   return cards;
 }
 
+function mergeCardsByTypeAndWord(cards) {
+  const seen = new Set();
+  const merged = [];
+  cards.forEach((card) => {
+    const key = `${card.type}:${String(card.word || '').toLowerCase()}`;
+    if (!card.word || seen.has(key)) return;
+    seen.add(key);
+    merged.push(card);
+  });
+  return merged;
+}
+
+export const __testables = {
+  parseDailySentenceMarkdown,
+  extractExtraCardsFromRawSentenceBlock
+};
+
 export async function buildComplexSentenceCardsForUnit(unitPath) {
   const ids = getComplexSentenceIdsForUnitPath(unitPath);
   if (!ids || ids.length === 0) return [];
@@ -168,7 +202,9 @@ export async function buildComplexSentenceCardsForUnit(unitPath) {
         displayWord: item.sentence,
         items: [{ type: 'sentence', en: item.sentence, cn: '' }]
       };
-      const extraCards = extractExtraCardsFromSentence(item.sentence, id);
+      const inlineExtraCards = extractExtraCardsFromSentence(item.sentence, id);
+      const rawBlockExtraCards = extractExtraCardsFromRawSentenceBlock(item.sentenceRaw, id);
+      const extraCards = mergeCardsByTypeAndWord([...rawBlockExtraCards, ...inlineExtraCards]);
       return [...extraCards, complexCard];
     })
     .filter(Boolean)
