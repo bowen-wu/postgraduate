@@ -73,9 +73,10 @@ export async function buildComplexSentenceCardsForUnit(unitPath) {
       if (!item) return null;
       return {
         id: `complex_sentence_${id}`,
-        word: `长难句 ${id}`,
+        word: item.prompt,
         type: 'complex-sentence',
         prompt: item.prompt,
+        complexSentenceLabel: `长难句 ${id}`,
         displayWord: item.sentence,
         items: [{ type: 'sentence', en: item.sentence, cn: '' }]
       };

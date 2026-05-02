@@ -73,16 +73,6 @@ export function renderSentenceItems(ui, card) {
   ui.list.appendChild(contentDiv);
 
   if (card.type === 'complex-sentence') {
-    const promptTitle = document.createElement('div');
-    promptTitle.className = 'complex-sentence-subtitle';
-    promptTitle.textContent = '思考';
-    ui.list.appendChild(promptTitle);
-
-    const promptDiv = document.createElement('div');
-    promptDiv.className = 'complex-sentence-prompt';
-    promptDiv.textContent = card.prompt || '';
-    ui.list.appendChild(promptDiv);
-
     const textareaTitle = document.createElement('div');
     textareaTitle.className = 'complex-sentence-subtitle';
     textareaTitle.textContent = '你的思考';
