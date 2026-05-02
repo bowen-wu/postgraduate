@@ -372,5 +372,6 @@ export function fillComplexSentenceDraft(targetId = 'complex-sentence-draft', se
   const sentence = decodeURIComponent(sentenceEncoded || '').trim();
   if (!sentence) return;
   textarea.value = sentence;
+  textarea.dispatchEvent(new Event('input', { bubbles: true }));
   textarea.focus();
 }

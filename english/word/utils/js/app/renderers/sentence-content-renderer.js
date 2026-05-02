@@ -1,3 +1,5 @@
+const complexSentenceDrafts = new Map();
+
 function formatSentenceCnHtml(text) {
   let html = String(text || '');
   html = html
@@ -82,6 +84,10 @@ export function renderSentenceItems(ui, card) {
     textarea.id = 'complex-sentence-draft';
     textarea.className = 'complex-sentence-input';
     textarea.placeholder = 'Temporary draft for parsing/splitting sentence (not saved)';
+    textarea.value = complexSentenceDrafts.get(card.id) || '';
+    textarea.addEventListener('input', () => {
+      complexSentenceDrafts.set(card.id, textarea.value);
+    });
     ui.list.appendChild(textarea);
   }
 
