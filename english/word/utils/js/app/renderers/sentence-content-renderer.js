@@ -75,7 +75,7 @@ export function renderSentenceItems(ui, card) {
   if (card.type === 'complex-sentence') {
     const textareaTitle = document.createElement('div');
     textareaTitle.className = 'complex-sentence-subtitle';
-    textareaTitle.textContent = '你的思考';
+    textareaTitle.textContent = 'Your Draft';
     ui.list.appendChild(textareaTitle);
 
     const textarea = document.createElement('textarea');
@@ -108,7 +108,7 @@ export function renderSentenceItems(ui, card) {
           <line x1="2" y1="12" x2="22" y2="12"></line>
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
-        翻译
+        Translate
         <span class="btn-spinner"></span>
       </button>
     `;

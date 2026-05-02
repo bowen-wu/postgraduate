@@ -13,10 +13,10 @@ export function renderInputActions(ui) {
           <line x1="2" y1="12" x2="22" y2="12"></line>
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
-        翻译
+        Translate
         <span class="btn-spinner"></span>
       </button>
-      <button class="btn-primary" data-action="next-card">下一个</button>
+      <button class="btn-primary" data-action="next-card">Next</button>
     `;
     return;
   }
@@ -30,10 +30,10 @@ export function renderInputActions(ui) {
 
       if (!isCnVisible) {
         ui.actionArea.innerHTML = `
-          <button class="btn-primary" data-action="show-sentence-translation">查看译文 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+          <button class="btn-primary" data-action="show-sentence-translation">Show Translation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
         `;
       } else {
-        ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+        ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
       }
       return;
     }
@@ -45,10 +45,10 @@ export function renderInputActions(ui) {
           <line x1="2" y1="12" x2="22" y2="12"></line>
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
-        翻译
+        Translate
         <span class="btn-spinner"></span>
       </button>
-      <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      <button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
     `;
     return;
   }
@@ -66,16 +66,16 @@ export function renderInputActions(ui) {
             <line x1="2" y1="12" x2="22" y2="12"></line>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
-          翻译
+          Translate
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
       `;
       return;
     }
   }
 
-  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">下一个 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
+  ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
 }
 
 export function renderRecallActions(ui) {
@@ -90,10 +90,10 @@ export function renderRecallActions(ui) {
           <line x1="2" y1="12" x2="22" y2="12"></line>
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
-        翻译
+        Translate
         <span class="btn-spinner"></span>
       </button>
-      <button class="btn-primary" data-action="next-card">下一个</button>
+      <button class="btn-primary" data-action="next-card">Next</button>
     `;
     return;
   }
@@ -109,10 +109,10 @@ export function renderRecallActions(ui) {
             <line x1="2" y1="12" x2="22" y2="12"></line>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
-          翻译
+          Translate
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" data-action="next-card">下一个</button>
+        <button class="btn-primary" data-action="next-card">Next</button>
       `;
       return;
     }
@@ -122,13 +122,13 @@ export function renderRecallActions(ui) {
 
     if (!isCnVisible) {
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost" data-action="next-card">跳过</button>
-        <button class="btn-primary" data-action="show-sentence-translation">查看译文</button>
+        <button class="btn-ghost" data-action="next-card">Skip</button>
+        <button class="btn-primary" data-action="show-sentence-translation">Show Translation</button>
       `;
     } else {
       ui.actionArea.innerHTML = `
-        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">理解错误</button>
-        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">理解正确</button>
+        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">Incorrect</button>
+        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">Correct</button>
       `;
     }
     return;
@@ -147,10 +147,10 @@ export function renderRecallActions(ui) {
             <line x1="2" y1="12" x2="22" y2="12"></line>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
-          翻译
+          Translate
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" data-action="next-card">下一个</button>
+        <button class="btn-primary" data-action="next-card">Next</button>
       `;
       return;
     }
@@ -166,18 +166,18 @@ export function renderRecallActions(ui) {
   }
 
   ui.actionArea.innerHTML = `
-    <button class="btn-success" data-action="handle-recall" data-claimed-known="true">记得</button>
-    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">不记得</button>
+    <button class="btn-success" data-action="handle-recall" data-claimed-known="true">Know</button>
+    <button class="btn-danger" data-action="handle-recall" data-claimed-known="false">不Know</button>
   `;
 }
 
 export function renderConfirmationActions(ui) {
   ui.actionArea.innerHTML = `
-    <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">其实不会</button>
-    <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">确认掌握</button>
+    <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">Incorrect</button>
+    <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">Confirmed</button>
   `;
 }
 
 export function renderNextAction(ui) {
-  ui.actionArea.innerHTML = '<button class="btn-primary" data-action="next-card">下一个</button>';
+  ui.actionArea.innerHTML = '<button class="btn-primary" data-action="next-card">Next</button>';
 }

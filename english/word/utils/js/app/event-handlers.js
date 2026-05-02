@@ -118,11 +118,11 @@ export function setOrderMode(mode) {
   UiRenderer.updateStatsUI(getApp().ui);
 
   const modeNames = {
-    'sequential': '顺序',
-    'randomByType': '随机(按类型)',
-    'randomAll': '完全随机'
+    'sequential': 'Sequential',
+    'randomByType': 'Random By Type',
+    'randomAll': 'Random All'
   };
-  UiRenderer.showToast(getApp().ui, `顺序模式: ${modeNames[mode]}`);
+  UiRenderer.showToast(getApp().ui, `Order Mode: ${modeNames[mode]}`);
 }
 
 /**
@@ -132,7 +132,7 @@ export function toggleAutoPlay() {
   STATE.autoPlay = !STATE.autoPlay;
   UiRenderer.updateAutoPlayButton(getApp().ui);
   StateManager.saveState();
-  UiRenderer.showToast(getApp().ui, STATE.autoPlay ? '自动播放已开启' : '自动播放已关闭');
+  UiRenderer.showToast(getApp().ui, STATE.autoPlay ? 'Auto Play已开启' : 'Auto Play已关闭');
 }
 
 /**
@@ -261,7 +261,7 @@ export async function refreshFileList() {
  * Clear data and reload
  */
 export function clearDataAndReload() {
-  if (confirm('确定要清除所有学习数据吗？此操作不可撤销。')) {
+  if (confirm('Confirm要清除所有学习数据吗？此操作不可撤销。')) {
     StateManager.resetData();
     location.reload();
   }
@@ -333,14 +333,14 @@ export function prewarmSpeechSynthesis() {
 }
 
 /**
- * 翻译当前 Phrase 卡片
+ * Translate当前 Phrase 卡片
  */
 export async function translatePhrase() {
   return getTranslationUseCases().translatePhrase();
 }
 
 /**
- * 翻译当前 Sentence 卡片
+ * Translate当前 Sentence 卡片
  */
 export async function translateSentence() {
   return getTranslationUseCases().translateSentence();
