@@ -121,23 +121,5 @@ export function renderSentenceItems(ui, card) {
     ui.list.appendChild(translateDiv);
   }
 
-  const isWritingCard = typeof card.id === 'string' && card.id.startsWith('writing_');
-  if (isWritingCard) {
-    const writingNo = String(card.writingNo || '').trim();
-    const iframeWrap = document.createElement('div');
-    iframeWrap.style.cssText = 'margin-top: 1rem; border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; background: #fff;';
-
-    const iframe = document.createElement('iframe');
-    const query = new URLSearchParams();
-    if (writingNo) query.set('no', writingNo);
-    query.set('mode', 'Writing');
-    iframe.src = `https://bowen-wu.github.io/postgraduate/english/write/utils/compare-online.html?${query.toString()}`;
-    iframe.title = 'Writing Compare Tool';
-    iframe.loading = 'lazy';
-    iframe.style.cssText = 'width: 100%; height: 820px; border: 0; display: block;';
-    iframeWrap.appendChild(iframe);
-    ui.list.appendChild(iframeWrap);
-  }
-
   ui.list.appendChild(li);
 }

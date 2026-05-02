@@ -142,9 +142,9 @@
     </style>
 </head>
 <body>
-<h2>Compare Articles</h2>
+<h2 id="pageTitle">Compare Articles</h2>
 
-<div class="question-wrap">
+<div id="queryControls" class="question-wrap">
     <div class="question">
         <label for="seq">No.：</label>
         <input type="text" id="seq" placeholder="Enter article number">
@@ -214,12 +214,25 @@
   let currentMode = '';
   let pendingQueryNo = '';
   let pendingQueryMode = 'Writing';
+  let isEmbedMode = false;
 
   function parseQueryParams() {
     const params = new URLSearchParams(window.location.search || '');
     pendingQueryNo = (params.get('no') || params.get('No') || '').trim();
     const modeParam = (params.get('mode') || '').trim();
+    const embedParam = (params.get('embed') || '').trim().toLowerCase();
+    isEmbedMode = embedParam === '1' || embedParam === 'true' || embedParam === 'yes';
     if (modeParam) pendingQueryMode = modeParam;
+    if (isEmbedMode) pendingQueryMode = 'Writing';
+  }
+
+  function applyEmbedMode() {
+    if (!isEmbedMode) return;
+    const title = document.getElementById('pageTitle');
+    const controls = document.getElementById('queryControls');
+    if (title) title.classList.add('hidden');
+    if (controls) controls.classList.add('hidden');
+    document.body.style.margin = '12px';
   }
 
   function setModeAndTrigger(mode) {
@@ -328,6 +341,7 @@
   // 页面加载时自动获取远程文件
   document.addEventListener('DOMContentLoaded', () => {
     parseQueryParams();
+    applyEmbedMode();
     const seqInput = document.getElementById('seq');
     if (seqInput && pendingQueryNo) seqInput.value = pendingQueryNo;
     loadRemoteFiles();

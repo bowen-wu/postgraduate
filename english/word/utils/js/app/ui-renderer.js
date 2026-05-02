@@ -35,6 +35,52 @@ import {
   triggerConfetti as triggerConfettiModule
 } from './renderers/feedback-renderer.js';
 
+const COMPARE_BASE_URL = 'https://bowen-wu.github.io/postgraduate/english/write/utils/compare-online.html';
+
+function removeWritingComparePanel() {
+  const panel = document.getElementById('writingComparePanel');
+  if (panel) panel.remove();
+}
+
+function updateWritingCompareLayout(card) {
+  const workspace = document.querySelector('.workspace');
+  if (!workspace) return;
+
+  const isWritingCard = typeof card?.id === 'string' && card.id.startsWith('writing_');
+  if (!isWritingCard) {
+    workspace.classList.remove('writing-compare-layout');
+    removeWritingComparePanel();
+    return;
+  }
+
+  workspace.classList.add('writing-compare-layout');
+  const writingNo = String(card.writingNo || '').trim();
+  const query = new URLSearchParams();
+  if (writingNo) query.set('no', writingNo);
+  query.set('mode', 'Writing');
+  query.set('embed', '1');
+  const compareUrl = `${COMPARE_BASE_URL}?${query.toString()}`;
+
+  let panel = document.getElementById('writingComparePanel');
+  if (!panel) {
+    panel = document.createElement('section');
+    panel.id = 'writingComparePanel';
+    panel.className = 'card writing-compare-card';
+    panel.innerHTML = `
+      <div class="writing-compare-card-header">
+        <a class="writing-compare-link" target="_blank" rel="noopener noreferrer">Open Compare Tool</a>
+      </div>
+      <iframe title="Writing Compare Tool" loading="lazy"></iframe>
+    `;
+    workspace.appendChild(panel);
+  }
+
+  const link = panel.querySelector('.writing-compare-link');
+  const iframe = panel.querySelector('iframe');
+  if (link) link.href = compareUrl;
+  if (iframe) iframe.src = compareUrl;
+}
+
 export function shouldAutoPlayCard(card, state = STATE) {
   if (!card) return false;
   if (!state.autoPlay) return false;
@@ -89,6 +135,8 @@ export function render(ui) {
   else if (card.type === 'complex-sentence') ui.card.classList.add('is-complex-sentence');
   else if (card.type === 'phrase') ui.card.classList.add('is-phrase');
   else if (card.type === 'contrast') ui.card.classList.add('is-contrast');
+
+  updateWritingCompareLayout(card);
 
   ui.progress.textContent = `${STATE.currentIndex + 1} / ${STATE.displayOrder.length}`;
   renderCardContent(ui, card, stats);
@@ -176,6 +224,9 @@ export function triggerConfetti() {
 }
 
 export function showCompletionScreen(ui) {
+  const workspace = document.querySelector('.workspace');
+  if (workspace) workspace.classList.remove('writing-compare-layout');
+  removeWritingComparePanel();
   renderCompletionScreen(ui, {
     state: STATE,
     stateManager: StateManager,

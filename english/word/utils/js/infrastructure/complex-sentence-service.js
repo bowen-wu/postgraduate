@@ -14,6 +14,36 @@ function normalizeTextBlock(text) {
     .trim();
 }
 
+function normalizeSentenceLine(text) {
+  return String(text || '').replace(/\s+/g, ' ').trim();
+}
+
+function extractSentenceFromRawBlock(rawText) {
+  const lines = String(rawText || '').split('\n');
+  const firstNonEmptyIndex = lines.findIndex((line) => line.trim() !== '');
+  if (firstNonEmptyIndex < 0) return '';
+
+  const firstLine = lines[firstNonEmptyIndex] || '';
+  const isListSentence = /^\s*-\s+/.test(firstLine);
+
+  if (!isListSentence) {
+    return lines
+      .map((line) => normalizeSentenceLine(line))
+      .filter(Boolean)
+      .join(' ')
+      .trim();
+  }
+
+  const parts = [normalizeSentenceLine(firstLine.replace(/^\s*-\s+/, ''))];
+  for (let i = firstNonEmptyIndex + 1; i < lines.length; i++) {
+    const line = lines[i] || '';
+    if (!line.trim()) continue;
+    if (/^\s*-\s+/.test(line)) break;
+    parts.push(normalizeSentenceLine(line));
+  }
+  return parts.filter(Boolean).join(' ').trim();
+}
+
 function parseDailySentenceMarkdown(markdownText) {
   const result = {};
   const sectionPattern = /^##\s*(\d{3})\s*$/gm;
@@ -39,7 +69,7 @@ function parseDailySentenceMarkdown(markdownText) {
     const sectionText = markdownText.slice(start, end);
 
     const prompt = normalizeTextBlock(extract(sectionText, '思考', '原句'));
-    const sentence = normalizeTextBlock(extract(sectionText, '原句'));
+    const sentence = extractSentenceFromRawBlock(extract(sectionText, '原句'));
     if (!prompt || !sentence) continue;
 
     result[id] = { id, prompt, sentence };
@@ -47,6 +77,10 @@ function parseDailySentenceMarkdown(markdownText) {
 
   return result;
 }
+
+export const __testables = {
+  parseDailySentenceMarkdown
+};
 
 async function loadComplexSentenceMap() {
   if (_complexSentenceMapPromise) return _complexSentenceMapPromise;

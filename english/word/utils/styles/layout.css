@@ -100,6 +100,56 @@ aside.open { transform: translateX(0) !important; }
     flex: 1; padding: 2rem; display: flex; justify-content: center; align-items: center; overflow-y: auto; position: relative;
 }
 
+.workspace.writing-compare-layout {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.workspace.writing-compare-layout .card {
+    max-width: none;
+}
+
+.workspace.writing-compare-layout #cardContainer {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.workspace .writing-compare-card {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 500px;
+    max-height: 90vh;
+    border: 1px solid var(--border-color);
+}
+
+.writing-compare-card .writing-compare-card-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(to right, #ffffff, #f8fafc);
+}
+
+.writing-compare-card .writing-compare-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.writing-compare-card .writing-compare-link:hover {
+    text-decoration: underline;
+}
+
+.writing-compare-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    flex: 1;
+}
+
 /* File Title Bar (shows current file name above card) */
 .file-title-bar {
     width: 100%; max-width: 800px;
