@@ -175,7 +175,7 @@
         - civility [sɪˈvɪlɪti] n. 礼貌
     - Both men emphasized the dirt and exhaustion of war, the fragments of **civilization** that the soldiers shared
       with each other and the **civilians**: coffee, tobacco, whiskey, shelter, sleep.
-        - the fragments of **civilization** 文明的碎片
+        - the fragments of civilization 文明的碎片
 
 ## Words
 
