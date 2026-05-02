@@ -3,6 +3,7 @@ import { getComplexSentenceIdsForUnitPath } from '../application/writing-assignm
 const RAW_DAILY_SENTENCE_URL = 'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/grammar/daily-sentence.md';
 
 let _complexSentenceMapPromise = null;
+let _cardCounter = 0;
 
 function normalizeTextBlock(text) {
   return String(text || '')
@@ -62,6 +63,59 @@ async function loadComplexSentenceMap() {
   return _complexSentenceMapPromise;
 }
 
+function nextCardId(prefix) {
+  _cardCounter += 1;
+  return `${prefix}_${Date.now()}_${_cardCounter}`;
+}
+
+function extractExtraCardsFromSentence(sentence, sentenceId) {
+  const cards = [];
+  const seenWords = new Set();
+  const seenPhrases = new Set();
+  const text = String(sentence || '');
+
+  // Extract word cards from markdown italic markers:
+  // *townsfolk(n. 镇民; 市民)*
+  text.replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, (_m, word, def) => {
+    const cleanWord = String(word || '').trim();
+    const cleanDef = String(def || '').trim();
+    if (!cleanWord || !cleanDef) return cleanWord;
+    const key = cleanWord.toLowerCase();
+    if (seenWords.has(key)) return cleanWord;
+    seenWords.add(key);
+    cards.push({
+      id: nextCardId(`complex_word_${sentenceId}`),
+      word: cleanWord,
+      type: 'word',
+      items: [{ type: 'def', en: '', cn: cleanDef }]
+    });
+    return cleanWord;
+  });
+
+  // Extract phrase cards from <ins>...</ins>, keeping optional Chinese note in parentheses.
+  text.replace(/<ins>(.*?)<\/ins>/gi, (_m, rawPhrase) => {
+    const cleaned = String(rawPhrase || '').replace(/\*\*/g, '').trim();
+    if (!cleaned) return cleaned;
+
+    const match = cleaned.match(/^(.+?)\(([^()]*)\)\s*$/);
+    const phrase = (match ? match[1] : cleaned).trim();
+    const cn = (match ? match[2] : '').trim();
+    const key = phrase.toLowerCase();
+    if (!phrase || seenPhrases.has(key)) return cleaned;
+    seenPhrases.add(key);
+
+    cards.push({
+      id: nextCardId(`complex_phrase_${sentenceId}`),
+      word: phrase,
+      type: 'phrase',
+      items: [{ type: 'def', en: phrase, cn }]
+    });
+    return cleaned;
+  });
+
+  return cards;
+}
+
 export async function buildComplexSentenceCardsForUnit(unitPath) {
   const ids = getComplexSentenceIdsForUnitPath(unitPath);
   if (!ids || ids.length === 0) return [];
@@ -71,7 +125,7 @@ export async function buildComplexSentenceCardsForUnit(unitPath) {
     .map((id) => {
       const item = map[id];
       if (!item) return null;
-      return {
+      const complexCard = {
         id: `complex_sentence_${id}`,
         word: item.prompt,
         type: 'complex-sentence',
@@ -80,6 +134,9 @@ export async function buildComplexSentenceCardsForUnit(unitPath) {
         displayWord: item.sentence,
         items: [{ type: 'sentence', en: item.sentence, cn: '' }]
       };
+      const extraCards = extractExtraCardsFromSentence(item.sentence, id);
+      return [...extraCards, complexCard];
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .flat();
 }
