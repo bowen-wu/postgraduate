@@ -39,3 +39,21 @@ export const UNIT_WRITING_MAP = Object.fromEntries(
 export function getWritingIdForUnitPath(path) {
   return UNIT_WRITING_MAP[path] || null;
 }
+
+const DAILY_SENTENCE_IDS = Array.from({ length: 252 }, (_, i) => String(i + 1).padStart(3, '0'));
+const DAILY_SENTENCE_BATCH_SIZES = UNIT_FILES.map((_, idx) => (idx < 60 ? 4 : 3));
+
+export const UNIT_COMPLEX_SENTENCE_MAP = (() => {
+  let cursor = 0;
+  const map = {};
+  UNIT_FILES.forEach((path, idx) => {
+    const size = DAILY_SENTENCE_BATCH_SIZES[idx] || 0;
+    map[path] = DAILY_SENTENCE_IDS.slice(cursor, cursor + size);
+    cursor += size;
+  });
+  return map;
+})();
+
+export function getComplexSentenceIdsForUnitPath(path) {
+  return UNIT_COMPLEX_SENTENCE_MAP[path] || [];
+}

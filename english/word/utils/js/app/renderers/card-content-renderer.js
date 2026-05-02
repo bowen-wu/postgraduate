@@ -20,7 +20,7 @@ function renderItems(ui, card, stats) {
     return;
   }
 
-  if (card.type === 'sentence') {
+  if (card.type === 'sentence' || card.type === 'complex-sentence') {
     renderSentenceItems(ui, card);
     return;
   }

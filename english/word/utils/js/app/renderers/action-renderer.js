@@ -5,6 +5,22 @@ export function renderInputActions(ui) {
   const card = StateManager.getCurrentCard();
   if (!card) return;
 
+  if (card.type === 'complex-sentence') {
+    ui.actionArea.innerHTML = `
+      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        翻译
+        <span class="btn-spinner"></span>
+      </button>
+      <button class="btn-primary" data-action="next-card">下一个</button>
+    `;
+    return;
+  }
+
   if (card.type === 'sentence') {
     const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
 
@@ -65,6 +81,22 @@ export function renderInputActions(ui) {
 export function renderRecallActions(ui) {
   const card = StateManager.getCurrentCard();
   if (!card) return;
+
+  if (card.type === 'complex-sentence') {
+    ui.actionArea.innerHTML = `
+      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        翻译
+        <span class="btn-spinner"></span>
+      </button>
+      <button class="btn-primary" data-action="next-card">下一个</button>
+    `;
+    return;
+  }
 
   if (card.type === 'sentence') {
     const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';

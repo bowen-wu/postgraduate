@@ -18,6 +18,7 @@ import {
 } from '../infrastructure/audio-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
 import { buildWritingCardForUnit } from '../infrastructure/writing-service.js';
+import { buildComplexSentenceCardsForUnit } from '../infrastructure/complex-sentence-service.js';
 import { renderRootFileList, renderFolderFileList, renderFileListError } from './presenters/file-list-presenter.js';
 
 let appContext = null;
@@ -86,6 +87,7 @@ function getFileUseCases() {
       renderFolderFileList,
       renderFileListError,
       buildWritingCardForUnit,
+      buildComplexSentenceCardsForUnit,
       getApp,
       getUi
     });

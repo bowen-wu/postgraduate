@@ -33,7 +33,7 @@ export function renderSentenceItems(ui, card) {
 
   const labelDiv = document.createElement('div');
   labelDiv.className = 'sentence-label';
-  labelDiv.textContent = 'Example Sentence';
+  labelDiv.textContent = card.type === 'complex-sentence' ? 'Complex Sentence' : 'Example Sentence';
   labelWrapper.appendChild(labelDiv);
 
   const playButton = document.createElement('button');
@@ -72,6 +72,28 @@ export function renderSentenceItems(ui, card) {
   contentDiv.innerHTML = card.displayWord || card.items[0].en;
   ui.list.appendChild(contentDiv);
 
+  if (card.type === 'complex-sentence') {
+    const promptTitle = document.createElement('div');
+    promptTitle.className = 'complex-sentence-subtitle';
+    promptTitle.textContent = '思考';
+    ui.list.appendChild(promptTitle);
+
+    const promptDiv = document.createElement('div');
+    promptDiv.className = 'complex-sentence-prompt';
+    promptDiv.textContent = card.prompt || '';
+    ui.list.appendChild(promptDiv);
+
+    const textareaTitle = document.createElement('div');
+    textareaTitle.className = 'complex-sentence-subtitle';
+    textareaTitle.textContent = '你的思考';
+    ui.list.appendChild(textareaTitle);
+
+    const textarea = document.createElement('textarea');
+    textarea.className = 'complex-sentence-input';
+    textarea.placeholder = '在这里记录你的思考...';
+    ui.list.appendChild(textarea);
+  }
+
   const item = card.items[0];
   const hasChinese = item.cn && typeof item.cn.trim === 'function' && item.cn.trim() !== '';
   if (hasChinese) {
@@ -80,6 +102,9 @@ export function renderSentenceItems(ui, card) {
     cnDiv.id = 'sentenceCn';
     cnDiv.innerHTML = formatSentenceCnHtml(item.cn);
     cnDiv.style.display = 'none';
+    if (card.type === 'complex-sentence') {
+      cnDiv.style.display = 'block';
+    }
     ui.list.appendChild(cnDiv);
   } else {
     const translateDiv = document.createElement('div');

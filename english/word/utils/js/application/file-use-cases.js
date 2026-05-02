@@ -10,7 +10,8 @@ export function createFileUseCases(deps) {
     renderFileListError,
     getApp,
     getUi,
-    buildWritingCardForUnit = async () => null
+    buildWritingCardForUnit = async () => null,
+    buildComplexSentenceCardsForUnit = async () => []
   } = deps;
 
   function syncActiveFileInList(container, currentPath) {
@@ -97,6 +98,12 @@ export function createFileUseCases(deps) {
 
       const parser = new ParserClass(text);
       state.cards = parser.parse();
+
+      // Inject complex sentence cards before writing card.
+      const complexSentenceCards = await buildComplexSentenceCardsForUnit(relativePath);
+      if (complexSentenceCards.length > 0) {
+        state.cards.push(...complexSentenceCards);
+      }
 
       // Inject one writing example card at the tail from single-source writing corpus.
       const writingCard = await buildWritingCardForUnit(relativePath);

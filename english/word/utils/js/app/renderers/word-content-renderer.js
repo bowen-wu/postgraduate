@@ -33,6 +33,7 @@ export function renderBadgeHtml(card, stats) {
   else if (card.type === 'contrast') html += '<span class="badge badge-rel">对比词</span>';
   else if (card.type === 'prefix') html += '<span class="badge badge-pre">前缀/后缀</span>';
   else if (card.type === 'sentence') html += '<span class="badge badge-sent">例句</span>';
+  else if (card.type === 'complex-sentence') html += '<span class="badge badge-sent">长难句</span>';
   if (stats.errors > 0) html += `<span class="badge badge-err">错 ${stats.errors}</span>`;
   return html;
 }
