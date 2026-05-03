@@ -84,7 +84,7 @@
             \lim_{\lambda \to 0} \sum_{k=1}^{n} f(\xi_k)\,\Delta x_k
         \]
         存在且与分点 $x_i$ 及点 $\xi_k$ 的取法无关，
-        则称函数 $f(x)$ 在区间 $[a,b]$ 上\textbf{可积}，即
+        则称函数 $f(x)$ 在区间 $[a,b]$ 上{\textbf{\color{red}{可积}}}，即
         \[
             \int_a^b f(x)\,\mathrm{d}x
             =
@@ -198,44 +198,44 @@
     \begin{enumerate}
         \item 函数$f(x)$在$I$上\textbf{可积}，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$I$上\textbf{连续}（$F(x)$若存在，则其一定连续。与$f(x)$作区分：$f(x)$存在但其不一定连续)
         \begin{analysisbox}[证（理解）：]
-                  对任意 $x$，若 $x+\Delta x \in I$，有
-                  \[
-                      F(x+\Delta x)-F(x)
-                      =
-                      \int_x^{x+\Delta x} f(t)\,\mathrm{d}t.
-                  \]
+            对任意 $x$，若 $x+\Delta x \in I$，有
+            \[
+                F(x+\Delta x)-F(x)
+                =
+                \int_x^{x+\Delta x} f(t)\,\mathrm{d}t.
+            \]
 
-                  由可积的必要条件可知，存在 $M>0$，使得在 $I$ 上有
-                  \[
-                      |f(x)| \le M.
-                  \]
-                  因此，
-                  \[
-                      0 \le \bigl| F(x+\Delta x)-F(x) \bigr|
-                      \le
-                      M\,|\Delta x|.
-                  \]
+            由可积的必要条件可知，存在 $M>0$，使得在 $I$ 上有
+            \[
+                |f(x)| \le M.
+            \]
+            因此，
+            \[
+                0 \le \bigl| F(x+\Delta x)-F(x) \bigr|
+                \le
+                M\,|\Delta x|.
+            \]
 
-                  当 $\Delta x \to 0$ 时，
-                  \[
-                      \lim_{\Delta x \to 0}
-                      \bigl[ F(x+\Delta x)-F(x) \bigr]
-                      =
-                      0,
-                  \]
-                  即
-                  \[
-                      \lim_{\Delta x \to 0} F(x+\Delta x) = F(x).
-                  \]
+            当 $\Delta x \to 0$ 时，
+            \[
+                \lim_{\Delta x \to 0}
+                \bigl[ F(x+\Delta x)-F(x) \bigr]
+                =
+                0,
+            \]
+            即
+            \[
+                \lim_{\Delta x \to 0} F(x+\Delta x) = F(x).
+            \]
 
-                  根据函数在 $x$ 点连续的充要条件，
-                  $F(x)$ 在 $x$ 点连续。
+            根据函数在 $x$ 点连续的充要条件，
+            $F(x)$ 在 $x$ 点连续。
 
-                  由此可见，对于变限积分
-                  \[
-                      F(x)=\int_a^x f(t)\,\mathrm{d}t
-                  \]
-                  只要它存在，就必然是连续的
+            由此可见，对于变限积分
+            \[
+                F(x)=\int_a^x f(t)\,\mathrm{d}t
+            \]
+            只要它存在，就必然是连续的
         \end{analysisbox}
         \item $\color{red}{\bigstar}$函数$f(x)$在$I$上\textbf{连续}，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$I$上可导且$F'(x) = f(x)$
         \item 设 $F(x)=\dint_a^x f(t)\,\mathrm{d}t$，则有：
@@ -341,12 +341,12 @@
                 \item 当$\lambda = \infty$时（\textbf{$f(x)$趋于$\infty$的速度比$g(x)$更快}），若$\dint_a^{b} g(x)\,\mathrm{d}x$发散，则$\dint_a^{b} f(x)\,\mathrm{d}x$发散
             \end{circlenum}
         \end{itemize}
-        \item 两个重要结论（$p$ 型广义积分）
+        \item 四个重要结论（$p$ 型广义积分）
         \begin{circlenum}
             \item 在 $(0,1]$ 上，$p$越小越收敛
             \[
                 \int_{{\color{red}{0}}}^1 \frac{1}{x^p}\,\mathrm{d}x, \int_0^1 \frac{\ln x}{x^p}\,\mathrm{d}x \begin{cases}
-                                                                                                                  \text{收敛}, \qquad \color{red}{0 < p < 1}, \\
+                                                                                                                  \text{收敛}, \qquad \color{red}{p < 1}, \\
                                                                                                                   \text{发散}, \qquad p \geq 1
                 \end{cases}
             \]

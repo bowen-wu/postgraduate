@@ -22,19 +22,17 @@
 - vi. 因...发生；导致
 - n. 结果；后果
 - 词组
-    - as a result 结果是
+    - as a result 因此/结果是/所以
     - as a result of
         - 结果是；由于...的原因
-    - R result from C
+    - result from
+        - 由...引起(R result from C)
         - == originate from
         - == spring from
         - == *derive([dɪˈraɪv] v. 从...衍生出；起源于)* from
         - == *stem([stem] vi. 起源于)* from
-    - result from
-        - 由...引起
     - result in
-        - 造成...结果, 导致
-    - C result in R
+        - 造成...结果, 导致(C result in R)
         - == R cause C == R lead to C
 - As a result, that...
 - Cooperation and sharing can **result from** either *sympathy([ˈsɪmpəθi] n. 同情)* or *guilt([ɡɪlt])*.
@@ -107,7 +105,9 @@
 - vt. 推销
 - n. 市场；集市
 - marketer n. 市场营销人员
-- marketing n. 营销；促销
+- marketing
+    - n. 营销；促销
+    - Similar: marked adj. 显著的
 - budget [ˈbʌdʒɪt]
     - n. 预算
     - adj. 价格低廉的
