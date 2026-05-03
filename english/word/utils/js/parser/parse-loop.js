@@ -2,6 +2,7 @@ import { processChildren } from './children-processor.js';
 import { processSentence } from './sentence-processor.js';
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { parseContrastHeader, parseContrastChildren } from './contrast-parser.js';
+import { extractItalicWords } from './inline-extractors.js';
 import {
   addAntonymToParent,
   addIpaToParent,
@@ -96,14 +97,20 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   }
 
   if (parser.inPhraseList && indentLevel > parser.phraseMarkerLevel) {
+    const extractedCards = [];
+    let normalizedContent = extractItalicWords(parser, content, extractedCards, indentLevel);
+    normalizedContent = normalizedContent.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
+    normalizedContent = normalizedContent.replace(/_([^_]+?)_/g, '$1');
+
     const isAffix = parser.isPrefixOrSuffix(content, lineIndex);
     const card = isAffix
-      ? parser.createPrefixCard(content, indentLevel, lineIndex)
-      : parser.createPhraseCard(content, indentLevel);
+      ? parser.createPrefixCard(normalizedContent, indentLevel, lineIndex)
+      : parser.createPhraseCard(normalizedContent, indentLevel);
     const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, indentLevel, lineIndex, [], card);
     if (phraseChildren.length > 0) {
       card.children = phraseChildren;
     }
+    extractedCards.forEach((extracted) => parser.cards.push(extracted));
     parser.cards.push(card);
     return phraseLastLine;
   }

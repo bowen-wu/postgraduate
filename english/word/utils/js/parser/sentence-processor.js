@@ -1,30 +1,7 @@
 import { restoreParentContext, saveParentContext, setParentContext } from './context.js';
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { processChildren } from './children-processor.js';
-
-function extractItalicWords(parser, text, extractedCards) {
-  return text.replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, (match, word, def) => {
-    if (parser.hasPosMarker(def)) {
-      const card = parser.createWordCard(`${word} ${def}`, 0);
-      extractedCards.push(card);
-      return word;
-    }
-    return word;
-  });
-}
-
-function extractInsPhrases(parser, text, extractedCards, indentLevel, boldPlaceholders = []) {
-  return text.replace(/<ins>(.*?)<\/ins>/g, (match, phrase) => {
-    let cleanPhrase = phrase.replace(/\*/g, '').trim();
-    cleanPhrase = cleanPhrase.replace(/\{\{BOLD:(\d+)\}\}/g, (placeholderMatch, index) => {
-      return boldPlaceholders[index] || placeholderMatch;
-    });
-
-    const card = parser.createPhraseCard(cleanPhrase, indentLevel);
-    extractedCards.push(card);
-    return cleanPhrase;
-  });
-}
+import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
 
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
@@ -85,7 +62,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     return placeholder;
   });
 
-  let clean = extractItalicWords(parser, protectedContent, extractedCards);
+  let clean = extractItalicWords(parser, protectedContent, extractedCards, indentLevel);
   clean = clean.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
   clean = clean.replace(/_([^_]+?)_/g, '$1');
   clean = extractInsPhrases(parser, clean, extractedCards, indentLevel, boldPlaceholders);

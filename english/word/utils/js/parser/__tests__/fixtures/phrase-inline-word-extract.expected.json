@@ -1,0 +1,34 @@
+[
+  {
+    "id": "card_0",
+    "word": "R result from C",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "R result from C",
+        "cn": ""
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "originate from"
+      },
+      {
+        "word": "spring from"
+      },
+      {
+        "word": "*derive(",
+        "ipa": "[dɪˈraɪv]",
+        "pos": "v.",
+        "cn": "从...衍生出；起源于)* from"
+      },
+      {
+        "word": "*stem(",
+        "ipa": "[stem]",
+        "pos": "vi.",
+        "cn": "起源于)* from"
+      }
+    ]
+  }
+]
