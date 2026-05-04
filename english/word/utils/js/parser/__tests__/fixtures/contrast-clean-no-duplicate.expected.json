@@ -18,14 +18,16 @@
         "type": "contrast",
         "en": "With time he came to [[revise|review]] his opinion of the profession.",
         "blankOptions": [
-          "revise|review"
+          "revise",
+          "review"
         ]
       },
       {
         "type": "contrast",
         "en": "A doctor might [[revise|review]] your medical record to help diagnose your sickness.",
         "blankOptions": [
-          "revise|review"
+          "revise",
+          "review"
         ]
       }
     ]

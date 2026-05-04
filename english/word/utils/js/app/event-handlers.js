@@ -350,7 +350,8 @@ export function selectContrastOption(targetId, encodedChoice) {
   if (!targetId) return;
   const blank = document.getElementById(targetId);
   if (!blank) return;
-  const choice = decodeURIComponent(encodedChoice || '').trim();
+  const rawChoice = decodeURIComponent(encodedChoice || '').trim();
+  const choice = rawChoice.split(/[\/|]/).map((part) => part.trim()).filter(Boolean)[0] || '';
   if (!choice) return;
   blank.textContent = choice;
   blank.classList.add('revealed');

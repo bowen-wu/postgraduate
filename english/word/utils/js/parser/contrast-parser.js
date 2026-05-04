@@ -23,15 +23,19 @@ export function parseContrastHeader(content) {
 
 function extractBlankOptions(sentence, fallbackOptions = []) {
   const text = String(sentence || '');
+  const splitOptions = (raw) => String(raw || '')
+    .split(/[\/|]/)
+    .map(normalizeOption)
+    .filter(Boolean);
   const bracketMatch = text.match(/\[\[(.*?)\]\]/);
   if (bracketMatch) {
-    return bracketMatch[1].split('/').map(normalizeOption).filter(Boolean);
+    return splitOptions(bracketMatch[1]);
   }
   const insMatch = text.match(/<ins>(.*?)<\/ins>/i);
   if (insMatch) {
-    return insMatch[1].split('/').map(normalizeOption).filter(Boolean);
+    return splitOptions(insMatch[1]);
   }
-  return [...fallbackOptions];
+  return (fallbackOptions || []).flatMap((opt) => splitOptions(opt));
 }
 
 function hasContrastBlank(sentence) {
