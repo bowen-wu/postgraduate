@@ -1,0 +1,99 @@
+[
+  {
+    "id": "card_0",
+    "word": "commerce",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "commerce",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "商人"
+      }
+    ],
+    "ipa": "[ˈkɑːmɜːrs]"
+  },
+  {
+    "id": "card_2",
+    "word": "e-commerce",
+    "displayWord": "e-commerce",
+    "type": "sentence",
+    "fullText": "e-commerce 电子商务",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "e-commerce",
+        "cn": "电子商务"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_3",
+    "word": "commercial",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "商业化的；商业的"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "广告"
+      }
+    ],
+    "ipa": "[kəˈmɜːrʃl]"
+  },
+  {
+    "id": "card_4",
+    "word": "lack commercial value",
+    "displayWord": "lack commercial value",
+    "type": "sentence",
+    "fullText": "lack commercial value 缺乏商业价值",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "lack commercial value",
+        "cn": "缺乏商业价值"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_5",
+    "word": "television commercials",
+    "displayWord": "television commercials",
+    "type": "sentence",
+    "fullText": "television commercials 电视广告",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "television commercials",
+        "cn": "电视广告"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_6",
+    "word": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+    "displayWord": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+    "type": "sentence",
+    "fullText": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA 中国工商银行(ICBC)",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+        "cn": "中国工商银行(ICBC)"
+      }
+    ],
+    "children": []
+  }
+]

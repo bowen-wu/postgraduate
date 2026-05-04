@@ -186,7 +186,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     }
 
     setParentContext(parser, actualParentCard, parentIndentLevel);
-    const cardType = parser.determineCardType(content, indentLevel, lineIndex);
+    const cardType = parser.determineCardType(content, indentLevel, i);
 
     if (actualParentCard && actualParentCard.type === 'sentence') {
       const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
@@ -242,7 +242,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
       i++;
       continue;
     } else if (cardType === 'prefix') {
-      const card = parser.createPrefixCard(content, indentLevel, lineIndex);
+      const card = parser.createPrefixCard(content, indentLevel, i);
       children.push(card);
     } else {
       children.push({
