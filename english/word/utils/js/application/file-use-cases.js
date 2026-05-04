@@ -71,8 +71,11 @@ export function createFileUseCases(deps) {
     if (!isOpening) return;
 
     const currentContent = targetUi.fileListContainer.innerHTML;
+    const hasFileItems = Boolean(targetUi.fileListContainer.querySelector?.('.file-item'));
     if (!currentContent ||
+      !hasFileItems ||
       currentContent.includes('加载中') ||
+      currentContent.includes('Loading...') ||
       currentContent.includes('加载文件夹') ||
       currentContent.includes('正在加载文件列表')) {
       await loadRootFolders(false, targetUi);
