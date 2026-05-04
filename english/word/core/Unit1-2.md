@@ -30,7 +30,7 @@
     - take a broader look 从更广泛的角度来看
     - take a long-term view 从长远来看
     - take in hit 受到影响
-    - take a toll on 给...造成重大损失
+    - take a *toll(n. 通行费；损失；伤亡人数)* on 给...造成重大损失
     - take a tough line on 对...采取强硬措施
     - take action 采取行动
     - take advantage of 充分利用，善加利用；占...的便宜，利用（他人的弱点、困境）

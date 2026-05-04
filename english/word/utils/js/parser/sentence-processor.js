@@ -9,6 +9,14 @@ function stripSentencePronunciationHints(text) {
     .replace(/\s*\[\s*([^\]]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\]]*)\s*\]/g, '');
 }
 
+function cleanSentenceChildText(text) {
+  return String(text || '')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1')
+    .replace(/_([^_]+?)_/g, '$1')
+    .trim();
+}
+
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
   let mergedContent = content;
@@ -211,13 +219,14 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     }
 
     if (cardType === 'sentence') {
+      const cleanChildText = cleanSentenceChildText(childContent);
       const card = {
         id: `card_${parser.cardCounter++}`,
-        word: childContent.substring(0, 50) + (childContent.length > 50 ? '...' : ''),
-        displayWord: childContent,
+        word: cleanChildText.substring(0, 50) + (cleanChildText.length > 50 ? '...' : ''),
+        displayWord: cleanChildText,
         type: 'sentence',
-        fullText: childContent,
-        items: [{ type: 'sentence', en: childContent, cn: '' }]
+        fullText: cleanChildText,
+        items: [{ type: 'sentence', en: cleanChildText, cn: '' }]
       };
       promotedChildren.push(card);
       if (i > lastProcessedLineIndex) {

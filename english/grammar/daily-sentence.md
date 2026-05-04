@@ -102,9 +102,15 @@ economies by only 0.25%~0.5% of GDP.
 
 ### 原句
 
-Although it ruled that there is no constitutional right to physician-assisted suicide, the Court in effect supported the
-medical principle of "double effect," a centuries-old moral principle holding that an action having two effects-a good
-one that is intended and a harmful one that is foreseenis permissible if the actor intends only the good effect.
+- Although it ruled that there is no constitutional right to physician-assisted suicide, the Court in effect supported
+  the medical principle of "double effect," a centuries-old moral principle holding that an action having two effects—a
+  good one that is intended and a harmful one that is foreseen—is permissible if the actor intends only the good
+  effect.
+    - medical adj. 医学的；医疗的
+    - moral  [ˈmɔːrəl]
+        - adj. 道德的
+        - n. 寓意
+    - in effect 实际上/本质上
 
 ## 008
 
