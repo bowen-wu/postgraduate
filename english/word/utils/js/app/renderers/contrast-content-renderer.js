@@ -14,9 +14,13 @@ function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
   const match = bracketMatch || insMatch;
   const blankId = `contrast-blank-${cardId}-${itemIndex}`;
   const playButtonId = `play-btn-contrast-${cardId}-${itemIndex}`;
+  const splitOptions = (raw) => String(raw || '')
+    .split(/[\/|]/)
+    .map((item) => item.replace(/\*\*/g, '').trim())
+    .filter(Boolean);
   const options = match
-    ? match[1].split('/').map((item) => item.replace(/\*\*/g, '').trim()).filter(Boolean)
-    : fallbackOptions;
+    ? splitOptions(match[1])
+    : (fallbackOptions || []).flatMap((opt) => splitOptions(opt));
 
   const placeholder = `<span id="${blankId}" style="padding:0 0.35rem;border-bottom:1px dashed #94a3b8;color:#64748b;">[ 选择 ]</span>`;
   const sentenceTemplate = bracketMatch
@@ -26,10 +30,11 @@ function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
     ? sentence.replace(/\[\[(.*?)\]\]/, placeholder)
     : (insMatch ? sentence.replace(/<ins>.*?<\/ins>/i, placeholder) : `${escapeHtml(sentence)} ${placeholder}`);
 
-  const optionsHtml = options.map((opt) => `
-    <button class="btn-ghost" data-action="select-contrast-option" data-target-id="${blankId}" data-choice="${encodeURIComponent(opt)}" style="padding:0.15rem 0.45rem;font-size:0.8rem;">
+  const optionsHtml = options.map((opt, idx) => `
+    <button class="btn-ghost contrast-option-btn" data-action="select-contrast-option" data-target-id="${blankId}" data-choice="${encodeURIComponent(opt)}" style="padding:0.15rem 0.45rem;font-size:0.8rem;">
       ${escapeHtml(opt)}
     </button>
+    ${idx < options.length - 1 ? '<span class="contrast-option-separator">|</span>' : ''}
   `).join('');
 
   const playButtonHtml = `
@@ -72,7 +77,7 @@ export function renderContrastItems(ui, card, stats) {
         <span>${sentenceHtml}</span>
         ${playButtonHtml}
       </div>
-      <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.5rem;">
+      <div class="contrast-options-row" style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.5rem;">
         ${optionsHtml}
       </div>
     `;

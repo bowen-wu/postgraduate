@@ -102,6 +102,15 @@
         content: none;
     }
 
+    .contrast-options-row {
+        gap: 1rem !important;
+    }
+
+    .contrast-option-separator {
+        margin: 0 0.35rem;
+        font-size: 1rem;
+    }
+
     /* Phrase card mobile adjustments */
     .phrase-title {
         font-size: 1.3rem;

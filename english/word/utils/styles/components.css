@@ -315,6 +315,18 @@ body.mode-recall .card.is-contrast .en-text {
     user-select: text;
 }
 
+.contrast-options-row {
+    align-items: center;
+    gap: 0.65rem !important;
+}
+
+.contrast-option-separator {
+    color: #64748b;
+    font-weight: 700;
+    margin: 0 0.2rem;
+    user-select: none;
+}
+
 .item { position: relative; }
 .item-tag {
     font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--secondary);
