@@ -127,9 +127,25 @@ export function parsePhraseContent(content) {
   // when it contains at least one Chinese character.
   const parenMatch = content.match(/^(.*?)\(([^()]*)\)$/);
   if (parenMatch && /[\u4e00-\u9fa5\uff08-\uff9e]/.test(parenMatch[2])) {
+    const prefix = parenMatch[1].trim();
+    const parenCn = parenMatch[2].trim();
+
+    // If prefix already contains Chinese gloss, split at first Chinese
+    // and append the trailing parenthesized note to Chinese side.
+    const cnMatchInPrefix = prefix.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+    if (cnMatchInPrefix) {
+      const cnStart = prefix.indexOf(cnMatchInPrefix[0]);
+      const word = prefix.substring(0, cnStart).trim();
+      const cnPrefix = prefix.substring(cnStart).trim();
+      return {
+        word,
+        cn: `${cnPrefix}(${parenCn})`
+      };
+    }
+
     const result = {
-      word: parenMatch[1].trim(),
-      cn: parenMatch[2].trim()
+      word: prefix,
+      cn: parenCn
     };
     return result;
   }
