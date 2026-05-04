@@ -56,6 +56,7 @@
     - prep. 关于
     - == about
 - disregard
+    - vt. 忽视
     - n. 忽视
     - shows his **disregard** for the character of rural areas.
 - regardless of

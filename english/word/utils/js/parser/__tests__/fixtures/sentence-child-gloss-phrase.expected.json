@@ -1,0 +1,35 @@
+[
+  {
+    "id": "card_0",
+    "word": "company",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_2",
+    "word": "in the company of",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "in the company of",
+        "cn": "与...一起/同时存在/伴随出现"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "As was discussed before, it was not until the 19th...",
+    "displayWord": "As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic medium, following the pamphlet and the book and in the <strong>company</strong> of the journal.",
+    "type": "sentence",
+    "fullText": "As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic medium, following the pamphlet and the book and in the {{BOLD:0}} of the journal.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "As was discussed before, it was not until the 19th century that the newspaper became the dominant pre-electronic medium, following the pamphlet and the book and in the company of the journal.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  }
+]

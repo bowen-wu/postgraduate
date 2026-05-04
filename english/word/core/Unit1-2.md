@@ -47,7 +47,7 @@
     - take the lead 带头，领先
     - take turns 轮流
     - take up 开始从事；接受（建议或挑战）
-- I thank you all fot this amazing award tonight. Let us not take this planet for granted. I do not take tonight for
+- I thank you all for this amazing award tonight. Let us not take this planet for granted. I do not take tonight for
   granted.
 - initiative [ɪˈnɪʃətɪv]
     - n. 主动性
@@ -203,7 +203,9 @@
       **.
     - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
 - trade n. 贸易；生意
-- transaction [trænˈzækʃn] n. 交易
+- transaction [trænˈzækʃn]
+    - n. 交易
+    - Similar: transcend [trænˈsend] vt. 超出，超越
 - sale
     - n. 销售；拍卖；销售额
     - 词组

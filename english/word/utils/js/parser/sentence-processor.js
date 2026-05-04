@@ -175,6 +175,24 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       continue;
     }
 
+    // Sentence child lines with Chinese gloss should stay as phrase cards
+    // (sentence children are constrained to word/phrase-like study items).
+    const childHasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(childContent);
+    const childHasPos = parser.hasPosMarker(childContent);
+    if (childHasChinese && !childHasPos) {
+      const card = parser.createPhraseCard(childContent, childIndentLevel);
+      const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, childIndentLevel, i, [], card);
+      if (phraseChildren.length > 0) {
+        card.children = phraseChildren;
+      }
+      promotedChildren.push(card);
+      if (phraseLastLine > lastProcessedLineIndex) {
+        lastProcessedLineIndex = phraseLastLine;
+      }
+      i++;
+      continue;
+    }
+
     setParentContext(parser, sentenceCard, indentLevel);
     const cardType = parser.determineCardType(childContent, childIndentLevel, i);
 

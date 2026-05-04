@@ -79,8 +79,16 @@ that you understand their situation and are in *sympathy(n. 支持，赞同；�
 
 ### 原句
 
-But the human mind can glimpse a rapidly changing scene and immediately disregard the 98 percent that is irrelevant,
-instantaneously focusing on the monkey at the side of a winding forest road or the single suspicious face in a big crowd
+- But the human mind can glimpse a rapidly changing scene and immediately disregard the 98 percent that is irrelevant,
+  instantaneously focusing on the monkey at the side of a winding forest road or the single suspicious face in a big
+  crowd
+    - glimpse [ɡlɪmps] n. 一瞥
+    - scene [siːn] n. 场面；情景；现象
+    - disregard
+        - vt. 忽视
+        - n. 忽视
+    - suspicious [səˈspɪʃəs] adj. 怀疑的
+    - a suspicious face 可疑的面孔
 
 ## 006
 
@@ -120,9 +128,10 @@ economies by only 0.25%~0.5% of GDP.
 
 ### 原句
 
-George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor prescribes a
-drug for a legitimate medical purpose, the doctor has done nothing illegal even if the patient uses the drug to hasten
-death.
+- George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor prescribes
+  a drug for a legitimate medical purpose, the doctor has done nothing illegal even if the patient uses the drug to
+  hasten death.
+    - hasten [ˈheɪsn] v. 促进
 
 ## 009
 
