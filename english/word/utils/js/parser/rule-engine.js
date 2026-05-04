@@ -73,10 +73,11 @@ export function determineCardTypeRule(args) {
 
   const normalized = content.trim();
   const wordCount = normalized ? normalized.split(/\s+/).length : 0;
+  const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(normalized);
   const looksLikeQuestionOrStatement =
     /[.!?。！？]/.test(normalized) ||
     /^(would|could|should|can|do|did|does|is|are|was|were|will|may|might|must|have|has|had|why|how|what|when|where|who|whom|whose|which)\b/i.test(normalized);
-  if (looksLikeQuestionOrStatement && wordCount >= 5) {
+  if (!hasChinese && looksLikeQuestionOrStatement && wordCount >= 5) {
     return 'sentence';
   }
 
