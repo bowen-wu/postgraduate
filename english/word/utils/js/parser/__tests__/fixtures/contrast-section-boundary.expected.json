@@ -41,11 +41,13 @@
   },
   {
     "id": "card_4",
-    "word": "Here's his advice for <ins>economic/economical</ins> foodies.",
-    "type": "phrase",
+    "word": "Here's his advice for <ins>economic/economical</in...",
+    "displayWord": "Here's his advice for <ins>economic/economical</ins> foodies.",
+    "type": "sentence",
+    "fullText": "Here's his advice for <ins>economic/economical</ins> foodies.",
     "items": [
       {
-        "type": "def",
+        "type": "sentence",
         "en": "Here's his advice for <ins>economic/economical</ins> foodies.",
         "cn": ""
       }
@@ -53,11 +55,13 @@
   },
   {
     "id": "card_5",
-    "word": "It's a sure sign of <ins>economic/economical</ins> recovery.",
-    "type": "phrase",
+    "word": "It's a sure sign of <ins>economic/economical</ins>...",
+    "displayWord": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+    "type": "sentence",
+    "fullText": "It's a sure sign of <ins>economic/economical</ins> recovery.",
     "items": [
       {
-        "type": "def",
+        "type": "sentence",
         "en": "It's a sure sign of <ins>economic/economical</ins> recovery.",
         "cn": ""
       }

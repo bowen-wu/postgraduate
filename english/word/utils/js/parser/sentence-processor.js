@@ -210,6 +210,23 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       continue;
     }
 
+    if (cardType === 'sentence') {
+      const card = {
+        id: `card_${parser.cardCounter++}`,
+        word: childContent.substring(0, 50) + (childContent.length > 50 ? '...' : ''),
+        displayWord: childContent,
+        type: 'sentence',
+        fullText: childContent,
+        items: [{ type: 'sentence', en: childContent, cn: '' }]
+      };
+      promotedChildren.push(card);
+      if (i > lastProcessedLineIndex) {
+        lastProcessedLineIndex = i;
+      }
+      i++;
+      continue;
+    }
+
     const card = parser.createPhraseCard(childContent, childIndentLevel);
     const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, childIndentLevel, i, [], card);
     if (phraseChildren.length > 0) {

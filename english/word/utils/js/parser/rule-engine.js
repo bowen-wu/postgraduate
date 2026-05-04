@@ -71,6 +71,15 @@ export function determineCardTypeRule(args) {
     return 'word';
   }
 
+  const normalized = content.trim();
+  const wordCount = normalized ? normalized.split(/\s+/).length : 0;
+  const looksLikeQuestionOrStatement =
+    /[.!?。！？]/.test(normalized) ||
+    /^(would|could|should|can|do|did|does|is|are|was|were|will|may|might|must|have|has|had|why|how|what|when|where|who|whom|whose|which)\b/i.test(normalized);
+  if (looksLikeQuestionOrStatement && wordCount >= 5) {
+    return 'sentence';
+  }
+
   const isChild = context.parentCard && context.parentLevel < indentLevel;
   if (isChild && context.parentCard.type === 'sentence') {
     if (!hasPosMarker(content)) return 'phrase';
