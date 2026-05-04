@@ -1,46 +1,85 @@
 [
   {
-    "id": "card_0",
-    "word": "economical",
-    "type": "word",
+    "id": "card_1",
+    "word": "Contrast: economic vs. economical",
+    "type": "phrase",
     "items": [
       {
         "type": "def",
-        "en": "adj.",
-        "cn": "省钱的；节约的"
+        "en": "Contrast: economic vs. economical",
+        "cn": ""
       }
     ],
-    "ipa": "[ˌeːkəˈnɑːmɪkl]"
-  },
-  {
-    "id": "card_1",
-    "word": "economic vs. economical",
-    "type": "contrast",
-    "contrastOptions": [
-      "economic",
-      "economical"
-    ],
-    "items": [
+    "children": [
       {
-        "type": "contrast",
-        "en": "Here's his advice for <ins>economic/economical</ins> foodies.",
-        "blankOptions": [
-          "economic",
-          "economical"
+        "id": "card_2",
+        "word": "Here's his advice for <ins>economic/economical</ins> foodies.",
+        "type": "sentence",
+        "fullText": "Here's his advice for <ins>economic/economical</ins> foodies.",
+        "items": [
+          {
+            "type": "sentence",
+            "en": "Here's his advice for <ins>economic/economical</ins> foodies.",
+            "cn": ""
+          }
         ]
       },
       {
-        "type": "contrast",
-        "en": "It's a sure sign of <ins>economic/economical</ins> recovery.",
-        "blankOptions": [
-          "economic",
-          "economical"
+        "id": "card_3",
+        "word": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+        "type": "sentence",
+        "fullText": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+        "items": [
+          {
+            "type": "sentence",
+            "en": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+            "cn": ""
+          }
         ]
       }
     ]
   },
   {
-    "id": "card_2",
+    "id": "card_4",
+    "word": "Here's his advice for <ins>economic/economical</ins> foodies.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "Here's his advice for <ins>economic/economical</ins> foodies.",
+        "cn": ""
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "It's a sure sign of <ins>economic/economical</ins> recovery.",
+        "cn": ""
+      }
+    ]
+  },
+  {
+    "id": "card_0",
+    "word": "economical [ˌeːkəˈnɑːmɪkl]",
+    "displayWord": "economical [ˌeːkəˈnɑːmɪkl]",
+    "type": "sentence",
+    "fullText": "economical [ˌeːkəˈnɑːmɪkl]",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "economical [ˌeːkəˈnɑːmɪkl]",
+        "cn": ""
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "card_6",
     "word": "system",
     "type": "word",
     "items": [

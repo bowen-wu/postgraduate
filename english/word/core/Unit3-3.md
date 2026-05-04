@@ -21,26 +21,23 @@
 
 - v. 离开；留下；让...处于（某种状态）；造成
 - n. 休假
-- ...*the basic mandatory([ˈmændətɔːri] adj. 强制的) high school curriculum(高中基础必修课程)* <ins>**leaves** students
-  with a poor understanding</ins> of *the vast academic possibilities(丰富学术可能性)* <ins>that await them in
-  college</ins>. 高中必修课程并不能让学生对大学里静候他们的广泛的学术可能性有足够的了解
+- ...the basic *mandatory([ˈmændətɔːri] adj. 强制的)* high school curriculum **leaves** students **with** a poor
+  understanding of the vast academic possibilities that await them in college. 高中必修课程并不能让学生对大学里静候他们的广泛的学术可能性有足够的了解
+    - the basic mandatory high school curriculum 高中基础必修课程
+    - the vast academic possibilities 丰富学术可能性
 - leaf
-    - n. 叶子
-    - leaves leaf的复数
-    - One falling **leaf** is indicative of the coming of *autumn([ˈɔtəm])*. 一叶知秋
-    - The boundless forest <ins>sheds its **leaves**</ins> shower by shower.
-      The endless river <ins>rolls its waves</ins> hour after hour.
+    - n. 叶子(复数：leaves)
+    - ONE FALLING **LEAF** IS INDICATIVE OF THE COMING OF *AUTUMN([ˈɔtəm])*. 一叶知秋
+    - The boundless forest **sheds its leaves** shower by shower. The endless river **rolls its waves** hour after hour.
 - depart
     - v. 离开；离职
     - departure
         - n. 离开；出发；背离
-        - a startling <ins>**departure** from(背离, 强调离开的起点)</ins> tradition. 标新立异
+        - a startling <ins>**departure** from(背离, 强调离开的起点)</ins> tradition.
         - the president's <ins>**departure** for(强调出发的目的地)</ins> New York.
-        - The modern world saw a <ins>**departure** from</ins> what it had once known. 现代社会随之告别了其过去所知的一切
-            - a departure from + 传统/过去方式/规则/旧做法/惯例 与过去不同的改变/摆脱旧有模式/偏离以往
-            - had once known 过去完成时
-                - once 曾经
-                - had known: 在过去某个时间之前就已经熟悉
+        - The modern world saw a **departure** from what it had once known. 现代社会随之告别了其过去所知的一切
+            - a departure from sth. 与过去不同的改变/摆脱旧有模式/偏离以往
+            - had once known 曾经知道/曾一度知道（过去完成时）
 - aside
     - adv. 到旁边
     - 词组
@@ -54,19 +51,19 @@
 ## federal
 
 - adj. 联邦（政府）的
-- Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
-    - The Supreme([suːˈpriːm]) Court
-        - Judicial([dʒuˈdɪʃl]) Power 司法权
+- *Separation([ˌsepəˈreɪʃn])* of Powers 三权分立
+    - The *Supreme([suːˈpriːm])* Court
+        - *Judicial([dʒuˈdɪʃl])* Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权
-            - Federal government 联邦政府
-                - == Washington == The Administration == The White House
-            - State government 州政府
+        - Federal government 联邦政府
+            - == Washington == The Administration == The White House
+        - State government 州政府
     - Congress
         - Legislative power
-            - Senate [ˈsenət] 参议院
-            - House of representatives [reprɪ'zentətɪvz] 众议院
+        - Senate n. [ˈsenət] 参议院
+        - House of *representatives[reprɪ'zentətɪvz]* 众议院
 - The constitutional principle that...and that <ins>**federal** laws precede state laws</ins> are noncontroversial.
 - democratic [ˌdeməˈkrætɪk]
     - adj. 民主的
@@ -82,7 +79,7 @@
       too **conservative** to implement them.
     - Conservative Party 保守党
     - The Labour Party 工党
-    - Liberal([ˈlɪbərəl]) Democratic Party 自由民主党
+    - *Liberal([ˈlɪbərəl])* Democratic Party 自由民主党
     - Ukip 独立党
 - chancellor [ˈtʃænsələr] n. （英国）财政大臣
 - premier [prɪˈmɪr]

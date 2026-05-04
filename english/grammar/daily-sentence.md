@@ -308,9 +308,12 @@ atmosphere is definitely warming and that the problem is largely man-made.
 
 ### 原句
 
-But science does provide us with the best available guide to the future, and it is critical that our nation and the
-world base important policies on the best
-judgments that science can provide concerning the future consequences of present actions.
+- But science does provide us with the best available guide to the future, and it is critical that our nation and the
+  world base important policies on the best judgments that science can provide concerning the future consequences of
+  present actions.
+    - the best available... 当前最好的/现有最好的
+    - it is critical that... ...是至关重要的 + 虚拟语气（动词原形）
+    - base A on B 以B为基础
 
 ## 026
 
@@ -320,9 +323,11 @@ judgments that science can provide concerning the future consequences of present
 
 ### 原句
 
-A century ago, Freud formulated his revolutionary theory that dreams were the disguised shadows of our unconscious
-desires and fears; by the late 1970s, neurologists had switched to thinking of them as just "mental noise"-the random
-byproducts of the neural-repair work that goes on during sleep.
+- A century ago, Freud formulated his revolutionary theory that dreams were the disguised shadows of our unconscious
+  desires and fears; by the late 1970s, neurologists had switched to thinking of them as just "mental noise"--the random
+  byproducts of the neural--repair work that goes on during sleep.
+    - formulate vt. 构想出（计划或提案）
+    - random byproducts of... ...的随机副产物
 
 ## 027
 
@@ -332,8 +337,9 @@ byproducts of the neural-repair work that goes on during sleep.
 
 ### 原句
 
-As a linguist, he acknowledges that all varieties of human language, including non-standard ones like Black English, can
-be powerfully expressive-there exists no language or dialect in the world that cannot convey complex ideas.
+- As a linguist, he acknowledges that all varieties of human language, including non-standard ones like Black English,
+  can
+  be powerfully expressive--there exists no language or dialect in the world that cannot convey complex ideas.
 
 ## 028
 

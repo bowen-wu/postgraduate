@@ -13,5 +13,17 @@
       }
     ],
     "children": []
+  },
+  {
+    "id": "card_1",
+    "word": "derive",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "起源于"
+      }
+    ]
   }
 ]

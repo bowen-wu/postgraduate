@@ -8,7 +8,6 @@ import {
   isPurePosLine,
   isPureIpaLine,
   hasPosMarker,
-  hasIpaMarker,
   isValidWordHeader
 } from './validators.js';
 import { parseWordContent, parsePhraseContent } from './content-parser.js';
@@ -31,7 +30,6 @@ export class MarkdownParser {
       isPurePosLine,
       isPureIpaLine,
       hasPosMarker,
-      hasIpaMarker,
       isValidWordHeader,
       parseWordContent,
       parsePhraseContent
@@ -54,7 +52,6 @@ export class MarkdownParser {
         inPhraseList: this.inPhraseList
       },
       hasPosMarker: this.hasPosMarker,
-      hasIpaMarker: this.hasIpaMarker,
       isPrefixOrSuffix: (innerContent, innerLineIndex = null) => this.isPrefixOrSuffix(innerContent, innerLineIndex),
       firstChildHasPos: (innerContent, innerIndentLevel, innerParentLineIndex = null) =>
         this.firstChildHasPos(innerContent, innerIndentLevel, innerParentLineIndex)

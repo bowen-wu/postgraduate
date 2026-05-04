@@ -48,7 +48,6 @@ export function determineCardTypeRule(args) {
     lineIndex,
     context,
     hasPosMarker,
-    hasIpaMarker,
     isPrefixOrSuffix,
     firstChildHasPos
   } = args;
@@ -66,7 +65,6 @@ export function determineCardTypeRule(args) {
 
   if (context.inPhraseHeader || context.inPhraseList) return 'phrase';
   if (hasPosMarker(content)) return 'word';
-  if (hasIpaMarker(content)) return 'word';
 
   const isSingleWord = /^[a-zA-Z'\-]+(?:\s[^a-zA-Z]*)?$/.test(content);
   if (isSingleWord && lineIndex !== null && firstChildHasPos(content, indentLevel, lineIndex)) {
