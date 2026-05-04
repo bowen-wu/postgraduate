@@ -35,7 +35,11 @@ export function renderSentenceItems(ui, card) {
 
   const labelDiv = document.createElement('div');
   labelDiv.className = 'sentence-label';
-  labelDiv.textContent = card.type === 'complex-sentence' ? 'Complex Sentence' : 'Example Sentence';
+  if (card.type === 'complex-sentence') {
+    labelDiv.innerHTML = 'Complex<br>Sentence';
+  } else {
+    labelDiv.textContent = 'Example Sentence';
+  }
   labelWrapper.appendChild(labelDiv);
 
   const playButton = document.createElement('button');

@@ -83,6 +83,25 @@
 
     .main-word { font-size: 1.8rem; flex-wrap: wrap; }
 
+    .card.is-complex-sentence .main-word {
+        font-size: 1.15rem;
+        line-height: 1.15;
+    }
+
+    .card.is-complex-sentence .sentence-label {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        font-size: 0.62rem;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+    }
+
+    .card.is-complex-sentence .sentence-label::before {
+        content: none;
+    }
+
     /* Phrase card mobile adjustments */
     .phrase-title {
         font-size: 1.3rem;
