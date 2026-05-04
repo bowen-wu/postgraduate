@@ -48,6 +48,7 @@
     - observer n. 观察者
 - preserve [prɪˈzɜːrv]
     - vt. 维护；保护
+    - Similar: upkeep n. 保养（费），维修（费）
     - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
       *creatures(['kritʃəz] n. 生物)* **preserve** the health of *game(n. 猎物)* by killing the physically weak, or that
       they prey only on "worthless" species.
@@ -90,7 +91,10 @@
         - vt. 修订; 改变; 修正; [主英国英语]复习
         - vi. 修订，校订
     - Contrast: revise(有修改) vs. review(无修改)
-        - With time he came to [[revise|review]] his opinion of the *profession(n. 职业)*.
+        - With time he came to [[revise|review]] his opinion of the profession.
+            - profession
+                - n. 职业；专业
+                - Similar: vocational [voʊˈkeɪʃənl] adj. 职业的，职业技术的
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
         - A doctor might [[revise|review]] your *medical([ˈmedɪkl])* record to help diagnose your sickness.
 - perspective [pərˈspektɪv]
@@ -112,7 +116,7 @@
         - 词组
             - in retrospect
                 - == looking back 回首、回头看、回想起来
-        - One day, <in>in **retrospect**</in>, the years of struggle will <ins>strike you as the most beautiful<ins>.
+        - One day, <in>in **retrospect**</in>, the years of struggle will strike you as the most beautiful.
             - strike someone as something 给人...印象/让某人觉得...(strike + 人 + as + 形容词/名词)
     - introspect [ˌɪntrə'spekt] v. 内省，内观
 

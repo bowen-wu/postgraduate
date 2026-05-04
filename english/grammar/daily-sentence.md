@@ -98,9 +98,11 @@ that you understand their situation and are in *sympathy(n. 支持，赞同；�
 
 ### 原句
 
-The OECD estimates in its latest Economic Outlook that, if oil prices
-averaged $22 a barrel for a full year, compared with $13 in 1998, this would increase the oil import bill in rich
-economies by only 0.25%~0.5% of GDP.
+- The OECD estimates in its latest Economic Outlook that, if oil prices averaged $22 a barrel for a full year, compared
+  with $13 in 1998, this would increase the oil import bill in rich economies by only 0.25%~0.5% of GDP.
+    - increase...by... 增加了多少（幅度）
+    - increase to 增加到多少
+    - rich economies 发达经济体
 
 ## 007
 

@@ -68,6 +68,7 @@
       been too conservative to implement them.
 - professional
     - adj. 职业的；专业的
+    - Similar: vocational [voʊˈkeɪʃənl] adj. 职业的，职业技术的
     - professional training 职业培训
 - professionalize [prəˈfɛʃənəˌlaɪz] vt. 使专业化
 - professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平

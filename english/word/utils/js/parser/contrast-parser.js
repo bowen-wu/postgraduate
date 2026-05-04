@@ -90,5 +90,6 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
     i++;
   }
 
-  return { items, extras, lastLineIndex: i - 1 };
+  // Return the next index after the consumed contrast block.
+  return { items, extras, lastLineIndex: i };
 }

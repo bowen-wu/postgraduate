@@ -1,0 +1,81 @@
+[
+  {
+    "id": "card_0",
+    "word": "review",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "revise(有修改) vs. review(无修改)",
+    "type": "contrast",
+    "contrastOptions": [
+      "revise",
+      "review"
+    ],
+    "items": [
+      {
+        "type": "contrast",
+        "en": "With time he came to [[revise|review]] his opinion of the profession.",
+        "blankOptions": [
+          "revise|review"
+        ]
+      },
+      {
+        "type": "contrast",
+        "en": "A doctor might [[revise|review]] your medical record to help diagnose your sickness.",
+        "blankOptions": [
+          "revise|review"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "profession",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "职业"
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "profession",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "profession",
+        "cn": ""
+      }
+    ]
+  },
+  {
+    "id": "card_4",
+    "word": "",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "职业；专业"
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "come to do",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "come to do",
+        "cn": "逐渐开始/渐渐意识到/最终发展到做某事"
+      }
+    ]
+  }
+]

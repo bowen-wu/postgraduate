@@ -14,6 +14,19 @@ import {
   finalizePendingSynonymIfNeeded
 } from './pending-relations.js';
 
+function cleanContrastSentenceText(text) {
+  return String(text || '')
+    .replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, '$1')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1')
+    .replace(/_([^_]+?)_/g, '$1')
+    .replace(/\s*\(\s*(?=[^)]*(?:\[|\/|[əɪɛæʌɑɔʊʃʒθðŋˈˌ]))[^)]*\)/g, '')
+    .replace(/\s*\[\s*([^\]]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\]]*)\s*\]/g, '')
+    .replace(/<(?!\/?ins\b)[^>]+>/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function processListItem(parser, line, indentLevel, content, lineIndex) {
   finalizePendingSynonymIfNeeded(parser, indentLevel);
   finalizePendingAntonymIfNeeded(parser, indentLevel);
@@ -43,7 +56,10 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       items: []
     };
     const { items, extras, lastLineIndex } = parseContrastChildren(parser.lines, lineIndex, indentLevel, header.options);
-    card.items = items;
+    card.items = items.map((item) => ({
+      ...item,
+      en: cleanContrastSentenceText(item.en)
+    }));
     parser.cards.push(card);
 
     // Extract inline word cards from contrast sentences, e.g. *profession(n. 职业)*.
