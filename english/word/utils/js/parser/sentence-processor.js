@@ -3,6 +3,12 @@ import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { processChildren } from './children-processor.js';
 import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
 
+function stripSentencePronunciationHints(text) {
+  return String(text || '')
+    .replace(/\s*\(\s*(?=[^)]*(?:\[|\/|[əɪɛæʌɑɔʊʃʒθðŋˈˌ]))[^)]*\)/g, '')
+    .replace(/\s*\[\s*([^\]]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\]]*)\s*\]/g, '');
+}
+
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
   let mergedContent = content;
@@ -58,7 +64,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   const boldPlaceholders = [];
   const protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, boldContent) => {
     const placeholder = `{{BOLD:${boldPlaceholders.length}}}`;
-    boldPlaceholders.push(boldContent);
+    boldPlaceholders.push(stripSentencePronunciationHints(boldContent));
     return placeholder;
   });
 
@@ -66,6 +72,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   clean = clean.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
   clean = clean.replace(/_([^_]+?)_/g, '$1');
   clean = extractInsPhrases(parser, clean, extractedCards, indentLevel, boldPlaceholders);
+  clean = stripSentencePronunciationHints(clean);
 
   const cleanEnWithPlaceholders = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
   const cnMatch = cleanEnWithPlaceholders.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);

@@ -99,8 +99,9 @@
         - loyal [ˈlɔɪəl] adj. 忠诚的
         - faithfulness
             - n. 忠诚
-            - **Faithfulness** refers to this quality of being <ins>**faithful and loyal**</ins>.
+            - **Faithfulness** refers to this quality of being **faithful and loyal**.
             - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
+            - Opposite: disloyal
 - credit [ˈkredɪt]
     - n. 学分；信用；认可
     - credit card
@@ -108,11 +109,11 @@
         - adj. 可信任的
         - incredible
             - adj. 极好的；难以置信的
-            - **incredible**: <ins>extraordinarily good or great</ins>
-                - == fantastic([fænˈtæstɪk]) == wonderful == good
-                  == marvellous [ˈmɑːrvələs] adj. 不可思议的; 惊奇的; 极好的; 绝妙的
-            - **incredible**: <ins>beyond belief or understanding</ins>
-                - The book's *plot([plɑːt] n. 情节)* is simply **incredible**.
+            - == extraordinarily good or great
+            - == beyond belief or understanding
+            - == fantastic [fænˈtæstɪk] == wonderful == good
+            - == marvellous [ˈmɑːrvələs] adj. 不可思议的; 惊奇的; 极好的; 绝妙的
+            - The book's *plot([plɑːt] n. 情节)* is simply **incredible**.
             - Or, we can look at failure as the **incredible** learning experience that it often is.
                 - look at...as... 把...视为...
     - credibility n. 可信性
@@ -121,7 +122,7 @@
 
 - n. 数据
 - big data
-- data leakage([ˈliːkɪdʒ]) 数据泄露
+- data *leakage([ˈliːkɪdʒ])* 数据泄露
 - database n. 数据库
 - analyse/analyze [ˈænəlaɪz]
     - vt. 分析
@@ -134,6 +135,7 @@
     - statistically adv. 统计学上
     - statistician [ˌstætɪˈstɪʃən] n. 统计学家
     - statistics [stəˈtɪstɪks] n. 统计学
+    - -ics 学科
 
 ## Words
 

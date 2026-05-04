@@ -65,14 +65,14 @@
   },
   {
     "id": "card_0",
-    "word": "economical [ˌeːkəˈnɑːmɪkl]",
-    "displayWord": "economical [ˌeːkəˈnɑːmɪkl]",
+    "word": "economical",
+    "displayWord": "economical",
     "type": "sentence",
-    "fullText": "economical [ˌeːkəˈnɑːmɪkl]",
+    "fullText": "economical",
     "items": [
       {
         "type": "sentence",
-        "en": "economical [ˌeːkəˈnɑːmɪkl]",
+        "en": "economical",
         "cn": ""
       }
     ],

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "card_0",
+    "word": "Sentences",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "I believe/hold/maintain/argue that",
+    "displayWord": "I <strong>believe/hold/maintain/argue</strong> that",
+    "type": "sentence",
+    "fullText": "I {{BOLD:0}} that 我认为...",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "I believe/hold/maintain/argue that",
+        "cn": "我认为..."
+      }
+    ],
+    "children": []
+  }
+]
