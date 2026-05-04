@@ -66,8 +66,12 @@ export function determineCardTypeRule(args) {
   if (context.inPhraseHeader || context.inPhraseList) return 'phrase';
   if (hasPosMarker(content)) return 'word';
 
-  const isSingleWord = /^[a-zA-Z'\-]+(?:\s[^a-zA-Z]*)?$/.test(content);
-  if (isSingleWord && lineIndex !== null && firstChildHasPos(content, indentLevel, lineIndex)) {
+  const normalizedWordCandidate = content
+    .replace(/\[[^\]]*\]/g, '')
+    .replace(/\/[^/]*\//g, '')
+    .trim();
+  const isSingleWordLike = /^[a-zA-Z'\-]+(?:\s[^a-zA-Z]*)?$/.test(normalizedWordCandidate);
+  if (isSingleWordLike && lineIndex !== null && firstChildHasPos(content, indentLevel, lineIndex)) {
     return 'word';
   }
 

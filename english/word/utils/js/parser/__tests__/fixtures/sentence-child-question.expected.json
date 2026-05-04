@@ -12,29 +12,28 @@
     ]
   },
   {
-    "id": "card_2",
-    "word": "Would passengers feel comfortable travelling in **...",
-    "displayWord": "Would passengers feel comfortable travelling in **companion**?",
-    "type": "sentence",
-    "fullText": "Would passengers feel comfortable travelling in **companion**?",
-    "items": [
-      {
-        "type": "sentence",
-        "en": "Would passengers feel comfortable travelling in **companion**?",
-        "cn": ""
-      }
-    ]
-  },
-  {
     "id": "card_1",
     "word": "companion",
-    "displayWord": "companion",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "同伴；伴侣"
+      }
+    ],
+    "ipa": "[kəmˈpæniən]"
+  },
+  {
+    "id": "card_2",
+    "word": "Would passengers feel comfortable travelling in co...",
+    "displayWord": "Would passengers feel comfortable travelling in <strong>companion</strong>?",
     "type": "sentence",
-    "fullText": "companion",
+    "fullText": "Would passengers feel comfortable travelling in {{BOLD:0}}?",
     "items": [
       {
         "type": "sentence",
-        "en": "companion",
+        "en": "Would passengers feel comfortable travelling in companion?",
         "cn": ""
       }
     ],
