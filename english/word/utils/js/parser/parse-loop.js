@@ -41,19 +41,22 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
     const blockLines = [];
     const firstLineRaw = content.replace(/^Block:\s*/, '').trim();
     const firstLineClean = normalizeInlineStudyText(firstLineRaw);
-    const firstLineParsed = parser.parsePhraseContent(firstLineClean);
+    const firstLineIsWord = parser.hasPosMarker(firstLineClean);
+    const firstLineParsed = firstLineIsWord
+      ? parser.parseWordContent(firstLineClean)
+      : parser.parsePhraseContent(firstLineClean);
     let lastPhraseLine = null;
     blockLines.push({
       id: `block_line_${parser.cardCounter}`,
       indentLevel: 0,
-      type: parser.hasPosMarker(firstLineClean) ? 'word' : 'phrase',
+      type: firstLineIsWord ? 'word' : 'phrase',
       rawText: firstLineRaw,
       cleanText: firstLineClean,
-      en: firstLineParsed.word || firstLineClean,
+      en: firstLineIsWord ? firstLineParsed.word : (firstLineParsed.word || firstLineClean),
       cn: firstLineParsed.cn || '',
-      audioText: firstLineParsed.word || firstLineClean
+      audioText: firstLineIsWord ? firstLineParsed.word : (firstLineParsed.word || firstLineClean)
     });
-    if (!parser.hasPosMarker(firstLineClean)) {
+    if (!firstLineIsWord) {
       lastPhraseLine = blockLines[blockLines.length - 1];
     }
 
@@ -82,17 +85,19 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       }
 
       const childClean = normalizeInlineStudyText(childRaw);
-      const childParsed = parser.parsePhraseContent(childClean);
       const isWordLine = parser.hasPosMarker(childClean);
+      const childParsed = isWordLine
+        ? parser.parseWordContent(childClean)
+        : parser.parsePhraseContent(childClean);
       const blockLine = {
         id: `block_line_${parser.cardCounter}_${i}`,
         indentLevel: Math.max(0, childIndent - indentLevel),
         type: isWordLine ? 'word' : 'phrase',
         rawText: childRaw,
         cleanText: childClean,
-        en: childParsed.word || childClean,
+        en: isWordLine ? childParsed.word : (childParsed.word || childClean),
         cn: childParsed.cn || '',
-        audioText: childParsed.word || childClean
+        audioText: isWordLine ? childParsed.word : (childParsed.word || childClean)
       };
       blockLines.push(blockLine);
       if (!isWordLine) {
