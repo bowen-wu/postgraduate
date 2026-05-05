@@ -36,7 +36,7 @@ export function renderSentenceItems(ui, card) {
   const labelDiv = document.createElement('div');
   labelDiv.className = 'sentence-label';
   if (card.type === 'complex-sentence') {
-    labelDiv.innerHTML = 'Complex<br>Sentence';
+    labelDiv.textContent = 'Complex Sentence';
   } else {
     labelDiv.textContent = 'Example Sentence';
   }

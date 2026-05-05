@@ -236,6 +236,16 @@ button:disabled:hover {
 .word-title-group { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
 .main-word { font-size: 2.5rem; font-weight: 800; color: var(--text-main); line-height: 1.1; display: flex; align-items: center; gap: 0.5rem; }
 .card.is-complex-sentence .main-word { font-size: 1.6rem; font-weight: 700; }
+.card.is-complex-sentence .main-word {
+    align-items: flex-start;
+}
+.complex-sentence-title-text {
+    display: inline;
+}
+.complex-sentence-copy-btn {
+    flex: 0 0 auto;
+    align-self: flex-start;
+}
 .main-word button { opacity: 0.6; transition: opacity 0.2s; }
 .main-word button:hover { opacity: 1; }
 .pronunciation { font-family: "Lucida Sans Unicode", "Arial Unicode MS", "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--secondary); font-size: 1.2rem; background: #f1f5f9; padding: 2px 6px; border-radius: 4px; }
@@ -672,6 +682,7 @@ body.mode-recall .similars-section.revealed {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
 }
 .sentence-label::before {
     content: "💬";

@@ -29,7 +29,7 @@ export function renderWordHeader(ui, card) {
     : '';
 
   const fillDraftButton = card.type === 'complex-sentence'
-    ? `<button id="fill-complex-sentence-draft-btn" class="btn-ghost" data-action="fill-complex-sentence-draft" data-target-id="complex-sentence-draft" data-sentence-encoded="${encodedSentence}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="Paste sentence to draft">
+    ? `<button id="fill-complex-sentence-draft-btn" class="btn-ghost complex-sentence-copy-btn" data-action="fill-complex-sentence-draft" data-target-id="complex-sentence-draft" data-sentence-encoded="${encodedSentence}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="Paste sentence to draft">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -38,7 +38,8 @@ export function renderWordHeader(ui, card) {
     : '';
 
   const mainPlayButton = card.type === 'complex-sentence' ? '' : playButton;
-  ui.word.innerHTML = `<span>${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
+  const wordSpanClass = card.type === 'complex-sentence' ? 'complex-sentence-title-text' : '';
+  ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';
 }
