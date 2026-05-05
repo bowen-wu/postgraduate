@@ -2,20 +2,7 @@ import { restoreParentContext, saveParentContext, setParentContext } from './con
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { processChildren } from './children-processor.js';
 import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
-
-function stripSentencePronunciationHints(text) {
-  return String(text || '')
-    .replace(/\s*\(\s*(?=[^)]*(?:\[|\/|[əɪɛæʌɑɔʊʃʒθðŋˈˌ]))[^)]*\)/g, '')
-    .replace(/\s*\[\s*([^\]]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\]]*)\s*\]/g, '');
-}
-
-function cleanSentenceChildText(text) {
-  return String(text || '')
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1')
-    .replace(/_([^_]+?)_/g, '$1')
-    .trim();
-}
+import { normalizeInlineStudyText, stripMarkdownMarkers, stripPronunciationHints } from './text-normalizer.js';
 
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
@@ -72,15 +59,14 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   const boldPlaceholders = [];
   const protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, boldContent) => {
     const placeholder = `{{BOLD:${boldPlaceholders.length}}}`;
-    boldPlaceholders.push(stripSentencePronunciationHints(boldContent));
+    boldPlaceholders.push(stripPronunciationHints(boldContent));
     return placeholder;
   });
 
   let clean = extractItalicWords(parser, protectedContent, extractedCards, indentLevel);
-  clean = clean.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
-  clean = clean.replace(/_([^_]+?)_/g, '$1');
+  clean = stripMarkdownMarkers(clean);
   clean = extractInsPhrases(parser, clean, extractedCards, indentLevel, boldPlaceholders);
-  clean = stripSentencePronunciationHints(clean);
+  clean = stripPronunciationHints(clean);
 
   const cleanEnWithPlaceholders = clean.replace(/\([^)]*[\u4e00-\u9fa5]+[^)]*\)/g, '').trim();
   const cnMatch = cleanEnWithPlaceholders.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
@@ -144,6 +130,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     }
 
     const childContent = getListContentFromTrimmed(trimmed);
+    const normalizedChildContent = normalizeInlineStudyText(childContent);
 
     if (parser.isSynonymMarker(childContent)) {
       if (!parser.pendingSynonyms) {
@@ -177,10 +164,10 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
     // Sentence child lines with Chinese gloss should stay as phrase cards
     // (sentence children are constrained to word/phrase-like study items).
-    const childHasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(childContent);
-    const childHasPos = parser.hasPosMarker(childContent);
+    const childHasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(normalizedChildContent);
+    const childHasPos = parser.hasPosMarker(normalizedChildContent);
     if (childHasChinese && !childHasPos) {
-      const card = parser.createPhraseCard(childContent, childIndentLevel);
+      const card = parser.createPhraseCard(normalizedChildContent, childIndentLevel);
       const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, childIndentLevel, i, [], card);
       if (phraseChildren.length > 0) {
         card.children = phraseChildren;
@@ -197,7 +184,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     const cardType = parser.determineCardType(childContent, childIndentLevel, i);
 
     if (cardType === 'word') {
-      const card = parser.createWordCard(childContent, childIndentLevel);
+      const card = parser.createWordCard(normalizedChildContent, childIndentLevel);
       const { children: wordChildren } = processChildren(parser, childIndentLevel, i, [], card);
       if (wordChildren.length > 0) {
         card.children = wordChildren;
@@ -209,7 +196,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     }
 
     if (cardType === 'phrase') {
-      const card = parser.createPhraseCard(childContent, childIndentLevel);
+      const card = parser.createPhraseCard(normalizedChildContent, childIndentLevel);
       const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, childIndentLevel, i, [], card);
       if (phraseChildren.length > 0) {
         card.children = phraseChildren;
@@ -223,7 +210,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     }
 
     if (cardType === 'prefix') {
-      const card = parser.createPrefixCard(childContent, childIndentLevel, i);
+      const card = parser.createPrefixCard(normalizedChildContent, childIndentLevel, i);
       const { children: prefixChildren, lastLineIndex: prefixLastLine } = processChildren(parser, childIndentLevel, i, [], card);
       if (prefixChildren.length > 0) {
         card.children = prefixChildren;
@@ -237,7 +224,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     }
 
     if (cardType === 'sentence') {
-      const cleanChildText = cleanSentenceChildText(childContent);
+      const cleanChildText = normalizeInlineStudyText(childContent);
       const card = {
         id: `card_${parser.cardCounter++}`,
         word: cleanChildText.substring(0, 50) + (cleanChildText.length > 50 ? '...' : ''),

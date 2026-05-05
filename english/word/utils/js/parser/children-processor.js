@@ -5,6 +5,7 @@ import {
   finalizePendingSimilarIfNeeded,
   finalizePendingSynonymIfNeeded
 } from './pending-relations.js';
+import { normalizeInlineStudyText } from './text-normalizer.js';
 
 export function processChildren(parser, parentIndentLevel, lineIndex, skipLines = [], explicitParentCard = null) {
   const children = [];
@@ -47,6 +48,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     }
 
     const content = getListContentFromTrimmed(trimmed);
+    const normalizedContent = normalizeInlineStudyText(content);
 
     if (parser.isSynonymMarker(content)) {
       if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase')) {
@@ -189,10 +191,10 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     const cardType = parser.determineCardType(content, indentLevel, i);
 
     if (actualParentCard && actualParentCard.type === 'sentence') {
-      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
-      const hasPosMarker = parser.hasPosMarker(content);
+      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(normalizedContent);
+      const hasPosMarker = parser.hasPosMarker(normalizedContent);
       if (hasChinese && !hasPosMarker) {
-        const phraseCard = parser.createPhraseCard(content, indentLevel);
+        const phraseCard = parser.createPhraseCard(normalizedContent, indentLevel);
         children.push(phraseCard);
         i++;
         continue;
@@ -200,19 +202,27 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     }
 
     if (actualParentCard && actualParentCard.type === 'phrase') {
-      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
-      const hasEnglish = /[a-zA-Z]/.test(content);
-      const hasPosMarker = parser.hasPosMarker(content);
+      const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(normalizedContent);
+      const hasEnglish = /[a-zA-Z]/.test(normalizedContent);
+      const hasLeadingEnglish = /^[a-zA-Z]/.test(normalizedContent);
+      const hasPosMarker = parser.hasPosMarker(normalizedContent);
       const isSpecialMarker = parser.isSynonymMarker(content) || parser.isPurePosLine(content) || parser.isPureIpaLine(content);
       const isSameOrLessIndent = indentLevel <= parentIndentLevel;
 
       if (hasChinese && hasEnglish && !hasPosMarker && !isSpecialMarker && isSameOrLessIndent) {
         break;
       }
+
+      if (hasChinese && hasEnglish && hasLeadingEnglish && !hasPosMarker && !isSpecialMarker) {
+        const phraseCard = parser.createPhraseCard(normalizedContent, indentLevel);
+        children.push(phraseCard);
+        i++;
+        continue;
+      }
     }
 
     if (cardType === 'word') {
-      const card = parser.createWordCard(content, indentLevel);
+      const card = parser.createWordCard(normalizedContent, indentLevel);
       const { children: wordChildren, lastLineIndex: wordLastLine } = processChildren(parser, indentLevel, i, [], card);
       if (wordChildren.length > 0) {
         card.children = wordChildren;
@@ -222,7 +232,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
         i = wordLastLine;
       }
     } else if (cardType === 'phrase') {
-      const card = parser.createPhraseCard(content, indentLevel);
+      const card = parser.createPhraseCard(normalizedContent, indentLevel);
       const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, indentLevel, i, [], card);
       if (phraseChildren.length > 0) {
         card.children = phraseChildren;
@@ -236,21 +246,21 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
         actualParentCard.items.push({
           type: 'def',
           en: actualParentCard.word,
-          cn: content
+          cn: normalizedContent
         });
       }
       i++;
       continue;
     } else if (cardType === 'prefix') {
-      const card = parser.createPrefixCard(content, indentLevel, i);
+      const card = parser.createPrefixCard(normalizedContent, indentLevel, i);
       children.push(card);
     } else {
       children.push({
         id: `card_${parser.cardCounter++}`,
-        word: content,
+        word: normalizedContent,
         type: 'sentence',
-        fullText: content,
-        items: [{ type: 'sentence', en: content, cn: '' }]
+        fullText: normalizedContent,
+        items: [{ type: 'sentence', en: normalizedContent, cn: '' }]
       });
     }
 

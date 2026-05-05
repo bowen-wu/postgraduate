@@ -3,6 +3,7 @@ import { processSentence } from './sentence-processor.js';
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { parseContrastHeader, parseContrastChildren } from './contrast-parser.js';
 import { extractItalicWords } from './inline-extractors.js';
+import { normalizeInlineStudyText, stripMarkdownMarkers } from './text-normalizer.js';
 import {
   addAntonymToParent,
   addIpaToParent,
@@ -14,20 +15,9 @@ import {
   finalizePendingSynonymIfNeeded
 } from './pending-relations.js';
 
-function cleanContrastSentenceText(text) {
-  return String(text || '')
-    .replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, '$1')
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1')
-    .replace(/_([^_]+?)_/g, '$1')
-    .replace(/\s*\(\s*(?=[^)]*(?:\[|\/|[əɪɛæʌɑɔʊʃʒθðŋˈˌ]))[^)]*\)/g, '')
-    .replace(/\s*\[\s*([^\]]*[əɪɛæʌɑɔʊʃʒθðŋˈˌ][^\]]*)\s*\]/g, '')
-    .replace(/<(?!\/?ins\b)[^>]+>/gi, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
 export function processListItem(parser, line, indentLevel, content, lineIndex) {
+  const normalizedContent = normalizeInlineStudyText(content);
+
   finalizePendingSynonymIfNeeded(parser, indentLevel);
   finalizePendingAntonymIfNeeded(parser, indentLevel);
   finalizePendingSimilarIfNeeded(parser, indentLevel);
@@ -58,7 +48,7 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
     const { items, extras, lastLineIndex } = parseContrastChildren(parser.lines, lineIndex, indentLevel, header.options);
     card.items = items.map((item) => ({
       ...item,
-      en: cleanContrastSentenceText(item.en)
+      en: normalizeInlineStudyText(item.en)
     }));
     parser.cards.push(card);
 
@@ -115,8 +105,7 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   if (parser.inPhraseList && indentLevel > parser.phraseMarkerLevel) {
     const extractedCards = [];
     let normalizedContent = extractItalicWords(parser, content, extractedCards, indentLevel);
-    normalizedContent = normalizedContent.replace(/[*_]([a-zA-Z'-]+)[*_]/g, '$1');
-    normalizedContent = normalizedContent.replace(/_([^_]+?)_/g, '$1');
+    normalizedContent = stripMarkdownMarkers(normalizedContent).trim();
 
     const isAffix = parser.isPrefixOrSuffix(content, lineIndex);
     const card = isAffix
@@ -143,7 +132,7 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   }
 
   if (cardType === 'phrase') {
-    const card = parser.createPhraseCard(content, indentLevel);
+    const card = parser.createPhraseCard(normalizedContent, indentLevel);
     const { children: phraseChildren, lastLineIndex: phraseLastLine } = processChildren(parser, indentLevel, lineIndex, [], card);
     if (phraseChildren.length > 0) {
       card.children = phraseChildren;
