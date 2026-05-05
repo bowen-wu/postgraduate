@@ -23,6 +23,9 @@
 - n. 休假
 - ...the basic *mandatory([ˈmændətɔːri] adj. 强制的)* high school curriculum **leaves** students **with** a poor
   understanding of the vast academic possibilities that await them in college. 高中必修课程并不能让学生对大学里静候他们的广泛的学术可能性有足够的了解
+    - academic [ˌækəˈdemɪk]
+        - adj. 学术的
+        - n. 学者
     - the basic mandatory high school curriculum 高中基础必修课程
     - the vast academic possibilities 丰富学术可能性
 - leaf
@@ -51,7 +54,7 @@
 ## federal
 
 - adj. 联邦（政府）的
-- *Separation([ˌsepəˈreɪʃn])* of Powers 三权分立
+- Block: *Separation([ˌsepəˈreɪʃn])* of Powers 三权分立
     - The *Supreme([suːˈpriːm])* Court
         - *Judicial([dʒuˈdɪʃl])* Power 司法权
         - Justice n. 法官
@@ -69,7 +72,14 @@
     - adj. 民主的
     - Many Americans regard the jury system as a concrete expression of crucial **democratic** values, including the
       principles that...
-    - democrat n. 美国民主党党员
+        - regard
+            - vt. 把...视为
+            - n. 关注
+        - concrete [ˈkɑːŋkriːt]
+            - adj. 具体的；确实的；实在的
+            - n. 混凝土
+        - crucial adj. 至关重要的
+- democrat n. 美国民主党党员
 - republican [rɪˈpʌblɪkən]
     - adj. 共和党的
     - n. 共和党党员
@@ -99,9 +109,11 @@
         - loyal [ˈlɔɪəl] adj. 忠诚的
         - faithfulness
             - n. 忠诚
-            - **Faithfulness** refers to this quality of being **faithful and loyal**.
-            - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
             - Opposite: disloyal
+            - **Faithfulness** refers to this quality of being **faithful and loyal**.
+                - quality n. 质量；品质
+            - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
+                - especially [ɪˈspeʃəli] adv. 尤其
 - credit [ˈkredɪt]
     - n. 学分；信用；认可
     - credit card

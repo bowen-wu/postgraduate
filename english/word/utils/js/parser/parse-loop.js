@@ -4,6 +4,7 @@ import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import { parseContrastHeader, parseContrastChildren } from './contrast-parser.js';
 import { extractItalicWords } from './inline-extractors.js';
 import { normalizeInlineStudyText, stripMarkdownMarkers } from './text-normalizer.js';
+import { getListIndentLevel } from './line-utils.js';
 import {
   addAntonymToParent,
   addIpaToParent,
@@ -34,6 +35,59 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
   if (parser.hasSimilarMarker(content)) {
     addSimilarToParent(parser, content, indentLevel);
     return undefined;
+  }
+
+  if (/^Block:\s*/.test(content)) {
+    const blockLines = [];
+    const firstLineRaw = content.replace(/^Block:\s*/, '').trim();
+    const firstLineClean = normalizeInlineStudyText(firstLineRaw);
+    const firstLineParsed = parser.parsePhraseContent(firstLineClean);
+    blockLines.push({
+      id: `block_line_${parser.cardCounter}`,
+      indentLevel: 0,
+      type: parser.hasPosMarker(firstLineClean) ? 'word' : 'sentence',
+      rawText: firstLineRaw,
+      cleanText: firstLineClean,
+      en: firstLineParsed.word || firstLineClean,
+      cn: firstLineParsed.cn || '',
+      audioText: firstLineParsed.word || firstLineClean
+    });
+
+    let i = lineIndex + 1;
+    while (i < parser.lines.length) {
+      const current = parser.lines[i];
+      const trimmed = current.trim();
+      if (!trimmed) {
+        i++;
+        continue;
+      }
+      if (trimmed.startsWith('##')) break;
+      const childIndent = getListIndentLevel(current);
+      if (!trimmed.startsWith('-') || childIndent <= indentLevel) break;
+
+      const childRaw = trimmed.substring(1).trim();
+      const childClean = normalizeInlineStudyText(childRaw);
+      const childParsed = parser.parsePhraseContent(childClean);
+      blockLines.push({
+        id: `block_line_${parser.cardCounter}_${i}`,
+        indentLevel: Math.max(0, childIndent - indentLevel),
+        type: parser.hasPosMarker(childClean) ? 'word' : 'sentence',
+        rawText: childRaw,
+        cleanText: childClean,
+        en: childParsed.word || childClean,
+        cn: childParsed.cn || '',
+        audioText: childParsed.word || childClean
+      });
+      i++;
+    }
+
+    parser.cards.push({
+      id: `card_${parser.cardCounter++}`,
+      word: blockLines[0]?.en || 'Block',
+      type: 'block',
+      items: blockLines
+    });
+    return i;
   }
 
   if (parser.hasContrastMarker && parser.hasContrastMarker(content)) {

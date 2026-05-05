@@ -1,0 +1,178 @@
+[
+  {
+    "id": "card_0",
+    "word": "federal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "联邦（政府）的"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "Separation of Powers",
+    "type": "block",
+    "items": [
+      {
+        "id": "block_line_1",
+        "indentLevel": 0,
+        "type": "sentence",
+        "rawText": "*Separation([ˌsepəˈreɪʃn])* of Powers 三权分立",
+        "cleanText": "Separation of Powers 三权分立",
+        "en": "Separation of Powers",
+        "cn": "三权分立",
+        "audioText": "Separation of Powers"
+      },
+      {
+        "id": "block_line_1_4",
+        "indentLevel": 4,
+        "type": "sentence",
+        "rawText": "The *Supreme([suːˈpriːm])* Court",
+        "cleanText": "The Supreme Court",
+        "en": "The Supreme Court",
+        "cn": "",
+        "audioText": "The Supreme Court"
+      },
+      {
+        "id": "block_line_1_5",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "*Judicial([dʒuˈdɪʃl])* Power 司法权",
+        "cleanText": "Judicial Power 司法权",
+        "en": "Judicial Power",
+        "cn": "司法权",
+        "audioText": "Judicial Power"
+      },
+      {
+        "id": "block_line_1_6",
+        "indentLevel": 8,
+        "type": "word",
+        "rawText": "Justice n. 法官",
+        "cleanText": "Justice n. 法官",
+        "en": "Justice n.",
+        "cn": "法官",
+        "audioText": "Justice n."
+      },
+      {
+        "id": "block_line_1_7",
+        "indentLevel": 4,
+        "type": "sentence",
+        "rawText": "Administration",
+        "cleanText": "Administration",
+        "en": "Administration",
+        "cn": "",
+        "audioText": "Administration"
+      },
+      {
+        "id": "block_line_1_8",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "Executive power 行政权",
+        "cleanText": "Executive power 行政权",
+        "en": "Executive power",
+        "cn": "行政权",
+        "audioText": "Executive power"
+      },
+      {
+        "id": "block_line_1_9",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "Federal government 联邦政府",
+        "cleanText": "Federal government 联邦政府",
+        "en": "Federal government",
+        "cn": "联邦政府",
+        "audioText": "Federal government"
+      },
+      {
+        "id": "block_line_1_10",
+        "indentLevel": 12,
+        "type": "sentence",
+        "rawText": "== Washington == The Administration == The White House",
+        "cleanText": "== Washington == The Administration == The White House",
+        "en": "== Washington == The Administration == The White House",
+        "cn": "",
+        "audioText": "== Washington == The Administration == The White House"
+      },
+      {
+        "id": "block_line_1_11",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "State government 州政府",
+        "cleanText": "State government 州政府",
+        "en": "State government",
+        "cn": "州政府",
+        "audioText": "State government"
+      },
+      {
+        "id": "block_line_1_12",
+        "indentLevel": 4,
+        "type": "sentence",
+        "rawText": "Congress",
+        "cleanText": "Congress",
+        "en": "Congress",
+        "cn": "",
+        "audioText": "Congress"
+      },
+      {
+        "id": "block_line_1_13",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "Legislative power",
+        "cleanText": "Legislative power",
+        "en": "Legislative power",
+        "cn": "",
+        "audioText": "Legislative power"
+      },
+      {
+        "id": "block_line_1_14",
+        "indentLevel": 8,
+        "type": "word",
+        "rawText": "Senate n. [ˈsenət] 参议院",
+        "cleanText": "Senate n. 参议院",
+        "en": "Senate n.",
+        "cn": "参议院",
+        "audioText": "Senate n."
+      },
+      {
+        "id": "block_line_1_15",
+        "indentLevel": 8,
+        "type": "sentence",
+        "rawText": "House of *representatives[reprɪ'zentətɪvz]* 众议院",
+        "cleanText": "House of representatives 众议院",
+        "en": "House of representatives",
+        "cn": "众议院",
+        "audioText": "House of representatives"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "federal laws precede state laws",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "federal laws precede state laws",
+        "cn": ""
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "The constitutional principle that...and that feder...",
+    "displayWord": "The constitutional principle that...and that federal laws precede state laws are noncontroversial.",
+    "type": "sentence",
+    "fullText": "The constitutional principle that...and that federal laws precede state laws are noncontroversial.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The constitutional principle that...and that federal laws precede state laws are noncontroversial.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  }
+]

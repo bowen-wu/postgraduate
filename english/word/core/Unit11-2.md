@@ -101,19 +101,19 @@
 
 - n. 国会
 - -gress- 走
-- Separation([ˌsepəˈreɪʃn]) of Powers 三权分立
-    - The Supreme([suːˈpriːm]) Court
-        - Judicial([dʒuˈdɪʃl]) Power 司法权
+- Block: *Separation([ˌsepəˈreɪʃn])* of Powers 三权分立
+    - The *Supreme([suːˈpriːm])* Court
+        - *Judicial([dʒuˈdɪʃl])* Power 司法权
         - Justice n. 法官
     - Administration
         - Executive power 行政权
-            - Federal government 联邦政府
-                - == Washington == The Administration == The White House
-            - State government 州政府
+        - Federal government 联邦政府
+            - == Washington == The Administration == The White House
+        - State government 州政府
     - Congress
         - Legislative power
-            - Senate [ˈsenət] 参议院
-            - House of representatives [reprɪ'zentətɪvz] 众议院
+        - Senate n. [ˈsenət] 参议院
+        - House of *representatives[reprɪ'zentətɪvz]* 众议院
     - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4,
 - congressional [kənˈɡreʃənl] adj. 国会的
 - parliament [ˈpɑːrləmənt] n. 议会

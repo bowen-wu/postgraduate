@@ -47,7 +47,7 @@
 - vt. 把...视为
 - n. 关注
 - regard A as B
-- Many Americans **regard** <ins>the jury system</ins> **as** a concrete expression of crucial democratic values,
+- Many Americans **regard** the jury system **as** a concrete expression of crucial democratic values,
   including the principles that...
     - the jury system 陪审团制度
 - 词组

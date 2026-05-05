@@ -85,6 +85,7 @@ export function shouldAutoPlayCard(card, state = STATE) {
   if (!card) return false;
   if (!state.autoPlay) return false;
   if (card.type === 'contrast') return false;
+  if (card.type === 'block') return false;
   return state.mode === 'input' || state.mode === 'recall';
 }
 

@@ -3,6 +3,7 @@ import { renderWordHeader, renderBadgeHtml } from './word-content-renderer.js';
 import { renderPhraseItems } from './phrase-content-renderer.js';
 import { renderSentenceItems } from './sentence-content-renderer.js';
 import { renderContrastItems } from './contrast-content-renderer.js';
+import { renderBlockItems } from './block-content-renderer.js';
 import { renderSynonymsAndAntonyms } from './relations-renderer.js';
 
 function renderBadges(ui, card, stats) {
@@ -27,6 +28,10 @@ function renderItems(ui, card, stats) {
 
   if (card.type === 'contrast') {
     renderContrastItems(ui, card, stats);
+    return;
+  }
+  if (card.type === 'block') {
+    renderBlockItems(ui, card);
     return;
   }
 
