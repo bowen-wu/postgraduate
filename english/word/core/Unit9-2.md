@@ -185,6 +185,7 @@
 - brief
     - adj. 简单的；短暂的
     - n. 简要，简报
+    - Similar: belief [bɪˈliːf] n. 信念；信仰；信心
 - roughly [ˈrʌfli] adv. 大约
 
 ## Words

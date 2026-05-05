@@ -5,7 +5,6 @@ export function createStudyUseCases(deps) {
     uiRenderer,
     getUi,
     render,
-    getBadgesElement,
     stopAudioPlayback = () => {}
   } = deps;
 
@@ -17,16 +16,6 @@ export function createStudyUseCases(deps) {
     state.stats[card.id].errors += 1;
     stateManager.saveState();
     uiRenderer.updateStatsUI(getUi());
-
-    const badgesEl = getBadgesElement ? getBadgesElement() : null;
-    if (badgesEl) {
-      const stats = state.stats[card.id] || { errors: 0 };
-      let bHtml = badgesEl.innerHTML;
-      if (!bHtml.includes('错')) {
-        bHtml += `<span class="badge badge-err">错 ${stats.errors}</span>`;
-        badgesEl.innerHTML = bHtml;
-      }
-    }
 
     return true;
   }

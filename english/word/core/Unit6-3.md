@@ -187,7 +187,14 @@
     - stuff [stʌf]
         - vt. 填进，塞满
         - n. 原料，材料(== thing)；
-- faculty [ˈfæklti] n. （高等院校的）院系；（高等院校中院、系的）全体教员
+- faculty [ˈfæklti]
+    - n. （高等院校的）院系；（高等院校中院、系的）全体教员
+    - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,
+      with the empowerment of junior faculty and to some degree of students as well.
+        - the empowerment of... 赋权/权力增强
+        - to some degree 在某种程度上
+        - as well 也/还/同样
+            - == too == also
 
 ## Words
 
