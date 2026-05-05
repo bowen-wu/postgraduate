@@ -7,6 +7,10 @@ import { renderBlockItems } from './block-content-renderer.js';
 import { renderSynonymsAndAntonyms } from './relations-renderer.js';
 
 function renderBadges(ui, card, stats) {
+  if (card.type === 'block') {
+    ui.badges.innerHTML = '';
+    return;
+  }
   ui.badges.innerHTML = renderBadgeHtml(card, stats);
 }
 

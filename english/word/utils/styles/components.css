@@ -328,6 +328,22 @@ body.mode-recall .card.is-contrast .en-text {
 }
 
 .item { position: relative; }
+.block-item { margin-bottom: 0.5rem; }
+.block-line-row {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+}
+.block-cn-inline {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0.25rem;
+}
+.block-synonyms {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
 .item-tag {
     font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--secondary);
     margin-bottom: 0.5rem; display: block; letter-spacing: 0.05em;

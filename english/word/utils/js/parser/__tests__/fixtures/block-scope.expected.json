@@ -19,7 +19,7 @@
       {
         "id": "block_line_1",
         "indentLevel": 0,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "*Separation([ˌsepəˈreɪʃn])* of Powers 三权分立",
         "cleanText": "Separation of Powers 三权分立",
         "en": "Separation of Powers",
@@ -29,7 +29,7 @@
       {
         "id": "block_line_1_4",
         "indentLevel": 4,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "The *Supreme([suːˈpriːm])* Court",
         "cleanText": "The Supreme Court",
         "en": "The Supreme Court",
@@ -39,7 +39,7 @@
       {
         "id": "block_line_1_5",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "*Judicial([dʒuˈdɪʃl])* Power 司法权",
         "cleanText": "Judicial Power 司法权",
         "en": "Judicial Power",
@@ -59,7 +59,7 @@
       {
         "id": "block_line_1_7",
         "indentLevel": 4,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "Administration",
         "cleanText": "Administration",
         "en": "Administration",
@@ -69,7 +69,7 @@
       {
         "id": "block_line_1_8",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "Executive power 行政权",
         "cleanText": "Executive power 行政权",
         "en": "Executive power",
@@ -79,27 +79,28 @@
       {
         "id": "block_line_1_9",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "Federal government 联邦政府",
         "cleanText": "Federal government 联邦政府",
         "en": "Federal government",
         "cn": "联邦政府",
-        "audioText": "Federal government"
-      },
-      {
-        "id": "block_line_1_10",
-        "indentLevel": 12,
-        "type": "sentence",
-        "rawText": "== Washington == The Administration == The White House",
-        "cleanText": "== Washington == The Administration == The White House",
-        "en": "== Washington == The Administration == The White House",
-        "cn": "",
-        "audioText": "== Washington == The Administration == The White House"
+        "audioText": "Federal government",
+        "synonyms": [
+          {
+            "word": "Washington"
+          },
+          {
+            "word": "The Administration"
+          },
+          {
+            "word": "The White House"
+          }
+        ]
       },
       {
         "id": "block_line_1_11",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "State government 州政府",
         "cleanText": "State government 州政府",
         "en": "State government",
@@ -109,7 +110,7 @@
       {
         "id": "block_line_1_12",
         "indentLevel": 4,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "Congress",
         "cleanText": "Congress",
         "en": "Congress",
@@ -119,7 +120,7 @@
       {
         "id": "block_line_1_13",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "Legislative power",
         "cleanText": "Legislative power",
         "en": "Legislative power",
@@ -139,7 +140,7 @@
       {
         "id": "block_line_1_15",
         "indentLevel": 8,
-        "type": "sentence",
+        "type": "phrase",
         "rawText": "House of *representatives[reprɪ'zentətɪvz]* 众议院",
         "cleanText": "House of representatives 众议院",
         "en": "House of representatives",

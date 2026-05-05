@@ -42,16 +42,20 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
     const firstLineRaw = content.replace(/^Block:\s*/, '').trim();
     const firstLineClean = normalizeInlineStudyText(firstLineRaw);
     const firstLineParsed = parser.parsePhraseContent(firstLineClean);
+    let lastPhraseLine = null;
     blockLines.push({
       id: `block_line_${parser.cardCounter}`,
       indentLevel: 0,
-      type: parser.hasPosMarker(firstLineClean) ? 'word' : 'sentence',
+      type: parser.hasPosMarker(firstLineClean) ? 'word' : 'phrase',
       rawText: firstLineRaw,
       cleanText: firstLineClean,
       en: firstLineParsed.word || firstLineClean,
       cn: firstLineParsed.cn || '',
       audioText: firstLineParsed.word || firstLineClean
     });
+    if (!parser.hasPosMarker(firstLineClean)) {
+      lastPhraseLine = blockLines[blockLines.length - 1];
+    }
 
     let i = lineIndex + 1;
     while (i < parser.lines.length) {
@@ -66,18 +70,34 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       if (!trimmed.startsWith('-') || childIndent <= indentLevel) break;
 
       const childRaw = trimmed.substring(1).trim();
+      if (parser.isSynonymMarker(childRaw) && lastPhraseLine) {
+        const synonymContent = childRaw.replace(/^===?\s+/, '').trim();
+        const synonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+        if (synonyms.length > 0) {
+          lastPhraseLine.synonyms = lastPhraseLine.synonyms || [];
+          synonyms.forEach((word) => lastPhraseLine.synonyms.push({ word }));
+        }
+        i++;
+        continue;
+      }
+
       const childClean = normalizeInlineStudyText(childRaw);
       const childParsed = parser.parsePhraseContent(childClean);
-      blockLines.push({
+      const isWordLine = parser.hasPosMarker(childClean);
+      const blockLine = {
         id: `block_line_${parser.cardCounter}_${i}`,
         indentLevel: Math.max(0, childIndent - indentLevel),
-        type: parser.hasPosMarker(childClean) ? 'word' : 'sentence',
+        type: isWordLine ? 'word' : 'phrase',
         rawText: childRaw,
         cleanText: childClean,
         en: childParsed.word || childClean,
         cn: childParsed.cn || '',
         audioText: childParsed.word || childClean
-      });
+      };
+      blockLines.push(blockLine);
+      if (!isWordLine) {
+        lastPhraseLine = blockLine;
+      }
       i++;
     }
 
