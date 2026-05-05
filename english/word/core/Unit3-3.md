@@ -126,6 +126,7 @@
             - == fantastic [fænˈtæstɪk] == wonderful == good
             - == marvellous [ˈmɑːrvələs] adj. 不可思议的; 惊奇的; 极好的; 绝妙的
             - The book's *plot([plɑːt] n. 情节)* is simply **incredible**.
+                - simply [ˈsɪmpli] adv. 仅仅; 简朴地
             - Or, we can look at failure as the **incredible** learning experience that it often is.
                 - look at...as... 把...视为...
     - credibility n. 可信性
@@ -136,7 +137,7 @@
 - big data
 - data *leakage([ˈliːkɪdʒ])* 数据泄露
 - database n. 数据库
-- analyse/analyze [ˈænəlaɪz]
+- analyze [ˈænəlaɪz]
     - vt. 分析
     - analyst [ˈænəlɪst] n. 分析者
     - analytical [ˌænəˈlɪtɪkl] adj. 分析的

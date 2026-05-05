@@ -109,7 +109,7 @@
         font-size: 0.62rem;
         line-height: 1.1;
         letter-spacing: 0.03em;
-        white-space: normal;
+        white-space: nowrap;
     }
 
     .card.is-complex-sentence .sentence-label::before {
