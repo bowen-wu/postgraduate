@@ -78,7 +78,7 @@ export function addSimilarToParent(parser, content, indentLevel) {
   finalizePendingSimilarIfNeeded(parser, indentLevel);
 
   parser.parentCard.similars = parser.parentCard.similars || [];
-  const multipleSimilars = parseMultipleRelationItems(content, /^(Similar:|形近词:)\s*/);
+  const multipleSimilars = parseMultipleRelationItems(content, /^Similar:\s*/);
   const originalParentCard = parser.parentCard;
   const originalParentLevel = parser.parentLevel;
 

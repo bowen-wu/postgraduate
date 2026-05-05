@@ -47,12 +47,12 @@ export function hasAntonymMarker(content) {
 }
 
 /**
- * Check if content has similar-word marker (Similar: / 形近词:)
+ * Check if content has similar-word marker (Similar:)
  * @param {string} content - The content to check
  * @returns {boolean}
  */
 export function hasSimilarMarker(content) {
-  return /^(Similar:|形近词:)\s*/.test(content);
+  return /^Similar:\s*/.test(content);
 }
 
 /**

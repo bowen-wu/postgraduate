@@ -148,7 +148,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       if (!parser.pendingSimilars) {
         parser.pendingSimilars = [];
       }
-      const similarContent = childContent.replace(/^(Similar:|形近词:)\s*/, '').trim();
+      const similarContent = childContent.replace(/^Similar:\s*/, '').trim();
       const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
       multipleSimilars.forEach((similar) => parser.pendingSimilars.push(similar));
       lastProcessedLineIndex = i;

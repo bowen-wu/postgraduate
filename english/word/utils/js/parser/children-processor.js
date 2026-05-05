@@ -100,7 +100,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
 
     if (parser.hasSimilarMarker(content)) {
       if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'sentence')) {
-        const similarContent = content.replace(/^(Similar:|形近词:)\s*/, '').trim();
+        const similarContent = content.replace(/^Similar:\s*/, '').trim();
         actualParentCard.similars = actualParentCard.similars || [];
         const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
 
