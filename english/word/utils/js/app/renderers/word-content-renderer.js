@@ -38,7 +38,9 @@ export function renderWordHeader(ui, card) {
     : '';
 
   const mainPlayButton = card.type === 'complex-sentence' ? '' : playButton;
-  const wordSpanClass = card.type === 'complex-sentence' ? 'complex-sentence-title-text' : '';
+  const wordSpanClass = card.type === 'complex-sentence'
+    ? 'complex-sentence-title-text complex-sentence-header-title'
+    : '';
   ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';

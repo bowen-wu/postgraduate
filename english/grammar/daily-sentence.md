@@ -461,8 +461,12 @@ animals) in a new *fishery(n. 渔场)* is reduced on average by 80% within 15 ye
 
 ### 原句
 
-That matters because theory suggests that the maximum sustainable yield that can be cropped from a fishery comes when
-the biomass of a target species is about 50% of its original levels.
+- That matters because theory suggests that the maximum sustainable yield that can be cropped from a fishery comes when
+  the biomass of a target species is about 50% of its original levels.
+    - sustainable [səˈsteɪnəbl] adj. 可持续的
+    - maximum sustainable yield 最大可持续产量
+    - be cropped from... 从...中捕捞/获取资源
+    - come when... 在...时出现/达到
 
 ## 034
 
@@ -472,8 +476,12 @@ the biomass of a target species is about 50% of its original levels.
 
 ### 原句
 
-In the West, before mass communication and literacy, the most powerful mass medium was the church, which reminded
-worshippers that their souls were in danger and that they would someday be meat for worms.
+- In the West, before mass communication and literacy, the most powerful mass medium was the church, which reminded
+  worshippers that their souls were in danger and that they would someday be meat for worms.
+    - mass n. 质量；[pl.]大量的东西；[pl.]群众；大多数
+    - mass communication 大众传播
+    - literacy n. 读写能力
+    - be meat for worms 死后腐烂/被虫吃
 
 ## 035
 
@@ -483,8 +491,14 @@ worshippers that their souls were in danger and that they would someday be meat 
 
 ### 原句
 
-Today, surrounded by promises of easy happiness, we need art to tell us, as religion once did, Memento mori: remember
-that you will die, that everything ends, and that happiness comes not in denying this but in living with it.
+- Today, surrounded by promises of easy happiness, we need art to tell us, as religion once did, Memento mori: remember
+  that you will die, that everything ends, and that happiness comes not in denying this but in living with it.
+    - religion  [rɪˈlɪdʒən]  n. 宗教
+    - be surrounded by... 被...包围
+    - as...once did 像...曾经那样
+    - deny [dɪˈnaɪ] vt. 否认；拒绝
+    - not in A but in B 不在于A，而在于B
+    - live with something 接受并与...共存
 
 ## 036
 
@@ -494,8 +508,14 @@ that you will die, that everything ends, and that happiness comes not in denying
 
 ### 原句
 
-This success, coupled with later research showing that memory itself is not genetically determined, led Ericsson to
-conclude that the act of memorizing is more of a cognitive exercise than an intuitive one.
+- This success, coupled with later research showing that memory itself is not genetically determined, led Ericsson to
+  conclude that the act of memorizing is more of a cognitive exercise than an intuitive one.
+    - coupled with... 与...相结合/再加上...
+    - be genetically determined 由基因决定
+    - lead sb. to do sth. 使某人做某事
+    - cognitive [ˈkɑːɡnətɪv] adj. 认知的
+    - intuitive [ɪnˈtuːɪtɪv] adj. 直觉的
+    - more of A than B 与其说是B，不如说是A
 
 ## 037
 

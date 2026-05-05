@@ -98,6 +98,12 @@
         white-space: normal;
     }
 
+    .card.is-complex-sentence .complex-sentence-header-title {
+        display: inline-block;
+        max-width: 7.2ch;
+        line-height: 1.05;
+    }
+
     .card.is-complex-sentence .complex-sentence-copy-btn {
         margin-left: 0.1rem;
         padding: 0.15rem 0.35rem !important;
