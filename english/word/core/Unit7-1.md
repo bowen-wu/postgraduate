@@ -16,6 +16,10 @@
 - 破折号: —
 - C: Cause
 - R: Result
+- Opposite: 反义词 
+- Similar: 形近词 
+- Contrast: 对比 
+- Block: 块级
 
 ## practice
 
