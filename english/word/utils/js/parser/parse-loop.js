@@ -53,6 +53,7 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       rawText: firstLineRaw,
       cleanText: firstLineClean,
       en: firstLineIsWord ? firstLineParsed.word : (firstLineParsed.word || firstLineClean),
+      pos: firstLineIsWord ? (firstLineParsed.pos || '') : '',
       cn: firstLineParsed.cn || '',
       audioText: firstLineIsWord ? firstLineParsed.word : (firstLineParsed.word || firstLineClean)
     });
@@ -96,6 +97,7 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
         rawText: childRaw,
         cleanText: childClean,
         en: isWordLine ? childParsed.word : (childParsed.word || childClean),
+        pos: isWordLine ? (childParsed.pos || '') : '',
         cn: childParsed.cn || '',
         audioText: isWordLine ? childParsed.word : (childParsed.word || childClean)
       };

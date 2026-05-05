@@ -5,6 +5,8 @@ export function renderBlockItems(ui, card) {
     li.className = 'item block-item';
     const indent = Number(line.indentLevel || 0);
     const text = String(line.cleanText || line.en || '').trim();
+    const enText = String(line.en || text).trim();
+    const pos = line.type === 'word' ? String(line.pos || '').trim() : '';
     const cn = String(line.cn || '').trim();
     const playButtonId = `play-btn-block-${card.id}-${index}`;
     const audioText = String(line.audioText || line.en || text || '').trim();
@@ -33,7 +35,8 @@ export function renderBlockItems(ui, card) {
 
     li.innerHTML = `
       <div class="block-line-row">
-        <div class="en-text">${line.en || text}</div>
+        <div class="en-text">${enText}</div>
+        ${pos ? `<div class="block-pos">${pos}</div>` : ''}
         <button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encoded}" data-word="${audioText}" data-button-id="${playButtonId}" style="padding: 0.15rem 0.4rem; font-size: 0.75rem;" title="Play line audio">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>

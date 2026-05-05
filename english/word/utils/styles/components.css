@@ -345,6 +345,12 @@ body.mode-recall .card.is-contrast .en-text {
     gap: 0.45rem;
     flex-wrap: wrap;
 }
+.block-pos {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-transform: lowercase;
+}
 .block-cn-inline {
     border-left: none;
     padding-left: 0;
