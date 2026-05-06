@@ -225,9 +225,18 @@ whereby 表示什么意思？引导什么从句？
 
 ### 原句
 
-If railroads charged all customers the same average rate, they argue, shippers who have the option of switching to
-trucks or other forms of transportation would do so, leaving remaining customers to shoulder the cost of keeping up the
-line.
+- If railroads charged all customers the same average rate, they argue, shippers who have the option of switching to
+  trucks or other forms of transportation would do so, leaving remaining customers to shoulder the cost of keeping up
+  the line.
+    - charge
+        - vt. 控告；指责；使...承担责任
+        - v. （向...）收费
+        - n. 指控；主管
+    - shipper n. 承运商，托运人，发货人
+    - have the option of doing sth. 有选择做某事的权利
+    - do so 这样做
+    - leave sb. to do sth. 使某人不得不...
+    - shoulder the cost 承担成本
 
 ## 014
 
@@ -237,9 +246,14 @@ line.
 
 ### 原句
 
-It's a theory to which many economists subscribe, but in practice it often leaves railroads in the position of
-determining which companies will flourish
-and which will fail.
+- It's a theory to which many economists subscribe, but in practice it often leaves railroads in the position of
+  determining which companies will flourish and which will fail.
+    - railroad n. 铁路
+    - flourish [ˈflɜːrɪʃ] vi. 繁荣，兴旺；茁壮成长
+    - subscribe to... 认同/支持（观点）
+    - in practice 在实践中
+    - leave sb. in the position of doing sth. 使某人处于不得不...的境地
+    - determine which... 决定哪一个...
 
 ## 015
 
@@ -249,19 +263,35 @@ and which will fail.
 
 ### 原句
 
-Physiciansfrustrated by their inability to cure the disease and fearing loss of hope in the patient-too often offer
-aggressive treatment far beyond what is scientifically justified.
+- Physicians—frustrated by their inability to cure the disease and fearing loss of hope in the patient—too often offer
+  aggressive treatment far beyond what is scientifically justified.
+    - physician [fɪˈzɪʃn] n. 医生，内科医生
+    - aggressive [əˈɡresɪv] adj. 好强的🙂; 攻击性强的😔
+    - inability [ˌɪnəˈbɪləti] n. 无力
+    - be frustrated by... 因...感到沮丧
+    - inability to do sth. 无法做某事
+    - disease  [dɪˈziːz] n. 疾病；弊病
+    - cure [kjʊr]
+        - vt. 治好（疾病）
+        - n. （解决问题、改善糟糕情况等的）措施
+    - cure a disease 治愈疾病
+    - aggressive treatment 激进治疗
+    - what is justified 合理的范围/正当的程度
 
 ## 016
 
 ### 思考
 
-本句申的三个that从句一样吗？分别是什么从句？补充修饰什么？
+本句中的三个that从句一样吗？分别是什么从句？补充修饰什么？
 
 ### 原句
 
-These leaders are living proof that prevention works and that we can manage the health problems that come naturally with
-age.
+- These leaders are living proof that prevention works and that we can manage the health problems that come naturally
+  with age.
+    - proof n. 证据
+    - living proof 活生生的证据
+    - prevention [prɪˈvenʃn] n. 预防
+    - prevention works 预防是有效的
 
 ## 017
 
@@ -1237,8 +1267,8 @@ department stores and to the bargain bin in which the poor girl doubtless found 
 
 ### 原句
 
-These labels encourage style-conscious consumers to see clothes as disposable meant to last only a wash or two, although
-they don't advertise that-and to renew their wardrobe every few weeks.
+- These labels encourage style-conscious consumers to see clothes as disposable meant to last only a wash or two,
+  although they don't advertise that-and to renew their wardrobe every few weeks.
 
 ## 099
 

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## increase
@@ -47,7 +47,10 @@
         - spike up to + percent 飙升到
 - accelerate [əkˈseləreɪt]
     - v. 使加速
-    - acceleration n. 加速
+    - Similar: accumulate v. 积累
+    - acceleration
+        - n. 加速
+        - Similar: accumulation n. 堆积；积累
 - fall
     - vi. 下降
     - n. 下降
@@ -74,6 +77,7 @@
         - cheerleader n. 啦啦队队长；拉拉队队员; （强有力的）支持者
 - diminish [dɪˈmɪnɪʃ]
     - v. 使减少；减弱
+    - == reduce vt. 减少
     - Technology is **diminishing/reducing** man's job opportunities.
 
 ## pay
@@ -92,6 +96,7 @@
     - One of the most common is "to inspect or verify."
     - You might **check** the oven to see if your cookies are done.
     - The Government is determined to **check** The growth of public spending.
+        - check the growth of... 控制...的增长
     - check and balance
 - payment n. 支付
 - payout
@@ -138,9 +143,12 @@
 - lawyer n. 律师
 - lawsuit
     - n. 诉讼案；诉讼
-    - Many of them instead become the kind of **nuisance-lawsuit** *filer([ˈfaɪlər] n. 申诉人)* that makes
+    - Many of them instead become the kind of **nuisance-lawsuit** filer that makes
       <ins>the tort system(侵权诉讼体系)</ins> a costly nightmare.
       相反，他们中许多人变成了那种专门提起无理取闹诉讼的人，使整个侵权制度变得代价高昂、令人头疼
+        - filer [ˈfaɪlər]
+            - n. 申诉人
+            - Similar: fiber [ˈfaɪbər] n. 纤维
 - legal
     - adj. 与法律有关的；合法的
     - illegal adj. 非法的
@@ -182,6 +190,8 @@
     - Workers have been **barred** from the country since 1982.
     - Less than a quarter of graduates from the law school pass the **bar** exam on the first try.
     - Another is to let students sit for the **bar** after only two years of law school.
+        - sit for the bar 参加律师考试
+        - number years of school/train 在...学习了几年
 
 ## show
 

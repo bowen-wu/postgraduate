@@ -640,7 +640,7 @@
 
     \subsubsection{求导公式}
 
-    设$F(x) = \int_{\varphi_1(x)}^{\varphi_2(x)} {\color{red}{f(t)}}\,\mathrm{d}t$，其中$f(x)$在$[a, b]$上连续，可导函数$\varphi_1(x)$和$\varphi_2(x)$的值域在$[a, b]$上，则在函数$\varphi_1(x)$和$\varphi_2(x)$的公共定义域上，有
+    设$F(x) = \dint_{\varphi_1(x)}^{\varphi_2(x)} {\color{red}{f(t)}}\,\mathrm{d}t$，其中$f(x)$在$[a, b]$上连续，可导函数$\varphi_1(x)$和$\varphi_2(x)$的值域在$[a, b]$上，则在函数$\varphi_1(x)$和$\varphi_2(x)$的公共定义域上，有
     \[
         F'(x) = \frac{\mathrm{d}}{\mathrm{d}x}\left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(t)\,\mathrm{d}t\right] = f[\varphi_2(x)]\varphi_2'(x) - f[\varphi_1(x)]\varphi_1'(x)
     \]
@@ -809,8 +809,7 @@
                 &=
                 \frac{
                     \begin{vmatrix}
-                        (e^{ax})
-                        '      & \sin bx \\
+                        (e^{ax})' & (\sin bx)' \\
                         e^{ax} & \sin bx
                     \end{vmatrix}
                 }{a^2 + b^2}
@@ -828,8 +827,7 @@
                 &=
                 \frac{
                     \begin{vmatrix}
-                        (e^{ax})
-                        '      & \cos bx \\
+                        (e^{ax})' & (\cos bx)' \\
                         e^{ax} & \cos bx
                     \end{vmatrix}
                 }{a^2 + b^2}
@@ -839,8 +837,8 @@
                 + C
             \end{aligned}
         \]
-        \item $I_n = \displaystyle\int_0^{+\infty} x^ne^{-x}\,\mathrm{d}x = n!(n\text{为非负整数})$
-        \item $\tan (\displaystyle\frac{\pi}{4} - \alpha) = \displaystyle\frac{1 - \tan \alpha}{1 + \tan \alpha}$
+        \item $I_n = \dint_0^{+\infty} x^ne^{-x}\,\mathrm{d}x = n!(n\text{为非负整数})$
+        \item $\tan (\dfrac{\pi}{4} - \alpha) = \displaystyle\frac{1 - \tan \alpha}{1 + \tan \alpha}$
         \item
         \[
             \int \sqrt{1+x^2}\,\mathrm{d}x
@@ -856,8 +854,8 @@
     \subsection{方法总结}
 
     \begin{enumerate}
-        \item 若不是常用的凑微分公式，则可对被积函数的复杂部分$g(x)$求导，若$g'(x) = f(x)$，即$d[g(x)] = f(x)dx$，则$\int f(x)g(x)\,\mathrm{d}x = \int g(x)\,\mathrm{d}[g(x)]$，凑微分成功
-        \item $\int \triangle\,\mathrm{d}x$一般不好求，可将其转化成$\int \nabla\,\mathrm{d}x$
+        \item 若不是常用的凑微分公式，则可对被积函数的复杂部分$g(x)$求导，若$g'(x) = f(x)$，即$d[g(x)] = f(x)dx$，则$\dint f(x)g(x)\,\mathrm{d}x = \int g(x)\,\mathrm{d}[g(x)]$，凑微分成功
+        \item $\dint \triangle\,\mathrm{d}x$一般不好求，可将其转化成$\dint \nabla\,\mathrm{d}x$
         \item 形如$R(\sin x, \cos x)$的有理式称为三角函数有理式
         \begin{enumerate}
             \item 令$t = \tan \displaystyle\frac{x}{2},\, \sin x = \displaystyle\frac{2t}{1 + t^2},\, \cos x = \displaystyle\frac{1-t^2}{1+t^2}$
@@ -868,7 +866,7 @@
                 \item 若$R(\sin x, \cos x) = R(-\sin x, -\cos x)$，令$\tan x = t$
             \end{itemize}
         \end{enumerate}
-        \item 定积分计算时考虑{\color{customgreen}{奇偶性}}和{\color{customgreen}{周期性}}，做{\color{customgreen}{平移代换}}。\emph{e.g.}\,$\int_0^1 \Rightarrow? \int_{-\frac{1}{2}}^{\frac{1}{2}}$
+        \item 定积分计算时考虑{\color{customgreen}{奇偶性}}和{\color{customgreen}{周期性}}，做{\color{customgreen}{平移代换}}。\emph{e.g.}\,$\dint_0^1 \Rightarrow? \dint_{-\frac{1}{2}}^{\frac{1}{2}}$
 
     \end{enumerate}
 

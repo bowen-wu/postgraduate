@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## nuclear
@@ -91,7 +91,7 @@
     - If connections can be bought, a basic premise of democratic society—that all are equal in **treatment** by
       government—is undermined.
 - cure [kjʊr]
-    - vt. 治好（疾病）；
+    - vt. 治好（疾病）
     - n. （解决问题、改善糟糕情况等的）措施
     - a cure for... 对...的良方/...的解药/治本之策
     - One oft-debated **cure** for this labor shortage remains as implausible as it has been all along...
@@ -188,7 +188,6 @@
     - adv. 的确，事实上
 
 ## 词组
-
 
 ## 句式
 
