@@ -7,15 +7,12 @@ import { renderBlockItems } from './block-content-renderer.js';
 import { renderSynonymsAndAntonyms } from './relations-renderer.js';
 
 function renderBadges(ui, card, stats) {
-  if (card.type === 'block') {
-    ui.badges.innerHTML = '';
-    return;
-  }
   ui.badges.innerHTML = renderBadgeHtml(card, stats);
 }
 
 function renderItems(ui, card, stats) {
   ui.list.innerHTML = '';
+  ui.list.classList.remove('block-item-list');
   // Reset recall reveal state between cards so hidden sections don't leak
   // into the next card's first screen in recall mode.
   ui.list.classList.remove('revealed');
@@ -35,6 +32,7 @@ function renderItems(ui, card, stats) {
     return;
   }
   if (card.type === 'block') {
+    ui.list.classList.add('block-item-list');
     renderBlockItems(ui, card);
     return;
   }

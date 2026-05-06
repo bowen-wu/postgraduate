@@ -1,6 +1,16 @@
 export function renderBlockItems(ui, card) {
   const lines = Array.isArray(card.items) ? card.items : [];
   lines.forEach((line, index) => {
+    if (index === 0) {
+      if (line.cn) {
+        const li = document.createElement('li');
+        li.className = 'item block-item block-first-cn';
+        li.innerHTML = `<div class="cn-text" data-has-cn="true" style="border-left: none; padding-left: 0;">${line.cn}</div>`;
+        ui.list.appendChild(li);
+      }
+      return;
+    }
+
     const li = document.createElement('li');
     li.className = 'item block-item';
     const indent = Number(line.indentLevel || 0);

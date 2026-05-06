@@ -293,6 +293,9 @@ button:disabled:hover {
 }
 
 .item-list { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+.item-list.block-item-list {
+    gap: 0;
+}
 
 /* Hide definition items in recall mode until user clicks "记得" */
 /* But keep phrase header and sentence content visible */
@@ -339,6 +342,9 @@ body.mode-recall .card.is-contrast .en-text {
 
 .item { position: relative; }
 .block-item { margin-bottom: 0.5rem; }
+.block-first-cn {
+    margin-bottom: 0.75rem;
+}
 .block-line-row {
     display: flex;
     align-items: center;
