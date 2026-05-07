@@ -147,7 +147,6 @@
     }
 
     .card:not(.is-complex-sentence) .word-title-line > .audio-play-btn,
-    .card:not(.is-complex-sentence) .word-title-line > .complex-sentence-copy-btn,
     .card:not(.is-complex-sentence) .main-word > .pronunciation-inline {
         flex: 0 0 auto;
     }
@@ -178,12 +177,6 @@
     .card.is-complex-sentence .complex-sentence-title-text {
         display: inline;
         white-space: normal;
-    }
-
-    .card.is-complex-sentence .complex-sentence-copy-btn {
-        margin-left: 0.1rem;
-        padding: 0.15rem 0.35rem !important;
-        align-self: center;
     }
 
     .card.is-complex-sentence .word-title-group {

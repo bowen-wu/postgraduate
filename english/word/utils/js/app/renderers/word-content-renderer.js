@@ -25,7 +25,6 @@ export function renderWordHeader(ui, card) {
   }
 
   const encodedWord = encodeURIComponent(card.word);
-  const encodedSentence = encodeURIComponent(card.items?.[0]?.en || card.displayWord || '');
   const playButtonId = 'play-btn-main';
   const playButton = `<button id="${playButtonId}" class="btn-ghost audio-play-btn" data-action="play-word" data-word-encoded="${encodedWord}" data-button-id="${playButtonId}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="Play audio">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -38,27 +37,17 @@ export function renderWordHeader(ui, card) {
     ? `<span class="pronunciation-inline ${STATE.mode === 'recall' ? 'blur-target' : ''}" style="margin: 0;padding: 0;">${card.ipa}</span>`
     : '';
 
-  const fillDraftButton = card.type === 'complex-sentence'
-    ? `<button id="fill-complex-sentence-draft-btn" class="btn-ghost complex-sentence-copy-btn" data-action="fill-complex-sentence-draft" data-target-id="complex-sentence-draft" data-sentence-encoded="${encodedSentence}" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" title="Paste sentence to draft">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-        </svg>
-      </button>`
-    : '';
-
   const mainPlayButton = playButton;
   const wordSpanClass = card.type === 'complex-sentence'
     ? 'complex-sentence-title-text'
     : '';
   if (card.type === 'complex-sentence') {
-    ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
+    ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span>`;
   } else {
     ui.word.innerHTML = `
       <span class="word-title-line">
         <span class="${wordSpanClass}">${card.word}</span>
         ${mainPlayButton}
-        ${fillDraftButton}
       </span>
       ${ipaHtml}
     `;

@@ -58,6 +58,25 @@ export function renderSentenceItems(ui, card) {
     <span class="btn-spinner"></span>
   `;
   labelWrapper.appendChild(playButton);
+
+  if (card.type === 'complex-sentence') {
+    const copyButton = document.createElement('button');
+    copyButton.id = 'fill-complex-sentence-draft-btn';
+    copyButton.className = 'btn-ghost complex-sentence-copy-btn';
+    copyButton.style.cssText = 'padding: 0.15rem 0.4rem; font-size: 0.75rem;';
+    copyButton.title = 'Paste sentence to draft';
+    copyButton.dataset.action = 'fill-complex-sentence-draft';
+    copyButton.dataset.targetId = 'complex-sentence-draft';
+    copyButton.dataset.sentenceEncoded = sentenceTextEncoded;
+    copyButton.innerHTML = `
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    `;
+    labelWrapper.appendChild(copyButton);
+  }
+
   ui.list.appendChild(labelWrapper);
 
   if (card.patterns && card.patterns.length > 0) {
