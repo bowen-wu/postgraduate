@@ -51,7 +51,18 @@ export function renderWordHeader(ui, card) {
   const wordSpanClass = card.type === 'complex-sentence'
     ? 'complex-sentence-title-text'
     : '';
-  ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
+  if (card.type === 'complex-sentence') {
+    ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
+  } else {
+    ui.word.innerHTML = `
+      <span class="word-title-line">
+        <span class="${wordSpanClass}">${card.word}</span>
+        ${mainPlayButton}
+        ${fillDraftButton}
+      </span>
+      ${ipaHtml}
+    `;
+  }
   ui.ipa.textContent = '';
   ui.ipa.style.display = 'none';
 }

@@ -118,31 +118,43 @@
     .main-word { font-size: 1.8rem; }
 
     .card:not(.is-complex-sentence) .word-title-group {
+        display: block;
         flex: 1 1 auto;
         width: auto;
         min-width: 0;
-        flex-wrap: nowrap;
-        align-items: center;
     }
 
     .card:not(.is-complex-sentence) .main-word {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+        gap: 0.35rem;
+    }
+
+    .card:not(.is-complex-sentence) .word-title-line {
         display: inline-flex;
-        flex-wrap: nowrap;
         align-items: center;
+        flex-wrap: nowrap;
         min-width: 0;
         white-space: nowrap;
         gap: 0.35rem;
     }
 
-    .card:not(.is-complex-sentence) .main-word > span:first-child {
-        min-width: 0;
+    .card:not(.is-complex-sentence) .word-title-line > span:first-child {
+        flex: 0 0 auto;
         white-space: nowrap;
+    }
+
+    .card:not(.is-complex-sentence) .word-title-line > .audio-play-btn,
+    .card:not(.is-complex-sentence) .word-title-line > .complex-sentence-copy-btn,
+    .card:not(.is-complex-sentence) .main-word > .pronunciation-inline {
         flex: 0 0 auto;
     }
 
-    .card:not(.is-complex-sentence) .main-word > .audio-play-btn,
     .card:not(.is-complex-sentence) .main-word > .pronunciation-inline {
-        flex: 0 0 auto;
+        display: inline-flex;
+        align-self: flex-start;
     }
 
     .card:not(.is-complex-sentence) .badges {
