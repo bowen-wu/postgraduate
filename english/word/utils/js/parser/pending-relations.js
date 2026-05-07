@@ -2,6 +2,23 @@ function hasDuplicateRelation(collection, word) {
   return collection.some((entry) => entry.word === word);
 }
 
+function parsePhraseRelationCandidate(parser, candidate) {
+  const raw = String(candidate || '').trim();
+  const match = raw.match(/^[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]\s+(.+)$/);
+  if (!match) return null;
+
+  const [, word, def, tail] = match;
+  if (!parser.hasPosMarker(def)) return null;
+
+  const { ipa, pos, cn } = parser.parseWordContent(`${word} ${def}`);
+  return {
+    word: `${word} ${tail}`.trim(),
+    ipa: ipa || '',
+    pos: pos || '',
+    cn: cn || ''
+  };
+}
+
 function parseMultipleRelationItems(content, markerRegex) {
   const relationContent = content.replace(markerRegex, '').trim();
   return relationContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
@@ -24,6 +41,20 @@ export function addSynonymToParent(parser, content, indentLevel) {
   for (const syn of multipleSynonyms) {
     parser.parentCard = originalParentCard;
     parser.parentLevel = originalParentLevel;
+
+    if (parser.parentCard && parser.parentCard.type === 'phrase') {
+      const phraseRelation = parsePhraseRelationCandidate(parser, syn);
+      if (phraseRelation) {
+        const synonym = { word: phraseRelation.word };
+        if (phraseRelation.ipa) synonym.ipa = phraseRelation.ipa;
+        if (phraseRelation.pos) synonym.pos = phraseRelation.pos;
+        if (phraseRelation.cn) synonym.cn = phraseRelation.cn;
+        if (!hasDuplicateRelation(parser.parentCard.synonyms, synonym.word)) {
+          parser.parentCard.synonyms.push(synonym);
+        }
+        continue;
+      }
+    }
 
     const { word, ipa, pos, cn } = parser.parseWordContent(syn);
     if (!word) {

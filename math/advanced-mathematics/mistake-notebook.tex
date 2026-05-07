@@ -1108,14 +1108,51 @@
 
     \subsubsection{解答}
 
-
-
-
     \begin{enumerate}
 
     \end{enumerate}
 
+    \subsection{一元函数积分学的计算}
+
+    \begin{enumerate}
+        \item $\lim\limits_{x\to +\infty}\dfrac{\int_e^x (1-\frac{1}{t})^t \cdot e^{et}\,\mathrm{d}t}{e^{ex}}$
+        \item $\dint \arcsin \sqrt{\dfrac{x}{a+x}}\,\mathrm{d}x$
+        \item $\dint\dfrac{\arctan e^x}{e^x}\,\mathrm{d}x$
+        \item $\dint \max{1, |x|}\,\mathrm{d}x$
+        \item $\dint \dfrac{1}{1 + \cos^2 x}\,\mathrm{d}x$
+        \item $\dint_{-\frac{\pi}{4}}^{\frac{\pi}{4}} e^{\frac{\pi}{2}} \dfrac{\cos x - \sin x}{\sqrt{\cos x}}\,\mathrm{d}x$
+        \item $\dint_{-1}^1 \dfrac{x+1}{1+\sqrt[3]{x^2}}\,\mathrm{d}x$
+        \item 设$f(x) = \begin{cases}
+                            \dfrac{1}{1+\sin x}, x \geq 0, \\
+                            \dfrac{1}{1+e^x}, x < 0,
+        \end{cases}$求$\dint_{-1}^\frac{\pi}{4} f(x)\,\mathrm{d}x$
+        \item 设$f(x) = \dint_0^1 t|t-x|\,\mathrm{d}t$，求$f'(x)$
+    \end{enumerate}
+
     \subsubsection{解答}
 
+    \subsubsection*{第1题解答}
+    \begin{analysisbox}
+        分析：牛顿—莱布尼茨公式 + 洛必达法则
+    \end{analysisbox}
 
+    \subsubsection*{第4题解答}
+    \begin{analysisbox}
+        分析：分段求出每段上的原函数后，适当调整每一段上的常数使其原函数在分段函数的分段点处连续
+    \end{analysisbox}
+
+    \subsubsection*{第7题解答}
+    \begin{analysisbox}
+        分析：恒等变形之后利用奇偶函数性质
+    \end{analysisbox}
+
+    \subsubsection*{第8题解答}
+    \begin{analysisbox}
+        分析：$\dfrac{1}{1+\sin x}$分母有理化（恒等变形）
+    \end{analysisbox}
+
+    \subsubsection*{第9题解答}
+    \begin{analysisbox}
+        分析：看上下限进行分段
+    \end{analysisbox}
 \end{document}

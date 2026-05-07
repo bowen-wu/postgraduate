@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## result
@@ -27,8 +27,7 @@
 - n. 结果；后果
 - 词组
     - as a result 因此/结果是/所以
-    - as a result of
-        - 结果是；由于...的原因
+    - as a result of 结果是；由于...的原因
     - result from
         - 由...引起(R result from C)
         - == originate from
@@ -73,12 +72,21 @@
     - prosecutor n. 检察官；公诉人
     - persecute [ˈpɜːrsɪkjuːt]
         - v. 迫害；残害
-        - Weaver and his family have been **persecuted** by the authorities for their *beliefs([bɪ'lifs] n. 信仰)*.
+        - Weaver and his family have been **persecuted** by the authorities for their beliefs.
+            - beliefs [bɪ'lifs]
+                - n. 信仰
+                - Similar: brief
+                    - adj. 简单的；短暂的
+                    - n. 简要，简报
 - judge
     - v. 判断
     - n. 法官；裁判员
     - judgement n. 判断力；评价；裁决
-- trial n. 审判；试验；比赛
+- trial
+    - n. 审判；试验；比赛
+    - Similar: tail
+        - n. 尾巴
+        - vi. 盯...的梢
 - appeal
     - v. 吸引；上诉；呼吁，恳求
     - n. 吸引；上诉；呼吁，恳求
@@ -86,8 +94,10 @@
         - appeal to 吸引
         - appeal to sb. for sth. 请求/呼吁某人给予某物
     - Court Of Appeals
-    - <ins>Above all(最重要的是)</ins>, the dress does **appeal** to her.
-    - He will **appeal** to the state for an extension of unemployment benefits.
+    - Above all, the dress does **appeal** to her.
+        - above all 最重要的是
+            - Similar: after all 毕竟
+    - He will **appeal** to the state **for** an extension of unemployment benefits.
     - Despite the **appeals** court's decision, big questions remain unanswered.
         - decision n. 决定；裁决
             - == ruling == verdict
@@ -177,7 +187,9 @@
 - setback
     - n. 挫折
     - There will be setbacks and false starts.
-- setter n. 制定者
+- setter
+    - n. 制定者
+    - Similar: settle v. 结束（争论、争端等）；定居；（最终）决定
 - settle
     - v. 结束（争论、争端等）；定居；（最终）决定
     - settle down 安顿下来/稳定下来/专心于某事/让自己冷静下来

@@ -12,4 +12,5 @@
 \contentsline {subsubsection}{\numberline {1.5.1}解答}{22}{subsubsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.6}一元函数积分学的概念与性质}{23}{subsection.1.6}%
 \contentsline {subsubsection}{\numberline {1.6.1}解答}{23}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}解答}{23}{subsubsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.7}一元函数积分学的计算}{23}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}解答}{24}{subsubsection.1.7.1}%

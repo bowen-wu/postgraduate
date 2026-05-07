@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## academic
@@ -147,8 +147,8 @@
     - critically [ˈkrɪtɪkli] adv. 极为重要地
 - criticize ['krɪtəˌsaɪz]
     - vt. 批评
-    - It is fair to **criticize** and question the mechanism—that is, the culture of research—<ins>after all(
-      毕竟)</ins>, but it is the prize-givers' money to do with as they please.
+    - It is fair to **criticize** and question the mechanism—that is, the culture of research—
+      <ins>after all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
       批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
 - critique [krɪˈtik] n. 批判
 - condemn [kənˈdem] vt. 谴责

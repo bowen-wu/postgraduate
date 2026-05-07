@@ -7,6 +7,22 @@ import {
 } from './pending-relations.js';
 import { normalizeInlineStudyText } from './text-normalizer.js';
 
+function parsePhraseRelationCandidate(parser, candidate) {
+  const raw = String(candidate || '').trim();
+  const match = raw.match(/^[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]\s+(.+)$/);
+  if (!match) return null;
+
+  const [, word, def, tail] = match;
+  if (!parser.hasPosMarker(def)) return null;
+  const { ipa, pos, cn } = parser.parseWordContent(`${word} ${def}`);
+  return {
+    word: `${word} ${tail}`.trim(),
+    ipa: ipa || '',
+    pos: pos || '',
+    cn: cn || ''
+  };
+}
+
 export function processChildren(parser, parentIndentLevel, lineIndex, skipLines = [], explicitParentCard = null) {
   const children = [];
   let i = lineIndex + 1;
@@ -57,6 +73,18 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
         const multipleSynonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
 
         for (const syn of multipleSynonyms) {
+          if (actualParentCard.type === 'phrase') {
+            const phraseRelation = parsePhraseRelationCandidate(parser, syn);
+            if (phraseRelation) {
+              const synonym = { word: phraseRelation.word };
+              if (phraseRelation.ipa) synonym.ipa = phraseRelation.ipa;
+              if (phraseRelation.pos) synonym.pos = phraseRelation.pos;
+              if (phraseRelation.cn) synonym.cn = phraseRelation.cn;
+              actualParentCard.synonyms.push(synonym);
+              continue;
+            }
+          }
+
           const { word, ipa, pos, cn } = parser.parseWordContent(syn);
           if (pos && cn) {
             const synonym = { word };
