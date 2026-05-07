@@ -138,6 +138,7 @@ button:disabled:hover {
 .custom-select {
     position: relative;
     display: inline-block;
+    min-width: 0;
 }
 .custom-select-trigger {
     background: #e2e8f0;
@@ -154,9 +155,19 @@ button:disabled:hover {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    min-width: 0;
+}
+
+#orderModeLabel {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1 auto;
 }
 
 .custom-select-trigger svg {
+    flex: 0 0 auto;
     width: 12px;
     height: 12px;
     stroke: var(--secondary);
@@ -193,6 +204,12 @@ button:disabled:hover {
     color: var(--text-main);
     cursor: pointer;
     transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    white-space: nowrap;
+    min-width: 0;
 }
 .custom-select-option:hover {
     background: #f1f5f9;
@@ -204,9 +221,10 @@ button:disabled:hover {
 }
 .custom-select-option.selected::after {
     content: '✓';
-    float: right;
+    flex: 0 0 auto;
     color: var(--primary);
     font-weight: 700;
+    margin-left: 0.25rem;
 }
 
 /* --- Card --- */
@@ -237,6 +255,9 @@ button:disabled:hover {
 .main-word { font-size: 2.5rem; font-weight: 800; color: var(--text-main); line-height: 1.1; display: flex; align-items: center; gap: 0.5rem; }
 .card.is-complex-sentence .main-word { font-size: 1.6rem; font-weight: 700; }
 .card.is-complex-sentence .main-word {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 100%;
     align-items: flex-start;
 }
 .complex-sentence-title-text {

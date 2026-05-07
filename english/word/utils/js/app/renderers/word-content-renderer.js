@@ -47,9 +47,9 @@ export function renderWordHeader(ui, card) {
       </button>`
     : '';
 
-  const mainPlayButton = card.type === 'complex-sentence' ? '' : playButton;
+  const mainPlayButton = playButton;
   const wordSpanClass = card.type === 'complex-sentence'
-    ? 'complex-sentence-title-text complex-sentence-header-title'
+    ? 'complex-sentence-title-text'
     : '';
   ui.word.innerHTML = `<span class="${wordSpanClass}">${card.word}</span> ${mainPlayButton} ${fillDraftButton} ${ipaHtml}`;
   ui.ipa.textContent = '';
@@ -63,7 +63,7 @@ export function renderBadgeHtml(card, stats) {
   else if (card.type === 'contrast') html += '<span class="badge badge-rel">Contrast</span>';
   else if (card.type === 'prefix') html += '<span class="badge badge-pre">Affix</span>';
   else if (card.type === 'sentence') html += '<span class="badge badge-sent">Sentence</span>';
-  else if (card.type === 'complex-sentence') html += '<span class="badge badge-sent">Complex Sentence</span>';
+  else if (card.type === 'complex-sentence') html += '<span class="badge badge-sent complex-sentence-badge">Complex<br>Sentence</span>';
   else if (card.type === 'block') html += '<span class="badge badge-sent">Block</span>';
   if (stats.errors > 0) html += `<span class="badge badge-err">Err ${stats.errors}</span>`;
   return html;
