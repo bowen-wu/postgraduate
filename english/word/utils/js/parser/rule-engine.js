@@ -66,7 +66,11 @@ export function determineCardTypeRule(args) {
   if (context.inPhraseHeader || context.inPhraseList) return 'phrase';
   if (hasPosMarker(content)) return 'word';
 
-  const headwordWithOptionalIpa = /^\s*[a-zA-Z'\-]+\s*(?:\[[^\]]+\]|\/[^/]+\/)?\s*$/.test(content);
+  const normalizedHeadword = String(content || '')
+    .replace(/\s*(?:\[[^\]]+\]|\/[^/]+\/)\s*/g, ' ')
+    .replace(/\s*[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]+\s*/gu, ' ')
+    .trim();
+  const headwordWithOptionalIpa = /^[a-zA-Z'\-]+$/.test(normalizedHeadword);
   if (headwordWithOptionalIpa && lineIndex !== null && firstChildHasPos(content, indentLevel, lineIndex)) {
     return 'word';
   }
