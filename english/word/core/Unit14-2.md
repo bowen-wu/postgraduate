@@ -16,11 +16,10 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
-
 
 ## discuss
 
@@ -28,14 +27,14 @@
 - vt. 讨论
 - discussion n. 讨论
 - negotiate [nɪˈɡoʊʃieɪt]
-  - v. 协商
-  - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that *each want
-    something* out of the deal.
-    - out of 在...之外；（== form）从...中获得、因...、由...
-  - You might **negotiate** with your mom—offering to do more *chores([tʃɔːr] n. 家务活)* for a rise in your
-    allowance.
-  - Two companies debate the terms of a contract.
-  - negotiation n. 协商
+    - v. 协商
+    - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that *each want
+      something* out of the deal.
+        - out of 在...之外；（== form）从...中获得、因...、由...
+    - You might **negotiate** with your mom—offering to do more *chores([tʃɔːr] n. 家务活)* for a rise in your
+      allowance.
+    - Two companies debate the terms of a contract.
+    - negotiation n. 协商
 
 ## propose
 
@@ -43,17 +42,17 @@
 - vt. 提出；提议
 - purpose [ˈpɜːrpəs] n. 目的；目标
 - proposal [prəˈpoʊzl]
-  - n. 提议
-  - ...they *presumably([prɪˈzuːməbli] adv. 大概可以认为；想必；据推测)* have enough independence to disagree with the
-    chief executive's **proposals**.
+    - n. 提议
+    - ...they *presumably([prɪˈzuːməbli] adv. 大概可以认为；想必；据推测)* have enough independence to disagree with the
+      chief executive's **proposals**.
 - advise [ədˈvaɪz]
-  - v. 建议
-  - advise sb. to do sth.
-  - advice [ədˈvaɪs] n. 建议
-  - advisable adj. 明知可取的
+    - v. 建议
+    - advise sb. to do sth.
+    - advice [ədˈvaɪs] n. 建议
+    - advisable adj. 明知可取的
 - recommend
-  - v. 建议；推荐
-  - recommendation n. 推荐
+    - v. 建议；推荐
+    - recommendation n. 推荐
 
 ## survive
 
@@ -61,20 +60,20 @@
 - vt. 经受住
 - survival [sərˈvaɪvl] n. 幸存；生存
 - vivid
-  - adj. 生动的
-  - vividly adv. 生动地
+    - adj. 生动的
+    - vividly adv. 生动地
 - revive [rɪˈvaɪv]
-  - v. 恢复
-  - revival [rɪˈvaɪvl]
-    - n. 复兴
-    - If something experiences a **revival**, that means it's once again **popular or important**.
+    - v. 恢复
+    - revival [rɪˈvaɪvl]
+        - n. 复兴
+        - If something experiences a **revival**, that means it's once again **popular or important**.
 - outlive v. 比...活的长
 - renaissance
-  - n. (the R-)文艺复兴（时期）；复兴
-  - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* <ins>the
-    *exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的)* lives of great men(伟人的典范人生)</in>.
-  - Havaiian culture is not a *relic([ˈrelɪk] n. 遗物)* of the past; it is a living culture undergoing a
-    **renaissance** today.
+    - n. (the R-)文艺复兴（时期）；复兴
+    - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* <ins>the
+      *exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的)* lives of great men(伟人的典范人生)</in>.
+    - Havaiian culture is not a *relic([ˈrelɪk] n. 遗物)* of the past; it is a living culture undergoing a
+      **renaissance** today.
 
 ## connect
 
@@ -82,22 +81,22 @@
 - disconnect vt. 使脱离
 - connection n. 联系；连接
 - combine [kəmˈbaɪn]
-  - v. （使）结合；合并
-  - be combined with
-  - combination [ˌkɑːmbɪˈneɪʃn] n. 结合
+    - v. （使）结合；合并
+    - be combined with
+    - combination [ˌkɑːmbɪˈneɪʃn] n. 结合
 - contact [ˈkɑːntækt]
-  - vt. 接触；联系
-  - n. 接触；联系
-  - in contact with sb. 与某人保持联系
+    - vt. 接触；联系
+    - n. 接触；联系
+    - in contact with sb. 与某人保持联系
 - constitute [ˈkɑːnstɪtuːt]
-  - v. 组成，构成；成立
-  - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**".
-  - "What **constitutes** a family?" means "What **makes up** a family?"
-  - constituent [kənˈstɪtʃuənt] n. （选区的）选民；成分
+    - v. 组成，构成；成立
+    - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**".
+    - "What **constitutes** a family?" means "What **makes up** a family?"
+    - constituent [kənˈstɪtʃuənt] n. （选区的）选民；成分
 - joint
-  - adj. 联合的
-  - That's because Congress has always *envisioned([enˈvɪʒənd] vt. 设想)* **joint** federal-state immigration
-    enforcement.
+    - adj. 联合的
+    - That's because Congress has always *envisioned([enˈvɪʒənd] vt. 设想)* **joint** federal-state immigration
+      enforcement.
 
 ## competition
 
@@ -118,6 +117,7 @@
     - If you are **competent**, you have the **necessary ability or skills** to do somethings.
     - ...all citizens who meet minimal qualifications of age and literacy are equally **competent/qualified** to serve
       on juries.
+        - be competent to do sth. 有能力做某事/能胜任
 - rival [ˈraɪvl] n. 竞争对手
 
 ## employ

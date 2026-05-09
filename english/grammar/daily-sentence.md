@@ -512,9 +512,9 @@ come, not to see the plays, but to look at Anne Hathaway's Cottage, Shakespeare'
 
 ### 原句
 
-It is the playgoers, the RSC *contends([kənˈtend] vi. （尤指在争论中）声称，主张，认为；竞争，争夺)*, who bring in much of the
-town's revenue because they spend the night (some of them four or five nights)
-<ins>pouring cash into(投入大量资金到某个项目、产业或地方)</ins> the hotels and restaurants.
+- It is the playgoers, the RSC contends, who bring in much of the town's revenue because they spend the night (some of
+  them four or five nights) <ins>pouring cash into(投入大量资金到某个项目、产业或地方)</ins> the hotels and restaurants.
+    - contend [kənˈtend] vi. （尤指在争论中）声称，主张，认为；竞争，争夺
 
 ## 031
 
@@ -524,9 +524,15 @@ town's revenue because they spend the night (some of them four or five nights)
 
 ### 原句
 
-They all seem to look alike (though they come from all over)lean, pointed, dedicated faces, wearing jeans and sandals,
-eating their buns and bedding down for the night on the flagstones outside the theatre to buy the 20 seats and 80
-standing-room tickets held for the sleepers and sold to them when the box office opens at 10:30 a.m.
+- They all seem to look alike (though they come from all over)—lean, pointed, dedicated faces, wearing jeans and
+  sandals, eating their buns and bedding down for the night on the flagstones outside the theatre to buy the 20 seats
+  and 80 standing-room tickets held for the sleepers and sold to them when the box office opens at 10:30 a.m.
+    - come from all over 来自各地
+    - bed down 安顿睡觉/露宿
+    - for the night 过夜
+    - standing-room ticket 站票
+    - hold tickets for sb. 为某人保留票
+    - box office 售票处
 
 ## 032
 

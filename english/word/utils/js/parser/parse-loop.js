@@ -144,10 +144,23 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       });
     });
 
+    const consumedExtraLines = new Set();
     extras.forEach((extra) => {
+      if (consumedExtraLines.has(extra.lineIndex)) {
+        return;
+      }
+
       const cardType = parser.determineCardType(extra.content, extra.indentLevel, extra.lineIndex);
       if (cardType === 'word') {
-        parser.cards.push(parser.createWordCard(extra.content, extra.indentLevel));
+        const wordCard = parser.createWordCard(extra.content, extra.indentLevel);
+        const { children: wordChildren, lastLineIndex } = processChildren(parser, extra.indentLevel, extra.lineIndex, [], wordCard);
+        if (wordChildren.length > 0) {
+          wordCard.children = wordChildren;
+        }
+        for (let line = extra.lineIndex + 1; line <= lastLineIndex; line++) {
+          consumedExtraLines.add(line);
+        }
+        parser.cards.push(wordCard);
         return;
       }
       if (cardType === 'prefix') {
@@ -156,6 +169,13 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       }
       if (cardType === 'phrase') {
         const phraseCard = parser.createPhraseCard(extra.content, extra.indentLevel);
+        const { children: phraseChildren, lastLineIndex } = processChildren(parser, extra.indentLevel, extra.lineIndex, [], phraseCard);
+        if (phraseChildren.length > 0) {
+          phraseCard.children = phraseChildren;
+        }
+        for (let line = extra.lineIndex + 1; line <= lastLineIndex; line++) {
+          consumedExtraLines.add(line);
+        }
         parser.cards.push(phraseCard);
         return;
       }

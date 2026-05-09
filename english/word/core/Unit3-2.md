@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## service
@@ -32,9 +32,12 @@
         - serve on 在...任职/担任...成员
         - serve + abstract-noun 为...服务/投身于...
     - ...all citizens who meet minimal qualifications of age and literacy are equally competent to **serve** on juries.
+        - competent [ˈkɑːmpɪtənt] adj. 能胜任的；有能力的
+        - be competent to do sth. 有能力做某事/能胜任
     - When you **serve** your passions, proficiency *gradually(adv. 逐渐地)* takes over and becomes
       *habitual([həˈbɪtʃuəl] adj. 习惯性的)*.
         - gradually takes over 慢慢地、不知不觉地占据主导地位
+        - proficiency [prəˈfɪʃnsi] n. 熟练，精通，娴熟
 - servant [ˈsɜːrvənt]
     - n. 仆人
     - public/civil servant 公务员
@@ -46,6 +49,7 @@
 - observe
     - vt. 观察；注意到
     - Their capacity for tolerating stress may even be greater than men's, she **observed**.
+        - tolerate [ˈtɑːləreɪt] vt. 容忍
     - observation
         - n. 观察；评论
         - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
@@ -53,10 +57,10 @@
 - preserve [prɪˈzɜːrv]
     - vt. 维护；保护
     - Similar: upkeep n. 保养（费），维修（费）
-    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these
-      *creatures(['kritʃəz] n. 生物)* **preserve** the health of *game(n. 猎物)* by killing the physically weak, or that
-      they prey only on "worthless" species.
+    - <ins>Time was when(曾几何时)</ins> biologists somewhat overworked the evidence that these creatures **preserve**
+      the health of *game(n. 猎物)* by killing the physically weak, or that they prey only on "worthless" species.
         - prey on 捕食；掠夺
+        - creature [ˈkriːtʃər] n. 生物，人，动物
 - reserve
     - vt. 保留；预定
     - n. ...保护区；...储备量
@@ -166,8 +170,9 @@
         - put up with 忍受，容忍
     - **ABIDE** *BY* THE LAW.
     - I can't **abide** people who can't make up their minds.
-    - ...it *announced(v. 宣布)* it was *reneging([rɪˈnɪgɪŋ] v. 违约)* on a longstanding commitment to
-      **abide by/follow** the state's strict nuclear regulations.
+    - ...it announced it was *reneging([rɪˈnɪgɪŋ] v. 违约)* on a longstanding commitment to **abide by/follow** the
+      state's strict nuclear regulations.
+        - announce vt. 宣布
 
 ## Words
 
@@ -189,6 +194,7 @@
 - accurate [ˈækjərət]
     - adj. 正确的，精确的; 精准的
     - Similar: accumulate v. 积累
+    - Similar: accelerate [əkˈseləreɪt] v. 使加速
 
 ## 词组
 

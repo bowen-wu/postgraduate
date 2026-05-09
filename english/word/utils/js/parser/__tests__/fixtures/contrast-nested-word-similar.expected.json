@@ -40,24 +40,20 @@
       {
         "type": "def",
         "en": "n.",
-        "cn": "职业"
+        "cn": "职业；专业"
+      }
+    ],
+    "similars": [
+      {
+        "word": "vocational",
+        "ipa": "[voʊˈkeɪʃənl]",
+        "pos": "adj.",
+        "cn": "职业的，职业技术的"
       }
     ]
   },
   {
     "id": "card_3",
-    "word": "profession",
-    "type": "word",
-    "items": [
-      {
-        "type": "def",
-        "en": "n.",
-        "cn": "职业；专业"
-      }
-    ]
-  },
-  {
-    "id": "card_4",
     "word": "come to do",
     "type": "phrase",
     "items": [
