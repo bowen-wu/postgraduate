@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## lead
@@ -200,8 +200,6 @@
 
 ## Words
 
-- cautious [ˈkɔːʃəs]
-    - adj. 小心的，谨慎的
 - glimpse [ɡlɪmps]
     - n. 一瞥，扫视; 短暂的感受
     - v. 瞥见; 开始领悟

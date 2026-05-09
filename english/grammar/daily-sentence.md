@@ -301,8 +301,15 @@ whereby 表示什么意思？引导什么从句？
 
 ### 原句
 
-When CareerSite's agent sends out messages to those who have signed up for its service, for example, it includes only
-three potential jobsthose it considers the best matches.
+- When CareerSite's agent sends out messages to those who have signed up for its service, for example, it includes only
+  three potential jobs—those it considers the best matches.
+    - send out messages 发送消息
+    - potential [pəˈtenʃl]
+        - adj. 潜在的
+        - n. 潜力；潜在性
+        - == possible
+    - sign up for... 注册...
+    - consider A B 认为A是B
 
 ## 018
 
@@ -312,8 +319,16 @@ three potential jobsthose it considers the best matches.
 
 ### 原句
 
-This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin with
-a letter in the lower half of the alphabet.
+- This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin
+  with a letter in the lower half of the alphabet.
+    - discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
+    - unaware adj. 不知道的
+    - alphabet n. 字母表
+    - refer vi. 提到
+    - refer to... 指的是/涉及
+    - as yet 到目前为止/迄今
+    - begin with... 以...开头
+    - the lower half of...
 
 ## 019
 
@@ -323,8 +338,13 @@ a letter in the lower half of the alphabet.
 
 ### 原句
 
-Consumers seem only mildly concerned, not panicked, and many say they remain optimistic about the economy's long-term
-prospects even as they do some modest belt-tightening.
+- Consumers seem only mildly concerned, not panicked, and many say they remain optimistic about the economy's long-term
+  prospects even as they do some modest belt-tightening.
+    - mildly adv. 和善地; 轻微地; 说得委婉些; 说得好听一点
+    - mildly concerned 略感担忧
+    - not panicked 没有恐慌
+    - even as... 即使/与此同时
+    - belt-tightening 削减开支
 
 ## 020
 
@@ -334,10 +354,18 @@ prospects even as they do some modest belt-tightening.
 
 ### 原句
 
-Ralph Waldo Emerson and other Transcendentalist philosophers thought schooling and rigorous book learning put unnatural
-restraints on children:
-"We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words
-and do not know a thing."
+- Ralph Waldo Emerson and other Transcendentalist philosophers thought schooling and rigorous book learning put
+  unnatural restraints on children: "We are shut up in schools and college recitation rooms for 10 or 15 years and come
+  out at last with a bellyful of words and do not know a thing."
+    - restraint
+        - n. 克制
+        - == constraint
+    - rigorous [ˈrɪɡərəs] adj. 严格的
+    - put restraints on... 对...施加限制
+    - unnatural restraints 不自然的束缚
+    - shut up in... 被关在...
+    - a bellyful of... 满肚子的...
+    - do not know a thing 什么都不懂
 
 ## 021
 

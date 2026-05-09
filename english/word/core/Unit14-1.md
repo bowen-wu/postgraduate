@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## prepare
@@ -59,6 +59,8 @@
 ## refer
 
 - vi. 提到
+- 词组
+    - refer to... 指的是/涉及
 - -fer- 拿（动作）
     - infer vt. 推断；暗指
     - suffer 😔

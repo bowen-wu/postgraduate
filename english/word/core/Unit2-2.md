@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## suggest
@@ -48,8 +48,11 @@
 - neuroscientist ['njʊəroʊsaɪəntɪst] n. 神经系统科学家
 - conscience [ˈkɑːnʃəns]
     - n. 良知；内疚
-    - Mental health has commonly been called **conscience**, *instinct([ˈɪnstɪŋkt])*, *wisdom([ˈwɪzdəm])*, common sense,
-      or the inner voice.
+    - Mental health has commonly been called **conscience**, instinct, *wisdom([ˈwɪzdəm])*, common sense, or the inner
+      voice.
+        - instinct [ˈɪnstɪŋkt]
+            - n. 本能；直觉
+            - == nature
     - ...verdicts should represent the **conscience** of the community and <ins>not just(不仅仅)</ins> the *letter* of
       the law.
         - verdict [ˈvɜːrdɪkt]

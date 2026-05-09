@@ -1,73 +1,5 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage[table]{xcolor}  % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\usepackage{amssymb}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\documentclass[./book.tex]{subfiles}
 
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}{
-    title=解析,
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
 \begin{document}
 
 %    \title{线性代数}
@@ -324,23 +256,103 @@
 
     \subsection{公式}
 
+    \begin{enumerate}
+        \item $AA^* = A^{*}A = |A|\cdot E$
+        \begin{circlenum}
+            \item 广义化：$\text{狗}\cdot\text{狗}^* = \text{狗}^*\cdot\text{狗} = |\text{狗}|\cdot E$
+            \item $A^{-1}AA^* = |A|EA^{-1} \Rightarrow {\color{red}{A^* = |A|A^{-1}}} \Rightarrow {\color{red}{|A^*|}} = ||A|A^{-1}| = |A|^n|A^{-1}| = \color{red}{|A|^{n-1}}$
+            \item $AA^*(A^{*})^{-1}= |A|E(A^{*})^{-1} \Rightarrow \color{red}{A = |A|(A^{*})^{-1}}$
+            \item $(kA)^*\cdot(kA) = |kA|E \Rightarrow {\color{red}{(kA)^*}} = k^n|A|\cdot(kA)^{-1} = k^n|A|\cdot\dfrac{1}{k}A^{-1} = k^{n-1}|A|A^{-1} = {\color{red}{k^{n-1}A^*}}$
+            \item $A^T(A^T)^* = |A^T|E \Rightarrow {\color{red}{(A^T)^*}} = |A|(A^T)^{-1} = |A|(A^{-1})^{T} = (|A|A^{-1})^{T} = {\color{red}{(A^*)^{T}}}$
+            \item $A^{-1}(A^{-1})^* = |A^{-1}|E \Rightarrow {\color{red}{(A^{-1})^{*}}} = |A|^{-1}A = |A|^{-1}|A|(A^{*})^{-1} = {\color{red}{(A^{*})^{-1}}}$
+            \item $A^*(A^*)^* = |A^*|E \Rightarrow {\color{red}{(A^*)^*}} = |A|^{n-1}(A^*)^{-1} =|A|^{n-1}(|A|A^{-1})^{-1} = {\color{red}{|A|^{n-2}A}}$
+        \end{circlenum}
+        \item $AA^{-1} = A^{-1}A = E = (A^{-1}A)^T = (AA^{-1})^T = A^{T}(A^{-1})^T$
+        \begin{circlenum}
+            \item $|AA^{-1}| = 1 = |A^{-1}||A|$
+            \item $A^{T}{\color{blue}{(A^{-1})^T}} = E \Rightarrow {\color{red}{(A^T)^{-1} = (A^{-1})^T}}$
+        \end{circlenum}
+        \item \[
+                  \renewcommand{\arraystretch}{1.8}
+                  \begin{array}{|c|c|c|c|c|}
+                      \hline
+                      & \text{伴随} & \text{逆} & \text{转置} & \text{行列式} \\
+                      \hline
+
+                      \text{数}
+                      &
+                          {\color{orange}{(kA)^* = k^{n-1}A^*}}
+                      &
+                          {\color{orange}{(kA)^{-1} = \dfrac1k A^{-1}}}
+                      &
+                          {\color{orange}{(kA)^T = kA^T}}
+                      &
+                          {\color{orange}{|kA| = k^n|A|}}
+                      \\
+                      \hline
+
+                      \text{伴随}
+                      &
+                          {\color{red}{(A^*)^* = |A|^{n-2}A}}
+                      &
+                          {\color{orange}{(A^*)^{-1} = (A^{-1})^* = \dfrac{1}{|A|}A}}
+                      &
+                          {\color{orange}{(A^*)^{T} = (A^T)^*}}
+                      &
+                          {\color{red}{|A^*| = |A|^{n-1}}}
+                      \\
+                      \hline
+
+                      \text{逆}
+                      &
+                      (A^{-1})^* = (A^*)^{-1}
+                      &
+                          {\color{orange}{(A^{-1})^{-1}=A}}
+                      &
+                          {\color{orange}{(A^{-1})^{T} = (A^T)^{-1}}}
+                      &
+                          {\color{orange}{|A^{-1}| = |A|^{-1}}}
+                      \\
+                      \hline
+
+                      \text{转置}
+                      &
+                      (A^T)^* = (A^*)^T
+                      &
+                      (A^T)^{-1} = (A^{-1})^T
+                      &
+                      ${\color{orange}{(A^T)^T = A}}$
+                      &
+                          {\color{orange}{|A^T| = |A|^T = |A|}}
+                      \\
+                      \hline
+
+                      \text{行列式}
+                      &
+                      \cancel{|A|^*}
+                      &
+                      |A|^{-1} = |A^{-1}|
+                      &
+                      |A|^T = |A^T| = |A|
+                      &
+                      ${\color{orange}{||A|| = |A|}}$
+                      \\
+                      \hline
+                  \end{array}
+        \]
+    \end{enumerate}
+
     \subsubsection{行列式}
 
     \begin{enumerate}
-        \item $|A^T| = |A|$
-        \item $|kA| = k^{n}|A|$
         \item $|AB| = |A||B|$ \;\text{,} $|A^2| = |A|^2$
-        \item \color{red}{$|A^*| = |A|^{n-1}$}
-        \item $|A^{-1}| = |A|^{-1}$
     \end{enumerate}
 
     \subsubsection{转置}
 
     \begin{enumerate}
-        \item $(A^T)^T = A$
         \item $(A + B)^T = A^T + B^T$
         \item $(A - B)^T = A^T - B^T$
-        \item $(kA)^T = kA^T$
         \item $(AB)^T = B^{T}A^T $
         \item $(E + A)^T = E + A^T $
     \end{enumerate}
@@ -348,13 +360,7 @@
     \subsubsection{伴随}
 
     \begin{enumerate}
-        \item $(A^*)^{-1} = (A^{-1})^* = \frac{1}{|A|}A$
-        \item $AA^{*} = A^{*}A = |A|E$
-        \item $A^{*} = |A|A^{-1}$
-        \item $A$可逆有$|A^*| = |A|^{n-1}$
         \item $(AB)^* = B^{*}A^*$
-        \item $(A^*)^T = (A^T)^*$
-        \item $(kA)^* = k^{n-1}A^*$
         \item $(A^*)^* = |A|^{n-2}A$
         \begin{enumerate}
             \item 若$A$不可逆($|A| = 0$)，则
@@ -384,14 +390,9 @@
     \subsubsection{可逆}
 
     \begin{enumerate}
-        \item $(A^{-1})^{-1} = A$
-        \item $(kA)^{-1} = \frac{1}{k}A^{-1}(k \neq 0)$
         \item $(AB)^{-1} = B^{-1}A^{-1}$
         \item $(ABC)^{-1} = C^{-1}B^{-1}A^{-1}$
         \item $(A^n)^{-1} = (A^{-1})^n$
-        \item $(A^{-1})^T = (A^T)^{-1}$
-        \item $A^{-1} = \frac{1}{|A|}A^{*}$
-        \item $|A^{-1}| = \frac{1}{|A|} \Rightarrow |P^{-1}||P| = 1$
         \item
         \[
             \begin{bmatrix}

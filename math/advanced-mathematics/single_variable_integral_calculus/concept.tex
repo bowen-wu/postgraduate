@@ -283,12 +283,12 @@
             \]
             若右端两个积分都收敛，则称反常积分收敛，\textbf{否则}称发散
         \end{circlenum}
-        \item 瑕点：使$f(x)$在$x_0$的邻域内\textbf{无界}的点即为\textbf{瑕点}。如：
+        \item 瑕点：使$f(x)$在$x_0$的邻域内\textbf{\color{red}{无界}}的点即为\textbf{瑕点}。如：
         \begin{itemize}
             \item $\lim\limits_{x\to 0} \displaystyle\frac{1}{x} = \infty$，$x = 0$为瑕点
             \item $\lim\limits_{x\to 0} \displaystyle\frac{1}{x} \sin \displaystyle\frac{1}{x} = \text{无界震荡}$，$x = 0$为瑕点
         \end{itemize}
-        \item \textbf{无界函数}的反常积分的概念与敛散性：设$F(x)$是$f(x)$在相应区间上的一个原函数，$x_0$为$f(x)$的瑕点
+        \item \textbf{无界函数}的反常积分的概念与敛散性：设$F(x)$是$f(x)$在相应区间上的一个原函数，{\color{red}{$x_0$为$f(x)$的瑕点}}
         \begin{circlenum}
             \item 若$x = a$是唯一瑕点，则
             \[
@@ -362,6 +362,18 @@
             \item 当$x\to 0^+$时，$\sin x \sim x$，即$\lim\limits_{x\to 0^+} \dfrac{\sin^p x}{x^p} = 1$，故$\dint_0^1 \dfrac{1}{\sin^p x}\,\mathrm{d}x$依然满足\ding{172}
             \item 若$f(x)\sim x^\alpha \quad (x\to 0^+ \text{ 或 } +\infty)$，则$\dint \dfrac{1}{f^p(x)}\,\mathrm{d}x \sim \dint \dfrac{1}{x^{\alpha p}}\,\mathrm{d}x$
         \end{circlenum}
+        \item 步骤
+        \begin{circlenum}
+            \item 若$\lim\limits_{x\to \infty} f(x) = \infty$，则$\dint_a^\infty f(x)\,\mathrm{d}x$ 发散
+            \item 找到积分上下限中的所有{\color{red}{奇点}}($\infty$ + 瑕点)
+            \item 拆分：保证每个积分中只有一个奇点
+            \item 放缩法或计算极限
+            \begin{enumerate}
+                \item 放缩法：$0 \geq f(x) \geq g(x)$
+                \item 计算极限：计算奇点处的极限$\lim\limits_{x\to \text{奇点}} \dfrac{f(x)}{\text{辅助函数}}$
+                \item 辅助函数：$p$ 型广义积分
+            \end{enumerate}
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{结论}
@@ -370,6 +382,7 @@
         \item $f(x)$可导 $\Rightarrow$ 连续 $\Rightarrow$ 可积 $\Rightarrow$ 有界
         \item $\sin x$和$\cos x$ 一拱面积($(\dint_0^{\pi} \sin x\,\mathrm{d}x$)为2
         \item $\dint_0^{\frac{\pi}{2}} f(\sin x)\,\mathrm{d}x == \dint_0^{\frac{\pi}{2}} f(\cos x)\,\mathrm{d}x$。令$x = \dfrac{\pi}{2} - t$
+        \item 奇函数和偶函数两侧敛散性相同
         \item 当$f(x)$是偶函数且$\dint_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\dint_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 2\dint_0^{+\infty} f(x)\,\mathrm{d}x$
         \item 当$f(x)$是奇函数且$\dint_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\dint_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 0$
         \item 设$f(x)$连续，且$\dint_a^{+\infty} |f(x)|\,\mathrm{d}x$收敛，则$\dint_a^{+\infty} f(x)\,\mathrm{d}x$收敛
