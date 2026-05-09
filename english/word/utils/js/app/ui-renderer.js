@@ -84,6 +84,7 @@ function updateWritingCompareLayout(card) {
 export function shouldAutoPlayCard(card, state = STATE) {
   if (!card) return false;
   if (!state.autoPlay) return false;
+  if (typeof card.id === 'string' && card.id.startsWith('writing_')) return false;
   if (card.type === 'contrast') return false;
   if (card.type === 'block') return false;
   return state.mode === 'input' || state.mode === 'recall';

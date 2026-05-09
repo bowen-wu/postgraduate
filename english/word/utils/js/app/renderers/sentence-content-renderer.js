@@ -18,6 +18,7 @@ function formatSentenceCnHtml(text) {
 export function renderSentenceItems(ui, card) {
   const li = document.createElement('li');
   li.className = 'item';
+  const isWritingCard = typeof card?.id === 'string' && card.id.startsWith('writing_');
 
   const stripHtml = (text) => String(text || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   const sentenceText = (
@@ -94,7 +95,9 @@ export function renderSentenceItems(ui, card) {
 
   const contentDiv = document.createElement('div');
   contentDiv.className = 'sentence-content';
-  contentDiv.innerHTML = card.displayWord || card.items[0].en;
+  contentDiv.innerHTML = isWritingCard
+    ? formatSentenceCnHtml(card.items?.[0]?.cn || '')
+    : (card.displayWord || card.items[0].en);
   ui.list.appendChild(contentDiv);
 
   if (card.type === 'complex-sentence') {
@@ -120,7 +123,9 @@ export function renderSentenceItems(ui, card) {
     const cnDiv = document.createElement('div');
     cnDiv.className = 'sentence-cn';
     cnDiv.id = 'sentenceCn';
-    cnDiv.innerHTML = formatSentenceCnHtml(item.cn);
+    cnDiv.innerHTML = isWritingCard
+      ? (card.displayWord || item.en)
+      : formatSentenceCnHtml(item.cn);
     cnDiv.style.display = 'none';
     if (card.type === 'complex-sentence') {
       cnDiv.style.display = 'block';
