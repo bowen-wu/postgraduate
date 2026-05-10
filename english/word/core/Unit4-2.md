@@ -27,9 +27,9 @@
 - vt. 处于领先地位；过（某种生活）；引导
 - n. 领先地位
 - They wouldn't like a national agency, but self-interest would **lead** them to deal with it.
+    - agency n. 代理机构；（政府）专门机构(CIA)
 - 词组
-    - lead to 导致；通向
-        - C lead to R => C 导致 R
+    - lead to 导致；通向(C lead to R => C 导致 R)
     - lead the way 带路；领路
     - lead up to (把谈话）引向（某个话题）
     - lead a...life 过着...的生活
@@ -55,8 +55,11 @@
 ## share
 
 - v. 与...观点一致；分享；共有
-- n. **股份**；（在若干人之间分得的）一份；（某人拥有或应负担的）一份
-- Except(conj. 除了) in the District of Columbia, non-lawyers may not own any **share** of a law firm.
+- n. 股份；（在若干人之间分得的）一份；（某人拥有或应负担的）一份
+- Except in the District of Columbia, non-lawyers may not own any **share** of a law firm.
+    - except [ɪkˈsept]
+        - prep. 除...之外
+        - conj. 除了...
 - I found, as Hacker observed years before, that most wives want their husbands to be...conversational partners, but few
   husbands **share** this expectation of their wives.
     - share this expectation (of sb.) 有相同的期望（与某人）
@@ -64,35 +67,39 @@
 - stock
     - vt. 存货；贮存（事物，书籍等）
     - n. 股份；储备物；高汤
-    - hold a stock 持股
-    - The average time for *holding a **stock*** in both the United States and Britain, he notes, has dropped from seven
+    - The average time for holding a **stock** in both the United States and Britain, he notes, has dropped from seven
       years to seven months in recent decades.
+        - hold a stock 持股
 
 ## plan
 
 - v. 计划
 - n. 计划
-- plan to do sth.
+- 词组
+    - plan to do sth.
 - project
     - v. 计划；预测；投射
     - n. 项目；课题
     - projection n. 体现；预测；投射
     - projector n. 放映机，幻灯机; 投影仪;
 - scheme [skiːm]
-    - v. 密谋
     - vt. 认为
+    - v. 密谋
     - n. 计划；计谋
     - Even angels have their wicked **schemes** and you take that to new extremes. 即使是天使也有他们邪恶的诡计，而你却把这种诡计推向了新的极端
-- design vt./n. 设计
+- design
+    - vt. 设计
+    - n. 设计
 - program
-    - vt. 计划
+    - vt. 计划；编排，创造
     - n. 计划；程序
-    - One possible response is for classical performers to **program(编排，创造)** attractive new music that is not yet
-      available on record.
+    - One possible response is for classical performers to **program** attractive new music that is not yet available on
+      record.
 
 ## report
 
-- v./n. 报告；报道
+- v. 报告；报道
+- n. 报告；报道
 - journalism [ˈdʒɜːrnəlɪzəm]
     - n. 新闻工作
     - journalistic [ˌdʒɜrnəˈlɪstɪk] adj. 新闻工作（者）的；新闻业的
@@ -100,42 +107,45 @@
     - n. 媒体
 - coverage
     - n. 新闻报道；覆盖范围
-    - ...perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their **arts
-      coverage(艺术报道)**. 或许影响最深远的，是他们在艺术报道的范围和严肃性方面不可阻挡的衰退
+    - ...perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their
+      **arts coverage(艺术报道)**. 或许影响最深远的，是他们在艺术报道的范围和严肃性方面不可阻挡的衰退
+        - inexorable adj. 无情的，铁面无私的; 不可动摇的，不屈不挠的; 不能变更的; 不可阻挡的
 - phenomenon [fəˈnɑːmɪnən] n. 现象
 
 ## include
 
 - v. 包括
 - in- 里
-- ex- 外(exit)
+- ex- 外
+    - == exit
 - inclusive adj. 包容性强的；包括的
 - exclude [ɪkˈskluːd]
     - vt. 把...排斥在外；不包括；排除（...的可能性）
     - exclusive
         - adj. 独有的；相互排斥的；高级的
         - n. 独家报道
-        - Exclusive means with **limited access**.
-        - exclusive restaurants 专属餐厅/私密餐厅
-            - The only way you might get reservations at one of the most **exclusive** restaurants in Los Angeles is to
-              become friends with the boss, or become famous.
         - == undivided adj. 未分开的; 全神贯注的; 一心一意的
+        - Exclusive means with **limited access**.
+        - The only way you might get reservations at one of the most **exclusive** restaurants in Los Angeles is to
+          become friends with the boss, or become famous.
+            - exclusive restaurants 专属餐厅/私密餐厅
         - exclusively adv. 排他地；独占地
 
 ## value
 
 - vi. 重视；给...估价
 - n. 价值；益处
-- Faithfulness is especially **valued** in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
-- Even if this program didn't reduce poverty, Ferraro says, "**the value of the avoided
-  deforestation([ˌdiːˌfɔːrɪˈsteɪʃn] n. 采伐森林)** just for carbon dioxide emission alone is more than the program
-  costs."
+- Faithfulness is especially **valued** in spouses and in sports fans.
+    - spouse [spaʊs] n. 配偶
+- Even if this program didn't reduce poverty, Ferraro says, "**the value of the avoided deforestation** just for carbon
+  dioxide emission alone is more than the program costs."
+    - deforestation [ˌdiːˌfɔːrɪˈsteɪʃn] n. 采伐森林
 - valuable adj. 很重要的；贵重的
 - overvalue vt. 对...估价过高；过于重视
 - devalue
     - v. 使（货币）贬值
     - vt. 贬低
-    - This way you **devalue** your opinion and show that you are incapable(adj. 无能力的) of managing your own life.
+    - This way you **devalue** your opinion and show that you are *incapable(adj. 无能力的)* of managing your own life.
     - devaluation n. 货币贬值
 
 ## around
@@ -149,8 +159,11 @@
 - With the Spring Festival **approaching/around the corner**
 - surround [səˈraʊnd]
     - vt. 环绕；包围；与...紧密联系
-    - == border 边界；接壤
-    - People in earlier *eras(n. 时代; 年代)* were **surrounded** by reminders of misery.
+    - == border
+        - n. 界线；边境
+        - v. 给...加上边；接近
+    - People in earlier eras were **surrounded** by reminders of misery.
+        - era [ˈɪrə] n. 时代
     - surrounding
         - adj. 周围的；附近的
         - surroundings
@@ -164,7 +177,8 @@
 ## product
 
 - n. 产物；产品
-- I do completely agree that fears are just the **product** of our luxuriant([lʌɡˈʒʊriənt] adj. 茂盛的) imagination.
+- I do completely agree that fears are just the **product** of our luxuriant imagination.
+    - luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
 - produce
     - vt. 生产；引起；培养；制作
     - producer n. 生产商；制片人
@@ -176,27 +190,28 @@
     - side effect 副作用
 - output
     - n. 产量；产生；输出
-    - == emission
+    - == emission n. 排放物
     - hourly output 每小时的产量
-    - carbon dioxide([daɪˈɑːksaɪd]) output/emission 二氧化碳排放量
+    - carbon *dioxide([daɪˈɑːksaɪd])* output/emission 二氧化碳排放量
 - yield
     - vt. 产生（收益、效益等）；出产（作物）
     - vi. 屈服
     - n. 产量
-    - If she hopes her new-found fortune(n. 大笔的钱) will **yield/produce lasting feeling of fulfillment**, she could
-      <ins>do worse than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
+    - If she hopes her new-found fortune will **yield/produce lasting feeling of fulfillment**, she could do worse than
+      read Happy Money by Elizabeth Dunn and Michael Norton.
         - do worse than do sth. 最好做某事
+        - fortune  [ˈfɔːrtʃən] n. 大笔的钱（可数）；命运（不可数）
 - reap
     - vt. 取得（成果）；收割（庄稼）
-    - We Reap What We Sow. 种瓜得瓜，种豆得豆；自作自受；因果报应
+    - WE REAP WHAT WE SOW. 种瓜得瓜，种豆得豆；自作自受；因果报应
     - reap the best results 取得最好的结果
     - reap considerable gains 获得可观的收益
-        - considerate vs considerable
-            - considerate
+        - considerable
+            - adj. 相当大/多的
+            - Similar: considerate
                 - adj. 考虑周到的; 体贴的
                 - == kind
                 - It is so considerate of you
-            - considerable adj. 相当大/多的
 
 ## Words
 

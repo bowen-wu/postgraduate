@@ -159,7 +159,7 @@
 \contentsline {subsection}{\numberline {8.6}方法总结}{85}{subsection.8.6}%
 \contentsline {subsection}{\numberline {8.7}条件转换思路}{85}{subsection.8.7}%
 \contentsline {subsection}{\numberline {8.8}经典}{85}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}理解}{85}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.9}理解}{86}{subsection.8.9}%
 \contentsline {section}{\numberline {9}一元函数积分学的计算}{87}{section.9}%
 \contentsline {subsection}{\numberline {9.1}基本积分公式}{87}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}不定积分的积分法}{89}{subsection.9.2}%
