@@ -185,13 +185,15 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
     if (cardType === 'word') {
       const card = parser.createWordCard(normalizedChildContent, childIndentLevel);
-      const { children: wordChildren } = processChildren(parser, childIndentLevel, i, [], card);
+      const { children: wordChildren, lastLineIndex: wordLastLine } = processChildren(parser, childIndentLevel, i, [], card);
       if (wordChildren.length > 0) {
         card.children = wordChildren;
       }
       promotedChildren.push(card);
-      lastProcessedLineIndex = i;
-      i++;
+      if (wordLastLine > lastProcessedLineIndex) {
+        lastProcessedLineIndex = wordLastLine;
+      }
+      i = Math.max(i + 1, wordLastLine + 1);
       continue;
     }
 
@@ -205,7 +207,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       if (phraseLastLine > lastProcessedLineIndex) {
         lastProcessedLineIndex = phraseLastLine;
       }
-      i++;
+      i = Math.max(i + 1, phraseLastLine + 1);
       continue;
     }
 
@@ -219,7 +221,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       if (prefixLastLine > lastProcessedLineIndex) {
         lastProcessedLineIndex = prefixLastLine;
       }
-      i++;
+      i = Math.max(i + 1, prefixLastLine + 1);
       continue;
     }
 

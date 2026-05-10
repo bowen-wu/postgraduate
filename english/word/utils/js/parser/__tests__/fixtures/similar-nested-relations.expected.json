@@ -1,0 +1,67 @@
+[
+  {
+    "id": "card_0",
+    "word": "reap",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_2",
+    "word": "considerable",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "相当大/多的"
+      }
+    ],
+    "similars": [
+      {
+        "word": "considerate",
+        "items": [
+          {
+            "type": "def",
+            "en": "adj.",
+            "cn": "考虑周到的; 体贴的"
+          }
+        ],
+        "synonyms": [
+          {
+            "word": "kind"
+          }
+        ],
+        "children": [
+          {
+            "id": "card_3",
+            "word": "It is so considerate of you",
+            "type": "sentence",
+            "fullText": "It is so considerate of you",
+            "items": [
+              {
+                "type": "sentence",
+                "en": "It is so considerate of you",
+                "cn": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "reap considerable gains",
+    "displayWord": "reap considerable gains",
+    "type": "sentence",
+    "fullText": "reap considerable gains 获得可观的收益",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "reap considerable gains",
+        "cn": "获得可观的收益"
+      }
+    ],
+    "children": []
+  }
+]

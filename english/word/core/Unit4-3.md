@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## case
@@ -30,17 +30,20 @@
 - condition
     - n. 状态，状况；环境；条件
     - And capacity in <ins>social care(社会关怀)</ins> needs to be greater, to support the growing number of people
-      living with <ins>long-term **conditions**(长期疾病)</ins>.
+      living with long-term **conditions**.
+        - long-term conditions 长期疾病
     - conditional
         - adj. 附带条件的
         - Something **conditional** is dependent on other factors.
 - context
     - n. 背景；语境
     - == situation
+    - Block: the + 比较级, the + 比较级 越...，越...
     - The better you understand the cultural **context**, the more control you can have over your impact.
 - instance
     - n. 实例
-    - for example == for instance 例如
+    - for example 例如
+        - == for instance
 
 ## call
 
@@ -57,33 +60,45 @@
 
 - vt. 涉及；担忧
 - n. 担心；关心的事；(对人、组织等)重要的事情
-- Another <ins>nationwide **concern**(举国关注的问题)</ins> is whether public funds from other agencies are going into
-  construction in <ins>fire-prone districts(火灾易发区)</ins>.
+- Similar: corner n. 角，角落;
+- Another nationwide **concern** is whether public funds from other agencies are going into construction in fire-prone
+  districts.
+    - nationwide concern 举国关注的问题
+    - fire-prone districts 火灾易发区
 - concerned
     - adj. 担心的；关注的；相关的
-    - be concerned with 与...相关
-    - be concerned about 对...担心
+    - 词组
+        - be concerned with 与...相关
+        - be concerned about 对...担心
 - discern [dɪˈsɜːrn]
     - vt. 了解；分辨
-    - If you can make out, pick out, or distinguish([dɪˈstɪŋɡwɪʃ]) something, you can **discern** it.
-    - This is a word for **recognizing** and **perceiving([pə'sivɪŋ] 理解)** things.
+    - If you can make out, pick out, or *distinguish([dɪˈstɪŋɡwɪʃ])* something, you can **discern** it.
+    - This is a word for **recognizing** and perceiving things.
+        - perceive [pərˈsiːv] v. 感知；注意到；将...理解为
 - caregiver [ˈkerɡɪvər] n. 看护者
 
 ## history
 
 - n. 历史；历史学；(某人的)经历
-- The problems of your past are your business. The problems of your future are my privilege([ˈprɪvəlɪdʒ] n. 特权; 荣幸).
+- The problems of your past are your business. The problems of your future are my
+  *privilege([ˈprɪvəlɪdʒ] n. 特权; 荣幸)*.
 - historian [hɪˈstɔːriən] n. 历史学家
 - historic adj. 有重大历史意义的；历史上
-- historical adj. (有关)历史的；历史学的
-    - historic vs historical
+- historical
+    - adj. （有关）历史的；历史学的
+    - Contrast: historic vs. historical
         - historic 表示具有重要(important)的历史意义
         - historical 涉及历史、史学、过去的事实
     - historically adv. 从历史观点来说
 - chronic [ˈkrɑːnɪk]
     - adj. 慢性的；长期的
-    - <ins>As well as(除了, == besides)</ins> those **chronic** problems, the EU faces an acute crisis in its economic
-      core, the 16 countries that use the <ins>single currency(统一货币)</ins>.
+    - As well as those **chronic** problems, the EU faces an acute crisis in its economic core, the 16 countries that
+      use the <ins>single currency(统一货币)</ins>.
+        - as well as 除了...之外；以及、还
+            - == in addition to
+            - == and also
+            - == besides
+        - acute [əˈkjuːt] adj. 敏锐的；严重的
     - chronicle [ˈkrɑːnɪkl]
         - vt. 按时间顺序记载
         - n. 编年史
@@ -97,8 +112,8 @@
 
 - [raɪz]
 - vi. 增加；变得更加成功；变得强烈
-- n. 增加；增强
-- Generation Zs are looking for more certainty and stability, because of the **rise(兴起)** of the gig economy.
+- n. 增加；增强；兴起
+- Generation Zs are looking for more certainty and stability, because of the **rise** of the gig economy.
 - 词组
     - rise above sth. 克服（障碍）；超越（限制）
     - rise from 从...增长
@@ -107,15 +122,15 @@
     - on the rise 在增长
 - arise
     - vi. 产生，出现；由...引起
-    - == appear
-    - == occur [əˈkɜːr]
+    - == appear vi. 看起来；出现；出版
+    - == occur [əˈkɜːr] vi. 发生，出现
 - raise [reɪz]
     - vt. 增加，提高；筹集；引起；抚养；饲养；举起
     - raise my hand 举手
     - raise a question 提出问题/引起问题
     - raise a baby 抚养小孩
     - raise money 筹集
-    - raise sb. up (物理上)扶起某人; (精神上)鼓励/激励/提升
+    - raise sb. up （物理上）扶起某人; （精神上）鼓励/激励/提升
     - I would **raise** prices and make it into more of a legacy product.
     - He **raised** his hand to **raise** a question.
     - They **raise** the money to buy the house.
@@ -128,20 +143,22 @@
     - == provoke [prəˈvoʊk] vt. 激起，挑起; 煽动; 招致; 触怒，使愤怒
     - But many middle-class occupations—trucking, financial advice, software engineering—have **aroused** their
       interest, or soon will.
-- <ins>arise/raise/arouse</ins>
-    - A problem <ins>_____</ins>.
-    - He <ins>_____</ins> a question.
-    - Your <ins>_____</ins> my curiosity.
+- Contrast: arise vs. raise vs. arouse
+    - A problem <ins>arise/raise/arouse</ins>.
+    - He <ins>arise/raise/arouse</ins> a question.
+    - Your <ins>arise/raise/arouse</ins> my curiosity.
 
 ## back
 
 - vt. 支持
-    - == support
 - n. 背部；背面
 - adv. 以前，追溯至；回应（来信、电话、目光等）
 - adj. 背后的
-- One problem with the PreCheck program is the government's reluctance([rɪˈlʌktəns] n. 不情愿，勉强) to **back/support**
-  it.
+- == support
+    - vt. 支持
+    - n. （钱财或物资上的）资助；支持
+- One problem with the PreCheck program is the government's *reluctance([rɪˈlʌktəns] n. 不情愿，勉强)* to
+  **back/support** it.
 - 词组
     - turn back (使)返回；无法改变计划
     - back and forth 来回地
@@ -172,15 +189,15 @@
       modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* **conductor**</ins> about
       him."
         - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
-            - with an air of mystery about him 他身上带着一股神秘感
-            - with no air of confidence about him 他显得没有自信
+        - with an air of mystery about him 他身上带着一股神秘感
+        - with no air of confidence about him 他显得没有自信
 - promote
-    - v. 促进; 促销; 晋升; 使…升级
+    - v. 促进; 促销; 晋升; 使...升级
 - announce [əˈnaʊns]
     - v. 宣布; 宣称; 通知;
 - slant [slænt]
-    - vt.& vi. （使）倾斜，歪斜
-    - vt. 有倾向性地编写或报道
+    - vi. （使）倾斜，歪斜
+    - vt. 有倾向性地编写或报道；（使）倾斜，歪斜
     - n. 倾斜; 斜线，斜面; 偏向; 偏见
     - the slanting sun
 
@@ -188,5 +205,5 @@
 
 ## 句式
 
-- demand/require/insist([ɪnˈsɪst]) that sb. (should) do sth.
-    - I strongly require that my complaint be dealt with properly and promptly. 我强烈要求我的投诉得到妥善而及时的处理。
+- I strongly require that my complaint be dealt with properly and promptly. 我强烈要求我的投诉得到妥善而及时的处理。
+    - demand/require/insist that sb. (should) do sth.

@@ -319,6 +319,15 @@ export function finalizePendingSimilarIfNeeded(parser, currentIndentLevel) {
   if (parser.pendingSimilarCard.items && parser.pendingSimilarCard.items.length > 0) {
     similar.items = parser.pendingSimilarCard.items;
   }
+  if (parser.pendingSimilarCard.synonyms && parser.pendingSimilarCard.synonyms.length > 0) {
+    similar.synonyms = parser.pendingSimilarCard.synonyms;
+  }
+  if (parser.pendingSimilarCard.similars && parser.pendingSimilarCard.similars.length > 0) {
+    similar.similars = parser.pendingSimilarCard.similars;
+  }
+  if (parser.pendingSimilarCard.children && parser.pendingSimilarCard.children.length > 0) {
+    similar.children = parser.pendingSimilarCard.children;
+  }
 
   if (parser.pendingSimilarOriginalParent) {
     parser.pendingSimilarOriginalParent.similars = parser.pendingSimilarOriginalParent.similars || [];

@@ -31,7 +31,7 @@
 - 词组
     - lead to 导致；通向(C lead to R => C 导致 R)
     - lead the way 带路；领路
-    - lead up to (把谈话）引向（某个话题）
+    - lead up to （把谈话）引向（某个话题）
     - lead a...life 过着...的生活
     - take the lead 带头，领先
 - leader n. 领导者；引导者
@@ -45,7 +45,11 @@
     - guide sb. to do sth.
     - We hired a local **guide** to get us across the mountains.
     - As a rough **guide**, a normal adult needs to drink eight glasses of water a day.
+        - rough [rʌf] adj. 大致的
+        - as a rough guide 大致来说/作为一个粗略标准/粗略估计
     - The rough **guide** to marketing success used to be that you got what you paid for.
+        - a guide to... ...的指南/...的准则
+        - get what you pay for 一分钱一分货
     - guidance n. 指导
     - guideline
         - n. 指导准则
@@ -62,6 +66,7 @@
         - conj. 除了...
 - I found, as Hacker observed years before, that most wives want their husbands to be...conversational partners, but few
   husbands **share** this expectation of their wives.
+    - expectation n. 期望
     - share this expectation (of sb.) 有相同的期望（与某人）
 - shareholder n. 股东
 - stock
@@ -87,6 +92,7 @@
     - v. 密谋
     - n. 计划；计谋
     - Even angels have their wicked **schemes** and you take that to new extremes. 即使是天使也有他们邪恶的诡计，而你却把这种诡计推向了新的极端
+        - extreme n. 极端
 - design
     - vt. 设计
     - n. 设计
@@ -107,9 +113,11 @@
     - n. 媒体
 - coverage
     - n. 新闻报道；覆盖范围
-    - ...perhaps the most far-reaching has been the inexorable decline in the scope and seriousness of their
-      **arts coverage(艺术报道)**. 或许影响最深远的，是他们在艺术报道的范围和严肃性方面不可阻挡的衰退
-        - inexorable adj. 无情的，铁面无私的; 不可动摇的，不屈不挠的; 不能变更的; 不可阻挡的
+    - Of all the changes that have taken place in English-language newspapers during the past quarter-century, perhaps
+      the most far-reaching has been the inexorable decline in the scope and seriousness of their arts coverage.
+        - inexorable [ɪnˈɛksərəbəl] adj. 无情的，铁面无私的; 不可动摇的，不屈不挠的; 不能变更的; 不可阻挡的
+        - art coverage 艺术报道
+        - seriousness n. 严肃，认真
 - phenomenon [fəˈnɑːmɪnən] n. 现象
 
 ## include
@@ -146,6 +154,8 @@
     - v. 使（货币）贬值
     - vt. 贬低
     - This way you **devalue** your opinion and show that you are *incapable(adj. 无能力的)* of managing your own life.
+        - this way 这样一来/用这种方式
+        - be incapable of doing sth. 无法做某事/没有能力做某事
     - devaluation n. 货币贬值
 
 ## around
@@ -164,6 +174,7 @@
         - v. 给...加上边；接近
     - People in earlier eras were **surrounded** by reminders of misery.
         - era [ˈɪrə] n. 时代
+        - misery [ˈmɪzəri] n. 痛苦; 不幸; 穷困; 悲惨的境遇
     - surrounding
         - adj. 周围的；附近的
         - surroundings

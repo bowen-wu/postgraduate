@@ -666,9 +666,27 @@ new dose of investment risk for families future healthcare.
 
 ### 原句
 
-Just as bosses and boards have finally sorted out their worst accounting and compliance troubles, and improved their
-feeble corporation governance, a new problem threatens to earn them-especially in America-the sort of nasty headlines
-that inevitably lead to heads rolling in the executive suite: data insecurity.
+- Just as bosses and boards have finally sorted out their worst accounting and compliance troubles, and improved their
+  feeble corporation governance, a new problem threatens to earn them—especially in America—the sort of nasty headlines
+  that inevitably lead to heads rolling in the executive suite: data insecurity.
+    - compliance [kəmˈplaɪəns] n. 遵守
+    - feeble adj. 虚弱的
+    - threaten vt. 威胁；（坏事）可能发生；预示凶兆
+    - corporation [ˌkɔːrpəˈreɪʃn] n. （大）公司
+    - nasty [ˈnæsti] adj. 令人讨厌的；险恶的；下流的
+    - headline n. 标题，大字标题
+    - inevitably [ɪnˈevɪtəbli] adv. 不可避免地
+    - suite n. 套房，一套家具
+    - insecurity [ˌɪnsɪˈkjʊrɪti] n. 不安全，危险，不可控
+    - just as 正当...的时候
+    - sort out troubles 解决问题
+    - accounting and compliance troubles 财务与合规问题
+    - feeble corporation governance 薄弱的公司治理
+    - threaten to do sth. 有可能带来.../可能导致...
+    - earn headlines 招致新闻报道/登上新闻头条
+    - nasty headlines 糟糕的新闻标题/负面头条
+    - heads rolling 人头落地 => 高层被撤职/有人丢官
+    - executive suite 高管层
 
 ## 042
 
@@ -678,10 +696,16 @@ that inevitably lead to heads rolling in the executive suite: data insecurity.
 
 ### 原句
 
-Several massive leakages of customer and employee data this year from organizations as diverse as Time Warner, the
-American defense contractor Science Applications International Corp and even the University of California, Berkeleyhave
-left managers hurriedly peering into their intricate IT systems and business processes in search of potential
-vulnerabilities.
+- Several massive leakages of customer and employee data this year—from organizations as diverse as Time Warner, the
+  American defense contractor Science Applications International Corp and even the University of California,
+  Berkeley—have left managers hurriedly peering into their intricate IT systems and business processes in search of
+  potential vulnerabilities.
+    - intricate [ˈɪntrɪkət] adj. 复杂精细的
+    - vulnerability [ˌvʌlnərə'bɪləti] n. 易损性
+    - leave sb doing sth. 使某人处于...状态/让某人一直在...
+    - as diverse as... 像...这样各种不同的
+    - peer into... 仔细查看/认真检查
+    - in search of... 寻找...
 
 ## 043
 
@@ -691,9 +715,15 @@ vulnerabilities.
 
 ### 原句
 
-Surely it should be obvious to the dimmest executive that trust, that most valuable of economic assets, is easily
-destroyed and hugely expensive to restore-and that few things are more likely to destroy trust than a company letting
-sensitive personal data get into the wrong hands.
+- Surely it should be obvious to the dimmest executive that trust, that most valuable of economic assets, is easily
+  destroyed and hugely expensive to restore—and that few things are more likely to destroy trust than a company letting
+  sensitive personal data get into the wrong hands.
+    - obvious adj. 明显的
+    - sensitive adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
+    - be obvious to sb. 对某人来说显而易见
+    - the dimmest executive 最迟钝的管理者
+    - few things are more likely to do sth. than... 几乎没有什么比...更容易做某事
+    - get into the wrong hands 落入坏人/不该拥有的人手中
 
 ## 044
 
@@ -895,8 +925,8 @@ high-quality arts criticism could be found in most big-city newspapers.
 
 ### 原句
 
-Of all the changes that have taken place in English-language newspapers during the past quarter-century, perhaps the
-most far-reaching has been the inexorable decline in the scope and seriousness of their arts coverage.
+- Of all the changes that have taken place in English-language newspapers during the past quarter-century, perhaps the
+  most far-reaching has been the inexorable decline in the scope and seriousness of their arts coverage.
 
 ## 062
 

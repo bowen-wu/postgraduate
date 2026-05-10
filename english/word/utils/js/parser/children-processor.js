@@ -65,6 +65,114 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
 
     const content = getListContentFromTrimmed(trimmed);
     const normalizedContent = normalizeInlineStudyText(content);
+    const activeRelationCard =
+      (parser.pendingSimilarCard && indentLevel > parser.pendingSimilarLevel)
+        ? parser.pendingSimilarCard
+        : ((parser.pendingSynonymCard && indentLevel > parser.pendingSynonymLevel)
+            ? parser.pendingSynonymCard
+            : null);
+
+    if (activeRelationCard) {
+      if (parser.isPurePosLine(content)) {
+        const posMatch = content.match(/^([a-z]+\.)\s*(.*)/);
+        if (posMatch) {
+          const pos = posMatch[1];
+          const cn = posMatch[2].trim();
+          const placeholderIndex = activeRelationCard.items.findIndex(
+            (item) => item.en === activeRelationCard.word && item.cn === ''
+          );
+          if (placeholderIndex !== -1) {
+            activeRelationCard.items.splice(placeholderIndex, 1);
+          }
+          activeRelationCard.items.push({
+            type: 'def',
+            en: pos,
+            cn
+          });
+        }
+        i++;
+        continue;
+      }
+
+      if (parser.isSynonymMarker(content)) {
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
+        activeRelationCard.synonyms = activeRelationCard.synonyms || [];
+        const multipleSynonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+        multipleSynonyms.forEach((syn) => {
+          const { word, ipa, pos, cn } = parser.parseWordContent(syn);
+          if (!word) return;
+          const synonym = { word };
+          if (ipa) synonym.ipa = ipa;
+          if (pos) synonym.pos = pos;
+          if (cn) synonym.cn = cn;
+          if (!activeRelationCard.synonyms.some((entry) => entry.word === word)) {
+            activeRelationCard.synonyms.push(synonym);
+          }
+        });
+        i++;
+        continue;
+      }
+
+      if (/^===?\s+/.test(content)) {
+        const synonymContent = content.replace(/^===?\s+/, '').trim();
+        activeRelationCard.synonyms = activeRelationCard.synonyms || [];
+        const multipleSynonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+        multipleSynonyms.forEach((syn) => {
+          const { word, ipa, pos, cn } = parser.parseWordContent(syn);
+          if (!word) return;
+          const synonym = { word };
+          if (ipa) synonym.ipa = ipa;
+          if (pos) synonym.pos = pos;
+          if (cn) synonym.cn = cn;
+          if (!activeRelationCard.synonyms.some((entry) => entry.word === word)) {
+            activeRelationCard.synonyms.push(synonym);
+          }
+        });
+        i++;
+        continue;
+      }
+
+      if (parser.hasSimilarMarker(content)) {
+        const similarContent = content.replace(/^Similar:\s*/, '').trim();
+        activeRelationCard.similars = activeRelationCard.similars || [];
+        const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+        multipleSimilars.forEach((sim) => {
+          const { word, ipa, pos, cn } = parser.parseWordContent(sim);
+          if (!word) return;
+          const similar = { word };
+          if (ipa) similar.ipa = ipa;
+          if (pos) similar.pos = pos;
+          if (cn) similar.cn = cn;
+          if (!activeRelationCard.similars.some((entry) => entry.word === word)) {
+            activeRelationCard.similars.push(similar);
+          }
+        });
+        i++;
+        continue;
+      }
+
+      if (parser.isPureIpaLine(content)) {
+        if (!activeRelationCard.ipa) {
+          activeRelationCard.ipa = content.trim();
+        }
+        i++;
+        continue;
+      }
+
+      const relationCardType = parser.determineCardType(content, indentLevel, i);
+      if (relationCardType === 'sentence') {
+        activeRelationCard.children = activeRelationCard.children || [];
+        activeRelationCard.children.push({
+          id: `card_${parser.cardCounter++}`,
+          word: normalizedContent,
+          type: 'sentence',
+          fullText: normalizedContent,
+          items: [{ type: 'sentence', en: normalizedContent, cn: '' }]
+        });
+        i++;
+        continue;
+      }
+    }
 
     if (parser.isSynonymMarker(content)) {
       if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase')) {
@@ -128,11 +236,17 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
 
     if (parser.hasSimilarMarker(content)) {
       if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'sentence')) {
+        finalizePendingSynonymIfNeeded(parser, indentLevel);
+        finalizePendingAntonymIfNeeded(parser, indentLevel);
         const similarContent = content.replace(/^Similar:\s*/, '').trim();
         actualParentCard.similars = actualParentCard.similars || [];
         const multipleSimilars = similarContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
+        const originalParentCard = actualParentCard;
+        const originalParentLevel = parser.parentLevel;
 
         for (const sim of multipleSimilars) {
+          parser.parentCard = originalParentCard;
+          parser.parentLevel = originalParentLevel;
           const { word, ipa, pos, cn } = parser.parseWordContent(sim);
           if (!word) continue;
 
@@ -155,8 +269,8 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
               parser.pendingSimilarCard.ipa = ipa;
             }
             parser.pendingSimilarLevel = indentLevel;
-            parser.pendingSimilarOriginalParent = actualParentCard;
-            parser.pendingSimilarOriginalLevel = parser.parentLevel;
+            parser.pendingSimilarOriginalParent = originalParentCard;
+            parser.pendingSimilarOriginalLevel = originalParentLevel;
             parser.parentCard = parser.pendingSimilarCard;
             parser.parentLevel = indentLevel;
           } else {
