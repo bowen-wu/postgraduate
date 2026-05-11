@@ -42,11 +42,20 @@ function hasContrastBlank(sentence) {
   return /\[\[(.*?)\]\]/.test(String(sentence || '')) || /<ins>(.*?)<\/ins>/i.test(String(sentence || ''));
 }
 
+function nextNonEmptyLine(lines, startIndex) {
+  for (let i = startIndex; i < lines.length; i++) {
+    const trimmed = String(lines[i] || '').trim();
+    if (trimmed) return { index: i, trimmed, raw: lines[i] };
+  }
+  return null;
+}
+
 export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallbackOptions = []) {
   const items = [];
   const extras = [];
   let i = lineIndex + 1;
   let contrastItemIndent = null;
+  let pendingSentence = null;
 
   while (i < lines.length) {
     const rawLine = lines[i];
@@ -61,9 +70,13 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
 
     const listIndent = matchListIndent(rawLine);
     if (!listIndent) {
-      if (items.length > 0 && hasContrastBlank(items[items.length - 1].en)) {
+      if (pendingSentence) {
+        pendingSentence.en = `${pendingSentence.en} ${trimmed}`.replace(/\s+/g, ' ').trim();
+        pendingSentence.blankOptions = extractBlankOptions(pendingSentence.en, fallbackOptions);
+      } else if (items.length > 0 && hasContrastBlank(items[items.length - 1].en)) {
         const lastItem = items[items.length - 1];
         lastItem.en = `${lastItem.en} ${trimmed}`.replace(/\s+/g, ' ').trim();
+        lastItem.blankOptions = extractBlankOptions(lastItem.en, fallbackOptions);
       }
       i++;
       continue;
@@ -73,25 +86,73 @@ export function parseContrastChildren(lines, lineIndex, parentIndentLevel, fallb
     if (indentLevel <= parentIndentLevel) break;
 
     const sentence = getListContentFromTrimmed(trimmed);
-    const blankOptions = extractBlankOptions(sentence, fallbackOptions);
-    const isContrastSentence = hasContrastBlank(sentence);
+    const mergedSentence = pendingSentence && indentLevel > parentIndentLevel
+      ? `${pendingSentence.en} ${sentence}`.replace(/\s+/g, ' ').trim()
+      : sentence;
+    const blankOptions = extractBlankOptions(mergedSentence, fallbackOptions);
+    const isContrastSentence = hasContrastBlank(mergedSentence);
 
     if (contrastItemIndent === null && isContrastSentence) {
       contrastItemIndent = indentLevel;
     }
 
     if (!isContrastSentence || (contrastItemIndent !== null && indentLevel > contrastItemIndent)) {
+      const nextLine = nextNonEmptyLine(lines, i + 1);
+      const shouldTreatAsPendingSentence = (
+        !isContrastSentence &&
+        indentLevel > parentIndentLevel &&
+        nextLine &&
+        !matchListIndent(nextLine.raw) &&
+        /<ins>.*<\/ins>/i.test(nextLine.trimmed)
+      );
+
+      if (shouldTreatAsPendingSentence) {
+        pendingSentence = {
+          type: 'contrast',
+          en: sentence,
+          blankOptions: extractBlankOptions(sentence, fallbackOptions),
+          lineIndex: i
+        };
+      }
       extras.push({ content: sentence, indentLevel, lineIndex: i });
       i++;
       continue;
     }
 
+    const contrastItem = pendingSentence && indentLevel > parentIndentLevel
+      ? {
+          type: 'contrast',
+          en: mergedSentence,
+          blankOptions
+        }
+      : {
+          type: 'contrast',
+          en: sentence,
+          blankOptions
+        };
+    if (pendingSentence) {
+      const pendingIndex = extras.findIndex((extra) => extra.lineIndex === pendingSentence.lineIndex);
+      if (pendingIndex !== -1) {
+        extras.splice(pendingIndex, 1);
+      }
+    }
+    if (!items.includes(contrastItem)) {
+      items.push(contrastItem);
+    }
+    pendingSentence = null;
+    i++;
+  }
+
+  if (pendingSentence && hasContrastBlank(pendingSentence.en)) {
+    const pendingIndex = extras.findIndex((extra) => extra.lineIndex === pendingSentence.lineIndex);
+    if (pendingIndex !== -1) {
+      extras.splice(pendingIndex, 1);
+    }
     items.push({
       type: 'contrast',
-      en: sentence,
-      blankOptions
+      en: pendingSentence.en,
+      blankOptions: extractBlankOptions(pendingSentence.en, fallbackOptions)
     });
-    i++;
   }
 
   // Return the next index after the consumed contrast block.

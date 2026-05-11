@@ -1,0 +1,27 @@
+[
+  {
+    "id": "card_0",
+    "word": "efficient",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "effective vs. efficient",
+    "type": "contrast",
+    "contrastOptions": [
+      "effective",
+      "efficient"
+    ],
+    "items": [
+      {
+        "type": "contrast",
+        "en": "When our brains switch between being focused and unfocused on a task, they tend to be more <ins>efficient/effective</ins>",
+        "blankOptions": [
+          "efficient",
+          "effective"
+        ]
+      }
+    ]
+  }
+]
