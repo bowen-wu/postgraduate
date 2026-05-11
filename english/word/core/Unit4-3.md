@@ -42,8 +42,9 @@
     - The better you understand the cultural **context**, the more control you can have over your impact.
 - instance
     - n. 实例
-    - for example 例如
-        - == for instance
+    - 词组
+        - for example 例如
+            - == for instance
 
 ## call
 
@@ -86,7 +87,7 @@
 - historic adj. 有重大历史意义的；历史上
 - historical
     - adj. （有关）历史的；历史学的
-    - Contrast: historic vs. historical
+    - Block: historic vs. historical
         - historic 表示具有重要(important)的历史意义
         - historical 涉及历史、史学、过去的事实
     - historically adv. 从历史观点来说
@@ -132,6 +133,7 @@
     - raise money 筹集
     - raise sb. up （物理上）扶起某人; （精神上）鼓励/激励/提升
     - I would **raise** prices and make it into more of a legacy product.
+        - legacy [ˈleɡəsi] n. （事件或历史的）遗留影响；遗赠，遗产
     - He **raised** his hand to **raise** a question.
     - They **raise** the money to buy the house.
     - ...but France's digital services tax and the American response **raise** questions about what the future holds for
@@ -160,7 +162,7 @@
 - One problem with the PreCheck program is the government's *reluctance([rɪˈlʌktəns] n. 不情愿，勉强)* to
   **back/support** it.
 - 词组
-    - turn back (使)返回；无法改变计划
+    - turn back （使）返回；无法改变计划
     - back and forth 来回地
     - get back to 重新开始
     - scale back 削减（尤指经费或生意）
@@ -185,9 +187,9 @@
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者
-    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an *unpretentious(adj. 谦逊的 ==
-      modest)* musician <ins>with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)* **conductor**</ins> about
-      him."
+    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an
+      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
+      **conductor** about him."
         - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
         - with an air of mystery about him 他身上带着一股神秘感
         - with no air of confidence about him 他显得没有自信

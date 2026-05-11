@@ -63,7 +63,8 @@
             - n. 效率
             - inefficiency [ɪnɪˈfɪʃənsi]
                 - n. 无效率
-                - The report *revealed([rɪ'vild] v. 显示)* a great deal of bureaucratic **inefficiency**.
+                - The report revealed a great deal of bureaucratic **inefficiency**.
+                    - reveal vt. 揭示；显示
 - impact
     - v. (对...)有影响
     - n. 影响
@@ -75,6 +76,7 @@
         - vi. 交流；相互影响
         - Firms are now studying how genes **interact**, looking for correlations that might be used to determine
           the causes of disease or predict a drug's *efficacy([ˈefɪkəsi] n. 功效; 效力)*.
+            - disease [dɪˈziːz] n. 疾病；弊病
         - interaction n. 交流；相互影响
     - interplay n. 相互影响
 
@@ -96,6 +98,7 @@
     - adj. 理性的
     - Least rousing, he thinks, was **rational** argument, although his co-authors say reason might
       <ins>play a bigger role(发挥更重要作用)</ins>.
+        - least rousing 最不容易激起热情的/最没有感染力的
     - rationalist [ˈræʃnəlɪst] n. 理性主义者
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - logic

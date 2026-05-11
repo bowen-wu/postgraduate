@@ -745,8 +745,10 @@ America on notice that regulators will act if firms fail to provide adequate dat
 
 ### 原句
 
-"Their capacity for tolerating stress may even be greater than men's," she observes, "it's just that they're dealing
-with so many more things that they become worn out from it more visibly and sooner."
+- "Their capacity for tolerating stress may even be greater than men's," she observes, "it's just that they're dealing
+  with so many more things that they become worn out from it more visibly and sooner."
+    - it's just that... 只不过是.../只是因为...
+    - worn out 精疲力尽/疲惫不堪
 
 ## 046
 
@@ -756,8 +758,14 @@ with so many more things that they become worn out from it more visibly and soon
 
 ### 原句
 
-The kinds of interpersonal violence that women are exposed to tend to be in domestic situations, by, unfortunately,
-parents or other family members, and they tend not to be one-shot deals.
+- The kinds of interpersonal violence that women are exposed to tend to be in domestic situations, by, unfortunately,
+  parents or other family members, and they tend not to be one-shot deals.
+    - violence [ˈvaɪələns] n. 暴力；猛烈
+    - interpersonal adj. 人际（关系）的
+    - domestic [dəˈmestɪk] adj. 国内的；家用的；家务的
+    - be exposed to... 遭受/接触到
+    - end to do sth. 倾向于.../往往会...
+    - one-shot deal 一次性交易 => 一次性的事情/只发生一次的事件
 
 ## 047
 
@@ -767,8 +775,21 @@ parents or other family members, and they tend not to be one-shot deals.
 
 ### 原句
 
-The Internetand pressure from funding agencies, who are questioning why commercial publishers are making money from
-government-funded research by restricting access to itis making access to scientific results a reality.
+- The Internet—and pressure from funding agencies, who are questioning why commercial publishers are making money from
+  government-funded research by restricting access to it—is making access to scientific results a reality.
+    - commercial [kəˈmɜːrʃl]
+        - adj. 商业化的；商业的
+        - n. 广告
+    - scientific adj. 科学的；严谨的
+    - access [ˈækses]
+        - vt. 访问(电脑信息)
+        - n. 进入（权）；（使用某物的）权利；接触的机会
+    - make A B 使 A 成为 B
+    - access to... 对...的获取/使用...的机会
+    - restrict access to... 限制对...的获取
+    - funding agency 资助机构/科研资助机构
+    - government-funded research 政府资助的研究
+    - by doing sth. 通过...
 
 ## 048
 

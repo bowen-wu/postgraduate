@@ -362,20 +362,40 @@ async function blobToBase64(blob) {
   return arrayBufferToBase64(buffer);
 }
 
+async function materializeBlob(blob, fallbackMimeType = 'audio/mpeg') {
+  if (!blob) {
+    throw toServiceError('AUDIO_BLOB_EMPTY', 'Audio blob is required');
+  }
+
+  const buffer = await blob.arrayBuffer();
+  return {
+    blob: new Blob([buffer], { type: blob.type || fallbackMimeType }),
+    arrayBuffer: buffer
+  };
+}
+
 async function playBlobWithFallback(blob, timeout, hooks = {}, existingArrayBuffer = null, existingBase64 = null) {
   if (!blob) {
     throw toServiceError('AUDIO_BLOB_EMPTY', 'Audio blob is required');
   }
 
+  let workingBlob = blob;
+  let workingArrayBuffer = existingArrayBuffer;
+  if (!workingArrayBuffer) {
+    const materialized = await materializeBlob(blob);
+    workingBlob = materialized.blob;
+    workingArrayBuffer = materialized.arrayBuffer;
+  }
+
   const preferDataUrl = isMobileBrowser();
-  debugAudio('playBlobWithFallback', { preferDataUrl, size: blob.size || 0, timeout });
+  debugAudio('playBlobWithFallback', { preferDataUrl, size: workingBlob.size || 0, timeout });
   if (!preferDataUrl) {
     try {
-      return await playAudioUrl(URL.createObjectURL(blob), timeout, hooks);
+      return await playAudioUrl(URL.createObjectURL(workingBlob), timeout, hooks);
     } catch {}
   }
 
-  const base64 = existingBase64 || (existingArrayBuffer ? arrayBufferToBase64(existingArrayBuffer) : await blobToBase64(blob));
+  const base64 = existingBase64 || arrayBufferToBase64(workingArrayBuffer);
   const dataUrl = `data:audio/mpeg;base64,${base64}`;
 
   try {
@@ -384,7 +404,7 @@ async function playBlobWithFallback(blob, timeout, hooks = {}, existingArrayBuff
     if (preferDataUrl) {
       throw error;
     }
-    return playAudioUrl(URL.createObjectURL(blob), timeout, hooks);
+    return playAudioUrl(URL.createObjectURL(workingBlob), timeout, hooks);
   }
 }
 

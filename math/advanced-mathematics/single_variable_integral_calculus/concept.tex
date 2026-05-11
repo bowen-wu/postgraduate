@@ -381,6 +381,7 @@
     \begin{enumerate}
         \item $f(x)$可导 $\Rightarrow$ 连续 $\Rightarrow$ 可积 $\Rightarrow$ 有界
         \item $\sin x$和$\cos x$ 一拱面积($(\dint_0^{\pi} \sin x\,\mathrm{d}x$)为2
+        \item $\int_0^1 \sqrt{1 - x^2}\,\mathrm{d}x$等于单位圆在第一象限的面积，即$\dfrac{\pi}{4}$
         \item $\dint_0^{\frac{\pi}{2}} f(\sin x)\,\mathrm{d}x == \dint_0^{\frac{\pi}{2}} f(\cos x)\,\mathrm{d}x$。令$x = \dfrac{\pi}{2} - t$
         \item 奇函数和偶函数两侧敛散性相同
         \item 当$f(x)$是偶函数且$\dint_0^{+\infty} f(x)\,\mathrm{d}x$收敛时，$\dint_{-\infty}^{+\infty} f(x)\,\mathrm{d}x = 2\dint_0^{+\infty} f(x)\,\mathrm{d}x$
@@ -477,6 +478,7 @@
         \item 变限积分的作用不是“换一种写法”，而是“选定一个原函数”
         \item $\dint_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
         \item $F(x) = \dint_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积
+        \item 设$f(x)$在$(0, 1)$上单调，若反常积分$\dint_0^1 f(x)\,\mathrm{d}x$收敛，则$\lim\limits_{n\to \infty} \dfrac{f(\dfrac{1}{n}) + \cdots + f(\dfrac{n - 1}{n})}{n} = \dint_0^1 f(x)\,\mathrm{d}x$
         \item 证明：如果函数$f(x)$在$[a, b]$上连续，则函数$F(x) = \dint_a^x f(t)\,\mathrm{d}t$在$[a, b]$上可导，且$F'(x) = f(x)$，即$\color{red}{\dint f(x)\,\mathrm{d}x = \dint_a^x f(t)\,\mathrm{d}t + C}$
         \begin{analysisbox}[证]
             若 $x\in(a,b)$，取 $\Delta x$ 使 $x+\Delta x\in(a,b)$，则

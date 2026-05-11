@@ -27,33 +27,36 @@
             \item $\dint \sec x \tan x\,\mathrm{d}x = \sec x + C$
             \item $\dint \csc x \cot x\,\mathrm{d}x = -\csc x + C$
         \end{itemize}
-        \item $\dint \dfrac{1}{a^2 + x^2}\,\mathrm{d}x = \displaystyle\frac{1}{a}\arctan \displaystyle\frac{x}{a} + C, a > 0$
+        \item 反三角函数的积分
         \begin{itemize}
             \item $\dint \dfrac{1}{1 + x^2}\,\mathrm{d}x = \arctan x + C$
-        \end{itemize}
-        \item $\dint \dfrac{1}{\sqrt {a^2 - x^2}}\,\mathrm{d}x = \arcsin \displaystyle\frac{x}{a} + C, a > 0$
-        \begin{itemize}
+            \begin{circlenum}
+                \item $\dint \dfrac{1}{a^2 + x^2}\,\mathrm{d}x = \displaystyle\frac{1}{a}\arctan \displaystyle\frac{x}{a} + C, a > 0$
+            \end{circlenum}
             \item $\dint \dfrac{1}{\sqrt {1 - x^2}}\,\mathrm{d}x = \arcsin x + C$
+            \begin{circlenum}
+                \item $\dint \dfrac{1}{\sqrt {a^2 - x^2}}\,\mathrm{d}x = \arcsin \displaystyle\frac{x}{a} + C, a > 0$
+            \end{circlenum}
+            \item $\dint \sqrt {1 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2} \arcsin x + \displaystyle\frac{x}{2}\sqrt {1 - x^2} + C$
+            \begin{circlenum}
+                \item ${\color{red}{\bigstar}}\dint \sqrt {a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{a^2}{2} \arcsin \displaystyle\frac{x}{a} + \displaystyle\frac{x}{2}\sqrt {a^2 - x^2} + C, a > |x| \geq 0$
+            \end{circlenum}
         \end{itemize}
         \item 对数型（二次根式型）
         \begin{itemize}
-            \item $\dint \dfrac{1}{\sqrt {x^2 + a^2}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + a^2}) + C$
+            \item ${\color{red}{\bigstar}}\dint \dfrac{1}{\sqrt {x^2 + 1}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + 1}) + C$
             \begin{circlenum}
-                \item ${\color{red}{\bigstar}}\dint \dfrac{1}{\sqrt {x^2 + 1}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + 1}) + C$
+                \item $\dint \dfrac{1}{\sqrt {x^2 + a^2}}\,\mathrm{d}x = \ln (x + \sqrt {x^2 + a^2}) + C$
             \end{circlenum}
-            \item $\dint \dfrac{1}{\sqrt {x^2 - a^2}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - a^2}| + C, |x| > |a|$
+            \item $\dint \dfrac{1}{\sqrt {x^2 - 1}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - 1}| + C, |x| > |a|$
             \begin{circlenum}
-                \item $\dint \dfrac{1}{\sqrt {x^2 - 1}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - 1}| + C, |x| > |a|$
+                \item $\dint \dfrac{1}{\sqrt {x^2 - a^2}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - a^2}| + C, |x| > |a|$
             \end{circlenum}
         \end{itemize}
         \item 部分分式分解型
         \begin{itemize}
             \item $\dint \dfrac{1}{x^2 - a^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x-a}{x+a}\right| + C$
             \item $\dint \dfrac{1}{a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x+a}{x-a}\right| + C$
-        \end{itemize}
-        \item ${\color{red}{\bigstar}}\dint \sqrt {a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{a^2}{2} \arcsin \displaystyle\frac{x}{a} + \displaystyle\frac{x}{2}\sqrt {a^2 - x^2} + C, a > |x| \geq 0$
-        \begin{itemize}
-            \item $\dint \sqrt {1 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2} \arcsin x + \displaystyle\frac{x}{2}\sqrt {1 - x^2} + C$
         \end{itemize}
         \item 三角函数降幂公式型
         \begin{itemize}
