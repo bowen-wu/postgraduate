@@ -7,6 +7,11 @@ let _playbackInProgress = false;
 let _playbackToken = 0;
 let _activePlaybackAbort = null;
 
+function debugAudio(...args) {
+  if (!CONFIG.audio?.debugLogging) return;
+  console.log('[audio]', ...args);
+}
+
 export function isAudioPlaybackInProgress() {
   return _playbackInProgress;
 }
@@ -32,6 +37,7 @@ function clearActivePlaybackAbort(abortFn) {
 }
 
 export function stopCurrentAudioPlayback() {
+  debugAudio('stopCurrentAudioPlayback');
   if (_activePlaybackAbort) {
     try {
       _activePlaybackAbort();
@@ -58,11 +64,57 @@ const sentenceAudioSources = [
   { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
 ];
 
+function isMobileBrowser() {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent || '';
+  return /Android|iPhone|iPad|iPod|Mobile|HMSCore/i.test(ua);
+}
+
 function isSentenceLike(text) {
   const normalized = String(text || '').trim();
   if (!normalized) return false;
   const wordCount = normalized.split(/\s+/).filter(Boolean).length;
   return wordCount >= 8 || /[.!?;:,"]/u.test(normalized);
+}
+
+async function getCachedPlayableSource(text, sources, hooks = {}) {
+  for (const source of sources) {
+    const sourceKey =
+      source.name === 'Azure' ? 'azure'
+        : source.name === 'Google Cloud' ? 'google'
+          : null;
+    if (!sourceKey) continue;
+    const cached = await AudioCache.getAudio(text, sourceKey);
+    if (!cached) continue;
+    debugAudio('cache-hit', { text, source: sourceKey });
+
+    return async (timeout) => {
+      const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 2000);
+      try {
+        return await playBlobWithFallback(cached, sourceTimeout, hooks);
+      } catch (error) {
+        throw error;
+      }
+    };
+  }
+
+  return null;
+}
+
+function getPreferredAudioSources(text) {
+  if (isSentenceLike(text)) {
+    return sentenceAudioSources;
+  }
+
+  if (isMobileBrowser()) {
+    return [
+      audioSources.find((source) => source.name === 'Azure'),
+      audioSources.find((source) => source.name === 'Google Cloud'),
+      audioSources.find((source) => source.name === '有道')
+    ].filter(Boolean);
+  }
+
+  return audioSources;
 }
 
 export async function playWordWithFallback(word, hooks = {}) {
@@ -75,19 +127,37 @@ export async function playWordWithFallback(word, hooks = {}) {
   try {
     const audioText = normalizeText(word);
     const isSentence = isSentenceLike(audioText);
-    const sources = isSentence ? sentenceAudioSources : audioSources;
+    const sources = getPreferredAudioSources(audioText);
     const sourceTimeout = getSourceTimeoutForText(audioText);
     const hooksWithToken = { ...hooks, playbackToken };
+    debugAudio('playWordWithFallback:start', { audioText, isSentence, sourceTimeout, playbackToken, mobile: isMobileBrowser() });
     ensurePlaybackTokenActive(playbackToken);
     try {
+      const cachedPlayable = await getCachedPlayableSource(removeEmoji(audioText), sources, hooksWithToken);
+      if (cachedPlayable) {
+        debugAudio('playback-using-cache', audioText);
+        await cachedPlayable(sourceTimeout || CONFIG.audio?.defaultTimeout || 1200);
+        ensurePlaybackTokenActive(playbackToken);
+        return { sourceName: 'Cache' };
+      }
+
       const result = await runFallbackChain(
         sources,
-        (source) => source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooksWithToken),
+        async (source) => {
+          debugAudio('source-attempt', { source: source.name, text: audioText, timeout: sourceTimeout ?? source.timeout });
+          const value = await source.play(audioText, sourceTimeout ?? source.timeout, source.options, hooksWithToken);
+          debugAudio('source-success', { source: source.name, text: audioText });
+          return value;
+        },
         'All audio sources failed'
       );
       ensurePlaybackTokenActive(playbackToken);
       return { sourceName: result.sourceName };
     } catch (error) {
+      debugAudio('fallback-to-webspeech', {
+        text: audioText,
+        details: error?.details || error?.message || String(error)
+      });
       ensurePlaybackTokenActive(playbackToken);
       const ttsTimeout = Math.max(sourceTimeout || 0, CONFIG.audio?.defaultTimeout || 1200, 4000);
       await playWebSpeech(audioText, ttsTimeout, hooksWithToken);
@@ -97,6 +167,7 @@ export async function playWordWithFallback(word, hooks = {}) {
   } finally {
     if (isPlaybackTokenActive(playbackToken)) {
       _playbackInProgress = false;
+      debugAudio('playWordWithFallback:end', { playbackToken });
     }
   }
 }
@@ -126,19 +197,27 @@ function getSourceTimeoutForText(text) {
   const wordCount = normalized.split(/\s+/).filter(Boolean).length;
   const hasSentencePunctuation = /[.!?;:,"]/u.test(normalized);
   const isLikelySentence = wordCount >= 8 || hasSentencePunctuation;
-  if (!isLikelySentence) return null;
+  if (!isLikelySentence) {
+    return isMobileBrowser()
+      ? (CONFIG.audio?.mobileTtsTimeout || 2800)
+      : (CONFIG.audio?.desktopTtsTimeout || 3500);
+  }
 
   // Sentence playback on mobile typically needs a wider timeout window.
   return 9000;
 }
 
 function getYoudaoTimeoutForText(text) {
-  return isSentenceLike(text) ? 2000 : 3500;
+  if (isSentenceLike(text)) return 1200;
+  return isMobileBrowser()
+    ? (CONFIG.audio?.mobileYoudaoTimeout || 1200)
+    : (CONFIG.audio?.desktopYoudaoTimeout || 1800);
 }
 
 async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
-  const youdaoTimeout = isSentenceLike(cleanText) ? Math.min(timeout, 2000) : timeout;
+  const youdaoTimeout = Math.min(timeout, getYoudaoTimeoutForText(cleanText));
+  debugAudio('playYoudaoAudio', { cleanText, timeout: youdaoTimeout });
   const urls = [
     `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(cleanText)}`,
     `https://dict.youdao.com/dictvoice?type=1&audio=${encodeURIComponent(cleanText)}`
@@ -157,19 +236,12 @@ async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) 
 async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const source = 'azure';
-  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2800 : 3500);
   const voice = options.voice || CONFIG.audio.defaultVoice;
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    try {
-      return await playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
-    } catch {
-      // Cached blob URL may fail on iOS Safari; convert to data URL
-      const base64 = await blobToBase64(cached);
-      const dataUrl = `data:audio/mpeg;base64,${base64}`;
-      return playAudioUrl(dataUrl, sourceTimeout, hooks);
-    }
+    return playBlobWithFallback(cached, sourceTimeout, hooks);
   }
 
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
@@ -205,26 +277,18 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-
-  try {
-    return await playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
-  } catch {
-    // Some mobile browsers are strict about blob playback; fall back to data URL
-    const base64 = arrayBufferToBase64(arrayBuffer);
-    const dataUrl = `data:audio/mpeg;base64,${base64}`;
-    return playAudioUrl(dataUrl, sourceTimeout, hooks);
-  }
+  return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer);
 }
 
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const source = 'google';
-  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 3500);
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2800 : 3500);
   const voice = options.voice || 'en-US-Neural2-C';
   const cached = await AudioCache.getAudio(cleanText, source);
 
   if (cached) {
-    return playAudioUrl(URL.createObjectURL(cached), sourceTimeout, hooks);
+    return playBlobWithFallback(cached, sourceTimeout, hooks);
   }
 
   const apiKey = CONFIG.apiKeys.googleCloud.tts;
@@ -259,14 +323,7 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
   }
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
   await AudioCache.setAudio(cleanText, source, blob);
-
-  try {
-    return await playAudioUrl(URL.createObjectURL(blob), sourceTimeout, hooks);
-  } catch {
-    // Some mobile browsers are strict about blob playback for synthesized MP3.
-    const dataUrl = `data:audio/mpeg;base64,${data.audioContent}`;
-    return playAudioUrl(dataUrl, sourceTimeout, hooks);
-  }
+  return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer, data.audioContent);
 }
 
 let _audioContext = null;
@@ -305,6 +362,32 @@ async function blobToBase64(blob) {
   return arrayBufferToBase64(buffer);
 }
 
+async function playBlobWithFallback(blob, timeout, hooks = {}, existingArrayBuffer = null, existingBase64 = null) {
+  if (!blob) {
+    throw toServiceError('AUDIO_BLOB_EMPTY', 'Audio blob is required');
+  }
+
+  const preferDataUrl = isMobileBrowser();
+  debugAudio('playBlobWithFallback', { preferDataUrl, size: blob.size || 0, timeout });
+  if (!preferDataUrl) {
+    try {
+      return await playAudioUrl(URL.createObjectURL(blob), timeout, hooks);
+    } catch {}
+  }
+
+  const base64 = existingBase64 || (existingArrayBuffer ? arrayBufferToBase64(existingArrayBuffer) : await blobToBase64(blob));
+  const dataUrl = `data:audio/mpeg;base64,${base64}`;
+
+  try {
+    return await playAudioUrl(dataUrl, timeout, hooks);
+  } catch (error) {
+    if (preferDataUrl) {
+      throw error;
+    }
+    return playAudioUrl(URL.createObjectURL(blob), timeout, hooks);
+  }
+}
+
 async function playAudioUrl(url, timeout = 3000, hooks = {}) {
   const playbackToken = Number.isInteger(hooks.playbackToken) ? hooks.playbackToken : _playbackToken;
   ensurePlaybackTokenActive(playbackToken);
@@ -319,22 +402,41 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
     let startupTimeoutId = null;
     let maxPlaybackTimeoutId = null;
 
+    const cleanupMedia = () => {
+      audio.onplay = null;
+      audio.onplaying = null;
+      audio.onended = null;
+      audio.onerror = null;
+      try {
+        audio.pause();
+      } catch {}
+      try {
+        audio.removeAttribute('src');
+        audio.load();
+      } catch {}
+      if (typeof url === 'string' && url.startsWith('blob:')) {
+        try {
+          URL.revokeObjectURL(url);
+        } catch {}
+      }
+    };
+
     const done = (fn, ...args) => {
       if (!resolved) {
         resolved = true;
         if (startupTimeoutId) clearTimeout(startupTimeoutId);
         if (maxPlaybackTimeoutId) clearTimeout(maxPlaybackTimeoutId);
         clearActivePlaybackAbort(abortPlayback);
+        cleanupMedia();
         fn(...args);
       }
     };
 
-    const abortPlayback = () => {
+    const abortPlayback = (error = toServiceError('AUDIO_PLAYBACK_STOPPED', 'Audio playback stopped')) => {
       try {
-        audio.pause();
         audio.currentTime = 0;
       } catch {}
-      done(reject, toServiceError('AUDIO_PLAYBACK_STOPPED', 'Audio playback stopped'));
+      done(reject, error);
     };
 
     const markStarted = () => {
@@ -358,10 +460,12 @@ async function playAudioUrl(url, timeout = 3000, hooks = {}) {
     audio.onplay = markStarted;
     audio.onplaying = markStarted;
     audio.onended = () => done(resolve, { onplay: true });
-    audio.onerror = () => done(reject, toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
+    audio.onerror = () => abortPlayback(toServiceError('AUDIO_PLAYBACK_LOAD_FAILED', 'Audio load failed'));
 
     startupTimeoutId = setTimeout(() => {
-      if (!resolved && !started) done(reject, toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio startup timeout'));
+      if (!resolved && !started) {
+        abortPlayback(toServiceError('AUDIO_PLAYBACK_TIMEOUT', 'Audio startup timeout'));
+      }
     }, startupTimeoutMs);
 
     ensureAudioContextResumed();

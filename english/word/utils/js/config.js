@@ -46,6 +46,11 @@ export const CONFIG = {
   audio: {
     defaultVoice: 'en-US-JennyNeural',
     defaultTimeout: 1200,
+    mobileYoudaoTimeout: 1200,
+    desktopYoudaoTimeout: 1800,
+    mobileTtsTimeout: 2800,
+    desktopTtsTimeout: 3500,
+    debugLogging: true,
     // Cache configuration
     cache: {
       enabled: true,
