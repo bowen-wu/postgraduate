@@ -1,60 +1,13 @@
 import { restoreParentContext, saveParentContext, setParentContext } from './context.js';
-import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
+import { matchListIndent, getListContentFromTrimmed, mergeListItemContinuations } from './line-utils.js';
 import { processChildren } from './children-processor.js';
 import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
 import { normalizeInlineStudyText, stripMarkdownMarkers, stripPronunciationHints } from './text-normalizer.js';
 
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
-  let mergedContent = content;
-  let nextLineIndex = lineIndex + 1;
-  const mergedLines = [];
-
-  while (nextLineIndex < parser.lines.length) {
-    const nextLine = parser.lines[nextLineIndex];
-    const trimmed = nextLine.trim();
-
-    if (!trimmed) {
-      nextLineIndex++;
-      continue;
-    }
-
-    const indentMatch = matchListIndent(nextLine);
-    if (indentMatch) {
-      const nextIndentLevel = indentMatch[1].length;
-      if (nextIndentLevel <= indentLevel) {
-        break;
-      }
-
-      const childContent = getListContentFromTrimmed(trimmed);
-      const isRealChild =
-        parser.isSynonymMarker(childContent) ||
-        parser.hasAntonymMarker(childContent) ||
-        parser.isPurePosLine(childContent) ||
-        parser.isPureIpaLine(childContent) ||
-        (/^[a-z]+\./.test(childContent));
-
-      if (isRealChild) {
-        break;
-      }
-
-      break;
-    }
-
-    if (!trimmed.startsWith('-')) {
-      if (trimmed.startsWith('##')) {
-        break;
-      }
-      mergedContent += ` ${trimmed}`;
-      mergedLines.push(nextLineIndex);
-      nextLineIndex++;
-      continue;
-    }
-
-    break;
-  }
-
-  content = mergedContent;
+  const merged = mergeListItemContinuations(parser.lines, lineIndex, content);
+  content = merged.content;
 
   const boldPlaceholders = [];
   const protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, boldContent) => {
@@ -103,16 +56,11 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   const sentenceChildren = [];
   const promotedChildren = [];
 
-  let i = nextLineIndex;
+  let i = merged.nextLineIndex;
   let lastProcessedLineIndex = lineIndex;
   while (i < parser.lines.length) {
     const line = parser.lines[i];
     const trimmed = line.trim();
-
-    if (mergedLines.includes(i)) {
-      i++;
-      continue;
-    }
 
     if (!trimmed) {
       i++;
