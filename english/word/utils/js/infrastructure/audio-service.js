@@ -6,6 +6,7 @@ import { toServiceError } from './service-error.js';
 let _playbackInProgress = false;
 let _playbackToken = 0;
 let _activePlaybackAbort = null;
+const _memoryAudioCache = new Map();
 
 function debugAudio(...args) {
   if (!CONFIG.audio?.debugLogging) return;
@@ -34,6 +35,19 @@ function clearActivePlaybackAbort(abortFn) {
   if (_activePlaybackAbort === abortFn) {
     _activePlaybackAbort = null;
   }
+}
+
+function getMemoryAudioCacheKey(text, source) {
+  return `${source}:${removeEmoji(normalizeText(text)).toLowerCase()}`;
+}
+
+function getMemoryAudioDataUrl(text, source) {
+  return _memoryAudioCache.get(getMemoryAudioCacheKey(text, source)) || null;
+}
+
+function setMemoryAudioDataUrl(text, source, dataUrl) {
+  if (!text || !source || !dataUrl) return;
+  _memoryAudioCache.set(getMemoryAudioCacheKey(text, source), dataUrl);
 }
 
 export function stopCurrentAudioPlayback() {
@@ -84,6 +98,21 @@ async function getCachedPlayableSource(text, sources, hooks = {}) {
         : source.name === 'Google Cloud' ? 'google'
           : null;
     if (!sourceKey) continue;
+
+    const memoryCached = getMemoryAudioDataUrl(text, sourceKey);
+    if (memoryCached) {
+      debugAudio('memory-cache-hit', { text, source: sourceKey });
+      return async (timeout) => {
+        const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, 2000);
+        return playAudioUrl(memoryCached, sourceTimeout, hooks);
+      };
+    }
+
+    if (isMobileBrowser()) {
+      debugAudio('skip-indexeddb-cache-on-mobile', { text, source: sourceKey });
+      continue;
+    }
+
     const cached = await AudioCache.getAudio(text, sourceKey);
     if (!cached) continue;
     debugAudio('cache-hit', { text, source: sourceKey });
@@ -238,10 +267,19 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const source = 'azure';
   const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2800 : 3500);
   const voice = options.voice || CONFIG.audio.defaultVoice;
-  const cached = await AudioCache.getAudio(cleanText, source);
+  const memoryCached = getMemoryAudioDataUrl(cleanText, source);
 
-  if (cached) {
-    return playBlobWithFallback(cached, sourceTimeout, hooks);
+  if (memoryCached) {
+    debugAudio('playAzureTTS:memory-cache-hit', { cleanText });
+    return playAudioUrl(memoryCached, sourceTimeout, hooks);
+  }
+
+  if (!isMobileBrowser()) {
+    const cached = await AudioCache.getAudio(cleanText, source);
+    if (cached) {
+      debugAudio('playAzureTTS:indexeddb-cache-hit', { cleanText });
+      return playBlobWithFallback(cached, sourceTimeout, hooks);
+    }
   }
 
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
@@ -276,8 +314,11 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
 
   const arrayBuffer = await response.arrayBuffer();
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+  const base64 = arrayBufferToBase64(arrayBuffer);
+  const dataUrl = `data:audio/mpeg;base64,${base64}`;
+  setMemoryAudioDataUrl(cleanText, source, dataUrl);
   await AudioCache.setAudio(cleanText, source, blob);
-  return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer);
+  return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer, base64);
 }
 
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}) {
@@ -285,10 +326,19 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
   const source = 'google';
   const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2800 : 3500);
   const voice = options.voice || 'en-US-Neural2-C';
-  const cached = await AudioCache.getAudio(cleanText, source);
+  const memoryCached = getMemoryAudioDataUrl(cleanText, source);
 
-  if (cached) {
-    return playBlobWithFallback(cached, sourceTimeout, hooks);
+  if (memoryCached) {
+    debugAudio('playGoogleCloudTTS:memory-cache-hit', { cleanText });
+    return playAudioUrl(memoryCached, sourceTimeout, hooks);
+  }
+
+  if (!isMobileBrowser()) {
+    const cached = await AudioCache.getAudio(cleanText, source);
+    if (cached) {
+      debugAudio('playGoogleCloudTTS:indexeddb-cache-hit', { cleanText });
+      return playBlobWithFallback(cached, sourceTimeout, hooks);
+    }
   }
 
   const apiKey = CONFIG.apiKeys.googleCloud.tts;
@@ -322,6 +372,8 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
     view[i] = audioData.charCodeAt(i);
   }
   const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+  const dataUrl = `data:audio/mpeg;base64,${data.audioContent}`;
+  setMemoryAudioDataUrl(cleanText, source, dataUrl);
   await AudioCache.setAudio(cleanText, source, blob);
   return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer, data.audioContent);
 }
