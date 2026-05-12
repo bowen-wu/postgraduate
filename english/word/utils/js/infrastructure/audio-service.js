@@ -130,6 +130,33 @@ async function getCachedPlayableSource(text, sources, hooks = {}) {
   return null;
 }
 
+async function hasCachedAudioSource(text, sources) {
+  for (const source of sources) {
+    const sourceKey =
+      source.name === 'Azure' ? 'azure'
+        : source.name === 'Google Cloud' ? 'google'
+          : null;
+    if (!sourceKey) continue;
+
+    if (getMemoryAudioDataUrl(text, sourceKey)) {
+      debugAudio('prefetch-memory-cache-hit', { text, source: sourceKey });
+      return true;
+    }
+
+    if (isMobileBrowser()) {
+      continue;
+    }
+
+    const cached = await AudioCache.getAudio(text, sourceKey);
+    if (cached) {
+      debugAudio('prefetch-indexeddb-cache-hit', { text, source: sourceKey });
+      return true;
+    }
+  }
+
+  return false;
+}
+
 function getPreferredAudioSources(text) {
   if (isSentenceLike(text)) {
     return sentenceAudioSources;
@@ -216,8 +243,8 @@ export async function prefetchWordAudio(word, options = {}) {
   const sources = getPrefetchAudioSources(audioText);
   if (!sources.length) return { skipped: true, reason: 'no-sources' };
 
-  const cachedPlayable = await getCachedPlayableSource(cleanText, sources);
-  if (cachedPlayable) {
+  const hasCachedSource = await hasCachedAudioSource(cleanText, sources);
+  if (hasCachedSource) {
     debugAudio('prefetch-cache-hit', { text: cleanText });
     return { skipped: true, reason: 'cached' };
   }
@@ -233,7 +260,7 @@ export async function prefetchWordAudio(word, options = {}) {
       sources,
       async (source) => {
         debugAudio('prefetch-source-attempt', { source: source.name, text: cleanText, timeout: sourceTimeout });
-        const value = await source.play(cleanText, sourceTimeout, source.options, { silentPrefetch: true });
+        const value = await prefetchFromSource(source, cleanText, sourceTimeout);
         debugAudio('prefetch-source-success', { source: source.name, text: cleanText });
         return value;
       },
@@ -247,6 +274,16 @@ export async function prefetchWordAudio(word, options = {}) {
     });
     return { skipped: true, reason: 'failed' };
   }
+}
+
+async function prefetchFromSource(source, text, timeout) {
+  if (source.name === 'Azure') {
+    return prefetchAzureTTS(text, timeout, source.options || {});
+  }
+  if (source.name === 'Google Cloud') {
+    return prefetchGoogleCloudTTS(text, timeout, source.options || {});
+  }
+  throw toServiceError('AUDIO_PREFETCH_UNSUPPORTED', `Prefetch unsupported for ${source.name}`);
 }
 
 function normalizeText(text) {
@@ -369,6 +406,63 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer, base64);
 }
 
+async function prefetchAzureTTS(text, timeout = 1200, options = {}) {
+  const cleanText = removeEmoji(text);
+  const source = 'azure';
+  if (getMemoryAudioDataUrl(cleanText, source)) {
+    return { sourceName: 'Azure', cached: true };
+  }
+
+  if (!isMobileBrowser()) {
+    const cached = await AudioCache.getAudio(cleanText, source);
+    if (cached) {
+      const materialized = await materializeBlob(cached);
+      const base64 = arrayBufferToBase64(materialized.arrayBuffer);
+      setMemoryAudioDataUrl(cleanText, source, `data:audio/mpeg;base64,${base64}`);
+      return { sourceName: 'Azure', cached: true };
+    }
+  }
+
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2200 : 2800);
+  const voice = options.voice || CONFIG.audio.defaultVoice;
+  const apiKey = CONFIG.apiKeys.azureSpeech.key;
+  const region = options.region || CONFIG.apiKeys.azureSpeech.region;
+  const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
+  const ssml = `
+    <speak version='1.0' xml:lang='en-US'>
+      <voice xml:lang='en-US' name='${voice}'>
+        ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
+      </voice>
+    </speak>
+  `.trim();
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Ocp-Apim-Subscription-Key': apiKey,
+        'Content-Type': 'application/ssml+xml',
+        'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3'
+      },
+      body: ssml,
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+  if (!response.ok) throw toServiceError('AZURE_TTS_HTTP', `Azure TTS error: ${response.status}`);
+
+  const arrayBuffer = await response.arrayBuffer();
+  const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+  const base64 = arrayBufferToBase64(arrayBuffer);
+  setMemoryAudioDataUrl(cleanText, source, `data:audio/mpeg;base64,${base64}`);
+  await AudioCache.setAudio(cleanText, source, blob);
+  return { sourceName: 'Azure' };
+}
+
 async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const source = 'google';
@@ -424,6 +518,61 @@ async function playGoogleCloudTTS(text, timeout = 1200, options = {}, hooks = {}
   setMemoryAudioDataUrl(cleanText, source, dataUrl);
   await AudioCache.setAudio(cleanText, source, blob);
   return playBlobWithFallback(blob, sourceTimeout, hooks, arrayBuffer, data.audioContent);
+}
+
+async function prefetchGoogleCloudTTS(text, timeout = 1200, options = {}) {
+  const cleanText = removeEmoji(text);
+  const source = 'google';
+  if (getMemoryAudioDataUrl(cleanText, source)) {
+    return { sourceName: 'Google Cloud', cached: true };
+  }
+
+  if (!isMobileBrowser()) {
+    const cached = await AudioCache.getAudio(cleanText, source);
+    if (cached) {
+      const materialized = await materializeBlob(cached);
+      const base64 = arrayBufferToBase64(materialized.arrayBuffer);
+      setMemoryAudioDataUrl(cleanText, source, `data:audio/mpeg;base64,${base64}`);
+      return { sourceName: 'Google Cloud', cached: true };
+    }
+  }
+
+  const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2200 : 2800);
+  const voice = options.voice || 'en-US-Neural2-C';
+  const apiKey = CONFIG.apiKeys.googleCloud.tts;
+  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: { text: cleanText },
+        voice: { languageCode: 'en-US', name: voice },
+        audioConfig: { audioEncoding: 'MP3' }
+      }),
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+  if (!response.ok) throw toServiceError('GOOGLE_TTS_HTTP', `Google Cloud TTS error: ${response.status}`);
+
+  const data = await response.json();
+  if (!data.audioContent) throw toServiceError('GOOGLE_TTS_FORMAT', 'No audio content in response');
+
+  const audioData = atob(data.audioContent);
+  const arrayBuffer = new ArrayBuffer(audioData.length);
+  const view = new Uint8Array(arrayBuffer);
+  for (let i = 0; i < audioData.length; i++) {
+    view[i] = audioData.charCodeAt(i);
+  }
+  const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' });
+  setMemoryAudioDataUrl(cleanText, source, `data:audio/mpeg;base64,${data.audioContent}`);
+  await AudioCache.setAudio(cleanText, source, blob);
+  return { sourceName: 'Google Cloud' };
 }
 
 let _audioContext = null;
