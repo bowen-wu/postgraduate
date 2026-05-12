@@ -146,6 +146,12 @@ function getPreferredAudioSources(text) {
   return audioSources;
 }
 
+function getPrefetchAudioSources(text) {
+  const preferredSources = getPreferredAudioSources(text);
+  if (!isMobileBrowser()) return preferredSources;
+  return preferredSources.filter((source) => source.name !== '有道');
+}
+
 export async function playWordWithFallback(word, hooks = {}) {
   if (!word) throw toServiceError('AUDIO_INPUT_EMPTY', 'word is required');
   if (_playbackInProgress) stopCurrentAudioPlayback();
@@ -198,6 +204,48 @@ export async function playWordWithFallback(word, hooks = {}) {
       _playbackInProgress = false;
       debugAudio('playWordWithFallback:end', { playbackToken });
     }
+  }
+}
+
+export async function prefetchWordAudio(word, options = {}) {
+  if (!CONFIG.audio?.prefetch?.enabled) return { skipped: true, reason: 'disabled' };
+  const audioText = normalizeText(word);
+  if (!audioText) return { skipped: true, reason: 'empty' };
+
+  const cleanText = removeEmoji(audioText);
+  const sources = getPrefetchAudioSources(audioText);
+  if (!sources.length) return { skipped: true, reason: 'no-sources' };
+
+  const cachedPlayable = await getCachedPlayableSource(cleanText, sources);
+  if (cachedPlayable) {
+    debugAudio('prefetch-cache-hit', { text: cleanText });
+    return { skipped: true, reason: 'cached' };
+  }
+
+  const sourceTimeout = Number.isFinite(options.timeout)
+    ? options.timeout
+    : (isMobileBrowser()
+      ? (CONFIG.audio?.prefetch?.mobileTimeout || 2200)
+      : (CONFIG.audio?.prefetch?.desktopTimeout || 2800));
+
+  try {
+    const result = await runFallbackChain(
+      sources,
+      async (source) => {
+        debugAudio('prefetch-source-attempt', { source: source.name, text: cleanText, timeout: sourceTimeout });
+        const value = await source.play(cleanText, sourceTimeout, source.options, { silentPrefetch: true });
+        debugAudio('prefetch-source-success', { source: source.name, text: cleanText });
+        return value;
+      },
+      'All audio prefetch sources failed'
+    );
+    return { sourceName: result.sourceName };
+  } catch (error) {
+    debugAudio('prefetch-failed', {
+      text: cleanText,
+      details: error?.details || error?.message || String(error)
+    });
+    return { skipped: true, reason: 'failed' };
   }
 }
 

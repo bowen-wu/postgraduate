@@ -87,6 +87,7 @@ export class VocabApp {
       // 🔧 FIX: Start a new session when restoring from saved state
       StateManager.startSession();
       this.render();
+      EventHandlers.prefetchCurrentQueueAudio();
     }
     UiRenderer.updateStatsUI(this.ui);
   }

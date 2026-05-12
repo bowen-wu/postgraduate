@@ -5,7 +5,8 @@ export function createStudyUseCases(deps) {
     uiRenderer,
     getUi,
     render,
-    stopAudioPlayback = () => {}
+    stopAudioPlayback = () => {},
+    prefetchUpcomingAudio = () => {}
   } = deps;
 
   function recordError() {
@@ -31,6 +32,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex += 1;
       stateManager.saveState();
       render();
+      prefetchUpcomingAudio();
       uiRenderer.updateStatsUI(getUi());
       return true;
     }
@@ -45,6 +47,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex -= 1;
       stateManager.saveState();
       render();
+      prefetchUpcomingAudio();
       uiRenderer.updateStatsUI(getUi());
       return true;
     }
@@ -90,6 +93,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex = idx;
       stateManager.saveState();
       render();
+      prefetchUpcomingAudio();
       return true;
     }
     return false;
@@ -102,6 +106,7 @@ export function createStudyUseCases(deps) {
       state.currentIndex = displayIdx;
       stateManager.saveState();
       render();
+      prefetchUpcomingAudio();
       return true;
     }
     return false;

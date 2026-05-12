@@ -8,6 +8,7 @@ export function createFileUseCases(deps) {
     renderRootFileList,
     renderFolderFileList,
     renderFileListError,
+    prefetchUpcomingAudio = () => {},
     getApp,
     getUi,
     buildWritingCardForUnit = async () => null,
@@ -143,6 +144,7 @@ export function createFileUseCases(deps) {
         getApp().render();
       }
 
+      prefetchUpcomingAudio();
       uiRenderer.updateStatsUI(targetUi);
       uiRenderer.showToast(targetUi, `解析完成：${state.cards.length} 张卡片`);
     } catch (e) {

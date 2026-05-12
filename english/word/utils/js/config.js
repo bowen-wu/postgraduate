@@ -50,6 +50,13 @@ export const CONFIG = {
     desktopYoudaoTimeout: 1800,
     mobileTtsTimeout: 2800,
     desktopTtsTimeout: 3500,
+    prefetch: {
+      enabled: true,
+      count: 3,
+      delayMs: 120,
+      mobileTimeout: 2200,
+      desktopTimeout: 2800
+    },
     debugLogging: true,
     // Cache configuration
     cache: {

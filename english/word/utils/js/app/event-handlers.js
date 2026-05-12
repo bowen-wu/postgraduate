@@ -16,6 +16,7 @@ import {
   prewarmSpeechSynthesis as prewarmSpeechSynthesisService,
   stopCurrentAudioPlayback
 } from '../infrastructure/audio-service.js';
+import { prefetchUpcomingCardAudio, resetAudioPrefetchSession } from '../infrastructure/audio-prefetch-service.js';
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
 import { buildWritingCardForUnit } from '../infrastructure/writing-service.js';
 import { buildComplexSentenceCardsForUnit } from '../infrastructure/complex-sentence-service.js';
@@ -44,6 +45,13 @@ function getUi(ui = null) {
   return ui || getApp().ui;
 }
 
+function scheduleAudioPrefetch() {
+  resetAudioPrefetchSession();
+  setTimeout(() => {
+    prefetchUpcomingCardAudio(STATE).catch(() => {});
+  }, 0);
+}
+
 function getStudyUseCases() {
   if (!studyUseCases) {
     studyUseCases = createStudyUseCases({
@@ -53,7 +61,8 @@ function getStudyUseCases() {
       getUi: () => getApp().ui,
       render: () => getApp().render(),
       getBadgesElement: () => document.getElementById('displayBadges'),
-      stopAudioPlayback: stopCurrentAudioPlayback
+      stopAudioPlayback: stopCurrentAudioPlayback,
+      prefetchUpcomingAudio: scheduleAudioPrefetch
     });
   }
   return studyUseCases;
@@ -86,6 +95,7 @@ function getFileUseCases() {
       renderRootFileList,
       renderFolderFileList,
       renderFileListError,
+      prefetchUpcomingAudio: scheduleAudioPrefetch,
       buildWritingCardForUnit,
       buildComplexSentenceCardsForUnit,
       getApp,
@@ -115,6 +125,7 @@ export function setOrderMode(mode) {
   StateManager.setOrderMode(mode);
   UiRenderer.updateOrderModeSelect(getApp().ui);
   getApp().render();
+  scheduleAudioPrefetch();
   UiRenderer.updateStatsUI(getApp().ui);
 
   const modeNames = {
@@ -330,6 +341,10 @@ export async function playWord(word, buttonId = null, _useTTSFallback = false, s
 
 export function prewarmSpeechSynthesis() {
   prewarmSpeechSynthesisService();
+}
+
+export function prefetchCurrentQueueAudio() {
+  scheduleAudioPrefetch();
 }
 
 /**
