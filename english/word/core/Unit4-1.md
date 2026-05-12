@@ -151,8 +151,9 @@
     - Companies try to reach **potential/possible** customers through advertising.
         - advertising [ˈædvərtaɪzɪŋ] n. 做广告；广告活动；广告业
     - The **potential** of this work applied to healthcare is very great, but it could also lead to further
-      <ins>concentration of power(垄断)</ins> in the <ins>tech giants(科技巨头)</ins>.
+      concentration of power in the <ins>tech giants(科技巨头)</ins>.
         - concentration n. 集中
+        - concentration of power 垄断
     - potentially [pə'tenʃəli] adv. 潜在地
 
 ## information
@@ -167,6 +168,7 @@
     - Ideally, different kinds of reading **inform** each other, and <ins>act as(充当)</ins> useful reference points for
       and counterbalances to one another. 理想情况下，不同类型的阅读彼此启发，并作为相互参照和相互平衡的有益依据
         - counterbalance vt. 平衡；抵消
+        - reference point 参照点/参考标准
 
 ## require
 
