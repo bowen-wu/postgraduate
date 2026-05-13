@@ -81,10 +81,12 @@ export function createStudyUseCases(deps) {
     if (!understood) {
       recordError();
       uiRenderer.showToast(getUi(), '已记录不理解');
-    } else {
-      uiRenderer.showToast(getUi(), '已确认理解');
+      uiRenderer.renderNextAction(getUi());
+      return;
     }
-    nextCard();
+
+    uiRenderer.showSentenceTranslation(getUi());
+    uiRenderer.renderConfirmationActions(getUi());
   }
 
   function jumpTo(idx) {

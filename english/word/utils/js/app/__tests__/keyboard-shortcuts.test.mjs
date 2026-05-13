@@ -109,7 +109,7 @@ test('y only works in recall mode', () => {
   assert.deepEqual(deps.calls.handleRecall, [true]);
 });
 
-test('sentence in recall mode uses single-step recall (no confirm state)', () => {
+test('sentence in recall mode uses two-step confirmation flow', () => {
   STATE.cards = [{ id: '1', type: 'sentence', word: 'hello', items: [{ en: 'hello', cn: '你好' }] }];
   STATE.displayOrder = [0];
   STATE.currentIndex = 0;
@@ -120,7 +120,10 @@ test('sentence in recall mode uses single-step recall (no confirm state)', () =>
   assert.deepEqual(deps.calls.handleSentenceRecall, [true]);
   assert.deepEqual(deps.calls.handleRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, []);
+  assert.equal(deps.keyboardState.isConfirming, true);
 
   deps.handler(createEvent('n'));
-  assert.deepEqual(deps.calls.handleSentenceRecall, [true, false]);
+  assert.deepEqual(deps.calls.handleSentenceRecall, [true]);
+  assert.deepEqual(deps.calls.confirmRecall, [false]);
+  assert.equal(deps.keyboardState.isConfirming, false);
 });

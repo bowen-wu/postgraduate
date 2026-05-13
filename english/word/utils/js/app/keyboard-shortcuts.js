@@ -104,8 +104,13 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       if (!isRecallMode) return;
       e.preventDefault();
       if (currentCard.type === 'sentence') {
-        app.handleSentenceRecall(true);
-        keyboardState.isConfirming = false;
+        if (keyboardState.isConfirming) {
+          app.confirmRecall(true);
+          keyboardState.isConfirming = false;
+        } else {
+          app.handleSentenceRecall(true);
+          keyboardState.isConfirming = true;
+        }
         return;
       }
       if (currentCard.type === 'complex-sentence') {
@@ -125,8 +130,13 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       if (!isRecallMode) return;
       e.preventDefault();
       if (currentCard.type === 'sentence') {
-        app.handleSentenceRecall(true);
-        keyboardState.isConfirming = false;
+        if (keyboardState.isConfirming) {
+          app.confirmRecall(true);
+          keyboardState.isConfirming = false;
+        } else {
+          app.handleSentenceRecall(true);
+          keyboardState.isConfirming = true;
+        }
         return;
       }
       if (currentCard.type === 'complex-sentence') {
@@ -146,8 +156,12 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       if (!isRecallMode) return;
       e.preventDefault();
       if (currentCard.type === 'sentence') {
-        app.handleSentenceRecall(false);
-        keyboardState.isConfirming = false;
+        if (keyboardState.isConfirming) {
+          app.confirmRecall(false);
+          keyboardState.isConfirming = false;
+        } else {
+          app.handleSentenceRecall(false);
+        }
         return;
       }
       if (currentCard.type === 'complex-sentence') {
@@ -166,8 +180,12 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       if (!isRecallMode) return;
       e.preventDefault();
       if (currentCard.type === 'sentence') {
-        app.handleSentenceRecall(false);
-        keyboardState.isConfirming = false;
+        if (keyboardState.isConfirming) {
+          app.confirmRecall(false);
+          keyboardState.isConfirming = false;
+        } else {
+          app.handleSentenceRecall(false);
+        }
         return;
       }
       if (currentCard.type === 'complex-sentence') {

@@ -33,6 +33,7 @@ function createDeps(initialState) {
     revealAll() {},
     renderNextAction() {},
     renderConfirmationActions() {},
+    showSentenceTranslation() {},
     updateStatsUI() { calls.updateStatsUI += 1; },
     showToast(_ui, msg) { calls.toasts.push(msg); },
     showCompletionScreen() { calls.completion += 1; }
@@ -83,17 +84,86 @@ test('nextCard shows completion at end', () => {
   assert.equal(calls.stopAudioPlayback, 0);
 });
 
-test('handleSentenceRecall triggers stop playback before internal nextCard', () => {
-  const { state, calls, useCases } = createDeps({
+test('handleSentenceRecall true reveals translation and enters confirmation state', () => {
+  let showSentenceTranslationCalls = 0;
+  let renderConfirmationActionsCalls = 0;
+  const { state, calls } = createDeps({
     currentIndex: 0,
     displayOrder: [0, 1],
     cards: [{ id: 'a' }, { id: 'b' }]
   });
 
+  const useCases = createStudyUseCases({
+    state,
+    stateManager: {
+      getCurrentCard() {
+        const idx = state.displayOrder[state.currentIndex];
+        return state.cards?.[idx] || null;
+      },
+      recordCardStudied() {},
+      saveState() { calls.saveState += 1; }
+    },
+    uiRenderer: {
+      revealAll() {},
+      renderNextAction() {},
+      renderConfirmationActions() { renderConfirmationActionsCalls += 1; },
+      showSentenceTranslation() { showSentenceTranslationCalls += 1; },
+      updateStatsUI() { calls.updateStatsUI += 1; },
+      showToast(_ui, msg) { calls.toasts.push(msg); },
+      showCompletionScreen() { calls.completion += 1; }
+    },
+    getUi: () => ({}),
+    render: () => { calls.render += 1; },
+    getBadgesElement: () => null,
+    stopAudioPlayback: () => { calls.stopAudioPlayback += 1; }
+  });
+
   useCases.handleSentenceRecall(true);
 
-  assert.equal(state.currentIndex, 1);
-  assert.equal(calls.stopAudioPlayback, 1);
+  assert.equal(state.currentIndex, 0);
+  assert.equal(showSentenceTranslationCalls, 1);
+  assert.equal(renderConfirmationActionsCalls, 1);
+});
+
+test('handleSentenceRecall false records error and stays on current card', () => {
+  const nextActionCalls = [];
+  const { state, calls } = createDeps({
+    currentIndex: 0,
+    displayOrder: [0, 1],
+    cards: [{ id: 'a' }, { id: 'b' }]
+  });
+
+  const useCases = createStudyUseCases({
+    state,
+    stateManager: {
+      getCurrentCard() {
+        const idx = state.displayOrder[state.currentIndex];
+        return state.cards?.[idx] || null;
+      },
+      recordCardStudied() {},
+      saveState() { calls.saveState += 1; }
+    },
+    uiRenderer: {
+      revealAll() {},
+      renderNextAction() { nextActionCalls.push('next'); },
+      renderConfirmationActions() {},
+      showSentenceTranslation() {},
+      updateStatsUI() { calls.updateStatsUI += 1; },
+      showToast(_ui, msg) { calls.toasts.push(msg); },
+      showCompletionScreen() { calls.completion += 1; }
+    },
+    getUi: () => ({}),
+    render: () => { calls.render += 1; },
+    getBadgesElement: () => null,
+    stopAudioPlayback: () => { calls.stopAudioPlayback += 1; }
+  });
+
+  useCases.handleSentenceRecall(false);
+
+  assert.equal(state.currentIndex, 0);
+  assert.equal(state.stats.a.errors, 1);
+  assert.deepEqual(calls.toasts, ['已记录不理解']);
+  assert.deepEqual(nextActionCalls, ['next']);
 });
 
 test('handleRecall false records error and shows toast', () => {

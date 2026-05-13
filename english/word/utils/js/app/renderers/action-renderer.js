@@ -122,13 +122,13 @@ export function renderRecallActions(ui) {
 
     if (!isCnVisible) {
       ui.actionArea.innerHTML = `
-        <button class="btn-ghost" data-action="next-card">Skip</button>
-        <button class="btn-primary" data-action="show-sentence-translation">Show Translation</button>
+        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">Know</button>
+        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">Don't know</button>
       `;
     } else {
       ui.actionArea.innerHTML = `
-        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">Incorrect</button>
-        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">Correct</button>
+        <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">Incorrect</button>
+        <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">Confirmed</button>
       `;
     }
     return;
