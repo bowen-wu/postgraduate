@@ -108,7 +108,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(true);
           keyboardState.isConfirming = false;
         } else {
-          app.handleSentenceRecall(true);
+          app.revealSentenceAnswer();
           keyboardState.isConfirming = true;
         }
         return;
@@ -134,7 +134,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(true);
           keyboardState.isConfirming = false;
         } else {
-          app.handleSentenceRecall(true);
+          app.revealSentenceAnswer();
           keyboardState.isConfirming = true;
         }
         return;

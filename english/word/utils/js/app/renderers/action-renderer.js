@@ -122,7 +122,16 @@ export function renderRecallActions(ui) {
 
     if (!isCnVisible) {
       ui.actionArea.innerHTML = `
-        <button class="btn-success" data-action="handle-sentence-recall" data-understood="true">Know</button>
+        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="reveal-sentence-answer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          Translate
+          <span class="btn-spinner"></span>
+        </button>
+        <button class="btn-success" data-action="reveal-sentence-answer">Know</button>
         <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">Don't know</button>
       `;
     } else {

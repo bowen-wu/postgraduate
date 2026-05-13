@@ -347,6 +347,19 @@ export function prefetchCurrentQueueAudio() {
   scheduleAudioPrefetch();
 }
 
+export async function revealSentenceAnswer() {
+  const card = StateManager.getCurrentCard();
+  if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence')) return;
+
+  const hasChinese = card.items?.[0]?.cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
+  if (hasChinese) {
+    UiRenderer.showSentenceTranslation(getApp().ui);
+    return;
+  }
+
+  await translateSentence();
+}
+
 /**
  * Translate当前 Phrase 卡片
  */

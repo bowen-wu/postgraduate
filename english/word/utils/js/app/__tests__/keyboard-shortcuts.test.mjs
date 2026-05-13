@@ -22,6 +22,7 @@ function createDeps() {
     next: 0,
     prev: 0,
     toggleMode: 0,
+    revealSentenceAnswer: 0,
     handleRecall: [],
     confirmRecall: [],
     handleSentenceRecall: []
@@ -33,6 +34,7 @@ function createDeps() {
     playWord: () => {},
     translatePhrase: () => {},
     translateSentence: () => {},
+    revealSentenceAnswer: () => { calls.revealSentenceAnswer += 1; },
     confirmRecall: (v) => { calls.confirmRecall.push(v); },
     handleRecall: (v) => { calls.handleRecall.push(v); },
     handleSentenceRecall: (v) => { calls.handleSentenceRecall.push(v); },
@@ -117,13 +119,14 @@ test('sentence in recall mode uses two-step confirmation flow', () => {
 
   const deps = createDeps();
   deps.handler(createEvent('y'));
-  assert.deepEqual(deps.calls.handleSentenceRecall, [true]);
+  assert.equal(deps.calls.revealSentenceAnswer, 1);
+  assert.deepEqual(deps.calls.handleSentenceRecall, []);
   assert.deepEqual(deps.calls.handleRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, []);
   assert.equal(deps.keyboardState.isConfirming, true);
 
   deps.handler(createEvent('n'));
-  assert.deepEqual(deps.calls.handleSentenceRecall, [true]);
+  assert.deepEqual(deps.calls.handleSentenceRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, [false]);
   assert.equal(deps.keyboardState.isConfirming, false);
 });

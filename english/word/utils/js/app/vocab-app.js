@@ -142,6 +142,10 @@ export class VocabApp {
     UiRenderer.showSentenceTranslation(this.ui);
   }
 
+  revealSentenceAnswer() {
+    return EventHandlers.revealSentenceAnswer();
+  }
+
   handleSentenceRecall(understood) {
     EventHandlers.handleSentenceRecall(understood);
   }
