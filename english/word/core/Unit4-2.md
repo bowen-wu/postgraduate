@@ -64,6 +64,7 @@
     - except [ɪkˈsept]
         - prep. 除...之外
         - conj. 除了...
+        - Similar: expect v. 预料；期待
 - I found, as Hacker observed years before, that most wives want their husbands to be...conversational partners, but few
   husbands **share** this expectation of their wives.
     - expectation n. 期望
@@ -174,7 +175,9 @@
         - v. 给...加上边；接近
     - People in earlier eras were **surrounded** by reminders of misery.
         - era [ˈɪrə] n. 时代
-        - misery [ˈmɪzəri] n. 痛苦; 不幸; 穷困; 悲惨的境遇
+        - misery [ˈmɪzəri]
+            - n. 痛苦; 不幸; 穷困; 悲惨的境遇
+            - Similar: mystery [ˈmɪstəri] n. 神秘性，神秘的事或人
     - surrounding
         - adj. 周围的；附近的
         - surroundings

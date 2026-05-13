@@ -16,9 +16,9 @@
 - 破折号: ——
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## calm
@@ -80,8 +80,11 @@
 - comply **with** the rules
 - compliance [kəmˈplaɪəns]
     - n. 遵守
+    - Similar: complain vi. 抱怨，诉苦
     - bring sth. into compliance (with sth.) 使某事符合（法规/标准/要求）；让某事达到合规状态
-- compliant adj. 顺从的
+- compliant
+    - adj. 顺从的
+    - Similar: complaint n. 抱怨
 - obey [əˈbeɪ] v. 遵守
 - violate
     - vt. 违反（法律、协议等）；侵犯

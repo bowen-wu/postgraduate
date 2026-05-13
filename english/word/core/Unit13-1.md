@@ -176,8 +176,7 @@
 - undergo
     - v. 经历; 承受
 - overshadow
-    - vt. 使失色; 使阴暗; 夺去...的光辉; 遮阴
-    - v. 使... 蒙上阴影；使...蒙羞
+    - vt. 使蒙上阴影
 - partial
     - adj. 部分的; 偏袒的; 钟爱的
 - parade [pəˈreɪd]

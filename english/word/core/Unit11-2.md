@@ -163,7 +163,7 @@
 
 - [ˈprɑːmɪs]
 - vt. 保证
-- n. 承诺 （主观）
+- n. 承诺 （主观）；潜力，前途
 - (fail to )make a promise 作出承诺
 - (fail to )keep a promise 履行承诺
 - dishonor([dɪs'ɒnə] vt. 拒付) a promise/commitment 未履行承诺

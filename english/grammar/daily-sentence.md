@@ -669,7 +669,10 @@ new dose of investment risk for families future healthcare.
 - Just as bosses and boards have finally sorted out their worst accounting and compliance troubles, and improved their
   feeble corporation governance, a new problem threatens to earn them—especially in America—the sort of nasty headlines
   that inevitably lead to heads rolling in the executive suite: data insecurity.
-    - compliance [kəmˈplaɪəns] n. 遵守
+    - compliance [kəmˈplaɪəns]
+        - n. 遵守
+        - Similar: complain vi. 抱怨，诉苦
+        - Similar: complaint n. 抱怨
     - feeble adj. 虚弱的
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
     - corporation [ˌkɔːrpəˈreɪʃn] n. （大）公司
@@ -679,10 +682,10 @@ new dose of investment risk for families future healthcare.
     - suite n. 套房，一套家具
     - insecurity [ˌɪnsɪˈkjʊrɪti] n. 不安全，危险，不可控
     - just as 正当...的时候
-    - sort out troubles 解决问题
+    - sort out 解决/理清
     - accounting and compliance troubles 财务与合规问题
     - feeble corporation governance 薄弱的公司治理
-    - threaten to do sth. 有可能带来.../可能导致...
+    - threaten to do sth. 有...风险
     - earn headlines 招致新闻报道/登上新闻头条
     - nasty headlines 糟糕的新闻标题/负面头条
     - heads rolling 人头落地 => 高层被撤职/有人丢官
@@ -702,7 +705,8 @@ new dose of investment risk for families future healthcare.
   potential vulnerabilities.
     - intricate [ˈɪntrɪkət] adj. 复杂精细的
     - vulnerability [ˌvʌlnərə'bɪləti] n. 易损性
-    - leave sb doing sth. 使某人处于...状态/让某人一直在...
+    - leave sb. doing sth. 使某人处于...状态/让某人一直在...
+    - diverse [daɪˈvɜːrs] adj. 多种多样的
     - as diverse as... 像...这样各种不同的
     - peer into... 仔细查看/认真检查
     - in search of... 寻找...
@@ -733,9 +737,19 @@ new dose of investment risk for families future healthcare.
 
 ### 原句
 
-Meanwhile, the theft of information about some 40 million credit-card accounts in America, disclosed on June 17th,
-overshadowed a hugely important decision a day earlier by America's Federal Trade Commission (FTC) that puts corporate
-America on notice that regulators will act if firms fail to provide adequate data security.
+- Meanwhile, the theft of information about some 40 million credit-card accounts in America, disclosed on June 17th,
+  overshadowed a hugely important decision a day earlier by America's Federal Trade Commission (FTC) that puts corporate
+  America on notice that regulators will act if firms fail to provide adequate data security.
+    - theft [θeft] n. 盗窃罪
+    - adequate [ˈædɪkwət]
+        - adj. 足够的
+        - == sufficient [səˈfɪʃnt] adj. 足够的
+    - disclose
+        - vt. 揭露
+        - == reveal
+    - put sb. on notice 正式警告某人/让某人意识到后果
+    - corporate America 美国企业界
+    - overshadow vt. 使蒙上阴影
 
 ## 045
 

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## wander
@@ -108,6 +108,7 @@
     - adj. 痛苦的；令人不快的
     - misery [ˈmɪzəri]
         - n. 痛苦; 不幸; 穷困; 悲惨的境遇
+        - Similar: mystery [ˈmɪstəri] n. 神秘性，神秘的事或人
         - People in earlier *eras(n. 时代; 年代)* were surrounded by reminders of **misery**.
 - distressed [dɪˈstrest] adj. 苦恼的
 - grieve [ɡriːv] vt. 使悲伤
