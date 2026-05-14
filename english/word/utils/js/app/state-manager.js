@@ -55,6 +55,7 @@ export function saveState() {
     currentIndex: STATE.currentIndex,
     currentCardId: STATE.currentCardId,
     orderMode: STATE.orderMode,
+    displayOrder: STATE.displayOrder,
     completed: STATE.completed || false,
     timestamp: Date.now()
   };
