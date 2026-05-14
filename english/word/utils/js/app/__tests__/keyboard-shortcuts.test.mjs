@@ -22,6 +22,7 @@ function createDeps() {
     next: 0,
     prev: 0,
     toggleMode: 0,
+    revealPhraseAnswer: [],
     revealSentenceAnswer: 0,
     handleRecall: [],
     confirmRecall: [],
@@ -34,6 +35,7 @@ function createDeps() {
     playWord: () => {},
     translatePhrase: () => {},
     translateSentence: () => {},
+    revealPhraseAnswer: (v) => { calls.revealPhraseAnswer.push(v); },
     revealSentenceAnswer: () => { calls.revealSentenceAnswer += 1; },
     confirmRecall: (v) => { calls.confirmRecall.push(v); },
     handleRecall: (v) => { calls.handleRecall.push(v); },
@@ -128,5 +130,23 @@ test('sentence in recall mode uses two-step confirmation flow', () => {
   deps.handler(createEvent('n'));
   assert.deepEqual(deps.calls.handleSentenceRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, [false]);
+  assert.equal(deps.keyboardState.isConfirming, false);
+});
+
+test('phrase without Chinese in recall mode reveals answer before grading', () => {
+  STATE.cards = [{ id: '1', type: 'phrase', word: 'carry on', items: [{ en: 'carry on', cn: '' }] }];
+  STATE.displayOrder = [0];
+  STATE.currentIndex = 0;
+  STATE.mode = 'recall';
+
+  const deps = createDeps();
+  deps.handler(createEvent('y'));
+  assert.deepEqual(deps.calls.revealPhraseAnswer, [true]);
+  assert.deepEqual(deps.calls.handleRecall, []);
+  assert.equal(deps.keyboardState.isConfirming, true);
+
+  deps.handler(createEvent('n'));
+  assert.deepEqual(deps.calls.revealPhraseAnswer, [true, false]);
+  assert.deepEqual(deps.calls.confirmRecall, []);
   assert.equal(deps.keyboardState.isConfirming, false);
 });

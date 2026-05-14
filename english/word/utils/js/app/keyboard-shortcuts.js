@@ -16,6 +16,9 @@ function debouncePassed(lastPlayTime, key, intervalMs) {
 
 function createHandlers({ app, useCases, keyboardState, resetCardLocalState, currentCard }) {
   const isRecallMode = STATE.mode === 'recall';
+  const phraseHasChinese = currentCard.type === 'phrase' && currentCard.items && currentCard.items.some((item) =>
+    item.cn && item.cn.trim && item.cn.trim() !== ''
+  );
 
   const plainHandlers = {
     Enter: (e) => {
@@ -118,6 +121,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
         keyboardState.isConfirming = false;
         return;
       }
+      if (currentCard.type === 'phrase' && !phraseHasChinese) {
+        app.revealPhraseAnswer(true);
+        keyboardState.isConfirming = true;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(true);
         keyboardState.isConfirming = false;
@@ -142,6 +150,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       if (currentCard.type === 'complex-sentence') {
         app.nextCard();
         keyboardState.isConfirming = false;
+        return;
+      }
+      if (currentCard.type === 'phrase' && !phraseHasChinese) {
+        app.revealPhraseAnswer(true);
+        keyboardState.isConfirming = true;
         return;
       }
       if (keyboardState.isConfirming) {
@@ -169,6 +182,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
         keyboardState.isConfirming = false;
         return;
       }
+      if (currentCard.type === 'phrase' && !phraseHasChinese) {
+        app.revealPhraseAnswer(false);
+        keyboardState.isConfirming = false;
+        return;
+      }
       if (keyboardState.isConfirming) {
         app.confirmRecall(false);
         keyboardState.isConfirming = false;
@@ -190,6 +208,11 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
       }
       if (currentCard.type === 'complex-sentence') {
         app.nextCard();
+        keyboardState.isConfirming = false;
+        return;
+      }
+      if (currentCard.type === 'phrase' && !phraseHasChinese) {
+        app.revealPhraseAnswer(false);
         keyboardState.isConfirming = false;
         return;
       }

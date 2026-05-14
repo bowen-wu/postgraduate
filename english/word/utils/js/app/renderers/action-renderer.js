@@ -141,7 +141,8 @@ export function renderRecallActions(ui) {
           Translate
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-primary" data-action="next-card">Next</button>
+        <button class="btn-success" data-action="reveal-phrase-answer" data-claimed-known="true">Know</button>
+        <button class="btn-danger" data-action="reveal-phrase-answer" data-claimed-known="false">Don't know</button>
       `;
       return;
     }

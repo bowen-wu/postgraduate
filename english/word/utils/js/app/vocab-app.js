@@ -146,6 +146,10 @@ export class VocabApp {
     return EventHandlers.revealSentenceAnswer();
   }
 
+  revealPhraseAnswer(claimedKnown = true) {
+    return EventHandlers.revealPhraseAnswer(claimedKnown);
+  }
+
   handleSentenceRecall(understood) {
     EventHandlers.handleSentenceRecall(understood);
   }

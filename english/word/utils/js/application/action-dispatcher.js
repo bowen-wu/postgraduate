@@ -42,6 +42,7 @@ export function dispatchAction(actionEl, deps) {
     'reload-page': () => location.reload(),
     'show-sentence-translation': () => app.showSentenceTranslation(),
     'reveal-sentence-answer': () => app.revealSentenceAnswer(),
+    'reveal-phrase-answer': () => app.revealPhraseAnswer(actionEl.dataset.claimedKnown === 'true'),
     'translate-phrase': () => app.translatePhrase(),
     'translate-sentence': () => app.translateSentence(),
     'fill-complex-sentence-draft': () => app.fillComplexSentenceDraft(actionEl.dataset.targetId, actionEl.dataset.sentenceEncoded),

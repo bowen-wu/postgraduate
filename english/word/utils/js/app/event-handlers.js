@@ -360,6 +360,26 @@ export async function revealSentenceAnswer() {
   await translateSentence();
 }
 
+export async function revealPhraseAnswer(claimedKnown = true) {
+  const card = StateManager.getCurrentCard();
+  if (!card || card.type !== 'phrase') return;
+
+  const hasChinese = card.items && card.items.some((item) =>
+    item.cn && typeof item.cn.trim === 'function' && item.cn.trim() !== ''
+  );
+
+  if (!hasChinese) {
+    await translatePhrase();
+  }
+
+  if (claimedKnown) {
+    getStudyUseCases().handleRecall(true);
+    return;
+  }
+
+  getStudyUseCases().handleRecall(false);
+}
+
 /**
  * Translate当前 Phrase 卡片
  */
