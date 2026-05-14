@@ -25,9 +25,7 @@
 
 - anti- 否定
     - antiwar adj. 反战的，反对战争的
-- dis-
-    - 否定
-    - 分散
+- dis- 否定；分散
     - disappear v. 消失
     - distract vt. 分散（注意力）
 - il- 否定
@@ -37,7 +35,7 @@
     - == ir-
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - non- 否定
-- un- 否定
+    - == un- 否定
 - -less
     - adj. 词性
     - hopeless adj. 没有希望的；无望的
@@ -56,13 +54,13 @@
 - take a firm stand 采取坚定立场/坚决表态/明确立场
 - affirm
     - vt. 肯定属实；申明
+    - == confirm
     - "The Heart of the Matter", the just-released report by the American Academy of arts and Sciences(AAAS)
       deserves praise for **affirming** the importance of <ins>the humanities(人文科学)</ins>
       and <ins>social sciences(社会科学)</ins> to the *prosperity([prɑːˈsperəti] n. 繁荣)* and security of
       <ins>liberal democracy(自由民主制)</ins> in America.
         - *deserve([dɪˈzɜːrv])* *praise([preɪz])* for 因...而值得赞扬
         - security n. 安全（感）
-    - == confirm
 - confirm vt. 确认；使确信
 
 ## hold
@@ -83,11 +81,10 @@
     - hold up 举起
     - hold one's nose 对...嗤之以鼻，蔑视 😔
         - == contemptuous [kənˈtemptʃuəs] adj. 蔑视的，鄙视的
-    - take hole 开始完全控制；变得十分强大
+    - take hold 开始完全控制；变得十分强大
     - keep a tight hold 严格控制
-- But it did so while <ins>**holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his conduct(n. 行为)</ins>,
-  which included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to
-  government.
+- But it did so while **holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his *conduct(n. 行为)*, which
+  included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
 - holder n. 持有者
 - withhold
     - vt. 拒绝给；保留；隐瞒
@@ -134,7 +131,8 @@
 - supply
     - vt. 提供
     - n. 供应
-    - supple sb. with sth.
+    - 词组
+        - supply sb. with sth.
     - supplement
         - vt. 补充
         - n. 补充（物）；（报纸的）增刊
@@ -144,10 +142,9 @@
     - Render is a synonym of "**make**"-technically it means "**cause to become**".
     - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you
       speechless.
-    - One could *interpret(v. 诠释; 领会)* much of the work of *Beethoven(贝多芬)* by saying that *suffering(n. 痛苦;
-      受苦)*
-      is *inevitable([ɪnˈevɪtəbl] adj. 不可避免的)*, but the *courage([ˈkɜːrɪdʒ] n. 勇气; 无畏)* to fight it
-      **renders/makes** life worth living.
+    - One could *interpret(v. 诠释; 领会)* much of the work of *Beethoven(贝多芬)* by saying that
+      *suffering(n. 痛苦; 受苦)* is *inevitable([ɪnˈevɪtəbl] adj. 不可避免的)*, but the
+      *courage([ˈkɜːrɪdʒ] n. 勇气; 无畏)* to fight it **renders/makes** life worth living.
       人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
 - complementary adj. 补充的
 
