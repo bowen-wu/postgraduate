@@ -66,15 +66,19 @@
 - prosecute [ˈprɑːsɪkjuːt]
     - vt. 起诉
     - vi. 担任控方律师
+    - Similar: persecute [ˈpɜːrsɪkjuːt] v. 迫害；残害
     - sec- 跟
     - The police have decided not to **prosecute** because the evidence is not strong enough.
     - prosecution n. 起诉；原告方
     - prosecutor n. 检察官；公诉人
     - persecute [ˈpɜːrsɪkjuːt]
         - v. 迫害；残害
+        - Similar: prosecute [ˈprɑːsɪkjuːt]
+            - vt. 起诉
+            - vi. 担任控方律师
         - Weaver and his family have been **persecuted** by the authorities for their beliefs.
-            - beliefs [bɪ'lifs]
-                - n. 信仰
+            - belief [bɪˈliːf]
+                - n. 信念；信仰；信心
                 - Similar: brief
                     - adj. 简单的；短暂的
                     - n. 简要，简报
@@ -91,7 +95,7 @@
     - v. 吸引；上诉；呼吁，恳求
     - n. 吸引；上诉；呼吁，恳求
     - 词组
-        - appeal to 吸引
+        - appeal to 向...呼吁/请求；对...有吸引力
         - appeal to sb. for sth. 请求/呼吁某人给予某物
     - Court Of Appeals
     - Above all, the dress does **appeal** to her.

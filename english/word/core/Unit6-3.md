@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## technology/tech
@@ -119,6 +119,7 @@
     - broadband n. 宽带连接
 - domestic [dəˈmestɪk]
     - adj. 国内的；家用的；家务的
+    - Similar: democratic [ˌdeməˈkrætɪk] adj. 民主的
     - First two hours, now three hours—this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
       people show up to catch **domestic** flight, at least at some major U.S. airports with increasingly massive
       security lines.

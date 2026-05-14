@@ -16,33 +16,34 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## 否定前缀
 
-- anti-
+- anti- 否定
     - antiwar adj. 反战的，反对战争的
 - dis-
     - 否定
-        - disappear
     - 分散
-        - distract vt. 分散（注意力）
-- il-
-    - illegal
-- im-
-- in-
-- ir-
+    - disappear v. 消失
+    - distract vt. 分散（注意力）
+- il- 否定
+    - illegal adj. 非法的
+- im- 否定
+    - == in-
+    - == ir-
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
-- non-
-- un-
+- non- 否定
+- un- 否定
 - -less
     - adj. 词性
     - hopeless adj. 没有希望的；无望的
     - sleepless adj. 失眠的，睡不着的; 不眠的，醒着的; 无休止的; 警觉的
-    - boundless adj. 无限的; 无穷的; 无边际的; 广阔的
+    - boundless
+        - adj. 无限的; 无穷的; 无边际的; 广阔的
         - boundary [ˈbaʊndri] n. 边界，分界线
     - groundless adj. 无理由的，无根据的
     - endless adj. 无止境的; 无穷尽的; 永久的; 环状的
@@ -56,10 +57,11 @@
 - affirm
     - vt. 肯定属实；申明
     - "The Heart of the Matter", the just-released report by the American Academy of arts and Sciences(AAAS)
-      <ins>deserves praise for(值得赞扬)</ins> **affirming** the importance of <ins>the humanities(人文科学)</ins>
-      and <ins>social sciences(社会科学)</ins> to the prosperity([prɑːˈsperəti] n. 繁荣) and security of
+      deserves praise for **affirming** the importance of <ins>the humanities(人文科学)</ins>
+      and <ins>social sciences(社会科学)</ins> to the *prosperity([prɑːˈsperəti] n. 繁荣)* and security of
       <ins>liberal democracy(自由民主制)</ins> in America.
-        - deserve([dɪˈzɜːrv]) praise([preɪz]) for 因...而值得赞扬
+        - *deserve([dɪˈzɜːrv])* *praise([preɪz])* for 因...而值得赞扬
+        - security n. 安全（感）
     - == confirm
 - confirm vt. 确认；使确信
 
@@ -83,16 +85,19 @@
         - == contemptuous [kənˈtemptʃuəs] adj. 蔑视的，鄙视的
     - take hole 开始完全控制；变得十分强大
     - keep a tight hold 严格控制
-- But it did so while <ins>**holding its nose** at the ethics([ˈɛθiks] n. 道德准则) of his conduct(n. 行为)</ins>, which
-  included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
+- But it did so while <ins>**holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his conduct(n. 行为)</ins>,
+  which included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to
+  government.
 - holder n. 持有者
 - withhold
     - vt. 拒绝给；保留；隐瞒
-    - with- == backward 向后
+    - with- 向后
+        - == backward
         - withdraw v. （使）撤退/回/离; 停止提供; （使）退出; 提，取（款）; 脱离（社会）
         - withstand v. 经受住; 承受 😔
-    - Facebook is a self-enhancer's paradise([ˈpærədaɪs] n. 天堂; 伊甸园) because people can **withhold** their
-      *unflattering([ʌnˈflætərɪŋ] adj. 不讨好人的)* sides.
+    - Facebook is a self-enhancer's *paradise([ˈpærədaɪs] n. 天堂; 伊甸园)* because people can **withhold** their
+      unflattering sides.
+        - unflattering [ʌnˈflætərɪŋ] adj. 贬损的；不讨好人的 😔
 - uphold
     - vt. 维持（原判、裁决等）
     - Tuesday, the appeals court([kɔːrt]) **upheld** the 2017 order deregulating broadband providers.
@@ -106,24 +111,26 @@
 ## provide
 
 - vt. 提供
-- 提供某物给某人
-    - provide sb. with sth.
-    - provide sth. to sb.
-- provide an adequate([ˈædɪkwət]) service 提供足够的服务
-- provide digital([ˈdɪdʒɪtl]) service
+- 词组
+    - provide sb. with sth. 提供某物给某人
+        - == provide sth. for sb.
+- provide an *adequate([ˈædɪkwət])* service 提供足够的服务
+- provide *digital([ˈdɪdʒɪtl])* service
 - provider n. 提供者
 - provision
     - n. 规定，条款；供应品
     - == rule
-- provided/providing
+- provided
     - conj. 假如
+    - == providing
     - == if
-    - ***Providing that*/If** you finish your homework by this evening, you can have tomorrow off.
+    - **Providing that/If** you finish your homework by this evening, you can have tomorrow off.
 - offer
     - vt. 提出；提供（东西或机会）；报价
     - n. 提供（物）
-    - offer sb. sth.
-    - offer sth. to sb.
+    - 词组
+        - offer sb. sth.
+        - offer sth. to sb.
 - supply
     - vt. 提供
     - n. 供应
@@ -137,8 +144,9 @@
     - Render is a synonym of "**make**"-technically it means "**cause to become**".
     - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you
       speechless.
-    - One could interpret(v. 诠释; 领会) much of the work of Beethoven(贝多芬) by saying that suffering(n. 痛苦; 受苦)
-      is inevitable([ɪnˈevɪtəbl] adj. 不可避免的), but the courage([ˈkɜːrɪdʒ] n. 勇气; 无畏) to fight it
+    - One could *interpret(v. 诠释; 领会)* much of the work of *Beethoven(贝多芬)* by saying that *suffering(n. 痛苦;
+      受苦)*
+      is *inevitable([ɪnˈevɪtəbl] adj. 不可避免的)*, but the *courage([ˈkɜːrɪdʒ] n. 勇气; 无畏)* to fight it
       **renders/makes** life worth living.
       人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
 - complementary adj. 补充的
@@ -162,23 +170,22 @@
     - CEO turnover
 - downturn
     - n. （商业经济的）衰退
-    - 经济衰退
-        - economic depression/downturn/recession/slowdown/stagnation([stæɡˈneʃən] n. 淤塞，停滞; 不景气)/decline
-    - 经济繁荣
-        - economic boom/prosperity
+    - economic depression/downturn/recession/slowdown/*stagnation([stæɡˈneʃən] n. 淤塞，停滞; 不景气)*/decline 经济衰退
+    - economic boom/prosperity 经济繁荣
 - overturn
     - vt. 推翻（法律裁决）；倾覆
     - == knock out
-    - uphold vt. 维持（原判、裁决等）
-    - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
-      Supreme Court has **overturned** the corruption( [kəˈrʌpʃn] n. 腐败，贪污) conviction([kənˈvɪkʃn] n. 判罪) of a
-      former Virginia governor, Robert MacDonnell.
+    - Contrast: uphold vt. 维持（原判、裁决等）
+    - In a *rare([rer] adj. 稀少的，罕见的)* *unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的)* ruling, the
+      U.S. Supreme Court has **overturned** the *corruption( [kəˈrʌpʃn] n. 腐败，贪污)* *conviction([kənˈvɪkʃn] n. 判罪)*
+      of a former Virginia governor, Robert MacDonnell.
 
 ## consider
 
 - v. 考虑；细想
 - vt. 认为
-- consider doing sth.
+- 词组
+    - consider doing sth.
 - reconsider v. 重新考虑
 - considerable
     - adj. 相当大（或多、重要等）的
@@ -189,13 +196,16 @@
     - take sth. into consideration/account 把某事考虑在内
         - Taking all these factors into consideration...
 - contemplate [ˈkɑːntəmpleɪt]
-    - vt. **深思熟虑**；考虑；沉思
+    - vt. 深思熟虑；考虑；沉思
     - == consider
     - If you **contemplate** something, you **think about it carefully**.
     - Before your accept a job offer, or a college's offer of admission, you should take time to **contemplate**
-      the <ins>pros and cons(优点和缺点)</ins> of your decision.
-        - pros == advantages（优点，好处）
-        - cons == disadvantages（缺点，坏处）
+      the pros and cons of your decision.
+        - pros and cons 优点和缺点
+        - pros 优点，好处
+            - == advantages
+        - cons 缺点，坏处
+            - == disadvantages
 
 ## Words
 

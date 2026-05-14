@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## check
@@ -161,8 +161,9 @@
     - v. 创立；创办；建立
     - find - found
     - == set up
-- fund [fʌnd]
-    - v. 资助
+- fund
+    - vt. 为...提供资金
+    - n. 专款；（~s）资金
     - funding 投资
     - funding bodies 投资机构
 - inferior [ɪnˈfɪriər]

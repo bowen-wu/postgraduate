@@ -774,11 +774,15 @@ new dose of investment risk for families future healthcare.
 
 - The kinds of interpersonal violence that women are exposed to tend to be in domestic situations, by, unfortunately,
   parents or other family members, and they tend not to be one-shot deals.
-    - violence [ˈvaɪələns] n. 暴力；猛烈
+    - violence [ˈvaɪələns]
+        - n. 暴力；猛烈
+        - Similar: violate vt. 违反（法律、协议等）；侵犯
     - interpersonal adj. 人际（关系）的
-    - domestic [dəˈmestɪk] adj. 国内的；家用的；家务的
+    - domestic [dəˈmestɪk]
+        - adj. 国内的；家用的；家务的
+        - Similar: democratic [ˌdeməˈkrætɪk] adj. 民主的
     - be exposed to... 遭受/接触到
-    - end to do sth. 倾向于.../往往会...
+    - tend to do sth. 倾向于.../往往会...
     - one-shot deal 一次性交易 => 一次性的事情/只发生一次的事件
 
 ## 047
@@ -799,8 +803,12 @@ new dose of investment risk for families future healthcare.
         - vt. 访问(电脑信息)
         - n. 进入（权）；（使用某物的）权利；接触的机会
     - make A B 使 A 成为 B
+    - make sth. a reality 让某事成为现实
     - access to... 对...的获取/使用...的机会
     - restrict access to... 限制对...的获取
+    - fund
+        - vt. 为...提供资金
+        - n. 专款；（~s）资金
     - funding agency 资助机构/科研资助机构
     - government-funded research 政府资助的研究
     - by doing sth. 通过...
@@ -813,8 +821,12 @@ new dose of investment risk for families future healthcare.
 
 ### 原句
 
-Other models exist that are hybrids of these three, such as delayed open-access, where journals allow only subscribers
-to read a paper for the first six months, before making it freely available to everyone who wishes to see it.
+- Other models exist that are hybrids of these three, such as delayed open-access, where journals allow only subscribers
+  to read a paper for the first six months, before making it freely available to everyone who wishes to see it.
+    - allow sb. to do sth. 允许某人做某事
+    - journal n. 期刊
+    - make sth. available 使某物可获得
+    - such as 比如
 
 ## 049
 

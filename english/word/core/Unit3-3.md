@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词
-- Similar: 形近词
-- Contrast: 对比
+- Opposite: 反义词 
+- Similar: 形近词 
+- Contrast: 对比 
 - Block: 块级
 
 ## leave
@@ -115,9 +115,9 @@
             - n. 忠诚
             - Opposite: disloyal
             - **Faithfulness** refers to this quality of being **faithful and loyal**.
-                - quality
+                - quality 
                     - n. 质量；品质
-                    - Similar: quantity n. 量，数量
+                  - Similar: quantity n. 量，数量
             - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
                 - especially [ɪˈspeʃəli] adv. 尤其
 - credit [ˈkredɪt]
