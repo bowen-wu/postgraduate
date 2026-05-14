@@ -195,16 +195,13 @@
 \contentsline {section}{\numberline {11}一元函数积分学的应用 - 积分等式与积分不等式}{104}{section.11}%
 \contentsline {subsection}{\numberline {11.1}积分等式}{104}{subsection.11.1}%
 \contentsline {subsection}{\numberline {11.2}积分不等式}{105}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}基础概念}{105}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}结论}{105}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}定理}{105}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}运算}{105}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}公式}{106}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}方法总结}{106}{subsection.11.8}%
-\contentsline {subsection}{\numberline {11.9}条件转换思路}{106}{subsection.11.9}%
-\contentsline {subsection}{\numberline {11.10}理解}{106}{subsection.11.10}%
-\contentsline {section}{\numberline {12}一元函数积分学的应用 - 物理应用}{107}{section.12}%
-\contentsline {subsection}{\numberline {12.1}变力沿直线做功}{107}{subsection.12.1}%
+\contentsline {subsection}{\numberline {11.3}结论}{106}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}定理}{106}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}运算}{106}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}条件转换思路}{107}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}理解}{107}{subsection.11.7}%
+\contentsline {section}{\numberline {12}一元函数积分学的应用 - 物理应用}{108}{section.12}%
+\contentsline {subsection}{\numberline {12.1}变力沿直线做功}{108}{subsection.12.1}%
 \contentsline {subsection}{\numberline {12.2}抽水做功}{108}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}静水压力（水压力）}{108}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}引力}{109}{subsection.12.4}%

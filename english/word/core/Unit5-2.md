@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## political
@@ -30,29 +30,31 @@
 - policy [ˈpɑːləsi] n. 政策
 - regime [reɪˈʒiːm]
     - n. 政权，政体；社会制度
-    - == administration
+    - == administration n. 管理，管理部分；政府
     - A **regime** is the **ruling government of a country**
-    - The amount(n. 程度) of freedom and restriction([rɪˈstrɪkʃn] n. 限制) that citizens of a country have can change
-      **from regime to regime(政权更迭)**.
+    - The *amount(n. 程度)* of freedom and *restriction([rɪˈstrɪkʃn] n. 限制)* that citizens of a country have can
+      change **from regime to regime**.
+        - from regime to regime 政权更迭
 
 ## focus
 
 - v. （使）集中
 - n. 兴趣（或活动的）焦点
-- be focused on sth. 专注于某事
+- 词组
+    - be focused on sth. 专注于某事
 - unfocused
     - adj. （感情、计划）无目标的
     - We are even farther removed from the **unfocused** newspaper reviews published in England...
-      我们离英国那种模糊松散的报纸评论风格，已经越来越远
 - emphasis [ˈemfəsɪs]
     - n. 重点
-    - put/place emphasis on sth. 强调某事；重视某事
-        - == attach([əˈtætʃ]) importance to sth. 重视
-        - == focus on 关注
-        - == lay stress on 重视
-        - And **placing too much emphasis on** their opinions can ruin([ˈruːɪn] v. 毁坏; 破坏) a
-          fantastic([fænˈtæstɪk] adj. 极好的;) home purchase([ˈpɜːrtʃəs] v. 购买).
-    - emphasise/emphasize ['emfəsaɪz] vt. 强调
+    - 词组
+        - put/place emphasis on sth. 强调某事；重视某事
+            - == *attach([əˈtætʃ])* importance to sth. 重视
+            - == focus on 关注
+            - == lay stress on 重视
+    - And **placing too much emphasis on** their opinions can *ruin([ˈruːɪn] v. 毁坏; 破坏)* a
+      *fantastic([fænˈtæstɪk] adj. 极好的)* home *purchase([ˈpɜːrtʃəs] v. 购买)*.
+    - emphasize ['emfəsaɪz] vt. 强调
 - highlight
     - vt. 强调；突出显示
     - n. 最精彩的部分
@@ -62,9 +64,9 @@
     - concentrate on
     - concentration
         - n. 集中
-        - One great cause of failure([ˈfeɪljər]) is lack of... 失败的一个重要原因是缺乏...
-            - One great cause of failure is lack of **concentration**. 导致失败的一个主要原因是缺乏专注力
-            - One great cause of life's failure is lack of **the positive attitude([ˈætɪtuːd])**
+        - One great cause of *failure([ˈfeɪljər])* is lack of... 失败的一个重要原因是缺乏...
+        - One great cause of failure is lack of **concentration**. 导致失败的一个主要原因是缺乏专注力
+        - One great cause of life's failure is lack of **the positive attitude**
 
 ## industry
 
@@ -76,7 +78,7 @@
 - industrious [ɪnˈdʌstriəs]
     - adj. 勤劳的，勤奋的
     - If you describe someone as **industrious**, you mean they **work very hard**.
-    - He was an **industrious** and willing(adj. 愿意的，乐意的; 自愿的; 积极肯干的) worker.
+    - He was an **industrious** and *willing(adj. 愿意的，乐意的; 自愿的; 积极肯干的)* worker.
 - agriculture [ˈæɡrɪkʌltʃər]
     - n. 农业
     - agricultural [ˌæɡrɪˈkʌltʃərəl] adj. 农业的
@@ -93,26 +95,31 @@
     - == income
     - To **proceed** means to go or continue forward.
     - The **proceeds** of the concert went to charity.
-    - California's plan *envisions([ɛnˈvɪʒən] vt. 设想; 想象)* *treating(处理)* 35,000 acres of forest a year by
-      2020,and 60,000 by 2030-financed from the **proceeds** of the state's emissions-permit auctions.
-      加州的计划设想，到 2020 年每年治理 3.5 万英亩森林，到 2030 年增加到 6 万英亩 — 资金来源于该州排放许可拍卖所得的收益。
-    - pro- == forward 前进 🙂
+    - California's plan envisions treating 35,000 acres of forest a year by 2020,and 60,000 by 2030-financed from the
+      **proceeds** of the state's emissions-permit auctions.
+        - envision [ɛnˈvɪʒən] vt. 设想
+        - treat vt. 把...看作；款待；以...态度对待；处理
+        - auction [ˈɔːkʃn] n. 拍卖
+        - permit [pərˈmɪt]
+            - v. 允许
+            - n. 许可证
+    - pro- 前进 🙂
+        - == forward
         - proclaim [prəˈkleɪm] vt. 宣告，公布(正式); 表明; 赞扬，称颂
         - prospect [ˈprɑːspekt]
             - vi. 勘探
-            - n. 可能性；前途；前景
-
+            - n. 前景；可能性；前途
 - procedure n. 手续；（商业、法律或政治上的）程序
 
 ## important
 
 - adj. 重要的
-- It is important (for sb.) to do sth.
-    - == It is of (adj.(utmost/vital)) importance for sb. to do sth.
-    - 做某事是重要的
-        - It's important for us to protect the environment.
-            - == It's of vital importance for us to protect the environment.
-- == crucial [ˈkruːʃl] == vital == significant
+- == crucial == vital == significant
+- 词组
+    - It is important (for sb.) to do sth. 做某事是重要的
+        - == It is of (adjective(utmost/vital)) importance for sb. to do sth.
+- It's important for us to protect the environment.
+- It's of vital importance for us to protect the environment.
 - importance [ɪmˈpɔːrtns] n. 重要性
 - crucial adj. 至关重要的
 - vital adj. 必要的
@@ -123,7 +130,7 @@
     - adj. 最著名的；最重要的
     - == most important
     - 词组
-        - **first and foremost** 首先而且最重要的是
+        - first and foremost 首先而且最重要的是
 - trivial [ˈtrɪviəl] adj. 不重要的，琐碎的
 - watershed [ˈwɔtərʃed]
     - n. 分水岭
@@ -144,8 +151,8 @@
 - elevate
     - vt. 提升
     - elevator n. 电梯
-    - Even better would be to help <ins>**elevate** notions of beauty(提升审美观)</ins> beyond the material standards of
-      a particular industry. 如果能帮助人们提升对美的认识，使其超越某一行业的物质标准，那就更好了
+    - Even better would be to help **elevate** notions of beauty beyond the material standards of a particular industry.
+        - elevate notions of beauty 提升审美观
         - Even better would be to... 更好的做法/选择是... => 倒装句
         - help do sth./help sb. do sth. 帮助做某事
 - augment [ɔːɡˈment]
@@ -163,7 +170,7 @@
 - If you can not **measure** it, you can not improve it.
 - measurement n. 测量
 - degree
-    - n. **程度**；学位；级别
+    - n. 程度；学位；级别
     - college degree 大学学位
     - bachelor's degree 学士学位
     - master's degree 研究生学位

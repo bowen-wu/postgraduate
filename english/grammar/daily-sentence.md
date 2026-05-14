@@ -836,8 +836,13 @@ new dose of investment risk for families future healthcare.
 
 ### 原句
 
-Though typically about two inches taller now than 140 years ago, today's people-especially those born to families who
-have lived in the U.S. for many generations—apparently reached their limit in the early 1960s.
+- Though typically about two inches taller now than 140 years ago, today's people—especially those born to families who
+  have lived in the U.S. for many generations—apparently reached their limit in the early 1960s.
+    - apparently adv. 显然地
+    - inch [ɪntʃ] n. 英寸
+    - reach one's limit 达到极限
+    - typically adv. 典型地; 代表性地; 通常
+    - though + adjective 可以省略：主语 + be 动词
 
 ## 050
 
@@ -847,8 +852,10 @@ have lived in the U.S. for many generations—apparently reached their limit in 
 
 ### 原句
 
-While Washington and Jefferson privately expressed distaste for slavery, they also understood that it was part of the
-political and economic bedrock of the country they helped to create.
+- While Washington and Jefferson privately expressed distaste for slavery, they also understood that it was part of the
+  political and economic bedrock of the country they helped to create.
+    - express distaste for... 表达对...的厌恶
+    - slavery [ˈsleɪvəri] n. 奴隶制
 
 ## 051
 
@@ -858,9 +865,16 @@ political and economic bedrock of the country they helped to create.
 
 ### 原句
 
-Washington, who had begun to believe that all men were created equal after observing the bravery of the black soldiers
-during the Revolutionary War, overcame the strong opposition of his relatives to grant his slaves their freedom in his
-will.
+- Washington, who had begun to believe that all men were created equal after observing the bravery of the black soldiers
+  during the Revolutionary War, overcame the strong opposition of his relatives to grant his slaves their freedom in his
+  will.
+    - overcome vt. 战胜，克服
+    - opposition [ˌɑːpəˈzɪʃn] n. （强烈的）反对，反抗
+    - all men are created equal 人人生而平等
+    - observe vt. 注意到；观察
+    - bravery n. 勇敢的行为（或态度）
+    - grant sb. sth. 给予某人某物
+    - in one's will 在遗嘱中
 
 ## 052
 

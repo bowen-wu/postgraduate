@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## spread
@@ -70,8 +70,7 @@
 - 词组
     - suffer *from* 遭受
 - Every life is a *genuine([ˈdʒenjuɪn] adj. 真正的)* *recollection(n. 回忆)** of **suffering**; **suffering** for others
-  the
-  process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
+  the process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
     - hardships == suffering
 - confront 😔
     - vt. 面临（问题、任务、困难等）

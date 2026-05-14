@@ -172,7 +172,7 @@
 - overturn
     - vt. 推翻（法律裁决）；倾覆
     - == knock out
-    - Contrast: uphold vt. 维持（原判、裁决等）
+    - Opposite: uphold vt. 维持（原判、裁决等）
     - In a *rare([rer] adj. 稀少的，罕见的)* *unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的)* ruling, the
       U.S. Supreme Court has **overturned** the *corruption( [kəˈrʌpʃn] n. 腐败，贪污)* *conviction([kənˈvɪkʃn] n. 判罪)*
       of a former Virginia governor, Robert MacDonnell.
