@@ -79,6 +79,7 @@ export function createStudyUseCases(deps) {
 
   function handleSentenceRecall(understood) {
     if (!understood) {
+      uiRenderer.showSentenceTranslation(getUi());
       recordError();
       uiRenderer.showToast(getUi(), '已记录不理解');
       uiRenderer.renderNextAction(getUi());

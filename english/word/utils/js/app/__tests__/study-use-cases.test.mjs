@@ -127,6 +127,7 @@ test('handleSentenceRecall true reveals translation and enters confirmation stat
 
 test('handleSentenceRecall false records error and stays on current card', () => {
   const nextActionCalls = [];
+  let showSentenceTranslationCalls = 0;
   const { state, calls } = createDeps({
     currentIndex: 0,
     displayOrder: [0, 1],
@@ -147,7 +148,7 @@ test('handleSentenceRecall false records error and stays on current card', () =>
       revealAll() {},
       renderNextAction() { nextActionCalls.push('next'); },
       renderConfirmationActions() {},
-      showSentenceTranslation() {},
+      showSentenceTranslation() { showSentenceTranslationCalls += 1; },
       updateStatsUI() { calls.updateStatsUI += 1; },
       showToast(_ui, msg) { calls.toasts.push(msg); },
       showCompletionScreen() { calls.completion += 1; }
@@ -162,6 +163,7 @@ test('handleSentenceRecall false records error and stays on current card', () =>
 
   assert.equal(state.currentIndex, 0);
   assert.equal(state.stats.a.errors, 1);
+  assert.equal(showSentenceTranslationCalls, 1);
   assert.deepEqual(calls.toasts, ['已记录不理解']);
   assert.deepEqual(nextActionCalls, ['next']);
 });
