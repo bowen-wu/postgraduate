@@ -45,7 +45,9 @@
     - guide sb. to do sth.
     - We hired a local **guide** to get us across the mountains.
     - As a rough **guide**, a normal adult needs to drink eight glasses of water a day.
-        - rough [rʌf] adj. 大致的
+        - rough [rʌf]
+            - adj. 大致的
+            - Similar: tough [tʌf] adj. 困难的；强硬的；强壮的
         - as a rough guide 大致来说/作为一个粗略标准/粗略估计
     - The rough **guide** to marketing success used to be that you got what you paid for.
         - a guide to... ...的指南/...的准则

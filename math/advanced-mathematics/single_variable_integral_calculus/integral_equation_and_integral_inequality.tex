@@ -7,9 +7,14 @@
     \subsection{积分等式}
 
     \begin{enumerate}
-        \item 用$\color{red}{\bigstar}$积分中值定理：若函数$f(x)$在区间$[a, b]$上连续，则至少存在一点$\xi \in [a, b]$，使
+        \item 用\textbf{积分中值定理}：若函数$f(x)$在区间$[a, b]$上连续，则至少存在一点$\xi \in [a, b]$，使
         \[
             \int_a^b f(x)\,\mathrm{d}x = f(\xi)(b - a)
+        \]
+
+        $\color{red}{\bigstar}$推广的积分中值定理: 设$f(x), g(x)$在$[a, b]$上连续，且$g(x)$在$[a, b]$上不变号（恒正、恒负或恒为0），则存在$\xi \in (a, b)$，使得
+        \[
+            \int_a^b f(x)g(x)\,\mathrm{d}x = f(\xi)\int_a^b g(x)\,\mathrm{d}x
         \]
         \item 用夹逼准则
         \item 用积分法: 恒等变形、换元法、分部积分法
@@ -54,7 +59,7 @@
             \int_a^b f(x)\,\mathrm{d}x = F(x)\Big|_{a}^{b} = F(b) - F(a)
         \]或
         \[
-            \int_a^x f'(t)\,\mathrm{d}t = f(x) - f(a)
+            f(x) - f(a) = \int_a^x f'(t)\,\mathrm{d}t
         \]
     \end{enumerate}
 
@@ -65,19 +70,10 @@
         \item 设$f(x)$在$[0, 1]$上连续，则$\lim\limits_{n\to \infty} \displaystyle\int_0^1 x^{n}f(x)\,\mathrm{d}x = 0$
         \item $f(x + 2) - f(x) = \dint_x^{x + 2} f'(t)\,\mathrm{d}t$
         \item $f(x) = f(0) + f'(0)x + \displaystyle\frac{f''(\xi)}{2}x^2$，若$f''(\xi) < 0$，则$f(x) \leq f(0) + f'(0)x$
-        \item $|f(x)| \geq |f(0)| + |f'(0)x| + \left|\displaystyle\frac{f''(\xi)}{2}x^2\right|$
+        \item $|f(x)| \leq |f(0)| + |f'(0)x| + \left|\displaystyle\frac{f''(\xi)}{2}x^2\right|$
         \item 若$f(x) \leq g(x)$，则$\dint_a^b f(x)\,\mathrm{d}x \leq \dint_a^b g(x)\,\mathrm{d}x$
         \item $\left|\dint u\,\mathrm{d}v\right| = \left|uv - \dint v\,\mathrm{d}u\right| \leq |uv| + \dint |v|\,\mathrm{d}u$
         \item $\left|\dint_a^b\right| = \left|\dint_a^c + \dint_c^b\right| \leq \left|\dint_a^c\right| + \left|\dint_c^b\right|$
-    \end{enumerate}
-
-    \subsection{定理}
-
-    \begin{enumerate}
-        \item 推广的积分中值定理: 设$f(x), g(x)$在$[a, b]$上连续，且$g(x)$在$[a, b]$上不变化，则存在$\xi \in (a, b)$，使得
-        \[
-            \int_a^b f(x)g(x)\,\mathrm{d}x = f(\xi)\int_a^b g(x)\,\mathrm{d}x
-        \]
     \end{enumerate}
 
     \subsection{运算}
@@ -117,6 +113,7 @@
             \item 逆运算: $|f(x)| \leq \displaystyle\frac{1}{2}\int_a^b |f'(x)|\,\mathrm{d}x \Rightarrow |f(x)| + |f(x)| \leq \displaystyle\int_a^b |f'(x)|\,\mathrm{d}x$
             \item 恒等变形: $|f(x)| = |f(x) - 0| = |f(x) - f(a)| = |f(x) - f(b)|$
         \end{itemize}
+        \item 遇到三角函数加减可以考虑进行换元（诱导公式：$x = \dfrac{\pi}{2} - t$）
     \end{enumerate}
 
     \subsection{理解}
@@ -128,7 +125,6 @@
         \]
 
         \begin{analysisbox}[Example]
-
             由于 $f(x)$ 在 $[1,2]$ 上连续，且 $e^{-x^n}$ 在 $[1,2]$ 上非负，
             由积分中值定理可知，存在 $\xi_n \in (1,2)$，使得
             \[
@@ -183,6 +179,86 @@
             \]
 
         \end{analysisbox}
-    \end{enumerate}
+        \item 对比牛顿-莱布尼茨定理、拉格朗日中值定理和积分中值定理
+        \begin{analysisbox}
+            \textbf{1. 牛顿—莱布尼茨定理}
+            \[
+                \int_a^b f(x)\,\mathrm{d}x = F(x)\Big|_a^b = F(b)-F(a) \qquad (F'(x)=f(x))
+            \]
 
+            核心思想： {\color{red}{积分 = 增量}}。平均变化率一定在某点真正出现
+
+            \vspace{0.5em}
+
+            \textbf{2. 拉格朗日中值定理}
+            \[
+                f(b)-f(a) = f'(\xi)(b-a) \qquad \xi \in (a,b)
+            \]
+
+            核心思想： {\color{red}{总增量 = 某一点导数 $\times$ 区间长度}}。平均高度一定在某点真正出现。
+
+            \vspace{0.5em}
+
+            \textbf{3. 积分中值定理}
+            \[
+                \int_a^b f(x)\,\mathrm{d}x = f(\xi)(b-a) \qquad \xi \in (a,b)
+            \]
+
+            核心思想： {\color{red}{总面积 = 某一点高度 $\times$ 区间长度}}。局部变化累积等于整体变化
+
+            \vspace{1em}
+
+            \textbf{4. 牛顿—莱布尼茨 + 拉格朗日 $\Rightarrow$ 积分中值}
+
+            由牛顿—莱布尼茨定理：
+            \[
+                \int_a^b f(x)\,\mathrm{d}x = F(b)-F(a)
+            \]
+
+            对原函数 $F(x)$ 使用拉格朗日中值定理：
+            \[
+                F(b)-F(a) = F'(\xi)(b-a)
+            \]
+
+            又因为：
+            \[
+                F'(\xi)=f(\xi)
+            \]
+
+            所以：
+            \[
+                \int_a^b f(x)\,\mathrm{d}x = f(\xi)(b-a)
+            \]
+
+            即得到积分中值定理。
+
+            \vspace{1em}
+
+            \textbf{5. 三大定理之间的联系}
+
+            \[
+                \boxed{
+                    \text{积分}
+                    \xleftrightarrow{\text{牛顿—莱布尼茨}}
+                    \text{增量}
+                    \xleftrightarrow{\text{拉格朗日}}
+                    \text{导数}
+                }
+            \]
+
+            其中：
+
+            \begin{itemize}
+                \item 牛顿—莱布尼茨：建立“积分 $\leftrightarrow$ 增量”的联系
+                \item 拉格朗日：建立“增量 $\leftrightarrow$ 导数”的联系
+                \item 积分中值：建立“积分 $\leftrightarrow$ 函数值”的联系
+            \end{itemize}
+
+            本质上，它们都在表达：
+
+            \[
+                \boxed{ \text{整体行为} \quad\Longleftrightarrow\quad \text{某个局部点的行为} }
+            \]
+        \end{analysisbox}
+    \end{enumerate}
 \end{document}

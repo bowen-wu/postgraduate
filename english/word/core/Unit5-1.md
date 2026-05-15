@@ -85,6 +85,8 @@
     - keep a tight hold 严格控制
 - But it did so while **holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his *conduct(n. 行为)*, which
   included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
+    - it did so 它这样做了
+    - seek access to... 寻求接触.../试图获得进入...的机会/谋求接近...
 - holder n. 持有者
 - withhold
     - vt. 拒绝给；保留；隐瞒
@@ -111,7 +113,10 @@
 - 词组
     - provide sb. with sth. 提供某物给某人
         - == provide sth. for sb.
-- provide an *adequate([ˈædɪkwət])* service 提供足够的服务
+- provide an adequate service 提供足够的服务
+    - adequate [ˈædɪkwət]
+        - adj. 足够的
+        - == sufficient [səˈfɪʃnt] adj. 足够的
 - provide *digital([ˈdɪdʒɪtl])* service
 - provider n. 提供者
 - provision
@@ -142,10 +147,14 @@
     - Render is a synonym of "**make**"-technically it means "**cause to become**".
     - An illness might **render/make** you unable to walk, or a *shocking(adj. 可怕的)* sight might **render/make** you
       speechless.
-    - One could *interpret(v. 诠释; 领会)* much of the work of *Beethoven(贝多芬)* by saying that
-      *suffering(n. 痛苦; 受苦)* is *inevitable([ɪnˈevɪtəbl] adj. 不可避免的)*, but the
-      *courage([ˈkɜːrɪdʒ] n. 勇气; 无畏)* to fight it **renders/makes** life worth living.
+    - One could interpret much of the work of *Beethoven(贝多芬)* by saying that *suffering(n. 痛苦; 受苦)* is
+      *inevitable([ɪnˈevɪtəbl] adj. 不可避免的)*, but the *courage([ˈkɜːrɪdʒ] n. 勇气; 无畏)* to fight it
+      **renders/makes** life worth living.
       人们可以这样诠释贝多芬的大部分作品：苦难是不可避免的，但与之抗争的勇气使生命变得值得活下去。
+        - interpret
+            - v. 解释
+            - == explain
+            - Similar: interrupt v. 中断，打断
 - complementary adj. 补充的
 
 ## turn
@@ -203,6 +212,7 @@
             - == advantages
         - cons 缺点，坏处
             - == disadvantages
+        - admission n. 准许进入
 
 ## Words
 

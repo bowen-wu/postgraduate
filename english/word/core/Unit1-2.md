@@ -75,7 +75,7 @@
 - 词组
     - accord with 与...一致；同...相符合
     - according to 依据；根据
-- **Since** desire and *will(n. 意志)* **are damaged** by the presence of thoughts **that** _do not_ **accord
+- **Since** desire and *will(n. 意志，遗嘱)* **are damaged** by the presence of thoughts **that** _do not_ **accord
   with** _desire_, Allen **concluded**: "We do not **attract** **what** we want, but **what** we **are**".
   因为那些与我们欲望不一致的思想会损害我们的欲望和意志，艾伦得出结论说：“我们吸引来的不是我们想要的东西，而是与我们本质一致的东西。”
 - accordingly adv. 相应地；因此

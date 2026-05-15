@@ -27,7 +27,7 @@
             \medskip
             \textbf{物理公式}
             \begin{enumerate}
-                \item 功：$W = F\cdot s$
+                \item 功：$W = F\cdot s = mg\cdot s = \rho vg\cdot s = \rho Shg\cdot s$
             \end{enumerate}
         \end{minipage}
         \hfill
@@ -90,52 +90,75 @@
         \end{minipage}
     \end{center}
 
-    \subsection{古鲁金第一定理}
+    \subsection{古鲁金第一定理：旋转体的侧面积}
 
-    \subsection{古鲁金第二定理}
+    设平面光滑曲线弧$L$的长度为$l$，其形心坐标为$C(\bar{x}, \bar{y})$。若曲线弧$L$绕其所在平面内一条{\color{red}{不与曲线弧相交}}的定直线旋转一周，则所得旋转曲面的侧面积为
+    \[
+        S = 2\pi l \cdot r(\bar{x}, \bar{y})
+    \]
+    其中$r(\bar{x}, \bar{y})$为形心到旋转轴的距离
 
-    \subsection{基础概念}
-
+    \medskip
     \begin{enumerate}
+        \item 若曲线弧$L$绕$x$轴旋转一周，则$S = 2\pi l |\bar{y}|$
+        \item 若曲线弧$L$绕$y$轴旋转一周，则$S = 2\pi l |\bar{x}|$
+        \item 一般地，若绕某条定直线旋转，则关键是先求{\color{red}{形心到该直线的距离}}$d$
+    \end{enumerate}
+
+    \subsection{古鲁金第二定理：旋转体的体积}
+
+    设平面图形$D$的面积为$A$，其形心坐标为$C(\bar{x}, \bar{y})$。若平面图形$D$绕其所在平面内一条{\color{red}{不与该图形相交}}的定直线旋转一周，则所得{\color{red}{旋转体的体积}}为
+    \[
+        V = 2\pi r(\bar{x}, \bar{y})\cdot A
+    \]
+    其中$r(\bar{x}, \bar{y})$为平面图形形心到旋转轴的距离
+
+    \medskip
+    \begin{enumerate}
+        \item 若平面图形$D$绕$x$轴旋转一周，则$V = 2\pi |\bar{y}|\,A$
+        \item 若平面图形$D$绕$y$轴旋转一周，则$V = 2\pi |\bar{x}|\,A$
+        \item 一般地，若绕某条定直线旋转，则关键仍是先求{\color{red}{形心到旋转轴的距离}}$d$
     \end{enumerate}
 
     \subsection{结论}
 
     \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{定理}
-
-    \begin{enumerate}
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{方法总结}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{条件转换思路}
-
-    \begin{enumerate}
-
+        \item 圆的问题将圆心放在坐标原点，此时圆方程最简
     \end{enumerate}
 
     \subsection{理解}
 
     \begin{enumerate}
+        \item 古鲁金第二定理 VS. 10.2 用定积分表达和计算旋转体的体积
+        \begin{analysisbox}
+            设平面区域
+            \[
+                D = \{(x, y) \mid 0 \le y \le f(x),\ a \le x \le b\}
+            \]
+            则
+            \[
+                A = \int_a^b f(x)\,\mathrm{d}x
+            \]
+            形心坐标（10.4 平面上的曲边梯形的形心坐标公式）为：
+            \[
+                \bar{x} = \frac{\displaystyle\int_a^b x f(x)\,\mathrm{d}x}{\displaystyle\int_a^b f(x)\,\mathrm{d}x},
+                \qquad
+                \bar{y} = \frac{\displaystyle\frac12\int_a^b [f(x)]^2\,\mathrm{d}x}{\displaystyle\int_a^b f(x)\,\mathrm{d}x}
+            \]
+
+            所以
+            \begin{enumerate}
+                \item 绕$x$轴旋转一周
+                \[
+                    V = 2\pi \bar{y}A = 2\pi \cdot \frac{\frac12\dint_a^b [f(x)]^2\,\mathrm{d}x}{\dint_a^b f(x)\,\mathrm{d}x}\cdot \int_a^b f(x)\,\mathrm{d}x = \pi\int_a^b [f(x)]^2\,\mathrm{d}x
+                \]
+                \item 绕$y$轴旋转一周
+                \[
+                    V = 2\pi \bar{x}A = 2\pi \int_a^b x f(x)\,\mathrm{d}x
+                \]
+            \end{enumerate}
+
+        \end{analysisbox}
     \end{enumerate}
 
 \end{document}

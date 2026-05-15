@@ -895,8 +895,10 @@ entirely new brain cells, that can jump our trains of thought onto new, innovati
 
 ### 原句
 
-In fact, the more new things we try the more we step outside our comfort zonethe more inherently creative we become,
-both in the workplace and in our personal lives.
+- In fact, the more new things we try—the more we step outside our comfort zone—the more inherently creative we become,
+  both in the workplace and in our personal lives.
+    - step outside one's comfort zone 走出舒适区/跳出熟悉环境
+    - inherently adv. 固有地，内在地
 
 ## 054
 
@@ -906,8 +908,11 @@ both in the workplace and in our personal lives.
 
 ### 原句
 
-More than 60,000 people have purchased the PTs since they first became available without prescriptions last year,
-according to Doug Fogg, chief operating officer of Identigene, which makes the over-the-counter kits.
+- More than 60,000 people have purchased the PTKs since they first became available without prescriptions last year,
+  according to Doug Fogg, chief operating officer of Identigene, which makes the over-the-counter kits.
+    - prescription n. 药房
+    - without prescription 无需处方
+    - over-the-counter 非处方的(OTC)
 
 ## 055
 
@@ -917,9 +922,17 @@ according to Doug Fogg, chief operating officer of Identigene, which makes the o
 
 ### 原句
 
-Progress in both areas is undoubtedly necessary for the social, political, and intellectual development of these and all
-other societies; however, the conventional view that education should be one of the very highest priorities for
-promoting rapid economic development in poor countries is wrong.
+- Progress in both areas is undoubtedly necessary for the social, political, and intellectual development of these and
+  all other societies; however, the conventional view that education should be one of the very highest priorities for
+  promoting rapid economic development in poor countries is wrong.
+    - progress in... 在...方面的进步
+    - be necessary for... 对...是必要的
+    - intellectual [ˌɪntəˈlektʃuəl]
+        - adj. 智力的
+        - n. 知识分子
+    - conventional
+        - adj. （行为、观念等）传统的；（方法或产品）传统的
+        - Similar: conservation n. 节约；保护
 
 ## 056
 
@@ -929,8 +942,10 @@ because 从句中主语和谓语动词分别是哪部分？
 
 ### 原句
 
-We are fortunate that it is, because building new educational systems there and putting enough people through them to
-improve economic performance would require two or three generations.
+- We are fortunate that it is, because building new educational systems there and putting enough people through them to
+  improve economic performance would require two or three generations.
+    - put sb. through sth. 让某人经历.../使某人完成...
+    - economic performance 经济表现/经济状况
 
 ## 057
 

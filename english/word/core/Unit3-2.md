@@ -52,7 +52,8 @@
         - tolerate [ˈtɑːləreɪt] vt. 容忍
     - observation
         - n. 观察；评论
-        - The researchers' argument <ins>stems from(源于)</ins> a simple **observation** about social influence.
+        - The researchers' argument stems from a simple **observation** about social influence.
+            - stem from 源于
     - observer n. 观察者
 - preserve [prɪˈzɜːrv]
     - vt. 维护；保护

@@ -32,8 +32,11 @@
     - n. 政权，政体；社会制度
     - == administration n. 管理，管理部分；政府
     - A **regime** is the **ruling government of a country**
-    - The *amount(n. 程度)* of freedom and *restriction([rɪˈstrɪkʃn] n. 限制)* that citizens of a country have can
-      change **from regime to regime**.
+    - The amount of freedom and *restriction([rɪˈstrɪkʃn] n. 限制)* that citizens of a country have can change
+      **from regime to regime**.
+        - amount
+            - vi 合计
+            - n. 程度；数量，总额（不可数）
         - from regime to regime 政权更迭
 
 ## focus
@@ -45,11 +48,12 @@
 - unfocused
     - adj. （感情、计划）无目标的
     - We are even farther removed from the **unfocused** newspaper reviews published in England...
+        - be removed from... 远离.../与...相差很远/不接近...
 - emphasis [ˈemfəsɪs]
     - n. 重点
     - 词组
         - put/place emphasis on sth. 强调某事；重视某事
-            - == *attach([əˈtætʃ])* importance to sth. 重视
+            - == attach importance to sth. 重视
             - == focus on 关注
             - == lay stress on 重视
     - And **placing too much emphasis on** their opinions can *ruin([ˈruːɪn] v. 毁坏; 破坏)* a
@@ -95,7 +99,9 @@
     - == income
     - To **proceed** means to go or continue forward.
     - The **proceeds** of the concert went to charity.
-    - California's plan envisions treating 35,000 acres of forest a year by 2020,and 60,000 by 2030-financed from the
+        - concert [ˈkɑːnsərt] n. 音乐会，演奏会
+        - charity n. 慈善事业
+    - California's plan envisions treating 35,000 acres of forest a year by 2020,and 60,000 by 2030—financed from the
       **proceeds** of the state's emissions-permit auctions.
         - envision [ɛnˈvɪʒən] vt. 设想
         - treat vt. 把...看作；款待；以...态度对待；处理
@@ -152,11 +158,15 @@
     - vt. 提升
     - elevator n. 电梯
     - Even better would be to help **elevate** notions of beauty beyond the material standards of a particular industry.
+        - notion [ˈnoʊʃn]
+            - n. 看法
+            - == concept n. 概念；观念
         - elevate notions of beauty 提升审美观
         - Even better would be to... 更好的做法/选择是... => 倒装句
         - help do sth./help sb. do sth. 帮助做某事
 - augment [ɔːɡˈment]
     - vt. 增加，提高
+    - Similar: argument n. 观点；争论；论据
     - **Augmented** Reality 增强现实 AR
 - heighten [ˈhaɪtn]
     - v. （使）增加
@@ -177,6 +187,7 @@
     - doctoral degree 博士学位
     - 词组
         - to some degree 在某种程度上
+            - to some extent 在某种程度上，在一定程度上
         - to a certain degree 在一定程度上
 - rate
     - vt. 对...作评估；认为...非常好
@@ -186,6 +197,7 @@
     - To **rate** the instructor's overall effectiveness.
     - One Gallup poll found that 20 percent of Americans who have been unemployed for at least a year report having
       depression, double the **rate** for working Americans.
+        - report doing sth. 表示自己.../报告称...
 - scale
     - vt. 缩减
     - n. 规模；秤；等级体系
@@ -199,19 +211,20 @@
 - bond
     - n. 纽带; 联系;
 - capitalism [ˈkæpɪtlˌɪzəm]
-    - 资本主义
+    - n. 资本主义
 - socialism [ˈsoʊʃəlɪzəm]
-    - 社会主义
+    - n. 社会主义
 - patriotism [ˈpeɪtriətɪzəm]
-    - 爱国主义
+    - n. 爱国主义
 - transcendent [trænˈsɛndənt]
     - == outstanding
     - adj. 卓越的，出众的
 
 ## 词组
 
+- as we all know 众所周知
+
 ## 句式
 
 - It is a truth universally acknowledged that... 这是一个被普遍承认的真理
-    - It is a **universal truth** that man is the only animal that has the power to speak and reason.
-    - == as we all know 众所周知
+- It is a **universal truth** that man is the only animal that has the power to speak and reason.

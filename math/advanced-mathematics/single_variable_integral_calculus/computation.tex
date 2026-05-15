@@ -188,7 +188,7 @@
         \int f(x)\,\mathrm{d}x \xlongequal{x = g(u)} \int f[g(u)]\,\mathrm{d}[g(u)] = \int f[g(u)]g'(u)\,\mathrm{d}u
     \]
 
-    $x = g(u)$须是单调可导函数
+    $x = g(u)$须是单调可导函数。\textbf{本质：$f(x)$比较复杂，引入新的变量$u$，将原式化简为$\dint h(u)\,\mathrm{d}u$，可带入公式}
 
     \begin{enumerate}
         \item 三角函数代换：当被积函数含有如下根式时，可作三角函数代换，这里$a > 0$
@@ -316,7 +316,7 @@
                     \int \frac{2}{(2x-1)^2}\,\mathrm{d}x = \int \frac{1}{(2x-1)^2}\,\mathrm{d}(2x-1) = -\frac{1}{2x-1} + C
                 \]
             \end{analysisbox}
-            \item $Q_m(x)$的二次单因式$px^2 + qx + r$产生一项$\displaystyle\frac{Ax + B}{px^2 + qx + r}$。须$\Delta = q^2 - 4pr < 0$
+            \item $Q_m(x)$的二次单因式$px^2 + qx + r$产生一项$\displaystyle\frac{Ax + B}{px^2 + qx + r}$。须$\Delta = q^2 - 4pr < 0$，拆出单因式后，使用$\dint \dfrac{1}{a^2 + x^2}\,\mathrm{d}x = \displaystyle\frac{1}{a}\arctan \displaystyle\frac{x}{a} + C, a > 0$
             \begin{analysisbox}[Example]
                 \[
                     \int \frac{x-1}{x^2 + 1}\,\mathrm{d}x = \int \frac{1}{2}\frac{2x}{x^2 + 1}\,\mathrm{d}x - \int \frac{1}{x^2 + 1}\,\mathrm{d}x = \frac{1}{2}\ln (x^2 + 1) - \arctan x + C
@@ -380,7 +380,6 @@
                 \]
             \end{analysisbox}
             \item \begin{analysisbox}[Example]
-
                       \[
                           \frac{4x^2 - 6x - 1}{(x+1)(2x-1)^2}
                           =
@@ -709,6 +708,7 @@
         \item 若 $f(x)$ 为连续的偶函数，则 $f(x)$ 的全体原函数中，只有 $\dint_{0}^{x} f(t)\,\mathrm{d}t$ 是奇函数
 
         \item $f(x)$ 是可积且以 $T$ 为周期的周期函数，则 $\dint_{0}^{x} f(t)\,\mathrm{d}t$ 是以 $T$ 为周期的周期函数 $\Leftrightarrow \dint_{0}^{T} f(x)\,\mathrm{d}x = 0 \Leftrightarrow \dint_{a}^{x} f(t)\,\mathrm{d}t = \dint_{a}^{0} f(t)\,\mathrm{d}t + \dint_{0}^{x} f(t)\,\mathrm{d}t$ 亦是以 $T$ 为周期的周期函数 $(a \neq 0)$
+        \item 若被积函数中含有绝对值，可以通过拆分区间来消去绝对值
 
     \end{enumerate}
 
