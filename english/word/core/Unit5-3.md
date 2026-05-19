@@ -28,6 +28,7 @@
 - n. 压力
 - == pressure
 - Such bodily reaction might help *moderate([ˈmɑːdəreɪt] vt. 使和缓)* the effects of psychological **stress**.
+    - psychological adj. 心理的；心理学的
 - The crash **stresses** the urgency to strengthen security worldwide.
 - stressful adj. 有压力的
 - pressure [ˈpreʃər]
@@ -35,6 +36,7 @@
     - Members of social networks, for instance, are learning that they can hijack media to apply **pressure** on the
       businesses that originally created them.
         - apply pressure on sb./sth. 对某人/某事施加压力
+        - originally adv. 起初
 - burden n. 负担；重担
 - tension n. 紧张
 
@@ -66,9 +68,12 @@
         - prefer A to B 比起B更喜欢A
         - prefer A from B 从某个来源或角度来看，偏好 A
     - They cross-check sources and **prefer** news from different perspectives.
-    - preference
+    - preference [ˈprefrəns]
         - n. 偏好；优先考虑
         - Thinking too much can also harm our ability to form **preferences**
+            - form
+                - v. 组成；产生
+                - n. 形式；种类；外形
         - **Preference** will be given to those experienced in international conferences or other similar activities.
 
 ## benefit
@@ -79,6 +84,9 @@
 - A benefit from B
 - It is as though 20 years of ever-tougher reforms of the job search and **benefit administration system** never
   happened. 看起来就好像二十年来对求职与福利管理体系日益严格的改革从未发生过一样
+    - as though 好像.../仿佛...
+    - ever-tougher 越来越严格（ever + 比较级，越来越...）
+    - job search 求职
 - beneficial adj. 有帮助的
 - benefactor [ˈbenɪfæktər]
     - n. 赞助者
@@ -90,12 +98,13 @@
     - profit **from**
     - profitable
         - adj. 可盈利的
-        - == handsome adj. **可观的**；帅气的
+        - == handsome adj. 可观的；帅气的
         - == lucrative [ˈluːkrətɪv] adj. 获利丰厚的
 - lucrative [ˈluːkrətɪv]
     - adj. 获利丰厚的
     - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
       finish line" whether that the toward graduate school, medical school or a **lucrative** career.
+        - perpetuate [pərˈpetʃueɪt] 😔 v. 使继续；使永久化；使长久（尤指不好的事物）
     - profitable/lucrative/handsome rewards/salary/income
 
 ## attention
@@ -106,7 +115,6 @@
     - draw attention to sb./sth. 引起人们对某人/某事的注意
 - attentive
     - adj. 注意的；体贴的
-    - 体贴的
     - == considerate adj. 考虑周到的; 体贴的
     - == kind
 - distract
@@ -116,7 +124,7 @@
     - attract [əˈtrækt] v. 吸引；引起（反应）
     - distraction
         - n. 使人分心的事
-        - Gal Newport recommends **building a habit** of "deep work"-the ability to focus without **distraction**.
+        - Gal Newport recommends **building a habit** of "deep work"—the ability to focus without **distraction**.
             - build a habit 养成一个习惯/建立习惯
 
 ## fact
@@ -130,7 +138,7 @@
 - factual [ˈfæktʃuəl] adj. （根据）事实的
 - virtual
     - adj. 实际上的；（计算机）虚拟的
-    - Virtual Reality(VR)
+    - Virtual Reality
     - virtually
         - adv. 几乎
         - == almost
@@ -167,17 +175,21 @@
 - vt. 论证，陈述理由
 - sb. **argue/hold/maintain/believe** that...
 - It is **argued** that the influence of transient investment on public companies can be *adverse(adj. 不利的)*.
+    - transient [ˈtrænʃnt] adj. 短暂的
 - arguable
     - adj. 可论证的；有一定理由的；有争议的
     - arguably [ˈɑːrɡjuəbli]
         - adv. 可论证地; 可以说; 按理说
         - Efforts in Canada and elsewhere have been **arguably languid** at best.
             - languid [ˈlæŋɡwɪd] adj. 疲倦的; 没精打采的，呆滞的; 萧条的; 慢吞吞
+            - at best 往好了说/充其量/最乐观地说
 - argument
     - n. 观点；争论；论据
     - Similar: augment [ɔːɡˈment] vt. 增加，提高
     - Least rousing, he thinks, was rational **argument**, although his co-authors say reason might
       <ins>play a bigger role(发挥更重要作用)</ins>.
+        - least rousing 最不容易激起热情的/最没有感染力的
+        - rational [ˈræʃnəl] adj. 理性的
     - The researchers' **argument** stems from a simple observation about social influence.
         - stem from 源于
 - dispute [dɪˈspjuːt] 😔
@@ -193,7 +205,9 @@
     - n. （公开的）争论 😔
     - The world art market brings together great wealth, enormous egos, greed, passion and **controversy** in a way
       matched by few other industries. 全球艺术市场将巨额财富、强烈的自我意识、贪婪、激情与争议融汇在一起，这种混合在其他行业中几乎无可匹敌。
-        - bring together 使聚集、集合、汇集
+        - bring together 把...聚集在一起、集合、汇集
+        - in a way 以一种...的方式
+        - a way matched by few other industries 一种几乎没有其他行业能比得上的方式
     - controversial [ˌkɑːntrəˈvɜːrʃl]
         - adj. 引起争论的 😔
         - In Arizona vs. United States, the majority *overturned* three of the four **contested** provisions of
@@ -232,6 +246,6 @@
 - fit in
     - 融入
 - take a firm stand 采取坚定的立场/表明坚决的态度
-    - == hold one’s ground
+    - == hold one's ground
 
 ## 句式

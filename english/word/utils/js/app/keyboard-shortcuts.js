@@ -111,7 +111,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(true);
           keyboardState.isConfirming = false;
         } else {
-          app.revealSentenceAnswer();
+          app.revealSentenceAnswer(true);
           keyboardState.isConfirming = true;
         }
         return;
@@ -142,7 +142,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(true);
           keyboardState.isConfirming = false;
         } else {
-          app.revealSentenceAnswer();
+          app.revealSentenceAnswer(true);
           keyboardState.isConfirming = true;
         }
         return;
@@ -173,7 +173,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(false);
           keyboardState.isConfirming = false;
         } else {
-          app.handleSentenceRecall(false);
+          app.revealSentenceAnswer(false);
         }
         return;
       }
@@ -202,7 +202,7 @@ function createHandlers({ app, useCases, keyboardState, resetCardLocalState, cur
           app.confirmRecall(false);
           keyboardState.isConfirming = false;
         } else {
-          app.handleSentenceRecall(false);
+          app.revealSentenceAnswer(false);
         }
         return;
       }

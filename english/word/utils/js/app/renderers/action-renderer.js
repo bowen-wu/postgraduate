@@ -113,8 +113,8 @@ export function renderRecallActions(ui) {
           Translate
           <span class="btn-spinner"></span>
         </button>
-        <button class="btn-success" data-action="reveal-sentence-answer">Know</button>
-        <button class="btn-danger" data-action="handle-sentence-recall" data-understood="false">Don't know</button>
+        <button class="btn-success" data-action="reveal-sentence-answer" data-claimed-known="true">Know</button>
+        <button class="btn-danger" data-action="reveal-sentence-answer" data-claimed-known="false">Don't know</button>
       `;
     } else {
       ui.actionArea.innerHTML = `

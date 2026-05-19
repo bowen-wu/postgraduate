@@ -23,7 +23,7 @@ function createDeps() {
     prev: 0,
     toggleMode: 0,
     revealPhraseAnswer: [],
-    revealSentenceAnswer: 0,
+    revealSentenceAnswer: [],
     handleRecall: [],
     confirmRecall: [],
     handleSentenceRecall: []
@@ -36,7 +36,7 @@ function createDeps() {
     translatePhrase: () => {},
     translateSentence: () => {},
     revealPhraseAnswer: (v) => { calls.revealPhraseAnswer.push(v); },
-    revealSentenceAnswer: () => { calls.revealSentenceAnswer += 1; },
+    revealSentenceAnswer: (v) => { calls.revealSentenceAnswer.push(v); },
     confirmRecall: (v) => { calls.confirmRecall.push(v); },
     handleRecall: (v) => { calls.handleRecall.push(v); },
     handleSentenceRecall: (v) => { calls.handleSentenceRecall.push(v); },
@@ -121,15 +121,30 @@ test('sentence in recall mode uses two-step confirmation flow', () => {
 
   const deps = createDeps();
   deps.handler(createEvent('y'));
-  assert.equal(deps.calls.revealSentenceAnswer, 1);
+  assert.deepEqual(deps.calls.revealSentenceAnswer, [true]);
   assert.deepEqual(deps.calls.handleSentenceRecall, []);
   assert.deepEqual(deps.calls.handleRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, []);
   assert.equal(deps.keyboardState.isConfirming, true);
 
   deps.handler(createEvent('n'));
+  assert.deepEqual(deps.calls.revealSentenceAnswer, [true]);
   assert.deepEqual(deps.calls.handleSentenceRecall, []);
   assert.deepEqual(deps.calls.confirmRecall, [false]);
+  assert.equal(deps.keyboardState.isConfirming, false);
+});
+
+test('sentence without Chinese in recall mode reveals answer on dont know before grading', () => {
+  STATE.cards = [{ id: '1', type: 'sentence', word: 'hello', items: [{ en: 'hello', cn: '' }] }];
+  STATE.displayOrder = [0];
+  STATE.currentIndex = 0;
+  STATE.mode = 'recall';
+
+  const deps = createDeps();
+  deps.handler(createEvent('n'));
+  assert.deepEqual(deps.calls.revealSentenceAnswer, [false]);
+  assert.deepEqual(deps.calls.handleSentenceRecall, []);
+  assert.deepEqual(deps.calls.confirmRecall, []);
   assert.equal(deps.keyboardState.isConfirming, false);
 });
 

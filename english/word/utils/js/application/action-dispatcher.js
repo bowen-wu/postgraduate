@@ -41,7 +41,7 @@ export function dispatchAction(actionEl, deps) {
     'clear-data-reload': () => app.clearDataAndReload(),
     'reload-page': () => location.reload(),
     'show-sentence-translation': () => app.showSentenceTranslation(),
-    'reveal-sentence-answer': () => app.revealSentenceAnswer(),
+    'reveal-sentence-answer': () => app.revealSentenceAnswer(actionEl.dataset.claimedKnown !== 'false'),
     'reveal-phrase-answer': () => app.revealPhraseAnswer(actionEl.dataset.claimedKnown === 'true'),
     'translate-phrase': () => app.translatePhrase(),
     'translate-sentence': () => app.translateSentence(),
