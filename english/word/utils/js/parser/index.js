@@ -11,7 +11,7 @@ import {
   isValidWordHeader
 } from './validators.js';
 import { parseWordContent, parsePhraseContent } from './content-parser.js';
-import { determineCardTypeRule, isPrefixOrSuffixRule, firstChildHasPosRule } from './rule-engine.js';
+import { determineCardTypeRule, isPrefixOrSuffixRule, firstChildHasPosRule, firstChildSuggestsPrefixRule } from './rule-engine.js';
 import { buildBaseCard, buildWordCard, buildPhraseCard, buildPrefixCard } from './card-builders.js';
 import { createParserState } from './context.js';
 import { parseLines } from './parse-loop.js';
@@ -54,7 +54,9 @@ export class MarkdownParser {
       hasPosMarker: this.hasPosMarker,
       isPrefixOrSuffix: (innerContent, innerLineIndex = null) => this.isPrefixOrSuffix(innerContent, innerLineIndex),
       firstChildHasPos: (innerContent, innerIndentLevel, innerParentLineIndex = null) =>
-        this.firstChildHasPos(innerContent, innerIndentLevel, innerParentLineIndex)
+        this.firstChildHasPos(innerContent, innerIndentLevel, innerParentLineIndex),
+      firstChildSuggestsPrefix: (innerContent, innerIndentLevel, innerParentLineIndex = null) =>
+        this.firstChildSuggestsPrefix(innerContent, innerIndentLevel, innerParentLineIndex)
     });
   }
 
@@ -64,6 +66,10 @@ export class MarkdownParser {
 
   firstChildHasPos(content, indentLevel, parentLineIndex = null) {
     return firstChildHasPosRule(this.lines, content, indentLevel, parentLineIndex, this.hasPosMarker);
+  }
+
+  firstChildSuggestsPrefix(content, indentLevel, parentLineIndex = null) {
+    return firstChildSuggestsPrefixRule(this.lines, content, indentLevel, parentLineIndex, this.hasPosMarker);
   }
 
   createCard(word, type) {

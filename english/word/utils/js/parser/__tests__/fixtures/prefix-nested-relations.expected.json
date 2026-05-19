@@ -1,0 +1,47 @@
+[
+  {
+    "id": "card_0",
+    "word": "personal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "个人的；私人的"
+      }
+    ],
+    "ipa": "[ˈpɜːrsənl]"
+  },
+  {
+    "id": "card_1",
+    "word": "interpersonal",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "人际（关系）的"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "inter-",
+    "type": "prefix",
+    "items": [
+      {
+        "type": "def",
+        "en": "inter-",
+        "cn": ""
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "between"
+      },
+      {
+        "word": "among"
+      }
+    ]
+  }
+]

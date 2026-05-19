@@ -175,7 +175,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     }
 
     if (parser.isSynonymMarker(content)) {
-      if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase')) {
+      if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'prefix')) {
         const synonymContent = content.replace(/^===?\s+/, '').trim();
         actualParentCard.synonyms = actualParentCard.synonyms || [];
         const multipleSynonyms = synonymContent.split(/\s*==\s*/).map((item) => item.trim()).filter(Boolean);
@@ -235,7 +235,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
     }
 
     if (parser.hasSimilarMarker(content)) {
-      if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'sentence')) {
+      if (actualParentCard && (actualParentCard.type === 'word' || actualParentCard.type === 'phrase' || actualParentCard.type === 'prefix' || actualParentCard.type === 'sentence')) {
         finalizePendingSynonymIfNeeded(parser, indentLevel);
         finalizePendingAntonymIfNeeded(parser, indentLevel);
         const similarContent = content.replace(/^Similar:\s*/, '').trim();

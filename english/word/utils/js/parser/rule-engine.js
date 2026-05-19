@@ -11,6 +11,56 @@ export function isPrefixOrSuffixRule(content, hasPosMarker) {
   return !hasPos && hasChineseOnSameLine;
 }
 
+function looksLikeAffixToken(content) {
+  const trimmed = String(content || '').trim();
+  const cnMatch = trimmed.match(/[\u4e00-\u9fa5]/);
+  const englishPart = cnMatch ? trimmed.substring(0, trimmed.indexOf(cnMatch[0])).trim() : trimmed;
+  const compact = englishPart.replace(/\s+/g, '');
+  return /^-?[a-z]{1,10}(?:\/-?[a-z]{1,10})*-?$/i.test(compact) && compact.includes('-');
+}
+
+export function firstChildSuggestsPrefixRule(lines, content, indentLevel, parentLineIndex, hasPosMarker) {
+  if (!looksLikeAffixToken(content)) return false;
+
+  const searchStartIndex = parentLineIndex !== null ? parentLineIndex : 0;
+  const lineIndex = lines.findIndex((line, idx) => {
+    if (idx < searchStartIndex) return false;
+    const trimmed = line.trim();
+    if (!trimmed.startsWith('-')) return false;
+    const lineIndent = line.match(/^(\s*)-/);
+    const lineIndentLevel = lineIndent ? lineIndent[1].length : 0;
+    return lineIndentLevel === indentLevel && trimmed.substring(1).trim() === content;
+  });
+
+  if (lineIndex === -1) return false;
+
+  for (let i = lineIndex + 1; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
+    if (!trimmed) continue;
+
+    const indentMatch = lines[i].match(/^(\s*)-/);
+    if (!indentMatch) return false;
+
+    const childIndentLevel = indentMatch[1].length;
+    if (childIndentLevel <= indentLevel) return false;
+
+    const childContent = trimmed.substring(1).trim();
+    if (
+      hasPosMarker(childContent) ||
+      /^===?\s+/.test(childContent) ||
+      /^Similar:\s*/.test(childContent) ||
+      /^Opposite:\s*/.test(childContent) ||
+      /[\u4e00-\u9fa5]/.test(childContent)
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
+  return false;
+}
+
 export function firstChildHasPosRule(lines, content, indentLevel, parentLineIndex, hasPosMarker) {
   const searchStartIndex = parentLineIndex !== null ? parentLineIndex : 0;
   const lineIndex = lines.findIndex((line, idx) => {
@@ -49,10 +99,12 @@ export function determineCardTypeRule(args) {
     context,
     hasPosMarker,
     isPrefixOrSuffix,
-    firstChildHasPos
+    firstChildHasPos,
+    firstChildSuggestsPrefix
   } = args;
 
   if (isPrefixOrSuffix(content, lineIndex)) return 'prefix';
+  if (lineIndex !== null && firstChildSuggestsPrefix(content, indentLevel, lineIndex)) return 'prefix';
 
   if (context.parentCard && context.parentCard.type === 'phrase') {
     const hasChinese = /[\u4e00-\u9fa5\uff08-\uff9e]/.test(content);
