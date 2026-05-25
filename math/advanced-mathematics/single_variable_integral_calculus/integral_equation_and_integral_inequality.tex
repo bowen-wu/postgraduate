@@ -114,6 +114,78 @@
             \item 恒等变形: $|f(x)| = |f(x) - 0| = |f(x) - f(a)| = |f(x) - f(b)|$
         \end{itemize}
         \item 遇到三角函数加减可以考虑进行换元（诱导公式：$x = \dfrac{\pi}{2} - t$）
+        \item $\color{red}{\bigstar\bigstar}$联系$f(x)$和$f'(x)$有两种常用方法（设$f'(x)$在$[0, 1]$上连续，且$f(0) = 0$，证明：$\left|\dint_0^1 f(x)\,\mathrm{d}x \right| \leq \dfrac{M}{2}$，其中$M = \max\limits_{0 \leq x \leq 1}|f'(x)|$）：
+        \begin{circlenum}
+            \item 微分学中的拉格朗日中值定理
+            \begin{analysisbox}
+                由$f(0)=0$，对$f(x)$与$f(0)$在区间$[0,x]$上应用拉格朗日中值定理，
+
+                存在$\xi \in (0,x)$，使得
+                \[
+                    f(x)-f(0)=f'(\xi)(x-0).
+                \]
+
+                因为$f(0)=0$，故
+                \[
+                    f(x)=xf'(\xi).
+                \]
+
+                因此
+                \[
+                    \left|\int_0^1 f(x)\,\mathrm{d}x\right|
+                    = \left|\int_0^1 xf'(\xi)\,\mathrm{d}x\right|
+                    \leq
+                    \int_0^1 |f'(\xi)|x\,\mathrm{d}x
+                    \leq
+                    M\int_0^1 x\,\mathrm{d}x = \frac{M}{2}.
+                \]
+
+                故
+                \[
+                    \left| \int_0^1 f(x)\,\mathrm{d}x \right| \leq \frac{M}{2}.
+                \]
+            \end{analysisbox}
+            \item 积分学中的牛顿-莱布尼茨公式
+            \begin{analysisbox}
+                由牛顿-莱布尼茨公式，
+                \[
+                    \int_0^x f'(t)\,\mathrm{d}t = f(x)-f(0) = f(x)
+                \]
+
+                从而
+                \[
+                    |f(x)| = \left| \int_0^x f'(t)\,\mathrm{d}t \right|
+                    \leq
+                    \int_0^x |f'(t)|\,\mathrm{d}t
+                    \leq
+                    \int_0^x M\,\mathrm{d}t
+                    =
+                    Mx.
+                \]
+
+                因此
+                \[
+                    \left|
+                        \int_0^1 f(x)\,\mathrm{d}x
+                    \right|
+                    \leq
+                    \int_0^1 |f(x)|\,\mathrm{d}x
+                    \leq
+                    \int_0^1 Mx\,\mathrm{d}x
+                    =
+                    \frac{M}{2}.
+                \]
+
+                故
+                \[
+                    \left|
+                        \int_0^1 f(x)\,\mathrm{d}x
+                    \right|
+                    \leq
+                    \frac{M}{2}.
+                \]
+            \end{analysisbox}
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{理解}
@@ -260,5 +332,6 @@
                 \boxed{ \text{整体行为} \quad\Longleftrightarrow\quad \text{某个局部点的行为} }
             \]
         \end{analysisbox}
+        \item 若两个函数在某区间上导数恒相等 $\Rightarrow$ 那么他们只差一个常数。若再有某点函数值相等，那么两个函数恒等
     \end{enumerate}
 \end{document}

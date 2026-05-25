@@ -7,7 +7,7 @@
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; color: #222; }
         label { display: block; margin: 6px 0; }
-        input[type="text"], input[type="date"], input[type="number"] { padding: 6px; margin-right: 6px; }
+        input[type="text"], input[type="date"], input[type="number"], textarea { padding: 6px; margin-right: 6px; }
         button { padding: 6px 10px; margin: 6px 6px 12px 0; cursor: pointer; }
         table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 12px; }
         th, td { border: 1px solid #ddd; padding: 6px; min-height: 120px; vertical-align: top; }
@@ -21,7 +21,7 @@
         .reviews { font-size: 13px; color: #1a73e8; flex-grow: 1; }
         .studies { color: #d93025; font-size: 13px; font-weight: 600; }
         .muted { color: #666; font-size: 12px; margin-top: 6px; }
-        .rest-input { width: 100%; box-sizing: border-box; }
+        .rest-input { width: 100%; min-height: 96px; box-sizing: border-box; resize: vertical; }
         .rounds-container { margin-top: 12px; padding: 6px; border: 1px solid #ddd; border-radius: 6px; }
         .round-input { width: 220px; margin-right: 4px; }
         .task-type-two-cols {
@@ -96,8 +96,8 @@
         <input type="text" id="review-days" style="width:320px;">
     </label>
 
-    <label>休息日（YYYY-MM-DD，逗号分隔）:
-        <input type="text" id="rest-days" class="rest-input">
+    <label>休息日（YYYY-MM-DD，逗号或换行分隔）:
+        <textarea id="rest-days" class="rest-input"></textarea>
     </label>
 
     <div>
@@ -292,6 +292,7 @@
         {name: 'Unit1-1', duration: 1},
         {name: 'Unit1-2', duration: 1},
         {name: 'Unit1-3', duration: 1},
+        {name: 'Unit1-4', duration: 1},
         {name: 'Unit2-1', duration: 1},
         {name: 'Unit2-2', duration: 1},
         {name: 'Unit2-3', duration: 1},
@@ -318,7 +319,7 @@
         {label: '遮挡 & 随机', duration: 1},
         {label: '遮挡 & 完全随机', duration: 1}
       ],
-      restDays: '2026-04-22,2026-04-24,2026-04-25,2026-04-26,2026-04-27,2026-05-01,2026-05-02,2026-05-04,2026-05-05,2026-05-06,2026-05-07,2026-05-11,2026-05-12,2026-05-15,2026-05-16,2026-05-17,2026-05-19,2026-05-20,2026-05-21,2026-05-22,2026-05-26,2026-05-27,2026-05-28,2026-05-29'
+      restDays: '2026-04-22,2026-04-24,2026-04-25,2026-04-26,2026-04-27,2026-05-01,2026-05-02,2026-05-04,2026-05-05,2026-05-06,2026-05-07,2026-05-11,2026-05-12,2026-05-15,2026-05-16,2026-05-17,2026-05-19,2026-05-20,2026-05-21,2026-05-22,2026-05-23,2026-05-24,2026-05-27,2026-05-28,2026-05-29,2026-06-01,2026-06-04,2026-06-05,2026-06-06,2026-06-07,2026-06-08,2026-06-11,2026-06-12,2026-06-13,2026-06-16,2026-06-17'
     },
     write: {
       startDate: '2025-08-12',
@@ -697,7 +698,10 @@
     }
 
     const reviewDays = reviewDaysInput.value.split(',').map(s => parseInt(s.trim(), 10)).filter(n => !Number.isNaN(n) && n >= 0);
-    const restDays = restDaysInput.value.split(',').map(s => s.trim()).filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s));
+    const restDays = restDaysInput.value
+      .split(/[\n,]+/)
+      .map(s => s.trim())
+      .filter(s => /^\d{4}-\d{2}-\d{2}$/.test(s));
 
     // 轮数收集：支持 label + duration
     const roundLabels = [...roundsDiv.querySelectorAll('div')].map(div => {

@@ -21,6 +21,37 @@
 - Contrast: 对比
 - Block: 块级
 
+## create
+
+- vt. 创作；创造；产生
+- Your thoughts **create** your reality. Your mind is more powerful than you know.
+- creation n. 创造；作品
+- creative
+    - adj. 有创造力的；创造性的
+    - creative potential 创新潜能
+    - However, during that course I realized I was not good enough in this area to compete with other **creative**
+      personalities in the future, so I decided that it was not the right path for me.
+- creativity [ˌkriːeɪˈtɪvəti]
+    - n. 创造力
+    - Vocabulary comprehension needs **creativity**.
+    - What keeps life fascinating is the constant **creativity** of the soul.
+- invent [ɪnˈvent]
+    - vt. 发明；编造
+    - invention n. 发明；发明物；创造能力；编造
+    - inventiveness [ɪn'ventɪvnəs] n. 创造性
+    - reinvent
+        - vt. 以新形象示人；彻底改造，重新创造
+        - **Re-invent** yourself.
+        - To **reinvent** something is to **completely change or remake it** so thoroughly that it seems **brand new**.
+        - The driverless car is going to **reinvent** the way people think about driving.
+        - A *cynic(n. 怀疑者)* might *speculate(v. 猜测；推测)* that the UK is on the verge of disappearing into an
+          endless fever of self-celebration in its desperation to **reinvent itself** for the *post-Brexit* world.
+          一个怀疑论者可能会认为，英国正濒临陷入一场无休止的自我庆祝狂热之中，拼命地想在脱欧后的世界中重新塑造自己
+            - on the verge 濒临；即将；快要
+            - fever [ˈfiːvər] n. 发烧，热度；一时的狂热
+            - an endless fever of self-celebration 对自我庆祝/炫耀的无尽狂热
+            - desperation n. 绝望；不顾一切
+
 ## lead
 
 - vi. 导致；通往；领导
@@ -190,45 +221,6 @@
     - In developing counties, the number of mobile users increased sharply from **approximately** less than one billion
       in the year 2000 to four billion in 2008.
 
-## product
-
-- n. 产物；产品
-- I do completely agree that fears are just the **product** of our luxuriant imagination.
-    - luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
-- produce
-    - vt. 生产；引起；培养；制作
-    - producer n. 生产商；制片人
-- production n. 生产；产量；产生；制作
-- productive adj. 多产的；富有成效的
-- productivity n. 生产力；生产效率
-- byproduct
-    - n. 副产品
-    - side effect 副作用
-- output
-    - n. 产量；产生；输出
-    - == emission n. 排放物
-    - hourly output 每小时的产量
-    - carbon *dioxide([daɪˈɑːksaɪd])* output/emission 二氧化碳排放量
-- yield
-    - vt. 产生（收益、效益等）；出产（作物）
-    - vi. 屈服
-    - n. 产量
-    - If she hopes her new-found fortune will **yield/produce lasting feeling of fulfillment**, she could do worse than
-      read Happy Money by Elizabeth Dunn and Michael Norton.
-        - do worse than do sth. 最好做某事
-        - fortune  [ˈfɔːrtʃən] n. 大笔的钱（可数）；命运（不可数）
-- reap
-    - vt. 取得（成果）；收割（庄稼）
-    - WE REAP WHAT WE SOW. 种瓜得瓜，种豆得豆；自作自受；因果报应
-    - reap the best results 取得最好的结果
-    - reap considerable gains 获得可观的收益
-        - considerable
-            - adj. 相当大/多的
-            - Similar: considerate
-                - adj. 考虑周到的; 体贴的
-                - == kind
-                - It is so considerate of you
-
 ## Words
 
 - glimpse [ɡlɪmps]
@@ -236,6 +228,30 @@
     - v. 瞥见; 开始领悟
 - conclusion
     - n. 结论; 结束; 末尾; 结局; 签订
+- successive [səkˈsesɪv]
+    - adj. 连续的，相继的; 继承的，接替的; 逐次
+- sarcastic [sɑːrˈkæstɪk]
+    - adj. 讥讽的，讽刺的，挖苦的
+- spoil [spɔɪl]
+    - v. 溺爱
+- advocate [ˈædvəkeɪt]
+    - vt. 提倡；主张
+    - n. 倡导者；拥护者
+    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an
+      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
+      **conductor** about him."
+        - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
+        - with an air of mystery about him 他身上带着一股神秘感
+        - with no air of confidence about him 他显得没有自信
+- promote
+    - v. 促进; 促销; 晋升; 使...升级
+- announce [əˈnaʊns]
+    - v. 宣布; 宣称; 通知;
+- slant [slænt]
+    - vi. （使）倾斜，歪斜
+    - vt. 有倾向性地编写或报道；（使）倾斜，歪斜
+    - n. 倾斜; 斜线，斜面; 偏向; 偏见
+    - the slanting sun
 
 ## 词组
 

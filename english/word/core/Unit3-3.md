@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## leave
@@ -115,9 +115,9 @@
             - n. 忠诚
             - Opposite: disloyal
             - **Faithfulness** refers to this quality of being **faithful and loyal**.
-                - quality 
+                - quality
                     - n. 质量；品质
-                  - Similar: quantity n. 量，数量
+                    - Similar: quantity n. 量，数量
             - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
                 - especially [ɪˈspeʃəli] adv. 尤其
 - credit [ˈkredɪt]
@@ -158,6 +158,25 @@
 
 ## Words
 
+- dwell [dwel]
+    - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
+    - Don't **dwell** on the past.
+- gloom [ɡluːm]
+    - n. 昏暗，阴暗; 忧郁
+    - == doom
+        - v. 注定; 使在劫难逃
+        - n. 厄运，劫数，毁灭; 悲观，沮丧
+- doom
+    - v. 注定; 使在劫难逃
+    - n. 厄运，劫数，毁灭; 悲观，沮丧
+- strategic [strəˈtiːdʒɪk]
+    - adj. 战略（上）的; 战略性的; 有战略意义的; 至关重要的
+- advent [ˈædvent]
+    - n. 出现，到来，问世
+- accurate [ˈækjərət]
+    - adj. 正确的，精确的; 精准的
+    - Similar: accumulate v. 积累
+    - Similar: accelerate [əkˈseləreɪt] v. 使加速
 - handsome
     - adj. 慷慨的；丰厚的；可观的；英俊的（熟词僻义：修饰人和物感情色彩一致）
     - He receives a **handsome** reward.

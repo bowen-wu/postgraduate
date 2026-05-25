@@ -21,9 +21,9 @@
 - Contrast: 对比
 - Block: 块级
 
-## technology/tech
+## technology
 
-- n. 科技
+- n. 科技（tech）
 - tech giants 科技巨头
 - technological adj. 科技的
 - biotech

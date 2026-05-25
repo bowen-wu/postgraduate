@@ -193,37 +193,6 @@
         - An **acquisition** is something you acquire - a book, a skill. It describes things you have **purchased**,
           things you have **learned**, or things you have **gotten**.
 
-## create
-
-- vt. 创作；创造；产生
-- Your thoughts **create** your reality. Your mind is more powerful than you know.
-- creation n. 创造；作品
-- creative
-    - adj. 有创造力的；创造性的
-    - creative potential 创新潜能
-    - However, during that course I realized I was not good enough in this area to compete with other **creative**
-      personalities in the future, so I decided that it was not the right path for me.
-- creativity [ˌkriːeɪˈtɪvəti]
-    - n. 创造力
-    - Vocabulary comprehension needs **creativity**.
-    - What keeps life fascinating is the constant **creativity** of the soul.
-- invent [ɪnˈvent]
-    - vt. 发明；编造
-    - invention n. 发明；发明物；创造能力；编造
-    - inventiveness [ɪn'ventɪvnəs] n. 创造性
-    - reinvent
-        - vt. 以新形象示人；彻底改造，重新创造
-        - **Re-invent** yourself.
-        - To **reinvent** something is to **completely change or remake it** so thoroughly that it seems **brand new**.
-        - The driverless car is going to **reinvent** the way people think about driving.
-        - A *cynic(n. 怀疑者)* might *speculate(v. 猜测；推测)* that the UK is on the verge of disappearing into an
-          endless fever of self-celebration in its desperation to **reinvent itself** for the *post-Brexit* world.
-          一个怀疑论者可能会认为，英国正濒临陷入一场无休止的自我庆祝狂热之中，拼命地想在脱欧后的世界中重新塑造自己
-            - on the verge 濒临；即将；快要
-            - fever [ˈfiːvər] n. 发烧，热度；一时的狂热
-            - an endless fever of self-celebration 对自我庆祝/炫耀的无尽狂热
-            - desperation n. 绝望；不顾一切
-
 ## Words
 
 - cautious adj. 谨慎的

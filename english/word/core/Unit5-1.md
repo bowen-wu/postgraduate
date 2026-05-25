@@ -37,7 +37,7 @@
 - non- 否定
     - == un- 否定
 - -less
-    - adj. 词性
+    - 否定；adjective 词性
     - hopeless adj. 没有希望的；无望的
     - sleepless adj. 失眠的，睡不着的; 不眠的，醒着的; 无休止的; 警觉的
     - boundless
@@ -59,6 +59,9 @@
       deserves praise for **affirming** the importance of <ins>the humanities(人文科学)</ins>
       and <ins>social sciences(社会科学)</ins> to the *prosperity([prɑːˈsperəti] n. 繁荣)* and security of
       <ins>liberal democracy(自由民主制)</ins> in America.
+        - praise [preɪz]
+            - n. 赞美，称赞
+            - vt. 赞美，称赞
         - *deserve([dɪˈzɜːrv])* *praise([preɪz])* for 因...而值得赞扬
         - security n. 安全（感）
 - confirm vt. 确认；使确信
@@ -83,10 +86,13 @@
         - == contemptuous [kənˈtemptʃuəs] adj. 蔑视的，鄙视的
     - take hold 开始完全控制；变得十分强大
     - keep a tight hold 严格控制
-- But it did so while **holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his *conduct(n. 行为)*, which
+- But it did so while **holding its nose** at the *ethics([ˈɛθiks] n. 道德准则)* of his conduct, which
   included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.
     - it did so 它这样做了
     - seek access to... 寻求接触.../试图获得进入...的机会/谋求接近...
+    - conduct
+        - vt. 实施；引导
+        - n. 举止；实施办法
 - holder n. 持有者
 - withhold
     - vt. 拒绝给；保留；隐瞒

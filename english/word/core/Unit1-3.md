@@ -16,10 +16,138 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
+
+## own
+
+- vt. 拥有
+- adj. 自己的；自己独有的；
+- prep. 自己的
+- 词组
+    - on one's own 独自地；独立地
+- owner
+    - n. 所有者；主人
+    - ownership
+        - n. 所有权；产权
+        - == property
+            - n. 财产；房地产
+            - intellectual property 知识产权(IP)
+- owe [oʊ]
+    - vt. 欠债😔； 把...归功于；感激；🙂
+    - owe A to B 把A归功于B
+    - People **owe** things when they're in *debt([det] n. 债务; 负债)* to someone.
+    - A friend can **owe** you a favor, and your employer **owes** you a *paycheck(薪水，薪资)*.
+    - I don't **owe** you anything.
+    - The reforms **owe** a great deal to the resolution of one man.
+        - owe a great deal to 很大程度上得益于...
+    - Its current leader, Ed Miliband, **owes** his position **to** votes from public-sector unions.
+      现任领导人埃德·米利班德（Ed Miliband）得益于公共部门工会的选票，才获得了他的职位
+
+## mean
+
+- vt. 意味着；意思是；打算
+- adj. 吝啬的；不友好的 😔
+- == ungenerous [ʌnˈdʒɛnərəs]
+- Destiny is what's **meant** to be.
+- 词组
+    - be meant to do sth. 注定做某事；应该做某事
+    - mean well 本意是好的；出于好心
+- means
+    - n. 方法，方式；财富
+    - == way
+    - 词组
+        - by means of 借助...手段
+        - by all means 当然可以
+        - by no means 绝不
+    - And it's a reminder that the EPA's involvement in the Chesapeake Bay program has long been
+      *crucial([ˈkruːʃl] adj. 至关重要的)* as the **means/way** to *transcend([trænˈsend] vt. 超越)* the influence of
+      *deep-pocketed(adj. 有钱的)* <ins>special interests(特殊利益集团)</ins> in neighboring states.
+      这也提醒我们，美国环境保护署（EPA）在切萨皮克湾治理项目中的参与，长期以来都至关重要，因为它是克服周边州那些资金雄厚的特殊利益集团影响力的关键手段。
+- meaning n. 意义；含义；意图
+- meaningful adj. 有意义的；易于理解的
+- intend
+    - vt. 打算；想要；意指
+    - intend to do sth. 打算做某事
+    - intention n. 意图
+    - intentional
+        - adj. 有意的，故意的
+        - Although the Supreme Court of the United States had prohibited **intentional**
+          <ins>racial discrimination(种族歧视)</ins> in jury selection...
+        - intentionally [ɪnˈtɛnʃənlɪ] adv. 故意地
+
+## choose
+
+- v. 选择
+- choose to do
+- select
+    - vt. 选择
+    - == choose
+    - Through carefully **selected** words and phrase, poems can be dramatic, funny, beautiful, moving and inspiring.
+    - selection
+        - n. 选择
+        - natural selection
+        - jury selection 陪审员遴选
+    - selective adj. 选择性的；仔细挑选的
+- opt [ɑːpt]
+    - v. 选择
+    - With more than 6.8 million on waitlists, healthcare is becoming *increasingly* inaccessible for those who cannot
+      **opt** to pay for private *treatment([ˈtriːtmənt] n 治疗)*.
+      等待名单上有超过 680 万人，对于那些无法选择支付私人治疗费用的人来说，医疗保健变得越来越难以获得
+    - option
+        - n. 选择
+        - optional adj. 可以任选的
+
+## business
+
+- n. 企业；商业；事情；日常工作；职责
+- mind your own business 管好自己的事情
+- In the early 2010s, a wide range of **businesses** started processing *purchases([ˈpɜːrtʃəs] n. 购买)* with iPads and
+  other digital payment system.
+- Trust is a *tricky([ˈtrɪki] adj. 棘手的)* **business**.
+- businessman n. 商人
+- commerce [ˈkɑːmɜːrs]
+    - n. 商人
+    - e-commerce 电子商务
+    - commercial [kəˈmɜːrʃl]
+        - adj. 商业化的；商业的
+        - n. 广告
+        - lack commercial value 缺乏商业价值
+        - television commercials 电视广告
+        - INDUSTRIAL AND COMMERCIAL BANK OF CHINA 中国工商银行(ICBC)
+- enterprise
+    - n. 事业；企业；冒险精神
+    - **Enterprise** describes a readiness to act *boldly(['boʊldlɪ] adv. 大胆地)* to get something started.
+    - People will say you show **extraordinary enterprise** for your willingness to take on such a challenging project,
+      meaning you have *initiative([ɪˈnɪʃətɪv] n. 主动性)* and drive.
+      人们会说，你表现出了非凡的进取心，因为你愿意承担这样一个具有挑战性的项目，也就是说，你有主动性和干劲
+    - enterprise initiative 主观能动性
+    - Thinking is the capital. **Enterprise** is the way. Hard work is the solution.
+    - Since the days of Aristotle, a search for **universal principles** has characterized the scientific **enterprise
+      **.
+    - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
+- trade n. 贸易；生意
+- transaction [trænˈzækʃn]
+    - n. 交易
+    - Similar: transcend [trænˈsend] vt. 超出，超越
+- sale
+    - n. 销售；拍卖；销售额
+    - 词组
+        - for sale 代售；出售
+    - wholesale
+        - n. 批发
+        - retail
+            - v. 零售；详说，述说
+            - n. 零售
+- commodity [kəˈmɑːdəti] n. 商品
+- bargain [ˈbɑːrɡən]
+    - vi. 讨价还价
+    - n. 交易
+    - == deal
+    - The **bargain** is very pure: Employee puts in hours of physical or mental labor and employee draws out
+      life-sustaining moola/money/income.
 
 ## section
 
@@ -34,148 +162,6 @@
     - Big *retailers(['riteɪləz])* must understand these differences before they can identify the **segments** of
       European *wholesaling* in which their particular abilities might unseat smaller but entrenched competitors.
       大型零售商必须先了解这些差异，才能识别出欧洲批发业中那些能够让他们的特有优势取代规模较小但根基稳固竞争者的细分领域
-
-## mark
-
-- vt. 标志着；给...确定性质
-- n. 标志；痕迹
-- A mark B
-- Last year **marked** the third year in a row that Indonesia's
-  <ins>bleak rate of deforestation(令人沮丧的砍伐速度/严峻的砍伐率)</ins> has *slowed* in *pace(n. 速度)*. 🙂
-- This year **marks** exactly two centuries since the publication of Frankenstein; or, The Modern Prometheus, by Mary
-  Shelley.
-- About three thousand people held a rally to **mark** international human rights day.
-    - mark + sth. (节日/事件/周年)纪念/庆祝/表示对...的重视
-- marked
-    - adj. 显著的
-    - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,
-      with the empowerment of junior faculty and to some degree of students as well.
-        - the empowerment of... 赋权/权力增强
-        - faculty [ˈfæklti] n. （高等院校的）院系；（高等院校中院、系的）全体教员
-        - to some degree 在某种程度上
-        - as well 也/还/同样
-            - == too == also
-    - markedly adv. 显著地
-- remarkable
-    - adj. 非凡的，不同寻常的
-    - ...the author produced a **remarkable** work of <ins>speculative fiction(推理小说)</ins> that would foreshadow
-      many ethical questions to be raised by technologies yet to come.
-
-## public
-
-- adj. 公开的；公共的
-- It's also a good idea to delay the conversation if you're in a meeting or other <ins>**public** space</ins>.
-- publication
-    - n. 出版；出版物
-    - That's one reason why we have launched *Arc*, a new **publication** <ins>**dedicated/committed** to(致力于)</ins>
-      the near future.
-- publish
-    - vt. 出版；发表
-    - publisher n. 出版者；出版公司
-
-## question
-
-- vt. 质疑，怀疑
-- n. 怀疑；（待讨论或处理的）事情；问题
-- To be or not to be that is the **question**.
-- It never occurs to them to **question** the doctor's decisions.
-    - it occurs to sb. 某人突然想到
-- Bob Herz, the FASB's chairman, cried out against those who "**question** our motives."
-- It is fair to *criticize([ˈkrɪtɪsaɪz])* and **question** the mechanism—that is, the culture of research—<ins>after
-  all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
-  批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
-- 词组
-    - without question 毫无疑问
-    - in question 正被考虑或讨论的
-- questionnaire [ˌkwestʃəˈner] n. 问卷，征求意见表
-- query
-    - vt. 向...提问
-    - n. 疑问
-    - inquire [ɪn'kwaɪr] vt. 询问；探究
-    - inquiry [ɪnˈkwaɪəri]
-        - n. 询问
-        - Phone and email **enquiries** are encouraged; no visit please.
-- issue
-    - vt. 发布；发给；发出
-    - n. 问题；议题
-    - 词组
-        - at issue 讨论或争论中的
-    - At **issue** before the U.S. Court of Appeals for the District of Columbia Circuit was
-      <ins>the latest **take**</ins> of the Federal Communications Commission(FCC) on net neutrality.
-    - **issue** a report 发布报告
-    - The Administration is *dominant([ˈdɑːmɪnənt] adj. 首要的；统治的；有支配力的；占优势的)* over immigration **issues**.
-        - dominant over 对...占据主导地位/控制权
-    - Faced with the demand for net neutrality rules, the FCC has **issued** a special resolution.
-- matter
-    - vi. 重要； 关系重大
-    - n. 事情；物质；材料
-    - sth. matter
-        - == It is important
-        - == sth. important
-    - *Some* people like small talk in a meeting before digging into important **matters**, *while* others are more
-      *straightforward([ˌstreɪtˈfɔːrwərd] adj. 简单明了的; 坦率的)*.
-    - <ins>What **matters** is that(重要的是.../关键在于...)</ins> they will belong to a private monopoly which
-      developed them using public resources.
-        - monopoly
-            - n. 垄断企业
-            - Similar: monologue [ˈmɑːnəlɔːɡ] n. （戏剧）独白; 独角戏; 长篇大论
-- affair
-    - n. 事情（大，正式）；[pl.]事务；风流韵事
-    - == matter
-    - Similar: afraid adj. 害怕的; 担心的; 顾忌的
-    - Another way **affair** **is** frequently used **is** to mean a love affair, particularly if the
-      relationship is brief and intense.
-
-## research
-
-- v. 研究；调查
-- n. 研究
-- researcher n. 研究员；调查者
-- survey
-    - vt. 调查
-    - n. 民意调查
-    - == poll
-- investigate
-    - vt. 调查；审查（刑事案件的调查）
-    - investigation
-        - n. 调查
-        - Federal Bureau of Investigation(FBI) 美国联邦调查局
-
-## human
-
-- n. 人类
-- adj. 有人情味的；人类的
-- They are noting that the Victorians suddenly seem to become more **human** as the hundred-or-so years that separate
-  us fade away through our common experience of laughter.
-  他们注意到，维多利亚时代的人似乎突然变得更加有人情味了，因为在我们共同的笑声体验中，那相隔百余年的时光仿佛渐渐消失了
-- non-human adj. 非人类的
-- humanity n. 人性；人类
-- humanistic adj. 人本主义的；人文主义的
-- anthropology [ˌænθrəˈpɑːlədʒi]
-    - n. 人类学
-    - anthropologist n. 人类学家
-- archaeological [ˌɑrkiəˈlɑdʒɪkəl]
-    - adj. 考古的；考古学的
-    - The TMT site was chosen to minimize the telescope's visibility around the island and to avoid **archaeological**
-      and environmental impact.
-    - archeologist/archaeologist [ˌɑrkiˈɑlədʒɪst] n. 考古学家
-- demographic [ˌdeməˈɡræfɪk]
-    - adj. 人口学的；
-    - n. 人口统计数据
-
-## government
-
-- n. 政府；治理
-- govern [ˈɡʌvərn]
-    - vt. 治理；控制
-    - Sensible ideas have been around for a long time, but the state-level bodies that **govern** the profession have
-      been too conservative to implement them.
-        - profession
-            - n. 职业；专业
-            - Similar: vocational [voʊˈkeɪʃənl] adj. 职业的，职业技术的
-- governmental adj. 政府的
-- governance n. 控制；治理
-- governor n. 州长
 
 ## Words
 
@@ -196,32 +182,6 @@
     - n. 属性，特征
     - 词组
         - attribute A to B 把A归因于B
-- monologue [ˈmɑːnəlɔːɡ]
-    - n. （戏剧）独白; 独角戏; 长篇大论
-    - mono- 单个
-- dialogue
-    - n. 对话; 对白
-- unfaithful [ʌnˈfeθfəl]
-    - adj. 不忠实的; 不正直的; （翻译等）不可靠的; 不贞洁的
-- unconscious [ʌnˈkɑːnʃəs]
-    - adj. 不省人事的; 无意识的; 未觉察的; 潜意识的
-    - n. 无意识
-    - ...dreams were the disguised shadows of our **unconscious** desires and fears.
-        - disguise [dɪsˈɡaɪz] vt. 伪装
-- lack
-    - v. 缺少
-    - n. 缺乏
-- dedicate [ˈdedɪkeɪt]
-    - v. 献（身），致力; 题献词; 为...举行落成典礼
-    - 词组
-        - be dedicated to 致力于
-            - == dedicate oneself to sth.
-            - == committed to
-- sensibility [ˌsɛnsəˈbɪlɪti]
-    - n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
-    - sense
-        - n. 理智
-        - makes sense 有意义；说得通；有道理
 
 ## 词组
 

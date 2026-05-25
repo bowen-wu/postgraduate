@@ -21,6 +21,45 @@
 - Contrast: 对比
 - Block: 块级
 
+## product
+
+- n. 产物；产品
+- I do completely agree that fears are just the **product** of our luxuriant imagination.
+    - luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
+- produce
+    - vt. 生产；引起；培养；制作
+    - producer n. 生产商；制片人
+- production n. 生产；产量；产生；制作
+- productive adj. 多产的；富有成效的
+- productivity n. 生产力；生产效率
+- byproduct
+    - n. 副产品
+    - side effect 副作用
+- output
+    - n. 产量；产生；输出
+    - == emission n. 排放物
+    - hourly output 每小时的产量
+    - carbon *dioxide([daɪˈɑːksaɪd])* output/emission 二氧化碳排放量
+- yield
+    - vt. 产生（收益、效益等）；出产（作物）
+    - vi. 屈服
+    - n. 产量
+    - If she hopes her new-found fortune will **yield/produce lasting feeling of fulfillment**, she could do worse than
+      read Happy Money by Elizabeth Dunn and Michael Norton.
+        - do worse than do sth. 最好做某事
+        - fortune  [ˈfɔːrtʃən] n. 大笔的钱（可数）；命运（不可数）
+- reap
+    - vt. 取得（成果）；收割（庄稼）
+    - WE REAP WHAT WE SOW. 种瓜得瓜，种豆得豆；自作自受；因果报应
+    - reap the best results 取得最好的结果
+    - reap considerable gains 获得可观的收益
+        - considerable
+            - adj. 相当大/多的
+            - Similar: considerate
+                - adj. 考虑周到的; 体贴的
+                - == kind
+                - It is so considerate of you
+
 ## case
 
 - n. 事例；具体情况；事实；诉讼；理由
@@ -177,31 +216,6 @@
 - feedback n. 反馈
 
 ## Words
-
-- successive [səkˈsesɪv]
-    - adj. 连续的，相继的; 继承的，接替的; 逐次
-- sarcastic [sɑːrˈkæstɪk]
-    - adj. 讥讽的，讽刺的，挖苦的
-- spoil [spɔɪl]
-    - v. 溺爱
-- advocate [ˈædvəkeɪt]
-    - vt. 提倡；主张
-    - n. 倡导者；拥护者
-    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an
-      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
-      **conductor** about him."
-        - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
-        - with an air of mystery about him 他身上带着一股神秘感
-        - with no air of confidence about him 他显得没有自信
-- promote
-    - v. 促进; 促销; 晋升; 使...升级
-- announce [əˈnaʊns]
-    - v. 宣布; 宣称; 通知;
-- slant [slænt]
-    - vi. （使）倾斜，歪斜
-    - vt. 有倾向性地编写或报道；（使）倾斜，歪斜
-    - n. 倾斜; 斜线，斜面; 偏向; 偏见
-    - the slanting sun
 
 ## 词组
 

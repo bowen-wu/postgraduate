@@ -24,11 +24,11 @@
     \subsection{用定积分表达和计算旋转体的体积}
 
     \begin{enumerate}
-        \item 曲线$y = y(x)$与$x = a, x = b(a < b)$及$x$轴围成的曲边梯形绕$x$轴旋转一周所得到的的旋转体的体积
+        \item 曲线$y = y(x)$与$x = a, x = b(a < b)$及$x$轴围成的曲边梯形绕$x$轴旋转一周所得到的的旋转体（圆柱体：$\pi r^2$）的体积
         \[
             V_x = \int_a^b \pi y^2(x)\,\mathrm{d}x
         \]
-        \item 曲线$y = y(x)$与$x = a, x = b(0 \leq a < b)$及$x$轴围成的曲边梯形绕$y$轴旋转一周所得到的的旋转体的体积
+        \item 曲线$y = y(x)$与$x = a, x = b(0 \leq a < b)$及$x$轴围成的曲边梯形绕$y$轴旋转一周所得到的的旋转体（圆柱壳体积：$2\pi x|y| dx$(圆柱侧面积(底面周长 * 高) * 壳厚)）的体积
         \[
             V_y = 2\pi\int_a^b x|y(x)|\,\mathrm{d}x
         \]
@@ -65,6 +65,8 @@
 
     \subsection{平面曲线的弧长}
 
+    {\color{customgreen}{$\mathrm{d}s = \sqrt{\mathrm{d}x^2 + \mathrm{d}y^2}$}}
+
     \begin{enumerate}
         \item 若平面光滑曲线由直角坐标方程$y = y(x)(a \leq x \leq b)$给出，则$s = \displaystyle\int_a^b \sqrt {1 + [y'(x)]^2}\,\mathrm{d}x$
         \item 若平面光滑曲线由参数方程$\begin{cases}
@@ -76,7 +78,12 @@
 
     \subsection{旋转曲面的面积（侧面积）}
 
-    {\color{customgreen}{在弧长公式基础上多乘了$2\pi|y(x)|$}}
+    {\color{customgreen}{旋转曲面的侧面积 = 圆周长($2\pi r$) × 微元弧长}}
+    \begin{circlenum}
+        \item 绕$x$轴：$r = |y|$
+        \item 绕$y$轴：$r = |x|$
+        \item $S=2\pi\dint(\text{到旋转轴的距离})\,\mathrm{d}s$
+    \end{circlenum}
 
     \begin{enumerate}
         \item 曲线$L: y = f(x)(a \leq x \leq b)$绕$x$轴旋转一周所得旋转曲面的面积

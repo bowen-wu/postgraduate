@@ -102,7 +102,7 @@
     - Contrast: revise(有修改) vs. review(无修改)
         - With time he came to [[revise|review]] his opinion of the profession.
             - profession
-                - n. 职业；专业
+                - n. 职业；专业；行业
                 - Similar: vocational [voʊˈkeɪʃənl] adj. 职业的，职业技术的
             - come to do 逐渐开始/渐渐意识到/最终发展到做某事
         - A doctor might [[revise|review]] your *medical([ˈmedɪkl])* record to help diagnose your sickness.
@@ -176,26 +176,6 @@
         - announce vt. 宣布
 
 ## Words
-
-- dwell [dwel]
-    - v. 居住，栖身; 沉湎于，唠叨（尤指令人不快的事）
-    - Don't **dwell** on the past.
-- gloom [ɡluːm]
-    - n. 昏暗，阴暗; 忧郁
-    - == doom
-        - v. 注定; 使在劫难逃
-        - n. 厄运，劫数，毁灭; 悲观，沮丧
-- doom
-    - v. 注定; 使在劫难逃
-    - n. 厄运，劫数，毁灭; 悲观，沮丧
-- strategic [strəˈtiːdʒɪk]
-    - adj. 战略（上）的; 战略性的; 有战略意义的; 至关重要的
-- advent [ˈædvent]
-    - n. 出现，到来，问世
-- accurate [ˈækjərət]
-    - adj. 正确的，精确的; 精准的
-    - Similar: accumulate v. 积累
-    - Similar: accelerate [əkˈseləreɪt] v. 使加速
 
 ## 词组
 

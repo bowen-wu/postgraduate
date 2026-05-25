@@ -133,6 +133,8 @@
     - Even better would be to help elevate notions of beauty beyond the material standards of a **particular** industry.
         - Even better would be to... 更好的做法/选择是... => 倒装句
         - help do sth./help sb. do sth. 帮助做某事
+    - In a move that has intellectual-property lawyers abuzz, the U.S. Court of Appeals for the Federal Circuit said it
+      would use a **particular** case to conduct a broad review of business-method patents.
     - particularly
         - adv. 特别；尤其
         - == especially

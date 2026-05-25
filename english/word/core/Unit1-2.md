@@ -16,10 +16,70 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
+
+## state
+
+- vt. 陈述；规定
+- n. 州；状态；国家；政府
+- adj. 州的
+- Youth is not a time of life, it is <ins>a **state** of mind(心境)</ins>.
+- They were comfortable in describing different emotional **states** and part of what you do in drama is
+  <ins>put yourself in different shoes(设身处地的，将心比心的)</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
+- They set new standards for *ventilation([ˌvɛntəˈleɪʃən] n. 通风设备)*, energy efficiency and heating, and **state**
+  that new *residential([ˌrezɪˈdenʃl] adj. 住宅的)* buildings must have charging points for
+  <ins>electric vehicles(电动汽车 EV)</ins>.
+- statement n. 声明；说法
+- restate vt. 重申
+- overstate
+  - vt. 夸大
+  - We cannot **overstate** our *debt([det] n. 债务；负债情况)* to the past, but the moment has the
+    *supreme([suːˈpriːm] adj. 最高的)* claim.
+    - We cannot overstate X 我们再怎么强调 X 都不为过
+    - supreme claim 至高权利/至高优先权
+  - overstatement n. 大话
+- estate [ɪˈsteɪt]
+  - n. 地产
+  - real estate 房地产
+- status
+  - n. 地位；状况
+  - His father was a clerk in the British Navy pay office—a respectable position, but with little social **status**.
+  - Embrace change. Envision what could be, challenge the <ins>**status quo**(现状)</ins> and drive creative
+    destruction.
+- statute [ˈstætʃuːt]
+  - n. 法规
+  - Similar: statue n. 雕像，雕塑
+  - == rule
+  - -stat 站
+    - == -stit
+  - A **statute** is a formal law or rule.
+  - A **statute** is a written law.
+- statue [ˈstætʃuː]
+  - n. 雕像，雕塑
+  - Similar: statute n. 法规
+  - A **statue** is a *figure([ˈfɪɡjər])* of a person, animal, or object that is carved or cast from some material.
+- stake [steɪk]
+  - v. 立界标以表明（所有权）；以...打赌
+  - n. 重大利害关系；桩子；股份
+  - 词组
+    - stake out 清楚地界定自认为属于自己的东西
+    - at stake 处于危险中
+  - And so we would **call on** state lawmakers from Richmond to Albany to consider reviewing their own wetlands
+    protections and see for themselves the *enormous(adj. 巨大的)* **stake** *involved(v. 包含，涉及)*.
+    因此，我们会呼吁从里士满到奥尔巴尼的州立立法者，考虑审查各自的湿地保护法规，并亲自了解所涉及的巨大利益。
+    - see for oneself/see for themselves 亲自确认、自己验证
+    - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
+  - stakeholder n. 利益相关者；股东
+- administer
+  - vt. 管理；施行
+  - administration
+    - n. 管理，管理部分；政府
+    - Many young Americans <ins>cast doubts on(对...产生疑问)</ins> the **administration**'s ability to handle
+      information.
+  - administrative adj. 管理的；行政的
 
 ## take
 
@@ -98,134 +158,6 @@
     - Would passengers feel comfortable travelling in **companion**?
     - -ship 抽象名词后缀
     - companionship n. 友谊
-
-## own
-
-- vt. 拥有
-- adj. 自己的；自己独有的；
-- prep. 自己的
-- 词组
-    - on one's own 独自地；独立地
-- owner
-    - n. 所有者；主人
-    - ownership
-        - n. 所有权；产权
-        - == property
-            - n. 财产；房地产
-            - intellectual property 知识产权(IP)
-- owe [oʊ]
-    - vt. 欠债😔； 把...归功于；感激；🙂
-    - owe A to B 把A归功于B
-    - People **owe** things when they're in *debt([det] n. 债务; 负债)* to someone.
-    - A friend can **owe** you a favor, and your employer **owes** you a *paycheck(薪水，薪资)*.
-    - I don't **owe** you anything.
-    - The reforms **owe** a great deal to the resolution of one man.
-        - owe a great deal to 很大程度上得益于...
-    - Its current leader, Ed Miliband, **owes** his position **to** votes from public-sector unions.
-      现任领导人埃德·米利班德（Ed Miliband）得益于公共部门工会的选票，才获得了他的职位
-
-## mean
-
-- vt. 意味着；意思是；打算
-- adj. 吝啬的；不友好的 😔
-- == ungenerous [ʌnˈdʒɛnərəs]
-- Destiny is what's **meant** to be.
-- 词组
-    - be meant to do sth. 注定做某事；应该做某事
-    - mean well 本意是好的；出于好心
-- means
-    - n. 方法，方式；财富
-    - == way
-    - 词组
-        - by means of 借助...手段
-        - by all means 当然可以
-        - by no means 绝不
-    - And it's a reminder that the EPA's involvement in the Chesapeake Bay program has long been
-      *crucial([ˈkruːʃl] adj. 至关重要的)* as the **means/way** to *transcend([trænˈsend] vt. 超越)* the influence of
-      *deep-pocketed(adj. 有钱的)* <ins>special interests(特殊利益集团)</ins> in neighboring states.
-      这也提醒我们，美国环境保护署（EPA）在切萨皮克湾治理项目中的参与，长期以来都至关重要，因为它是克服周边州那些资金雄厚的特殊利益集团影响力的关键手段。
-- meaning n. 意义；含义；意图
-- meaningful adj. 有意义的；易于理解的
-- intend
-    - vt. 打算；想要；意指
-    - intend to do sth. 打算做某事
-    - intention n. 意图
-    - intentional
-        - adj. 有意的，故意的
-        - Although the Supreme Court of the United States had prohibited **intentional**
-          <ins>racial discrimination(种族歧视)</ins> in jury selection...
-        - intentionally [ɪnˈtɛnʃənlɪ] adv. 故意地
-
-## choose
-
-- v. 选择
-- choose to do
-- select
-    - vt. 选择
-    - == choose
-    - Through carefully **selected** words and phrase, poems can be dramatic, funny, beautiful, moving and inspiring.
-    - selection
-        - n. 选择
-        - natural selection
-        - jury selection 陪审员遴选
-    - selective adj. 选择性的；仔细挑选的
-- opt [ɑːpt]
-    - v. 选择
-    - With more than 6.8 million on waitlists, healthcare is becoming *increasingly* inaccessible for those who cannot
-      **opt** to pay for private *treatment([ˈtriːtmənt] n 治疗)*.
-      等待名单上有超过 680 万人，对于那些无法选择支付私人治疗费用的人来说，医疗保健变得越来越难以获得
-    - option
-        - n. 选择
-        - optional adj. 可以任选的
-
-## business
-
-- n. 企业；商业；事情；日常工作；职责
-- mind your own business 管好自己的事情
-- In the early 2010s, a wide range of **businesses** started processing *purchases([ˈpɜːrtʃəs] n. 购买)* with iPads and
-  other digital payment system.
-- Trust is a *tricky([ˈtrɪki] adj. 棘手的)* **business**.
-- businessman n. 商人
-- commerce [ˈkɑːmɜːrs]
-    - n. 商人
-    - e-commerce 电子商务
-    - commercial [kəˈmɜːrʃl]
-        - adj. 商业化的；商业的
-        - n. 广告
-        - lack commercial value 缺乏商业价值
-        - television commercials 电视广告
-        - INDUSTRIAL AND COMMERCIAL BANK OF CHINA 中国工商银行(ICBC)
-- enterprise
-    - n. 事业；企业；冒险精神
-    - **Enterprise** describes a readiness to act *boldly(['boʊldlɪ] adv. 大胆地)* to get something started.
-    - People will say you show **extraordinary enterprise** for your willingness to take on such a challenging project,
-      meaning you have *initiative([ɪˈnɪʃətɪv] n. 主动性)* and drive.
-      人们会说，你表现出了非凡的进取心，因为你愿意承担这样一个具有挑战性的项目，也就是说，你有主动性和干劲
-    - enterprise initiative 主观能动性
-    - Thinking is the capital. **Enterprise** is the way. Hard work is the solution.
-    - Since the days of Aristotle, a search for **universal principles** has characterized the scientific **enterprise
-      **.
-    - entrepreneur [ˌɑːntrəprəˈnɜːr] n. 企业家
-- trade n. 贸易；生意
-- transaction [trænˈzækʃn]
-    - n. 交易
-    - Similar: transcend [trænˈsend] vt. 超出，超越
-- sale
-    - n. 销售；拍卖；销售额
-    - 词组
-        - for sale 代售；出售
-    - wholesale
-        - n. 批发
-        - retail
-            - v. 零售；详说，述说
-            - n. 零售
-- commodity [kəˈmɑːdəti] n. 商品
-- bargain [ˈbɑːrɡən]
-    - vi. 讨价还价
-    - n. 交易
-    - == deal
-    - The **bargain** is very pure: Employee puts in hours of physical or mental labor and employee draws out
-      life-sustaining moola/money/income.
 
 ## Words
 

@@ -7,7 +7,7 @@ const WRITING_POOL = [
 ];
 
 const UNIT_FILES = [
-  'core/Unit1-1.md', 'core/Unit1-2.md', 'core/Unit1-3.md',
+  'core/Unit1-1.md', 'core/Unit1-2.md', 'core/Unit1-3.md', 'core/Unit1-4.md',
   'core/Unit2-1.md', 'core/Unit2-2.md', 'core/Unit2-3.md',
   'core/Unit3-1.md', 'core/Unit3-2.md', 'core/Unit3-3.md',
   'core/Unit4-1.md', 'core/Unit4-2.md', 'core/Unit4-3.md',

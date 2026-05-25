@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## manage
@@ -129,8 +129,11 @@
 - prevention [prɪˈvenʃn] n. 预防
 - hinder [ˈhɪndər]
     - vt. 阻碍
-    - *Transient([ˈtrænʃnt] adj. 短暂的; 转瞬即逝的)* investors, who demand high quarterly profits from companies, can
-      **hinder** a firm's efforts to invest in long-term research or to build up customer *loyalty([ˈlɔɪəlti] n. 忠诚)*.
+    - Transient investors, who demand high <ins>quarterly profits(季度利润)</ins> from companies, can **hinder** a
+      firm's efforts to invest in long-term research or to build up customer loyalty.
+        - transient [ˈtrænʃnt] adj. 短暂的; 转瞬即逝的; 临时的
+        - loyalty [ˈlɔɪəlti] n. 忠诚
+        - public companies/publicly traded company 上市公司
 - curb
     - vt. 抑制，控制
     - n. 限制，控制；路源；勒马绳

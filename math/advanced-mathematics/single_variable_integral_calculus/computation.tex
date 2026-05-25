@@ -52,11 +52,12 @@
             \begin{circlenum}
                 \item $\dint \dfrac{1}{\sqrt {x^2 - a^2}}\,\mathrm{d}x = \ln |x + \sqrt {x^2 - a^2}| + C, |x| > |a|$
             \end{circlenum}
+            \item $\dint \sqrt{1+x^2}\,\mathrm{d}x = \dfrac{x\sqrt{1+x^2}}{2} + \dfrac{1}{2}\ln\!\left(x+\sqrt{1+x^2}\right) + C$
         \end{itemize}
-        \item 部分分式分解型
+        \item 部分分式{\color{red}{分解}}型
         \begin{itemize}
-            \item $\dint \dfrac{1}{x^2 - a^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x-a}{x+a}\right| + C$
-            \item $\dint \dfrac{1}{a^2 - x^2}\,\mathrm{d}x = \displaystyle\frac{1}{2a}\ln \left|\displaystyle\frac{x+a}{x-a}\right| + C$
+            \item $\dint \dfrac{1}{x^2 - a^2}\,\mathrm{d}x = \dint \dfrac{1}{2a}(\dfrac{1}{a + x} - \dfrac{1}{a - x})\,\mathrm{d}x = \dfrac{1}{2a}(\ln|a + x| - \ln|a - x|) + C = \dfrac{1}{2a}\ln \left|\dfrac{x-a}{x+a}\right| + C$
+            \item $\dint \dfrac{1}{a^2 - x^2}\,\mathrm{d}x = \dint -\dfrac{1}{2a}(\dfrac{1}{a + x} - \dfrac{1}{a - x})\,\mathrm{d}x = \dfrac{1}{2a}\ln \left|\dfrac{x+a}{x-a}\right| + C$
         \end{itemize}
         \item 三角函数降幂公式型
         \begin{itemize}
@@ -64,6 +65,10 @@
             \item $\dint \cos^2 x\,\mathrm{d}x = \dint \dfrac{1+\cos 2x}{2}\,\mathrm{d}x = \dfrac{x}{2} + \dfrac{\sin 2x}{4} + C$
             \item $\dint \tan^2 x\,\mathrm{d}x = \dint \sec^2 x - 1\,\mathrm{d}x = \tan x - x + C$
             \item $\dint \cot^2 x\,\mathrm{d}x = \dint \csc^2 x - 1\,\mathrm{d}x = -\cot x - x + C$
+        \end{itemize}
+        \item $n$次方
+        \begin{itemize}
+            \item $\dint \tan^n x\,\mathrm{d}x = \dint \tan^{n-2} x(\sec^2 x - 1)\,\mathrm{d}x = \dint \tan^{n-2} x\,\mathrm{d}(\tan x) - \dint \tan^{n-2} x\,\mathrm{d}x = \dfrac{\tan^{n-1} x}{n - 1} - \dint \tan^{n-2} x\,\mathrm{d}x$
         \end{itemize}
     \end{enumerate}
 
@@ -130,8 +135,7 @@
             = \int f(u)\,\mathrm{d}u.
         \]
 
-        \item 由于 $a^x\,\mathrm{d}x = \dfrac{1}{\ln a}\,\mathrm{d}(a^x)$，
-        $a>0,\; a\ne1$，故
+        \item 由于 $a^x\,\mathrm{d}x = \dfrac{1}{\ln a}\,\mathrm{d}(a^x)$，$a>0,\; a\neq1$，故
         \[
             \int a^x f(a^x)\,\mathrm{d}x
             = \frac{1}{\ln a}\int f(a^x)\,\mathrm{d}(a^x)
@@ -172,6 +176,7 @@
             = \int f(\arctan x)\,\mathrm{d}(\arctan x)
             = \int f(u)\,\mathrm{d}u.
         \]
+        \item $\dfrac{1}{\sqrt{x}(1+x)}\,\mathrm{d}x = \mathrm{d}(\arctan \sqrt{x})$
 
         \item 由于 $\dfrac{1}{\sqrt{1-x^2}}\,\mathrm{d}x = \mathrm{d}(\arcsin x)$，故
         \[
@@ -179,6 +184,8 @@
             = \int f(\arcsin x)\,\mathrm{d}(\arcsin x)
             = \int f(u)\,\mathrm{d}u.
         \]
+        \item $-\dfrac{x}{\sqrt{1 - x^2}}\,\mathrm{d}x = \mathrm{d}(\sqrt{1 - x^2})$
+        \item $f'(x)\,\mathrm{d}x = \mathrm{d}[f(x)]$
 
     \end{enumerate}
 
@@ -295,7 +302,7 @@
 
     \begin{enumerate}
         \item 定义：形如$\dint \displaystyle\frac{P_n(x)}{Q_m(x)}\,\mathrm{d}x(n < m)$的积分称为\textbf{有理函数的积分}，其中$P_n(x), Q_m(x)$分别是$x$的$n$次多项式和$m$次多项式
-        \item 思想：若$Q_m(x)$在实数域内可因式分解，则因式分解后再把$\displaystyle\frac{P_n(x)}{Q_m(x)}$拆成若干项最简有理分式之和。有理式$=$\textbf{最简有理分式之和}，其中最简有理式分为
+        \item 思想：若$Q_m(x)$在实数域内可{\color{red}{因式分解}}，则因式分解后再把$\displaystyle\frac{P_n(x)}{Q_m(x)}$拆成若干项最简有理分式之和。有理式$=$\textbf{最简有理分式之和}，其中最简有理式分为
         \begin{circlenum}
             \item $\displaystyle\frac{A}{ax + b}$
             \item $\displaystyle\frac{A_k}{(ax + b)^k}, k=2,3,\cdots$
@@ -415,9 +422,213 @@
                       即可求得 $A, B, C$
             \end{analysisbox}
         \end{circlenum}
+        \item 形如$R(\sin x, \cos x)$的有理式称为三角函数有理式
+        \begin{enumerate}
+            \item 令$t = \tan \displaystyle\frac{x}{2},\, \sin x = \displaystyle\frac{2t}{1 + t^2},\, \cos x = \displaystyle\frac{1-t^2}{1+t^2}$
+            \begin{analysisbox}
+                令
+                \[
+                    t=\tan\frac{x}{2}
+                \]
+
+                则：
+                \[
+                    \cos x=\frac{1-t^2}{1+t^2},
+                    \qquad
+                    \mathrm{d}x=\frac{2}{1+t^2}\,\mathrm{d}t
+                \]
+
+                原积分：
+                \[
+                    I=\int\frac{1}{a+b\cos x}\,\mathrm{d}x
+                \]
+
+                代入得：
+                \[
+                    I
+                    =
+                    2\int
+                    \frac{
+                        1
+                    }{
+                        (a+b)+(a-b)t^2
+                    }
+                    \,\mathrm{d}t
+                \]
+
+                即：
+                \[
+                    I
+                    =
+                    2\int
+                    \frac{
+                        1
+                    }{
+                        (a-b)t^2+(a+b)
+                    }
+                    \,\mathrm{d}t
+                \]
+
+                \vspace{1em}
+
+                \textbf{(1)\quad 当 $a^2>b^2$ 时}
+
+                此时：
+                \[
+                    (a-b)(a+b)>0
+                \]
+
+                使用：
+                \[
+                    \int\frac{1}{u^2+\alpha^2}\,\mathrm{d}u
+                    =
+                    \frac1\alpha\arctan\frac{u}{\alpha}+C
+                \]
+
+                得：
+                \[
+                    I
+                    =
+                    \frac{2}{\sqrt{a^2-b^2}}
+                    \arctan
+                    \left(
+                        \sqrt{
+                            \frac{a-b}{a+b}
+                        }
+                        \tan\frac{x}{2}
+                    \right)
+                    +C
+                \]
+
+                \vspace{1em}
+
+                \textbf{(2)\quad 当 $a^2<b^2$ 时}
+
+                此时：
+                \[
+                    (a-b)(a+b)<0
+                \]
+
+                使用：
+                \[
+                    \int\frac{1}{u^2-\alpha^2}\,\mathrm{d}u
+                    =
+                    \frac1{2\alpha}
+                    \ln\left|
+                           \frac{u-\alpha}{u+\alpha}
+                    \right|
+                    +C
+                \]
+
+                得：
+                \[
+                    I
+                    =
+                    \frac{1}{\sqrt{b^2-a^2}}
+                    \ln\left|
+                           \frac{
+                               \sqrt{a+b}
+                               +
+                               \sqrt{b-a}\tan\frac{x}{2}
+                           }{
+                               \sqrt{a+b}
+                               -
+                               \sqrt{b-a}\tan\frac{x}{2}
+                           }
+                    \right|
+                    +C
+                \]
+
+                \vspace{1em}
+
+                \textbf{(3)\quad 当 $a^2=b^2$ 时}
+
+                分两种：
+
+                \[
+                    a=b
+                \]
+
+                则：
+                \[
+                    a+b\cos x
+                    =
+                    a(1+\cos x)
+                \]
+
+                又：
+                \[
+                    1+\cos x
+                    =
+                    2\cos^2\frac{x}{2}
+                \]
+
+                所以：
+                \[
+                    I
+                    =
+                    \frac1{2a}
+                    \int\sec^2\frac{x}{2}\,\mathrm{d}x
+                \]
+
+                得：
+                \[
+                    I
+                    =
+                    \frac1a\tan\frac{x}{2}+C
+                \]
+
+                若：
+                \[
+                    a=-b
+                \]
+
+                则：
+                \[
+                    a+b\cos x
+                    =
+                    a(1-\cos x)
+                \]
+
+                又：
+                \[
+                    1-\cos x
+                    =
+                    2\sin^2\frac{x}{2}
+                \]
+
+                所以：
+                \[
+                    I
+                    =
+                    \frac1{2a}
+                    \int\csc^2\frac{x}{2}\,\mathrm{d}x
+                \]
+
+                得：
+                \[
+                    I
+                    =
+                    -\frac1a\cot\frac{x}{2}+C
+                \]
+            \end{analysisbox}
+            \item 凑微分
+            \begin{itemize}
+                \item 若$R(\sin x, \cos x) = -R(-\sin x, \cos x)$，令$\cos x = t$。$\sin$是奇数次方，\emph{e.g.} $\displaystyle\frac{\sin^5 x}{\cos^4 x} = -\displaystyle\frac{-\sin^5 x}{\cos^4 x}$
+                \item 若$R(\sin x, \cos x) = -R(\sin x, -\cos x)$，令$\sin x = t$。$\cos$是奇数次方
+                \item 若$R(\sin x, \cos x) = R(-\sin x, -\cos x)$，令$\tan x = t$
+            \end{itemize}
+        \end{enumerate}
     \end{enumerate}
 
     \subsection{定积分的计算}
+
+    \begin{enumerate}
+        \item 牛顿-莱布尼茨公式
+        \item 牛顿–莱布尼茨公式的推广
+        \item 换元积分法
+        \item 分部积分法
+    \end{enumerate}
 
     \subsubsection{牛顿-莱布尼茨公式}
     设函数$F(x)$是连续函数$f(x)$在$[a, b]$上的一个原函数，则
@@ -490,7 +701,7 @@
         \item 设$f(x)$为连续的偶函数，则$\dint_{-a}^{a} f(x)\,\mathrm{d}x = 2\dint_{0}^{a} f(x)\,\mathrm{d}x$
         \item 设$f(x)$为连续的奇函数，则$\dint_{-a}^{a} f(x)\,\mathrm{d}x = 0$
         \item 设$f(x)$是以$T$为周期的连续函数，则$\dint_{a}^{a + T} f(x)\,\mathrm{d}x = \dint_{0}^{T} f(x)\,\mathrm{d}x$
-        \item 区间再现公式：设$f(x)$为连续函数，则$\dint_{a}^{b} f(x)\,\mathrm{d}x = \dint_{a}^{b} f(a + b - x)\,\mathrm{d}x$
+        \item 区间再现公式：设$f(x)$为连续函数，则$\dint_{a}^{b} f(x)\,\mathrm{d}x = \dint_{a}^{b} f(a + b - x)\,\mathrm{d}x$。（\textbf{本质：}把区间左右翻过来看。整个区间仍然完整扫了一遍
         \begin{enumerate}
             \item 若$f(x)$复杂，$f(x) + f(a + b - x)$简单，则考虑
             \[
@@ -655,15 +866,15 @@
 
     \begin{enumerate}
 
-        \item ${\color{red}{\bigstar}}$\; $f(x)$ 为可积（\textbf{有可能有跳跃间断点、可去间断点}）的奇函数 $\Rightarrow \dint_{a}^{x} f(t)\,\mathrm{d}t,\ \forall a$ 为偶函数
+        \item ${\color{red}{\bigstar}}$\; $f(x)$ 为可积（\textbf{有可能有跳跃间断点、可去间断点}）的奇函数 $\Rightarrow \dint_{\color{red}{a}}^{x} f(t)\,\mathrm{d}t,\ \forall a$ 为偶函数
 
-        \item 若 $f(x)$ 为连续的奇函数，则 $\dint_{a}^{x} f(t)\,\mathrm{d}t + C$ 也是偶函数，故 $f(x)$ 的全体原函数均为偶函数
+        \item 若 $f(x)$ 为连续的奇函数，则 $\dint_{\color{red}{a}}^{x} f(t)\,\mathrm{d}t + C$ 也是偶函数，故 $f(x)$ 的全体原函数均为偶函数
 
         \item ${\color{red}{\bigstar}}$\; $f(x)$ 为可积的偶函数 $\Rightarrow$
         \[
             \begin{cases}
-                \dint_{0}^{x} f(t)\,\mathrm{d}t \text{ 为奇函数}, \\[6pt]
-                \dint_{a}^{x} f(t)\,\mathrm{d}t \ (a \neq 0)
+                \dint_{\color{red}{a}}^{x} f(t)\,\mathrm{d}t \text{ 为奇函数}, \\[6pt]
+                \dint_{\color{red}{a}}^{x} f(t)\,\mathrm{d}t \ (a \neq 0)
                 \begin{cases}
                     \text{若 } \dint_{a}^{x} f(t)\,\mathrm{d}t
                     =
@@ -715,7 +926,7 @@
     \subsection{反常积分的计算}
 
     \begin{enumerate}
-        \item 在计算反常积分时，注意识别奇点（端点、{\color{red}{内部}}）(瑕点，$\pm \infty$)
+        \item 在计算反常积分（\textbf{定积分}）时，注意识别{\color{red}{奇点}}（端点、{\color{red}{内部}}）(瑕点，$\pm \infty$)
         \item 反常积分在收敛的情况下，通过换元可能实现反常积分与定积分的相互转化
     \end{enumerate}
 
@@ -756,7 +967,7 @@
 
         因此
         \begin{gather*}
-            \Gamma(n+1)=n! \\
+            \Gamma(n+1)= \dint_0^{+\infty} x^{n}e^{-x}\,\mathrm{d}x = n!(n\text{为非负整数}) \\
             \Gamma\!\left(\frac{5}{2}\right)
             = \frac{3}{2}\cdot\frac{1}{2}\cdot\Gamma\!\left(\frac{1}{2}\right)
             = \frac34\sqrt{\pi}.\\
@@ -766,7 +977,6 @@
     \subsection{运算}
 
     \begin{enumerate}
-
         \item
         \[
             \begin{aligned}
@@ -798,6 +1008,11 @@
                 &= \int (1-\sin^2 t)\,\mathrm{d}(\sin t) \\[6pt]
                 &= \sin t - \frac{\sin^3 t}{3} + C.
             \end{aligned}
+        \]
+
+        \item 判断$f(x) = \ln (x + \sqrt{x^2 + 1})$奇偶性
+        \[
+            f(-x) = \ln (\sqrt{x^2 + 1} - x) = \ln \frac{1}{\sqrt{x^2 + 1} + x} = -f(x)
         \]
 
     \end{enumerate}
@@ -840,17 +1055,8 @@
                 + C
             \end{aligned}
         \]
-        \item $I_n = \dint_0^{+\infty} x^ne^{-x}\,\mathrm{d}x = n!(n\text{为非负整数})$
         \item $\tan (\dfrac{\pi}{4} - \alpha) = \displaystyle\frac{1 - \tan \alpha}{1 + \tan \alpha}$
-        \item
-        \[
-            \int \sqrt{1+x^2}\,\mathrm{d}x
-            =
-            \frac{x\sqrt{1+x^2}}{2}
-            +
-            \frac{1}{2}\ln\!\left(x+\sqrt{1+x^2}\right)
-            + C
-        \]
+        \item $\arcsin x + \arccos x = \dfrac{\pi}{2}$
 
     \end{enumerate}
 
@@ -859,18 +1065,11 @@
     \begin{enumerate}
         \item 若不是常用的凑微分公式，则可对被积函数的复杂部分$g(x)$求导，若$g'(x) = f(x)$，即$d[g(x)] = f(x)dx$，则$\dint f(x)g(x)\,\mathrm{d}x = \int g(x)\,\mathrm{d}[g(x)]$，凑微分成功
         \item $\dint \triangle\,\mathrm{d}x$一般不好求，可将其转化成$\dint \nabla\,\mathrm{d}x$
-        \item 形如$R(\sin x, \cos x)$的有理式称为三角函数有理式
-        \begin{enumerate}
-            \item 令$t = \tan \displaystyle\frac{x}{2},\, \sin x = \displaystyle\frac{2t}{1 + t^2},\, \cos x = \displaystyle\frac{1-t^2}{1+t^2}$
-            \item 凑微分
-            \begin{itemize}
-                \item 若$R(\sin x, \cos x) = -R(-\sin x, \cos x)$，令$\cos x = t$。$\sin$是奇数次方，\emph{e.g.} $\displaystyle\frac{\sin^5 x}{\cos^4 x} = -\displaystyle\frac{-\sin^5 x}{\cos^4 x}$
-                \item 若$R(\sin x, \cos x) = -R(\sin x, -\cos x)$，令$\sin x = t$。$\cos$是奇数次方
-                \item 若$R(\sin x, \cos x) = R(-\sin x, -\cos x)$，令$\tan x = t$
-            \end{itemize}
-        \end{enumerate}
         \item 定积分计算时考虑{\color{customgreen}{奇偶性}}和{\color{customgreen}{周期性}}，做{\color{customgreen}{平移代换}}。\emph{e.g.}\,$\dint_0^1 \Rightarrow? \dint_{-\frac{1}{2}}^{\frac{1}{2}}$
         \item $\dfrac{1}{1+\sin x}$分母有理化（恒等变形）
+        \item $\dfrac{1}{x^2 + x} = \dfrac{1}{(x+\frac{1}{2})^2 - (\frac{1}{2})^2}$
+        \item 遇到$e^{ax}$首先想到分部积分法，将$\dint e^{ax}\,\mathrm{d}x = \dfrac{1}{a} \dint \,\mathrm{d}(e^{ax}) $
+        \item 分段函数求原函数的时候要注意{\color{red}{连续性}}，从而确定$C$
     \end{enumerate}
 
 \end{document}

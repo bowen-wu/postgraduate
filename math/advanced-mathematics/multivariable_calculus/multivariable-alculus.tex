@@ -254,10 +254,10 @@
 
             \textbf{关键}：求 $\dfrac{\partial}{\partial x}(f'_u)$ 时，$f'_u$ 仍要通过 $u, v$ 对 $x$ 求导。
         \end{analysisbox}
-        \item 记号
+        \item 记号（设$z = f(\boxed{\text{第1个输入}},\boxed{\text{第2个输入}})$)
         \begin{itemize}
-            \item $f'_1 == f'_x$ 表示对第一个位置求导
-            \item $f'_2 == f'_y$ 表示对第二个位置求导
+            \item $f'_1 == f'_1(\boxed{\text{第1个输入}},\boxed{\text{第2个输入}}) = \dfrac{\partial f}{\partial \boxed{\text{第1个输入}}}$ 表示对第一个位置求导
+            \item $f'_2 == f'_2(\boxed{\text{第1个输入}},\boxed{\text{第2个输入}}) = \dfrac{\partial f}{\partial \boxed{\text{第2个输入}}}$ 表示对第二个位置求导
         \end{itemize}
 
         \item 全导数与偏导数的区别
@@ -541,6 +541,7 @@
         \begin{itemize}
             \item 一点处的偏导 $\Rightarrow$ 定义法
             \item 某区域$D$的偏导 $\Rightarrow$ 公式法
+            \item 表达式太复杂 $\Rightarrow$ 换元 + 链式法则
         \end{itemize}
         \item $f'_x(x_0, y_0)$ = \begin{cases}
                                      f'_x(x, y_0)\Big|_{x=x_0}, \text{先代值再求导} \\

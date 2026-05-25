@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## work
@@ -134,66 +134,6 @@
         - switch between A and B 在A和B之间转换
         - switch to 转换到...
             - But **switching to** a mainly *plant(n. 植物)*-based diet wouldn't help.
-
-## state
-
-- vt. 陈述；规定
-- n. 州；状态；国家；政府
-- adj. 州的
-- Youth is not a time of life, it is <ins>a **state** of mind(心境)</ins>.
-- They were comfortable in describing different emotional **states** and part of what you do in drama is
-  <ins>put yourself in different shoes(设身处地的，将心比心的)</ins>. 他们在描述不同的情绪状态时很自如，而戏剧表演中，你所做的一部分就是设身处地地去体验不同角色。
-- They set new standards for *ventilation([ˌvɛntəˈleɪʃən] n. 通风设备)*, energy efficiency and heating, and **state**
-  that new *residential([ˌrezɪˈdenʃl] adj. 住宅的)* buildings must have charging points for
-  <ins>electric vehicles(电动汽车 EV)</ins>.
-- statement n. 声明；说法
-- restate vt. 重申
-- overstate
-    - vt. 夸大
-    - We cannot **overstate** our *debt([det] n. 债务；负债情况)* to the past, but the moment has the
-      *supreme([suːˈpriːm] adj. 最高的)* claim.
-        - We cannot overstate X 我们再怎么强调 X 都不为过
-        - supreme claim 至高权利/至高优先权
-    - overstatement n. 大话
-- estate [ɪˈsteɪt]
-    - n. 地产
-    - real estate 房地产
-- status
-    - n. 地位；状况
-    - His father was a clerk in the British Navy pay office—a respectable position, but with little social **status**.
-    - Embrace change. Envision what could be, challenge the <ins>**status quo**(现状)</ins> and drive creative
-      destruction.
-- statute [ˈstætʃuːt]
-    - n. 法规
-    - Similar: statue n. 雕像，雕塑
-    - == rule
-    - -stat 站
-        - == -stit
-    - A **statute** is a formal law or rule.
-    - A **statute** is a written law.
-- statue [ˈstætʃuː]
-    - n. 雕像，雕塑
-    - Similar: statute n. 法规
-    - A **statue** is a *figure([ˈfɪɡjər])* of a person, animal, or object that is carved or cast from some material.
-- stake [steɪk]
-    - v. 立界标以表明（所有权）；以...打赌
-    - n. 重大利害关系；桩子；股份
-    - 词组
-        - stake out 清楚地界定自认为属于自己的东西
-        - at stake 处于危险中
-    - And so we would **call on** state lawmakers from Richmond to Albany to consider reviewing their own wetlands
-      protections and see for themselves the *enormous(adj. 巨大的)* **stake** *involved(v. 包含，涉及)*.
-      因此，我们会呼吁从里士满到奥尔巴尼的州立立法者，考虑审查各自的湿地保护法规，并亲自了解所涉及的巨大利益。
-        - see for oneself/see for themselves 亲自确认、自己验证
-        - the stake involved/stakes involved 所涉及的利害关系（经济、政治、生态等都可以用）
-    - stakeholder n. 利益相关者；股东
-- administer
-    - vt. 管理；施行
-    - administration
-        - n. 管理，管理部分；政府
-        - Many young Americans <ins>cast doubts on(对...产生疑问)</ins> the **administration**'s ability to handle
-          information.
-    - administrative adj. 管理的；行政的
 
 ## social
 
