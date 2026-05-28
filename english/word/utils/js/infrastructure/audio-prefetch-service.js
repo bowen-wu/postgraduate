@@ -23,6 +23,25 @@ function extractCardAudioText(card) {
   return '';
 }
 
+function collectRelationTexts(entries = []) {
+  return entries
+    .map((entry) => String(entry?.word || '').trim())
+    .filter(Boolean);
+}
+
+function extractCurrentCardRelationAudioTexts(card) {
+  if (!card) return [];
+  if (card.type !== 'word' && card.type !== 'phrase' && card.type !== 'prefix') {
+    return [];
+  }
+
+  return [
+    ...collectRelationTexts(card.synonyms),
+    ...collectRelationTexts(card.antonyms),
+    ...collectRelationTexts(card.similars)
+  ];
+}
+
 function getUpcomingCards(state, startIndex, count) {
   const cards = [];
   for (let offset = 0; offset < count; offset += 1) {
@@ -81,5 +100,27 @@ export async function prefetchUpcomingCardAudio(state, options = {}) {
     if (delayMs > 0) {
       await new Promise((resolve) => setTimeout(resolve, delayMs));
     }
+  }
+}
+
+export async function prefetchCurrentCardRelationAudio(state) {
+  if (!CONFIG.audio?.prefetch?.enabled) return;
+  if (!state?.cards?.length || !state?.displayOrder?.length) return;
+  if (typeof document !== 'undefined' && document.visibilityState === 'hidden') return;
+
+  const cardIndex = state.displayOrder[state.currentIndex];
+  const card = state.cards[cardIndex];
+  const relationTexts = extractCurrentCardRelationAudioTexts(card);
+  if (!relationTexts.length) return;
+
+  const sessionId = prefetchSessionId;
+  const seen = new Set();
+
+  for (const text of relationTexts) {
+    if (sessionId !== prefetchSessionId) return;
+    const key = normalizePrefetchKey(text);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    await prefetchText(text, sessionId);
   }
 }

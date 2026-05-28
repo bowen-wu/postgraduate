@@ -34,6 +34,7 @@ import {
   showToast as showToastModule,
   triggerConfetti as triggerConfettiModule
 } from './renderers/feedback-renderer.js';
+import { prefetchCurrentCardRelationAudio } from '../infrastructure/audio-prefetch-service.js';
 
 const COMPARE_BASE_URL = 'https://bowen-wu.github.io/postgraduate/english/write/utils/compare-online.html';
 
@@ -161,6 +162,10 @@ export function render(ui) {
 
   ui.btnPrev.disabled = STATE.currentIndex === 0;
   updateStatsUI(ui);
+
+  setTimeout(() => {
+    prefetchCurrentCardRelationAudio(STATE).catch(() => {});
+  }, 0);
 }
 
 export function renderInputActions(ui) {
