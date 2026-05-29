@@ -153,8 +153,15 @@
       esteem(n. 尊重；敬重；自尊心).
     - stereotypical [ˌsteriəˈtɪpɪkl]
         - adj. 模式化的
-        - In short, the image that best represents the current crisis is the **stereotypical** cartoon scene of a man
-          sitting at the breakfast table with a newspaper held up in front of his face...
+        - In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man
+          sitting at the breakfast table with a newspaper held up in front of his face, while a woman glares at the back
+          of it, wanting to talk.
+            - in short 简而言之
+            - hold up 举起 => 挡在前面
+            - glare [ɡler]
+                - vi. 怒目而视
+                - n. 强光
+            - glare at sb./sth. 怒视/瞪着
 - discrimination [dɪˌskrɪmɪˈneɪʃn]
     - n. 歧视
     - Although the Supreme Court of the United States had **prohibited** intentional

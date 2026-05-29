@@ -39,8 +39,9 @@
     - vt. 精心制作
     - n. 技艺；技巧；小船
     - She **crafted** the chair lovingly.
-    - As Cline is the first to note, it *took* Beaumont decades to perfect her **craft**; her example can't be
-      <ins>knocked off(抄袭，复制)</ins>.
+    - As Cline is the first to note, it took Beaumont decades to perfect her **craft**; her example can't be knocked
+      off.
+        - knock off 抄袭，复制
     - Another approach to getting more done in less time is to rethink how you prioritise your day—in particular how we
       **craft** our to-do lists.
     - craftsman
@@ -54,18 +55,17 @@
 ## deal
 
 - n. 交易；协议；大量
-- owe a great deal to 很大程度上得益于...
-- The reforms <ins>owe a great **deal** to</ins> the resolution of one man.
-- Do we have a deal?
-    - Deal!
+- The reforms owe a great **deal** to the resolution of one man.
+    - owe a great deal to 很大程度上得益于...
+- Do we have a deal? Deal!
 - 词组
     - deal with 解决；处理；应对
         - == cope with
-    - a great deal of + **不可数n.** 大量的...
+    - a great deal of + uncountable-noun 大量的...
     - a big deal 一件大事
-        - no big deal 小意思啦/没啥/不打紧
+        - Opposite: no big deal 小意思啦/没啥/不打紧
     - A deal is a deal. 一言为定、言出必行
-- dealing n. [pl.] 往来
+- dealing n. [pl.]往来
 - dealer n. 贸易商
 - cope
     - vi. （成功地）处理
@@ -90,9 +90,10 @@
 - Sometimes storms blew the vessels far off their **course**.
 - Twenty years is a blink in the long **course** of history.
 - These designers came to exert enormous influence on the **course** of American architecture.
-- Before it ends, it will likely change the life **course** and character of a *generation(n. 一代人)* of young adults.
+- Before it ends, it will likely change the life **course** and character of a generation of young adults.
+    - generation n. 一代人；（家史中的）一代；一辈；（尤指电、热等的）产生
 - discourse n. 话篇；话语
-- curriculum n. （学校等的）**全部**课程
+- curriculum n. （学校等的）全部课程
 - discipline
     - v. 训练; 惩罚; 自我约束
     - n. 自制力；学科；行为准则
@@ -100,7 +101,8 @@
     - When you have **discipline**, you have **self-control**.
     - When you **discipline** children, you are either teaching them to be well-behaved, or you are punishing and
       correcting them.
-- catalog/catalogue n. 目录
+        - punish [ˈpʌnɪʃ] vt. 惩罚，处罚
+- catalog n. 目录
 
 ## board
 
@@ -116,7 +118,7 @@
     - abroad
         - adv. 在国外
         - study abroad 出国留学
-    - broadband n. 宽带连接
+    - broadband n. 宽带
 - domestic [dəˈmestɪk]
     - adj. 国内的；家用的；家务的
     - Similar: democratic [ˌdeməˈkrætɪk] adj. 民主的
@@ -129,15 +131,19 @@
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
 - Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
   comes in.
-- After you have clearly and adequately(['ædɪkwətlɪ] adv. 足够地) **developed** the body of your paper, pay
-  particular attention to the introductory and concluding paragraphs.
-- Women are particularly(adv. 特别) susceptible to **developing** depression and anxiety([æŋˈzaɪəti]) disorder in
-  response to stress compared to men.
+- After you have clearly and adequately **developed** the body of your paper, pay particular attention to the
+  introductory and concluding paragraphs.
+    - adequately adv. 充分地
+- Women are particularly susceptible to **developing** depression and *anxiety([æŋˈzaɪəti])* disorder in response to
+  stress compared to men.
+    - particularly
+        - adv. 特别；尤其
+        - == especially
 - developing adj. 发展中的
 - developed adj. 发达的
 - development
     - n. 发展；开发
-    - == evolution
+    - == evolution n. 进化; 演变
 - developmental adj. 发展的；开发中的
 
 ## environment
@@ -170,17 +176,20 @@
     - interpretation n. 解释
     - misinterpret
         - vt. 误解
-        - misinterpretation n. 误解
+        - misinterpretation
+            - n. 误解
             - == misunderstanding n. 误解，误会
-            - About a third say the problem of fake news lies in "**misinterpretation** or
-              *exaggeration([ɪɡˌzædʒəˈreʃən] n. 夸张，夸大)* of actual news" via social media.
-            - Opportunities for **misinterpretation**, error, and self-deception **abound**. 误解、出错和自欺的可能性比比皆是
-                - abound [əˈbaʊnd]
-                    - vi. 大量存在
-                    - Challenges **abound**, so do opportunities. 前方有挑战，也有机遇
+            - About a third say the problem of fake news lies in "**misinterpretation** or exaggeration of actual news"
+              via social media.
+                - exaggeration n. 夸大
+            - Opportunities for **misinterpretation**, error, and self-deception **abound**.
+                - abound [əˈbaʊnd] vi. 大量存在
+            - Challenges **abound**, so do opportunities.
 - illustrate
     - vt. （用实例、图标等）说明
     - == demonstrate
+        - vt. 证明；表现
+        - vi. 游行
 
 ## member
 
@@ -189,13 +198,15 @@
 - staff [stæf]
     - n. 全体员工
     - vt. 由...担任工作人员
-    - stuff [stʌf]
+    - Similar: stuff [stʌf]
         - vt. 填进，塞满
-        - n. 原料，材料(== thing)；
+        - n. 原料，材料
+        - == thing
 - faculty [ˈfæklti]
     - n. （高等院校的）院系；（高等院校中院、系的）全体教员
-    - In the 1960s and 1970s, European universities saw **marked** changes in their governance *arrangements(n. 安排)*,
-      with the empowerment of junior faculty and to some degree of students as well.
+    - In the 1960s and 1970s, European universities saw **marked** changes in their governance arrangements, with the
+      empowerment of junior faculty and to some degree of students as well.
+        - arrangement n. 安排；布置
         - the empowerment of... 赋权/权力增强
         - to some degree 在某种程度上
         - as well 也/还/同样

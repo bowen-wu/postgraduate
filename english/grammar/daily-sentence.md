@@ -1125,8 +1125,12 @@ how 从句到哪里结束？
 
 ### 原句
 
-Almost everyone who was interviewed for this special report said that the biggest problem at the moment is not a lack of
-demand but a lack of good work to sell.
+- Almost everyone who was interviewed for this special report said that the biggest problem at the moment is not a lack
+  of demand but a lack of good work to sell.
+    - interview
+        - vt. 采访
+        - n. 面试；采访
+    - be interviewed for sth. 因...而接受采访/为...接受采访
 
 ## 070
 
@@ -1136,9 +1140,16 @@ demand but a lack of good work to sell.
 
 ### 原句
 
-In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man sitting at the
-breakfast table with a newspaper held
-up in front of his face, while a woman glares at the back of it, wanting to talk.
+- In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man sitting at the
+  breakfast table with a newspaper held up in front of his face, while a woman glares at the back of it, wanting to
+  talk.
+    - in short 简而言之
+    - stereotypical [ˌsteriəˈtɪpɪkl] adj. 模式化的
+    - hold up 举起 => 挡在前面
+    - glare [ɡler]
+        - vi. 怒目而视
+        - n. 强光
+    - glare at sb./sth. 怒视/瞪着
 
 ## 071
 
@@ -1148,23 +1159,53 @@ up in front of his face, while a woman glares at the back of it, wanting to talk
 
 ### 原句
 
-The companies that Dr. Curtis turned to-Procter & Gamble, Colgate-Palmolive and Unilever-had invested hundreds of
-millions of dollars finding the subtle cues in consumers lives that corporations could use to introduce new routines.
+- The companies that Dr. Curtis turned to—Procter & Gamble, Colgate-Palmolive and Unilever—had invested hundreds of
+  millions of dollars finding the subtle cues in consumers lives that corporations could use to introduce new routines.
+    - subtle [ˈsʌtl] adj. 微妙的；巧妙的
+    - turn to sb. 向某人求助
+    - corporation
+        - n. （大）公司
+        - == firm == company
+    - routine
+        - n. 常规，惯例
+        - adj. 常规的，日常的
+    - cue [kjuː] n. 提示；暗示
+    - subtle cue 微妙线索
+    - introduce routine 引入习惯
+    - live
+        - v. 活着；居住
+        - adj. 活的；实时的，现场的
 
 ## 072
 
 ### 思考
 
-这句话为什么写这么长？包含了什么特辣结构的长难句？
+这句话为什么写这么长？包含了什么特殊结构的长难句？
 
 ### 原句
 
-Many Americans regard the jury system as a concrete expression of crucial democratic values, including the principles
-that all citizens who meet minimal qualifications of age and literacy are equally competent to serve on juries; that
-jurors should be selected randomly from a representative cross section of the community; that no citizen should be
-denied the right to serve on a Jury on account of race, religion, sex, or national origin; that defendants are entitled
-to trial by their peers; and that verdicts should represent the conscience of the community and not just the letter of
-the law.
+- Many Americans regard the jury system as a concrete expression of crucial democratic values, including the principles
+  that all citizens who meet minimal qualifications of age and literacy are equally competent to serve on juries; that
+  jurors should be selected randomly from a representative cross section of the community; that no citizen should be
+  denied the right to serve on a Jury on account of race, religion, sex, or national origin; that defendants are
+  entitled to trial by their peers; and that verdicts should represent the conscience of the community and not just the
+  letter of the law.
+    - defendant [dɪˈfendənt] n. 被告
+    - trial
+        - n. 审判；试验；比赛
+        - Similar: tail
+            - n. 尾巴
+            - vi. 盯...的梢
+    - regard A as B 把A视为B
+    - concrete expression of sth.
+    - democratic values 民主价值观
+    - competent [ˈkɑːmpɪtənt] adj. 能胜任的；有能力的
+    - e competent to do sth. 有能力做.../有资格做...
+    - a cross section of sth. ...的代表性群体/...的缩影
+    - deny sb. the right to do sth. 剥夺某人做某事的权利
+    - on account of sth. 因为/由于
+    - be entitled to sth. 有权获得.../依法享有...
+    - trial by one's peers
 
 ## 073
 
