@@ -150,7 +150,7 @@
     - adv. 倔强地，顽强地，顽固地
 - delight [dɪˈlaɪt]
     - vt. 使高兴
-    - n. 高兴；快乐；
+    - n. 高兴；快乐
 - conceal
     - vt. 隐藏；隐瞒（信息）
 - judgmental

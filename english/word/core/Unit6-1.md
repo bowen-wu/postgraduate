@@ -147,6 +147,7 @@
         - quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）
 - commonly
     - adv. 通常
+    - == normally adv. 通常
     - Mental health has commonly been called conscience, **instinct**, *wisdom([ˈwɪzdəm] n. 智慧)*, common sense, or
       the inner voice.
 - commonness n. 平凡
@@ -164,7 +165,9 @@
     - n. 常态
     - norm n. 标准; 规范; 准则; （劳动）定额
     - Normal University
-    - normally adv. 通常
+    - normally
+        - adv. 通常
+        - == commonly adv. 通常
 
 ## involve
 

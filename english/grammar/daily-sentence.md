@@ -1200,7 +1200,7 @@ how 从句到哪里结束？
     - concrete expression of sth.
     - democratic values 民主价值观
     - competent [ˈkɑːmpɪtənt] adj. 能胜任的；有能力的
-    - e competent to do sth. 有能力做.../有资格做...
+    - be competent to do sth. 有能力做.../有资格做...
     - a cross section of sth. ...的代表性群体/...的缩影
     - deny sb. the right to do sth. 剥夺某人做某事的权利
     - on account of sth. 因为/由于
@@ -1215,10 +1215,19 @@ how 从句到哪里结束？
 
 ### 原句
 
-Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as
-early as the 1880 case of Strauder v.
-West Virginia, the practice of selecting so-called elite or blue-ribbon juries provided a convenient way around this and
-other antidiscrimination laws.
+- Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as
+  early as the 1880 case of Strauder v. West Virginia, the practice of selecting so-called elite or blue-ribbon juries
+  provided a convenient way around this and other antidiscrimination laws.
+    - intentional adj. 有意的，故意的
+    - elite
+        - [ɪˈliːt]
+        - adj. 精英的
+        - n. 精英
+        - == blue-ribbon 精英的、优秀的
+    - convenient adj. 方便的，便利的，近处的
+    - as early as 早在...
+    - provide a way around sth. 提供规避...的方法/绕开...的方法
+    - the practice of doing sth. 做某事的做法/做某事的惯例/做某事的行为
 
 ## 074
 
@@ -1228,9 +1237,16 @@ other antidiscrimination laws.
 
 ### 原句
 
-For the time, attention, and money of the art-loving public, classical instrumentalists must compete not only with opera
-houses, dance troupes, theater companies, and museums, but also with the recorded performances of the great classical
-musicians of the 20th century.
+- For the time, attention, and money of the art-loving public, classical instrumentalists must compete not only with
+  opera houses, dance troupes, theater companies, and museums, but also with the recorded performances of the great
+  classical musicians of the 20th century.
+    - instrumentalist [ˌɪnstrəˈmɛntlɪst] n. 乐器演奏家
+    - art-loving public 爱好艺术的公众
+    - dance troupe 舞蹈团
+    - opera house 歌剧院
+    - theater company 话剧团
+    - compete with 与...竞争
+    - compete for 争夺...
 
 ## 075
 
@@ -1240,7 +1256,10 @@ musicians of the 20th century.
 
 ### 原句
 
-The financial crisis has made it more acceptable to be between jobs or to leave a bad one.
+- The financial crisis has made it more acceptable to be between jobs or to leave a bad one.
+    - make it + adjective + to do sth. 使得做某事变得.../让做某事变得...
+    - be between jobs 待业/暂时没有工作/正在找下一份工作
+    - leave a bad job 离开一份糟糕的工作
 
 ## 076
 
@@ -1250,8 +1269,13 @@ The financial crisis has made it more acceptable to be between jobs or to leave 
 
 ### 原句
 
-We define such sold media as owned media whose traffic is so strong that other organizations place their content or
-e-commerce engines within that environment.
+- We define such sold media as owned media whose traffic is so strong that other organizations place their content or
+  e-commerce engines within that environment.
+    - traffic
+        - v. 非法买卖
+        - n. 交通；通信量，流量；非法买卖
+    - define A as B 把A定义为B
+    - place content 投放内容/发布内容
 
 ## 077
 
@@ -1261,9 +1285,21 @@ e-commerce engines within that environment.
 
 ### 原句
 
-Toyota Motor, for example, alleviated some of the damage from its recall crisis earlier this year with a relatively
-quick and well-orchestrated social-media response campaign, which included efforts to engage with consumers directly on
-sites such as Twitter and the social-news site Digg.
+- Toyota Motor, for example, alleviated some of the damage from its recall crisis earlier this year with a relatively
+  quick and well-orchestrated social-media response campaign, which included efforts to engage with consumers directly
+  on sites such as Twitter and the social-news site Digg.
+    - alleviate [əˈliːvieɪt]
+        - vt. 减轻
+        - == assuage vt. 缓和
+    - damage
+        - vt. 伤害；破坏
+        - n. 损失；伤害
+    - recall crisis 召回危机
+    - campaign [kæmˈpeɪn] n. 战役；（有计划的）运动；竞选运动
+    - well-orchestrated 精心策划的/协调良好的
+    - social-media response campaign 社交媒体回应活动
+    - include efforts to do sth. 包括...方面的努力
+    - engage with sb. 与...互动/与...建立联系/与...沟通
 
 ## 078
 
@@ -1273,8 +1309,19 @@ sites such as Twitter and the social-news site Digg.
 
 ### 原句
 
-Even though the day-to-day experience of raising kids can be soul-crushingly hard, Senior writes that "the very things
-that in the moment dampen our moods can later be sources of intense gratification and delight."
+- Even though the day-to-day experience of raising kids can be soul-crushingly hard, Senior writes that "the very things
+  that in the moment dampen our moods can later be sources of intense gratification and delight."
+    - intense adj. 十分强烈的；激烈的
+    - gratification [ˌɡrætəfɪˈkeʃən]
+        - n. 满足；令人满意的事物
+        - == satisfaction n. 满足；满意
+    - delight [dɪˈlaɪt]
+        - vt. 使高兴
+        - n. 高兴；快乐
+    - day-to-day 日常的
+    - soul-crushing 令人崩溃的/令人精神受打击的
+    - dampen one's mood 使某人情绪低落/打击兴致
+    - the very + noun 恰恰是.../正是...
 
 ## 079
 
@@ -1284,9 +1331,19 @@ that in the moment dampen our moods can later be sources of intense gratificatio
 
 ### 原句
 
-Unhappy parents rarely are provoked to wonder if they shouldn't have had kids, but unhappy childless folks are bothered
-with the message that children are the single most important thing in the world: obviously their misery must be a direct
-result of the gaping baby-size holes in their lives.
+- Unhappy parents rarely are provoked to wonder if they shouldn't have had kids, but unhappy childless folks are
+  bothered with the message that children are the single most important thing in the world: obviously their misery must
+  be a direct result of the gaping baby-size holes in their lives.
+    - bother [ˈbɑːðər] vt. 打扰；使不安
+    - be bothered with 被...困扰/不断受到...烦扰
+    - misery [ˈmɪzəri]
+        - n. 痛苦; 不幸; 穷困; 悲惨的境遇
+        - Similar: mystery [ˈmɪstəri] n. 神秘性，神秘的事或人
+    - provoke sb. to do sth. 促使某人做某事/引起某人去...
+    - wonder if... 琢磨是否.../怀疑是否...
+    - should not have done 本来不应该做
+    - gaping hole 大窟窿/巨大缺口
+    - the gaping baby-size holes in their lives 他们人生中那些“婴儿大小的大窟窿” => 人生中因为没有孩子而留下的巨大空缺
 
 ## 080
 

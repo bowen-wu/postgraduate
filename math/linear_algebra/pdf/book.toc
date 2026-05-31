@@ -49,3 +49,10 @@
 \contentsline {subsection}{\numberline {2.5}方法步骤}{23}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}条件转换思路}{24}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}理解}{25}{subsection.2.7}%
+\contentsline {section}{\numberline {3}向量}{27}{section.3}%
+\contentsline {subsection}{\numberline {3.1}基本概念}{27}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}定理}{28}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}运算}{29}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}方法步骤}{29}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}条件转换思路}{31}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}理解}{32}{subsection.3.6}%

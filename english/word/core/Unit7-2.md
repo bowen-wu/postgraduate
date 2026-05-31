@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## define
@@ -27,8 +27,8 @@
 - vt. 定义
 - To define is to limit. 定义即限制/每一个定义，都是一种约束
     - To do...is to do... 做A等于做B
-- redefine [ˌriːdɪˈfaɪn] vt. 重新定义
 - definition [ˌdefɪˈnɪʃn] n. 定义
+- redefine [ˌriːdɪˈfaɪn] vt. 重新定义
 - definite [ˈdefɪnət]
     - adj. 不会改变的; 明确的; (证据或信息)确凿的
     - definitely
@@ -36,7 +36,7 @@
         - indefinitely adv. 无限期地；模糊不清的
 - infinite [ˈɪnfɪnət]
     - adj. 无限的，无穷的; 极大的，极多的
-    - infinity stone 无限宝石
+    - infinity stone
     - infinitely adv. 无限地，无穷地; 极其
 
 ## effort
@@ -48,20 +48,27 @@
         - == endeavor to do
         - == strive to do
     - take efforts 付出努力
-- We should **spare(v. 留出) no efforts to/make great efforts to(不遗余力)** protect the environment.
+- We should **spare no efforts to** protect the environment.
+    - spare [sper]
+        - vt. 抽出时间，节约，吝啬
+        - adj. 空闲的，备用的，多余的
+        - n. 备用品
+    - spare no efforts to 不遗余力
+        - == make great efforts to
 - endeavor [ɪnˈdɛvər]
     - vi. 努力
     - 词组
         - endeavor to do
             - == make efforts to
     - ...endeavor to live a joyful life
-    - California's Forest Carbon Plan **endeavors to/make efforts to** reduce the *density([ˈdensəti] n. 密度)* of some
-      of its forests.
+    - California's Forest Carbon Plan **endeavors to reduce** the *density([ˈdensəti] n. 密度)* of some of its forests.
 - strive [straɪv]
     - vi. 努力
-    - strive to do
-    - The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* **strive to** abandon or hide their old
-      *aristocratic([əˌrɪstəˈkrætɪk] adj. 贵族的)* ways.
+    - 词组
+        - strive to do
+    - The most successful monarchies **strive to** abandon or hide their old aristocratic ways.
+        - monarchy [ˈmɑːnərki] n. 君主政体
+        - aristocratic [əˌrɪstəˈkrætɪk] adj. 贵族的
 
 ## order
 
@@ -75,7 +82,7 @@
     - == chaos [ˈkeɪɑːs]
         - n. 混乱，杂乱
         - chaotic [keɪˈɑtɪk] adj. 混乱的; 乱糟糟的
-    - anxiety([æŋˈzaɪəti]) disorder 焦虑症
+    - *anxiety([æŋˈzaɪəti])* disorder 焦虑症
     - depression n. 抑郁(症); 消沉; 萧条(期)
 - arrange [əˈreɪndʒ]
     - v. 安排；排列
@@ -87,8 +94,8 @@
     - consequence n. 结果；后果
     - subsequent
         - adj. 随后的，后来的
-        - Prior knowledge and interests influence <ins>what we experience<ins>, <ins>what we think our experiences
-          mean<ins>, **and** <ins>the **subsequent** actions we take<ins>.
+        - Prior knowledge and interests influence what we experience, what we think our experiences mean, **and** the
+          **subsequent** actions we take.
 
 ## account
 
@@ -96,18 +103,16 @@
 - n. 描述；账户；解释
 - bank account
 - factual account 基于事实的叙述/事实陈述
-- account for + 百分比
-    - 占比例
-    - The *proportion([prəˈpɔːrʃn] n. 比例)* of Spring Festival gifts **accounted for/occupy([ˈɑːkjupaɪ])** 40 percent.
-- account for + 内容
-    - 解释
-    - C(原因) account for R(结果)
-    - His hard work **accounts for** his success.
+- The proportion of Spring Festival gifts **accounted for/occupy** 40 percent.
+    - account for + percent 占比例
+    - proportion n. 部分；比例
+- His hard work **accounts for** his success.
+    - account for 解释 C(原因) account for R(结果)
 - accountable
     - adj. 对...负有责任的
-    - == responsible
-    - The main *purpose([ˈpɜːrpəs] n. 意图)* of this "clawback" rule is to hold bankers **accountable** for harmful risk
-      taking. 这一“追回”规则的主要目的是让银行家对有害的风险承担责任
+    - == responsible adj. 有责任的；有责任心的；应受责备的
+    - The main purpose of this "clawback" rule is to hold bankers **accountable** for harmful risk taking.
+        - purpose [ˈpɜːrpəs] n. 目的；目标
     - accountability n. 责任
 - count
     - vt. 认为；把...算入
@@ -126,18 +131,23 @@
 - [kleɪm]
 - vt. 声称
 - n. 声明；所有权
-- == declare == assert == announce
-- claim- 叫喊
+- == declare v. 宣布，声明
+- == assert vt. 声称，断言
+- == announce vt. 宣布
+- -claim- 叫喊
     - == to shout
 - We cannot overstate our debt to the past, but the moment has the supreme **claim**.
     - We cannot overstate X 我们再怎么强调 X 都不为过
 - acclaim 🙂
     - vt. 称赞
     - n. 称赞
-    - axx- 表示强调
-        - a**c** + **c**laim => a**cc**laim
-        - a**f** + **f**irm => a**ff**irm
-        - a**r** + range => arrange
+    - Block: axx- 表示强调
+        - acclaim
+            - vt. 称赞
+            - n. 称赞
+            - a**c** + **c**laim
+        - affirm vt. 肯定属实；申明（a**f** + **f**irm）
+        - arrange v. 安排；排列（a**r** + range）
 - claimant [ˈkleɪmənt] n. （因失业等）领取救济金者
 - declare v. 宣布，声明
 - assert [əˈsɜːrt]
@@ -149,20 +159,27 @@
     - announcement n. 宣告
 - contend [kənˈtend]
     - vi. （尤指在争论中）声称，主张，认为；竞争，争夺
+    - Similar: content [ˈkɑːntent]
+        - adj. 满意的
+        - n. 内容
     - **Contend** for the faith.
-    - People used to **contend** that the earth was flat.
-        - == assert/maintain/hold that...
-    - But in her new book Join the Club, Tina Rosenberg **contends/holds/believes/maintains** that
-      *peer pressure(同龄人压力)* can also be a positive force through what she calls the social cure.
-    - content [ˈkɑːntent]
-    - It is time to **contend with** unfair *discrimination(n. 歧视)*.
+    - People used to **contend/assert/maintain/hold** that the earth was flat.
+    - But in her new book Join the Club, Tina Rosenberg **contends/holds/believes/maintains** that peer pressure can
+      also be a positive force through what she calls the social cure.
+        - peer pressure 同龄人压力
+        - cure [kjʊr]
+            - vt. 治好（疾病）
+            - n. （解决问题、改善糟糕情况等的）措施
+    - It is time to **contend with** unfair discrimination.
         - contend with 对付、应对、努力克服（困难、不公、问题）
+        - discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
 - compliment n. 称赞
 
 ## describe
 
 - vt. 描述，描绘
-- -scrib- == -scrip- 写
+- -scrib- 写
+    - == -scrip-
 - description n. 描述
 - prescribe
     - vt. 指定，规定; 开处方，给医嘱
@@ -172,8 +189,9 @@
     - prescription n. 药房
 - subscribe
     - vi. 订阅；签字，赞成；捐款
-    - Copyright *rested with(归...所有)* the *journal([ˈdʒɜːrnl])* publisher, and researchers seeking knowledge of the
-      results would have to **subscribe** to the journal.
+    - Copyright rested with the *journal([ˈdʒɜːrnl])* publisher, and researchers seeking knowledge of the results would
+      have to **subscribe** to the journal.
+        - rest with sb./sth. 取决于.../由...负责/由...决定/（权力、责任）在...手中
     - subscriber n. （报刊等的）订阅人
     - subscription n. （报刊等的）订阅
 - manuscript [ˈmænjuskrɪpt]
@@ -184,13 +202,15 @@
 ## opportunity
 
 - n. 机会
-- Look, if you had *one shot(一次机会)*, or _one ***opportunity***(一个机遇)_. To *seize([siːz] v. 抓住)* everything you
-  ever wanted in one moment. Would you capture it or just let it slip?
-  听好了—若命运只给你一次机会，让你实现所有的梦想，你会紧紧抓住，还是眼睁睁看它溜走？
+- Look, if you had one shot, or one **opportunity**. To seize everything you ever wanted in one moment. Would you
+  capture it or just let it slip?
+    - one shot 一次机会/仅有的一次尝试
+    - seize [siːz] vt. 抓住，夺取，占据
 - chance
     - vi. 偶然发生
     - n. 机会；偶然
-    - **The chances are(很有可能)**, if you said "thank you", you made someone's day. 也许你的一句“谢谢”，就让别人一天都充满好心情
+    - **The chances are**, if you said "thank you", you made someone's day.
+        - the chances are (that)... 很有可能.../十有八九.../大概率...
 - occasion [əˈkeɪʒn]
     - n. 场合
     - occasionally [əˈkeɪʒnəli]
@@ -220,9 +240,6 @@
 
 ## 词组
 
-- let down
-    - 让某人失望、辜负
-    - Don’t let me down. 别让我失望
 - pick up
     - 捡起，重新获得，学到
 - push out
@@ -231,3 +248,6 @@
     - 人之常情
 
 ## 句式
+
+- Don’t let me down.
+    - let down 让某人失望、辜负

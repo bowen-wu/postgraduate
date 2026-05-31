@@ -119,6 +119,14 @@
 
     \subsection{计算}
 
+    \paragraph{基本思路：}
+    \begin{enumerate}
+        \item 拆被积函数
+        \item 拆$D$（对称）
+        \item 交换积分次序
+        \item 切换坐标系
+    \end{enumerate}
+
     \subsubsection{直角坐标系下的计算方法}
 
     \begin{enumerate}
@@ -220,7 +228,7 @@
 
         \item \textbf{极坐标 $\to$ 直角坐标}：
         \[
-            r = \sqrt{x^2 + y^2}, \quad \theta = \arctan\frac{y}{x}
+            {\color{red}{r = \sqrt{x^2 + y^2}}}, \quad \theta = \arctan\frac{y}{x}
         \]
         \item 画出区域$D$的边界图形，做好上限、下限的转化
     \end{enumerate}
@@ -243,9 +251,9 @@
 
     二重积分换元法中的{\color{red}{三换}}:
     \begin{enumerate}
-        \item 换积分区域
-        \item 换被积函数
-        \item 换积分变量
+        \item 换被积函数：$f(x, y) \Rightarrow f[x(u, v), y(u, v)]$
+        \item 换积分区域：$\diint_{D_{xy}} \Rightarrow \diint_{D_{uv}}$
+        \item 换积分变量：$\mathrm{d}x\mathrm{d}y = |J|\mathrm{d}u\mathrm{d}v$
     \end{enumerate}
 
     \subsection{结论}
@@ -284,7 +292,7 @@
                 I^2 = \int_{0}^{+\infty} e^{-x^2} \mathrm{d}x \cdot \int_{0}^{+\infty} e^{-y^2} \mathrm{d}y = \int_{0}^{+\infty}\int_{0}^{+\infty} e^{-(x^2+y^2)} \mathrm{d}x\mathrm{d}y
             \]
 
-            转化为极坐标，区域为第一象限：$0 \leq \theta \leq \frac{\pi}{2}$，$0 \leq r < +\infty$，则
+            转化为极坐标，区域为第一象限：$0 \leq \theta \leq \dfrac{\pi}{2}$，$0 \leq r < +\infty$，则
             \[
                 I^2 = \int_{0}^{\frac{\pi}{2}} \mathrm{d}\theta \int_{0}^{+\infty} e^{-r^2} \cdot r\,\mathrm{d}r = \frac{\pi}{2} \cdot \left[-\frac{1}{2}e^{-r^2}\right]_{0}^{+\infty} = \frac{\pi}{4}
             \]
@@ -347,7 +355,7 @@
         \item $\displaystyle \frac{\sin x}{x}, \frac{\cos x}{x}, \frac{\ln (1 + x)}{x}, \frac{1}{\ln x}, \sin x^2, \cos x^2, \sin \frac{1}{x}, \cos \frac{1}{x}, \frac{\tan x}{x}, \frac{e^x}{x}, \tan x^2, e^{ax^2 + bx + c}(a \neq 0) $均没有初等函数形式的原函数，见到它们，一般都要{\color{red}{交换积分次序}}，避免先对$x$求积分
         \item 积分与字母用谁无关
         \begin{itemize}
-            \item $\displaystyle\iint_{D_{xy}} f(x, y)\,\mathrm{d}x\mathrm{d}y = \iint_{D_{yx}} f(y, x)\,\mathrm{d}y\mathrm{d}x$
+            \item $\diint_{D_{xy}} f(x, y)\,\mathrm{d}x\mathrm{d}y = \diint_{D_{yx}} f(y, x)\,\mathrm{d}y\mathrm{d}x$
         \end{itemize}
         \item 当分母$\to 0$时，若分式的极限不为$0$，则可知分子$\to 0$
         \item 思考：$\displaystyle\lim\limits_{x\to +\infty} e^{x^2}(\int_0^x t^2e^{-t^2}\,\mathrm{d}t + a) = \infty$
@@ -380,13 +388,13 @@
                 \end{vmatrix}
                 =1.
             \]
-            由区域条件 $x\ge0,\ y\ge0,\ x+y\le1$ 可得$0\le v\le1,\qquad v\le u\le1$，因而
+            由区域条件 $x\ge0,\ y\ge0,\ x+y\le1$ 可得$0\le v\le1,\quad v\le u\le1$，因而
             \[
                 \begin{aligned}
                     \iint\limits_D e^{\frac{y}{x+y}}\,\mathrm{d}\sigma
                     &= \iint\limits_{D_{uv}} e^{\frac{v}{u}} |J|\,\mathrm{d}v\,\mathrm{d}u
                     = \int_0^1 \mathrm{d}u \int_0^u e^{\frac{v}{u}} \,\mathrm{d}v \\
-                    &= \int_0^1 \left. e^{\frac{v}{u}} \right|_{v=0}^{v=u} \mathrm{d}u
+                    &= \int_0^1 \left. ue^{\frac{v}{u}} \right|_{v=0}^{v=u} \mathrm{d}u
                     = \int_0^1 u(e-1)\,\mathrm{d}u
                     = \frac{1}{2}(e-1)
                 \end{aligned}
@@ -458,7 +466,6 @@
             {\color{blue}典型应用}：
         \begin{itemize}
             \item 积分换序：$\displaystyle\int\mathrm{d}x\int\mathrm{d}y \leftrightarrow \int\mathrm{d}y\int\mathrm{d}x$
-            \item 求和与极限交换：$\displaystyle\lim_{n\to\infty}\sum_{k=1}^{n} \leftrightarrow \sum_{k=1}^{\infty}\lim_{n\to\infty}$
             \item 微分与积分交换：$\displaystyle\frac{\mathrm{d}}{\mathrm{d}x}\int \leftrightarrow \int\frac{\mathrm{d}}{\mathrm{d}x}$
         \end{itemize}
 
@@ -469,7 +476,6 @@
             {\color{blue}典型应用}：
         \begin{itemize}
             \item 坐标系变换：直角坐标 $\leftrightarrow$ 极坐标 $\leftrightarrow$ 球坐标
-            \item 域变换：时域 $\xleftrightarrow{\text{傅里叶}}$ 频域
             \item 基变换：线性空间中不同基下的坐标转换
         \end{itemize}
 

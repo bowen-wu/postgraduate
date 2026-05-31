@@ -80,6 +80,7 @@
     - vt. 设法解决；演讲
     - n. 地址；致辞
     - He is about to **address** a conference on human rights.
+        - be about to do sth. 即将.../马上要...
     - Governments have been slow to **address** the problem of global warming.
     - I was **addressing** a small gathering in a suburban Virgina living room—a women's group that had invited men to
       join them.
@@ -88,6 +89,10 @@
 
 - n. 进程，发展；课程；一道菜；航线；行动方式
 - Sometimes storms blew the vessels far off their **course**.
+    - blow [bloʊ]
+        - v. 吹；吹气；爆炸；
+        - n. 打击
+    - off course 偏离航线/偏离轨道/偏离原计划
 - Twenty years is a blink in the long **course** of history.
 - These designers came to exert enormous influence on the **course** of American architecture.
 - Before it ends, it will likely change the life **course** and character of a generation of young adults.
@@ -111,6 +116,7 @@
 - n. （公司或其他机构的）董事会，委员会
 - He sits on the company's management **board**.
 - Reding invited corporations to sign up for gender balance goals of 40 percent female **board** membership.
+    - sign up for sth. 报名参加/加入/同意参与/承诺遵守
 - billboard n. 广告牌
 - broad [brɔːd]
     - adj. 广泛的
@@ -125,12 +131,17 @@
     - First two hours, now three hours—this is how far <ins>in advance(提前；事先)</ins> authorities are recommending
       people show up to catch **domestic** flight, at least at some major U.S. airports with increasingly massive
       security lines.
+        - show up 到场/出现/露面
+        - massive adj. （尺寸、数量、规模）非常大的
 
 ## develop
 
 - v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
 - Knowing what you're good at and doing even more of it creates excellence. This is where **developing** new habits
   comes in.
+    - create excellence 造就卓越/达到优秀水平
+    - This is where... 这正是...的地方/这就是...的时候
+    - come in 发挥作用/变得重要/派上用场
 - After you have clearly and adequately **developed** the body of your paper, pay particular attention to the
   introductory and concluding paragraphs.
     - adequately adv. 充分地
@@ -139,6 +150,11 @@
     - particularly
         - adv. 特别；尤其
         - == especially
+    - susceptible [səˈseptəbl] adj. 易患病的；易受...影响的
+    - be susceptible to (doing) sth. 遭受；承受
+        - == be subject to
+        - == be vulnerable to
+    - in response to sth. 作为对...的反应/因应.../受到...刺激后
 - developing adj. 发展中的
 - developed adj. 发达的
 - development
@@ -216,6 +232,7 @@
 
 - adverse [ədˈvɜːrs] 😔
     - adj. 不利的; 有害的; 反面的
+    - Similar: advise [ədˈvaɪz] v. 建议
 - glamorous [ˈɡlæmərəs]
     - adj. 富有魅力的; 迷人的; 富于刺激的; 独特的
 - cautious  [ˈkɔːʃəs]

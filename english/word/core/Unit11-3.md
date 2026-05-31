@@ -126,7 +126,7 @@
     - dissatisfaction n. 不满意
 - gratification [ˌɡrætəfɪˈkeʃən]
     - n. 满足；令人满意的事物
-    - == satisfaction
+    - == satisfaction n. 满足；满意
     - A *feed(n.（给婴儿）一次喂奶)* will usually provide <ins>instant **gratification**(即时满足)</ins> to a crying baby.
 - cater [ˈkeɪtər]
     - v. 满足...的需要

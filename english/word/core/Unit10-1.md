@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## knowledge
@@ -96,8 +96,10 @@
     - adj. 国家的；民族的；国内的
     - nationalization
         - n. 国有化
-        - The *threat([θret] n. 威胁)* of **nationalisation** may have been seen off for now...
-            - theatre [ˈθiːətər] n. 戏院，剧场; 戏剧，演出
+        - The threat of **nationalisation** may have been seen off for now...
+            - threat [θret]
+                - n. 威胁
+                - Similar: theatre [ˈθiːətər] n. 戏院，剧场; 戏剧，演出
 - nationwide
     - adj. 全国范围的
     - adv. 在全国范围内

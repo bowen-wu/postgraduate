@@ -121,7 +121,7 @@
 - assuage [əˈsweɪdʒ] vt. 缓和
 - alleviate [əˈliːvieɪt]
     - vt. 减轻
-    - == assuage
+    - == assuage vt. 缓和
 - release
     - vt. 释放；发布
     - n. 释放；公开发布

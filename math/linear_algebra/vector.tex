@@ -1,69 +1,4 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\usepackage{xstring}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
-
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}[1][]{
-    title=\IfStrEq{#1}{}{\textbf{解析}}{#1}, % 如果传参为空则使用“解析”
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
+\documentclass[./book.tex]{subfiles}
 
 % =========================
 % 文档开始
@@ -93,8 +28,7 @@
             \item 两向量成比例
             \item $n+1$个$n$维向量
         \end{enumerate}
-        \item 向量组$\alpha_1 = (a_{11}, a_{21}, \dots, a_{r1})^T, \alpha_2 = (a_{12}, a_{22}, \dots, a_{r2})^T, \dots, \alpha_m = (a_{1m}, a_{2m}, \dots, a_{rm})^T$及向量组$\widetilde{\alpha_1} = (a_{11}, a_{21}, \dots, a_{s1})^T, \widetilde{\alpha_2} = (a_{12}, a_{22}, \dots, a_{s2})^T, \dots, \widetilde{\alpha_m} = (a_{1m}, a_{2m}, \dots, a_{sm})^T$，其中 $s \le r$，则称$\widetilde{\alpha_1}, \widetilde{\alpha_2}, \dots, \widetilde{\alpha_m}$为向量组$\alpha_1, \alpha_2, \dots, \alpha_m$的延伸组（或称$\alpha_1, \alpha_2, \dots, \alpha_m$是$\widetilde{\alpha_1}, \widetilde{\alpha_2}, \dots, \widetilde{\alpha_m}$的缩短组
-        \item 对$n$维向量$\alpha_1, \alpha_2, \dots, \alpha_s$和$\beta$，若存在实数$k_1, k_2, \dots, k_n$，使得
+        \item 对$n$维向量$\alpha_1, \alpha_2, \dots, \alpha_s$和$\beta$，若存在实数$k_1, k_2, \dots, k_s$，使得
         \[
             k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{s}\alpha_s = \beta
         \]
@@ -120,13 +54,13 @@
     \begin{enumerate}
         \item 向量组$\alpha_1, \alpha_2, \dots, \alpha_s${\color[rgb]{0.2, 0.6, 0.3}{线性相关}}
         \begin{align*}
-            &\Leftrightarrow\; \text{其次线性方程组}[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_n]^T = 0\text{有非零解} \\
+            &\Leftrightarrow\; \text{齐次线性方程组}[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_n]^T = 0\text{有非零解} \\
             &\Leftrightarrow\; r(\alpha_1, \alpha_2, \dots, \alpha_s) < s, s\text{表示}\textbf{未知数的个数}\text{或}\textbf{向量个数} \\
             &\Leftrightarrow\; \color{red}{|\alpha_1, \alpha_2, \dots, \alpha_n| = 0}
         \end{align*}
         \item 向量组$\alpha_1, \alpha_2, \dots, \alpha_s${\color{red}{线性无关}}
         \begin{align*}
-            &\Leftrightarrow\; \text{其次线性方程组}[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_n]^T = 0\text{只有零解} \\
+            &\Leftrightarrow\; \text{齐次线性方程组}[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_n]^T = 0\text{只有零解} \\
             &\Leftrightarrow\; r(\alpha_1, \alpha_2, \dots, \alpha_s) = s, s\text{表示}\textbf{未知数的个数}\text{或}\textbf{向量个数} \\
             &\Leftrightarrow\; \color{red}{|\alpha_1, \alpha_2, \dots, \alpha_n| \neq 0}
         \end{align*}
@@ -134,8 +68,7 @@
         \item $n+1$个$n$维向量一定线性相关
         \item 任何{\color{red}{部分}}组$\alpha_1, \alpha_2, \dots, \alpha_r$相关 \Rightarrow \text{{\color[rgb]{0.2, 0.6, 0.3}{整体}}组}$\alpha_1, \alpha_2, \dots, \alpha_r, \dots \alpha_s$相关
         \item {\color{red}{整体}}组$\alpha_1, \alpha_2, \dots, \alpha_r, \dots \alpha_s$无关 \Rightarrow \text{{\color[rgb]{0.2, 0.6, 0.3}{部分}}组}$\alpha_1, \alpha_2, \dots, \alpha_r$无关
-        \item $\alpha_1, \alpha_2, \dots, \alpha_n$ 线性无关 \Rightarrow \text{延伸组}$\widetilde{\mathbf{\alpha_1}}, \widetilde{\mathbf{\alpha_2}}, \dots, \widetilde{\mathbf{\alpha_n}}$线性无关
-        \item $\widetilde{\mathbf{\alpha_1}}, \widetilde{\mathbf{\alpha_2}}, \dots, \widetilde{\mathbf{\alpha_n}}$线性相关 \Rightarrow \text{缩短组}$\alpha_1, \alpha_2, \dots, \alpha_n$ 线性相关
+        \item $\color{red}{\bigstar}$原来无关，延长必无关；原来相关，缩短必相关
         \item 向量$\beta$可由向量组$\alpha_1, \alpha_2, \dots, \alpha_s$线性表出
         \begin{align*}
             &\Leftrightarrow\; \text{非齐次线性方程组} [\alpha_1, \alpha_2, \dots, \alpha_s][\alpha_1, \alpha_2, \dots, \alpha_s]^T = \beta \text{有解} \\
@@ -156,8 +89,9 @@
 
     \begin{enumerate}
         \item 设$n$维向量$\alpha = (a_1, a_2, \dots, a_n)^T, \beta= (b_1, b_2, \dots, b_n)^T$，则
-        \begin{enumerate}
+        \begin{circlenum}
             \item $\alpha + \beta = (a_1 + b_1, a_2 + b_2, \dots, a_n + b_n)^T$
+            \item $1\alpha = \alpha$
             \item $k\alpha = (ka_1, ka_2, \dots, ka_n)^T$
             \item $0\alpha = 0$
             \item $(\alpha, \beta) = \alpha^T\beta = \beta^T\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}$
@@ -165,23 +99,15 @@
             \item $(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)$
             \item $\alpha + 0 = \alpha $
             \item $\alpha + (-\alpha) = 0$
-            \item $1\alpha = \alpha$
             \item $k(l\alpha) = (kl)\alpha$
             \item $k(\alpha + \beta) = k\alpha + k\beta$
             \item $(k + l)\alpha = k\alpha + l\alpha$
-        \end{enumerate}
-    \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-
+        \end{circlenum}
     \end{enumerate}
 
     \subsection{方法步骤}
 
     \begin{enumerate}
-        \item $\beta$可由$\alpha_1, \alpha_2, \alpha_3$，求表达式？？？
         \item 判断多个向量是否线性相关
         \begin{itemize}
             \item 含有零向量 $\mathbf{0}$ $\Rightarrow$ 线性相关
@@ -200,13 +126,13 @@
             \begin{enumerate}
                 \item \Leftrightarrow $[\alpha_1, \alpha_2, \dots, \alpha_s][x_1, x_2, \dots, x_s]^T = 0$只有零解
                 \item \Leftrightarrow \text{秩}$r(\alpha_1, \alpha_2, \dots, \alpha_s) = s$
-                \begin{itemize}
+                \begin{circlenum}
                     \item $r(A) = A\text{的列秩} = A\text{的行秩}$
                     \item $r(AB) \le r(A) \text{且} r(AB) \le r(B)$
                     \item 若$A$可逆，则$r(AB) = r(BA) = r(B)$
                     \item 若$A$是$m \times n$矩阵，且$r(A) = n$，则$r(AB) = r(B)$
                     \item 若$A$是$m \times n$矩阵，$B$是$n \times s$矩阵，且$AB = \mathbf{O}$，则$r(A) + r(B) \le n$
-                \end{itemize}
+                \end{circlenum}
             \end{enumerate}
             \item \textbf{反证法}
             \item 线性方程组$Ax = 0$
@@ -345,10 +271,8 @@
             \[
                 \because |\alpha_1, \alpha_2, \alpha_3| = 1 \neq 0
             \]
-            又因为$\alpha_1, \alpha_2, \alpha_3$不能由$\beta_1, \beta_2, \beta_3$线性表示， \\
-            4个三维向量必线性相关，若$\beta_1, \beta_2, \beta_3$线性无关，那么$\alpha_1, \alpha_2, \alpha_3$必可由$\beta_1, \beta_2, \beta_3$线性表出 \\
-            所以$\beta_1, \beta_2, \beta_3$线性相关 \\
-            即$|\beta_1, \beta_2, \beta_3| = 0$ \\
+            又因为$\alpha_1, \alpha_2, \alpha_3$不能由$\beta_1, \beta_2, \beta_3$线性表示，4个三维向量必线性相关，若$\beta_1, \beta_2, \beta_3$线性无关，那么$\alpha_1, \alpha_2, \alpha_3$必可由$\beta_1, \beta_2, \beta_3$线性表出 \\
+            所以$\beta_1, \beta_2, \beta_3$线性相关。即$|\beta_1, \beta_2, \beta_3| = 0$ \\
             故$a = 5$ \\
             对$[\alpha_1, \alpha_2, \alpha_3 | \beta_1, \beta_2, \beta_3]$作初等变换，有
             \[

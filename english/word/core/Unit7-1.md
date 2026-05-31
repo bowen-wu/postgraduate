@@ -16,51 +16,18 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
-
-## practice
-
-- [ˈpræktɪs]
-- v. 练习
-- n. 实践；做法；练习；惯例
-- 词组
-    - in practice 在实践中；实际上
-    - common practice 惯例；习惯做法
-    - practice makes perfect 熟能生巧
-- All members of the association adhere to a strict <ins>code of **practice**(行为规范、操作准则)</ins>.
-- malpractice [ˌmælˈpræktɪs]
-    - n. 玩忽职守；不法行为
-    - mal- == 坏、恶😔
-        - malfunction [mælˈfʌŋkʃən]
-            - vi. 失灵; 发生故障
-            - n. 故障; 功能障碍; 失灵
-        - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
-        - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
-    - bene- 🙂
-        - benefit 好处
-- practical
-    - adj. 实际的；实践性的
-    - practical skills 实用性的技能
-    - impractical adj. 不切实际的
-    - practically
-        - adv. 几乎；实际地
-        - **Practically** every week features at least one celebrity mom, or mom-to-be, smiling on the newsstands.
-    - practicality [ˌpræktɪˈkælətɪ] n. 实用性
-- routine
-    - n. 常规，惯例
-    - adj. 常规的，日常的
-    - routinely adv. 例行地
 
 ## comment
 
 - [ˈkɑːment]
 - v. 评论
 - n. 评论
-- comments on/about 评论
 - 词组
+    - comments on/about 评论
     - make comments 做出评论
     - give one's comments on sth. 就某事给出某人的观点
 - opinion
@@ -69,7 +36,9 @@
         - in one's opinion 依某人的观点
         - have a low opinion of 对...评价不高
         - opinion of 对...的看法
-    - My <ins>**opinion** of</ins> my whole experience varies <ins>from time to time(时不时；有时；偶尔)</ins>.
+    - My **opinion** of my whole experience varies from time to time.
+        - from time to time 时不时；有时；偶尔
+            - == occasionally [əˈkeɪʒnəli] adv. 偶尔
 - remark
     - v. 评论；标记
     - n. 评论；标记
@@ -92,7 +61,8 @@
     - take control of 控制（某事物）
 - manipulate [məˈnɪpjuleɪt] 😔
     - vt. （暗中）控制
-    - mani- == hand
+    - mani- 操纵
+        - == hand
     - using the word **manipulate** to describe someone **exerting mental or emotional influence** on others.
     - manipulation n. （暗中）控制；操纵
 
@@ -104,37 +74,48 @@
 - n. 专业
 - major cause 主要原因
 - What should you major in?
-    - major in + 专业名
-    - == my major is + 专业名
-- These are *disciplines(['dɪsɪplɪnz] n. 学科)* that are *going out of style(过时；不再流行)*: 22% of American
-  college graduates now **major in** business compared with only 2% **in** history and 4% **in** English.
+    - major in + major_name
+        - == my major is + major_name
+- These are disciplines that are going out of style: 22% of American college graduates now **major in** business
+  compared with only 2% **in** history and 4% **in** English.
+    - discipline
+        - v. 训练; 惩罚; 自我约束
+        - n. 自制力；学科；行为准则
+    - go out of style 过时/不再流行/失宠
 - majority
     - n. 大多数
-    - Like the **majority** of authors, he had to suffer many *disappointments(n. 失望)* and rejections along the way,
-      but these made him <ins>all the more(更加...)</ins> determined to succeed.
+    - Opposite: minority n. 少数; 少数民族; 未成年
+    - Like the **majority** of authors, he had to suffer many disappointments and rejections along the way, but these
+      made him all the more determined to succeed.
+        - disappointment n. 失望；令人失望的人（或事物）
+        - all the more 更加.../尤其.../因而更...
 - minor [ˈmaɪnər]
     - adj. 较小的
     - minority [maɪˈnɔːrəti]
         - n. 少数; 少数民族; 未成年
         - Chinese minority group
-        - In his book The Tipping Point, Malcolm Gladwell *argues([ˈɑ:ɡju:z] vt. 论证)* that "social epidemics" are
-          driven *in large part* by the actions of *a tiny **minority** of special individuals*.
+        - In his book The Tipping Point, Malcolm Gladwell argues that "social epidemics" are driven **in large part** by
+          the actions of a tiny **minority** of special individuals.
+            - argue [ˈɑːrɡjuː] vt. 论证，陈述理由
+            - tiny [ˈtaɪni] adj. 极小的，微小的
             - in large part 在很大程度上；主要地；多半地
 - chief
     - adj. 主要的；首席的
     - n. 最高领导人
-    - CEO == Chief Executive Officer 首席执行官
-    - CFO == Chief Financial Officer 首席财务官
-    - COO == Chief Operating Officer 首席运营官
+    - Chief Executive Officer 首席执行官（CEO）
+    - Chief Financial Officer 首席财务官（CFO）
+    - Chief Operating Officer 首席运营官（COO）
 - main adj. 主要的
 - principal [ˈprɪnsəpl]
     - adj. 最重要的
     - n. 校长，院长
     - == fundamental == primary == major
+    - Similar: principle [ˈprɪnsəpl] n. 道德原则; 法则; 观念; 理由; 定律
     - the principal requirement
     - The **principal** reason for my change of mind is this.
     - Beethoven's importance in music has been **principally** defined by revolutionary nature of his compositions.
-    - principle [ˈprɪnsəpl] n. 道德原则; 法则; 观念; 理由; 定律
+        - composition n. 作品；作曲；成分；构成
+        - nature [ˈneɪtʃər] n. 本质，实质；天性；自然
 - mostly adv. 主要地；大部分地
 - largely
     - adv. 在很大程度上；主要地
@@ -157,8 +138,13 @@
     - n. 上传的数据
 - download
     - vt. 下载
-    - This is because the networked computer has *sparked([spɑːrk] vt. 发动，触发)* a secret war between **downloading**
-      and **uploading**-between passive consumption and active creation.
+    - This is because the networked computer has sparked a secret war between **downloading** and **uploading**-between
+      passive consumption and active creation.
+        - spark
+            - vt. 引发，导致
+            - v. 发出火花；点燃
+            - n. 火花
+            - Similar: spike [spaɪk] vi. 激增
 - encode
     - vt. 把...编码
     - Girls' attraction to pink may seem *unavoidable([ˌʌnəˈvɔɪdəbl] adj. 不可避免的)*, somehow **encoded** in their
@@ -168,36 +154,49 @@
     - n. 密码，代码；行为规范，道德准则；法典
     - A **code** can be a set of principles.
     - high-school **coding** classes
-    - All members of the association adhere to a strict <ins>**code** of practice(行为规范、操作准则)</ins>.
+    - All members of the association adhere to a strict **code** of practice.
+        - code of practice 行为规范/操作守则/实务准则/行业规范
+        - adhere [ədˈhɪr]
+            - vi. 遵守
+            - == cling vt. 紧紧抓住
+        - adhere/cling to (doing) sth.
     - The profession has a strict **code** of practice.
     - Parts of the problem is that the justices are not bound by an ethics **code**.
 
 ## sense
 
-- vt. 检测出
+- vt. 检测出；感觉到
 - n. 感觉，意识；判断力；意义
-- sense and sensibility 理智与情感
+- Similar: scene n. 场面；情景；现象
+- SENSE AND SENSIBILITY
 - 词组
     - make sense 有意义；说得通；有道理
     - in one sense 在某种意义上
     - common sense 常识
-    - a sense of + 名词 一种...感；...意识；...感觉
+    - a sense of + noun 一种...感；...意识；...感觉
 - nonsense n. 胡扯 😔
 - sensible
     - adj. 明智的，理性的
-    - **Sensible** ideas have been around for a long time, but the state-level bodies that govern the
-      *profession(n. 职业)* have been too conservative to implement them.
+    - **Sensible** ideas have been around for a long time, but the state-level bodies that govern the profession have
+      been too conservative to implement them.
+        - profession n. 职业；专业
 - sensitive
     - adj. 体贴的；须谨慎对待的；（对低温、光、食物等）过敏的；（对细微变化）灵敏的
-    - be sensitive to 对...敏感
+    - 词组
+        - be sensitive to 对...敏感
     - Until this *century([ˈsentʃəri])*, university libraries were not very price **sensitive**.
     - sensitivity n. （信息、话题等的）敏感性，体贴
     - insensitive adj. 不敏感的
 - sensibility n. 情感; 敏感性，灵敏度; 感觉，感性; 感光性，感光度
 - sentiment [ˈsentɪmənt]
     - n. 观点；情绪（多愁善感）
-    - At the next election none of the big parties seem likely to *endorse([ɪnˈdɔːrs] v. 赞同，支持)* this
-      **sentiment**.
+    - At the next election none of the big parties seem likely to endorse this **sentiment**.
+        - endorse [ɪnˈdɔːrs]
+            - v. 赞同，支持
+            - Similar: endure
+                - [ɪnˈdʊr]
+                - vt. 忍受
+                - vi. 持续
 - emotion
     - n. 情绪
     - emotional adj. 情感上的；情绪的
@@ -205,15 +204,16 @@
 
 ## community
 
-- n. 团体；社区，圈子
+- n. 圈子；团体；社区
 - scientific community 科学界
 - communal [kəˈmjuːnl] adj. 团体的
 - communicate
     - vi. 交流
-        - communicate with
     - vt. 传达（想法、感情、思想等）
-    - When your body language **communicates** reluctance or *anxiety([æŋˈzaɪəti] n. 焦虑)*, it *undercuts(v. 削弱)* the
-      message.
+    - 词组
+        - communicate with
+    - When your body language **communicates** reluctance or *anxiety([æŋˈzaɪəti] n. 焦虑)*, it undercuts the message.
+        - undercut v. 削弱
     - communication n. 交流；（信息）传播
 - corporate
     - adj. 公司的
@@ -224,6 +224,20 @@
     - cooperation n. 合作
 
 ## Words
+
+- explicit [ɪkˈsplɪsɪt]
+    - == direct == clear == express
+    - adj. 明确的
+    - implicit adj. 不直接言明的；内含的
+        - == unclear
+        - == indirect adj. 间接的; 不直截了当的; 闪烁其词的; 不坦率的
+- propagate [ˈprɑːpəɡeɪt]
+    - v. 传播
+    - == spread [spred]
+        - v. 传播；使分布
+        - n. 传播
+- aggravate [ˈæɡrəveɪt]
+    - vt. 使严重；使恶化
 
 ## 词组
 

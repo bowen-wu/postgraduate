@@ -83,12 +83,11 @@
     - surpassed adj. 可超过的
     - unsurpassed
         - adj. 不可超越的
-        - Rested in the Pacific Ocean, Mauua Kea's peak rises above the bulk of our *planet(n. 行星)*'s
-          <ins>dense atmosphere(稠密的大气)</ins>, where conditions allow telescopes to obtain images of **unsurpassed**
-          clarity.
-          坐落在太平洋中的莫纳克亚山，其顶峰高耸于地球厚厚的大气层之上，这里的条件可以让望远镜捕捉到无与伦比的清晰图像
+        - Rested in the Pacific Ocean, Mauua Kea's peak rises above the bulk of our *planet(n. 行星)*'s dense
+          atmosphere, where conditions allow telescopes to obtain images of **unsurpassed** clarity.
             - rises above 高于、超出
             - the bulk of ...的大部分
+            - dense atmosphere 稠密的大气
 
 ## autonomous
 

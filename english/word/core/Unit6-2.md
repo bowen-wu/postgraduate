@@ -72,6 +72,7 @@
     - to my mind 依我看
         - == in my view
     - critical mind 批判性思维
+        - critical [ˈkrɪtɪkl] adj. 关键的；批评的
 - Life is just a *series([ˈsɪriːz] n. 一系列; 连续)* of trying to **make up your mind**.
 - mindset [ˈmaɪndset]
     - n. 心态
@@ -160,6 +161,9 @@
 - 词组
     - at the risk of (doing sth.) 冒着...的危险
     - pose a risk to 对...造成危险
+        - pose
+            - v. 提出（问题）；造成，引起
+            - n. 姿势；装模作样
     - take a risk 冒险
     - reduce the risk of 降低...的风险
     - at risk 处境危险；受到威胁
@@ -189,6 +193,7 @@
     - adventurism [ædˈvɛntʃəˌrɪzəm] n. 冒险主义
 - threat
     - n. 威胁
+    - Similar: theatre [ˈθiːətər] n. 戏院，剧场; 戏剧，演出
     - The **threat** of nationalisation may have been seen off for now...
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
 - crisis [ˈkraɪsɪs]

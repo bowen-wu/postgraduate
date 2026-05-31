@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## insist
@@ -67,8 +67,8 @@
 - adj. 农村的
 - aristocratic [əˌrɪstəˈkrætɪk]
     - adj. 贵族的
-    - The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* strive to abandon or hide their old **aristocratic**
-      ways.
+    - The most successful monarchies strive to abandon or hide their old **aristocratic** ways.
+        - monarchy [ˈmɑːnərki] n. 君主政体
     - aristocrat [əˈrɪstəkræt]
         - n. 贵族
         - An **aristocrat** is someone form the ruling class, usually those with **nobility**, money, or both.
@@ -149,6 +149,7 @@
 - candidate n. 候选人
 
 ## Words
+
 - princess [ˈprɪnses]
     - n. 公主
 - kitten [ˈkɪtn]

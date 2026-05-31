@@ -16,9 +16,9 @@
 - 破折号: ——
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## philosophy
@@ -131,8 +131,9 @@
 ## abandon
 
 - vt. 放弃
-- The most successful *monarchies([ˈmɑːnərkiz] n. 君主制度)* strive to **abandon** or hide their old
-  *aristocratic([əˌrɪstəˈkrætɪk] adj. 贵族的)* ways.
+- The most successful monarchies strive to **abandon** or hide their old aristocratic ways.
+    - monarchy [ˈmɑːnərki] n. 君主政体
+    - aristocratic [əˌrɪstəˈkrætɪk] adj. 贵族的
 - discard
     - vt. 丢弃；摒弃
     - They should start by **discarding** California's lame argument that...😔

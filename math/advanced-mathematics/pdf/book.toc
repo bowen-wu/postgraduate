@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {5.1}极值的定义}{59}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}单调性与极值的判别}{59}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}单调性的判别}{59}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}一阶可导点是极值点的必要条件}{59}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2}一阶可导点是极值点的必要条件}{60}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {5.2.3}判别极值的第一充分条件}{60}{subsubsection.5.2.3}%
 \contentsline {subsubsection}{\numberline {5.2.4}判别极值的第二充分条件}{60}{subsubsection.5.2.4}%
 \contentsline {subsubsection}{\numberline {5.2.5}判别极值的第三充分条件}{60}{subsubsection.5.2.5}%
@@ -93,7 +93,7 @@
 \contentsline {subsubsection}{\numberline {5.3.2}拐点的定义}{61}{subsubsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.4}凹凸性与拐点的判别}{61}{subsection.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}判别凹凸性}{61}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}二阶可导点是拐点的必要条件}{61}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2}二阶可导点是拐点的必要条件}{62}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}判别拐点的第一充分条件}{62}{subsubsection.5.4.3}%
 \contentsline {subsubsection}{\numberline {5.4.4}判别拐点的第二充分条件}{62}{subsubsection.5.4.4}%
 \contentsline {subsubsection}{\numberline {5.4.5}判别拐点的第三充分条件}{62}{subsubsection.5.4.5}%
@@ -235,18 +235,19 @@
 \contentsline {subsubsection}{\numberline {14.1.2}性质}{127}{subsubsection.14.1.2}%
 \contentsline {subsubsection}{\numberline {14.1.3}对称性}{128}{subsubsection.14.1.3}%
 \contentsline {subsection}{\numberline {14.2}计算}{129}{subsection.14.2}%
+\contentsline {paragraph}{基本思路：}{129}{section*.28}%
 \contentsline {subsubsection}{\numberline {14.2.1}直角坐标系下的计算方法}{129}{subsubsection.14.2.1}%
 \contentsline {subsubsection}{\numberline {14.2.2}极坐标系下的计算方法}{130}{subsubsection.14.2.2}%
-\contentsline {paragraph}{基本原理}{130}{section*.28}%
-\contentsline {paragraph}{坐标变换公式}{130}{section*.29}%
-\contentsline {paragraph}{$\color {red}{\bigstar }$ 定限口诀}{130}{section*.30}%
-\contentsline {paragraph}{三种情形}{130}{section*.31}%
+\contentsline {paragraph}{基本原理}{130}{section*.29}%
+\contentsline {paragraph}{坐标变换公式}{130}{section*.30}%
+\contentsline {paragraph}{$\color {red}{\bigstar }$ 定限口诀}{130}{section*.31}%
+\contentsline {paragraph}{三种情形}{130}{section*.32}%
 \contentsline {subsubsection}{\numberline {14.2.3}极坐标系与直角坐标系选择的一般原则}{130}{subsubsection.14.2.3}%
-\contentsline {paragraph}{优先选用极坐标的情形}{130}{section*.32}%
+\contentsline {paragraph}{优先选用极坐标的情形}{130}{section*.33}%
 \contentsline {subsubsection}{\numberline {14.2.4}极坐标系与直角坐标系的互相转化}{131}{subsubsection.14.2.4}%
 \contentsline {subsubsection}{\numberline {14.2.5}换元法}{131}{subsubsection.14.2.5}%
 \contentsline {subsection}{\numberline {14.3}结论}{131}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}公式}{132}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.4}公式}{133}{subsection.14.4}%
 \contentsline {subsection}{\numberline {14.5}方法总结}{133}{subsection.14.5}%
 \contentsline {subsection}{\numberline {14.6}理解}{134}{subsection.14.6}%
 \contentsline {subsection}{\numberline {14.7}三换（数学核心方法论）}{135}{subsection.14.7}%

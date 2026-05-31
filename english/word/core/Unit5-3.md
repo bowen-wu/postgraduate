@@ -102,6 +102,7 @@
         - == lucrative [ˈluːkrətɪv] adj. 获利丰厚的
 - lucrative [ˈluːkrətɪv]
     - adj. 获利丰厚的
+    - Similar: luxuriant [lʌɡˈʒʊriənt] adj. （植物）茂盛的；（头发）浓密的；（风格）华丽的
     - There's always a constant fear of falling behind everyone else on the socially perpetuated "race to the
       finish line" whether that the toward graduate school, medical school or a **lucrative** career.
         - perpetuate [pərˈpetʃueɪt] 😔 v. 使继续；使永久化；使长久（尤指不好的事物）

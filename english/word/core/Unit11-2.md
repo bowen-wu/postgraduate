@@ -66,7 +66,7 @@
     - n. 瑕疵
     - flawless
         - adj. 完美的，无瑕的
-        - == perfect
+        - == perfect adj. 完美的
     - flawed
         - adj. 有缺陷的、有瑕疵的、不完美的
         - Justice Anthony Kennedy wrote that the previous decisions were **flawed**.

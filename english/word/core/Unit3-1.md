@@ -115,8 +115,12 @@
     - Your kids **plead with** you to let them go on the super-huge *outrageous([aʊtˈreɪdʒəs] adj. 极限的)* roller
       coaster built in 1968, but you know better.
         - roller coaster 过山车
-    - Only Ukip, *sensing([sensɪŋ] n. 感觉)* its chance, <ins>has sided with(支持...)</ins> those **pleading for** a
-      more considered approach to using green land. 只有英国独立党（Ukip）察觉到自己的机会，站在了那些呼吁对绿地利用采取更审慎态度的人一边
+    - Only Ukip, sensing its chance, has sided with those **pleading for** a more considered approach to using green
+      land.
+        - sense
+            - vt. 检测出；感觉到
+            - n. 感觉，意识；判断力；意义
+        - side with sb./sth. 支持.../站在...一边/偏向...
 
 ## market
 
@@ -200,8 +204,9 @@
         - settle down somewhere
         - settle down to work/study
         - settle down with sb.
-    - While *admitting([əd'mɪtɪŋ] v. 承认)* that *climate([ˈklaɪmət] n. 气候)* is a key element, Moritz notes that
-      public debates have not **settled/solved** yet.
+    - While admitting that *climate([ˈklaɪmət] n. 气候)* is a key element, Moritz notes that public debates have not
+      **settled/solved** yet.
+        - admit vt. 允许...进入，承认
     - THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO. IF YOU HAVEN'T FOUND IT YET. KEEP LOOKING. DON'T SETTLE.
     - settlement n. 定居地
     - unsettle
