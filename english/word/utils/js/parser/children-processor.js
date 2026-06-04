@@ -1,6 +1,7 @@
 import { restoreParentContext, saveParentContext, setParentContext } from './context.js';
 import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
 import {
+  addAntonymToParent,
   finalizePendingAntonymIfNeeded,
   finalizePendingSimilarIfNeeded,
   finalizePendingSynonymIfNeeded
@@ -71,6 +72,13 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
         : ((parser.pendingSynonymCard && indentLevel > parser.pendingSynonymLevel)
             ? parser.pendingSynonymCard
             : null);
+
+    if (parser.hasAntonymMarker(content)) {
+      setParentContext(parser, actualParentCard, parentIndentLevel);
+      addAntonymToParent(parser, content, indentLevel);
+      i++;
+      continue;
+    }
 
     if (activeRelationCard) {
       if (parser.isPurePosLine(content)) {

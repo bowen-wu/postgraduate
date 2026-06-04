@@ -124,7 +124,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
       if (phraseLastLine > lastProcessedLineIndex) {
         lastProcessedLineIndex = phraseLastLine;
       }
-      i++;
+      i = Math.max(i + 1, phraseLastLine + 1);
       continue;
     }
 

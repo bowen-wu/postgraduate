@@ -159,7 +159,7 @@ export function addSimilarToParent(parser, content, indentLevel) {
 export function addAntonymToParent(parser, content, indentLevel) {
   let wordParentCard = null;
 
-  if (parser.parentCard && parser.parentCard.type === 'word') {
+  if (parser.parentCard && (parser.parentCard.type === 'word' || parser.parentCard.type === 'phrase' || parser.parentCard.type === 'prefix')) {
     wordParentCard = parser.parentCard;
   } else {
     for (let i = parser.cards.length - 1; i >= 0; i--) {

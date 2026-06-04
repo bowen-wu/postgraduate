@@ -1,0 +1,52 @@
+[
+  {
+    "id": "card_0",
+    "word": "note",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "提到；注意到"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "证明；特征，调子，气氛"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "bull run",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "bull run",
+        "cn": "牛市行情"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "bear run",
+        "cn": "熊市行情"
+      }
+    ]
+  },
+  {
+    "id": "card_1",
+    "word": "The longest bull run in a century of art market hi...",
+    "displayWord": "The longest bull run in a century of art market history ended on a dramatic note with a sale of 56 works by Damien Hirst.",
+    "type": "sentence",
+    "fullText": "The longest bull run in a century of art market history ended on a dramatic note with a sale of 56 works by Damien Hirst.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "The longest bull run in a century of art market history ended on a dramatic note with a sale of 56 works by Damien Hirst.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  }
+]
