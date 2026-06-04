@@ -3,7 +3,8 @@ import { prefetchWordAudio } from './audio-service.js';
 
 const prefetchedKeys = new Set();
 const inflightKeys = new Set();
-let prefetchSessionId = 0;
+let queuePrefetchSessionId = 0;
+let relationPrefetchSessionId = 0;
 
 function normalizePrefetchKey(text) {
   return String(text || '').replace(/\s+/g, ' ').trim().toLowerCase();
@@ -23,22 +24,38 @@ function extractCardAudioText(card) {
   return '';
 }
 
-function collectRelationTexts(entries = []) {
-  return entries
-    .map((entry) => String(entry?.word || '').trim())
-    .filter(Boolean);
+function collectRelationTexts(entries = [], seen = new Set()) {
+  const texts = [];
+
+  entries.forEach((entry) => {
+    if (!entry || typeof entry !== 'object') return;
+
+    const word = String(entry.word || '').trim();
+    const key = normalizePrefetchKey(word);
+    if (key && !seen.has(key)) {
+      seen.add(key);
+      texts.push(word);
+    }
+
+    texts.push(...collectRelationTexts(entry.synonyms || [], seen));
+    texts.push(...collectRelationTexts(entry.antonyms || [], seen));
+    texts.push(...collectRelationTexts(entry.similars || [], seen));
+  });
+
+  return texts;
 }
 
-function extractCurrentCardRelationAudioTexts(card) {
+export function extractCurrentCardRelationAudioTexts(card) {
   if (!card) return [];
   if (card.type !== 'word' && card.type !== 'phrase' && card.type !== 'prefix') {
     return [];
   }
 
+  const seen = new Set();
   return [
-    ...collectRelationTexts(card.synonyms),
-    ...collectRelationTexts(card.antonyms),
-    ...collectRelationTexts(card.similars)
+    ...collectRelationTexts(card.synonyms, seen),
+    ...collectRelationTexts(card.antonyms, seen),
+    ...collectRelationTexts(card.similars, seen)
   ];
 }
 
@@ -54,14 +71,13 @@ function getUpcomingCards(state, startIndex, count) {
   return cards;
 }
 
-async function prefetchText(text, sessionId) {
+async function prefetchText(text) {
   const key = normalizePrefetchKey(text);
   if (!key || prefetchedKeys.has(key) || inflightKeys.has(key)) return;
 
   inflightKeys.add(key);
   try {
     const result = await prefetchWordAudio(text);
-    if (sessionId !== prefetchSessionId) return;
     if (!result?.skipped || result?.reason === 'cached') {
       prefetchedKeys.add(key);
     }
@@ -71,7 +87,8 @@ async function prefetchText(text, sessionId) {
 }
 
 export function resetAudioPrefetchSession() {
-  prefetchSessionId += 1;
+  queuePrefetchSessionId += 1;
+  relationPrefetchSessionId += 1;
 }
 
 export async function prefetchUpcomingCardAudio(state, options = {}) {
@@ -89,14 +106,14 @@ export async function prefetchUpcomingCardAudio(state, options = {}) {
     ? options.delayMs
     : (CONFIG.audio?.prefetch?.delayMs || 120);
 
-  const sessionId = ++prefetchSessionId;
+  const sessionId = ++queuePrefetchSessionId;
   const cards = getUpcomingCards(state, startIndex, count);
 
   for (const card of cards) {
-    if (sessionId !== prefetchSessionId) return;
+    if (sessionId !== queuePrefetchSessionId) return;
     const text = extractCardAudioText(card);
     if (!text) continue;
-    await prefetchText(text, sessionId);
+    await prefetchText(text);
     if (delayMs > 0) {
       await new Promise((resolve) => setTimeout(resolve, delayMs));
     }
@@ -113,14 +130,12 @@ export async function prefetchCurrentCardRelationAudio(state) {
   const relationTexts = extractCurrentCardRelationAudioTexts(card);
   if (!relationTexts.length) return;
 
-  const sessionId = prefetchSessionId;
-  const seen = new Set();
+  const sessionId = ++relationPrefetchSessionId;
 
-  for (const text of relationTexts) {
-    if (sessionId !== prefetchSessionId) return;
-    const key = normalizePrefetchKey(text);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    await prefetchText(text, sessionId);
-  }
+  await Promise.all(
+    relationTexts.map(async (text) => {
+      if (sessionId !== relationPrefetchSessionId) return;
+      await prefetchText(text);
+    })
+  );
 }
