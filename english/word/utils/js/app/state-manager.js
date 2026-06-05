@@ -6,7 +6,12 @@
 import { CONFIG, STATE } from '../config.js';
 import { StateRepo } from '../infrastructure/state-repo.js';
 import { generateDisplayOrder } from './state/ordering.js';
-import { applyDefaultProgressState, applySavedProgressState } from './state/persistence.js';
+import {
+  applyDefaultProgressState,
+  applySavedProgressState,
+  pickPreferredProgressSnapshot,
+  shouldPersistResumeSnapshot
+} from './state/persistence.js';
 
 export { generateDisplayOrder };
 
@@ -17,20 +22,43 @@ export function getStorageKey(path) {
   return `${CONFIG.storageKey}_${path}`;
 }
 
+export function getResumeStorageKey(path) {
+  return `${getStorageKey(path)}__resume`;
+}
+
+function parseStoredSnapshot(raw) {
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : null;
+  } catch (_error) {
+    return null;
+  }
+}
+
+function getStoredProgressSnapshot(path) {
+  const primary = parseStoredSnapshot(StateRepo.getByKey(getStorageKey(path)));
+  const resume = parseStoredSnapshot(StateRepo.getByKey(getResumeStorageKey(path)));
+  return pickPreferredProgressSnapshot(primary, resume);
+}
+
+export function clearResumeSnapshot(path) {
+  if (!path) return;
+  StateRepo.removeByKey(getResumeStorageKey(path));
+}
+
 /**
  * Load statistics for a specific file
  */
 export function loadStatsForFile(path) {
-  const key = getStorageKey(path);
   try {
-    const saved = StateRepo.getByKey(key);
+    const saved = getStoredProgressSnapshot(path);
     if (!saved) {
       applyDefaultProgressState(STATE);
       return;
     }
 
-    const parsed = JSON.parse(saved);
-    const result = applySavedProgressState(STATE, parsed);
+    const result = applySavedProgressState(STATE, saved);
     if (result.wasCompleted) saveState();
   } catch (e) {
     applyDefaultProgressState(STATE);
@@ -40,8 +68,9 @@ export function loadStatsForFile(path) {
 /**
  * Save current state to storage repo
  */
-export function saveState() {
+export function saveState(options = {}) {
   if (!STATE.currentPath) return;
+  const { allowResumeDowngrade = false } = options;
 
   // Get current card ID for progress tracking
   const currentCard = getCurrentCard();
@@ -55,6 +84,7 @@ export function saveState() {
     currentIndex: STATE.currentIndex,
     currentCardId: STATE.currentCardId,
     orderMode: STATE.orderMode,
+    mode: STATE.mode,
     displayOrder: STATE.displayOrder,
     completed: STATE.completed || false,
     timestamp: Date.now()
@@ -62,6 +92,11 @@ export function saveState() {
 
   try {
     StateRepo.setJsonByKey(key, data);
+    const resumeKey = getResumeStorageKey(STATE.currentPath);
+    const existingResume = parseStoredSnapshot(StateRepo.getByKey(resumeKey));
+    if (allowResumeDowngrade || shouldPersistResumeSnapshot(existingResume, data)) {
+      StateRepo.setJsonByKey(resumeKey, data);
+    }
     // Also save the last used path globally
     StateRepo.setByKey(`${CONFIG.storageKey}_lastPath`, STATE.currentPath);
   } catch (e) {
@@ -92,15 +127,13 @@ export function loadState() {
 
     if (!STATE.currentPath) return;
 
-    const key = getStorageKey(STATE.currentPath);
-    const saved = StateRepo.getByKey(key);
+    const saved = getStoredProgressSnapshot(STATE.currentPath);
     if (!saved) {
       applyDefaultProgressState(STATE);
       return;
     }
 
-    const parsed = JSON.parse(saved);
-    applySavedProgressState(STATE, parsed);
+    applySavedProgressState(STATE, saved);
   } catch (e) {
     applyDefaultProgressState(STATE);
   }
@@ -149,7 +182,8 @@ export function setOrderMode(mode) {
   STATE.displayOrder = generateDisplayOrder(STATE.cards, mode);
   STATE.currentIndex = 0;
   STATE.currentCardId = null;
-  saveState();
+  clearResumeSnapshot(STATE.currentPath);
+  saveState({ allowResumeDowngrade: true });
 }
 
 /**

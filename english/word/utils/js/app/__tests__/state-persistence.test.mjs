@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { applySavedProgressState } from '../state/persistence.js';
+import {
+  applySavedProgressState,
+  pickPreferredProgressSnapshot,
+  shouldPersistResumeSnapshot
+} from '../state/persistence.js';
 
 test('applySavedProgressState restores saved displayOrder and current card in randomAll mode', () => {
   const state = {
@@ -21,6 +25,7 @@ test('applySavedProgressState restores saved displayOrder and current card in ra
   const parsed = {
     stats: { card_b: { errors: 1 } },
     orderMode: 'randomAll',
+    mode: 'recall',
     displayOrder: [2, 0, 1],
     currentIndex: 2,
     currentCardId: 'card_b',
@@ -33,6 +38,7 @@ test('applySavedProgressState restores saved displayOrder and current card in ra
   assert.deepEqual(state.displayOrder, [2, 0, 1]);
   assert.equal(state.currentIndex, 2);
   assert.equal(state.currentCardId, 'card_b');
+  assert.equal(state.mode, 'recall');
   assert.deepEqual(state.stats, { card_b: { errors: 1 } });
 });
 
@@ -67,4 +73,41 @@ test('applySavedProgressState regenerates displayOrder when saved order is inval
   assert.ok(state.displayOrder.includes(0));
   assert.ok(state.displayOrder.includes(1));
   assert.ok(state.displayOrder.includes(2));
+});
+
+test('pickPreferredProgressSnapshot prefers mid-progress snapshot over newer reset snapshot', () => {
+  const olderResume = {
+    currentIndex: 57,
+    currentCardId: 'card_57',
+    completed: false,
+    timestamp: 100
+  };
+  const newerReset = {
+    currentIndex: 0,
+    currentCardId: 'card_0',
+    completed: false,
+    timestamp: 200
+  };
+
+  assert.deepEqual(
+    pickPreferredProgressSnapshot(newerReset, olderResume),
+    olderResume
+  );
+});
+
+test('shouldPersistResumeSnapshot blocks downgrading an existing active snapshot', () => {
+  const existing = {
+    currentIndex: 57,
+    currentCardId: 'card_57',
+    completed: false,
+    timestamp: 100
+  };
+  const downgraded = {
+    currentIndex: 0,
+    currentCardId: 'card_0',
+    completed: false,
+    timestamp: 200
+  };
+
+  assert.equal(shouldPersistResumeSnapshot(existing, downgraded), false);
 });

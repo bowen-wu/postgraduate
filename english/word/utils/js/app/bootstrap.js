@@ -72,3 +72,24 @@ const warmUpOnce = () => {
 };
 document.addEventListener('click', warmUpOnce);
 document.addEventListener('touchstart', warmUpOnce);
+
+function persistProgressSafely(options = {}) {
+  try {
+    app.saveState(options);
+  } catch (_error) {
+  }
+}
+
+window.addEventListener('pagehide', () => {
+  persistProgressSafely();
+});
+
+window.addEventListener('beforeunload', () => {
+  persistProgressSafely();
+});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') {
+    persistProgressSafely();
+  }
+});

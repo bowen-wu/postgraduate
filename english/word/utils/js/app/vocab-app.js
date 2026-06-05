@@ -214,8 +214,9 @@ export class VocabApp {
     // Reset index, clear completed flag, and start new session
     STATE.currentIndex = 0;
     STATE.completed = false;
+    StateManager.clearResumeSnapshot(STATE.currentPath);
     StateManager.startSession();
-    StateManager.saveState();
+    StateManager.saveState({ allowResumeDowngrade: true });
 
     // Re-initialize UI elements that were replaced
     refreshCardUiRefs(this.ui);

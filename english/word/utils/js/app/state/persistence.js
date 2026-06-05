@@ -4,9 +4,50 @@ export function applyDefaultProgressState(state) {
   state.stats = {};
   state.currentIndex = 0;
   state.orderMode = 'sequential';
+  state.mode = 'input';
   state.currentCardId = null;
   state.completed = false;
   state.displayOrder = generateDisplayOrder(state.cards, 'sequential');
+}
+
+function safeInteger(value, fallback = 0) {
+  return Number.isInteger(value) ? value : fallback;
+}
+
+function snapshotProgressScore(snapshot) {
+  if (!snapshot || typeof snapshot !== 'object') {
+    return Number.NEGATIVE_INFINITY;
+  }
+
+  const completedPenalty = snapshot.completed ? -1 : 0;
+  const currentIndex = safeInteger(snapshot.currentIndex, 0);
+  const hasCardIdBonus = snapshot.currentCardId ? 1 : 0;
+  const timestamp = safeInteger(snapshot.timestamp, 0);
+
+  return (completedPenalty * 1_000_000_000_000) +
+    (currentIndex * 1_000_000) +
+    (hasCardIdBonus * 10_000) +
+    timestamp;
+}
+
+export function pickPreferredProgressSnapshot(...candidates) {
+  const validCandidates = candidates.filter((snapshot) => snapshot && typeof snapshot === 'object');
+  if (validCandidates.length === 0) return null;
+
+  return validCandidates.reduce((best, candidate) => {
+    if (!best) return candidate;
+    return snapshotProgressScore(candidate) > snapshotProgressScore(best)
+      ? candidate
+      : best;
+  }, null);
+}
+
+export function shouldPersistResumeSnapshot(existingSnapshot, nextSnapshot) {
+  if (!nextSnapshot || typeof nextSnapshot !== 'object') return false;
+  if (nextSnapshot.completed) return false;
+  if (!existingSnapshot || typeof existingSnapshot !== 'object') return true;
+
+  return snapshotProgressScore(nextSnapshot) >= snapshotProgressScore(existingSnapshot);
 }
 
 function resolveSequentialIndex(state, parsed) {
@@ -68,6 +109,7 @@ function resolveRandomIndex(state, parsed) {
 export function applySavedProgressState(state, parsed) {
   state.stats = parsed.stats || {};
   state.orderMode = parsed.orderMode || 'sequential';
+  state.mode = parsed.mode || state.mode || 'input';
   state.displayOrder = isValidSavedDisplayOrder(state, parsed.displayOrder)
     ? parsed.displayOrder.map((value) => Number(value))
     : generateDisplayOrder(state.cards, state.orderMode);
