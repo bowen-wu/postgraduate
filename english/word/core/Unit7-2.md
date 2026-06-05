@@ -209,6 +209,9 @@
 - chance
     - vi. 偶然发生
     - n. 机会；偶然
+    - Similar: change
+        - v. 改变；变换
+        - n. 变化
     - **The chances are**, if you said "thank you", you made someone's day.
         - the chances are (that)... 很有可能.../十有八九.../大概率...
 - occasion [əˈkeɪʒn]

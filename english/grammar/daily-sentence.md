@@ -1353,9 +1353,20 @@ how 从句到哪里结束？
 
 ### 原句
 
-But the researchers believe that outside directors have an easier time of avoiding a blow to their reputations if they
-leave a firm before bad news breaks, even if a review of history shows they were on the board at the time any wrongdoing
-occurred
+- But the researchers believe that outside directors have an easier time of avoiding a blow to their reputations if they
+  leave a firm before bad news breaks, even if a review of history shows they were on the board at the time any
+  wrongdoing occurred
+    - have an + adjective + time (of) doing sth.
+    - have an easy time (of) doing sth. 轻松地做某事
+    - have a hard time doing sth. 很难做某事
+    - blow [bloʊ]
+        - n. 打击
+        - v. 吹；吹气；爆炸
+    - a blow to one's reputation 对名誉的一击 => 名誉受损/声誉打击
+    - even if
+    - a review of history 回顾历史/审视历史记录
+    - at the time 在...的时候
+    - wrongdoing n. 坏事，不道德的行为; 犯罪
 
 ## 081
 
@@ -1365,9 +1376,13 @@ occurred
 
 ### 原句
 
-The whirlwind that swept through newsrooms harmed everybody, but much of the damage has been concentrated in areas where
-newspapers are least
-distinctive.
+- The whirlwind that swept through newsrooms harmed everybody, but much of the damage has been concentrated in areas
+  where newspapers are least distinctive.
+    - whirlwind n. 旋风; 猛烈的势力 => 新闻行业文章里：剧烈变革/巨大冲击/风暴般的变化
+    - sweep v. 扫视；席卷，迅速蔓延；打扫，清除
+    - sweep through 席卷/横扫/迅速蔓延
+    - be concentrated in 集中在...
+    - distinctive adj. 独特的 => 有特色的/有独特性的/与众不同的
 
 ## 082
 
@@ -1408,12 +1423,21 @@ self-sufficiency was both desirable and inevitable was widely shared.
 
 ### 思考
 
-你知道which 引导的从句修饰的是哪部分吗？
+你知道 which 引导的从句修饰的是哪部分吗？
 
 ### 原句
 
-Markets have lost faith that the euro zone's economies, weaker or stronger, will one day converge thanks to the
-discipline of sharing a single currency, which denies uncompetitive members the quick fix of devaluation.
+- Markets have lost faith that the euro zone's economies, weaker or stronger, will one day converge thanks to the
+  discipline of sharing a single currency, which denies uncompetitive members the quick fix of devaluation.
+    - uncompetitive adj. 无竞争力的
+    - converge [kənˈvɜːrdʒ] vi. 趋于一致
+    - thanks to 由于/归功于
+    - discipline
+        - v. 训练; 惩罚; 自我约束
+        - n. 自制力；学科；行为准则
+    - market discipline
+    - deny sb. sth. 不给某人某物/剥夺某人的...
+    - quick fix 权宜之计/速效办法/临时补救措施
 
 ## 086
 
@@ -1423,9 +1447,22 @@ discipline of sharing a single currency, which denies uncompetitive members the 
 
 ### 原句
 
-It insists that economic coordination should involve all 27 members of the
-EU club, among whom there is a small majority for free-market liberalism and economic rigour; in the inner core alone,
-Germany fears, a small majority favour French interference.
+- It insists that economic coordination should involve all 27 members of the EU club, among whom there is a small
+  majority for free-market liberalism and economic rigour; in the inner core alone, Germany fears, a small majority
+  favor French interference.
+    - coordination n. 协作；协调；配合
+    - economic coordination 经济协调/经济政策协调
+    - a small majority 微弱多数/略占多数
+    - liberalism [ˈlɪbərəˌlɪzəm] n. 自由主义
+    - free-market liberalism 自由市场主义/自由市场经济理念
+    - rigor [ˈrɪɡɚ] n. 严苛，严酷
+    - economic rigor 严格的财政纪律/财政紧缩倾向
+    - interference [ˌɪntərˈfɪrəns] n. 干涉
+    - majority n. 大多数
+    - inner core 核心圈/核心集团
+    - favor [ˈfeɪvər]
+        - vt. 赞成
+        - n. 支持；恩惠
 
 ## 087
 
@@ -1435,9 +1472,13 @@ Germany fears, a small majority favour French interference.
 
 ### 原句
 
-But in her new book Join the Club, Tina Rosenberg contends that peer pressure can also be a positive force through what
-she calls the social cure, in which organizations and officials use the power of group dynamics to help individuals
-improve their lives and possibly the world.
+- But in her new book Join the Club, Tina Rosenberg contends that peer pressure can also be a positive force through
+  what she calls the social cure, in which organizations and officials use the power of group dynamics to help
+  individuals improve their lives and possibly the world.
+    - a positive force 积极力量/促进力量
+    - call A B 把A称为B
+    - group dynamics 群体动力/群体互动机制
+    - help sb. do sth. 帮助某人做某事
 
 ## 088
 
@@ -1447,9 +1488,14 @@ improve their lives and possibly the world.
 
 ### 原句
 
-A string of accidents, including the partial collapse of a cooling tower in 2007 and the discovery of an underground
-pipe system leakage, raised serious questions about both Vermont Yankee's safety and Entergy's managementespecially
-after the company made misleading statements about the pipe.
+- A string of accidents, including the partial collapse of a cooling tower in 2007 and the discovery of an underground
+  pipe system leakage, raised serious questions about both Vermont Yankee's safety and Entergy's management—especially
+  after the company made misleading statements about the pipe.
+    - a string of 一连串的/一系列的/连续发生的
+    - partial collapse 部分坍塌/局部倒塌
+    - the discovery of 发现...
+    - raise questions about 引发对...的质疑/使人怀疑...
+    - especially after 尤其是在...之后
 
 ## 089
 

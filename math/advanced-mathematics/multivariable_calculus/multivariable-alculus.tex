@@ -552,6 +552,8 @@
                                      f'_x(x, y)\Big|_{x = x_0, y = y_0} \text{先求导再代值}
         \end{cases}
         \item $\displaystyle\int_a^b |x| \mathrm{d}x = \dfrac{1}{2}(a \leq 0, b \geq 0)$，由于绝对值函数在 $x=0$ 处不可导，计算定积分时需按分段函数处理$\displaystyle\int_a^b |x| \mathrm{d}x = \int_a^0 -x \mathrm{d}x + \int_0^b x \mathrm{d}x$
+        \item 遇到绝对值要分类讨论
+        \item 在选项中要注意自变量的取值范围。\emph{e.g.} $x^2$ vs. $\dfrac{1}{x^2}, x\neq 0$，可排除选项
     \end{enumerate}
 
     \subsection{方法步骤}
@@ -608,6 +610,20 @@
                 y' = -\frac{2x}{8y} = -\frac{x}{4y}.
             \]
 
+        \end{analysisbox}
+        \item 思考：若$AC - B^2 = 0$该如何处理
+        \begin{analysisbox}
+            问：求函数$f(x, y) = x^2(2x^2 - 4y - \dfrac{1}{7}x^5) + y^2$的极值
+            解：令\begin{cases}
+                     f_x^'(x,y) = 8x^3 - 8xy - x^6 = 0 \\
+                     f_y^'(x,y) = -4x^2 + 2y = 0
+            \end{cases}得驻点$(0, 0), (-2, 8)$且
+            $f_{xx}^{''} = 24x^2 - 8y - 6x^5, f_{xy}^{''} = -8x, f_{yy}^{''} = 2$
+            由$A = f_{xx}^{''}(0, 0) = 0, B = f_{xy}^{''}(0, 0) = 0, C = f_{yy}^{''}(0, 0) = 2$，得$AC-B^2 = 0$，又在点$(0, 0)$附近
+            $f(x, x^2) = -\dfrac{1}{7}x^7 - x^4 = -x^4(\dfrac{1}{7}x^3 + 1) < 0, f(0, y) = y^2 > 0(y \neq 0)$，
+            且$f(0, 0) = 0$，故$(0, 0)$不是极值点
+            由$A = f_{xx}^{''}(-2, 8) = 224, B = f_{xy}^{''}(-2, 8) = 16, C = f_{yy}^{''}(-2, 8) = 2$，得$AC-B^2 > 0$，又$A = 224 > 0$，因此
+            $(-2, 8)$为极小值点，极小值为$f(-2, 8) = -\dfrac{96}{7}$，无极大值
         \end{analysisbox}
     \end{enumerate}
 

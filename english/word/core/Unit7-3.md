@@ -159,7 +159,9 @@
     - vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
     - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
       to **evade** scientists.
-        - imitate vt. 模仿
+        - imitate
+            - vt. 模仿
+            - Similar: immune [ɪˈmjuːn] adj. 不受影响的(PE)；有免疫力的；免除的；豁免的；免疫（系统）的
 - inevitable [ɪnˈevɪtəbl]
     - adj. 不可避免的
     - One could interpret much of the work of Beethoven by saying that suffering is **inevitable**, but the courage to
@@ -170,7 +172,7 @@
 
 - vt. 比较（两者相似之处）
 - 词组
-    - compare...with/to... 把...与...相比较
+    - compare A with/to B
     - compared with/to 与...相比
 - comparison [kəmˈpærɪsn]
     - n. 比较
@@ -244,7 +246,7 @@
     - end on a...note 以某种基调结束/以某种方式结束
 - notably
     - adv. 显著地；尤其
-    - == in *particular(adj. 特指的；特殊的；尤其的)*
+    - == in particular
     - == especially [ɪˈspeʃəli] adv. 尤其
 - notice
     - vt. 注意到

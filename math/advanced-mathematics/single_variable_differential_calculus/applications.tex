@@ -180,51 +180,52 @@
             \begin{circlenum}
                 \item 指数函数
                 \[
-                    e^x
-                    = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + o(x^n)
+                    e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots, \quad -\infty < x < +\infty
                 \]
 
                 \item 正弦函数
                 \[
-                    \sin x
-                    = x - \frac{x^3}{3!} + \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!}
-                    + o\!\left(x^{2n+1}\right)
+                    \sin x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots, \quad -\infty < x < +\infty \\
                 \]
 
                 \item 余弦函数$== \sin' x$
                 \[
-                    \cos x
-                    = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \cdots + (-1)^n \frac{x^{2n}}{(2n)!}
-                    + o\!\left(x^{2n}\right)
+                    \cos x = \sin' x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots, \quad -\infty < x < +\infty \\
+                \]
+
+                \item 反正切函数
+                \[
+                    \arctan x = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots, \quad |x| \le 1 \\
                 \]
 
                 \item 几何级数（一）
                 \[
-                    \frac{1}{1 - x}
-                    = 1 + x + x^2 + \cdots + x^n + o(x^n)
+                    \frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots + x^n + \cdots, \quad |x| < 1 \\
                 \]
 
                 \item 几何级数（二）$== [\ln (1+x)]'$
                 \[
-                    \frac{1}{1 + x}
-                    = 1 - x + x^2 - \cdots + (-1)^n x^n + o(x^n)
+                    \frac{1}{1+x} = \frac{1}{1 - (-x)} = \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - \cdots + (-1)^n x^n + \cdots, \quad |x| < 1 \\
                 \]
 
                 \item 对数函数
                 \[
-                    \ln(1 + x)
-                    = x - \frac{x^2}{2} + \frac{x^3}{3}
-                    - \cdots + (-1)^{n-1} \frac{x^n}{n}
-                    + o(x^n)
+                    \ln(1+x) = \int \frac{1}{1+x}\,\mathrm{d}x = \sum_{n={\color{red}{1}}}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + \cdots, \quad |x| < 1 \\
                 \]
 
                 \item 二项式展开
                 \[
-                    (1 + x)^a
-                    = 1 + ax + \frac{a(a-1)}{2!}x^2
-                    + \cdots +
-                    \frac{a(a-1)\cdots(a-n+1)}{n!}x^n
-                    + o(x^n)
+                    (1+x)^a = \sum_{n=0}^{\infty} \binom{a}{n} x^n = 1 + ax + \frac{a(a-1)}{2!} x^2 + \cdots, \quad |x| < 1 \\
+                \]
+
+                \item 正切函数
+                \[
+                    \tan x = x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots, \quad |x| < \frac{\pi}{2} \\
+                \]
+
+                \item 反正弦函数
+                \[
+                    \arcsin x = \sum_{n=0}^{\infty} \frac{(2n)!}{4^n (n!)^2 (2n+1)} x^{2n+1} = x + \frac{x^3}{6} + \frac{3x^5}{40} + \cdots, \quad |x| \le 1 \\
                 \]
             \end{circlenum}
         \end{enumerate}

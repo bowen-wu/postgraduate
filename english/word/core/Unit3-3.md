@@ -118,7 +118,8 @@
                 - quality
                     - n. 质量；品质
                     - Similar: quantity n. 量，数量
-            - **Faithfulness** is especially valued in *spouses(['spaʊsɪz] n. 配偶)* and in sports fans.
+            - **Faithfulness** is especially valued in spouses and in sports fans.
+                - spouse [spaʊs] n. 配偶
                 - especially [ɪˈspeʃəli] adv. 尤其
 - credit [ˈkredɪt]
     - n. 学分；信用；认可
@@ -192,7 +193,9 @@
     - n. 不诚实，无诚意; 伪善
 - selflessness ['selfləsnəs]
     - n. 无私，忘我
-    - selfish adj. 自私的; 自利的
+    - selfish
+        - adj. 自私的; 自利的
+        - Similar: fishery [ˈfɪʃəri] n. 渔场
 - hopelessness
     - n. 绝望
 

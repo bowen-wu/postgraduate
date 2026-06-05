@@ -120,9 +120,15 @@
 - billboard n. 广告牌
 - broad [brɔːd]
     - adj. 广泛的
+    - Similar: board [bɔːrd]
+        - v. 上船（或火车、飞机、公共汽车等）
+        - n. （公司或其他机构的）董事会，委员会
     - broaden v. 变宽; 扩大...的范围
     - abroad
         - adv. 在国外
+        - Similar: board [bɔːrd]
+            - v. 上船（或火车、飞机、公共汽车等）
+            - n. （公司或其他机构的）董事会，委员会
         - study abroad 出国留学
     - broadband n. 宽带
 - domestic [dəˈmestɪk]
