@@ -56,3 +56,21 @@ Your *humor(n. 幽默，诙谐)* must be relevant to the audience and should hel
   assert.equal(sentence.includes('humor must be relevant'), true);
   assert.equal(sentence.includes('in sympathy with their point of view.'), true);
 });
+
+test('parseSentenceBlockWithParser prefers the main sentence over nested sentence-like glossary lines', () => {
+  const raw = `
+- But the researchers believe that outside directors have an easier time of avoiding a blow to their reputations if they
+  leave a firm before bad news breaks, even if a review of history shows they were on the board at the time any
+  wrongdoing occurred
+    - have an + adjective + time (of) doing sth.
+    - have an easy time (of) doing sth. 轻松地做某事
+    - wrongdoing n. 坏事，不道德的行为; 犯罪
+`;
+
+  const { sentenceCard } = __testables.parseSentenceBlockWithParser(raw, '080');
+  const sentence = sentenceCard?.items?.[0]?.en || '';
+
+  assert.equal(sentence.startsWith('But the researchers believe that outside directors'), true);
+  assert.equal(sentence.includes('wrongdoing occurred'), true);
+  assert.notEqual(sentence, 'have an + adjective + time (of) doing sth.');
+});

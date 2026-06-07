@@ -90,7 +90,12 @@ function parseSentenceBlockWithParser(rawSentenceBlock, sentenceId) {
   const normalizedRaw = lines.join('\n');
   const syntheticMarkdown = `## ${sentenceId}\n${normalizedRaw}\n`;
   const parsedCards = parseMarkdownToCards(syntheticMarkdown);
-  const sentenceCard = parsedCards.find((card) => card && card.type === 'sentence') || null;
+  const sentenceCards = parsedCards.filter((card) => card && card.type === 'sentence');
+  const sentenceCard = sentenceCards.sort((a, b) => {
+    const aLen = String(a?.items?.[0]?.en || a?.word || '').length;
+    const bLen = String(b?.items?.[0]?.en || b?.word || '').length;
+    return bLen - aLen;
+  })[0] || null;
   const relationCards = parsedCards.filter((card) => card && (card.type === 'word' || card.type === 'phrase'));
   return { sentenceCard, relationCards };
 }
