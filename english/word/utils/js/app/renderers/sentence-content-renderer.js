@@ -100,23 +100,6 @@ export function renderSentenceItems(ui, card) {
     : (card.displayWord || card.items[0].en);
   ui.list.appendChild(contentDiv);
 
-  if (card.type === 'complex-sentence') {
-    const textareaTitle = document.createElement('div');
-    textareaTitle.className = 'complex-sentence-subtitle';
-    textareaTitle.textContent = 'Your Draft';
-    ui.list.appendChild(textareaTitle);
-
-    const textarea = document.createElement('textarea');
-    textarea.id = 'complex-sentence-draft';
-    textarea.className = 'complex-sentence-input';
-    textarea.placeholder = 'Temporary draft for parsing/splitting sentence (not saved)';
-    textarea.value = complexSentenceDrafts.get(card.id) || '';
-    textarea.addEventListener('input', () => {
-      complexSentenceDrafts.set(card.id, textarea.value);
-    });
-    ui.list.appendChild(textarea);
-  }
-
   const item = card.items[0];
   const hasChinese = item.cn && typeof item.cn.trim === 'function' && item.cn.trim() !== '';
   if (hasChinese) {
@@ -147,6 +130,23 @@ export function renderSentenceItems(ui, card) {
       </button>
     `;
     ui.list.appendChild(translateDiv);
+  }
+
+  if (card.type === 'complex-sentence') {
+    const textareaTitle = document.createElement('div');
+    textareaTitle.className = 'complex-sentence-subtitle';
+    textareaTitle.textContent = 'Your Draft';
+    ui.list.appendChild(textareaTitle);
+
+    const textarea = document.createElement('textarea');
+    textarea.id = 'complex-sentence-draft';
+    textarea.className = 'complex-sentence-input';
+    textarea.placeholder = 'Temporary draft for parsing/splitting sentence (not saved)';
+    textarea.value = complexSentenceDrafts.get(card.id) || '';
+    textarea.addEventListener('input', () => {
+      complexSentenceDrafts.set(card.id, textarea.value);
+    });
+    ui.list.appendChild(textarea);
   }
 
   ui.list.appendChild(li);
