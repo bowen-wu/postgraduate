@@ -36,8 +36,7 @@
     - irrational [ɪˈræʃənl] adj. 不合理的，荒谬的; 无理性的 😔
 - non- 否定
     - == un- 否定
-- -less
-    - 否定；adjective 词性
+- -less 否定；adjective 词性
     - hopeless adj. 没有希望的；无望的
     - sleepless adj. 失眠的，睡不着的; 不眠的，醒着的; 无休止的; 警觉的
     - boundless

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## subject
@@ -26,28 +26,38 @@
 - vt. 使臣服
 - n. 实验对象；主题；学科
 - adj. 服从于...的；受支配的；易遭受...的
+- 词组
     - be subject to sth. 受...影响/遭受.../受制于.../服从于...
     - be subject to doing sth. 容易遭受/可能会经历
 - White noise was played into the **subject**'s ears through headphones.
 - Prices may be **subject** to the relation of supply and demand.
-- The study is a genome([ˈdʒinoʊm] n. 基因组)-wide analysis *conducted(vt. 实施)* on 1932 *unique(adj. 独特的)*
-  **subjects** which compared pairs of unrelated friends and unrelated strangers([st'reɪndʒəz] n. 陌生人).
-    - conducted on 1932 unique **subjects** 非谓语动词短语做定语，修饰名词 analysis
-- In addition, the computer programs <ins>a company uses to estimate relationships</ins> may _be_ patented and not
-  ***subject*** _to_ peer review or outside evaluation.
+- The study is a genome-wide analysis **conducted** on 1932 unique **subjects** which compared pairs of unrelated
+  friends and unrelated strangers.
+    - genome [ˈdʒinoʊm] n. 基因组；染色体组
+    - conduct
+        - vt. 实施；引导
+        - n. 举止；实施办法
+    - unique adj. 独一无二的；独特的；独有的
+    - stranger [st'reɪndʒəz] n. 陌生人
+- In addition, the computer programs a company uses to estimate relationships may be patented and not **subject** to
+  peer review or outside evaluation.
 - subjective
     - adj. 主观的
-    - objective adj. 客观的
+    - Opposite: objective adj. 客观的
     - If you go see a movie about a super hero, the topic is **objective**. But whether it's a good movie or not is
       **subjective**.
 - susceptible [səˈseptəbl]
     - adj. 易患病的；易受...影响的
-    - be susceptible to (doing) sth. 遭受；承受
-        - == be subject to
-        - == be vulnerable to
-            - vulnerable [ˈvʌlnərəbl] adj. 脆弱的；易受伤害的
-    - Women are *particularly(adv. 特别)* **susceptible** to *developing(v. 患（病）)* depression and anxiety([æŋˈzaɪəti])
-      disorder in response to stress compared to men.
+    - 词组
+        - be susceptible to (doing) sth. 容易受到...影响/易患.../易遭受.../容易出现...
+            - == be subject to 受...影响/遭受.../受制于.../服从于...
+            - == be *vulnerable([ˈvʌlnərəbl] adj. 脆弱的；易受伤害的)* to 容易受到...的伤害/影响/攻击
+    - Women are particularly **susceptible** to developing depression and *anxiety([æŋˈzaɪəti])* disorder in response to
+      stress compared to men.
+        - particularly
+            - adv. 特别；尤其
+            - == especially [ɪˈspeʃəli] adv. 尤其
+        - develop v. （使）发展；开发；制定；养成（习惯）；患（病）；详尽阐述
 
 ## success
 
@@ -60,12 +70,17 @@
     - vt. 继任
 - succession [səkˈseʃn]
     - n. 继任，继承；一系列；连续
-    - The art market had *witnessed([ˈwitnist] v. 作证)* a **succession** of victories.
+    - The art market had witnessed a **succession** of victories.
+        - witness
+            - vt. 目击；见证
+            - n. 目击者；证据
     - successor [səkˈsesər] n. 继承者；继任者
 - successive [səkˈsesɪv]
     - adj. 连续的，依次的；接替的
-    - But **successive** governments have *presided([priˈzaidid] v. 主持)* over selling green spaces, squeezing money
-      from local authorities and declining attention on sport in education.
+    - But **successive** governments have presided over selling green spaces, squeezing money from local authorities and
+      declining attention on sport in education.
+        - preside v. 主持，掌管
+        - preside over... 负责...
 - fail
     - vi. 失败；未能（做到）；出故障
     - vt. 使失望
@@ -74,19 +89,28 @@
 ## union
 
 - n. 工会；联盟；协会
-- Will the European **Union** *make it/survive*?
+- Will the European **Union** **make it/survive**?
 - unionist [ˈjunjənɪst] n. 工会会员；工会主义者
 - unify
     - vt. 使联合; 使相同; 使一致; 统一
     - unification [ˌjunɪfɪ'keɪʃn] n. 统一
-    - uniform n. 制服
+    - uniform
+        - n. 制服
+        - adj. 统一的
 - alliance [əˈlaɪəns]
     - n. 联盟，结盟
-    - A native *literary([ˈlɪtəreri] adj. 文学的)* drama had been created, its **alliance** with the public playhouses
-      established, and at least some of its great *traditions(n. 传统)* had been begun.
+    - A native literary drama had been created, its **alliance** with the public playhouses established, and at least
+      some of its great traditions had been begun.
+        - literary [ˈlɪtəreri] adj. 文学的
+        - tradition
+            - n. 传统
+            - == convention n. （文学、艺术或戏剧的）传统手法；（谋职业、政党等成员的）大会；习俗
 - align
-    - v. 公开支持；与...一致
+    - vt. 公开支持；与...一致
+    - v. （使）对齐
     - == support
+        - vt. 支持
+        - n. （钱财或物资上的）资助；支持
 - associate [əˈsəʊʃieɪt]
     - v. 支持；联想，联系
     - association n. 联系；协会；联盟；交往
@@ -105,7 +129,7 @@
       absolute sense, since human beings thrive off of social connections.
         - thrive [θraɪv]
             - vi. 繁荣，兴旺
-            - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
+        - thrive off (of) something 因...而茁壮成长；依靠...而兴旺；从...中获得能量或满足
     - commuter n. （远距离）上下班往返的人
 
 ## encourage

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## confidence
@@ -117,7 +117,7 @@
 - adv. 准确地；（要求得到更多信息）究竟，到底
 - precisely [prɪˈsaɪsli]
     - adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
-    - == exactly
+    - == exactly adv. 准确地；（要求得到更多信息）究竟，到底
     - Yet <ins>*it is*</ins> **precisely** these non-celebrity influentials <ins>*who*</ins>, according to the
       two-step-flow theory, are supposed to drive social epidemics.
 - accurate [ˈækjərət]
@@ -153,6 +153,7 @@
 
 ## literary
 
+- [ˈlɪtəreri]
 - adj. 文学的
 - "So few authors have brains enough or **literary** gift enough to keep their own end up in journalism", Newman
   wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are

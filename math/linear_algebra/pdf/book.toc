@@ -56,3 +56,11 @@
 \contentsline {subsection}{\numberline {3.4}方法步骤}{29}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}条件转换思路}{31}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}理解}{32}{subsection.3.6}%
+\contentsline {section}{\numberline {4}线性方程组}{33}{section.4}%
+\contentsline {subsection}{\numberline {4.1}基础概念}{33}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}定理}{35}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}运算}{37}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}公式}{37}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}方法步骤}{37}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}条件转换思路}{38}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}理解}{39}{subsection.4.7}%

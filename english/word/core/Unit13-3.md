@@ -54,7 +54,10 @@
 - The government is <ins>**pressing** for(敦促)</ins> an early resolution of the dispute.
 - suppress [səˈpres]
     - vt. 镇压；抑制
-    - == curb == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止
+    - == curb
+      - vt. 抑制，控制
+      - n. 限制，控制；路源；勒马绳
+    - == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止
     - To **suppress** something means to **curb**, **inhibit**, or even stop it.
 - depressed
     - adj. 沮丧的

@@ -176,7 +176,9 @@
     - compared with/to 与...相比
 - comparison [kəmˈpærɪsn]
     - n. 比较
-    - analogy [əˈnælədʒi] n. 类比
+    - analogy [əˈnælədʒi]
+        - n. 类比
+        - Similar: ideology [ˌaɪdiˈɑːlədʒi] n. 意识；观念
 - comparable [ˈkɑːmpərəbl] adj. （数量、重要性等）相当的；类似的
 - comparatively adv. 相对地
 - contrast

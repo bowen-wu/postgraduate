@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## biological
@@ -89,7 +89,9 @@
 - To **possess** something is to **have or own** it. You can **possess** a physical object, you can **possess** a
   particular quality or skill, or you can **possess** control or influence over someone.
 - We must **possess** a positive attitude towards the problems confronting us.
-    - confronting us 是[现在分词短语，作后置定语](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md#%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BF%AE%E9%A5%B0%E5%90%8D%E8%AF%8D%E4%BD%9C%E5%AE%9A%E8%AF%AD)，修饰 problems
+    - confronting us
+      是[现在分词短语，作后置定语](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/simple-sentence/enhancement-non-finite-verb/attributive-adverbial.md#%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BF%AE%E9%A5%B0%E5%90%8D%E8%AF%8D%E4%BD%9C%E5%AE%9A%E8%AF%AD)
+      ，修饰 problems
 - possession [pəˈzeʃn]
     - n. 拥有；财物
     - It is a truth universally acknowledged, that a single manin **possession** of a good *fortune(n. 大笔的钱（可数）)*,
@@ -107,8 +109,12 @@
     - in pursuit of sth. 为了追求某物；追寻；谋求
 - quest
     - n. 探索，追求
+    - Similar: query
+        - vt. 向...提问
+        - n. 疑问
     - quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）
-    - In some ways, this **quest** for *commonalities([ˌkɑməˈnælɪti] n. 共性)* defines science.
+    - In some ways, this **quest** for commonalities defines science.
+        - commonality [ˌkɑməˈnælɪti] n. 共性
     - It was to ruin lives in the **quest** for circulation and impact.
         - in the quest for 在追求...的过程中/为了...而努力/为了寻求...
 

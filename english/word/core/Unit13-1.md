@@ -112,6 +112,8 @@
 - [əˈses]
 - vt. 评定
 - == measure
+    - vt. 衡量
+    - n. 测量；衡量；措施
 - Before you try to sell your car, you should ask an expert to **assess** its value-once you know what it's worth, it's
   easier to find a fair price.
 - When you **assess** a matter, you make a judgment about it.
@@ -120,7 +122,7 @@
     - n. 入口，通道; （使用或见到的）机会/权利
 - assessment
     - n. 评估
-    - == measurement
+    - == measurement n. 测量
 - estimate [ˈestɪmeɪt]
     - vt. 估算
     - n. （对数量、成本等的）估计
@@ -133,7 +135,7 @@
         - n. 低估
 - evaluate [ɪˈvæljueɪt]
     - vt. 评估
-    - == assess
+    - == assess n. 评估
     - evaluation n. 评估
 
 ## bias

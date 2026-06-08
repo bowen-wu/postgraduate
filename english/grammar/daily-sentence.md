@@ -1505,9 +1505,19 @@ self-sufficiency was both desirable and inevitable was widely shared.
 
 ### 原句
 
-The legal issues in the case are obscure: whereas the Supreme Court has ruled that states do have some regulatory
-authority over nuclear power, legal scholars say the Vermont case will offer a precedent-setting test of how far those
-powers extend.
+- The legal issues in the case are obscure: whereas the Supreme Court has ruled that states do have some regulatory
+  authority over nuclear power, legal scholars say the Vermont case will offer a precedent-setting test of how far those
+  powers extend.
+    - legal issues 法律问题/法律争议
+    - obscure [əbˈskjʊr]
+        - v. 使...模糊，蒙蔽
+        - adj. 鲜为人知的；费解的；昏暗的，模糊的
+    - whereas [ˌwerˈæz] conj. （用以比较或对比两个事实）尽管；鉴于
+    - scholar [ˈskɑːlər] n. 学者
+    - precedent [ˈpresɪdənt] n. 先例
+    - set a precedent 树立先例/开创先例
+    - a precedent-setting test 一次具有先例意义的检验
+    - a test of how far... 对...边界的一次检验
 
 ## 090
 
@@ -1517,9 +1527,19 @@ powers extend.
 
 ### 原句
 
-As a discovery claim works its way through the community, the interaction and confrontation between shared and competing
-beliefs about the science and the technology involved transforms an individual's discovery claim into the community's
-credible discovery.
+- As a discovery claim works its way through the community, the interaction and confrontation between shared and
+  competing beliefs about the science and the technology involved transforms an individual's discovery claim into the
+  community's credible discovery.
+    - community n. 圈子；团体；社区
+    - interaction n. 交流；相互影响
+    - confrontation n. 对抗
+    - credible adj. 可信任的
+    - work one's way through 逐渐通过.../逐渐传播到.../一路推进到...
+    - interaction and confrontation 交流与争论/互动与碰撞
+    - between shared and competing beliefs 在共识与分歧之间
+    - the science and the technology involved 所涉及的科学与技术（involved 过去分词作后置定语）
+        - == the science and technology that are involved
+    - transform A into B 把A变成B/使A转化为B
 
 ## 091
 
@@ -1529,8 +1549,14 @@ credible discovery.
 
 ### 原句
 
-Even though there is plenty of evidence that the quality of the teachers is the most important variable, teachers'
-unions have fought against getting rid of bad ones and promoting good ones.
+- Even though there is plenty of evidence that the quality of the teachers is the most important variable, teachers'
+  unions have fought against getting rid of bad ones and promoting good ones.
+    - evidence n. 证据
+    - even though 尽管/即使/虽然
+    - plenty [ˈplenti] n. 丰富，大量
+    - plenty of 大量的/充足的
+    - fight against 反对/抵制/与...作斗争
+    - get rid of 摆脱/清除/淘汰/解雇
 
 ## 092
 
@@ -1540,8 +1566,8 @@ unions have fought against getting rid of bad ones and promoting good ones.
 
 ### 原句
 
-But if the district is essentially giving a pass to students who do not do their homework because of complicated family
-lives, it is going riskily close to the implication that standards need to be lowered for poor children.
+- But if the district is essentially giving a pass to students who do not do their homework because of complicated
+  family lives, it is going riskily close to the implication that standards need to be lowered for poor children.
 
 ## 093
 
@@ -1551,8 +1577,18 @@ lives, it is going riskily close to the implication that standards need to be lo
 
 ### 原句
 
-It is not that pink is intrinsically bad, but it is such a tiny slice of the rainbow and, though it may celebrate
-girlhood in one way, it also repeatedly and firmly fuses girls' identity to appearance.
+- It is not that pink is intrinsically bad, but it is such a tiny slice of the rainbow and, though it may celebrate
+  girlhood in one way, it also repeatedly and firmly fuses girls' identity to appearance.
+    - It is not that... 并不是说.../倒不是因为...
+    - intrinsically [ɪnˈtrɪnsɪklɪ] adv. 本质的
+    - rainbow n. 彩虹
+    - a slice of... ...中的一小部分
+    - celebrate [ˈselɪbreɪt] v. 庆祝; 赞美
+    - celebrate girlhood 赞美女孩特质/表现少女气质
+    - in one way 从某种角度来说/在某种意义上
+    - fuse [fjuːz] v. （使）融合
+    - fuse A to B 把A和B牢牢结合起来/把A绑定到B上
+    - repeatedly and firmly 一次又一次地、牢牢地
 
 ## 094
 
@@ -1562,22 +1598,40 @@ girlhood in one way, it also repeatedly and firmly fuses girls' identity to appe
 
 ### 原句
 
-It was not until the mid-1980s, when amplifying age and sex differences became a dominant children's marketing strategy,
-that pink fully came into
-its own, when it began to seem inherently attractive to girls, part of what defined them as female, at least for the
-first few critical years.
+- It was not until the mid-1980s, when amplifying age and sex differences became a dominant children's marketing
+  strategy, that pink fully came into its own, when it began to seem inherently attractive to girls, part of what
+  defined them as female, at least for the first few critical years.
+    - It was not until...that... 直到...才...
+    - amplify [ˈæmplɪfaɪ] v. 扩大，增强
+    - amplify differences 强化差异/放大差异
+    - dominant strategy 主导策略
+    - come into one's own 真正成熟起来/真正发挥作用/确立自身地位
+    - be inherently attractive to 天然地对...有吸引力
+    - define A as B 把A定义为B
+    - part of what... 构成...的一部分
+    - part of what defined them as female 构成女性身份定义的一部分/被认为是女孩之所以是女孩的一部分特征
+    - critical [ˈkrɪtɪkl] adj. 关键的；批评的
+    - the first few critical years 生命最初几个关键年份/成长最初几个关键阶段。
 
 ## 095
 
 ### 思考
 
-旬中的哪些标点可以帮助断开长难句？
+句中的哪些标点可以帮助断开长难句？
 
 ### 原句
 
-Critics make three main arguments against gene patents: a gene is a product of nature, so it may not be patented; gene
-patents suppress innovation rather than reward it; and patents monopolies restrict access to genetic tests such
-as Myriad's.
+- Critics make three main arguments against gene patents: a gene is a product of nature, so it may not be patented; gene
+  patents suppress innovation rather than reward it; and patents monopolies restrict access to genetic tests such
+  as Myriad's.
+    - critic n. 批评者；评论家
+    - suppress [səˈpres]
+        - vt. 镇压；抑制
+        - == curb
+            - vt. 抑制，控制
+            - n. 限制，控制；路源；勒马绳
+        - == inhibit [ɪnˈhɪbɪt] v. 抑制; 禁止
+    - restrict access to 限制...的获取/限制...的使用
 
 ## 096
 
@@ -1587,10 +1641,21 @@ as Myriad's.
 
 ### 原句
 
-The research of Till Von Wachter, the economist at Columbia University, suggests that not all people graduating into a
-recession see their life chances dimmed: those with degrees from elite universities catch up fairly quickly to where
-they otherwise would have been if they had graduated in better times; it is the masses beneath them that are left
-behind.
+- The research of Till Von Wachter, the economist at Columbia University, suggests that not all people graduating into a
+  recession see their life chances dimmed: those with degrees from elite universities catch up fairly quickly to where
+  they otherwise would have been if they had graduated in better times; it is the masses beneath them that are left
+  behind.
+    - recession [rɪˈseʃn]  n. 经济衰退 😔
+    - dimmed adj. 暗淡的，无效的
+    - fairly adv. 相当地；公平地
+    - beneath [bɪˈniːθ] prep. 在...下面
+    - graduate into a recession 在经济衰退时期毕业
+    - life chances 人生机会/发展前景/社会上升机会
+    - dim one's chances 削弱机会
+    - see their life chances dimmed 发现自己的人生前景变差/面临更黯淡的发展机会
+    - fairly quickly 相当快地/比较快地
+    - the masses 大众/普通人/大多数人
+    - be left behind 被落下/掉队/没能跟上
 
 ## 097
 

@@ -56,7 +56,7 @@
         - initiative [ɪˈnɪʃətɪv]
             - n. 倡议；新方案；主动性；主动权；积极性；计划
             - == plan 具体
-            - == willingness 抽象 n. 愿意; 乐意
+            - == willingness n. 愿意; 乐意（抽象）
         - propose [prəˈpoʊz] vt. 提出；提议
 
 ## mind
@@ -71,8 +71,7 @@
         - == be determined to do sth.
     - to my mind 依我看
         - == in my view
-    - critical mind 批判性思维
-        - critical [ˈkrɪtɪkl] adj. 关键的；批评的
+    - *critical([ˈkrɪtɪkl] adj. 关键的；批评的)* mind 批判性思维
 - Life is just a *series([ˈsɪriːz] n. 一系列; 连续)* of trying to **make up your mind**.
 - mindset [ˈmaɪndset]
     - n. 心态
@@ -160,13 +159,13 @@
 - n. 风险
 - 词组
     - at the risk of (doing sth.) 冒着...的危险
-    - pose a risk to 对...造成危险
-        - pose
-            - v. 提出（问题）；造成，引起
-            - n. 姿势；装模作样
     - take a risk 冒险
     - reduce the risk of 降低...的风险
     - at risk 处境危险；受到威胁
+    - pose a risk to 对...造成危险
+- pose
+    - v. 提出（问题）；造成，引起
+    - n. 姿势；装模作样
 - When education becomes one-size-fits-all, it **risks** overlooking a nation's diversity of gifts.
     - overlook vt. 忽略；（对于不良现象等）不予理会
     - diversity n. 多样性；差异
@@ -198,6 +197,9 @@
     - threaten vt. 威胁；（坏事）可能发生；预示凶兆
 - crisis [ˈkraɪsɪs]
     - n. 危机
+    - Similar: risk
+        - vt. 冒险（做某事）；冒着...的风险
+        - n. 风险
     - go through an *existential([ˌɛɡzɪˈstɛnʃəl])* crisis 面临生存危机
     - housing crisis 住房危机
     - financial crisis 金融危机

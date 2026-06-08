@@ -34,8 +34,10 @@
 - allowance [əˈlaʊəns] n. 补贴
 - subsidy [ˈsʌbsədi]
     - n. 补贴
-    - == allowance
-    - == grant
+    - == allowance [əˈlaʊəns] n. 补贴
+    - == grant [ɡrænt]
+        - vt.（尤指正式地或法律上）同意；（勉强）承认
+        - n. （政府、机构的）拨款
     - subsidize [ˈsʌbsɪdaɪz]
         - vt. 资助，补贴
         - Taxes on low-*wage(n. 工资)* labor need to be cut, and **wage subsidize** should be expanded.
@@ -72,7 +74,7 @@
     - embrace this irreversible trend 拥抱（接受）这一不可逆转的趋势
 - inclination [ˌɪnklɪˈneɪʃn]
     - n. 倾向
-    - == tendency
+    - == tendency n. 倾向；趋势
     - inclination for risk-taking 冒险倾向
     - incline [ˈɪnklaɪn]
         - vt.（使）倾斜; （使）偏向，倾向于
@@ -85,12 +87,13 @@
                 - == be prone to do sth.
 - prone [proʊn]
     - adj. 有做（坏事）的倾向的；(-prone)有...倾向的
-    - == inclined
+    - == inclined adj. 想（做某事）的；有...倾向的
     - be prone to noun/doing sth. 有...的倾向/容易...
     - Another nationwide concern is whether public funds from other agencies are going into construction in
       **fire-prone** districts.
 - tide [taɪd]
     - n. 潮；潮流
+    - Similar: tiny [ˈtaɪni] adj. 极小的，微小的
     - Time and tide wait for no man.
     - a tide of emigration
 
@@ -108,6 +111,7 @@
     - n. 方案；公式；方程
     - formulate
         - vt. 构想出（计划或提案）
+        - Similar: formula [ˈfɔːrmjələ] n. 方案；公式；方程
         - Cortina holds that early exposure to computer science makes it easier to **formulate** logical hypotheses.
             - exposure [ɪkˈspoʊʒər] n. 暴露; 揭发; 报道
 - reform
@@ -144,6 +148,9 @@
     - n. 共性
     - In some ways, this quest for **commonalities** defines science.
         - quest n. 探索，追求
+            - Similar: query
+                - vt. 向...提问
+                - n. 疑问
         - quest for sth. 对某物的探索/追求/寻找（通常更宏大、艰难、长期）
 - commonly
     - adv. 通常
@@ -177,7 +184,9 @@
     - be involved in 参与其中，从事
 - The Bilski case **involves** a claimed patent on a method for hedging risk in the energy market.
     - hedge risk 对冲风险
-- involvement n. 参与
+- involvement
+    - n. 参与
+    - Similar: involution n. 内卷；卷绕，回旋; 复归; 包卷; 对合
 - involution n. 内卷；卷绕，回旋; 复归; 包卷; 对合
 - evolve [iˈvɑːlv]
     - v. 逐步发展
@@ -186,7 +195,7 @@
         - == exit
     - evolution [ˌevəˈluːʃn]
         - n. 发展；进化
-        - == development
+        - == development n. 发展；开发
         - Studying this could help understand why human **evolution** picked up pace in the last 30,000 years, with
           social environment being a major *contributory(adj. 促成的)* factor.
             - pick up pace 加快步伐
@@ -200,6 +209,9 @@
             - adj. 革命的
             - This is hardly **revolutionary**, but it is presented in a *charming(adj. 令人着迷的)* format.
             - I suppose the most **revolutionary** act one can *engage([ɪnˈɡeɪdʒ])* in is to tell the truth.
+                - engage [ɪnˈɡeɪdʒ]
+                    - vi. 参与，从事
+                    - vt. 使加入
                 - engage in sth. 从事.../参与.../进行...
 
 ## limit
@@ -211,12 +223,15 @@
 - restrict [rɪˈstrɪkt]
     - vt. 限制
     - == limit
+        - vt. 限制
+        - n. 限制；极限
+    - Similar: strict [strɪkt] adj. 严格的
     - restriction n. 限制
     - restrictive adj. 约束的
 - refrain [rɪˈfreɪn]
     - vi. 避免；克制；制止
     - n. 经常重复的评价（或抱怨）；老话，陈词滥调（cliche [klɪˈʃeɪ]）
-    - == restrict
+    - == restrict vt. 限制
     - 词组
         - refrain **from** noun/doing sth. 克制/避免做某事
     - Use the verb **refrain** if you have **a sudden impulse to do something and you have stopped yourself from doing

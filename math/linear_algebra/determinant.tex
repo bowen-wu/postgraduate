@@ -24,15 +24,14 @@
     \subsubsection{性质}
     设$D=|A|$，常用性质如下：
     \begin{enumerate}
-        \item 转置不变：$|A^T|=|A|$。
-        \item 交换两行（列），行列式变号。
-        \item 某行（列）乘$k$，则行列式乘$k$。
+        \item 转置不变：$|A^T|=|A|$
+        \item 有一行（列）全零 $\Rightarrow |A|=0$
+        \item 某行（列）乘$k$，则行列式乘$k$
+        \item 行列式对任一行（列）线性：若一行拆成两部分，则行列式可拆成两项之和
+        \item 交换两行（列），行列式变号
+        \item 两行（列）相等或成比例 $\Rightarrow |A|=0$
         \item 某行（列）加到另一行（列）的倍数，行列式不变。
-        \item 行列式对任一行（列）线性：若一行拆成两部分，则行列式可拆成两项之和。
-        \item 两行（列）相等或成比例 $\Rightarrow |A|=0$。
-        \item 有一行（列）全零 $\Rightarrow |A|=0$。
         \item 乘法公式：$|AB|=|A||B|$（同阶方阵）。
-        \item 可逆判定：$A$可逆 $\Leftrightarrow |A|\neq 0$。
     \end{enumerate}
 
     \subsubsection{逆序数法定义}
@@ -45,105 +44,122 @@
         \item 逆序数为偶数，取正号；
         \item 逆序数为奇数，取负号。
     \end{enumerate}
-    三阶可写为萨鲁斯法则（仅三阶可用）。
 
     \subsubsection{展开定理}
-    设$A_{ij}=(-1)^{i+j}M_{ij}$为$a_{ij}$的代数余子式，则
-    \[
-        |A|=\sum_{j=1}^{n}a_{ij}A_{ij}\quad(\text{按第}i\text{行展开}),\qquad
-        |A|=\sum_{i=1}^{n}a_{ij}A_{ij}\quad(\text{按第}j\text{列展开})
-    \]
-    正交关系（常用于线性组合）：
-    \[
-        \sum_{j=1}^{n}a_{ij}A_{kj}=
-        \begin{cases}
-            |A|, & i=k\\
-            0,   & i\ne k
-        \end{cases}
-    \]
-    \[
-        \sum_{i=1}^{n}a_{ij}A_{ik}=
-        \begin{cases}
-            |A|, & j=k\\
-            0,   & j\ne k
-        \end{cases}
-    \]
+
+    \begin{enumerate}
+        \item 在 $n$ 阶行列式中，划去元素 $a_{ij}$ 所在的第 $i$ 行、第 $j$ 列，由剩下的元素按原来的排法构成一个 $(n-1)$ 阶行列式，称为 $a_{ij}$ 的 \textbf{余子式}，记为$\mathbf{M_{ij}}$；称$(-1)^{i+j}M_{ij}$为$a_{ij}$的\textbf{代数余子式}，记为$\mathbf{A_{ij}}$，即
+        \[
+            A_{ij} = (-1)^{i+j}M_{ij}
+        \]
+        \item 三阶行列式的代数余子式
+        \[
+            A_{ij} =
+            \begin{bmatrix}
+                M_{11}  & -M_{12} & M_{13}  \\
+                -M_{21} & M_{22}  & -M_{23} \\
+                M_{31}  & -M_{32} & M_{33}
+            \end{bmatrix}.
+        \]
+        \item 设$A_{ij}=(-1)^{i+j}M_{ij}$为$a_{ij}$的代数余子式，则
+        \[
+            |A|=\sum_{j=1}^{n}a_{ij}A_{ij}\quad(\text{按第}i\text{行展开}),\qquad
+            |A|=\sum_{i=1}^{n}a_{ij}A_{ij}\quad(\text{按第}j\text{列展开})
+        \]
+    \end{enumerate}
 
     \subsubsection{几个重要的行列式 12+1}
 
     \begin{enumerate}
-        \item 二阶行列式：$\begin{vmatrix}
-                              a&b\\c&d
-        \end{vmatrix}=ad-bc$。
-        \item 三阶行列式（萨鲁斯法则，仅三阶）：主对角线方向乘积和减副对角线方向乘积和。
-        \item 单位行列式：$|E_n|=1$。
-        \item 对角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
-        \item 上三角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
-        \item 下三角行列式：$|A|=\prod_{i=1}^n a_{ii}$。
-        \item 副对角线三角行列式：$|A|=(-1)^{\frac{n(n-1)}{2}}\prod_{i=1}^n a_{i,n+1-i}$。
-        \item 分块上（下）三角行列式：$\left|\begin{matrix}
-                                              A&*\\O&B
-        \end{matrix}\right|=|A||B|$。
-        \item 分块副对角形式：$\left|\begin{matrix}
-                                        *&A\\B&O
-        \end{matrix}\right|=(-1)^{mn}|A||B|$。
-        \item 拉普拉斯按行（列）展开式：$|A|=\sum a_{ij}A_{ij}$（固定行或列）。
-        \item 范德蒙德行列式：$\prod_{1\le j<i\le n}(x_i-x_j)$。
-        \item 箭形（边框）行列式：优先用“倍加+按含零多的行列展开”化简（常考结构，不死记单一公式）。
-        \item 循环行列式（加一行到其余行、配合因式分解）：常化为含$(x-1)$或$(x+1)$因子的问题（作为“+1”综合型）。
+        \item 上（下）三角形
+        \begin{circlenum}
+            \item 主对角线三角形
+            \begin{align*}
+                \begin{vmatrix}
+                    a_{11} & a_{12} & \dots  & a_{1n} \\
+                    & a_{22} & \dots  & a_{2n} \\
+                    &        & \ddots & \vdots \\
+                    &        &        & a_{nn}
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      a_{11} &        &        &        \\
+                      a_{21} & a_{22} &        &        \\
+                      \vdots & \vdots & \ddots &        \\
+                      a_{n1} & a_{n2} & \dots  & a_{nn}
+                \end{vmatrix}
+                = a_{11}a_{22}\dots a_{nn}
+            \end{align*}
+            \item 副对角线三角形
+            \begin{align*}
+                \begin{vmatrix}
+                    a_{11} & a_{12} & \dots & a_{1,n-1} & a_{1n} \\
+                    a_{21} & a_{22} & \dots & a_{2,n-2} & 0      \\
+                    \vdots & \vdots &       & \vdots    & \vdots \\
+                    a_{n1} & 0      & \dots & 0         & 0
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      0      & \dots & 0         & a_{1n} \\
+                      0      & \dots & a_{2,n-1} & a_{2n} \\
+                      \vdots &       & \vdots    & \vdots \\
+                      a_{n1} & \dots & a_{n,n-1} & a_{nn}
+                \end{vmatrix}
+                = (-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2,n-2}\dots a_{n1}
+            \end{align*}
+        \end{circlenum}
+        \item 拉普拉斯展开式
+        \begin{circlenum}
+            \item 主对角线
+            \[
+                \renewcommand{\arraystretch}{1} % 缩小行距，避免竖线过高
+                \setlength{\arraycolsep}{3pt}     % 调整列距
+                \begin{vmatrix}
+                    \mathbf{A} & \mathbf{O}          \\
+                    \mathbf{O} & \mathbf{B}
+                \end{vmatrix}
+                =
+                \begin{vmatrix}
+                    \mathbf{A} & *          \\
+                    \mathbf{O} & \mathbf{B}
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      \mathbf{A} & \mathbf{O} \\
+                      *          & \mathbf{B}
+                \end{vmatrix}
+                = |\mathbf{A}| \cdot |\mathbf{B}|
+            \]
+            \item 副对角线
+            \[
+                \renewcommand{\arraystretch}{1} % 缩小行距，避免竖线过高
+                \setlength{\arraycolsep}{3pt}     % 调整列距
+                \begin{vmatrix}
+                    \mathbf{O}          & \mathbf{A} \\
+                    \mathbf{B} & \mathbf{O}
+                \end{vmatrix}
+                =
+                \begin{vmatrix}
+                    *          & \mathbf{A} \\
+                    \mathbf{B} & \mathbf{O}
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      \mathbf{O} & \mathbf{A} \\
+                      \mathbf{B} & *
+                \end{vmatrix}
+                = (-1)^{mn}|\mathbf{A}| \cdot |\mathbf{B}|
+            \]
+            \text{$m$，$n$分别是方阵$A$，$B$的阶数}
+        \end{circlenum}
+        \item 范德蒙行列式
+        \[
+            \begin{vmatrix}
+                1           & 1           & \dots & 1           \\
+                x_1         & x_2         & \dots & x_n \\
+                {x_1}^{2}   & {x_2}^2     & \dots & {x_n}^2     \\
+                \vdots      & \vdots      &       & \vdots \\
+                {x_1}^{n-1} & {x_2}^{n-1} & \dots & {x_n}^{n-1} \\
+            \end{vmatrix}
+            = \prod_{1 \le i < j \le n} (x_{j} - x_{i})
+        \]
     \end{enumerate}
-
-    \paragraph{主对角线行列式}
-    \[
-        \begin{vmatrix}
-            a_{11} & *      & \cdots & *      \\
-            0      & a_{22} & \cdots & *      \\
-            \vdots & \vdots & \ddots & \vdots \\
-            0      & 0      & \cdots & a_{nn}
-        \end{vmatrix}
-        =a_{11}a_{22}\cdots a_{nn}
-    \]
-
-    \paragraph{副对角线行列式}
-    \[
-        \begin{vmatrix}
-            0      & \cdots & 0      & b_{1n}  \\
-            \vdots & \iddots& b_{2,n-1} & *     \\
-            0      & \iddots& \vdots & \vdots \\
-            b_{n1} & *      & \cdots & *
-        \end{vmatrix}
-        =(-1)^{\frac{n(n-1)}{2}}b_{1n}b_{2,n-1}\cdots b_{n1}
-    \]
-
-    \paragraph{拉普拉斯展开式}
-    任取$k$行$i_1,\dots,i_k$，对应取$k$列$j_1,\dots,j_k$，则
-    \[
-        |A|=\sum_{1\le j_1<\cdots<j_k\le n}
-        \left(\text{这}k\text{行}k\text{列子式}\right)\cdot
-        \left(\text{对应代数余子式}\right)
-    \]
-    二阶分块常用结论：
-    \[
-        \left|\begin{matrix}
-                  A & *\\ O & B
-        \end{matrix}\right|=|A||B|,\qquad
-        \left|\begin{matrix}
-                  * & A\\ B & O
-        \end{matrix}\right|=(-1)^{mn}|A||B|
-    \]
-
-    \paragraph{范德蒙德行列式}
-    \[
-        V_n=
-        \begin{vmatrix}
-            1 & 1 & \cdots & 1\\
-            x_1 & x_2 & \cdots & x_n\\
-            \vdots & \vdots &  & \vdots\\
-            x_1^{n-1} & x_2^{n-1} & \cdots & x_n^{n-1}
-        \end{vmatrix}
-        =\prod_{1\le j<i\le n}(x_i-x_j)
-    \]
-    推论：若$x_i$两两不等，则$V_n\neq 0$。
 
     \subsection{行列式的计算}
 
@@ -157,16 +173,16 @@
             \item 基本型：上下三角行列式、副对角线行列式、拉普拉斯行列式、范德蒙行列式
             \item 找差别不大的行
             \item 找规律
-            \begin{itemize}
-                \item 行和相等行列式
-            \end{itemize}
+            \begin{circlenum}
+                \item 行（列）和相等行列式：将其余个行（列）加到第1行（列），然后提公因子
+            \end{circlenum}
             \item 递推法：建立$D_n$与$D_{n-1}$的关系式，实现递推
-            \begin{itemize}
+            \begin{circlenum}
                 \item 元素分布规律相同
                 \item $D_{n-1}$比$D_n$少一阶
                 \item 宽对角行列式
-            \end{itemize}
-            \item 归纳法、
+            \end{circlenum}
+            \item 归纳法
         \end{itemize}
     \end{enumerate}
 
@@ -174,49 +190,141 @@
     \begin{enumerate}
         \item 化为基本形：优先用“倍加不变、交换变号、提公因子”化成三角形。
         \begin{itemize}
-            \item 爪型行列式 $\Rightarrow$ 上下三角行列式
+            \item 爪型行列式 $\Rightarrow$ 利用斜爪消竖爪或平爪，即用$a_{ii}$消$a_{i1}$或$a_{1i}$为0
+            \item $X$型行列式 $\Rightarrow$ 通过交换行（列）将分散的$0$集中起来
         \end{itemize}
-        \item 递推法：构造$D_n$与$D_{n-1},D_{n-2}$关系，配初值求闭式。
-        \item 行列式表示的函数和方程：把某行（列）视为参数，利用线性性先设$f(x)$再代值定系数。
+        \item 递推法：构造$D_n$与$D_{n-1}$关系式，实现递推
+        \begin{itemize}
+            \item 递推法：给出$n$阶，推$n-1, n-2$阶，一直往下推，推到首项的表达式
+            \item 数学归纳法：从$1, 2$阶$\cdots$找到基本规律，然后向上（即高阶）假设，假设命题对$n = k - 1$时成立，最后证明命题对$n = k$时成立
+            \item 宽对角行列式
+            \[
+                D_n=
+                \begin{vmatrix}
+                    a & b & 0 & 0 & \cdots & 0 \\
+                    c & a & b & 0 & \cdots & 0 \\
+                    0 & c & a & b & \cdots & 0 \\
+                    \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+                    0 & 0 & 0 & c & a & b \\
+                    0 & 0 & 0 & 0 & c & a
+                \end{vmatrix}_{n\times n}.
+            \]
+            递推关系：$D_n=aD_{n-1}-bcD_{n-2}$
+            \begin{circlenum}
+                \item 若 $a^2 = 4bc \Rightarrow D_n = (n+1)(\dfrac{a}{2})^n$
+                \item 若 $a^2 \neq 4bc \Rightarrow D_n = \dfrac{
+                    \left(a+\sqrt{a^2-4bc}\right)^{n+1}
+                    -
+                    \left(a-\sqrt{a^2-4bc}\right)^{n+1}
+                }
+                {2^{n+1}\sqrt{a^2-4bc}}$
+            \end{circlenum}
+        \end{itemize}
+        \item 行列式表示的函数和方程：这列问题的行列式元素$a_{ij}$往往不是具体数值，而是含$x$或$\lambda$等的函数
     \end{enumerate}
 
     \subsubsection{抽象型}
 
     \begin{enumerate}
-        \item 用性质：抓“对称/反对称/两行成比例/行列和关系”快速判零或因式分解。
-        \item 用公式$|AB| = |A||B|$
-        \item 用乘法公式：若$A=PBP^{-1}$，则$|A|=|B|$；若易算$AB$或$BA$，可转化后求值。
+        \item 用性质：抓“对称/反对称/两行成比例/行列和关系”快速判零或因式分解
+        \item 用公式$|AB| = |A||B|$：若$A, B$均为方阵，则$|AB| = |A||B|$的意义为
+        \[
+            \begin{aligned}
+                \text{复合变换之后的面积测度}|AB| &= A\text{的面积值}|A|\times B\text{的面积值}|B|
+                &= B\text{的面积值}|B|\times A\text{的面积值}|A|
+                &= |BA|
+            \end{aligned}
+        \]
+        \item 用乘法公式：若$A=PBP^{-1}$，则$|A|=|B|$；若易算$AB$或$BA$，可转化后求值
     \end{enumerate}
 
     \subsection{余子式与代数余子式的线性组合的计算}
-    核心恒等式（设$A=(a_{ij})$）：
-    \[
-        \sum_{j=1}^n a_{ij}A_{kj}=\delta_{ik}|A|,\qquad
-        \sum_{i=1}^n a_{ij}A_{ik}=\delta_{jk}|A|
-    \]
-    其中$\delta$为克罗内克符号。故计算线性组合时：
+
     \begin{enumerate}
-        \item 若“同下标对应”，结果常为$|A|$；
-        \item 若“错位对应”，结果常为$0$；
-        \item 若给的是行（列）的线性组合，可先把该组合看成新行（列）再按展开定理求。
+        \item 正交关系
+        \[
+            \sum_{j=1}^{n}a_{ij}A_{kj}=
+            \begin{cases}
+                |A|, & i=k\\
+                0,   & i\ne k
+            \end{cases} \\ \qquad \sum_{i=1}^{n}a_{ij}A_{ik}=
+            \begin{cases}
+                |A|, & j=k\\
+                0,   & j\ne k
+            \end{cases}
+        \]
+        \item 线性组合
+        \begin{itemize}
+            \item 大$A$配小$a$，逆用展开式
+            \[
+                a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots +a_{in}A_{in} = \begin{vmatrix}
+                                                                     \multicolumn{3}{c}{*}\\
+                                                                     a_{i1} & a_{i2} & \cdots & a_{in}\\
+                                                                     \multicolumn{3}{c}{*}
+                \end{vmatrix}
+            \]
+            \item 大$A$配小$k$，$k$把小$a$吃
+            \[
+                k_{1}A_{i1}+k_{2}A_{i2}+\cdots +k_{n}A_{in} = \begin{vmatrix}
+                                                                  \multicolumn{3}{c}{*}\\
+                                                                  k_{i1} & k_{i2} & \cdots & k_{in}\\
+                                                                  \multicolumn{3}{c}{*}
+                \end{vmatrix}
+            \]
+        \end{itemize}
+
+        \item 考题
+        \begin{itemize}
+            \item 代数余子式线性组合$A_{11} - 2A_{12} + A_{13}$
+            \item 余子式组合$M_{11} + 2M_{12} + M_{13}$
+            \item 余子式和代数余子式混合组合$A_{11} + 2M_{12} + M_{13}$：$M_{ij} = (-1)^{i+j}A_{ij}$
+        \end{itemize}
     \end{enumerate}
-    伴随矩阵形式：
-    \[
-        A\operatorname{adj}(A)=\operatorname{adj}(A)A=|A|E
-    \]
-    常用于整体化处理代数余子式求和题。
 
     \subsection{克拉默法则}
-    线性方程组$A\mathbf{x}=\mathbf{b}$，其中$A$为$n$阶方阵。
+
+    设有 $n$ 元线性方程组：
+    \[
+        \begin{cases}
+            a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1 \\
+            a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = b_2 \\
+            \quad \vdots \\
+            a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n = b_n
+        \end{cases}
+    \]
+
+    记系数矩阵为 $\mathbf{A} = (a_{ij})_{n\times n}$，则其行列式为 $|\mathbf{A}|$。\textbf{若 $|\mathbf{A}| \neq 0$，则方程组有唯一解}，并且第 $i$ 个未知数 $x_i$ 可由下式求得：
+
+    \[
+        x_i = \frac{|\mathbf{A}_i|}{|\mathbf{A}|}, \quad i=1,2,\dots,n
+    \]
+
+    其中 $\mathbf{A}_i$ 是将 $\mathbf{A}$ 的第 $i$ 列替换为常数列向量 $\mathbf{b} = (b_1, b_2, \dots, b_n)^T$ 后得到的矩阵，即：
+
+    \[
+        \mathbf{A}_i =
+        \begin{pmatrix}
+            a_{11} & \dots & b_1    & \dots & a_{1n} \\
+            a_{21} & \dots & b_2    & \dots & a_{2n} \\
+            \vdots &       & \vdots &       & \vdots \\
+            a_{n1} & \dots & b_n    & \dots & a_{nn}
+        \end{pmatrix}
+    \]
+
+    \paragraph{推论} 若齐次线性方程组：
+    \[
+        \begin{cases}
+            a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = 0 \\
+            a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = 0 \\
+            \quad \vdots \\
+            a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n = 0
+        \end{cases}
+    \]
+
     \begin{enumerate}
-        \item 若$|A|\neq 0$，则方程组有唯一解，且
-        \[
-            x_i=\frac{|A_i|}{|A|},\quad i=1,\dots,n
-        \]
-        其中$A_i$为把$A$第$i$列替换为$\mathbf{b}$得到的行列式对应矩阵。
-        \item 若$|A|=0$，克拉默法则不能直接给唯一解，需结合秩判定无解或无穷多解。
+        \item 系数行列式$|A| \neq 0$ $\Leftrightarrow$ 方程组\textbf{只有零解}
+        \item 系数行列式$|A| = 0$ $\Leftrightarrow$ 方程组\textbf{有非零解}
     \end{enumerate}
-    适用提醒：克拉默法则适合\textbf{未知数较少、参数讨论、理论证明}，大规模数值计算一般不用。
 
     \subsection{基础概念}
     \begin{enumerate}
@@ -239,37 +347,6 @@
     \end{enumerate}
 
     \subsection{基础}
-
-    \subsubsection{完全展开式}
-
-    \begin{align*}
-        \begin{vmatrix}
-            a_{11} & a_{12} & \dots & a_{1n} \\
-            a_{21} & a_{22} & \dots & a_{2n} \\
-            \vdots & \vdots &       & \vdots \\
-            a_{n1} & a_{n2} & \dots & a_{nn}
-        \end{vmatrix}
-        &= \sum_{j_1\,j_2\dots j_{n}} (-1)^{\tau(j_1\,j_2\dots j_n)} \mathbf{a_{1j_1}a_{2j_2}\dots a_{nj_n}} \\
-        &= \sum_{\sigma \in S_n} (-1)^{\tau(\sigma)} \prod_{i=1}^{n} a_{i, \sigma(i)}
-    \end{align*}
-
-    \subsubsection{余子式 \& 代数余子式}
-
-    \begin{enumerate}
-        \item 在 $n$ 阶行列式中，划去元素 $a_{ij}$ 所在的第 $i$ 行、第 $j$ 列，由剩下的元素按原来的排法构成一个 $(n-1)$ 阶行列式，称为 $a_{ij}$ 的 \textbf{余子式}，记为$\mathbf{M_{ij}}$；称$(-1)^{i+j}M_{ij}$为$a_{ij}$的\textbf{代数余子式}，记为$\mathbf{A_{ij}}$，即
-        \[
-            A_{ij} = (-1)^{i+j}M_{ij}
-        \]
-        \item 三阶行列式的代数余子式
-        \[
-            A_{ij} =
-            \begin{bmatrix}
-                M_{11}  & -M_{12} & M_{13}  \\
-                -M_{21} & M_{22}  & -M_{23} \\
-                M_{31}  & -M_{32} & M_{33}
-            \end{bmatrix}.
-        \]
-    \end{enumerate}
 
     \subsection{定理}
 
@@ -295,90 +372,6 @@
     \]
 
     \subsection{公式}
-
-    \subsubsection{上（下）三角形}
-
-    \begin{enumerate}
-        \item 主对角线三角形
-        \begin{align*}
-            \begin{vmatrix}
-                a_{11} & a_{12} & \dots  & a_{1n} \\
-                & a_{22} & \dots  & a_{2n} \\
-                &        & \ddots & \vdots \\
-                &        &        & a_{nn}
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  a_{11} &        &        &        \\
-                  a_{21} & a_{22} &        &        \\
-                  \vdots & \vdots & \ddots &        \\
-                  a_{n1} & a_{n2} & \dots  & a_{nn}
-            \end{vmatrix}
-            = a_{11}a_{22}\dots a_{nn}
-        \end{align*}
-        \item 副对角线三角形
-        \begin{align*}
-            \begin{vmatrix}
-                a_{11} & a_{12} & \dots & a_{1,n-1} & a_{1n} \\
-                a_{21} & a_{22} & \dots & a_{2,n-2} & 0      \\
-                \vdots & \vdots &       & \vdots    & \vdots \\
-                a_{n1} & 0      & \dots & 0         & 0
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  0      & \dots & 0         & a_{1n} \\
-                  0      & \dots & a_{2,n-1} & a_{2n} \\
-                  \vdots &       & \vdots    & \vdots \\
-                  a_{n1} & \dots & a_{n,n-1} & a_{nn}
-            \end{vmatrix}
-            = (-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2,n-2}\dots a_{n1}
-        \end{align*}
-    \end{enumerate}
-
-    \subsubsection{拉普拉斯展开式}
-
-    \begin{enumerate}
-        \item 主对角线
-        \[
-            \renewcommand{\arraystretch}{1} % 缩小行距，避免竖线过高
-            \setlength{\arraycolsep}{3pt}     % 调整列距
-            \begin{vmatrix}
-                \mathbf{A} & *          \\
-                \mathbf{O} & \mathbf{B}
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  \mathbf{A} & \mathbf{O} \\
-                  *          & \mathbf{B}
-            \end{vmatrix}
-            = |\mathbf{A}| \cdot |\mathbf{B}|
-        \]
-        \item 副对角线
-        \[
-            \renewcommand{\arraystretch}{1} % 缩小行距，避免竖线过高
-            \setlength{\arraycolsep}{3pt}     % 调整列距
-            \begin{vmatrix}
-                *          & \mathbf{A} \\
-                \mathbf{B} & \mathbf{O}
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  \mathbf{O} & \mathbf{A} \\
-                  \mathbf{B} & *
-            \end{vmatrix}
-            = (-1)^{mn}|\mathbf{A}| \cdot |\mathbf{B}|
-        \]
-        \text{$m$，$n$分别是方阵$A$，$B$的阶数}
-    \end{enumerate}
-
-    \subsubsection{范德蒙行列式}
-
-    \[
-        \begin{vmatrix}
-            1           & 1           & \dots & 1           \\
-            x_1         & x_2         & \dots & x_n \\
-            {x_1}^{2}   & {x_2}^2     & \dots & {x_n}^2     \\
-            \vdots      & \vdots      &       & \vdots \\
-            {x_1}^{n-1} & {x_2}^{n-1} & \dots & {x_n}^{n-1} \\
-        \end{vmatrix}
-        = \prod_{1 \le j < i \le n} (x_{i} - x_{j})
-    \]
 
     \subsubsection{特征多项式}
     \begin{enumerate}
@@ -428,51 +421,6 @@
             \end{vmatrix}
             = |A + B| \cdot |A - B|
         \]
-    \end{enumerate}
-
-    \subsection{克拉默法则}
-
-    设有 $n$ 元线性方程组：
-    \[
-        \begin{cases}
-            a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1 \\
-            a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = b_2 \\
-            \quad \vdots \\
-            a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n = b_n
-        \end{cases}
-    \]
-
-    记系数矩阵为 $\mathbf{A} = (a_{ij})_{n\times n}$，则其行列式为 $|\mathbf{A}|$。\textbf{若 $|\mathbf{A}| \neq 0$，则方程组有唯一解}，并且第 $i$ 个未知数 $x_i$ 可由下式求得：
-
-    \[
-        x_i = \frac{|\mathbf{A}_i|}{|\mathbf{A}|}, \quad i=1,2,\dots,n
-    \]
-
-    其中 $\mathbf{A}_i$ 是将 $\mathbf{A}$ 的第 $i$ 列替换为常数列向量 $\mathbf{b} = (b_1, b_2, \dots, b_n)^T$ 后得到的矩阵，即：
-
-    \[
-        \mathbf{A}_i =
-        \begin{pmatrix}
-            a_{11} & \dots & b_1    & \dots & a_{1n} \\
-            a_{21} & \dots & b_2    & \dots & a_{2n} \\
-            \vdots &       & \vdots &       & \vdots \\
-            a_{n1} & \dots & b_n    & \dots & a_{nn}
-        \end{pmatrix}
-    \]
-
-    \paragraph{推论} 若齐次线性方程组：
-    \[
-        \begin{cases}
-            a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = 0 \\
-            a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = 0 \\
-            \quad \vdots \\
-            a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n = 0
-        \end{cases}
-    \]
-
-    \begin{enumerate}
-        \item 系数行列式$|A| \neq 0$ $\Leftrightarrow$ 方程组\textbf{只有零解}
-        \item 系数行列式$|A| = 0$ $\Leftrightarrow$ 方程组\textbf{有非零解}
     \end{enumerate}
 
     \subsection{方法步骤}

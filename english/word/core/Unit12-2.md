@@ -108,7 +108,7 @@
 ## tradition
 
 - n. 传统
-- == convention
+- == convention n. （文学、艺术或戏剧的）传统手法；（谋职业、政党等成员的）大会；习俗
 - traditional adj. 传统的
 - convention
     - n. （文学、艺术或戏剧的）传统手法；（谋职业、政党等成员的）大会；习俗
@@ -137,7 +137,7 @@
       would use a **particular** case to conduct a broad review of business-method patents.
     - particularly
         - adv. 特别；尤其
-        - == especially
+        - == especially [ɪˈspeʃəli] adv. 尤其
 - specific [spəˈsɪfɪk]
     - adj. 明确的；特定的
     - She declined to be more **specific** about the reasons for the separation.

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## present
@@ -32,28 +32,28 @@
     - n. 出席；存在
     - Since desire and will are damaged by the **presence** of thoughts that do not accord with desire, Allen
       concluded: "We do not attract what we want, but what we are."
-- presentation n. （颁奖等）仪式，典礼；展示
+- presentation n. 展示；（颁奖等）仪式，典礼
 - represent
     - v. 代表；展现、体现
     - These epochal figures **represented** lives hard to *imitate(vt. 模仿)*...
     - representation n. 代理人；代表
     - representative [ˌreprɪˈzentətɪv]
-        - n. 代表，代理人
         - adj. 典型的，有代表性的；代议制的
+        - n. 代表，代理人
         - representative government
-        - Congress(legislative power)
-            - Senate [ˈsenət] 参议院
-            - House of representatives [reprɪ'zentətɪvz] 众议院
+        - House of representatives
+        - senate n. 参议院
 - embody [ɪmˈbɑːdi]
     - v. 具体表现(具体 -> 抽象)
-    - When public opinion is particularly *polarized(['poʊləraɪzd] 两极分化的、对立的)*...
-      *monarchs([ˈmɔnəks] n. 君主)* <ins>can rise(超越、不受...影响)</ins> above "mere" politics and "**embody**" a
-      spirit of national unity.
-      当公众舆论特别两极分化时，君主可以超越“单纯的政治”，体现民族团结的精神
-    - Many exhibits in the museum **embody** *the spirit of the craftsmanship*.
+    - When public opinion is particularly polarized... monarchs can rise above "mere" politics and "**embody**" a spirit
+      of national unity.
+        - polarize v. 使极化; 使偏振; 使两极分化
+        - monarch [ˈmɑːnərk] n. 君主
+        - rise above sth. 超越.../不受...束缚/摆脱...影响
+    - Many exhibits in the museum **embody** the spirit of the craftsmanship.
     - embodiment
         - n. 集中体现
-        - She is the **embodiment** of kindness. 她是善良的化身
+        - She is the **embodiment** of kindness.
 - behalf
     - n. 代表
     - 词组
@@ -80,13 +80,14 @@
     - adv. 分别地，依次地
     - The students who travelled in order to make new friends and cultivate independence account for 9% and 6%
       **respectively**.
-        - account for + % == take up + % == occupy + % 占百分比
+        - account for + percent 占百分比
+        - == take up + percent == occupy + percent
 
 ## figure
 
 - [ˈfɪɡjər]
 - v. 弄清楚
-- n. （重要）人物（PE）；（尤指官方资料中的）**数字**；身材； 形状； 人像
+- n. （重要）人物（PE）；（尤指官方资料中的）数字；身材； 形状； 人像
 - figure out 弄清楚/理解/解决/想明白
 - Anything with form has a certain shape, or **figure**.
 - Today the **figure** is more than 25% and growing rapidly.
@@ -95,12 +96,20 @@
 - The movement is supported by three key **figures**.
 - Among the commission's 51 members are top-tier-university presidents, scholars, lawyers, judges, and business
   executives, as well as prominent **figures** from diplomacy, filmmaking, music and journalism.
+    - diplomacy [dɪˈploʊməsi] n. 外交
+    - prominent [ˈprɑːmɪnənt] adj. 杰出的；显著的
+    - as well as 以及、还；除了...之外
+        - == in addition to
+        - == and also
+        - == besides
 - reckon [ˈrekən]
     - v. 计算；估算；认为；把...看做
     - reckon/regard/view/see A as B 把A看做B
     - The American Society of News Editors **reckons** that 13,500 newsroom jobs have gone since 2007.
     - This time experts **reckon** that prices are about 40% down on their peak on average, though some have been far
-      more *fluctuate([ˈflʌktʃueɪt] vi. 波动)*.
+      more fluctuate.
+        - expert [ˈekspɜːrt] n. 专家
+        - fluctuate [ˈflʌktʃueɪt] vi. （大小、数量、质量等）波动
         - down on/from the peak 从峰值下降
 - calculate
     - v. 计算，核算
@@ -116,22 +125,32 @@
 - disappear v. 消失
 - emerge [iˈmɜːrdʒ]
     - v. 浮现；出现；显露
-    - == appear
+    - == appear vi. 看起来；出现；出版
 - fade
     - v. 逐渐消失；使褪色；逐渐变弱
-    - make sth. fade 使...黯然失色
-    - fade away 逐渐消失
-    - Many *recruiters([rɪˈkrutɚ] n. 招聘人员)* say the old *disgrace([dɪsˈɡreɪs] n. 耻辱)* is **fading** for top
-      performers.
+    - 词组
+        - make sth. fade 使...黯然失色
+        - fade away 逐渐消失
+    - Many recruiters say the old disgrace is **fading** for top performers.
+        - recruiter [rɪˈkrutɚ] n. 招聘人员
+        - disgrace [dɪsˈɡreɪs] n. 耻辱；丢脸的人（或事）
 - vanish [ˈvænɪʃ]
     - v. 突然不见，消失；不复存在
-    - == disappear
+    - == disappear v. 消失
 
 ## promote
 
 - vt. 促进🙂；促销；晋升
+- == prompt
+    - vt. 促使
+    - adj. 迅速的
+    - n. 提示，提示信息
+- == boost
+    - vt. 使增长
+    - n. 增长；增强
+- == spur vt. 激增；刺激
+- == foster vt. 促进；培养
 - Findings of the Stanford University researchers will **promote** the sales of new Boeing and Airbus aircraft.
-- == prompt == boost == spur == foster
 - promotion n. 晋升；促销
 - prompt [prɑːmpt]
     - vt. 促使
@@ -140,8 +159,9 @@
 - boost [buːst]
     - vt. 使增长
     - n. 增长；增强
-    - A move back to self-sufficiency, <ins>the argument goes(有说法认为)</ins>, would **boost** the farming industry,
-      political *sovereignty([ˈsɑːvrənti] n. 国家的主权)* and even the nation's health.
+    - A move back to self-sufficiency, the argument goes, would **boost** the farming industry, political
+      *sovereignty([ˈsɑːvrənti] n. 国家的主权)* and even the nation's health.
+        - the argument goes (that)... 有一种观点认为.../有人主张.../按照这种论证.../通常的说法是...
 - spur [spɜːr] vt. 激增；刺激
 - foster [ˈfɑːstər]
     - vt. 促进；培养
@@ -152,15 +172,16 @@
 
 - [ˈekstrə]
 - adj. 额外的
-- Excellence is <ins>going the **extra** mile(付出额外努力)</ins>.
+- Excellence is **going the extra mile**.
+    - go the extra mile 付出额外努力/比别人做得更多/多走一步/超出职责范围地努力
 - extraordinary [ɪkˈstrɔːrdəneri]
     - adj. 卓越的；非凡的；特别的
-    - Shakespeare's lifetime <ins>was coincident with(与...相吻合)</ins> a period of **extraordinary** activity and
-      achievement in the drama.
+    - Shakespeare's lifetime was coincident with a period of **extraordinary** activity and achievement in the drama.
+        - be coincident with sth. 与...同时发生/与...相吻合/与...一致
     - extraordinarily adv. 极其地
 - extravagant [ɪkˈstrævəɡənt]
     - adj. 奢侈的；挥霍的
-    - == wasteful
+    - == wasteful adj. 挥霍的
 - luxury [ˈlʌkʃəri]
     - n. 奢华；奢侈品
     - adj. 奢侈的
@@ -173,5 +194,7 @@
 ## Words
 
 ## 词组
+
+- show off 炫耀
 
 ## 句式
