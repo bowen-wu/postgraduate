@@ -57,3 +57,13 @@ export const UNIT_COMPLEX_SENTENCE_MAP = (() => {
 export function getComplexSentenceIdsForUnitPath(path) {
   return UNIT_COMPLEX_SENTENCE_MAP[path] || [];
 }
+
+const WM_POOL = Array.from({ length: 10 }, (_, i) => `WM-${i}`);
+
+export const UNIT_WM_MAP = Object.fromEntries(
+  UNIT_FILES.map((path, index) => [path, WM_POOL[index % WM_POOL.length]])
+);
+
+export function getWmIdForUnitPath(path) {
+  return UNIT_WM_MAP[path] || null;
+}

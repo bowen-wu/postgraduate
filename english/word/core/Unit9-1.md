@@ -44,9 +44,8 @@
           doubt about it.
         - inconclusive
             - adj. 无定论的；不确定的；非决定性的，无结果的
-            - undetermined [ˌʌndɪ'tɜmɪnd] adj. 未确定的，未解决的
-            - Are humans actually aware of the world they live in? So far the results are
-              **inconclusive**.
+            - == undetermined [ˌʌndɪ'tɜmɪnd] adj. 未确定的，未解决的
+            - Are humans actually aware of the world they live in? So far the results are **inconclusive**.
                 - be aware of 意识到/察觉到（+ 名词/从句）
 
 ## standard
@@ -59,14 +58,18 @@
         - adj. 标准化的
         - Such **standardized** test may not assess all the important elements necessary to succeed in school and in
           life, argues Robert J.Sternberg.
-            - assess [əˈses] vt. 评定
+            - assess [əˈses]
+                - vt. 评定
+                - Similar: access [ˈækses]
+                    - vt. 访问(电脑信息)
+                    - n. 进入（权）；（使用某物的）权利；接触的机会;
 - criterion [kraɪˈtɪriən] n. （判定的）标准；尺度
 - norm
     - n. 正常行为；规范；社会准则
     - normal
         - adj. 正常的; 身体健康的
         - n. 常态
-        - Shanghai Normal University
+        - Normal University
 - pattern n. 模式；方式
 
 ## physical
@@ -102,10 +105,11 @@
     - adj. 智力的；精神健康的
     - mental state 精神状态
     - a state of mind 心境
-- Block: "Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically,
-  necessary to getting any work done," he argues.
-    - According to Newport, idleness is [[a major contributor to **physical health**/a desirable **mental state
-      ** for busy people/an **essential factor in accomplishing any work**]]
+- Contrast:
+    - "Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically,
+      necessary to getting any work done," he argues.
+        - According to Newport, idleness is [[a major contributor to **physical health**/a desirable **mental state**
+          for busy people/an **essential factor in accomplishing any work**]]
 
 ## agree
 

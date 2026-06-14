@@ -20,6 +20,7 @@ import { prefetchUpcomingCardAudio, resetAudioPrefetchSession } from '../infrast
 import { translateTextWithFallback } from '../infrastructure/translation-service.js';
 import { buildWritingCardForUnit } from '../infrastructure/writing-service.js';
 import { buildComplexSentenceCardsForUnit } from '../infrastructure/complex-sentence-service.js';
+import { buildWmCardsForUnit } from '../infrastructure/wm-service.js';
 import { renderRootFileList, renderFolderFileList, renderFileListError } from './presenters/file-list-presenter.js';
 
 let appContext = null;
@@ -96,6 +97,7 @@ function getFileUseCases() {
       renderFolderFileList,
       renderFileListError,
       prefetchUpcomingAudio: scheduleAudioPrefetch,
+      buildWmCardsForUnit,
       buildWritingCardForUnit,
       buildComplexSentenceCardsForUnit,
       getApp,

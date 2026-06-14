@@ -11,6 +11,7 @@ export function createFileUseCases(deps) {
     prefetchUpcomingAudio = () => {},
     getApp,
     getUi,
+    buildWmCardsForUnit = async () => [],
     buildWritingCardForUnit = async () => null,
     buildComplexSentenceCardsForUnit = async () => []
   } = deps;
@@ -107,6 +108,12 @@ export function createFileUseCases(deps) {
       const complexSentenceCards = await buildComplexSentenceCardsForUnit(relativePath);
       if (complexSentenceCards.length > 0) {
         state.cards.push(...complexSentenceCards);
+      }
+
+      // Inject WM sentence cards after complex sentences and before writing.
+      const wmCards = await buildWmCardsForUnit(relativePath);
+      if (wmCards.length > 0) {
+        state.cards.push(...wmCards);
       }
 
       // Inject one writing example card at the tail from single-source writing corpus.
