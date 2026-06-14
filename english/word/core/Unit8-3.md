@@ -51,7 +51,8 @@
     - 词组
         - be susceptible to (doing) sth. 容易受到...影响/易患.../易遭受.../容易出现...
             - == be subject to 受...影响/遭受.../受制于.../服从于...
-            - == be *vulnerable([ˈvʌlnərəbl] adj. 脆弱的；易受伤害的)* to 容易受到...的伤害/影响/攻击
+            - == be vulnerable to 容易受到...的伤害/影响/攻击
+    - vulnerable [ˈvʌlnərəbl] adj. 脆弱的；易受伤害的
     - Women are particularly **susceptible** to developing depression and *anxiety([æŋˈzaɪəti])* disorder in response to
       stress compared to men.
         - particularly
@@ -81,6 +82,9 @@
       declining attention on sport in education.
         - preside v. 主持，掌管
         - preside over... 负责...
+        - squeeze
+            - vt. 挤压
+            - n. 困境
 - fail
     - vi. 失败；未能（做到）；出故障
     - vt. 使失望
@@ -184,8 +188,7 @@
 - bright [braɪt]
     - adj. 明亮的; 鲜艳的; 晴朗的; 欢快的; 聪明的; 有希望的
     - adv. 明亮地
-    - the best and brightest
-        - 最优秀、最聪明的人才
+    - the best and brightest 最优秀、最聪明的人才
 
 ## 词组
 

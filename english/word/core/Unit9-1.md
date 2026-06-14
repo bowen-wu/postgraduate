@@ -105,11 +105,13 @@
     - adj. 智力的；精神健康的
     - mental state 精神状态
     - a state of mind 心境
-- Contrast:
-    - "Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically,
-      necessary to getting any work done," he argues.
-        - According to Newport, idleness is [[a major contributor to **physical health**/a desirable **mental state**
-          for busy people/an **essential factor in accomplishing any work**]]
+- "Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically,
+  necessary to getting any work done," he argues.
+    - According to Newport, idleness is [[a major contributor to **physical health**/a desirable **mental state**
+      for busy people/an **essential factor in accomplishing any work**]]
+    - indispensable [ˌɪndɪˈspensəbl] 🙂 adj. 不可或缺的
+    - paradoxically [ˌpærə'dɒksɪklɪ] adv. 自相矛盾地
+    - essential adj. 必不可少的
 
 ## agree
 
@@ -132,16 +134,18 @@
         - approve of 同意
     - approval [əˈpruːvl]
         - n. 批准；赞成
-        - Block: There is no reason why everyone cannot be welcomed on Mauna Kea to **embrace their cultural heritage**
-          and to study the stars.
-            - The author's attitude toward choosing Mauna Kea as the TMT site is one of [[severe criticism/full *
-              *approval**]]
+        - There is no reason why everyone cannot be welcomed on Mauna Kea to **embrace their cultural heritage** and to
+          study the stars.
+            - severe [sɪˈvɪr] adj. 十分严重的；严厉的
+            - The author's attitude toward choosing Mauna Kea as the TMT site is one of [[severe criticism/full
+              **approval**]]
         - disapproval [ˌdɪsəˈpruvəl] n. 不赞成
 
 ## continue
 
 - v. 持续；继续做；（停顿后）继续说
-- continue to do
+- 词组
+    - continue to do
 - discontinue v. 停止
 - continuous [kənˈtɪnjuəs]
     - adj. 持续的
@@ -156,8 +160,9 @@
 - perpetuate [pərˈpetʃueɪt] 😔
     - v. 使继续；使永久化；使长久（尤指不好的事物）
     - Some things should **last forever** and others should not **be perpetuated** at all.
-    - Things that should not be **perpetuated**? Ugly rumors，arms races.
+    - Things that should not be **perpetuated**? Ugly rumors, arms races.
         - arms race 军备竞赛/军备竞争
+        - rumor [ˈruːmə(r)] vt. 谣传; 传说
     - permanent [ˈpɜːrmənənt]
         - adj. 永久的；（问题、困难）不断发生的；（家庭住址）固定的
         - The only this **permanent** is change.
@@ -190,7 +195,7 @@
     - economic slowdown/downturn/decline/depression/recession 经济衰退
     - The odds of a long, nasty **recession** are growing.
         - nasty [ˈnæsti] adj. 令人讨厌的；险恶的；下流的
-    - economic stagnation([stæɡˈneʃən]) 经济停滞
+    - economic *stagnation([stæɡˈneʃən])* 经济停滞
     - economic boom/prosperity 经济繁荣
 - bleak [bliːk] 😔
     - adj. 不乐观的，暗淡的；荒凉的
@@ -202,13 +207,12 @@
 
 ## Words
 
-- determined
-    - adj. 决心; 决定; 坚定的
-    - undetermined
-        - adj. 未确定的，未解决的
-        - == inconclusive adj. 无定论的；不确定的；非决定性的，无结果的
-- constructive [kənˈstrʌktɪv]
-    - adj. 建设的，建设性的; 积极的，有助益的; 构造上的; [法]推定的
+- philosopher [fəˈlɑːsəfər]
+    - n. 哲学家，思想家; 善于思考的人
+- physician [fɪˈzɪʃn]
+    - n. 医生，内科医生
+- politician [ˌpɑːləˈtɪʃn]
+    - n. 政治家; 政客
 - prospect
     - vi. 勘探
     - n. 可能性；前途；前景

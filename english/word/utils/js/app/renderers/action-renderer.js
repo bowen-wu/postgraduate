@@ -21,38 +21,6 @@ export function renderInputActions(ui) {
     return;
   }
 
-  if (card.type === 'analysis') {
-    const hasChinese = card.items[0]?.cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
-
-    if (hasChinese) {
-      const cnDiv = document.getElementById('sentenceCn');
-      const isCnVisible = cnDiv && cnDiv.style.display !== 'none';
-
-      if (!isCnVisible) {
-        ui.actionArea.innerHTML = `
-          <button class="btn-primary" data-action="show-sentence-translation">Show Translation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-        `;
-      } else {
-        ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
-      }
-      return;
-    }
-
-    ui.actionArea.innerHTML = `
-      <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="translate-sentence">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        Translate
-        <span class="btn-spinner"></span>
-      </button>
-      <button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-    `;
-    return;
-  }
-
   if (card.type === 'sentence') {
     const hasChinese = card.items[0].cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
 
@@ -127,33 +95,6 @@ export function renderRecallActions(ui) {
       </button>
       <button class="btn-primary" data-action="next-card">Next</button>
     `;
-    return;
-  }
-
-  if (card.type === 'analysis') {
-    const cnDiv = document.getElementById('sentenceCn');
-    const isCnVisible = cnDiv && cnDiv.style.display !== 'none';
-
-    if (!isCnVisible) {
-      ui.actionArea.innerHTML = `
-        <button class="btn-ghost translate-btn" id="translate-btn-sentence-action" data-action="reveal-sentence-answer">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          Translate
-          <span class="btn-spinner"></span>
-        </button>
-        <button class="btn-success" data-action="reveal-sentence-answer" data-claimed-known="true">Know</button>
-        <button class="btn-danger" data-action="reveal-sentence-answer" data-claimed-known="false">Don't know</button>
-      `;
-    } else {
-      ui.actionArea.innerHTML = `
-        <button class="btn-danger" data-action="confirm-recall" data-actually-correct="false">Incorrect</button>
-        <button class="btn-success" data-action="confirm-recall" data-actually-correct="true">Confirmed</button>
-      `;
-    }
     return;
   }
 

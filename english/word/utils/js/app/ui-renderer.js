@@ -104,16 +104,6 @@ function getAutoPlayPayload(card) {
     return { word: sentenceText, buttonId: 'play-btn-sentence' };
   }
 
-  if (card.type === 'analysis') {
-    const sentenceText = (
-      card.items?.[0]?.en ||
-      stripHtml(card.displayWord) ||
-      card.word ||
-      ''
-    ).trim();
-    return { word: sentenceText, buttonId: 'play-btn-sentence' };
-  }
-
   if (card.type === 'complex-sentence') {
     const sentenceText = (
       card.items?.[0]?.en ||
@@ -145,7 +135,6 @@ export function render(ui) {
 
   ui.card.classList.remove('is-sentence', 'is-phrase', 'is-contrast', 'is-complex-sentence');
   if (card.type === 'sentence') ui.card.classList.add('is-sentence');
-  else if (card.type === 'analysis') ui.card.classList.add('is-sentence');
   else if (card.type === 'complex-sentence') ui.card.classList.add('is-complex-sentence');
   else if (card.type === 'phrase') ui.card.classList.add('is-phrase');
   else if (card.type === 'contrast') ui.card.classList.add('is-contrast');
@@ -205,7 +194,7 @@ export function revealAll() {
 
 export function showSentenceTranslation(ui) {
   const card = StateManager.getCurrentCard();
-  if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence' && card.type !== 'analysis')) return;
+  if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence')) return;
 
   showSentenceTranslationModule(ui, STATE.mode, (mode, targetUi) => {
     if (mode === 'input') renderInputActions(targetUi);

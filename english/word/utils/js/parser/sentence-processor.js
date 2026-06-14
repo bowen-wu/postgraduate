@@ -4,10 +4,51 @@ import { processChildren } from './children-processor.js';
 import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
 import { normalizeInlineStudyText, stripMarkdownMarkers, stripPronunciationHints } from './text-normalizer.js';
 
+function hasInlineQuizBlank(text) {
+  return /\[\[/.test(String(text || '')) || /<ins>/i.test(String(text || ''));
+}
+
+function buildInlineQuizItem(parser, rawText, indentLevel) {
+  const extractedCards = [];
+  const boldPlaceholders = [];
+  const protectedText = String(rawText || '').replace(/\*\*(.*?)\*\*/g, (_match, boldContent) => {
+    const placeholder = `{{BOLD:${boldPlaceholders.length}}}`;
+    boldPlaceholders.push(stripPronunciationHints(boldContent));
+    return placeholder;
+  });
+
+  let clean = extractItalicWords(parser, protectedText, extractedCards, indentLevel);
+  clean = stripMarkdownMarkers(clean);
+  clean = extractInsPhrases(parser, clean, extractedCards, indentLevel, boldPlaceholders);
+  clean = stripPronunciationHints(clean);
+  clean = clean.replace(/\{\{BOLD:(\d+)\}\}/g, (_match, index) => {
+    return boldPlaceholders[index] || '';
+  }).replace(/\s+/g, ' ').trim();
+
+  const splitOptions = (raw) => String(raw || '')
+    .split(/[\/|]/)
+    .map((item) => item.replace(/\*\*/g, '').trim())
+    .filter(Boolean);
+  const bracketMatch = clean.match(/\[\[(.*?)\]\]/);
+  const insMatch = clean.match(/<ins>(.*?)<\/ins>/i);
+  const blankOptions = bracketMatch
+    ? splitOptions(bracketMatch[1])
+    : (insMatch ? splitOptions(insMatch[1]) : []);
+
+  return {
+    item: {
+      type: 'contrast',
+      en: normalizeInlineStudyText(clean),
+      blankOptions
+    },
+    extractedCards
+  };
+}
+
 export function processSentence(parser, content, indentLevel, lineIndex) {
   const extractedCards = [];
   const merged = mergeListItemContinuations(parser.lines, lineIndex, content);
-  content = merged.content;
+  content = merged.content.replace(/^Analysis:\s*/i, '').trim();
 
   const boldPlaceholders = [];
   const protectedContent = content.replace(/\*\*(.*?)\*\*/g, (match, boldContent) => {
@@ -55,6 +96,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   parser.pendingSimilars = [];
   const sentenceChildren = [];
   const promotedChildren = [];
+  const inlineQuizItems = [];
 
   let i = merged.nextLineIndex;
   let lastProcessedLineIndex = lineIndex;
@@ -79,6 +121,18 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
     const childContent = getListContentFromTrimmed(trimmed);
     const normalizedChildContent = normalizeInlineStudyText(childContent);
+
+    if (hasInlineQuizBlank(childContent)) {
+      const quizMerged = mergeListItemContinuations(parser.lines, i, childContent);
+      const { item, extractedCards: quizExtractedCards } = buildInlineQuizItem(parser, quizMerged.content, childIndentLevel);
+      inlineQuizItems.push(item);
+      promotedChildren.push(...quizExtractedCards);
+      if (quizMerged.nextLineIndex - 1 > lastProcessedLineIndex) {
+        lastProcessedLineIndex = quizMerged.nextLineIndex - 1;
+      }
+      i = quizMerged.nextLineIndex;
+      continue;
+    }
 
     if (parser.isSynonymMarker(childContent)) {
       if (!parser.pendingSynonyms) {
@@ -205,6 +259,9 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
   restoreParentContext(parser, savedParentContext);
   sentenceCard.children = sentenceChildren;
+  if (inlineQuizItems.length > 0) {
+    sentenceCard.inlineQuizItems = inlineQuizItems;
+  }
 
   let correctLastLineIndex = lineIndex + 1;
   if (promotedChildren.length > 0 || sentenceChildren.length > 0) {

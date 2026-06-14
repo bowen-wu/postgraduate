@@ -194,12 +194,13 @@
 
 ## Words
 
-- philosopher [fəˈlɑːsəfər]
-    - n. 哲学家，思想家; 善于思考的人
-- physician [fɪˈzɪʃn]
-    - n. 医生，内科医生
-- politician [ˌpɑːləˈtɪʃn]
-    - n. 政治家; 政客
+- determined
+    - adj. 决心; 决定; 坚定的
+    - undetermined
+        - adj. 未确定的，未解决的
+        - == inconclusive adj. 无定论的；不确定的；非决定性的，无结果的
+- constructive [kənˈstrʌktɪv]
+    - adj. 建设的，建设性的; 积极的，有助益的; 构造上的; [法]推定的
 - rumor [ˈruːmə(r)]
     - vt. 谣传; 传说
 - unnatural

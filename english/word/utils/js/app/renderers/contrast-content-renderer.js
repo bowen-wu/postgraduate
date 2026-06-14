@@ -7,13 +7,13 @@ function escapeHtml(text) {
     .replace(/'/g, '&#39;');
 }
 
-function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex) {
+export function renderSentenceWithBlank(sentence, fallbackOptions, cardId, itemIndex, blankPrefix = 'contrast-blank', playPrefix = 'play-btn-contrast') {
   const text = String(sentence || '');
   const bracketMatch = text.match(/\[\[(.*?)\]\]/);
   const insMatch = text.match(/<ins>(.*?)<\/ins>/i);
   const match = bracketMatch || insMatch;
-  const blankId = `contrast-blank-${cardId}-${itemIndex}`;
-  const playButtonId = `play-btn-contrast-${cardId}-${itemIndex}`;
+  const blankId = `${blankPrefix}-${cardId}-${itemIndex}`;
+  const playButtonId = `${playPrefix}-${cardId}-${itemIndex}`;
   const splitOptions = (raw) => String(raw || '')
     .split(/[\/|]/)
     .map((item) => item.replace(/\*\*/g, '').trim())

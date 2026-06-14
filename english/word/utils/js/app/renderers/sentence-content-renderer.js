@@ -1,5 +1,7 @@
 const complexSentenceDrafts = new Map();
 
+import { renderSentenceWithBlank } from './contrast-content-renderer.js';
+
 function formatSentenceCnHtml(text) {
   let html = String(text || '');
   html = html
@@ -130,6 +132,38 @@ export function renderSentenceItems(ui, card) {
       </button>
     `;
     ui.list.appendChild(translateDiv);
+  }
+
+  const inlineQuizItems = Array.isArray(card.inlineQuizItems) ? card.inlineQuizItems : [];
+  if (inlineQuizItems.length > 0) {
+    const quizLabel = document.createElement('div');
+    quizLabel.className = 'sentence-label';
+    quizLabel.textContent = 'Sentence Options';
+    quizLabel.style.marginTop = '1rem';
+    ui.list.appendChild(quizLabel);
+
+    inlineQuizItems.forEach((quizItem, idx) => {
+      const li = document.createElement('li');
+      li.className = 'item';
+      const { sentenceHtml, optionsHtml, playButtonHtml } = renderSentenceWithBlank(
+        quizItem.en,
+        quizItem.blankOptions || [],
+        card.id,
+        idx,
+        'sentence-blank',
+        'play-btn-sentence-inline'
+      );
+      li.innerHTML = `
+        <div class="en-text" style="display:flex;align-items:center;gap:0.45rem;">
+          <span>${sentenceHtml}</span>
+          ${playButtonHtml}
+        </div>
+        <div class="contrast-options-row" style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.5rem;">
+          ${optionsHtml}
+        </div>
+      `;
+      ui.list.appendChild(li);
+    });
   }
 
   if (card.type === 'complex-sentence') {

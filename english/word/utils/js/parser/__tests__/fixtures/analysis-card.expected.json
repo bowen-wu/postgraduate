@@ -6,10 +6,35 @@
     "items": []
   },
   {
+    "id": "card_2",
+    "word": "indispensable 🙂",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adj.",
+        "cn": "不可或缺的"
+      }
+    ]
+  },
+  {
+    "id": "card_3",
+    "word": "paradoxically",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "adv.",
+        "cn": "自相矛盾地"
+      }
+    ]
+  },
+  {
     "id": "card_1",
     "word": "\"Idleness is as indispensable to the brain as vita...",
     "displayWord": "\"Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
-    "type": "analysis",
+    "type": "sentence",
+    "fullText": "\"Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
     "items": [
       {
         "type": "sentence",
@@ -17,7 +42,8 @@
         "cn": ""
       }
     ],
-    "analysisItems": [
+    "children": [],
+    "inlineQuizItems": [
       {
         "type": "contrast",
         "en": "According to Newport, idleness is [[a major contributor to physical health/a desirable mental state for busy people/an essential factor in accomplishing any work]]",
