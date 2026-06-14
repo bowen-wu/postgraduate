@@ -12,6 +12,23 @@ function stripBulletPrefix(text) {
   return String(text || '').replace(/^\s*-\s+/, '').trim();
 }
 
+function splitEnglishAndChinese(text) {
+  const cleanText = String(text || '').trim();
+  const cnMatch = cleanText.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
+  if (!cnMatch) {
+    return {
+      en: cleanText,
+      cn: ''
+    };
+  }
+
+  const cnIndex = cleanText.indexOf(cnMatch[0]);
+  return {
+    en: cleanText.slice(0, cnIndex).trim(),
+    cn: cleanText.slice(cnIndex).trim()
+  };
+}
+
 function parseIndentedLine(rawLine) {
   const match = String(rawLine || '').match(/^(\s*)-\s+(.*)$/);
   if (!match) return null;
@@ -19,29 +36,29 @@ function parseIndentedLine(rawLine) {
   const indentSpaces = match[1].length;
   const cleanText = String(match[2] || '').trim();
   const indentLevel = Math.floor(indentSpaces / 4);
-
-  const cnMatch = cleanText.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
-  const cn = cnMatch ? cleanText.slice(cleanText.indexOf(cnMatch[0])).trim() : '';
+  const { en, cn } = splitEnglishAndChinese(cleanText);
 
   return {
     type: 'sentence-line',
     indentLevel,
     cleanText,
-    en: cleanText,
+    en,
     cn,
-    audioText: cleanText
+    audioText: en || cleanText
   };
 }
 
 function splitSentenceLineToCards(line, wmId, unitPath, index) {
   const text = String(line?.cleanText || '').trim();
-  if (!text) return null;
+  const en = String(line?.en || '').trim() || text;
+  const cn = String(line?.cn || '').trim();
+  if (!en) return null;
 
   return {
     id: `wm_${wmId}_${unitPath.replace(/[\/.]/g, '_')}_${index}`,
-    word: text,
+    word: en,
     type: 'sentence',
-    items: [{ type: 'sentence', en: text, cn: line?.cn || '' }]
+    items: [{ type: 'sentence', en, cn }]
   };
 }
 
@@ -76,14 +93,10 @@ export function parseWmSectionsFromMarkdown(markdownText) {
       const continuation = stripBulletPrefix(line);
       if (!continuation) continue;
       last.cleanText = `${last.cleanText} ${continuation}`.replace(/\s+/g, ' ').trim();
-      last.en = last.cleanText;
-      last.audioText = last.cleanText;
-      if (!last.cn) {
-        const cnMatch = last.cleanText.match(/[\u4e00-\u9fa5\uff08-\uff9e]/);
-        if (cnMatch) {
-          last.cn = last.cleanText.slice(last.cleanText.indexOf(cnMatch[0])).trim();
-        }
-      }
+      const split = splitEnglishAndChinese(last.cleanText);
+      last.en = split.en;
+      last.cn = split.cn;
+      last.audioText = split.en || last.cleanText;
     }
 
     result[wmId] = {
