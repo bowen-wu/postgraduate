@@ -7,6 +7,12 @@ export function renderWordHeader(ui, card) {
     ui.ipa.style.display = 'none';
     return;
   }
+  if (card.type === 'analysis') {
+    ui.word.textContent = 'Analysis';
+    ui.ipa.textContent = '';
+    ui.ipa.style.display = 'none';
+    return;
+  }
   if (card.type === 'block') {
     const firstLine = Array.isArray(card.items) ? card.items[0] : null;
     const encodedWord = encodeURIComponent(firstLine?.audioText || card.word || '');
@@ -61,6 +67,7 @@ export function renderBadgeHtml(card, stats) {
   if (card.type === 'word') html += '<span class="badge badge-word">Word</span>';
   else if (card.type === 'phrase') html += '<span class="badge badge-rel">Phrase</span>';
   else if (card.type === 'contrast') html += '<span class="badge badge-rel">Contrast</span>';
+  else if (card.type === 'analysis') html += '<span class="badge badge-sent">Analysis</span>';
   else if (card.type === 'prefix') html += '<span class="badge badge-pre">Affix</span>';
   else if (card.type === 'sentence') html += '<span class="badge badge-sent">Sentence</span>';
   else if (card.type === 'complex-sentence') html += '<span class="badge badge-sent complex-sentence-badge">Complex<br>Sentence</span>';

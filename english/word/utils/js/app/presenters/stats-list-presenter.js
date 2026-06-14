@@ -7,6 +7,7 @@ export function buildStatsRows({ cards, displayOrder, currentIndex, stats }) {
     let icon = '📝';
     if (card.type === 'phrase') icon = '🔗';
     if (card.type === 'sentence') icon = '💬';
+    if (card.type === 'analysis') icon = '🧩';
     if (card.type === 'complex-sentence') icon = '🧠';
     if (card.type === 'contrast') icon = '⚖️';
 

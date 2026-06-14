@@ -351,7 +351,7 @@ export function prefetchCurrentQueueAudio() {
 
 export async function revealSentenceAnswer(claimedKnown = true) {
   const card = StateManager.getCurrentCard();
-  if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence')) return;
+  if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence' && card.type !== 'analysis')) return;
 
   const hasChinese = card.items?.[0]?.cn && typeof card.items[0].cn.trim === 'function' && card.items[0].cn.trim() !== '';
   if (hasChinese) {

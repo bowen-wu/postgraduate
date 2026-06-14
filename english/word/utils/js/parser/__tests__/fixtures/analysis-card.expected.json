@@ -1,0 +1,32 @@
+[
+  {
+    "id": "card_0",
+    "word": "Analysis Sample",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "\"Idleness is as indispensable to the brain as vita...",
+    "displayWord": "\"Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
+    "type": "analysis",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "\"Idleness is as indispensable to the brain as vitamin D is to the body...[idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
+        "cn": ""
+      }
+    ],
+    "analysisItems": [
+      {
+        "type": "contrast",
+        "en": "According to Newport, idleness is [[a major contributor to physical health/a desirable mental state for busy people/an essential factor in accomplishing any work]]",
+        "blankOptions": [
+          "a major contributor to physical health",
+          "a desirable mental state for busy people",
+          "an essential factor in accomplishing any work"
+        ]
+      }
+    ]
+  }
+]

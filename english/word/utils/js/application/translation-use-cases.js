@@ -45,7 +45,7 @@ export function createTranslationUseCases(deps) {
 
   async function translateSentence() {
     const card = stateManager.getCurrentCard();
-    if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence')) return;
+    if (!card || (card.type !== 'sentence' && card.type !== 'complex-sentence' && card.type !== 'analysis')) return;
 
     const sentenceText = card.items[0]?.en || card.displayWord || card.word;
     const buttonIds = ['translate-btn-sentence', 'translate-btn-sentence-action'];

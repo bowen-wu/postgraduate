@@ -65,6 +65,15 @@ export function hasContrastMarker(content) {
 }
 
 /**
+ * Check if content has analysis marker (Analysis:)
+ * @param {string} content - The content to check
+ * @returns {boolean}
+ */
+export function hasAnalysisMarker(content) {
+  return /^Analysis:\s*/i.test(content);
+}
+
+/**
  * Check if it's a pure POS line (n. 中文)
  * @param {string} content - The content to check
  * @returns {boolean}

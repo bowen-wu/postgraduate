@@ -1,7 +1,8 @@
 import { processChildren } from './children-processor.js';
 import { processSentence } from './sentence-processor.js';
-import { matchListIndent, getListContentFromTrimmed } from './line-utils.js';
+import { matchListIndent, getListContentFromTrimmed, mergeListItemContinuations } from './line-utils.js';
 import { parseContrastHeader, parseContrastChildren } from './contrast-parser.js';
+import { parseAnalysisHeader, parseAnalysisChildren } from './analysis-parser.js';
 import { extractItalicWords } from './inline-extractors.js';
 import { normalizeInlineStudyText, stripMarkdownMarkers } from './text-normalizer.js';
 import { getListIndentLevel } from './line-utils.js';
@@ -181,6 +182,73 @@ export function processListItem(parser, line, indentLevel, content, lineIndex) {
       }
 
       // Fallback: treat explanatory contrast child lines as phrases.
+      parser.cards.push(parser.createPhraseCard(extra.content, extra.indentLevel));
+    });
+
+    return lastLineIndex;
+  }
+
+  if (parser.hasAnalysisMarker && parser.hasAnalysisMarker(content)) {
+    const merged = mergeListItemContinuations(parser.lines, lineIndex, content);
+    const header = parseAnalysisHeader(merged.content);
+    const card = {
+      id: `card_${parser.cardCounter++}`,
+      word: header.word,
+      displayWord: header.displayWord,
+      type: 'analysis',
+      items: [{ type: 'sentence', en: header.sentence, cn: '' }],
+      analysisItems: []
+    };
+    const { items, extras, lastLineIndex } = parseAnalysisChildren(parser.lines, merged.nextLineIndex, indentLevel);
+    card.analysisItems = items;
+    parser.cards.push(card);
+
+    items.forEach((item) => {
+      const sentence = String(item.en || '');
+      sentence.replace(/[*_]([a-zA-Z'-]+)\(([^*_]*?)\)[*_]/g, (_m, word, def) => {
+        if (parser.hasPosMarker(def)) {
+          parser.cards.push(parser.createWordCard(`${word} ${def}`, indentLevel + 2));
+        }
+        return word;
+      });
+    });
+
+    const consumedExtraLines = new Set();
+    extras.forEach((extra) => {
+      if (consumedExtraLines.has(extra.lineIndex)) {
+        return;
+      }
+
+      const cardType = parser.determineCardType(extra.content, extra.indentLevel, extra.lineIndex);
+      if (cardType === 'word') {
+        const wordCard = parser.createWordCard(extra.content, extra.indentLevel);
+        const { children: wordChildren, lastLineIndex } = processChildren(parser, extra.indentLevel, extra.lineIndex, [], wordCard);
+        if (wordChildren.length > 0) {
+          wordCard.children = wordChildren;
+        }
+        for (let line = extra.lineIndex + 1; line <= lastLineIndex; line++) {
+          consumedExtraLines.add(line);
+        }
+        parser.cards.push(wordCard);
+        return;
+      }
+      if (cardType === 'prefix') {
+        parser.cards.push(parser.createPrefixCard(extra.content, extra.indentLevel, extra.lineIndex));
+        return;
+      }
+      if (cardType === 'phrase') {
+        const phraseCard = parser.createPhraseCard(extra.content, extra.indentLevel);
+        const { children: phraseChildren, lastLineIndex } = processChildren(parser, extra.indentLevel, extra.lineIndex, [], phraseCard);
+        if (phraseChildren.length > 0) {
+          phraseCard.children = phraseChildren;
+        }
+        for (let line = extra.lineIndex + 1; line <= lastLineIndex; line++) {
+          consumedExtraLines.add(line);
+        }
+        parser.cards.push(phraseCard);
+        return;
+      }
+
       parser.cards.push(parser.createPhraseCard(extra.content, extra.indentLevel));
     });
 
