@@ -358,6 +358,22 @@ body.mode-recall .card.is-contrast .en-text {
     opacity: 1;
     user-select: text;
 }
+/* Sentence cards also render their visible content as list rows now,
+   so keep those rows visible in recall mode. */
+body.mode-recall .card.is-sentence .item-list > .item {
+    display: block;
+}
+body.mode-recall .card.is-sentence .sentence-label,
+body.mode-recall .card.is-sentence .sentence-content,
+body.mode-recall .card.is-sentence .translate-section,
+body.mode-recall .card.is-sentence .contrast-options-row,
+body.mode-recall .card.is-sentence .en-text {
+    opacity: 1;
+}
+body.mode-recall .card.is-sentence .en-text {
+    filter: none;
+    user-select: text;
+}
 
 .contrast-options-row {
     align-items: center;
