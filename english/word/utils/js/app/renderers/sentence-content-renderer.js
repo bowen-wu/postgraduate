@@ -2,6 +2,16 @@ const complexSentenceDrafts = new Map();
 
 import { renderSentenceWithBlank } from './contrast-content-renderer.js';
 
+function appendPlainListRow(ui, className, buildContent) {
+  const li = document.createElement('li');
+  li.className = 'item';
+  const node = buildContent();
+  if (className) node.classList.add(className);
+  li.appendChild(node);
+  ui.list.appendChild(li);
+  return { li, node };
+}
+
 function formatSentenceCnHtml(text) {
   let html = String(text || '');
   html = html
@@ -18,8 +28,6 @@ function formatSentenceCnHtml(text) {
 }
 
 export function renderSentenceItems(ui, card) {
-  const li = document.createElement('li');
-  li.className = 'item';
   const isWritingCard = typeof card?.id === 'string' && card.id.startsWith('writing_');
 
   const stripHtml = (text) => String(text || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -80,7 +88,7 @@ export function renderSentenceItems(ui, card) {
     labelWrapper.appendChild(copyButton);
   }
 
-  ui.list.appendChild(labelWrapper);
+  appendPlainListRow(ui, '', () => labelWrapper);
 
   if (card.patterns && card.patterns.length > 0) {
     const patternsDiv = document.createElement('div');
@@ -92,7 +100,7 @@ export function renderSentenceItems(ui, card) {
       patternP.textContent = `📌 ${pattern}`;
       patternsDiv.appendChild(patternP);
     });
-    ui.list.appendChild(patternsDiv);
+    appendPlainListRow(ui, '', () => patternsDiv);
   }
 
   const contentDiv = document.createElement('div');
@@ -100,7 +108,7 @@ export function renderSentenceItems(ui, card) {
   contentDiv.innerHTML = isWritingCard
     ? formatSentenceCnHtml(card.items?.[0]?.cn || '')
     : (card.displayWord || card.items[0].en);
-  ui.list.appendChild(contentDiv);
+  appendPlainListRow(ui, '', () => contentDiv);
 
   const item = card.items[0];
   const hasChinese = item.cn && typeof item.cn.trim === 'function' && item.cn.trim() !== '';
@@ -115,7 +123,7 @@ export function renderSentenceItems(ui, card) {
     if (card.type === 'complex-sentence') {
       cnDiv.style.display = 'block';
     }
-    ui.list.appendChild(cnDiv);
+    appendPlainListRow(ui, '', () => cnDiv);
   } else {
     const translateDiv = document.createElement('div');
     translateDiv.className = 'translate-section';
@@ -131,7 +139,7 @@ export function renderSentenceItems(ui, card) {
         <span class="btn-spinner"></span>
       </button>
     `;
-    ui.list.appendChild(translateDiv);
+    appendPlainListRow(ui, '', () => translateDiv);
   }
 
   const inlineQuizItems = Array.isArray(card.inlineQuizItems) ? card.inlineQuizItems : [];
@@ -140,7 +148,7 @@ export function renderSentenceItems(ui, card) {
     quizLabel.className = 'sentence-label';
     quizLabel.textContent = 'Sentence Options';
     quizLabel.style.marginTop = '1rem';
-    ui.list.appendChild(quizLabel);
+    appendPlainListRow(ui, '', () => quizLabel);
 
     inlineQuizItems.forEach((quizItem, idx) => {
       const li = document.createElement('li');
@@ -170,7 +178,7 @@ export function renderSentenceItems(ui, card) {
     const textareaTitle = document.createElement('div');
     textareaTitle.className = 'complex-sentence-subtitle';
     textareaTitle.textContent = 'Your Draft';
-    ui.list.appendChild(textareaTitle);
+    appendPlainListRow(ui, '', () => textareaTitle);
 
     const textarea = document.createElement('textarea');
     textarea.id = 'complex-sentence-draft';
@@ -180,8 +188,6 @@ export function renderSentenceItems(ui, card) {
     textarea.addEventListener('input', () => {
       complexSentenceDrafts.set(card.id, textarea.value);
     });
-    ui.list.appendChild(textarea);
+    appendPlainListRow(ui, '', () => textarea);
   }
-
-  ui.list.appendChild(li);
 }
