@@ -56,8 +56,8 @@
         \end{itemize}
         \item 部分分式{\color{red}{分解}}型
         \begin{itemize}
-            \item $\dint \dfrac{1}{x^2 - a^2}\,\mathrm{d}x = \dint \dfrac{1}{2a}(\dfrac{1}{a + x} - \dfrac{1}{a - x})\,\mathrm{d}x = \dfrac{1}{2a}(\ln|a + x| - \ln|a - x|) + C = \dfrac{1}{2a}\ln \left|\dfrac{x-a}{x+a}\right| + C$
-            \item $\dint \dfrac{1}{a^2 - x^2}\,\mathrm{d}x = \dint -\dfrac{1}{2a}(\dfrac{1}{a + x} - \dfrac{1}{a - x})\,\mathrm{d}x = \dfrac{1}{2a}\ln \left|\dfrac{x+a}{x-a}\right| + C$
+            \item $\dint \dfrac{1}{x^2 - a^2}\,\mathrm{d}x = \dint \dfrac{1}{2a}(\dfrac{1}{x-a} - \dfrac{1}{x+a})\,\mathrm{d}x = \dfrac{1}{2a}(\ln|x - a| - \ln|x + a|) + C = \dfrac{1}{2a}\ln \left|\dfrac{x-a}{x+a}\right| + C$
+            \item $\dint \dfrac{1}{a^2 - x^2}\,\mathrm{d}x = \dint \dfrac{1}{2a}(\dfrac{1}{x + a} - \dfrac{1}{x - a})\,\mathrm{d}x = \dfrac{1}{2a}\ln \left|\dfrac{x+a}{x-a}\right| + C$
         \end{itemize}
         \item 三角函数降幂公式型
         \begin{itemize}
@@ -1014,6 +1014,29 @@
         \[
             f(-x) = \ln (\sqrt{x^2 + 1} - x) = \ln \frac{1}{\sqrt{x^2 + 1} + x} = -f(x)
         \]
+        \item $\dint_0^{\pi} |\cos \theta|^3\,\mathrm{d}\theta = 2\dint_0^{\pi/2} \cos^3 \theta\,\mathrm{d}\theta$
+        \[
+            \begin{aligned}
+                \int_0^{\pi} |\cos \theta|^3\,\mathrm{d}\theta
+                &= \int_0^{\pi/2} \cos^3 \theta\,\mathrm{d}\theta + \int_{\pi/2}^{\pi} (-\cos \theta)^3\,\mathrm{d}\theta \\
+                &= \int_0^{\pi/2} \cos^3 \theta\,\mathrm{d}\theta + \int_{\pi/2}^{\pi} (-\cos^3 \theta)\,\mathrm{d}\theta \\
+                &= \int_0^{\pi/2} \cos^3 \theta\,\mathrm{d}\theta + \int_0^{\pi/2} \cos^3 u\,\mathrm{d}u \\
+                &= 2\int_0^{\pi/2} \cos^3 \theta\,\mathrm{d}\theta.
+            \end{aligned}
+        \]
+        其中在$[0,\pi/2]$上$\cos\theta\ge 0$，在$[\pi/2,\pi]$上$\cos\theta\le 0$，所以可先按区间去绝对值，再用代换$u=\pi-\theta$把后半段化到前半段。
+
+        也可用\textbf{区间再现公式}理解：令$f(\theta) = |\cos\theta|^3$，则
+        \[
+            f(\pi - \theta) = |\cos(\pi - \theta)|^3 = |-\cos\theta|^3 = |\cos\theta|^3 = f(\theta)
+        \]
+        因而$f(\theta)$关于$\theta = \dfrac{\pi}{2}$对称，所以
+        \[
+            \int_0^{\pi} |\cos \theta|^3\,\mathrm{d}\theta
+            = 2\int_0^{\pi/2} |\cos \theta|^3\,\mathrm{d}\theta
+            = 2\int_0^{\pi/2} \cos^3\theta\,\mathrm{d}\theta.
+        \]
+
 
     \end{enumerate}
 

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## moral
@@ -205,7 +205,7 @@
 - ultimate
     - adj. 最后的; 极限的; 首要的; 最大的
     - n. 终极; 顶点; 基本原理; 基本事实
-    - == final
+    - == final adj. 最后的；决定性的
 - renaissance [ˈrenəsɑːns]
     - n. (the R-)文艺复兴（时期）；复兴
 

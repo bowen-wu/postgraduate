@@ -61,7 +61,11 @@
 - First and foremost, ... In addition, ... 首先，此外
 - To start with, ... Furthermore..., ... 首先，此外
 - To start with, ... Moreover, ... 首先，其次
-- The pie chart above clearly illustrates the factors of consumers' concern on choosing restaurants in a certain city in 2017. Among all the five categories, the percentages of feature, service and environment are the highest, accounting for 36.3%, 26.8% and 23.8% respectively. On the contrary, the statistics of price and other factors take up merely 8.4% and 4.7% respectively, the lowest among the five groups.
+- The pie chart above clearly illustrates the factors of consumers' concern on choosing restaurants in a certain city in
+    2017. Among all the five categories, the percentages of feature, service and environment are the highest, accounting
+          for 36.3%, 26.8% and 23.8% respectively. On the contrary, the statistics of price and other factors take up
+          merely
+          8.4% and 4.7% respectively, the lowest among the five groups.
 - I am looking forward to my travel to the United States and visiting you in Harvard University.
 - Therefore, I would like either to change to another model that works better or a full refund. Your help is greatly
   appreciated.
@@ -86,10 +90,10 @@
 ## WM-5
 
 - nouns + in + doing + numbers 越来越多的.../数量不断增长的
-    - people in growing numbers 越来越多的
-    - gymnasiums in creasing numbers 越来越多的
-    - gymnasiums in mounting numbers 数量急剧上升
-    - customers in expanding numbers 越来越多的消费者
+    - people in growing numbers
+    - gymnasiums in creasing numbers
+    - gymnasiums in mounting numbers
+    - customers in expanding numbers
 - a + adjective + number of + countable-nouns
     - a growing number of people
     - an increasing number of people

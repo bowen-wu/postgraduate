@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## lack
@@ -26,7 +26,6 @@
 - [læk]
 - vt. 缺乏
 - n. 缺乏
-- lack + 宾语
 - be lacking in 缺乏...；在...方面不足
 - Despite his **lack** of experience, he got the job.
 - This car **lacked** the power of the American cars.
@@ -35,17 +34,27 @@
 - absence [ˈæbsəns] n. 缺乏
 - deficiency
     - n. 缺陷；缺少
-    - Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may
-      *compensate([ˈkɑːmpenseɪt] v. 补偿，赔偿; 弥补) for* an <ins>emotional **deficiency**</ins>.
-    - == shortage == flaw([flɔː] n. 错误; 缺点; 瑕疵)
+    - == shortage n. 缺少
+    - == flaw [flɔː] n. 错误; 缺点; 瑕疵
+    - Work by Tina Malti, a psychology professor at the University of Toronto, suggests that guilt may compensate for an
+      emotional **deficiency**.
+        - compensate [ˈkɑːmpenseɪt]
+            - vt. 补偿（损失）
+            - vi. 弥补（过失、不足）
+        - emotional deficiency 情感缺失/情感方面的不足
 - flawless 🙂
     - adj. 完美的，无瑕的
-    - == perfect
+    - == perfect adj. 完美的
 - dearth [dɜːrθ]
     - n. 缺乏
-    - == lack == absence
-    - Two years ago, Rupert Mudoch's daughter, Elisabeth, spoke of the "unsettling **dearth** of
-      integrity([ɪnˈteɡrəti] n. 正直，诚实) across so many of our institutions".
+    - == lack [læk]
+        - vt. 缺乏
+        - n. 缺乏
+    - == absence [ˈæbsəns] n. 缺乏
+    - Two years ago, Rupert Mudoch's daughter, Elisabeth, spoke of the "unsettling **dearth** of integrity across so
+      many of our institutions".
+        - integrity [ɪnˈteɡrəti] n. 完整；正直；诚实
+        - institution [ˌɪnstɪˈtuːʃn] n. 机构；体质
 
 ## local
 
@@ -60,12 +69,13 @@
     - n. 斑点；点； 地点，场所；污点;
     - 词组
         - be spot-on 准确的
-    - They stayed at *several([ˈsevrəl])* of the island's top <ins>tourist **spots**</ins>.
+    - They stayed at *several([ˈsevrəl])* of the island's top tourist **spots**.
     - Vicenzo failed to **spot** the error.
 
 ## professor
 
 - n. 教授
+- Distinguished Professors
 - profession
     - n. 职业；专业
     - Sensible ideas have been around for a long time, but the state-level bodies that govern the **profession** have
@@ -75,7 +85,7 @@
     - Similar: vocational [voʊˈkeɪʃənl] adj. 职业的，职业技术的
     - professional training 职业培训
 - professionalize [prəˈfɛʃənəˌlaɪz] vt. 使专业化
-- professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平
+- professionalism [prəˈfɛʃənəˌlɪzəm] n. 专业水平；专业主义
 - amateur [ˈæmətər]
     - n. 业余爱好者
     - adj. 业余的
@@ -86,9 +96,15 @@
 - specialist [ˈspeʃəlɪst]
     - n. 专家
     - adj. 专业的
-    - == expert
-    - Yet only one of his books is now in print，and his <ins>vast body of/oceans of(海量)</ins> writings on music is
-      unknown <ins>save to/except(除了)</ins> **specialists**.
+    - == expert [ˈekspɜːrt] n. 专家
+    - Yet only one of his books is now in print, and his **vast body of** writings on music is unknown save to
+      **specialists**.
+        - a vast body of... 大量的/海量的（知识、证据、研究）
+            - == oceans of
+        - save to 除了
+            - == except [ɪkˈsept]
+                - prep. 除...之外
+                - conj. 除了...
 
 ## quality
 
@@ -98,13 +114,18 @@
     - vt. 使有资格
 - qualified
     - adj. 合格的；有资格的
-    - be qualified to do sth
+    - 词组
+        - be qualified to do sth.
 - qualification n. 资格
 - eligible [ˈelɪdʒəbl]
     - adj. 合格的；符合条件的
-    - == qualified
-    - *Only* If the jobless arrive at the job centre with a CV, register for online job search, and start looking for
-      work will they be **eligible** for <ins>benefit(补助金；津贴)</ins>.
+    - == qualified adj. 合格的；有资格的
+    - **Only** if the jobless arrive at the job centre with a CV, register for online job search, and start looking for
+      work **will they be** **eligible** for benefit.
+        - benefit
+            - vt. 使获益
+            - vi. (~ from)得益于
+            - n. 好处；保险金；福利费
 
 ## apply
 
@@ -112,9 +133,9 @@
 - vi. 涉及；申请
 - 词组
     - apply to 适用于；设计
-        - But the skills <ins>they learn</ins> **apply to** any coding language.
     - apply for 申请；请求
-        - ...may lack opportunities to **apply for** research projects.
+- But the skills they learn **apply to** any coding language.
+- ...may lack opportunities to **apply for** research projects.
 - applicable [əˈplɪkəbl]
     - adj. 可适用的
     - 词组
@@ -123,9 +144,10 @@
 - application n. 申请；应用；应用程序
 - exert [ɪɡˈzɜːrt]
     - vt. 施加（影响、压力）
-    - These designers came to <ins>**exert** *enormous([ɪˈnɔːrməs])/profound* influence on(产生深远影响)</ins>
-      the *course/development* of American architecture, but none more so than Mies.
+    - These designers came to **exert** enormous influence on the **course/development** of American architecture, but
+      none more so than Mies.
         - enormous adj. 巨大的; 极大的
+        - exert influence on/upon... 对...施加影响/对...产生影响
 - utilize [ˈjuːtəlaɪz] vt. 利用
 
 ## balance
@@ -140,7 +162,11 @@
 
 - v. 寻求；寻找；试图，设法
 - vt. 请求
-- == look for == search == pursue [pərˈsuː] vt. 追求
+- == look for
+- == search
+    - v. 搜寻；搜查
+    - n. 搜寻；搜查；（在计算机上）搜索
+- == pursue [pərˈsuː] vt. 追求
 - **Seek** first to understand then to be understood. 首先寻求理解，然后被理解
 - 词组
     - seek out 找到；追寻到
@@ -163,6 +189,7 @@
             - n. 猎头
             - "The traditional rule was it's safer to stay where you are, but that's been fundamentally inverted" says
               one **headhunter**.
+                - fundamentally adv. 根本地
 
 ## detail
 
@@ -173,18 +200,19 @@
 - elaborate [ɪ'læbərət]
     - v. 精心制作；详细说明，详尽阐述
     - adj. 精心制作的；详尽的；复杂的
-    - == detailed
+    - == detailed adj. 精细的，细致的；详尽的；详细的
     - elaborate layout 精心的布局
     - elaboration [ɪˌlæbəˈreʃən]
         - n. 精心制作; 详尽阐述; 苦心经营
 - concrete [ˈkɑːŋkriːt]
     - adj. 具体的；确实的；实在的
     - n. 混凝土
-    - Many Americans regard <ins>the jury system</ins> as a **concrete** expression of crucial democratic values,
-      including the principles that...
+    - Many Americans regard the jury system as a **concrete** expression of crucial democratic values, including the
+      principles that...
 - simplify [ˈsɪmplɪfaɪ]
     - vt. 简化
-    - simple == easy
+    - simple adj. 简单的; 单纯的; 朴素的
+        - == easy
 - lengthy [ˈlɛŋkθi] adj. 漫长的
 - brief
     - adj. 简单的；短暂的

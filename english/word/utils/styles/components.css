@@ -374,6 +374,19 @@ body.mode-recall .card.is-sentence .en-text {
     filter: none;
     user-select: text;
 }
+body.mode-recall .card.is-complex-sentence .item-list > .item {
+    display: block;
+}
+body.mode-recall .card.is-complex-sentence .sentence-label,
+body.mode-recall .card.is-complex-sentence .sentence-content,
+body.mode-recall .card.is-complex-sentence .translate-section,
+body.mode-recall .card.is-complex-sentence .en-text {
+    opacity: 1;
+}
+body.mode-recall .card.is-complex-sentence .en-text {
+    filter: none;
+    user-select: text;
+}
 
 .contrast-options-row {
     align-items: center;
