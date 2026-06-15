@@ -124,22 +124,6 @@ export function renderSentenceItems(ui, card) {
       cnDiv.style.display = 'block';
     }
     appendPlainListRow(ui, '', () => cnDiv);
-  } else {
-    const translateDiv = document.createElement('div');
-    translateDiv.className = 'translate-section';
-    translateDiv.style.cssText = 'margin-top: 1rem;';
-    translateDiv.innerHTML = `
-      <button id="translate-btn-sentence" class="btn-ghost translate-btn" data-action="translate-sentence" style="display: inline-flex; align-items: center; gap: 0.4rem;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        Translate
-        <span class="btn-spinner"></span>
-      </button>
-    `;
-    appendPlainListRow(ui, '', () => translateDiv);
   }
 
   const inlineQuizItems = Array.isArray(card.inlineQuizItems) ? card.inlineQuizItems : [];
