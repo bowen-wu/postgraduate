@@ -1580,7 +1580,7 @@ self-sufficiency was both desirable and inevitable was widely shared.
 - It is not that pink is intrinsically bad, but it is such a tiny slice of the rainbow and, though it may celebrate
   girlhood in one way, it also repeatedly and firmly fuses girls' identity to appearance.
     - It is not that... 并不是说.../倒不是因为...
-    - intrinsically [ɪnˈtrɪnsɪklɪ] adv. 本质的
+    - intrinsically [ɪnˈtrɪnsɪklɪ] adv. 本质地
     - rainbow n. 彩虹
     - a slice of... ...中的一小部分
     - celebrate [ˈselɪbreɪt] v. 庆祝; 赞美
@@ -1755,10 +1755,18 @@ much a modern textile mill has been automated: The average mill has only two emp
 
 ### 原句
 
-Davidson's article is one of a number of pieces that have recently appeared making the point that the reason we have
-such stubbornly high unemployment and declining middle-class incomes today is largely because of the big drop in demand
-because of the Great Recession, but it is also because of the advances in both globalization and the information
-technology revolution, which are more rapidly than ever replacing labor with machines or foreign workers.
+- Davidson's article is one of a number of pieces that have recently appeared making the point that the reason we have
+  such stubbornly high unemployment and declining middle-class incomes today is largely because of the big drop in
+  demand because of the Great Recession, but it is also because of the advances in both globalization and the
+  information technology revolution, which are more rapidly than ever replacing labor with machines or foreign workers.
+    - article n. 文章；（物品的）一件
+    - appear vi. 看起来；出现；出版
+    - make the point that... 提出观点认为.../强调...
+    - stubbornly high 顽固地居高不下
+    - drop in demand 需求下降
+    - Great Recession 固定术语。指：2008年全球金融危机后的大衰退
+    - replace A with B
+    - more than ever 比以往任何时候都更...
 
 ## 106
 
@@ -1768,9 +1776,18 @@ technology revolution, which are more rapidly than ever replacing labor with mac
 
 ### 原句
 
-In a world where average is officially over, there are many things we need to do to support employment, but nothing
-would be more important than passing some kind of G. I. Bill for the 21st century that ensures that every American has
-access to post-high school education.
+- In a world where average is officially over, there are many things we need to do to support employment, but nothing
+  would be more important than passing some kind of G. I. Bill for the 21st century that ensures that every American has
+  access to post-high school education.
+    - officially adv. 正式地，官方地
+    - in a world where... 在一个...的时代/在一个...的世界里
+    - average
+        - adj. 普通的；平均的
+        - n. 平均数
+    - average is officially over 平庸时代已经结束/普通水平已经不够用了
+    - support employment 促进就业/支持就业
+    - nothing would be more important than... 没有什么比...更重要
+    - have access to 获得.../享有...的机会/能够接触到...
 
 ## 107
 
@@ -1780,8 +1797,15 @@ access to post-high school education.
 
 ### 原句
 
-Along with the many folks looking to make a permanent home in the United States came those who had no intention to stay,
-and who would make some money and then go home.
+- Along with the many folks looking to make a permanent home in the United States came those who had no intention to
+  stay, and who would make some money and then go home.
+    - folk [foʊk]
+        - n. 民族，人民
+        - adj. 民间的
+    - along with 连同/和...一起/随同
+    - make a home 安家/定居
+    - have no intention to do sth.
+        - == have no intention of doing sth.
 
 ## 108
 
@@ -1791,9 +1815,16 @@ and who would make some money and then go home.
 
 ### 原句
 
-Looking beyond the culture war logic of right or wrong means opening up the middle ground and understanding that
-managing immigration today requires multiple paths and multiple outcomes, including some that are not easy to accomplish
-legally in the existing system.
+- Looking beyond the culture war logic of right or wrong means opening up the middle ground and understanding that
+  managing immigration today requires multiple paths and multiple outcomes, including some that are not easy to
+  accomplish legally in the existing system.
+    - look beyond 超越.../不局限于.../跳出...来看
+    - culture war 文化战争/意识形态之争
+    - right or wrong 对与错
+    - looking beyond the culture war logic of right or wrong 跳出“非对即错”的文化战争思维
+    - outcome n. 结果；成果
+    - open up 开辟/打开/创造
+    - middle ground 中间道路/折中方案/中间立场
 
 ## 109
 
@@ -1803,9 +1834,9 @@ legally in the existing system.
 
 ### 原句
 
-Scientists have found that although we are prone to snap overreactions, if we take a moment and think about how we are
-likely to react, we can reduce or even eliminate the negative effects of our quick, hard-wired
-responses.
+- Scientists have found that although we are prone to snap overreactions, if we take a moment and think about how we are
+  likely to react, we can reduce or even eliminate the negative effects of our quick, hard-wired responses.
+    - snap adj. 匆忙的
 
 ## 110
 
@@ -1815,8 +1846,16 @@ responses.
 
 ### 原句
 
-When women do break through to the summit of corporate poweras, for example, Sheryl Sandberg recently did at
-Facebookthey attract massive attention precisely because they remain the exception to the rule.
+- When women do break through to the summit of corporate power—as, for example, Sheryl Sandberg recently did at
+  Facebook—they attract massive attention precisely because they remain the exception to the rule.
+    - summit n. 顶峰
+    - the summit of ...的顶峰
+    - exception [ɪkˈsepʃn] n. 例外
+    - precisely [prɪˈsaɪsli]
+        - adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
+        - == exactly adv. 准确地；（要求得到更多信息）究竟，到底
+    - precisely because 恰恰因为
+    - exception to the rule 规则中的例外
 
 ## 111
 
@@ -1826,8 +1865,12 @@ Facebookthey attract massive attention precisely because they remain the excepti
 
 ### 原句
 
-Only if the jobless arrive at the jobcentre with a CV, register for online job search, and start looking for work will
-they be eligible for benefit-and then they should report weekly rather than fortnightly.
+- Only if the jobless arrive at the jobcentre with a CV, register for online job search, and start looking for work will
+  they be eligible for benefit—and then they should report weekly rather than fortnightly.
+    - fortnightly adj. 两星期一次的
+    - only if 只有在...情况下
+    - be eligible for 有资格获得
+    - rather than 而不是
 
 ## 112
 
@@ -1837,8 +1880,18 @@ they be eligible for benefit-and then they should report weekly rather than fort
 
 ### 原句
 
-What motivated him, we were to understand, was his zeal for "fundamental fairness"-protecting the taxpayer, controlling
-spending and ensuring that only the most deserving claimants received their benefits.
+- What motivated him, we were to understand, was his zeal for "fundamental fairness"—protecting the taxpayer,
+  controlling spending and ensuring that only the most deserving claimants received their benefits.
+    - motivate vt. 成为...的动机；激励
+    - zeal [ziːl] n. 热心，热情
+    - zeal for 对...的热情
+    - fundamental
+        - adj. 根本的；基础的；基本的
+        - n. 基本原理
+    - what motivated him 激励他的东西
+        - == the thing that motivated him
+    - we were to understand 人们让我们相信/按照当时的说法/据称
+        - == we were led to believe
 
 ## 113
 
@@ -1848,8 +1901,14 @@ spending and ensuring that only the most deserving claimants received their bene
 
 ### 原句
 
-There is pressure for change from within the profession, but opponents of change among the regulators insist that
-keeping outsiders out of a law firm isolates lawyers from the pressure to make money rather than serve clients ethically
+- There is pressure for change from within the profession, but opponents of change among the regulators insist that
+  keeping outsiders out of a law firm isolates lawyers from the pressure to make money rather than serve clients
+  ethically
+    - ethically ['eθɪklɪ] adv. 伦理地，道德地
+    - pressure for change 改革压力
+    - from within 来自内部
+    - keep outsiders out of 把外部人员排除在...之外
+    - isolate A from B 使A与B隔离/使A免受B影响
 
 ## 114
 

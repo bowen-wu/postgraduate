@@ -36,6 +36,9 @@
 
 - vt. 假设
 - v. 认为
+- Similar: support
+    - vt. 支持
+    - n. （钱财或物资上的）资助；支持
 - I **suppose** the most revolutionary act one can engage in is to tell the truth.
     - engage in sth. 从事.../参与.../进行...
 - Yet **it is** precisely these non-celebrity influentials **who**, according to the two-step-flow theory, are
@@ -63,6 +66,9 @@
 - hypothesis [haɪˈpɑːθəsɪs] n. 假说，假设
 - premise [ˈpremɪs]
     - n. 前提，假设
+    - Similar: promise [ˈprɑːmɪs]
+        - vt. 保证
+        - n. 承诺 （主观）；潜力，前途
     - If connections can be bought, a basic **premise** of democratic society—that all are equal in treatment by
       government—is undermined.
 - presumably [prɪˈzuːməbli]
@@ -91,6 +97,7 @@
             - == ob-
         - opposite [ˈɑːpəzɪt]
             - adj. 完全相反的，截然不同的
+            - n. 相反面，对立面
             - ...but under high-stress conditions, IQ was negatively correlated with leadership—that is, it predicted
               the **opposite**.
                 - predict [prɪˈdɪkt] vt. 预测（主观）
@@ -102,6 +109,7 @@
         - opponent [əˈpoʊnənt] n. 对手，竞争者；反对者
     - propose
         - v. 提议，建议；求婚
+        - Similar: purpose [ˈpɜːrpəs] n. 目的；目标
         - pro- 向前
             - == forward
         - proposal [prəˈpoʊzl] n. 提议，计划；求婚
@@ -130,8 +138,14 @@
 - reinforce
     - vt. 强化；巩固
     - Durkheim proposed that religious beliefs functioned to **reinforce** social solidarity.
+        - solidarity [ˌsɑːlɪˈdærəti]
+            - n. 团结
+            - == unity [ˈjuːnəti] n. 团结，统一；和睦，和谐
 - enforce
     - v. 执行
+    - Similar: force
+        - vt. 促使；强迫
+        - n. 力量
     - The bans, if fully **enforced**, would suggest to women (and many men) that they should not let others be arbiters
       of their beauty.
         - arbiter n. 裁决者; 权威人士，主宰者

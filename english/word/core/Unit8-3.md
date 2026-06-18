@@ -103,6 +103,7 @@
         - adj. 统一的
 - alliance [əˈlaɪəns]
     - n. 联盟，结盟
+    - Similar: allowance [əˈlaʊəns] n. 补贴
     - A native literary drama had been created, its **alliance** with the public playhouses established, and at least
       some of its great traditions had been begun.
         - literary [ˈlɪtəreri] adj. 文学的

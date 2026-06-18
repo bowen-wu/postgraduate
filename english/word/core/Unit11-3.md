@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## range
@@ -121,6 +121,9 @@
     - vt. 使满意；满足（需求；需要等）
     - satisfied
         - adj. 满意的；满足的
+        - Similar: sacrifice [ˈsækrɪfaɪs]
+            - n. 牺牲；献祭
+            - vt. 牺牲；献祭
         - be satisfied with
     - satisfaction n. 满足；满意
     - dissatisfaction n. 不满意
@@ -175,6 +178,7 @@
 
 - [ˈlɪbərəl]
 - adj. 自由党的；人文（教育）的
+- Similar: literal [ˈlɪtərəl] adj. 字面的
 - liberal education 通识教育/博雅教育/人文素养教育
 - illiberal 😔
     - adj. 不容言论（或行动）自由的；不开朗的

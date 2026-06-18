@@ -159,8 +159,8 @@
 ## WM-8
 
 - with the prosperity of the (China's) economy
-- with the rapid and steady development of China’s economy 随着中国经济的快速且稳定的发展
-- with the continuous and significant development of China’s economy 随着中国经济持续而显著的发展
+- with the rapid and steady development of China's economy 随着中国经济的快速且稳定的发展
+- with the continuous and significant development of China's economy 随着中国经济持续而显著的发展
 - with the rapid increase in economic development happening in developing countries 随着发展中国家的经济快速增长
 - the prosperity of China's/the economy
 - promotes/boosts economy development

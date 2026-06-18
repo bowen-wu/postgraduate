@@ -2,179 +2,19 @@
 
 \begin{document}
 
-%    \title{线性代数}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-
-% =========================
-
     \section{矩阵}
 
-    \subsection{基础概念}
+    \subsection{矩阵的定义及其基本运算}
 
     \begin{enumerate}
         \item $m$行$n$列表格称为$m \times n$矩阵，当 $m = n$ 时，矩阵$A$称为$n$阶矩阵或\textbf{$n$阶方阵}
-        \item 如果一个矩阵的所有元素都是$0$，则称这个矩阵是\textbf{零矩阵}，可简记为$\mathbf{O}$
-        \item 如果一个方阵，所有非主对角线元素都是0，则称这个矩阵是\textbf{对角矩阵}
-        \item 两个$m \times n$型矩阵$A = [a_{ij}]$，$B = [b_{ij}]$，如果对应的元素都相等，即$a_{ij} = b_{ij}(i = 1,2,\dots,m; j = 1,2,\dots,n)$，则称矩阵$A$与$B$相等，记作$A = B$
-        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$的元素所构成的行列式称为$n$阶方阵$A$的行列式，记作$|A|$或$\det A$
-        \item 把矩阵$A$的行换成同序数的列得到一个新矩阵，称为矩阵$A$的\textbf{转置矩阵}，记作$A^T$
-        \item 如果方阵$A$满足$A^T = A$，则称$A$是\textbf{对称矩阵}，即$a_{ij} = a_{ji}$
-        \item 如果方阵$A$满足$A^T = -A$，则称$A$是\textbf{反对称矩阵}，即$a_{ij} = -a_{ji}$
-        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$，行列式$|A|$的每个元素$a_{ij}$的代数余子式$A_{ij}$所构成的如下矩阵
-        \[
-            A^* =
-            \begin{bmatrix}
-                A_{\color{red}{11}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{21}} & \dots & A_{\textcolor{blue}{n1}} \\
-                A_{\color{red}{12}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{22}} & \dots & A_{\textcolor{blue}{n2}} \\
-                \vdots              & \vdots                                 &       & \vdots                   \\
-                A_{\color{red}{1n}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{2n}} & \dots & A_{\textcolor{blue}{nn}}
-            \end{bmatrix}
-        \]
-        称为矩阵$A$的\textbf{伴随矩阵}
-        \item 伴随矩阵是余子式矩阵的转置，即$A^* = [A_{ji}] = (A_{ij})^T$
-        \item $n$阶方阵$A = [a_{ij}]_{n \times n}$，如果存在$n$阶方阵$B$使得$AB = BA = E$(单位矩阵)成立，则称$A$是\textbf{可逆矩阵}或\textbf{非奇异矩阵}，$B$是$A$的逆矩阵
-        \item 对$m \times n$矩阵，下列三种变换
-        \begin{enumerate}
-            \item 用非零常数$k$乘矩阵的某一行（列）
-            \item 互换矩阵某两行（列）的位置
-            \item 把某行（列）的$k$倍加至另一行（列）
-        \end{enumerate}
-        称为矩阵的\textbf{初等行（列）变换}，统称为矩阵的\textbf{初等变换}
-        \item 如果矩阵$A$经过有限次初等变换变成矩阵$B$，则称矩阵$A$与矩阵$B$\textbf{等价}，记作$A \overset{\sim}{=} B$
-        \item 单位矩阵经过一次初等变换等到的矩阵称为\textbf{初等矩阵}
-        \begin{enumerate}
-            \item $E_{i}(k)$ 单位矩阵第$i$行乘以常数$k$
-            \item $E_{ij}$ 单位矩阵互换$i,j$行
-            \item $E_{ij}(k)$ 单位矩阵第$j$行的$k$倍加至第$i$行
-        \end{enumerate}
-        \item 设$\alpha = (a_1, a_2, \dots, a_n)^{T}$，$\beta = (b_1, b_2, \dots, b_n)^{T}$。向量内积为
-        \[
-            (\alpha, \beta) = \alpha^{T}\beta = \beta^{T}\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}
-        \]
-        \item 向量$\alpha = (a_1, a_2, \dots, a_n)^{T}$的长度
-        \[
-            ||\alpha|| = \sqrt{\alpha^T\alpha} = \sqrt {a_1^2 + a_2^2 + \dots + a_n^2}
-        \]
-        \item 若$(\alpha, \beta) = 0$即$a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n} = 0$，则称$\alpha$与$\beta$正交，记为$\alpha \perp \beta$
-        \item 设 $A$ 是 $n$ 阶矩阵，满足 $AA^{T} = A^{T}A = E$，称 $A$ 是 \textbf{正交矩阵:}
-        \begin{align*}
-            &\Leftrightarrow\; A^{T} = A^{-1} \\
-            &\Leftrightarrow\; A \text{ 的行（列）向量两两正交（单位向量）} \\
-            &\Leftrightarrow\; A \text{ 的每个行（列）向量长度均为1} \\
-            &\Leftrightarrow\; A \text{ 的行（列）向量平方和为 1} \\
-            &\Leftrightarrow\; a_{1}^2 + a_{2}^2 + \dots + a_{n}^2 = 1 \\
-            &{\color{red}{\Rightarrow}}\; |A|^{2} = 1 \;\;\Leftrightarrow\;\; |A| = 1 \text{ 或 } |A| = -1
-        \end{align*}
-        \item 若 $A$ 是正交矩阵且 $A = (\alpha_1,\alpha_2,\dots,\alpha_n)$，则:
-        \begin{enumerate}
-            \item $\alpha_{i}^{T}\alpha_{i} = 1$
-            \item $\alpha_{i}^{T}\alpha_{j} = 0 \; (i \neq j)$
-        \end{enumerate}
-        \item 在$m \times n$矩阵$A$中，任取$k$行与$k$列$(k \le m, k \le n)$，位于这个行与列的交叉点上的$k^2$个元素按其在原来矩阵$A$中的次序可构成一个$k$阶行列式，称其为矩阵$A$的一个$k$阶\textbf{子式}
-        \item 矩阵$A$的非零子式的最高阶数称为矩阵$A$的{\color[rgb]{0.2, 0.6, 0.3}{秩}}，记为$r(A)$。零矩阵的秩规定为$0$
-        \item 矩阵秩的理解
-        \begin{enumerate}
-            \item $r(A) = r$ \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0\text{，\textcolor[rgb]{0.2, 0.6, 0.3}{任何}}r + 1\text{阶子式（若存在）必\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0
-            \item $r(A) < r$ \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{每}一个}r\text{阶子式\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0
-            \item $r(A) \ge r$ \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0
-            \item $r(A) = 0$ \Leftrightarrow A = \mathbf{O}
-            \item $r(A) \neq \mathbf{O}$ \Leftrightarrow 1 \le r(A) \le n
-            \item 若$A$是$n$阶矩阵
-            \begin{itemize}
-                \item $r(A) = n$ \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}
-                \item $r(A) < n$ \Leftrightarrow |A| = 0 \Leftrightarrow A\text{不可逆}
-            \end{itemize}
-            \item 若$A$是$m \times n$阶矩阵 \Leftrightarrow r(A) \le min(m, n)
-        \end{enumerate}
+        \item 矩阵$A$和矩阵$B$行数、列数相等，则称$A$与$B$为同型矩阵
     \end{enumerate}
 
-    \subsection{定理}
+    \subsubsection{基本运算}
 
     \begin{enumerate}
-        \item 若$A$是可逆矩阵，则矩阵$A$的逆矩阵\textbf{唯一}，记为$A^{-1}$
-        \item $n$ 阶矩阵$A$可逆
-        \begin{align*}
-            &\Leftrightarrow\; |A| \neq 0  \\
-            &\Leftrightarrow\; r(A) = n  \\
-            &\Leftrightarrow\; A \text{的列（行）向量组线性无关}  \\
-            &\Leftrightarrow\; A = P_{1}P_{2}\dots P_{s}, P_{i}(i = 1,2,\dots,s)\text{是初等矩阵}  \\
-            &\Leftrightarrow\; A \text{通过初等变换能化为单位矩阵}  \\
-            &\Leftrightarrow\; A \text{与单位矩阵等价}  \\
-            &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
-            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{只有零解}  \\
-        \end{align*}
-        \item $n$ 阶矩阵$A${\color{red}{不可逆}}
-        \begin{align*}
-            &\Leftrightarrow\; |A| = 0  \\
-            &\Leftrightarrow\; r(A) < n  \\
-            &\Leftrightarrow\; A \text{的列（行）向量组线性相关}  \\
-            &\;\Leftrightarrow\; A \text{无法表示为初等矩阵的乘积} \\
-            &\Leftrightarrow\; A \text{无法通过初等变换能化为单位矩阵}  \\
-            &\Leftrightarrow\; 0\text{是矩阵} A \text{的特征值}  \\
-            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}
-        \end{align*}
-        \item $A \overset{\sim}{=} B$
-        \begin{align*}
-            &\Leftrightarrow\; r(A) = r(B)  \\
-            &\Leftrightarrow\; A \text{通过初等变换能化为} B  \\
-            &\Rightarrow\; |A| = 0 \Leftrightarrow |B| = 0, |A| \neq 0 \Leftrightarrow |B| \neq 0. \text{即}A\;B\text{的行列式同时为0或同时不为0}  \\
-        \end{align*}
-        \item 若$A$是$n$阶矩阵，且满足$AB = E$，则必有$BA = E$
-        \item 用初等矩阵$P$左(右)乘矩阵$A$，其结果$PA$($AP$)就是对矩阵$A$作一次相应的初等行(列)变换 \; \Rightarrow \textbf{左乘行变换，右乘列变换}
-        \item 初等矩阵均可逆，其逆矩阵是同类型的初等矩阵，即
-
-        \renewcommand{\arraystretch}{1.2}  % 行高放大 1.2 倍
-        \begin{tabularx}{\textwidth}{l c >{\raggedright\arraybackslash}X}
-            倍乘 & $E_i^{-1}(k) = E_i(1/k)$      & 第 $i$ 行（或列）乘以非零常数 $k$ 的逆矩阵是第 $i$ 行（或列）乘以 $1/k$                     \\
-            互换 & $E_{ij}^{-1} = E_{ij}$        & 交换第 $i$ 行（或列）和第 $j$ 行（或列）的\textbf{\color{red}{逆矩阵是其本身}}            \\
-            倍加 & $E_{ij}^{-1}(k) = E_{ij}(-k)$ & 第 $i$ 行（或列）加上 $k$ 倍第 $j$ 行（或列）的逆矩阵是第 $i$ 行（或列）加上 $-k$ 倍第 $j$ 行（或列） \\
-        \end{tabularx}
-        \item 矩阵$A$与$B$\textbf{等价}的充分必要条件是存在可逆矩阵$P$与$Q$，使$PAQ = B$
-        \item 秩$r(A) = A \text{的列秩} = A \text{的行秩}$
-        \item 矩阵经初等变换后秩不变
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-        \item 设$A = [a_{ij}]$，$B = [b_{ij}]$是两个$m \times n$矩阵，则$m \times n$矩阵$C = [c_{ij}] = [a_{ij} + b_{ij}]$称为矩阵$A$与$B$的和，记作$A + B = C$
-        \item 设$A = [a_{ij}]$是$m \times n$矩阵，$k$是一个常数，则$m \times n$矩阵$[ka_{ij}]$称为数$k$与矩阵$A$的\textbf{数乘}，记作$kA$
-        \item 设$A, B, C, \mathbf{O}$都是$m \times n$矩阵，$k, l$是常数，则矩阵的加法和数乘运算满足：
-        \begin{enumerate}
-            \item $A + B = B + A$
-            \item $(A + B) + C = A + (B + C)$
-            \item $A + \mathbf{O} = A$
-            \item $A + (-A) = \mathbf{O}$
-            \item $1A = A$
-            \item $k(lA) = (kl)A$
-            \item $(kA)^n = k^{n}A^n$
-            \item $k(A + B) = kA + kB$
-            \item $(k + l)A = kA + lA$
-        \end{enumerate}
-        \item 设$A = [a_{ij}]$是$m \times n$矩阵，$B = [b_{ij}]$是$n \times s$矩阵，那么$m \times s$矩阵$C = [c_{ij}]$，其中
-        \[
-            c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \dots + a_{in}b_{nj} = \sum_{k=1}^{n} a_{ik}b_{kj} = \sum \text{第$i$行} \times \text{第$j$列}
-        \]
-        称为$A$与$B$的\textbf{乘积}，记作$C = AB$
-        \item 矩阵乘法有下列法则：
-        \begin{enumerate}
-            \item $A(BC) = (AB)C$
-            \item $A(B + C) = AB + AC$
-            \item $(A + B)C = AC + BC$
-            \item $(kA)(lB) = klAB$
-            \item $AE = EA = A$
-            \item $\mathbf{O}A = A\mathbf{O} = \mathbf{O}$
-        \end{enumerate}
-        \item 设$A$是$n$阶矩阵，$k$是正整数，
-        \begin{enumerate}
-            \item $A$的$k$次方幂$A^k = A \cdot A \dots A$($k$个$A$)
-            \item $\mathbf{A^0 = E}$
-            \item $A^k \cdot A^l = A^{k+l}$
-            \item $(A^k)^l = A^{kl}$
-        \end{enumerate}
-        \item
+        \item 相等：两个$m \times n$型矩阵$A = [a_{ij}]$，$B = [b_{ij}]$，如果对应的元素都相等，即$a_{ij} = b_{ij}(i = 1,2,\dots,m; j = 1,2,\dots,n)$，则称矩阵$A$与$B$相等，记作$A = B$
         \[
             \begin{bmatrix}
                 A_1 & A_2 \\
@@ -188,175 +28,263 @@
                   A_1 + B_1 & A_2 + B_2 \\
                   A_3 + B_3 & A_4 + B_4
             \end{bmatrix}
-        \]
-        \item
-        \[
-            \begin{bmatrix}
-                A & B \\
-                C & D
-            \end{bmatrix}
-            \begin{bmatrix}
-                X & Y \\
-                Z & W
-            \end{bmatrix}
-            = \begin{bmatrix}
-                  AX + BZ & AY + BW \\
-                  CX + DZ & CY + DW
-            \end{bmatrix}
-        \]
-        \item
-        \[
-            \begin{bmatrix}
-                A & B \\
-                C & D
-            \end{bmatrix}^{T}
-            = \begin{bmatrix}
-                  A^T & C^T \\
-                  B^T & D^T
-            \end{bmatrix}
-        \]
-        \item $(A + B)^2 = (A + B)(A + B) = A^2 + {\color{red}{AB}} + {\color{red}{BA}} + B^2 \;\mathbf{\neq}\; A^2 + 2AB + B^2$
-        \item $\color[rgb]{0.2, 0.6, 0.3}{\mathbf{(A + E)^2 = A^2 + 2A + E}}$
-        \begin{enumerate}
-            \item $E - A^3 = (E - A)(E + A + A^2)$
-            \item $E + A^3 = (E + A)(E - A + A^2)$
-            \item $AB - 2B - 4A = 0$ \Leftrightarrow \; $(A - 2E)(B - 4E) = 8E$
-        \end{enumerate}
-        \item 设$\alpha$和$\beta$都是列向量，则
-        \begin{enumerate}
-            \item 列向量 \cdot \text{行向量:} \, $\alpha\beta^T = (\beta\alpha^T)^T$，两者都是$n$阶矩阵（互为转置）
-            \item 行向量 \cdot \text{列向量:} \, $\alpha^T\beta = \beta^T\alpha$ 是一个\textbf{数}
-            \item
-            \[
-                \alpha\alpha^T =
-                \begin{bmatrix}
-                    a_1^2   & a_1 a_2 & a_1 a_3 & \dots  & a_1 a_n \\
-                    a_1 a_2 & a_2^2   & a_2 a_3 & \dots  & a_2 a_n \\
-                    a_1 a_3 & a_2 a_3 & a_3^2   & \dots  & a_3 a_n \\
-                    \vdots  & \vdots  & \vdots  & \ddots & \vdots  \\
-                    a_1 a_n & a_2 a_n & a_3 a_n & \dots  & a_n^2
-                \end{bmatrix} \textbf{(对称矩阵)}
-            \]
-            \item $\color{red}{r(\alpha\alpha^T) = 1}$
-            \item $\alpha\alpha^T$特征值是{\color{red}{$||\alpha||^2, 0, 0, \dots, 0(n - 1\text{个})$}}
-            \item
-            \[
-                \alpha^T \alpha = a_1^2 + a_2^2 + \dots + a_n^2 = \sum_{k=1}^{n} a_k^2 \quad \text{（平方和）}
-            \]
-        \end{enumerate}
-        \item 向量
+        \]        \item 加法：两个同型矩阵对应元素相加
+        \item 数乘矩阵：设$A = [a_{ij}]$是$m \times n$矩阵，$k$是一个常数，则$m \times n$矩阵$[ka_{ij}]$称为数$k$与矩阵$A$的\textbf{数乘}，记作$kA$。设$A, B, C, \mathbf{O}$都是$m \times n$矩阵，$k, l$是常数，则矩阵的加法和数乘运算满足：
         \begin{itemize}
-            \item $(\alpha, \beta) = (\beta, \alpha)$
-            \item $(k\alpha, \beta) = (\alpha, k\beta) = k(\alpha, \beta)$
-            \item $(\alpha + \beta, \gamma) = (\alpha, \gamma) + (\beta, \gamma)$
-            \item $(\alpha, \beta + \gamma) = (\alpha, \beta) + (\alpha, \gamma)$
-            \item $(\alpha, \alpha) \ge 0$
+            \item 交换律：$A + B = B + A$
+            \item 结合律：$(A + B) + C = A + (B + C)$
+            \item 分配律：$k(A + B) = kA + kB, (k + l)A = kA + lA$
+            \item 数和矩阵相乘的结合律：$k(lA) = (kl)A$
+            \item $A + \mathbf{O} = A$
+            \item $A + (-A) = \mathbf{O}$
+            \item $1A = A$
+            \item $(kA)^n = k^{n}A^n$
+        \end{itemize}
+        \item 矩阵的乘法：设$A = [a_{ij}]$是$m \times n$矩阵，$B = [b_{ij}]$是$n \times s$矩阵，那么$m \times s$矩阵$C = [c_{ij}]$，其中
+        \[
+            c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \dots + a_{in}b_{nj} = \sum_{k=1}^{n} a_{ik}b_{kj} = \sum \text{第$i$行} \times \text{第$j$列}
+        \]
+        称为$A$与$B$的\textbf{乘积}，记作$C = AB$。矩阵乘法有下列法则：
+        \begin{itemize}
+            \item 结合律：$A(BC) = (AB)C$
+            \item 分配律：$A(B + C) = AB + AC, (A + B)C = AC + BC$
+            \item 数乘与矩阵乘积的结合律：$(kA)(lB) = klAB$
+            \item $AE = EA = A$
+            \item $\mathbf{O}A = A\mathbf{O} = \mathbf{O}$
+            \item $AB = O \nRightarrow A = O\text{或}B = O$
+            \item $AB = AB \Rightarrow A(B - C) = O$，此时即使有$A \neq O$，一般也得不出$B = C$
+            \item
+            \[
+                \begin{bmatrix}
+                    A & B \\
+                    C & D
+                \end{bmatrix}
+                \begin{bmatrix}
+                    X & Y \\
+                    Z & W
+                \end{bmatrix}
+                = \begin{bmatrix}
+                      AX + BZ & AY + BW \\
+                      CX + DZ & CY + DW
+                \end{bmatrix}
+            \]
+            \item $(A + B)^2 = (A + B)(A + B) = A^2 + {\color{red}{AB}} + {\color{red}{BA}} + B^2 \;\mathbf{\neq}\; A^2 + 2AB + B^2$
+            \item $\color[rgb]{0.2, 0.6, 0.3}{\mathbf{(A + E)^2 = A^2 + 2A + E}}$
+            \begin{enumerate}
+                \item $E - A^3 = (E - A)(E + A + A^2)$
+                \item $E + A^3 = (E + A)(E - A + A^2)$
+                \item $AB - 2B - 4A = 0$ \Leftrightarrow \; $(A - 2E)(B - 4E) = 8E$
+            \end{enumerate}
+        \end{itemize}
+        \item 转置矩阵：把矩阵$A$的行换成同序数的列得到一个新矩阵，称为矩阵$A$的\textbf{转置矩阵}，记作$A^T$
+        \begin{itemize}
+            \item $(A^T)^T = A$
+            \item $(kA)^T = kA^T$
+            \item $(A + B)^T = A^T + B^T$
+            \item $(A - B)^T = A^T - B^T$
+            \item $(AB)^T = B^{T}A^T $
+            \item $(E + A)^T = E + A^T $
+            \item
+            \[
+                \begin{bmatrix}
+                    A & B \\
+                    C & D
+                \end{bmatrix}^{T}
+                = \begin{bmatrix}
+                      A^T & C^T \\
+                      B^T & D^T
+                \end{bmatrix}
+            \]
+        \end{itemize}
+        \item 方阵的幂：设$A$是$n$阶矩阵，$k$是正整数
+        \begin{itemize}
+            \item $A$的$k$次方幂$A^k = A \cdot A \dots A$($k$个$A$)
+            \item $\mathbf{A^0 = E}$
+            \item $A^k \cdot A^l = A^{k+l}$
+            \item $(A^k)^l = A^{kl}$
+            \item 若$f(x) = a_0 + a_{1}x + \cdots + a_{m}x^m$，则
+            \[
+                f(A) = a_{0}E + a_{1}A + \cdots + a_{m}A^m
+            \]
+        \end{itemize}
+        \item 方阵的行列式：$n$阶方阵$A = [a_{ij}]_{n \times n}$的元素所构成的行列式称为$n$阶方阵$A$的行列式，记作$|A|$
+        \begin{itemize}
+            \item $|kA| = k^{n}|A|$
+            \item 一般地，$|A + B| \neq |A| + |B|$
+            \item $A \neq O \nRightarrow |A| \neq 0$
+            \item $A \neq  B \nRightarrow |A| \neq |B|$
+            \item $|A^T| = |A|$
+            \item $|AB| = |A||B|$ \;\text{,} $|A^2| = |A|^2$
+            \item
+            \[
+                \begin{vmatrix}
+                    A & B \\
+                    B & A
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      A + B & A + B \\
+                      B     & A
+                \end{vmatrix}
+                = \begin{vmatrix}
+                      A + B & 0     \\
+                      B     & A - B
+                \end{vmatrix}
+                = |A + B| \cdot |A - B|
+            \]
         \end{itemize}
     \end{enumerate}
 
-    \subsection{公式}
+    \subsubsection{几种重要矩阵}
 
     \begin{enumerate}
-        \item $AA^* = A^{*}A = |A|\cdot E$
-        \begin{circlenum}
-            \item 广义化：$\text{狗}\cdot\text{狗}^* = \text{狗}^*\cdot\text{狗} = |\text{狗}|\cdot E$
+        \item 零矩阵： 一个矩阵的所有元素都是$0$，可简记为$\mathbf{O}$
+        \item 单位矩阵：
+        \item 数量矩阵：数$k$和单位矩阵的乘积称为数量矩阵
+        \item 对角矩阵：一个方阵所有非主对角线元素都是0称为\textbf{对角矩阵}
+        \begin{itemize}
+            \item $\Lambda_1\Lambda_2 = \Lambda_2\Lambda_1$
+            \item
+            \[
+                \begin{bmatrix}
+                    b_1 &     &     \\
+                    & b_2 &     \\
+                    &     & b_3
+                \end{bmatrix}
+                \begin{bmatrix}
+                    a_1 &     &     \\
+                    & a_2 &     \\
+                    &     & a_3
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                    b_1 a_1 &         &         \\
+                    & b_2 a_2 &         \\
+                    &         & b_3 a_3
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    a_1 &     &     \\
+                    & a_2 &     \\
+                    &     & a_3
+                \end{bmatrix}^n
+                = \begin{bmatrix}
+                      a_{1}^n &         &         \\
+                      & a_{2}^n &         \\
+                      &         & a_{3}^n
+                \end{bmatrix}
+            \]
+            \item
+            \[
+                \begin{bmatrix}
+                    a_1 &     &     \\
+                    & a_2 &     \\
+                    &     & a_3
+                \end{bmatrix}^{-1}
+                = \begin{bmatrix}
+                      \dfrac{1}{a_{1}} &                 &                 \\
+                      & \dfrac{1}{a_{2}} &                 \\
+                      &                 & \dfrac{1}{a_{3}}
+                \end{bmatrix}
+            \]
+        \end{itemize}
+        \item 上（下）三角矩阵：
+        \item 对称矩阵：如果方阵$A$满足$A^T = A$，则称$A$是\textbf{对称矩阵}，即$a_{ij} = a_{ji}$
+        \item 反对称矩阵：如果方阵$A$满足$A^T = -A$，则称$A$是\textbf{反对称矩阵}，即$a_{ij} = -a_{ji}$
+        \item 行矩阵：只有一行元素的矩阵，也称行向量
+        \item 列矩阵：只有一列元素的矩阵，也称列向量
+    \end{enumerate}
+
+    \subsection{矩阵的逆}
+
+    $n$阶方阵$A = [a_{ij}]_{n \times n}$，如果存在$n$阶方阵$B$使得${\color{red}{AB = BA = E}}$（单位矩阵）成立，则称$A$是\textbf{可逆矩阵}，$B$是$A$的逆矩阵。矩阵$A$的逆矩阵\textbf{唯一}，记为$A^{-1}$
+
+    \subsubsection{逆矩阵的性质与重要公式}
+
+    \begin{enumerate}
+        \item ${\color{red}{\bigstar}}A$可逆的充分必要条件是$|A| \neq 0$
+        \item $(A^{-1})^{-1} = A$
+        \item 若$k \neq 0$，则$(kA)^{-1} = \dfrac{1}{k}A^{-1}$
+        \item $(AB)^{-1} = B^{-1}A^{-1}$
+        \item $(ABC)^{-1} = C^{-1}B^{-1}A^{-1}$
+        \item $A^T$可逆，且$(A^T)^{-1} = (A^{-1})$
+        \item $|A^{-1}| = |A|^{-1} = \dfrac{1}{|A|}$
+        \item $(A^n)^{-1} = (A^{-1})^n$
+        \item
+        \[
+            \begin{bmatrix}
+                a & b \\
+                c & d
+            \end{bmatrix}^{-1}
+            = \frac{1}{ad - bc}\begin{bmatrix}
+                                   d  & -b \\
+                                   -c & a
+            \end{bmatrix}
+        \]
+        \item
+        \[
+            \begin{bmatrix}
+                a&   &  \\
+                & b &   \\
+                &   &c   \\
+            \end{bmatrix}^{-1}
+            = \begin{bmatrix}
+                  \dfrac{1}{a}&             &  \\
+                  & \dfrac{1}{b} &             \\
+                  &             &  \dfrac{1}{c}           \\
+            \end{bmatrix}
+        \]
+        \item
+        \[
+            \begin{bmatrix}
+                &   & a \\
+                & b &   \\
+                c &   &   \\
+            \end{bmatrix}^{-1}
+            = \begin{bmatrix}
+                  &             & \dfrac{1}{c} \\
+                  & \dfrac{1}{b} &             \\
+                  \dfrac{1}{a} &             &             \\
+            \end{bmatrix}
+        \]
+    \end{enumerate}
+
+    \subsection{伴随矩阵}
+
+    $n$阶方阵$A = [a_{ij}]_{n \times n}$，行列式$|A|$的每个元素$a_{ij}$的代数余子式$A_{ij}$所构成的如下矩阵
+    \[
+        A^* =
+        \begin{bmatrix}
+            A_{\color{red}{11}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{21}} & \dots & A_{\textcolor{blue}{n1}} \\
+            A_{\color{red}{12}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{22}} & \dots & A_{\textcolor{blue}{n2}} \\
+            \vdots              & \vdots                                 &       & \vdots                   \\
+            A_{\color{red}{1n}} & A_{\textcolor[rgb]{0.2, 0.6, 0.3}{2n}} & \dots & A_{\textcolor{blue}{nn}}
+        \end{bmatrix}
+    \]
+    称为矩阵$A$的\textbf{伴随矩阵}。伴随矩阵是余子式矩阵的转置，即$A^* = [A_{ji}] = (A_{ij})^T$
+
+    \subsubsection{伴随矩阵的性质与重要公式}
+
+    \begin{enumerate}
+        \item ${\color{red}{\bigstar}}AA^* = A^{*}A = |A|E$
+        \item 当$A$可逆时，即$|A| \neq 0$
+        \begin{itemize}
             \item $A^{-1}AA^* = |A|EA^{-1} \Rightarrow {\color{red}{A^* = |A|A^{-1}}} \Rightarrow {\color{red}{|A^*|}} = ||A|A^{-1}| = |A|^n|A^{-1}| = \color{red}{|A|^{n-1}}$
+            \item $A^{-1} = \dfrac{1}{|A|}A^*$
             \item $AA^*(A^{*})^{-1}= |A|E(A^{*})^{-1} \Rightarrow \color{red}{A = |A|(A^{*})^{-1}}$
             \item $(kA)^*\cdot(kA) = |kA|E \Rightarrow {\color{red}{(kA)^*}} = k^n|A|\cdot(kA)^{-1} = k^n|A|\cdot\dfrac{1}{k}A^{-1} = k^{n-1}|A|A^{-1} = {\color{red}{k^{n-1}A^*}}$
             \item $A^T(A^T)^* = |A^T|E \Rightarrow {\color{red}{(A^T)^*}} = |A|(A^T)^{-1} = |A|(A^{-1})^{T} = (|A|A^{-1})^{T} = {\color{red}{(A^*)^{T}}}$
             \item $A^{-1}(A^{-1})^* = |A^{-1}|E \Rightarrow {\color{red}{(A^{-1})^{*}}} = |A|^{-1}A = |A|^{-1}|A|(A^{*})^{-1} = {\color{red}{(A^{*})^{-1}}}$
             \item $A^*(A^*)^* = |A^*|E \Rightarrow {\color{red}{(A^*)^*}} = |A|^{n-1}(A^*)^{-1} =|A|^{n-1}(|A|A^{-1})^{-1} = {\color{red}{|A|^{n-2}A}}$
-        \end{circlenum}
+            \item 广义化：$\text{狗}\cdot\text{狗}^* = \text{狗}^*\cdot\text{狗} = |\text{狗}|\cdot E$
+        \end{itemize}
         \item $AA^{-1} = A^{-1}A = E = (A^{-1}A)^T = (AA^{-1})^T = A^{T}(A^{-1})^T$
         \begin{circlenum}
             \item $|AA^{-1}| = 1 = |A^{-1}||A|$
             \item $A^{T}{\color{blue}{(A^{-1})^T}} = E \Rightarrow {\color{red}{(A^T)^{-1} = (A^{-1})^T}}$
         \end{circlenum}
-        \item
-        \begingroup
-        \renewcommand{\arraystretch}{1.8}
-        \setlength{\tabcolsep}{2pt}
-        \footnotesize
-        \centering
-        \resizebox{1\textwidth}{!}{%
-            \begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{3.2cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{3.8cm}|>{\centering\arraybackslash}m{4cm}|}
-                \hline
-                & 伴随 & 逆 & 转置 & 行列式 \\
-                \hline
-                数
-                & ${\color{orange}{(kA)^* = k^{n-1}A^*}}$
-                & ${\color{orange}{(kA)^{-1} = \dfrac1k A^{-1}}}$
-                & ${\color{orange}{(kA)^T = kA^T}}$
-                & ${\color{orange}{|kA| = k^n|A|}}$ \rule{0pt}{24pt}\\
-                \hline
-                伴随
-                & ${\color{red}{(A^*)^* = |A|^{n-2}A}}$
-                & ${\color{orange}{(A^*)^{-1} = (A^{-1})^* = \dfrac{1}{|A|}A}}$
-                & ${\color{orange}{(A^*)^{T} = (A^T)^*}}$
-                & ${\color{red}{|A^*| = |A|^{n-1}}}$ \rule{0pt}{24pt}\\
-                \hline
-                逆
-                & ${(A^{-1})^* = (A^*)^{-1}}$
-                & ${\color{orange}{(A^{-1})^{-1}=A}}$
-                & ${\color{orange}{(A^{-1})^{T} = (A^T)^{-1}}}$
-                & ${\color{orange}{|A^{-1}| = |A|^{-1}}}$ \\
-                \hline
-                转置
-                & ${(A^T)^* = (A^*)^T}$
-                & ${(A^T)^{-1} = (A^{-1})^T}$
-                & ${\color{orange}{(A^T)^T = A}}$
-                & ${\color{orange}{|A^T| = |A|^T = |A|}}$ \\
-                \hline
-                行列式
-                & ${\color{gray}{\cancel{|A|^*}}}$
-                & $|A|^{-1} = |A^{-1}|$
-                & $|A|^T = |A^T| = |A|$
-                & ${\color{orange}{||A|| = |A|}}$ \\
-                \hline
-                穿脱原则
-                & ${\color{orange}{(AB)^* = B^{*}A^*}}$
-                & ${\color{orange}{(AB)^{-1} = B^{-1}A^{-1}}}$
-                & ${\color{orange}{(AB)^T = B^{T}A^{T}}}$
-                & ${\color{orange}{|AB| = |B||A| = |A||B|}}$ \\
-                \hline
-                加法
-                & ${\color{blue}{(A + B)^* \neq A^* + B^{*}}}$
-                & ${\color{blue}{(A + B)^{-1} \neq A^{-1} + B^{-1}}}$
-                & ${\color{red}{(A + B)^T = A^{T} + B^{T}}}$
-                & ${\color{blue}{|A + B| \neq |A| + |B|}}$ \\
-                \hline
-            \end{tabular}%
-        }
-        \endgroup
-    \end{enumerate}
-
-    \subsubsection{行列式}
-
-    \begin{enumerate}
-        \item $|AB| = |A||B|$ \;\text{,} $|A^2| = |A|^2$
-    \end{enumerate}
-
-    \subsubsection{转置}
-
-    \begin{enumerate}
-        \item $(A + B)^T = A^T + B^T$
-        \item $(A - B)^T = A^T - B^T$
-        \item $(AB)^T = B^{T}A^T $
-        \item $(E + A)^T = E + A^T $
-    \end{enumerate}
-
-    \subsubsection{伴随}
-
-    \begin{enumerate}
         \item $(AB)^* = B^{*}A^*$
-        \item $(A^*)^* = |A|^{n-2}A$
-        \begin{enumerate}
-            \item 若$A$不可逆($|A| = 0$)，则
-            \begin{enumerate}
-                \item 且$n \ge 3$时，$(A^*)^* = O$
-                \item 且$n = 2$时，$(A^*)^* = A$
-            \end{enumerate}
-        \end{enumerate}
         \item
         \begin{flalign*}
             r(A^*) &=
@@ -375,134 +303,53 @@
         \end{bmatrix}$。\textbf{主对调，副变号}
     \end{enumerate}
 
-    \subsubsection{可逆}
+    \subsubsection{求伴随矩阵的方法}
 
     \begin{enumerate}
-        \item $(AB)^{-1} = B^{-1}A^{-1}$
-        \item $(ABC)^{-1} = C^{-1}B^{-1}A^{-1}$
-        \item $(A^n)^{-1} = (A^{-1})^n$
-        \item
-        \[
-            \begin{bmatrix}
-                a & b \\
-                c & d
-            \end{bmatrix}^{-1}
-            = \frac{1}{ad - bc}\begin{bmatrix}
-                                   d  & -b \\
-                                   -c & a
-            \end{bmatrix}
-        \]
-        \item
-        \[
-            \begin{bmatrix}
-                &   & a \\
-                & b &   \\
-                c &   &   \\
-            \end{bmatrix}^{-1}
-            = \begin{bmatrix}
-                  &             & \frac{1}{c} \\
-                  & \frac{1}{b} &             \\
-                  \frac{1}{a} &             &             \\
-            \end{bmatrix}
-        \]
+        \item 定义法：先求$A_{ij}$，再拼成$A^*$
+        \item 公式法：若$A$可逆，则$A^* = |A|A^{-1}$
     \end{enumerate}
 
-    \subsubsection{秩}
+    \subsection{初等变换与初等矩阵}
 
     \begin{enumerate}
-        \item $r(A) = r(A^T) = r(A^{T}A) = r(AA^{T})$
-        \item 当$k \neq 0$时，$r(kA) = r(A)$
-        \item $r(A + B) \le r(A, B) \le r(A) + r(B)$
-        \item $A$是$m \times n$矩阵，$B$是$n \times s$矩阵，则
-        \begin{enumerate}
-            \item $r(AB) \le r(A) \text{并且} r(AB) \le r(B)$，即 $r(AB) \le \min(r(A), r(B))$
-            \item $r(A) + r(B) - n \le r(AB)$
-            \item $\color{red}{r(A, AB) = r(A)}$详见理解1
-            \item $\color{red}{r(B, BA) = r(B)}$
-            \item 且$AB = O$，则
-            \begin{enumerate}
-                \item $r(A) + r(B) {\color{red}{\le}} n$
-                \item $B$ 的列向量是齐次方程组 $Ax = 0$ 的解
-                \begin{itemize}
-                    \item 按列分块，有
-                    \[
-                        B = [b_1, b_2, \dots, b_s], \\
-                        AB = A[b_1, b_2, \dots, b_s] = [Ab_1, Ab_2, \dots, Ab_s] = [0, 0, \dots, 0]
-                    \]
-                    因此
-                    \[
-                        Ab_i = 0, \quad i = 1, 2, \dots, s.
-                    \]
-                \end{itemize}
-            \end{enumerate}
-            \item 且$AB = C$，则
-            \begin{enumerate}
-                \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的行向量$\alpha_1, \alpha_2, \dots, \alpha_n$可由$B$的行向量$\beta_1, \beta_2, \dots, \beta_n$线性表出}}
-                \begin{itemize}
-                    \item 对 $B$，$C$ 按列分块，有
-                    \[
-                        \begin{bmatrix}
-                            a_{11} & a_{12} & \dots & a_{1n} \\
-                            a_{21} & a_{22} & \dots & a_{2n} \\
-                            \vdots & \vdots &       & \vdots \\
-                            a_{n1} & a_{n2} & \dots & a_{nn} \\
-                        \end{bmatrix}
-                        \begin{bmatrix}
-                            \beta_1 \\ \beta_2 \\ \vdots \\ \beta_n
-                        \end{bmatrix}
-                        =
-                        \begin{bmatrix}
-                            \alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_n
-                        \end{bmatrix}
-                    \]
-                    即
-                    \[
-                        \begin{cases}
-                            a_{11}\beta_1 + \dots + a_{1n}\beta_n &= \alpha_1, \\
-                            a_{21}\beta_1 + \dots + a_{2n}\beta_n &= \alpha_2, \\
-                            \vdots & \\
-                            a_{n1}\beta_1 + \dots + a_{nn}\beta_n &= \alpha_n
-                        \end{cases}
-                    \]
-                \end{itemize}
-                \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的列向量可由$A$的列向量线性表出}}
-            \end{enumerate}
-        \end{enumerate}
-        \item 若$A$可逆，则$r(AB) = r(B) = r(BA)$
-        \item 若$A$列满秩，则$r(AB) = r(B)$
-        \item 若$A$行满秩，则$r(AB) = r(A)$
-        \item $A$是$m \times n$矩阵，$B$是$n \times s$矩阵，$C$是$s \times t$矩阵，则
-        \[
-            r(AB) + r(BC) \le r(ABC) + r(B)
-        \]
-        \item
-        \[
-            r\!\begin{bmatrix}
-                   A & O \\
-                   O & B
-            \end{bmatrix}
-            = r\!\begin{bmatrix}
-                     O & A \\
-                     B & O
-            \end{bmatrix}
-            = r(A) + r(B)
-        \]
-        \item
-        \[
-            r\!\begin{bmatrix}
-                   A & O \\
-                   C & B
-            \end{bmatrix}
-            \ge r(A) + r(B)
-        \]
-        \item 若$A \sim B$，则
-        \begin{enumerate}
-            \item $r(A) = r(B)$
-            \item $r(A + kE) = r(B + kE)$
-        \end{enumerate}
+        \item 对$m \times n$矩阵，下列三种变换
+        \begin{itemize}
+            \item 用非零常数$k$乘矩阵的某一行（列）
+            \item 互换矩阵某两行（列）的位置
+            \item 把某行（列）的$k$倍加至另一行（列）
+        \end{itemize}
+        称为矩阵的\textbf{初等行（列）变换}，统称为矩阵的\textbf{初等变换}。其应用为
+        \begin{itemize}
+            \item 求秩（行列变换可混用）
+            \item 求逆矩阵（只用行或只用列变换）
+            \item 求线性方程组的解（只能用行变换）
+        \end{itemize}
+        \item 单位矩阵经过一次初等变换等到的矩阵称为\textbf{初等矩阵}
+        \begin{itemize}
+            \item $E_{i}(k)$ 单位矩阵第$i$行乘以常数$k$
+            \item $E_{ij}$ 单位矩阵互换$i,j$行
+            \item $E_{ij}(k)$ 单位矩阵第$j$行的$k$倍加至第$i$行
+        \end{itemize}
+        \item 矩阵经初等变换后秩不变
     \end{enumerate}
 
-    \subsubsection{分块矩阵}
+    \subsubsection{初等矩阵的性质与重要公式}
+
+    \begin{enumerate}
+        \item 初等矩阵均可逆，其逆矩阵是同类型的初等矩阵，即 \\
+        \renewcommand{\arraystretch}{1.2}  % 行高放大 1.2 倍
+        \begin{tabularx}{\textwidth}{l c >{\raggedright\arraybackslash}X}
+            倍乘 & $E_i^{-1}(k) = E_i(\dfrac{1}{k})$      & 第 $i$ 行（或列）乘以非零常数 $k$ 的逆矩阵是第 $i$ 行（或列）乘以 $1/k$                     \\
+            互换 & $E_{ij}^{-1} = E_{ij}$        & 交换第 $i$ 行（或列）和第 $j$ 行（或列）的\textbf{\color{red}{逆矩阵是其本身}}            \\
+            倍加 & $E_{ij}^{-1}(k) = E_{ij}(-k)$ & 第 $i$ 行（或列）加上 $k$ 倍第 $j$ 行（或列）的逆矩阵是第 $i$ 行（或列）加上 $-k$ 倍第 $j$ 行（或列） \\
+        \end{tabularx}
+        \item 用初等矩阵$P$左(右)乘矩阵$A$，其结果$PA$($AP$)就是对矩阵$A$作一次相应的初等行(列)变换 \; \Rightarrow \textbf{左乘行变换，右乘列变换}
+    \end{enumerate}
+
+    \subsubsection{行阶梯矩阵与行最简阶梯矩阵}
+
+    \subsection{分块矩阵}
 
     \begin{enumerate}
         \item 若$B$，$C$分别是$m$阶与$n$阶矩阵，则
@@ -541,7 +388,7 @@
                 \end{bmatrix}
             \]
         \end{enumerate}
-        \item 若$B$，$C$分别是$m$阶与$n$阶\textbf{可逆}矩阵（{\color{red}{左乘同行右乘同列再填负号}}），则
+        \item 若$B$，$C$分别是$m$阶与$n$阶\textbf{可逆}矩阵（{\color{red}{左乘同行右乘同列再填负号}}）（可用待定系数法求），则
         \begin{enumerate}
             \item
             \[
@@ -659,63 +506,254 @@
         \end{enumerate}
     \end{enumerate}
 
-    \subsubsection{对角矩阵}
+    \subsection{等价矩阵和矩阵的等价标准形}
+
     \begin{enumerate}
-        \item $\Lambda_1\Lambda_2 = \Lambda_2\Lambda_1$
-        \item
+        \item 设$A, B$均是$m\times n$矩阵，若存在可逆矩阵$P_{m\times m}, Q_{n\times n}$，使得${\color{red}{PAQ = B}}$，则称$A, B$是等价矩阵，记作$A \overset{\sim}{=} B$
+        \item $A$是一个$m\times n$矩阵，则$A$等价于形如$\begin{bmatrix}
+                                                           E_r & O \\
+                                                           O & O
+        \end{bmatrix}$的矩阵（$E_r$中的$r$恰是$r(A)$），后者称为$A$的等价标准形。{\color{red}{等价标准形是唯一的}}，即若$r(A) = r$，则存在可逆矩阵$P, A$，使得
         \[
-            \begin{bmatrix}
-                b_1 &     &     \\
-                & b_2 &     \\
-                &     & b_3
-            \end{bmatrix}
-            \begin{bmatrix}
-                a_1 &     &     \\
-                & a_2 &     \\
-                &     & a_3
-            \end{bmatrix}
-            =
-            \begin{bmatrix}
-                b_1 a_1 &         &         \\
-                & b_2 a_2 &         \\
-                &         & b_3 a_3
+            PAQ = \begin{bmatrix}
+                      E_r & O \\
+                      O & O
             \end{bmatrix}
         \]
-        \item
-        \[
-            \begin{bmatrix}
-                a_1 &     &     \\
-                & a_2 &     \\
-                &     & a_3
-            \end{bmatrix}^n
-            = \begin{bmatrix}
-                  a_{1}^n &         &         \\
-                  & a_{2}^n &         \\
-                  &         & a_{3}^n
-            \end{bmatrix}
-        \]
-        \item
-        \[
-            \begin{bmatrix}
-                a_1 &     &     \\
-                & a_2 &     \\
-                &     & a_3
-            \end{bmatrix}^{-1}
-            = \begin{bmatrix}
-                  \frac{1}{a_{1}} &                 &                 \\
-                  & \frac{1}{a_{2}} &                 \\
-                  &                 & \frac{1}{a_{3}}
-            \end{bmatrix}
-        \]
+        \item ${\color{red}{\bigstar}}A, B$\textbf{同型}，$A \overset{\sim}{=} B$
+        \begin{align*}
+            &\Leftrightarrow\; r(A) = r(B)  \\
+            &\Leftrightarrow\; A \text{通过初等变换能化为} B  \\
+            &\Rightarrow\; |A| = 0 \Leftrightarrow |B| = 0, |A| \neq 0 \Leftrightarrow |B| \neq 0 \text{。即}A, B\text{的行列式同时为0或同时不为0}
+        \end{align*}
     \end{enumerate}
+
+    \subsection{矩阵的秩}
+
+    \subsubsection{定义}
+
+    \begin{enumerate}
+        \item 在$m \times n$矩阵$A$中，任取$k$行与$k$列$(k \le m, k \le n)$，位于这个行与列的交叉点上的$k^2$个元素按其在原来矩阵$A$中的次序可构成一个$k$阶行列式，称其为矩阵$A$的一个$k$阶\textbf{子式}
+        \item 设$A$是$m\times n$矩阵，若{\color{blue}{存在}}$k$阶子式不为零，而任意$k + 1$阶子式（如果有的话）全为零，则$r(A) = k$，且若$A$为$n\times n$矩阵，则
+        \[
+            r(A_{n\times n}) = n \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}
+        \]
+        \item 将$A$用初等行变换化为行阶梯形矩阵，其非零行数便为$A$的秩
+    \end{enumerate}
+
+    \subsubsection{矩阵秩的性质与重要公式}
+
+    设$A$是$m \times n$矩阵，$B$是$n \times s$矩阵，则
+    \begin{enumerate}
+        \item $0 \leq r(A) \leq \min\{m, n\}$
+        \item $r(kA) = r(A),\, k \neq 0$
+        \item $r(AB) \le r(A) \text{并且} r(AB) \le r(B)$，即 $r(AB) \le \min\{r(A), r(B)\}$
+        \item $r(A + B) \leq r(A) + r(B)$
+        \item $r(A^*) = \begin{cases}
+                            n, \quad r(A) = n, \\
+                            1, \quad r(A) = n - 1\text{，其中}A\text{为}n(n\geq 2)\text{阶方阵}, \\
+                            0, \quad r(A) < n - 1
+        \end{cases}$
+        \item 设$A$是$m\times n$矩阵，$P, Q$分别是$m$阶、$n$阶可逆矩阵，则
+        \[
+            r(A) = r(PA) = r(AQ) = r(PAQ)
+        \]
+        \item $r(A) = r(A^T) = r(A^{T}A) = r(AA^{T})$
+        \item 若$A_{m\times n}B_{n\times s} = O$，则
+        \begin{itemize}
+            \item $r(A) + r(B) {\color{red}{\le}} n$
+            \item $B$ 的列向量是齐次方程组 $Ax = 0$ 的解
+            \begin{circlenum}
+                \item 按列分块，有$B = [b_1, b_2, \dots, b_s]$，即
+                \[
+                    AB = A[b_1, b_2, \dots, b_s] = [Ab_1, Ab_2, \dots, Ab_s] = [0, 0, \dots, 0]
+                \]
+                因此
+                \[
+                    Ab_i = 0, \quad i = 1, 2, \dots, s.
+                \]
+            \end{circlenum}
+        \end{itemize}
+        \item 若$AB = C$，则
+        \begin{itemize}
+            \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的行向量$\alpha_1, \alpha_2, \dots, \alpha_n$可由$B$的行向量$\beta_1, \beta_2, \dots, \beta_n$线性表出}}
+            \begin{circlenum}
+                \item 对 $B$，$C$ 按列分块，有
+                \[
+                    \begin{bmatrix}
+                        a_{11} & a_{12} & \dots & a_{1n} \\
+                        a_{21} & a_{22} & \dots & a_{2n} \\
+                        \vdots & \vdots &       & \vdots \\
+                        a_{n1} & a_{n2} & \dots & a_{nn} \\
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        \beta_1 \\ \beta_2 \\ \vdots \\ \beta_n
+                    \end{bmatrix}
+                    =
+                    \begin{bmatrix}
+                        \alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_n
+                    \end{bmatrix}
+                \]
+                即
+                \[
+                    \begin{cases}
+                        a_{11}\beta_1 + \dots + a_{1n}\beta_n &= \alpha_1, \\
+                        a_{21}\beta_1 + \dots + a_{2n}\beta_n &= \alpha_2, \\
+                        \vdots & \\
+                        a_{n1}\beta_1 + \dots + a_{nn}\beta_n &= \alpha_n
+                    \end{cases}
+                \]
+            \end{circlenum}
+            \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的列向量可由$A$的列向量线性表出}}
+        \end{itemize}
+        \item $r(AB) \geq r(A) + r(B) - n$
+        \item $\color{red}{r(A, AB) = r(A)}$
+        \item 且$C$是$s \times t$矩阵，则
+        \[
+            r(AB) + r(BC) \leq r(ABC) + r(B)
+        \]
+        \item
+        \[
+            r\!\begin{bmatrix}
+                   A & O \\
+                   O & B
+            \end{bmatrix}
+            = r\!\begin{bmatrix}
+                     O & A \\
+                     B & O
+            \end{bmatrix}
+            = r(A) + r(B)
+        \]
+        \item
+        \[
+            r\!\begin{bmatrix}
+                   A & O \\
+                   C & B
+            \end{bmatrix}
+            \ge r(A) + r(B)
+        \]
+        \item 若$A, B$同型，则$r(A + B) \le r(A, B) \le r(A) + r(B)$
+        \item 若$A \sim B$，则
+        \begin{enumerate}
+            \item $r(A) = r(B)$
+            \item $r(A + kE) = r(B + kE)$
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsubsection{矩阵秩的理解}
+    \begin{enumerate}
+        \item $r(A) = r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0\text{，\textcolor[rgb]{0.2, 0.6, 0.3}{任何}}r + 1\text{阶子式（若存在）必\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0$
+        \item $r(A) < r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{每}一个}r\text{阶子式\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0$
+        \item $r(A) \ge r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0$
+        \item $r(A) = 0 \Leftrightarrow A = \mathbf{O}$
+        \item $r(A) \neq \mathbf{O} \Leftrightarrow 1 \le r(A) \le n$
+        \item 若$A$是$n$阶矩阵
+        \begin{itemize}
+            \item $r(A) = n \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}$
+            \item $r(A) < n \Leftrightarrow |A| = 0 \Leftrightarrow A\text{不可逆}$
+        \end{itemize}
+        \item 若$A$是$m \times n$阶矩阵 $\Leftrightarrow r(A) \le min(m, n)$
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item $n$ 阶矩阵$A$可逆
+        \begin{align*}
+            &\Leftrightarrow\; |A| \neq 0  \\
+            &\Leftrightarrow\; r(A) = n  \\
+            &\Leftrightarrow\; A \text{的列（行）向量组线性无关}  \\
+            &\Leftrightarrow\; A = P_{1}P_{2}\dots P_{s}, P_{i}(i = 1,2,\dots,s)\text{是初等矩阵}  \\
+            &\Leftrightarrow\; A \text{通过初等变换能化为单位矩阵}  \\
+            &\Leftrightarrow\; A \text{与单位矩阵等价}  \\
+            &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
+            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{只有零解}
+        \end{align*}
+        \item $n$ 阶矩阵$A${\color{red}{不可逆}}
+        \begin{align*}
+            &\Leftrightarrow\; |A| = 0  \\
+            &\Leftrightarrow\; r(A) < n  \\
+            &\Leftrightarrow\; A \text{的列（行）向量组线性相关}  \\
+            &\;\Leftrightarrow\; A \text{无法表示为初等矩阵的乘积} \\
+            &\Leftrightarrow\; A \text{无法通过初等变换能化为单位矩阵}  \\
+            &\Leftrightarrow\; 0\text{是矩阵} A \text{的特征值}  \\
+            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}
+        \end{align*}
+    \end{enumerate}
+
+    \subsection{公式}
+
+    \begingroup
+    \renewcommand{\arraystretch}{1.8}
+    \setlength{\tabcolsep}{2pt}
+    \footnotesize
+    \centering
+    \resizebox{1\textwidth}{!}{%
+        \begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{3.2cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{3.8cm}|>{\centering\arraybackslash}m{4cm}|}
+            \hline
+            & 伴随 & 逆 & 转置 & 行列式 \\
+            \hline
+            伴随
+            & ${\color{red}{(A^*)^* = |A|^{n-2}A}}$
+            & ${\color{orange}{(A^*)^{-1} = (A^{-1})^* = \dfrac{1}{|A|}A}}$
+            & ${\color{orange}{(A^*)^{T} = (A^T)^*}}$
+            & ${\color{red}{|A^*| = |A|^{n-1}}}$ \rule{0pt}{24pt}\\
+            \hline
+            逆
+            & ${(A^{-1})^* = (A^*)^{-1}}$
+            & ${\color{orange}{(A^{-1})^{-1}=A}}$
+            & ${\color{orange}{(A^{-1})^{T} = (A^T)^{-1}}}$
+            & ${\color{orange}{|A^{-1}| = |A|^{-1}}}$ \\
+            \hline
+            转置
+            & ${(A^T)^* = (A^*)^T}$
+            & ${(A^T)^{-1} = (A^{-1})^T}$
+            & ${\color{orange}{(A^T)^T = A}}$
+            & ${\color{orange}{|A^T| = |A|^T = |A|}}$ \\
+            \hline
+            行列式
+            & ${\color{gray}{\cancel{|A|^*}}}$
+            & $|A|^{-1} = |A^{-1}|$
+            & $|A|^T = |A^T| = |A|$
+            & ${\color{orange}{||A|| = |A|}}$ \\
+            \hline
+            数
+            & ${\color{orange}{(kA)^* = k^{n-1}A^*}}$
+            & ${\color{orange}{(kA)^{-1} = \dfrac1k A^{-1}}}$
+            & ${\color{orange}{(kA)^T = kA^T}}$
+            & ${\color{orange}{|kA| = k^n|A|}}$ \rule{0pt}{24pt}\\
+            \hline
+            穿脱原则
+            & ${\color{orange}{(AB)^* = B^{*}A^*}}$
+            & ${\color{orange}{(AB)^{-1} = B^{-1}A^{-1}}}$
+            & ${\color{orange}{(AB)^T = B^{T}A^{T}}}$
+            & ${\color{orange}{|AB| = |B||A| = |A||B|}}$ \\
+            \hline
+            加法
+            & ${\color{blue}{(A + B)^* \neq A^* + B^{*}}}$
+            & ${\color{blue}{(A + B)^{-1} \neq A^{-1} + B^{-1}}}$
+            & ${\color{red}{(A + B)^T = A^{T} + B^{T}}}$
+            & ${\color{blue}{|A + B| \neq |A| + |B|}}$ \\
+            \hline
+            交换
+            & ${AA^* = A^{*}A = |A|E}$
+            & $AA^{-1} = A^{-1}A = E$
+            & $$
+            & $$ \\
+            \hline
+        \end{tabular}%
+    }
+    \endgroup
+
+    \subsection{方法步骤}
 
     \subsubsection{特殊矩阵$n$次方}
     \begin{enumerate}
-        \item 若$r(A) = 1$，则
+        \item 若$A$是方阵且$r(A) = 1$，则
         \begin{enumerate}
             \item $A$可分解为一个列向量与一个行向量的乘积
             \item $A^2 = lA$其中$l = \sum a_{ii} = a_{11} + a_{22} + \dots + a_{nn} $
-            \item $A^n = l^{n-1}A$其中$l = \sum a_{ii} = a_{11} + a_{22} + \dots + a_{nn} $
+            \item $A^n = l^{n-1}A = [tr(A)]^{n-1}A$其中$l = \sum a_{ii} = a_{11} + a_{22} + \dots + a_{nn} $
         \end{enumerate}
         \item 设 $A$ 为 $n \times n$ 上三角矩阵，主对角线为 0
         \[
@@ -756,9 +794,12 @@
             \item $\mathbf{B^n = P^{-1}A^{\color{red}{n}}P}$
             \item $A^n = PB^{n}P^{-1}$
         \end{enumerate}
+        \item 试算$A^2, A^3$等，归纳出结果
+        \item $A^n = (B + C)^n$，且满足$BC = CB$（考虑$E$），用二项式展开
+        \[
+            (E + C)^n = E^n + nE^{n-1}B + \dfrac{n(n-1)}{2!}E^{n-2}B^2 + \dfrac{n(n-1)(n-2)}{3!}E^{n-3}B^3 + \cdots + B^n
+        \]
     \end{enumerate}
-
-    \subsection{方法步骤}
 
     \begin{enumerate}
         \item 已知矩阵$A$，若下三角可逆矩阵$P$和上三角可逆矩阵$Q$，使得$PAQ$为对角矩阵，求$P, Q$
@@ -992,6 +1033,91 @@
                 \item 如果$r(A) < n$，矩阵$A$不可逆
             \end{enumerate}
         \end{enumerate}
+    \end{enumerate}
+
+    \subsection{求逆矩阵}
+    \begin{enumerate}
+        \item 定义法
+        \begin{itemize}
+            \item 将矩阵满足的关系式做恒等变换，化成\textbf{左端为待求逆的矩阵与另一个矩阵的乘积，右端为单位矩阵}的形式
+            \item $\color{red}{\bigstar}$把矩阵的和、差关系化成乘积的一种方法是{\color{red}{提取公因子}}
+        \end{itemize}
+        \item 用伴随矩阵
+        \begin{itemize}
+            \item 判断$|A|$是否为$0$
+            \item 写出$A^*$
+            \item $A^{-1} = \dfrac{1}{|A|}A^*$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{结论}
+
+    \begin{enumerate}
+        \item 秩1矩阵可以被分解为$\textbf{列向量}\times \textbf{行向量}$（满秩分解）
+    \end{enumerate}
+
+    \subsection{基础概念}
+
+    \begin{enumerate}
+        \item 设$\alpha = (a_1, a_2, \dots, a_n)^{T}$，$\beta = (b_1, b_2, \dots, b_n)^{T}$。向量内积为
+        \[
+            (\alpha, \beta) = \alpha^{T}\beta = \beta^{T}\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}
+        \]
+        \item 向量$\alpha = (a_1, a_2, \dots, a_n)^{T}$的长度
+        \[
+            ||\alpha|| = \sqrt{\alpha^T\alpha} = \sqrt {a_1^2 + a_2^2 + \dots + a_n^2}
+        \]
+        \item 若$(\alpha, \beta) = 0$即$a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n} = 0$，则称$\alpha$与$\beta$正交，记为$\alpha \perp \beta$
+        \item 设 $A$ 是 $n$ 阶矩阵，满足 $AA^{T} = A^{T}A = E$，称 $A$ 是 \textbf{正交矩阵:}
+        \begin{align*}
+            &\Leftrightarrow\; A^{T} = A^{-1} \\
+            &\Leftrightarrow\; A \text{ 的行（列）向量两两正交（单位向量）} \\
+            &\Leftrightarrow\; A \text{ 的每个行（列）向量长度均为1} \\
+            &\Leftrightarrow\; A \text{ 的行（列）向量平方和为 1} \\
+            &\Leftrightarrow\; a_{1}^2 + a_{2}^2 + \dots + a_{n}^2 = 1 \\
+            &{\color{red}{\Rightarrow}}\; |A|^{2} = 1 \;\;\Leftrightarrow\;\; |A| = 1 \text{ 或 } |A| = -1
+        \end{align*}
+        \item 若 $A$ 是正交矩阵且 $A = (\alpha_1,\alpha_2,\dots,\alpha_n)$，则:
+        \begin{enumerate}
+            \item $\alpha_{i}^{T}\alpha_{i} = 1$
+            \item $\alpha_{i}^{T}\alpha_{j} = 0 \; (i \neq j)$
+        \end{enumerate}
+
+    \end{enumerate}
+
+    \subsection{运算}
+
+    \begin{enumerate}
+        \item 设$\alpha$和$\beta$都是列向量，则
+        \begin{enumerate}
+            \item 列向量 \cdot \text{行向量:} \, $\alpha\beta^T = (\beta\alpha^T)^T$，两者都是$n$阶矩阵（互为转置）
+            \item 行向量 \cdot \text{列向量:} \, $\alpha^T\beta = \beta^T\alpha$ 是一个\textbf{数}
+            \item
+            \[
+                \alpha\alpha^T =
+                \begin{bmatrix}
+                    a_1^2   & a_1 a_2 & a_1 a_3 & \dots  & a_1 a_n \\
+                    a_1 a_2 & a_2^2   & a_2 a_3 & \dots  & a_2 a_n \\
+                    a_1 a_3 & a_2 a_3 & a_3^2   & \dots  & a_3 a_n \\
+                    \vdots  & \vdots  & \vdots  & \ddots & \vdots  \\
+                    a_1 a_n & a_2 a_n & a_3 a_n & \dots  & a_n^2
+                \end{bmatrix} \textbf{(对称矩阵)}
+            \]
+            \item $\color{red}{r(\alpha\alpha^T) = 1}$
+            \item $\alpha\alpha^T$特征值是{\color{red}{$||\alpha||^2, 0, 0, \dots, 0(n - 1\text{个})$}}
+            \item
+            \[
+                \alpha^T \alpha = a_1^2 + a_2^2 + \dots + a_n^2 = \sum_{k=1}^{n} a_k^2 \quad \text{（平方和）}
+            \]
+        \end{enumerate}
+        \item 向量
+        \begin{itemize}
+            \item $(\alpha, \beta) = (\beta, \alpha)$
+            \item $(k\alpha, \beta) = (\alpha, k\beta) = k(\alpha, \beta)$
+            \item $(\alpha + \beta, \gamma) = (\alpha, \gamma) + (\beta, \gamma)$
+            \item $(\alpha, \beta + \gamma) = (\alpha, \beta) + (\alpha, \gamma)$
+            \item $(\alpha, \alpha) \ge 0$
+        \end{itemize}
     \end{enumerate}
 
 \end{document}

@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../../utils/template}
+
+\newgeometry{ left=0.5cm, right=0.5cm, top=1cm, bottom=1cm }
+
+\begin{document}
+    \pagestyle{empty}
+
+    \begingroup
+    \renewcommand{\arraystretch}{1.8}
+    \setlength{\tabcolsep}{2pt}
+    \footnotesize
+    \centering
+    \resizebox{1\textwidth}{!}{%
+        \begin{tabular}{|
+                >{\centering\arraybackslash}m{1.6cm}|
+                >{\raggedright\arraybackslash}m{3.2cm}|
+                >{\raggedright\arraybackslash}m{4cm}|
+                >{\raggedright\arraybackslash}m{3.8cm}|
+                >{\raggedright\arraybackslash}m{4cm}|
+        }
+            \hline
+            & \multicolumn{1}{c|}{伴随}
+            & \multicolumn{1}{c|}{逆}
+            & \multicolumn{1}{c|}{转置}
+            & \multicolumn{1}{c|}{行列式} \\
+            \hline
+            伴随
+            & $(A^*)^* =$
+            & $(A^*)^{-1} =$
+            & $(A^*)^{T} =$
+            & $|A^*| =$ \\
+            \hline
+            逆
+            & $(A^{-1})^* =$
+            & $(A^{-1})^{-1}=$
+            & $(A^{-1})^{T} =$
+            & $|A^{-1}| =$ \\
+            \hline
+            转置
+            & $(A^T)^* =$
+            & $(A^T)^{-1} =$
+            & $(A^T)^T =$
+            & $|A^T| =$ \\
+            \hline
+            行列式
+            & \centering\Huge$\diagdown$\arraybackslash
+            & $|A|^{-1} =$
+            & $|A|^T =$
+            & $||A|| =$ \\
+            \hline
+            数
+            & $(kA)^* =$
+            & $(kA)^{-1} =$
+            & $(kA)^T =$
+            & $|kA| =$ \\
+            \hline
+            穿脱原则
+            & $(AB)^* =$
+            & $(AB)^{-1} =$
+            & $(AB)^T =$
+            & $|AB| =$ \\
+            \hline
+            加法
+            & $$
+            & $$
+            & $(A + B)^T =$
+            & $$ \\
+            \hline
+            交换
+            & $AA^* =$
+            & $AA^{-1} =$
+            & $$
+            & $$ \\
+            \hline
+        \end{tabular}%
+    }
+    \endgroup
+
+    \vspace{1em}
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item $[E_i(k)]^{-1} =$
+            \item $E_{ij}^{-1} =$
+            \item $[E_{ij}(k)]^{-1} =$
+            \item $A^{-1}$与$A^*$关系：
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+        \end{enumerate}
+    \end{minipage}
+\end{document}

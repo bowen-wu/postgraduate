@@ -71,7 +71,9 @@
     - regrettably adv. 抱歉地，遗憾地；可悲地
     - failure to do sth. 未能.../没有做到...
     - the nature of sth. 本质/实质/根本特征
-    - liberal [ˈlɪbərəl] adj. 自由党的；人文（教育）的
+    - liberal [ˈlɪbərəl]
+        - adj. 自由党的；人文（教育）的
+        - Similar: literal [ˈlɪtərəl] adj. 字面的
     - liberal education 通识教育/博雅教育/人文素养教育
     - do/cause more harm than good 弊大于利/害处大于好处
 - 词组
@@ -205,6 +207,7 @@
     - ...have to **clear** another major *hurdle([ˈhɜːrdl] n. 障碍)*.
     - clarity [ˈklærəti]
         - n. 清晰
+        - Similar: charity n. 慈善事业
         - Rested in the Pacific Ocean, Mauua Kea's peak rises above the bulk of our *planet(n. 行星)*'s dense
           atmosphere, where conditions allow telescopes to obtain images of unsurpassed **clarity**.
             - rises above 高于、超出

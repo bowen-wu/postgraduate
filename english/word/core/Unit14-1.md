@@ -36,6 +36,7 @@
       take to prevent what I call "work-life **unreadiness**".
 - reluctant 😔
     - adj. 不情愿的
+    - Similar: fluctuate [ˈflʌktʃueɪt] vi. （大小、数量、质量等）波动
     - If the adjective **reluctant** applies to you, it means that you are undergoing some **inner struggle** and are
       **unwilling or unable to decide**.
     - reluctance

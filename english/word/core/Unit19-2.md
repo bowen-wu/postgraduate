@@ -25,9 +25,12 @@
 
 - [fəˈlɑːsəfi]
 - n. 哲学
-- Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
-  material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous experiences—music,
+- Humans are unique in their capacity to not only make tools but then turn around and use them to create
+  superfluous material goods—paintings, sculpture and architecture, **and** superfluous experiences—music,
   literature, religion and **philosophy**.
+    - superfluous [suːˈpɜːrfluəs] adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
+    - sculpture [ˈskʌlptʃər] n. 雕塑
+    - literature [ˈlɪtrətʃər] n. 文学；文学作品；（某学科的）文献
 - philosopher [fəˈlɑːsəfər] n. 哲学家
 - philosophical [ˌfɪləˈsɑːfɪkl] adj. 哲学的
 

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## provoke
@@ -42,12 +42,15 @@
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者
-    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an
-      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
-      conductor about him."
+    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an unpretentious musician
+      with no air of the formidable conductor about him."
         - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
-            - with an air of mystery about him 他身上带着一股神秘感
-            - with no air of confidence about him 他显得没有自信
+        - with an air of mystery about him 他身上带着一股神秘感
+        - with no air of confidence about him 他显得没有自信
+        - unpretentious
+            - adj. 谦逊的
+            - == modest [ˈmɑːdɪst] adj. 适度的；谦虚的；普通的；较少的
+        - formidable [ˈfɔːrmɪdəbl] adj. 令人敬畏的
 
 ## fortune
 
@@ -137,12 +140,15 @@
 - appointment
     - n. 预约；任命
     - have an appointment with sb.
-    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an
-      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
-      **conductor** about him."
+    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an unpretentious musician
+      with no air of the formidable conductor about him."
         - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
-            - with an air of mystery about him 他身上带着一股神秘感
-            - with no air of confidence about him 他显得没有自信
+        - with an air of mystery about him 他身上带着一股神秘感
+        - with no air of confidence about him 他显得没有自信
+        - unpretentious
+            - adj. 谦逊的
+            - == modest [ˈmɑːdɪst] adj. 适度的；谦虚的；普通的；较少的
+        - formidable [ˈfɔːrmɪdəbl] adj. 令人敬畏的
 
 ## explosion
 

@@ -87,24 +87,38 @@
                       \vdots & \vdots & \ddots &        \\
                       a_{n1} & a_{n2} & \dots  & a_{nn}
                 \end{vmatrix}
+                = \begin{vmatrix}
+                      a_{11} &      0  &  \dots      & 0        \\
+                      0 & a_{22} &       \dots  &    0    \\
+                      \vdots & \vdots & \ddots & \vdots       \\
+                      0 & 0 & \dots  & a_{nn}
+                \end{vmatrix}
                 = a_{11}a_{22}\dots a_{nn}
             \end{align*}
             \item 副对角线三角形
-            \begin{align*}
-                \begin{vmatrix}
-                    a_{11} & a_{12} & \dots & a_{1,n-1} & a_{1n} \\
-                    a_{21} & a_{22} & \dots & a_{2,n-2} & 0      \\
-                    \vdots & \vdots &       & \vdots    & \vdots \\
-                    a_{n1} & 0      & \dots & 0         & 0
-                \end{vmatrix}
-                = \begin{vmatrix}
-                      0      & \dots & 0         & a_{1n} \\
-                      0      & \dots & a_{2,n-1} & a_{2n} \\
-                      \vdots &       & \vdots    & \vdots \\
-                      a_{n1} & \dots & a_{n,n-1} & a_{nn}
-                \end{vmatrix}
-                = (-1)^{\frac{n(n-1)}{2}}a_{1n}a_{2,n-2}\dots a_{n1}
-            \end{align*}
+            \begin{adjustwidth}{-3cm}{0cm}
+                \begin{align*}
+                    \begin{vmatrix}
+                        a_{11}  & \dots & a_{1,n-1} & a_{1n} \\
+                        a_{21} & \dots & a_{2,n-2} & 0      \\
+                        \vdots & \vdots        & \vdots    & \vdots \\
+                        a_{n1} &      & \dots & 0
+                    \end{vmatrix}
+                    = \begin{vmatrix}
+                          0      & \dots & 0         & a_{1n} \\
+                          0      & \dots & a_{2,n-1} & a_{2n} \\
+                          \vdots &       & \vdots    & \vdots \\
+                          a_{n1} & \dots & a_{n,n-1} & a_{nn}
+                    \end{vmatrix}
+                    = \begin{vmatrix}
+                          0      & \dots & 0         & a_{1n} \\
+                          0      & \dots & a_{2,n-1} & 0 \\
+                          \vdots &       & \vdots    & \vdots \\
+                          a_{n1} & \dots & 0 & 0
+                    \end{vmatrix}
+                    = (-1)^{\color{red}{\frac{n(n-1)}{2}}}a_{1n}a_{2,n-2}\dots a_{n1}
+                \end{align*}
+            \end{adjustwidth}
         \end{circlenum}
         \item 拉普拉斯展开式
         \begin{circlenum}
@@ -192,11 +206,29 @@
         \begin{itemize}
             \item 爪型行列式 $\Rightarrow$ 利用斜爪消竖爪或平爪，即用$a_{ii}$消$a_{i1}$或$a_{1i}$为0
             \item $X$型行列式 $\Rightarrow$ 通过交换行（列）将分散的$0$集中起来
+            \item 把各行（列）均加到第一行（列）
+            \item 逐行（列）相加，构造上下三角型
+            \item 若有较多 0，可考虑直接用行（列）展开公式
         \end{itemize}
         \item 递推法：构造$D_n$与$D_{n-1}$关系式，实现递推
         \begin{itemize}
             \item 递推法：给出$n$阶，推$n-1, n-2$阶，一直往下推，推到首项的表达式
             \item 数学归纳法：从$1, 2$阶$\cdots$找到基本规律，然后向上（即高阶）假设，假设命题对$n = k - 1$时成立，最后证明命题对$n = k$时成立
+            \begin{circlenum}
+                \item \textbf{普通数学归纳法（Mathematical Induction）}
+                \begin{enumerate}
+                    \item 验证 $n = 1$ 时，命题 $f_n$ 成立；
+                    \item 假设 $n = k$ 时，命题 $f_n$ 成立；
+                    \item 证明 $n = k + 1$ 时，命题 $f_n$ 成立。
+                \end{enumerate}
+
+                \item \textbf{强（完全）归纳法（Strong Induction）}
+                \begin{enumerate}
+                    \item 验证 $n = 1$ 和 $n = 2$ 时，命题 $f_n$ 成立；
+                    \item 假设当 $n < k$ 时，命题 $f_n$ 均成立；
+                    \item 证明 $n = k$ 时，命题 $f_n$ 成立。
+                \end{enumerate}
+            \end{circlenum}
             \item 宽对角行列式
             \[
                 D_n=
@@ -228,13 +260,11 @@
     \begin{enumerate}
         \item 用性质：抓“对称/反对称/两行成比例/行列和关系”快速判零或因式分解
         \item 用公式$|AB| = |A||B|$：若$A, B$均为方阵，则$|AB| = |A||B|$的意义为
-        \[
-            \begin{aligned}
-                \text{复合变换之后的面积测度}|AB| &= A\text{的面积值}|A|\times B\text{的面积值}|B|
-                &= B\text{的面积值}|B|\times A\text{的面积值}|A|
-                &= |BA|
-            \end{aligned}
-        \]
+        \begin{align*}
+            \text{复合变换之后的面积测度}|AB| &= A\text{的面积值}|A|\times B\text{的面积值}|B| \\
+            &= B\text{的面积值}|B|\times A\text{的面积值}|A| \\
+            &= |BA|
+        \end{align*}
         \item 用乘法公式：若$A=PBP^{-1}$，则$|A|=|B|$；若易算$AB$或$BA$，可转化后求值
     \end{enumerate}
 
@@ -258,17 +288,17 @@
             \item 大$A$配小$a$，逆用展开式
             \[
                 a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots +a_{in}A_{in} = \begin{vmatrix}
-                                                                     \multicolumn{3}{c}{*}\\
+                                                                     \multicolumn{4}{c}{*}\\
                                                                      a_{i1} & a_{i2} & \cdots & a_{in}\\
-                                                                     \multicolumn{3}{c}{*}
+                                                                     \multicolumn{4}{c}{*}
                 \end{vmatrix}
             \]
             \item 大$A$配小$k$，$k$把小$a$吃
             \[
                 k_{1}A_{i1}+k_{2}A_{i2}+\cdots +k_{n}A_{in} = \begin{vmatrix}
-                                                                  \multicolumn{3}{c}{*}\\
+                                                                  \multicolumn{4}{c}{*}\\
                                                                   k_{i1} & k_{i2} & \cdots & k_{in}\\
-                                                                  \multicolumn{3}{c}{*}
+                                                                  \multicolumn{4}{c}{*}
                 \end{vmatrix}
             \]
         \end{itemize}
@@ -328,56 +358,18 @@
 
     \subsection{基础概念}
     \begin{enumerate}
-        \item 由$1, 2, \dots, n$组成的有序数组程伟一个$n$阶排列，通常用$j_1, j_2, \dots, j_n$表示$n$阶排列
         \item 一个排列中，如果一个大的数排在小的数之前，就称这两个数构成\textbf{一个逆序}，\textbf{一个排列的逆序总数称为这个排列的逆序数}，用$\tau(j_1, j_2, \dots, j_n)$表示
         \item 如果一个排列的逆序数是偶数，则称这个排列为\textbf{偶排列}，否则称为\textbf{奇排列}
     \end{enumerate}
 
-    \subsection{性质}
-
-    \begin{enumerate}
-        \item 经转置行列式的值不变，即 $|A^T| = |A|$
-        \item 某行元素全为 $0 \;\Rightarrow\;$ 行列式的值为 0
-        \item 两行相等 $\Rightarrow$ 行列式的值为 0
-        \item 两行成比例 $\Rightarrow$ 行列式的值为 0
-        \item 某行（列）有公因数 $k$，可把 $k$ 提到行列式外
-        \item 两行互换，行列式变号
-        \item {\color{red}{\textbf{某行}}}所有元素都是两个数的和，则可写成两个行列式之和
-        \item 某行的 $k$ 倍加至另一行，行列式的值不变
-    \end{enumerate}
-
-    \subsection{基础}
-
-    \subsection{定理}
-
-    \subsubsection{展开公式}
-
-    \begin{enumerate}
-        \item $n$阶行列式等于它的任意一行（列）的所有元素与他们各自对应的代数余子式的乘积之和，即
-        \begin{align*}
-            |A| &= a_{k1}A_{k1} + a_{k2}A_{k2} + \dots + a_{kn}A_{kn} (k=1,2,\dots,n)  & \text{行} \\
-            &= a_{1k}A_{1k} + a_{2k}A_{2k} + \dots + a_{nk}A_{nk} (k=1,2,\dots,n)  & \text{列}
-        \end{align*}
-        \item 任意一行（列）的所有元素与其他行的代数余子式乘积之和为0，即
-        \begin{align*}
-            a_{i1}A_{k1} + a_{i2}A_{k2} + \dots + a_{in}A_{kn} = 0 &= 0  \quad  (i \neq k \text{且} i,k=1,2,\dots,n)   \\
-            a_{1j}A_{1k} + a_{2j}A_{2k} + \dots + a_{nj}A_{nk} = 0 &= 0  \quad  (j \neq k \text{且} j,k=1,2,\dots,n)
-        \end{align*}
-    \end{enumerate}
-
-    \subsubsection{乘法公式}
-    设$\mathbf{A}$，$\mathbf{B}$都是$n$阶方阵，则
-    \[
-        |\mathbf{AB}| = |\mathbf{A}| \cdot |\mathbf{B}|
-    \]
-
     \subsection{公式}
 
     \subsubsection{特征多项式}
+
     \begin{enumerate}
         \item 设$A = [a_{ij}]$是三阶矩阵，则$A$的特征多项式
         \[
-            |A - \lambdaE| = -\lambda^3 + (a_{11} + a_{22} + a_{33})\lambda^2 - s_2 \lambda + |A|
+            |A - \lambda E| = -\lambda^3 + (a_{11} + a_{22} + a_{33})\lambda^2 - s_2 \lambda + |A|
         \]其中$s_2 =
         \begin{vmatrix}
             a_{11} & a_{12} \\
@@ -393,82 +385,6 @@
             a_{22} & a_{23} \\
             a_{32} & a_{33}
         \end{vmatrix}.$
-    \end{enumerate}
-
-    \subsection{方阵行列式}
-
-    \begin{enumerate}
-        \item 若$A$是$n$阶矩阵，$A^T$是$A$的转置矩阵 \, \Rightarrow \, $|A^T| = |A|$
-        \item 若$A$是$n$阶矩阵 \, \Rightarrow \, $|kA| = k^{n}|A|$
-        \item 若$A$，$B$都是$n$阶矩阵 \, \Rightarrow \, $|AB| = |A||B|, |A^2| = |A|^2$
-        \item 若$A$是$n$阶矩阵 \, \Rightarrow \, $|A^*| = |A|^{n-1}$
-        \item 若$A$是$n$阶\textbf{可逆}矩阵 \, \Rightarrow \, $|A^{-1}| = |A|^{-1}$
-        \item 若$A$是$n$阶矩阵，$\lambda_i(i = 1, 2, \cdots, n)$是$A$的特征值 \, \Rightarrow \, $|A| = \lambda_1 \lambda_2 \cdots \lambda_n$
-        \item 若$n$阶矩阵$A$与$B$相似 \, \Rightarrow \, $|A| = |B|, |A + kE| = |B + kE|$
-        \item
-        \[
-            \begin{vmatrix}
-                A & B \\
-                B & A
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  A + B & A + B \\
-                  B     & A
-            \end{vmatrix}
-            = \begin{vmatrix}
-                  A + B & 0     \\
-                  B     & A - B
-            \end{vmatrix}
-            = |A + B| \cdot |A - B|
-        \]
-    \end{enumerate}
-
-    \subsection{方法步骤}
-
-    \begin{enumerate}
-        \item 对于\textbf{主对角线爪型}行列式，可用\textbf{主}对角线元素将其化为上（下）三角型来计算
-        \[
-            \begin{bmatrix}
-                1 & 1 & 1 & 1 \\
-                1 & 2 & 0 & 0 \\
-                1 & 0 & 3 & 0 \\
-                1 & 0 & 0 & 4
-            \end{bmatrix}
-        \]
-        \item 对于\textbf{副对角线爪型}行列式，可用\textbf{副}对角线元素将其化为\textbf{反上（下）三角型}来计算
-        \[
-            \begin{bmatrix}
-                1 & 1 & 1 & 1 \\
-                0 & 0 & 2 & 1 \\
-                0 & 3 & 0 & 1 \\
-                4 & 0 & 0 & 1
-            \end{bmatrix}
-        \]
-        \item 把各行（列）均加到第一行（列）
-        \item 逐行（列）相加
-        \item 若有较多$0$，可考虑直接用行（列）展开公式
-        \item 特殊的\textbf{三对角线}行列式
-        \begin{enumerate}
-            \item 三角化法: 逐行相加，构造上下三角型
-            \item 递推法
-            \item 归纳法
-        \end{enumerate}
-        \item 数学归纳法
-        \begin{itemize}
-            \item \textbf{普通数学归纳法（Mathematical Induction）}
-            \begin{enumerate}
-                \item 验证 $n = 1$ 时，命题 $f_n$ 成立；
-                \item 假设 $n = k$ 时，命题 $f_n$ 成立；
-                \item 证明 $n = k + 1$ 时，命题 $f_n$ 成立。
-            \end{enumerate}
-
-            \item \textbf{强（完全）归纳法（Strong Induction）}
-            \begin{enumerate}
-                \item 验证 $n = 1$ 和 $n = 2$ 时，命题 $f_n$ 成立；
-                \item 假设当 $n < k$ 时，命题 $f_n$ 均成立；
-                \item 证明 $n = k$ 时，命题 $f_n$ 成立。
-            \end{enumerate}
-        \end{itemize}
     \end{enumerate}
 
     \subsection{条件转换思路}

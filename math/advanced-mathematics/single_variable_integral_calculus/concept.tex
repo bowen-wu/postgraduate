@@ -475,6 +475,123 @@
     \begin{enumerate}
         \item $\dint f(x)\,\mathrm{d}x$称为不定积分，表示{\color{red}{全体原函数}}
         \item $\color{red}{\bigstar}\color{red}{\bigstar}$不定积分对应一族原函数，而变限积分给出了其中一个唯一确定的原函数。当需要研究函数的{\color{性态}}（如极限、导数、单调性等）时，必须将不定积分转化为变限积分
+        \item
+        \begin{analysisbox}
+            \textbf{不定积分、定积分与原函数的关系}
+
+            设
+            \[
+                F'(x)=f(x),
+            \]
+            则
+            \[
+                \int f(x)\,\mathrm{d}x = F(x)+C.
+            \]
+
+            其中，不定积分表示函数 \(f(x)\) 的全体原函数。
+
+            \vspace{0.5em}
+
+            定义变上限定积分
+
+            \[
+                G(x)=\int_a^x f(t)\,\mathrm{d}t,
+            \]
+
+            由牛顿--莱布尼茨公式可知
+
+            \[
+                G'(x)=f(x),
+            \]
+
+            因此 \(G(x)\) 也是 \(f(x)\) 的一个原函数。
+
+            又因为
+
+            \[
+                G(a)=\int_a^a f(t)\,\mathrm{d}t=0,
+            \]
+
+            故
+
+            \[
+                \boxed{
+                    \int_a^x f(t)\,\mathrm{d}t
+                }
+            \]
+
+            表示满足 \(G(a)=0\) 的那个唯一原函数。
+
+            \vspace{0.5em}
+
+            设 \(F'(x)=f(x)\)，则
+
+            \[
+                F(x)-F(a)
+                =
+                \int_a^x f(t)\,\mathrm{d}t,
+            \]
+
+            即
+
+            \[
+                \boxed{
+                    F(x)
+                    =
+                    F(a)
+                    +
+                    \int_a^x F'(t)\,\mathrm{d}t.
+                }
+            \]
+
+            这是牛顿--莱布尼茨公式最本质的形式。
+
+            \vspace{0.5em}
+
+            因此，若已知初值条件
+
+            \[
+                y'=f(x),
+                \qquad
+                y(x_0)=y_0,
+            \]
+
+            则可直接写成
+
+            \[
+                \boxed{
+                    y(x)
+                    =
+                    y_0
+                    +
+                    \int_{x_0}^{x} f(t)\,\mathrm{d}t.
+                }
+            \]
+
+            其含义为
+
+            \[
+                \boxed{
+                    \text{函数值}
+                    =
+                    \text{初始值}
+                    +
+                    \text{累计变化量}.
+                }
+            \]
+
+            等价地，
+
+            \[
+                \boxed{
+                    y(x)
+                    =
+                    y(x_0)
+                    +
+                    \int_{x_0}^{x} y'(t)\,\mathrm{d}t.
+                }
+            \]
+        \end{analysisbox}
         \item 变限积分的作用不是“换一种写法”，而是“选定一个原函数”
         \item $\dint_a^b f(x)\,\mathrm{d}x$称为定积分，表示面积
         \item $F(x) = \dint_a^x f(t)\,\mathrm{d}t$称为变上限积分，表示动态的面积

@@ -137,7 +137,7 @@
     - propel sb. to do sth.
 - motivate
     - vt. 成为...的动机；激励
-    - == propel
+    - == propel vt. 推动
     - motivation n. 动力
     - demotivate 😔
         - vt. 使失去动力
@@ -176,9 +176,12 @@
     - illiterate adj. 不识字的，文盲的
 - literature [ˈlɪtrətʃər]
     - n. 文学；文学作品；（某学科的）文献
-    - Humans are unique in their capacity to not only make tools but then turn around and use them to create superfluous
-      material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and superfluous
-      experiences—music, **literature**, religion and *philosophy([fəˈlɑːsəfi] n. 哲学)*.
+    - Humans are unique in their capacity to not only make tools but then turn around and use them to create
+      superfluous material goods—paintings, sculpture and architecture, **and** superfluous experiences—music,
+      **literature**, religion and philosophy.
+        - superfluous [suːˈpɜːrfluəs] adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
+        - sculpture [ˈskʌlptʃər] n. 雕塑
+        - philosophy [fəˈlɑːsəfi] n. 哲学
 
 ## Words
 

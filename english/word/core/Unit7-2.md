@@ -57,6 +57,9 @@
         - == make great efforts to
 - endeavor [ɪnˈdɛvər]
     - vi. 努力
+    - Similar: endure [ɪnˈdʊr]
+        - vt. 忍受
+        - vi. 持续
     - 词组
         - endeavor to do
             - == make efforts to

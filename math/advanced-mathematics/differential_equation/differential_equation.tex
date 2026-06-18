@@ -405,12 +405,23 @@
             \item \textbf{反推方程的思路}（已知解的结构，反求方程）：
 
             \begin{circlenum}
-                \item {\color{red}{剥离齐次解}}：所给特解中，指数 $\beta \neq \alpha$ 的 $e^{\beta x}$ 型项{\color{red}{一定}}不属于标准特解，必为齐次解，其指数 $\beta$ 即为特征根
+                \item {\color{red}{剥离齐次解}}：所给特解中，指数（特解中$e$的幂）$\beta \neq \alpha$（自由项中$e$的幂) 的 $e^{\beta x}$ 型项{\color{red}{一定}}不属于标准特解，必为齐次解，其指数 $\beta$ 即为特征根
                 \item {\color{red}{判断 $\alpha$ 是否为特征根}}：对所给特解中指数等于 $\alpha$ 的项，检查是否含 $x^k$ 因子。含则{\color{red}{一定是}}特征根（$k$ 重）；不含则{\color{red}{不一定}}——可能是标准特解（$\alpha$ 非特征根），也可能是混入的齐次解（$\alpha$ 是特征根），需进入下一步假设判定
                 \item {\color{red}{假设判定}}（仅在不含 $x^k$ 时）：分别假设 $\alpha$ 是/不是特征根，结合第一步已确定的特征根，各自推出特征方程，将特解代入验证，与已知条件矛盾则排除该假设
                 \item 由最终确定的全部特征根写出特征方程 $\Rightarrow$ 确定 $p, q$
-                \item 剥离齐次解后剩余部分即为标准特解，代入方程定出 $f(x)$
+                \item 剥离齐次解后剩余部分即为标准{\color{red}{特解}}，代入方程定出自由项 $f(x)$
             \end{circlenum}
+            \begin{analysisbox}[Example]
+                设二阶常系数线性微分方程$y'' + \alpha y' + \beta y = \gamma e^x$的一个特解为$y^* = e^{2x} + (1+x)e^x$，确定常数$\alpha, \beta, \gamma$
+
+                \begin{circlenum}
+                    \item {\color{red}{剥离齐次解}}：查看自由项 $\Rightarrow \alpha = 1 \Rightarrow e^{2x}$必定是齐次解，特征根$r_1 = 2$
+                    \item {\color{red}{判断 $\alpha$ 是否为特征根}}：特解中指数等于 $\alpha = 1$ 的项 $xe^x$，含 $x^k(k = 1)$ 因子。则$r_2 = 1$是特征根（$1$ 重）
+                    \item {\color{red}{假设判定}}（仅在不含 $x^k$ 时）：无
+                    \item 特征方程：$(r-1)(r-2) = 0 \Rightarrow \alpha = -3, \beta = 2$
+                    \item 剥离齐次解后剩余部分即为标准{\color{red}{特解}}，此时标准特解为$e^x$，将$e^x$带入方程中$\gamma = -1$
+                \end{circlenum}
+            \end{analysisbox}
         \end{itemize}
 
     \end{enumerate}
@@ -432,10 +443,10 @@
         \end{itemize}
         \item 反求方程的理论基础
         \begin{circlenum}
-            \item 如果解中含特解 $\bm{e^{rx}}$，则 $r$ 至少为单实根；如二重根 $(C_1 + C_2x)e^{rx}$，令 $C_1 = 1$，$C_2 = 0$
-            \item 如果解中含特解 $\bm{x^{k-1}e^{rx}}$，则 $r$ 至少为 $k$ 重实根
-            \item 如果解中含特解 $\bm{e^{\alpha x}\cos\beta x}$ 或 $\bm{e^{\alpha x}\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为单复根
-            \item 如果解中含特解 $\bm{e^{\alpha x}x\cos\beta x}$ 或 $\bm{e^{\alpha x}x\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为二重复根
+            \item 如果解中含{\color{red}{特解}} $\bm{e^{rx}}$，则 $r$ 至少为单实根；如二重根 $(C_1 + C_2x)e^{rx}$，令 $C_1 = 1$，$C_2 = 0$
+            \item 如果解中含{\color{red}{特解}} $\bm{x^{k-1}e^{rx}}$，则 $r$ 至少为 $k$ 重实根
+            \item 如果解中含{\color{red}{特解}} $\bm{e^{\alpha x}\cos\beta x}$ 或 $\bm{e^{\alpha x}\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为单复根
+            \item 如果解中含{\color{red}{特解}} $\bm{e^{\alpha x}x\cos\beta x}$ 或 $\bm{e^{\alpha x}x\sin\beta x}$，则 $\alpha \pm \beta i$ 至少为二重复根
         \end{circlenum}
     \end{enumerate}
 

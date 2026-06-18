@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## test
@@ -75,8 +75,11 @@
 - basis n. 基础
 - foundation
     - n. 地基；基金会；创建
-    - He could not *confide([kənˈfaɪd] v. 吐露（秘密）)* them even to his wife, although they provide the unacknowledged
-      **foundation/basis** of his fiction.
+    - He could not confide them even to his wife, although they provide the unacknowledged **foundation/basis** of his
+      fiction.
+        - confide [kənˈfaɪd]
+            - v. 吐露（秘密）
+            - Similar: confidence n. 信心
 
 ## end
 

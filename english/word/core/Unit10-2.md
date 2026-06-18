@@ -26,17 +26,21 @@
 - [tʃek]
 - v. 抑制；检查；查看；打勾
 - n. 调查；检查；支票
-    - == cheque [tʃek] n. 支票
-- One of the most common is to "**inspect or verify**"
-- You might **check** the *oven([ˈʌvn] n. 烤箱)* to see if your cookies are done.
-- paycheck == salary 薪资, 薪酬
-- The government is determined to **check** the growth of public spending.
-- It is *legitimate([lɪˈdʒɪtɪmət] adj. 合法的)* to **check** *suspect's([səˈspekt] n. 嫌疑犯)* phone contents without
-  being authorized(['ɔθəˌraɪzd]).
-- Justices intended to **check** the power of the Administration.
+- == cheque [tʃek] n. 支票
 - 词组
     - by check/cheque 用支票支付
-- check and balance 制衡
+    - check and balance 制衡
+- One of the most common is to "**inspect or verify**". You might **check** the *oven([ˈʌvn] n. 烤箱)* to see if your
+  cookies are done.
+- paycheck n. 薪水
+    - == salary n. 薪水，薪金
+- The government is determined to **check** the growth of public spending.
+- It is legitimate to **check** suspect's phone contents without being *authorized(['ɔθəˌraɪzd])*.
+    - legitimate [lɪˈdʒɪtɪmət] adj. 合法的；正当合理的
+    - suspect [səˈspekt]
+        - v. 怀疑；猜想；觉得
+        - n. 犯罪嫌疑人
+- Justices intended to **check** the power of the Administration.
 - inspect
     - vt. 检查
     - inspection n. 检查
@@ -44,23 +48,27 @@
 - examine [ɪɡˈzæmɪn] vt. 仔细检查
 - scrutiny [ˈskruːtəni]
     - n. 仔细检查
-    - But it takes *collective(adj. 集体的)* <ins>**scrutiny** and acceptance</ins> to transform a discovery claim into
-      a mature discovery.
+    - But it takes collective **scrutiny** and acceptance to transform a discovery claim into a mature discovery.
+        - collective adj. 集体的；总的
         - it takes something to do sth. 做某事需要
     - scrutinize [ˈskruːtənaɪz] vt. 认真检查
 
 ## identify
 
 - vt. 识别；确定
-- == recognize
-- identify with sb./sth. 认同/产生共鸣/与...有心理认同
+- == recognize vt. （正式）认可；意识到
+- 词组
+    - identify with sb./sth. 认同/产生共鸣/与...有心理认同
 - identifiable [aɪˌdentɪˈfaɪəbl]
     - adj. 可识别的
-    - <ins>Privacy law(隐私法)</ins> builds on the *concept([ˈkɑːnsept] n. 概念)* of *damage([ˈdæmɪdʒ] n. 损坏)* to an
-      individual from **identifiable** knowledge about them.
+    - Privacy law builds on the concept of damage to an individual from **identifiable** knowledge about them.
+        - privacy law 隐私法
+        - concept [ˈkɑːnsept] n. 概念；观念
+        - damage
+            - vt. 伤害；破坏
+            - n. 损失；伤害
 - identity
-    - n. 身份
-    - ID == identity
+    - n. 身份(ID)
 - recognize
     - vt. （正式）认可；意识到
     - recognition n. 识别；认可
@@ -75,9 +83,11 @@
     - Federal **Bureau** of Investigation 联邦调查局(FBI)
     - bureaucratic [ˌbjʊrəˈkrætɪk] 😔
         - adj. 官僚（主义）的
-        - Anything **bureaucratic** <ins>has to do with(有关系)</ins> the business of running an organization—usually
-          **not in a very efficient manner**.
-        - The report *revealed([rɪ'vild] v. 显示)* a great deal of **bureaucratic** *inefficiency([ɪnɪˈfɪʃənsi])*.
+        - Anything **bureaucratic** has to do with the business of running an organization—usually **not in a very
+          efficient manner**.
+            - have to do with 与...有关/和...有关系/涉及...
+        - The report revealed a great deal of **bureaucratic** *inefficiency([ɪnɪˈfɪʃənsi])*.
+            - reveal vt. 揭示；显示
 
 ## investment
 
@@ -92,7 +102,8 @@
 - [rɪˈleɪt]
 - vt. 把...联系起来；讲述
 - vi. 与...有关
-- be related to
+- 词组
+    - be related to
 - related
     - adj. 相关的；有亲属关系的
     - So I decided to look for some fashion-**related** course that included writing. This is when I noticed the course
@@ -109,28 +120,33 @@
     - relatively adv. 相对地
 - correlate [ˈkɔːrələt]
     - v. 相互关联；显示紧密联系
-    - ...but under high-stress conditions, IQ <ins>was negatively **correlated** with</ins> leadership—that is, it
-      *predicted(vt. 预测)* the *opposite([ˈɑːpəzɪt] n. 对立物)*.
-        - be **correlated** *with* 与...相关
-        - be positively/negatively **correlated** with 与...正/负相关
+    - ...but under high-stress conditions, IQ was negatively **correlated** with leadership—that is, it predicted
+      the **opposite**.
+        - predict [prɪˈdɪkt] vt. 预测（主观）
+        - be negatively correlated with 与...负相关/与...呈负相关关系
+        - opposite [ˈɑːpəzɪt]
+            - adj. 完全相反的，截然不同的
+            - n. 相反面，对立面
     - correlation
-        - n. 相互关系，关联；相关
-        - == relation
+        - n. 相关
+        - == relation n. 关系
 
 ## available
 
 - adj. 可获得的；有空的
-- == accessible([əkˈsesəbl]) == easy to get
+- == accessible [əkˈsesəbl] adj. 可接近的
+- == easy to get
 - Are you **available**?
 - These recordings are cheap, **available** everywhere, and very often much higher in artistic quality than today's live
   performances.
-    - They are easily **accessible** to the general public.
+    - They are [[easily **accessible** to the general public/often inferior to live concerts in quality]].
+    - be inferior to 次于...
 - availability n. 可接近；效用；可得性
 - access [ˈækses]
     - vt. 访问(电脑信息)
     - n. 进入（权）；（使用某物的）权利；接触的机会;
+    - Similar: assess [əˈses] v. 评估
     - accessible [əkˈsesəbl] adj. 可接近的
-    - assess [əˈses] v. 评估
 
 ## feature
 
@@ -145,21 +161,29 @@
 - character
     - n. 性格；特征；人品；（电影、书、戏剧中的）人物
     - Before it ends, it will likely change the life course and **character** of a generation of young adults.
-    - The movie **character** Forrest Gump made a famous *analogy([əˈnælədʒi])*: "Life is like a box of chocolates."
+    - The movie **character** Forrest Gump made a famous analogy: "Life is like a box of chocolates."
+        - analogy [əˈnælədʒi]
+            - n. 类比
+            - == comparison [kəmˈpærɪsn] n. 比较
     - characterize
         - vt. 是...的特征；表现（...的特征、特点）
         - == feature
+            - vt. 以...为特色；由...主演
+            - vi. 起重要作用
+            - n. 特点；（报纸、电视等的）特写；特别报道（报刊）(PE)
     - characteristic
         - n. 特征
         - adj. 特有的
         - == feature
+            - vt. 以...为特色；由...主演
+            - vi. 起重要作用
+            - n. 特点；（报纸、电视等的）特写；特别报道（报刊）(PE)
 - typical adj. 典型的
 
 ## Words
 
 - found [faʊnd]
     - v. 创立；创办；建立
-    - find - found
     - == set up
 - fund
     - vt. 为...提供资金

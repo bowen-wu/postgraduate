@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## maintain
@@ -29,25 +29,33 @@
 - The European Union is now considering legislation to compel corporate boards to **maintain** a certain proportion of
   women-up to 60 percent.
 - George Annas, chair of the health law department at Boston University, **maintains** that, as long as a doctor
-  *prescribes([prɪˈskraɪb] vt. 开处方)* a drug for a legitimate medical purpose...
+  prescribes a drug for a legitimate medical purpose...
+    - prescribe
+        - vt. 指定，规定; 开处方，给医嘱
+        - vi. 建立规定，法律或指示
 - maintenance n. 维护
 - sustain [səˈsteɪn]
     - vt. 使保持；维持
     - sustainable [səˈsteɪnəbl]
         - adj. 可持续的
         - Yet this enormous resource is not contributing enough to today's global challenges, including climate change,
-          security, <ins>**sustainable** development(可持续发展)</ins> and health.
+          security, **sustainable** development and health.
+            - sustainable development 可持续发展
     - sustainably adv. 可持续地
     - sustainability [səˌsteɪnəˈbɪləti]
         - n. 可持续性
-        - "**Sustainability**" has become a popular word <ins>these days(如今)</ins>, but to Ted Ning, the concept will
-          always have personal meaning.
+        - "**Sustainability**" has become a popular word these days, but to Ted Ning, the concept will always have
+          personal meaning.
             - those days 过去
+            - these days 如今/现在/现如今
 
 ## ignore
 
 - vt. 忽视；不予理睬
-- == neglect == overlook
+- == neglect
+    - vt. 疏于照顾；不予重视
+    - n. 忽视
+- == overlook vt. 忽略；（对于不良现象等）不予理会
 - ignorant [ˈɪɡnərənt] adj. 无知的
 - neglect [nɪˈɡlekt]
     - vt. 疏于照顾；不予重视
@@ -55,13 +63,16 @@
     - Which part of jobs picture was **neglected**?
         - picture
             - n. 情况、全貌、整体情形
-            - == situation == condition == overall view
+            - == situation n. 情况，局面
+            - == condition n. 状态，状况；环境；条件
+            - == overall view
 - overlook
     - vt. 忽略；（对于不良现象等）不予理会
     - When education becomes one-size-fits-all, it risks **overlooking** a nation's diversity of gifts.
-    - However, there is another important part of the jobs picture that was *largely(adv. 在很大程度上)* **overlooked**.
-        - See the big picture. 有全局观/看长远/从大局出发/
-        - Try to **see the big picture** before making any decision.
+    - However, there is another important part of the jobs picture that was largely **overlooked**.
+        - largely adv. 在很大程度上；主要地
+    - Try to **see the big picture** before making any decision.
+        - eee the big picture. 有全局观/看长远/从大局出发/
 
 ## popular
 
@@ -70,8 +81,9 @@
 - popularize [ˈpɑpjələraɪz] vt. 宣传；使普及
 - prevailing
     - adj. 盛行的；现存的
+    - == prevalent adj. 流行的
+    - == dominant [ˈdɑːmɪnənt] adj. 主导的；盛行的
     - prevailing ideal/belief
-    - == prevalent == dominant [ˈdɑːmɪnənt] adj. 主导的；盛行的
 - prevalent
     - adj. 流行的
     - == common adj. 常见的；普通的；共同的
@@ -90,7 +102,7 @@
 - malfunction [mælˈfʌŋkʃən] 😔
     - v. 出现故障，运转失灵
     - n. 故障；失灵
-    - mal- == 坏、恶😔
+    - mal- 坏、恶😔
         - malicious [məˈlɪʃəs] adj. 恶意的，有敌意的；恶性的
         - maladapted [ˌmælə'dæptɪd] adj. 不适应的，不适合的
 
@@ -102,15 +114,18 @@
 - manufacturing n. 制造业
 - forge [fɔːrdʒ]
     - vt. （努力）制造；形成；缔造
-    - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
-    - He again *pledged(vt. 承诺)* to <ins>**forge** ahead with</ins> his plans for reform.
+    - He again pledged to **forge** ahead with his plans for reform.
+        - pledge [pledʒ]
+            - v. 承诺；
+            - n. 保证 （正式）
+        - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
         - | 用法       | 含义     | 示例                        |
-                                                                                |----------|--------|---------------------------|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
           | for + 原因 | 因为...  | punished for lying        |
-    - They agreed to **forge** closer economic *ties([taɪz] n. 结)*.
+    - They agreed to **forge** closer economic ties.
 
 ## reality
 
@@ -118,15 +133,16 @@
 - n. 现实
 - 词组
     - in reality 实际上
-- VR: Virtual **Reality**
-- AR: Augmented **Reality**
+- Virtual **Reality**
+- Augmented **Reality**
 - realize [ˈriːəlaɪz]
     - v. 意识到
     - vt. 实现
 - realistic [ˌriːəˈlɪstɪk]
     - adj. 现实的；能够实现的
-    - According to Ben-Shahar, <ins>**realistic** optimists(现实的乐观主义者)</ins> are those who make the best of
-      things that happen, but not those who believe everything happens for the best.
+    - According to Ben-Shahar, **realistic** optimists are those who make the best of things that happen, but not those
+      who believe everything happens for the best.
+        - realistic optimist 现实的乐观主义者/务实的乐观主义者/理性的乐观主义者
 
 ## stick
 
@@ -134,38 +150,44 @@
 - vi. 坚持
 - vt. 戳刺
 - n. （交通工具的操纵）杆
-- stick to doing 坚持做
+- 词组
+    - stick to doing 坚持做
 - sticky [ˈstɪki] adj. 粘性的
 - stickiness ['stɪkɪnəs] n. 附着力
 - attach [əˈtætʃ]
     - vt. 附；贴
-    - attach A to B A重要
     - 词组
+        - attach A to B
         - attach (utmost) importance/significance/value/weight to sth. 认为...重要；重视...
-    - We should <ins>**attach** importance to</ins> children's mental health.
-    - We should <ins>**attach** importance to</ins> raising people's *awareness(n. 意识)* of environmental protection.
+    - We should **attach** importance to children's mental health.
+    - We should **attach** importance to raising people's awareness of environmental protection.
+        - awareness [əˈwernəs] n. 知道；意识
         - == **Great importance should be attached to** raising people's awareness of environmental protection.
-        - 中文多主动，英文多被动
     - attachment n. 依恋
 - bond
     - vt. 建立关系；纽带；债券；羁绊
-    - bond with sb. 建立情感联系
-    - They may have <ins>**bonded** more with</ins> the social robot because it displayed behaviors like
-      *communal([kəˈmjuːnl] adj. 集体的)* *exploring([ɪks'plɔrɪŋ] vt. 探索)* and playing.
+    - They may have **bonded** more with the social robot because it displayed behaviors like communal exploring and
+      playing.
+        - bond with sb. 建立情感联系
+        - communal [kəˈmjuːnl] adj. 团体的
+        - explore [ɪkˈsplɔːr] vt. 探索；探究
 - conjunction [kənˈdʒʌŋkʃn]
     - n. 结合；同时发生
     - 词组
         - in conjunction with... 与...一起做
 - cling [klɪŋ]
     - vt. 紧紧抓住
-    - cling to (doing) sth.
+    - 词组
+        - cling to (doing) sth.
 - adhere [ədˈhɪr]
     - vi. 遵守
-    - == cling
-    - adhere/cling to (doing) sth.
-    - All members of the association **adhere** to a strict <ins>code of practice(行为规范、操作准则)</ins>.
-    - <ins>For years(多年来)</ins> executives and headhunters have **adhered** to the rule that the most attractive CEO
-      candidates are the ones who must be poached.
+    - == cling vt. 紧紧抓住
+    - All members of the association **adhere** to a strict code of practice.
+        - adhere/cling to (doing) sth.
+        - code of practice 行为规范/操作守则/实务准则/行业规范
+    - For years executives and headhunters have **adhered** to the rule that the most attractive CEO candidates are the
+      ones who must be poached.
+        - for years 多年来/好几年/长期以来
 
 ## medical
 
@@ -173,13 +195,16 @@
 - medical care 医疗护理
 - hygiene [ˈhaɪdʒiːn]
     - n. 卫生（学）
-    - Before the birth of *proper(adj. 正规的)* dentistry([ˈdɛntɪstri]), mouths were often in a *shocking(adj. 可怕的)*
-      state of **hygiene**.
+    - Before the birth of proper *dentistry([ˈdɛntɪstri])*, mouths were often in a *shocking(adj. 可怕的)* state of
+      **hygiene**.
+        - proper adj. 恰当的；正常的；正规的
 - infection n. 感染
 - pandemic [pænˈdɛmɪk]
     - n. （正式）流行病
     - With the **pandemic**, unemployment is very high indeed.
     - == epidemic
+        - n. 流行病；盛行
+        - adj. 流行（性）的
 
 ## respect
 

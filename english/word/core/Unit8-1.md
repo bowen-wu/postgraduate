@@ -109,7 +109,9 @@
     - This time experts **reckon** that prices are about 40% down on their peak on average, though some have been far
       more fluctuate.
         - expert [ˈekspɜːrt] n. 专家
-        - fluctuate [ˈflʌktʃueɪt] vi. （大小、数量、质量等）波动
+        - fluctuate [ˈflʌktʃueɪt]
+            - vi. （大小、数量、质量等）波动
+            - Similar: reluctant adj. 不情愿的
         - down on/from the peak 从峰值下降
 - calculate
     - v. 计算，核算
@@ -137,6 +139,7 @@
 - vanish [ˈvænɪʃ]
     - v. 突然不见，消失；不复存在
     - == disappear v. 消失
+    - Similar: vanity [ˈvænəti] n. 虚荣心，自负
 
 ## promote
 

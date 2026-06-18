@@ -109,9 +109,13 @@
 ## quality
 
 - n. 质量；品质
+- Similar: qualify
+    - v. 取得资格，有资格
+    - vt. 使有资格
 - qualify
     - v. 取得资格，有资格
     - vt. 使有资格
+    - Similar: quality n. 质量；品质
 - qualified
     - adj. 合格的；有资格的
     - 词组

@@ -27,11 +27,14 @@
 - **Knowledge** isn't power, applied **knowledge** is power.
 - knowledgeable adj. 知识渊博的
 - acknowledge
-    - vt. 承认；告知收悉；感谢
+    - vt. 承认；感谢；告知收悉
     - unacknowledged
         - adj. 未被承认的；不被承认的
-        - He could not *confide([kənˈfaɪd] v. 吐露（秘密）)* them even to his wife, although they provided the
-          **unacknowledged** foundation of his fiction.
+        - He could not confide them even to his wife, although they provided the **unacknowledged** foundation of his
+          fiction.
+            - confide [kənˈfaɪd]
+                - v. 吐露（秘密）
+                - Similar: confidence n. 信心
 
 ## sure
 
@@ -47,16 +50,16 @@
     - We tried to **ensure/make sure** that everyone got a fair deal.
 - insure [ɪnˈʃʊr]
     - vt. 承保；确保
-    - To **insure** is to **guarantee or protect the monetary([ˈmɑːnɪteri] adj. 金钱的) value** of something with, as
-      you might imagine, insurance.
+    - To **insure** is to guarantee or protect the monetary value of something with, as you might imagine, insurance.
+        - monetary [ˈmɑːnɪteri] adj. 钱的；（尤指一国）货币的（或金融的）
     - insurance n. 保险；保险费
 - assure [əˈʃʊr]
     - vt. 向...保证
     - == guarantee v. 担保
-    - If you **assure** your boss that you'll finish your project by Tuesday, you are <ins>making a promise or
-      commitment</ins> to have it done by Tuesday.
-    - assure somebody 作出承诺
-        - == making a promise
+    - If you **assure** your boss that you'll finish your project by Tuesday, you are making a promise or commitment to
+      have it done by Tuesday.
+        - assure somebody 作出承诺
+            - == make a promise
 
 ## mass
 
@@ -66,15 +69,20 @@
 - ...that history should be the story of the **masses** and their record of struggle.
 - massive
     - adj. （尺寸、数量、规模）非常大的
-    - First two hours, now three hours—this is how far <ins>in advance(提前；事先)</ins> *authorities([əˈθɔrətiz])* are
-      recommending people show up to catch *domestic([dəˈmestɪk] adj. 国内的)* flight, at least at some major U.S.
-      airports with increasingly **massive** security lines.
+    - First two hours, now three hours—this is how far in advance *authorities([əˈθɔrətiz])* are recommending people
+      show up to catch domestic flight, at least at some major U.S. airports with increasingly **massive** security
+      lines.
+        - in advance 预先，提前
+        - domestic [dəˈmestɪk]
+            - adj. 国内的；家用的；家务的
+            - Similar: democratic [ˌdeməˈkrætɪk] adj. 民主的
 - biomass
     - n. 生物量（以单位面积或容积表示）
-    - the **biomass** of large predators([p'redətəz] n. 食肉动物)
+    - the **biomass** of large predators
+        - predator [p'redətəz] n. 食肉动物
 - substantial [səbˈstænʃl]
     - adj. 大量的；重大的
-    - == massive
+    - == massive adj. （尺寸、数量、规模）非常大的
     - substantially
         - adv. 很大程度地
         - When applied to aircraft, the principles are not **substantially** different.
@@ -82,7 +90,9 @@
 ## array
 
 - n. 大量
-- He was constantly ill, with <ins>an **array** of(一系列)</ins> *symptoms(['sɪmptəmz] n. 症状)*.
+- He was constantly ill, with an **array** of symptoms.
+    - an array of... 一系列.../一组...
+    - symptom [ˈsɪmptəm] n. 症状
 - series [ˈsɪriːz]
     - n. 一系列；系列节目
     - a series of 一系列
@@ -90,6 +100,7 @@
 ## nation
 
 - n. 国家；民族
+- Similar: notion [ˈnoʊʃn] n. 看法
 - United Nations 联合国
 - peoples n. 民族
 - national
@@ -127,37 +138,48 @@
     - disability n. （身体或智力上的）残疾
 - capable [ˈkeɪpəbl]
     - adj. 有能力的
-    - == able
-    - be capable to do
+    - == able adj. 能够的；有才能的
+    - 词组
+        - be capable to do sth.
     - incapable adj. 无能力的
 - capacity
     - n. 容量；能力
-    - == ability
+    - == ability n. 能力
     - Humans are unique in their **capacity** to not only make tools but then turn around and use them to create
-      <ins>*superfluous([suːˈpɜːrfluəs] adj. 超出生存所需的)* material goods—paintings, sculpture([ˈskʌlptʃər] n. 雕塑)
-      and architecture<ins>, <ins>**and** superfluous experiences—music, literature([ˈlɪtrətʃər] n. 著作), religion and
-      philosophy([fəˈlɑːsəfi] n. 哲学)</ins>.
+      superfluous material goods—paintings, sculpture and architecture, **and** superfluous experiences—music,
+      literature, religion and philosophy.
+        - superfluous [suːˈpɜːrfluəs] adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
+        - sculpture [ˈskʌlptʃər] n. 雕塑
+        - literature [ˈlɪtrətʃər] n. 文学；文学作品；（某学科的）文献
+        - philosophy [fəˈlɑːsəfi] n. 哲学
 
 ## achieve
 
 - vt. (尤指经过努力)实现
 - achievement
     - n. 成就
-    - Great **achievement** always requires great *sacrifice([ˈsækrɪfaɪs] n. 牺牲)*.
+    - Great **achievement** always requires great sacrifice.
+        - sacrifice [ˈsækrɪfaɪs]
+            - n. 牺牲；献祭
+            - vt. 牺牲；献祭
+            - Similar: satisfied adj. 满意的；满足的
 - accomplish [əˈkɑːmplɪʃ]
     - vt. 完成
-    - == achieve == fulfill
+    - == achieve vt. (尤指经过努力)实现
+    - == fulfill vt. 实现；满足
     - accomplishment
         - n. 成就；完成
-        - == fulfillment
+        - == fulfillment n. 实现；满足；履行
 - fulfill
     - vt. 实现；满足
     - fulfillment
         - n. 实现；满足；履行
-        - **Fulfillment** is a feeling of **happiness and satisfaction([ˌsætɪsˈfækʃn] n. 满意)**.
+        - **Fulfillment** is a feeling of **happiness and satisfaction**.
+            - satisfaction n. 满足；满意
         - It's also the **completion** of something, like the **fulfillment** of a promise.
-        - If she hopes her new-found fortune will yield lasting felling of **fulfillment**, she could <ins>do worse
-          than</ins> read Happy Money by Elizabeth Dunn and Michael Norton.
+        - If she hopes her new-found fortune will yield lasting felling of **fulfillment**, she could do worse than read
+          Happy Money by Elizabeth Dunn and Michael Norton.
+            - do worse than do sth. 最好做某事
 
 ## break
 
@@ -170,13 +192,19 @@
     - break down 分解
     - break up 拆开
 - It's like the teacher who **breaks up** the troublemakers in the back row by pairing them with better-behaved
-  classmates. The *tactic([ˈtæktɪk] n. 手段)* never really works.
-- outbreak 😔
-    - n. （战争、疾病等的）爆发；突然发生
+  classmates. The tactic never really works.
+    - tactic [ˈtæktɪk]
+        - n. 策略
+        - == method
+- outbreak
+    - n. （战争、疾病等的）爆发；突然发生 😔
     - The **outbreak** of *swine([swaɪn] n. 猪)* flu that was first detected in Mexico was declared a global epidemic on
       June 11, 2009.
         - social epidemic 社会潮流
-        - epidemic == pandemic [pænˈdɛmɪk] n. （全国或全球性）流行病，大流行病
+        - epidemic
+            - n. 流行病；盛行
+            - adj. 流行（性）的
+            - == pandemic [pænˈdɛmɪk] n. （全国或全球性）流行病，大流行病
 - breakthrough n. 突破
 - groundbreaking
     - adj. 开创性的

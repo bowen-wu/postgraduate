@@ -26,17 +26,20 @@
 - [ˈmɔːrəl]
 - adj. 道德的
 - n. 寓意
-- In some states, for example, jury duty <ins>was limited to(仅限于/被限制为)</ins> <ins>persons of(
-  具有...特征的人)</ins> supposedly superior <ins>intelligence, education, and **moral** character</ins>.
+- In some states, for example, jury duty was limited to persons of supposedly superior intelligence, education, and
+  **moral** character.
+    - be limited to sth. 仅限于.../局限于.../被限制在...
+    - persons of + noun 具有...特征的人/...的人士
 - ethics [ˈɛθiks]
     - n. 道德准则；伦理学；伦理
     - ethical
         - adj. 道德的；伦理的；合乎情理的
         - ...the author produced a remarkable work of <ins>speculative fiction(推理小说)</ins> that would foreshadow
           many **ethical** questions to be raised by technologies yet to come.
-        - The **ethical** judgments of <ins>the Supreme Court</ins> justices have become an important issue recently.
-- virtue [ˈvɜːrtʃuː] 🙂
-    - n. 美德；优点，优势
+        - The **ethical** judgments of the Supreme Court justices have become an important issue recently.
+- virtue [ˈvɜːrtʃuː]
+    - n. 美德；优点，优势 🙂
+    - Similar: virtual adj. 实际上的；（计算机）虚拟的
     - But completeness is no longer a **virtue** in the newspaper business.
 
 ## necessary
@@ -53,8 +56,11 @@
     - n. 限定继承
     - == involve vt. 牵涉；使参与；需要
     - To **entail** is to **involve**. A job at a movie theater might **entail** sweeping popcorn off the floor.
-    - *Deliberate([dɪˈlɪbəreɪt] adj. 蓄意的)* practice **entails** <ins>more than(超过，不仅仅是)</ins> simply repeating
-      a task.
+    - Deliberate practice **entails** more than simply repeating a task.
+        - more than 超过，不仅仅是
+        - deliberate [dɪˈlɪbəreɪt]
+            - vi. 仔细考虑
+            - adj. 故意的
 
 ## source
 
@@ -70,30 +76,35 @@
 
 - adj. 流通的；现在的；通用的
 - n. 水流；电流
-- Some blame(n. 责任) for the **current** *controversy(n. 争论; 辩论)* belongs to astronomers.
+- Some blame for the **current** controversy belongs to astronomers.
+    - blame [bleɪm]
+        - vt. 把...归咎于
+        - n. （坏事或错事）的责任
+    - controversy [ˈkɑːntrəvɜːrsi] n. （公开的）争论 😔
 - currency
     - n. 货币，通货
-    - Yet the debate about how to save Europe's single **currency** from *disintegration(n. 瓦解)* is
-      *stuck(adj. 动不了的)*.
+    - Yet the debate about how to save Europe's single **currency** from disintegration is *stuck(adj. 动不了的)*.
         - save A from B 使A免于B/拯救A不至于B
+        - disintegration n. 瓦解；解体
 - currently adv. 当前
+- -cur- 跑
 - occur [əˈkɜːr]
     - vi. 发生，出现
     - occurrence n. 发生的事情
 - recur [rɪˈkɜːr]
     - vi. 再发生
     - == occur again
-    - Have you ever had the same crazy dream night after night? If so, you know that <ins>dreams can **recur**</ins>
-      meaning they repeat, or happen again.
-- incur 😔
-    - vt. 引起；招致
+    - Have you ever had the same crazy dream night after night? If so, you know that dreams can **recur** meaning they
+      repeat, or happen again.
+- incur
+    - vt. 引起；招致 😔
     - If you don't pay your credit card bills on time, you'll likely **incur** lots of fees and some serious debt.
 - up-to-date adj. 最新的，最近的
 
 ## depend
 
 - vi. (~ on)取决于；依靠
-- **Depend** on yourself; you won't be let down. 靠自己，你就不会被辜负
+- **Depend** on yourself; you won't be let down.
 - dependency [dɪˈpendənsi] n. 依赖
 - dependent adj. 依赖的；取决于...的
 - independence [ˌɪndɪˈpendəns]
@@ -101,8 +112,12 @@
     - independent adj. 独立的
 - rely
     - vi. (~ on)依靠
-    - == depend
-    - rely on == depend on == count on == bank on 依赖
+    - == depend vi. (~ on)取决于；依靠
+    - 词组
+        - rely on 依赖
+            - == depend on
+            - == count on 指望，依靠
+            - == bank on
     - reliance [rɪˈlaɪəns] n. 依赖
     - reliable [rɪˈlaɪəbl]
         - adj. 可靠的
@@ -136,12 +151,16 @@
 - executive [ɪɡˈzekjətɪv]
     - adj. 经营管理的；行政的；
     - n. 管理人员，领导层
-    - Chief([tʃiːf]) Executive Officer(CEO) 首席执行官
+    - *Chief([tʃiːf])* Executive Officer 首席执行官（CEO）
     - execute [ˈeksɪkjuːt] v. 处死; 实施; 完成; 制作
 - authority [əˈθɔːrəti]
     - n. 官方机构；权力；权威；权威人士
-    - Weaver and his family have been persecuted([ˈpɜːrsɪkjuːt] v. **迫害**) by the **authorities** for their
-      beliefs([bɪ'lifs] n. 信仰).
+    - Weaver and his family have been persecuted by the **authorities** for their beliefs.
+        - persecute [ˈpɜːrsɪkjuːt]
+            - v. 迫害；残害
+            - Similar: prosecute [ˈprɑːsɪkjuːt]
+                - vt. 起诉
+                - vi. 担任控方律师
     - authoritative [əˈθɔːrəteɪtɪv] adj. 权威的
 - authentic [ɔːˈθentɪk]
     - adj. 真实的；可靠的；正宗的
@@ -153,13 +172,14 @@
 ## responsibility
 
 - n. 责任
-- shoulder/assume([əˈsuːm])/take/bear responsibility 承担责任
+- shoulder/assume/take/bear responsibility 承担责任
 - 词组
     - take responsibility for 对...负责
 - shrink the responsibility to do 逃避责任
 - responsible
     - adj. 有责任的；有责任心的；应受责备的
-    - be responsible for
+    - 词组
+        - be responsible for
 - respond
     - v. （口头或书面）回答；
     - vi. 做出反应
@@ -169,27 +189,31 @@
             - in response to 作为对...的回答
     - correspond [ˌkɔːrəˈspɑːnd]
         - vi. 相一致；通信；类似于
-        - correspond with/to
+        - 词组
+            - correspond with
+            - correspond to
         - correspondence n. 通信
 
 ## although
 
 - conj. 虽然，尽管
-- although A, B 尽管A，但是B（B是重点）
+- Although A, B 尽管A，但是B（B是重点。明让步，暗转折）
 - unless conj. 除非
 - whereas [ˌwerˈæz] conj. （用以比较或对比两个事实）尽管；鉴于
 - despite [dɪˈspaɪt]
-    - prep. 尽管
-    - **Despite** these factors, many social scientists seem reluctant([rɪˈlʌktənt] adj. 不情愿的) to
-      *tackle/deal with/cope with/handle/address* such problems.
+    - prep. 尽管（+ noun.）
+    - **Despite** these factors, many social scientists seem reluctant to **tackle/deal with/cope with/handle/address**
+      such problems.
+        - reluctant adj. 不情愿的 😔
 - otherwise
     - adv. 否则；在其他方面
-    - Failure([ˈfeɪljər]) can also teach us things about ourselves that we would never have learned **otherwise**.
-      失败也能教会我们一些关于自己的事情，而这些事情若非失败，我们永远不会学到
+    - Failure can also teach us things about ourselves that we would never have learned **otherwise**.
 - nevertheless [ˌnevərðəˈles]
     - adv. 然而
-    - **Nevertheless**, the <ins>affordable housing(经济适用房)</ins> situation is *desperate([ˈdespərət] adj. 绝望的)*.
-      Waiting lists increase all the time and we are simply not building enough new homes.
+    - **Nevertheless**, the affordable housing situation is desperate. Waiting lists increase all the time and we are
+      simply not building enough new homes.
+        - affordable housing 经济适用房
+        - desperate [ˈdespərət] adj. 不顾一切的，很危急的；非常想要的；绝望的
 - nonetheless [ˌnʌnðəˈles] adv. 尽管如此
 
 ## Words

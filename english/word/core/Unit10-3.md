@@ -16,36 +16,38 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## reveal
 
 - vt. 揭示；显示
-- These poems **reveal** his *gentle([ˈdʒentl] adj. 温和的)* side.
-- revelation [ˌrevəˈleɪʃn] n. 被透露的事实；揭露
-- conceal [kənˈsiːl] vt. 隐藏；隐瞒（信息）
+- These poems **reveal** his gentle side.
+    - gentle adj. 和蔼的，轻柔的
+- revelation [ˌrevəˈleɪʃn]
+    - n. 被透露的事实；揭露
+    - Similar: relation n. 关系
+- conceal [kənˈsiːl]
+    - vt. 隐藏；隐瞒（信息）
+    - Similar: cancel vt. 取消，废除
 - disclose
     - vt. 揭露
-    - == reveal
+    - == reveal vt. 揭示；显示
 
 ## immigrant
 
 - [ˈɪmɪɡrənt]
 - n. （外来）移民
-- immigrate **vt. 外来移民**
+- immigrate vt. 外来移民
 - immigration n. 移居（入境）；移民局检查站
 - migrate [ˈmaɪɡreɪt]
-    - **vi.** 迁徙；迁移
+    - vi. 迁徙；迁移
     - migration n. 移民
     - emigrate [ˈemɪɡreɪt]
-        - **vi. 移居国外**
+        - vi. 移居国外
         - n. 移民
-        - emigrate vs immigrate
-            - emigrate **移居国外**
-            - immigrate **外来移民**
         - emigrant [ˈemɪɡrənt]
             - n. 移民
             - An **emigrant** is a person who **leaves** his or her home country to live *permanently(['pɜːmənəntli])*
@@ -64,6 +66,8 @@
 - establish [ɪˈstæblɪʃ]
     - vt. 建立（尤指正式关系）；确立（地位）
     - == institute
+        - vt. 制定（体系；政策等）
+        - n. 研究所；
     - establishment n. 建立
 - organize
     - vt. 组织；使有条理
@@ -71,19 +75,29 @@
 
 ## conduct
 
-- vt. 实施；引导
+- vt. 实施；引导；指挥（音乐）
 - n. 举止；实施办法
 - Quinn and her *colleagues([ˈkɑligz])* **conducted** a test to see if rats can distinguish a friendly rat from a
-  *hostile([ˈhɑːstl] adj. 敌对的)* one.
+  hostile one.
+    - hostile [ˈhɑːstl] adj. 敌对的
 - The court was contemptuous of McDonnell's **conduct**.
+    - contemptuous [kənˈtemptʃuəs]
+        - adj. 蔑视的，鄙视的
+        - == hold one's nose 对...嗤之以鼻，蔑视 😔
 - conductor
     - n. （交响乐、合唱团的）指挥
-    - Even Tommasini, who had **advocated** Cilbert's appointment in the Times, calls him "an
-      *unpretentious(adj. 谦逊的 == modest)* musician with no air of the *formidable([ˈfɔːrmɪdəbl] adj. 令人敬畏的)*
-      conductor about him."
+    - Even Tommasini, who had advocated Cilbert's appointment in the Times, calls him "an unpretentious musician
+      with no air of the formidable **conductor** about him."
         - with + (no/an/some) air of + noun + about sb. 某人身上带有（或没有）...的气质/神态/架子
-            - with an air of mystery about him 他身上带着一股神秘感
-            - with no air of confidence about him 他显得没有自信
+        - with an air of mystery about him 他身上带着一股神秘感
+        - with no air of confidence about him 他显得没有自信
+        - unpretentious
+            - adj. 谦逊的
+            - == modest [ˈmɑːdɪst] adj. 适度的；谦虚的；普通的；较少的
+        - formidable [ˈfɔːrmɪdəbl] adj. 令人敬畏的
+        - advocate [ˈædvəkeɪt]
+            - vt. 提倡；主张
+            - n. 倡导者；拥护者
 - behave
     - v. 表现
     - behavior n. 行为
@@ -94,45 +108,47 @@
 
 - v. 贡献；有助于；是...的原因之一；捐献
 - contribute to 导致
-    - == lead to
+    - == lead to 导致；通向(C lead to R => C 导致 R)
 - contribution n. 贡献；定期缴款
 - attribute
     - vt. 把...归因于；认为...属于
     - n. 属性
-    - attribute R to C 把R归因于C
     - Over time, the **attributes** of greatness shifted.
     - Women tend to **attribute** their success **to** external causes such as luck.
+        - attribute R to C 把R归因于C
 - distribute
     - vt. 分配；使分布
     - distribution n. 分布
     - redistribution n. 重新分配
 - allocate [ˈæləkeɪt]
     - vt. 分配
-    - The effect is caused by the way we **allocate** our attention. 这种现象的产生源于我们注意力分配的方式
+    - The effect is caused by the way we **allocate** our attention.
     - allocation n. 分配
 - designate [ˈdezɪɡneɪt]
     - vt. 指派
-    - designate A as B 指定/任命A为B
-        - == designate A B
+    - 词组
+        - designate A as B 指定/任命A为B
+            - == designate A B
 - devote [dɪˈvoʊt]
     - vt. 致力于
-    - be devoted to sth. 致力于.../献身于.../专心于...
-        - == devote oneself to sth.
     - But if your work is your "passion", you'll be more likely to **devote** yourself to it.
+        - devote oneself to sth. 致力于.../献身于.../专心于...
+            - == be devoted to sth.
     - earnest
         - adj. 认真的、诚恳的、真挚的
         - earnestness ['ɜnɪstnəs]
             - n. 认真、诚恳的态度
             - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New
-              England an atmosphere of <ins>intellectual **earnestness**(热衷学术)</ins>.
+              England an atmosphere of intellectual **earnestness**.
+                - intellectual earnestness 学术上的严谨认真/思想上的认真态度/对知识和思想的严肃追求
 - dedicate [ˈdedɪkeɪt]
     - vt. 把...奉献给
-    - be dedicated to 致力于
-        - == dedicate oneself to sth.
-        - == committed to
     - Job security or stability was the second most important career goal, work-life balance was number one, followed
-      by a sense of <ins>being **dedicated** to(致力于)</ins> a cause or to feel good about serving the greater good.
+      by a sense of being **dedicated** to a cause or to feel good about serving the greater good.
         - a sense of... 一种...的感觉
+        - be dedicated to noun/doing 致力于
+            - == dedicate oneself to sth.
+            - == committed to
 
 ## exist
 
@@ -151,11 +167,12 @@
     - adj. 基因的
     - genetically [dʒə'netɪklɪ]
         - adv. 从基因方面
-        - Death is normal; we are **genetically** programmed to *disintegrate([dɪsˈɪntɪɡreɪt] v. 瓦解)* and
-          *perish([ˈperɪʃ] vi. 死亡)*, even under ideal conditions.
+        - Death is normal; we are **genetically** programmed to disintegrate and perish, even under ideal conditions.
+            - disintegrate v. 瓦解
+            - perish [ˈperɪʃ] vi. 死亡
     - genetics [dʒəˈnetɪks]
         - n. 遗传学
-        - economics n. 经济学
+        - -ics 学科
 - genome [ˈdʒinoʊm] n. 基因组；染色体组
 - lineage [ˈlɪniɪdʒ] n. 谱系
 - paternal [pəˈtɜrnl]
@@ -163,26 +180,30 @@
     - maternal [məˈtɜːrnl] adj. 母系的
     - paternity [pəˈtɜrnəti]
         - n. 父系
-        - Among the most popular: **paternity** and *kinship(n. 亲属关系)* testing, which adopted children can use to
-          find their biological relatives and families can use to <ins>track down(追查到)</ins> kids <ins>put up for
-          adoption(送去领养)</ins>.
+        - Among the most popular: **paternity** and kinship testing, which adopted children can use to find their
+          biological relatives and families can use to track down kids put up for adoption.
+            - kinship n. 亲属关系
+            - track down 追查到/追踪到/找到（经过努力）
+            - put (someone) up for adoption 将（婴儿、孩子）送去领养/将（孩子）交由他人收养
 
 ## supreme
 
 - [suːˈpriːm]
 - adj. （级别或地位）最高的；（程度）很大的 （不与比较级、最高级连用）
-- The *ethical([ˈeθɪkl] adj. 道德的)* judgments of <ins>the **Supreme** Court</ins> justices have become an important
-  issue recently.
+- The ethical judgments of the **Supreme** Court justices have become an important issue recently.
+    - ethical adj. 道德的；伦理的；合乎情理的
 - superb [suːˈpɜːrb]
     - adj. 质量极高的
     - With **superb** skill he managed to make a perfect landing.
 - superfluous [suːˈpɜːrfluəs]
     - adj. 过剩的；奢侈的；超出生存所需的，追求精神或美感的
-    - She gave him a look that made words **superfluous**. 她的一个眼神，让言语变得多余
+    - She gave him a look that made words **superfluous**.
     - Humans are unique in their capacity to not only make tools but then turn around and use them to create
-      **superfluous** material goods—paintings, *sculpture([ˈskʌlptʃər] n. 雕塑)* and architecture, and
-      **superfluous** experiences—music, *literature([ˈlɪtrətʃər] n. 文学作品)*, religion and
-      *philosophy([fəˈlɑːsəfi] n. 哲学)*.
+      **superfluous** material goods—paintings, sculpture and architecture, **and** superfluous experiences—music,
+      literature, religion and philosophy.
+        - sculpture [ˈskʌlptʃər] n. 雕塑
+        - literature [ˈlɪtrətʃər] n. 文学；文学作品；（某学科的）文献
+        - philosophy [fəˈlɑːsəfi] n. 哲学
 
 ## Words
 
