@@ -7,6 +7,12 @@ export function renderWordHeader(ui, card) {
     ui.ipa.style.display = 'none';
     return;
   }
+  if (card.type === 'table') {
+    ui.word.textContent = card.word || 'Table';
+    ui.ipa.textContent = '';
+    ui.ipa.style.display = 'none';
+    return;
+  }
   if (card.type === 'block') {
     const firstLine = Array.isArray(card.items) ? card.items[0] : null;
     const encodedWord = encodeURIComponent(firstLine?.audioText || card.word || '');
@@ -65,6 +71,7 @@ export function renderBadgeHtml(card, stats) {
   else if (card.type === 'sentence') html += '<span class="badge badge-sent">Sentence</span>';
   else if (card.type === 'complex-sentence') html += '<span class="badge badge-sent complex-sentence-badge">Complex<br>Sentence</span>';
   else if (card.type === 'block') html += '<span class="badge badge-sent">Block</span>';
+  else if (card.type === 'table') html += '<span class="badge badge-sent">Table</span>';
   if (stats.errors > 0) html += `<span class="badge badge-err">Err ${stats.errors}</span>`;
   return html;
 }

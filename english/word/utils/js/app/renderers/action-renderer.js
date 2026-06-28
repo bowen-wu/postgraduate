@@ -75,6 +75,11 @@ export function renderInputActions(ui) {
     }
   }
 
+  if (card.type === 'table') {
+    renderNextAction(ui);
+    return;
+  }
+
   ui.actionArea.innerHTML = `<button class="btn-primary" data-action="next-card">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`;
 }
 
@@ -146,6 +151,11 @@ export function renderRecallActions(ui) {
       `;
       return;
     }
+  }
+
+  if (card.type === 'table') {
+    renderNextAction(ui);
+    return;
   }
 
   const hasChinese = card.items && card.items.some((item) =>

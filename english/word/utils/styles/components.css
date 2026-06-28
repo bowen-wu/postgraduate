@@ -358,6 +358,9 @@ body.mode-recall .card.is-contrast .en-text {
     opacity: 1;
     user-select: text;
 }
+body.mode-recall .card.is-table .item-list > .item {
+    display: block;
+}
 /* Sentence cards also render their visible content as list rows now,
    so keep those rows visible in recall mode. */
 body.mode-recall .card.is-sentence .item-list > .item {

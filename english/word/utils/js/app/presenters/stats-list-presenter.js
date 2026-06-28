@@ -9,6 +9,7 @@ export function buildStatsRows({ cards, displayOrder, currentIndex, stats }) {
     if (card.type === 'sentence') icon = '💬';
     if (card.type === 'complex-sentence') icon = '🧠';
     if (card.type === 'contrast') icon = '⚖️';
+    if (card.type === 'table') icon = '▦';
 
     return {
       index: idx,

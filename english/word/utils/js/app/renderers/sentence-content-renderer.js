@@ -2,15 +2,6 @@ const complexSentenceDrafts = new Map();
 
 import { renderSentenceWithBlank } from './contrast-content-renderer.js';
 
-function escapeHtml(text) {
-  return String(text || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
-
 function appendPlainListRow(ui, className, buildContent) {
   const li = document.createElement('li');
   li.className = 'item';
@@ -166,29 +157,6 @@ export function renderSentenceItems(ui, card) {
       ui.list.appendChild(li);
     });
   }
-
-  const inlineBlocks = Array.isArray(card.inlineBlocks) ? card.inlineBlocks : [];
-  inlineBlocks.forEach((block) => {
-    if (!block || block.type !== 'table') return;
-
-    const wrapper = document.createElement('div');
-    wrapper.className = 'sentence-table-wrapper';
-    const headers = Array.isArray(block.headers) ? block.headers : [];
-    const rows = Array.isArray(block.rows) ? block.rows : [];
-    wrapper.innerHTML = `
-      <table class="sentence-table">
-        <thead>
-          <tr>${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join('')}</tr>
-        </thead>
-        <tbody>
-          ${rows.map((row) => `
-            <tr>${headers.map((_header, index) => `<td>${escapeHtml(row[index] || '')}</td>`).join('')}</tr>
-          `).join('')}
-        </tbody>
-      </table>
-    `;
-    appendPlainListRow(ui, '', () => wrapper);
-  });
 
   if (card.type === 'complex-sentence') {
     const textareaTitle = document.createElement('div');

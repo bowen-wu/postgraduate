@@ -88,6 +88,7 @@ export function shouldAutoPlayCard(card, state = STATE) {
   if (typeof card.id === 'string' && card.id.startsWith('writing_')) return false;
   if (card.type === 'contrast') return false;
   if (card.type === 'block') return false;
+  if (card.type === 'table') return false;
   return state.mode === 'input' || state.mode === 'recall';
 }
 
@@ -133,11 +134,12 @@ export function render(ui) {
 
   const stats = STATE.stats[card.id] || { errors: 0 };
 
-  ui.card.classList.remove('is-sentence', 'is-phrase', 'is-contrast', 'is-complex-sentence');
+  ui.card.classList.remove('is-sentence', 'is-phrase', 'is-contrast', 'is-complex-sentence', 'is-table');
   if (card.type === 'sentence') ui.card.classList.add('is-sentence');
   else if (card.type === 'complex-sentence') ui.card.classList.add('is-complex-sentence');
   else if (card.type === 'phrase') ui.card.classList.add('is-phrase');
   else if (card.type === 'contrast') ui.card.classList.add('is-contrast');
+  else if (card.type === 'table') ui.card.classList.add('is-table');
 
   updateWritingCompareLayout(card);
 

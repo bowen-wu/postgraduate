@@ -98,7 +98,6 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   const sentenceChildren = [];
   const promotedChildren = [];
   const inlineQuizItems = [];
-  const inlineBlocks = [];
 
   let i = merged.nextLineIndex;
   let lastProcessedLineIndex = lineIndex;
@@ -127,7 +126,14 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
     if (isMarkdownTableStart(childContent)) {
       const { block, nextLineIndex } = parseMarkdownTableAt(parser.lines, i, childContent);
       if (block) {
-        inlineBlocks.push(block);
+        promotedChildren.push({
+          id: `card_${parser.cardCounter++}`,
+          word: 'Table',
+          type: 'table',
+          headers: block.headers,
+          rows: block.rows,
+          items: []
+        });
         if (nextLineIndex - 1 > lastProcessedLineIndex) {
           lastProcessedLineIndex = nextLineIndex - 1;
         }
@@ -276,12 +282,9 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   if (inlineQuizItems.length > 0) {
     sentenceCard.inlineQuizItems = inlineQuizItems;
   }
-  if (inlineBlocks.length > 0) {
-    sentenceCard.inlineBlocks = inlineBlocks;
-  }
 
   let correctLastLineIndex = lineIndex + 1;
-  if (promotedChildren.length > 0 || sentenceChildren.length > 0 || inlineQuizItems.length > 0 || inlineBlocks.length > 0) {
+  if (promotedChildren.length > 0 || sentenceChildren.length > 0 || inlineQuizItems.length > 0) {
     correctLastLineIndex = lastProcessedLineIndex + 1;
   }
 
