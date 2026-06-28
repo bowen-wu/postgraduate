@@ -1,0 +1,112 @@
+[
+  {
+    "id": "card_0",
+    "word": "Table Sample",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "forge",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "vt.",
+        "cn": "（努力）制造；形成；缔造"
+      }
+    ],
+    "ipa": "[fɔːrdʒ]"
+  },
+  {
+    "id": "card_3",
+    "word": "pledge",
+    "type": "word",
+    "items": [
+      {
+        "type": "def",
+        "en": "v.",
+        "cn": "承诺；"
+      },
+      {
+        "type": "def",
+        "en": "n.",
+        "cn": "保证 （正式）"
+      }
+    ]
+  },
+  {
+    "id": "card_4",
+    "word": "forge ahead (with sth)",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "forge ahead (with sth)",
+        "cn": "继续努力前进；坚定地推进（某事）"
+      }
+    ]
+  },
+  {
+    "id": "card_2",
+    "word": "He again pledged to forge ahead with his plans for...",
+    "displayWord": "He again pledged to <strong>forge</strong> ahead with his plans for reform.",
+    "type": "sentence",
+    "fullText": "He again pledged to {{BOLD:0}} ahead with his plans for reform.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "He again pledged to forge ahead with his plans for reform.",
+        "cn": ""
+      }
+    ],
+    "children": [],
+    "inlineBlocks": [
+      {
+        "type": "table",
+        "headers": [
+          "用法",
+          "含义",
+          "示例"
+        ],
+        "rows": [
+          [
+            "for + 目的",
+            "为了...",
+            "plans for reform（改革计划）"
+          ],
+          [
+            "for + 用途",
+            "用于...",
+            "tools for cutting（一种切割工具）"
+          ],
+          [
+            "for + 好处",
+            "对...有利",
+            "good for you"
+          ],
+          [
+            "for + 原因",
+            "因为...",
+            "punished for lying"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card_5",
+    "word": "They agreed to forge closer economic ties.",
+    "displayWord": "They agreed to <strong>forge</strong> closer economic ties.",
+    "type": "sentence",
+    "fullText": "They agreed to {{BOLD:0}} closer economic ties.",
+    "items": [
+      {
+        "type": "sentence",
+        "en": "They agreed to forge closer economic ties.",
+        "cn": ""
+      }
+    ],
+    "children": []
+  }
+]

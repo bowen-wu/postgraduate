@@ -762,6 +762,32 @@ body.mode-recall .similars-section.revealed {
 }
 .sentence-content { font-size: 1.35rem; line-height: 1.8; color: var(--text-main); font-weight: 400; margin-bottom: 1rem; }
 .sentence-content .highlight-word { background: linear-gradient(120deg, var(--primary-light) 0%, transparent 100%); padding: 2px 4px; border-radius: 4px; font-weight: 600; }
+.sentence-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.sentence-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    min-width: 36rem;
+}
+.sentence-table th,
+.sentence-table td {
+    border: 1px solid var(--border-color);
+    padding: 0.55rem 0.7rem;
+    text-align: left;
+    vertical-align: top;
+}
+.sentence-table th {
+    background: #f8fafc;
+    color: var(--text-main);
+    font-weight: 700;
+}
+.sentence-table td {
+    color: var(--text-sub);
+}
 .card.is-sentence .card-body { padding: 2rem; }
 .card.is-sentence .card-footer { border-top: 1px solid var(--border-color); background: var(--card-bg); }
 .card.is-complex-sentence .card-body { padding: 2rem; }

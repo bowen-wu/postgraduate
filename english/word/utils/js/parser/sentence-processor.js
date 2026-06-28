@@ -3,6 +3,7 @@ import { matchListIndent, getListContentFromTrimmed, mergeListItemContinuations 
 import { processChildren } from './children-processor.js';
 import { extractItalicWords, extractInsPhrases } from './inline-extractors.js';
 import { normalizeInlineStudyText, stripMarkdownMarkers, stripPronunciationHints } from './text-normalizer.js';
+import { isMarkdownTableStart, parseMarkdownTableAt } from './table-parser.js';
 
 function hasInlineQuizBlank(text) {
   return /\[\[/.test(String(text || '')) || /<ins>/i.test(String(text || ''));
@@ -97,6 +98,7 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   const sentenceChildren = [];
   const promotedChildren = [];
   const inlineQuizItems = [];
+  const inlineBlocks = [];
 
   let i = merged.nextLineIndex;
   let lastProcessedLineIndex = lineIndex;
@@ -121,6 +123,18 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
 
     const childContent = getListContentFromTrimmed(trimmed);
     const normalizedChildContent = normalizeInlineStudyText(childContent);
+
+    if (isMarkdownTableStart(childContent)) {
+      const { block, nextLineIndex } = parseMarkdownTableAt(parser.lines, i, childContent);
+      if (block) {
+        inlineBlocks.push(block);
+        if (nextLineIndex - 1 > lastProcessedLineIndex) {
+          lastProcessedLineIndex = nextLineIndex - 1;
+        }
+        i = nextLineIndex;
+        continue;
+      }
+    }
 
     if (hasInlineQuizBlank(childContent)) {
       const quizMerged = mergeListItemContinuations(parser.lines, i, childContent);
@@ -262,9 +276,12 @@ export function processSentence(parser, content, indentLevel, lineIndex) {
   if (inlineQuizItems.length > 0) {
     sentenceCard.inlineQuizItems = inlineQuizItems;
   }
+  if (inlineBlocks.length > 0) {
+    sentenceCard.inlineBlocks = inlineBlocks;
+  }
 
   let correctLastLineIndex = lineIndex + 1;
-  if (promotedChildren.length > 0 || sentenceChildren.length > 0) {
+  if (promotedChildren.length > 0 || sentenceChildren.length > 0 || inlineQuizItems.length > 0 || inlineBlocks.length > 0) {
     correctLastLineIndex = lastProcessedLineIndex + 1;
   }
 

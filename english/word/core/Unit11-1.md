@@ -46,7 +46,7 @@
         - n. 可持续性
         - "**Sustainability**" has become a popular word these days, but to Ted Ning, the concept will always have
           personal meaning.
-            - those days 过去
+            - those days 那些日子/当年/那个时候
             - these days 如今/现在/现如今
 
 ## ignore
@@ -72,7 +72,7 @@
     - However, there is another important part of the jobs picture that was largely **overlooked**.
         - largely adv. 在很大程度上；主要地
     - Try to **see the big picture** before making any decision.
-        - eee the big picture. 有全局观/看长远/从大局出发/
+        - eee the big picture. 有全局观/看长远/从大局出发
 
 ## popular
 
@@ -88,9 +88,8 @@
     - adj. 流行的
     - == common adj. 常见的；普通的；共同的
     - be prevalent in... 在...范围内十分普遍/流行
-    - Something **prevalent** is **common** in a particular place at a particular time.
-    - **Prevalent** things are **hard to avoid**.
-    - When you see the word **prevalent**, think "**it's everywhere**!"
+    - Something **prevalent** is **common** in a particular place at a particular time. **Prevalent** things are
+      **hard to avoid**. When you see the word **prevalent**, think "**it's everywhere**!"
 
 ## function
 
@@ -120,7 +119,7 @@
             - n. 保证 （正式）
         - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
         - | 用法       | 含义     | 示例                        |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |----------|--------|---------------------------|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -162,10 +161,12 @@
     - We should **attach** importance to children's mental health.
     - We should **attach** importance to raising people's awareness of environmental protection.
         - awareness [əˈwernəs] n. 知道；意识
-        - == **Great importance should be attached to** raising people's awareness of environmental protection.
+    - **Great importance should be attached to** raising people's awareness of environmental protection.
     - attachment n. 依恋
 - bond
     - vt. 建立关系；纽带；债券；羁绊
+    - First you both go out your way. And the vibe is feeling strong and what's small turn to a friendship. A friendship
+      turn into a **bond** and that **bond** will never be broken and the love will never get lost.
     - They may have **bonded** more with the social robot because it displayed behaviors like communal exploring and
       playing.
         - bond with sb. 建立情感联系
@@ -195,9 +196,9 @@
 - medical care 医疗护理
 - hygiene [ˈhaɪdʒiːn]
     - n. 卫生（学）
-    - Before the birth of proper *dentistry([ˈdɛntɪstri])*, mouths were often in a *shocking(adj. 可怕的)* state of
-      **hygiene**.
+    - Before the birth of proper dentistry, mouths were often in a *shocking(adj. 可怕的)* state of **hygiene**.
         - proper adj. 恰当的；正常的；正规的
+        - dentistry [ˈdɛntɪstri] n. 牙科学
 - infection n. 感染
 - pandemic [pænˈdɛmɪk]
     - n. （正式）流行病
@@ -237,15 +238,6 @@
     - If you sell something for a good price, you can fetch, or bring in, a **decent** amount of money.
 
 ## Words
-
-- courteous [ˈkɜːrtiəs] 🙂
-    - adj. 有礼貌的; 谦恭的; 殷勤的; 客气
-    - BE COURTEOUS SHARE THE ROAD.
-- predictive
-    - adj. 预言性的，成为前兆的
-- equivalent [ɪˈkwɪvələnt]
-    - adj. 相等的，相同的
-    - n. 等同物; 对应物
 
 ## 词组
 

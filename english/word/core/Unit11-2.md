@@ -190,6 +190,14 @@
 
 ## Words
 
+- courteous [ˈkɜːrtiəs] 🙂
+    - adj. 有礼貌的; 谦恭的; 殷勤的; 客气
+    - BE COURTEOUS SHARE THE ROAD.
+- predictive
+    - adj. 预言性的，成为前兆的
+- equivalent [ɪˈkwɪvələnt]
+    - adj. 相等的，相同的
+    - n. 等同物; 对应物
 - premise [ˈpremɪs]
     - n. 前提
 
