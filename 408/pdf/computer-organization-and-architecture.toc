@@ -1,13 +1,27 @@
 \contentsline {section}{\numberline {1}计算机系统概述}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}计算机的性能指标}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.1}计算机的性能指标}{3}{subsection.1.1}%
 \contentsline {section}{\numberline {2}数据的表示和运算}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}定点数的编码表示}{3}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}C语言中的整型数据类型}{4}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}不同字长整数之间的转换}{4}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}运算方法}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}移位运算}{5}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}标志位}{5}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}浮点数的表示}{6}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}IEEE 754标准}{6}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}加减运算}{7}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}C语言中的浮点数类型}{7}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.2}整数的表示}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}C语言中的整型数据类型}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}不同字长整数之间的转换}{4}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}运算方法}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}移位运算}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}标志位}{5}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}浮点数的表示}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}理论浮点数}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}IEEE 754标准}{7}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}加减运算}{7}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}C语言中的浮点数类型}{8}{subsubsection.2.4.4}%
+\contentsline {section}{\numberline {3}存储系统}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}存储器的性能指标}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}RAM（Random Access Memory, 随机存储器）}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}DRAM}{9}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}多模块存储器}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}外部存储器}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}磁盘存储器}{10}{subsubsection.3.4.1}%
+\contentsline {paragraph}{磁盘的性能指标}{10}{section*.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}固态硬盘}{11}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}高速缓冲存储器}{11}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Cache 与主存映射方式}{12}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Cache 一致性问题}{13}{subsubsection.3.5.2}%

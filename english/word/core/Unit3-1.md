@@ -108,6 +108,9 @@
     - Lower-income jobs like gardening or day care don't **appeal** to robots.
 - plead [pliːd]
     - v. 恳求；辩护；解释
+    - Similar: pledge [pledʒ]
+        - v. 承诺；
+        - n. 保证 （正式）
     - 词组
         - plead with sb. 恳求某人
         - plead for 恳求；呼吁

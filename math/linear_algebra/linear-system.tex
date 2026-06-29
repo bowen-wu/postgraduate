@@ -2,12 +2,6 @@
 
 \begin{document}
 
-%    \title{Template}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-
-% =========================
 
     \section{线性方程组}
 
@@ -349,6 +343,25 @@
     \subsection{理解}
 
     \begin{enumerate}
+        \item $\text{线性相关无关} \;\Rightarrow\; Ax = 0\text{齐次方程组非零解的问题}$
+        \item $\text{线性表示} \;\Rightarrow\; Ax = \beta(\text{其中}A = [\alpha_1, \alpha_2, \dots, \alpha_n])\text{非齐次方程组解的问题}$
+        \begin{itemize}
+            \item 非齐次方程组的解向量 $x$ 即为线性表示的系数
+            \item 对于 $n$ 维向量，有 $n$ 个方程，未知数个数等于向量个数
+            \item 根据秩的不同，线性表示有三种情况：
+            \begin{enumerate}
+                \item \textbf{唯一表示:}$\; r(A) = r(A,\beta) = n$，$(\alpha_1, \alpha_2, \dots, \alpha_n)$向量组线性无关
+                \item \textbf{无穷多表示:}$\; r(A) = r(A,\beta) < n$，$(\alpha_1, \alpha_2, \dots, \alpha_n)$向量组线性相关
+                \item \textbf{无表示:}$\; r(A) < r(A,\beta)$，$\beta$ 不能由 $(\alpha_1,\dots,\alpha_n)$ 线性表示
+            \end{enumerate}
+        \end{itemize}
+    \end{enumerate}
+
+
+    \subsection{定理}
+
+    \begin{enumerate}
+        \item $A$是$m \times n$矩阵，则$Ax = 0$的解向量组的秩为$\mathbf{n - r(A)}$
     \end{enumerate}
 
 \end{document}

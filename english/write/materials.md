@@ -32,8 +32,8 @@
   relieving pressure, accounting for 33 percent. By contrast, the percentages of students travelling aiming at other
   goals, making friends and cultivating independence account for 15%, 9% and 6% respectively.
 - I have just arrived at my home from the airport. As I sit down at my desk, I just want to write a letter to you to
-  thank you for your warm **reception** in the **cultural** exchange program. You and your family left a deep impression
-  upon me. Indeed, the program is one of the most wonderful **memories** in my life.
+  thank you for your warm reception in the cultural exchange program. You and your family left a deep impression
+  upon me. Indeed, the program is one of the most wonderful memories in my life.
 - Once again, we sincerely hope you can be the judge for our competition.
 
 ## WM-2

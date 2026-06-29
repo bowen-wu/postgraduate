@@ -107,8 +107,9 @@
 ## contribute
 
 - v. 贡献；有助于；是...的原因之一；捐献
-- contribute to 导致
-    - == lead to 导致；通向(C lead to R => C 导致 R)
+- 词组
+    - contribute to 导致
+        - == lead to 导致；通向(C lead to R => C 导致 R)
 - contribution n. 贡献；定期缴款
 - attribute
     - vt. 把...归因于；认为...属于

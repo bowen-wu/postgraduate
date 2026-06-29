@@ -72,7 +72,7 @@
     - However, there is another important part of the jobs picture that was largely **overlooked**.
         - largely adv. 在很大程度上；主要地
     - Try to **see the big picture** before making any decision.
-        - eee the big picture. 有全局观/看长远/从大局出发
+        - see the big picture. 有全局观/看长远/从大局出发
 
 ## popular
 
@@ -117,9 +117,10 @@
         - pledge [pledʒ]
             - v. 承诺；
             - n. 保证 （正式）
-        - forge ahead (with sth) 继续努力前进；坚定地推进（某事）
+            - Similar: plead [pliːd] v. 恳求；辩护；解释
+        - forge ahead (with sth.) 继续努力前进；坚定地推进（某事）
         - | 用法       | 含义     | 示例                        |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |----------|--------|---------------------------|
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |----------|--------|---------------------------|
           | for + 目的 | 为了...  | plans for reform（改革计划）    |
           | for + 用途 | 用于...  | tools for cutting（一种切割工具） |
           | for + 好处 | 对...有利 | good for you              |
@@ -213,7 +214,7 @@
 - n. 尊重；（事物的）方面
 - Treat people with **respect** if you want to be **respected**.
 - In many **respects** this is an important decision.
-- Writing in the last year of his life，he expressed the opinion that in two or three **respects** his mind had changed
+- Writing in the last year of his life, he expressed the opinion that in two or three **respects** his mind had changed
   during the preceding twenty or thirty years.
 - -spect- 看
     - prospect
