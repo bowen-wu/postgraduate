@@ -250,6 +250,32 @@
         \]
     \end{enumerate}
 
+    \subsubsection{矩阵逆的理解}
+
+    \begin{enumerate}
+        \item $n$ 阶矩阵$A$可逆
+        \begin{align*}
+            &\Leftrightarrow\; |A| \neq 0  \\
+            &\Leftrightarrow\; r(A) = n  \\
+            &\Leftrightarrow\; A \text{的列（行）向量组线性无关}  \\
+            &\Leftrightarrow\; A = P_{1}P_{2}\dots P_{s}, P_{i}(i = 1,2,\dots,s)\text{是初等矩阵}  \\
+            &\Leftrightarrow\; A \text{通过初等变换能化为单位矩阵}  \\
+            &\Leftrightarrow\; A \text{与单位矩阵等价}  \\
+            &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
+            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{只有零解}
+        \end{align*}
+        \item $n$ 阶矩阵$A${\color{red}{不可逆}}
+        \begin{align*}
+            &\Leftrightarrow\; |A| = 0  \\
+            &\Leftrightarrow\; r(A) < n  \\
+            &\Leftrightarrow\; A \text{的列（行）向量组线性相关}  \\
+            &\;\Leftrightarrow\; A \text{无法表示为初等矩阵的乘积} \\
+            &\Leftrightarrow\; A \text{无法通过初等变换能化为单位矩阵}  \\
+            &\Leftrightarrow\; 0\text{是矩阵} A \text{的特征值}  \\
+            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}
+        \end{align*}
+    \end{enumerate}
+
     \subsection{伴随矩阵}
 
     $n$阶方阵$A = [a_{ij}]_{n \times n}$，行列式$|A|$的每个元素$a_{ij}$的代数余子式$A_{ij}$所构成的如下矩阵
@@ -528,6 +554,22 @@
         \end{align*}
     \end{enumerate}
 
+    \subsection{初等变换理解}
+
+    \begin{enumerate}
+        \item 矩阵$A$经过若干次初等\textbf{行变换}得到矩阵$B$，则
+        \begin{enumerate}
+            \item $Ax = 0$与$Bx = 0$同解
+            \item $A \overset{\sim}{=} B, B = PA$
+            \item $r(A) = r(B)$
+        \end{enumerate}
+        \item 矩阵$A$经过若干次初等\textbf{列变换}得到矩阵$B$，则
+        \begin{enumerate}
+            \item $A \overset{\sim}{=} B, B = AQ$
+            \item $r(A) = r(B)$
+        \end{enumerate}
+    \end{enumerate}
+
     \subsection{矩阵的秩}
 
     \subsubsection{定义}
@@ -535,9 +577,10 @@
     \begin{enumerate}
         \item 在$m \times n$矩阵$A$中，任取$k$行与$k$列$(k \le m, k \le n)$，位于这个行与列的交叉点上的$k^2$个元素按其在原来矩阵$A$中的次序可构成一个$k$阶行列式，称其为矩阵$A$的一个$k$阶\textbf{子式}
         \item 设$A$是$m\times n$矩阵，若{\color{blue}{存在}}$k$阶子式不为零，而任意$k + 1$阶子式（如果有的话）全为零，则$r(A) = k$，且若$A$为$n\times n$矩阵，则
-        \[
-            r(A_{n\times n}) = n \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}
-        \]
+        \begin{itemize}
+            \item $r(A_{n\times n}) = n \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}$
+            \item $r(A_{n\times n}) < n \Leftrightarrow |A| = 0 \Leftrightarrow A\text{不可逆}$
+        \end{itemize}
         \item 将$A$用初等行变换化为行阶梯形矩阵，其非零行数便为$A$的秩
     \end{enumerate}
 
@@ -548,21 +591,31 @@
         \item $0 \leq r(A) \leq \min\{m, n\}$
         \item $r(kA) = r(A),\, k \neq 0$
         \item $r(AB) \le r(A) \text{并且} r(AB) \le r(B)$，即 $r(AB) \le \min\{r(A), r(B)\}$
-        \item $r(A + B) \leq r(A) + r(B)$
+        \item $r(A + B) \leq r([A, B]) \leq r(A) + r(B)$
         \item $r(A^*) = \begin{cases}
                             n, \quad r(A) = n, \\
                             1, \quad r(A) = n - 1\text{，其中}A\text{为}n(n\geq 2)\text{阶方阵}, \\
                             0, \quad r(A) < n - 1
         \end{cases}$
+        \begin{itemize}
+            \item 上述过程是可逆的
+            \item $A^*$的秩只有三种情况：$n, 1, 0$
+            \item 对$A^*$的行（列）向量组而言，只有三种情况：
+            \begin{circlenum}
+                \item $n$行（列）线性无关
+                \item $n$行（列）两两成比例
+                \item $n$行（列）向量全部是零向量
+            \end{circlenum}
+        \end{itemize}
         \item 设$A$是$m\times n$矩阵，$P, Q$分别是$m$阶、$n$阶可逆矩阵，则
         \[
             r(A) = r(PA) = r(AQ) = r(PAQ)
         \]
         \item $r(A) = r(A^T) = r(A^{T}A) = r(AA^{T})$
-        \item 若$A_{m\times n}B_{n\times s} = O$，则
+        \item 若$A_{m\times n}B_{n\times s} = \mathbf{O}$，则
         \begin{itemize}
-            \item $r(A) + r(B) {\color{red}{\le}} n$
-            \item $B$ 的列向量是齐次方程组 $Ax = 0$ 的解
+            \item $r(A) + r(B) {\color{red}{\le}} n$($A$的列数)
+            \item $\mathbf{B}$ 的列向量是齐次方程组 $\mathbf{Ax} = 0$ 的解
             \begin{circlenum}
                 \item 按列分块，有$B = [b_1, b_2, \dots, b_s]$，即
                 \[
@@ -573,6 +626,13 @@
                     Ab_i = 0, \quad i = 1, 2, \dots, s.
                 \]
             \end{circlenum}
+            \item 若 $\mathbf{A}$ 和 $\mathbf{B}$ 为方阵，则$|A| = 0$或$|B| = 0$
+            \item 且$A\;B$非零，则
+            \begin{align*}
+                &\Rightarrow\; r(A) < n\text{且}r(B) < n \\
+                &\Rightarrow\; A\text{列向量线性相关} \\
+                &\Rightarrow\; B\text{行向量线性相关}
+            \end{align*}
         \end{itemize}
         \item 若$AB = C$，则
         \begin{itemize}
@@ -607,7 +667,7 @@
             \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的列向量可由$A$的列向量线性表出}}
         \end{itemize}
         \item $r(AB) \geq r(A) + r(B) - n$
-        \item $\color{red}{r(A, AB) = r(A)}$
+        \item $r(A, AB) = r(A)$
         \item 且$C$是$s \times t$矩阵，则
         \[
             r(AB) + r(BC) \leq r(ABC) + r(B)
@@ -641,44 +701,43 @@
     \end{enumerate}
 
     \subsubsection{矩阵秩的理解}
+
     \begin{enumerate}
+        \item 给定一个矩阵$A$，它的秩就是矩阵中\textbf{线性无关的行（或列）的最大个数}
+        \item 秩 $\Rightarrow$ 矩阵所包含的“独立信息量” \emph{e.g.} 如果你有10行数据，但其中5行其实是由另外5行“复制”或“线性组合”出来的，那么这些重复的信息是“冗余的”，真正“独立”的信息只有5行 \Rightarrow r(A) = 5
+        \item 解线性方程组: 判断方程$Ax = b$有没有解、是不是唯一解
+        \begin{itemize}
+            \item 有解 $\Leftrightarrow r(A) = r(A \mid  b) = r(\bar{A})$
+            \item 唯一解 $\Leftrightarrow r(A) = r(\bar{A}) = \text{变量数}$
+            \item 多解 $\Leftrightarrow r(A) = r(\bar{A}) < \text{变量数}$
+        \end{itemize}
+        \item 判断向量独立性: 度量{\color{customgreen}{向量空间中有多少个独立方向}}
+        \begin{itemize}
+            \item 如果列向量组成的矩阵$r(A) =$ 列数 $\Rightarrow$ 向量组线性无关
+            \item 否则线性相关
+        \end{itemize}
+        \item 维度的桥梁: 刻画了{\color{customgreen}{变换的本质效果}}
+        \begin{itemize}
+            \item 秩本质上就是矩阵对应线性映射的像空间（列空间）的维数
+            \item 这告诉我们，线性变换把空间压缩到了几维。
+            \item \emph{e.g.} $3 \times 3$矩阵$A$
+            \begin{circlenum}
+                \item $r(A) = 3$ \Rightarrow \text{保留三维空间的全部信息（可能只是旋转或缩放）}
+                \item $r(A) = 2$ \Rightarrow \text{把三维空间压缩成二维平面}
+                \item $r(A) = 1$ \Rightarrow \text{压缩成一条直线}
+                \item $r(A) = 0$ \Rightarrow \text{全部压缩成原点}
+            \end{circlenum}
+        \end{itemize}
+        \item 与行列式、可逆性关系：{\color{customgreen}{可逆性的根本判据}}
+        \begin{itemize}
+            \item 如果$n$阶矩阵$A$，$r(A) = n$，那么$A$可逆，$|A| \neq 0$
+            \item 如果$r(A) < n$，矩阵$A$不可逆
+        \end{itemize}
         \item $r(A) = r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0\text{，\textcolor[rgb]{0.2, 0.6, 0.3}{任何}}r + 1\text{阶子式（若存在）必\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0$
         \item $r(A) < r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{每}一个}r\text{阶子式\textcolor[rgb]{0.2, 0.6, 0.3}{全}为}0$
         \item $r(A) \ge r \Leftrightarrow A \text{中\textcolor[rgb]{0.2, 0.6, 0.3}{有}}r\text{阶子式不为}0$
         \item $r(A) = 0 \Leftrightarrow A = \mathbf{O}$
         \item $r(A) \neq \mathbf{O} \Leftrightarrow 1 \le r(A) \le n$
-        \item 若$A$是$n$阶矩阵
-        \begin{itemize}
-            \item $r(A) = n \Leftrightarrow |A| \neq 0 \Leftrightarrow A\text{可逆}$
-            \item $r(A) < n \Leftrightarrow |A| = 0 \Leftrightarrow A\text{不可逆}$
-        \end{itemize}
-        \item 若$A$是$m \times n$阶矩阵 $\Leftrightarrow r(A) \le min(m, n)$
-    \end{enumerate}
-
-    \subsection{结论}
-
-    \begin{enumerate}
-        \item $n$ 阶矩阵$A$可逆
-        \begin{align*}
-            &\Leftrightarrow\; |A| \neq 0  \\
-            &\Leftrightarrow\; r(A) = n  \\
-            &\Leftrightarrow\; A \text{的列（行）向量组线性无关}  \\
-            &\Leftrightarrow\; A = P_{1}P_{2}\dots P_{s}, P_{i}(i = 1,2,\dots,s)\text{是初等矩阵}  \\
-            &\Leftrightarrow\; A \text{通过初等变换能化为单位矩阵}  \\
-            &\Leftrightarrow\; A \text{与单位矩阵等价}  \\
-            &\Leftrightarrow\; 0\text{不是矩阵} A \text{的特征值}  \\
-            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{只有零解}
-        \end{align*}
-        \item $n$ 阶矩阵$A${\color{red}{不可逆}}
-        \begin{align*}
-            &\Leftrightarrow\; |A| = 0  \\
-            &\Leftrightarrow\; r(A) < n  \\
-            &\Leftrightarrow\; A \text{的列（行）向量组线性相关}  \\
-            &\;\Leftrightarrow\; A \text{无法表示为初等矩阵的乘积} \\
-            &\Leftrightarrow\; A \text{无法通过初等变换能化为单位矩阵}  \\
-            &\Leftrightarrow\; 0\text{是矩阵} A \text{的特征值}  \\
-            &\Leftrightarrow\; \text{齐次线性方程组} Ax = 0 \text{有非零解}
-        \end{align*}
     \end{enumerate}
 
     \subsection{公式}
@@ -801,94 +860,65 @@
         \]
     \end{enumerate}
 
+    \subsubsection{求伴随矩阵$A^*$}
+
     \begin{enumerate}
-        \item 已知矩阵$A$，若下三角可逆矩阵$P$和上三角可逆矩阵$Q$，使得$PAQ$为对角矩阵，求$P, Q$
-        \begin{enumerate}
-            \item 标准型: 对角矩阵是特征值
-            \item \textbf{初等行变换}: 对$A$做初等\textbf{行变换}化为上三角矩阵$B([A | E] -> [B | P])$得到$P$，再对$B$做\textbf{列变换}或{\color{red}{$B^T$作\textbf{行变换}}}化为对角矩阵$\Lambda([B^T | E] -> [\Lambda | Q])$得到$Q$
-        \end{enumerate}
-        \item 由$A^*$求$A$
-        \begin{enumerate}
-            \item $|A^*|$
-            \item $|A^*| = |A|^{n-1}$ \Rightarrow |A|
-            \item $AA^* = |A|E$ \Rightarrow A = |A|(A^*)^{-1}
-        \end{enumerate}
-        \item 秩求法
+        \item 定义：先求$A_{ij}$，再拼成$A^*$
+        \item 公式：若$A$可逆，$A^* = |A|A^{-1}$
+    \end{enumerate}
+
+    \subsubsection{求逆矩阵}
+
+    \begin{enumerate}
+        \item 定义法
         \begin{itemize}
-            \item $|A| \neq 0$ \Leftrightarrow r(A) = n
-            \item $|A| = 0$ \Leftrightarrow r(A) < n
-            \item 初等行变换矩阵秩不变
-            \item 找不为$0$的子式 \;\le\; $r(A)$
-            \item $A\;B$相似 \Rightarrow r(A) = r(B)
+            \item 将矩阵满足的关系式做恒等变换，化成\textbf{左端为待求逆的矩阵与另一个矩阵的乘积，右端为单位矩阵}的形式
+            \item $\color{red}{\bigstar}$把矩阵的和、差关系化成乘积的一种方法是{\color{red}{提取公因子}}
         \end{itemize}
-        \item 求特殊矩阵的$n$次方
+        \item 用伴随矩阵
         \begin{itemize}
-            \item 分块
-            \item 若$r(A) = 1$，则$A^n = l^{n-1}A$，其中$l = \sum {a_{ii}} = a_{11} + a_{22} + \dots + a_{nn}$
-            \item $P^{-1}AP = B$ \Rightarrow A^n = PB^{n}P^{-1}, B^n = P^{-1}A^{n}P
-            \item 观察多少次幂之后是$0$，之后的都是$0$
-            \item 对角矩阵的$n$次方
+            \item 判断$|A|$是否为$0$
+            \item 写出$A^*$
+            \item $A^{-1} = \dfrac{1}{|A|}A^*$
         \end{itemize}
-        \item 求伴随矩阵$A^*$
-        \begin{itemize}
-            \item 定义
-            \item $A^* = |A|A^{-1}$
-        \end{itemize}
-        \item 求可逆矩阵
-        \begin{itemize}
-            \item 求代数余子式$A_{ij} = (-1)^{i+j}M_{ij}$，$(kA)^{-1} = \frac{1}{k}A^{-1}(k \neq 0)$
-            \item 用初等行变换
-            \[
-                (A \; E)
-                \;\overset{\text{由上往下}}{\longrightarrow \dots \longrightarrow}\;
-                (\text{上三角} ...)
-                \;\overset{\text{由下往上}}{\longrightarrow \dots \longrightarrow}\;
-                (\text{\\} *)
-                \;\overset{\text{某行乘 }k}{\longrightarrow}\;
-                \;\longrightarrow\;
-                (E \; A^{-1})
-            \]
-            \item 分块
-            \begin{align*}
-                \begin{bmatrix}
-                    B & O \\
-                    O & C
-                \end{bmatrix}^{-1}
-                &=
-                \begin{bmatrix}
-                    B^{-1} & O      \\
-                    O      & C^{-1}
-                \end{bmatrix}, \\[2mm]
+        \item 用初等变换：$[A \mid E] \xrightarrow{\text{初等行变换}} [E \mid A^{-1}]$
+        \item 分块
+        \begin{align*}
+            \begin{bmatrix}
+                B & O \\
+                O & C
+            \end{bmatrix}^{-1}
+            &=
+            \begin{bmatrix}
+                B^{-1} & O      \\
+                O      & C^{-1}
+            \end{bmatrix}, \\[2mm]
 %
-                \begin{bmatrix}
-                    O & B \\
-                    C & O
-                \end{bmatrix}^{-1}
-                &=
-                \begin{bmatrix}
-                    O      & C^{-1} \\
-                    B^{-1} & O
-                \end{bmatrix}.
-            \end{align*}
-        \end{itemize}
+            \begin{bmatrix}
+                O & B \\
+                C & O
+            \end{bmatrix}^{-1}
+            &=
+            \begin{bmatrix}
+                O      & C^{-1} \\
+                B^{-1} & O
+            \end{bmatrix}.
+        \end{align*}
+    \end{enumerate}
+
+    \subsubsection{秩求法}
+
+    \begin{enumerate}
+        \item $|A| \neq 0 \Leftrightarrow r(A) = n$
+        \item $|A| = 0 \Leftrightarrow r(A) < n$
+        \item 初等行变换矩阵秩不变
+        \item 找不为$0$的子式 \;\le\; $r(A)$
+        \item $A \sim B \Rightarrow r(A) = r(B)$
     \end{enumerate}
 
     \subsection{条件转换思路}
 
     \begin{enumerate}
-        \item $n$阶矩阵$A$秩小于$n \Rightarrow |A| = 0$
-        \item 设 $\mathbf{A}$ 是 $m \times n$ 矩阵，$\mathbf{B}$ 是 $n \times s$ 矩阵，若 $\mathbf{AB} = \mathbf{O}$，则
-        \begin{enumerate}
-            \item $\mathbf{B}$ 的列向量是齐次方程组 $\mathbf{Ax} = 0$ 的解
-            \item $r(\mathbf{A}) + r(\mathbf{B}) \le n$
-            \item 若 $\mathbf{A}$ 和 $\mathbf{B}$ 为方阵，则$|A| = 0$或$|B| = 0$
-            \item 且$A\;B$非零，则
-            \begin{align*}
-                &\Rightarrow\; r(A) < n\text{且}r(B) < n \\
-                &\Rightarrow\; A\text{列向量线性相关} \\
-                &\Rightarrow\; B\text{行向量线性相关}
-            \end{align*}
-        \end{enumerate}
         \item 若 $a_{ij} + A_{ij} = 0$ 则:
         \[
             \begin{aligned}
@@ -897,17 +927,6 @@
             \end{aligned}
         \]
         \item 若 $A^* = A^T$，则$A_{ij} = a_{ij}$
-        \item 矩阵$A$经过若干次初等\textbf{行变换}得到矩阵$B$，则
-        \begin{enumerate}
-            \item $Ax = 0$与$Bx = 0$同解
-            \item $A \overset{\sim}{=} B, B = PA$
-            \item $r(A) = r(B)$
-        \end{enumerate}
-        \item 矩阵$A$经过若干次初等\textbf{列变换}得到矩阵$B$，则
-        \begin{enumerate}
-            \item $A \overset{\sim}{=} B, B = AQ$
-            \item $r(A) = r(B)$
-        \end{enumerate}
         \item $A^* \neq 0 \Rightarrow r(A) \ge n - 1(A\text{中至少有一个}n-1\text{阶子式不为0})$
         \item 若$A, B, C$为$n$阶矩阵，且$ABC = E$，则
         \begin{align*}
@@ -922,22 +941,31 @@
             \item \textbf{基本定义：} 秩 = 列向量或行向量的最大线性无关个数
             \item \textbf{行列式：} 方阵 $A$ 满秩 $\Leftrightarrow |A| \neq 0 \Leftrightarrow A$ 可逆
             \item \textbf{线性相关性：}
-            \begin{itemize}
+            \begin{circlenum}
                 \item 列满秩 $\Rightarrow$ 列向量线性无关
                 \item 行满秩 $\Rightarrow$ 行向量线性无关
-            \end{itemize}
+            \end{circlenum}
             \item \textbf{齐次方程：} $Ax = 0$
-            \begin{itemize}
+            \begin{circlenum}
                 \item 唯一解 $\Leftrightarrow r(A) = n$
                 \item 非零解 $\Leftrightarrow r(A) < n$, 解空间维数 $n - r(A)$
-            \end{itemize}
+            \end{circlenum}
             \item \textbf{矩阵运算：}
-            \begin{itemize}
+            \begin{circlenum}
                 \item $r(AB) \le \min(r(A), r(B))$
                 \item $r(A+B) \le r(A) + r(B)$
-            \end{itemize}
-            \item \textbf{逆矩阵：} 列满秩 → 左逆，行满秩 → 右逆；方阵满秩 → 可逆
-            \item \textbf{特征值：} 方阵秩 < n $\Rightarrow$ 0 是特征值；方阵满秩 $\Rightarrow$ 0 不是特征值
+            \end{circlenum}
+            \item \textbf{逆矩阵：}
+            \begin{circlenum}
+                \item 列满秩 $\Rightarrow$ 左逆
+                \item 行满秩 $\Rightarrow$ 右逆
+                \item 方阵满秩 $\Rightarrow$ 可逆
+            \end{circlenum}
+            \item \textbf{特征值：}
+            \begin{circlenum}
+                \item 方阵秩 < n $\Rightarrow$ 0 是特征值
+                \item 方阵满秩 $\Rightarrow$ 0 不是特征值
+            \end{circlenum}
         \end{itemize}
         \item $A$为$n$阶矩阵，$A$各行元素之和都为$0$，则
         \begin{itemize}
@@ -999,125 +1027,6 @@
             $r(A) = A$的列秩，即$A$的列向量组线性相关 \\
             $r(B) = B$的行秩，即$B$的行向量组线性相关
         \end{analysisbox}
-        \item 秩
-        \begin{enumerate}
-            \item 给定一个矩阵$A$，它的秩就是矩阵中\textbf{线性无关的行（或列）的最大个数}
-            \item 秩 == 矩阵所包含的“独立信息量”
-            \item \emph{e.g.} 如果你有10行数据，但其中5行其实是由另外5行“复制”或“线性组合”出来的，那么这些重复的信息是“冗余的”，真正“独立”的信息只有5行 \Rightarrow r(A) = 5
-            \item 解线性方程组: 判断方程有没有解、是不是唯一解
-            \begin{enumerate}
-                \item 方程 $Ax = b$有解 \Leftrightarrow r(A) = r(A | b) = r(\bar{A})
-                \item 唯一解 \Leftrightarrow r(A) = r(\bar{A}) = \text{变量数}
-                \item 多解 \Leftrightarrow r(A) = r(\bar{A}) < \text{变量数}
-            \end{enumerate}
-            \item 判断向量独立性: 度量“向量空间中有多少个独立方向”
-            \begin{enumerate}
-                \item 如果列向量组成的矩阵$r(A) =$ 列数 \Rightarrow \text{向量组线性无关}
-                \item 否则线性相关
-            \end{enumerate}
-            \item 维度的桥梁: 刻画了“变换的本质效果”
-            \begin{enumerate}
-                \item 秩本质上就是矩阵对应线性映射的像空间（列空间）的维数
-                \item 这告诉我们，线性变换把空间压缩到了几维。
-                \item \emph{e.g.} $3 \times 3$矩阵$A$
-                \begin{itemize}
-                    \item $r(A) = 3$ \Rightarrow \text{保留三维空间的全部信息（可能只是旋转或缩放）}
-                    \item $r(A) = 2$ \Rightarrow \text{把三维空间压缩成二维平面}
-                    \item $r(A) = 1$ \Rightarrow \text{压缩成一条直线}
-                    \item $r(A) = 0$ \Rightarrow \text{全部压缩成原点}
-                \end{itemize}
-            \end{enumerate}
-            \item 与行列式、可逆性关系: 可逆性的根本判据
-            \begin{enumerate}
-                \item 如果$n$阶矩阵$A$，$r(A) = n$，那么$A$可逆，$|A| \neq 0$
-                \item 如果$r(A) < n$，矩阵$A$不可逆
-            \end{enumerate}
-        \end{enumerate}
-    \end{enumerate}
-
-    \subsection{求逆矩阵}
-    \begin{enumerate}
-        \item 定义法
-        \begin{itemize}
-            \item 将矩阵满足的关系式做恒等变换，化成\textbf{左端为待求逆的矩阵与另一个矩阵的乘积，右端为单位矩阵}的形式
-            \item $\color{red}{\bigstar}$把矩阵的和、差关系化成乘积的一种方法是{\color{red}{提取公因子}}
-        \end{itemize}
-        \item 用伴随矩阵
-        \begin{itemize}
-            \item 判断$|A|$是否为$0$
-            \item 写出$A^*$
-            \item $A^{-1} = \dfrac{1}{|A|}A^*$
-        \end{itemize}
-    \end{enumerate}
-
-    \subsection{结论}
-
-    \begin{enumerate}
-        \item 秩1矩阵可以被分解为$\textbf{列向量}\times \textbf{行向量}$（满秩分解）
-    \end{enumerate}
-
-    \subsection{基础概念}
-
-    \begin{enumerate}
-        \item 设$\alpha = (a_1, a_2, \dots, a_n)^{T}$，$\beta = (b_1, b_2, \dots, b_n)^{T}$。向量内积为
-        \[
-            (\alpha, \beta) = \alpha^{T}\beta = \beta^{T}\alpha = a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n}
-        \]
-        \item 向量$\alpha = (a_1, a_2, \dots, a_n)^{T}$的长度
-        \[
-            ||\alpha|| = \sqrt{\alpha^T\alpha} = \sqrt {a_1^2 + a_2^2 + \dots + a_n^2}
-        \]
-        \item 若$(\alpha, \beta) = 0$即$a_{1}b_{1} + a_{2}b_{2} + \dots + a_{n}b_{n} = 0$，则称$\alpha$与$\beta$正交，记为$\alpha \perp \beta$
-        \item 设 $A$ 是 $n$ 阶矩阵，满足 $AA^{T} = A^{T}A = E$，称 $A$ 是 \textbf{正交矩阵:}
-        \begin{align*}
-            &\Leftrightarrow\; A^{T} = A^{-1} \\
-            &\Leftrightarrow\; A \text{ 的行（列）向量两两正交（单位向量）} \\
-            &\Leftrightarrow\; A \text{ 的每个行（列）向量长度均为1} \\
-            &\Leftrightarrow\; A \text{ 的行（列）向量平方和为 1} \\
-            &\Leftrightarrow\; a_{1}^2 + a_{2}^2 + \dots + a_{n}^2 = 1 \\
-            &{\color{red}{\Rightarrow}}\; |A|^{2} = 1 \;\;\Leftrightarrow\;\; |A| = 1 \text{ 或 } |A| = -1
-        \end{align*}
-        \item 若 $A$ 是正交矩阵且 $A = (\alpha_1,\alpha_2,\dots,\alpha_n)$，则:
-        \begin{enumerate}
-            \item $\alpha_{i}^{T}\alpha_{i} = 1$
-            \item $\alpha_{i}^{T}\alpha_{j} = 0 \; (i \neq j)$
-        \end{enumerate}
-
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-        \item 设$\alpha$和$\beta$都是列向量，则
-        \begin{enumerate}
-            \item 列向量 \cdot \text{行向量:} \, $\alpha\beta^T = (\beta\alpha^T)^T$，两者都是$n$阶矩阵（互为转置）
-            \item 行向量 \cdot \text{列向量:} \, $\alpha^T\beta = \beta^T\alpha$ 是一个\textbf{数}
-            \item
-            \[
-                \alpha\alpha^T =
-                \begin{bmatrix}
-                    a_1^2   & a_1 a_2 & a_1 a_3 & \dots  & a_1 a_n \\
-                    a_1 a_2 & a_2^2   & a_2 a_3 & \dots  & a_2 a_n \\
-                    a_1 a_3 & a_2 a_3 & a_3^2   & \dots  & a_3 a_n \\
-                    \vdots  & \vdots  & \vdots  & \ddots & \vdots  \\
-                    a_1 a_n & a_2 a_n & a_3 a_n & \dots  & a_n^2
-                \end{bmatrix} \textbf{(对称矩阵)}
-            \]
-            \item $\color{red}{r(\alpha\alpha^T) = 1}$
-            \item $\alpha\alpha^T$特征值是{\color{red}{$||\alpha||^2, 0, 0, \dots, 0(n - 1\text{个})$}}
-            \item
-            \[
-                \alpha^T \alpha = a_1^2 + a_2^2 + \dots + a_n^2 = \sum_{k=1}^{n} a_k^2 \quad \text{（平方和）}
-            \]
-        \end{enumerate}
-        \item 向量
-        \begin{itemize}
-            \item $(\alpha, \beta) = (\beta, \alpha)$
-            \item $(k\alpha, \beta) = (\alpha, k\beta) = k(\alpha, \beta)$
-            \item $(\alpha + \beta, \gamma) = (\alpha, \gamma) + (\beta, \gamma)$
-            \item $(\alpha, \beta + \gamma) = (\alpha, \beta) + (\alpha, \gamma)$
-            \item $(\alpha, \alpha) \ge 0$
-        \end{itemize}
     \end{enumerate}
 
 \end{document}

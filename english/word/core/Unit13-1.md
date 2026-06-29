@@ -45,7 +45,8 @@
         - extensively
             - adv. 广泛地
             - These men wrote and published **extensively**, reaching both New World and Old World audiences, and giving
-              New England an atmosphere of <ins>intellectual earnestness(热衷学术)</ins>.
+              New England an atmosphere of intellectual earnestness.
+                - intellectual earnestness 学术上的严谨认真/思想上的认真态度/对知识和思想的严肃追求
     - extent
         - n. 程度
         - to some extent 在某种程度上/有一点/部分地

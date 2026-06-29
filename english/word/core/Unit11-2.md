@@ -28,22 +28,24 @@
 - n. 学者
 - academic pursuits 学术追求
 - **Academic** inquiry, at least in some fields, may need to become less exclusionary and more holistic.
-- I decided to stay on <ins>the **academic** assembly line</ins>. 我决定继续留在学校体系中深造
+- I decided to stay on the **academic** assembly line.
+    - the academic assembly line 流水线式的教育/流水线式培养人才
 - academically adv. 学术上；学业上
 - academy [əˈkædəmi] n. 学院
-- intellectual [ˌɪntəˈlektʃuəl]
-    - adj. 智力的
-    - n. 知识分子
-    - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New England
-      an atmosphere of <ins>**intellectual** earnestness(热衷学术)</ins>.
-    - intellect [ˈɪntəlekt] n. 智力
+- intellect [ˈɪntəlekt]
+    - n. 智力
+    - intellectual [ˌɪntəˈlektʃuəl]
+        - adj. 智力的
+        - n. 知识分子
+        - These men wrote and published extensively, reaching both New World and Old World audiences, and giving New
+          England an atmosphere of **intellectual** earnestness.
+            - intellectual earnestness 学术上的严谨认真/思想上的认真态度/对知识和思想的严肃追求
 - scholar [ˈskɑːlər]
     - n. 学者
     - Whole new realms of understanding—from gender to race to cultural studies—were opened up as **scholars**
       unpicked the multiplicity of lost societies.
-        - (形容词) + 核心名词 + (of + 名词修饰)
-            - 先翻类别（是什么） → 再翻程度（怎么样）
-            - Whole new realms of understanding 全新的理解
+        - Whole new realms of understanding 全新的理解（adjective + 核心名词 + of + 名词修饰：先翻类别（是什么） →
+          再翻程度（怎么样））
     - scholarly adj. （书、文章、问题、活动等）学术性的
     - scholarship n. 奖学金; 学术（研究）
 
@@ -59,9 +61,13 @@
 - weakness n. 弱点
 - merit [ˈmerɪt]
     - n. 优点；功绩
-    - Vaus says that Science's idea to pass some papers to statisticians "<ins>has some **merit**(有一定道理)</ins>, but
-      a **weakness** is that it relies on <ins>the board of reviewing editors(审稿编辑委员会)</ins> to..."
-      Vaus 说，《科学》杂志打算把一些论文交给统计学家审阅的这个想法有一定道理，但它的一个弱点在于：这种做法依赖于审稿编辑委员会去...
+    - Vaus says that Science's idea to pass some papers to statisticians "has some **merit**, but a **weakness** is that
+      it relies on the board of reviewing editors to..."
+        - have some merit 有一定道理/有一定价值/有可取之处
+        - the board of reviewing editors 审稿编辑委员会
+        - Vaux holds that what science is doing
+          now [[has room for further improvement/is to fail in the foreseeable future]].
+        - in the foreseeable future 在可预见的未来
 - flaw
     - n. 瑕疵
     - flawless
@@ -72,21 +78,27 @@
         - Justice Anthony Kennedy wrote that the previous decisions were **flawed**.
 - downside
     - n. 不利的一面
-    - upside n. 好处; 上边; （糟糕局面的）好的一面; 颠倒着
+    - Opposite: upside n. 好处; 上边; （糟糕局面的）好的一面; 颠倒着
 
 ## cover
 
 - vt. （新闻）报道；包括；足以支付；遮盖
 - n. 封面
-- cover the costs 覆盖成本
-    - == pay
-- cover me 掩护我
 - 词组
     - cover up 遮盖；隐藏
+    - cover the costs 覆盖成本
+- cover me 掩护我
 - The BBC will **cover** all the major games of the tournament.
-- Mass media are included to **cover** *disaster([dɪˈzæstər] n. 不幸)* and deaths.
+    - tournament n. 锦标赛
+- Mass media are included to **cover** disaster and deaths.
+    - disaster [dɪˈzæstər] n. 灾难；不幸
+    - be inclined to do sth. 往往做某事/倾向做某事
+        - == tend to do sth.
+        - == be prone to do sth.
 - It's no surprise that Jennifer Senior’s insightful, *provocative([prəˈvɑːkətɪv] adj. 引人深思的)* magazine **cover**
-  story, "I love My Children, I Hate My Life", is <ins>arousing much chatter(引起大量议论)</ins>.
+  story, "I love My Children, I Hate My Life", is arousing much chatter.
+    - insightful [ˈɪnˌsaɪtfəl] adj. 富有洞察力的
+    - arouse much chatter 引起大量议论
 - I **covered** my exit by claiming "I wanted to spend more time with my family".
 - In those far-off days, it was taken for granted that the critics of major papers would write in detail and at length
   about the events they **covered**.
@@ -94,9 +106,11 @@
     - vt. 发现；发明
     - discovery
         - n. 发现；发明
-        - But it takes *collective(adj. 集体的)* <ins>scrutiny and acceptance</ins> to transform a **discovery** claim
-          into a mature **discovery**.
-            - it takes ... to do ... 做某事需要...
+        - But it takes collective scrutiny and acceptance to transform a **discovery** claim into a mature
+          **discovery**.
+            - collective adj. 集体的；总的
+            - scrutiny [ˈskruːtəni] n. 仔细检查
+            - it takes something to do sth. 做某事需要
 - recovery
     - n. 复苏；康复；恢复
     - economic recovery
@@ -118,7 +132,6 @@
         - Legislative power
         - Senate n. [ˈsenət] 参议院
         - House of *representatives[reprɪ'zentətɪvz]* 众议院
-    - 2013-E1-T4, 2021-E1-T4, 2017-E1-T4, 2010-E2-T4,
 - congressional [kənˈɡreʃənl] adj. 国会的
 - parliament [ˈpɑːrləmənt] n. 议会
 - council [ˈkaʊnsl]
@@ -147,9 +160,9 @@
     - critically [ˈkrɪtɪkli] adv. 极为重要地
 - criticize ['krɪtəˌsaɪz]
     - vt. 批评
-    - It is fair to **criticize** and question the mechanism—that is, the culture of research—
-      <ins>after all(毕竟)</ins>, but it is the prize-givers' money to do with as they please.
-      批评和质疑这种机制是合理的—毕竟，这正是科研文化的体现。但归根结底，这笔钱属于颁奖者，他们有权按自己的意愿使用。
+    - It is fair to **criticize** and question the mechanism—that is, the culture of research—after all, but it is the
+      prize-givers' money to do with as they please.
+        - after all 毕竟
 - critique [krɪˈtik] n. 批判
 - condemn [kənˈdem] vt. 谴责
 - blame [bleɪm]
@@ -164,26 +177,36 @@
 - [ˈprɑːmɪs]
 - vt. 保证
 - n. 承诺 （主观）；潜力，前途
-- (fail to )make a promise 作出承诺
-- (fail to )keep a promise 履行承诺
-- dishonor([dɪs'ɒnə] vt. 拒付) a promise/commitment 未履行承诺
+- 词组
+    - (fail to )make a promise 作出承诺
+    - (fail to )keep a promise 履行承诺
+    - *dishonor([dɪs'ɒnə] vt. 拒付)* a promise/commitment 未履行承诺
 - compromise [ˈkɑːmprəmaɪz]
     - v. 使陷入危险
     - n. 妥协
     - 词组
         - make compromises 做出让步
-    - Works of several historians reveal the *moral([ˈmɔːrəl] n. 道德)* **compromises** made by the nation's early
-      leaders **and** the <ins>*fragile([ˈfrædʒl]) nature*(脆弱的本质)</ins> of the country's infancy.
+    - Works of several historians reveal the moral **compromises** made by the nation's early leaders **and** the
+      *fragile([ˈfrædʒl])* nature of the country's infancy.
+        - moral [ˈmɔːrəl]
+            - adj. 道德的
+            - n. 寓意
+        - fragile [ˈfrædʒl] adj. 脆弱的
+        - fragile nature 脆弱的本质/易受损的特性
 - guarantee
     - vt. 保证
     - n. 保证 （口头或书面，较正式）
 - pledge [pledʒ]
     - v. 承诺；
     - n. 保证 （正式）
+    - Similar: plead [pliːd] v. 恳求；辩护；解释
     - The Government has **pledged** to change the law to introduce a minimum service requirement so that, even when
       strikes occur, services can continue to operate.
-    - He again **pledged** to <ins>forge ahead with(坚定地推进（某事）)</ins> his plans for reform.
+        - introduce v. 引进，引言；介绍
+    - He again **pledged** to forge ahead with his plans for reform.
+        - forge ahead (with sth.) 继续努力前进；坚定地推进（某事）
 - warrant [ˈwɔːrənt]
+    - v. 保证
     - n. 搜查令
     - The court has ruled that police don't violate the Fourth Amendment when they go through the wallet or pocketbook
       of an arrested person without **warrant**.

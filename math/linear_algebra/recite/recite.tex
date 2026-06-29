@@ -6,7 +6,112 @@
 
 \begin{document}
     \pagestyle{empty}
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item $\begin{vmatrix}
+                       a_{11} & a_{12} & \dots  & a_{1n} \\
+                       & a_{22} & \dots  & a_{2n} \\
+                       &        & \ddots & \vdots \\
+                       &        &        & a_{nn}
+            \end{vmatrix}=$
+            \item $\begin{vmatrix}
+                       a_{11}  & \dots & a_{1,n-1} & a_{1n} \\
+                       a_{21} & \dots & a_{2,n-2} & 0      \\
+                       \vdots &        & \vdots    & \vdots \\
+                       a_{n1} & 0     & \dots & 0
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       \mathbf{A} & \mathbf{O}          \\
+                       \mathbf{O} & \mathbf{B}
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       \mathbf{O}          & \mathbf{A} \\
+                       \mathbf{B} & \mathbf{O}
+            \end{vmatrix} =$
+            \item $\begin{bmatrix}
+                       a_1 &     &     \\
+                       & a_2 &     \\
+                       &     & a_3
+            \end{bmatrix}^n =$
+            \item $\begin{bmatrix}
+                       O & B \\
+                       C & O
+            \end{bmatrix}^{-1} =$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{6}
+            \item $\begin{vmatrix}
+                       a_{11} &        &        &        \\
+                       a_{21} & a_{22} &        &        \\
+                       \vdots & \vdots & \ddots &        \\
+                       a_{n1} & a_{n2} & \dots  & a_{nn}
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       0      & \dots & 0         & a_{1n} \\
+                       0      & \dots & a_{2,n-1} & a_{2n} \\
+                       \vdots &       & \vdots    & \vdots \\
+                       a_{n1} & \dots & a_{n,n-1} & a_{nn}
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       \mathbf{A} & *          \\
+                       \mathbf{O} & \mathbf{B}
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       *          & \mathbf{A} \\
+                       \mathbf{B} & \mathbf{O}
+            \end{vmatrix} = $
+            \item $\begin{bmatrix}
+                       a_1 &     &     \\
+                       & a_2 &     \\
+                       &     & a_3
+            \end{bmatrix}^{-1} =$
+            \item $\begin{bmatrix}
+                       B & O \\
+                       O & C
+            \end{bmatrix}^n =$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{12}
+            \item $\begin{vmatrix}
+                       a_{11} &      0  &  \dots      & 0        \\
+                       0 & a_{22} &       \dots  &    0    \\
+                       \vdots & \vdots & \ddots & \vdots       \\
+                       0 & 0 & \dots  & a_{nn}
+            \end{vmatrix}=$
+            \item $\begin{vmatrix}
+                       0      & \dots & 0         & a_{1n} \\
+                       0      & \dots & a_{2,n-1} & 0 \\
+                       \vdots &       & \vdots    & \vdots \\
+                       a_{n1} & \dots & 0 & 0
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       \mathbf{A} & \mathbf{O} \\
+                       *          & \mathbf{B}
+            \end{vmatrix} =$
+            \item $\begin{vmatrix}
+                       \mathbf{O} & \mathbf{A} \\
+                       \mathbf{B} & *
+            \end{vmatrix} =$
+            \item $\begin{bmatrix}
+                       &   & a \\
+                       & b &   \\
+                       c &   &   \\
+            \end{bmatrix}^{-1} =$
+            \item $\begin{bmatrix}
+                       B & O \\
+                       O & C
+            \end{bmatrix}^{-1} =$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
 
+    \vspace{1em}
     \begingroup
     \renewcommand{\arraystretch}{1.8}
     \setlength{\tabcolsep}{2pt}
@@ -45,7 +150,7 @@
             & $|A^T| =$ \\
             \hline
             行列式
-            & \centering\Huge$\diagdown$\arraybackslash
+            &
             & $|A|^{-1} =$
             & $|A|^T =$
             & $||A|| =$ \\
@@ -82,19 +187,61 @@
     \begin{minipage}[t]{0.30\textwidth}
         \begin{enumerate}[leftmargin=*, itemsep=1.1em]
             \item $[E_i(k)]^{-1} =$
-            \item $E_{ij}^{-1} =$
+            \item $r(A^*) =$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{2}
             \item $[E_{ij}(k)]^{-1} =$
-            \item $A^{-1}$与$A^*$关系：
+            \item $|A|$逆序数：
         \end{enumerate}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.30\textwidth}
         \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{4}
+            \item $E_{ij}^{-1} =$
+            \item $\begin{bmatrix}
+                       a & b \\
+                       c & d
+            \end{bmatrix}^{-1} =$
+        \end{enumerate}
+    \end{minipage}
+
+    \begin{enumerate}
+        \setcounter{enumi}{5}
+        \item $A^{-1}$与$A^*$关系：
+        \item 施密特正交化：
+    \end{enumerate}
+
+    \newpage
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item $\begin{vmatrix}
+                       a_1 & b_1 &        &        & &        \\
+                       c_2 & a_2 & b_2    &        & &        \\
+                       & c_3 & a_3    & b_3 & &       \\
+                       &     & \ddots & \ddots & \ddots &\\
+                       &     &        & c_{n-1}& a_{n-1} & b_{n-1} \\
+                       &     &        && c_{n}& a_n
+            \end{vmatrix} =$
         \end{enumerate}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.30\textwidth}
         \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{2}
         \end{enumerate}
     \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{4}
+        \end{enumerate}
+    \end{minipage}
+
+
 \end{document}

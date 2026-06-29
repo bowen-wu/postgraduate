@@ -204,7 +204,7 @@
 - with the rapid increase in economic development happening in developing countries 随着发展中国家的经济快速增长
 - the prosperity of China's/the economy
 - promotes/boosts economy development
-- poomotes/boosts local economic development
+- promotes/boosts local economic development
 
 ## First
 

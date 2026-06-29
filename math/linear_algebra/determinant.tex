@@ -95,14 +95,14 @@
                 \end{vmatrix}
                 = a_{11}a_{22}\dots a_{nn}
             \end{align*}
-            \item 副对角线三角形
+            \item 副对角线三角形（第1列要移动到最后，需要交换$n-1$次）
             \begin{adjustwidth}{-3cm}{0cm}
                 \begin{align*}
                     \begin{vmatrix}
                         a_{11}  & \dots & a_{1,n-1} & a_{1n} \\
                         a_{21} & \dots & a_{2,n-2} & 0      \\
-                        \vdots & \vdots        & \vdots    & \vdots \\
-                        a_{n1} &      & \dots & 0
+                        \vdots &        & \vdots    & \vdots \\
+                        a_{n1} & 0     & \dots & 0
                     \end{vmatrix}
                     = \begin{vmatrix}
                           0      & \dots & 0         & a_{1n} \\
@@ -172,6 +172,17 @@
                 {x_1}^{n-1} & {x_2}^{n-1} & \dots & {x_n}^{n-1} \\
             \end{vmatrix}
             = \prod_{1 \le i < j \le n} (x_{j} - x_{i})
+        \]
+        \item
+        \[
+            D_n =\begin{vmatrix}
+                     a_1 & b_1 &        &        & &        \\
+                     c_2 & a_2 & b_2    &        & &        \\
+                     & c_3 & a_3    & b_3 & &       \\
+                     &     & \ddots & \ddots & \ddots &\\
+                     &     &        & c_{n-1}& a_{n-1} & b_{n-1} \\
+                     &     &        && c_{n}& a_n
+            \end{vmatrix} = a_{n}D_{n-1} - b_{n-1}c_{n}D_{n-2}
         \]
     \end{enumerate}
 

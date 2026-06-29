@@ -1727,11 +1727,10 @@ will find themselves.
 
 ### 思考
 
-本句中的从旬从哪里开始、到哪里结束？
+本句中的从句从哪里开始、到哪里结束？是什么特殊结构的句式？
 
 ### 原句
 
-是什么特殊结构的句式？
 The Constitutional principles that Washington alone has the power to
 "establish a uniform Rule of Naturalization" and that federal laws precede state laws are noncontroversial.
 
