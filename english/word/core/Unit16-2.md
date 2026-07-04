@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## privilege
@@ -101,13 +101,14 @@
 - file
     - vt. 提起（诉讼）；提出（申请）；归档
     - n. 文件夹
-    - file for... 申报...
     - Companies are unlikely to **file** many more patents for human DNA molecules([ˈmɑːlɪkjuːlz] ).
         - be unlikely to do sth. 不太可能做某事
     - Later, more established companies raced to add such patents to their **files**.
         - race to do sth 争先恐后地去做某事/竞相做某事
-    - As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers,
-      <ins>**filed** for<ins> *bankruptcy([ˈbæŋkrʌptsi])*.
+    - As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman
+      Brothers, **filed** for bankruptcy.
+        - bankruptcy [ˈbæŋkrʌptsi] n. 破产
+        - file for... 申报...
 
 ## upset
 

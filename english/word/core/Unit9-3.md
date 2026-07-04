@@ -26,6 +26,7 @@
 - [ˈmɔːrəl]
 - adj. 道德的
 - n. 寓意
+- Similar: ethical adj. 道德的；伦理的；合乎情理的
 - In some states, for example, jury duty was limited to persons of supposedly superior intelligence, education, and
   **moral** character.
     - be limited to sth. 仅限于.../局限于.../被限制在...

@@ -29,3 +29,4 @@
 \contentsline {subsection}{\numberline {4.1}指令的寻址方式}{13}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}指令寻址}{13}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}数据寻址}{13}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}程序的机器级代码表示}{15}{subsection.4.2}%

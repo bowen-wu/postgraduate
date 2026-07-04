@@ -1847,9 +1847,13 @@ much a modern textile mill has been automated: The average mill has only two emp
 
 - When women do break through to the summit of corporate power—as, for example, Sheryl Sandberg recently did at
   Facebook—they attract massive attention precisely because they remain the exception to the rule.
-    - summit n. 顶峰
+    - summit
+        - n. 顶峰
+        - Similar: commit vt. 进行（自杀）；承诺
     - the summit of ...的顶峰
-    - exception [ɪkˈsepʃn] n. 例外
+    - exception [ɪkˈsepʃn] 
+      - n. 例外
+      - Similar: expectation n. 期望
     - precisely [prɪˈsaɪsli]
         - adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
         - == exactly adv. 准确地；（要求得到更多信息）究竟，到底
@@ -3059,7 +3063,7 @@ regulations and require auto companies to bring their vehicles into compliance.
 ### 原句
 
 Now that members of Generation Z are graduating college this spring the most commonly-accepted definition says this
-generation was born after 1995, give or take a yearthe attention has been rising steadily in recent weeks.
+generation was born after 1995, give or take a year the attention has been rising steadily in recent weeks.
 
 ## 213
 

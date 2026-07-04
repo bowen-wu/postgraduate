@@ -145,8 +145,9 @@
     - ...both figures seem to rise *unstoppably(adv. 无法（使）停下来地)* despite increasingly **desperate** efforts to
       change them.
         - desperate efforts 不顾一切的努力
-    - Nevertheless, the <ins>affordable housing(经济适用房)</ins> situation is **desperate**. Waiting lists increase all
-      the time and we are simply not building enough new homes.
+    - Nevertheless, the affordable housing situation is **desperate**. Waiting lists increase all the time and we are
+      simply not building enough new homes.
+        - affordable housing 经济适用房
     - If I was poor and **desperate**, I might <ins>commit crimes(犯罪)</ins> to feed my family.
 - thrive [θraɪv]
     - vi. 繁荣，兴旺

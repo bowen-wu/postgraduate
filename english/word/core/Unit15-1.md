@@ -79,6 +79,7 @@
     - except for 除了...以外
 - exception [ɪkˈsepʃn]
     - n. 例外
+    - Similar: expectation n. 期望
     - 词组
         - with the exception of 除了...以外
     - exceptional

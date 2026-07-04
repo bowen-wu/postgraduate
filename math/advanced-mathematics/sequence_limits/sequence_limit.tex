@@ -239,8 +239,13 @@
                 \[
                     \frac{1}{1+x}<\ln\!\left(1+\frac1x\right)<\frac1x,
                     \quad\text{或}\quad
-                    \frac{x}{1+x}<\ln(1+x)<x.
+                    \frac{x}{1+x}<\ln(1+x)<x \quad \\
                 \]
+                \begin{analysisbox}
+                    \[
+                        \ln\!\left(1+\frac1x\right) = \ln\!\left(1+\frac1x\right) - \ln 1 = \ln (1+t)\big|_0^{\frac{1}{x}} = \int_0^{\frac{1}{x}} \frac{1}{1+t}\,\mathrm{d}t
+                    \]
+                \end{analysisbox}
             \end{circlenum}
             \item \textbf{重要极限的放缩}：若$a_1, a_2, \cdots, a_m \ge 0$，则
             \[

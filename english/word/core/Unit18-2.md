@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## monarch
@@ -127,6 +127,7 @@
 ## summit
 
 - n. 顶峰
+- Similar: commit vt. 进行（自杀）；承诺
 - peak
     - vt. 达到最高水平
     - n. 高峰；山峰；尖形
