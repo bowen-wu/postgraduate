@@ -72,7 +72,6 @@ export function renderCompletionScreen(ui, deps) {
       </div>
       <div class="completion-buttons" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; padding-top: 0.5rem;">
         <button class="btn-primary" data-action="restart" style="font-size: 1rem; padding: 0.6rem 1.5rem;">🔄 Restart</button>
-        <button class="btn-ghost" data-action="clear-data-reload" style="font-size: 1rem; padding: 0.6rem 1.5rem;">🗑️ Clear Progress</button>
       </div>
     </div>
   `;

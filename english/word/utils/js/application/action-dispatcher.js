@@ -19,7 +19,7 @@ export function dispatchAction(actionEl, deps) {
     'toggle-autoplay': () => app.toggleAutoPlay(),
     'toggle-stats': () => app.toggleStats(),
     'refresh-file-list': () => app.refreshFileList(),
-    'reset-data': () => app.resetData(),
+    'reset-data': () => app.restart(),
     'prev-card': () => {
       app.prevCard();
       resetCardLocalState();
@@ -38,7 +38,6 @@ export function dispatchAction(actionEl, deps) {
     },
     'jump-to-original': () => actionEl.dataset.index && app.jumpToOriginal(Number(actionEl.dataset.index)),
     restart: () => app.restart(),
-    'clear-data-reload': () => app.clearDataAndReload(),
     'reload-page': () => location.reload(),
     'show-sentence-translation': () => app.showSentenceTranslation(),
     'reveal-sentence-answer': () => app.revealSentenceAnswer(actionEl.dataset.claimedKnown !== 'false'),
