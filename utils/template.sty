@@ -26,6 +26,14 @@
 \usepackage{extarrows}
 \usepackage{changepage}
 \usepackage{multirow}
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    frame=single,
+    breaklines=true,
+    columns=fullflexible
+}
 
 \pgfplotsset{compat=1.18}
 \geometry{left=1.8cm, right=1.8cm, top=1.5cm, bottom=1.8cm}
@@ -53,6 +61,7 @@
 \newcommand{\dint}{\displaystyle\int}
 \newcommand{\diint}{\displaystyle\iint\limits}
 \newcommand{\dsum}{\displaystyle\sum}
+%\newcommand{\code}[1]{\texttt{#1}}
 
 % 抽离颜色和尺寸参数
 \newcommand{\analysisTitleColor}{green!50!black}
@@ -60,6 +69,18 @@
 \newcommand{\analysisBoxRule}{0.8pt}
 \newcommand{\analysisArc}{3pt}
 \newcommand{\analysisPadding}{6pt}
+
+\newtcbox{\code}{
+    on line,
+    boxrule=0.3pt,
+    colback=gray!10,
+    colframe=gray!50,
+    arc=2pt,
+    left=2pt,
+    right=2pt,
+    top=1pt,
+    bottom=1pt
+}
 
 % 定义 tcolorbox
 \newtcolorbox{analysisbox}[1][]{

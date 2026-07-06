@@ -239,7 +239,7 @@
 - This event is going to be held in the Students' Recreation Center from 10:00 am to 4:00 pm on May 1, 2025. Could you
   please help me to write the letters of invitation to all the craftsmen? Looking forward to your support.
 
-## VM-10
+## WM-10
 
 - On behalf of the Students' Union of Beijing Foreign Studies University, I would like to extend our heartfelt welcome
   to all the overseas students who will study in our university.
@@ -251,7 +251,7 @@
 - All in all, although there is a lot of pressure, the time you spend on our campus will be worthwhile and enhance your
   whole life. Hope you like it here.
 
-## VM-11
+## WM-11
 
 - As you know, I am extremely keen on the ancient Chinese novel-Romance of the Three Kingdoms. Now I am planning to
   direct a short play revised from it.
@@ -261,7 +261,7 @@
 - Since you excel in acting, I cordially invite you to participate in the play and act as the leading hero, Zhuge Liang.
   I'm sure you will be quite interested in it. Looking forward to your reply.
 
-## VM-12
+## WM-12
 
 - I am looking forward to my travel to the United States and visiting you in Harvard University.
 - Unfortunately, I have recently been diagnosed with a serious ear infection which will require surgery on the same day
@@ -271,7 +271,7 @@
 - Please excuse me for not being able to inform you of my situation sooner. Your prompt attention to my suggestion would
   be highly appreciated.
 
-## VM-13
+## WM-13
 
 - I bought an electronic dictionary from your online store on January 1st, but after using it for a short period of
   time, I found it has some problems.
@@ -281,7 +281,7 @@
 - Therefore, I would like either to change to another model that works better or a full refund. Your help is greatly
   appreciated.
 
-## VM-14
+## WM-14
 
 - I'm glad to hear from you. How have you been these days? Since you're going to present an oral report on an ancient
   Chinese scientist, Bi Sheng is an ideal candidate.
@@ -292,7 +292,7 @@
   science after the long medieval night and the emergence of the Renaissance.<br>
 - I hope you find the above recommendations useful. Looking forward to your successful presentation.
 
-## VM-15
+## WM-15
 
 - On behalf of the "Talents" English Speech Contest committee, I am writing to invite you to serve as one of our new
   judges.
@@ -303,7 +303,7 @@
   and competitor.
 - Once again, we sincerely hope you can be the judge for our competition.
 
-## VM-16
+## WM-16
 
 - We are greatly honored to welcome you as a guest professor at our university. I would like to recommend two scenic
   spots in our city: the Palace Museum and the Great Wall.
@@ -314,7 +314,7 @@
   World Cultural Heritage site in 1987.
 - I hope you will have the opportunity to visit one or both of these spots. We wish you an enjoyable stay in our city.
 
-## VM-17
+## WM-17
 
 - I am very grateful to have been employed by you for the past two months as an editor for your magazine Design &
   Fashions. I appreciate the opportunity of having worked here with you and my other colleagues. The experiences I had
@@ -324,7 +324,7 @@
   pursue other opportunities that may conform better to my educational background.
 - Please accept my sincere apologies for any inconveniences my leaving may cause.
 
-## VM-18
+## WM-18
 
 - The pie chart clearly illustrates the purposes of students travelling in a certain university. As is reflected by the
   diagram, 37 percent of college students travel in order to appreciate the scenery. Next comes the aim of relieving
@@ -337,7 +337,7 @@
 - Taking all these factors into consideration, we may predict that with the quickening pace and ever-increasing pressure
   of campus life, the number of university students touring will keep growing in the forthcoming decade.
 
-## VM-19
+## WM-19
 
 - The column chart above clearly shows senior citizens' major daily leisure activities in a certain community. Among the
   five categories, the percentages of watching television and taking a stroll are the largest, accounting for 90.8% and
@@ -352,7 +352,7 @@
   promote both their physical and mental fitness. It can contribute to a higher quality of life and well-being for the
   aged.
 
-## VM-20
+## WM-20
 
 - It is symbolically illustrated in the cartoon that a striker is preparing to shoot at the goal defended by a
   goalkeeper on a footer field. In the goalkeeper's mind, he is so much smaller than he actually is that guarding the

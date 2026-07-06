@@ -48,17 +48,17 @@ function parseIndentedLine(rawLine) {
   };
 }
 
-function splitSentenceLineToCards(line, wmId, unitPath, index) {
-  const text = String(line?.cleanText || '').trim();
-  const en = String(line?.en || '').trim() || text;
-  const cn = String(line?.cn || '').trim();
-  if (!en) return null;
+function buildWmBlockCard(wm, wmId, unitPath) {
+  if (!wm || !Array.isArray(wm.items)) return null;
+
+  const lines = wm.items.filter((item) => item && item.type === 'sentence-line');
+  if (lines.length === 0) return null;
 
   return {
-    id: `wm_${wmId}_${unitPath.replace(/[\/.]/g, '_')}_${index}`,
-    word: en,
-    type: 'sentence',
-    items: [{ type: 'sentence', en, cn }]
+    id: `wm_${wmId}_${unitPath.replace(/[\/.]/g, '_')}`,
+    word: wmId,
+    type: 'block',
+    items: [{ type: 'meta' }, ...lines]
   };
 }
 
@@ -147,16 +147,13 @@ export async function buildWmCardsForUnit(unitPath) {
   if (!wmId) return [];
 
   const wm = wmMap[wmId];
-  if (!wm || !Array.isArray(wm.items) || wm.items.length <= 1) return [];
-
-  return wm.items
-    .filter((item) => item && item.type === 'sentence-line')
-    .map((item, index) => splitSentenceLineToCards(item, wmId, unitPath, index))
-    .filter(Boolean);
+  const card = buildWmBlockCard(wm, wmId, unitPath);
+  return card ? [card] : [];
 }
 
 export const __testables = {
   parseWmSectionsFromMarkdown,
   getOrderedWmIds,
-  resolveWmIdForUnitPath
+  resolveWmIdForUnitPath,
+  buildWmBlockCard
 };

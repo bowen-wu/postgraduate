@@ -67,7 +67,8 @@
     - rejection n. 拒绝
 - deny [dɪˈnaɪ]
     - vt. 否认；拒绝
-    - == reject == refuse
+    - == reject vt. 拒绝 
+    - == refuse v. 拒绝
     - denial [dɪˈnaɪəl] n. 否认，拒绝
 
 ## vary

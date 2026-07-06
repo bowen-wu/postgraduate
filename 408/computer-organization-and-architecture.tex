@@ -162,9 +162,9 @@
 
     \begin{enumerate}
         \item 与（$\cdot$），或（$+$），$\overline{\text{非}}$，异或（$\oplus$，输入相异则为1）
-        \item 加法：补码直接相加。溢出：正 + 正 = 负（上溢）、负 + 负 = 正（下溢）
-        \item 减法：被减数与减数的负数补码相加。溢出：负 - 正 = 正、正 - 负 = 负
-        \item 乘法：左移一位乘以2；加法。溢出判断
+        \item 加法：补码直接相加。{\color{red}{溢出}}：正 + 正 = 负（上溢）、负 + 负 = 正（下溢）
+        \item 减法：被减数与减数的负数补码相加。{\color{red}{溢出}}：负 - 正 = 正、正 - 负 = 负
+        \item 乘法：左移一位乘以2；加法。{\color{red}{溢出}}判断
         \begin{itemize}
             \item 有符号数：高X位的每一位都相同，且都等于低X位的符号，则表示{\color{red}{不溢出}}，否则表示溢出
             \item 无符号数：高X位全为0，表示{\color{red}{不溢出}}，否则表示溢出
@@ -676,5 +676,75 @@
 
     \includegraphics[width=\linewidth]{\subfix{../assets/408/register.png}}
 
+    \subsubsection{常用指令}
+
+    \begin{enumerate}
+        \item X86指令集不允许两个操作数同时来自主存
+        \item \textbf{\code{push}指令}：将操作数压入内存的栈，常用于函数调用
+        \begin{itemize}
+            \item X86默认以$4B$为单位$\Rightarrow$栈中元素固定为$32bit$
+            \item 栈增长方向与内存地址增长方向相反。栈从高地址向低地址增长。即每压入一个元素，\texttt{ESP}都减小
+            \item \texttt{ESP}是栈顶，入栈前先将\texttt{ESP}值减4，然后将操作数压入\texttt{ESP}指示的地址
+        \end{itemize}
+        \item \textbf{\code{pop}指令}：出栈。出栈前先将\texttt{ESP}指示的地址中的内容出栈，然后将\texttt{ESP}的值加4
+        \item \leavevmode
+        \begin{lstlisting}[language={[x86masm]Assembler}]
+            sub esp, 12 # 栈顶指针 - 12
+            add esp, 8 # 栈顶指针 + 8
+        \end{lstlisting}
+        \item \textbf{\code{imul}指令}：有符号整数乘法指令。第一个操作数必须为寄存器
+        \item \textbf{\code{idiv}指令}：有符号证书除法指令，只有一个操作数，即除数，被除数是\texttt{edx:eax}中的内容（共$64bit$），操作结果有两部分：商和余数，商送到\texttt{eax}，余数则送到\texttt{edx}
+        \item \textbf{\code{xor}指令}：逻辑异或操作指令（e{\color{red}{x}}clusive {\color{red}{or}}）
+        \item \textbf{\code{shl}指令}：逻辑左移指令（shift left）
+        \item \textbf{\code{shr}指令}：逻辑右移指令（shift right）
+        \item \textbf{\code{jcondition}指令}：条件转移指令，依据CPU状态字中的一系列条件状态转移
+        \begin{lstlisting}[language={[x86masm]Assembler}]
+            je <label> # jump when equal
+            jz <label> # jump when last result was zero
+            jne <label> # jump when not equal
+            jg <label> # jump when greater than
+            jge <label> # jump when greater than or equal to
+            jl <label> # jump when less than
+            jle <label> # jump when less than or equal to
+        \end{lstlisting}
+        \item \textbf{\code{cmp}指令}：用于比较两个操作数的值，功能相当于\code{sub}指令，不保存操作结果，进根据运算结果设置CPU状态字中的条件码，与\code{jcondition}指令搭配使用
+        \item \textbf{\code{test}指令}：对两个操作数进行逐位与运算，功能相当于\code{and}指令，不保存操作结果，进根据运算结果设置CPU状态字中的条件码，与\code{jcondition}指令搭配使用
+        \item \textbf{\code{call}指令}：将下一条指令的地址（返回地址）入栈（压栈保存，在函数的栈帧顶部），然后无条件转移到由标签指示的指令，返回值放置在\texttt{EAX}中
+        \item \textbf{\code{ret}指令}：实现子程序的返回机制，弹出栈中保存的指令地址，然后无条件转移到保存的指令地址
+        \item \textbf{\code{enter}指令}：等价于
+        \begin{lstlisting}[language={[x86masm]Assembler}]
+            push ebp # 保存上一层函数的栈帧基址，即EBP旧值
+            mov ebp, esp # 设置当前函数的栈帧基址，即EBP新值
+        \end{lstlisting}
+        \item \textbf{\code{leave}指令}：等价于
+        \begin{lstlisting}[language={[x86masm]Assembler}]
+            mov esp, ebp
+            pop ebp
+        \end{lstlisting}
+        \item 栈帧
+        \begin{itemize}
+            \item 栈帧最底部 $\Rightarrow$ 上一层栈帧地址 $\Rightarrow$ \texttt{EBP}在上一层栈帧中的旧值
+            \item \texttt{EBP}
+            \item 局部变量：C语言中越靠前定义的局部变量越靠近栈顶
+            \item GCC为保证数据的严格对齐而规定每个函数的栈帧大小必须是$16B$的倍数
+            \item 调用参数：参数列表中越靠前的参数越靠近栈顶。可以通过\code{R[ebp] + 8}或\code{R[ebp] + 12}获取实参
+            \item 栈帧最顶部 $\Rightarrow$ 返回地址
+            \item \texttt{ESP}
+        \end{itemize}
+        \item
+        \begin{analysisbox}
+            \begin{lstlisting}[language={[x86masm]Assembler}]
+                      804846a    39 c2    cmp dword ptr edx, eax
+                      804846c    7e 0d    jle xxxxxxxx
+            \end{lstlisting}
+            读出的信息：
+            \begin{itemize}
+                \item \code{39 c2} $\Rightarrow$ 每条指令占$2B$
+                \item \code{804846c - 804846a = 2} 等于第一条指令长度 $\Rightarrow$ 按字节编址
+                \item \code{jle} 偏移量为$0dH$
+                \item \code{jle} 采用 PC（EIP）相对寻址，若跳转，则目标地址 = 下一条指令地址 + 偏移量 = 804846C + 2 + 0DH = 804847BH
+            \end{itemize}
+        \end{analysisbox}
+    \end{enumerate}
 
 \end{document}
