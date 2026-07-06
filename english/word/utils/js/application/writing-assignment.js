@@ -6,7 +6,7 @@ const WRITING_POOL = [
   'W041', 'W042', 'W043'
 ];
 
-const UNIT_FILES = [
+export const UNIT_FILES = [
   'core/Unit1-1.md', 'core/Unit1-2.md', 'core/Unit1-3.md', 'core/Unit1-4.md',
   'core/Unit2-1.md', 'core/Unit2-2.md', 'core/Unit2-3.md',
   'core/Unit3-1.md', 'core/Unit3-2.md', 'core/Unit3-3.md',
@@ -58,12 +58,6 @@ export function getComplexSentenceIdsForUnitPath(path) {
   return UNIT_COMPLEX_SENTENCE_MAP[path] || [];
 }
 
-const WM_POOL = Array.from({ length: 10 }, (_, i) => `WM-${i}`);
-
-export const UNIT_WM_MAP = Object.fromEntries(
-  UNIT_FILES.map((path, index) => [path, WM_POOL[index % WM_POOL.length]])
-);
-
-export function getWmIdForUnitPath(path) {
-  return UNIT_WM_MAP[path] || null;
+export function getUnitIndexForPath(path) {
+  return UNIT_FILES.indexOf(path);
 }

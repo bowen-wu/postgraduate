@@ -1,4 +1,4 @@
-import { getWmIdForUnitPath } from '../application/writing-assignment.js';
+import { getUnitIndexForPath } from '../application/writing-assignment.js';
 
 const RAW_WM_URL = 'https://raw.githubusercontent.com/bowen-wu/postgraduate/refs/heads/master/english/write/materials.md';
 
@@ -60,6 +60,23 @@ function splitSentenceLineToCards(line, wmId, unitPath, index) {
     type: 'sentence',
     items: [{ type: 'sentence', en, cn }]
   };
+}
+
+function compareWmIds(a, b) {
+  const aNum = Number(String(a || '').replace(/^WM-/, ''));
+  const bNum = Number(String(b || '').replace(/^WM-/, ''));
+  return aNum - bNum;
+}
+
+export function getOrderedWmIds(wmMap) {
+  return Object.keys(wmMap || {}).sort(compareWmIds);
+}
+
+export function resolveWmIdForUnitPath(unitPath, wmIds) {
+  if (!Array.isArray(wmIds) || wmIds.length === 0) return null;
+  const unitIndex = getUnitIndexForPath(unitPath);
+  if (unitIndex < 0) return null;
+  return wmIds[unitIndex % wmIds.length] || null;
 }
 
 export function parseWmSectionsFromMarkdown(markdownText) {
@@ -124,10 +141,11 @@ async function loadWmMap() {
 }
 
 export async function buildWmCardsForUnit(unitPath) {
-  const wmId = getWmIdForUnitPath(unitPath);
+  const wmMap = await loadWmMap();
+  const wmIds = getOrderedWmIds(wmMap);
+  const wmId = resolveWmIdForUnitPath(unitPath, wmIds);
   if (!wmId) return [];
 
-  const wmMap = await loadWmMap();
   const wm = wmMap[wmId];
   if (!wm || !Array.isArray(wm.items) || wm.items.length <= 1) return [];
 
@@ -138,5 +156,7 @@ export async function buildWmCardsForUnit(unitPath) {
 }
 
 export const __testables = {
-  parseWmSectionsFromMarkdown
+  parseWmSectionsFromMarkdown,
+  getOrderedWmIds,
+  resolveWmIdForUnitPath
 };
