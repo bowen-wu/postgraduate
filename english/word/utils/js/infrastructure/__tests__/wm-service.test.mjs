@@ -33,21 +33,24 @@ test('resolveWmIdForUnitPath maps units by actual WM count instead of a hardcode
   assert.equal(__testables.resolveWmIdForUnitPath('core/Unit7-3.md', wmIds), 'WM-0');
 });
 
-test('buildWmBlockCard keeps one WM section as a single card for one unit', () => {
-  const wm = {
-    id: 'WM-19',
-    items: [
-      { type: 'meta', cn: 'WM-19' },
-      { type: 'sentence-line', cleanText: 'line 1', en: 'line 1', cn: '', audioText: 'line 1' },
-      { type: 'sentence-line', cleanText: 'line 2', en: 'line 2', cn: '', audioText: 'line 2' }
-    ]
-  };
+test('splitSentenceLineToCards keeps WM content split into sentence cards', () => {
+  const first = __testables.splitSentenceLineToCards(
+    { type: 'sentence-line', cleanText: 'line 1 中文1', en: 'line 1', cn: '中文1', audioText: 'line 1' },
+    'WM-19',
+    'core/Unit7-1.md',
+    0
+  );
+  const second = __testables.splitSentenceLineToCards(
+    { type: 'sentence-line', cleanText: 'line 2', en: 'line 2', cn: '', audioText: 'line 2' },
+    'WM-19',
+    'core/Unit7-1.md',
+    1
+  );
 
-  const card = __testables.buildWmBlockCard(wm, 'WM-19', 'core/Unit7-1.md');
-
-  assert.equal(card.type, 'block');
-  assert.equal(card.word, 'WM-19');
-  assert.equal(card.items.length, 3);
-  assert.equal(card.items[1].en, 'line 1');
-  assert.equal(card.items[2].en, 'line 2');
+  assert.equal(first.type, 'sentence');
+  assert.equal(first.word, 'line 1');
+  assert.deepEqual(first.items, [{ type: 'sentence', en: 'line 1', cn: '中文1' }]);
+  assert.equal(second.type, 'sentence');
+  assert.equal(second.word, 'line 2');
+  assert.deepEqual(second.items, [{ type: 'sentence', en: 'line 2', cn: '' }]);
 });
