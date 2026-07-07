@@ -1,0 +1,258 @@
+\documentclass[./book.tex]{subfiles}
+
+\begin{document}
+
+    \section{数据的表示和运算}
+
+    \subsection{定点数的编码表示}
+    \begin{enumerate}
+        \item 正数：原码 == 反码 == 补码
+        \item 负数
+        \begin{itemize}
+            \item 原码 $\Leftrightarrow$ 反码
+            \begin{circlenum}
+                \item 符号位保留，按位取反，末位加1
+                \item 符号位保留，最右1及右边保留，左边取反
+            \end{circlenum}
+            \item $[x]_{\text{补}} \Rightarrow [-x]_{\text{补}}$
+            \begin{circlenum}
+                \item 按位取反，末位加1
+                \item 最右1及右边保留，左边取反
+            \end{circlenum}
+        \end{itemize}
+        \item 移码：将补码的符号位取反
+        \item 机器数 $\Rightarrow$ 真值
+        \begin{itemize}
+            \item 权值法
+            \begin{circlenum}
+                \item 8位补码：$1111 0110 \Rightarrow -2^7 + 2^6 + 2^5 + 2^4 + 2^2 + 2^1 = -10$
+                \item 16位补码：$8009H = 1000 0000 0000 1001 \Rightarrow -2^{15} + 2^3 + 2^0 = -32759$
+                \item 32位补码：$FFFF 8009H$前面全是$F$，说明：$8009H$被符号扩展到了32位，所以真值和$8009H$相同
+            \end{circlenum}
+            \item 关键数
+            \begin{circlenum}
+                \item ${\color{red}{8000H = -32768}}, 8001H = -32767, 8002H = -32766$
+                \item $7FFFH = 32767$
+                \item ${\color{red}{FFFFH = -1}}, FFFEH = -2, FFFCH = -4$
+            \end{circlenum}
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{整数的表示}
+
+    \begin{enumerate}
+        \item 计算机中的有符号整数都用{\color{red}{补码}}表示，所以$n$位有符号整数的表示范围${\color{red}{-2^{n-1} \sim 2^{n-1} - 1}}$
+    \end{enumerate}
+
+    \subsubsection{C语言中的整型数据类型}
+
+    \begin{enumerate}
+        \item $short$或$short \, int$: 16bit
+        \item 整型$int$: 32bit，真值范围：$[-2^{31} \sim 2^{31}-1] = [-2.147483648*10^{9} \sim 2.147483647 * 10^{9}]$
+        \item $long$或$long \,int$: 32位机器中32位，64位机器中64位
+        \item 字符型$char$: 8bit
+    \end{enumerate}
+
+    \subsubsection{不同字长整数之间的转换}
+
+    \begin{enumerate}
+        \item 大字长$\Rightarrow$小字长：高位部分直接截断，低位部分直接赋值
+        \item 小字长$\Rightarrow$大字长：高位扩展
+        \begin{itemize}
+            \item 无符号整数：\textbf{零扩展}
+            \item 有符号整数：\textbf{符号扩展}。{\color{red}{符号扩展前后真值保持不变}}
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{运算方法}
+
+    \begin{enumerate}
+        \item 与（$\cdot$），或（$+$），$\overline{\text{非}}$，异或（$\oplus$，输入相异则为1）
+        \item 加法：补码直接相加。{\color{red}{溢出}}：正 + 正 = 负（上溢）、负 + 负 = 正（下溢）
+        \item 减法：被减数与减数的负数补码相加。{\color{red}{溢出}}：负 - 正 = 正、正 - 负 = 负
+        \item 乘法：左移一位乘以2；加法。{\color{red}{溢出}}判断
+        \begin{itemize}
+            \item 有符号数：高X位的每一位都相同，且都等于低X位的符号，则表示{\color{red}{不溢出}}，否则表示溢出
+            \item 无符号数：高X位全为0，表示{\color{red}{不溢出}}，否则表示溢出
+        \end{itemize}
+        \item 除法：右移一位除以2；减法。
+        \begin{itemize}
+            \item 溢出判断：若是$2n$位除以$n$位的无符号数，商的位数为$n + 1$位，当第一次试商为{\color{red}{1}}时，则表示结果{\color{red}{溢出}}
+            \item 若是两个32位$int$型整数相除，则除了$\dfrac{\textbf{绝对值最大的负数}}{-1}$会溢出，其余情况都不会溢出
+        \end{itemize}
+        \item 无符号数和有符号数一起参与运算时，计算机按\textbf{无符号数}来解释最终的执行结果
+    \end{enumerate}
+
+    \subsubsection{移位运算}
+
+    \begin{enumerate}
+        \item 逻辑移位$\Rightarrow$无符号整数
+        \begin{itemize}
+            \item 左移高位移出，低位补0
+            \item 右移低位移出，高位补0
+            \item {\color{red}溢出}：高位$1$移出，发生溢出
+            \item {\color{red}丢失精度}：低位$1$移出，丢失精度
+        \end{itemize}
+        \item 算术移位$\Rightarrow$有符号整数
+        \begin{itemize}
+            \item 左移高位移出，低位补0
+            \item 右移低位移出，高位补{\color{red}符号位}
+            \item {\color{red}溢出}：左移前后的符号位不同，发生溢出
+            \item {\color{red}丢失精度}：低位$1$移出，丢失精度
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{标志位}
+
+    \begin{enumerate}
+        \item 零标志ZF：$ZF = 1$表示结果为0
+        \item 溢出标志OF：判断{\color{blue}{有符号数}}，$OF = C_n\oplus C_{n-1}$（符号位进位与最高位进位的异或结果）
+        \item 符号标志SF：表示结果的符号
+        \item 进/错位标志CF：表示{\color{blue}{无符号数}}运算时的进位/借位
+        \begin{itemize}
+            \item 加法：$CF = 1$结果溢出。最高位是否产生进位
+            \item 减法：$CF = 1$表示有借位，即不够减
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{浮点数的表示}
+
+    \subsubsection{理论浮点数}
+
+    \begin{enumerate}
+        \item 原码尾数规格化
+        \begin{itemize}
+            \item 正数：$0.1xxx$
+            \item 负数：$1.1xxx$
+        \end{itemize}
+        \item {\color{red}{补码}}尾数规格化：符号位与最高数值位必须相反。
+        \begin{itemize}
+            \item $+0.75 \Rightarrow 0.11$
+            \item $-0.75 \Rightarrow 1.01$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{IEEE 754标准}
+    \begingroup
+    \renewcommand{\arraystretch}{1.8}
+    \setlength{\tabcolsep}{2pt}
+    \footnotesize
+    \centering
+    \resizebox{1\textwidth}{!}{%
+        \begin{tabular}{|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{4cm}|
+                >{\centering\arraybackslash}m{4cm}|
+        }
+            \hline
+            \multicolumn{2}{|c|}{} & 单精度  & 双精度                                              \\
+            \hline
+            \multicolumn{2}{|c|}{符号$s$}
+            & 1bit
+            & 1bit \\
+            \hline
+            \multicolumn{2}{|c|}{阶码$e$}
+            & $8bit(\text{范围：}[1, 254])$
+            & $11bit(\text{范围：}[1, 2046])$ \\
+            \hline
+            \multicolumn{2}{|c|}{尾数$f$（尾数有隐藏位1）}
+            & $23bit$
+            & $52bit$ \\
+            \hline
+            \multicolumn{2}{|c|}{总位数}
+            & $32bit$（原码）
+            & $64bit$（原码） \\
+            \hline
+            \multicolumn{2}{|c|}{偏置值}
+            & $127(7FH)$
+            & $1023(3FFH)$ \\
+            \hline
+            \multicolumn{2}{|c|}{指数}
+            & \multicolumn{2}{c|}{阶码真值 + 偏置值，后按无符号整数规则转换} \\
+            \hline
+            \multicolumn{2}{|c|}{真值}
+            & $(-1)^s\times 1.f \times 2^{e - 127}$
+            & $(-1)^s\times 1.f \times 2^{e - 1023}$ \\
+            \hline
+            \multicolumn{2}{|c|}{最小值}
+            & $e = 1, f = 0 \Rightarrow 1.0 * 2^{1-127} = 2^{-126}$
+            & $e = 1, f = 0 \Rightarrow 1.0 * 2^{1-1023} = 2^{-1022}$ \\
+            \hline
+            \multicolumn{2}{|c|}{最大值}
+            & $e = 254, f= .111\cdots \Rightarrow 1.111\cdots1 * 2^{254-127} = 2^{127}*(2 - 2^{-23})$
+            & $e = 2046, f= .111\cdots \Rightarrow 1.111\cdots1 * 2^{2046-127} = 2^{1023}*(2 - 2^{-52})$ \\
+            \hline
+            \multirow{2}{*}{阶码全1}
+            & 尾数全0 & \multicolumn{2}{c|}{$\pm \infty$}                \\
+            \cline{2-4}
+            & 尾数非0 & \multicolumn{2}{c|}{$NaN$}                       \\
+            \hline
+            \multirow{2}{*}{阶码全0}
+            & 尾数全0 & \multicolumn{2}{c|}{$\pm 0$}                     \\
+            \cline{2-4}
+            & 尾数非0 & \multicolumn{2}{c|}{非规格化数（{\color{red}{隐藏位为0}}）} \\
+            \hline
+            \multicolumn{2}{|c|}{判断溢出}
+            & \multicolumn{2}{c|}{规格化后阶码超出所能表示的范围时，发生溢出} \\
+            \hline
+        \end{tabular}%
+    }
+    \endgroup
+
+    \begin{enumerate}
+        \item 真值$\Rightarrow$IEEE 754浮点数
+        \begin{circlenum}
+            \item 确定符号位
+            \item 真值转化为二进制
+            \item 规格化确定尾数和阶码真值
+            \begin{itemize}
+                \item 左规：尾数每左移一位，阶码减1
+                \item 右规：尾数每右移一位，阶码加1
+            \end{itemize}
+            \item 阶码真值 + 偏置值，后按无符号整数规则转换
+        \end{circlenum}
+    \end{enumerate}
+
+    \subsubsection{加减运算}
+
+    \begin{enumerate}
+        \item 对阶：使两个操作数的小数点对齐
+        \begin{itemize}
+            \item {\color{customgreen}{小阶码向大阶码看齐}}
+            \item IEEE 规定右移出的$bit$至少额外保留3位
+        \end{itemize}
+        \item 尾数加减
+        \item 尾数规格化
+        \item 舍入
+        \begin{itemize}
+            \item 就近舍入：0舍1入。特殊情况：3个舍弃位是${\color{red}{100}}$
+            \begin{circlenum}
+                \item $1 + 23bit$尾数末位$0 \Rightarrow$截断
+                \item $1 + 23bit$尾数末位$1 \Rightarrow$截断多余位，并末位加1
+            \end{circlenum}
+            \item 场景
+            \begin{circlenum}
+                \item 对阶
+                \item 右规格化
+            \end{circlenum}
+        \end{itemize}
+        \item 溢出判断
+        \begin{itemize}
+            \item 一个正指数超过了最大允许值（127或1023）$\Rightarrow$指数上溢（阶码$1111 1111$），将尾数强制保存为全0
+            \item 一个负指数超过了最小允许值（-149或-1074）$\Rightarrow$指数下溢（若当前阶码$0000 0001$，尾数仍需左规，直接将阶码置为全0，并且尾数不移位）
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{C语言中的浮点数类型}
+
+    \begin{enumerate}
+        \item 不同类型数的混合运算，遵循的原则是{\color{customgreen}{类型提升}}，即较低类型转换为较高类型
+        \item $float: 4Byte$，真值范围：$[-3.4*10^{38} \sim 3.4 * 10^{38}]$
+        \item $double: 8Byte$，真值范围：$[-1.79*10^{308} \sim 1.79 * 10^{308}]$
+        \item $int \Rightarrow float$：可能精度丢失
+        \item $double \Rightarrow float$：可能溢出或精度丢失
+        \item $float/double \Rightarrow int$：仅保留整数部分，可能溢出
+    \end{enumerate}
+
+\end{document}

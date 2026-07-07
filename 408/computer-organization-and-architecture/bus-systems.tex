@@ -1,0 +1,71 @@
+\documentclass[./book.tex]{subfiles}
+
+\begin{document}
+
+    \section{总线}
+
+    \begin{enumerate}
+        \item 总线：一组能为多个部件分时和共享的公共信息传送线路
+        \begin{itemize}
+            \item 分时：同一时刻只允许有一个部件向总线发送信息
+            \item 共享：总线上可以挂接多个部件，多个部件可同时从总线上接受相同的信息
+        \end{itemize}
+        \item 按功能层次分类
+        \begin{itemize}
+            \item 片内总线：芯片内部的总线
+            \item 系统总线：计算机系统内公共能部件之间相互连接的总线。按系统总线传输信息内容的不同
+            \begin{circlenum}
+                \item 数据总线（Data Bus, DB）：在各部件之间传输数据、指令和中断类型号等。双向传输总线。{\color{customgreen}{数据总线的位数反映一次能传输的数据的位数}}
+                \item 地址总线（Address Bus，AB）：指出数据总线上源数据或目的数据所在的主存单元或I/O端口的地址。单向传输总线。{\color{customgreen}{地址总线的位数反映最大的寻址空间}}
+                \item 控制总线（Control Bus，CB）：用来传输各种命令、反馈和定时信号。一根控制线传输一个信号
+                \item 数据通路：各个功能部件通过数据总线连接形成的数据传输路径。表示数据流经的路径
+            \end{circlenum}
+            \item I/O总线
+            \item 通信总线（外部总线）：计算机系统之间或计算机系统与其他系统之间传输信息的总线
+        \end{itemize}
+        \item 按数据传输方式分类
+        \begin{itemize}
+            \item 串行总线：只有一条双向传输或两条单向传输的数据线，数据按比特串行顺序传输，效率低于并行总线。适合长距离通信
+            \item 并行总线：有多条双向传输的数据线，可以实现多比特位的同时传输。若工作频率较高，可能引发数据线之间相互干扰从而造成传输错误。适合近距离通信
+            \item 总线带宽 = 总线工作频率 * 总线宽度 $\Rightarrow$ 并行总线并不一定总比串行总线快
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{系统总线的结构}
+
+    \begin{enumerate}
+        \item 单总线结构：将CPU、主存、I/O设备都挂载一组总线上
+        \item 双总线结构：一条主存总线（用于在CPU、主存和通道之间传送数据），一条I/O总线（用于在多个外部设备与通道之间传送数据）
+        \item 三总线结构：主存总线（用于CPU和内存之间传送地址、数据和控制信息）、I/O总线和直接内存访问（DMA）总线
+        \begin{itemize}
+            \item 主存总线：CPU和内存之间传送地址、数据和控制信息
+            \item I/O总线：在CPU和各类外设之间通信
+            \item 直接内存访问（DMA）总线：在内存和高速外设之间直接传送数据
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{总线的性能指标}
+
+    \begin{enumerate}
+        \item 总线时钟周期：机器的时钟周期
+        \item 总线时钟频率：机器的时钟频率。是时钟周期的倒数，表示1秒内有多少时钟周期
+        \item 总线传输周期（总线周期）：一次总线操作所需的时间，包括申请、寻址、传输和结束阶段
+        \item $\color{red}{\bigstar}$总线工作频率：总线上各种操作的频率，是总线周期的倒数，表示1秒内传送几次数据
+        \begin{itemize}
+            \item 总线周期 = N个时钟周期 $\Rightarrow$ 总线工作频率 = $\dfrac{\text{时钟频率}}{N}$
+            \item 若一个时钟周期传送K次数据 $\Rightarrow$ 总线工作频率 = K * 总线时钟频率
+        \end{itemize}
+        \item $\color{red}{\bigstar}$总线宽度（总线位宽）：总线上能够同时传输的数据位数，表示数据总线的根数。\emph{e.g.} 32根称为32位总线
+        \item $\color{red}{\bigstar}$总线带宽：单位时间内总线上最多可传输数据的位数，表示每秒传输信息的字节数，单位可用$B/s$，指总线本身所能达到的最高传输速率
+        \begin{itemize}
+            \item 总线带宽 = $\text{总线工作频率} * (\text{总线宽度}/8)$
+            \begin{analysisbox}
+                总线工作频率位22MHz，总线宽度为16位 $\Rightarrow$ 总线带宽 = $22M * (16/8) = 44MB/s = 352Mbit/s$
+            \end{analysisbox}
+        \end{itemize}
+        \item 总线复用：一种信号线在不同的时间传输不同的信息
+        \item 信号线数：地址总线、数据总线和控制总线3中总线数的总和
+    \end{enumerate}
+
+\end{document}
+

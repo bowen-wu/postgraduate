@@ -168,7 +168,7 @@
 - obstacle [ˈɑːbstəkl]
     - n. 障碍
     - == barrier n. 障碍
-- facilitate [fəˈsɪlɪteɪt] v. 促进; 使便利
+- facilitate [fəˈsɪlɪteɪt] v. 促进；使便利
 
 ## similar
 
@@ -189,6 +189,7 @@
     - n. 类比
     - == comparison [kəmˈpærɪsn] n. 比较
     - When you draw an **analogy** between two things, you **compare** them for the purpose of explanation.
+        - explanation n. 解释；原因
     - The movie character Forrest Gump made a famous **analogy**: "Life is like a box of chocolates."
     - analogous [əˈnæləɡəs] adj. 相似的，类似的
 
@@ -213,6 +214,7 @@
 
 - [əˈtrækt]
 - v. 吸引；引起（反应）（at(强调)-tract(拉；拽)）
+- -tract- 拉；拽
 - 词组
     - be attracted to sth. 被某物吸引
 - attraction n. 吸引；向往的地方；有吸引力的事
@@ -223,8 +225,11 @@
 - attractiveness n. 吸引力
 - extract [ɪkˈstrækt]
     - vt. （用力）拔出
+    - ex- 外
+        - == exit
     - So he hired a dentist to transplant nine teeth into his jaw—having **extracted** them from the mouths of his
       slaves.
+        - dentist [ˈdentɪst] n. 牙科医生
         - transplant vt. 使迁移；移植（器官、皮肤、头发等）
 - contract [ˈkɑːntrækt]
     - v. （使）收缩

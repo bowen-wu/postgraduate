@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../utils/template}
+
+\newgeometry{ left=1.5cm, right=1.5cm, top=1.2cm, bottom=1.5cm }
+
+\begin{document}
+    \title{计算机组成原理}
+    \author{Bowen}
+    \date{\today}
+    \maketitle
+    \renewcommand{\contentsname}{}
+    \tableofcontents
+    \newpage
+
+    \subfile{./overview-of-computer-systems.tex}
+
+    \subfile{./data-representation-and-arithmetic-operations.tex}
+
+    \subfile{./memory-systems.tex}
+
+    \subfile{./instruction-set-architecture.tex}
+
+    \subfile{./bus-systems.tex}
+
+\end{document}

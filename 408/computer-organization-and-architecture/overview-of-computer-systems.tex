@@ -1,0 +1,86 @@
+\documentclass[./book.tex]{subfiles}
+
+\begin{document}
+
+    \section{计算机系统概述}
+
+    \begin{table}[htbp]
+        \centering
+        \renewcommand{\arraystretch}{1.5}   % 行高
+        \setlength{\tabcolsep}{8pt}         % 列间距
+        \small
+        \begin{tabular}{|
+                >{\centering\arraybackslash}m{1.8cm}|
+                >{\centering\arraybackslash}m{3.5cm}|
+                >{\centering\arraybackslash}m{10cm}|}
+            \hline
+            \textbf{名称} & \textbf{英文}         & \textbf{含义}                              \\
+            \hline
+            存储元         & Memory Cell         & 一个二进制位（1 bit）                            \\
+            \hline
+            存储单元        & Storage Unit        & 一个地址对应的数据                                \\
+            \hline
+            存储字         & Memory Word         & 一个存储单元存放的数据（CPU一次存取的数据单位、存储单元存储的一串二进制代码） \\
+            \hline
+            存储字长        & Memory Word Length  & 一个存储单元包含的二进制位数（由编址方式决定）                  \\
+            \hline
+            机器字长        & Machine Word Length & CPU 一次能够自然处理的二进制数据位数（由 CPU 决定）           \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{enumerate}
+        \item 按地址存取方式：（主存储器的工作方式是）按存储单元的地址进行存取
+        \item MAR（存储器地址寄存器，Memory Address Register）：存放访存地址，位数反映最多可寻址的存储单元的个数，位数与地址线位数相同
+        \begin{itemize}
+            \item 地址个数 = 终止地址 - 起始地址 + 1
+            \item 地址位数 = $\log_2 \textbf{存储单元个数}$
+            \begin{circlenum}
+                \item 字节编址（存储字长1B = 8bit）：存储单元个数 = 存储器容量/1B。\emph{e.g.} 主存容量$32MB$，\textbf{字节}编址 $\Rightarrow$ 地址位数$= 2^5 * 2^{20}$
+                \item 32位字编址（存储字长32bit）：存储单元个数 = 存储器容量/32bit。\emph{e.g.} 主存容量$32MB$，\textbf{字}编址 $\Rightarrow$ 地址位数$= 2^{20}$
+            \end{circlenum}
+        \end{itemize}
+        \item MDR（存储器数据寄存器，Memory Data Register）：用于暂存要从存储器中读或写的信息，位数与数据总线宽度（位数）相同
+        \begin{analysisbox}[Example]
+            某 64 位计算机，主存容量 4MB，字节编址 \\
+            $\Rightarrow$ \begin{cases*}
+                              \text{机器字长} = 64 bit \\
+                              \text{存储字长} = 1B = 8 bit \\
+                              MDR\textbf{位数} = 64 bit \\
+                              MAR\textbf{位数} = \log_2 \dfrac{4MB}{1B} = 2^{22} \\
+            \end{cases*}
+        \end{analysisbox}
+        \item CPU 一次从主存读/写多少数据，取决于：
+        \begin{itemize}
+            \item 数据总线宽度
+            \item 存储器接口设计
+            \item 一次访存操作的宽度
+            \item 数据总线：64bit，那么一次访存可以读： $64bit=8Byte$。也就是一次可以读 8 个按字节编址的存储单元
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{计算机的性能指标}
+
+    \begin{enumerate}
+        \item CPU时钟周期：CPU工作的最小时间单位
+        \item 主频（CPU时钟频率）：每秒有多少个时钟周期，单位$Hz$
+        \[
+            \text{主频} = \dfrac{1}{\text{CPU时钟周期}}
+        \]
+        \item CPI（CyclePerInstruction）：执行一条指令所需的时钟周期数
+        \item IPS（Instruction Per Second）：每秒执行多少条指令
+        \[
+            IPS = \dfrac{\text{主频}}{\text{平均}CPI}
+        \]
+        \item CPU执行时间：运行一个程序所花费的时间
+        \[
+            CPU\text{执行时间} = \dfrac{CPU\text{时钟周期数}}{\text{主频}} = \dfrac{\text{指令条数}\times CPI}{\text{主频}}
+        \]
+        \item MIPS（Million Instruction Per Second）：每秒执行多少百万条指令
+        \[
+            MIPS = \dfrac{\text{指令条数}}{\text{执行时间}\times 10^6} = \dfrac{\text{主频}}{CPI * 10^6}
+        \]
+        \item 机器的速度与基准程序在该机器上的运行时间呈相反关系
+    \end{enumerate}
+
+\end{document}

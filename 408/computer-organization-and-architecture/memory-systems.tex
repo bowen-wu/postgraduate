@@ -1,0 +1,218 @@
+\documentclass[./book.tex]{subfiles}
+
+\begin{document}
+
+    \section{存储系统}
+
+    \subsection{存储器的性能指标}
+
+    \begin{enumerate}
+        \item 存储容量 = 存储字数 $\times$ 存储字长
+        \begin{itemize}
+            \item 存储字数：表示存储器可编址的存储单元个数（即地址空间大小），决定所需地址位数
+            \begin{circlenum}
+                \item $4M$的存储字数：即一共有$4M = 4 * 2^{20} = 2^{22}$个存储单元，可使用引脚复用技术，分为行、列引脚，共11个引脚，先后两次输入，需要11根{\color{red}{地址}}引脚
+            \end{circlenum}
+            \item 存储字长：表示一个存储单元包含的数据位数，即每个存储单元的比特数据，也表示{\color{red}{数据}}引脚的数量
+            \begin{circlenum}
+                \item 按字节编址：存储容量$4MB = 4M \times 8bit$。存储字长$8bit$，即一个地址对应$8bit$数据，8根数据引脚
+                \item 按字编址：存储容量$16MB = 4M \times 32bit$
+                \item 按半字编址：存储容量$8MB = 4M \times 16bit$
+            \end{circlenum}
+        \end{itemize}
+        \item 单位成本：位价 = 总成本/总容量
+        \item 存储速度：数据传输速率，即每秒传送信息的位数。存储速度 = 存储字长/存取周期 = 存取时间 + 恢复时间
+        \begin{itemize}
+            \item 存取时间（$T_a$）：从启动一次存储器操作到完成该操作所经历的时间
+            \item 存取周期（$T_m$）：存储器进行一次完整的读/写操作所需的全部时间，即连续两次独立访问存储器操作之间所需的最小时间间隔
+            \item 主存带宽（$B_m$，数据传输速率）：表示每秒从主存进出信息的最大数量
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{RAM（Random Access Memory, 随机存储器）}
+
+    RAM = SRAM + DRAM
+    \begin{enumerate}
+        \item SRAM（Static Random Access Memory，静态随机存储器）：即使信息被读出后，它仍保持器原状态而不需要再生（非破坏性读出）
+        \item DRAM（Dynamic Random Access Memory，动态随机存储器）：Cache。必须定时刷新和读后再生
+        \item 主存由RAM和ROM构成
+    \end{enumerate}
+
+    \subsubsection{DRAM}
+
+    \begin{enumerate}
+        \item 刷新周期：对同一行进行相邻两次刷新的时间间隔，通常取$2ms$。\emph{e.g.} 64K $\times$ 1bit 的 DRAM 芯片构成 128K $\times$ 8bit 的存储器，若采用异步刷新方式，每单元存储间隔不超过2ms，则生成的刷新信号的间隔时间是？若采用集中刷新方式，则存储器刷新一遍最少用多少个读/写周期？
+        \begin{analysisbox}
+            64K $\times$ 1bit 由一个 256 $\times$ 256 的为平面组成 \\
+            构成存储器的所有芯片同时按行刷新，每个芯片有 256 行，所以存储器所有单元刷新一遍至少需要 256 次刷新操作 \\
+            若采用异步刷新方式，则相邻两次刷新信息的时间间隔为 $2ms/245$ \\
+            若采用集中刷新方式，则整个存储器刷新一遍至少需要256个读/写周期
+        \end{analysisbox}
+        \item DRAM 的刷新单位是行，逐行定时刷新，没刷新一行，需消耗一个存取周期
+        \item 每个刷新周期需刷新$2^{\text{行地址数}}$，即若行地址$6bit$，则每个刷新周期需刷新$2^6 = 64$次，消耗$64$个存取周期
+        \item 再生仅需恢复被读出的那些单元的数据
+        \item 行缓冲器：缓存指定行中每列的数据，大小 = 列数 $\times$ 每列的数据位宽，常用 SRAM 实现，可支持突发传输
+        \item DRAM 存取周期 > SRAM 存取周期 $\Rightarrow$ 一次突发传输决不能跨越 DRAM 行边界
+    \end{enumerate}
+
+    \subsection{多模块存储器}
+
+    \begin{enumerate}
+        \item 单体多字存储器
+        \item 多体并行存储器
+        \begin{itemize}
+            \item 高位交叉编址
+            \begin{circlenum}
+                \item 连续读取$m$个字所需的时间$t = mT$
+            \end{circlenum}
+            \item 低位交叉编址：程序连续存放在相邻模块中。可采用{\color{customgreen}{轮流启动}}或{\color{customgreen}{同时启动}}方式
+            \begin{circlenum}
+                \item 模块的存取周期为$T$，总线周期$r$，存储器交叉模块数应大于或等于$m = \dfrac{T}{r}$
+                \item 连续存取$m$个字所需的时间$t = T + (m - 1)r$
+            \end{circlenum}
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{外部存储器}
+
+    \subsubsection{磁盘存储器}
+
+    \begin{enumerate}
+        \item 磁盘地址结构：驱动器号 - 柱面（磁道）号 - 盘面（磁头）号 - 扇区号
+    \end{enumerate}
+
+    \paragraph{磁盘的性能指标}
+    \begin{enumerate}
+        \item 记录密度：盘片单位面积上记录的二进制数据量
+        \begin{itemize}
+            \item 道密度：沿磁盘半径方向单位长度上的磁道数
+            \item 位密度：磁道单位长度上能记录的二进制代码位数
+            \item 面密度：位密度和道密度的乘积
+        \end{itemize}
+        \item 磁盘的容量
+        \begin{itemize}
+            \item 非格式化容量：磁记录编码可利用的磁化单位总数。{\color{customgreen}{非格式化容量 = 记录面数 $\times$ 柱面数 $\times$ 每条磁道的磁化单位数}}
+            \item 格式化容量：按照某种特定的记录格式所能存储信息的总量。{\color{customgreen}{格式化容量 = 记录面数 $\times$ 柱面数 $\times$ 每道扇区数 $\times$ 每个扇区的容量}}
+            \item 格式化后的容量比非格式化容量要小
+        \end{itemize}
+        \item $\color{red}{\bigstar}$存取时间 $=$ 平均寻道时间 + 平均旋转延迟时间 + 传输时间
+        \begin{itemize}
+            \item 寻道时间：磁头移动到目的磁道的时间
+            \item 平均寻道时间：从最外道移动到最内道时间的一半，和转速{\color{red}{无关}}
+            \item 旋转延迟时间：磁头定位到要读/写扇区的时间
+            \item 平均旋转延迟时间：{\color{red}{旋转半周的时间}}，和转速{\color{customgreen}{有关}}
+            \item 传输时间：传输数据所花费的时间
+        \end{itemize}
+        \item 数据传输速率：在单位时间内向主机传送数据的字节数。假设磁盘转数为$r$转/秒，每条磁道容量为$N$字节，则数据传输速率为
+        \[
+            D_r = rN = \dfrac{\text{每个磁道容量}}{\text{读一个磁道数据的时间}}
+        \]
+        \item 读一个磁道数据的时间 = 磁盘旋转一周的时间 - 通过扇区间隙的总时间
+    \end{enumerate}
+
+    \subsubsection{固态硬盘}
+
+    \begin{enumerate}
+        \item 数据以{\color{red}{页}}为单位读/写，以{\color{red}{块}}为单位擦除
+    \end{enumerate}
+
+    \subsection{高速缓冲存储器}
+
+    \begin{enumerate}
+        \item 时间局部性：某个数据/指令在短时间内被反复访问
+        \item 空间局部性：最近的未来要用到的信息，很可能与现在正在使用的信息在{\color{red}{存储空间}}上是临近的
+        \item CPU 与 Cache 之间的数据交换以字（机器字长）为单位
+        \item Cache 与 主存 之间的数据交换以 Cache 块为单位。Cache 块也称 Cache 行，每块由若干${\color{red}{\text{字节}}}$组成，块的长度称为快长，也称行长
+        \item Cache 命中率：CPU 与访问的信息已在 Cache 中的比率
+        \item Cache-主存系统的平均访问时间
+        \begin{itemize}
+            \item $t_c$：命中时的 Cache 访问时间
+            \item $t_m$：未命中（缺失）时的访问时间
+            \item $H$：命中率
+            \item $1 - H$：未命中率（缺失率）
+            \item 串行访问：$T_a = Ht_c + (1-H)(t_c + t_m)$
+            \item 并行访问：$T_a = Ht_c + (1-H)t_m$
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{Cache 与主存映射方式}
+
+    \begin{enumerate}
+        \item 标记项：包含有效位、脏位（修改位）、替换算法位、标记位
+        \item 标记位：指明 Cache 块是主存中哪一块的副本
+        \item 有效位：说明 Cache 行中的信息是否有效
+        \item 地址映射：把主存地址空间映射到 Cache 地址空间，即把存放在主存中的信息按照某种规则装入 Cache
+        \begin{itemize}
+            \item 直接映射：主存中的每一块只能装入 Cache 中的唯一位置
+            \begin{circlenum}
+                \item {\color{red}{块冲突}}：若这个位置已有内容，则产生{\color{red}{块冲突}}，原来的块将无条件地被替换出去
+                \item 命中：根据访存地址中间的 Cache 行号位数，找到对应 Cache 行，将对应 Cache 行中的标记与主存地址的标记位数（高位）进行比较，若相等且有效位为1，则命中
+                \item Cache 不存 Cache 行号和块内地址
+                \item 计算
+                \begin{enumerate}
+                    \item 主存容量 $\Rightarrow$ 主存地址位数：主存容量 = 存储字数 $\times$ 存储字长，主存容量1MB，按字节编址，存储字数 $= 1MB/1B = 2^20$，即主存地址20bit
+                    \item Cache 有效容量：Cache 中存数据的容量，即数据块总大小
+                    \item Cache 行结构 = 有效位 + 脏位（修改位） + 替换算法位 + Tag + 数据位（块大小32B $\Rightarrow$ 数据位 32 * 8bit = 256bit）
+                    \item Cache 容量 = （数据块（行长） + Tag + 控制位） * 行数/块数：Cache 数据区大小 32KB，主存块大小 32B，行数 = $32KB/32B = 2^10$，即10bit行号
+                    \item 行长/块长 $\Rightarrow$ 块内地址位数：每块$16B = 2^4B$，即块内地址4bit
+                    \item 行数/块数 $\Rightarrow$ 行号位数：Cache 行号位数 = $\log_2 \textbf{Cache 行数}$
+                    \item 主存块号 = $\dfrac{\text{主存地址}}{\text{行长}}$
+                    \item Cache 行号 = 主存块号 $\mod$ Cache 总行数
+                    \item 主存地址结构：标记位 - Cache 行号 - 块内地址（与快长、行长有关）
+                    \item 主存块号 = 标记位 + Cache 行号
+                \end{enumerate}
+            \end{circlenum}
+            \item 全相联映射：主存中的每一块可以装入 Cache 中的任何位置
+            \begin{circlenum}
+                \item 优点
+                \begin{enumerate}
+                    \item Cache 块的冲突概率低，只要有空闲 Cache 行，就不会发生冲突
+                    \item 空间利用率高
+                    \item 命中率高
+                \end{enumerate}
+                \item 缺点
+                \begin{enumerate}
+                    \item 标记的比较速度较慢
+                    \item 实现成本较高，通常需采用{\color{red}{按内容寻址}}的相联存储器
+                \end{enumerate}
+                \item 主存地址结构：标记 - 块内地址（与快长、行长有关）
+            \end{circlenum}
+            \item 组相连映射：将 Cache 分成 Q 个大小相等的组，每个主存块可以固定组中的任意一行，即组间采用直接映射，组内采用全相联映射
+            \begin{circlenum}
+                \item 每组 Cache 行的数量越大，发生块冲突的概率越低
+                \item $r$路组相联：每组中有$r$个 Cache 行
+                \item Cache 组数 = $\dfrac{\text{Cache 总容量}}{\text{Cache 块大小} \times r}$
+                \item Cache 组号 = 主存块号 $\mod$ Cache 组数（Q）
+                \item 主存地址结构：标记 - 组号 - 块内地址（与快长、行长有关）
+                \item 主存块号 = 标记位 + 组号
+                \item 命中：根据访存地址中间的组号找到对应的 Cache 组，将对应的 Cache 组中每个行的标记与主存地址的高位标记进行比较，若相等且有效位1，则命中
+            \end{circlenum}
+            \item 计算
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{Cache 一致性问题}
+
+    \begin{enumerate}
+        \item Cache 写操作命中
+        \begin{itemize}
+            \item 全写法（直写法，Write Through）：当 CPU 对 Cache 写命中时，把数据同时写入 Cache 和主存
+            \begin{circlenum}
+                \item 写缓冲（Write Buffer）：为减少全写法直接写入主存的时间消耗，在 Cache 和主存之间加一个写缓冲
+                \item CPU 同时写数据到 Cache 和写缓冲中，写缓冲再将内容写入主存
+                \item 写缓冲是一个 FIFO 队列，可以解决速度不匹配的问题，但若出现频繁写时，会是写缓冲饱和溢出
+            \end{circlenum}
+            \item 回写法（写回法，Write Back）：当 CPU 对 Cache 写命中时，只把数据写入 Cache，只有当此块被替换出时才写回主存
+            \begin{circlenum}
+                \item 修改位（脏位）：为了减少写回主存的次数，若为1，则说明对应的 Cache 行中的块被修改过，替换时须写回主存
+            \end{circlenum}
+        \end{itemize}
+        \item Cache 写操作不命中
+        \begin{itemize}
+            \item 写分配法（Write Allocate）：把主存块调入 Cache，之后只修改 Cache，搭配 Write Back，标记 Dirty
+            \item 非写分配法（Not-Write Allocate）：只更新主存单元，而不把主存块调入 Cache，搭配 Write Through
+        \end{itemize}
+        \item 现代计算机使用 Write Back + Write Allocate
+    \end{enumerate}
+
+\end{document}
