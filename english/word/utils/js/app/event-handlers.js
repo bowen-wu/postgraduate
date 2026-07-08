@@ -13,6 +13,7 @@ import * as StateManager from './state-manager.js';
 import * as UiRenderer from './ui-renderer.js';
 import {
   playWordWithFallback,
+  prefetchWordAudio,
   prewarmSpeechSynthesis as prewarmSpeechSynthesisService,
   stopCurrentAudioPlayback
 } from '../infrastructure/audio-service.js';
@@ -76,8 +77,10 @@ function getTranslationUseCases() {
       uiRenderer: UiRenderer,
       getUi: () => getApp().ui,
       getMode: () => STATE.mode,
+      shouldAutoPlay: () => STATE.autoPlay,
       render: () => getApp().render(),
       translateText: translateTextWithFallback,
+      ensureAudioReady: async (text) => { await prefetchWordAudio(text); },
       setButtonLoading,
       revealSentenceTranslation: () => UiRenderer.showSentenceTranslation(getApp().ui)
     });

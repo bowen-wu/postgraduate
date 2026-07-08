@@ -5,7 +5,7 @@ import { createTranslationUseCases } from '../../application/translation-use-cas
 
 test('translatePhrase writes translation and triggers render pipeline', async () => {
   const card = { type: 'phrase', word: 'take off', items: [{ en: 'take off', cn: '' }] };
-  const calls = { save: 0, render: 0, toast: 0 };
+  const calls = { save: 0, render: 0, toast: 0, ensureAudioReady: 0 };
   const useCases = createTranslationUseCases({
     stateManager: {
       getCurrentCard: () => card,
@@ -17,7 +17,12 @@ test('translatePhrase writes translation and triggers render pipeline', async ()
     },
     getUi: () => ({}),
     render: () => { calls.render += 1; },
+    shouldAutoPlay: () => true,
     translateText: async () => ({ translation: '起飞', sourceName: 'Mock' }),
+    ensureAudioReady: async (text) => {
+      calls.ensureAudioReady += 1;
+      assert.equal(text, 'take off');
+    },
     setButtonLoading: () => {}
   });
 
@@ -26,11 +31,12 @@ test('translatePhrase writes translation and triggers render pipeline', async ()
   assert.equal(card.items[0].cn, '起飞');
   assert.equal(calls.save, 1);
   assert.equal(calls.render, 1);
+  assert.equal(calls.ensureAudioReady, 1);
 });
 
 test('translateSentence reveals translation through injected ui port', async () => {
   const card = { type: 'sentence', word: 'hello', displayWord: 'Hello', items: [{ en: 'Hello', cn: '' }] };
-  const calls = { save: 0, render: 0, reveal: 0, nextAction: 0 };
+  const calls = { save: 0, render: 0, reveal: 0, nextAction: 0, ensureAudioReady: 0 };
   const useCases = createTranslationUseCases({
     stateManager: {
       getCurrentCard: () => card,
@@ -43,7 +49,12 @@ test('translateSentence reveals translation through injected ui port', async () 
     getUi: () => ({}),
     getMode: () => 'recall',
     render: () => { calls.render += 1; },
+    shouldAutoPlay: () => true,
     translateText: async () => ({ translation: '你好', sourceName: 'Mock' }),
+    ensureAudioReady: async (text) => {
+      calls.ensureAudioReady += 1;
+      assert.equal(text, 'Hello');
+    },
     setButtonLoading: () => {},
     revealSentenceTranslation: () => { calls.reveal += 1; }
   });
@@ -55,6 +66,7 @@ test('translateSentence reveals translation through injected ui port', async () 
   assert.equal(calls.render, 1);
   assert.equal(calls.reveal, 1);
   assert.equal(calls.nextAction, 0);
+  assert.equal(calls.ensureAudioReady, 1);
 });
 
 test('translatePhrase reveals content in recall mode', async () => {
@@ -84,4 +96,30 @@ test('translatePhrase reveals content in recall mode', async () => {
   assert.equal(calls.render, 1);
   assert.equal(calls.revealAll, 1);
   assert.equal(calls.nextAction, 0);
+});
+
+test('translateSentence skips audio preparation when autoPlay is disabled', async () => {
+  const card = { type: 'sentence', word: 'hello', displayWord: 'Hello', items: [{ en: 'Hello', cn: '' }] };
+  const calls = { ensureAudioReady: 0 };
+  const useCases = createTranslationUseCases({
+    stateManager: {
+      getCurrentCard: () => card,
+      saveState: () => {}
+    },
+    uiRenderer: {
+      showToast: () => {},
+      renderNextAction: () => {}
+    },
+    getUi: () => ({}),
+    getMode: () => 'input',
+    render: () => {},
+    shouldAutoPlay: () => false,
+    translateText: async () => ({ translation: '你好', sourceName: 'Mock' }),
+    ensureAudioReady: async () => { calls.ensureAudioReady += 1; },
+    setButtonLoading: () => {}
+  });
+
+  await useCases.translateSentence();
+
+  assert.equal(calls.ensureAudioReady, 0);
 });

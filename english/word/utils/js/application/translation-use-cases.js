@@ -5,7 +5,9 @@ export function createTranslationUseCases(deps) {
     getUi,
     render,
     getMode = () => 'input',
+    shouldAutoPlay = () => false,
     translateText,
+    ensureAudioReady = async () => {},
     setButtonLoading,
     revealSentenceTranslation = () => {}
   } = deps;
@@ -13,6 +15,7 @@ export function createTranslationUseCases(deps) {
   async function translatePhrase() {
     const card = stateManager.getCurrentCard();
     if (!card || card.type !== 'phrase') return;
+    const audioText = card.word;
 
     const buttonIds = ['translate-btn-phrase', 'translate-btn-phrase-action'];
 
@@ -28,6 +31,9 @@ export function createTranslationUseCases(deps) {
 
       buttonIds.forEach((id) => setButtonLoading(false, id));
       stateManager.saveState();
+      if (shouldAutoPlay()) {
+        await ensureAudioReady(audioText);
+      }
       render();
 
       if (getMode() === 'recall') {
@@ -62,6 +68,9 @@ export function createTranslationUseCases(deps) {
 
       buttonIds.forEach((id) => setButtonLoading(false, id));
       stateManager.saveState();
+      if (shouldAutoPlay()) {
+        await ensureAudioReady(sentenceText);
+      }
       render();
       if (getMode() === 'recall') {
         revealSentenceTranslation();
