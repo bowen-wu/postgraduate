@@ -64,7 +64,7 @@ export class VocabApp {
 
     // Initialize displayOrder if empty
     if (STATE.cards.length > 0 && STATE.displayOrder.length === 0) {
-      STATE.displayOrder = StateManager.generateDisplayOrder(STATE.cards, STATE.orderMode);
+      STATE.displayOrder = StateManager.generateDisplayOrder(STATE.cards, STATE.orderMode, STATE.orderSeed);
     }
 
     UiRenderer.updateAutoPlayButton(this.ui);

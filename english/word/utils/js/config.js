@@ -86,6 +86,7 @@ export const STATE = {
   currentIndex: 0,
   mode: 'input',
   orderMode: 'sequential',   // 'sequential' | 'randomByType' | 'randomAll'
+  orderSeed: null,           // Stable seed for random order restoration
   displayOrder: [],          // Array of card indices for display order
   currentCardId: null,       // Current card ID for progress tracking
   stats: {},

@@ -15,6 +15,10 @@ import {
 
 export { generateDisplayOrder };
 
+function createOrderSeed() {
+  return Math.floor(Math.random() * 0x7fffffff);
+}
+
 /**
  * Get storage key for a specific file
  */
@@ -84,6 +88,7 @@ export function saveState(options = {}) {
     currentIndex: STATE.currentIndex,
     currentCardId: STATE.currentCardId,
     orderMode: STATE.orderMode,
+    orderSeed: STATE.orderSeed,
     mode: STATE.mode,
     displayOrder: STATE.displayOrder,
     completed: STATE.completed || false,
@@ -168,6 +173,7 @@ export function resetData() {
   STATE.displayOrder = [];
   STATE.currentCardId = null;
   STATE.orderMode = 'sequential';
+  STATE.orderSeed = null;
   STATE.stats = {};
   STATE.currentPath = null;
   STATE.currentFile = null;
@@ -179,7 +185,10 @@ export function resetData() {
  */
 export function setOrderMode(mode) {
   STATE.orderMode = mode;
-  STATE.displayOrder = generateDisplayOrder(STATE.cards, mode);
+  STATE.orderSeed = mode === 'randomByType' || mode === 'randomAll'
+    ? createOrderSeed()
+    : null;
+  STATE.displayOrder = generateDisplayOrder(STATE.cards, mode, STATE.orderSeed);
   STATE.currentIndex = 0;
   STATE.currentCardId = null;
   clearResumeSnapshot(STATE.currentPath);

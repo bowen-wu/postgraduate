@@ -4,6 +4,7 @@ export function applyDefaultProgressState(state) {
   state.stats = {};
   state.currentIndex = 0;
   state.orderMode = 'sequential';
+  state.orderSeed = null;
   state.mode = 'input';
   state.currentCardId = null;
   state.completed = false;
@@ -109,10 +110,11 @@ function resolveRandomIndex(state, parsed) {
 export function applySavedProgressState(state, parsed) {
   state.stats = parsed.stats || {};
   state.orderMode = parsed.orderMode || 'sequential';
+  state.orderSeed = Number.isInteger(parsed.orderSeed) ? parsed.orderSeed : null;
   state.mode = parsed.mode || state.mode || 'input';
   state.displayOrder = isValidSavedDisplayOrder(state, parsed.displayOrder)
     ? parsed.displayOrder.map((value) => Number(value))
-    : generateDisplayOrder(state.cards, state.orderMode);
+    : generateDisplayOrder(state.cards, state.orderMode, state.orderSeed);
 
   if (parsed.completed) {
     state.currentIndex = 0;

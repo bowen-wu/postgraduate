@@ -32,6 +32,14 @@ test('generateDisplayOrder randomAll keeps all indices', () => {
   assert.equal(order.length, cards.length);
 });
 
+test('generateDisplayOrder keeps the same random order with the same seed', () => {
+  const cards = [{ type: 'word' }, { type: 'phrase' }, { type: 'sentence' }, { type: 'prefix' }];
+  const first = generateDisplayOrder(cards, 'randomAll', 123456);
+  const second = generateDisplayOrder(cards, 'randomAll', 123456);
+
+  assert.deepEqual(first, second);
+});
+
 test('generateDisplayOrder keeps writing cards at the end in all modes', () => {
   const cards = [
     { id: 'card_0', type: 'word' },
