@@ -253,7 +253,7 @@
 
 ## WM-11
 
-- As you know, I am extremely keen on the ancient Chinese novel-Romance of the Three Kingdoms. Now I am planning to
+- As you know, I am extremely keen on the ancient Chinese novel—Romance of the Three Kingdoms. Now I am planning to
   direct a short play revised from it.
 - Romance of the Three Kingdoms, as one of the Four Great Classical Novels in China, mainly depicts the political and
   military struggles during the Three Kingdoms Period and reveals the turbulent society. It successfully portrays images

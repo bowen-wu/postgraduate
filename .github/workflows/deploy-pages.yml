@@ -40,6 +40,7 @@ jobs:
             --exclude '.DS_Store' \
             --exclude '_site/' \
             --exclude '408/course-materials/'
+            --exclude '408/problem-book/'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

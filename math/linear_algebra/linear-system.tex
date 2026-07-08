@@ -5,8 +5,80 @@
 
     \section{线性方程组}
 
-    \subsection{基础概念}
+    \begin{enumerate}
+        \item 解方程组所得到的解$x_1, x_2, \dots, x_n$就是描述向量与向量之间关系的{\color{red}{表示系数}}
+        \item $[x_1, x_2, \dots, x_n]^T$表示\begin{cases*}
+                                                \text{自由项}$\beta$被$\alpha_1, \alpha_2, \cdots, \alpha_n$线性表示的组合系数 \\
+                                                $\alpha_1, \alpha_2, \cdots, \alpha_n$在基下的坐标 \\
+                                                \text{方程组的解}
 
+        \end{cases*}
+    \end{enumerate}
+
+    \subsection{齐次线性方程组}
+
+
+    方程组
+    \[
+        \begin{cases}
+            a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\
+            a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\
+            \quad \vdots \\
+            a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = 0
+        \end{cases}
+    \]
+    称为$m$个方程，$n$个未知量的\textbf{齐次线性方程组}
+
+    \begin{enumerate}
+        \item 向量形式：$x_1\alpha_1 + x_2\alpha_2 + \cdots + x_n\alpha_n = 0$，其中$a_j = [a_{1j}, a_{2j}, \cdots, a_{mj}]^T, j = 1, 2, \cdots, n$
+        \item 矩阵形式：$A_{m\times n}x = 0$，其中
+        \[
+            A_{m\times n} = \begin{bmatrix}
+                                a_{11} & a_{12} & \cdots & a_{1n} \\
+                                a_{21} & a_{22} & \cdots & a_{2n} \\
+                                \vdots & \vdots & \ddots & \vdots \\
+                                a_{m1} & a_{m2} & \cdots & a_{mn}
+            \end{bmatrix} \quad x = \begin{bmatrix}
+                                        x_1 \\
+                                        x_2 \\
+                                        \vdots \\
+                                        x_n \\
+            \end{bmatrix}
+        \]
+    \end{enumerate}
+
+    \subsubsection{有解的条件}
+
+    \begin{enumerate}
+        \item 当$r(A) = n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性无关时，齐次方程组有唯一{\color{red}{零解}}
+        \item $\color{red}{\bigstar}\color{red}{\bigstar}$当$r(A) = r < n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性相关时，齐次方程组有{\color{red}{非零解（无穷多解），且有$n - r(A)$个线性无关解}}
+    \end{enumerate}
+
+    \subsubsection{解的性质}
+
+    \begin{enumerate}
+        \item 若$A\xi_1 = 0, A\xi_2 = 0$，则$A(k_1\xi_1 + k_2\xi_2) = 0$，其中$k_1, k_2$是任意常数。齐次线性方程组的解向量线性组合后形成的新向量仍是该方程组的解
+        \item 类消去律：若$A_{m\times n}, r(A) = n, AB = AC \Rightarrow B = C$
+    \end{enumerate}
+
+    \subsubsection{基础解系和解的结构}
+
+    \begin{enumerate}
+        \item 基础解系：设$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$满足\begin{cases}
+                                                                     \text{是方程组}$Ax = 0$\text{的解} \\
+                                                                     \text{线性无关} \\
+                                                                     \text{方程组}$Ax = 0$\text{的任一解均可由}$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$\text{线性表示}
+        \end{cases}则称$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$为$Ax = 0$的基础解系。{\color{red}{个数为$s = n - r(A)$}}
+        \item 通解：设$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$是$Ax = 0$的基础解系，则$k_1\xi_1 + k_2\xi_2 + \cdots + k_{n-r(A)}\xi_{n-r(A)}$是方程组$Ax = 0$的通解，其中$k_1, k_2, \cdots, k_{n-r(A)}$是任意常数
+    \end{enumerate}
+
+    \subsubsection{求解方法与步骤}
+
+    \begin{enumerate}
+        \item 将系数矩阵$A$作{\color{customgreen}{}}
+    \end{enumerate}
+
+    \subsection{基础概念}
     \begin{enumerate}
         \item 方程组
         \[
@@ -18,16 +90,7 @@
             \end{cases}
         \]
         称为$n$个未知数$m$个方程的\textbf{非齐次线性方程组}。用矩阵表示为: $\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$其中$x = (x_1, x_2, \dots, x_n)^T, b = (b_1, b_2, \dots, b_n)^T$,
-        \item 如果$b_{i} = 0(\forall i = 1,2,\dots,m)$，则称方程组
-        \[
-            \begin{cases}
-                a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\
-                a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\
-                \quad \vdots \\
-                a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = 0
-            \end{cases}
-        \]
-        为\textbf{齐次线性方程组}
+        \item 如果$b_{i} = 0(\forall i = 1,2,\dots,m)$，则称
         \item 若用一组数$c_1, c_2, \dots, c_n$分别代替方程组中的$x_1, x_2, \dots, x_n$，使$m$个等式都成立，则称有序数组$(c_1, c_2, \dots, c_n)$是方程组的一组解。解方程组就是要找出方程组的全部解
         \item 非齐次线性方程组的全体系数及常数项所构成的矩阵
         \[
@@ -356,7 +419,6 @@
             \end{enumerate}
         \end{itemize}
     \end{enumerate}
-
 
     \subsection{定理}
 

@@ -89,7 +89,7 @@
 - cover me 掩护我
 - The BBC will **cover** all the major games of the tournament.
     - tournament n. 锦标赛
-- Mass media are included to **cover** disaster and deaths.
+- Mass media are inclined to **cover** disaster and deaths.
     - disaster [dɪˈzæstər] n. 灾难；不幸
     - be inclined to do sth. 往往做某事/倾向做某事
         - == tend to do sth.
