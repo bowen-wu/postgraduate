@@ -9,6 +9,60 @@ import { StorageRepo } from '../infrastructure/storage-repo.js';
 import { toServiceError } from '../infrastructure/service-error.js';
 
 export class GitHubApi {
+  static getRawFileUrl(path) {
+    return `${CONFIG.baseRawUrl}/${path}`;
+  }
+
+  static getLocalFileUrl(path) {
+    if (typeof window === 'undefined' || !window.location?.href) return null;
+    try {
+      return new URL(`../${path}`, window.location.href).toString();
+    } catch (_error) {
+      return null;
+    }
+  }
+
+  static async sleep(ms) {
+    await new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  static async fetchTextWithRetry(url, options = {}) {
+    const {
+      retries = 2,
+      retryDelayMs = 250
+    } = options;
+
+    let lastStatus = null;
+    let lastStatusText = '';
+    let lastError = null;
+
+    for (let attempt = 0; attempt <= retries; attempt += 1) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (res.ok) {
+          return await res.text();
+        }
+
+        lastStatus = res.status;
+        lastStatusText = res.statusText || '';
+        const shouldRetry = res.status === 429 || res.status >= 500;
+        if (!shouldRetry || attempt === retries) {
+          break;
+        }
+      } catch (error) {
+        lastError = error;
+        if (attempt === retries) {
+          throw error;
+        }
+      }
+
+      await this.sleep(retryDelayMs * (attempt + 1));
+    }
+
+    if (lastError) throw lastError;
+    throw toServiceError('GITHUB_RAW_HTTP', `Fetch Error: ${lastStatus}${lastStatusText ? ` ${lastStatusText}` : ''}`);
+  }
+
   static compareUnitAwareName(a, b) {
     const getParts = (name) => {
       const base = String(name || '').replace(/\.md$/i, '');
@@ -117,10 +171,21 @@ export class GitHubApi {
   }
 
   static async fetchFileContent(path) {
-    const url = `${CONFIG.baseRawUrl}/${path}`;
-    const res = await fetch(url);
-    if (!res.ok) throw toServiceError('GITHUB_RAW_HTTP', `Fetch Error: ${res.status}`);
-    return await res.text();
+    const candidates = [
+      this.getLocalFileUrl(path),
+      this.getRawFileUrl(path)
+    ].filter(Boolean);
+
+    let lastError = null;
+    for (const url of candidates) {
+      try {
+        return await this.fetchTextWithRetry(url);
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    throw lastError || toServiceError('GITHUB_RAW_HTTP', 'Fetch Error');
   }
 
   static filterMdFiles(items) {
