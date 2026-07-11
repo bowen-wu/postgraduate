@@ -21,6 +21,130 @@
 - Contrast: 对比
 - Block: 块级
 
+## account
+
+- vi. (~ for)（数量、比例上）占；(~ for)解释
+- n. 描述；账户；解释
+- bank account
+- factual account 基于事实的叙述/事实陈述
+- The proportion of Spring Festival gifts **accounted for/occupy** 40 percent.
+    - account for + percent 占比例
+    - proportion n. 部分；比例
+- His hard work **accounts for** his success.
+    - account for 解释 C(原因) account for R(结果)
+- accountable
+    - adj. 对...负有责任的
+    - == responsible adj. 有责任的；有责任心的；应受责备的
+    - The main purpose of this "clawback" rule is to hold bankers **accountable** for harmful risk taking.
+        - purpose [ˈpɜːrpəs] n. 目的；目标
+    - accountability n. 责任
+- count
+    - vt. 认为；把...算入
+    - vi. 数数；有价值
+    - == matter
+    - It **matters/counts** a lot 这很重要
+    - 词组
+        - count backward 倒数
+        - count on 指望，依靠
+        - count in 把...计算在内
+        - count for 值...
+- algorithm [ˈælɡəˌrɪðəm] n. 算法
+
+## claim
+
+- [kleɪm]
+- vt. 声称
+- n. 声明；所有权
+- == declare v. 宣布，声明
+- == assert vt. 声称，断言
+- == announce vt. 宣布
+- -claim- 叫喊
+    - == to shout
+- We cannot overstate our debt to the past, but the moment has the supreme **claim**.
+    - We cannot overstate X 我们再怎么强调 X 都不为过
+- acclaim 🙂
+    - vt. 称赞
+    - n. 称赞
+    - Block: axx- 表示强调
+        - acclaim
+            - vt. 称赞
+            - n. 称赞
+            - a**c** + **c**laim
+        - affirm vt. 肯定属实；申明（a**f** + **f**irm）
+        - arrange v. 安排；排列（a**r** + range）
+- claimant [ˈkleɪmənt] n. （因失业等）领取救济金者
+- declare v. 宣布，声明
+- assert [əˈsɜːrt]
+    - vt. 声称，断言
+    - assertion n. 声明；断言
+- allege [əˈledʒ] vt. 声称，指称
+- announce
+    - vt. 宣布
+    - announcement n. 宣告
+- contend [kənˈtend]
+    - vi. （尤指在争论中）声称，主张，认为；竞争，争夺
+    - Similar: content [ˈkɑːntent]
+        - adj. 满意的
+        - n. 内容
+    - **Contend** for the faith.
+    - People used to **contend/assert/maintain/hold** that the earth was flat.
+    - But in her new book Join the Club, Tina Rosenberg **contends/holds/believes/maintains** that peer pressure can
+      also be a positive force through what she calls the social cure.
+        - peer pressure 同龄人压力
+        - cure [kjʊr]
+            - vt. 治好（疾病）
+            - n. （解决问题、改善糟糕情况等的）措施
+    - It is time to **contend with** unfair discrimination.
+        - contend with 对付、应对、努力克服（困难、不公、问题）
+        - discrimination [dɪˌskrɪmɪˈneɪʃn] n. 歧视
+- compliment n. 称赞
+
+## describe
+
+- vt. 描述，描绘
+- -scrib- 写
+    - == -scrip-
+- description n. 描述
+- prescribe
+    - vt. 指定，规定; 开处方，给医嘱
+    - vi. 建立规定，法律或指示
+    - George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor
+      **prescribes** a drug for a legitimate medical purpose...
+    - prescription n. 药房
+- subscribe
+    - vi. 订阅；签字，赞成；捐款
+    - Copyright rested with the *journal([ˈdʒɜːrnl])* publisher, and researchers seeking knowledge of the results would
+      have to **subscribe** to the journal.
+        - rest with sb./sth. 取决于.../由...负责/由...决定/（权力、责任）在...手中
+    - subscriber n. （报刊等的）订阅人
+    - subscription n. （报刊等的）订阅
+- manuscript [ˈmænjuskrɪpt]
+    - n. 手稿，原稿
+    - manu- 手
+        - manipulate [məˈnɪpjuleɪt] n. （暗中）控制；操纵
+
+## opportunity
+
+- n. 机会
+- Look, if you had one shot, or one **opportunity**. To seize everything you ever wanted in one moment. Would you
+  capture it or just let it slip?
+    - one shot 一次机会/仅有的一次尝试
+    - seize [siːz] vt. 抓住，夺取，占据
+- chance
+    - vi. 偶然发生
+    - n. 机会；偶然
+    - Similar: change
+        - v. 改变；变换
+        - n. 变化
+    - **The chances are**, if you said "thank you", you made someone's day.
+        - the chances are (that)... 很有可能.../十有八九.../大概率...
+- occasion [əˈkeɪʒn]
+    - n. 场合
+    - occasionally [əˈkeɪʒnəli]
+        - adv. 偶尔
+        - == from time to time
+        - == sometimes
+
 ## practice
 
 - [ˈpræktɪs]
@@ -57,207 +181,6 @@
     - n. 常规，惯例
     - adj. 常规的，日常的
     - routinely adv. 例行地
-
-## nature
-
-- [ˈneɪtʃər]
-- n. 本质，实质；天性；自然
-- Mother Nature 大自然母亲
-- a good-natured man 脾气好的人
-- It's her duty to help them to realize the **nature** of their problems.
-    - duty n. 责任，义务
-- Regrettably, However, the report's failure to address the true **nature** of the crisis facing liberal education may
-  cause more harm than good.
-    - regrettably adv. 抱歉地，遗憾地；可悲地
-    - failure to do sth. 未能.../没有做到...
-    - the nature of sth. 本质/实质/根本特征
-    - liberal [ˈlɪbərəl]
-        - adj. 自由党的；人文（教育）的
-        - Similar: literal [ˈlɪtərəl] adj. 字面的
-    - liberal education 通识教育/博雅教育/人文素养教育
-    - do/cause more harm than good 弊大于利/害处大于好处
-- 词组
-    - in nature 本质上；事实上
-- natural [ˈnætʃrəl]
-    - adj. 自然的；正常的；天赋的
-    - unnatural adj. 反常的
-- instinct [ˈɪnstɪŋkt]
-    - n. 本能；直觉
-    - == nature n. 本质，实质；天性；自然
-    - Mental health has commonly been called conscience, **instinct**, wisdom, common sense, or the inner voice.
-        - wisdom [ˈwɪzdəm] n. 智慧；明智；（社会或文化长期积累的）学问
-    - instinctive adj. 本能的
-    - instinctively adv. 本能地
-- viscerally [ˈvɪsərəli]
-    - adv. 发自内心地
-    - Knowing the result of Epley's study, it makes sense that many people hate photographs of themselves **viscerally**
-        - make sense 有意义；说得通；有道理
-
-## trust
-
-- v. 相信
-- n. 相信；信托；受托基金机构
-- 词组
-    - trust in 信任；依靠
-- distrust n. 不信任
-- entrust vt. 委托
-- trustworthy [ˈtrʌstwɜːrði]
-    - adj. 值得信赖的，可靠的; 把稳; 妥靠; 信实
-    - trustworthiness ['trʌstwɜðɪnəs]
-        - n. 可信度
-        - Most of us *mistakenly(adv. 错误地)* believe our **trustworthiness** is obvious.
-
-## approach
-
-- [əˈproʊtʃ]
-- v. 接近
-- vt. 与...接洽；处理
-- n. 方法
-- == method n. 方法
-- == ways
-- == around the corner 即将来临
-- == come near
-- 词组
-    - take a(n)...approach 采取...方法
-- **approaches** to gathering information
-- To **approach** is to get near something.
-- With the Spring Festival **approaching/around the corner**
-- There are a number of **approaches** to mastering the art of deep work.
-    - master
-        - vt. 掌握，精通
-        - n. 大师
-- Governments trend to **approach** the issue from different angles.
-- Some applaud the **approach**; others are concerned.
-    - applaud [əˈplɔːd] vt. 称赞
-- Only Ukip, sensing its chance, has sided with those pleading for a more considered **approach** to using green land.
-    - sense
-        - vt. 检测出；感觉到
-        - n. 感觉，意识；判断力；意义
-    - side with sb./sth. 支持.../站在...一边/偏向...
-- method n. 方法
-
-## habit
-
-- n. 习惯；习性
-- 词组
-    - *cultivate(vt. 种植；获得（支持）；逐渐形成（某种态度、谈话或举止方式等）)* a habit 培养习惯
-        - == pick up habit
-- inhabit
-    - vt. 占据；居住在；栖息于
-    - Everybody wants to know how the people who will soon **inhabit** those empty office *cubicles([ˈkju:bɪkəlz])* will
-      differ from those who came before them.
-        - cubicle n. 隔间，小房间
-    - inhabitant [ɪnˈhæbɪtənt] n. 居民
-- habitually [həˈbɪtʃuəli] adv. 习惯地
-- habitat [ˈhæbɪtæt]
-    - n. （动植物的）生活环境；栖息地
-    - The environmental conditions of freshwater **habitats** are highly variable.
-
-## avoid
-
-- vt. 避免；躲避
-- If you **avoid** failure, you also **avoid** success.
-- evade [ɪˈveɪd]
-    - vt. 规避（尤指法律或道德责任）；回避（处理或谈论某事）；未发生在（某人）身上
-    - What is being called artificial general intelligence, machines that would imitate the way humans think, continues
-      to **evade** scientists.
-        - imitate
-            - vt. 模仿
-            - Similar: immune [ɪˈmjuːn] adj. 不受影响的(PE)；有免疫力的；免除的；豁免的；免疫（系统）的
-- inevitable [ɪnˈevɪtəbl]
-    - adj. 不可避免的
-    - One could interpret much of the work of Beethoven by saying that suffering is **inevitable**, but the courage to
-      fight it renders life worth living.
-    - inevitably [ɪnˈevɪtəbli] adv. 不可避免地
-
-## compare
-
-- vt. 比较（两者相似之处）
-- 词组
-    - compare A with/to B
-    - compared with/to 与...相比
-- comparison [kəmˈpærɪsn]
-    - n. 比较
-    - analogy [əˈnælədʒi]
-        - n. 类比
-        - Similar: ideology [ˌaɪdiˈɑːlədʒi] n. 意识；观念
-- comparable [ˈkɑːmpərəbl] adj. （数量、重要性等）相当的；类似的
-- comparatively adv. 相对地
-- contrast
-    - vt. 对比（不同）
-    - n. 差别
-    - 词组
-        - by/in contrast 相比之下
-        - in contrast to 与...截然不同
-
-## evidence
-
-- n. 证据
-- evident
-    - adj. 明显的
-    - == apparent adj. 显而易见的
-    - == obvious adj. 明显的
-- apparent adj. 显而易见的
-- obvious adj. 明显的
-- clear
-    - vt. 使通过批准；清除
-    - vi. 放晴；变清晰
-    - adj. 清楚的；明显的
-    - If it **clears** the House,...
-    - ...have to **clear** another major *hurdle([ˈhɜːrdl] n. 障碍)*.
-    - clarity [ˈklærəti]
-        - n. 清晰
-        - Similar: charity n. 慈善事业
-        - Rested in the Pacific Ocean, Mauua Kea's peak rises above the bulk of our *planet(n. 行星)*'s dense
-          atmosphere, where conditions allow telescopes to obtain images of unsurpassed **clarity**.
-            - rises above 高于、超出
-            - the bulk of ...的大部分
-            - dense atmosphere 稠密的大气
-            - unsurpassed adj. 不可超越的
-- strikingly adv. 显然地
-
-## justice
-
-- n. 正义；法官
-- just- 正义
-- **Justice** Anthony Kennedy wrote that the previous decisions were flawed.
-    - flawed adj. 有缺陷的、有瑕疵的、不完美的
-- justify
-    - vt. 替...辩护；证明...是正当的
-    - It is *curious([ˈkjʊriəs] adj. 难以理解的)* that Stephen Koziatek feels almost as though he has to **justify** his
-      efforts to give his students a better future.
-        - as though 好像
-            - == as if
-    - justification n. 正当的理由
-- jury
-    - n. 陪审团
-    - jury system 陪审团制度
-    - juror [ˈdʒʊrə(r)] n. 陪审员
-    - jurisdiction [ˌdʒʊrɪsˈdɪkʃn] n. 司法权；管辖权
-
-## note
-
-- vt. 提到；注意到
-- n. 证明；特征，调子，气氛
-- Block: take notes 记笔记
-    - He listens well <ins>who **takes notes**</ins>.
-        - == The person who takes notes listens well.
-        - [从句后移式的分裂结构](https://github.com/bowen-wu/postgraduate/blob/master/english/grammar/analyze-complex-sentence/special-structure/split-structure.md#%E4%BB%8E%E5%8F%A5%E5%90%8E%E7%A7%BB%E5%BC%8F%E7%9A%84%E5%88%86%E8%A3%82%E7%BB%93%E6%9E%84)
-- The longest bull run in a century of art market history ended on a dramatic note with a sale of 56 works by Damien
-  Hirst.
-    - bull run 牛市行情
-        - Opposite: bear run 熊市行情
-    - in a century of... 在长达一个世纪的...历史里
-    - end on a...note 以某种基调结束/以某种方式结束
-- notably
-    - adv. 显著地；尤其
-    - == in particular
-    - == especially [ɪˈspeʃəli] adv. 尤其
-- notice
-    - vt. 注意到
-    - n. 通知；注意
-    - It takes about three weeks to a month to **notice** any significant changes in your weight due to altering your
-      training program.
 
 ## Words
 

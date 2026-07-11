@@ -233,7 +233,7 @@
 - sarcastic [sɑːrˈkæstɪk]
     - adj. 讥讽的，讽刺的，挖苦的
 - spoil [spɔɪl]
-    - v. 溺爱
+    - v. 破坏；溺爱
 - advocate [ˈædvəkeɪt]
     - vt. 提倡；主张
     - n. 倡导者；拥护者

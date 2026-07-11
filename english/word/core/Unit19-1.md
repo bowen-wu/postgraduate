@@ -92,7 +92,8 @@
       pocketbook of an arrested person without warrant.
 - defy [dɪˈfaɪ]
     - vt. 违抗
-    - They believe it is *essential(adj. 必不可少的)* to **defy** convention.
+    - They believe it is essential to **defy** convention.
+        - essential adj. 必不可少的
 - boycott [ˈbɔɪkɑːt]
     - vt. 联合抵制
     - ...passionate consumers would try to *persuade(vt. 劝说)* others to **boycott** products.

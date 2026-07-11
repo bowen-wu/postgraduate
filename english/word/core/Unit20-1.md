@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## distort
@@ -173,6 +173,9 @@
     - ceaselessly adv. 无休无止
 - suspend [səˈspend]
     - vt. 暂停
+    - Similar: suspect [səˈspekt]
+        - v. 怀疑；猜想；觉得
+        - n. 犯罪嫌疑人
     - ...a new *conservative([kənˈsɜːrvətɪv] adj. 保守的)* city *council([ˈkaʊnsl] n. 地方会议)* **suspended**
       enforcement of the clean air zone.
 

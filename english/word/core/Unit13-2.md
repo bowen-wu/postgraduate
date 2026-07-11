@@ -136,7 +136,7 @@
 ## essential
 
 - adj. 必不可少的
-- == important == necessary == indispensable
+- == important == necessary == indispensable adj. 不可或缺的
 - They believe it is **essential** to defy convention.
 - essentially
     - adv. 本质上

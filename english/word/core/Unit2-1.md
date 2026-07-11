@@ -65,7 +65,7 @@
     - vi. 下降；衰退(PE)
     - v. 谢绝(PE)
     - n. 下降；衰退
-    - == descend [dɪˈsend]
+    - == descend [dɪˈsend] v. 下来
     - economic decline 😔
     - He **declined** their invitation.
     - Westward **declines** the sun; Far, far from home is the heartbroken one. 夕阳西下，断肠人在天涯

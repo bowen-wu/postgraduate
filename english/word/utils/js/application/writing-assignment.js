@@ -13,7 +13,7 @@ export const UNIT_FILES = [
   'core/Unit4-1.md', 'core/Unit4-2.md', 'core/Unit4-3.md',
   'core/Unit5-1.md', 'core/Unit5-2.md', 'core/Unit5-3.md',
   'core/Unit6-1.md', 'core/Unit6-2.md', 'core/Unit6-3.md',
-  'core/Unit7-1.md', 'core/Unit7-2.md', 'core/Unit7-3.md',
+  'core/Unit7-1.md', 'core/Unit7-2.md', 'core/Unit7-3.md', 'core/Unit7-4.md',
   'core/Unit8-1.md', 'core/Unit8-2.md', 'core/Unit8-3.md',
   'core/Unit9-1.md', 'core/Unit9-2.md', 'core/Unit9-3.md',
   'core/Unit10-1.md', 'core/Unit10-2.md', 'core/Unit10-3.md',

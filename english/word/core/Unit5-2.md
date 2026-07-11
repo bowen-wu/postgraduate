@@ -163,7 +163,8 @@
             - == concept n. 概念；观念
         - elevate notions of beauty 提升审美观
         - Even better would be to... 更好的做法/选择是... => 倒装句
-        - help do sth./help sb. do sth. 帮助做某事
+        - help do sth. 帮助做某事
+            - == help sb. do sth.
 - augment [ɔːɡˈment]
     - vt. 增加，提高
     - Similar: argument n. 观点；争论；论据

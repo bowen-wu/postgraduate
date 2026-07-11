@@ -1,4 +1,4 @@
-\documentclass[./book.tex]{subfiles}
+\documentclass[./linear_algebra.tex]{subfiles}
 
 \begin{document}
 
@@ -391,6 +391,19 @@
         \]
         \begin{analysisbox}
 
+        \end{analysisbox}
+        \item 设$\alpha_1, \alpha_2, \alpha_3$为两两正交的非零向量，证明：$\alpha_1, \alpha_2, \alpha_3$线性无关
+        \begin{analysisbox}
+            设有一组常数$k_1, k_{2}, k_3$，使
+            \[
+                k_1\alpha_1 + k_2\alpha_2 + k_3\alpha_3 = 0
+            \]
+            两边与$\alpha_1$作内积，由$(\alpha_1, \alpha_2) = 0, (\alpha_1, \alpha_3) = 0$得
+            \[
+                k_1(\alpha_1, \alpha_1) + k_2(\alpha_1, \alpha2) + k_3(\alpha_1, \alpha_3) = k_1(\alpha_1, \alpha_1) = 0
+            \]
+            又因为$\alpha_1 \neq 0, (\alpha_1, \alpha_1) > 0$，故$k_1 = 0$ \\
+            同理可得$k_2 = 0, k_3 = 0$，故$\alpha_1, \alpha_2, \alpha_3$线性无关
         \end{analysisbox}
     \end{enumerate}
 

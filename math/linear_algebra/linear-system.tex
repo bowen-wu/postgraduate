@@ -1,7 +1,6 @@
-\documentclass[./book.tex]{subfiles}
+\documentclass[./linear_algebra.tex]{subfiles}
 
 \begin{document}
-
 
     \section{线性方程组}
 
@@ -16,7 +15,6 @@
     \end{enumerate}
 
     \subsection{齐次线性方程组}
-
 
     方程组
     \[
@@ -51,7 +49,7 @@
 
     \begin{enumerate}
         \item 当$r(A) = n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性无关时，齐次方程组有唯一{\color{red}{零解}}
-        \item $\color{red}{\bigstar}\color{red}{\bigstar}$当$r(A) = r < n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性相关时，齐次方程组有{\color{red}{非零解（无穷多解），且有$n - r(A)$个线性无关解}}
+        \item $\color{red}{\bigstar\bigstar}$当$r(A) = r < n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性相关时，齐次方程组有{\color{red}{非零解（无穷多解），且有$n - r(A)$个线性无关解}}，若$m = n$，则$|A| = 0$
     \end{enumerate}
 
     \subsubsection{解的性质}
@@ -68,95 +66,155 @@
                                                                      \text{是方程组}$Ax = 0$\text{的解} \\
                                                                      \text{线性无关} \\
                                                                      \text{方程组}$Ax = 0$\text{的任一解均可由}$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$\text{线性表示}
-        \end{cases}则称$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$为$Ax = 0$的基础解系。{\color{red}{个数为$s = n - r(A)$}}
+        \end{cases}则称$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$为$Ax = 0$的基础解系。{\color{red}{个数为$s = n - r(A)$}}。\textbf{基础解系是不唯一的}
         \item 通解：设$\xi_1, \xi_2, \cdots, \xi_{n-r(A)}$是$Ax = 0$的基础解系，则$k_1\xi_1 + k_2\xi_2 + \cdots + k_{n-r(A)}\xi_{n-r(A)}$是方程组$Ax = 0$的通解，其中$k_1, k_2, \cdots, k_{n-r(A)}$是任意常数
     \end{enumerate}
 
     \subsubsection{求解方法与步骤}
 
     \begin{enumerate}
-        \item 将系数矩阵$A$作{\color{customgreen}{}}
+        \item 将系数矩阵$A$作{\color{customgreen}{初等行变换}}化成行阶梯形矩阵$B$（或行最简阶梯形矩阵$B$），阶梯数（真实约束个数，即行向量组的秩）为$r$，并记$r(A) = r$
+        \item 按列找出一个秩为$r$的子矩阵，剩余列位置的未知数设为只有变量（$n - r(A)$个自由变量）
+        \item 按基础解系定义求出$\xi_1, \xi_2, \cdots, \xi_{n-r}$，并写出通解
     \end{enumerate}
+
+    \subsection{非齐次线性方程组}
+
+    方程组
+    \[
+        \begin{cases}
+            a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
+            a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
+            \quad \vdots \\
+            a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
+        \end{cases}
+    \]
+    称为$n$个未知数$m$个方程的\textbf{非齐次线性方程组}。用矩阵表示为: $\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$其中$x = (x_1, x_2, \dots, x_n)^T, b = (b_1, b_2, \dots, b_n)^T$,
+
+    \begin{enumerate}
+        \item 向量形式：$x_1\alpha_1 + x_2\alpha_2 + \cdots + x_n\alpha_n = b$，其中$a_j = [a_{1j}, a_{2j}, \cdots, a_{mj}]^T, j = 1, 2, \cdots, n; b = [b_1, b_2, \cdots, b_m]^T$
+        \item 矩阵形式：$Ax = b$，其中
+        \[
+            A_{m\times n} = \begin{bmatrix}
+                                a_{11} & a_{12} & \cdots & a_{1n} \\
+                                a_{21} & a_{22} & \cdots & a_{2n} \\
+                                \vdots & \vdots & \ddots & \vdots \\
+                                a_{m1} & a_{m2} & \cdots & a_{mn}
+            \end{bmatrix} \quad x = \begin{bmatrix}
+                                        x_1 \\
+                                        x_2 \\
+                                        \vdots \\
+                                        x_n \\
+            \end{bmatrix}
+        \]矩阵\[
+                  \left[
+                      \begin{array}{cccc|c}
+                          a_{11} & a_{12} & \cdots & a_{1n} & b_1\\
+                          a_{21} & a_{22} & \cdots & a_{2n} & b_2\\
+                          \vdots & \vdots & \ddots & \vdots & \vdots\\
+                          a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
+                      \end{array}
+                  \right]
+        \]称为矩阵$A$的\textbf{增广矩阵}，简记成$[A | b]$
+    \end{enumerate}
+
+    \subsubsection{有解的条件}
+
+    \begin{enumerate}
+        \item 当$r(A_{m\times n}) \neq r([A_{m\times n}, b])$，即$b$不能由$\alpha_1, \alpha_2, \cdots, \alpha_n$线性表示时，非齐次方程组无解\\
+        \begin{cases}
+            $\Leftrightarrow \mathbf{r(A_{m\times n}) + 1 = r([A_{m\times n}, b])}$ \\
+            $\Leftrightarrow b$ 不能由$A_{m\times n}$的列向量线性表出 \\
+            $\Rightarrow$若$A$是方阵，则$|A| = 0$
+        \end{cases}
+        \item 当$r(A_{m\times n}) = r([A_{m\times n}, b]) = n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性无关，$\alpha_1, \alpha_2, \cdots, \alpha_n, b$线性相关，非齐次方程组有唯一解
+        \item 当$r(A_{m\times n}) = r([A_{m\times n}, b]) = r < n$，非齐次方程组有{\color{red}{无穷多解}}
+        \item 若$r(A_{m\times n}) = m \Rightarrow$ 方程组有解
+    \end{enumerate}
+
+    \subsubsection{解的性质}
+
+    设$\eta_1, \eta_2, \eta$是非齐次线性方程组$Ax = b$的解，$\xi$是对应齐次线性方程组$Ax = 0$的解
+    \begin{enumerate}
+        \item $\eta_1 - \eta_2$是$Ax = 0$的解
+        \item $k\xi + \eta$是$Ax = b$的解
+    \end{enumerate}
+
+    \subsubsection{求解方法与步骤}
+
+    \begin{enumerate}
+        \item 写出$Ax = b$的导出方程组$Ax = 0$，并求$Ax = 0$的通解$k_1\xi_1 + k_2\xi_2 + \cdots + k_{n-r(A)}\xi_{n-r(A)}$
+        \item 求出$Ax = b$的一个特解$\eta$
+        \item $Ax = b$的通解为$k_1\xi_1 + k_2\xi_2 + \cdots + k_{n-r(A)}\xi_{n-r(A)} + \eta$，其中$k_1, k_2, \cdots, k_{n-r(A)}$是任意常数
+    \end{enumerate}
+
+    \subsection{两个方程组的公共解}
+
+    齐次线性方程组$A_{m\times n}x = 0$和$B_{m\times n}x = 0$的\textbf{公共解}是满足方程组$\begin{bmatrix}
+                                                                                              A \\
+                                                                                              B
+    \end{bmatrix}x = 0$的解，即联立求解。同理可求$Ax = \alpha$与$Bx = \beta$的公共解
+
+    \begin{enumerate}
+        \item 若给出$A_{m\times n}x = 0$的基础解系$\xi_1, \xi_2, \cdots, \xi_s$和$B$的具体表达式，则先写出$Ax = 0$的通解$k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_s$，代入$B_{m\times n}x = 0$，求出$k_i(i = 1, 2, \cdots, s)$之间的关系，代会$A_{m\times n}x = 0$的通解，即可求得$Ax = 0$与$Bx = 0$的通解
+        \item 若给出$A_{m\times n}x = 0$的基础解系$\xi_1, \xi_2, \cdots, \xi_s$与$B_{m\times n}x = 0$的基础解系$\eta_1, \eta_2, \cdots, \eta_t$，则$Ax = 0$与$Bx = 0$的公共解$\gamma = k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_{s} = l_1\eta_1 + l_2\eta_2 + \cdots + l_t\eta_t$，即
+        \[
+            k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_{s} - l_1\eta_1 - l_2\eta_2 - \cdots - l_t\eta_t = 0
+        \]解此式，求出$k_i$或$l_j, i = 1, 2, \cdots, s; j = 1, 2, \cdots, t$，即可求出$\gamma$
+    \end{enumerate}
+
+    \subsection{同解方程组}
+
+    若两个方程组$A_{m\times n}x = 0$和$B_{s\times n} = 0$有\textbf{完全相同的解}，则称他们为同解方程组。即：$Ax = 0, Bx = 0$是同解方程组
+    \begin{cases}
+        \Leftrightarrow Ax = 0\text{的解满足}Bx = 0\text{，且}Bx = 0\text{的解满足}Ax = 0 \\
+        \Leftrightarrow r(A) = r(B)\text{，且}Ax = 0\text{的解满足}Bx = 0 \\
+        \Leftrightarrow {\color{red}{\bigstar}\color{red}{\bigstar}}r(A) = r(B) = r(\begin{bmatrix}
+                                                                                        A \\
+                                                                                        B
+        \end{bmatrix})
+    \end{cases}
 
     \subsection{基础概念}
     \begin{enumerate}
-        \item 方程组
-        \[
-            \begin{cases}
-                a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
-                a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
-                \quad \vdots \\
-                a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
-            \end{cases}
-        \]
-        称为$n$个未知数$m$个方程的\textbf{非齐次线性方程组}。用矩阵表示为: $\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$其中$x = (x_1, x_2, \dots, x_n)^T, b = (b_1, b_2, \dots, b_n)^T$,
-        \item 如果$b_{i} = 0(\forall i = 1,2,\dots,m)$，则称
         \item 若用一组数$c_1, c_2, \dots, c_n$分别代替方程组中的$x_1, x_2, \dots, x_n$，使$m$个等式都成立，则称有序数组$(c_1, c_2, \dots, c_n)$是方程组的一组解。解方程组就是要找出方程组的全部解
-        \item 非齐次线性方程组的全体系数及常数项所构成的矩阵
-        \[
-            \bar{A} =
-            \begin{bmatrix}
-                a_{11} & a_{12} & \dots  & a_{1n} & \;\big|\; & b_1    \\
-                a_{21} & a_{22} & \dots  & a_{2n} & \;\big|\; & b_2    \\
-                \vdots & \vdots & \ddots & \vdots & \;\big|\; & \vdots \\
-                a_{m1} & a_{m2} & \dots  & a_{mn} & \;\big|\; & b_m
-            \end{bmatrix}
-        \]
-        称为非齐次线性方程组的\textbf{增广矩阵}，而由全体系数组成的矩阵
-        \[
-            A =
-            \begin{bmatrix}
-                a_{11} & a_{12} & \cdots & a_{1n} \\
-                a_{21} & a_{22} & \cdots & a_{2n} \\
-                \vdots & \vdots & \ddots & \vdots \\
-                a_{m1} & a_{m2} & \cdots & a_{mn}
-            \end{bmatrix}
-        \]
-        称为非齐次线性方程组的\textbf{系数矩阵}
-        \item 如果两个方程组有相同的解集合，则称它们是\textbf{同解方程组}
         \item 下列三种变换称为线性方程组的\textbf{初等变换}
         \begin{enumerate}
             \item 用一个非零常数乘方程的两边
             \item 把某方程的$k$倍加到另一方程上
             \item 互换两个方程的位置
         \end{enumerate}
-        线性方程组经初等变换华为阶梯形方程组后，每个方程中的第一个未知量\textbf{\color{red}{通常}}称为\textbf{主变量}，其余的未知量称为\textbf{自由变量}
+        线性方程组经初等变换化为阶梯形方程组后，每个方程中的第一个未知量\textbf{\color{red}{通常}}称为\textbf{主变量}，其余的未知量称为\textbf{自由变量}
         \item 选择自由变量准则: \textbf{去掉自由变量后主变量行列式不能为0}
-        \item 向量组$\eta_1, \eta_2, \dots, \eta_n$称为齐次线性方程组$Ax = 0$的\textbf{基础解系}，如果
-        \begin{enumerate}
-            \item $\eta_1, \eta_2, \dots, \eta_n$是$Ax = 0$的解
-            \item $\eta_1, \eta_2, \dots, \eta_n$线性无关
-            \item $Ax = 0$的任一解都有由$\eta_1, \eta_2, \dots, \eta_n$线性表出
-            \item 解向量个数
-            \begin{align*}
-                &= \; \text{无关解个数} \\
-                &= \; \text{自由变量个数} \\
-                &= \; t = n - r(A)\text{，其中}n = A\text{的列向量个数}
-            \end{align*}
-        \end{enumerate}
-        \item 如果$\eta_1, \eta_2, \dots, \eta_n$是齐次线性方程组$Ax = 0$的一组基础解系，那么对任意常数$c_1, c_2, \dots, c_n$,
-        \[
-            c_{1}\eta_1 + c_{2}\eta_2 + \dots + c_{t}\eta_t
-        \]
-        是齐次线性方程组$Ax = 0$的\textbf{通解}
-        \item $Ax = 0$\textbf{的基础解系是不唯一的}
-        \item 对于方程组(I)和(II)，如果$\alpha$既是方程组(I)的解，也是方程组(II)的解，则称$\alpha$是方程组(I)和(II)的\textbf{公共解}
-        \item 对于方程组(I)和(II)，如果$\alpha$是方程组(I)的解，则$\alpha$必是(II)的解；反过来，如果$\alpha$是方程组(II)的解，则$\alpha$必是(I)的解，则称(I)和(II)\textbf{同解}
-        \item $Ax = 0$与$Bx = 0$同解
-        \begin{align*}
-            &\Leftrightarrow\; r(A) = r(B)\text{且}Ax = 0 \text{的解全是} Bx = 0\text{的解} \\
-            &\Leftrightarrow\; r(A) = r(B) = r\!\left(\begin{bmatrix}
-                                                          A \\ B
-            \end{bmatrix}\right) \\
-            &\Leftrightarrow\; \text{矩阵}A\text{和}B\text{的行向量组等价}
-        \end{align*}
-        \item 矩阵乘法一般没有交换律，若$AB = BA$，就称$A$与$B$\textbf{可交换}
     \end{enumerate}
 
-    \subsection{定理}
+    \subsection{结论}
 
     \begin{enumerate}
+        \item 正交的单位向量有两个方向，需要{\color{red}{加正负号}}
         \item 线性方程组的初等行变化把线性方程组变成与它同解的方程组
+        \item 当$m < n$(即方程的个数 < 未知数的个数)时，齐次线性方程组必有\textbf{非零解(有无穷多解)}
+        \item 使用 \textbf{\color{red}{最小公约数}} 构造解：
+        \[
+            \alpha_1 + \alpha_2 \quad \text{是两个解，} \quad
+            \alpha_2 + 2\alpha_3 \quad \text{是三个解，}
+        \]
+        故可构造：
+        \[
+            3(\alpha_1 + \alpha_2) - 2(\alpha_2 + 2\alpha_3)
+        \]是齐次方程组的解
+        \item 若$\alpha_1,\alpha_2,\dots,\alpha_t$是$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的解
+        \begin{enumerate}
+            \item 且$k_1 + k_2 + \dots + k_t = 1$ \Leftrightarrow $k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{t}\alpha_t$仍是$Ax = \mathbf{b}$的解
+            \item 且$k_1 + k_2 + \dots + k_t = 0$ \Leftrightarrow $k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{t}\alpha_t$仍是$Ax = \mathbf{0}$的解
+        \end{enumerate}
+        \item 特解构造方法：
+        \[
+            \begin{aligned}
+                \text{特解} &= \text{令自由变量为0，主元为常数项} \\
+                \text{特解} &\Leftarrow \text{通过单个 } b \text{ 构造，即除/减 } (n+1 \text{ 个解 } - n \text{ 个解})
+            \end{aligned}
+        \]
         \item 设$n$元非齐次线性方程组，对它的增广矩阵施行高斯消元法，得到阶梯形矩阵
         \[
             \bar A =
@@ -178,104 +236,17 @@
                 \item 当$r < n$时有无穷多解
             \end{enumerate}
         \end{enumerate}
-        \item 齐次线性方程组只有\textbf{零解(唯一解)}
-        \begin{align*}
-            &\Leftrightarrow\; r(A) = n  \\
-        \end{align*}
-        \item 齐次线性方程组有\textbf{非零解(有无穷多解)}
-        \begin{align*}
-            &\Leftrightarrow\; r(A) < n  \\
-            &\Leftrightarrow\; A\text{的列向量线性无关} \\
-            &\Leftrightarrow\; \text{若} m = n, \text{则} |A| = 0
-        \end{align*}
-        \item 当$m < n$(即方程的个数 < 未知数的个数)时，齐次线性方程组必有\textbf{非零解(有无穷多解)}
-        \item 设齐次线性方程组系数矩阵的秩$r(A) = r < n$，则$Ax = 0$的基础解系由$n - r(A)$个线性无关的解向量所构成
-        \item \textbf{有解判定定理}: 非齐次线性方程组 $\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$ 的解的充分必要条件是其系数矩阵和增广矩阵的秩相等，即 $\mathbf{r(A) = r(\overline{A})}$:
-        \[
-            \begin{aligned}
-                & \text{若} r(A) = r(\bar{A}) = n && \Leftrightarrow \; \textbf{方程组有唯一解}  \\
-                & \text{若} r(A) = r(\bar{A}) < n && \Leftrightarrow \; \textbf{方程组有无穷解}  \\
-                & \textbf{方程组有解} &&
-                \begin{cases}
-                    \Leftrightarrow r(A) = r(\bar{A}) \\
-                    \Leftrightarrow A \text{的行向量组线性无关} \\
-                    \text{原因:}r(A) \le r(\bar{A}) \le m \Rightarrow r(A) = r(\bar{A}) = m
-                \end{cases} \\
-                & \text{非齐次线性方程组} \mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}} \text{无解} &&
-                \begin{cases}
-                    \Leftrightarrow \mathbf{r(A) + 1 = r(\overline{A})} \\
-                    \Leftrightarrow b \text{不能由} A \text{的列向量线性表出} \\
-                    \Rightarrow |A| = 0
-                \end{cases}
-            \end{aligned}
-        \]
-        \item \textbf{解的性质}
-        \begin{enumerate}
-            \item 如果$\eta_1, \eta_2$是齐次线性方程组$Ax = 0$的两个解，那么其线性组合仍是该齐次线性方程组$Ax = 0$的解
-            \item 如果$\alpha, \beta$是非齐次线性方程组$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的两个解，则$\alpha - \beta$是导出组$Ax = 0$的解
-            \begin{align*}
-                &\Leftrightarrow\; r(A) = r(\overline{A}) < n  \\
-                &\Leftrightarrow\; Ax = 0\text{有无穷多解}
-            \end{align*}
-            \item 如果$\alpha$是齐次线性方程组$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的解，$\eta$是导出组$Ax = 0$的解，则$\alpha + \eta$是非齐次线性方程组$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的解
-            \item 使用 \textbf{\color{red}{最小公约数}} 构造解：
-            \[
-                \alpha_1 + \alpha_2 \quad \text{是两个解，} \quad
-                \alpha_2 + 2\alpha_3 \quad \text{是三个解，}
-            \]
-            故可构造：
-            \[
-                3(\alpha_1 + \alpha_2) - 2(\alpha_2 + 2\alpha_3)
-            \]
-            \item 若$\alpha_1,\alpha_2,\dots,\alpha_t$是$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的解
-            \begin{enumerate}
-                \item 且$k_1 + k_2 + \dots + k_t = 1$ \Leftrightarrow $k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{t}\alpha_t$仍是$Ax = \mathbf{b}$的解
-                \item 且$k_1 + k_2 + \dots + k_t = 0$ \Leftrightarrow $k_{1}\alpha_1 + k_{2}\alpha_2 + \dots + k_{t}\alpha_t$仍是$Ax = \mathbf{0}$的解
-            \end{enumerate}
-        \end{enumerate}
-        \item \textbf{解的结构}: 对非齐次线性方程组$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$，若$r(A) = r(\bar{A}) = r$，且已知$\eta_1, \eta_2, \dots, \eta_{n - r}$是导出组$Ax = 0$的基础解系，$\zeta_0$是$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的每个已知解，则$\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$的通解为
-        \[
-            \zeta_0 + c_{1}\eta_1 + c_{2}\eta_2 + \dots + c_{n-r}\eta_{n-r}
-        \]其中$c_1, c_2, \dots, c_{n-r}$为任意常数
-        \item 通解表示为：
-        \[
-            \begin{aligned}
-                \text{通解}
-                &= \text{特解} + k_1 \text{解向量}_1 + k_2 \text{解向量}_2 + \dots \\
-                &= \text{特解} + \text{齐次方程 } Ax = 0 \text{ 的通解}
-            \end{aligned}
-        \]
-
-        特解构造方法：
-        \[
-            \begin{aligned}
-                \text{特解} &= \text{令自由变量为0，主元为常数项} \\
-                \text{特解} &\Leftarrow \text{通过单个 } b \text{ 构造，即除/减 } (n+1 \text{ 个解 } - n \text{ 个解})
-            \end{aligned}
-        \]
-
-        齐次方程 $Ax = 0$ 的通解：
-        \[
-            \begin{aligned}
-                \text{通解} &= \text{自由变量列的相反数} \\
-                \text{通解} &= \alpha - \beta \; \text{或通过 {\color{red}{最小公倍数}} 法构造}
-            \end{aligned}
-        \]
+        \item $r(A) = r([A, B]) \Leftrightarrow r(A^T) = r\!\left(\begin{bmatrix}
+                                                                      A^T\\
+                                                                      B^T
+        \end{bmatrix}\right)$
     \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{公式}
 
     \subsection{方法步骤}
 
     \begin{enumerate}
         \item $\mathbf{\color[rgb]{0.2, 0.6, 0.3}{Ax = b}}$ 有解 $\Leftrightarrow r(A) = r(\bar{A})$
-        \begin{enumerate}
+        \begin{itemize}
             \item 判断何时$a = 0$
             \[
                 \bar{A} =
@@ -299,7 +270,7 @@
                 \end{tikzpicture}
             \]
             若$a = 0$则{\color{red}{有可能}}无解
-            \begin{enumerate}
+            \begin{circlenum}
                 \item $\forall a$均有解
                 \[
                     \bar{A} =
@@ -344,7 +315,7 @@
                         ([xshift=-60pt,yshift=24pt]mat.south east);
                     \end{tikzpicture}
                 \]
-            \end{enumerate}
+            \end{circlenum}
             \item \emph{e.g.}
             \[
                 \left[
@@ -356,74 +327,43 @@
                 \right]
             \]
             从下向上依次检查与$0$的关系
-            \begin{enumerate}
+            \begin{circlenum}
                 \item 先看$2a + 6 = 0$
                 \item 再看$a - 1 = 0$
-            \end{enumerate}
+            \end{circlenum}
             \begin{align*}
                 & \text{唯一解} && \Leftrightarrow r(A) = r(\bar{A}) = n && \Leftrightarrow a \neq 1 \text{ 且 } a \neq -3 \\
                 & \text{无穷解} && \Leftrightarrow r(A) = r(\bar{A}) < n && \Leftrightarrow a = 1 \\
                 & \text{无解}   && \Leftrightarrow r(A) + 1 = r(\bar{A}) && \Leftrightarrow a = -3
             \end{align*}
-        \end{enumerate}
+        \end{itemize}
         \item 证明$\alpha_1,\alpha_2,\dots,\alpha_t$是$Ax = 0$的基础解系，需要
-        \begin{enumerate}
+        \begin{itemize}
             \item 验证$\alpha_1,\alpha_2,\dots,\alpha_t$是$Ax = 0$的解
             \item 证明$\alpha_1,\alpha_2,\dots,\alpha_t$线性无关
             \item $t = n - r(A)$
-        \end{enumerate}
-        \item 非齐次线性方程组求解方法
-        \begin{enumerate}
-            \item 对增广矩阵作初等{\color{red}{行变换}}化为阶梯形矩阵
-            \item 求导出组的几个基础解系
-            \item 求方程组的一个特解（为简捷，可令自由变量全为0）
-            \item 按解的结构写出通解
-            \item 注: \textbf{当方程组中含有参数时，分析讨论要严谨不要丢情况}
-        \end{enumerate}
-        \item 公共解处理方法(例4.16)
-        \begin{enumerate}
-            \item (I)(II)联立求解
-            \item 通过(I)与(II)各自的通解，寻找非零公共解
-            \item 把(I)的通解带入(II)中，如果仍是解，寻找$k_1, k_2$所对应满足的关系式而求出公共解
-        \end{enumerate}
-        \item 证明两方程同解
-        \begin{enumerate}
-            \item 定义
-            \item $r(A) = r(B)$且$Ax = 0$ 的解全是 $Bx = 0$的解
-        \end{enumerate}
-    \end{enumerate}
-
-    \subsection{条件转换思路}
-    \begin{enumerate}
-        \item 抽象方程组(例4.9)
-        \begin{enumerate}
-            \item 解的结构
-            \item 解的性质
-            \item 秩
-        \end{enumerate}
+        \end{itemize}
     \end{enumerate}
 
     \subsection{理解}
 
     \begin{enumerate}
-        \item $\text{线性相关无关} \;\Rightarrow\; Ax = 0\text{齐次方程组非零解的问题}$
-        \item $\text{线性表示} \;\Rightarrow\; Ax = \beta(\text{其中}A = [\alpha_1, \alpha_2, \dots, \alpha_n])\text{非齐次方程组解的问题}$
-        \begin{itemize}
-            \item 非齐次方程组的解向量 $x$ 即为线性表示的系数
-            \item 对于 $n$ 维向量，有 $n$ 个方程，未知数个数等于向量个数
-            \item 根据秩的不同，线性表示有三种情况：
-            \begin{enumerate}
-                \item \textbf{唯一表示:}$\; r(A) = r(A,\beta) = n$，$(\alpha_1, \alpha_2, \dots, \alpha_n)$向量组线性无关
-                \item \textbf{无穷多表示:}$\; r(A) = r(A,\beta) < n$，$(\alpha_1, \alpha_2, \dots, \alpha_n)$向量组线性相关
-                \item \textbf{无表示:}$\; r(A) < r(A,\beta)$，$\beta$ 不能由 $(\alpha_1,\dots,\alpha_n)$ 线性表示
-            \end{enumerate}
-        \end{itemize}
+        \item $\color{red}{\bigstar\bigstar\bigstar}$方程组的解就是描述列向量中各向量之间数量关系的系数
+        \item $\color{red}{\bigstar}$证明：若$A$是$m\times n$实矩阵，则对任意$m$为列向量$b$，线性方程组$A^{T}Ax = A^{T}b$有解
+        \begin{analysisbox}
+            对任意$m$维列向量$b$，由于$[A^{T}A|A^{T}b] = A^T[A|b]$，故
+            \[
+                r([A^{T}A|A^{T}b]) \leq r(A^T) = r(A)
+            \]
+            又$r(A) = r(A^TA) \leq r([A^{T}A|A^{T}b])$，故$r(A^{T}A) = r([A^{T}A|A^{T}b])$，因此$A^{T}Ax = A^{T}b$有解
+        \end{analysisbox}
+        \item $\color{red}{\bigstar}$设$A$是$n$阶实矩阵，$A^T$是$A$的转置矩阵，证明：方程组$(I) Ax = 0$和方程组$(II) A^{T}Ax = 0$是同解方程组
+        \begin{analysisbox}
+            \begin{circlenum}
+                \item 若存在$x$满足$Ax = 0$，则在方程两端同时乘$A^T$，即$A^{T}Ax = 0$，故方程组$(I)$的解必是方程组$(II)$的解
+                \item 若存在$x$满足$A^{T}Ax = 0$，则在方程两端同时乘$x^T$，即$x^{T}A^{T}Ax = 0$，得$(Ax)^{T}Ax = 0$。因为$A$是实矩阵，故$Ax$是实向量，设$Ax = [a_1, a_2, \cdots, a_n]^T$，则$(Ax)^{T}Ax = \sum\limits_{i = 1}^n a_i^2 = 0$，得$a_i = 0(i = 1, 2, \cdots, n)$，故$Ax = 0$，即方程组$(II)$的解必是方程组$(I)$的解
+            \end{circlenum}
+            故方程组$(I), (II)$是同解方程组
+        \end{analysisbox}
     \end{enumerate}
-
-    \subsection{定理}
-
-    \begin{enumerate}
-        \item $A$是$m \times n$矩阵，则$Ax = 0$的解向量组的秩为$\mathbf{n - r(A)}$
-    \end{enumerate}
-
 \end{document}

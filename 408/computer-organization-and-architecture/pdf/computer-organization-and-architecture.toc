@@ -1,0 +1,56 @@
+\contentsline {section}{\numberline {1}计算机系统概述}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}计算机的性能指标}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}数据的表示和运算}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}定点数的编码表示}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}整数的表示}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}C语言中的整型数据类型}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}不同字长整数之间的转换}{5}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}运算方法}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}移位运算}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}标志位}{6}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}浮点数的表示}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}理论浮点数}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}IEEE 754标准}{7}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}加减运算}{7}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}C语言中的浮点数类型}{8}{subsubsection.2.4.4}%
+\contentsline {section}{\numberline {3}存储系统}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}存储器的性能指标}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}RAM（Random Access Memory, 随机存储器）}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}DRAM}{9}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}多模块存储器}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}外部存储器}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}磁盘存储器}{10}{subsubsection.3.4.1}%
+\contentsline {paragraph}{磁盘的性能指标}{10}{section*.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}固态硬盘}{11}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}高速缓冲存储器}{11}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Cache 与主存映射方式}{11}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Cache 一致性问题}{12}{subsubsection.3.5.2}%
+\contentsline {section}{\numberline {4}指令系统}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}指令的寻址方式}{14}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}指令寻址}{14}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}数据寻址}{14}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}程序的机器级代码表示}{16}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}常用指令}{16}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}CISC \& RISC}{17}{subsection.4.3}%
+\contentsline {section}{\numberline {5}总线}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}系统总线的结构}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}总线的性能指标}{19}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}总线事务}{20}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}总线定时}{20}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}异步定时方式}{21}{subsubsection.5.4.1}%
+\contentsline {section}{\numberline {6}输入/输出系统 \& 管理}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}I/O接口}{21}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}I/O接口的基本结构}{22}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}I/O接口的功能}{22}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}I/O控制方式}{23}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}程序查询方式（程序直接控制方式、程序轮询方式）}{23}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}程序中断（中断驱动方式）}{23}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}DMA方式（Direct Memory Access, 直接存储器存取）}{25}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}计算}{27}{subsubsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.3}I/O软件层次结构}{27}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}逻辑设备名 VS 物理设备名}{28}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}设备分配}{28}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}应用程序I/O接口}{29}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}缓冲管理}{29}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}缓冲区（Buffer）}{29}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}SPOOLing技术（假脱机技术）}{31}{subsubsection.6.5.2}%

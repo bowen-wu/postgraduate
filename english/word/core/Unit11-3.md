@@ -196,8 +196,8 @@
 - generation
     - n. 一代人；（家史中的）一代；一辈；（尤指电、热等的）产生
     - Before it ends, it will likely change the life course and character of a **generation** of young adults.
-    - Now that members of **Generation Z** are graduating college this spring the most commonly-accepted definition says
-      this generation was born after 1995, give or take a year the attention has been rising steadily in recent weeks.
+    - Now that members of Generation Z are graduating college this spring—the most commonly-accepted definition says
+      this generation was born after 1995, give or take a year—the attention has been rising steadily in recent weeks.
 - generational adj. 一代的；代与代之间的
 - generative adj. （语言学中）生成的
 - millennial [mɪˈleniəl] n. 千禧世代；一千年的
@@ -212,9 +212,12 @@
     - "The Heart of the Matter" never gets to the heart of the matter: the **illiberal** nature of **liberal** education
       at our leading colleges and universities.
         - liberal education 通识教育/博雅教育/人文素养教育
-- liberate [ˈlɪbəreɪt] vt. 解放
+- liberate [ˈlɪbəreɪt]
+    - vt. 解放
+    - Similar: literary [ˈlɪtəreri] adj. 文学的
 - liberty [ˈlɪbərti]
     - n. 自由
+    - Similar: literary [ˈlɪtəreri] adj. 文学的
     - the Statue of Liberty 自由女神雕像
 - liberalism [ˈlɪbərəˌlɪzəm]
     - n. 自由主义

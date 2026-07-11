@@ -1,97 +1,67 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage[table]{xcolor}  % 颜色
-\usepackage{tabularx}       % 表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\usepackage{tcolorbox}
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\documentclass[./linear_algebra.tex]{subfiles}
 
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-% 抽离颜色和尺寸参数
-\newcommand{\analysisTitleColor}{green!50!black}
-\newcommand{\analysisBackColor}{white}
-\newcommand{\analysisBoxRule}{0.8pt}
-\newcommand{\analysisArc}{3pt}
-\newcommand{\analysisPadding}{6pt}
-
-% 定义 tcolorbox
-\newtcolorbox{analysisbox}{
-    title=解析,
-    colback=\analysisBackColor,
-    colframe=\analysisTitleColor,
-    boxrule=\analysisBoxRule,
-    arc=\analysisArc,
-    left=\analysisPadding,
-    right=\analysisPadding,
-    top=4pt,
-    bottom=4pt
-}
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
 \begin{document}
 
-%    \title{Template}
-%    \author{Bowen}
-%    \date{\today}
-%    \maketitle
-
-% =========================
-
     \section{特征值与特征向量}
+
+    设$A$是$n$阶矩阵，如果存在一个数$\lambda$及非零的$n$维列向量$\alpha$使得
+    \[
+        A\xi = \lambda\xi
+    \]
+    成立，则称$\lambda$是矩阵$A$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征值}}，称非零向量$\alpha$是矩阵$A$属于特征值$\lambda$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征向量}}
+
+    \subsection{矩阵的特征值与特征向量的求法}
+
+    设$A = [a_{ij}]$为一个$n$阶矩阵，则行列式
+    \[
+        |A - \lambda E| = \begin{vmatrix}
+                              a_{11} - \lambda & a_{12}           & \cdots & a_{1n}           \\
+                              a_{21}           & a_{22} - \lambda & \cdots & a_{2n}           \\
+                              \vdots           & \vdots           & \ddots & \vdots           \\
+                              a_{n1}           & a_{n2}           & \cdots & a_{nn} - \lambda
+        \end{vmatrix}
+    \]
+    称为矩阵$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征多项式}}，$|A - \lambda E| = 0$称为$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征方程}}
+
+    \paragraph{求解具体型矩阵的特征值与特征向量}
+
+    先用特征方程$|A - \lambda E| = 0$求出$\lambda$，再解齐次线性方程组$(\lambda E - A)x = 0$求出特征向量
+
+    \subsubsection{解方程组技巧}
+
+    \subsection{性质与重要结论}
+
+    \subsubsection{特征值的性质与重要结论}
+
+    \subsubsection{特征向量的性质与重要结论}
+
+    \subsubsection{常用矩阵的特征值与特征向量}
+    设矩阵 $A$ 的特征值为 $\lambda$，对应的特征向量为 $\bm{\xi}$，即：$A\bm{\xi} = \lambda \bm{\xi}$则
+
+    \renewcommand{\arraystretch}{2.2} % 调整行距
+    \begin{center}
+        \setlength{\tabcolsep}{12pt} % 调整列间距
+        \begin{tabular}{c|cccccccc}
+            \hline
+            \rowcolor{gray!10}
+            $A$        & $kA + E$       & $A + kE$      & $A^{-1}$             & $A^{*}$                & $A^{T}$        & $A^{n}$     & $P^{-1}AP$       & $f(A)$       \\
+            \hline
+            $\lambda$  & $k\lambda + 1$ & $\lambda + k$ & $\dfrac{1}{\lambda}$ & $\dfrac{|A|}{\lambda}$     & $\lambda$ & $\lambda^n$ & $\lambda$  & $f(\lambda)$ \\
+            \hline
+            $\bm{\xi}$ & $\bm{\xi}$     & $\bm{\xi}$    & $\bm{\xi}$           & $\bm{\xi}$             & $\bm{\xi}^{T}$ & $\bm{\xi}$ & $P^{-1}\bm{\xi}$ & $\xi$  \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    \subsection{矩阵的相似}
+
+    \subsection{矩阵的相似对角化}
+
+    \subsection{实对称矩阵的相似对角化}
 
     \subsection{基础概念}
 
     \begin{enumerate}
-        \item 设$A$是$n$阶矩阵，如果存在一个数$\lambda$及非零的$n$维列向量$\alpha$使得$A\alpha = \lambda\alpha$成立，则称$\lambda$是矩阵$A$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征值}}，称非零向量$\alpha$是矩阵$A$属于特征值$\lambda$的一个{\color[rgb]{0.2, 0.6, 0.3}{特征向量}}
-        \item 设$A = [a_{ij}]$为一个$n$阶矩阵，则行列式
-        \[
-            |A - \lambda E| = \begin{vmatrix}
-                                  a_{11} - \lambda & a_{12}           & \cdots & a_{1n}           \\
-                                  a_{21}           & a_{22} - \lambda & \cdots & a_{2n}           \\
-                                  \vdots           & \vdots           & \ddots & \vdots           \\
-                                  a_{n1}           & a_{n2}           & \cdots & a_{nn} - \lambda
-            \end{vmatrix}
-        \]
-        称为矩阵$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征多项式}}，$|A - \lambda E| = 0$称为$A$的{\color[rgb]{0.2, 0.6, 0.3}{特征方程}}
         \item 设$A$和$B$都是$n$阶矩阵，如果存在可逆矩阵$P$，使得$P^{-1}AP = B$则称矩阵$A$和$B$相似，记作$A \sim B$。相似具有如下性质
         \begin{itemize}
             \item 反身性: $A \sim A$
@@ -100,26 +70,6 @@
         \end{itemize}
         \item 如果$A$能与\textbf{对角矩阵}相似，则称$A${\color[rgb]{0.2, 0.6, 0.3}{可对角化}}
         \item 设 $\mathbf{A} = (a_{ij})_{n \times n}$ 为 $n$ 阶方阵，称 $\mathbf{A}$ 的\textbf{迹（trace）}为主对角线上元素之和，记作：$\operatorname{tr}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii}$
-    \end{enumerate}
-
-    \subsection{运算}
-
-    \begin{enumerate}
-        \item 设矩阵 $A$ 的特征值为 $\lambda$，对应的特征向量为 $\bm{\alpha}$，即：$A\bm{\alpha} = \lambda \bm{\alpha}$则
-        \renewcommand{\arraystretch}{2.2} % 调整行距
-        \begin{center}
-            \setlength{\tabcolsep}{12pt} % 调整列间距
-            \begin{tabular}{c|cccccccc}
-                \hline
-                \rowcolor{gray!10}
-                $A$           & $kA + E$       & $A + kE$      & $A^{-1}$             & $A^{*}$                & $A^{T}$           & $A^{n}$       & $P^{-1}AP$          & $f(A)$       \\
-                \hline
-                $\lambda$     & $k\lambda + 1$ & $\lambda + k$ & $\dfrac{1}{\lambda}$ & $\dfrac{|A|}{\lambda}$     & $\lambda$ & $\lambda^n$ & $\lambda$  & $f(\lambda)$ \\
-                \hline
-                $\bm{\alpha}$ & $\bm{\alpha}$  & $\bm{\alpha}$ & $\bm{\alpha}$        & $\bm{\alpha}$          & $\bm{\alpha}^{T}$ & $\bm{\alpha}$ & $P^{-1}\bm{\alpha}$ & $\alpha$  \\
-                \hline
-            \end{tabular}
-        \end{center}
     \end{enumerate}
 
     \subsection{定理}

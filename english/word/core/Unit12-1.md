@@ -164,6 +164,7 @@
         - addiction n. （毒品、酒或赌博）瘾
     - The key messages that have been put together for World Environment Day do include a call for governments to enact
       legislation to **curb** single-use plastics.
+        - put together 整理/汇编/编写/组织
 - barrier n. 障碍
 - obstacle [ˈɑːbstəkl]
     - n. 障碍
@@ -209,39 +210,6 @@
     - The main **purpose** of this "clawback" rule is to hold bankers accountable for harmful risk taking.
     - George Annas, chair of the health law department at Boston University, maintains that, as long as a doctor
       prescribes a drug for a legitimate medical **purpose**...
-
-## attract
-
-- [əˈtrækt]
-- v. 吸引；引起（反应）（at(强调)-tract(拉；拽)）
-- -tract- 拉；拽
-- 词组
-    - be attracted to sth. 被某物吸引
-- attraction n. 吸引；向往的地方；有吸引力的事
-- attractive
-    - adj. 吸引人的
-    - attractively adv. 有吸引力地
-    - unattractive adj. 没有吸引力的
-- attractiveness n. 吸引力
-- extract [ɪkˈstrækt]
-    - vt. （用力）拔出
-    - ex- 外
-        - == exit
-    - So he hired a dentist to transplant nine teeth into his jaw—having **extracted** them from the mouths of his
-      slaves.
-        - dentist [ˈdentɪst] n. 牙科医生
-        - transplant vt. 使迁移；移植（器官、皮肤、头发等）
-- contract [ˈkɑːntrækt]
-    - v. （使）收缩
-    - n. 合同
-    - contrast
-        - vt. 对比
-        - n. 差别
-- abstract [ˈæbstrækt]
-    - adj. 抽象派的；抽象的
-    - n. 摘要
-    - abstract writing 摘要写作
-    - There's an **abstract** or summary at the top of first page of the article you copied.
 
 ## Words
 

@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## aircraft
@@ -67,9 +67,11 @@
     - n. 统治地位
     - predominance [prɪˈdɑmɪnəns]
         - n. （一类人或物在数量上的）优势
-        - == dominance
-        - <ins>There seems to be(似乎存在)</ins> <ins>a **predominance** of(...占主导地位/占多数/占优势)</ins>
-          short-term thinking <ins>at the expense of(在牺牲...的情况下)</ins> long-term investing.
+        - == dominance n. 统治地位
+        - There seems to be a predominance of short-term thinking at the **expense** of long-term investing.
+            - a predominance of ...占主导地位/占多数/占优势
+            - at the expense of 在牺牲（或损害）...的情况下
+            - there seems to be 似乎存在
 
 ## confuse
 

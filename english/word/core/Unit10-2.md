@@ -40,6 +40,7 @@
     - suspect [səˈspekt]
         - v. 怀疑；猜想；觉得
         - n. 犯罪嫌疑人
+        - Similar: suspend [səˈspend] vt. 暂停
 - Justices intended to **check** the power of the Administration.
 - inspect
     - vt. 检查
@@ -67,6 +68,7 @@
         - damage
             - vt. 伤害；破坏
             - n. 损失；伤害
+        - damage to sb./sth. 对...的伤害
 - identity
     - n. 身份(ID)
 - recognize

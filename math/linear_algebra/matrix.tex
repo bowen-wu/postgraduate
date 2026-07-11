@@ -1,4 +1,4 @@
-\documentclass[./book.tex]{subfiles}
+\documentclass[./linear_algebra.tex]{subfiles}
 
 \begin{document}
 
@@ -586,12 +586,24 @@
 
     \subsubsection{矩阵秩的性质与重要公式}
 
-    设$A$是$m \times n$矩阵，$B$是$n \times s$矩阵，则
+    设$A$是$m \times n$矩阵，$B$满足有关矩阵运算要求的矩阵，则
     \begin{enumerate}
         \item $0 \leq r(A) \leq \min\{m, n\}$
-        \item $r(kA) = r(A),\, k \neq 0$
-        \item $r(AB) \le r(A) \text{并且} r(AB) \le r(B)$，即 $r(AB) \le \min\{r(A), r(B)\}$
-        \item $r(A + B) \leq r([A, B]) \leq r(A) + r(B)$
+        \item $P, Q$分别是$m$阶、$n$阶可逆矩阵，$k \neq 0$，则
+        \[
+            r(kA) = r(A) = r(PA) = r(AQ) = r(PAQ) = r(A^T) = r(A^{T}A) = r(AA^{T}) = r(A, AB)
+        \]
+        \item $r(A) + r(B) - n \leq r(AB) \le \min\{r(A), r(B)\}$
+        \item $r(A + B) \leq r([A, B]) \leq r(A) + r(B) = r\!\begin{bmatrix}
+                                                                 A & O \\
+                                                                 O & B
+        \end{bmatrix} = r\!\begin{bmatrix}
+                               O & A \\
+                               B & O
+        \end{bmatrix} \leq r\!\begin{bmatrix}
+                                  A & O \\
+                                  C & B
+        \end{bmatrix}$
         \item $r(A^*) = \begin{cases}
                             n, \quad r(A) = n, \\
                             1, \quad r(A) = n - 1\text{，其中}A\text{为}n(n\geq 2)\text{阶方阵}, \\
@@ -607,11 +619,6 @@
                 \item $n$行（列）向量全部是零向量
             \end{circlenum}
         \end{itemize}
-        \item 设$A$是$m\times n$矩阵，$P, Q$分别是$m$阶、$n$阶可逆矩阵，则
-        \[
-            r(A) = r(PA) = r(AQ) = r(PAQ)
-        \]
-        \item $r(A) = r(A^T) = r(A^{T}A) = r(AA^{T})$
         \item 若$A_{m\times n}B_{n\times s} = \mathbf{O}$，则
         \begin{itemize}
             \item $r(A) + r(B) {\color{red}{\le}} n$($A$的列数)
@@ -666,33 +673,10 @@
             \end{circlenum}
             \item {\color[rgb]{0.2, 0.6, 0.3}{矩阵$C(AB)$的列向量可由$A$的列向量线性表出}}
         \end{itemize}
-        \item $r(AB) \geq r(A) + r(B) - n$
-        \item $r(A, AB) = r(A)$
-        \item 且$C$是$s \times t$矩阵，则
+        \item 若$C$是$s \times t$矩阵，则
         \[
             r(AB) + r(BC) \leq r(ABC) + r(B)
         \]
-        \item
-        \[
-            r\!\begin{bmatrix}
-                   A & O \\
-                   O & B
-            \end{bmatrix}
-            = r\!\begin{bmatrix}
-                     O & A \\
-                     B & O
-            \end{bmatrix}
-            = r(A) + r(B)
-        \]
-        \item
-        \[
-            r\!\begin{bmatrix}
-                   A & O \\
-                   C & B
-            \end{bmatrix}
-            \ge r(A) + r(B)
-        \]
-        \item 若$A, B$同型，则$r(A + B) \le r(A, B) \le r(A) + r(B)$
         \item 若$A \sim B$，则
         \begin{enumerate}
             \item $r(A) = r(B)$

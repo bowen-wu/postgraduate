@@ -16,9 +16,9 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
 ## permit
@@ -109,6 +109,8 @@
 - [treɪt]
 - n. 特点，特征
 - == characteristic
+    - n. 特征
+    - adj. 特有的
 - ...the career office found the most desirable **trait** in a future employer was the ability to offer secure
   employment.
 - portrait [ˈpɔːrtrət]

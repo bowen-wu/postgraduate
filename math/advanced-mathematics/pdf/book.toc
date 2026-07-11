@@ -60,10 +60,10 @@
 \contentsline {subsection}{\numberline {2.10}结论}{40}{subsection.2.10}%
 \contentsline {subsection}{\numberline {2.11}方法步骤}{40}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}条件转换思路}{40}{subsection.2.12}%
-\contentsline {section}{\numberline {3}一元函数微分学的概念}{40}{section.3}%
-\contentsline {subsection}{\numberline {3.1}导数}{40}{subsection.3.1}%
+\contentsline {section}{\numberline {3}一元函数微分学的概念}{41}{section.3}%
+\contentsline {subsection}{\numberline {3.1}导数}{41}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}导数的几何意义}{41}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}微分的概念}{41}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}微分的概念}{42}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}定理}{42}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}结论}{42}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}理解}{43}{subsection.3.6}%

@@ -16,59 +16,47 @@
 - 破折号: —
 - C: Cause
 - R: Result
-- Opposite: 反义词 
-- Similar: 形近词 
-- Contrast: 对比 
+- Opposite: 反义词
+- Similar: 形近词
+- Contrast: 对比
 - Block: 块级
 
-## charge
+## debt
 
-- vt. 控告；指责；使...承担责任
-- v. （向...）收费
-- n. 指控；主管
+- [det]
+- n. 债务；负债情况
+- We cannot overstate our **debt** to the past, but the moment has the supreme claim.
+    - We cannot overstate X 我们再怎么强调 X 都不为过
+- gamble v.（牌戏、赛马等）赌博
+- casino [kəˈsiːnoʊ] n. 赌场
+
+## conscious
+
+- [ˈkɑːnʃəs]
+- adj. 意识到；（尤指由于不满或自觉重要而）注意的；有意的；有知觉的
 - 词组
-    - in charge (of) 负责
-- charged
-    - adj. 充满情绪的、带有某种强烈色彩的
-    - politically charged 政治意味浓厚的；有政治争议的
-    - emotionally charged 情绪化的；充满情感的
-- accuse [əˈkjuːz]
-    - vt. 指责；指控
-    - accuse sb. of sth. 指责某人某事
-        - == charge sb. with sth.
-    - Still, we need to be careful not to **accuse** *opponents([ə'poʊnənts] n. 对手)* **of** bad arguments too quickly.
-- expense [ɪkˈspens]
-    - n. 费用（一般 小）
-    - 词组
-        - at the expense of 在牺牲（或损害）...的情况下
-    - There seems to be a predominance of short-term thinking <ins>at the **expense** of</ins> long-term investing.
-    - expenditure [ɪkˈspendɪtʃər] n. 开支（官方 大）
-
-## guilt
-
-- n. 内疚
-- guilty adj. 感到内疚的；有罪责的
-- conviction
-    - n. 判罪
-    - In a rare([rer] adj. 稀少的，罕见的) unanimous([juˈnænɪməs] adj. 全体一致的; 一致同意的，无异议的) ruling, the U.S.
-      Supreme Court has overturned the corruption( [kəˈrʌpʃn] n. 腐败，贪污) **conviction** of a former Virginia
-      governor, Robert MacDonnell.
-
-## conflict
-
-- vi. 冲突
-- n. 冲突；矛盾
-- 词组
-    - in conflict 有矛盾
-    - conflict with 和...冲突
-- wreak [rik] 😔
-    - vt. 造成（混乱或破坏）
-    - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
-      pattern <ins>is **wreaking** havoc with</ins> marriage.
-        - be wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
-- harmonization [ˌhɑmənaɪ'zeɪʃn]
-    - n. 和谐
-    - in harmony([ˈhɑːrməni]) with 与...和谐共处
+    - be conscious of 意识到
+- consciously [ˈkɑnʃəslɪ] adv. 有意识地
+- unconscious
+    - adj. （感情、思想等）无意识的；未察觉的
+    - unconsciously adv. 不是刻意的；没有意识到地
+- subconscious adj. 下意识的
+- consciousness
+    - n. 意识（或觉察）
+    - == awareness n. 知道；意识
+- aware [əˈwer]
+    - adj. 意识到...的；察觉到的
+    - Many said that unemployment, while extremely painful, had improved them in some way: they had become less
+      materialistic and more financially prudent; they were more **aware** of the struggles of others.
+        - be aware of 意识到...
+    - Second, the majority of people who use networked computers to upload are not even **aware** of the significance of
+      what they are doing.
+    - awareness [əˈwernəs]
+        - n. 知道；意识
+        - We should attach importance to raising people's **awareness** of environmental protection.
+            - attach (utmost) importance/significance/value/weight to sth. 认为...重要；重视...
+        - **Great importance should be attached to** raising people's **awareness** of environmental protection.
+- cognitive [ˈkɑːɡnətɪv] adj. 认知的
 
 ## concept
 
@@ -82,8 +70,9 @@
     - n. 看法
     - == concept n. 概念；观念
     - Even better would be to help elevate **notions** of beauty beyond the material standards of a particular industry.
-        - Even better would be to... 更好的做法/选择是... => 倒装句
-        - help do sth./help sb. do sth. 帮助做某事
+        - even better would be to... 更好的做法/选择是... => 倒装句
+        - help do sth. 帮助做某事
+            - == help sb. do sth.
 
 ## climate
 
@@ -99,19 +88,24 @@
 
 - vt. 伤害；破坏
 - n. 损失；伤害
-- damage to + 人/物 (固定搭配) 对...的伤害
-    - <ins>Privacy law(隐私法)</ins> builds on the concept of **damage** to an individual from identifiable knowledge
-      about them.
+- Privacy law builds on the concept of **damage** to an individual from identifiable knowledge about them.
+    - privacy law 隐私法
+    - damage to sb./sth. 对...的伤害
 - Since desire and will are **damaged** by the presence of thoughts that do not accord with desire, Allen concluded: "We
   do not attract what we want, but what we are."
 - ...passionate consumers will voice their opinions in quicker, more visible, and much more **damaging** ways.
-    - much + more + adj. 要更...得多/大大地更.../远比...更...
-        - 程度副词 + 比较级 + 形容词/副词/名词
+    - much more + adjective 要更...得多/大大地更.../远比...更...（程度副词 + 比较级 + 形容词/副词/名词）
 - undermine
     - vt. 逐渐削弱（信心、权威等）
     - If connections can be bought, a basic premise of democratic society—that all are equal in treatment by
       government—is **undermined/ruined/destroyed**.
-        - I am a **well-connected(人脉广)** person.
+        - premise [ˈpremɪs]
+            - n. 前提，假设
+            - Similar: promise [ˈprɑːmɪs]
+                - vt. 保证
+                - n. 承诺 （主观）；潜力，前途
+    - I am a **well-connected** person.
+        - well-connected 人脉广
 - impair vt. 削弱；损害
 - destroy
     - vt. 摧毁，破坏
@@ -119,33 +113,37 @@
     - destructive [dɪˈstrʌktɪv] adj. 破坏性的
 - ruin [ˈruːɪn]
     - vt. 毁坏
-    - It was to **ruin** lives <ins>in the quest for</ins> circulation and impact.
-- spoil [spɔɪl] vt. 破坏
+    - It was to **ruin** lives in the quest for circulation and impact.
+        - in the quest for 在追求...的过程中/为了...而努力/为了寻求...
+        - circulation [ˌsɜːrkjəˈleɪʃn] n. 流通；（报刊）发行量
+- spoil [spɔɪl] vt. 破坏；溺爱
 - disruptive [dɪsˈrʌptɪv] adj. 扰乱性的，颠覆性的
 - havoc [ˈhævək]
-    - n. 灾害，祸患
-    - be wreaking havoc 造成破坏
+    - n. 灾害，祸患；混乱
+    - == disaster [dɪˈzæstər] n. 灾难；不幸
+    - == chaos n. 混乱，杂乱
     - ...although American men tend to talk more than women in public situations, they often talk less at home. And this
-      pattern <ins>is wreaking **havoc** with</ins> marriage.
-    - disaster [dɪˈzæstər]
-        - n. 灾难；不幸
-        - Mass media are included to cover **disaster** and deaths.
-    - chaos n. 混乱，杂乱
+      pattern is wreaking **havoc** with marriage.
+        - wreak [rik] vt. 造成（混乱或破坏）😔
+        - be wreak havoc (on/with...) 对...造成严重破坏/给...带来很大麻烦/把...搞得一团糟
+    - Mass media are inclined to cover **disaster** and deaths.
 
 ## eliminate
 
 - vt. 根除；（比赛中）淘汰
-- == get rid of
-- eliminate illiteracy([ɪˈlɪtərəsi]) 扫盲
+- == get rid of 摆脱/清除/淘汰/解雇
+- eliminate *illiteracy([ɪˈlɪtərəsi])* 扫盲
 - abolish [əˈbɑːlɪʃ]
     - vt. 废除（法律、制度、习俗等）
     - This law **abolished** special educational requirements for federal jurors.
 - deprive [dɪˈpraɪv]
     - vt. 剥夺，使丧失
-    - deprive sb. of sth. 剥夺某人某物
+    - 词组
+        - deprive sb. of sth. 剥夺某人某物
 - rob [rɑːb]
     - vt. 非法剥夺
-    - rob sb. of sth. 剥夺某人某物
+    - 词组
+        - rob sb. of sth. 剥夺某人某物
 
 ## secure
 
@@ -154,11 +152,21 @@
 - adj. 稳固的
 - ...the career office found the most desirable trait in a future employer was the ability to offer **secure**
   employment.
+    - trait [treɪt]
+        - n. 特点，特征
+        - == characteristic
+            - n. 特征
+            - adj. 特有的
 - security
     - n. 安全（感）
     - Job **security** or stability was the second most important career goal; work-life balance was number one,
-      followed by a sense of <ins>being dedicated to(致力于)</ins> a cause or to feel good about serving the greater
-      good.
+      followed by a sense of being dedicated to a cause or to feel good about serving the greater good.
+        - be dedicated to 致力于
+            - == dedicate oneself to sth.
+            - == committed to
+        - cause
+            - vt. 导致；使遭受
+            - n. 事业；原因，理由
 - safe
     - adj. 安全的
     - safety n. 安全
@@ -166,8 +174,9 @@
 - save
     - v. 拯救；节省
     - prep. 除了...外
-    - save for 除了...之外
-        - == except([ɪkˈsept]) for
+    - 词组
+        - save for 除了...之外
+            - == except for 除了...以外
 
 ## sort
 
@@ -181,8 +190,11 @@
 - category n. （人或事物的）类别，种类
 - species [ˈspiːʃiːz]
     - n. 物种
-    - The *fossil([ˈfɑːsl] n. 化石)* record shows that many **species** have *endured([ɪnˈdʊr] v. 持续)* for millions of
-      years—so why shouldn't we?
+    - The fossil record shows that many **species** have endured for millions of years—so why shouldn't we?
+        - fossil [ˈfɑːsl] n. 化石；老顽固
+        - endure [ɪnˈdʊr]
+            - vt. 忍受
+            - vi. 持续
 
 ## Words
 

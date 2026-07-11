@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../utils/template}
+
+\newgeometry{ left=1.5cm, right=1.5cm, top=1.2cm, bottom=1.5cm }
+
+\begin{document}
+    \title{操作系统}
+    \date{\today}
+    \maketitle
+    \renewcommand{\contentsname}{}
+    \tableofcontents
+    \newpage
+
+    \subfile{./computer-system-overview.tex}
+
+    \subfile{./processes-threads.tex}
+
+    \subfile{./memory-management.tex}
+
+    \subfile{./file-systems.tex}
+
+    \subfile{./input-output-systems.tex}
+\end{document}
