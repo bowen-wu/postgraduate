@@ -79,16 +79,24 @@
 \contentsline {subsection}{\numberline {5.1}矩阵的特征值与特征向量的求法}{35}{subsection.5.1}%
 \contentsline {paragraph}{求解具体型矩阵的特征值与特征向量}{35}{section*.3}%
 \contentsline {subsubsection}{\numberline {5.1.1}解方程组技巧}{35}{subsubsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.2}性质与重要结论}{35}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}特征值的性质与重要结论}{35}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}特征向量的性质与重要结论}{35}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}常用矩阵的特征值与特征向量}{35}{subsubsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.3}矩阵的相似}{36}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}矩阵的相似对角化}{36}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}实对称矩阵的相似对角化}{36}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}基础概念}{36}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}定理}{36}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}公式}{37}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}方法步骤}{38}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}条件转换思路}{39}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}理解}{41}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.2}性质与重要结论}{36}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}特征值的性质与重要结论}{36}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}特征向量的性质与重要结论}{36}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}常用矩阵的特征值与特征向量}{36}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}矩阵的相似}{37}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}相似矩阵的性质}{37}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}两个矩阵是否相似的判别与证明}{37}{subsubsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.4}矩阵的相似对角化}{37}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}矩阵可相似对角化的条件}{38}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}求可逆矩阵$P$，使得$P^{-1}AP = \Lambda $}{38}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}由特征值、特征向量反求$A, A^k, f(A)$}{38}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}判断矩阵是否相似于对角矩阵}{39}{subsubsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.5}实对称矩阵的相似对角化}{39}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}实对称矩阵的性质}{39}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}实对称矩阵相似对角化的基本步骤}{40}{subsubsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.6}基础概念}{40}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}定理}{40}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}公式}{40}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}方法步骤}{41}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}条件转换思路}{41}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}理解}{42}{subsection.5.11}%

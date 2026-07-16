@@ -78,7 +78,19 @@
     \subsubsection{磁盘存储器}
 
     \begin{enumerate}
+        \item 磁盘有100个柱面，每个柱面有8个磁道 $==$ 磁盘有8个盘面，每个盘面100个磁道
         \item 磁盘地址结构：驱动器号 - 柱面（磁道）号 - 盘面（磁头）号 - 扇区号
+        \item 逻辑地址 = 柱面号$\times$盘面数$\times$扇区数 + 盘面号$\times$扇区数 + 扇区号
+    \end{enumerate}
+
+    \subsubsection{磁盘的管理}
+
+    \begin{enumerate}
+        \item 低级格式化（物理格式化）：将磁盘分成扇区（扇区由头部、数据区域和尾部组成，头部和尾部包含了一些磁盘控制器的使用信息），以便磁盘控制器能够进行读/写操作
+        \item 磁盘分区：每个分区由一个或多个柱面组成，每个分区的起始扇区和大小都记录在磁盘主引导记录的分区表中
+        \item 高级格式化（逻辑格式化）：将初始的文件系统数据结构存储到磁盘上
+        \item 块：操作系统将多个相邻的扇区组合在一起，形成块
+        \item 引导块（Boot Block）是磁盘最前面的一小块区域，用来存放启动计算机所需的引导程序（Boot Loader）
     \end{enumerate}
 
     \subsubsection{磁盘的性能指标}
@@ -98,11 +110,20 @@
         \end{itemize}
         \item $\color{red}{\bigstar}$存取时间 $=$ 平均寻道时间 + 平均旋转延迟时间 + 传输时间
         \begin{itemize}
-            \item 寻道时间：磁头移动到目的磁道的时间
+            \item 寻道时间：磁头移动到目的磁道的时间。包括启动磁头臂的时间$s$。寻道时间与磁盘调度算法密切相关。设$m$是没跨越一个磁道所需的时间，则跨越$n$条磁道的寻道时间：
+            \[
+                T_s = mn + s
+            \]
             \item 平均寻道时间：从最外道移动到最内道时间的一半，和转速{\color{red}{无关}}
             \item 旋转延迟时间：磁头定位到要读/写扇区的时间
-            \item 平均旋转延迟时间：{\color{red}{旋转半周的时间}}，和转速{\color{customgreen}{有关}}
-            \item 传输时间：传输数据所花费的时间
+            \item 平均旋转延迟时间：{\color{red}{旋转半周的时间}}，和转速{\color{customgreen}{有关}}。设磁盘的旋转速度为$r$，则
+            \[
+                T_r = \frac{1}{2r}
+            \]
+            \item 传输时间：传输数据所花费的时间。设读/写字节数$b$、磁盘的旋转速度$r$且一个磁道的字节数为$N$，则
+            \[
+                T_t = \frac{1}{r}\times\frac{b}{N} = \dfrac{b}{rN}
+            \]
         \end{itemize}
         \item 数据传输速率：在单位时间内向主机传送数据的字节数。假设磁盘转数为$r$转/秒，每条磁道容量为$N$字节，则数据传输速率为
         \[
@@ -111,14 +132,58 @@
         \item 读一个磁道数据的时间 = 磁盘旋转一周的时间 - 通过扇区间隙的总时间
     \end{enumerate}
 
-    \subsubsection{磁盘的管理}
-
     \subsubsection{磁盘调度算法}
+
+    \begin{enumerate}
+        \item 先来先服务（First Come First Served, FCFS）算法
+        \item 最短寻到时间优先（Shortest Seek Time First, SSTF）算法：每次选择调度的是例当前最近的磁道，使每次的寻道时间最短。{\color{red}{会产生“饥饿”现象}}
+        \item 扫描（SCAN）算法（电梯调度算法）：只有磁头移动到最外侧磁道时才向内移动，移动到最内侧磁道时才能向外移动
+        \begin{itemize}
+            \item 偏向于处理那些接近最里或最外的磁道的访问请求
+            \item LOOK调度：磁头只需移动到最远端的一个请求即可返回，不需要达到磁盘端点
+        \end{itemize}
+        \item 循环扫描（Circular SCAN, C-SCAN）算法：在SCAN的基础上规定磁头单向移动来提供服务，返回时直接快速移动至起始端而不服务任何请求
+        \begin{itemize}
+            \item C-LOOK调度：磁头只需移动到最远端的一个请求即可返回，不需要达到磁盘端点
+        \end{itemize}
+    \end{enumerate}
+
+    \subsubsection{减少延迟时间的方法}
+
+    \begin{enumerate}
+        \item 磁盘是连续自转设备，磁头读入一个扇区后，需要经过短暂的处理时间，才能开始读入下一个扇区
+        \item 柱面切换代价（需移动磁头） > 盘面切换代价
+        \item 交替编号：让逻辑上相邻的块在物理上保持一定的间隔，则读入多个连续块是能够减少延迟时间
+        \item 错位命名：不同盘面上的相邻扇区编号错开，避免盘面切换时错过目标扇区，提高连续读取速度
+    \end{enumerate}
+
+    \subsubsection{提高文件访问速度方法}
+
+    \begin{enumerate}
+        \item 改进文件的目录结构和检索目录的方法，以减少对目录的查找时间
+        \item 选取好的文件存储结构，以提高对文件的访问速度
+        \item 提高磁盘I/O速度，已实现文件中的数据在磁盘和内存之间的快速传送
+        \begin{itemize}
+            \item 采用磁盘高速缓存
+            \item 调整磁盘请求顺序
+            \item 提前度
+            \item 延迟写
+            \item 优化物理块的分布
+            \item 虚拟盘
+            \item 采用磁盘阵列RAID
+        \end{itemize}
+    \end{enumerate}
 
     \subsubsection{固态硬盘}
 
     \begin{enumerate}
         \item 数据以{\color{red}{页}}为单位读/写，以{\color{red}{块}}为单位擦除
+        \item 每个擦除块（Erase Block）只能擦除有限次数
+        \item 磨损均衡
+        \begin{itemize}
+            \item 动态磨损均衡：写入数据时，优先选择擦除次数少的新闪存块
+            \item 静态磨损均衡：连那些长期不变的数据也会被主动迁移，使原本几乎没有擦写的块重新参与使用，从而让整个 SSD 的擦写次数更加均匀，延长使用寿命
+        \end{itemize}
     \end{enumerate}
 
     \subsection{高速缓冲存储器}

@@ -123,9 +123,9 @@
     \begin{enumerate}
         \item 当$r(A_{m\times n}) \neq r([A_{m\times n}, b])$，即$b$不能由$\alpha_1, \alpha_2, \cdots, \alpha_n$线性表示时，非齐次方程组无解\\
         \begin{cases}
-            $\Leftrightarrow \mathbf{r(A_{m\times n}) + 1 = r([A_{m\times n}, b])}$ \\
-            $\Leftrightarrow b$ 不能由$A_{m\times n}$的列向量线性表出 \\
-            $\Rightarrow$若$A$是方阵，则$|A| = 0$
+            \Leftrightarrow \mathbf{r(A_{m\times n}) + 1 = r([A_{m\times n}, b])} \\
+            \Leftrightarrow b\text{不能由}A_{m\times n}\text{的列向量线性表出} \\
+            \Rightarrow\text{若}A\text{是方阵，则}|A| = 0
         \end{cases}
         \item 当$r(A_{m\times n}) = r([A_{m\times n}, b]) = n$，即$\alpha_1, \alpha_2, \cdots, \alpha_n$线性无关，$\alpha_1, \alpha_2, \cdots, \alpha_n, b$线性相关，非齐次方程组有唯一解
         \item 当$r(A_{m\times n}) = r([A_{m\times n}, b]) = r < n$，非齐次方程组有{\color{red}{无穷多解}}
@@ -156,7 +156,7 @@
     \end{bmatrix}x = 0$的解，即联立求解。同理可求$Ax = \alpha$与$Bx = \beta$的公共解
 
     \begin{enumerate}
-        \item 若给出$A_{m\times n}x = 0$的基础解系$\xi_1, \xi_2, \cdots, \xi_s$和$B$的具体表达式，则先写出$Ax = 0$的通解$k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_s$，代入$B_{m\times n}x = 0$，求出$k_i(i = 1, 2, \cdots, s)$之间的关系，代会$A_{m\times n}x = 0$的通解，即可求得$Ax = 0$与$Bx = 0$的通解
+        \item 若给出$A_{m\times n}x = 0$的基础解系$\xi_1, \xi_2, \cdots, \xi_s$和$B$的具体表达式，则先写出$Ax = 0$的通解$k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_s$，代回$B_{m\times n}x = 0$，求出$k_i(i = 1, 2, \cdots, s)$之间的关系，代会$A_{m\times n}x = 0$的通解，即可求得$Ax = 0$与$Bx = 0$的通解
         \item 若给出$A_{m\times n}x = 0$的基础解系$\xi_1, \xi_2, \cdots, \xi_s$与$B_{m\times n}x = 0$的基础解系$\eta_1, \eta_2, \cdots, \eta_t$，则$Ax = 0$与$Bx = 0$的公共解$\gamma = k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_{s} = l_1\eta_1 + l_2\eta_2 + \cdots + l_t\eta_t$，即
         \[
             k_1\xi_1 + k_2\xi_2 + \cdots + k_{s}\xi_{s} - l_1\eta_1 - l_2\eta_2 - \cdots - l_t\eta_t = 0
@@ -366,4 +366,5 @@
             故方程组$(I), (II)$是同解方程组
         \end{analysisbox}
     \end{enumerate}
+
 \end{document}

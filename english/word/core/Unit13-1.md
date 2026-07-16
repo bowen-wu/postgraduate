@@ -27,15 +27,16 @@
 - v. 传播；使分布
 - n. 传播
 - widespread
-    - adj. 分布广的
+    - adj. 分布广的；普遍的
     - == prevailing [prɪˈveɪlɪŋ] adj. 盛行的；现存的
     - == prevalent [ˈprevələnt] adj. 流行的
 - stretch [stretʃ]
     - v. 绵延
     - n. （连续）一段时间
     - The river **stretches** across the center of the city into the distance.
-    - The days **stretch out** in an endless vista([ˈvɪstə] n. 展望). 时日在无穷的展望中延展着
-        - With time **stretching out** in an endless vista, ... 时光飞逝
+    - The days **stretch out** in an endless vista.
+        - vista [ˈvɪstə] n. 展望
+        - with time stretching out in an endless vista, ... 时光飞逝
 - extend
     - vt. 扩大...的范围（或影响）；给予
     - vi. 包括
@@ -49,14 +50,16 @@
                 - intellectual earnestness 学术上的严谨认真/思想上的认真态度/对知识和思想的严肃追求
     - extent
         - n. 程度
-        - to some extent 在某种程度上/有一点/部分地
+        - 词组
+            - to some extent 在某种程度上/有一点/部分地
     - extension
         - n. 延期
         - He will appeal to the state for an **extension** of unemployment benefits.
 - expand
     - v. 扩展（业务）；增加（尺码、数量或重要性）
     - ...gives companies opportunities to learn valuable information about the appeal of other companies' marketing, and
-      may help **expand user traffic(扩大用户流量)** for all companies concerned.
+      may help **expand** user traffic for all companies concerned.
+        - expand user traffic 扩大用户流量
     - expansion  [ɪkˈspænʃn] n. 扩张，扩展
 - diffuse [dɪˈfjuːz]
     - v. 缓解；传播（知识、消息等）
@@ -69,33 +72,49 @@
 - vi. （因疾病、痛苦、悲伤等）受苦
 - vt. 遭受
 - 词组
-    - suffer *from* 遭受
-- Every life is a *genuine([ˈdʒenjuɪn] adj. 真正的)* *recollection(n. 回忆)** of **suffering**; **suffering** for others
-  the process is bitter, but to me it is <ins>glorious([ˈɡlɔːriəs]) trials and *hardships*(光荣的考验与磨难)</ins>.
-    - hardships == suffering
+    - suffer from 遭受
+- Every life is a genuine recollection of **suffering**; **suffering** for others the process is bitter, but to me it is
+  glorious trials and hardships.
+    - genuine [ˈdʒenjuɪn]
+        - adj. 真的；真诚的；诚恳的
+        - Similar: genius [ˈdʒiːniəs] n. 天才，天赋
+    - recollection n. 回忆
+    - glorious [ˈɡlɔːriəs] adj. 辉煌的; 荣誉的; 极好的
+    - hardship
+        - n. 艰苦
+        - == suffering n. 痛苦; 受苦
+    - trial
+        - n. 审判；试验；比赛
+        - Similar: tail
+            - n. 尾巴
+            - vi. 盯...的梢
+    - glorious trials and hardships 光荣的考验与磨难
 - confront 😔
     - vt. 面临（问题、任务、困难等）
-    - **Confront** means either to <ins>face a situation that makes you uncomfortable</ins>, or to <ins>say something to
-      someone about something they've done that *bothers([ˈbɔðəz] v. 打扰)* you</ins>.
-    - be confronted with 😔
-        - == be faced with (中性)
-        - 面对...（困难、问题、情况）
     - Opposite: avoid vt. 避免；躲避
+    - be confronted with 面对...（困难、问题、情况）😔
+        - == be faced with 中性
+    - **Confront** means either to face a situation that makes you uncomfortable, or to say something to someone about
+      something they've done that bothers you.
+        - bother [ˈbɑːðər] vt. 打扰；使不安
 - encounter
     - vt. 遭遇（尤指令人不快或困难的事）
     - After a bruising **encounter** with Congress, America's Financial Accounting Standards Board rushed through rule
-      changes. 在于过会激烈交锋之后，美国财务会计准则委员会（FASB)匆匆通过了规则变更
+      changes.
+        - bruising [ˈbruːzɪŋ] adj. 艰难的
+        - rushed [rʌʃt] adj. 匆忙的，贸然的
 
 ## slave
 
 - [sleɪv]
 - n. 奴隶
-- So he hired a dentist to transplant(vt. 移植) nine teeth into his jaw—having extracted them from the mouths of his
-  **slaves**.
+- So he hired a dentist to transplant nine teeth into his jaw—having extracted them from the mouths of his **slaves**.
+    - transplant vt. 使迁移；移植（器官、皮肤、头发等）
 - slavery [ˈsleɪvəri]
     - n. 奴隶制
     - While Washington and Jefferson privately expressed distaste for **slavery**, they also understood that it was part
-      of the political and economic *bedrock(n. 牢固基础)* of the country they helped to create.
+      of the political and economic bedrock of the country they helped to create.
+        - bedrock n. 基础
 - enslavement n. 奴役
 - colony [ˈkɑːləni]
     - n. 殖民地，聚民区
@@ -103,8 +122,8 @@
 
 ## patient
 
-- n. 病人
 - adj. 有耐心的
+- n. 病人
 - patience [ˈpeɪʃns] n. 耐心
 - impatience n. 不耐烦
 
@@ -115,12 +134,12 @@
 - == measure
     - vt. 衡量
     - n. 测量；衡量；措施
-- Before you try to sell your car, you should ask an expert to **assess** its value-once you know what it's worth, it's
-  easier to find a fair price.
-- When you **assess** a matter, you make a judgment about it.
-- access [ˈækses]
+- Similar: access [ˈækses]
     - v. 访问，存取（计算机信息）; 到达，进入，使用
     - n. 入口，通道; （使用或见到的）机会/权利
+- Before you try to sell your car, you should ask an expert to **assess** its value—once you know what it's worth, it's
+  easier to find a fair price.
+- When you **assess** a matter, you make a judgment about it.
 - assessment
     - n. 评估
     - == measurement n. 测量
@@ -130,7 +149,7 @@
     - overestimate
         - vt. 高估
         - n. 高估
-        - == overvalue
+        - == overvalue vt. 对...估价过高；过于重视
     - underestimate
         - vt. 低估
         - n. 低估
@@ -152,8 +171,8 @@
 - stereotype [ˈsteriətaɪp]
     - vt. 把...模式化
     - n. 成见；模式化观念（或形象）
-    - We become defensive when criticised(['krɪtəˌsaɪz]), and apply negative **stereotypes** to others to boost our own
-      esteem(n. 尊重；敬重；自尊心).
+    - We become defensive when criticised, and apply negative **stereotypes** to others to boost our own esteem.
+        - esteem n. 尊重；敬重
     - stereotypical [ˌsteriəˈtɪpɪkl]
         - adj. 模式化的
         - In short, the image that best represents the current crisis is the stereotypical cartoon scene of a man
@@ -167,8 +186,9 @@
             - glare at sb./sth. 怒视/瞪着
 - discrimination [dɪˌskrɪmɪˈneɪʃn]
     - n. 歧视
-    - Although the Supreme Court of the United States had **prohibited** intentional
-      <ins>racial([ˈreɪʃl]) **discrimination**(种族歧视)</ins> in jury selection...
+    - Although the Supreme Court of the United States had **prohibited** intentional racial **discrimination** in jury
+      selection...
+        - racial discrimination 种族歧视
 - prejudice [ˈpredʒudɪs]
     - vt. 使...有偏见
     - n. 偏见
@@ -198,9 +218,9 @@
 
 ## 句式
 
-- 像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音也没有影子
-    - Like a drop of water from the point of a needle([ˈniːdl] n. 针) disappearing into the ocean, my days are
-      dripping([ˈdrɪpɪŋ] v. 滴下) into the stream of time, soundless, traceless(['treɪslɪs]).
-- **It is a truth** <ins>**universally acknowledged**</ins>, **that** *a single man* **in possession of**
-  *a good fortune*, must be **in want of** *a wife*.
-    - **It is a truth universally acknowledged that** visiting museums can serve as a fine way to broaden our horizon.
+- Like a drop of water from the point of a needle disappearing into the ocean, my days are dripping into the stream of
+  time, soundless, *traceless(['treɪslɪs])*. 像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音也没有影子
+    - needle [ˈniːdl] n. 针
+- **It is a truth** **universally acknowledged**, **that** *a single man* **in possession of** *a good fortune*, must be
+  **in want of** *a wife*.
+- **It is a truth universally acknowledged that** visiting museums can serve as a fine way to broaden our horizon.

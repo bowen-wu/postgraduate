@@ -4,4 +4,192 @@
 
     \section{计算机系统概述}
 
+    \begin{enumerate}
+        \item 操作系统：控制和管理整个计算机系统的硬件与软件资源，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件提供方便接口与环境的程序集合
+        \item $\color{red}{\bigstar}$操作系统作为计算机系统资源的管理者
+        \begin{itemize}
+            \item 处理机管理
+            \item 存储器管理
+            \item 文件管理
+            \item 设备管理
+        \end{itemize}
+        \item 操作系统作为用户与计算机硬件系统之间的接口
+        \begin{enumerate}
+            \item 命令接口：用户利用这些操作命令来组织和控制作业的执行
+            \begin{circlenum}
+                \item 联机命令接口（交互式命令接口）：适用于分时或实时系统的接口
+                \item 脱机命令接口（批处理命令接口）：适用于批处理接口
+            \end{circlenum}
+            \item 程序接口：编程人员可用来请求操作系统服务。由一组系统调用（又称广义指令）组成
+        \end{enumerate}
+        \item 操作系统实现了对计算机资源的扩充
+    \end{enumerate}
+
+    \subsection{操作系统特征}
+
+    \begin{enumerate}
+        \item 并发（Concurrence）：两个或多个时间在{\color{red}{同一时间间隔}}内发生。宏观上同时发生，微观上交替进行
+        \begin{itemize}
+            \item 并行性：系统具有同时进行运算或操作的特性，在{\color{red}{同一时刻}}能完成两种或两种以上的工作
+        \end{itemize}
+        \item 共享（资源共享，Sharing）：系统中的资源可供内存中多个并发执行的进程共同使用
+        \begin{itemize}
+            \item 互斥共享方式：同一时间段内，只允许一个进程使用资源
+            \item 同时访问方式：允许多个进程在同一时间段内共同访问资源
+            \item 临界资源：在一段时间内只允许一个进程访问的资源。如：打印机、摄像头
+            \item 可共享资源：如磁盘
+        \end{itemize}
+        \item 虚拟（Virtual）：将一个物理上的实体变为若干逻辑上的对应物。用于实现虚拟的技术称为虚拟技术
+        \begin{itemize}
+            \item 时分复用技术：虚拟处理器（利用多道程序设计将一个物理上的CPU虚拟为多个逻辑上的CPU）
+            \item 空分复用技术：虚拟存储器（用户感受到的存储器）
+        \end{itemize}
+        \item 异步（Asynchronism）：并发进程由于资源竞争和调度等原因，其执行速度和推进顺序是不确定、不可预知的
+    \end{enumerate}
+
+    \subsection{操作系统发展历程}
+
+    \begin{enumerate}
+        \item 批处理阶段
+        \begin{itemize}
+            \item 单道批处理系统
+            \item 多道批处理系统：实现作业自动控制而无需人工干预的系统。采用了多道程序技术，目标吞吐量大
+        \end{itemize}
+        \item 多道程序技术：把多个程序同时装入内存，当一个程序因 I/O 等原因不能继续运行时，CPU 立即切换去执行另一个程序，从而提高 CPU 利用率。依赖于{\color{red}{中断技术}}
+        \item 多道程序系统：采用了多道程序技术的操作系统
+        \item 分时操作系统
+        \begin{itemize}
+            \item 分时技术：将处理器的运行时间分成很短的时间片，按时间片轮流将处理器分配给各联机作业使用
+            \item 特征：
+            \begin{circlenum}
+                \item 同时性（多路性）
+                \item 交互性
+                \item 独立性
+                \item 及时性
+            \end{circlenum}
+        \end{itemize}
+        \item 实时操作系统：可以在某个时间限制内完成某些紧急任务而不需要时间片排队
+        \begin{itemize}
+            \item 硬实时系统：任务必须在规定时间内完成，否则系统就认为失败，甚至可能造成严重后果
+            \item 软实时系统：任务最好在规定时间内完成，但偶尔超时是允许的，只会影响性能或用户体验
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{操作系统的运行环境}
+
+    操作系统位于用户程序与硬件之间，为上层应用程序提供各种系统服务。用户程序通常运行在用户态，当需要操作系统提供服务（如文件读写、创建进程、申请内存等）时，通过\textbf{系统调用（Trap）}主动陷入内核态，由操作系统内核完成相应的管理工作；当程序执行过程中发生异常（如缺页、除零等）时，CPU会通过异常处理机制进入内核态；当外部设备完成I/O、时钟到达等事件发生时，则由硬件中断进入内核态。内核完成系统调用、中断处理或异常处理后，再返回到用户程序的断点处继续执行。
+
+    \begin{enumerate}
+        \item 特权指令：不允许用户直接使用的指令。如I/O指令、关中断指令
+        \item 非特权指令：允许用户直接使用的指令，他不能直接访问系统重的软硬件资源，仅限于访问用户的地址空间
+        \item CPU运行模式：
+        \begin{itemize}
+            \item 用户态（目态）：CPU只能执行非特权指令。应用程序运行在用户态
+            \item 内核态（管态、核心态）：CPU可以执行特权指令。切换到用户态的指令也是特权指令。操作系统内核程序运行在内核态
+        \end{itemize}
+        \item 内核：计算机上配置的底层软件，管理着系统的各种资源，包含以下内容
+        \begin{itemize}
+            \item 时钟管理：计时 \& 实现进程的切换
+            \item 中断机制
+            \item 原语：程序的运行具有{\color{red}{原子性}}。定义原语的直接方法是{\color{customgreen}{关中断}}
+            \item 系统控制的数据结构及处理
+        \end{itemize}
+        \item CPU 在用户态运行时，唯一能够切换到内核态的途径是发生中断（Interrupt）、异常（Exception）或陷入（Trap，也称系统调用），由硬件完成用户态到内核态的切换
+        \item 中断
+        \begin{itemize}
+            \item 异常（Exception，内中断）：来自CPU执行指令内部的事件。异常不能被屏蔽，一旦出现就应立即处理
+            \begin{circlenum}
+                \item 故障（Fault）：由指令引起的异常。如缺页异常、除零异常
+                \item Trap（陷阱/自陷）：一种事先安排的异常事件，用于在用户态下调用操作系统内核程序，如系统调用
+                \item 终止（Abort）：出现了使CPU无法继续执行的硬件故障。如存储器校验错
+            \end{circlenum}
+            \item 外中断（Interrupt，外中断）：来自CPU执行指令外部的事件。如I/O结束中断、时钟中断
+            \begin{circlenum}
+                \item 可屏蔽中断：通过INTR线发出的中断请求，通过改变屏蔽字可以实现多重中断，从而使得中断处理更加灵活
+                \item 不可屏蔽中断：通过NMI线发出的中断请求，通常是紧急的硬件故障
+            \end{circlenum}
+        \end{itemize}
+        \item 系统调用：操作系统提供给应用程序使用的接口。凡是与共享资源有关的操作，都必须通过系统调用方式想操作系统提出服务请求，由操作系统代为完成，并将处理结果返回给应用程序
+        \begin{itemize}
+            \item 系统调用按功能分类
+            \begin{circlenum}
+                \item 设备管理
+                \item 文件管理
+                \item 进程控制
+                \item 进程通信
+                \item 内存管理
+            \end{circlenum}
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{操作系统结构}
+
+    \begin{enumerate}
+        \item 分层法：将操作系统分为若干层，每层只能调用紧邻它的底层的功能和服务（单向依赖）
+        \begin{itemize}
+            \item 优点
+            \begin{circlenum}
+                \item 便于系统的调整和验证
+                \item 易扩充和维护
+            \end{circlenum}
+            \item 问题
+            \begin{circlenum}
+                \item 合理定义每层比较困难
+                \item 效率较差
+            \end{circlenum}
+        \end{itemize}
+        \item 模块化：将操作系统按功能划分为若干具有一定独立性的模块，各模块之间通过接口进行通信（模块-接口法）
+        \begin{itemize}
+            \item 划分模块标准：模块独立性越高，各模块间的交互就越少，系统的结构也就越清晰。{\color{red}{高内聚、低耦合}}
+            \item 优点
+            \begin{circlenum}
+                \item 提高了操作系统设计的正确性、可理解性和可维护性
+                \item 增强了操作系统的可适应性
+                \item 加速了操作系统的开发过程
+            \end{circlenum}
+            \item 缺点
+            \begin{circlenum}
+                \item 模块之间的接口规定很难满足对接口的实际需求
+            \end{circlenum}
+        \end{itemize}
+        \item 宏内核（单内核、大内核）：将系统的主要功能模块都作为一个紧密联系的整体运行在内核态，从而为用户程序提供高性能的系统服务
+        \begin{itemize}
+            \item 宏内核 = 微内核 + 系统控制的数据结构及处理（进程管理、存储器管理、设备管理$\cdots$）
+        \end{itemize}
+        \item 微内核：将内核中最基本的功能保留在内核，而将那些不需要再内核态执行的功能移到用户态执行，从而降低内核的设计复杂性
+        \begin{itemize}
+            \item 微内核 = 时钟管理 + 中断处理 + 原语
+            \item 操作系统中的绝大部分功能都放在微内核外的一组服务器（进程）中实现，客户和服务器之间借助微内核提供的消息传递机制来实现交互
+            \item 主要问题：性能问题。需要频繁地在内核态和用户态之间进行切换
+        \end{itemize}
+        \item 外核：为虚拟机分配资源，并检查这些资源使用的安全性，以确保没有机器会使用他人的资源
+    \end{enumerate}
+
+    \subsection{操作系统引导}
+
+    计算机利用CPU运行特定程序，通过程序识别硬盘，识别硬盘分区，识别硬盘分区上的操作系统，最后通过程序启动操作系统。操作系统的引导过程如下：
+
+    \begin{enumerate}
+        \item 激活CPU：激活的CPU读取ROM中的boot程序，将指令集训期置为BIOS（基本输入/输出系统）的第一条指令，即开始执行BIOS的指令
+        \item 硬件自检
+        \item 加载带有操作系统的硬盘
+        \item 加载主引导记录（MBR）
+        \item 扫描硬盘分区表并加载硬盘活动分区
+        \item 加载分区引导记录（PBR）
+        \begin{itemize}
+            \item PBR（分区引导记录）：寻找并激活分区根目录下用户引导操作系统的程序（启动管理器）
+        \end{itemize}
+        \item 加载启动管理器
+        \item 加载操作系统
+    \end{enumerate}
+
+    \subsection{虚拟机}
+
+    利用虚拟化技术，将一台物理机器虚拟化为多台虚拟机器，通过隐藏特定计算平台的实际物理特性，为用户提供抽象的、统一的、模拟的计算环境
+
+    \begin{enumerate}
+        \item 第一类虚拟机管理程序
+        \item 第二类虚拟机管理程序
+    \end{enumerate}
+
 \end{document}

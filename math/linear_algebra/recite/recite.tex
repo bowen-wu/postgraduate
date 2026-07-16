@@ -147,8 +147,8 @@
     \begin{minipage}[t]{0.30\textwidth}
         \begin{enumerate}[leftmargin=0.2em, itemsep=1.1em]
             \item $[E_i(k)]^{-1} =$
-            \item $r(A^*) =$
             \item $E - A^3 =$
+            \item $r(A^*) =$
         \end{enumerate}
     \end{minipage}
     \hfill
@@ -156,8 +156,8 @@
         \begin{enumerate}[leftmargin=0.2em, itemsep=1.1em]
             \setcounter{enumi}{2}
             \item $[E_{ij}(k)]^{-1} =$
-            \item $|A|$逆序数：
             \item $AB - 2B - 4A = 0 \Leftrightarrow$
+            \item $|A|$逆序数：
         \end{enumerate}
     \end{minipage}
     \hfill
@@ -194,15 +194,10 @@
         \end{enumerate}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.30\textwidth}
+    \begin{minipage}[t]{0.56\textwidth}
         \begin{enumerate}[leftmargin=*, itemsep=1.1em]
-            \setcounter{enumi}{2}
-        \end{enumerate}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.30\textwidth}
-        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
-            \setcounter{enumi}{4}
+            \setcounter{enumi}{1}
+            \item 若$A \sim B$，则
         \end{enumerate}
     \end{minipage}
 
@@ -223,26 +218,44 @@
         \begin{enumerate}[leftmargin=0.2em, itemsep=1.1em]
             \setcounter{enumi}{4}
             \item 若$C$是$s \times t$矩阵，则
-            \item 若$A \sim B$，则
             \item 若$A_{m\times n}B_{n\times s} = \mathbf{O}$，则
             \begin{itemize}[leftmargin=*, itemsep=1.0em]
                 \item $r(A) + r(B)$
                 \item 若 $\mathbf{A}$ 和 $\mathbf{B}$ 为方阵，则
                 \item 且$A\;B$非零，则
             \end{itemize}
+            \item 对称矩阵
+            \item 同解方程组
             \item 线性无关的判定与证明
         \end{enumerate}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.52\textwidth}
         \begin{enumerate}[leftmargin=0.2em, itemsep=1.2em]
-            \setcounter{enumi}{8}
+            \setcounter{enumi}{9}
             \item 齐次方程组有解条件
-            \item 同解方程组
+            \item 正交矩阵
             \item 公共解
             \item 矩阵等价
-            \item 正交矩阵
+            \item 矩阵相似
             \item 非齐次方程组有解条件
         \end{enumerate}
     \end{minipage}
+
+    \vspace{2em}
+
+    \renewcommand{\arraystretch}{1.6} % 调整行距
+    \begin{tabular} {|
+            >{\centering\arraybackslash}m{0.08\textwidth}|
+        *{8}{>{\centering\arraybackslash}m{0.08\textwidth}|}
+    }
+        \hline
+        $A$        & $kA+E$ & $A+kE$ & $A^{-1}$ & $A^*$ & $A^T$ & $A^n$ & $P^{-1}AP$ & $f(A)$ \\
+        \hline
+        $\lambda$  &        &        &          &       &       &       &            &        \\
+        \hline
+        $\bm{\xi}$ &        &        &          &       &       &       &            &        \\
+        \hline
+    \end{tabular}
+
 \end{document}
