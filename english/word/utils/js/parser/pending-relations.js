@@ -61,7 +61,7 @@ export function addSynonymToParent(parser, content, indentLevel) {
       continue;
     }
 
-    if (pos && cn) {
+    if (cn) {
       const synonym = { word };
       if (ipa) synonym.ipa = ipa;
       if (pos) synonym.pos = pos;

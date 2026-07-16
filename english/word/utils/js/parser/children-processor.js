@@ -202,7 +202,7 @@ export function processChildren(parser, parentIndentLevel, lineIndex, skipLines 
           }
 
           const { word, ipa, pos, cn } = parser.parseWordContent(syn);
-          if (pos && cn) {
+          if (cn) {
             const synonym = { word };
             if (ipa) synonym.ipa = ipa;
             if (pos) synonym.pos = pos;

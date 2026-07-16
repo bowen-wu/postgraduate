@@ -28,6 +28,7 @@
 - n. 学者
 - academic pursuits 学术追求
 - **Academic** inquiry, at least in some fields, may need to become less exclusionary and more holistic.
+    - holistic [hoʊˈlɪstɪk] adj. 整体的
 - I decided to stay on the **academic** assembly line.
     - the academic assembly line 流水线式的教育/流水线式培养人才
 - academically adv. 学术上；学业上
@@ -44,7 +45,8 @@
     - n. 学者
     - Whole new realms of understanding—from gender to race to cultural studies—were opened up as **scholars**
       unpicked the multiplicity of lost societies.
-        - Whole new realms of understanding 全新的理解（adjective + 核心名词 + of + 名词修饰：先翻类别（是什么） → 再翻程度（怎么样））
+        - Whole new realms of understanding 全新的理解（adjective + 核心名词 + of + 名词修饰：先翻类别（是什么） →
+          再翻程度（怎么样））
         - multiplicity [ˌmʌltəˈplɪsɪti] n. 多样性
     - scholarly adj. （书、文章、问题、活动等）学术性的
     - scholarship n. 奖学金; 学术（研究）
@@ -65,7 +67,8 @@
       it relies on the board of reviewing editors to..."
         - have some merit 有一定道理/有一定价值/有可取之处
         - the board of reviewing editors 审稿编辑委员会
-        - Vaux holds that what science is doing now [[has room for further improvement/is to fail in the foreseeable future]].
+        - Vaux holds that what science is doing
+          now [[has room for further improvement/is to fail in the foreseeable future]].
         - in the foreseeable future 在可预见的未来
 - flaw
     - n. 瑕疵

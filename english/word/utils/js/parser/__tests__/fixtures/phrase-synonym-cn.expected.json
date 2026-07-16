@@ -1,0 +1,26 @@
+[
+  {
+    "id": "card_0",
+    "word": "sample",
+    "type": "word",
+    "items": []
+  },
+  {
+    "id": "card_1",
+    "word": "save for",
+    "type": "phrase",
+    "items": [
+      {
+        "type": "def",
+        "en": "save for",
+        "cn": "除了...之外"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "except for",
+        "cn": "除了...以外"
+      }
+    ]
+  }
+]
