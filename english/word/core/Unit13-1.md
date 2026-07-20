@@ -88,12 +88,14 @@
         - Similar: tail
             - n. 尾巴
             - vi. 盯...的梢
+        - Similar: trait [treɪt] n. 特点，特征
     - glorious trials and hardships 光荣的考验与磨难
 - confront 😔
     - vt. 面临（问题、任务、困难等）
     - Opposite: avoid vt. 避免；躲避
-    - be confronted with 面对...（困难、问题、情况）😔
-        - == be faced with 中性
+    - 词组
+        - be confronted with 面对...（困难、问题、情况）😔
+            - == be faced with 中性
     - **Confront** means either to face a situation that makes you uncomfortable, or to say something to someone about
       something they've done that bothers you.
         - bother [ˈbɑːðər] vt. 打扰；使不安
@@ -221,6 +223,6 @@
 - Like a drop of water from the point of a needle disappearing into the ocean, my days are dripping into the stream of
   time, soundless, *traceless(['treɪslɪs])*. 像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音也没有影子
     - needle [ˈniːdl] n. 针
-- **It is a truth** **universally acknowledged**, **that** *a single man* **in possession of** *a good fortune*, must be
-  **in want of** *a wife*.
+- **It is a truth** **universally acknowledged**, **that** a single man **in possession of** a good fortune, must be
+  **in want of** a wife.
 - **It is a truth universally acknowledged that** visiting museums can serve as a fine way to broaden our horizon.

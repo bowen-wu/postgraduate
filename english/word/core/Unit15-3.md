@@ -93,7 +93,8 @@
 - [kənˈvɪns]
 - vt. 说服
 - If begging doesn't **convince** your parents to raise your allowance, you might want to try a different tactic—like
-  doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
+  doing all your chores without being asked.
+    - chore [tʃɔːr] n. 琐事，令人厌烦的任务; 家务活
 - convinced
     - adj. 确信的
     - I am convinced that... 我确信

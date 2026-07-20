@@ -81,6 +81,11 @@
 
     \begin{enumerate}
         \item 特权指令：不允许用户直接使用的指令。如I/O指令、关中断指令
+        \begin{itemize}
+            \item 管理系统资源的指令：设置时钟、启动/关闭硬件设备、切换进程、设置中断
+            \item 系统状态修改指令：修改中断向量表、切换CPU的运行模式
+            \item 系统控制指令：停机指令、重启指令
+        \end{itemize}
         \item 非特权指令：允许用户直接使用的指令，他不能直接访问系统重的软硬件资源，仅限于访问用户的地址空间
         \item CPU运行模式：
         \begin{itemize}
@@ -94,20 +99,22 @@
             \item 原语：程序的运行具有{\color{red}{原子性}}。定义原语的直接方法是{\color{customgreen}{关中断}}
             \item 系统控制的数据结构及处理
         \end{itemize}
-        \item CPU 在用户态运行时，唯一能够切换到内核态的途径是发生中断（Interrupt）、异常（Exception）或陷入（Trap，也称系统调用），由硬件完成用户态到内核态的切换
+        \item CPU 在用户态运行时，唯一能够切换到内核态的途径是发生中断（Interrupt）、异常（Exception）或陷入（Trap，也称系统调用），由{\color{red}{硬件}}完成用户态到内核态的切换
         \item 中断
         \begin{itemize}
             \item 异常（Exception，内中断）：来自CPU执行指令内部的事件。异常不能被屏蔽，一旦出现就应立即处理
             \begin{circlenum}
                 \item 故障（Fault）：由指令引起的异常。如缺页异常、除零异常
-                \item Trap（陷阱/自陷）：一种事先安排的异常事件，用于在用户态下调用操作系统内核程序，如系统调用
+                \item Trap（陷阱/自陷）：一种事先安排的异常事件，通常由执行访管指令（Supervisor Call）引发，用于从用户态陷入内核态，实现系统调用
                 \item 终止（Abort）：出现了使CPU无法继续执行的硬件故障。如存储器校验错
             \end{circlenum}
-            \item 外中断（Interrupt，外中断）：来自CPU执行指令外部的事件。如I/O结束中断、时钟中断
+            \item 外中断（Interrupt，外中断）：来自CPU执行指令外部的事件。如I/O结束中断、{\color{red}{时钟中断}}
             \begin{circlenum}
                 \item 可屏蔽中断：通过INTR线发出的中断请求，通过改变屏蔽字可以实现多重中断，从而使得中断处理更加灵活
                 \item 不可屏蔽中断：通过NMI线发出的中断请求，通常是紧急的硬件故障
+                \item 时钟中断（Timer Interrupt / Clock Interrupt）：由硬件定时器周期性产生的外中断。CPU 响应时钟中断后进入时钟中断服务程序，完成系统时间更新、定时器管理、时间片递减等工作；当时间片耗尽或满足调度条件时，再由调度程序进行进程切换。因此，时钟中断是现代操作系统实现抢占式多任务调度的基础
             \end{circlenum}
+            \item 中断请求的产生、检测、中断响应（保存 PC、PSW、查中断向量、切换内核态）以及中断返回由硬件（CPU 和中断控制器）完成；真正的中断处理（保存通用寄存器、处理中断事件、进程调度、恢复通用寄存器）由操作系统提供的中断服务程序完成
         \end{itemize}
         \item 系统调用：操作系统提供给应用程序使用的接口。凡是与共享资源有关的操作，都必须通过系统调用方式想操作系统提出服务请求，由操作系统代为完成，并将处理结果返回给应用程序
         \begin{itemize}
@@ -119,6 +126,35 @@
                 \item 进程通信
                 \item 内存管理
             \end{circlenum}
+            \item 操作系统不同，底层逻辑、实现方式军不相同，为应用程序提供的{\color{red}{系统调用接口也不同}}
+            \item
+            \begin{table}[htbp]
+                \centering
+                \renewcommand{\arraystretch}{1.5}   % 行高
+                \setlength{\tabcolsep}{6pt}         % 列间距
+                \small
+                \begin{tabular}{|
+                        >{\centering\arraybackslash}m{0.48\textwidth}|
+                        >{\centering\arraybackslash}m{0.48\textwidth}|}
+                    \hline
+                    \textbf{系统调用}                                                                                              & \textbf{一般过程调用}                                      \\
+                    \hline
+                    调用操作系统服务                                                                                                   & 调用普通函数，又称函数调用、子程序调用                                  \\
+                    \hline
+                    用户态 $\rightarrow$ 内核态 $\rightarrow$ 用户态                                                                    & 用户态完成                                                \\
+                    \hline
+                    Trap（访管指令）                                                                                                 & CALL 指令                                              \\
+                    \hline
+                    需保存 {\color{red}{PSW}}（Program Status Word, 程序状态字，又称状态寄存器，Status Register） 、{\color{red}{PC}}和必要寄存器的值 & 需保存{\color{red}{PC}}和必要寄存器的值                  \\
+                    \hline
+                    被调用过程是系统级程序，必须运行在内核态                                                                                       & 被调用程序与调用程序运行在同一状态，可能是系统态，也可能是用户态                     \\
+                    \hline
+                    CPU 在中断响应（{\color{red}{中断隐指令}}）阶段自动保存 PC 和 PSW（硬件保存），并切换到内核态；进入中断服务程序后，再由{\color{red}{操作系统}}根据需要保存和恢复通用寄存器                                & 返回地址（PC）由 CALL 指令自动保存，通用寄存器按调用约定由软件（编译器生成的代码）负责保存和恢复 \\
+                    \hline
+                    开销较小                                                                                                       & 开销较大                                                 \\
+                    \hline
+                \end{tabular}
+            \end{table}
         \end{itemize}
     \end{enumerate}
 
@@ -140,6 +176,7 @@
         \end{itemize}
         \item 模块化：将操作系统按功能划分为若干具有一定独立性的模块，各模块之间通过接口进行通信（模块-接口法）
         \begin{itemize}
+            \item 模块之间相互调用、相互依赖，任何一个模块出错，都可能导致整个内核崩溃
             \item 划分模块标准：模块独立性越高，各模块间的交互就越少，系统的结构也就越清晰。{\color{red}{高内聚、低耦合}}
             \item 优点
             \begin{circlenum}
@@ -159,10 +196,21 @@
         \item 微内核：将内核中最基本的功能保留在内核，而将那些不需要再内核态执行的功能移到用户态执行，从而降低内核的设计复杂性
         \begin{itemize}
             \item 微内核 = 时钟管理 + 中断处理 + 原语
-            \item 操作系统中的绝大部分功能都放在微内核外的一组服务器（进程）中实现，客户和服务器之间借助微内核提供的消息传递机制来实现交互
-            \item 主要问题：性能问题。需要频繁地在内核态和用户态之间进行切换
+            \item 操作系统中的绝大部分功能都放在微内核外的一组服务器（进程）中实现，客户和服务器之间借助微内核提供的{\color{red}{消息传递}}机制来实现交互
+            \item 主要问题：{\color{red}{性能问题}}。需要频繁地在内核态和用户态之间进行切换
+            \item 可以从下面四个方面来描述微内核OS
+            \begin{circlenum}
+                \item 内核足够小
+                \item 基于客户/服务器模式
+                \item 应用“机制与策略分离”原理
+                \item 采用面向对象技术
+            \end{circlenum}
         \end{itemize}
         \item 外核：为虚拟机分配资源，并检查这些资源使用的安全性，以确保没有机器会使用他人的资源
+        \begin{itemize}
+            \item 外核负责：硬件资源的分配、回收、保护
+            \item 内核负责：进程管理
+        \end{itemize}
     \end{enumerate}
 
     \subsection{操作系统引导}
@@ -174,6 +222,9 @@
         \item 硬件自检
         \item 加载带有操作系统的硬盘
         \item 加载主引导记录（MBR）
+        \begin{itemize}
+            \item MBR任务：检查分区表是否正确，确定哪个分区为活动分区，并在程序结束时将该分区的启动程序（操作系统引导扇区）调入内存加以执行
+        \end{itemize}
         \item 扫描硬盘分区表并加载硬盘活动分区
         \item 加载分区引导记录（PBR）
         \begin{itemize}

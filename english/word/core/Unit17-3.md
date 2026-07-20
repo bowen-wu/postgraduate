@@ -111,6 +111,7 @@
 - == characteristic
     - n. 特征
     - adj. 特有的
+- Similar: trial n. 审判；试验；比赛
 - ...the career office found the most desirable **trait** in a future employer was the ability to offer secure
   employment.
 - portrait [ˈpɔːrtrət]

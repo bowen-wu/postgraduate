@@ -175,6 +175,7 @@
     - That means more battles like the one now going on between the Justice Department and California, which
       **enacted** <ins>a *tough([tʌf] adj. 强硬的)* net neutrality law</ins> <ins>in the wake of(跟随...之后)</ins> the
       FCC's abdication.
+        - abdication n. 退位，辞职; （权力、权利、要求、职责、责任等的）放弃
     - overturn
         - vt. 推翻; 撤销（判决等）
         - == knock out

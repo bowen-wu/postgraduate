@@ -110,11 +110,18 @@
 - differentiate [ˌdɪfəˈrenʃieɪt]
     - v. 区分
     - vt. 使有差别
-    - == distinguish == separate [ˈsepəreɪt]
+    - == distinguish
+    - == separate [ˈsepəreɪt]
+        - vt. 使分离；区分
+        - vi. 分离
+        - adj. 分开的；单独的；不同的
 - distinguish
     - v. 辨别
     - vt. 区分；使具有...特色
-    - == separate
+    - == separate [ˈsepəreɪt]
+        - vt. 使分离；区分
+        - vi. 分离
+        - adj. 分开的；单独的；不同的
     - distinguish A from B
     - Quinn and her colleagues conducted a test to see if rats can **distinguish** a friendly rat **from** a hostile
       one.

@@ -72,7 +72,7 @@
     - If connections can be bought, a basic **premise** of democratic society—that all are equal in treatment by
       government—is undermined.
 - presumably [prɪˈzuːməbli]
-    - adj. 相反的
+    - adv. 大概 
     - ...they **presumably** have enough independence to disagree with the chief executive's proposals.
 - contrary adj. 相反的
 - -pose- 放

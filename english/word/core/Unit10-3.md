@@ -58,6 +58,7 @@
 
 - [ˌɪnstɪˈtuːʃn]
 - n. 机构；体质
+- Similar: intuition [ˌɪntuˈɪʃn] n. 直觉
 - institutional adj. 机构的
 - institute
     - vt. 制定（体系；政策等）

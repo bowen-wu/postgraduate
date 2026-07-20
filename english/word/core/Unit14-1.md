@@ -24,26 +24,29 @@
 ## prepare
 
 - vt. 准备
-- get prepared (to do sth.) 做好准备（去做某事）
-- prepare **for** sth. 为...做准备
+- 词组
+    - get prepared (to do sth.) 做好准备（去做某事）
+    - prepare **for** sth. 为...做准备
 - unprepared adj. 无准备的
 - preparation [ˌprepəˈreɪʃn]
     - n. 准备
-    - == readiness
+    - == readiness n. 愿意；准备就绪
 - readiness
     - n. 愿意；准备就绪
-    - Here are a few measures, <ins>drawn from(摘自...)</ins> my book *Ready or Not, Here Life Comes*, that parents can
-      take to prevent what I call "work-life **unreadiness**".
-- reluctant 😔
-    - adj. 不情愿的
+    - Here are a few measures, drawn from my book Ready or Not, Here Life Comes, that parents can take to prevent what I
+      call "work-life **unreadiness**".
+        - be drawn from 来自.../取自.../源于.../从...中提取出来
+- reluctant
+    - adj. 不情愿的 😔
     - Similar: fluctuate [ˈflʌktʃueɪt] vi. （大小、数量、质量等）波动
     - If the adjective **reluctant** applies to you, it means that you are undergoing some **inner struggle** and are
       **unwilling or unable to decide**.
     - reluctance
         - n. 不情愿的
         - One problem with the PreCheck program is the government's **reluctance** to back it.
-        - When your body language communicates **reluctance** or *anxiety([æŋˈzaɪəti] n. 焦虑)*, it *undercuts(v. 削弱)*
-          the message.
+        - When your body language communicates **reluctance** or anxiety, it undercuts the message.
+            - anxiety [æŋˈzaɪəti] n. 焦虑
+            - undercut v. 削弱
 
 ## primary
 
@@ -55,7 +58,8 @@
     - adj. 首要的
     - n. 鼎盛时期
     - **prime** of life 正值壮年、年富力强
-    - *Feasibility(n. 可行性)* should be a **prime** concern in policymaking.
+    - Feasibility should be a **prime** concern in policymaking.
+        - feasibility n. 可行性
 
 ## refer
 
@@ -73,9 +77,9 @@
     - transferability [ˌtrænsˌfɜrə'bɪlətɪ] n. 通用性
 - consult [kənˈsʌlt]
     - v. 咨询
-    - discuss v. 讨论（平等的）
-    - To **consult** is to **give or get help or advice**.
-    - When you don't know the meaning of a word, you **consult** a dictionary.
+    - Similar: discuss v. 讨论（平等的）
+    - To **consult** is to **give or get help or advice**. When you don't know the meaning of a word, you **consult** a
+      dictionary.
     - The largest firms in America and Britain together spend more than $15 billion a year on CSR, according to an
       estimate by EPG, a **consulting** firm.
 
@@ -87,9 +91,11 @@
 - McGee says leaving without a position lined up gave him time to **reflect** on what kind of company he wanted to run.
 - reflection
     - n. 思考；反映
-    - self-reflection 反省
-        - == introspection
-    - It's a **reflection** *simply(adv. 仅仅)* of people generally thinking well of themselves. 这种情况只是通常自我感觉良好的那种人的一种反映
+    - 词组
+        - self-reflection 反省
+            - == introspection n. 反省，内省; 自我反省
+    - It's a **reflection** simply of people generally thinking well of themselves.
+        - simply [ˈsɪmpli] adv. 仅仅; 简朴地
     - above-average effect 优于平均效应
 - reflective
     - adj. 反思的
@@ -110,8 +116,10 @@
     - n. 策略
     - == method（具体）
     - **Tactic** is another word for a **maneuver([məˈnuvər] n. 策略)** or **method**.
-    - If begging doesn't *convince(vt. 说服)* your parents to raise your allowance, you might want to try a different
-      **tactic**—like doing all your *chores([tʃɔːr] n. 家务活)* without being asked.
+    - If begging doesn't convince your parents to raise your allowance, you might want to try a different
+      **tactic**—like doing all your chores without being asked.
+        - convince [kənˈvɪns] vt. 说服
+        - chore [tʃɔːr] n. 琐事，令人厌烦的任务; 家务活
 - skillful adj. 娴熟的
 
 ## trouble
@@ -134,21 +142,20 @@
 - 词组
     - weigh on 使（某人或某人的精神等）忧虑
     - weigh down 使负荷太重
-    - weigh in **加入**比赛；（公开）发表意见、参与讨论、表态
-        - 引申
-            - （比喻）（在讨论、辩论等中）发表看法 / 参与讨论 weigh in (on / with sth)
-            - （比喻）加入、介入某个争议或事件；发表有分量的意见
+    - weigh in (on/with sth.) 加入比赛；（公开）发表意见、参与讨论、表态；（比喻）（在讨论、辩论等中）发表看法/参与讨论；（比喻）加入、介入某个争议或事件；发表有分量的意见
 - Republican Speaker of the House of Representatives John Boehner was also quick to **weigh in**.
 - Two potential giants may yet **weigh in**.
 - Leading doctors today **weigh in** on the debate over the government's role in promoting public health...
 - A federal appeals court **weighed in** again Tuesday, but instead of providing a badly needed resolution, it only
-  *prolonged(vt. 延长)* the fight.
+  prolonged the fight.
     - instead of A, B 不是 A，而是 B（否定A，肯定B）
     - badly needed 迫切需要的/久需未解的
+    - prolong vt. 延长
 - outweigh
     - vt. （在重要性或意义上）超过
-    - A outweigh B A比B重要
     - == override vt. 推翻，无视; 践踏; 优先于; 覆盖
+    - 词组
+        - A outweigh B
     - The White House claims that its power of enforcement **outweighs** that held by the states.
 - weight
     - vt. 在...上加重量
@@ -165,11 +172,12 @@
     - be worth doing sth. 值得做某事
     - be worth sb.'s while to do sth. 值得某人花时间/精力去做某事
 - It's not **worth** losing sleep over.
-    - lose sleep over sth 为某事烦恼/担心到睡不着觉
+    - lose sleep over sth. 为某事烦恼/担心到睡不着觉
 - How much is this painting **worth**?
 - worthwhile
     - adj. 值得的
-    - It is **worthwhile** to do sth. 做某事是值得的
+    - 词组
+        - it is **worthwhile** to do sth. 做某事是值得的
     - The smile on her face made it all **worthwhile**.
 
 ## participate
@@ -196,7 +204,8 @@
     - vt. 对...进行面试; 让...试唱
     - vi. 试听; 试音
     - n. 听力; 听觉; 试听; 试音
-    - the blind audition 盲选
+    - 词组
+        - the blind auditions 盲选
 
 ## 词组
 

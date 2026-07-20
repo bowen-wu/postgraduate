@@ -15,8 +15,8 @@
 - Volunteers are needed for the International Conference on Globalization to be held on this campus in early July.
 - Basic requirements are familiarity with the theme of the conference and proficiency in English. Other requirements
   include good interpersonal communication abilities, familiarity with our city's tourist attractions and its history,
-  proper manners, and a strong sense of responsibility.
-- Preference will be given to those experienced in international conferences or other similar activities.
+  proper manners, and a strong sense of responsibility. Preference will be given to those experienced in international
+  conferences or other similar activities.
 - Call 86754321 or email postgr@ccc.edu.cn for an application and for information on the interview. Phone and email
   enquiries are encouraged; no visited please.
 
@@ -32,10 +32,6 @@
 - By contrast,
 - On the contrary,
 - In the meantime,
-- The pie chart above clearly illustrates the purposes of touring for students in a certain university. According to the
-  data given above, 37 percent of college students travel in order to appreciate the scenery. Next comes the aim of
-  relieving pressure, accounting for 33 percent. By contrast, the percentages of students travelling aiming at other
-  goals, making friends and cultivating independence account for 15%, 9% and 6% respectively.
 - I have just arrived at my home from the airport. As I sit down at my desk, I just want to write a letter to you to
   thank you for your warm reception in the cultural exchange program. You and your family left a deep impression
   upon me. Indeed, the program is one of the most wonderful memories in my life.
@@ -72,9 +68,9 @@
 - To start with, ... Furthermore..., ...
 - To start with, ... Moreover, ...
 - The pie chart above clearly illustrates the factors of consumers' concern on choosing restaurants in a certain city in
-    2017. Among all the five categories, the percentages of feature, service and environment are the highest, accounting
-          for 36.3%, 26.8% and 23.8% respectively. On the contrary, the statistics of price and other factors take up
-          merely 8.4% and 4.7% respectively, the lowest among the five groups.
+  2017. Among all the five categories, the percentages of feature, service and environment are the highest, accounting
+  for 36.3%, 26.8% and 23.8% respectively. On the contrary, the statistics of price and other factors take up merely
+  8.4% and 4.7% respectively, the lowest among the five groups.
 - In the first place, with the prosperity of China's economy and the increase of people's income in recent decades, a
   large number of people are paying more attention to the feature of a restaurant instead of price. In the second place,
   in a bid to develop interpersonal relationship and enjoy comfortable life, consumers in mounting numbers prefer

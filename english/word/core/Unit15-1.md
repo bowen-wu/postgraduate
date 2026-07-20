@@ -28,10 +28,13 @@
 - boast
     - v. 吹嘘 😔
     - vt. 自豪地说；有（值得自豪的东西） 🙂
-    - When you **boast**, you are **bragging(v. 吹嘘，夸耀) about yourself and your accomplishments**, often to the
-      *boredom([ˈbɔːrdəm] n. 讨厌)* and *annoyance([əˈnɔɪəns] n. 烦恼)* of your *audience([ˈɑːdiəns] n. 听众)*.
-    - <ins>*It is*</ins> the charity's <ins>proud **boast**(值得骄傲的宣称)</ins> <ins>*that*</ins> it has never yet
-      turned anyone away.
+    - When you **boast**, you are bragging about yourself and your accomplishments, often to the boredom and annoyance
+      of your audience.
+        - brag v. 吹嘘，夸耀
+        - boredom [ˈbɔːrdəm] n. 讨厌
+        - audience [ˈɑːdiəns] n. 听众，观众，读者
+        - annoyance [əˈnɔɪəns] n. 烦恼
+    - It is the charity's proud **boast** that it has never yet turned anyone away.
         - turn sb. away 拒绝某人进入/不接纳某人/把人打发走
 
 ## disease
@@ -42,9 +45,10 @@
     - n. 流行病；盛行
     - adj. 流行（性）的
     - The outbreak of wine flu that was first detected in Mexico was declared a global **epidemic** on June 11, 2009.
-    - Yet <ins>*it is*</ins> *precisely([prɪˈsaɪsli] adv. 恰恰是)* these non-celebrity influentials <ins>*who*</ins>,
-      according to the two-step-flow theory, are supposed to drive social **epidemics**.
+    - Yet it is precisely these non-celebrity influentials who, according to the two-step-flow theory, are supposed to
+      drive social **epidemics**.
         - be supposed to do sth. 应该做某事/据说/被认为/按理论理应
+        - precisely [prɪˈsaɪsli] adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
     - pandemic
         - n. （正式）大流行病
         - With the **pandemic**, unemployment is very high indeed.
@@ -59,15 +63,17 @@
 - [dɪˈvɔːrs]
 - vt. 离婚
 - n. 离婚
-- di- double
+- di-
+    - == double
 - marry
     - vt. （和某人）结婚
     - marriage n. 婚姻；结婚
     - intermarriage
         - n. 通婚
-        - inter- == between/among
-        - Now, consider three indices of *assimilation([əˌsɪməˈleɪʃn] n. 同化)*—language, home ownership and
-          **intermarriage**.
+        - inter- 相互；互相
+            - == between == among
+        - Now, consider three indices of assimilation—language, home ownership and **intermarriage**.
+            - assimilation [əˌsɪməˈleɪʃn] n. 吸收；同化
 
 ## except
 
@@ -87,8 +93,8 @@
         - == outstanding
 - besides
     - prep. 除...之外（还）；此外
-- What other sports do you play **besides** basketball? 肯定，打篮球
-- I like all sports **except** football. 否定，不喜欢足球
+- What other sports do you play **besides** basketball?
+- I like all sports **except** football.
 
 ## era
 
@@ -99,19 +105,26 @@
     - n. 时代，纪元
     - epochal ['epəkəl]
         - adj. 划时代的
-        - **Epochal** describes events so important and significant they have the power to *usher([ˈʌʃɚ] v. 引领)* in a
-          new **epoch**. In other words they're "**epoch-making**".
-        - These **epochal** figures *represented(v. 体现)* lives hard to *imitate(vt. 模仿)*...
+        - **Epochal** describes events so important and significant they have the power to usher in a new **epoch**. In
+          other words they're "**epoch-making**".
+            - usher [ˈʌʃɚ] v. 引领
+        - These **epochal** figures represented lives hard to imitate...
+            - imitate vt. 模仿
+            - represent v. 代表；展现、体现
 
 ## ban
 
 - vt. 明令禁止
 - n. 禁令
-- keep/stop/prohibit/prevent/**ban** sb. from doing sth. 禁止某人做某事
+- 词组
+    - ban sb. from doing sth. 禁止某人做某事
+        - == keep/stop/prohibit/prevent sb. from doing sth.
 - prohibit
     - vt. 禁止
-    - Although the Supreme Court of the United States had **prohibited** *intentional(adj. 故意的)*
-      <ins>racial discrimination([ˈreɪʃl dɪˌskrɪmɪˈneɪʃn] 种族歧视)</ins> in jury selection...
+    - Although the Supreme Court of the United States had **prohibited** intentional racial **discrimination** in jury
+      selection...
+        - racial discrimination 种族歧视
+        - intentional adj. 有意的，故意的
 
 ## exactly
 
@@ -119,62 +132,70 @@
 - precisely [prɪˈsaɪsli]
     - adv. 准确地；精确地；（强调真实或明显）正是，恰恰是
     - == exactly adv. 准确地；（要求得到更多信息）究竟，到底
-    - Yet <ins>*it is*</ins> **precisely** these non-celebrity influentials <ins>*who*</ins>, according to the
-      two-step-flow theory, are supposed to drive social epidemics.
+    - Yet it is **precisely** these non-celebrity influentials who, according to the two-step-flow theory, are supposed
+      to drive social epidemics.
 - accurate [ˈækjərət]
     - adj. 精确的
     - accuracy [ˈækjərəsi]
         - n. 准确性；精确度
         - Accuracy dropped dramatically.
+    - accurately adv. 精确地
 
 ## incentive
 
 - n. 动机；激励
+- 词组
+    - provide incentives for sb. to do sth. 为某人提供做某事的激励
 - Within companies, the right compensation design can provide **incentives** for executives to think beyond their own
   time at the company and on behalf of all stakeholders.
-- provide incentives for sb to do sth 为某人提供做某事的激励
 - propel [prəˈpel]
     - vt. 推动
-    - propel sb. to do sth.
+    - 词组
+        - propel sb. to do sth.
 - motivate
     - vt. 成为...的动机；激励
     - == propel vt. 推动
     - motivation n. 动力
-    - demotivate 😔
-        - vt. 使失去动力
+    - demotivate
+        - vt. 使失去动力 😔
         - ...the detailed daily plans **demotivated** students.
 - stimulate [ˈstɪmjuleɪt]
     - vt. 激发；激励
-    - == propel == motivate
+    - == propel vt. 推动
+    - == motivate vt. 成为...的动机；激励
     - stimulus [ˈstɪmjələs]
         - n. 促进因素
-        - stimulus for sth. 对...的刺激/推动力
-        - Economic condition was only(仅仅) a **stimulus** for the trend toward efficient living.
+        - 词组
+            - stimulus for sth. 对...的刺激/推动力
+        - Economic condition was only a **stimulus** for the trend toward efficient living.
 - momentum [moʊˈmentəm] n. 推动力
 
 ## literary
 
 - [ˈlɪtəreri]
 - adj. 文学的
+- -liter- 字
 - "So few authors have brains enough or **literary** gift enough to keep their own end up in journalism", Newman
-  wrote, "that I am tempted to define journalism as a term of *contempt([kənˈtempt] n. 轻视)* applied by writers who are
-  not red to writers who are".
+  wrote, "that I am tempted to define journalism as a term of contempt applied by writers who are not red to writers who
+  are".
+    - contempt [kənˈtempt] n. 轻视
     - be tempted to do sth. 很想做某事/经不住诱惑想做某事
     - keep one’s end up 撑得住；保持水准；不掉队
     - a term of contempt 贬损性的称呼/带蔑视意味的术语
 - literacy
     - n. 读写能力
-    - Yet as distrust has risen toward all media, people may be starting to <ins>beef up(== improve 加强，增强)</ins>
-      their media **literacy** skills.
+    - Yet as distrust has risen toward all media, people may be starting to beef up their media **literacy** skills.
+        - beef up 加强/增强/充实/加大力度
+            - == improve v. 改善；提高
     - illiteracy [ɪˈlɪtərəsi]
         - n. 文盲
         - eliminate illiteracy 扫盲
-- literal [ˈlɪtərəl]
-    - adj. 字面的
-    - literally adv. 真正地，确实地
 - literate
     - adj. 有读写能力的
     - illiterate adj. 不识字的，文盲的
+- literal [ˈlɪtərəl]
+    - adj. 字面的
+    - literally adv. 真正地，确实地
 - literature [ˈlɪtrətʃər]
     - n. 文学；文学作品；（某学科的）文献
     - Humans are unique in their capacity to not only make tools but then turn around and use them to create

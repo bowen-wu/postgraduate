@@ -45,7 +45,7 @@
 - contract [ˈkɑːntrækt]
     - v. （使）收缩
     - n. 合同
-    - contrast
+    - Similar: contrast
         - vt. 对比
         - n. 差别
 - abstract [ˈæbstrækt]

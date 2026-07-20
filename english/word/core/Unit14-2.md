@@ -28,11 +28,11 @@
 - discussion n. 讨论
 - negotiate [nɪˈɡoʊʃieɪt]
     - v. 协商
-    - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that *each want
-      something* out of the deal.
-        - out of 在...之外；（== form）从...中获得、因...、由...
-    - You might **negotiate** with your mom—offering to do more *chores([tʃɔːr] n. 家务活)* for a rise in your
-      allowance.
+    - To **negotiate** is to try to work out an agreement between *parties(n. 当事方/交涉双方/参与者)* that each want
+      something out of the deal.
+        - out of 在...之外；从...中获得、因...、由...
+    - You might **negotiate** with your mom—offering to do more chores for a rise in your allowance.
+        - chore [tʃɔːr] n. 琐事，令人厌烦的任务; 家务活
     - Two companies debate the terms of a contract.
     - negotiation n. 协商
 
@@ -40,14 +40,15 @@
 
 - [prəˈpoʊz]
 - vt. 提出；提议
-- purpose [ˈpɜːrpəs] n. 目的；目标
+- Similar: purpose [ˈpɜːrpəs] n. 目的；目标
 - proposal [prəˈpoʊzl]
     - n. 提议
-    - ...they *presumably([prɪˈzuːməbli] adv. 大概可以认为；想必；据推测)* have enough independence to disagree with the
-      chief executive's **proposals**.
+    - ...they presumably have enough independence to disagree with the chief executive's **proposals**.
+        - presumably [prɪˈzuːməbli] adv. 大概
 - advise [ədˈvaɪz]
     - v. 建议
-    - advise sb. to do sth.
+    - 词组
+        - advise sb. to do sth.
     - advice [ədˈvaɪs] n. 建议
     - advisable adj. 明知可取的
 - recommend
@@ -70,10 +71,13 @@
 - outlive v. 比...活的长
 - renaissance
     - n. (the R-)文艺复兴（时期）；复兴
-    - From the earliest days of the **Renaissance**, the writing of history meant *recounting(vt. 详细叙述)* <ins>the
-      *exemplary([ɪɡˈzempləri] adj. 典范的，可作榜样的)* lives of great men(伟人的典范人生)</in>.
-    - Havaiian culture is not a *relic([ˈrelɪk] n. 遗物)* of the past; it is a living culture undergoing a
-      **renaissance** today.
+    - From the earliest days of the **Renaissance**, the writing of history meant recounting the exemplary lives of
+      great men.
+        - recount vt. 叙述
+        - exemplary [ɪɡˈzempləri] adj. 典范的，可作榜样的
+        - the exemplary lives of great men 伟人的典范人生
+    - Havaiian culture is not a relic of the past; it is a living culture undergoing a **renaissance** today.
+        - relic [ˈrelɪk] n. 遗物
 
 ## connect
 
@@ -82,21 +86,24 @@
 - connection n. 联系；连接
 - combine [kəmˈbaɪn]
     - v. （使）结合；合并
-    - be combined with
+    - 词组
+        - be combined with
     - combination [ˌkɑːmbɪˈneɪʃn] n. 结合
 - contact [ˈkɑːntækt]
     - vt. 接触；联系
     - n. 接触；联系
-    - in contact with sb. 与某人保持联系
+    - 词组
+        - in contact with sb. 与某人保持联系
 - constitute [ˈkɑːnstɪtuːt]
     - v. 组成，构成；成立
-    - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**".
-    - "What **constitutes** a family?" means "What **makes up** a family?"
+    - == make up 编造，构成，化妆
+    - To **constitute** is to **make up** a whole from smaller parts, or "**constituents**". "What **constitutes** a
+      family?" means "What **makes up** a family?"
     - constituent [kənˈstɪtʃuənt] n. （选区的）选民；成分
 - joint
     - adj. 联合的
-    - That's because Congress has always *envisioned([enˈvɪʒənd] vt. 设想)* **joint** federal-state immigration
-      enforcement.
+    - That's because Congress has always envisioned **joint** federal-state immigration enforcement.
+        - envision [ɛnˈvɪʒən] vt. 设想
 
 ## competition
 
@@ -104,7 +111,8 @@
 - n. 竞争
 - compete [kəmˈpiːt]
     - vi. 竞争
-    - compete with sb.
+    - 词组
+        - compete with sb.
 - competitive [kəmˈpetətɪv]
     - adj. 竞争的
     - == aggressive [əˈɡresɪv] adj. 好强的🙂; 攻击性强的😔
@@ -115,8 +123,7 @@
 - competent [ˈkɑːmpɪtənt]
     - adj. 能胜任的；有能力的
     - If you are **competent**, you have the **necessary ability or skills** to do somethings.
-    - ...all citizens who meet minimal qualifications of age and literacy are equally **competent/qualified** to serve
-      on juries.
+    - ...all citizens who meet minimal qualifications of age and literacy are equally **competent** to serve on juries.
         - be competent to do sth. 有能力做某事/能胜任
 - rival [ˈraɪvl] n. 竞争对手
 
@@ -130,13 +137,14 @@
 - employer n. 雇主
 - unemployed
     - adj. 失业的
-    - ...create job *vacancies(['veɪkənsɪz] n. 空缺)* for the **unemployed**
+    - ...create job vacancies for the **unemployed**
+        - vacancy n. （职位）空缺
 - employment
     - n. 工作；就业；雇用
     - unemployment n. 失业；失业率
 - recruit [rɪˈkruːt]
     - vt. 招募
-    - == employ
+    - == employ vt. 采用；雇用
     - recruitment n. 招募; 招聘
 
 ## engineer
@@ -146,8 +154,8 @@
 - engineering n. 工程学
 - mechanism [ˈmekənɪzəm]
     - n. 机制；机械装置
-    - It is fair to criticize and question the **mechanism**—that is the culture of research—<ins>after all</ins>,
-      but it is the prize-givers' money to do with as they please.
+    - It is fair to criticize and question the **mechanism**—that is the culture of research—after all, but it is the
+      prize-givers' money to do with as they please.
     - mechanical [məˈkænɪkl] adj. 机械的；机械般的
     - mechanize [ˈmɛkəˌnaɪz] vt. 使机械化
 
@@ -166,7 +174,8 @@
 - equivalent [ɪˈkwɪvələnt]
     - adj. （价值、数量、意义、重要性等）相等的；
     - n. 相等的东西
-    - be equivalent of sth.
+    - 词组
+        - be equivalent of sth.
 - fair
     - adj. 合理的；公平的；相当大的
     - fairly adv. 相当地；公平地
@@ -176,19 +185,24 @@
         - ensure **fairness** for taxpayers
 - impartial
     - adj. 公正的
-    - The kind of activity <ins>makes it less likely that(使...不太可能发生)</ins> the court's decisions will <ins>be
-      accepted as(被认为是...)</ins> **impartial** judgements.
+    - The kind of activity makes it less likely that the court's decisions will be accepted as **impartial** judgements.
+        - make it less likely that 使...发生的可能性降低/使...不太可能发生/降低...的可能性
+        - be accepted as 被认为是.../被公认为.../被接受为...
 
 ## infrastructure
 
 - n. （国家或机构的）基础设施 (宏观)
+- Similar: structure [ˈstrʌktʃər]
+    - vt. 精心安排
+    - n. 结构
 - facility [fəˈsɪləti]
     - n. 设施（微观）
     - facilitate vt. 促使；使便利
 - device n. 装置，仪器（个人）
 - equip
     - vt. 配备；使有能力
-    - equip sb. with sth. 为某人配备/提供某物（能力、工具、资源等）
+    - 词组
+        - equip sb. with sth. 为某人配备/提供某物（能力、工具、资源等）
     - equipment n. 设备（个人）
 
 ## Words
