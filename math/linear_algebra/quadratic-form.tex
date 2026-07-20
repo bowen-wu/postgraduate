@@ -1,102 +1,235 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{xeCJK}          % 中文支持
-\usepackage{fontspec}       % 英文/数学字体
-\usepackage{amsmath, amssymb} % 数学公式
-\usepackage{graphicx}       % 插入图片
-\usepackage{hyperref}       % 目录超链接
-\usepackage{geometry}       % 页面布局
-\usepackage{bm}             % 粗体
-\usepackage{xcolor}         % 颜色
-\usepackage{tabularx}       %表格环境
-\usepackage{tikz}           % TikZ 绘制主对角线斜线
-\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+\documentclass[./linear_algebra.tex]{subfiles}
 
-\definecolor{customgreen}{rgb}{0.2,0.6,0.3}
-\newcommand{\gmath}[1]{\textcolor{customgreen}{#1}}
-
-% 经典
-\definecolor{classicgreen}{rgb}{0.1,0.5,0.3}
-\newtcbox{\classic}{
-    on line,
-    colback=classicgreen!10,
-    colframe=classicgreen,
-    boxrule=0.8pt,
-    arc=3pt,
-    boxsep=1pt,
-    left=4pt,
-    right=4pt,
-    top=2pt,
-    bottom=2pt
-}
-
-
-% =========================
-% 字体设置
-% =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
-
-% =========================
-% 图形路径（可调整）
-% =========================
-\graphicspath{{./assets/}}
-
-% =========================
-% 文档开始
-% =========================
 \begin{document}
-
-%    \title{Template}
-%    \date{\today}
-%    \maketitle
-
-% =========================
 
     \section{二次型}
 
-    \subsection{视频}
+    \subsection{二次型的定义及其矩阵表达式}
+
+    设 $x_1,x_2,\cdots,x_n$ 为 $n$ 个变量，若多项式
+
+    \[
+        f(x_1,x_2,\cdots,x_n) = \sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}x_ix_j
+    \]
+
+    \noindent
+    是一个二次齐次多项式，则称 $f(x_1,x_2,\cdots,x_n)$ 为 $n$ 元二次型。令
+
+    \[
+        \boldsymbol{x} = (x_1,x_2,\cdots,x_n)^T,
+    \]
+
+    \noindent
+    则二次型可以表示为矩阵形式：
+
+    \[
+        f(\boldsymbol{x}) = \sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}x_ix_j = \boldsymbol{x}^{T}A\boldsymbol{x},
+    \]
+
+    \noindent
+    其中
+
+    \[
+        A=(a_{ij})
+    \]
+
+    \noindent
+    为 $n$ 阶矩阵，称 $A$ 为二次型的矩阵。对于任意二次型，总可以取其矩阵为对称矩阵，即
+
+    \[
+        A=A^T,
+    \]
+
+    \noindent
+    此时
+
+    \[
+        f(\boldsymbol{x})
+        =
+        \boldsymbol{x}^{T}A\boldsymbol{x},
+    \]
+
+    \noindent
+    其中 $A$ 为 $n$ 阶实对称矩阵，则称 $f(\boldsymbol{x})$ 为 $n$ 元实二次型，$A$ 称为该二次型的矩阵。二次型矩阵要求$A=A^T$，此时矩阵唯一。{\color{red}{系数矩阵$A$的秩即为二次型$f(x)$的秩}}
+
+    \subsection{线性变换}
+
+
+    设 $x=(x_1,x_2,\cdots,x_n)^T$，令
+
+    \[
+        x=Cy,
+    \]
+
+    \noindent
+    其中 $C$ 为 $n$ 阶矩阵，$y=(y_1,y_2,\cdots,y_n)^T$，则称由
+
+    \[
+        \begin{cases}
+            x_1=c_{11}y_1+c_{12}y_2+\cdots+c_{1n}y_n,\\
+            x_2=c_{21}y_1+c_{22}y_2+\cdots+c_{2n}y_n,\\
+            \vdots\\
+            x_n=c_{n1}y_1+c_{n2}y_2+\cdots+c_{nn}y_n
+        \end{cases}
+    \]
+
+    \noindent
+    确定的变换为线性变换。若线性变换的系数矩阵$C$可逆，即$|C| \neq 0$，则称为\textbf{可逆线性变换}
+
+    \subsection{矩阵合同}
+
+    设 $A,B$ 均为 $n$ 阶矩阵，若存在可逆矩阵 $C$，使得
+
+    \[
+        B=C^TAC,
+    \]
+
+    \noindent
+    则称矩阵 $A$ 与矩阵 $B$ 合同，记作$A\simeq B$，其中 $C$ 称为合同变换矩阵，此时对应的二次型为\textbf{合同二次型}
+
+    \subsubsection{性质}
 
     \begin{enumerate}
-        \item 二次型矩阵: 平方项对角线，混合项的系数被2除，放在对应位置上
-        \item 二次型的矩阵是唯一的，
-        \item 二次型矩阵 \Leftrightarrow \text{实对称矩阵} \quad \text{\color{red}{一一对应}}
-        \item 坐标变换关注{\color{red}{系数行列式不为0(可逆矩阵)}}，有无数多个坐标变换
+        \item 自反性：$A\simeq A$
+        \item 对称性：$A\simeq \Rightarrow B\simeq A$
+        \item 传递性：$A\simeq B,\ B\simeq C\Rightarrow A\simeq C$
     \end{enumerate}
 
-    \subsection{基础概念}
+    \subsubsection{重要结论}
 
     \begin{enumerate}
+        \item 在二次型中，$A$与$B$合同，就是指同一个二次型在可逆线性变换下的\textbf{两个不同状态的联系}
+        \item 可逆矩阵变换不会改变二次型的秩
+        \item 和对称矩阵合同的矩阵也必是对称矩阵
     \end{enumerate}
 
-    \subsection{定理}
+    \subsection{二次型的标准形、规范形}
+
+    设二次型
+
+    \[
+        f(\boldsymbol{x})=\boldsymbol{x}^{T}A\boldsymbol{x},
+    \]
+
+    \noindent
+    经过可逆线性变换
+
+    \[
+        \boldsymbol{x}=C\boldsymbol{y},
+    \]
+
+    \noindent
+    化为
+
+    \[
+        f(\boldsymbol{x}) = d_1y_1^2+d_2y_2^2+\cdots+d_ny_n^2,
+    \]
+
+    \noindent
+    {\color{red}{只含平方项，不含交叉项}}，其中 $d_1,d_2,\cdots,d_n$ 为常数，则称此形式为该二次型的\textbf{标准形}。若系数$d_i(i = 1, 2, \cdots, n)$的取值范围为$\{1, -1, 0\}$，即形如
+
+    \[
+        f(\boldsymbol{z}) = z_1^2+\cdots+z_p^2 - z_{p+1}^2-\cdots-z_{p+q}^2,
+    \]
+
+    \noindent
+    的二次型称为\textbf{规范形}，其中$p=\text{正平方项的个数}, q=\text{负平方项的个数}, p+q\leq n $
+
+    \subsubsection{定理}
 
     \begin{enumerate}
+        \item 任何二次型$f(\boldsymbol{x})=\boldsymbol{x}^{T}A\boldsymbol{x}$均可通过$\boxed{\textbf{配方法}}$（做可逆线性变换$\boldsymbol{x}=C\boldsymbol{y}$）化成标准形及规范形
+        \begin{itemize}
+            \item 矩阵语言：任何实对称矩阵$A$，必存在可逆矩阵$C$，使得$C^{T}AC = \Lambda$，其中
+            \[
+                \Lambda = \begin{bmatrix}
+                              d_1& & &\\
+                              & d_2 & &\\
+                              & & \ddots &\\
+                              & & & d_3
+                \end{bmatrix}\text{或} \quad \Lambda = \begin{bmatrix}
+                                                           1 & & & & & & & &\\
+                                                           &  \ddots & &&&&&&\\
+                                                           &  & 1 &&&&&& \\
+                                                           &  &  &-1&&&&& \\
+                                                           &  & &&\ddots &&&&\\
+                                                           &  & &&&1&&&\\
+                                                           &  & &&&&0&&\\
+                                                           &  & &&&&&\ddots&\\
+                                                           &  & &&&&&&0
+                \end{bmatrix}
+            \]
+            \item 遵循{\color{customgreen}{将某个变量的平方项及与其有关的混合项一次配完，配成一个完全平方，减少一个未配完全平方的变量，使得总的平方项的项数小于等于变量个数}}
+        \end{itemize}
+        \item 任何二次型$f(\boldsymbol{x})=\boldsymbol{x}^{T}A\boldsymbol{x}$也可以通过$\boxed{\textbf{正交变换}}\boldsymbol{x}=Q\boldsymbol{y}$化为标准型
+        \begin{itemize}
+            \item 矩阵语言：任何实对称矩阵$A$，一定存在正交矩阵$A$，使得$Q^{-1}AQ = Q^{T}AQ = \Lambda$，其中
+            \[
+                \Lambda = \begin{bmatrix}
+                              \lambda_1 & & &\\
+                              & \lambda_2 & &\\
+                              & & \ddots &\\
+                              & & & \lambda_n
+                \end{bmatrix}
+            \]
+        \end{itemize}
+        \item 配方法 VS 正交变换法
+        \begin{itemize}
+            \item 区别：在配方法中，$C$是满足可逆，所以$C^{-1}$不一定等于$C^T$，但在正交变换法中，变换手段$Q$满足$Q^{-1} = Q^T$
+            \item 相同点：它们的正、负惯性指数相同
+        \end{itemize}
     \end{enumerate}
 
-    \subsection{运算}
+    \subsection{惯性定理}
+
+    无论选取什么样的可逆线性变换，将二次型化成标准形或规范形，其正项个数$p$、负项个数$q$都是不变的，$p$称为\textbf{正惯性指数}，$q$称为\textbf{负惯性指数}。{\color{customgreen}{若二次型的秩为$r$，则$r = p + q$，可逆线性变换不改变正、负惯性指数}}
+
+    \subsection{正定二次型}
+
+    设二次型
+
+    \[
+        f(\boldsymbol{x}) = \boldsymbol{x}^{T}A\boldsymbol{x},
+    \]
+
+    \noindent
+    其中 $A$ 为 $n$ 阶实对称矩阵。若对于任意非零向量
+
+    \[
+        \boldsymbol{x}\neq \boldsymbol{0},
+    \]
+
+    \noindent
+    恒有：
+
+    \[
+        f(\boldsymbol{x}) = \boldsymbol{x}^{T}A\boldsymbol{x}>0,
+    \]
+
+    \noindent
+    则称二次型 $f(\boldsymbol{x})$ 为\textbf{正定二次型}，称矩阵 $A$ 为\textbf{正定矩阵}。{\color{customgreen}{令$f$是一正的常数，其反映出来的几何图形是封闭的}}
+
+    \noindent
+
+    \subsection{结论}
 
     \begin{enumerate}
-
+        \item 两个二次型（或实对称矩阵）合同
+        \begin{align*}
+            &\Leftrightarrow\; \text{有相同的正、负惯性指数}  \\
+            &\Leftrightarrow\; \text{有相同的秩及正(或负）惯性指数}  \\
+            &\Leftrightarrow\; \text{相同的正、负特征值个数}
+        \end{align*}
+        \item $n$元二次型$f(\boldsymbol{x}) = \boldsymbol{x}^{T}A\boldsymbol{x}$正定
+        \begin{align*}
+            &\Leftrightarrow\; \text{对任意}x\neq 0\text{，有} \boldsymbol{x}^{T}A\boldsymbol{x} > 0  \\
+            &\Leftrightarrow\; {\color{red}{\bigstar}}A\text{的全部顺序主子式均大于}0  \\
+            &\Leftrightarrow\; {\color{red}{\bigstar}}A\text{的特征值}\lambda_i  > 0(i = 1, 2, \cdots, n) \\
+            &\Leftrightarrow\; {\color{red}{\bigstar}}f\text{的正惯性指数}p = n  \\
+            &\Leftrightarrow\; \text{存在可逆矩阵}D\text{，使}A = D^{T}D  \\
+            &\Leftrightarrow\; A\simeq E  \\
+            &\Rightarrow\; a_{ii} > 0(i = 1, 2, \cdots, n)  \\
+            &\Rightarrow\; |A| > 0
+        \end{align*}
     \end{enumerate}
-
-    \subsection{公式}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{方法步骤}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
-    \subsection{条件转换思路}
-
-    \begin{enumerate}
-
-    \end{enumerate}
-
 \end{document}

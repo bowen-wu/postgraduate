@@ -221,6 +221,6 @@
 - Like a drop of water from the point of a needle disappearing into the ocean, my days are dripping into the stream of
   time, soundless, *traceless(['treɪslɪs])*. 像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音也没有影子
     - needle [ˈniːdl] n. 针
-- **It is a truth** **universally acknowledged**, **that** *a single man* **in possession of** *a good fortune*, must be
-  **in want of** *a wife*.
+- **It is a truth** **universally acknowledged**, **that** a single man **in possession of** a good fortune, must be
+  **in want of** a wife.
 - **It is a truth universally acknowledged that** visiting museums can serve as a fine way to broaden our horizon.
