@@ -74,7 +74,7 @@ const audioSources = [
 ];
 
 const sentenceAudioSources = [
-  { name: 'Azure', play: playAzureTTS, timeout: 3500, options: { voice: 'en-US-JennyNeural', region: 'eastasia' } },
+  { name: 'Azure', play: playAzureTTS, timeout: 3500, options: { voice: 'en-US-AriaNeural', region: 'eastasia', style: 'chat', rate: '+6%' } },
   { name: 'Google Cloud', play: playGoogleCloudTTS, timeout: 3500, options: { voice: 'en-US-Neural2-C' } }
 ];
 
@@ -328,6 +328,43 @@ function getYoudaoTimeoutForText(text) {
     : (CONFIG.audio?.desktopYoudaoTimeout || 1800);
 }
 
+function escapeSsmlText(text) {
+  return String(text || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/'/g, '&apos;')
+    .replace(/"/g, '&quot;');
+}
+
+function getAzureCacheSourceKey(options = {}) {
+  const voice = options.voice || CONFIG.audio.defaultVoice;
+  const style = options.style || '';
+  const rate = options.rate || '';
+  if (!style && !rate) return 'azure';
+  return `azure:${voice}:${style}:${rate}`;
+}
+
+function buildAzureSsml(text, voice, options = {}) {
+  const escapedText = escapeSsmlText(text);
+  const style = options.style || '';
+  const rate = options.rate || '';
+  const prosodyText = rate
+    ? `<prosody rate='${rate}'>${escapedText}</prosody>`
+    : escapedText;
+  const voiceContent = style
+    ? `<mstts:express-as style='${style}'>${prosodyText}</mstts:express-as>`
+    : prosodyText;
+
+  return `
+    <speak version='1.0' xml:lang='en-US' xmlns:mstts='https://www.w3.org/2001/mstts'>
+      <voice xml:lang='en-US' name='${voice}'>
+        ${voiceContent}
+      </voice>
+    </speak>
+  `.trim();
+}
+
 async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
   const youdaoTimeout = Math.min(timeout, getYoudaoTimeoutForText(cleanText));
@@ -349,7 +386,7 @@ async function playYoudaoAudio(text, timeout = 1200, _options = {}, hooks = {}) 
 
 async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const cleanText = removeEmoji(text);
-  const source = 'azure';
+  const source = getAzureCacheSourceKey(options);
   const sourceTimeout = Math.max(timeout, CONFIG.audio?.defaultTimeout || 1200, isMobileBrowser() ? 2800 : 3500);
   const voice = options.voice || CONFIG.audio.defaultVoice;
   const memoryCached = getMemoryAudioDataUrl(cleanText, source);
@@ -370,13 +407,7 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
   const region = options.region || CONFIG.apiKeys.azureSpeech.region;
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
-  const ssml = `
-    <speak version='1.0' xml:lang='en-US'>
-      <voice xml:lang='en-US' name='${voice}'>
-        ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
-      </voice>
-    </speak>
-  `.trim();
+  const ssml = buildAzureSsml(cleanText, voice, options);
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
@@ -408,7 +439,7 @@ async function playAzureTTS(text, timeout = 1200, options = {}, hooks = {}) {
 
 async function prefetchAzureTTS(text, timeout = 1200, options = {}) {
   const cleanText = removeEmoji(text);
-  const source = 'azure';
+  const source = getAzureCacheSourceKey(options);
   if (getMemoryAudioDataUrl(cleanText, source)) {
     return { sourceName: 'Azure', cached: true };
   }
@@ -428,13 +459,7 @@ async function prefetchAzureTTS(text, timeout = 1200, options = {}) {
   const apiKey = CONFIG.apiKeys.azureSpeech.key;
   const region = options.region || CONFIG.apiKeys.azureSpeech.region;
   const url = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
-  const ssml = `
-    <speak version='1.0' xml:lang='en-US'>
-      <voice xml:lang='en-US' name='${voice}'>
-        ${cleanText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&apos;').replace(/"/g, '&quot;')}
-      </voice>
-    </speak>
-  `.trim();
+  const ssml = buildAzureSsml(cleanText, voice, options);
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), sourceTimeout);
@@ -833,3 +858,8 @@ export function prewarmSpeechSynthesis() {
     window.speechSynthesis.speak(utterance);
   } catch {}
 }
+
+export const __testables = {
+  buildAzureSsml,
+  getAzureCacheSourceKey
+};

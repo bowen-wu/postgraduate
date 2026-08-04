@@ -148,6 +148,7 @@
     - provide incentives for sb. to do sth. 为某人提供做某事的激励
 - Within companies, the right compensation design can provide **incentives** for executives to think beyond their own
   time at the company and on behalf of all stakeholders.
+    - compensation n. 补偿金；补偿；薪酬
 - propel [prəˈpel]
     - vt. 推动
     - 词组
