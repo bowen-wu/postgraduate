@@ -40,7 +40,8 @@
     - n. 领域
     - Whole new **realms** of understanding—from gender to race to cultural studies—were opened up as scholars unpicked
       the multiplicity of lost societies.
-        - Whole new realms of understanding 全新的理解（adjective + 核心名词 + of + 名词修饰：先翻类别（是什么） → 再翻程度（怎么样））
+        - Whole new realms of understanding 全新的理解（adjective + 核心名词 + of + 名词修饰：先翻类别（是什么） →
+          再翻程度（怎么样））
         - multiplicity [ˌmʌltəˈplɪsɪti] n. 多样性
 - domain [doʊˈmeɪn]
     - n. （知识、活动的）领域；（尤指旧时个人、国家等所拥有或统治的）领土
@@ -187,7 +188,9 @@
       **having good taste**.
     - The inner workings of a computer are **sophisticated**.
     - AI "vision" today is not nearly as **sophisticated** as that of humans.
-        - vision n. 视野；想象；远见卓识
+        - vision 
+            - n. 视野；想象；远见卓识
+            - Similar: envision [ɛnˈvɪʒən] vt. 设想
 
 ## generate
 

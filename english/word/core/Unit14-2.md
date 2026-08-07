@@ -138,7 +138,9 @@
 - unemployed
     - adj. 失业的
     - ...create job vacancies for the **unemployed**
-        - vacancy n. （职位）空缺
+        - vacancy
+            - n. （职位）空缺
+            - Similar: vaccine [vækˈsiːn] n. 疫苗
 - employment
     - n. 工作；就业；雇用
     - unemployment n. 失业；失业率

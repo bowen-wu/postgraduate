@@ -35,23 +35,28 @@
 - original
     - adj. 最初的；原作的
     - originally adv. 起初
-- **R(结果)** result from C(原因) C导致了R
-    - == originate from
-    - == derive from
-    - == stem from
-    - == spring from
 - originate [əˈrɪdʒɪneɪt]
     - v. 来自；起源；发明
-    - *Hindrance([ˈhɪndrəns] n. 阻碍)* to the reform of the legal system **originates from**...
+    - 词组
+        - A originate from B
+            - == A result from B
+            - == A derive from B
+            - == A stem from B
+            - == A spring from B
+        - A result in B
+    - Hindrance to the reform of the legal system **originates from**...
+        - hindrance [ˈhɪndrəns] n. 阻碍物
 - derive [dɪˈraɪv]
     - v. 从...衍生出；起源于
-    - *Elegance(n. 优雅)*, he believed, did not **derive from** abundance.
+    - Elegance, he believed, did not **derive from** abundance.
+        - elegance n. 优雅
 - stem [stem]
     - vi. 起源于；阻止；遏制
     - n. 干；茎
-    - STEM == Science Technology Engineering Mathematics
-    - The researchers' argument **stems** from a simple observation about social influence.
-    - Confidence and fear **stem** from our beliefs and attitudes.
+    - Science Technology Engineering Mathematics
+        - == STEM
+    - The researchers' argument **stems from** a simple observation about social influence.
+    - Confidence and fear **stem** from** our beliefs and attitudes.
     - The government had failed to **stem** the tide of factory closures.
 
 ## perceive
@@ -62,10 +67,11 @@
 - perception [pərˈsepʃn]
     - n. 感知；看法；印象
     - == understanding
-    - Favoritism in official access can fan public **perceptions** of *corruption(n. 腐败，贪污)*.
+    - Favoritism in official access can fan public **perceptions** of corruption.
+        - corruption n. 贿赂
 - detect
     - vt. 察觉
-    - == perceive
+    - == perceive v. 感知；注意到；将...理解为
 
 ## strict
 
@@ -78,60 +84,68 @@
 - slack [slæk]
     - adj. 懈怠的
     - Everybody loves a fat pay rise. Yet pleasure at your own can vanish if you learn that a colleague has been given a
-      bigger one. Indeed, if he has a reputation for **slacking**, you might even be outraged(['aʊtreɪdʒəd] adj. 愤慨).
+      bigger one. Indeed, if he has a reputation for **slacking**, you might even be outraged.
+        - outraged adj. 震怒的
+        - vanish [ˈvænɪʃ]
+            - v. 突然不见，消失；不复存在
+            - == disappear v. 消失
+            - Similar: vanity [ˈvænəti] n. 虚荣心，自负
 - idleness n. 懒惰
 
 ## treat
 
 - vt. 把...看作；款待；以...态度对待；处理
-- treat/regard/view A as B
+- 词组
+    - treat A as B
+        - == regard/view A as B
 - How they **treat** you defines them. How you **treat** others defines you.
 - treatment
-    - n. 对待；治疗
+    - n. 对待；治疗（侧重过程）
     - If connections can be bought, a basic premise of democratic society—that all are equal in **treatment** by
       government—is undermined.
 - cure [kjʊr]
-    - vt. 治好（疾病）
+    - vt. 治好（疾病）（侧重结果）
     - n. （解决问题、改善糟糕情况等的）措施
-    - a cure for... 对...的良方/...的解药/治本之策
+    - == solution n. 解决办法
+    - 词组
+        - a cure for... 对...的良方/...的解药/治本之策
     - One oft-debated **cure** for this labor shortage remains as implausible as it has been all along...
-    - cure vs treatment
-        - cure 侧重结果
-        - treatment 侧重过程
-    - == solution
 
 ## urge
 
 - vt. 敦促
 - n. 强烈的欲望
-- urge sb. to do sth.
 - They **urged** Congress to approve plans for their reform programme.
+    - urge sb. to do sth.
 - urgency
     - n. 紧迫
     - When something has **urgency** it requires speedy action.
 - urgent adj. 紧急的
 - emergency
     - n. 突发事件；紧急情况
-    - == urgency
+    - == urgency n. 紧迫
 
 ## vision
 
 - n. 视野；想象；远见卓识
-- a vision for... 关于...的愿景/针对...的构想
+- 词组
+    - a vision for... 关于...的愿景/针对...的构想
 - **Vision** is the art of seeing what is invisible to others.
 - We need to create a new **vision** for public health where all of society works together to get healthy and live
-  longer. 我们需要为公共健康构建一个新愿景，在这个愿景中，全社会将共同努力，让每个人更健康、活得更长
+  longer.
     - work together to do sth. 共同努力去.../合作做某事
-    - where 用于概念名词 vision, situation, system, environment, world，表示：
-        - 在其中...
-        - 在那样的愿景/环境/体系下...
-        - 所以这里的 where = in which
+    - Block: where 用于概念名词 vision, situation, system, environment, world，
+        - 表示：
+            - 在其中...
+            - 在那样的愿景/环境/体系下...
+            - 所以这里的 where = in which
 - envision [ɛnˈvɪʒən]
     - vt. 设想
     - That's because Congress has always **envisioned** joint federal-state immigration enforcement.
 - visible
     - adj. 看得见的
     - ...passionate consumers will voice their opinions in quicker, more **visible**, and much more damaging ways.
+        - passionate [ˈpæʃənət] adj. 狂热的
     - invisible adj. 无形的
     - visibility n. 明显性
 - visual [ˈvɪʒuəl]
@@ -152,13 +166,16 @@
 - obliged
     - v. （以法律、义务等）强迫，感激
     - adj. 感激；被迫做某事
-    - be obliged to do sth.
     - == duty-bound adj. 义不容辞的
+    - 词组
+        - be obliged to do sth.
 - compulsive [kəmˈpʌlsɪv]
     - adj. 难以制止的
-    - **Compulsive** people have **irresistible** urges to do certain things, like a **compulsive**
-      gossip([ˈɡɑːsɪp] 爱说长道短的人) who simply cannot keep a secret.
-    - He was a **compulsive** gambler and often <ins>heavily in debt(债台高筑)</ins>.
+    - **Compulsive** people have **irresistible** urges to do certain things, like a **compulsive** gossip who simply
+      cannot keep a secret.
+        - gossip [ˈɡɑːsɪp] n. 闲言碎语
+    - He was a **compulsive** gambler and often heavily in debt.
+        - heavily in debt 负债累累/债台高筑
     - compulsory [kəmˈpʌlsəri]
         - adj. 强迫的; 义务的; 规定的
         - **compulsory** courses 必修课
@@ -168,13 +185,17 @@
 
 - [əbˈzɔːrb]
 - vt. 吸收；使并入；🙂 理解；吸引全部注意力；承受 😔
-- be absorbed in 全神贯注于...
-    - == concentrate on
-- I never <ins>feel overwhelmed(感到不堪重负/压力很大)</ins> with the amount of information my brain **absorbs**.
-- <ins>Better not to</ins> *fancy([ˈfænsi] v. 幻想)* something when the evening sun sets, <ins>but to</ins>
-  <ins>be **absorbed** in</ins> work when the morning sun rises. 🙂
-    - Better not to... but to... 与其...不如...
-- During the same period, families have been asked to **absorb** much more risk in their retirement income. 😔
+- 词组
+    - be absorbed in 全神贯注于...
+        - == concentrate on
+- I never feel overwhelmed with the amount of information my brain **absorbs**.
+    - feel overwhelmed 感到不堪重负/感到压力很大/感到应付不过来
+- Better not to fancy something when the evening sun sets, but to be **absorbed** in work when the morning sun rises.
+    - better not to... but to... 与其...不如...
+    - fancy [ˈfænsi]
+        - vt. 喜欢；想象
+        - n. 想象力；幻想
+- During the same period, families have been asked to **absorb** much more risk in their retirement income.
 - absorption [əbˈsɔrpʃn] n. 吸引；并入；专心致志
 - assimilation [əˌsɪməˈleɪʃn]
     - n. 吸收；同化
