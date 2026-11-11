@@ -10,7 +10,6 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{bm}
-\usepackage{xcolor}
 \usepackage[table]{xcolor}
 \usepackage{tabularx}
 \usepackage{tikz}
@@ -113,10 +112,35 @@
 % =========================
 % 字体设置
 % =========================
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica Neue}
-\setmonofont{Menlo}
-\setCJKmainfont{PingFang SC}
+% 优先 Mac 字体，缺失时回退到 Windows/Linux 可用字体
+\IfFontExistsTF{Times New Roman}{%
+    \setmainfont{Times New Roman}%
+}{%
+    \setmainfont{TeX Gyre Termes}% Times 克隆，TeX Live 自带
+}
+\IfFontExistsTF{Helvetica Neue}{%
+    \setsansfont{Helvetica Neue}%
+}{%
+    \setsansfont{TeX Gyre Heros}% Helvetica 克隆，TeX Live 自带
+}
+\IfFontExistsTF{Menlo}{%
+    \setmonofont{Menlo}%
+}{%
+    \IfFontExistsTF{DejaVu Sans Mono}{%
+        \setmonofont{DejaVu Sans Mono}%
+    }{%
+        \setmonofont{TeX Gyre Cursor}%
+    }
+}
+\IfFontExistsTF{PingFang SC}{%
+    \setCJKmainfont{PingFang SC}%
+}{%
+    \IfFontExistsTF{Noto Sans CJK SC}{%
+        \setCJKmainfont{Noto Sans CJK SC}%
+    }{%
+        \setCJKmainfont{Microsoft YaHei}% 已从 Windows 侧拷贝到 ~/.local/share/fonts/winfonts
+    }
+}
 
 % =========================
 % 图形路径（可调整）
