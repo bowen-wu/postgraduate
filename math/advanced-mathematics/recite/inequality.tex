@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../../utils/template}
+
+\newgeometry{ left=0.1cm, right=0.5cm, top=0.5cm, bottom=0.5cm }
+
+\begin{document}
+    \pagestyle{empty}
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item 抽象型基本不等关系：
+            \item $0 \le a + |a| \le$
+            \item $|a-b| = |a-c+c-b| \le$（三个量的关系）
+            \item $\dfrac{2}{\dfrac{1}{a}+\dfrac{1}{b}} \quad \sqrt{ab} \quad \dfrac{a+b}{2} \quad \sqrt{\dfrac{a^2+b^2}{2}}\ (a,b>0)$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{4}
+            \item $|ab| \quad \dfrac{a^2+b^2}{2}$
+            \item $\dfrac{a+b+c}{3} \quad \sqrt[3]{abc}\ (a,b,c>0)$
+            \item $a + \dfrac{1}{a} \ge$（$a>0$）
+            \item $\left|\dint_a^b f(x)\,\mathrm{d}x\right| \le$（$a<b$）
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{8}
+            \item 柯西不等式：$(a_1b_1 + a_2b_2)^2 \le$
+            \item $\left[\dint_a^b f(x)g(x)\,\mathrm{d}x\right]^2 \le$（柯西的积分形式）
+            \item $\left|\dint_a^b f(x)\,\mathrm{d}x\right| = \left|\dint_a^c f(x)\,\mathrm{d}x + \dint_c^b f(x)\,\mathrm{d}x\right| \le$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \vspace{1em}
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item 抽象型条件不等关系：
+            \item $0<a<1 \Rightarrow a \quad a^2$
+            \item $\dfrac{a^2}{2} \quad a - \dfrac{a^2}{2} \quad a$（$0<a<1$）
+            \item 若 $ab = A$，则 $a+b \ge$（$a,b>0$）
+            \item 若 $a+b = A$，则 $ab \le$（$a,b>0$）
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{5}
+            \item 如：$x_0+(1-x_0)=1$，$x_0\in(0,1)$，则 $x_0(1-x_0) \le$
+            \item $\dfrac{1}{x_0(1-x_0)} \ge$
+            \item $a_n>0$，$a_n$ 单调减少 $\Rightarrow a_{n+1} \le$
+            \item $a>1 \Rightarrow \dfrac{a}{1+a} >$
+            \item $0<a<1 \Rightarrow \dfrac{a}{2} \quad \dfrac{a}{1+a} \quad a$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{10}
+            \item $0<a<\dfrac{1}{2} \Rightarrow a \quad \dfrac{a}{1-a} \quad 2a$
+            \item $0<a<1 \Rightarrow \dfrac{a}{1-a} \quad a$
+            \item $0<a<1 \Rightarrow 1-\sqrt{1-a} = \dfrac{a}{1+\sqrt{1-a}} \quad a$
+            \item $0<a<2 \Rightarrow \sqrt{a(2-a)} \le$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \newpage
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item 初等函数不等关系：
+            \item $\mathrm{e}^x \quad x+1$
+            \item $\mathrm{e}^{\square} \quad \square + 1$，如 $\mathrm{e}^{x-1} \quad x$
+            \item $\mathrm{e}^x \quad \mathrm{e}x$
+            \item $1-\dfrac{1}{x} \quad \ln x \quad x-1$
+            \item $0<x<1$：$\dfrac{x}{x+1} \quad \ln\!\left(1+\dfrac{1}{x}\right) \quad \dfrac{1}{x}$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{6}
+            \item $\ln(1+n) \quad n$；$\ln n \quad n$
+            \item $\dfrac{1}{\ln\sqrt{n}} = \dfrac{1}{\frac{1}{2}\ln n} = \dfrac{2}{\ln n} \quad \dfrac{2}{n}$
+            \item $x>0$：$\ln(1+x) - x \quad -\dfrac{1}{2}x^2$
+            \item $x - \ln(1+x) \quad \dfrac{1}{2}x^2$
+            \item 故 $\dfrac{1}{n^2} - \ln\!\left(1+\dfrac{1}{n^2}\right) <$
+            \item $\mathrm{e}^x - \ln x$
+            \item $n! \quad n^n$；$\ln n! \quad n\ln n$（$n>1$）
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{13}
+            \item $\sin x \quad x \quad \tan x$，$x\in\left(0,\dfrac{\pi}{2}\right)$
+            \item $\dfrac{2}{\pi} \quad \dfrac{\sin x}{x} \quad 1$，$x\in\left(0,\dfrac{\pi}{2}\right)$
+            \item $1 \quad \dfrac{\tan x}{x} \quad \dfrac{4}{\pi}$，$x\in\left(0,\dfrac{\pi}{4}\right)$
+            \item $\left(1+\dfrac{1}{x}\right)^x \quad \mathrm{e}$（$x>0$）
+            \item $x\ln x \ge$（$x>0$）
+            \item $|\cos x| = \left|\sin\left(\dfrac{\pi}{2}-x\right)\right| \le$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \vspace{1em}
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \item 函数性态中的不等关系：
+            \item 若 $\lim\limits_{n\to\infty} x_n = a \ne 0$，则 $|x_n| >$
+            \item 若 $\lim\limits_{x\to x_0} f(x) = a \ne 0$，则 $|f(x)| >$
+            \item 单调递增：$x>x_0$ 时，$f(x) \quad f(x_0)$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{4}
+            \item $(x-x_0)\,[f(x)-f(x_0)] \quad 0$
+            \item $\left[f(x)-f\!\left(\dfrac{a+b}{2}\right)\right]\left(x-\dfrac{a+b}{2}\right) \quad 0$
+            \item $\forall c \in [a,b]$，$[f(x)-f(c)](x-c) \quad 0$
+            \item $a,b>0$，$a=\ln(a+\mathrm{e}^b) \Rightarrow a \quad b$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.1em]
+            \setcounter{enumi}{8}
+            \item $0<a,\ b<\dfrac{\pi}{2}$，$\cos a - a = \cos b \Rightarrow$（$\cos x$ 单调）
+            \item $f(x)$ 单调递增，$x>0$：$\dfrac{xf(x)-\dint_0^x f(t)\,\mathrm{d}t}{x^2} \quad 0$
+            \item $f(x)$ 单调递减：$\sum\limits_{k=1}^{n-1} f(k+1) \le$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \newpage
+
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.4em]
+            \setcounter{enumi}{11}
+            \item $\sum\limits_{k=1}^{n-1}\!\int_k^{k+1} f(x)\,\mathrm{d}x \le \sum\limits_{k=1}^{n-1} f(k)$
+            \item $\dfrac{1}{2}+\cdots+\dfrac{1}{n} \quad \ln n \quad 1+\dfrac{1}{2}+\cdots+\dfrac{1}{n-1}$
+            \item 从而 $\ln n > \dfrac{1}{2}+\cdots+\dfrac{1}{n} >$
+            \item 故 $\ln 2 \cdot \ln 3 \cdots \ln n >$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.4em]
+            \setcounter{enumi}{15}
+            \item 曲线凹凸性：$f''(x)>0 \Rightarrow f(x) \le f(a) + \qquad\cdot(x-a)$，$a\le x\le b$
+            \item 积分不等式：$0<a_n = \dint_0^{\frac{\pi}{4}} \tan^n x \,\mathrm{d}x = \dint_0^1 \dfrac{t^n}{1+t^2}\,\mathrm{d}t <$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.4em]
+            \item 消去法中的不等关系：
+            \item $\dfrac{1}{(2n-1)^2} > \dfrac{1}{2}\left(\dfrac{1}{2n-1} - \dfrac{1}{2n+1}\right)$，故
+            \item $1+\dfrac{1}{3^2}+\dfrac{1}{5^2}+\cdots+\dfrac{1}{(2n-1)^2} >$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \vspace{1em}
+
+    \begin{minipage}[t]{0.46\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.4em]
+            \setcounter{enumi}{3}
+            \item $S_n = \sum\limits_{k=1}^{n} a_k$，$a_n>0$：$\dfrac{a_n}{S_n^2} = \dfrac{S_n-S_{n-1}}{S_n^2} < \dfrac{1}{S_{n-1}}-\dfrac{1}{S_n}$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.46\textwidth}
+        \begin{enumerate}[leftmargin=*, itemsep=1.4em]
+            \setcounter{enumi}{4}
+            \item 故 $\sum\limits_{k=2}^{n} \dfrac{a_k}{S_k^2} <$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../../utils/template}
+
+\newgeometry{ left=0.1cm, right=0.5cm, top=0.5cm, bottom=0.5cm }
+
+\begin{document}
+    \pagestyle{empty}
+
+    \begin{minipage}[t]{0.46\textwidth}
+        \textbf{面积}
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=1.2em]
+            \item 直角坐标系下（两曲线 $f_1(x)$、$f_2(x)$ 之间）：\\[1em] $S = $\vspace{1em}
+            \item 极坐标系下（两曲线 $r_1(\theta)$、$r_2(\theta)$ 之间）：\\[1em] $S = $\vspace{1em}
+            \item 曲边由参数方程 $\begin{cases} x=x(t) \\ y=y(t) \end{cases}$（$\alpha \le t \le \beta$）给出的曲边梯形：\\[1em] $S = $\vspace{1em}
+        \end{enumerate}
+
+        \textbf{旋转体体积}
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=1.2em]
+            \item 曲线 $y=f(x)$ 与 $x=a$，$x=b$（$a<b$）及 $x$ 轴围成的曲边梯形，绕 $x$ 轴旋转一周：\\[1em] $V = $\vspace{1em}
+            \item 该曲边梯形（$0 \le a < b$）绕 $y$ 轴旋转一周：\\[1em] $V = $\vspace{1em}
+            \item 该曲边梯形（$0 \le a < b$）绕 $y$ 轴旋转（柱壳法）体积微元：\\[1em] $\mathrm{d}V = $\vspace{1em}
+            \item 平面曲线 $L$：$y=f(x)$（$a \le x \le b$，$f(x)$ 可导）绕定直线 $L_0$：$Ax+By+C=0$（$L_0$ 的任一条垂线与 $L$ 至多一个交点）旋转一周：\\[1em] $V = $\vspace{1em}
+            \item 特别地，$A=C=0$，$B \ne 0$：$L_0$ 为 $y=0$（$x$ 轴）：\\[1em] $V = $\vspace{1em}
+            \item 平面图形 $D$：$0 \le r \le r(\theta)$，$\theta \in [\alpha,\ \beta] \subset [0,\ \pi]$，绕极轴旋转一周：\\[1em] $V = $\vspace{1em}
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.46\textwidth}
+
+        \textbf{平面曲线的弧长}
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=1.2em]
+            \item 直角坐标方程 $y=y(x)$（$a \le x \le b$）：\\[1em] $s = $\vspace{1em}
+            \item 弧微分：\\[1em] $\mathrm{d}s = $\vspace{1em}
+            \item 极坐标方程 $r=r(\theta)$（$\alpha \le \theta \le \beta$）：\\[1em] $s = $\vspace{1em}
+            \item 参数方程 $\begin{cases} x=x(t) \\ y=y(t) \end{cases}$（$\alpha \le t \le \beta$）：\\[1em] $s = $\vspace{1em}
+        \end{enumerate}
+
+        \textbf{平均值}
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=1.2em]
+            \item 设 $x \in [a,\ b]$，连续函数 $f(x)$ 在 $[a,\ b]$ 上的平均值：\\[1em] $\bar{f} = $\vspace{1em}
+        \end{enumerate}
+
+        \textbf{旋转曲面的面积（侧面积）}
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=1.2em]
+            \item 曲线 $y=y(x)$ 在区间 $[a,\ b]$ 上的弧段绕 $x$ 轴旋转一周：\\[1em] $S = $\vspace{1em}
+            \item 旋转曲面面积微元：\\[1em] $\mathrm{d}S = $\vspace{1em}
+            \item 曲线 $r=r(\theta)$ 在区间 $[\alpha,\ \beta] \subset [0,\ \pi]$ 上的弧段绕 $x$ 轴旋转一周：\\[1em] $S = $\vspace{1em}
+            \item 参数曲线（$\alpha \le t \le \beta$，$x'(t) \ne 0$）的弧段绕 $x$ 轴旋转一周：\\[1em] $S = $\vspace{1em}
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+\end{document}

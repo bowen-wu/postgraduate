@@ -25,3 +25,7 @@ dist-ssr
 *.dSYM/
 
 english/word/utils/js/config/secrets.js
+
+# LaTeX build artifacts
+*.aux
+*.out
