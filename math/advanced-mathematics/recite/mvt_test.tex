@@ -1,0 +1,242 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../../utils/template}
+\usepackage{multicol}
+
+\newgeometry{ left=0.1cm, right=0.5cm, top=0.5cm, bottom=0.5cm }
+
+\pagestyle{empty}
+
+% 手写填空线：\blank[宽度]
+\newcommand{\blank}[1][3em]{\underline{\hspace{#1}}}
+
+\begin{document}
+
+% ================= 测试一：框架 =================
+\textbf{测试一}\quad 用微分中值定理作证明，能想到哪些？
+（先遮住下方，凭记忆写出 A B C D 各类，再回忆每类里面有哪些方法）
+
+\vspace{2.2em}
+
+\textbf{A. 寻找辅助函数}（反向 + 双向 + 常规 + 经典）——里面有哪些方法？
+
+\vspace{1em}
+1.\blank[12em]\quad 2.\blank[12em]
+
+\vspace{0.6em}
+3.\blank[12em]\quad 4.\blank[12em]
+
+\vspace{0.6em}
+5.\blank[12em]
+
+\vspace{2.2em}
+
+\textbf{B. 题设或结论中出现 $\dint_{a}^{b} f(x)\,\mathrm{d}x = c$、$\dint_{a}^{x} f(x)\,\mathrm{d}x$、$\dint_{x}^{b} f(x)\,\mathrm{d}x$}——里面有哪些方法？
+
+\vspace{1em}
+1.\blank[12em]\quad 2.\blank[12em]
+
+\vspace{0.6em}
+3.\blank[12em]\quad 4.\blank[12em]
+
+\vspace{0.6em}
+5.\blank[12em]
+
+\vspace{2.2em}
+
+\textbf{C. 证明 $f'(\xi) = 0$}（常规 + 等价 + 经典）——里面有哪些情形？（情形 $\to$ 定理）
+
+\vspace{1em}
+1.\blank[13em]\quad 2.\blank[13em]
+
+\vspace{0.6em}
+3.\blank[13em]
+
+\vspace{2.2em}
+
+\textbf{D. 证明含 $f^{(n)}(\xi)$（$n = 1, 2, \cdots$）的等式或不等式}（常规 + 等价 + 经典）——里面有哪些方法？
+
+\vspace{1em}
+1.\blank[13em]\quad 2.\blank[13em]
+
+\vspace{0.6em}
+3.\blank[13em]
+
+\vspace{2em}
+
+\textbf{复盘}——本次没想起来的（写在这里，下次重点背）：
+
+\vspace{1.2em}
+\blank[46em]
+
+\vspace{1.6em}
+\blank[46em]
+
+\vspace{1.6em}
+\blank[46em]
+
+\vspace{1.6em}
+\blank[46em]
+
+\newpage
+
+% ================= 测试二：A 的内容 =================
+\textbf{测试二}\quad A. 寻找辅助函数——里面的内容又有哪些？
+
+\vspace{1em}
+
+找到``是谁''求导，得到欲证结论，也即 $\blank[4em] = 0$，从而使用\blank[4em]定理，或研究 $F(x)$ 的性质。
+
+\vspace{1em}
+
+\begin{multicols}{2}
+
+\textbf{1. 一阶乘积求导公式的逆用}（经典）：$(uv)' = \blank[4em]$
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item $[f(x)\,x^{n}]' = x^{n-1}\bigl[\blank[6em]\bigr]$
+    \item $[f(x)\,e^{nx}]' = e^{nx}\bigl[\blank[6em]\bigr]$
+    \item $[f(x)\,e^{x^{n}}]' = e^{x^{n}}\bigl[\blank[7em]\bigr]$
+    \item $[f(x)\,e^{\varphi(x)}]' = e^{\varphi(x)}\bigl[\blank[7em]\bigr]$
+    \item $\bigl[f(x)\,e^{\int_{0}^{x} f^{\,n-1}(t)\,\mathrm{d}t}\bigr]' = e^{\int_{0}^{x} f^{\,n-1}(t)\,\mathrm{d}t}\bigl[\blank[5em]\bigr]$
+          \\e.g. $f'(x) + f^{2}(x) \Rightarrow F(x) = \blank[9em]$
+    \item $[f(x)\,f'(x)]' = \blank[7em]$
+    \item $[f(x)\,g(x)]' = \blank[7em]$
+    \item $[f(x)\,\arctan x]' = \blank[9em]$\quad（记住）
+    \item $[f(x)\,\sin x]' = \blank[11em]$
+          \\$= \bigl[\blank[8em]\bigr]\cos x$
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{2. 二阶乘积求导公式的逆用}（经典）（凹凸性）：\\
+$(uv)'' = \blank[7em]$
+\\$\Rightarrow \bigl[f(x)\,e^{x}\bigr]'' = \blank[12em]$
+\\$= e^{x}\bigl[\blank[8em]\bigr]$
+
+\vspace{1em}
+
+\textbf{3. 一阶商的求导公式的逆用}（经典）：$\Bigl(\dfrac{u}{v}\Bigr)' = \blank[5em]$
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item $\Bigl[\dfrac{f(x)}{x}\Bigr]' = \blank[7em]$
+          \\$\Rightarrow f'(x) > \dfrac{f(x)}{x}$（$x > 0$）$\Rightarrow$ 令 $F(x) = \blank[3em]$
+    \item $\Bigl[\dfrac{f'(x)}{f(x)}\Bigr]' = \blank[8em]$
+    \item $[\ln f(x)]'' = \blank[8em]$\quad（红圈重点）
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{4. 祖孙三代传承法}（经典）：$a - c = \blank[6em]$
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item $f''(\xi)$ 与 $f(\xi)$：e.g. $f''(\xi) = f(\xi)$
+          \\$\Rightarrow f''(\xi) - \blank[3em] + \blank[3em] - f(\xi) = 0$
+          \\令 $F(x) = \blank[9em]$
+    \item $f'(\xi)$ 与 $\dint_{0}^{\xi} f(t)\,\mathrm{d}t$：e.g. $f'(\xi) = \dint_{0}^{\xi} f(t)\,\mathrm{d}t$
+          \\$\Rightarrow f'(\xi) - \blank[3em] + \blank[3em] - \dint_{0}^{\xi} f(t)\,\mathrm{d}t = 0$
+          \\令 $F(x) = \blank[10em]$
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{5. 升降两法}（障眼法）
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item \textbf{简单化}：$2\xi - 1 \Rightarrow \blank[4em]$；\quad $f'(\xi)\,f(\xi) \Rightarrow \blank[4em]$
+          \\$\dfrac{f'(\xi)}{f(\xi)} \Rightarrow \blank[4em]$；\quad $\dfrac{1}{\xi} \Rightarrow \blank[3em]$
+    \item \textbf{升幂降幂}：
+          \\$f(x) \to f'(x)$（降）$\Rightarrow$ $[f(x)\,e^{x}]' = \blank[7em]$
+          \\$f(x) \to \dint_{0}^{x} f(t)\,\mathrm{d}t$（升）$\Rightarrow$ $\Bigl[\dint_{0}^{x} f(t)\,\mathrm{d}t \cdot e^{x}\Bigr]' = \blank[9em]$
+    \item \textbf{平移}：
+          \\$\bigl[f(x)\,(x + 1)^{2}\bigr]' = \blank[11em]$
+          \\$\bigl[f(x)\,e^{(x - 1)^{2}}\bigr]' = \blank[13em]$
+    \item \textbf{恒等变形}
+          \begin{enumerate}[label=（\chinese*）, leftmargin=2.8em, itemsep=1.7em]
+              \item \textbf{移项}：移项后，使等式右端为 \blank[2em]：
+                    \\欲证 $\bigl[f'(x) - x\bigr]'\bigr|_{x = \xi} = 0$，即 $f''(\xi) - 1 = 0 \Rightarrow \blank[4em]$
+                    \\欲证 $\bigl[f(x)\,x^{-2}\bigr]'\bigr|_{x = \xi} = 0$，即 $\blank[9em] = 0$
+                    \\$\Rightarrow f'(\xi)\cdot\xi = 2f(\xi)$
+              \item \textbf{乘积降次}：使式子回归到 $(\cdots)' = 0$：
+                    \\欲证 $f'(\xi)\,g(\xi) - f(\xi)\,g'(\xi) = 0 \Rightarrow \dfrac{f'(\xi)}{g'(\xi)} = \blank[3em]$
+          \end{enumerate}
+\end{enumerate}
+
+\end{multicols}
+
+\newpage
+
+% ================= 测试三：B C D 的内容 =================
+\textbf{测试三}\quad B、C、D——里面的内容又有哪些？
+
+\vspace{1em}
+
+\begin{multicols}{2}
+
+\textbf{B. 出现积分式}（方法名见测试一，这里默写公式）
+
+\vspace{0.6em}
+
+3. 用\textbf{推广的积分中值定理}（常规）：
+\\$\dint_{a}^{b} f(x)\,\mathrm{d}x = \blank[7em]$，$\xi \in (a, b)$
+\\要求：\blank[9em]
+\\[1.5em]
+4. 用\textbf{分部积分法}：
+\\$\dint_{a}^{b} u\,\mathrm{d}v = \blank[10em]$
+\\[1.5em]
+5. 将 $f(x)$ \blank[5em]，再作积分（经典）
+
+\vspace{1.2em}
+
+\textbf{C. 证明 $f'(\xi) = 0$}（情形 $\to$ 定理）
+
+\vspace{0.6em}
+
+\begin{enumerate}[label=\arabic*., leftmargin=1.8em, itemsep=1.7em]
+    \item 证\textbf{区间内部最值点}（$\xi$ 不是端点且为最值点）：\blank[6em]定理
+    \item 证\textbf{区间端点值相等}：\blank[6em]定理
+    \item 证\textbf{区间端点导数值异号}：\blank[8em]定理
+          \\$f'(a) = A$，$f'(b) = B$，$M$ 介于 $A$、$B$ 之间
+          \\$\Rightarrow \exists\,\xi \in (a, b)$，使得 \blank[5em]
+\end{enumerate}
+
+\vspace{1.2em}
+
+\textbf{D. 证明含 $f^{(n)}(\xi)$ 的等式或不等式}
+
+\vspace{0.6em}
+
+\textbf{2. 用拉格朗日中值定理}（五种写法）
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item $f$ 在 $[a, b]$ 连续 + 在 $(a, b)$ 可导
+          \\$\Rightarrow \exists\,\xi \in (a, b)$：$f'(\xi) = \blank[6em]$
+    \item $f(x) \equiv c$（$x \in (a, b)$）$\Leftrightarrow$ \blank[5em]
+          \\（\blank[9em]）
+    \item 写成 $f(x) - f(a) = \blank[7em]$
+          \\常用于：出现``$f - f$''或``\blank[3em]''（经典）；出现 $f$ 与 $f'$ 关系
+    \item 写成 $\dfrac{f(b) - f(a)}{b - a} = \blank[4em]$
+          \\常用于``\blank[9em]''
+    \item 写成 $f(x) - f(a) = \blank[11em]$（$0 < \theta < 1$）
+          \\或 $f(x) - f(0) = f'(\theta x)\cdot x$
+          \\常用于求中值点：令 $\xi = \blank[7em]$
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{3. 用柯西中值定理}：$\dfrac{f(b) - f(a)}{g(b) - g(a)} = \blank[6em]$
+\begin{enumerate}[label=\alph*., leftmargin=1.8em, itemsep=1.7em]
+    \item $f$ 或 $g$ 中有一个常为\textbf{具体函数}，要用好
+          \\$\Bigl(\dint_{a}^{x} f(t)\,\mathrm{d}t\Bigr)'\Big|_{x = \xi} = \blank[3em]$
+    \item 有一个\textbf{函数值为 0 或 1}，要凑成：
+          \\$f(b) = \blank[7em]$；\quad $e - 1 = \blank[4em]$
+          \\$\dint_{a}^{b} f(x)\,\mathrm{d}x = \blank[10em]$
+    \item 若再\textbf{增加难度}：令 \blank[4em]
+          \\（或由 $\lim\limits_{x \to a} \dfrac{f(x)}{x - a} = A$ 及 $f$ 在 $x = a$ 处连续得到）
+\end{enumerate}
+
+\end{multicols}
+
+\vspace{1.5em}
+
+\textbf{例（柯西 + 拉格朗日，增加难度）}：先由柯西中值定理代入
+$\dfrac{b^{2} - a^{2}}{\dint_{a}^{b} f(x)\,\mathrm{d}x} = \blank[4em]$；再令 $f(a) = 0$，在 $[a, \xi]$ 上用拉式：
+$f(\xi) = f(\xi) - f(a) \xlongequal{\text{拉式}} \blank[7em]$（$\eta \in (a, \xi)$）。
+代入得 $f'(\eta)\,(b^{2} - a^{2}) = \blank[9em]$
+
+\end{document}

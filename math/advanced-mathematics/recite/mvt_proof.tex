@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{../../../utils/template}
+
+\newgeometry{ left=0.1cm, right=0.5cm, top=0.5cm, bottom=0.5cm }
+
+\begin{document}
+    \pagestyle{empty}
+
+    \begin{center}
+        {\large\textbf{用微分中值定理作证明}}
+    \end{center}
+
+    \vspace{0.5em}
+
+    \begin{minipage}[t]{0.46\textwidth}
+        \textbf{A. 寻找辅助函数}（反向 + 双向 + 常规 + 经典）：找到``是谁''求导，得到欲证结论，也即 $[F(x)]' = 0$，从而使用\textbf{罗尔定理}，或研究 $F(x)$ 的{\color{red}{性质}}。
+
+        \vspace{0.8em}
+
+        \textbf{1. 一阶乘积求导公式的逆用}（{\color{red}{经典}}）：$(uv)' = u'v + uv'$
+        \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.6em]
+            \item $[f(x)\,x^{n}]' = x^{n-1}\bigl[x\,f'(x) + n\,f(x)\bigr]$
+            \item $[f(x)\,e^{nx}]' = e^{nx}\bigl[f'(x) + n\,f(x)\bigr]$
+            \item $[f(x)\,e^{x^{n}}]' = e^{x^{n}}\bigl[f'(x) + n\,x^{n-1}f(x)\bigr]$
+            \item $[f(x)\,e^{\varphi(x)}]' = e^{\varphi(x)}\bigl[f'(x) + \varphi'(x)\,f(x)\bigr]$
+            \item $\bigl[f(x)\,e^{\int_{0}^{x} f^{\,n-1}(t)\,\mathrm{d}t}\bigr]' = e^{\int_{0}^{x} f^{\,n-1}(t)\,\mathrm{d}t}\bigl[f'(x) + f^{\,n}(x)\bigr]$\\
+                  e.g. $f'(x) + f^{2}(x) \Rightarrow F(x) = f(x)\,e^{\int_{0}^{x} f(t)\,\mathrm{d}t}$
+            \item $[f(x)\,f'(x)]' = [f'(x)]^{2} + f(x)\,f''(x)$
+            \item $[f(x)\,g(x)]' = f'(x)\,g(x) + f(x)\,g'(x)$
+            \item $[f(x)\,\arctan x]' = f'(x)\,\arctan x + \dfrac{f(x)}{1 + x^{2}}$\quad{\color{red}{（记住）}}
+            \item $[f(x)\,\sin x]' = f'(x)\,\sin x + f(x)\,\cos x = \bigl[f'(x)\,\tan x + f(x)\bigr]\cos x$
+        \end{enumerate}
+
+        \vspace{0.5em}
+
+        \textbf{2. 二阶乘积求导公式的逆用}（{\color{red}{经典}}）{\color{red}{（批注：凹凸性）}}：\\
+        $(uv)'' = u''v + 2u'v' + uv'' \Rightarrow \bigl[f(x)\,e^{x}\bigr]'' = f''(x)\,e^{x} + 2f'(x)\,e^{x} + f(x)\,e^{x} = e^{x}\bigl[f''(x) + 2f'(x) + f(x)\bigr]$
+
+        \vspace{0.8em}
+
+        \textbf{3. 一阶商的求导公式的逆用}（{\color{red}{经典}}）：$\Bigl(\dfrac{u}{v}\Bigr)' = \dfrac{u'v - uv'}{v^{2}}$
+        \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.6em]
+            \item $\Bigl[\dfrac{f(x)}{x}\Bigr]' = \dfrac{{\color{red}{f'(x)\cdot x - f(x)}}}{x^{2}} \Rightarrow f'(x) > \dfrac{f(x)}{x}$（$x > 0$）$\Rightarrow f'(x)\cdot x - f(x) > 0$，令 $F(x) = \dfrac{f(x)}{x}$
+            \item $\Bigl[\dfrac{f'(x)}{f(x)}\Bigr]' = \dfrac{f''(x)\,f(x) - [f'(x)]^{2}}{f^{2}(x)}$
+            \item $[\ln f(x)]' = \Bigl[\dfrac{f'(x)}{f(x)}\Bigr] \Rightarrow [\ln f(x)]'' = \Bigl[\dfrac{f'(x)}{f(x)}\Bigr]' = {\color{red}{\dfrac{f''(x)\,f(x) - [f'(x)]^{2}}{f^{2}(x)}}}$（红圈标注）
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.46\textwidth}
+        \textbf{4. 祖孙三代传承法}（{\color{red}{经典}}）：$a - c = a + b - b - c = {\color{red}{(a - b) + (b - c)}}$
+        \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.8em]
+            \item $f''(\xi)$ 与 $f(\xi)$：\quad e.g. $f''(\xi) = f(\xi) \Rightarrow f''(\xi) - f'(\xi) + {\color{red}{f'(\xi) - f(\xi)}} = 0$。\\
+                  令 $F(x) = \bigl[f''(x) - f'(x)\bigr]e^{x} + \bigl[f'(x) - f(x)\bigr]e^{x}$（$\xi \Rightarrow x$）$\Rightarrow F(x) = \bigl[f''(x) - f(x)\bigr]e^{x}$
+            \item $f'(\xi)$ 与 $\dint_{0}^{\xi} f(t)\,\mathrm{d}t$：\quad e.g. $f'(\xi) = \dint_{0}^{\xi} f(t)\,\mathrm{d}t \Rightarrow f'(\xi) - f(x) + f(x) - \dint_{0}^{\xi} f(t)\,\mathrm{d}t = 0$。\\
+                  令 $F(x) = \bigl[f'(\xi) - f(x)\bigr]e^{x} + \Bigl[f(x) - \dint_{0}^{\xi} f(t)\,\mathrm{d}t\Bigr]e^{x}$（$\xi \Rightarrow x$）$\Rightarrow F(x) = \Bigl[f(x) - \dint_{0}^{\xi} f(t)\,\mathrm{d}t\Bigr]e^{x}$
+        \end{enumerate}
+
+        \vspace{0.8em}
+
+        \textbf{5. 升降两法}（障眼法）（反向 + 双向 + 常规 + {\color{red}{经典}}）
+        \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.8em]
+            \item \textbf{简单化}：$2\xi - 1 \Rightarrow x^{2} - x$；\quad $f'(\xi)\cdot f(\xi) \Rightarrow \dfrac{1}{2}f^{2}(x)$；\quad $\dfrac{f'(\xi)}{f(\xi)} \Rightarrow \ln f(x)$；\quad $\dfrac{1}{\xi} \Rightarrow \ln x$
+            \item \textbf{升幂降幂}：\\
+                  $f(x) \to f'(x)$（降）$\Rightarrow$ e.g. $[f(x)\,e^{x}]' = e^{x}\bigl[f(x) + f'(x)\bigr]$；\\
+                  $f(x) \to \dint_{0}^{x} f(t)\,\mathrm{d}t$（升）$\Rightarrow$ e.g. $\Bigl[\dint_{0}^{x} f(t)\,\mathrm{d}t \cdot e^{x}\Bigr]' = e^{x}\Bigl[f(x) + \dint_{0}^{x} f(t)\,\mathrm{d}t\Bigr]$
+            \item \textbf{平移}：\\
+                  $\bigl[f(x)\,(x + 1)^{2}\bigr]' = f'(x)\,(x + 1)^{2} + f(x)\cdot 2(x + 1) = (x + 1)\bigl[f'(x)\,(x + 1) + 2f(x)\bigr]$\\[0.3em]
+                  $\bigl[f(x)\,e^{(x - 1)^{2}}\bigr]' = f'(x)\,e^{(x - 1)^{2}} + f(x)\,e^{(x - 1)^{2}}\cdot 2(x - 1) = e^{(x - 1)^{2}}\bigl[f'(x) + 2(x - 1)\,f(x)\bigr]$
+            \item \textbf{恒等变形}\\
+                  \textbf{① 移项}：移项后，使等式右端为 {\color{red}{0}}：\\
+                  欲证 $\bigl[f'(x) - x\bigr]'\bigr|_{x = \xi} = 0$，即 $f''(\xi) - 1 = 0 \Rightarrow f''(\xi) = 1$；\\
+                  欲证 $\bigl[f(x)\,x^{-2}\bigr]'\bigr|_{x = \xi} = 0$，即 ${\color{red}{\bigl[f'(\xi)\cdot \xi - 2f(\xi)\bigr]}}\,\xi^{-3} = 0 \Rightarrow f'(\xi)\cdot\xi = 2f(\xi)$
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \newpage
+
+    \begin{minipage}[t]{0.46\textwidth}
+        \textbf{② 乘积降次}：作乘积降次运算，使式子回归到 $(\cdots)' = 0$：\\
+        欲证 $\bigl[f'(x)\,g(x) - f(x)\,g'(x)\bigr]\bigr|_{x = \xi} = 0$，即 $f'(\xi)\,g(\xi) - f(\xi)\,g'(\xi) = 0 \Rightarrow \dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(\xi)}{g(\xi)}$
+
+        \vspace{1.5em}
+
+        \textbf{B. 题设或结论中出现} $\dint_{a}^{b} f(x)\,\mathrm{d}x = c$、$\dint_{a}^{x} f(x)\,\mathrm{d}x$、$\dint_{x}^{b} f(x)\,\mathrm{d}x$：
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.8em]
+            \item 直接拿\textbf{被积函数}为辅助函数
+            \item 令 $F(x) = \dint_{a}^{x} f(t)\,\mathrm{d}t$ 或 $F(x) = \dint_{x}^{b} f(t)\,\mathrm{d}t$（{\color{red}{经典}}）
+            \item 用\textbf{推广的积分中值定理}（常规）：$\dint_{a}^{b} f(x)\,\mathrm{d}x = f(\xi)(b - a)$，$\xi \in (a, b)$，要求 $f(x)$ 在 $[a, b]$ 上连续
+            \item 用\textbf{分部积分法}：$\dint_{a}^{b} u\,\mathrm{d}v = uv\big|_{a}^{b} - \dint_{a}^{b} v\,\mathrm{d}u$
+            \item 将 $f(x)$ \textbf{泰勒展开}，再作积分（{\color{red}{经典}}）
+        \end{enumerate}
+
+        \vspace{1em}
+
+        \textbf{B. 证明 $f'(\xi) = 0$}（常规 + 等价 + {\color{red}{经典}}）
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.8em]
+            \item 证\textbf{区间内部最值点}（证明 $\xi$ 不是区间端点且 $\xi$ 为最值点）：\textbf{费马定理}
+            \item 证\textbf{区间端点值相等}：\textbf{罗尔定理}
+            \item 证\textbf{区间端点导数值异号}：\textbf{导数介值定理}（$f'(a) = A$，$f'(b) = B$，且 $M$ 介于 $A$、$B$ 之间 $\Rightarrow \exists\,\xi \in (a, b)$，页边批注：使得 $f'(\xi) = M$）
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.46\textwidth}
+        \textbf{C. 证明含 $f^{(n)}(\xi)$（$n = 1, 2, \cdots$）的等式或不等式在 $\xi$ 点成立}（常规 + 等价 + {\color{red}{经典}}）
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.5em]
+            \item 用\textbf{极限、导数}研究函数性态（等价 + {\color{red}{经典}}）
+            \item 用\textbf{拉格朗日中值定理}（等价 + {\color{red}{经典}}）
+            \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.6em]
+                \item $f(x)$ 满足在 $[a, b]$ 连续 + 在 $(a, b)$ 可导 $\Rightarrow \exists\,\xi \in (a, b)$：$f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$
+                \item 设 $f(x)$ 可导，则 $f(x) \equiv c$（$x \in (a, b)$）$\Leftrightarrow f'(x) = 0$（$x \in (a, b)$）。{\color{red}{\textbf{常值函数导数为 0}}}
+                \item 写成 $f(x) - f(a) = f'(\xi)(x - a)$。常用于：出现``$f - f$''或``{\color{red}{$f - 0$}}''（{\color{red}{经典}}）；出现 $f$ 与 $f'$ 关系
+                \item 写成 $\dfrac{f(b) - f(a)}{b - a} = f'(\xi)$。常用于``\textbf{曲线在一点的切线斜率}''
+                \item 写成 $f(x) - f(a) = f'\bigl(a + \theta(x - a)\bigr)(x - a)$ 或 $f(x) - f(0) = f'(\theta x)\cdot x$（$0 < \theta < 1$）。常用于求中值点，{\color{red}{令 $\xi = a + \theta(x - a)$}} 的极限位置
+            \end{enumerate}
+            \item 用\textbf{柯西中值定理}（等价 + {\color{red}{经典}}）：$\dfrac{f(b) - f(a)}{g(b) - g(a)} = \dfrac{f'(\xi)}{g'(\xi)}$
+            \begin{enumerate}[label=\alph*., leftmargin=2em, itemsep=0.5em]
+                \item 在 $f$ 或 $g$ 中，有一个函数常为\textbf{具体函数}，故要用好 {\color{red}{$\Bigl(\dint_{a}^{x} f(t)\,\mathrm{d}t\Bigr)'\Big|_{x = \xi} = f(\xi)$}}（红圈标注）
+                \item 在 $f$ 或 $g$ 中，有一个\textbf{函数值为 0 或 1}，故要用好 $f(a) = 0$、$\dint_{a}^{a} f(x)\,\mathrm{d}x = 0$、$e^{0} = 1$ 凑成：\\
+                      $f(b) = f(b) - f(a)$；\quad $\dint_{a}^{b} f(x)\,\mathrm{d}x = \dint_{a}^{b} f(x)\,\mathrm{d}x - \dint_{a}^{a} f(x)\,\mathrm{d}x$；\quad $e - 1 = e^{1} - e^{0}$
+                \item 若再\textbf{增加难度}：令 $f(a) = 0$（或通过 $\lim\limits_{x \to a} \dfrac{f(x)}{x - a} = A$ 及 $f(x)$ 在 $x = a$ 处连续，得到 $f(a) = 0$），见下方例
+            \end{enumerate}
+        \end{enumerate}
+    \end{minipage}
+    \hfill
+
+    \vspace{0.4em}
+
+    \begin{analysisbox}
+        \textbf{例：柯西中值定理与拉格朗日中值定理（增加难度）}\\
+        先由柯西中值定理代入 $\dfrac{b^{2} - a^{2}}{\dint_{a}^{b} f(x)\,\mathrm{d}x} = \dfrac{2\xi}{f(\xi)}$；再增加难度，令 $f(a) = 0$，在 $[a, \xi]$ 上用拉格朗日中值定理（拉式）：$f(\xi) = f(\xi) - f(a) \xlongequal{\text{拉式}} f'(\eta)(\xi - a)$，$\eta \in (a, \xi)$。代入 $\dfrac{b^{2} - a^{2}}{\dint_{a}^{b} f(x)\,\mathrm{d}x} = \dfrac{2\xi}{f(\xi)}$，则
+        $f'(\eta)\,(b^{2} - a^{2}) = \dfrac{2\xi}{\xi - a}\dint_{a}^{b} f(x)\,\mathrm{d}x$
+    \end{analysisbox}
+
+\end{document}

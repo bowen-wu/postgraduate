@@ -1,0 +1,96 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{../../../utils/template}
+\usepackage{multicol}
+
+\newgeometry{ left=0.1cm, right=0.5cm, top=0.5cm, bottom=0.5cm }
+
+\begin{document}
+    \pagestyle{empty}
+
+    \begin{center}
+        {\large\textbf{寻找辅助函数（第6讲·中值定理、微分等式与微分不等式）}}
+    \end{center}
+
+    \vspace{0.5em}
+
+    \begin{multicols}{2}
+
+\textbf{1. 一阶乘积求导公式的逆用}（{\color{red}{D\textsubscript{23} 化归经典形式}}）：$(uv)' = u'v + uv'$
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.55em]
+            \item $[f(x)\,x^{n}]' = x^{n-1}\bigl[xf'(x) + nf(x)\bigr]$
+            \item $[f(x)\,e^{nx}]' = e^{nx}\bigl[f'(x) + nf(x)\bigr]$
+            \item $[f(x)\,e^{x^{n}}]' = e^{x^{n}}\bigl[f'(x) + nx^{n-1}f(x)\bigr]$
+            \item $[f(x)\,e^{\varphi(x)}]' = e^{\varphi(x)}\bigl[f'(x) + f(x)\,\varphi'(x)\bigr]$
+            \item $\Bigl[f(x)\,e^{\int_{0}^{x} [f(t)]^{n-1}\mathrm{d}t}\Bigr]' = e^{\int_{0}^{x} [f(t)]^{n-1}\mathrm{d}t}\Bigl\{f'(x) + \bigl[f(x)\bigr]^{n}\Bigr\}$
+            \item $[f(x)\,f'(x)]' = [f'(x)]^{2} + f(x)\,f''(x)$
+            \item $[f(x)\,g(x)]' = f'(x)\,g(x) + f(x)\,g'(x)$
+            \item $[f(x)\,\arctan x]' = f'(x)\arctan x + \dfrac{f(x)}{1 + x^{2}}$
+            \item $[f(x)\,\sin x]' = f'(x)\sin x + f(x)\cos x = \bigl[f'(x)\tan x + f(x)\bigr]\cos x$
+        \end{enumerate}
+\vspace{0.6em}
+
+\textbf{2. 二阶乘积求导公式的逆用}（{\color{red}{凹凸性}}）：$(uv)'' = u''v + 2u'v' + uv''$
+        \\$[f(x)\,e^{x}]'' = e^{x}\bigl[f''(x) + 2f'(x) + f(x)\bigr]$
+
+        \vspace{0.6em}
+
+\textbf{3. 一阶商的求导公式的逆用}：$\Bigl(\dfrac{u}{v}\Bigr)' = \dfrac{u'v - uv'}{v^{2}}$（除保证分母 $\ne 0$）
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.55em]
+            \item $\Bigl[\dfrac{f(x)}{x}\Bigr]' = \dfrac{f'(x)\,x - f(x)}{x^{2}}$\quad{\color{red}{（重要）}}
+            \\$\Rightarrow f'(x) > \dfrac{f(x)}{x}$，$x > 0 \Rightarrow xf'(x) > f(x)$。
+            见到 $f'(x)\,x - f(x)$，$x \ne 0$，令 $F(x) = \dfrac{f(x)}{x}$
+            \item $\Bigl[\dfrac{f'(x)}{f(x)}\Bigr]' = \dfrac{f''(x)f(x) - [f'(x)]^{2}}{f^{2}(x)}$。
+            见到 $f''(x)f(x) - [f'(x)]^{2}$，$f(x) \ne 0$，令 $F(x) = \dfrac{f'(x)}{f(x)}$
+            \item $[\ln f(x)]' = \dfrac{f'(x)}{f(x)}$，故 $[\ln f(x)]'' = \dfrac{f''(x)f(x) - [f'(x)]^{2}}{f^{2}(x)}$。
+            见到 $f''(x)f(x) - [f'(x)]^{2}$，$f(x) > 0$，亦可考虑令 $F(x) = \ln f(x)$
+        \end{enumerate}
+\vspace{0.6em}
+
+\textbf{4. 祖孙三代传承法}（{\color{red}{恒等变换要求高}}）：``$a - c = a - b + b - c$''。
+        若欲证结论``差辈分''，如 $f''(\xi) = f(\xi)$ 或 $f'(\xi) = \dint_{0}^{\xi} f(t)\,\mathrm{d}t$，则补齐辈分，作恒等变形。
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.65em]
+            \item 对 $f''(\xi) = f(\xi)$：
+            \\$f''(\xi) - f'(\xi) + f'(\xi) - f(\xi) = 0$（两段都不差辈）
+            \\令 $F'(x) = \bigl[f''(x) - f'(x)\bigr]e^{x} + \bigl[f'(x) - f(x)\bigr]e^{x}$，则
+            \\$F(x) = \bigl[f'(x) - f(x)\bigr]e^{x}$
+            \item 对 $f'(\xi) = \dint_{0}^{\xi} f(t)\,\mathrm{d}t$：
+            \\$f'(\xi) - f(\xi) + f(\xi) - \dint_{0}^{\xi} f(t)\,\mathrm{d}t = 0$
+            \\令 $F(x) = \Bigl\{\bigl[f'(x) - f(x)\bigr] + \Bigl[f(x) - \dint_{0}^{x} f(t)\,\mathrm{d}t\Bigr]\Bigr\}e^{x}$，则
+            \\$F(x) = \Bigl[f(x) - \dint_{0}^{x} f(t)\,\mathrm{d}t\Bigr]e^{x}$
+        \end{enumerate}
+\vspace{0.6em}
+
+\textbf{5. 小伎俩们}（障眼法）（P\textsubscript{12} 反向思路 + P\textsubscript{13} 双向思路 + D\textsubscript{1} 常规操作 + D\textsubscript{23} 化归经典形式）
+        \begin{enumerate}[label=(\arabic*), leftmargin=2em, itemsep=0.65em]
+            \item \textbf{简单化}：见到如下简单式子，不要想复杂了：
+            \\$2\xi - 1 \to x^{2} - x$；\quad $f'(\xi)\,f(\xi) \to \dfrac{1}{2}f^{2}(x)$
+            \\$\dfrac{f'(\xi)}{f(\xi)} \to \ln f(x)$；\quad $\dfrac{1}{\xi} \to \ln x$
+            \item \textbf{升幂降幂}：将 $f(x)$ 写成 $f'(x)$（降幂），如 $[f'(x)\,e^{x}]' = e^{x}\bigl[f''(x) + f'(x)\bigr]$；
+            \\将 $f(x)$ 写成 $\dint_{0}^{x} f(t)\,\mathrm{d}t$（升幂），如 $\Bigl[\dint_{0}^{x} f(t)\,\mathrm{d}t \cdot e^{x}\Bigr]' = e^{x}\Bigl[f(x) + \dint_{0}^{x} f(t)\,\mathrm{d}t\Bigr]$
+            \item \textbf{平移}：
+            \\$\bigl[f(x)\,(x + 1)^{2}\bigr]' = f'(x)(x + 1)^{2} + f(x)\cdot 2(x + 1) = (x + 1)\bigl[f'(x)(x + 1) + 2f(x)\bigr]$
+            \\$\bigl[f(x)\,e^{(x - 1)^{2}}\bigr]' = e^{(x - 1)^{2}}\bigl[f'(x) + 2(x - 1)f(x)\bigr]$
+            \item \textbf{恒等变形}：
+            \\{\color{red}{(a) 移项}}（最常见）：方法是反移项，使等式右端为 $0$ 即可。
+            \\欲证 $[f'(x) - x]'\bigr|_{x = \xi} = 0$，即 $f''(\xi) - 1 = 0 \Rightarrow f''(\xi) = 1$；
+            \\欲证 $[f(x)\,x^{-2}]'\bigr|_{x = \xi} = 0$，即 $\bigl[f'(\xi)\,\xi - 2f(\xi)\bigr]\xi^{-3} = 0 \Rightarrow f'(\xi)\cdot\xi = 2f(\xi)$
+            \\{\color{red}{(b) 作乘除运算}}：
+            \\欲证 $[f'(x)\,g(x) - f(x)\,g'(x)]\bigr|_{x = \xi} = 0$，即 $f'(\xi)\,g(\xi) - f(\xi)\,g'(\xi) = 0 \Rightarrow \dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(\xi)}{g(\xi)}$
+        \end{enumerate}
+\vspace{0.6em}
+
+\textbf{例 1}（一阶乘积逆用的选择题型，{\color{red}{应选 (C)}}）：设 $f(x)$ 在 $[0, 1]$ 上可导，当 $0 \le x \le 1$ 时，$f'(x) + f^{2}(x) \ge 0$，$f(0) > 0$，则（\quad）。
+        \\(A) $\dint_{0}^{1} f(x)\,\mathrm{d}x \ge \ln f(0)$ \quad
+        (B) $\dint_{0}^{1} f(x)\,\mathrm{d}x \le \ln f(1)$ \quad
+        (C) $\dint_{0}^{1} f(x)\,\mathrm{d}x \ge \ln\dfrac{f(0)}{f(1)}$ \quad
+        (D) $\dint_{0}^{1} f(x)\,\mathrm{d}x \le \ln\dfrac{f(1)}{f(0)}$
+        \\核心：令 $F(x) = f(x)\,e^{\int_{0}^{x} f(t)\mathrm{d}t}$，则 $F'(x) = e^{\int_{0}^{x} f(t)\mathrm{d}t}\bigl[f'(x) + f^{2}(x)\bigr] \ge 0 \Rightarrow F$ 单调不减，于是 $F(1) \ge F(0)$，即 $f(1)\,e^{\int_{0}^{1} f\mathrm{d}x} \ge f(0) > 0$，两端取对数即得。
+
+        \vspace{0.6em}
+
+        \textbf{例 6.1}：设 $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，$f(0) = f(1)$，$\dint_{0}^{1} f(x)\,\mathrm{d}x = 0$，证明：存在 $\xi \in (0, 1)$，使得 $f'(\xi) + f^{2}(\xi) = 0$。
+        \\【证】令 $F(x) = f(x)\,e^{\int_{0}^{x} f(t)\mathrm{d}t}$，则 $F(0) = f(0)$，$F(1) = f(1)\,e^{\int_{0}^{1} f(t)\mathrm{d}t} = f(1)$，即 $F(0) = F(1)$，由罗尔定理，存在 $\xi \in (0, 1)$，使得 $F'(\xi) = 0$，即 $e^{\int_{0}^{\xi} f(t)\mathrm{d}t}\bigl[f'(\xi) + f^{2}(\xi)\bigr] = 0$，得证。
+\end{multicols}
+
+\end{document}
